@@ -9,7 +9,7 @@ Param(
 function Get-GraphMapping {
     $graphMapping = @{}
     $graphMapping.Add("v1.0", "v1.0")
-    #$graphMapping.Add("beta", "beta")
+    $graphMapping.Add("beta", "beta")
     return $graphMapping
 }
 
@@ -79,6 +79,11 @@ function Copy-Files{
        
         foreach ($File in Get-ChildItem $DocPath) {
             # Read the content of the file searching for example headers.
+            $EmptyFile = Test-FileEmpty $File
+            if($EmptyFile){
+                Write-Host "File is empty $File"
+                continue
+            }
             $Command = [System.IO.Path]::GetFileName($File)
             $content = Get-Content -Path $File
             $DestinationFile = Join-Path $Destination $Command
@@ -88,6 +93,14 @@ function Copy-Files{
         }
  
     }     
+}
+
+function Test-FileEmpty {
+
+    Param ([Parameter(Mandatory = $true)][string]$File)
+  
+    if ((Test-Path -LiteralPath $File) -and !((Get-Content -LiteralPath $File -Raw) -match '\S')) { return $true } else { return $false }
+  
 }
 function Import-Descriptions {
     Param (
