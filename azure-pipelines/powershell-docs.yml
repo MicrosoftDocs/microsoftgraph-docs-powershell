@@ -94,27 +94,27 @@ extends:
             targetType: 'filePath'
             pwsh: true
             filePath: scripts/GenerateMarkDown.ps1
-        # - task: PowerShell@2
-        #   displayName: 'Escape disallowed html tags'
-        #   continueOnError: false
-        #   inputs:
-        #     targetType: 'filePath'
-        #     pwsh: true
-        #     filePath: scripts/EscapeDisallowedHtmlTags.ps1
-        # - task: PowerShell@2
-        #   displayName: 'Update metadata header'
-        #   continueOnError: false
-        #   inputs:
-        #     targetType: 'filePath'
-        #     pwsh: true
-        #     filePath: scripts/MsProdUpdate.ps1
-        # - task: PowerShell@2
-        #   displayName: 'Update Links'
-        #   continueOnError: false
-        #   inputs:
-        #     targetType: 'filePath'
-        #     pwsh: true
-        #     filePath: scripts/UpdateLinks.ps1
+        - task: PowerShell@2
+          displayName: 'Escape disallowed html tags'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: scripts/EscapeDisallowedHtmlTags.ps1
+        - task: PowerShell@2
+          displayName: 'Update metadata header'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: scripts/MsProdUpdate.ps1
+        - task: PowerShell@2
+          displayName: 'Update Links'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: scripts/UpdateLinks.ps1
         - task: PowerShell@2
           displayName: 'Repair Examples and Descriptions and Title'
           continueOnError: false
@@ -129,25 +129,25 @@ extends:
             targetType: 'filePath'
             pwsh: true
             filePath: scripts/RemoveBoilerPlateCode.ps1
-        # - task: PowerShell@2
-        #   displayName: Pushing to github
-        #   env:
-        #     GITHUB_TOKEN: $(GITHUB_TOKEN)
-        #   inputs:
-        #     targetType: inline
-        #     pwsh: true
-        #     script: |
-        #       git config --global user.email "GraphTooling@service.microsoft.com"
-        #       git config --global user.name "Microsoft Graph DevX Tooling"
-        #       git config --system core.longpaths true
-        #       git status
-        #       git add .
-        #       git commit -m "Updating reference docs"
-        #       git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $(ComputeBranch.WeeklyReferenceDocsBranch)
-        #       git status
-        # - template: azure-pipelines/common-templates/create-pr.yml@self
-        #   parameters:
-        #     BaseBranch: "main"
-        #     TargetBranch: $(ComputeBranch.WeeklyReferenceDocsBranch)
-        #     Title: "Weekly PowerShell Microsoft Graph Reference Docs Refresh"
-        #     Body: "This pull request was automatically created by Azure Pipelines. **Important** Check for unexpected deletions or changes in this PR."
+        - task: PowerShell@2
+          displayName: Pushing to github
+          env:
+            GITHUB_TOKEN: $(GITHUB_TOKEN)
+          inputs:
+            targetType: inline
+            pwsh: true
+            script: |
+              git config --global user.email "GraphTooling@service.microsoft.com"
+              git config --global user.name "Microsoft Graph DevX Tooling"
+              git config --system core.longpaths true
+              git status
+              git add .
+              git commit -m "Updating reference docs"
+              git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $(ComputeBranch.WeeklyReferenceDocsBranch)
+              git status
+        - template: azure-pipelines/common-templates/create-pr.yml@self
+          parameters:
+            BaseBranch: "main"
+            TargetBranch: $(ComputeBranch.WeeklyReferenceDocsBranch)
+            Title: "Weekly PowerShell Microsoft Graph Reference Docs Refresh"
+            Body: "This pull request was automatically created by Azure Pipelines. **Important** Check for unexpected deletions or changes in this PR."
