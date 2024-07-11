@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property temporaryAccessPassMethods for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

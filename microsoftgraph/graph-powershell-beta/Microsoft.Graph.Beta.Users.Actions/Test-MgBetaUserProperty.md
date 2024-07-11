@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserproperty
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Test-MgBetaUserProperty
@@ -17,6 +18,9 @@ Validate the custom banned words policy3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgUserProperty](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserProperty?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +50,9 @@ Validate the custom banned words policy3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-validateproperties-permissions.md)]
 
 ## EXAMPLES
 

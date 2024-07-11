@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpclaunchinfo
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaUserCloudPcLaunchInfo
@@ -26,6 +27,9 @@ Get-MgBetaUserCloudPcLaunchInfo -InputObject <IUsersFunctionsIdentity> [-Respons
 
 ## DESCRIPTION
 Get the cloudPCLaunchInfo for the signed-in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getcloudpclaunchinfo-permissions.md)]
 
 ## EXAMPLES
 

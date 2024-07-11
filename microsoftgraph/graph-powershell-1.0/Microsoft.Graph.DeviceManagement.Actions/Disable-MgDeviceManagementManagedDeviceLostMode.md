@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/disable-mgdevicemanagementmanageddevicelostmode
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Disable-MgDeviceManagementManagedDeviceLostMode
 
 ## SYNOPSIS
 Disable lost mode
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Disable-MgBetaDeviceManagementManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disable-MgBetaDeviceManagementManagedDeviceLostMode?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restart-mgdevicemanagementmanageddevicenow
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Restart-MgDeviceManagementManagedDeviceNow
 
 ## SYNOPSIS
 Reboot device
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restart-MgBetaDeviceManagementManagedDeviceNow](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restart-MgBetaDeviceManagementManagedDeviceNow?view=graph-powershell-beta)
 
 ## SYNTAX
 

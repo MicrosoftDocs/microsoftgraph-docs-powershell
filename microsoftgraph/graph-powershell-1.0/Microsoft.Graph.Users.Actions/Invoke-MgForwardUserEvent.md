@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwarduserevent
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Invoke-MgForwardUserEvent
@@ -11,6 +12,9 @@ schema: 2.0.0
 This action allows the organizer or attendee of a meeting event to forward themeeting request to a new recipient.
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this actionalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer'scopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardUserEvent](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaForwardUserEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,6 +54,9 @@ Invoke-MgForwardUserEvent -InputObject <IUsersActionsIdentity>
 This action allows the organizer or attendee of a meeting event to forward themeeting request to a new recipient.
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this actionalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer'scopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-forward-permissions.md)]
 
 ## EXAMPLES
 

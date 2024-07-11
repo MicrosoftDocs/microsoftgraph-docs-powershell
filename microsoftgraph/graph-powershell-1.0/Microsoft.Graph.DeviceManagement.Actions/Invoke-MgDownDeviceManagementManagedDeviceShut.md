@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgdowndevicemanagementmanageddeviceshut
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Invoke-MgDownDeviceManagementManagedDeviceShut
 
 ## SYNOPSIS
 Shut down device
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDownDeviceManagementManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaDownDeviceManagementManagedDeviceShut?view=graph-powershell-beta)
 
 ## SYNTAX
 

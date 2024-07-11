@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/confirm-mgbetaapplicationmembergroup
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Confirm-MgBetaApplicationMemberGroup
@@ -13,6 +14,9 @@ This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgApplicationMemberGroup](/powershell/module/Microsoft.Graph.Applications/Confirm-MgApplicationMemberGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,6 +56,9 @@ This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-checkmembergroups-permissions.md)]
 
 ## EXAMPLES
 

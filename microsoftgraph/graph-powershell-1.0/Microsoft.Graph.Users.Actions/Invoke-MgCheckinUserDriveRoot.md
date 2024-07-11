@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcheckinuserdriveroot
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgCheckinUserDriveRoot
 
 ## SYNOPSIS
 Check in a checked out driveItem resource, which makes the version of the document available to others.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckinUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCheckinUserDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,6 +48,9 @@ Invoke-MgCheckinUserDriveRoot -InputObject <IUsersActionsIdentity> [-ResponseHea
 
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-checkin-permissions.md)]
 
 ## EXAMPLES
 

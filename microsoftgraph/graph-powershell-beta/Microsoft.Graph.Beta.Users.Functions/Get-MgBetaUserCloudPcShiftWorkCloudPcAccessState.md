@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcshiftworkcloudpcaccessstate
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaUserCloudPcShiftWorkCloudPcAccessState
@@ -40,6 +41,9 @@ Shared-use licenses allow three users per license, with one user signed in at a 
 Callers can get the latest shift work Cloud PC accessState and determine whether the shift work Cloud PC is accessible to the user.
 If a web client needs to connect to a shift work Cloud PC, the sharedCloudPcAccessState validates the bookmark scenario.
 If sharedCloudPcAccessState is not active/activating/standbyMode, the web client shows a 'bad bookmark'.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getshiftworkcloudpcaccessstate-permissions.md)]
 
 ## EXAMPLES
 

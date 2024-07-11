@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/test-mguserproperty
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Test-MgUserProperty
@@ -18,6 +19,9 @@ Validate that the mail nickname is unique This API only returns the first valida
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaUserProperty](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Test-MgBetaUserProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +52,9 @@ Validate that the mail nickname is unique This API only returns the first valida
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-validateproperties-permissions.md)]
 
 ## EXAMPLES
 

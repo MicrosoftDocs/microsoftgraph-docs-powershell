@@ -11,6 +11,9 @@ schema: 2.0.0
 The content stream of the attendee report of a Microsoft Teams live event.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaUserOnlineMeetingAttendeeReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

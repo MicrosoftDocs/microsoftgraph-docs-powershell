@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Export-MgBetaComplianceEdiscoveryCaseReviewSet
@@ -50,6 +51,9 @@ Export-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity
 ## DESCRIPTION
 Initiate an export from a reviewSet.
 For details, see Export documents from a review set in Advanced eDiscovery.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewset-export-permissions.md)]
 
 ## EXAMPLES
 

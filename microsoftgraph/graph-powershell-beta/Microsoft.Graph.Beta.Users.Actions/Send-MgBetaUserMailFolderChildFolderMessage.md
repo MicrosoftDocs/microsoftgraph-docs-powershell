@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermailfolderchildfoldermessage
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Send-MgBetaUserMailFolderChildFolderMessage
@@ -12,6 +13,9 @@ Send an existing draft message.
 The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.
 This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,6 +38,9 @@ Send an existing draft message.
 The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.
 This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-send-permissions.md)]
 
 ## EXAMPLES
 

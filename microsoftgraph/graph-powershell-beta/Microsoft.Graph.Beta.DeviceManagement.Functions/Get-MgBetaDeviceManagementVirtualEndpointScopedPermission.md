@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointscopedpermission
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointScopedPermission
@@ -20,6 +21,9 @@ Get-MgBetaDeviceManagementVirtualEndpointScopedPermission [-Count] [-Filter <Str
 
 ## DESCRIPTION
 Get the permissions and corresponding scope IDs for which the authenticated user has access.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-retrievescopedpermissions-permissions.md)]
 
 ## EXAMPLES
 

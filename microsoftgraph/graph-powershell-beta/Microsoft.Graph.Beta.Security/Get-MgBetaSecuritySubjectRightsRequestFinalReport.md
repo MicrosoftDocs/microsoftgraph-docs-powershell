@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the final report for a subject rights request.
 The report is a text file that contains information about the files that were included by the privacy administrator.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySubjectRightsRequestFinalReport](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestFinalReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

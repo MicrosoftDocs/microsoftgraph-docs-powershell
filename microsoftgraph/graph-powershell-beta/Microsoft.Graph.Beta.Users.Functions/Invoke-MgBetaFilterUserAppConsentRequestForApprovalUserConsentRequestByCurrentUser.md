@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserappconsentrequestforapprovaluserconsentrequestbycurrentuser
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaFilterUserAppConsentRequestForApprovalUserConsentRequestByCurrentUser
@@ -32,6 +33,9 @@ Invoke-MgBetaFilterUserAppConsentRequestForApprovalUserConsentRequestByCurrentUs
 
 ## DESCRIPTION
 Retrieve a collection of userConsentRequest objects for accessing a specified app, for which the current user is the reviewer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userconsentrequest-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
 

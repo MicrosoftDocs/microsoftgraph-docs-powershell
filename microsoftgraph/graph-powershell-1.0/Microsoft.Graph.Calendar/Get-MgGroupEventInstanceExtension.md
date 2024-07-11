@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of open extensions defined for the event.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEventInstanceExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstanceExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

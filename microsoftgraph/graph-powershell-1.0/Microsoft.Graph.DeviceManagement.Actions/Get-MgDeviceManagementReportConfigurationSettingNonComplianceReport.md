@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportconfigurationsettingnoncompliancereport
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementReportConfigurationSettingNonComplianceReport
 
 ## SYNOPSIS
 Not yet documented
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportConfigurationSettingNonComplianceReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportConfigurationSettingNonComplianceReport?view=graph-powershell-beta)
 
 ## SYNTAX
 

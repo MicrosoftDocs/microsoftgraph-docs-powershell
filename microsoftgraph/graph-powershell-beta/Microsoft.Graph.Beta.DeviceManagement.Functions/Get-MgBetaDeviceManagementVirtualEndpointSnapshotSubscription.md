@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointsnapshotsubscription
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription
@@ -20,6 +21,9 @@ Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription [-Count] [-Filter 
 
 ## DESCRIPTION
 List all subscriptions cloudPcSubscription that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcsnapshot-getsubscriptions-permissions.md)]
 
 ## EXAMPLES
 

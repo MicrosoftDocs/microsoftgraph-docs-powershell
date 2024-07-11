@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mgdrivelistcontenttypetodefaultcontentlocation
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Copy-MgDriveListContentTypeToDefaultContentLocation
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Copy a file to a default content location in a content type.
 The file can then be added as a default file or template via a POST operation.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Files/Copy-MgBetaDriveListContentTypeToDefaultContentLocation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +52,9 @@ Copy-MgDriveListContentTypeToDefaultContentLocation -InputObject <IFilesIdentity
 ## DESCRIPTION
 Copy a file to a default content location in a content type.
 The file can then be added as a default file or template via a POST operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
 ## EXAMPLES
 

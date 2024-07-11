@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointreportrealtimeremoteconnectionlatency
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency
@@ -28,6 +29,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency
 
 ## DESCRIPTION
 Get the real-time connection latency information for a Cloud PC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getrealtimeremoteconnectionlatency-permissions.md)]
 
 ## EXAMPLES
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a webPart object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSitePageAsSitePageWebPart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

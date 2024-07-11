@@ -11,6 +11,9 @@ schema: 2.0.0
 The remoteDesktopSecurityConfiguration object applied to this service principal.
 Supports $filter (eq) for isRemoteDesktopProtocolEnabled property.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

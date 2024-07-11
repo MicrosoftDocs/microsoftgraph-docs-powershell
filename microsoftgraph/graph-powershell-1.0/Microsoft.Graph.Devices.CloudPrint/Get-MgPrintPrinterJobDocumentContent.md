@@ -11,6 +11,9 @@ schema: 2.0.0
 Download the binary file associated with a printDocument.
 Calling this method yields a redirect response with a preauthenticated URL that can be used to download the payload.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJobDocumentContent](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJobDocumentContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

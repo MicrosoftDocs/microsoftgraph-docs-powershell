@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointdeviceimage
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgDeviceManagementVirtualEndpointDeviceImage
 
 ## SYNOPSIS
 Read the properties and relationships of a specific cloudPcDeviceImage object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +40,9 @@ Get-MgDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagement
 
 ## DESCRIPTION
 Read the properties and relationships of a specific cloudPcDeviceImage object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcdeviceimage-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property terms in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

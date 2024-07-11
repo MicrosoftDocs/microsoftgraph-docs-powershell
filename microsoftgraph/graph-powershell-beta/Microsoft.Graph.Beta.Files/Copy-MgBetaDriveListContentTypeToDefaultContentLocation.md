@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadrivelistcontenttypetodefaultcontentlocation
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Copy-MgBetaDriveListContentTypeToDefaultContentLocation
 
 ## SYNOPSIS
 Invoke action copyToDefaultContentLocation
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +50,9 @@ Copy-MgBetaDriveListContentTypeToDefaultContentLocation -InputObject <IFilesIden
 
 ## DESCRIPTION
 Invoke action copyToDefaultContentLocation
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
 ## EXAMPLES
 

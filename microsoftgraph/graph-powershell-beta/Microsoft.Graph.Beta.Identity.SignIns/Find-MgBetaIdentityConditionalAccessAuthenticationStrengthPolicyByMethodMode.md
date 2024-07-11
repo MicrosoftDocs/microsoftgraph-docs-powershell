@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/find-mgbetaidentityconditionalaccessauthenticationstrengthpolicybymethodmode
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Find-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyByMethodMode
@@ -32,6 +33,9 @@ Find-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyByMethodMode
 
 ## DESCRIPTION
 Get a list of the authenticationStrengthPolicy objects and their properties filtered to only include policies that include the authentication method mode specified in the request.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthpolicy-findbymethodmode-permissions.md)]
 
 ## EXAMPLES
 

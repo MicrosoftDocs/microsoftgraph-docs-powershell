@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalMemberOfAsDirectoryRole](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalMemberOfAsDirectoryRole?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

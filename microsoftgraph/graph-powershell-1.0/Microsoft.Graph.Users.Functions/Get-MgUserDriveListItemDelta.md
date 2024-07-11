@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdrivelistitemdelta
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgUserDriveListItemDelta
@@ -15,6 +16,9 @@ The delta feed shows the latest state for each item, not each change.
 If an item was renamed twice, it only shows up once, with its latest name.The same item might appear more than once in a delta feed, for various reasons.
 You should use the last occurrence you see.
 Items with this property should be removed from your local state.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListItemDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveListItemDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,6 +62,9 @@ The delta feed shows the latest state for each item, not each change.
 If an item was renamed twice, it only shows up once, with its latest name.The same item might appear more than once in a delta feed, for various reasons.
 You should use the last occurrence you see.
 Items with this property should be removed from your local state.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-delta-permissions.md)]
 
 ## EXAMPLES
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Get details about Microsoft Teams activity by team.
 The numbers include activities for both licensed and nonlicensed users.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update an existing accessReviewScheduleDefinition object to change one or more of its properties.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Set-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

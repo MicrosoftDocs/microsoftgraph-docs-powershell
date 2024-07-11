@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Used to access the underlying driveItem
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgShareDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

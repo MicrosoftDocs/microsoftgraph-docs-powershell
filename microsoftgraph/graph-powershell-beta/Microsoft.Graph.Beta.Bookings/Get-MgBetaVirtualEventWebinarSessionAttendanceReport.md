@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
 Each time an online meeting ends, an attendance report is generated for that session.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarSessionAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionAttendanceReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

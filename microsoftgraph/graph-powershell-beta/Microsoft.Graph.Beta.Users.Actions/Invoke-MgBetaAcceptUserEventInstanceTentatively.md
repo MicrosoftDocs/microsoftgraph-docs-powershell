@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptusereventinstancetentatively
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Invoke-MgBetaAcceptUserEventInstanceTentatively
@@ -11,6 +12,9 @@ schema: 2.0.0
 Tentatively accept the specified event in a user calendar.
 If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptUserEventInstanceTentatively](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventInstanceTentatively?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,6 +54,9 @@ Invoke-MgBetaAcceptUserEventInstanceTentatively -InputObject <IUsersActionsIdent
 Tentatively accept the specified event in a user calendar.
 If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-tentativelyaccept-permissions.md)]
 
 ## EXAMPLES
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents all authentication methods registered to a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

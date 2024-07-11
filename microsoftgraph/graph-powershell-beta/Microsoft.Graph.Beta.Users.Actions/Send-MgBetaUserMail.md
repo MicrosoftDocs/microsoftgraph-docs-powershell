@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermail
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Send-MgBetaUserMail
@@ -13,6 +14,9 @@ When using JSON format, you can include an attachment and use a mention to call 
 When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgUserMail](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,6 +57,9 @@ When using JSON format, you can include an attachment and use a mention to call 
 When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-sendmail-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelclassificationresult
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Test-MgBetaUserSecurityInformationProtectionSensitivityLabelClassificationResult
@@ -55,6 +56,9 @@ Use the classification results to compute the sensitivity label that should be a
 This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
 To evaluate based on classification results, provide the contentInfo, which includes existing content metadata key-value pairs, and classification results.
 The API returns an informationProtectionAction that contains one of more of the following:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensitivitylabel-evaluateclassificationresults-permissions.md)]
 
 ## EXAMPLES
 

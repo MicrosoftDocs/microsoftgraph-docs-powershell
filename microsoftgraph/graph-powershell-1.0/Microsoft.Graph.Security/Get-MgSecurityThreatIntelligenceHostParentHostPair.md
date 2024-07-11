@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The hostPairs that are associated with a host, where that host is the childHost and has an incoming pairing with a parentHost.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostParentHostPair](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostParentHostPair?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

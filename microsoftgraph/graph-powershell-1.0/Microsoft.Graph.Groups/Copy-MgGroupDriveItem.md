@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdriveitem
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Copy-MgGroupDriveItem
 
 ## SYNOPSIS
 Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,6 +49,9 @@ Copy-MgGroupDriveItem -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-copy-permissions.md)]
 
 ## EXAMPLES
 

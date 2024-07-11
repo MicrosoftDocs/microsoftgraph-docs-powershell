@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasitelistcontenttypetodefaultcontentlocation
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Copy-MgBetaSiteListContentTypeToDefaultContentLocation
 
 ## SYNOPSIS
 Invoke action copyToDefaultContentLocation
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgSiteListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +51,9 @@ Copy-MgBetaSiteListContentTypeToDefaultContentLocation -InputObject <ISitesIdent
 
 ## DESCRIPTION
 Invoke action copyToDefaultContentLocation
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
 ## EXAMPLES
 

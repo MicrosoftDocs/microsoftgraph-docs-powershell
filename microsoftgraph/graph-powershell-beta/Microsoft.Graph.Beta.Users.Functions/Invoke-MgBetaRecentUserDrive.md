@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetarecentuserdrive
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgBetaRecentUserDrive
 
 ## SYNOPSIS
 List a set of items recently used by the signed-in user.This collection includes items that are in the user's drive and items they have access to from other drives.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRecentUserDrive](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgRecentUserDrive?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +34,9 @@ Invoke-MgBetaRecentUserDrive -InputObject <IUsersFunctionsIdentity> [-Count] [-E
 
 ## DESCRIPTION
 List a set of items recently used by the signed-in user.This collection includes items that are in the user's drive and items they have access to from other drives.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-recent-permissions.md)]
 
 ## EXAMPLES
 

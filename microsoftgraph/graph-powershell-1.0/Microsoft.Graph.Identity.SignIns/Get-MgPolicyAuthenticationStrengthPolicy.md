@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The authentication method combinations that are to be used in scenarios defined by Microsoft Entra Conditional Access.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

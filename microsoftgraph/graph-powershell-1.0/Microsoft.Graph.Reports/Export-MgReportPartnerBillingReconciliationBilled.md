@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationbilled
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Export-MgReportPartnerBillingReconciliationBilled
 
 ## SYNOPSIS
 Export the billed invoice reconciliation data.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Export-MgBetaReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Beta.Reports/Export-MgBetaReportPartnerBillingReconciliationBilled?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +33,9 @@ Export-MgReportPartnerBillingReconciliationBilled
 
 ## DESCRIPTION
 Export the billed invoice reconciliation data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-billedreconciliation-export-permissions.md)]
 
 ## EXAMPLES
 

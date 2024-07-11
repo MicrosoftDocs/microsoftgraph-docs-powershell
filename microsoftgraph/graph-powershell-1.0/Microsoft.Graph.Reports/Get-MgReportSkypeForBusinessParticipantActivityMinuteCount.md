@@ -11,6 +11,9 @@ schema: 2.0.0
 Get usage trends on the length in minutes and type of conference sessions that users from your organization participated in.
 Types of conference sessions include audio/video.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessParticipantActivityMinuteCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessParticipantActivityMinuteCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

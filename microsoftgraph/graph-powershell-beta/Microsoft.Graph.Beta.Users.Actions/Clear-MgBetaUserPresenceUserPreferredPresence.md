@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetauserpresenceuserpreferredpresence
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Clear-MgBetaUserPresenceUserPreferredPresence
 
 ## SYNOPSIS
 Clear the preferred availability and activity status for a user.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserPresenceUserPreferredPresence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +32,9 @@ Clear-MgBetaUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentit
 
 ## DESCRIPTION
 Clear the preferred availability and activity status for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-clearuserpreferredpresence-permissions.md)]
 
 ## EXAMPLES
 

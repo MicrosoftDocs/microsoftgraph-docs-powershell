@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcprovisionedcloudpc
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaUserCloudPcProvisionedCloudPc
@@ -30,6 +31,9 @@ Get-MgBetaUserCloudPcProvisionedCloudPc -InputObject <IUsersFunctionsIdentity> [
 
 ## DESCRIPTION
 Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getprovisionedcloudpcs-permissions.md)]
 
 ## EXAMPLES
 

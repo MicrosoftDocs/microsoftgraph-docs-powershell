@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementandroidmanagedappprotection
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgDeviceAppManagementAndroidManagedAppProtection
 
 ## SYNOPSIS
 Read properties and relationships of the androidManagedAppProtection object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Returns a collection of the specified Conditional Access (CA) policies.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

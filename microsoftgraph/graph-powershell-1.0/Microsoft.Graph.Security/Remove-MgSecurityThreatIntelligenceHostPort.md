@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property hostPorts for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligenceHostPort](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceHostPort?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

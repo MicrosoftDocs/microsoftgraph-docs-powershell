@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property webparts in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

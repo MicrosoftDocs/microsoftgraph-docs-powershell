@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguseronenotesectiontosectiongroup
 schema: 2.0.0
+ms.subservice: onenote
 ---
 
 # Copy-MgUserOnenoteSectionToSectionGroup
 
 ## SYNOPSIS
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaUserOnenoteSectionToSectionGroup](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserOnenoteSectionToSectionGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +50,9 @@ Copy-MgUserOnenoteSectionToSectionGroup -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-copytosectiongroup-permissions.md)]
 
 ## EXAMPLES
 

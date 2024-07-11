@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateammember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Add-MgBetaTeamMember
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgTeamMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +50,9 @@ Add-MgBetaTeamMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversationmembers-add-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedappdiagnosticstatus
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgUserManagedAppDiagnosticStatus
 
 ## SYNOPSIS
 Gets diagnostics validation status for a given user.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedAppDiagnosticStatus](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedAppDiagnosticStatus?view=graph-powershell-beta)
 
 ## SYNTAX
 

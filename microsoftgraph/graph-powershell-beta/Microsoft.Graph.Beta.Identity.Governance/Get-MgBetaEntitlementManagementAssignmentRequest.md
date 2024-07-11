@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents access package assignment requests created by or on behalf of a user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAssignmentRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

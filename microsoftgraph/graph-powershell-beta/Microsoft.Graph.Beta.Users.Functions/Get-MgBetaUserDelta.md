@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdelta
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Get-MgBetaUserDelta
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
 See change tracking for details.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -22,6 +26,9 @@ Get-MgBetaUserDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <
 ## DESCRIPTION
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
 See change tracking for details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-delta-permissions.md)]
 
 ## EXAMPLES
 

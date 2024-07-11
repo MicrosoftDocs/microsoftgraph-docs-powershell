@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserpendingaccessreviewinstancedecisionbycurrentuser
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaFilterUserPendingAccessReviewInstanceDecisionByCurrentUser
@@ -32,6 +33,9 @@ Invoke-MgBetaFilterUserPendingAccessReviewInstanceDecisionByCurrentUser -InputOb
 ## DESCRIPTION
 Retrieve the accessReviewInstanceDecisionItem objects for a specific accessReviewInstance.
 A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-list-decisions-permissions.md)]
 
 ## EXAMPLES
 

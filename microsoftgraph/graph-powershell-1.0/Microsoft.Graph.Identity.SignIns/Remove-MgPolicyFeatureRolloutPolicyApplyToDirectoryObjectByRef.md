@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete ref of navigation property appliesTo for policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

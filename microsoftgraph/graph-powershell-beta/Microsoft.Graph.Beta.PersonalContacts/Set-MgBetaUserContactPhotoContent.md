@@ -11,6 +11,9 @@ schema: 2.0.0
 Optional contact picture.
 You can get or set a photo for a contact.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserContactPhotoContent](/powershell/module/Microsoft.Graph.PersonalContacts/Set-MgUserContactPhotoContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

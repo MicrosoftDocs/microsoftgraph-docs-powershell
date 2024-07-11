@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentrubric
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Get-MgEducationClassAssignmentRubric
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the educationRubric object attached to an educationAssignment, if one exists.
 Only teachers, students, and applications with application permissions can perform this operation.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentRubric?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +34,9 @@ Get-MgEducationClassAssignmentRubric -InputObject <IEducationIdentity> [-ExpandP
 ## DESCRIPTION
 Get the educationRubric object attached to an educationAssignment, if one exists.
 Only teachers, students, and applications with application permissions can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-get-rubric-permissions.md)]
 
 ## EXAMPLES
 

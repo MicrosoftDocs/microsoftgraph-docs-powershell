@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfolderchildfoldermessageforward
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # New-MgUserMailFolderChildFolderMessageForward
@@ -15,6 +16,9 @@ Specifying both or specifying neither will return an HTTP 400 Bad Request error.
 When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessageForward](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderChildFolderMessageForward?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,6 +63,9 @@ Specifying both or specifying neither will return an HTTP 400 Bad Request error.
 When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-createforward-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetaalluserchatmessage
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaAllUserChatMessage
 
 ## SYNOPSIS
 Get all messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAllUserChatMessage](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgAllUserChatMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +34,9 @@ Get-MgBetaAllUserChatMessage -InputObject <IUsersFunctionsIdentity> [-Count] [-E
 
 ## DESCRIPTION
 Get all messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chats-getallmessages-permissions.md)]
 
 ## EXAMPLES
 

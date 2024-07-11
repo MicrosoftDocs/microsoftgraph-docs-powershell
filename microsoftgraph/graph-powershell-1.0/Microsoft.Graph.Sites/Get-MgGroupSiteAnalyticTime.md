@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get allTime from groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteAnalyticTime?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

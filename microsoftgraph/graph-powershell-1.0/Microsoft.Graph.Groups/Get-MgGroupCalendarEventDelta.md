@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendareventdelta
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Get-MgGroupCalendarEventDelta
@@ -12,6 +13,9 @@ Get a set of event resources that have been added, deleted, or updated in a cale
 Typically, synchronizing events in a calendarView in a local store entails a round of multiple delta function calls.
 The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 This allows you to maintain and synchronize a local store of events in the specified calendarView, without having to fetch all the events of that calendar from the server every time.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendarEventDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCalendarEventDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +40,9 @@ Get a set of event resources that have been added, deleted, or updated in a cale
 Typically, synchronizing events in a calendarView in a local store entails a round of multiple delta function calls.
 The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 This allows you to maintain and synchronize a local store of events in the specified calendarView, without having to fetch all the events of that calendar from the server every time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-delta-permissions.md)]
 
 ## EXAMPLES
 

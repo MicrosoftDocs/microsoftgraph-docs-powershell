@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcall
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaCommunicationCall
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a call object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +32,9 @@ Get-MgBetaCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-Expand
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a call object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-get-permissions.md)]
 
 ## EXAMPLES
 

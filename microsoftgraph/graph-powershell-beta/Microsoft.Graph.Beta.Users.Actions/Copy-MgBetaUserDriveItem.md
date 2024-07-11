@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdriveitem
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Copy-MgBetaUserDriveItem
 
 ## SYNOPSIS
 Asynchronously create a copy of a driveItem (including any children) under a new parent item or with a new name.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +50,9 @@ Copy-MgBetaUserDriveItem -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Asynchronously create a copy of a driveItem (including any children) under a new parent item or with a new name.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-copy-permissions.md)]
 
 ## EXAMPLES
 

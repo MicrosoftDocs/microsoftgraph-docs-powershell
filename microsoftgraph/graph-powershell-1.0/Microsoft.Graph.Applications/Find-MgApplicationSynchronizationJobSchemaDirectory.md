@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgapplicationsynchronizationjobschemadirectory
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Find-MgApplicationSynchronizationJobSchemaDirectory
 
 ## SYNOPSIS
 Discover the latest schema definition for provisioning to an application.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Find-MgBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Find-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +32,9 @@ Find-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicationsI
 
 ## DESCRIPTION
 Discover the latest schema definition for provisioning to an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-directorydefinition-discover-permissions.md)]
 
 ## EXAMPLES
 

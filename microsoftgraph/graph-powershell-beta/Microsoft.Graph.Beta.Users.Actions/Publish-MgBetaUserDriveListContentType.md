@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/publish-mgbetauserdrivelistcontenttype
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Publish-MgBetaUserDriveListContentType
 
 ## SYNOPSIS
 Invoke action publish
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Users.Actions/Publish-MgUserDriveListContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +32,9 @@ Publish-MgBetaUserDriveListContentType -InputObject <IUsersActionsIdentity> [-Re
 
 ## DESCRIPTION
 Invoke action publish
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
 
 ## EXAMPLES
 

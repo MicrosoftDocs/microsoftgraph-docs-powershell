@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The policy that represents the security defaults that protect against common attacks.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

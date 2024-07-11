@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgretiredevicemanagementmanageddevice
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Invoke-MgRetireDeviceManagementManagedDevice
 
 ## SYNOPSIS
 Retire a device
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRetireDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaRetireDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 

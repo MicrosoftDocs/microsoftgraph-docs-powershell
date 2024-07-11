@@ -11,6 +11,9 @@ schema: 2.0.0
 Get a summary of runs for a specified time period.
 Because the amount of runs returned by the List API call can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Summary (Default)

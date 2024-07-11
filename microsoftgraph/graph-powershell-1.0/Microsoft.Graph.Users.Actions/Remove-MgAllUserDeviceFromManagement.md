@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/remove-mgalluserdevicefrommanagement
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgAllUserDeviceFromManagement
 
 ## SYNOPSIS
 Retire all devices from management for this user
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAllUserDeviceFromManagement](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Remove-MgBetaAllUserDeviceFromManagement?view=graph-powershell-beta)
 
 ## SYNTAX
 

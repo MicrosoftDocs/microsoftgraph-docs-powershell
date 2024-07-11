@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/grant-mgbetauserdriverootpermission
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Grant-MgBetaUserDriveRootPermission
 
 ## SYNOPSIS
 Grant users access to a link represented by a permission.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Grant-MgUserDriveRootPermission](/powershell/module/Microsoft.Graph.Users.Actions/Grant-MgUserDriveRootPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,6 +49,9 @@ Grant-MgBetaUserDriveRootPermission -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Grant users access to a link represented by a permission.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
 
 ## EXAMPLES
 

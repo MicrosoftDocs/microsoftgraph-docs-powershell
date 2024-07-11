@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcconnectivityhistory
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory
@@ -29,6 +30,9 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory
 
 ## DESCRIPTION
 Get the connectivity history of a specific Cloud PC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getcloudpcconnectivityhistory-permissions.md)]
 
 ## EXAMPLES
 

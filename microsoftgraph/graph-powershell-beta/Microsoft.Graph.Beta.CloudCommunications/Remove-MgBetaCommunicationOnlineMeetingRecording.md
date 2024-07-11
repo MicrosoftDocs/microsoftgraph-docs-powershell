@@ -11,6 +11,9 @@ schema: 2.0.0
 The content stream of the recording of a Teams live event.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationOnlineMeetingRecording?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

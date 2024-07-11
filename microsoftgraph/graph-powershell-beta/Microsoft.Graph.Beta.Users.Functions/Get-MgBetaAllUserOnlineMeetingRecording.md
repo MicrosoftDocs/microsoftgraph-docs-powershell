@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetaalluseronlinemeetingrecording
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaAllUserOnlineMeetingRecording
@@ -50,6 +51,9 @@ Typically, you would do an initial full synchronization, and then get incrementa
 Find more information in the delta query documentation.
 For more examples, see callRecording: delta.
 To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-getallrecordings-permissions.md)]
 
 ## EXAMPLES
 

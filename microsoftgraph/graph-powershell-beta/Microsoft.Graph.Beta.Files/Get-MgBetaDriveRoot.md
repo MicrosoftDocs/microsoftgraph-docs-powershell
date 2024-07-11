@@ -11,6 +11,9 @@ schema: 2.0.0
 The root folder of the drive.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

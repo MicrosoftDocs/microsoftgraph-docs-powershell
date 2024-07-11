@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/enable-mgbetabackuprestore
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Enable-MgBetaBackupRestore
@@ -29,6 +30,9 @@ Enable-MgBetaBackupRestore
 
 ## DESCRIPTION
 Enable the Microsoft 365 Backup Storage service for a tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-enable-permissions.md)]
 
 ## EXAMPLES
 

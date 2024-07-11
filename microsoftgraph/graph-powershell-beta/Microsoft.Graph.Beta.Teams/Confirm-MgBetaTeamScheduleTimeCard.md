@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetateamscheduletimecard
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Confirm-MgBetaTeamScheduleTimeCard
@@ -26,6 +27,9 @@ Confirm-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-ResponseHeade
 
 ## DESCRIPTION
 Confirm a specific timeCard.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-confirm-permissions.md)]
 
 ## EXAMPLES
 

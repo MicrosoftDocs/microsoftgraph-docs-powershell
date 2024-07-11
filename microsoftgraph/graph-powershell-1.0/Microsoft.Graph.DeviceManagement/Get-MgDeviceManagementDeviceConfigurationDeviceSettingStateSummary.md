@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read properties and relationships of the settingStateDeviceSummary object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

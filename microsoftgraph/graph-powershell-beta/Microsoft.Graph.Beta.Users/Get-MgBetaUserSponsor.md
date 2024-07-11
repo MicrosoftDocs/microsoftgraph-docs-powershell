@@ -12,6 +12,9 @@ The users and groups responsible for this guest user's privileges in the tenant 
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSponsor](/powershell/module/Microsoft.Graph.Users/Get-MgUserSponsor?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

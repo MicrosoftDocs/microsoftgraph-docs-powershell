@@ -11,6 +11,9 @@ schema: 2.0.0
 Optional.
 NavigationProperty/Containment; navigation property to the associated activity.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserActivityHistoryItemActivity](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserActivityHistoryItemActivity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

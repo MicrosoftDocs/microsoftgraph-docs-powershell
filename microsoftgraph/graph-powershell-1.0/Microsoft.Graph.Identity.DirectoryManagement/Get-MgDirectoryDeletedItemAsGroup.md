@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve a list of recently deleted directory objects.
 Currently, deleted items functionality is only supported for the application, servicePrincipal, group, administrative unit, and user resources.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItemAsGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

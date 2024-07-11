@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserdefaultcalendarschedule
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Get-MgBetaUserDefaultCalendarSchedule
 
 ## SYNOPSIS
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDefaultCalendarSchedule](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserDefaultCalendarSchedule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +50,9 @@ Get-MgBetaUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendar-getschedule-permissions.md)]
 
 ## EXAMPLES
 

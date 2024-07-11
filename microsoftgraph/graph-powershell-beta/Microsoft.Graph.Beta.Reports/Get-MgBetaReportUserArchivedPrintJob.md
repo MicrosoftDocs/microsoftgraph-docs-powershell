@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a list of archived print jobs for a particular user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportUserArchivedPrintJob](/powershell/module/Microsoft.Graph.Reports/Get-MgReportUserArchivedPrintJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

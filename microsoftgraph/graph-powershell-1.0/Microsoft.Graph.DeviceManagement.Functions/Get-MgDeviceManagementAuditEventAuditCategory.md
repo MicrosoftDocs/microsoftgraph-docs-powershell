@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementauditeventauditcategory
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementAuditEventAuditCategory
 
 ## SYNOPSIS
 Not yet documented
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementAuditEventAuditCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementAuditEventAuditCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 

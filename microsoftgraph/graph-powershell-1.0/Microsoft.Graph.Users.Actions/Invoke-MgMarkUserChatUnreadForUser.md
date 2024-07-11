@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgmarkuserchatunreadforuser
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgMarkUserChatUnreadForUser
 
 ## SYNOPSIS
 Mark a chat as unread for a user.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaMarkUserChatUnreadForUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaMarkUserChatUnreadForUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +50,9 @@ Invoke-MgMarkUserChatUnreadForUser -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Mark a chat as unread for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-markchatunreadforuser-permissions.md)]
 
 ## EXAMPLES
 

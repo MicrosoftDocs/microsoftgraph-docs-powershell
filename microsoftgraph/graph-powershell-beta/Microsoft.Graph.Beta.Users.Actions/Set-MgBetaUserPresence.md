@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresence
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Set-MgBetaUserPresence
 
 ## SYNOPSIS
 Set the availability and activity status in a presence session of an application for a user.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +50,9 @@ Set-MgBetaUserPresence -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Set the availability and activity status in a presence session of an application for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setpresence-permissions.md)]
 
 ## EXAMPLES
 

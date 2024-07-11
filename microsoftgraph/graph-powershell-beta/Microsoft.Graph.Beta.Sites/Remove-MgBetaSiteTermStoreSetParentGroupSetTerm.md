@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property terms for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

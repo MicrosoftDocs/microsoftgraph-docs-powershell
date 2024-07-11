@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfoldermessage
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Move-MgBetaUserMailFolderMessage
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Move-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +50,9 @@ Move-MgBetaUserMailFolderMessage -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-move-permissions.md)]
 
 ## EXAMPLES
 

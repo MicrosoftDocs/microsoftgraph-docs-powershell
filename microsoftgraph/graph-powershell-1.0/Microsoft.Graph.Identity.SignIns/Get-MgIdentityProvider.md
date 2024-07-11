@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get identityProviders from identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

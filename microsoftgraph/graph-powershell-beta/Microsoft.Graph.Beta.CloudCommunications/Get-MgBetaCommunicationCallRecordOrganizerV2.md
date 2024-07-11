@@ -11,6 +11,9 @@ schema: 2.0.0
 Identity of the organizer of the call.
 This relationship is expanded by default in callRecord methods.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallRecordOrganizerV2](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecordOrganizerV2?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

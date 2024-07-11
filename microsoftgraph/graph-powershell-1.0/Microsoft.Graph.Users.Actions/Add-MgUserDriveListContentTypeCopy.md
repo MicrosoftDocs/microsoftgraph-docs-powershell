@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserdrivelistcontenttypecopy
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgUserDriveListContentTypeCopy
 
 ## SYNOPSIS
 Add a copy of a content type from a site to a list.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaUserDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Add-MgBetaUserDriveListContentTypeCopy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,6 +48,9 @@ Add-MgUserDriveListContentTypeCopy -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Add a copy of a content type from a site to a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopy-permissions.md)]
 
 ## EXAMPLES
 

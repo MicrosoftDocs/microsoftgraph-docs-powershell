@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementconditionalaccesssetting
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementConditionalAccessSetting
 
 ## SYNOPSIS
 Read properties and relationships of the onPremisesConditionalAccessSettings object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 

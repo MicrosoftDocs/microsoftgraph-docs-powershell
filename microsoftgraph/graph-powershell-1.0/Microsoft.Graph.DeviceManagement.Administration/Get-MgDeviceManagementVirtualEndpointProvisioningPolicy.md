@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointprovisioningpolicy
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgDeviceManagementVirtualEndpointProvisioningPolicy
 
 ## SYNOPSIS
 Read the properties and relationships of a cloudPcProvisioningPolicy object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +40,9 @@ Get-MgDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDeviceMan
 
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcProvisioningPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-get-permissions.md)]
 
 ## EXAMPLES
 

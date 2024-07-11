@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a specific task from a workflow or workflowVersion.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

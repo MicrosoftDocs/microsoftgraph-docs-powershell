@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdeviceenrollmentconfigurationpriority
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority
 
 ## SYNOPSIS
 Not yet documented
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDeviceManagementDeviceEnrollmentConfigurationPriority](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgBetaDeviceManagementDeviceEnrollmentConfigurationPriority?view=graph-powershell-beta)
 
 ## SYNTAX
 

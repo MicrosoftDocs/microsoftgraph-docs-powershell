@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action reply
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ReplyExpanded (Default)

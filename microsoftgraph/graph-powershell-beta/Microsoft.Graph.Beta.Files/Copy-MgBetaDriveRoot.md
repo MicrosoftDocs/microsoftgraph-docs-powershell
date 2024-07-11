@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveroot
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Copy-MgBetaDriveRoot
 
 ## SYNOPSIS
 Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,6 +48,9 @@ Copy-MgBetaDriveRoot -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-copy-permissions.md)]
 
 ## EXAMPLES
 
