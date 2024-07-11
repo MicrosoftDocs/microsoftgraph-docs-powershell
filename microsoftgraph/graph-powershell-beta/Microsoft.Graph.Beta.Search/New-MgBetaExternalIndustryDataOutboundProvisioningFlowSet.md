@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoutboundprovisioningflowset
@@ -29,6 +29,18 @@ New-MgBetaExternalIndustryDataOutboundProvisioningFlowSet
 
 ## DESCRIPTION
 Create new navigation property to outboundProvisioningFlowSets for external
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -217,28 +229,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataOutboundProvisioningFlowSet>`: outboundProvisioningFlowSet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIndustryDataOutboundProvisioningFlowSet\>: outboundProvisioningFlowSet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The display name of the flowSet provided by the caller.
-  - `[Filter <IMicrosoftGraphIndustryDataFilter>]`: filter
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ProvisioningFlows <IMicrosoftGraphIndustryDataProvisioningFlow- `[]`>]`: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[DisplayName \<String\>\]: The display name of the flowSet provided by the caller.
+  \[Filter \<IMicrosoftGraphIndustryDataFilter\>\]: filter
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ProvisioningFlows \<IMicrosoftGraphIndustryDataProvisioningFlow\[\]\>\]: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ReadinessStatus <String>]`: readinessStatus
+    \[ReadinessStatus \<String\>\]: readinessStatus
 
-PROVISIONINGFLOWS <IMicrosoftGraphIndustryDataProvisioningFlow- `[]`>: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
-  - `[Id <String>]`: The unique identifier for an entity.
+PROVISIONINGFLOWS \<IMicrosoftGraphIndustryDataProvisioningFlow\[\]\>: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ReadinessStatus <String>]`: readinessStatus
+  \[ReadinessStatus \<String\>\]: readinessStatus
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoutboundprovisioningflowset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataoutboundprovisioningflowset)
-
-
-
-
 

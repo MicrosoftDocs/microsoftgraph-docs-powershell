@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyactivitybasedtimeoutpolicy
@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyActivityBasedTimeoutPolicy
 
 ## SYNOPSIS
-Create new navigation property to activityBasedTimeoutPolicies for policies
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-1.0)
+Create a new activityBasedTimeoutPolicy object.
 
 ## SYNTAX
 
@@ -31,13 +28,14 @@ New-MgBetaPolicyActivityBasedTimeoutPolicy -BodyParameter <Hashtable> [-Response
 ```
 
 ## DESCRIPTION
-Create new navigation property to activityBasedTimeoutPolicies for policies
+Create a new activityBasedTimeoutPolicy object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	definition = @(
@@ -48,11 +46,6 @@ $params = @{
 }
 
 New-MgBetaPolicyActivityBasedTimeoutPolicy -BodyParameter $params
-```
-This example shows how to use the New-MgBetaPolicyActivityBasedTimeoutPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -292,16 +285,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIESTO <IMicrosoftGraphDirectoryObject- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
+APPLIESTO \<IMicrosoftGraphDirectoryObject\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyactivitybasedtimeoutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyactivitybasedtimeoutpolicy)
 
-
-
+[https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies?view=graph-rest-beta)
 

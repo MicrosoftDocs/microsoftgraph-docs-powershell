@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorybyref
@@ -8,12 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentCategoryByRef
 
 ## SYNOPSIS
-When set, enables users to easily find assignments of a given type.
-Read-only.
-Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentCategoryByRef?view=graph-powershell-beta)
+List all the categories associated with an assignment.
+Only teachers, students, and applications with application permissions can perform this operation.
 
 ## SYNTAX
 
@@ -25,9 +21,24 @@ Get-MgEducationClassAssignmentCategoryByRef -EducationAssignmentId <String> -Edu
 ```
 
 ## DESCRIPTION
-When set, enables users to easily find assignments of a given type.
-Read-only.
-Nullable.
+List all the categories associated with an assignment.
+Only teachers, students, and applications with application permissions can perform this operation.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -242,7 +253,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorybyref)
 
-
-
-
+[https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0)
 

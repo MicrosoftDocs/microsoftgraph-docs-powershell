@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerbyref
@@ -8,16 +8,9 @@ schema: 2.0.0
 # Get-MgGroupOwnerByRef
 
 ## SYNOPSIS
-The owners of the group.
-Limited to 100 owners.
-Nullable.
-If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
-Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-Supports $expand including nested $select.
-For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerByRef?view=graph-powershell-beta)
+Retrieve a list of the group's owners.
+The owners are a set of users or service principals who are allowed to modify the group object.
+Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
 
 ## SYNTAX
 
@@ -29,26 +22,18 @@ Get-MgGroupOwnerByRef -GroupId <String> [-Filter <String>] [-Search <String>] [-
 ```
 
 ## DESCRIPTION
-The owners of the group.
-Limited to 100 owners.
-Nullable.
-If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
-Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-Supports $expand including nested $select.
-For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+Retrieve a list of the group's owners.
+The owners are a set of users or service principals who are allowed to modify the group object.
+Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 Get-MgGroupOwner -GroupId $groupId
-```
-This example shows how to use the Get-MgGroupOwnerByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -264,6 +249,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerbyref)
 
-
-
+[https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-1.0)
 

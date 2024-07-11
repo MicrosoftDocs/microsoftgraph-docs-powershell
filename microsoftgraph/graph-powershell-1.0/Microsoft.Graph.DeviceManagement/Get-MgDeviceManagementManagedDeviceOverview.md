@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddeviceoverview
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Device overview
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementManagedDeviceOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementManagedDeviceOverview?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,22 @@ Get-MgDeviceManagementManagedDeviceOverview [-ExpandProperty <String[]>] [-Prope
 
 ## DESCRIPTION
 Device overview
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -115,8 +128,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddeviceoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddeviceoverview)
-
-
-
-
 

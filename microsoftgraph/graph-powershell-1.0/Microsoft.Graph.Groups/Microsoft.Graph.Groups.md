@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Groups
 Module Guid: 50bc9e18-e281-4208-8913-c9e1bef6083d
 Download Help Link: {{ Update Download Link }}
@@ -881,6 +881,9 @@ Locale: en-US
 ### [Remove-MgGroupPhoto](Remove-MgGroupPhoto.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupPhotoContent](Remove-MgGroupPhotoContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupRejectedSenderDirectoryObjectByRef](Remove-MgGroupRejectedSenderDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
@@ -1048,5 +1051,4 @@ Locale: en-US
 
 ### [Update-MgGroupThreadPostInReplyToExtension](Update-MgGroupThreadPostInReplyToExtension.md)
 {{ Fill in the Description }}
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfederatedtokenvalidationpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyFederatedTokenValidationPolicy
 
 ## SYNOPSIS
-Represents a policy to control enabling or disabling validation of federation authentication tokens.
+Read the properties and relationships of a federatedTokenValidationPolicy object.
 
 ## SYNTAX
 
@@ -19,7 +19,19 @@ Get-MgBetaPolicyFederatedTokenValidationPolicy [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Represents a policy to control enabling or disabling validation of federation authentication tokens.
+Read the properties and relationships of a federatedTokenValidationPolicy object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -113,7 +125,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfederatedtokenvalidationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfederatedtokenvalidationpolicy)
 
-
-
-
+[https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-get?view=graph-rest-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Security
 Module Guid: 987c645b-9ff9-4398-8963-19739c27f5c3
 Download Help Link: {{ Update Download Link }}
@@ -359,6 +359,24 @@ Locale: en-US
 ### [Get-MgBetaSecurityIdentityHealthIssueCount](Get-MgBetaSecurityIdentityHealthIssueCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaSecurityIdentitySensor](Get-MgBetaSecurityIdentitySensor.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityIdentitySensorCount](Get-MgBetaSecurityIdentitySensorCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityIdentitySensorDeploymentAccessKey](Get-MgBetaSecurityIdentitySensorDeploymentAccessKey.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityIdentitySensorDeploymentPackageUri](Get-MgBetaSecurityIdentitySensorDeploymentPackageUri.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityIdentitySensorHealthIssue](Get-MgBetaSecurityIdentitySensorHealthIssue.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityIdentitySensorHealthIssueCount](Get-MgBetaSecurityIdentitySensorHealthIssueCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaSecurityIncident](Get-MgBetaSecurityIncident.md)
 {{ Fill in the Description }}
 
@@ -465,6 +483,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStageCount](Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStageCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityPartner](Get-MgBetaSecurityPartner.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityPartnerSecurityAlert](Get-MgBetaSecurityPartnerSecurityAlert.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityPartnerSecurityAlertCount](Get-MgBetaSecurityPartnerSecurityAlertCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSecurityProviderTenantSetting](Get-MgBetaSecurityProviderTenantSetting.md)
@@ -980,6 +1007,12 @@ Locale: en-US
 ### [New-MgBetaSecurityIdentityHealthIssue](New-MgBetaSecurityIdentityHealthIssue.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaSecurityIdentitySensor](New-MgBetaSecurityIdentitySensor.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaSecurityIdentitySensorDeploymentAccessKey](New-MgBetaSecurityIdentitySensorDeploymentAccessKey.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaSecurityIncident](New-MgBetaSecurityIncident.md)
 {{ Fill in the Description }}
 
@@ -1011,6 +1044,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](New-MgBetaSecurityLabelRetentionLabelDispositionReviewStage.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaSecurityPartnerSecurityAlert](New-MgBetaSecurityPartnerSecurityAlert.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaSecurityProviderTenantSetting](New-MgBetaSecurityProviderTenantSetting.md)
@@ -1217,6 +1253,12 @@ Locale: en-US
 ### [Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile](Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileContent](Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent](Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery.md)
 {{ Fill in the Description }}
 
@@ -1254,6 +1296,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityIdentityHealthIssue](Remove-MgBetaSecurityIdentityHealthIssue.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityIdentitySensor](Remove-MgBetaSecurityIdentitySensor.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityIncident](Remove-MgBetaSecurityIncident.md)
@@ -1302,6 +1347,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](Remove-MgBetaSecurityLabelRetentionLabelDispositionReviewStage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityPartner](Remove-MgBetaSecurityPartner.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityPartnerSecurityAlert](Remove-MgBetaSecurityPartnerSecurityAlert.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityProviderTenantSetting](Remove-MgBetaSecurityProviderTenantSetting.md)
@@ -1616,6 +1667,9 @@ Locale: en-US
 ### [Update-MgBetaSecurityIdentityHealthIssue](Update-MgBetaSecurityIdentityHealthIssue.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaSecurityIdentitySensor](Update-MgBetaSecurityIdentitySensor.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaSecurityIncident](Update-MgBetaSecurityIncident.md)
 {{ Fill in the Description }}
 
@@ -1662,6 +1716,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSecurityPartner](Update-MgBetaSecurityPartner.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSecurityPartnerSecurityAlert](Update-MgBetaSecurityPartnerSecurityAlert.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaSecurityProviderTenantSetting](Update-MgBetaSecurityProviderTenantSetting.md)
@@ -1801,5 +1861,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserSecurityInformationProtectionSensitivityLabelParent](Update-MgBetaUserSecurityInformationProtectionSensitivityLabelParent.md)
 {{ Fill in the Description }}
-
 

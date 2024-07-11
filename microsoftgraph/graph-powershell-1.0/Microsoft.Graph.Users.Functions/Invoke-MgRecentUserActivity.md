@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuseractivity
@@ -10,15 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Get recent activities for a given user.
 This OData function has some default behaviors included to make it operate like a 'most recently used' API.
-The service queries for the most recent historyItems, and then pull those related activities.
-Activities are sorted according to the most recent lastModified on the historyItem.
-This means that activities without historyItems won't be included in the response.
+The service queries for the most recent activityHistoryItems, and then pull those related activities.
+Activities are sorted according to the most recent lastModified on the activityHistoryItem.
+This means that activities without activityHistoryItems won't be included in the response.
 The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,25 +38,21 @@ Invoke-MgRecentUserActivity -InputObject <IUsersFunctionsIdentity> [-Count] [-Ex
 ## DESCRIPTION
 Get recent activities for a given user.
 This OData function has some default behaviors included to make it operate like a 'most recently used' API.
-The service queries for the most recent historyItems, and then pull those related activities.
-Activities are sorted according to the most recent lastModified on the historyItem.
-This means that activities without historyItems won't be included in the response.
+The service queries for the most recent activityHistoryItems, and then pull those related activities.
+Activities are sorted according to the most recent lastModified on the activityHistoryItem.
+This means that activities without activityHistoryItems won't be included in the response.
 The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-get-recent-activities-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Invoke-MgRecentUserActivity Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Users.Functions
 # A UPN can also be used as -UserId.
 Invoke-MgRecentUserActivity -UserId $userId
 ```
-This example shows how to use the Invoke-MgRecentUserActivity Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -275,40 +268,37 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
-  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EventId <String>]`: The unique identifier of event
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
+  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EventId \<String\>\]: The unique identifier of event
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[TimeZoneStandard \<String\>\]: Usage: TimeZoneStandard='{TimeZoneStandard}'
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[User \<String\>\]: Usage: User='{User}'
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuseractivity)
 
 [https://learn.microsoft.com/graph/api/projectrome-get-recent-activities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/projectrome-get-recent-activities?view=graph-rest-1.0)
-
-
-
 

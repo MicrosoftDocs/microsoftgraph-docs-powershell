@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroupserviceprovisioningerror
@@ -8,11 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassGroupServiceProvisioningError
 
 ## SYNOPSIS
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
+Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassGroupServiceProvisioningError?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -24,8 +21,20 @@ Get-MgEducationClassGroupServiceProvisioningError -EducationClassId <String> [-E
 ```
 
 ## DESCRIPTION
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
+Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -254,8 +263,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroupserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroupserviceprovisioningerror)
-
-
-
-
 

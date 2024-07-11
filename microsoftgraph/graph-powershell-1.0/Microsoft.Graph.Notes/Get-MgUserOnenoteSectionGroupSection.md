@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroupsection
@@ -11,9 +11,6 @@ schema: 2.0.0
 The sections in the section group.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionGroupSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,18 +27,14 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Notes
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteSectionGroupSection -UserId $userId -SectionGroupId $sectionGroupId
-
-```
-This example shows how to use the Get-MgUserOnenoteSectionGroupSection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -285,7 +278,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroupsection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroupsection)
-
-
-
 

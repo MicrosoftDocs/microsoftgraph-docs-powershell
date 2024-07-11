@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.CloudCommunications
 Module Guid: 2c67fc60-8c99-463f-9b0c-8a70e4623246
 Download Help Link: {{ Update Download Link }}
@@ -54,6 +54,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallRecordCount](Get-MgCommunicationCallRecordCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgCommunicationCallRecordOrganizerV2](Get-MgCommunicationCallRecordOrganizerV2.md)
+{{ Fill in the Description }}
+
+### [Get-MgCommunicationCallRecordParticipant](Get-MgCommunicationCallRecordParticipant.md)
+{{ Fill in the Description }}
+
+### [Get-MgCommunicationCallRecordParticipantV2](Get-MgCommunicationCallRecordParticipantV2.md)
 {{ Fill in the Description }}
 
 ### [Get-MgCommunicationCallRecordSession](Get-MgCommunicationCallRecordSession.md)
@@ -221,6 +230,9 @@ Locale: en-US
 ### [New-MgCommunicationCallParticipant](New-MgCommunicationCallParticipant.md)
 {{ Fill in the Description }}
 
+### [New-MgCommunicationCallRecordParticipantV2](New-MgCommunicationCallRecordParticipantV2.md)
+{{ Fill in the Description }}
+
 ### [New-MgCommunicationCallRecordSession](New-MgCommunicationCallRecordSession.md)
 {{ Fill in the Description }}
 
@@ -272,6 +284,12 @@ Locale: en-US
 ### [Remove-MgCommunicationCallParticipant](Remove-MgCommunicationCallParticipant.md)
 {{ Fill in the Description }}
 
+### [Remove-MgCommunicationCallRecordOrganizerV2](Remove-MgCommunicationCallRecordOrganizerV2.md)
+{{ Fill in the Description }}
+
+### [Remove-MgCommunicationCallRecordParticipantV2](Remove-MgCommunicationCallRecordParticipantV2.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgCommunicationCallRecordSession](Remove-MgCommunicationCallRecordSession.md)
 {{ Fill in the Description }}
 
@@ -284,10 +302,22 @@ Locale: en-US
 ### [Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Remove-MgCommunicationOnlineMeetingAttendeeReport](Remove-MgCommunicationOnlineMeetingAttendeeReport.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgCommunicationOnlineMeetingRecording](Remove-MgCommunicationOnlineMeetingRecording.md)
 {{ Fill in the Description }}
 
+### [Remove-MgCommunicationOnlineMeetingRecordingContent](Remove-MgCommunicationOnlineMeetingRecordingContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgCommunicationOnlineMeetingTranscript](Remove-MgCommunicationOnlineMeetingTranscript.md)
+{{ Fill in the Description }}
+
+### [Remove-MgCommunicationOnlineMeetingTranscriptContent](Remove-MgCommunicationOnlineMeetingTranscriptContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgCommunicationOnlineMeetingTranscriptMetadataContent](Remove-MgCommunicationOnlineMeetingTranscriptMetadataContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgCommunicationPresence](Remove-MgCommunicationPresence.md)
@@ -302,10 +332,22 @@ Locale: en-US
 ### [Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Remove-MgUserOnlineMeetingAttendeeReport](Remove-MgUserOnlineMeetingAttendeeReport.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgUserOnlineMeetingRecording](Remove-MgUserOnlineMeetingRecording.md)
 {{ Fill in the Description }}
 
+### [Remove-MgUserOnlineMeetingRecordingContent](Remove-MgUserOnlineMeetingRecordingContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgUserOnlineMeetingTranscript](Remove-MgUserOnlineMeetingTranscript.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserOnlineMeetingTranscriptContent](Remove-MgUserOnlineMeetingTranscriptContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserOnlineMeetingTranscriptMetadataContent](Remove-MgUserOnlineMeetingTranscriptMetadataContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserPresence](Remove-MgUserPresence.md)
@@ -380,6 +422,12 @@ Locale: en-US
 ### [Update-MgCommunicationCallRecordingStatus](Update-MgCommunicationCallRecordingStatus.md)
 {{ Fill in the Description }}
 
+### [Update-MgCommunicationCallRecordOrganizerV2](Update-MgCommunicationCallRecordOrganizerV2.md)
+{{ Fill in the Description }}
+
+### [Update-MgCommunicationCallRecordParticipantV2](Update-MgCommunicationCallRecordParticipantV2.md)
+{{ Fill in the Description }}
+
 ### [Update-MgCommunicationCallRecordSession](Update-MgCommunicationCallRecordSession.md)
 {{ Fill in the Description }}
 
@@ -418,5 +466,4 @@ Locale: en-US
 
 ### [Update-MgUserPresence](Update-MgUserPresence.md)
 {{ Fill in the Description }}
-
 

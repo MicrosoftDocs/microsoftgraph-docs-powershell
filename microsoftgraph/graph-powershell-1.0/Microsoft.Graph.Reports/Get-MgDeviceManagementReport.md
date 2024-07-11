@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreport
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementReport
 
 ## SYNOPSIS
-Reports singleton
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReport?view=graph-powershell-beta)
+Read properties and relationships of the deviceManagementReports object.
 
 ## SYNTAX
 
@@ -22,20 +19,16 @@ Get-MgDeviceManagementReport [-ExpandProperty <String[]>] [-Property <String[]>]
 ```
 
 ## DESCRIPTION
-Reports singleton
+Read properties and relationships of the deviceManagementReports object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Reports
+```
 
 Get-MgDeviceManagementReport
-
-```
-This example shows how to use the Get-MgDeviceManagementReport Cmdlet.
-
 
 ## PARAMETERS
 
@@ -129,6 +122,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreport)
 
-
-
+[https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-get?view=graph-rest-1.0)
 

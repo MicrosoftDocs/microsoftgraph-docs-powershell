@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackage
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage
 
 ## SYNOPSIS
-The  access packages whose assigned users are ineligible to be assigned this access package.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage?view=graph-powershell-1.0)
+Retrieve a list of the accessPackage objects marked as incompatible on an accessPackage.
 
 ## SYNTAX
 
@@ -23,20 +20,16 @@ Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPac
 ```
 
 ## DESCRIPTION
-The  access packages whose assigned users are ineligible to be assigned this access package.
+Retrieve a list of the accessPackage objects marked as incompatible on an accessPackage.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackageId $accessPackageId
-
-```
-This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -266,6 +259,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackage)
 
-
-
+[https://learn.microsoft.com/graph/api/accesspackage-list-incompatibleaccesspackages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-list-incompatibleaccesspackages?view=graph-rest-beta)
 

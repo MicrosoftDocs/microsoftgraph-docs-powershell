@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurityattacksimulationrepeatoffender
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns.
 This function supports @odata.nextLink for pagination.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,13 +24,12 @@ List the tenant users who have yielded to attacks more than once in attack simul
 This function supports @odata.nextLink for pagination.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaReportSecurityAttackSimulationRepeatOffender Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportSecurityAttackSimulationRepeatOffender
 ```
-This example shows how to use the Get-MgBetaReportSecurityAttackSimulationRepeatOffender Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -173,7 +169,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurityattacksimulationrepeatoffender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurityattacksimulationrepeatoffender)
 
 [https://learn.microsoft.com/graph/api/securityreportsroot-getattacksimulationrepeatoffenders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/securityreportsroot-getattacksimulationrepeatoffenders?view=graph-rest-beta)
-
-
-
 

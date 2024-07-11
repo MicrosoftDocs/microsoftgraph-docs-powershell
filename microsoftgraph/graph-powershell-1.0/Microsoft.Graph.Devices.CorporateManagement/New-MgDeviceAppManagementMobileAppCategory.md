@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory
@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementMobileAppCategory
 
 ## SYNOPSIS
-Create new navigation property to mobileAppCategories for deviceAppManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
+Create a new mobileAppCategory object.
 
 ## SYNTAX
 
@@ -30,7 +27,19 @@ New-MgDeviceAppManagementMobileAppCategory -BodyParameter <IMicrosoftGraphMobile
 ```
 
 ## DESCRIPTION
-Create new navigation property to mobileAppCategories for deviceAppManagement
+Create a new mobileAppCategory object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -188,17 +197,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMobileAppCategory>`: Contains properties for a single Intune app category.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphMobileAppCategory\>: Contains properties for a single Intune app category.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The name of the app category.
+  \[DisplayName \<String\>\]: The name of the app category.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory)
 
-
-
-
+[https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-create?view=graph-rest-1.0)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimmappingpolicy
@@ -8,11 +8,7 @@ schema: 2.0.0
 # Get-MgBetaServicePrincipalClaimMappingPolicy
 
 ## SYNOPSIS
-The claimsMappingPolicies assigned to this service principal.
-Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalClaimMappingPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalClaimMappingPolicy?view=graph-powershell-1.0)
+List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 
 ## SYNTAX
 
@@ -24,21 +20,16 @@ Get-MgBetaServicePrincipalClaimMappingPolicy -ServicePrincipalId <String> [-Expa
 ```
 
 ## DESCRIPTION
-The claimsMappingPolicies assigned to this service principal.
-Supports $expand.
+List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 Get-MgBetaServicePrincipalClaimMappingPolicy -ServicePrincipalId $servicePrincipalId
-
-```
-This example shows how to use the Get-MgBetaServicePrincipalClaimMappingPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -268,6 +259,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimmappingpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimmappingpolicy)
 
-
-
+[https://learn.microsoft.com/graph/api/serviceprincipal-list-claimsmappingpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-list-claimsmappingpolicies?view=graph-rest-beta)
 

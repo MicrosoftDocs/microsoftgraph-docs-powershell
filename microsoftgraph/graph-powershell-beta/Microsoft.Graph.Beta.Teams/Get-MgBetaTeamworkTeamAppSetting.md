@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamappsetting
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamworkTeamAppSetting
 
 ## SYNOPSIS
-Represents tenant-wide settings for all Teams apps in the tenant.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkTeamAppSetting?view=graph-powershell-1.0)
+Read the properties and relationships of a teamsAppSettings object.
 
 ## SYNTAX
 
@@ -22,16 +19,15 @@ Get-MgBetaTeamworkTeamAppSetting [-ExpandProperty <String[]>] [-Property <String
 ```
 
 ## DESCRIPTION
-Represents tenant-wide settings for all Teams apps in the tenant.
+Read the properties and relationships of a teamsAppSettings object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaTeamworkTeamAppSetting Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkTeamAppSetting
 ```
-This example shows how to use the Get-MgBetaTeamworkTeamAppSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -125,6 +121,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamappsetting)
 
-
-
+[https://learn.microsoft.com/graph/api/teamsappsettings-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamsappsettings-get?view=graph-rest-beta)
 

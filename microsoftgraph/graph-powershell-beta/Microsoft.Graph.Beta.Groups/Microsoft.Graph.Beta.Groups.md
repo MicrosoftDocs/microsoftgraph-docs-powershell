@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Groups
 Module Guid: f649f9ce-177f-4d86-80c3-5bcb120aa9cc
 Download Help Link: {{ Update Download Link }}
@@ -578,10 +578,28 @@ Locale: en-US
 ### [Get-MgBetaUserJoinedGroup](Get-MgBetaUserJoinedGroup.md)
 {{ Fill in the Description }}
 
+### [Grant-MgBetaGroupDriveItemListItemPermission](Grant-MgBetaGroupDriveItemListItemPermission.md)
+{{ Fill in the Description }}
+
 ### [Grant-MgBetaGroupDriveItemPermission](Grant-MgBetaGroupDriveItemPermission.md)
 {{ Fill in the Description }}
 
+### [Grant-MgBetaGroupDriveListItemPermission](Grant-MgBetaGroupDriveListItemPermission.md)
+{{ Fill in the Description }}
+
+### [Grant-MgBetaGroupDriveListPermission](Grant-MgBetaGroupDriveListPermission.md)
+{{ Fill in the Description }}
+
+### [Grant-MgBetaGroupDriveRootListItemPermission](Grant-MgBetaGroupDriveRootListItemPermission.md)
+{{ Fill in the Description }}
+
 ### [Grant-MgBetaGroupDriveRootPermission](Grant-MgBetaGroupDriveRootPermission.md)
+{{ Fill in the Description }}
+
+### [Grant-MgBetaGroupSiteListItemPermission](Grant-MgBetaGroupSiteListItemPermission.md)
+{{ Fill in the Description }}
+
+### [Grant-MgBetaGroupSiteListPermission](Grant-MgBetaGroupSiteListPermission.md)
 {{ Fill in the Description }}
 
 ### [Grant-MgBetaGroupSitePermission](Grant-MgBetaGroupSitePermission.md)
@@ -959,6 +977,9 @@ Locale: en-US
 ### [Remove-MgBetaGroupPhoto](Remove-MgBetaGroupPhoto.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupPhotoContent](Remove-MgBetaGroupPhotoContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef](Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
@@ -1028,10 +1049,28 @@ Locale: en-US
 ### [Restore-MgBetaGroupSiteListItemVersion](Restore-MgBetaGroupSiteListItemVersion.md)
 {{ Fill in the Description }}
 
+### [Revoke-MgBetaGroupDriveItemListItemPermissionGrant](Revoke-MgBetaGroupDriveItemListItemPermissionGrant.md)
+{{ Fill in the Description }}
+
 ### [Revoke-MgBetaGroupDriveItemPermissionGrant](Revoke-MgBetaGroupDriveItemPermissionGrant.md)
 {{ Fill in the Description }}
 
+### [Revoke-MgBetaGroupDriveListItemPermissionGrant](Revoke-MgBetaGroupDriveListItemPermissionGrant.md)
+{{ Fill in the Description }}
+
+### [Revoke-MgBetaGroupDriveListPermissionGrant](Revoke-MgBetaGroupDriveListPermissionGrant.md)
+{{ Fill in the Description }}
+
+### [Revoke-MgBetaGroupDriveRootListItemPermissionGrant](Revoke-MgBetaGroupDriveRootListItemPermissionGrant.md)
+{{ Fill in the Description }}
+
 ### [Revoke-MgBetaGroupDriveRootPermissionGrant](Revoke-MgBetaGroupDriveRootPermissionGrant.md)
+{{ Fill in the Description }}
+
+### [Revoke-MgBetaGroupSiteListItemPermissionGrant](Revoke-MgBetaGroupSiteListItemPermissionGrant.md)
+{{ Fill in the Description }}
+
+### [Revoke-MgBetaGroupSiteListPermissionGrant](Revoke-MgBetaGroupSiteListPermissionGrant.md)
 {{ Fill in the Description }}
 
 ### [Revoke-MgBetaGroupSitePermissionGrant](Revoke-MgBetaGroupSitePermissionGrant.md)
@@ -1162,5 +1201,4 @@ Locale: en-US
 
 ### [Update-MgBetaGroupThreadPostInReplyToExtension](Update-MgBetaGroupThreadPostInReplyToExtension.md)
 {{ Fill in the Description }}
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Users.Actions
 Module Guid: 1f5a9e1d-7b62-410d-8541-b56b33a7d63a
 Download Help Link: {{ Update Download Link }}
@@ -158,7 +158,19 @@ Locale: en-US
 ### [Get-MgBetaUserPasswordSingleSignOnCredential](Get-MgBetaUserPasswordSingleSignOnCredential.md)
 {{ Fill in the Description }}
 
+### [Grant-MgBetaUserDriveItemListItemPermission](Grant-MgBetaUserDriveItemListItemPermission.md)
+{{ Fill in the Description }}
+
 ### [Grant-MgBetaUserDriveItemPermission](Grant-MgBetaUserDriveItemPermission.md)
+{{ Fill in the Description }}
+
+### [Grant-MgBetaUserDriveListItemPermission](Grant-MgBetaUserDriveListItemPermission.md)
+{{ Fill in the Description }}
+
+### [Grant-MgBetaUserDriveListPermission](Grant-MgBetaUserDriveListPermission.md)
+{{ Fill in the Description }}
+
+### [Grant-MgBetaUserDriveRootListItemPermission](Grant-MgBetaUserDriveRootListItemPermission.md)
 {{ Fill in the Description }}
 
 ### [Grant-MgBetaUserDriveRootPermission](Grant-MgBetaUserDriveRootPermission.md)
@@ -243,9 +255,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaDownloadUserManagedDeviceAppDiagnostic](Invoke-MgBetaDownloadUserManagedDeviceAppDiagnostic.md)
-{{ Fill in the Description }}
-
-### [Invoke-MgBetaDownloadUserManagedDeviceLogCollectionRequestDeviceLog](Invoke-MgBetaDownloadUserManagedDeviceLogCollectionRequestDeviceLog.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaDownUserManagedDeviceShut](Invoke-MgBetaDownUserManagedDeviceShut.md)
@@ -671,7 +680,19 @@ Locale: en-US
 ### [Restore-MgBetaUserManagedDevicePasscode](Restore-MgBetaUserManagedDevicePasscode.md)
 {{ Fill in the Description }}
 
+### [Revoke-MgBetaUserDriveItemListItemPermissionGrant](Revoke-MgBetaUserDriveItemListItemPermissionGrant.md)
+{{ Fill in the Description }}
+
 ### [Revoke-MgBetaUserDriveItemPermissionGrant](Revoke-MgBetaUserDriveItemPermissionGrant.md)
+{{ Fill in the Description }}
+
+### [Revoke-MgBetaUserDriveListItemPermissionGrant](Revoke-MgBetaUserDriveListItemPermissionGrant.md)
+{{ Fill in the Description }}
+
+### [Revoke-MgBetaUserDriveListPermissionGrant](Revoke-MgBetaUserDriveListPermissionGrant.md)
+{{ Fill in the Description }}
+
+### [Revoke-MgBetaUserDriveRootListItemPermissionGrant](Revoke-MgBetaUserDriveRootListItemPermissionGrant.md)
 {{ Fill in the Description }}
 
 ### [Revoke-MgBetaUserDriveRootPermissionGrant](Revoke-MgBetaUserDriveRootPermissionGrant.md)
@@ -723,6 +744,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Set-MgBetaUserChatMessageReplyReaction](Set-MgBetaUserChatMessageReplyReaction.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaUserCloudPcReviewStatus](Set-MgBetaUserCloudPcReviewStatus.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaUserDeviceEnrollmentConfiguration](Set-MgBetaUserDeviceEnrollmentConfiguration.md)
@@ -859,5 +883,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserPassword](Update-MgBetaUserPassword.md)
 {{ Fill in the Description }}
-
 

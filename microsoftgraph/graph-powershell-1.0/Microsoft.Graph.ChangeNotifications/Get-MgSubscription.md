@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/get-mgsubscription
@@ -11,16 +11,13 @@ schema: 2.0.0
 Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Get-MgBetaSubscription?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgSubscription [-Property <String[]>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgSubscription [-Property <String[]>] [-ExpandProperty <String[]>] [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
@@ -41,17 +38,13 @@ Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.ChangeNotifications
+```
 
 Get-MgSubscription
-
-```
-This example shows how to use the Get-MgSubscription Cmdlet.
-
 
 ## PARAMETERS
 
@@ -78,6 +71,36 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: List
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -192,6 +215,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Sort
+Order items by property values
+
+```yaml
+Type: String[]
+Parameter Sets: List
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SubscriptionId
 The unique identifier of subscription
 
@@ -203,6 +241,36 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -223,8 +291,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
+INPUTOBJECT \<IChangeNotificationsIdentity\>: Identity Parameter
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
 
 ## RELATED LINKS
 
@@ -233,7 +301,4 @@ INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/subscription-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscription-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/subscription-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscription-list?view=graph-rest-1.0)
-
-
-
 

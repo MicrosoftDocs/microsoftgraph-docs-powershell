@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepointsetting
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgAdminSharepointSetting
 
 ## SYNOPSIS
-Get settings from admin
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAdminSharepointSetting?view=graph-powershell-beta)
+Get the tenant-level settings for SharePoint and OneDrive.
 
 ## SYNTAX
 
@@ -22,7 +19,19 @@ Get-MgAdminSharepointSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 ```
 
 ## DESCRIPTION
-Get settings from admin
+Get the tenant-level settings for SharePoint and OneDrive.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -116,7 +125,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepointsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepointsetting)
 
-
-
-
+[https://learn.microsoft.com/graph/api/sharepointsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharepointsettings-get?view=graph-rest-1.0)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgtenantrelationshipmultitenantorganization
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Defines an organization with more than one instance of Microsoft Entra ID.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipMultiTenantOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaTenantRelationshipMultiTenantOrganization?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,18 @@ Get-MgTenantRelationshipMultiTenantOrganization [-ExpandProperty <String[]>] [-P
 
 ## DESCRIPTION
 Defines an organization with more than one instance of Microsoft Entra ID.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -115,8 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgtenantrelationshipmultitenantorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgtenantrelationshipmultitenantorganization)
-
-
-
-
 

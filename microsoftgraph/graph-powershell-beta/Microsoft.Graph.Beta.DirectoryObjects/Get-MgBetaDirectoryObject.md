@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobject
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a directoryObject object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObject?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,21 +37,14 @@ Get-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the properties and relationships of a directoryObject object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
 
 Get-MgBetaDirectoryObject -DirectoryObjectId $directoryObjectId
-
-```
-This example shows how to use the Get-MgBetaDirectoryObject Cmdlet.
-
 
 ## PARAMETERS
 
@@ -317,15 +307,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+INPUTOBJECT \<IDirectoryObjectsIdentity\>: Identity Parameter
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobject)
 
 [https://learn.microsoft.com/graph/api/directoryobject-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-get?view=graph-rest-beta)
-
-
-
 

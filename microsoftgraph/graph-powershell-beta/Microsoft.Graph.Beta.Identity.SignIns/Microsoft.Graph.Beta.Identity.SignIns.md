@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 Module Guid: 45b83c44-a0bb-4061-8393-a4fa6ec7af48
 Download Help Link: {{ Update Download Link }}
@@ -593,6 +593,12 @@ Locale: en-US
 ### [Get-MgBetaPolicyPermissionGrantPolicyIncludeCount](Get-MgBetaPolicyPermissionGrantPolicyIncludeCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaPolicyPermissionGrantPreApprovalPolicy](Get-MgBetaPolicyPermissionGrantPreApprovalPolicy.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaPolicyPermissionGrantPreApprovalPolicyCount](Get-MgBetaPolicyPermissionGrantPreApprovalPolicyCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaPolicyRoleManagementPolicy](Get-MgBetaPolicyRoleManagementPolicy.md)
 {{ Fill in the Description }}
 
@@ -720,6 +726,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTrustFrameworkKeySetCount](Get-MgBetaTrustFrameworkKeySetCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaTrustFrameworkKeySetKey](Get-MgBetaTrustFrameworkKeySetKey.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaTrustFrameworkKeySetKeyV2](Get-MgBetaTrustFrameworkKeySetKeyV2.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTrustFrameworkPolicy](Get-MgBetaTrustFrameworkPolicy.md)
@@ -1091,6 +1103,9 @@ Locale: en-US
 ### [New-MgBetaPolicyPermissionGrantPolicyInclude](New-MgBetaPolicyPermissionGrantPolicyInclude.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaPolicyPermissionGrantPreApprovalPolicy](New-MgBetaPolicyPermissionGrantPreApprovalPolicy.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaPolicyRoleManagementPolicy](New-MgBetaPolicyRoleManagementPolicy.md)
 {{ Fill in the Description }}
 
@@ -1223,7 +1238,13 @@ Locale: en-US
 ### [Remove-MgBetaIdentityB2CUserFlowLanguageDefaultPage](Remove-MgBetaIdentityB2CUserFlowLanguageDefaultPage.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaIdentityB2CUserFlowLanguageDefaultPageContent](Remove-MgBetaIdentityB2CUserFlowLanguageDefaultPageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaIdentityB2CUserFlowLanguageOverridePage](Remove-MgBetaIdentityB2CUserFlowLanguageOverridePage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityB2CUserFlowLanguageOverridePageContent](Remove-MgBetaIdentityB2CUserFlowLanguageOverridePageContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityB2CUserFlowUserAttributeAssignment](Remove-MgBetaIdentityB2CUserFlowUserAttributeAssignment.md)
@@ -1241,7 +1262,13 @@ Locale: en-US
 ### [Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPage](Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPage.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaIdentityB2XUserFlowLanguageOverridePage](Remove-MgBetaIdentityB2XUserFlowLanguageOverridePage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityB2XUserFlowLanguageOverridePageContent](Remove-MgBetaIdentityB2XUserFlowLanguageOverridePageContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityB2XUserFlowPostAttributeCollection](Remove-MgBetaIdentityB2XUserFlowPostAttributeCollection.md)
@@ -1430,6 +1457,9 @@ Locale: en-US
 ### [Remove-MgBetaPolicyPermissionGrantPolicyInclude](Remove-MgBetaPolicyPermissionGrantPolicyInclude.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaPolicyPermissionGrantPreApprovalPolicy](Remove-MgBetaPolicyPermissionGrantPreApprovalPolicy.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaPolicyRoleManagementPolicy](Remove-MgBetaPolicyRoleManagementPolicy.md)
 {{ Fill in the Description }}
 
@@ -1482,6 +1512,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaTrustFrameworkPolicy](Remove-MgBetaTrustFrameworkPolicy.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaTrustFrameworkPolicyContent](Remove-MgBetaTrustFrameworkPolicyContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserAuthenticationEmailMethod](Remove-MgBetaUserAuthenticationEmailMethod.md)
@@ -1575,9 +1608,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaTenantRelationshipMultiTenantOrganization](Set-MgBetaTenantRelationshipMultiTenantOrganization.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaTrustFrameworkPolicyContent](Set-MgBetaTrustFrameworkPolicyContent.md)
@@ -1823,6 +1853,9 @@ Locale: en-US
 ### [Update-MgBetaPolicyPermissionGrantPolicyInclude](Update-MgBetaPolicyPermissionGrantPolicyInclude.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaPolicyPermissionGrantPreApprovalPolicy](Update-MgBetaPolicyPermissionGrantPreApprovalPolicy.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaPolicyRoleManagementPolicy](Update-MgBetaPolicyRoleManagementPolicy.md)
 {{ Fill in the Description }}
 
@@ -1866,6 +1899,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalRiskDetection](Update-MgBetaServicePrincipalRiskDetection.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaTenantRelationshipMultiTenantOrganization](Update-MgBetaTenantRelationshipMultiTenantOrganization.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest](Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest.md)
@@ -1924,5 +1960,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserInformationProtectionThreatAssessmentRequestResult](Update-MgBetaUserInformationProtectionThreatAssessmentRequestResult.md)
 {{ Fill in the Description }}
-
 

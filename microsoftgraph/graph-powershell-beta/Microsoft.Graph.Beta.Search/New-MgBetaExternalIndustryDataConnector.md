@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Create new navigation property to dataConnectors for external
+Create a new oneRosterApiDataConnector object.
 
 ## SYNTAX
 
@@ -27,7 +27,19 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
 ```
 
 ## DESCRIPTION
-Create new navigation property to dataConnectors for external
+Create a new oneRosterApiDataConnector object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -202,85 +214,87 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataConnector>`: industryDataConnector
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIndustryDataConnector\>: industryDataConnector
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The name of the data connector.
+  \[DisplayName \<String\>\]: The name of the data connector.
 Maximum supported length is 100 characters.
-  - `[SourceSystem <IMicrosoftGraphIndustryDataSourceSystemDefinition>]`: sourceSystemDefinition
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[SourceSystem \<IMicrosoftGraphIndustryDataSourceSystemDefinition\>\]: sourceSystemDefinition
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DisplayName <String>]`: The name of the source system.
+    \[DisplayName \<String\>\]: The name of the source system.
 Maximum supported length is 100 characters.
-    - `[UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting- `[]`>]`: A collection of user matching settings by roleGroup.
-      - `[MatchTarget <IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue>]`: userMatchTargetReferenceValue
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Code <String>]`: The code of the desired referenceDefinition entry.
-        - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique identifier for an entity.
+    \[UserMatchingSettings \<IMicrosoftGraphIndustryDataUserMatchingSetting\[\]\>\]: A collection of user matching settings by roleGroup.
+      \[MatchTarget \<IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue\>\]: userMatchTargetReferenceValue
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Code \<String\>\]: The code of the desired referenceDefinition entry.
+        \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-          - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-          - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
-          - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-          - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
-      - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
-      - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique identifier for an entity.
+          \[Code \<String\>\]: The code value for the definition that must be unique within the referenceType.
+          \[DisplayName \<String\>\]: A human-readable representation of the reference code value for display in a user interface.
+          \[IsDisabled \<Boolean?\>\]: Indicates whether the definition is disabled.
+          \[ReferenceType \<String\>\]: The categorical type for a collection of enumerated values.
+          \[SortIndex \<Int32?\>\]: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
+      \[PriorityOrder \<Int32?\>\]: The priority order to apply when a user has multiple RefRole codes assigned.
+      \[RoleGroup \<IMicrosoftGraphIndustryDataRoleGroup\>\]: roleGroup
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-        - `[DisplayName <String>]`: The name of the role group.
-        - `[Roles <IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>]`: The set of roles included in the role group.
-          - `[Code <String>]`: The code of the desired referenceDefinition entry.
-          - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
-      - `[SourceIdentifier <IMicrosoftGraphIndustryDataIdentifierTypeReferenceValue>]`: identifierTypeReferenceValue
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Code <String>]`: The code of the desired referenceDefinition entry.
-        - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
-    - `[Vendor <String>]`: The name of the vendor who supplies the source system.
+        \[DisplayName \<String\>\]: The name of the role group.
+        \[Roles \<IMicrosoftGraphIndustryDataRoleReferenceValue\[\]\>\]: The set of roles included in the role group.
+          \[Code \<String\>\]: The code of the desired referenceDefinition entry.
+          \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
+      \[SourceIdentifier \<IMicrosoftGraphIndustryDataIdentifierTypeReferenceValue\>\]: identifierTypeReferenceValue
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Code \<String\>\]: The code of the desired referenceDefinition entry.
+        \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
+    \[Vendor \<String\>\]: The name of the vendor who supplies the source system.
 Maximum supported length is 100 characters.
 
-SOURCESYSTEM `<IMicrosoftGraphIndustryDataSourceSystemDefinition>`: sourceSystemDefinition
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+SOURCESYSTEM \<IMicrosoftGraphIndustryDataSourceSystemDefinition\>: sourceSystemDefinition
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The name of the source system.
+  \[DisplayName \<String\>\]: The name of the source system.
 Maximum supported length is 100 characters.
-  - `[UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting- `[]`>]`: A collection of user matching settings by roleGroup.
-    - `[MatchTarget <IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue>]`: userMatchTargetReferenceValue
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: The code of the desired referenceDefinition entry.
-      - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique identifier for an entity.
+  \[UserMatchingSettings \<IMicrosoftGraphIndustryDataUserMatchingSetting\[\]\>\]: A collection of user matching settings by roleGroup.
+    \[MatchTarget \<IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue\>\]: userMatchTargetReferenceValue
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Code \<String\>\]: The code of the desired referenceDefinition entry.
+      \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-        - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-        - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
-        - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-        - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
-    - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
-    - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+        \[Code \<String\>\]: The code value for the definition that must be unique within the referenceType.
+        \[DisplayName \<String\>\]: A human-readable representation of the reference code value for display in a user interface.
+        \[IsDisabled \<Boolean?\>\]: Indicates whether the definition is disabled.
+        \[ReferenceType \<String\>\]: The categorical type for a collection of enumerated values.
+        \[SortIndex \<Int32?\>\]: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
+    \[PriorityOrder \<Int32?\>\]: The priority order to apply when a user has multiple RefRole codes assigned.
+    \[RoleGroup \<IMicrosoftGraphIndustryDataRoleGroup\>\]: roleGroup
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[DisplayName <String>]`: The name of the role group.
-      - `[Roles <IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>]`: The set of roles included in the role group.
-        - `[Code <String>]`: The code of the desired referenceDefinition entry.
-        - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
-    - `[SourceIdentifier <IMicrosoftGraphIndustryDataIdentifierTypeReferenceValue>]`: identifierTypeReferenceValue
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: The code of the desired referenceDefinition entry.
-      - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
-  - `[Vendor <String>]`: The name of the vendor who supplies the source system.
+      \[DisplayName \<String\>\]: The name of the role group.
+      \[Roles \<IMicrosoftGraphIndustryDataRoleReferenceValue\[\]\>\]: The set of roles included in the role group.
+        \[Code \<String\>\]: The code of the desired referenceDefinition entry.
+        \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
+    \[SourceIdentifier \<IMicrosoftGraphIndustryDataIdentifierTypeReferenceValue\>\]: identifierTypeReferenceValue
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Code \<String\>\]: The code of the desired referenceDefinition entry.
+      \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
+  \[Vendor \<String\>\]: The name of the vendor who supplies the source system.
 Maximum supported length is 100 characters.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector)
 
-
-
-
+[https://learn.microsoft.com/graph/api/industrydata-onerosterapidataconnector-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-onerosterapidataconnector-post?view=graph-rest-beta)
 

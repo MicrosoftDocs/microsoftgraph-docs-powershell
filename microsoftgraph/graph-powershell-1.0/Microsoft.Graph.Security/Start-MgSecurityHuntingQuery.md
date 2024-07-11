@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/start-mgsecurityhuntingquery
@@ -8,10 +8,13 @@ schema: 2.0.0
 # Start-MgSecurityHuntingQuery
 
 ## SYNOPSIS
-Invoke action runHuntingQuery
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Start-MgBetaSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Beta.Security/Start-MgBetaSecurityHuntingQuery?view=graph-powershell-beta)
+Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.
+This method is for advanced hunting in Microsoft 365 Defender.
+This method includes a query in Kusto Query Language (KQL).
+It specifies a data table in the advanced hunting schema and a piped sequence of operators to filter or search that data, and format the query output in specific ways.
+Find out more about hunting for threats across devices, emails, apps, and identities.
+Learn about KQL.
+For information on using advanced hunting in the Microsoft 365 Defender portal, see Proactively hunt for threats with advanced hunting in Microsoft 365 Defender.
 
 ## SYNTAX
 
@@ -31,7 +34,25 @@ Start-MgSecurityHuntingQuery
 ```
 
 ## DESCRIPTION
-Invoke action runHuntingQuery
+Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.
+This method is for advanced hunting in Microsoft 365 Defender.
+This method includes a query in Kusto Query Language (KQL).
+It specifies a data table in the advanced hunting schema and a piped sequence of operators to filter or search that data, and format the query output in specific ways.
+Find out more about hunting for threats across devices, emails, apps, and identities.
+Learn about KQL.
+For information on using advanced hunting in the Microsoft 365 Defender portal, see Proactively hunt for threats with advanced hunting in Microsoft 365 Defender.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -188,16 +209,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Query <String>]`: 
-  - `[Timespan <String>]`:
+BODYPARAMETER \<IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Query \<String\>\]: 
+  \[Timespan \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/start-mgsecurityhuntingquery](https://learn.microsoft.com/powershell/module/microsoft.graph.security/start-mgsecurityhuntingquery)
-
-
-
-
 

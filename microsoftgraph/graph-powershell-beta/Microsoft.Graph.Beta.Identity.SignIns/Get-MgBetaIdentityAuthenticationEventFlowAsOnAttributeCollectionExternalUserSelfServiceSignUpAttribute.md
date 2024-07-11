@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasonattributecollectionexternaluserselfservicesignupattribute
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute
 
 ## SYNOPSIS
-Get attributes from identity
+Get an identityUserFlowAttribute collection associated with an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
+These are the attributes that are collected from the user during the authentication experience that's defined by the user flow.
 
 ## SYNTAX
 
@@ -21,7 +22,20 @@ Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelf
 ```
 
 ## DESCRIPTION
-Get attributes from identity
+Get an identityUserFlowAttribute collection associated with an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
+These are the attributes that are collected from the user during the authentication experience that's defined by the user flow.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -251,7 +265,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasonattributecollectionexternaluserselfservicesignupattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasonattributecollectionexternaluserselfservicesignupattribute)
 
-
-
-
+[https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-list-attributes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-list-attributes?view=graph-rest-beta)
 

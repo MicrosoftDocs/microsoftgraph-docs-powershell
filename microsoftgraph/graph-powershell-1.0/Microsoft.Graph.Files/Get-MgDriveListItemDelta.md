@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistitemdelta
@@ -9,15 +9,12 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection.
-Your app begins by calling delta without any parameters.The service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.Your app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
-After you received all the changes, you can apply them to your local state.To check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Your app begins by calling delta without any parameters.\nThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\nYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
+After you received all the changes, you can apply them to your local state.\nTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
 The delta feed shows the latest state for each item, not each change.
-If an item was renamed twice, it only shows up once, with its latest name.The same item might appear more than once in a delta feed, for various reasons.
+If an item was renamed twice, it only shows up once, with its latest name.\nThe same item might appear more than once in a delta feed, for various reasons.
 You should use the last occurrence you see.
 Items with this property should be removed from your local state.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveListItemDelta](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListItemDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,12 +52,24 @@ Get-MgDriveListItemDelta -InputObject <IFilesIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection.
-Your app begins by calling delta without any parameters.The service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.Your app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
-After you received all the changes, you can apply them to your local state.To check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Your app begins by calling delta without any parameters.\nThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\nYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
+After you received all the changes, you can apply them to your local state.\nTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
 The delta feed shows the latest state for each item, not each change.
-If an item was renamed twice, it only shows up once, with its latest name.The same item might appear more than once in a delta feed, for various reasons.
+If an item was renamed twice, it only shows up once, with its latest name.\nThe same item might appear more than once in a delta feed, for various reasons.
 You should use the last occurrence you see.
 Items with this property should be removed from your local state.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -337,39 +346,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
-  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemId1 <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: The unique identifier of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[ThumbnailSetId <String>]`: The unique identifier of thumbnailSet
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
+  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
+  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemId1 \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
+  \[SharedDriveItemId \<String\>\]: The unique identifier of sharedDriveItem
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[ThumbnailSetId \<String\>\]: The unique identifier of thumbnailSet
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistitemdelta)
 
 [https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0)
-
-
-
-
 

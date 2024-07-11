@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredowner
@@ -8,14 +8,10 @@ schema: 2.0.0
 # Get-MgDeviceRegisteredOwner
 
 ## SYNOPSIS
-The user that cloud joined the device or registered their personal device.
+Retrieve a list of users that are registered owners of the device.
+A registered owner is the user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredOwner](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwner?view=graph-powershell-beta)
+Currently, there can be only one owner.
 
 ## SYNTAX
 
@@ -27,24 +23,19 @@ Get-MgDeviceRegisteredOwner -DeviceId <String> [-ExpandProperty <String[]>] [-Fi
 ```
 
 ## DESCRIPTION
-The user that cloud joined the device or registered their personal device.
+Retrieve a list of users that are registered owners of the device.
+A registered owner is the user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
+Currently, there can be only one owner.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgDeviceRegisteredOwner -DeviceId $deviceId
-
-```
-This example shows how to use the Get-MgDeviceRegisteredOwner Cmdlet.
-
 
 ## PARAMETERS
 
@@ -290,6 +281,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredowner](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredowner)
 
-
-
+[https://learn.microsoft.com/graph/api/device-list-registeredowners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-list-registeredowners?view=graph-rest-1.0)
 

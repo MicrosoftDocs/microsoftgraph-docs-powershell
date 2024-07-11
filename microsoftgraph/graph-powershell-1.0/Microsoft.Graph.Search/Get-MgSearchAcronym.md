@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronym
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgSearchAcronym
 
 ## SYNOPSIS
-Administrative answer in Microsoft Search results to define common acronyms in an organization.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchAcronym?view=graph-powershell-beta)
+Read the properties and relationships of an acronym object.
 
 ## SYNTAX
 
@@ -37,7 +34,19 @@ Get-MgSearchAcronym -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Administrative answer in Microsoft Search results to define common acronyms in an organization.
+Read the properties and relationships of an acronym object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -284,22 +293,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[AcronymId <String>]`: The unique identifier of acronym
-  - `[BookmarkId <String>]`: The unique identifier of bookmark
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
-  - `[QnaId <String>]`: The unique identifier of qna
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[AcronymId \<String\>\]: The unique identifier of acronym
+  \[BookmarkId \<String\>\]: The unique identifier of bookmark
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
+  \[QnaId \<String\>\]: The unique identifier of qna
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronym)
 
+[https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-1.0)
 
-
-
+[https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-1.0)
 

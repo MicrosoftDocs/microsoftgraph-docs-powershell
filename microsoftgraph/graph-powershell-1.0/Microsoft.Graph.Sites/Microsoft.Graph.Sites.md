@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Sites
 Module Guid: 7ae8c25b-f1dd-466d-a022-b5489f919c70
 Download Help Link: {{ Update Download Link }}
@@ -2129,6 +2129,9 @@ Locale: en-US
 ### [Remove-MgGroupSiteAnalyticItemActivityStatActivity](Remove-MgGroupSiteAnalyticItemActivityStatActivity.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupSiteAnalyticItemActivityStatActivityDriveItemContent](Remove-MgGroupSiteAnalyticItemActivityStatActivityDriveItemContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupSiteColumn](Remove-MgGroupSiteColumn.md)
 {{ Fill in the Description }}
 
@@ -2174,6 +2177,9 @@ Locale: en-US
 ### [Remove-MgGroupSiteListItemDocumentSetVersionField](Remove-MgGroupSiteListItemDocumentSetVersionField.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupSiteListItemDriveItemContent](Remove-MgGroupSiteListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupSiteListItemField](Remove-MgGroupSiteListItemField.md)
 {{ Fill in the Description }}
 
@@ -2207,7 +2213,13 @@ Locale: en-US
 ### [Remove-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](Remove-MgGroupSiteOnenoteNotebookSectionGroupSectionPage.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupSiteOnenoteNotebookSectionGroupSectionPageContent](Remove-MgGroupSiteOnenoteNotebookSectionGroupSectionPageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupSiteOnenoteNotebookSectionPage](Remove-MgGroupSiteOnenoteNotebookSectionPage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupSiteOnenoteNotebookSectionPageContent](Remove-MgGroupSiteOnenoteNotebookSectionPageContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupSiteOnenoteOperation](Remove-MgGroupSiteOnenoteOperation.md)
@@ -2216,7 +2228,13 @@ Locale: en-US
 ### [Remove-MgGroupSiteOnenotePage](Remove-MgGroupSiteOnenotePage.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupSiteOnenotePageContent](Remove-MgGroupSiteOnenotePageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupSiteOnenoteResource](Remove-MgGroupSiteOnenoteResource.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupSiteOnenoteResourceContent](Remove-MgGroupSiteOnenoteResourceContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupSiteOnenoteSection](Remove-MgGroupSiteOnenoteSection.md)
@@ -2231,7 +2249,13 @@ Locale: en-US
 ### [Remove-MgGroupSiteOnenoteSectionGroupSectionPage](Remove-MgGroupSiteOnenoteSectionGroupSectionPage.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupSiteOnenoteSectionGroupSectionPageContent](Remove-MgGroupSiteOnenoteSectionGroupSectionPageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupSiteOnenoteSectionPage](Remove-MgGroupSiteOnenoteSectionPage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupSiteOnenoteSectionPageContent](Remove-MgGroupSiteOnenoteSectionPageContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupSiteOperation](Remove-MgGroupSiteOperation.md)
@@ -3064,5 +3088,4 @@ Locale: en-US
 
 ### [Update-MgSiteTermStoreSetTermRelation](Update-MgSiteTermStoreSetTermRelation.md)
 {{ Fill in the Description }}
-
 

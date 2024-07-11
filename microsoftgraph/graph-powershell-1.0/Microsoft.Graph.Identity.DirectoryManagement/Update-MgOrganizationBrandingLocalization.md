@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbrandinglocalization
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgOrganizationBrandingLocalization
 
 ## SYNOPSIS
-Update the navigation property localizations in organization
+Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
 ## SYNTAX
 
@@ -18,14 +18,14 @@ Update-MgOrganizationBrandingLocalization -OrganizationId <String>
  -OrganizationalBrandingLocalizationId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>] [-BackgroundImageInputFile <String>]
  [-BackgroundImageRelativeUrl <String>] [-BannerLogoInputFile <String>] [-BannerLogoRelativeUrl <String>]
- [-CdnList <String[]>] [-CustomAccountResetCredentialsUrl <String>]
- [-CustomCannotAccessYourAccountText <String>] [-CustomCannotAccessYourAccountUrl <String>]
- [-CustomCssInputFile <String>] [-CustomCssRelativeUrl <String>] [-CustomForgotMyPasswordText <String>]
- [-CustomPrivacyAndCookiesText <String>] [-CustomPrivacyAndCookiesUrl <String>]
- [-CustomResetItNowText <String>] [-CustomTermsOfUseText <String>] [-CustomTermsOfUseUrl <String>]
- [-FaviconInputFile <String>] [-FaviconRelativeUrl <String>] [-HeaderBackgroundColor <String>]
- [-HeaderLogoInputFile <String>] [-HeaderLogoRelativeUrl <String>] [-Id <String>]
- [-LoginPageLayoutConfiguration <IMicrosoftGraphLoginPageLayoutConfiguration>]
+ [-CdnList <String[]>] [-ContentCustomization <IMicrosoftGraphContentCustomization>]
+ [-CustomAccountResetCredentialsUrl <String>] [-CustomCannotAccessYourAccountText <String>]
+ [-CustomCannotAccessYourAccountUrl <String>] [-CustomCssInputFile <String>] [-CustomCssRelativeUrl <String>]
+ [-CustomForgotMyPasswordText <String>] [-CustomPrivacyAndCookiesText <String>]
+ [-CustomPrivacyAndCookiesUrl <String>] [-CustomResetItNowText <String>] [-CustomTermsOfUseText <String>]
+ [-CustomTermsOfUseUrl <String>] [-FaviconInputFile <String>] [-FaviconRelativeUrl <String>]
+ [-HeaderBackgroundColor <String>] [-HeaderLogoInputFile <String>] [-HeaderLogoRelativeUrl <String>]
+ [-Id <String>] [-LoginPageLayoutConfiguration <IMicrosoftGraphLoginPageLayoutConfiguration>]
  [-LoginPageTextVisibilitySettings <IMicrosoftGraphLoginPageTextVisibilitySettings>] [-SignInPageText <String>]
  [-SquareLogoDarkInputFile <String>] [-SquareLogoDarkRelativeUrl <String>] [-SquareLogoInputFile <String>]
  [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-Headers <IDictionary>]
@@ -44,7 +44,8 @@ Update-MgOrganizationBrandingLocalization -OrganizationId <String>
 Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>]
  [-BackgroundImageInputFile <String>] [-BackgroundImageRelativeUrl <String>] [-BannerLogoInputFile <String>]
- [-BannerLogoRelativeUrl <String>] [-CdnList <String[]>] [-CustomAccountResetCredentialsUrl <String>]
+ [-BannerLogoRelativeUrl <String>] [-CdnList <String[]>]
+ [-ContentCustomization <IMicrosoftGraphContentCustomization>] [-CustomAccountResetCredentialsUrl <String>]
  [-CustomCannotAccessYourAccountText <String>] [-CustomCannotAccessYourAccountUrl <String>]
  [-CustomCssInputFile <String>] [-CustomCssRelativeUrl <String>] [-CustomForgotMyPasswordText <String>]
  [-CustomPrivacyAndCookiesText <String>] [-CustomPrivacyAndCookiesUrl <String>]
@@ -66,14 +67,14 @@ Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManage
 ```
 
 ## DESCRIPTION
-Update the navigation property localizations in organization
+Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
 ## EXAMPLES
-### Example 1: Update the backgroundColor and signInPageText for the fr-FR localization using PATCH
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 $params = @{
 	backgroundColor = "#00000F"
@@ -82,14 +83,10 @@ $params = @{
 
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example will update the backgroundcolor and signinpagetext for the fr-fr localization using patch
-
-### Example 2: Override a default branding value with a blank string
-
-```powershell
-
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 $params = @{
 	signInPageText = "Welcome to Contoso France."
@@ -97,10 +94,6 @@ $params = @{
 }
 
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
-
-```
-This example will override a default branding value with a blank string
-
 
 ## PARAMETERS
 
@@ -139,7 +132,7 @@ Accept wildcard characters: False
 ### -BackgroundImageInputFile
 Input File for BackgroundImage (Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.)
+A smaller image reduces bandwidth requirements and make the page load faster.)
 
 ```yaml
 Type: String
@@ -224,6 +217,22 @@ Read-only.
 
 ```yaml
 Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ContentCustomization
+contentCustomization
+To construct, see NOTES section for CONTENTCUSTOMIZATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphContentCustomization
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -778,53 +787,61 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
-  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
-  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
-  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
-  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
-  - `[ContractId <String>]`: The unique identifier of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
-  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
-  - `[DomainId <String>]`: The unique identifier of domain
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
-  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
-  - `[OrgContactId <String>]`: The unique identifier of orgContact
-  - `[OrganizationId <String>]`: The unique identifier of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
-  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
-  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
-  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
-  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
-  - `[UserId <String>]`: The unique identifier of user
+CONTENTCUSTOMIZATION \<IMicrosoftGraphContentCustomization\>: contentCustomization
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AttributeCollection \<IMicrosoftGraphKeyValue\[\]\>\]: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
+    \[Key \<String\>\]: Key for the key-value pair.
+    \[Value \<String\>\]: Value for the key-value pair.
+  \[AttributeCollectionRelativeUrl \<String\>\]: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
+  \[RegistrationCampaign \<IMicrosoftGraphKeyValue\[\]\>\]: Represents content options to customize during MFA proofup interruptions.
+  \[RegistrationCampaignRelativeUrl \<String\>\]: The relative URL of the content options to customize during MFA proofup interruptions.
 
-LOGINPAGELAYOUTCONFIGURATION `<IMicrosoftGraphLoginPageLayoutConfiguration>`: loginPageLayoutConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsFooterShown <Boolean?>]`: Option to show the footer on the sign-in page.
-  - `[IsHeaderShown <Boolean?>]`: Option to show the header on the sign-in page.
-  - `[LayoutTemplateType <String>]`: layoutTemplateType
+INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
+  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
+  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
+  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
+  \[CommerceSubscriptionId \<String\>\]: Alternate key of companySubscription
+  \[CompanySubscriptionId \<String\>\]: The unique identifier of companySubscription
+  \[ContractId \<String\>\]: The unique identifier of contract
+  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
+  \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
+  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
+  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
+  \[DomainId \<String\>\]: The unique identifier of domain
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
+  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
+  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
+  \[OrgContactId \<String\>\]: The unique identifier of orgContact
+  \[OrganizationId \<String\>\]: The unique identifier of organization
+  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
+  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
+  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
+  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
+  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
+  \[UserId \<String\>\]: The unique identifier of user
 
-LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings>`: loginPageTextVisibilitySettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[HideAccountResetCredentials <Boolean?>]`: Option to hide the self-service password reset (SSPR) hyperlinks such as 'Can't access your account?', 'Forgot my password' and 'Reset it now' on the sign-in form.
-  - `[HideCannotAccessYourAccount <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'Can't access your account?' hyperlink on the sign-in form.
-  - `[HideForgotMyPassword <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'Forgot my password' hyperlink on the sign-in form.
-  - `[HidePrivacyAndCookies <Boolean?>]`: Option to hide the 'Privacy & Cookies' hyperlink in the footer.
-  - `[HideResetItNow <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'reset it now' hyperlink on the sign-in form.
-  - `[HideTermsOfUse <Boolean?>]`: Option to hide the 'Terms of Use' hyperlink in the footer.
+LOGINPAGELAYOUTCONFIGURATION \<IMicrosoftGraphLoginPageLayoutConfiguration\>: loginPageLayoutConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IsFooterShown \<Boolean?\>\]: Option to show the footer on the sign-in page.
+  \[IsHeaderShown \<Boolean?\>\]: Option to show the header on the sign-in page.
+  \[LayoutTemplateType \<String\>\]: layoutTemplateType
+
+LOGINPAGETEXTVISIBILITYSETTINGS \<IMicrosoftGraphLoginPageTextVisibilitySettings\>: loginPageTextVisibilitySettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[HideAccountResetCredentials \<Boolean?\>\]: Option to hide the self-service password reset (SSPR) hyperlinks such as 'Can't access your account?', 'Forgot my password' and 'Reset it now' on the sign-in form.
+  \[HideCannotAccessYourAccount \<Boolean?\>\]: Option to hide the self-service password reset (SSPR) 'Can't access your account?' hyperlink on the sign-in form.
+  \[HideForgotMyPassword \<Boolean?\>\]: Option to hide the self-service password reset (SSPR) 'Forgot my password' hyperlink on the sign-in form.
+  \[HidePrivacyAndCookies \<Boolean?\>\]: Option to hide the 'Privacy & Cookies' hyperlink in the footer.
+  \[HideResetItNow \<Boolean?\>\]: Option to hide the self-service password reset (SSPR) 'reset it now' hyperlink on the sign-in form.
+  \[HideTermsOfUse \<Boolean?\>\]: Option to hide the 'Terms of Use' hyperlink in the footer.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbrandinglocalization)
 
-
-
+[https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-1.0)
 

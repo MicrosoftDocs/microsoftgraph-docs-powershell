@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Security
 Module Guid: 06b0769e-2c63-4d60-9fb4-9ca0ec87e0d7
 Download Help Link: {{ Update Download Link }}
@@ -240,6 +240,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgSecurityCaseEdiscoveryCaseTagParent](Get-MgSecurityCaseEdiscoveryCaseTagParent.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityIdentity](Get-MgSecurityIdentity.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityIdentityHealthIssue](Get-MgSecurityIdentityHealthIssue.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityIdentityHealthIssueCount](Get-MgSecurityIdentityHealthIssueCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgSecurityIncident](Get-MgSecurityIncident.md)
@@ -722,6 +731,9 @@ Locale: en-US
 ### [New-MgSecurityCaseEdiscoveryCaseTag](New-MgSecurityCaseEdiscoveryCaseTag.md)
 {{ Fill in the Description }}
 
+### [New-MgSecurityIdentityHealthIssue](New-MgSecurityIdentityHealthIssue.md)
+{{ Fill in the Description }}
+
 ### [New-MgSecurityIncident](New-MgSecurityIncident.md)
 {{ Fill in the Description }}
 
@@ -912,6 +924,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgSecurityCaseEdiscoveryCaseTag](Remove-MgSecurityCaseEdiscoveryCaseTag.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityIdentity](Remove-MgSecurityIdentity.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityIdentityHealthIssue](Remove-MgSecurityIdentityHealthIssue.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgSecurityIncident](Remove-MgSecurityIncident.md)
@@ -1130,6 +1148,12 @@ Locale: en-US
 ### [Update-MgSecurityCaseEdiscoveryCaseTag](Update-MgSecurityCaseEdiscoveryCaseTag.md)
 {{ Fill in the Description }}
 
+### [Update-MgSecurityIdentity](Update-MgSecurityIdentity.md)
+{{ Fill in the Description }}
+
+### [Update-MgSecurityIdentityHealthIssue](Update-MgSecurityIdentityHealthIssue.md)
+{{ Fill in the Description }}
+
 ### [Update-MgSecurityIncident](Update-MgSecurityIncident.md)
 {{ Fill in the Description }}
 
@@ -1252,5 +1276,4 @@ Locale: en-US
 
 ### [Update-MgSecurityTriggerTypeRetentionEventType](Update-MgSecurityTriggerTypeRetentionEventType.md)
 {{ Fill in the Description }}
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplanbucket
@@ -11,9 +11,6 @@ schema: 2.0.0
 Read-only.
 Nullable.
 Collection of buckets in the plan.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlannerPlanBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanBucket?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +27,16 @@ Nullable.
 Collection of buckets in the plan.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -273,7 +280,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplanbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplanbucket)
-
-
-
 

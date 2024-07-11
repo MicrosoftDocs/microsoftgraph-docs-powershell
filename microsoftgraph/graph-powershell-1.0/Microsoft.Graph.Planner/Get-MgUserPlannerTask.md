@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannertask
@@ -11,9 +11,6 @@ schema: 2.0.0
 Read-only.
 Nullable.
 Returns the plannerPlans shared with the user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,18 +27,14 @@ Nullable.
 Returns the plannerPlans shared with the user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserPlannerTask -UserId $userId
-
-```
-This example shows how to use the Get-MgUserPlannerTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -270,7 +263,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannertask)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurity
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents an abstract type that contains resources for attack simulation and training reports.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSecurity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurity?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,22 @@ Get-MgReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>] [-Respo
 
 ## DESCRIPTION
 Represents an abstract type that contains resources for attack simulation and training reports.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -114,8 +127,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurity](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurity)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedappregistrationmanagedapplogcollectionrequest
@@ -52,6 +52,18 @@ New-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionReques
 
 ## DESCRIPTION
 Create new navigation property to managedAppLogCollectionRequests for deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -388,131 +400,129 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedAppLogCollectionRequest>`: The Managed App log collection response
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedAppLogCollectionRequest\>: The Managed App log collection response
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CompletedDateTime <DateTime?>]`: DateTime of when the log upload request was completed.
+  \[CompletedDateTime \<DateTime?\>\]: DateTime of when the log upload request was completed.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-  - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic logs were collected.
+  \[ManagedAppRegistrationId \<String\>\]: The unique identifier of the app instance for which diagnostic logs were collected.
 Read-only.
-  - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+  \[RequestedBy \<String\>\]: The user principal name associated with the request for the managed application log collection.
 Read-only.
-  - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
+  \[RequestedByUserPrincipalName \<String\>\]: The user principal name associated with the request for the managed application log collection.
 Read-only.
-  - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
+  \[RequestedDateTime \<DateTime?\>\]: DateTime of when the log upload request was received.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-  - `[Status <String>]`: Indicates the status for the app log collection request - pending, completed or failed.
+  \[Status \<String\>\]: Indicates the status for the app log collection request - pending, completed or failed.
 Default is pending.
-  - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
+  \[UploadedLogs \<IMicrosoftGraphManagedAppLogUpload\[\]\>\]: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
 Read-only.
-    - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+    \[ManagedAppComponent \<String\>\]: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
-    - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+    \[ManagedAppComponentDescription \<String\>\]: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
-    - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+    \[ReferenceId \<String\>\]: A provider-specific reference id for the uploaded logs.
 Read-only.
-  - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
-  - `[Version <String>]`: Version of the entity.
+    \[Status \<ManagedAppLogUploadState?\>\]: Represents the current status of the associated \`managedAppLogCollectionRequest\`.
+  \[UserLogUploadConsent \<ManagedAppLogUploadConsent?\>\]: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
+  \[Version \<String\>\]: Version of the entity.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
-  - `[BundleId <String>]`: Usage: bundleId='{bundleId}'
-  - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
-  - `[DetectedAppId <String>]`: The unique identifier of detectedApp
-  - `[DeviceAppManagementTaskId <String>]`: The unique identifier of deviceAppManagementTask
-  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: The unique identifier of deviceManagementConfigurationSettingDefinition
-  - `[DeviceManagementConfigurationSettingId <String>]`: The unique identifier of deviceManagementConfigurationSetting
-  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
-  - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
-  - `[EnterpriseCodeSigningCertificateId <String>]`: The unique identifier of enterpriseCodeSigningCertificate
-  - `[Id <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: The unique identifier of iosLobAppProvisioningConfigurationAssignment
-  - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
-  - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
-  - `[IosVppAppAssignedLicenseId <String>]`: The unique identifier of iosVppAppAssignedLicense
-  - `[ManagedAppLogCollectionRequestId <String>]`: The unique identifier of managedAppLogCollectionRequest
-  - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationState
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
-  - `[ManagedEBookCategoryId <String>]`: The unique identifier of managedEBookCategory
-  - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
-  - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
-  - `[MobileAppCatalogPackageId <String>]`: The unique identifier of mobileAppCatalogPackage
-  - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
-  - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
-  - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent
-  - `[MobileAppId <String>]`: The unique identifier of mobileApp
-  - `[MobileAppIntentAndStateId <String>]`: The unique identifier of mobileAppIntentAndState
-  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: The unique identifier of mobileAppProvisioningConfigGroupAssignment
-  - `[MobileAppRelationshipId <String>]`: The unique identifier of mobileAppRelationship
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[MobileContainedAppId <String>]`: The unique identifier of mobileContainedApp
-  - `[PolicyId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[PolicySetAssignmentId <String>]`: The unique identifier of policySetAssignment
-  - `[PolicySetId <String>]`: The unique identifier of policySet
-  - `[PolicySetItemId <String>]`: The unique identifier of policySetItem
-  - `[SecurityBaselineSettingStateId <String>]`: The unique identifier of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: The unique identifier of securityBaselineState
-  - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
-  - `[VppTokenId <String>]`: The unique identifier of vppToken
-  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
-  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
-  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: The unique identifier of windowsInformationProtectionDeviceRegistration
-  - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
-  - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
-  - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
+INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
+  \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[AssignmentFilterEvaluationStatusDetailsId \<String\>\]: The unique identifier of assignmentFilterEvaluationStatusDetails
+  \[BundleId \<String\>\]: Usage: bundleId='{bundleId}'
+  \[DefaultManagedAppProtectionId \<String\>\]: The unique identifier of defaultManagedAppProtection
+  \[DetectedAppId \<String\>\]: The unique identifier of detectedApp
+  \[DeviceAppManagementTaskId \<String\>\]: The unique identifier of deviceAppManagementTask
+  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
+  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceId \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[DeviceInstallStateId \<String\>\]: The unique identifier of deviceInstallState
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementConfigurationSettingDefinitionId \<String\>\]: The unique identifier of deviceManagementConfigurationSettingDefinition
+  \[DeviceManagementConfigurationSettingId \<String\>\]: The unique identifier of deviceManagementConfigurationSetting
+  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
+  \[EnrollmentConfigurationAssignmentId \<String\>\]: The unique identifier of enrollmentConfigurationAssignment
+  \[EnterpriseCodeSigningCertificateId \<String\>\]: The unique identifier of enterpriseCodeSigningCertificate
+  \[Id \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[IosLobAppProvisioningConfigurationAssignmentId \<String\>\]: The unique identifier of iosLobAppProvisioningConfigurationAssignment
+  \[IosLobAppProvisioningConfigurationId \<String\>\]: The unique identifier of iosLobAppProvisioningConfiguration
+  \[IosManagedAppProtectionId \<String\>\]: The unique identifier of iosManagedAppProtection
+  \[IosVppAppAssignedLicenseId \<String\>\]: The unique identifier of iosVppAppAssignedLicense
+  \[ManagedAppLogCollectionRequestId \<String\>\]: The unique identifier of managedAppLogCollectionRequest
+  \[ManagedAppOperationId \<String\>\]: The unique identifier of managedAppOperation
+  \[ManagedAppPolicyId \<String\>\]: The unique identifier of managedAppPolicy
+  \[ManagedAppRegistrationId \<String\>\]: The unique identifier of managedAppRegistration
+  \[ManagedAppStatusId \<String\>\]: The unique identifier of managedAppStatus
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[ManagedDeviceMobileAppConfigurationAssignmentId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+  \[ManagedDeviceMobileAppConfigurationDeviceStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+  \[ManagedDeviceMobileAppConfigurationId \<String\>\]: The unique identifier of managedDeviceMobileAppConfiguration
+  \[ManagedDeviceMobileAppConfigurationStateId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationState
+  \[ManagedDeviceMobileAppConfigurationUserStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+  \[ManagedEBookAssignmentId \<String\>\]: The unique identifier of managedEBookAssignment
+  \[ManagedEBookCategoryId \<String\>\]: The unique identifier of managedEBookCategory
+  \[ManagedEBookId \<String\>\]: The unique identifier of managedEBook
+  \[ManagedMobileAppId \<String\>\]: The unique identifier of managedMobileApp
+  \[MdmWindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of mdmWindowsInformationProtectionPolicy
+  \[MobileAppAssignmentId \<String\>\]: The unique identifier of mobileAppAssignment
+  \[MobileAppCatalogPackageId \<String\>\]: The unique identifier of mobileAppCatalogPackage
+  \[MobileAppCategoryId \<String\>\]: The unique identifier of mobileAppCategory
+  \[MobileAppContentFileId \<String\>\]: The unique identifier of mobileAppContentFile
+  \[MobileAppContentId \<String\>\]: The unique identifier of mobileAppContent
+  \[MobileAppId \<String\>\]: The unique identifier of mobileApp
+  \[MobileAppIntentAndStateId \<String\>\]: The unique identifier of mobileAppIntentAndState
+  \[MobileAppProvisioningConfigGroupAssignmentId \<String\>\]: The unique identifier of mobileAppProvisioningConfigGroupAssignment
+  \[MobileAppRelationshipId \<String\>\]: The unique identifier of mobileAppRelationship
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[MobileContainedAppId \<String\>\]: The unique identifier of mobileContainedApp
+  \[PolicyId \<String\>\]: Property in multi-part unique identifier of deviceHealthScriptPolicyState
+  \[PolicySetAssignmentId \<String\>\]: The unique identifier of policySetAssignment
+  \[PolicySetId \<String\>\]: The unique identifier of policySet
+  \[PolicySetItemId \<String\>\]: The unique identifier of policySetItem
+  \[SecurityBaselineSettingStateId \<String\>\]: The unique identifier of securityBaselineSettingState
+  \[SecurityBaselineStateId \<String\>\]: The unique identifier of securityBaselineState
+  \[TargetedManagedAppConfigurationId \<String\>\]: The unique identifier of targetedManagedAppConfiguration
+  \[TargetedManagedAppPolicyAssignmentId \<String\>\]: The unique identifier of targetedManagedAppPolicyAssignment
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserInstallStateSummaryId \<String\>\]: The unique identifier of userInstallStateSummary
+  \[VppTokenId \<String\>\]: The unique identifier of vppToken
+  \[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
+  \[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+  \[WindowsDefenderApplicationControlSupplementalPolicyId \<String\>\]: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsInformationProtectionAppLockerFileId \<String\>\]: The unique identifier of windowsInformationProtectionAppLockerFile
+  \[WindowsInformationProtectionDeviceRegistrationId \<String\>\]: The unique identifier of windowsInformationProtectionDeviceRegistration
+  \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
+  \[WindowsInformationProtectionWipeActionId \<String\>\]: The unique identifier of windowsInformationProtectionWipeAction
+  \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
-UPLOADEDLOGS <IMicrosoftGraphManagedAppLogUpload- `[]`>: The collection of log upload results as reported by each component on the device.
+UPLOADEDLOGS \<IMicrosoftGraphManagedAppLogUpload\[\]\>: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
 Read-only.
-  - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+  \[ManagedAppComponent \<String\>\]: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
-  - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+  \[ManagedAppComponentDescription \<String\>\]: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
-  - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+  \[ReferenceId \<String\>\]: A provider-specific reference id for the uploaded logs.
 Read-only.
+  \[Status \<ManagedAppLogUploadState?\>\]: Represents the current status of the associated \`managedAppLogCollectionRequest\`.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedappregistrationmanagedapplogcollectionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedappregistrationmanagedapplogcollectionrequest)
-
-
-
-
 

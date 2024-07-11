@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition
@@ -8,16 +8,18 @@ schema: 2.0.0
 # New-MgBetaExternalIndustryDataReferenceDefinition
 
 ## SYNOPSIS
-Create new navigation property to referenceDefinitions for external
+Create a new referenceDefinition object.
+referenceDefinition objects associate incoming data with standardized reference types values for validation.
+You can extend the following reference types with other codes that better align with your source data.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaExternalIndustryDataReferenceDefinition [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Code <String>] [-Id <String>] [-IsDisabled] [-ReferenceType <String>]
- [-SortIndex <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Code <String>] [-DisplayName <String>] [-Id <String>] [-IsDisabled]
+ [-ReferenceType <String>] [-SortIndex <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -28,7 +30,21 @@ New-MgBetaExternalIndustryDataReferenceDefinition
 ```
 
 ## DESCRIPTION
-Create new navigation property to referenceDefinitions for external
+Create a new referenceDefinition object.
+referenceDefinition objects associate incoming data with standardized reference types values for validation.
+You can extend the following reference types with other codes that better align with your source data.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -78,6 +94,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -DisplayName
+A human-readable representation of the reference code value for display in a user interface.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -110,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDisabled
-Indicates whether the definition has been disabled.
+Indicates whether the definition is disabled.
 
 ```yaml
 Type: SwitchParameter
@@ -170,7 +201,8 @@ Accept wildcard characters: False
 ```
 
 ### -SortIndex
-The ordering index to present the definitions within a type consistently in user interfaces.
+The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
 
 ```yaml
 Type: Int32
@@ -231,20 +263,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataReferenceDefinition>`: referenceDefinition
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIndustryDataReferenceDefinition\>: referenceDefinition
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-  - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
-  - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-  - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+  \[Code \<String\>\]: The code value for the definition that must be unique within the referenceType.
+  \[DisplayName \<String\>\]: A human-readable representation of the reference code value for display in a user interface.
+  \[IsDisabled \<Boolean?\>\]: Indicates whether the definition is disabled.
+  \[ReferenceType \<String\>\]: The categorical type for a collection of enumerated values.
+  \[SortIndex \<Int32?\>\]: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition)
 
-
-
-
+[https://learn.microsoft.com/graph/api/industrydata-referencedefinition-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-referencedefinition-post?view=graph-rest-beta)
 

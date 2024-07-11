@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsenderbyref
@@ -8,25 +8,34 @@ schema: 2.0.0
 # Get-MgBetaGroupAcceptedSenderByRef
 
 ## SYNOPSIS
-The list of users or groups allowed to create posts or calendar events in this group.
-If this list is non-empty, then only users or groups listed here can post.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
+Get a list of users or groups that are in the accepted-senders list for this group.
+Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).
+Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 ## SYNTAX
 
 ```
-Get-MgBetaGroupAcceptedSenderByRef -GroupId <String> [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaGroupAcceptedSenderByRef -GroupId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The list of users or groups allowed to create posts or calendar events in this group.
-If this list is non-empty, then only users or groups listed here can post.
+Get a list of users or groups that are in the accepted-senders list for this group.
+Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).
+Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -151,6 +160,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -211,6 +235,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsenderbyref)
 
-
-
+[https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-beta)
 

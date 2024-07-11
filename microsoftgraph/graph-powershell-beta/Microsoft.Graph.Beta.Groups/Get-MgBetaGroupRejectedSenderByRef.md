@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouprejectedsenderbyref
@@ -8,36 +8,31 @@ schema: 2.0.0
 # Get-MgBetaGroupRejectedSenderByRef
 
 ## SYNOPSIS
-The list of users or groups not allowed to create posts or calendar events in this group.
-Nullable
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupRejectedSenderByRef?view=graph-powershell-1.0)
+Get a list of users or groups that are in the rejected-senders list for this group.
+Users in the rejected senders list can't post to conversations of the group (identified in the GET request URL).
+Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you get an error.
 
 ## SYNTAX
 
 ```
-Get-MgBetaGroupRejectedSenderByRef -GroupId <String> [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaGroupRejectedSenderByRef -GroupId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The list of users or groups not allowed to create posts or calendar events in this group.
-Nullable
+Get a list of users or groups that are in the rejected-senders list for this group.
+Users in the rejected senders list can't post to conversations of the group (identified in the GET request URL).
+Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you get an error.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 Get-MgBetaGroupRejectedSender -GroupId $groupId
-```
-This example shows how to use the Get-MgBetaGroupRejectedSenderByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -162,6 +157,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -222,6 +232,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouprejectedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouprejectedsenderbyref)
 
-
-
+[https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-beta)
 

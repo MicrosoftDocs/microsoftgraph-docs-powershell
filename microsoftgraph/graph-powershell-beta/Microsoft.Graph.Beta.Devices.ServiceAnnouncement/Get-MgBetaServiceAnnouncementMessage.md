@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessage
@@ -8,11 +8,9 @@ schema: 2.0.0
 # Get-MgBetaServiceAnnouncementMessage
 
 ## SYNOPSIS
-A collection of service messages for tenant.
-This property is a contained navigation property, it is nullable and readonly.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessage?view=graph-powershell-1.0)
+Retrieve the properties and relationships of a serviceUpdateMessage object.
+This operation retrieves a specified service update message for the tenant.
+The operation returns an error if the message does not exist for the tenant.
 
 ## SYNTAX
 
@@ -39,21 +37,18 @@ Get-MgBetaServiceAnnouncementMessage -InputObject <IDevicesServiceAnnouncementId
 ```
 
 ## DESCRIPTION
-A collection of service messages for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+Retrieve the properties and relationships of a serviceUpdateMessage object.
+This operation retrieves a specified service update message for the tenant.
+The operation returns an error if the message does not exist for the tenant.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+```
 
 Get-MgBetaServiceAnnouncementMessage
-
-```
-This example shows how to use the Get-MgBetaServiceAnnouncementMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -300,16 +295,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
-  - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
-  - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
-  - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
-  - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
+INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
+  \[ServiceAnnouncementAttachmentId \<String\>\]: The unique identifier of serviceAnnouncementAttachment
+  \[ServiceHealthId \<String\>\]: The unique identifier of serviceHealth
+  \[ServiceHealthIssueId \<String\>\]: The unique identifier of serviceHealthIssue
+  \[ServiceUpdateMessageId \<String\>\]: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessage)
 
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceupdatemessage-get?view=graph-rest-beta)
 
-
+[https://learn.microsoft.com/graph/api/serviceannouncement-list-messages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceannouncement-list-messages?view=graph-rest-beta)
 

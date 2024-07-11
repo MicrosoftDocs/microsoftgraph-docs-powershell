@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangecustomappscope
@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgBetaRoleManagementExchangeCustomAppScope
 
 ## SYNOPSIS
-Create new navigation property to customAppScopes for roleManagement
+Create a new customAppScope object for an RBAC provider.
+Currently only the Exchange Online RBAC provider is supported.
 
 ## SYNTAX
 
@@ -28,7 +29,20 @@ New-MgBetaRoleManagementExchangeCustomAppScope -BodyParameter <IMicrosoftGraphCu
 ```
 
 ## DESCRIPTION
-Create new navigation property to customAppScopes for roleManagement
+Create a new customAppScope object for an RBAC provider.
+Currently only the Exchange Online RBAC provider is supported.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -219,23 +233,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCustomAppScope>`: customAppScope
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
+BODYPARAMETER \<IMicrosoftGraphCustomAppScope\>: customAppScope
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
 This property is read only.
-  - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+  \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
 This property is read only.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CustomAttributes <IMicrosoftGraphCustomAppScopeAttributesDictionary>]`: customAppScopeAttributesDictionary
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  \[CustomAttributes \<IMicrosoftGraphCustomAppScopeAttributesDictionary\>\]: customAppScopeAttributesDictionary
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangecustomappscope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangecustomappscope)
 
-
-
-
+[https://learn.microsoft.com/graph/api/unifiedrbacapplication-post-customappscope?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedrbacapplication-post-customappscope?view=graph-rest-beta)
 
