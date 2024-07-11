@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatarolegroup
@@ -213,38 +213,41 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphIndustryDataRoleGroup\>: roleGroup
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphIndustryDataRoleGroup>`: roleGroup
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The name of the role group.
-  \[Roles \<IMicrosoftGraphIndustryDataRoleReferenceValue\[\]\>\]: The set of roles included in the role group.
-    \[Code \<String\>\]: The code of the desired referenceDefinition entry.
-    \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+  - `[DisplayName <String>]`: The name of the role group.
+  - `[Roles <IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>]`: The set of roles included in the role group.
+    - `[Code <String>]`: The code of the desired referenceDefinition entry.
+    - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Code \<String\>\]: The code value for the definition that must be unique within the referenceType.
-      \[DisplayName \<String\>\]: A human-readable representation of the reference code value for display in a user interface.
-      \[IsDisabled \<Boolean?\>\]: Indicates whether the definition is disabled.
-      \[ReferenceType \<String\>\]: The categorical type for a collection of enumerated values.
-      \[SortIndex \<Int32?\>\]: The index that specifies the order in which to present the definition to the user.
+      - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
+      - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+      - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
+      - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
+      - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
 Must be unique within the referenceType.
 
-ROLES \<IMicrosoftGraphIndustryDataRoleReferenceValue\[\]\>: The set of roles included in the role group.
-  \[Code \<String\>\]: The code of the desired referenceDefinition entry.
-  \[Value \<IMicrosoftGraphIndustryDataReferenceDefinition\>\]: referenceDefinition
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+ROLES <IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>: The set of roles included in the role group.
+  - `[Code <String>]`: The code of the desired referenceDefinition entry.
+  - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Code \<String\>\]: The code value for the definition that must be unique within the referenceType.
-    \[DisplayName \<String\>\]: A human-readable representation of the reference code value for display in a user interface.
-    \[IsDisabled \<Boolean?\>\]: Indicates whether the definition is disabled.
-    \[ReferenceType \<String\>\]: The categorical type for a collection of enumerated values.
-    \[SortIndex \<Int32?\>\]: The index that specifies the order in which to present the definition to the user.
+    - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
+    - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+    - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
+    - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
+    - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
 Must be unique within the referenceType.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatarolegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatarolegroup)
+
+
+
 

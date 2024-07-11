@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartner
@@ -198,99 +198,102 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPartnerSecurity\>: partnerSecurity
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPartnerSecurity>`: partnerSecurity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[SecurityAlerts \<IMicrosoftGraphPartnerSecurityAlert\[\]\>\]: The security alerts or a vulnerability of a CSP partner's customer that the partner must be made aware of for further action.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[SecurityAlerts <IMicrosoftGraphPartnerSecurityAlert- `[]`>]`: The security alerts or a vulnerability of a CSP partner's customer that the partner must be made aware of for further action.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ActivityLogs \<IMicrosoftGraphPartnerSecurityActivityLog\[\]\>\]: Represents the activity by a partner and includes details of state transitions, who performed them, and when they occurred.
-      \[StatusFrom \<String\>\]: securityAlertStatus
-      \[StatusTo \<String\>\]: securityAlertStatus
-      \[UpdatedBy \<String\>\]: The UPN of the partner user who did the status update activity.
+    - `[ActivityLogs <IMicrosoftGraphPartnerSecurityActivityLog- `[]`>]`: Represents the activity by a partner and includes details of state transitions, who performed them, and when they occurred.
+      - `[StatusFrom <String>]`: securityAlertStatus
+      - `[StatusTo <String>]`: securityAlertStatus
+      - `[UpdatedBy <String>]`: The UPN of the partner user who did the status update activity.
 This attribute is set by the system.
-      \[UpdatedDateTime \<DateTime?\>\]: The date and time for the status update activity.
+      - `[UpdatedDateTime <DateTime?>]`: The date and time for the status update activity.
 This attribute is set by the system.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    \[AdditionalDetails \<IMicrosoftGraphPartnerSecurityAdditionalDataDictionary\>\]: additionalDataDictionary
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AffectedResources \<IMicrosoftGraphPartnerSecurityAffectedResource\[\]\>\]: Contains details of the resources affected by the security alert.
-      \[ResourceId \<String\>\]: The resource path of the resource affected by the security alert.
-      \[ResourceType \<String\>\]: The type of resource.
-    \[AlertType \<String\>\]: The type of vulnerability that impacts the customer due to this alert.
+    - `[AdditionalDetails <IMicrosoftGraphPartnerSecurityAdditionalDataDictionary>]`: additionalDataDictionary
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AffectedResources <IMicrosoftGraphPartnerSecurityAffectedResource- `[]`>]`: Contains details of the resources affected by the security alert.
+      - `[ResourceId <String>]`: The resource path of the resource affected by the security alert.
+      - `[ResourceType <String>]`: The type of resource.
+    - `[AlertType <String>]`: The type of vulnerability that impacts the customer due to this alert.
 For more information, see Security alerts reference guide.
-    \[CatalogOfferId \<String\>\]: The modern offer category ID of the subscription.
-    \[ConfidenceLevel \<String\>\]: securityAlertConfidence
-    \[CustomerTenantId \<String\>\]: The impacted customer tenant associated with the alert.
-    \[Description \<String\>\]: The description for each alert.
-    \[DetectedDateTime \<DateTime?\>\]: Time when the alert was detected or created.
+    - `[CatalogOfferId <String>]`: The modern offer category ID of the subscription.
+    - `[ConfidenceLevel <String>]`: securityAlertConfidence
+    - `[CustomerTenantId <String>]`: The impacted customer tenant associated with the alert.
+    - `[Description <String>]`: The description for each alert.
+    - `[DetectedDateTime <DateTime?>]`: Time when the alert was detected or created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    \[DisplayName \<String\>\]: The display name of the alert.
-    \[FirstObservedDateTime \<DateTime?\>\]: Time of the first activity associated with the alert.
+    - `[DisplayName <String>]`: The display name of the alert.
+    - `[FirstObservedDateTime <DateTime?>]`: Time of the first activity associated with the alert.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    \[IsTest \<Boolean?\>\]: Indicates whether an alert is a test alert.
-    \[LastObservedDateTime \<DateTime?\>\]: Time of the latest activity associated with the alert.
+    - `[IsTest <Boolean?>]`: Indicates whether an alert is a test alert.
+    - `[LastObservedDateTime <DateTime?>]`: Time of the latest activity associated with the alert.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    \[ResolvedBy \<String\>\]: The UPN of the partner user who resolved the alert.
-    \[ResolvedOnDateTime \<DateTime?\>\]: Time when the alert was resolved.
+    - `[ResolvedBy <String>]`: The UPN of the partner user who resolved the alert.
+    - `[ResolvedOnDateTime <DateTime?>]`: Time when the alert was resolved.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    \[ResolvedReason \<String\>\]: securityAlertResolvedReason
-    \[Severity \<String\>\]: securityAlertSeverity
-    \[Status \<String\>\]: securityAlertStatus
-    \[SubscriptionId \<String\>\]: The subscription associated with the alert for the customer.
-    \[ValueAddedResellerTenantId \<String\>\]: The value-added reseller tenant associated with the partner tenant and customer tenant.
+    - `[ResolvedReason <String>]`: securityAlertResolvedReason
+    - `[Severity <String>]`: securityAlertSeverity
+    - `[Status <String>]`: securityAlertStatus
+    - `[SubscriptionId <String>]`: The subscription associated with the alert for the customer.
+    - `[ValueAddedResellerTenantId <String>]`: The value-added reseller tenant associated with the partner tenant and customer tenant.
 
-SECURITYALERTS \<IMicrosoftGraphPartnerSecurityAlert\[\]\>: The security alerts or a vulnerability of a CSP partner's customer that the partner must be made aware of for further action.
-  \[Id \<String\>\]: The unique identifier for an entity.
+SECURITYALERTS <IMicrosoftGraphPartnerSecurityAlert- `[]`>: The security alerts or a vulnerability of a CSP partner's customer that the partner must be made aware of for further action.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActivityLogs \<IMicrosoftGraphPartnerSecurityActivityLog\[\]\>\]: Represents the activity by a partner and includes details of state transitions, who performed them, and when they occurred.
-    \[StatusFrom \<String\>\]: securityAlertStatus
-    \[StatusTo \<String\>\]: securityAlertStatus
-    \[UpdatedBy \<String\>\]: The UPN of the partner user who did the status update activity.
+  - `[ActivityLogs <IMicrosoftGraphPartnerSecurityActivityLog- `[]`>]`: Represents the activity by a partner and includes details of state transitions, who performed them, and when they occurred.
+    - `[StatusFrom <String>]`: securityAlertStatus
+    - `[StatusTo <String>]`: securityAlertStatus
+    - `[UpdatedBy <String>]`: The UPN of the partner user who did the status update activity.
 This attribute is set by the system.
-    \[UpdatedDateTime \<DateTime?\>\]: The date and time for the status update activity.
+    - `[UpdatedDateTime <DateTime?>]`: The date and time for the status update activity.
 This attribute is set by the system.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[AdditionalDetails \<IMicrosoftGraphPartnerSecurityAdditionalDataDictionary\>\]: additionalDataDictionary
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AffectedResources \<IMicrosoftGraphPartnerSecurityAffectedResource\[\]\>\]: Contains details of the resources affected by the security alert.
-    \[ResourceId \<String\>\]: The resource path of the resource affected by the security alert.
-    \[ResourceType \<String\>\]: The type of resource.
-  \[AlertType \<String\>\]: The type of vulnerability that impacts the customer due to this alert.
+  - `[AdditionalDetails <IMicrosoftGraphPartnerSecurityAdditionalDataDictionary>]`: additionalDataDictionary
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AffectedResources <IMicrosoftGraphPartnerSecurityAffectedResource- `[]`>]`: Contains details of the resources affected by the security alert.
+    - `[ResourceId <String>]`: The resource path of the resource affected by the security alert.
+    - `[ResourceType <String>]`: The type of resource.
+  - `[AlertType <String>]`: The type of vulnerability that impacts the customer due to this alert.
 For more information, see Security alerts reference guide.
-  \[CatalogOfferId \<String\>\]: The modern offer category ID of the subscription.
-  \[ConfidenceLevel \<String\>\]: securityAlertConfidence
-  \[CustomerTenantId \<String\>\]: The impacted customer tenant associated with the alert.
-  \[Description \<String\>\]: The description for each alert.
-  \[DetectedDateTime \<DateTime?\>\]: Time when the alert was detected or created.
+  - `[CatalogOfferId <String>]`: The modern offer category ID of the subscription.
+  - `[ConfidenceLevel <String>]`: securityAlertConfidence
+  - `[CustomerTenantId <String>]`: The impacted customer tenant associated with the alert.
+  - `[Description <String>]`: The description for each alert.
+  - `[DetectedDateTime <DateTime?>]`: Time when the alert was detected or created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[DisplayName \<String\>\]: The display name of the alert.
-  \[FirstObservedDateTime \<DateTime?\>\]: Time of the first activity associated with the alert.
+  - `[DisplayName <String>]`: The display name of the alert.
+  - `[FirstObservedDateTime <DateTime?>]`: Time of the first activity associated with the alert.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[IsTest \<Boolean?\>\]: Indicates whether an alert is a test alert.
-  \[LastObservedDateTime \<DateTime?\>\]: Time of the latest activity associated with the alert.
+  - `[IsTest <Boolean?>]`: Indicates whether an alert is a test alert.
+  - `[LastObservedDateTime <DateTime?>]`: Time of the latest activity associated with the alert.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[ResolvedBy \<String\>\]: The UPN of the partner user who resolved the alert.
-  \[ResolvedOnDateTime \<DateTime?\>\]: Time when the alert was resolved.
+  - `[ResolvedBy <String>]`: The UPN of the partner user who resolved the alert.
+  - `[ResolvedOnDateTime <DateTime?>]`: Time when the alert was resolved.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[ResolvedReason \<String\>\]: securityAlertResolvedReason
-  \[Severity \<String\>\]: securityAlertSeverity
-  \[Status \<String\>\]: securityAlertStatus
-  \[SubscriptionId \<String\>\]: The subscription associated with the alert for the customer.
-  \[ValueAddedResellerTenantId \<String\>\]: The value-added reseller tenant associated with the partner tenant and customer tenant.
+  - `[ResolvedReason <String>]`: securityAlertResolvedReason
+  - `[Severity <String>]`: securityAlertSeverity
+  - `[Status <String>]`: securityAlertStatus
+  - `[SubscriptionId <String>]`: The subscription associated with the alert for the customer.
+  - `[ValueAddedResellerTenantId <String>]`: The value-added reseller tenant associated with the partner tenant and customer tenant.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartner)
+
+
+
 

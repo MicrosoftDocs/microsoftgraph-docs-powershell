@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Files
 Module Guid: 45ddab16-496a-4ef0-ac17-dbf0f93494d3
 Download Help Link: {{ Update Download Link }}
@@ -3358,4 +3358,5 @@ Locale: en-US
 
 ### [Update-MgUserDriveRootVersion](Update-MgUserDriveRootVersion.md)
 {{ Fill in the Description }}
+
 
