@@ -52,20 +52,30 @@ Set-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementActi
 Not yet documented
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Actions
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	assignments = @(
+		@{
+			"@odata.type" = "#microsoft.graph.deviceCompliancePolicyAssignment"
+			id = "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92"
+			target = @{
+				"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+				collectionId = "Collection Id value"
+			}
+		}
+	)
+}
 
-{{ Add output here }}
+Set-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgDeviceManagementDeviceCompliancePolicy Cmdlet.
+
 
 ## PARAMETERS
 

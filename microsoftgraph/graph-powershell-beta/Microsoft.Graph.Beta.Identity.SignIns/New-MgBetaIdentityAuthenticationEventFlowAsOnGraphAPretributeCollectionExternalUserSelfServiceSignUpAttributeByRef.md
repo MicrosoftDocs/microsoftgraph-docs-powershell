@@ -52,16 +52,21 @@ You can add both custom and built-in attributes to a user flow.
 Prior to this step, PATCH the user flow to add the attribute to the attribute collection step (to determine how it will be displayed).
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.id" = "https://graph.microsoft.com/beta/identity/userFlowAttributes/city"
+}
+
+New-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef Cmdlet.
+
 
 ## PARAMETERS
 

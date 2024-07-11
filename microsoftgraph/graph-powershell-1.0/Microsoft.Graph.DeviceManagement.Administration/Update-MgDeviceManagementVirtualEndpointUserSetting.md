@@ -53,16 +53,28 @@ Update-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagem
 Update the properties of a cloudPcUserSetting object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.cloudPcUserSetting"
+	displayName = "Example"
+	restorePointSetting = @{
+		frequencyType = "sixteenHours"
+		userRestoreEnabled = $true
+	}
+	localAdminEnabled = $false
+	resetEnabled = $true
+}
+
+Update-MgDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgDeviceManagementVirtualEndpointUserSetting Cmdlet.
+
 
 ## PARAMETERS
 

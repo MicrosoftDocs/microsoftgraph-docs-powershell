@@ -48,16 +48,24 @@ Move a planner plan object from one planner plan container to another.
 Planner plans can only be moved from a user container to a group container.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Planner
+
+$params = @{
+	container = @{
+		containerId = "groupId"
+		type = "group"
+	}
+}
+
+Move-MgBetaPlannerPlanToContainer -PlannerPlanId $plannerPlanId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Move-MgBetaPlannerPlanToContainer Cmdlet.
+
 
 ## PARAMETERS
 

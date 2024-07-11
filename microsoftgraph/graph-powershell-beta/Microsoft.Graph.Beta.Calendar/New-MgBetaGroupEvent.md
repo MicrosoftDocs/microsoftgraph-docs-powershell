@@ -81,11 +81,11 @@ New-MgBetaGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoft
 Use this API to create a new event.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -107,7 +107,7 @@ $params = @{
 	attendees = @(
 		@{
 			emailAddress = @{
-				address = "adelev@contoso.onmicrosoft.com"
+				address = "adelev@contoso.com"
 				name = "Adele Vance"
 			}
 			type = "required"
@@ -116,6 +116,10 @@ $params = @{
 }
 
 New-MgBetaGroupEvent -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaGroupEvent Cmdlet.
+
 
 ## PARAMETERS
 

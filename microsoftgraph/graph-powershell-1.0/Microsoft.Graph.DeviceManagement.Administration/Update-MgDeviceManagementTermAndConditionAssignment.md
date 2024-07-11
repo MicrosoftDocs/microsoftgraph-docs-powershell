@@ -49,20 +49,25 @@ Update-MgDeviceManagementTermAndConditionAssignment -InputObject <IDeviceManagem
 Update the properties of a termsAndConditionsAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.termsAndConditionsAssignment"
+	target = @{
+		"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+		collectionId = "Collection Id value"
+	}
+}
 
-{{ Add output here }}
+Update-MgDeviceManagementTermAndConditionAssignment -TermsAndConditionsId $termsAndConditionsId -TermsAndConditionsAssignmentId $termsAndConditionsAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementTermAndConditionAssignment Cmdlet.
+
 
 ## PARAMETERS
 

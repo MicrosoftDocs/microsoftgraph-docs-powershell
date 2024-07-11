@@ -51,20 +51,27 @@ Update the properties of an authenticationEventListener object.
 You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartListener"
+	conditions = @{
+		applications = @{
+			includeAllApplications = $false
+		}
+	}
+	priority = 500
+}
 
-{{ Add output here }}
+Update-MgBetaIdentityAuthenticationEventListener -AuthenticationEventListenerId $authenticationEventListenerId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityAuthenticationEventListener Cmdlet.
+
 
 ## PARAMETERS
 

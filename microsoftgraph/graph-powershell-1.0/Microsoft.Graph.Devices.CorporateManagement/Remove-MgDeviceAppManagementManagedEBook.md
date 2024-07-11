@@ -33,16 +33,17 @@ Remove-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManageme
 Deletes a iosVppEBook.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Remove-MgDeviceAppManagementManagedEBook -ManagedEBookId $managedEBookId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDeviceAppManagementManagedEBook Cmdlet.
+
 
 ## PARAMETERS
 

@@ -38,16 +38,17 @@ Get-MgBetaReportUserInsightMonthlyActiveUser -InputObject <IReportsIdentity> [-E
 Insights for active users on apps registered in the tenant for a specified period.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportUserInsightMonthlyActiveUser
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaReportUserInsightMonthlyActiveUser Cmdlet.
+
 
 ## PARAMETERS
 

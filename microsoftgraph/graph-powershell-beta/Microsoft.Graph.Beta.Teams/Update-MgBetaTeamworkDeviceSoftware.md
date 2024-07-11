@@ -50,16 +50,22 @@ Update the software for a Microsoft Teams-enabled device.
 This API triggers a long-running operation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 $params = @{
-	SoftwareType = "teamsClient"
-	SoftwareVersion = "1.0.96.22"
+	softwareType = "teamsClient"
+	softwareVersion = "1.0.96.22"
 }
+
 Update-MgBetaTeamworkDeviceSoftware -TeamworkDeviceId $teamworkDeviceId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaTeamworkDeviceSoftware Cmdlet.
+
 
 ## PARAMETERS
 

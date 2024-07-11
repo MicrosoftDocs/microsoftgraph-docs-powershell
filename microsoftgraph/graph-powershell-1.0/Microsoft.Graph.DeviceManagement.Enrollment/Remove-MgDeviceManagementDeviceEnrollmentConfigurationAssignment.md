@@ -36,16 +36,17 @@ Remove-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
 Deletes a enrollmentConfigurationAssignment.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
+
+Remove-MgDeviceManagementDeviceEnrollmentConfigurationAssignment -DeviceEnrollmentConfigurationId $deviceEnrollmentConfigurationId -EnrollmentConfigurationAssignmentId $enrollmentConfigurationAssignmentId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDeviceManagementDeviceEnrollmentConfigurationAssignment Cmdlet.
+
 
 ## PARAMETERS
 

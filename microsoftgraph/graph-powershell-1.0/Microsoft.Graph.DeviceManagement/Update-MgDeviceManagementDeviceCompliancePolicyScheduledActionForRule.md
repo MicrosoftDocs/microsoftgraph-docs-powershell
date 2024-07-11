@@ -51,20 +51,22 @@ Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule -InputObje
 Update the properties of a deviceComplianceScheduledActionForRule object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceComplianceScheduledActionForRule"
+	ruleName = "Rule Name value"
+}
 
-{{ Add output here }}
+Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceComplianceScheduledActionForRuleId $deviceComplianceScheduledActionForRuleId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule Cmdlet.
+
 
 ## PARAMETERS
 

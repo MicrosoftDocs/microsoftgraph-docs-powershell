@@ -45,16 +45,17 @@ Get a browserSiteList that contains browserSite and browserSharedCookie resource
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgAdminEdgeInternetExplorerModeSiteList
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgAdminEdgeInternetExplorerModeSiteList Cmdlet.
+
 
 ## PARAMETERS
 

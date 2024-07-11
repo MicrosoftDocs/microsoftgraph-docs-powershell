@@ -42,16 +42,17 @@ Get-MgDeviceAppManagementiOSManagedAppProtectionApp -InputObject <IDevicesCorpor
 Read properties and relationships of the managedMobileApp object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementiOSManagedAppProtectionApp -IosManagedAppProtectionId $iosManagedAppProtectionId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceAppManagementiOSManagedAppProtectionApp Cmdlet.
+
 
 ## PARAMETERS
 

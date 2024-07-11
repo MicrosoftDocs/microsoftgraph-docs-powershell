@@ -34,20 +34,17 @@ Remove-MgDeviceManagementDeviceCompliancePolicyAssignment -InputObject <IDeviceM
 Deletes a deviceCompliancePolicyAssignment.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Remove-MgDeviceManagementDeviceCompliancePolicyAssignment -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceCompliancePolicyAssignmentId $deviceCompliancePolicyAssignmentId
 
-{{ Add output here }}
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceCompliancePolicyAssignment Cmdlet.
+
 
 ## PARAMETERS
 

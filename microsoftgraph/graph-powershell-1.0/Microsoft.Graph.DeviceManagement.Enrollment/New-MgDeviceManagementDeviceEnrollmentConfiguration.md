@@ -36,16 +36,60 @@ New-MgDeviceManagementDeviceEnrollmentConfiguration
 Create a new deviceEnrollmentPlatformRestrictionsConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration"
+	displayName = "Display Name value"
+	description = "Description value"
+	priority = 8
+	version = 7
+	iosRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	windowsRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	windowsMobileRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	androidRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	macOSRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+}
+
+New-MgDeviceManagementDeviceEnrollmentConfiguration -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgDeviceManagementDeviceEnrollmentConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

@@ -55,16 +55,43 @@ This API can be used to create a custom item.
 The containing externalConnection must have a schema registered of the corresponding type.
 
 ## EXAMPLES
+### Example: Create a custom item
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Search
+
+$params = @{
+	acl = @(
+		@{
+			type = "user"
+			value = "e811976d-83df-4cbd-8b9b-5215b18aa874"
+			accessType = "grant"
+			identitySource = "azureActiveDirectory"
+		}
+		@{
+			type = "group"
+			value = "14m1b9c38qe647f6a"
+			accessType = "deny"
+			identitySource = "external"
+		}
+	)
+	properties = @{
+		title = "Error in the payment gateway"
+		priority = 
+		assignee = "john@contoso.com"
+	}
+	content = @{
+		value = "Error in payment gateway..."
+		type = "text"
+	}
+}
+
+Set-MgBetaExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example will### example: create a custom item
+
 
 ## PARAMETERS
 

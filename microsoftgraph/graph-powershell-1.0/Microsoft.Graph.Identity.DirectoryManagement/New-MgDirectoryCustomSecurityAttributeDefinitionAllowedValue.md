@@ -49,16 +49,22 @@ New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 Create a new allowedValue object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = @{
+	id = "Alpine"
+	isActive = "true"
+}
+
+New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue Cmdlet.
+
 
 ## PARAMETERS
 

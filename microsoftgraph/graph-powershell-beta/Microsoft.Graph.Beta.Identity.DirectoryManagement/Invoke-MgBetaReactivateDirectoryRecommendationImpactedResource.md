@@ -34,20 +34,17 @@ This action updates the status of the resource to active.
 This method is relevant only if the status of the impactedResource object is dismissed, postponed, or completedByUser.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgBetaReactivateDirectoryRecommendationImpactedResource -RecommendationId $recommendationId -ImpactedResourceId $impactedResourceId
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgBetaReactivateDirectoryRecommendationImpactedResource Cmdlet.
+
 
 ## PARAMETERS
 

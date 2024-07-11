@@ -36,16 +36,17 @@ Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser
 Retrieve the schedules for active role assignment operations for which the signed-in user is the principal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser -On $onId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

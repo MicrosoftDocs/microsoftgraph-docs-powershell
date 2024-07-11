@@ -55,13 +55,17 @@ Get-MgGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-ExpandProperty <Stri
 Retrieve the properties and relationships of a groupLifecyclePolicies object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
-Get-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId
+Get-MgGroupLifecyclePolicy
+
+```
+This example shows how to use the Get-MgGroupLifecyclePolicy Cmdlet.
+
 
 ## PARAMETERS
 

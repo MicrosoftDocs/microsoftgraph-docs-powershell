@@ -41,18 +41,17 @@ Get-MgBetaDeviceManagementVirtualEndpointAuditEvent -InputObject <IDeviceManagem
 Read the properties and relationships of a cloudPcAuditEvent object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointAuditEvent -CloudPcAuditEventId $cloudPcAuditEventId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 Get-MgBetaDeviceManagementVirtualEndpointAuditEvent
+
 ```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointAuditEvent Cmdlet.
+
 
 ## PARAMETERS
 

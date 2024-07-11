@@ -25,13 +25,17 @@ Get-MgPolicyCrossTenantAccessPolicy [-ExpandProperty <String[]>] [-Property <Str
 The custom rules that define an access scenario when interacting with external Microsoft Entra tenants.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyCrossTenantAccessPolicy
+
+```
+This example shows how to use the Get-MgPolicyCrossTenantAccessPolicy Cmdlet.
+
 
 ## PARAMETERS
 

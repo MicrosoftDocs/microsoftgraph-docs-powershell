@@ -37,16 +37,32 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphA
 Create a new agreement object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	displayName = "Contoso ToU for guest users"
+	isViewingBeforeAcceptanceRequired = $true
+	files = @(
+		@{
+			fileName = "TOU.pdf"
+			language = "en"
+			isDefault = $true
+			fileData = @{
+				data = [System.Text.Encoding]::ASCII.GetBytes("SGVsbG8gd29ybGQ=//truncated-binary")
+			}
+		}
+	)
+}
+
+New-MgBetaIdentityGovernanceTermsOfUseAgreement -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaIdentityGovernanceTermsOfUseAgreement Cmdlet.
+
 
 ## PARAMETERS
 

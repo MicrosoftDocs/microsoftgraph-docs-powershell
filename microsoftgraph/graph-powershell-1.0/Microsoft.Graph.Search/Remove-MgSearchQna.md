@@ -33,16 +33,17 @@ Remove-MgSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-Response
 Delete a qna object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Search
+
+Remove-MgSearchQna -QnaId $qnaId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgSearchQna Cmdlet.
+
 
 ## PARAMETERS
 

@@ -48,20 +48,21 @@ Postpone action on a recommendation object to a specified future date and time b
 On the date and time provided, Microsoft Entra ID will automatically update the status of the recommendation object to active again.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	postponeUntilDateTime = [System.DateTime]::Parse("2023-02-01T02:53:00Z")
+}
 
-{{ Add output here }}
+Invoke-MgBetaPostponeDirectoryRecommendation -RecommendationId $recommendationId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaPostponeDirectoryRecommendation Cmdlet.
+
 
 ## PARAMETERS
 

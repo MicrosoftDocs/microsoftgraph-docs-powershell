@@ -40,16 +40,17 @@ Get the properties of a customAppScope object for an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+Get-MgBetaRoleManagementExchangeCustomAppScope
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaRoleManagementExchangeCustomAppScope Cmdlet.
+
 
 ## PARAMETERS
 

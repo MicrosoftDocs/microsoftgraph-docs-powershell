@@ -41,16 +41,17 @@ Get-MgBetaSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdenti
 Get the properties and relationships of an sslCertificate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceSslCertificate -Search '"subject/commonName:microsoft.com"' -CountVariable CountVar -Top 1 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceSslCertificate Cmdlet.
+
 
 ## PARAMETERS
 

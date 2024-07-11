@@ -33,20 +33,17 @@ Remove-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManag
 Deletes a roleAssignment.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Remove-MgDeviceManagementRoleDefinitionRoleAssignment -RoleDefinitionId $roleDefinitionId -RoleAssignmentId $roleAssignmentId
 
-{{ Add output here }}
+```
+This example shows how to use the Remove-MgDeviceManagementRoleDefinitionRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 

@@ -42,16 +42,17 @@ Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <II
 Read the properties of a delegatedAdminRelationshipOperation object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Partner
+
+Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation -DelegatedAdminRelationshipId $delegatedAdminRelationshipId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation Cmdlet.
+
 
 ## PARAMETERS
 

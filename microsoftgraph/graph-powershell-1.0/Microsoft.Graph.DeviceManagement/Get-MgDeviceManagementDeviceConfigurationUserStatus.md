@@ -42,16 +42,17 @@ Get-MgDeviceManagementDeviceConfigurationUserStatus -InputObject <IDeviceManagem
 Read properties and relationships of the deviceConfigurationUserStatus object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgDeviceManagementDeviceConfigurationUserStatus -DeviceConfigurationId $deviceConfigurationId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceManagementDeviceConfigurationUserStatus Cmdlet.
+
 
 ## PARAMETERS
 

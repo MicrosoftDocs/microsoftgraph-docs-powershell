@@ -34,20 +34,40 @@ New-MgDeviceManagementRoleDefinition -BodyParameter <IMicrosoftGraphRoleDefiniti
 Create a new roleDefinition object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.roleDefinition"
+	displayName = "Display Name value"
+	description = "Description value"
+	rolePermissions = @(
+		@{
+			"@odata.type" = "microsoft.graph.rolePermission"
+			resourceActions = @(
+				@{
+					"@odata.type" = "microsoft.graph.resourceAction"
+					allowedResourceActions = @(
+					"Allowed Resource Actions value"
+				)
+				notAllowedResourceActions = @(
+				"Not Allowed Resource Actions value"
+			)
+		}
+	)
+}
+)
+isBuiltIn = $true
+}
 
-{{ Add output here }}
+New-MgDeviceManagementRoleDefinition -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

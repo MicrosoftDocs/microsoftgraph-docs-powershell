@@ -50,15 +50,21 @@ The membership rule is returned along with other details that were used in the e
 You can complete this operation in the following ways:
 
 ## EXAMPLES
+### Example 1: Evaluate if a user or device is a member of an existing group
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 $params = @{
-	MemberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33"
+	memberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33"
 }
+
 Test-MgBetaGroupDynamicMembership -GroupId $groupId -BodyParameter $params
+
 ```
+This example will evaluate if a user or device is a member of an existing group
+
 
 ## PARAMETERS
 

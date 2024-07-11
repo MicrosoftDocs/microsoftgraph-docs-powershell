@@ -35,16 +35,17 @@ Delete a workflow object and its associated tasks, taskProcessingResults and ver
 You can restore a deleted workflow and its associated objects within 30 days of deletion.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Remove-MgIdentityGovernanceLifecycleWorkflow -WorkflowId $workflowId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgIdentityGovernanceLifecycleWorkflow Cmdlet.
+
 
 ## PARAMETERS
 

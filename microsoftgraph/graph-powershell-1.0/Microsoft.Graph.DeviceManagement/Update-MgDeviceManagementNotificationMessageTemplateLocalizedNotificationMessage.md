@@ -53,20 +53,25 @@ Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage
 Update the properties of a localizedNotificationMessage object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.localizedNotificationMessage"
+	locale = "Locale value"
+	subject = "Subject value"
+	messageTemplate = "Message Template value"
+	isDefault = $true
+}
 
-{{ Add output here }}
+Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage -NotificationMessageTemplateId $notificationMessageTemplateId -LocalizedNotificationMessageId $localizedNotificationMessageId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage Cmdlet.
+
 
 ## PARAMETERS
 

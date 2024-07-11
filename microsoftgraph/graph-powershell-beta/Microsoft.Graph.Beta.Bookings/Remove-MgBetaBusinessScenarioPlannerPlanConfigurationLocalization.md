@@ -31,16 +31,17 @@ Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <
 Delete a plannerPlanConfigurationLocalization object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId -PlannerPlanConfigurationLocalizationId $plannerPlanConfigurationLocalizationId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization Cmdlet.
+
 
 ## PARAMETERS
 

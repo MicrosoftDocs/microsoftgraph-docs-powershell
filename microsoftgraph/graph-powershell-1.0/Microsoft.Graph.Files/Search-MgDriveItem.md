@@ -35,20 +35,17 @@ Search-MgDriveItem -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <Stri
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Files
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Search-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId
 
-{{ Add output here }}
+```
+This example shows how to use the Search-MgDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

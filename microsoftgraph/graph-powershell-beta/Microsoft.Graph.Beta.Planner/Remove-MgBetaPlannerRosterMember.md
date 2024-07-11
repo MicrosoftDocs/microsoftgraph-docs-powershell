@@ -30,13 +30,17 @@ Remove-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-IfMatch <Stri
 Delete a plannerRosterMember object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 Remove-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -PlannerRosterMemberId $plannerRosterMemberId
+
+```
+This example shows how to use the Remove-MgBetaPlannerRosterMember Cmdlet.
+
 
 ## PARAMETERS
 

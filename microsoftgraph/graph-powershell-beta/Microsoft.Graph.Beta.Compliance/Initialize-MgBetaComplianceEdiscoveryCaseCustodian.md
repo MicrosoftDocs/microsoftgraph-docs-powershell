@@ -34,13 +34,17 @@ This method makes the custodian part of the case again.
 For details, see Manage custodians in an Advanced eDiscovery case.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Initialize-MgBetaComplianceEdiscoveryCaseCustodian -CaseId $caseId -CustodianId $custodianId
+
+```
+This example shows how to use the Initialize-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet.
+
 
 ## PARAMETERS
 

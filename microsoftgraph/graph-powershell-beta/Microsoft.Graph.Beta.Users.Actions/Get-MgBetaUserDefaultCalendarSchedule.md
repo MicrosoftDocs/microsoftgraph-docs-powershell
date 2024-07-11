@@ -55,28 +55,34 @@ Get the free/busy availability information for a collection of users, distributi
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendar-getschedule-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	Schedules = @(
-		"adelev@contoso.onmicrosoft.com"
-		"meganb@contoso.onmicrosoft.com"
-	)
-	StartTime = @{
-		DateTime = "2019-03-15T09:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	EndTime = @{
-		DateTime = "2019-03-15T18:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	AvailabilityViewInterval = 60
+	schedules = @(
+	"adelev@contoso.com"
+"meganb@contoso.com"
+)
+startTime = @{
+dateTime = "2019-03-15T09:00:00"
+timeZone = "Pacific Standard Time"
 }
+endTime = @{
+dateTime = "2019-03-15T18:00:00"
+timeZone = "Pacific Standard Time"
+}
+availabilityViewInterval = 60
+}
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
+
 ```
+This example shows how to use the Get-MgBetaUserDefaultCalendarSchedule Cmdlet.
+
 
 ## PARAMETERS
 

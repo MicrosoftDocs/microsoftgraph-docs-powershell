@@ -63,16 +63,17 @@ Get-MgDeviceAppManagementMobileAppCategory -InputObject <IDevicesCorporateManage
 Read properties and relationships of the mobileAppCategory object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementMobileAppCategory
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceAppManagementMobileAppCategory Cmdlet.
+
 
 ## PARAMETERS
 

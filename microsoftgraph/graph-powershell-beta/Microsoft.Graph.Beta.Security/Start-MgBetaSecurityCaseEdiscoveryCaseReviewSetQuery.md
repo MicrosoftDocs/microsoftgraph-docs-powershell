@@ -33,16 +33,17 @@ Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIden
 Run reviewset query to get the list of files.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet.
+
 
 ## PARAMETERS
 

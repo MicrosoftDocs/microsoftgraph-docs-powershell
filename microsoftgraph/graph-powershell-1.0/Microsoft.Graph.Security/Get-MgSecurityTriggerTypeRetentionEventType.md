@@ -41,16 +41,17 @@ Get-MgSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity> [-E
 Read the properties and relationships of a retentionEventType object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityTriggerTypeRetentionEventType
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgSecurityTriggerTypeRetentionEventType Cmdlet.
+
 
 ## PARAMETERS
 

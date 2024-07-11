@@ -40,16 +40,17 @@ A group setting template represents a template of settings from which settings m
 This operation allows retrieval of the properties of the groupSettingTemplate object, including the available settings and their defaults.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Groups
+
+Get-MgGroupSettingTemplateGroupSettingTemplate
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgGroupSettingTemplateGroupSettingTemplate Cmdlet.
+
 
 ## PARAMETERS
 

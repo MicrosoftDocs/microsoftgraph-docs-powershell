@@ -50,16 +50,23 @@ Restart a stopped synchronization job, forcing it to reprocess all the objects i
 Optionally clears existing the synchronization state and previous errors.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	criteria = @{
+		resetScope = "Watermark, Escrows, QuarantineState"
+	}
+}
+
+Restart-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Restart-MgServicePrincipalSynchronizationJob Cmdlet.
+
 
 ## PARAMETERS
 

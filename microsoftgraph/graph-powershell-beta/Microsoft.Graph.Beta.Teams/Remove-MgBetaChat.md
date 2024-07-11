@@ -35,17 +35,17 @@ Soft-delete a chat.
 When invoked with delegated permissions, this operation only works for tenant admins and Teams service admins.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
+Remove-MgBetaChat -ChatId $chatId
+
 ```
+This example shows how to use the Remove-MgBetaChat Cmdlet.
 
-$params = @{
-	topic = "Group chat title update"
-}
-
-Update-MgBetaChat -ChatId $chatId -BodyParameter $params
 
 ## PARAMETERS
 

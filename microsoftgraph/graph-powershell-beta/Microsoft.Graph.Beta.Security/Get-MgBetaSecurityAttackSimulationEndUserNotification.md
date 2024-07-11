@@ -41,16 +41,17 @@ Get-MgBetaSecurityAttackSimulationEndUserNotification -InputObject <ISecurityIde
 Represents an end user's notification for an attack simulation training.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityAttackSimulationEndUserNotification -Filter "source eq 'global'" 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityAttackSimulationEndUserNotification Cmdlet.
+
 
 ## PARAMETERS
 

@@ -45,16 +45,17 @@ Only teachers, students, and applications with application permissions can perfo
 Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationClassModule -EducationClassId $educationClassId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

@@ -36,16 +36,17 @@ Delete a specific educationModuleResource attached to a module.
 Only teachers in the class can remove a resource.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Education
+
+Remove-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaEducationClassModuleResource Cmdlet.
+
 
 ## PARAMETERS
 

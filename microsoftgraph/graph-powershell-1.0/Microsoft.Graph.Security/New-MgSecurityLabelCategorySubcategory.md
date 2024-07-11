@@ -49,16 +49,22 @@ New-MgSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> -BodyPar
 Create a new subcategoryTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.subcategoryTemplate"
+	displayName = "Vendor Invoice"
+}
+
+New-MgSecurityLabelCategorySubcategory -CategoryTemplateId $categoryTemplateId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgSecurityLabelCategorySubcategory Cmdlet.
+
 
 ## PARAMETERS
 

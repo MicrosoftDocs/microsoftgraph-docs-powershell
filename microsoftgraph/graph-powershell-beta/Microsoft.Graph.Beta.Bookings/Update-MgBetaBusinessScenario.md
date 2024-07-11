@@ -50,16 +50,24 @@ Update-MgBetaBusinessScenario -InputObject <IBookingsIdentity> -BodyParameter <I
 Update the properties of a businessScenario object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	ownerAppIds = @(
+	"44109254-4b2b-7a33-76ee-c890a167b295"
+"13eb9d8b-1d63-4153-9417-3a69ab200a78"
+)
+}
+
+Update-MgBetaBusinessScenario -BusinessScenarioId $businessScenarioId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaBusinessScenario Cmdlet.
+
 
 ## PARAMETERS
 

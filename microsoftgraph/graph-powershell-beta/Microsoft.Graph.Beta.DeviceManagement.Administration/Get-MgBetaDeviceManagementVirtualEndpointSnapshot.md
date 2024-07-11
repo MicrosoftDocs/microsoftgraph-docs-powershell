@@ -38,24 +38,17 @@ Get-MgBetaDeviceManagementVirtualEndpointSnapshot -InputObject <IDeviceManagemen
 Read the properties and relationships of a cloudPcSnapshot object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointSnapshot -CloudPcSnapshotId $cloudPcSnapshotId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointSnapshot -CloudPcSnapshotId $cloudPcSnapshotId
-```
 
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointSnapshot
+
 ```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSnapshot Cmdlet.
+
 
 ## PARAMETERS
 

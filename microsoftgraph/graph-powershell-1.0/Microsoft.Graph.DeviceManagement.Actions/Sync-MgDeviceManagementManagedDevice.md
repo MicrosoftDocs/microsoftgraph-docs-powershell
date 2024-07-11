@@ -34,20 +34,17 @@ Sync-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdent
 Not yet documented
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Actions
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Sync-MgDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId
 
-{{ Add output here }}
+```
+This example shows how to use the Sync-MgDeviceManagementManagedDevice Cmdlet.
+
 
 ## PARAMETERS
 

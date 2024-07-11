@@ -24,20 +24,17 @@ Get-MgTeamwork [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHea
 Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgTeamwork
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgTeamwork Cmdlet.
+
 
 ## PARAMETERS
 

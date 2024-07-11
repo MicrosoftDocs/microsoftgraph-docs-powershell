@@ -48,16 +48,21 @@ Update the properties of a user's authentication method states.
 Use this API to update the following information:
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	userPreferredMethodForSecondaryAuthentication = "oath"
+}
+
+Update-MgBetaUserAuthenticationSignInPreference -UserId $userId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaUserAuthenticationSignInPreference Cmdlet.
+
 
 ## PARAMETERS
 

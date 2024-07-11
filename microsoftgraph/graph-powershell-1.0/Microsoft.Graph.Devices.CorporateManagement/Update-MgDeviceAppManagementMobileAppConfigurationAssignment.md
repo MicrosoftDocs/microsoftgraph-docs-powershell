@@ -51,16 +51,24 @@ Update-MgDeviceAppManagementMobileAppConfigurationAssignment -InputObject <IDevi
 Update the properties of a managedDeviceMobileAppConfigurationAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment"
+	target = @{
+		"@odata.type" = "microsoft.graph.allLicensedUsersAssignmentTarget"
+	}
+}
+
+Update-MgDeviceAppManagementMobileAppConfigurationAssignment -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -ManagedDeviceMobileAppConfigurationAssignmentId $managedDeviceMobileAppConfigurationAssignmentId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgDeviceAppManagementMobileAppConfigurationAssignment Cmdlet.
+
 
 ## PARAMETERS
 

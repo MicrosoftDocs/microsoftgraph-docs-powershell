@@ -38,16 +38,17 @@ Get-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManagementI
 Read the properties and relationships of an alertRecord object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Get-MgBetaDeviceManagementMonitoringAlertRecord
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaDeviceManagementMonitoringAlertRecord Cmdlet.
+
 
 ## PARAMETERS
 

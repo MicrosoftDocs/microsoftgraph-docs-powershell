@@ -50,15 +50,21 @@ This operation is only permitted for an access review that isn't yet completed, 
 This operation isn't permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 $params = @{
-	Id = "006111db-0810-4494-a6df-904d368bd81b"
+	id = "006111db-0810-4494-a6df-904d368bd81b"
 }
+
 New-MgBetaAccessReviewReviewer -AccessReviewId $accessReviewId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaAccessReviewReviewer Cmdlet.
+
 
 ## PARAMETERS
 

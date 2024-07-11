@@ -39,16 +39,28 @@ Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBo
 Read the properties and relationships of a plannerPlanConfigurationLocalization object.
 
 ## EXAMPLES
+### Example 1: Get all localizations
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId
+
 ```
-{{ Add code here }}
+This example will get all localizations
+
+### Example 2: Get localization for a specific language tag
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId -Filter "languageTag eq 'en-us'" 
+
 ```
+This example will get localization for a specific language tag
+
 
 ## PARAMETERS
 

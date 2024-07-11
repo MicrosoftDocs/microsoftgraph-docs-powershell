@@ -49,16 +49,24 @@ New-MgBetaPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity>
 Create a new authoredNote object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Compliance
+
+$params = @{
+	content = @{
+		content = "Please take a look at the files tagged with follow up"
+		contentType = "text"
+	}
+}
+
+New-MgBetaPrivacySubjectRightsRequestNote -SubjectRightsRequestId $subjectRightsRequestId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaPrivacySubjectRightsRequestNote Cmdlet.
+
 
 ## PARAMETERS
 

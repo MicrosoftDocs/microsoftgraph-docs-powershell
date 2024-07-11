@@ -33,20 +33,17 @@ Remove-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdmini
 Deletes a resourceOperation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Remove-MgDeviceManagementResourceOperation -ResourceOperationId $resourceOperationId
 
-{{ Add output here }}
+```
+This example shows how to use the Remove-MgDeviceManagementResourceOperation Cmdlet.
+
 
 ## PARAMETERS
 

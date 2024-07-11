@@ -39,20 +39,17 @@ Retrieve all decision items for an instance of an access review or a stage of an
 The decision items are represented by accessReviewInstanceDecisionItem objects on a given accessReviewInstance or accessReviewStage for which the calling user is the reviewer.
 
 ## EXAMPLES
+### Example 1: Retrieve all decisions on an accessReviewInstance for which the calling user is the reviewer
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -On $onId 
 
-{{ Add output here }}
+```
+This example will retrieve all decisions on an accessreviewinstance for which the calling user is the reviewer
+
 
 ## PARAMETERS
 

@@ -54,16 +54,22 @@ Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice
 Assigns user to Autopilot devices.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	userPrincipalName = "User Principal Name value"
+	addressableUserName = "Addressable User Name value"
+}
+
+Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice -WindowsAutopilotDeviceIdentityId $windowsAutopilotDeviceIdentityId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice Cmdlet.
+
 
 ## PARAMETERS
 

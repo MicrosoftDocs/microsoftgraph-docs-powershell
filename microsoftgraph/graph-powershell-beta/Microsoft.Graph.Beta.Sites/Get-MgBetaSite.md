@@ -40,20 +40,17 @@ Get-MgBetaSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 Retrieve properties and relationships for a site resource.A site resource represents a team site in SharePoint.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
-Get-MgBetaSite -Property "siteCollection,webUrl" -Filter "siteCollection/root ne null"
+Get-MgBetaSite -Search '"{query}"' 
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Sites
-```
+This example shows how to use the Get-MgBetaSite Cmdlet.
 
-Get-MgBetaSite
 
 ## PARAMETERS
 

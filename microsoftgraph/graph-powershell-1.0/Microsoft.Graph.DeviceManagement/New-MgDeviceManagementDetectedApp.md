@@ -35,20 +35,27 @@ New-MgDeviceManagementDetectedApp -BodyParameter <IMicrosoftGraphDetectedApp>
 Create a new detectedApp object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.detectedApp"
+	displayName = "Display Name value"
+	version = "Version value"
+	sizeInByte = 10
+	deviceCount = 11
+	publisher = "Publisher value"
+	platform = "windows"
+}
 
-{{ Add output here }}
+New-MgDeviceManagementDetectedApp -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDetectedApp Cmdlet.
+
 
 ## PARAMETERS
 

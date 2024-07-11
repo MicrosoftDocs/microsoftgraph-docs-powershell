@@ -41,16 +41,17 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule -InputObject <IIdentityG
 Retrieve the schedule for an active role assignment operation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule Cmdlet.
+
 
 ## PARAMETERS
 

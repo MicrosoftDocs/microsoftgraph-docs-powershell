@@ -42,16 +42,17 @@ Represents the Permissions Creep Index (PCI) for the authorization system.
 PCI distribution chart shows the classification of human and nonhuman identities based on the PCI score in three buckets (low, medium, high).
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution Cmdlet.
+
 
 ## PARAMETERS
 

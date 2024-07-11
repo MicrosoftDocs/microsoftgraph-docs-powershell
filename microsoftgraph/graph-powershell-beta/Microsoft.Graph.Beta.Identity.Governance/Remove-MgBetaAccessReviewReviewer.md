@@ -34,12 +34,17 @@ This operation is only permitted for an access review that isn't yet completed, 
 This operation isn't permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Remove-MgBetaAccessReviewReviewer -AccessReviewId $accessReviewId -AccessReviewReviewerId $accessReviewReviewerId
+
 ```
+This example shows how to use the Remove-MgBetaAccessReviewReviewer Cmdlet.
+
 
 ## PARAMETERS
 

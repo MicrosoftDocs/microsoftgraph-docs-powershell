@@ -52,16 +52,21 @@ Update-MgBetaEntitlementManagementSubjectByObjectId -InputObject <IIdentityGover
 Update an existing accessPackageSubject object to change the subject lifecycle.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	subjectLifecycle = "governed"
+}
+
+Update-MgBetaEntitlementManagementSubjectByObjectId -BodyParameter $params -ObjectId $objectIdId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaEntitlementManagementSubjectByObjectId Cmdlet.
+
 
 ## PARAMETERS
 

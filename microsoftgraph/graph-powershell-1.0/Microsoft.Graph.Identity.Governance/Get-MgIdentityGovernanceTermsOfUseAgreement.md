@@ -41,16 +41,28 @@ Get-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanceIde
 Retrieve the properties and relationships of an agreement object.
 
 ## EXAMPLES
+### Example 1: Retrieve an agreement
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId
+
 ```
-{{ Add code here }}
+This example will retrieve an agreement
+
+### Example 2: Retrieve an agreement and its related files
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId -ExpandProperty "files" 
+
 ```
+This example will retrieve an agreement and its related files
+
 
 ## PARAMETERS
 

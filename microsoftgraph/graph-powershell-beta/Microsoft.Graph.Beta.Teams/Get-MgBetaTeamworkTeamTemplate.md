@@ -38,30 +38,17 @@ Get-MgBetaTeamworkTeamTemplate -InputObject <ITeamsIdentity> [-ExpandProperty <S
 The templates associated with a team.
 
 ## EXAMPLES
+### Example 1: Use $extend and $filter to get teamTemplateDefinitions for en-US locale
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaTeamworkTeamTemplate
-```
 
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"  -OutFile $outFileId
-```
+Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')" 
 
-### EXAMPLE 4
 ```
-Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"
-```
+This example will use $extend and $filter to get teamtemplatedefinitions for en-us locale
+
 
 ## PARAMETERS
 

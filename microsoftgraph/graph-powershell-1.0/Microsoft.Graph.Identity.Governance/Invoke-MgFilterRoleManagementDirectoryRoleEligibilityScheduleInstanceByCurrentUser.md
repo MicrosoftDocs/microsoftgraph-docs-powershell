@@ -36,16 +36,17 @@ Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUs
 Get the instances of eligible roles for the calling principal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUser -On $onId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

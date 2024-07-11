@@ -50,16 +50,17 @@ Compared with the findRooms and findRoomLists functions, this operation returns 
 See details for how they compare.
 
 ## EXAMPLES
+### Example 1: List all the rooms defined in the tenant
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Calendar
+
+Get-MgPlaceAsRoom
+
 ```
-{{ Add code here }}
-```
+This example will list all the rooms defined in the tenant
+
 
 ## PARAMETERS
 

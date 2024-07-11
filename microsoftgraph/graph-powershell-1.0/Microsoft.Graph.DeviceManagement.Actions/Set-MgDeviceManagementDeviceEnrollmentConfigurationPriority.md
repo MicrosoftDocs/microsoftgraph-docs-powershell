@@ -52,20 +52,21 @@ Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority -InputObject <IDevic
 Not yet documented
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Actions
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	priority = 8
+}
 
-{{ Add output here }}
+Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority -DeviceEnrollmentConfigurationId $deviceEnrollmentConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority Cmdlet.
+
 
 ## PARAMETERS
 

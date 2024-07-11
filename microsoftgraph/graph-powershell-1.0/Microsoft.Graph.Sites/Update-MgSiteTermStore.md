@@ -79,17 +79,21 @@ Update-MgSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 Update the properties of a store object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	defaultLanguageTag = "en-US"
 }
 
 Update-MgSiteTermStore -SiteId $siteId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSiteTermStore Cmdlet.
+
 
 ## PARAMETERS
 

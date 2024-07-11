@@ -69,11 +69,11 @@ Update-MgSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IMi
 Update a site, a list, or a content type column.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	required = $true
@@ -82,6 +82,10 @@ $params = @{
 }
 
 Update-MgSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSiteContentTypeColumn Cmdlet.
+
 
 ## PARAMETERS
 

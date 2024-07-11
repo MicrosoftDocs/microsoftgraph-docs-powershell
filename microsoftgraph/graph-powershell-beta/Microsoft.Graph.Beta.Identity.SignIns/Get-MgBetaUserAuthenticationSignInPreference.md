@@ -32,16 +32,17 @@ Read the properties of a user's authentication states.
 Use this API to retrieve the following information:
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaUserAuthenticationSignInPreference -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaUserAuthenticationSignInPreference Cmdlet.
+
 
 ## PARAMETERS
 

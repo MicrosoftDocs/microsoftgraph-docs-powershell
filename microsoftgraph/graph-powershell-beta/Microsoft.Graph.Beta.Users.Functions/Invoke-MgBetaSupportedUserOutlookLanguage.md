@@ -41,13 +41,18 @@ You can subsequently get the preferred language bygetting the user's mailbox set
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-supportedlanguages-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Functions
+
 # A UPN can also be used as -UserId.
 Invoke-MgBetaSupportedUserOutlookLanguage -UserId $userId
+
 ```
+This example shows how to use the Invoke-MgBetaSupportedUserOutlookLanguage Cmdlet.
+
 
 ## PARAMETERS
 

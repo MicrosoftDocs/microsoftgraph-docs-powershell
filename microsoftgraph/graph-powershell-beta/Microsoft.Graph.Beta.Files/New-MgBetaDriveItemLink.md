@@ -55,20 +55,61 @@ Create a link to share a driveItem driveItem.The createLink action creates a new
 DriveItem resources inherit sharing permissions from their ancestors.
 
 ## EXAMPLES
+### Example 1: Create an anonymous sharing link
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Files
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	type = "view"
+	scope = "anonymous"
+	password = "String"
+	recipients = @(
+		@{
+			"@odata.type" = "microsoft.graph.driveRecipient"
+		}
+	)
+	sendNotification = $true
+	retainInheritedPermissions = $false
+}
 
-{{ Add output here }}
+New-MgBetaDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example will create an anonymous sharing link
+
+### Example 2: Creating company sharable links
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Files
+
+$params = @{
+	type = "edit"
+	scope = "organization"
+}
+
+New-MgBetaDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows creating company sharable links
+
+### Example 3: Creating embeddable links
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Files
+
+$params = @{
+	type = "embed"
+}
+
+New-MgBetaDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows creating embeddable links
+
 
 ## PARAMETERS
 

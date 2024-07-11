@@ -33,16 +33,17 @@ Remove-MgAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementId
 Delete a browserSiteList object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement
+
+Remove-MgAdminEdgeInternetExplorerModeSiteList -BrowserSiteListId $browserSiteListId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgAdminEdgeInternetExplorerModeSiteList Cmdlet.
+
 
 ## PARAMETERS
 

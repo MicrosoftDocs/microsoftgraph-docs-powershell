@@ -34,16 +34,17 @@ Get the total number of user mailboxes in your organization and how many are act
 A mailbox is considered active if the user sent or read any email.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportMailboxUsageMailboxCount -Period $periodId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgReportMailboxUsageMailboxCount Cmdlet.
+
 
 ## PARAMETERS
 

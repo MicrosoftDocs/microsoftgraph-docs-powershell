@@ -49,20 +49,22 @@ New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule -InputObject 
 Create a new deviceComplianceScheduledActionForRule object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceComplianceScheduledActionForRule"
+	ruleName = "Rule Name value"
+}
 
-{{ Add output here }}
+New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule Cmdlet.
+
 
 ## PARAMETERS
 

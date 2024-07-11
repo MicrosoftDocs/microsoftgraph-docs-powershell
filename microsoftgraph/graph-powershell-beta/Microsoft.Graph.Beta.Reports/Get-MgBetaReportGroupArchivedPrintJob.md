@@ -34,16 +34,17 @@ Get-MgBetaReportGroupArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [
 Get a list of archived print jobs for a particular group.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportGroupArchivedPrintJob
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaReportGroupArchivedPrintJob Cmdlet.
+
 
 ## PARAMETERS
 

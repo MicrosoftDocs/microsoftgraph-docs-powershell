@@ -35,16 +35,17 @@ Remove-MgDeviceManagementTermAndConditionAcceptanceStatus
 Deletes a termsAndConditionsAcceptanceStatus.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Remove-MgDeviceManagementTermAndConditionAcceptanceStatus -TermsAndConditionsId $termsAndConditionsId -TermsAndConditionsAcceptanceStatusId $termsAndConditionsAcceptanceStatusId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDeviceManagementTermAndConditionAcceptanceStatus Cmdlet.
+
 
 ## PARAMETERS
 

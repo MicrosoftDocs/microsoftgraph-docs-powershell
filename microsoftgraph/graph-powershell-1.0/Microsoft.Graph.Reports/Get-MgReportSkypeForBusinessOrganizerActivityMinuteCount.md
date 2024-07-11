@@ -35,20 +35,17 @@ Get usage trends on the length in minutes and type of conference sessions held a
 Types of conference sessions include audio/video, and dial-in and dial-out - Microsoft.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount Cmdlet.
+
 
 ## PARAMETERS
 

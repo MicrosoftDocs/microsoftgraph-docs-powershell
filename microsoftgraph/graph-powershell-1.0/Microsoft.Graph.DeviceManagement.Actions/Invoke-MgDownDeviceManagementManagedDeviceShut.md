@@ -34,20 +34,17 @@ Invoke-MgDownDeviceManagementManagedDeviceShut -InputObject <IDeviceManagementAc
 Shut down device
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Actions
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgDownDeviceManagementManagedDeviceShut -ManagedDeviceId $managedDeviceId
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgDownDeviceManagementManagedDeviceShut Cmdlet.
+
 
 ## PARAMETERS
 

@@ -38,18 +38,17 @@ Get-MgBetaPolicyMobileAppManagementPolicy -InputObject <IIdentitySignInsIdentity
 Read the properties and relationships of a mobilityManagementPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaPolicyMobileAppManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 Get-MgBetaPolicyMobileAppManagementPolicy
+
 ```
+This example shows how to use the Get-MgBetaPolicyMobileAppManagementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

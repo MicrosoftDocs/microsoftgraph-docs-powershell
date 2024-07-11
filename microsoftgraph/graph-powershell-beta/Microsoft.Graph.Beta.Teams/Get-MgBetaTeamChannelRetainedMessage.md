@@ -34,16 +34,17 @@ Get retained messages across all channels in a team.
 To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaTeamChannelRetainedMessage -TeamId $teamId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaTeamChannelRetainedMessage Cmdlet.
+
 
 ## PARAMETERS
 

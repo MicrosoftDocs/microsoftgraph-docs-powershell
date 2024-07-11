@@ -31,16 +31,17 @@ View a list of all the managed image resources from your Microsoft Entra subscri
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcdeviceimage-getsourceimages-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Functions
+
+Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage Cmdlet.
+
 
 ## PARAMETERS
 

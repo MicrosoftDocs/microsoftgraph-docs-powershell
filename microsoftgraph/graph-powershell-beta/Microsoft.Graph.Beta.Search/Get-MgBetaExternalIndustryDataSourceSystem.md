@@ -38,16 +38,17 @@ Get-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity> [-Expa
 Read the properties and relationships of a sourceSystemDefinition object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalIndustryDataSourceSystem
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaExternalIndustryDataSourceSystem Cmdlet.
+
 
 ## PARAMETERS
 

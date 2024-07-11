@@ -32,16 +32,17 @@ Sync-MgDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateManagem
 Syncs licenses associated with a specific appleVolumePurchaseProgramToken
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Sync-MgDeviceAppManagementVppTokenLicense -VppTokenId $vppTokenId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Sync-MgDeviceAppManagementVppTokenLicense Cmdlet.
+
 
 ## PARAMETERS
 

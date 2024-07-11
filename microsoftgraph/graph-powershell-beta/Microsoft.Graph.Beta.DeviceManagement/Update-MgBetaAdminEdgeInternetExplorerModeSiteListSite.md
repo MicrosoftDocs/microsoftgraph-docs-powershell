@@ -57,16 +57,26 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceMana
 Update the properties of a browserSite object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+$params = @{
+	webUrl = "www.microsoft.com"
+	targetEnvironment = "microsoftEdge"
+	mergeType = "default"
+	compatibilityMode = "default"
+	allowRedirect = $false
+	comment = "Updating to Edge."
+}
+
+Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BrowserSiteId $browserSiteId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite Cmdlet.
+
 
 ## PARAMETERS
 

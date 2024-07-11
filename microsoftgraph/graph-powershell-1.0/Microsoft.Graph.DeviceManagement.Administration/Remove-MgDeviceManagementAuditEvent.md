@@ -33,16 +33,17 @@ Remove-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministratio
 Deletes a auditEvent.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Remove-MgDeviceManagementAuditEvent -AuditEventId $auditEventId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDeviceManagementAuditEvent Cmdlet.
+
 
 ## PARAMETERS
 

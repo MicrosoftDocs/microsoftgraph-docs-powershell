@@ -34,12 +34,17 @@ Reupload a cloudPcDeviceImage object that failed to upload.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcdeviceimage-reupload-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
 Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId $cloudPcDeviceImageId
+
 ```
+This example shows how to use the Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage Cmdlet.
+
 
 ## PARAMETERS
 

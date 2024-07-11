@@ -34,20 +34,17 @@ Set the status of the notification associated with the specified alertRecord on 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrecord-setportalnotificationassent-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Set-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent -AlertRecordId $alertRecordId
 
-{{ Add output here }}
+```
+This example shows how to use the Set-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent Cmdlet.
+
 
 ## PARAMETERS
 

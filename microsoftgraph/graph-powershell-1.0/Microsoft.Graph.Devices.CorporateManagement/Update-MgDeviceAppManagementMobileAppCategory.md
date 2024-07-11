@@ -47,16 +47,22 @@ Update-MgDeviceAppManagementMobileAppCategory -InputObject <IDevicesCorporateMan
 Update the properties of a mobileAppCategory object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.mobileAppCategory"
+	displayName = "Display Name value"
+}
+
+Update-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId $mobileAppCategoryId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgDeviceAppManagementMobileAppCategory Cmdlet.
+
 
 ## PARAMETERS
 

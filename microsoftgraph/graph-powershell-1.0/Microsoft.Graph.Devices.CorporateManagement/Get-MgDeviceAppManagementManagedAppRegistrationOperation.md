@@ -42,16 +42,17 @@ Get-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevicesC
 Read properties and relationships of the managedAppOperation object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementManagedAppRegistrationOperation -ManagedAppRegistrationId $managedAppRegistrationId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceAppManagementManagedAppRegistrationOperation Cmdlet.
+
 
 ## PARAMETERS
 

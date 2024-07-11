@@ -33,16 +33,17 @@ Remove-MgBetaEducationSchoolUserEducationUserByRef -InputObject <IEducationIdent
 Delete a user from a school.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Education
+
+Remove-MgBetaEducationSchoolUserEducationUserByRef -EducationSchoolId $educationSchoolId -EducationUserId $educationUserId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaEducationSchoolUserEducationUserByRef Cmdlet.
+
 
 ## PARAMETERS
 

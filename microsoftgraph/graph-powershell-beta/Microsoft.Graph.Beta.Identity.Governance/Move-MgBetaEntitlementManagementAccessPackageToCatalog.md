@@ -50,20 +50,21 @@ In Microsoft Entra entitlement management, this action moves the accessPackage t
 The resources in the access package must be present in the target catalog.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	catalogId = "3301434b-99bd-46be-923b-d762c30c8e8b"
+}
 
-{{ Add output here }}
+Move-MgBetaEntitlementManagementAccessPackageToCatalog -AccessPackageId $accessPackageId -BodyParameter $params
+
+```
+This example shows how to use the Move-MgBetaEntitlementManagementAccessPackageToCatalog Cmdlet.
+
 
 ## PARAMETERS
 

@@ -25,16 +25,17 @@ Get-MgBetaTenantRelationshipMultiTenantOrganization [-ExpandProperty <String[]>]
 Get properties of the multitenant organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaTenantRelationshipMultiTenantOrganization
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaTenantRelationshipMultiTenantOrganization Cmdlet.
+
 
 ## PARAMETERS
 

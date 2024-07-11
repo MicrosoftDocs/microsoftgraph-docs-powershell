@@ -33,16 +33,17 @@ No relationships, such as commerce and delegate administrative privileges, will 
 The only change made by invoking this action is the tenant will be deprovisioned from the multitenant management platform.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Invoke-MgBetaTenantRelationshipManagedTenantOffboard -TenantId $tenantId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaTenantRelationshipManagedTenantOffboard Cmdlet.
+
 
 ## PARAMETERS
 

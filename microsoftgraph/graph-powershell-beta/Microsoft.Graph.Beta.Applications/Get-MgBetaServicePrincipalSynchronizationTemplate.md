@@ -42,12 +42,17 @@ Get-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIde
 Pre-configured synchronization settings for a particular application.
 
 ## EXAMPLES
+### Example
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
+
 Get-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId
+
 ```
+This example will### example
+
 
 ## PARAMETERS
 

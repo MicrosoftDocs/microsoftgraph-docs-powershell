@@ -37,16 +37,17 @@ The policies are returned in two collections, one containing Conditional Access 
 Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Invoke-MgUsagePolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgUsagePolicyAuthenticationStrengthPolicy Cmdlet.
+
 
 ## PARAMETERS
 

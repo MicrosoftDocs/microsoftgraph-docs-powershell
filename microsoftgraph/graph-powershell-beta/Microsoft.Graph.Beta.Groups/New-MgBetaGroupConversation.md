@@ -53,33 +53,28 @@ Create a new conversation by including a thread and a post.
 Use reply thread or reply post to further post to that conversation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
-	Topic = "Does anyone have a second?"
-	Threads = @(
+	topic = "New head count"
+	threads = @(
 		@{
-			Posts = @(
+			posts = @(
 				@{
-					Body = @{
-						ContentType = "HTML"
-						Content = "This is urgent!"
+					body = @{
+						contentType = "html"
+						content = "The confirmation will come by the end of the week."
 					}
-					Extensions = @(
+					newParticipants = @(
 						@{
-							"@odata.type" = "microsoft.graph.openTypeExtension"
-							extensionName = "Com.Contoso.Benefits"
-							companyName = "Contoso"
-							expirationDate = "2016-08-03T11:00:00.000Z"
-							topPicks = @(
-								"Employees only"
-								"Add spouse or guest"
-								"Add family"
-							)
+							emailAddress = @{
+								name = "Adele Vance"
+								address = "AdeleV@contoso.com"
+							}
 						}
 					)
 				}
@@ -89,6 +84,10 @@ $params = @{
 }
 
 New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaGroupConversation Cmdlet.
+
 
 ## PARAMETERS
 

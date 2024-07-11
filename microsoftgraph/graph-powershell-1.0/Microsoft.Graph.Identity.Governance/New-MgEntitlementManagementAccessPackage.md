@@ -40,11 +40,11 @@ Create a new accessPackage object.
 The access package will be added to an existing accessPackageCatalog.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "sales reps"
@@ -56,6 +56,10 @@ $params = @{
 }
 
 New-MgEntitlementManagementAccessPackage -BodyParameter $params
+
+```
+This example shows how to use the New-MgEntitlementManagementAccessPackage Cmdlet.
+
 
 ## PARAMETERS
 

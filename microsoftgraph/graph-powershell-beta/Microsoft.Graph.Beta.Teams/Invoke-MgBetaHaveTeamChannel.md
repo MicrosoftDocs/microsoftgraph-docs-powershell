@@ -33,20 +33,17 @@ Invoke-MgBetaHaveTeamChannel -InputObject <ITeamsIdentity> [-TenantId <String>] 
 Determine whether a user has access to a shared channel.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Teams
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgBetaHaveTeamChannel -TeamId $teamId -ChannelId $channelId
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgBetaHaveTeamChannel Cmdlet.
+
 
 ## PARAMETERS
 

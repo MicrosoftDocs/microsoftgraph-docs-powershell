@@ -35,16 +35,17 @@ Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFil
 Deletes a windowsInformationProtectionAppLockerFile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile -WindowsInformationProtectionPolicyId $windowsInformationProtectionPolicyId -WindowsInformationProtectionAppLockerFileId $windowsInformationProtectionAppLockerFileId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile Cmdlet.
+
 
 ## PARAMETERS
 

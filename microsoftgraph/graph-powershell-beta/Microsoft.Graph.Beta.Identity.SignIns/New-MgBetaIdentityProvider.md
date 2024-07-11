@@ -37,11 +37,11 @@ Among the types of providers derived from identityProviderBase, you can currentl
 In Azure AD B2C, this operation can currently create a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
 ## EXAMPLES
+### Example 1: Create a specific **social identity provider** (Microsoft Entra ID and Azure AD B2C)
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.socialIdentityProvider"
@@ -53,16 +53,27 @@ $params = @{
 
 New-MgBetaIdentityProvider -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a specific **social identity provider** (microsoft entra id and azure ad b2c)
+
+### Example 2: Create a specific **OpenID Connect identity provider** (only for Azure AD B2C)
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.openIdConnectIdentityProvider"
 	displayName = "Login with the Contoso identity provider"
 	clientId = "56433757-cadd-4135-8431-2c9e3fd68ae8"
 	clientSecret = "12345"
+	claimsMapping = @{
+		userId = "myUserId"
+		givenName = "myGivenName"
+		surname = "mySurname"
+		email = "myEmail"
+		displayName = "myDisplayName"
+	}
 	domainHint = "mycustomoidc"
 	metadataUrl = "https://mycustomoidc.com/.well-known/openid-configuration"
 	responseMode = "form_post"
@@ -72,10 +83,14 @@ $params = @{
 
 New-MgBetaIdentityProvider -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will create a specific **openid connect identity provider** (only for azure ad b2c)
+
+### Example 3: Retrieves Apple identity provider (only for Azure AD B2C)
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.appleManagedIdentityProvider"
@@ -87,6 +102,10 @@ $params = @{
 }
 
 New-MgBetaIdentityProvider -BodyParameter $params
+
+```
+This example retrieves apple identity provider (only for azure ad b2c)
+
 
 ## PARAMETERS
 

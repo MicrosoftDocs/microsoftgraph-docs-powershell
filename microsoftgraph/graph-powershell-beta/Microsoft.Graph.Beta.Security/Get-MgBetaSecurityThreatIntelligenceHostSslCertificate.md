@@ -77,16 +77,17 @@ Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityId
 Get the properties and relationships of a hostSslCertificate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostSslCertificateId $hostSslCertificateId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostSslCertificate Cmdlet.
+
 
 ## PARAMETERS
 

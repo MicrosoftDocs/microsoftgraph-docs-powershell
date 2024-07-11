@@ -33,20 +33,24 @@ New-MgDeviceManagementResourceOperation -BodyParameter <IMicrosoftGraphResourceO
 Create a new resourceOperation object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.resourceOperation"
+	resourceName = "Resource Name value"
+	actionName = "Action Name value"
+	description = "Description value"
+}
 
-{{ Add output here }}
+New-MgDeviceManagementResourceOperation -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementResourceOperation Cmdlet.
+
 
 ## PARAMETERS
 

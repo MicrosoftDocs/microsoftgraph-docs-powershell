@@ -35,20 +35,17 @@ Invoke-MgFilterIdentityGovernanceAppConsentRequestByCurrentUser -InputObject <II
 Retrieve a collection of appConsentRequest objects for which the current user is the reviewer and the status of the userConsentRequest for accessing the specified app is InProgress.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgFilterIdentityGovernanceAppConsentRequestByCurrentUser -Filter "userConsentRequests/any(u:u/status eq 'InProgress')"  -On $onId 
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgFilterIdentityGovernanceAppConsentRequestByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

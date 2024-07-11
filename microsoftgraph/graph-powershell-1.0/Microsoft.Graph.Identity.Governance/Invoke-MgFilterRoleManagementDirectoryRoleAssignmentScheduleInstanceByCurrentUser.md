@@ -36,16 +36,17 @@ Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUse
 Get the instances of active role assignments for the calling principal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUser -On $onId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

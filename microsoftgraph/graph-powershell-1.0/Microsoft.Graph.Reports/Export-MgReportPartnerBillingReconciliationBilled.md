@@ -38,16 +38,22 @@ Export the billed invoice reconciliation data.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-billedreconciliation-export-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+$params = @{
+	invoiceId = "G016907411"
+	attributeSet = "full"
+}
+
+Export-MgReportPartnerBillingReconciliationBilled -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Export-MgReportPartnerBillingReconciliationBilled Cmdlet.
+
 
 ## PARAMETERS
 

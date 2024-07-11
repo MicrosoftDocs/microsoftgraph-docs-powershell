@@ -53,16 +53,22 @@ Move a mail folder and its contents to another mail folder.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-move-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	DestinationId = "destinationId-value"
+	destinationId = "destinationId-value"
 }
+
 # A UPN can also be used as -UserId.
 Move-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+
 ```
+This example shows how to use the Move-MgBetaUserMailFolder Cmdlet.
+
 
 ## PARAMETERS
 

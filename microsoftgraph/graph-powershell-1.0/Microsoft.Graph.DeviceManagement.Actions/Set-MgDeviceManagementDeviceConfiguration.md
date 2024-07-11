@@ -51,20 +51,30 @@ Set-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementActions
 Not yet documented
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Actions
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	assignments = @(
+		@{
+			"@odata.type" = "#microsoft.graph.deviceConfigurationAssignment"
+			id = "d59b6342-6342-d59b-4263-9bd542639bd5"
+			target = @{
+				"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+				collectionId = "Collection Id value"
+			}
+		}
+	)
+}
 
-{{ Add output here }}
+Set-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId $deviceConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgDeviceManagementDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

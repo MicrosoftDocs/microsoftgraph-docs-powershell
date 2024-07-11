@@ -33,16 +33,17 @@ Remove-MgDeviceAppManagementTargetedManagedAppConfiguration -InputObject <IDevic
 Deletes a targetedManagedAppConfiguration.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Remove-MgDeviceAppManagementTargetedManagedAppConfiguration -TargetedManagedAppConfigurationId $targetedManagedAppConfigurationId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDeviceAppManagementTargetedManagedAppConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

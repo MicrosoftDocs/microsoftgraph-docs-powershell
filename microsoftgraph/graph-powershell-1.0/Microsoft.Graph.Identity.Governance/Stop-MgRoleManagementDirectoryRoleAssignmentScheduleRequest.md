@@ -35,16 +35,17 @@ Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a Gr
 After calling this action, the status of the canceled unifiedRoleAssignmentScheduleRequest changes to Canceled.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -UnifiedRoleAssignmentScheduleRequestId $unifiedRoleAssignmentScheduleRequestId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 

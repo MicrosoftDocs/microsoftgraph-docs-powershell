@@ -50,16 +50,25 @@ New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
 Create a new enrollmentConfigurationAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.enrollmentConfigurationAssignment"
+	target = @{
+		"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+		collectionId = "Collection Id value"
+	}
+}
+
+New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment -DeviceEnrollmentConfigurationId $deviceEnrollmentConfigurationId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment Cmdlet.
+
 
 ## PARAMETERS
 

@@ -39,16 +39,17 @@ It triggers a new health check for this cloudPcOnPremisesConnection object and c
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpconpremisesconnection-runhealthcheck-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+Start-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Start-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck Cmdlet.
+
 
 ## PARAMETERS
 

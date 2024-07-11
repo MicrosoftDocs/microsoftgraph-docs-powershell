@@ -38,16 +38,17 @@ Get-MgBetaExternalIndustryDataRun -InputObject <ISearchIdentity> [-ExpandPropert
 Read the properties and relationships of an industryDataRun object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalIndustryDataRun
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaExternalIndustryDataRun Cmdlet.
+
 
 ## PARAMETERS
 

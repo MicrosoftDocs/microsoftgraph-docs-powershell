@@ -33,16 +33,17 @@ Get-MgBetaServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServ
 Read the properties and relationships of a serviceAnnouncementAttachment object.
 
 ## EXAMPLES
+### Example 1: Return a file stream of an attachment content for a message
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+
+Get-MgBetaServiceAnnouncementMessageAttachmentContent -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
+
 ```
-{{ Add code here }}
-```
+This example will return a file stream of an attachment content for a message
+
 
 ## PARAMETERS
 

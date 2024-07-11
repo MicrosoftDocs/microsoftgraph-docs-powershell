@@ -31,21 +31,27 @@ Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 Update the properties of the cloudPcOrganizationSettings object in a tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcOrganizationSettings"
-	EnableMEMAutoEnroll = $true
-	OsVersion = "windows11"
-	UserAccountType = "standardUser"
-	WindowsSettings = @{
-		Language = "en-US"
+	enableMEMAutoEnroll = $true
+	osVersion = "windows11"
+	userAccountType = "standardUser"
+	windowsSettings = @{
+		language = "en-US"
 	}
 }
+
 Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet.
+
 
 ## PARAMETERS
 

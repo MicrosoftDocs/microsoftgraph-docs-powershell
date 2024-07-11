@@ -31,20 +31,17 @@ Invoke-MgBetaFollowDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVari
 Follow a driveItem.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Files
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgBetaFollowDriveItem -DriveId $driveId -DriveItemId $driveItemId
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgBetaFollowDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

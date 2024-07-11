@@ -34,20 +34,17 @@ Reset-MgDeviceManagementManagedDevicePasscode -InputObject <IDeviceManagementAct
 Reset passcode
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Actions
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Reset-MgDeviceManagementManagedDevicePasscode -ManagedDeviceId $managedDeviceId
 
-{{ Add output here }}
+```
+This example shows how to use the Reset-MgDeviceManagementManagedDevicePasscode Cmdlet.
+
 
 ## PARAMETERS
 

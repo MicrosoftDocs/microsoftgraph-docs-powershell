@@ -57,21 +57,25 @@ Update the properties of domain object.
 Only verified domains can be updated.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	isDefault = $true
 	supportedServices = @(
-		"Email"
-		"OfficeCommunicationsOnline"
-	)
+	"Email"
+"OfficeCommunicationsOnline"
+)
 }
 
 Update-MgDomain -DomainId $domainId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDomain Cmdlet.
+
 
 ## PARAMETERS
 

@@ -41,16 +41,17 @@ Get-MgSecurityThreatIntelligenceIntelProfile -InputObject <ISecurityIdentity> [-
 Read the properties and relationships of a intelligenceProfile object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceIntelProfile
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgSecurityThreatIntelligenceIntelProfile Cmdlet.
+
 
 ## PARAMETERS
 

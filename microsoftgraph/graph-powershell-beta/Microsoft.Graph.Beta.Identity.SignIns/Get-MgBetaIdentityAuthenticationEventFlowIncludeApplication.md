@@ -39,16 +39,17 @@ Get-MgBetaIdentityAuthenticationEventFlowIncludeApplication -InputObject <IIdent
 Get includeApplications from identity
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityAuthenticationEventFlowIncludeApplication -AuthenticationEventsFlowId $authenticationEventsFlowId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaIdentityAuthenticationEventFlowIncludeApplication Cmdlet.
+
 
 ## PARAMETERS
 

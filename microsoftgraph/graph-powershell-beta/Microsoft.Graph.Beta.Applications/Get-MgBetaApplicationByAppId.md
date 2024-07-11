@@ -37,16 +37,17 @@ Get the properties and relationships of an application object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Retrieve an application by its appId and only specific properties
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Applications
+
+Get-MgBetaApplicationByAppId -Property "id,appId,displayName,requiredResourceAccess" 
+
 ```
-{{ Add code here }}
-```
+This example will retrieve an application by its appid and only specific properties
+
 
 ## PARAMETERS
 

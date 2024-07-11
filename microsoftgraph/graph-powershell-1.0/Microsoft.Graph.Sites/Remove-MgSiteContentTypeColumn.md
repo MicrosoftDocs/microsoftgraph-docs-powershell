@@ -33,13 +33,17 @@ Remove-MgSiteContentTypeColumn -InputObject <ISitesIdentity> [-IfMatch <String>]
 Remove a column from a site, a list, or a content type.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Remove-MgSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId
+
+```
+This example shows how to use the Remove-MgSiteContentTypeColumn Cmdlet.
+
 
 ## PARAMETERS
 

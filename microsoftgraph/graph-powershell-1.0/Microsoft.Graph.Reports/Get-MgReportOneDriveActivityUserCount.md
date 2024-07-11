@@ -32,20 +32,17 @@ Get-MgReportOneDriveActivityUserCount -InputObject <IReportsIdentity> -OutFile <
 Get the trend in the number of active OneDrive users.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportOneDriveActivityUserCount -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportOneDriveActivityUserCount Cmdlet.
+
 
 ## PARAMETERS
 

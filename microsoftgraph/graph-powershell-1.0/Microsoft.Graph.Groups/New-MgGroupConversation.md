@@ -51,20 +51,41 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
 Use reply thread or reply post to further post to that conversation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Groups
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	topic = "Take your wellness days and rest"
+	threads = @(
+		@{
+			posts = @(
+				@{
+					body = @{
+						contentType = "html"
+						content = "Contoso cares about you: Rest and Recharge"
+					}
+					newParticipants = @(
+						@{
+							emailAddress = @{
+								name = "Adele Vance"
+								address = "AdeleV@contoso.com"
+							}
+						}
+					)
+				}
+			)
+		}
+	)
+}
 
-{{ Add output here }}
+New-MgGroupConversation -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgGroupConversation Cmdlet.
+
 
 ## PARAMETERS
 

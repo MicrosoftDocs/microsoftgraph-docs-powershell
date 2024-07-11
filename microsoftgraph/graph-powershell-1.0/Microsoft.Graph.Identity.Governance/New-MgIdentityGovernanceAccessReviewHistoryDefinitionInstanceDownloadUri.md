@@ -38,12 +38,17 @@ Each URI can be used to retrieve the instance's review history data.
 Each URI is valid for 24 hours and can be retrieved by fetching the downloadUri property from the accessReviewHistoryInstance object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
+
 New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId -AccessReviewHistoryInstanceId $accessReviewHistoryInstanceId
+
 ```
+This example shows how to use the New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri Cmdlet.
+
 
 ## PARAMETERS
 

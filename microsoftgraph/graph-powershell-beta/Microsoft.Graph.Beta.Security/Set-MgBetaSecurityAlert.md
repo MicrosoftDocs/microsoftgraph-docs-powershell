@@ -33,16 +33,22 @@ Set-MgBetaSecurityAlert -InputObject <ISecurityIdentity> [-IfMatch <String>]
 Create a comment for an existing alert based on the specified alert id property.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	"@odata.type" = "microsoft.graph.security.alertComment"
+	comment = "Demo for docs"
+}
+
+Set-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Set-MgBetaSecurityAlert Cmdlet.
+
 
 ## PARAMETERS
 

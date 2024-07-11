@@ -35,16 +35,17 @@ Invoke-MgFunctionServicePrincipalSynchronizationJobSchema -InputObject <IApplica
 List all the functions currently supported in the attributeMappingSource.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Applications
+
+Invoke-MgFunctionServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgFunctionServicePrincipalSynchronizationJobSchema Cmdlet.
+
 
 ## PARAMETERS
 

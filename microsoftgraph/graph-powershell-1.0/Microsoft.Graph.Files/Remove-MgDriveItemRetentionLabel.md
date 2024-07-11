@@ -35,16 +35,17 @@ Remove a retention label from a driveItem.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Files
+
+Remove-MgDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDriveItemRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 

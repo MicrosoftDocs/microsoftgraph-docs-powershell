@@ -26,12 +26,17 @@ Get-MgGroupLifecyclePolicyByGroup -GroupId <String> [-ExpandProperty <String[]>]
 Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
+
 Get-MgGroupLifecyclePolicyByGroup -GroupId $groupId
+
 ```
+This example shows how to use the Get-MgGroupLifecyclePolicyByGroup Cmdlet.
+
 
 ## PARAMETERS
 

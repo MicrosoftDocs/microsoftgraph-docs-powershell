@@ -45,46 +45,54 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+### Example 1: Get a specific message
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMessage -UserId $userId -MessageId $messageId
+```
+This example shows how to use the Get-MgBetaUserMessage Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get all mentions in a specific message
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMessage -UserId $userId -MessageId $messageId -ExpandProperty "mentions"
+```
+This example shows how to use the Get-MgBetaUserMessage Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Get message body in text format
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMessage -UserId $userId -MessageId $messageId -Property "subject,body,bodyPreview,uniqueBody"
+```
+This example shows how to use the Get-MgBetaUserMessage Cmdlet.
 
-### EXAMPLE 4
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Get Internet message headers
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMessage -UserId $userId -MessageId $messageId -Property "internetMessageHeaders"
-
-### EXAMPLE 5
 ```
-Import-Module Microsoft.Graph.Beta.Mail
-```
+This example shows how to use the Get-MgBetaUserMessage Cmdlet.
 
-# A UPN can also be used as -UserId.
-Get-MgBetaUserMessageContent -UserId $userId -MessageId $messageId -OutFile $outFileId
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

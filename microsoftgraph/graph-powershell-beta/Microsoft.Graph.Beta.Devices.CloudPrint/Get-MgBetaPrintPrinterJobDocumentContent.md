@@ -35,16 +35,17 @@ Download the binary file associated with a printDocument.
 Calling this method yields a redirect response with a preauthenticated URL that can be used to download the payload.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+Get-MgBetaPrintPrinterJobDocumentContent -PrinterId $printerId -PrintJobId $printJobId -PrintDocumentId $printDocumentId -OutFile $outFileId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaPrintPrinterJobDocumentContent Cmdlet.
+
 
 ## PARAMETERS
 

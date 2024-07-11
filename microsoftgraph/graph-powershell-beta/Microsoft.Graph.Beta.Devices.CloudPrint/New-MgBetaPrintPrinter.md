@@ -38,16 +38,30 @@ Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+$params = @{
+	displayName = "Test Printer"
+	manufacturer = "Test Printer Manufacturer"
+	model = "Test Printer Model"
+	physicalDeviceId = $null
+	hasPhysicalDevice = $false
+	certificateSigningRequest = @{
+		content = '{content}'
+		transportKey = '{sampleTransportKey}'
+	}
+	connectorId = $null
+}
+
+New-MgBetaPrintPrinter -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaPrintPrinter Cmdlet.
+
 
 ## PARAMETERS
 

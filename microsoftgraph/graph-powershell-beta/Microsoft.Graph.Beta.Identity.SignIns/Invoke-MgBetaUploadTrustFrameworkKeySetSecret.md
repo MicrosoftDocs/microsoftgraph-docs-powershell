@@ -52,18 +52,24 @@ Examples of secrets are application secrets in Microsoft Entra ID, Google, Faceb
 his method returns trustFrameworkKey.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
-	Use = "use-value"
-	K = "application-secret-to-be-uploaded"
-	Nbf = 1508969811
-	Exp = 1508973711
+	use = "use-value"
+	k = "application-secret-to-be-uploaded"
+	nbf = 1508969811
+	exp = 1508973711
 }
+
 Invoke-MgBetaUploadTrustFrameworkKeySetSecret -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
+
 ```
+This example shows how to use the Invoke-MgBetaUploadTrustFrameworkKeySetSecret Cmdlet.
+
 
 ## PARAMETERS
 

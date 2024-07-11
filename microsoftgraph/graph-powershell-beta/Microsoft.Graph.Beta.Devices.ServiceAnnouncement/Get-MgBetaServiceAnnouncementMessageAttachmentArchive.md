@@ -33,16 +33,17 @@ Get-MgBetaServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServ
 Get a list of attachments associated with a service message.
 
 ## EXAMPLES
+### Example 1: Get a zip file of all attachments in stream for a message
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+
+Get-MgBetaServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId $serviceUpdateMessageId
+
 ```
-{{ Add code here }}
-```
+This example will get a zip file of all attachments in stream for a message
+
 
 ## PARAMETERS
 

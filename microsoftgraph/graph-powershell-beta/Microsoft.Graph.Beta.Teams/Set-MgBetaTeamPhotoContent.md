@@ -37,20 +37,19 @@ The size of the photo you can update to is limited to 4 MB.
 You can use either PATCH or PUT for this operation.
 
 ## EXAMPLES
+### Example 1: Update the photo of a team
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Teams
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = Binary data for the image
 
-{{ Add output here }}
+Set-MgBetaTeamPhotoContent -TeamId $teamId -BodyParameter $params
+
+```
+This example will update the photo of a team
+
 
 ## PARAMETERS
 

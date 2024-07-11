@@ -34,12 +34,17 @@ Reprovision a Cloud PC with an Intune managed device ID.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-reprovisioncloudpc-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
 Invoke-MgBetaReprovisionDeviceManagementManagedDeviceCloudPc -ManagedDeviceId $managedDeviceId
+
 ```
+This example shows how to use the Invoke-MgBetaReprovisionDeviceManagementManagedDeviceCloudPc Cmdlet.
+
 
 ## PARAMETERS
 

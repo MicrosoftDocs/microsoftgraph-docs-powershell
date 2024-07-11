@@ -49,13 +49,44 @@ Update-MgBetaExternalConnectionSchema -InputObject <ISearchIdentity>
 Update the properties of a schema for an externalConnection.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
-Get-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId
+$params = @{
+	baseType = "microsoft.graph.externalItem"
+	properties = @(
+		@{
+			name = "ticketTitle"
+			type = "string"
+			isSearchable = "true"
+			isRetrievable = "true"
+			labels = @(
+			"title"
+		)
+	}
+	@{
+		name = "priority"
+		type = "string"
+		isQueryable = "true"
+		isRetrievable = "true"
+		isSearchable = "false"
+	}
+	@{
+		name = "assignee"
+		type = "string"
+		isRetrievable = "true"
+	}
+)
+}
+
+Update-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaExternalConnectionSchema Cmdlet.
+
 
 ## PARAMETERS
 

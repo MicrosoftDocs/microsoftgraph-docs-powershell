@@ -40,13 +40,17 @@ Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSumma
 Read the properties and relationships of a deviceCompliancePolicySettingStateSummary object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-```
 
 Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary Cmdlet.
+
 
 ## PARAMETERS
 

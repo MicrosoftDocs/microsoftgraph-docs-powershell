@@ -79,16 +79,23 @@ Update-MgGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMi
 Update an event object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	location = @{
+		displayName = "Conf Room 2"
+	}
+}
+
+Update-MgGroupCalendarEvent -GroupId $groupId -EventId $eventId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgGroupCalendarEvent Cmdlet.
+
 
 ## PARAMETERS
 

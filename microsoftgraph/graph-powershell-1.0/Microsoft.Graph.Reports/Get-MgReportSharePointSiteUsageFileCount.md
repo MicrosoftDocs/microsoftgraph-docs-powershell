@@ -34,20 +34,17 @@ Get the total number of files across all sites and the number of active files.
 A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportSharePointSiteUsageFileCount -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportSharePointSiteUsageFileCount Cmdlet.
+
 
 ## PARAMETERS
 

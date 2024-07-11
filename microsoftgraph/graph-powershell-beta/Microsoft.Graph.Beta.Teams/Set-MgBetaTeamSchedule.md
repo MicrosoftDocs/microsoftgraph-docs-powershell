@@ -79,16 +79,22 @@ If the provisioning failed, clients can get additional information from the prov
 Clients can also inspect the configuration of the schedule.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = @{
+	enabled = $true
+	timeZone = "America/Chicago"
+}
+
+Set-MgBetaTeamSchedule -TeamId $teamId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Set-MgBetaTeamSchedule Cmdlet.
+
 
 ## PARAMETERS
 

@@ -43,48 +43,17 @@ Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 Read the properties and relationships of an externalAuthenticationMethodConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
-```
 
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
-```
 
-### EXAMPLE 4
 ```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
-```
+This example shows how to use the Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
 
-### EXAMPLE 5
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
-```
-
-### EXAMPLE 6
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
-```
-
-### EXAMPLE 7
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
-```
 
 ## PARAMETERS
 

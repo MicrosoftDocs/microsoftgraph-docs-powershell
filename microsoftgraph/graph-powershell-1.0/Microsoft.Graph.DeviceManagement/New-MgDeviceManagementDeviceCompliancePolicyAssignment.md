@@ -47,20 +47,25 @@ New-MgDeviceManagementDeviceCompliancePolicyAssignment -InputObject <IDeviceMana
 Create a new deviceCompliancePolicyAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceCompliancePolicyAssignment"
+	target = @{
+		"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+		collectionId = "Collection Id value"
+	}
+}
 
-{{ Add output here }}
+New-MgDeviceManagementDeviceCompliancePolicyAssignment -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCompliancePolicyAssignment Cmdlet.
+
 
 ## PARAMETERS
 

@@ -59,16 +59,21 @@ Update-MgSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicrosof
 Update the properties of a bookmark object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Search
+
+$params = @{
+	description = "Book a fancy vacation in Tuscany or browse museums in Florence."
+}
+
+Update-MgSearchBookmark -BookmarkId $bookmarkId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgSearchBookmark Cmdlet.
+
 
 ## PARAMETERS
 

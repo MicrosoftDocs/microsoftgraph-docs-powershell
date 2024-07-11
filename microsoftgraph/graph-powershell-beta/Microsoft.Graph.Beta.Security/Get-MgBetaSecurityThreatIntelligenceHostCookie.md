@@ -63,16 +63,17 @@ Get-MgBetaSecurityThreatIntelligenceHostCookie -InputObject <ISecurityIdentity> 
 Read the properties and relationships of a hostCookie object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceHostCookie -HostCookieId $hostCookieId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostCookie Cmdlet.
+
 
 ## PARAMETERS
 

@@ -49,16 +49,26 @@ New-MgDeviceAppManagementiOSManagedAppProtectionApp -InputObject <IDevicesCorpor
 Create a new managedMobileApp object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.managedMobileApp"
+	mobileAppIdentifier = @{
+		"@odata.type" = "microsoft.graph.androidMobileAppIdentifier"
+		packageId = "Package Id value"
+	}
+	version = "Version value"
+}
+
+New-MgDeviceAppManagementiOSManagedAppProtectionApp -IosManagedAppProtectionId $iosManagedAppProtectionId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgDeviceAppManagementiOSManagedAppProtectionApp Cmdlet.
+
 
 ## PARAMETERS
 

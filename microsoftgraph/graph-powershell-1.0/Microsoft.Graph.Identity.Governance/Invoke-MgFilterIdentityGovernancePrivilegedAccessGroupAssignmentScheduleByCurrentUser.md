@@ -36,16 +36,17 @@ Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurren
 In PIM for groups, retrieve the schedules for membership or ownership assignments for the calling principal to groups that are governed by PIM.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurrentUser -On $onId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

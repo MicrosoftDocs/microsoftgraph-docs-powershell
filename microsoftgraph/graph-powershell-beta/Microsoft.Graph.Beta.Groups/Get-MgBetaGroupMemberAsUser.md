@@ -45,16 +45,18 @@ A group can have users, contacts, devices, service principals, and other groups 
 This operation isn't transitive.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Groups
+
+Get-MgBetaGroupMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Search '"displayName:Pr"' -Property "displayName,id"  -ConsistencyLevel eventual 
+
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaGroupMemberAsUser Cmdlet.
+
 
 ## PARAMETERS
 

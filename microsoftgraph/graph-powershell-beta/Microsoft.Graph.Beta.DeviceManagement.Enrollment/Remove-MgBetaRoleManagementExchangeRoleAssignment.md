@@ -30,16 +30,17 @@ Remove-MgBetaRoleManagementExchangeRoleAssignment -InputObject <IDeviceManagemen
 Delete a unifiedRoleAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+Remove-MgBetaRoleManagementExchangeRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaRoleManagementExchangeRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 

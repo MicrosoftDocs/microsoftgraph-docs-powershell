@@ -50,16 +50,28 @@ In Microsoft Entra entitlement management, when an access package policy has bee
 It is performed on an accessPackageAssignmentRequest object whose requestStatus is in a WaitingForCallback state.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	source = "Contoso.SodCheckProcess"
+	type = "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated"
+	data = @{
+		"@odata.type" = "microsoft.graph.accessPackageAssignmentRequestCallbackData"
+		stage = "assignmentRequestCreated"
+		customExtensionStageInstanceId = "957d0c50-466b-4840-bb5b-c92cea7141ff"
+		customExtensionStageInstanceDetail = "This user is all verified"
+	}
+}
+
+Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest Cmdlet.
+
 
 ## PARAMETERS
 

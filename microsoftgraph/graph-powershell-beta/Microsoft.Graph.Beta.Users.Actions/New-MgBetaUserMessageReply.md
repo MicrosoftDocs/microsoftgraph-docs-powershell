@@ -63,32 +63,38 @@ Alternatively, reply to a message in a single operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-createreply-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	Message = @{
-		ToRecipients = @(
+	message = @{
+		toRecipients = @(
 			@{
-				EmailAddress = @{
-					Address = "samanthab@contoso.onmicrosoft.com"
-					Name = "Samantha Booth"
+				emailAddress = @{
+					address = "samanthab@contoso.com"
+					name = "Samantha Booth"
 				}
 			}
 			@{
-				EmailAddress = @{
-					Address = "randiw@contoso.onmicrosoft.com"
-					Name = "Randi Welch"
+				emailAddress = @{
+					address = "randiw@contoso.com"
+					name = "Randi Welch"
 				}
 			}
 		)
 	}
-	Comment = "Samantha, Randi, would you name the group if the project is approved, please?"
+	comment = "Samantha, Randi, would you name the group if the project is approved, please?"
 }
+
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageReply -UserId $userId -MessageId $messageId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaUserMessageReply Cmdlet.
+
 
 ## PARAMETERS
 

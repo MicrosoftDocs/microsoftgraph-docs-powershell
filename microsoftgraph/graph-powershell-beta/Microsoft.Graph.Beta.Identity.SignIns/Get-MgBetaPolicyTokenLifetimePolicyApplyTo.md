@@ -41,16 +41,17 @@ Get-MgBetaPolicyTokenLifetimePolicyApplyTo -InputObject <IIdentitySignInsIdentit
 Get appliesTo from policies
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaPolicyTokenLifetimePolicyApplyTo -TokenLifetimePolicyId $tokenLifetimePolicyId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaPolicyTokenLifetimePolicyApplyTo Cmdlet.
+
 
 ## PARAMETERS
 

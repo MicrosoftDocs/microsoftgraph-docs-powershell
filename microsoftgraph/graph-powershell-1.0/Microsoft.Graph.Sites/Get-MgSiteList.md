@@ -41,13 +41,17 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 Get a list of rich long-running operations associated with a list.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteList -SiteId $siteId
+
+```
+This example shows how to use the Get-MgSiteList Cmdlet.
+
 
 ## PARAMETERS
 

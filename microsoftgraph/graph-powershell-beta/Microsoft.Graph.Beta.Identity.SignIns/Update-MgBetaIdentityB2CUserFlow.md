@@ -56,16 +56,22 @@ Update-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity>
 Update the properties of a b2cIdentityUserFlow object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
-	IsLanguageCustomizationEnabled = $true
-	DefaultLanguageTag = "en"
+	isLanguageCustomizationEnabled = $true
+	defaultLanguageTag = "en"
 }
+
 Update-MgBetaIdentityB2CUserFlow -B2cIdentityUserFlowId $b2cIdentityUserFlowId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaIdentityB2CUserFlow Cmdlet.
+
 
 ## PARAMETERS
 

@@ -54,11 +54,11 @@ Update-MgBetaUserProfileAward -InputObject <IPeopleIdentity> -BodyParameter <IMi
 Update the properties of a personAward object from a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	issuingAuthority = "International Association of Branding Management"
@@ -66,6 +66,10 @@ $params = @{
 }
 
 Update-MgBetaUserProfileAward -UserId $userId -PersonAwardId $personAwardId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileAward Cmdlet.
+
 
 ## PARAMETERS
 

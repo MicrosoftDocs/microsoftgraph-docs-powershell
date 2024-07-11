@@ -42,13 +42,18 @@ For more information about tracking changes in Microsoft Graph data, see Use del
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-delta-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Functions
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPlannerAllDelta -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserPlannerAllDelta Cmdlet.
+
 
 ## PARAMETERS
 

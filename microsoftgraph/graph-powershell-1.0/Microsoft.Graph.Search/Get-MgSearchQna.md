@@ -40,16 +40,17 @@ Get-MgSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] [-Pr
 Read the properties and relationships of a qna object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Search
+
+Get-MgSearchQna
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgSearchQna Cmdlet.
+
 
 ## PARAMETERS
 

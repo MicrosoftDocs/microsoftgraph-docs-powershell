@@ -48,41 +48,61 @@ Only teachers, students, and applications with application permissions can perfo
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignmentresource-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get an educationLinkResource
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 2
 ```
+This example will get an educationlinkresource
+
+### Example 2: Get an educationExcelResource
+
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 3
 ```
+This example will get an educationexcelresource
+
+### Example 3: Get an educationPowerPointResource
+
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 4
 ```
+This example will get an educationpowerpointresource
+
+### Example 4: Get an educationFileResource
+
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 5
 ```
+This example will get an educationfileresource
+
+### Example 5: Get an educationMediaResource
+
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
+
+```
+This example will get an educationmediaresource
+
 
 ## PARAMETERS
 

@@ -54,16 +54,32 @@ Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount -InputObject <IDevice
 Not yet documented
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	updateWindowsDeviceAccountActionParameter = @{
+		"@odata.type" = "microsoft.graph.updateWindowsDeviceAccountActionParameter"
+		deviceAccount = @{
+			"@odata.type" = "microsoft.graph.windowsDeviceAccount"
+			password = "Password value"
+		}
+		passwordRotationEnabled = $true
+		calendarSyncEnabled = $true
+		deviceAccountEmail = "Device Account Email value"
+		exchangeServer = "Exchange Server value"
+		sessionInitiationProtocalAddress = "Session Initiation Protocal Address value"
+	}
+}
+
+Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount -ManagedDeviceId $managedDeviceId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount Cmdlet.
+
 
 ## PARAMETERS
 

@@ -55,11 +55,11 @@ Update-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity>
 Update the navigation property educationalActivities in users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	institution = @{
@@ -77,6 +77,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileEducationalActivity -UserId $userId -EducationalActivityId $educationalActivityId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileEducationalActivity Cmdlet.
+
 
 ## PARAMETERS
 

@@ -42,16 +42,17 @@ Get-MgDeviceAppManagementManagedEBookUserStateSummary -InputObject <IDevicesCorp
 Read properties and relationships of the userInstallStateSummary object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementManagedEBookUserStateSummary -ManagedEBookId $managedEBookId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceAppManagementManagedEBookUserStateSummary Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,12 +33,17 @@ Calling this method prevents the current user from receiving email notifications
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
+
 Invoke-MgGraphGroup -GroupId $groupId
+
 ```
+This example shows how to use the Invoke-MgGraphGroup Cmdlet.
+
 
 ## PARAMETERS
 

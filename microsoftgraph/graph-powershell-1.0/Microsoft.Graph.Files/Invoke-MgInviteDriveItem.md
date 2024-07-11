@@ -53,20 +53,33 @@ Invoke-MgInviteDriveItem -InputObject <IFilesIdentity>
 Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Files
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	recipients = @(
+		@{
+			email = "ryan@contoso.com"
+		}
+	)
+	message = "Here's the file that we're collaborating on."
+	requireSignIn = $true
+	sendInvitation = $true
+	roles = @(
+	"write"
+)
+password = "password123"
+expirationDateTime = "2018-07-15T14:00:00.000Z"
+}
 
-{{ Add output here }}
+Invoke-MgInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgInviteDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

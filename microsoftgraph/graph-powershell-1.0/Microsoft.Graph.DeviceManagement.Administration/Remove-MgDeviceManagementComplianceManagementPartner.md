@@ -33,20 +33,17 @@ Remove-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManage
 Deletes a complianceManagementPartner.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Remove-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartnerId $complianceManagementPartnerId
 
-{{ Add output here }}
+```
+This example shows how to use the Remove-MgDeviceManagementComplianceManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 

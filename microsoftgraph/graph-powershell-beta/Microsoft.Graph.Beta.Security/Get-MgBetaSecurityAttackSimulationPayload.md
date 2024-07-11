@@ -55,16 +55,17 @@ Get-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity> [-Exp
 Represents an attack simulation training campaign payload in a tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityAttackSimulationPayload -Filter "source eq 'Tenant'" 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityAttackSimulationPayload Cmdlet.
+
 
 ## PARAMETERS
 

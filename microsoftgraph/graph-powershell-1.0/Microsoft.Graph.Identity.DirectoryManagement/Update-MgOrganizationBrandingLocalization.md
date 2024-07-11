@@ -70,11 +70,11 @@ Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManage
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
 ## EXAMPLES
+### Example 1: Update the backgroundColor and signInPageText for the fr-FR localization using PATCH
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	backgroundColor = "#00000F"
@@ -83,10 +83,14 @@ $params = @{
 
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will update the backgroundcolor and signinpagetext for the fr-fr localization using patch
+
+### Example 2: Override a default branding value with a blank string
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	signInPageText = "Welcome to Contoso France."
@@ -94,6 +98,10 @@ $params = @{
 }
 
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
+
+```
+This example will override a default branding value with a blank string
+
 
 ## PARAMETERS
 

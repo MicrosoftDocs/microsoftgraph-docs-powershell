@@ -52,16 +52,36 @@ Update-MgBetaBusinessScenarioPlannerPlanConfiguration -InputObject <IBookingsIde
 Update the properties of a plannerPlanConfiguration object for a businessScenario.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.plannerPlanConfiguration"
+	defaultLanguage = "en-us"
+	buckets = @(
+		@{
+			externalBucketId = "deliveryBucket"
+		}
+		@{
+			externalBucketId = "storePickupBucket"
+		}
+		@{
+			externalBucketId = "specialOrdersBucket"
+		}
+		@{
+			externalBucketId = "returnProcessingBucket"
+		}
+	)
+}
+
+Update-MgBetaBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaBusinessScenarioPlannerPlanConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

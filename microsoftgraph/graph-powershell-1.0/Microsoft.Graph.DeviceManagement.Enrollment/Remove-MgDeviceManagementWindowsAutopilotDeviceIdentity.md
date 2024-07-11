@@ -34,16 +34,17 @@ Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity -InputObject <IDeviceMan
 Deletes a windowsAutopilotDeviceIdentity.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
+
+Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity -WindowsAutopilotDeviceIdentityId $windowsAutopilotDeviceIdentityId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity Cmdlet.
+
 
 ## PARAMETERS
 

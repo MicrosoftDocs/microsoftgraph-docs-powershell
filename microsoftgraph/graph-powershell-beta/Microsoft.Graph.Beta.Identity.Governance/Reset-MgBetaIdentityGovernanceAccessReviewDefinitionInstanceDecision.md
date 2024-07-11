@@ -33,12 +33,17 @@ Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObjec
 Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
+
 ```
+This example shows how to use the Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet.
+
 
 ## PARAMETERS
 

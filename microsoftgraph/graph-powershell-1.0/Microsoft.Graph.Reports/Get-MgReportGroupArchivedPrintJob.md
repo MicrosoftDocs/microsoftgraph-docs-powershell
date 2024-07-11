@@ -33,16 +33,17 @@ Get-MgReportGroupArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-Fil
 Get a list of archived print jobs for a particular group.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportGroupArchivedPrintJob
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgReportGroupArchivedPrintJob Cmdlet.
+
 
 ## PARAMETERS
 

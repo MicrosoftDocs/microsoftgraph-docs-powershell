@@ -41,18 +41,17 @@ Get-MgBetaSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 Get the metadata for a baseSitePage in the site pages list in a site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Sites
-Get-MgBetaSitePage -SiteId $siteId -SitePageId $sitePageId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Sites
+
 Get-MgBetaSitePage -SiteId $siteId
+
 ```
+This example shows how to use the Get-MgBetaSitePage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -55,16 +55,17 @@ The various configurations of an alert for Microsoft Entra roles.
 The configurations are predefined and can't be created or deleted, but some of the configurations can be modified.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'" -ExpandProperty "alertDefinition" 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

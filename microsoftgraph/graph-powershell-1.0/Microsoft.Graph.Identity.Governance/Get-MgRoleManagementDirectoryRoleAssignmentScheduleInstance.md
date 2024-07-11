@@ -41,16 +41,17 @@ Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance -InputObject <IIdent
 Get the instance of an active role assignment.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance Cmdlet.
+
 
 ## PARAMETERS
 

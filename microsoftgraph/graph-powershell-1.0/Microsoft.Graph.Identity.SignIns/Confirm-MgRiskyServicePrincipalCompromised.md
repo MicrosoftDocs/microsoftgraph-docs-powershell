@@ -40,16 +40,23 @@ This action sets the targeted service principal account's risk level to high.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyserviceprincipal-confirmcompromised-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	servicePrincipalIds = @(
+	"9089a539-a539-9089-39a5-899039a58990"
+)
+}
+
+Confirm-MgRiskyServicePrincipalCompromised -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Confirm-MgRiskyServicePrincipalCompromised Cmdlet.
+
 
 ## PARAMETERS
 

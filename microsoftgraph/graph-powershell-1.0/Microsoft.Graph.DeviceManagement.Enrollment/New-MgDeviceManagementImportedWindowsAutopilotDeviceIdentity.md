@@ -36,16 +36,34 @@ New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 Create a new importedWindowsAutopilotDeviceIdentity object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.importedWindowsAutopilotDeviceIdentity"
+	groupTag = "Group Tag value"
+	serialNumber = "Serial Number value"
+	productKey = "Product Key value"
+	importId = "Import Id value"
+	hardwareIdentifier = [System.Text.Encoding]::ASCII.GetBytes("aGFyZHdhcmVJZGVudGlmaWVy")
+	state = @{
+		"@odata.type" = "microsoft.graph.importedWindowsAutopilotDeviceIdentityState"
+		deviceImportStatus = "pending"
+		deviceRegistrationId = "Device Registration Id value"
+		deviceErrorCode = 15
+		deviceErrorName = "Device Error Name value"
+	}
+	assignedUserPrincipalName = "Assigned User Principal Name value"
+}
+
+New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity Cmdlet.
+
 
 ## PARAMETERS
 

@@ -63,16 +63,17 @@ Get-MgSecurityThreatIntelligenceHostCookie -InputObject <ISecurityIdentity> [-Ex
 Read the properties and relationships of a hostCookie object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceHostCookie -HostCookieId $hostCookieId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgSecurityThreatIntelligenceHostCookie Cmdlet.
+
 
 ## PARAMETERS
 

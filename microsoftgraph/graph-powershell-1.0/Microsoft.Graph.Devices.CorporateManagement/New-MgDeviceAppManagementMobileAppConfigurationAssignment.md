@@ -49,16 +49,24 @@ New-MgDeviceAppManagementMobileAppConfigurationAssignment -InputObject <IDevices
 Create a new managedDeviceMobileAppConfigurationAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment"
+	target = @{
+		"@odata.type" = "microsoft.graph.allLicensedUsersAssignmentTarget"
+	}
+}
+
+New-MgDeviceAppManagementMobileAppConfigurationAssignment -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgDeviceAppManagementMobileAppConfigurationAssignment Cmdlet.
+
 
 ## PARAMETERS
 

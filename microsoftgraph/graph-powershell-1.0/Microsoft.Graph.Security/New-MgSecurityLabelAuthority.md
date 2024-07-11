@@ -32,16 +32,22 @@ New-MgSecurityLabelAuthority -BodyParameter <Hashtable> [-ResponseHeadersVariabl
 Create a new authorityTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.authorityTemplate"
+	displayName = "Business"
+}
+
+New-MgSecurityLabelAuthority -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgSecurityLabelAuthority Cmdlet.
+
 
 ## PARAMETERS
 

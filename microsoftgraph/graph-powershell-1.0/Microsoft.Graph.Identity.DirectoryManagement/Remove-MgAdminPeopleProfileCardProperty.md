@@ -30,16 +30,17 @@ Remove-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManageme
 Delete the profileCardProperty object specified by its directoryPropertyName from the organization's profile card, and remove any localized customizations for that property.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Remove-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgAdminPeopleProfileCardProperty Cmdlet.
+
 
 ## PARAMETERS
 

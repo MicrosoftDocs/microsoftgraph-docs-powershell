@@ -25,16 +25,17 @@ Get newly created, updated, or deleted tasks in either a Planner plan or assigne
 For details, see Use delta query to track changes in Microsoft Graph data.
 
 ## EXAMPLES
+### Example 1: Get delta on tasks in a plannerPlan
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Planner
+
+Get-MgBetaPlannerTaskDelta
+
 ```
-{{ Add code here }}
-```
+This example will get delta on tasks in a plannerplan
+
 
 ## PARAMETERS
 

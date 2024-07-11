@@ -54,20 +54,27 @@ New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActio
 Create a new deviceComplianceActionItem object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceComplianceActionItem"
+	gracePeriodHours = 0
+	actionType = "notification"
+	notificationTemplateId = "Notification Template Id value"
+	notificationMessageCCList = @(
+	"Notification Message CCList value"
+)
+}
 
-{{ Add output here }}
+New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceComplianceScheduledActionForRuleId $deviceComplianceScheduledActionForRuleId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

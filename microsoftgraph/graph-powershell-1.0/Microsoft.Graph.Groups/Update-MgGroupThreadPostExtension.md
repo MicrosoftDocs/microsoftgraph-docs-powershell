@@ -49,11 +49,11 @@ Update an open extension (openTypeExtension object) with the properties in the r
 See the table in the Permissions section for the list of resources that support open extensions.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	"@odata.type" = "Microsoft.OutlookServices.OpenTypeExtension"
@@ -62,13 +62,17 @@ $params = @{
 	expirationDate = "2016-07-30T11:00:00.000Z"
 	DealValue = 
 	topPicks = @(
-		"Employees only"
-		"Add spouse or guest"
-		"Add family"
-	)
+	"Employees only"
+"Add spouse or guest"
+"Add family"
+)
 }
 
 Update-MgGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgGroupThreadPostExtension Cmdlet.
+
 
 ## PARAMETERS
 

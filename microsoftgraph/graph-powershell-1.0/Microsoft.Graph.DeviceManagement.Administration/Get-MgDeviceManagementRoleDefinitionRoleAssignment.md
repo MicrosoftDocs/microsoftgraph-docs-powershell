@@ -42,20 +42,17 @@ Get-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManageme
 Read properties and relationships of the roleAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgDeviceManagementRoleDefinitionRoleAssignment -RoleDefinitionId $roleDefinitionId
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgDeviceManagementRoleDefinitionRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 

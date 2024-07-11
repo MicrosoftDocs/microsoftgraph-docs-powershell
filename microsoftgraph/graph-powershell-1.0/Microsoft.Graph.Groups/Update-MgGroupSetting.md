@@ -79,16 +79,26 @@ Update-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftG
 Update the properties of a groupSetting object for tenant-wide group settings or a specific group setting.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Groups
+
+$params = @{
+	values = @(
+		@{
+			name = "AllowToAddGuests"
+			value = "true"
+		}
+	)
+}
+
+Update-MgGroupSetting -GroupId $groupId -GroupSettingId $groupSettingId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgGroupSetting Cmdlet.
+
 
 ## PARAMETERS
 

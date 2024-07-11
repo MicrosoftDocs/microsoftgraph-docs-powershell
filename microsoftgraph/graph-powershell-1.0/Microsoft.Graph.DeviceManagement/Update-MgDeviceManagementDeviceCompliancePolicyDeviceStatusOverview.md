@@ -51,20 +51,28 @@ Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview -InputObject
 Update the properties of a deviceComplianceDeviceOverview object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceComplianceDeviceOverview"
+	pendingCount = 12
+	notApplicableCount = 2
+	successCount = 12
+	errorCount = 10
+	failedCount = 11
+	lastUpdateDateTime = [System.DateTime]::Parse("2016-12-31T23:58:21.6459442-08:00")
+	configurationVersion = 4
+}
 
-{{ Add output here }}
+Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview Cmdlet.
+
 
 ## PARAMETERS
 

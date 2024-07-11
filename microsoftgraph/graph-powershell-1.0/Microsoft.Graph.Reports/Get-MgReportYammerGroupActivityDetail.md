@@ -45,20 +45,17 @@ Get-MgReportYammerGroupActivityDetail -InputObject <IReportsIdentity> -OutFile <
 Get details about Yammer groups activity by group.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportYammerGroupActivityDetail
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportYammerGroupActivityDetail Cmdlet.
+
 
 ## PARAMETERS
 

@@ -38,13 +38,17 @@ Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplian
 Read the properties and relationships of a noncustodialDataSource object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId
+
+```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet.
+
 
 ## PARAMETERS
 

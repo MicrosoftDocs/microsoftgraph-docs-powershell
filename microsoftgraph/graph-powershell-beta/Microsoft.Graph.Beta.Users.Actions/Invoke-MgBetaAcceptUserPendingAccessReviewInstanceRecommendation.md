@@ -38,13 +38,18 @@ If there isn't a recommendation on an accessReviewInstanceDecisionItem object no
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-acceptrecommendations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 # A UPN can also be used as -UserId.
 Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation -UserId $userId -AccessReviewInstanceId $accessReviewInstanceId
+
 ```
+This example shows how to use the Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation Cmdlet.
+
 
 ## PARAMETERS
 

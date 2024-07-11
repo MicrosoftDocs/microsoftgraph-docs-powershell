@@ -55,11 +55,11 @@ New-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity>
 Create a new version of a document set item in a list.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	comment = "v1"
@@ -67,6 +67,10 @@ $params = @{
 }
 
 New-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSiteListItemDocumentSetVersion Cmdlet.
+
 
 ## PARAMETERS
 

@@ -56,22 +56,28 @@ Workflows created from the 'Real-time employee termination' template are run on-
 When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 $params = @{
-	Subjects = @(
+	subjects = @(
 		@{
-			Id = "8cdf25a8-c9d2-423e-a03d-3f39f03c3e97"
+			id = "8cdf25a8-c9d2-423e-a03d-3f39f03c3e97"
 		}
 		@{
-			Id = "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
+			id = "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
 		}
 	)
 }
+
 Initialize-MgBetaIdentityGovernanceLifecycleWorkflow -WorkflowId $workflowId -BodyParameter $params
+
 ```
+This example shows how to use the Initialize-MgBetaIdentityGovernanceLifecycleWorkflow Cmdlet.
+
 
 ## PARAMETERS
 

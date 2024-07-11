@@ -49,16 +49,24 @@ New-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevicesC
 Create a new managedAppOperation object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.managedAppOperation"
+	displayName = "Display Name value"
+	state = "State value"
+	version = "Version value"
+}
+
+New-MgDeviceAppManagementManagedAppRegistrationOperation -ManagedAppRegistrationId $managedAppRegistrationId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgDeviceAppManagementManagedAppRegistrationOperation Cmdlet.
+
 
 ## PARAMETERS
 

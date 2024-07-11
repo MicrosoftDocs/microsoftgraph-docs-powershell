@@ -30,16 +30,17 @@ Test-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-Respon
 Perform validations applicable for the specific instance of the data connector.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Search
+
+Test-MgBetaExternalIndustryDataConnector -IndustryDataConnectorId $industryDataConnectorId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Test-MgBetaExternalIndustryDataConnector Cmdlet.
+
 
 ## PARAMETERS
 

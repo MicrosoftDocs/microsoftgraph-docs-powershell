@@ -45,16 +45,18 @@ This operation is not transitive.
 Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Groups
+
+Get-MgBetaGroupMemberOfAsGroup -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'A')"  -ConsistencyLevel eventual 
+
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaGroupMemberOfAsGroup Cmdlet.
+
 
 ## PARAMETERS
 

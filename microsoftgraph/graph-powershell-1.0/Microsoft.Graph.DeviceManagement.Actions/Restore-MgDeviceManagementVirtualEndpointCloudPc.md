@@ -56,16 +56,21 @@ Use this API to trigger a remote action that restores a Cloud PC device to a pre
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-restore-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	cloudPcSnapshotId = "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8"
+}
+
+Restore-MgDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Restore-MgDeviceManagementVirtualEndpointCloudPc Cmdlet.
+
 
 ## PARAMETERS
 

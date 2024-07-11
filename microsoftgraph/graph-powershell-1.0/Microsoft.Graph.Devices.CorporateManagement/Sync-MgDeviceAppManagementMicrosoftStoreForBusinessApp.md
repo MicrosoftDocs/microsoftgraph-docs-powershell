@@ -25,16 +25,17 @@ Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp [-ResponseHeadersVariable
 Syncs Intune account with Microsoft Store For Business
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp Cmdlet.
+
 
 ## PARAMETERS
 

@@ -53,16 +53,22 @@ This method along with addKey can be used by an application to automate rolling 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
+
 $params = @{
-	KeyId = "f0b0b335-1d71-4883-8f98-567911bfdca6"
-	Proof = "eyJ0eXAiOiJ..."
+	keyId = "f0b0b335-1d71-4883-8f98-567911bfdca6"
+	proof = "eyJ0eXAiOiJ..."
 }
+
 Remove-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
+
 ```
+This example shows how to use the Remove-MgBetaApplicationKey Cmdlet.
+
 
 ## PARAMETERS
 

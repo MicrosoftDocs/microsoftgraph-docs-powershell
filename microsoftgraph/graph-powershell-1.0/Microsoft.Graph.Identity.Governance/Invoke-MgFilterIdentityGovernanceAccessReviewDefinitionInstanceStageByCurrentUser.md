@@ -37,20 +37,17 @@ Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUse
 Return all accessReviewStage objects on a given accessReviewInstance where the calling user is a reviewer on one or more accessReviewInstanceDecisionItem objects.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -On $onId 
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

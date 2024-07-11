@@ -51,15 +51,21 @@ Upgrade or downgrade an existing Cloud PC to another configuration with a new vi
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-resizecloudpc-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
 $params = @{
-	TargetServicePlanId = "30d0e128-de93-41dc-89ec-33d84bb662a0"
+	targetServicePlanId = "30d0e128-de93-41dc-89ec-33d84bb662a0"
 }
+
 Resize-MgBetaDeviceManagementManagedDeviceCloudPc -ManagedDeviceId $managedDeviceId -BodyParameter $params
+
 ```
+This example shows how to use the Resize-MgBetaDeviceManagementManagedDeviceCloudPc Cmdlet.
+
 
 ## PARAMETERS
 

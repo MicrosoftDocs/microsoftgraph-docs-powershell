@@ -32,12 +32,17 @@ Get the health details of a Microsoft Teams-enabled device.
 Device health is calculated based on the device configuration and other device parameters.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaTeamworkDeviceHealth -TeamworkDeviceId $teamworkDeviceId
+
 ```
+This example shows how to use the Get-MgBetaTeamworkDeviceHealth Cmdlet.
+
 
 ## PARAMETERS
 

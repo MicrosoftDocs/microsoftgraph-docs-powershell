@@ -38,18 +38,17 @@ Get-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIdenti
 Read the properties and relationships of a tenantTag object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.ManagedTenants
-Get-MgBetaTenantRelationshipManagedTenantTag -TenantTagId $tenantTagId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 Get-MgBetaTenantRelationshipManagedTenantTag
+
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
+
 
 ## PARAMETERS
 

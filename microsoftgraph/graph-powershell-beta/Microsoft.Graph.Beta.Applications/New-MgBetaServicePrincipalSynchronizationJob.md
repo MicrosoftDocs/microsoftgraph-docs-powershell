@@ -57,15 +57,21 @@ The job is created in a disabled state.
 Call Start job to start synchronization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
+
 $params = @{
-	TemplateId = "BoxOutDelta"
+	templateId = "BoxOutDelta"
 }
+
 New-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaServicePrincipalSynchronizationJob Cmdlet.
+
 
 ## PARAMETERS
 

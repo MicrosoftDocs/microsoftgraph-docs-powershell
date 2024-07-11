@@ -51,16 +51,25 @@ Get-MgApplicationSynchronizationAccessToken -InputObject <IApplicationsIdentity>
 Acquire an OAuth access token to authorize the Microsoft Entra provisioning service to provision users into an application.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	credentials = @(
+		@{
+			"@odata.type" = "microsoft.graph.synchronizationSecretKeyStringValuePair"
+		}
+	)
+}
+
+Get-MgApplicationSynchronizationAccessToken -ApplicationId $applicationId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgApplicationSynchronizationAccessToken Cmdlet.
+
 
 ## PARAMETERS
 

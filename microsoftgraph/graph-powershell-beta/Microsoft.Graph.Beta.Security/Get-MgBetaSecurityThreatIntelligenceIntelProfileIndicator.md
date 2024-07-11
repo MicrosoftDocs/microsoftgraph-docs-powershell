@@ -42,16 +42,17 @@ Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator -InputObject <ISecurit
 Includes an assemblage of high-fidelity network indicators of compromise.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator -IntelligenceProfileId $intelligenceProfileId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator Cmdlet.
+
 
 ## PARAMETERS
 

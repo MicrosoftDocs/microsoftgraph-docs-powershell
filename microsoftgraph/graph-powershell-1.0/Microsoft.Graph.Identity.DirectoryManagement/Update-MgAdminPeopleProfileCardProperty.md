@@ -46,16 +46,31 @@ Update-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManageme
 Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = @{
+	annotations = @(
+		@{
+			displayName = "Cost Center"
+			localizations = @(
+				@{
+					languageTag = "no"
+					displayName = "Kostnadssenter"
+				}
+			)
+		}
+	)
+}
+
+Update-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgAdminPeopleProfileCardProperty Cmdlet.
+
 
 ## PARAMETERS
 

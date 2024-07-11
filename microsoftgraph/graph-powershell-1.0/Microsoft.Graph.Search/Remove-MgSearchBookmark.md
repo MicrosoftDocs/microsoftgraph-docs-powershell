@@ -33,16 +33,17 @@ Remove-MgSearchBookmark -InputObject <ISearchIdentity> [-IfMatch <String>] [-Res
 Delete a bookmark object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Search
+
+Remove-MgSearchBookmark -BookmarkId $bookmarkId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgSearchBookmark Cmdlet.
+
 
 ## PARAMETERS
 

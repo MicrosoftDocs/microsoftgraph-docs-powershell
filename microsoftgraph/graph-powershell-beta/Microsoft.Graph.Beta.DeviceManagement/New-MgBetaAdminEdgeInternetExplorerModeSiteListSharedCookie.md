@@ -55,16 +55,27 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevic
 Create a new browserSharedCookie object in a browserSiteList.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.browserSharedCookie"
+	hostOrDomain = "www.microsoft.com"
+	sourceEnvironment = "InternetExplorer11"
+	displayName = "Microsoft Cookie"
+	hostOnly = $true
+	comment = "A cookie for microsoft.com"
+	path = "/"
+}
+
+New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie Cmdlet.
+
 
 ## PARAMETERS
 

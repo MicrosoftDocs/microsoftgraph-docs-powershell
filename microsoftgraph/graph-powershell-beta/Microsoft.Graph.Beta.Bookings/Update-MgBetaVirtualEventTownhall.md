@@ -56,16 +56,28 @@ Update-MgBetaVirtualEventTownhall -InputObject <IBookingsIdentity>
 Update the properties of a vvirtualEventTownhall object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	startDateTime = @{
+		dateTime = "2024-03-31T10:00:00"
+		timeZone = "Pacific Standard Time"
+	}
+	endDateTime = @{
+		dateTime = "2024-03-31T17:00:00"
+		timeZone = "Pacific Standard Time"
+	}
+}
+
+Update-MgBetaVirtualEventTownhall -VirtualEventTownhallId $virtualEventTownhallId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaVirtualEventTownhall Cmdlet.
+
 
 ## PARAMETERS
 

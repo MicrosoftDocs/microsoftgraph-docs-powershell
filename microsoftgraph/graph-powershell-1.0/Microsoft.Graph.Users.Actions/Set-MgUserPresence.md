@@ -55,18 +55,24 @@ Set the state of a user's presence session as an application.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setpresence-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
+
 $params = @{
-	SessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87"
-	Availability = "Available"
-	Activity = "Available"
-	ExpirationDuration = "PT1H"
+	sessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87"
+	availability = "Available"
+	activity = "Available"
+	expirationDuration = "PT1H"
 }
+
 Set-MgUserPresence -UserId $userId -BodyParameter $params
+
 ```
+This example shows how to use the Set-MgUserPresence Cmdlet.
+
 
 ## PARAMETERS
 

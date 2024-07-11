@@ -63,16 +63,17 @@ Get-MgBetaSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIden
 Read the properties and relationships of an articleIndicator object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceArticleIndicator -ArticleIndicatorId $articleIndicatorId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceArticleIndicator Cmdlet.
+
 
 ## PARAMETERS
 

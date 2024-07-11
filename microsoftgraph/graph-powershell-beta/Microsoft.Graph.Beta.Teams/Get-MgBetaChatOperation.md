@@ -38,18 +38,17 @@ Get-MgBetaChatOperation -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 Get the specified Teams async operation that ran or is running on a specific resource.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaChatOperation -ChatId $chatId -TeamsAsyncOperationId $teamsAsyncOperationId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaChatOperation -ChatId $chatId
+
 ```
+This example shows how to use the Get-MgBetaChatOperation Cmdlet.
+
 
 ## PARAMETERS
 

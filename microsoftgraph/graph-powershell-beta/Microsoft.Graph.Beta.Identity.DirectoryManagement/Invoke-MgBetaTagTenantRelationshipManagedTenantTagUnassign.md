@@ -46,16 +46,23 @@ Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -InputObject <IIdenti
 Un-assigns the tenant tag from the specified managed tenants.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	tenantIds = @(
+	"String"
+)
+}
+
+Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -TenantTagId $tenantTagId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign Cmdlet.
+
 
 ## PARAMETERS
 

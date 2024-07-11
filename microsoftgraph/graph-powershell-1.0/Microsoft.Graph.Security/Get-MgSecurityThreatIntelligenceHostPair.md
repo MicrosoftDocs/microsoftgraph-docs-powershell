@@ -63,16 +63,17 @@ Get-MgSecurityThreatIntelligenceHostPair -InputObject <ISecurityIdentity> [-Expa
 Read the properties and relationships of a hostPair object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceHostPair -HostPairId $hostPairId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgSecurityThreatIntelligenceHostPair Cmdlet.
+
 
 ## PARAMETERS
 

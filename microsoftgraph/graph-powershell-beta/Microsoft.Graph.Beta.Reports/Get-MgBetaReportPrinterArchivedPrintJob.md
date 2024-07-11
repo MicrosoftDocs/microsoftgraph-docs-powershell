@@ -34,20 +34,17 @@ Get-MgBetaReportPrinterArchivedPrintJob -InputObject <IReportsIdentity> [-Count]
 Get a list of archived print jobs that were queued for particular printer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgBetaReportPrinterArchivedPrintJob
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgBetaReportPrinterArchivedPrintJob Cmdlet.
+
 
 ## PARAMETERS
 

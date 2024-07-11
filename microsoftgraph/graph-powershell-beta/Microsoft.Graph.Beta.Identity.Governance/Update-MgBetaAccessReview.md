@@ -64,15 +64,21 @@ To stop an already-started one-time review, or an already-started instance of a 
 To apply the decisions to the target group or app access rights, use the apply API.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 $params = @{
-	DisplayName = "TestReview new name"
+	displayName = "TestReview new name"
 }
+
 Update-MgBetaAccessReview -AccessReviewId $accessReviewId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaAccessReview Cmdlet.
+
 
 ## PARAMETERS
 

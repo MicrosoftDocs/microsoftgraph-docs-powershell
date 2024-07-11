@@ -45,16 +45,22 @@ Update-MgDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdentit
 Update the properties of an attributeSet object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = @{
+	description = "Attributes for engineering team"
+	maxAttributesPerSet = 20
+}
+
+Update-MgDirectoryAttributeSet -AttributeSetId $attributeSetId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgDirectoryAttributeSet Cmdlet.
+
 
 ## PARAMETERS
 

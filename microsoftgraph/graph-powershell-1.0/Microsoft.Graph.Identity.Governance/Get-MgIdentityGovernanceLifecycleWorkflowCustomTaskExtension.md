@@ -41,16 +41,17 @@ Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject <IIden
 Read the properties and relationships of a customTaskExtension object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
+
 
 ## PARAMETERS
 

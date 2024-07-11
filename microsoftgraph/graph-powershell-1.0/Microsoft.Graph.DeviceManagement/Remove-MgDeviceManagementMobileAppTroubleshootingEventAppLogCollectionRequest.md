@@ -35,16 +35,17 @@ Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 Deletes a appLogCollectionRequest.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement
+
+Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest -MobileAppTroubleshootingEventId $mobileAppTroubleshootingEventId -AppLogCollectionRequestId $appLogCollectionRequestId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest Cmdlet.
+
 
 ## PARAMETERS
 

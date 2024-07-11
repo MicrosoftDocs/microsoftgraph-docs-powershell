@@ -40,16 +40,30 @@ Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartner
 Update the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	inboundTrust = @{
+		isMfaAccepted = $true
+		isCompliantDeviceAccepted = $true
+		isHybridAzureADJoinedDeviceAccepted = $true
+	}
+	automaticUserConsentSettings = @{
+		inboundAllowed = $true
+		outboundAllowed = $true
+	}
+	templateApplicationLevel = "newPartners,existingPartners"
+}
+
+Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

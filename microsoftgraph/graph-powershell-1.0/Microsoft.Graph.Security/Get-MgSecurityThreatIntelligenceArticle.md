@@ -41,16 +41,17 @@ Get-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity> [-Expan
 Read the properties and relationships of an article object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceArticle
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgSecurityThreatIntelligenceArticle Cmdlet.
+
 
 ## PARAMETERS
 

@@ -24,20 +24,17 @@ Get-MgReportOffice365ActivationUserDetail -OutFile <String> [-ResponseHeadersVar
 Get details about users who have activated Microsoft 365.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportOffice365ActivationUserDetail
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportOffice365ActivationUserDetail Cmdlet.
+
 
 ## PARAMETERS
 

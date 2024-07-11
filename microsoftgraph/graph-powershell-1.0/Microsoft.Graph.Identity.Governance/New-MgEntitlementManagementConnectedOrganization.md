@@ -36,11 +36,11 @@ New-MgEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraph
 Create a new connectedOrganization object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Connected organization name"
@@ -56,6 +56,10 @@ $params = @{
 }
 
 New-MgEntitlementManagementConnectedOrganization -BodyParameter $params
+
+```
+This example shows how to use the New-MgEntitlementManagementConnectedOrganization Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,16 +33,17 @@ Get-MgDriveItemAnalyticTime -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 Get itemAnalytics about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval API.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Files
+
+Get-MgDriveItemAnalyticTime -DriveId $driveId -DriveItemId $driveItemId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDriveItemAnalyticTime Cmdlet.
+
 
 ## PARAMETERS
 

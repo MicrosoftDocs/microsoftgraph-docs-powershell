@@ -67,27 +67,33 @@ Alternatively, forward a message in a single operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-createforward-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	Message = @{
-		IsDeliveryReceiptRequested = $true
-		ToRecipients = @(
+	message = @{
+		isDeliveryReceiptRequested = $true
+		toRecipients = @(
 			@{
-				EmailAddress = @{
-					Address = "danas@contoso.onmicrosoft.com"
-					Name = "Dana Swope"
+				emailAddress = @{
+					address = "danas@contoso.com"
+					name = "Dana Swope"
 				}
 			}
 		)
 	}
-	Comment = "Dana, just want to make sure you get this; you'll need this if the project gets approved."
+	comment = "Dana, just want to make sure you get this; you'll need this if the project gets approved."
 }
+
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageForward -UserId $userId -MessageId $messageId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaUserMessageForward Cmdlet.
+
 
 ## PARAMETERS
 

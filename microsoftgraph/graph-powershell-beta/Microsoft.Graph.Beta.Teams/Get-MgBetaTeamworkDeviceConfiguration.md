@@ -30,12 +30,17 @@ Get-MgBetaTeamworkDeviceConfiguration -InputObject <ITeamsIdentity> [-ExpandProp
 Get the configuration details of a Microsoft Teams-enabled device, including software versions, peripheral device configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaTeamworkDeviceConfiguration -TeamworkDeviceId $teamworkDeviceId
+
 ```
+This example shows how to use the Get-MgBetaTeamworkDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

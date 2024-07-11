@@ -41,16 +41,17 @@ Get-MgReportPartnerBillingManifest -InputObject <IReportsIdentity> [-ExpandPrope
 Read the properties and relationships of a manifest object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportPartnerBillingManifest -ManifestId $manifestId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgReportPartnerBillingManifest Cmdlet.
+
 
 ## PARAMETERS
 

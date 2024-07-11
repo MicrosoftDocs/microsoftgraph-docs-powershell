@@ -34,16 +34,17 @@ Remove-MgDeviceManagementDeviceConfigurationDeviceStatus -InputObject <IDeviceMa
 Deletes a deviceConfigurationDeviceStatus.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement
+
+Remove-MgDeviceManagementDeviceConfigurationDeviceStatus -DeviceConfigurationId $deviceConfigurationId -DeviceConfigurationDeviceStatusId $deviceConfigurationDeviceStatusId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDeviceManagementDeviceConfigurationDeviceStatus Cmdlet.
+
 
 ## PARAMETERS
 

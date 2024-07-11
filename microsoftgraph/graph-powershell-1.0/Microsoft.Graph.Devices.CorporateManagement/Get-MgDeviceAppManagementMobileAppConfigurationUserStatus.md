@@ -42,16 +42,17 @@ Get-MgDeviceAppManagementMobileAppConfigurationUserStatus -InputObject <IDevices
 Read properties and relationships of the managedDeviceMobileAppConfigurationUserStatus object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementMobileAppConfigurationUserStatus -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceAppManagementMobileAppConfigurationUserStatus Cmdlet.
+
 
 ## PARAMETERS
 

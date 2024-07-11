@@ -79,20 +79,17 @@ You can only reprocess a request within 14 days from the time the original reque
 For requests completed more than 14 days, you will need to ask the users to cancel the request(s) and make a new request in the MyAccess portal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId
 
-{{ Add output here }}
+```
+This example shows how to use the Update-MgEntitlementManagementAssignmentRequest Cmdlet.
+
 
 ## PARAMETERS
 

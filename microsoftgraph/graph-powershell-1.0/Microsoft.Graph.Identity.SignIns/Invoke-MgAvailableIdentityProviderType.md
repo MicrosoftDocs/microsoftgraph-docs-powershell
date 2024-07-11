@@ -25,24 +25,28 @@ Invoke-MgAvailableIdentityProviderType [-Count] [-Filter <String>] [-Search <Str
 Get all identity providers supported in a directory.
 
 ## EXAMPLES
+### Example 1: List all identity providers available in a Microsoft Entra directory
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
+
 Invoke-MgAvailableIdentityProviderType
-```
 
-### EXAMPLE 2
 ```
+This example will list all identity providers available in a microsoft entra directory
+
+### Example 2: List all identity providers available in an Azure AD B2C directory
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
+
 Invoke-MgAvailableIdentityProviderType
-```
 
-### EXAMPLE 3
 ```
-Import-Module Microsoft.Graph.Identity.SignIns
-Invoke-MgAvailableIdentityProviderType -OutFile $outFileId
-```
+This example will list all identity providers available in an azure ad b2c directory
+
 
 ## PARAMETERS
 

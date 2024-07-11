@@ -32,16 +32,17 @@ Get-MgReportMailboxUsageDetail -InputObject <IReportsIdentity> -OutFile <String>
 Get details about mailbox usage.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportMailboxUsageDetail -Period $periodId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgReportMailboxUsageDetail Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,16 +33,17 @@ Remove-MgDeviceAppManagementVppToken -InputObject <IDevicesCorporateManagementId
 Deletes a vppToken.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Remove-MgDeviceAppManagementVppToken -VppTokenId $vppTokenId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDeviceAppManagementVppToken Cmdlet.
+
 
 ## PARAMETERS
 

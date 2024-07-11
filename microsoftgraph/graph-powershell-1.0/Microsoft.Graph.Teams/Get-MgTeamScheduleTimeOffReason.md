@@ -40,13 +40,17 @@ Get-MgTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-Property <String
 The set of reasons for a time off in the schedule.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamScheduleTimeOffReason -TeamId $teamId
+
+```
+This example shows how to use the Get-MgTeamScheduleTimeOffReason Cmdlet.
+
 
 ## PARAMETERS
 

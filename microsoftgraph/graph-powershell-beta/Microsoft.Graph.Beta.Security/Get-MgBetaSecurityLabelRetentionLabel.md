@@ -41,13 +41,17 @@ Get-MgBetaSecurityLabelRetentionLabel -InputObject <ISecurityIdentity> [-ExpandP
 Represents how customers can manage their data, whether and for how long to retain or delete it.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityLabelRetentionLabel
+
+```
+This example shows how to use the Get-MgBetaSecurityLabelRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 

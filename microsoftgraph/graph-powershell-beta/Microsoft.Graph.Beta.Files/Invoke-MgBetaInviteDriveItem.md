@@ -53,20 +53,33 @@ Invoke-MgBetaInviteDriveItem -InputObject <IFilesIdentity>
 Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Files
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	recipients = @(
+		@{
+			email = "robin@contoso.org"
+		}
+	)
+	message = "Here's the file that we're collaborating on."
+	requireSignIn = $true
+	sendInvitation = $true
+	roles = @(
+	"write"
+)
+password = "password123"
+expirationDateTime = "2018-07-15T14:00:00.000Z"
+}
 
-{{ Add output here }}
+Invoke-MgBetaInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaInviteDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

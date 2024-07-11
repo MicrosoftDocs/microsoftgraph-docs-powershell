@@ -42,16 +42,28 @@ Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult -InputObject <I
 The related taskProcessingResults.
 
 ## EXAMPLES
+### Example 1: Get the task processing results in a run report from a workflow
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult -WorkflowId $workflowId -RunId $runId
+
 ```
-{{ Add code here }}
+This example will get the task processing results in a run report from a workflow
+
+### Example 2: Get the specific properties of task processing results in a run report for a workflow
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult -WorkflowId $workflowId -RunId $runId -Property "id,failureReason,processingStatus,subject" 
+
 ```
+This example will get the specific properties of task processing results in a run report for a workflow
+
 
 ## PARAMETERS
 

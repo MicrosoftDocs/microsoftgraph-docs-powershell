@@ -35,16 +35,17 @@ Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+Stop-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Stop-MgPrintPrinterJob Cmdlet.
+
 
 ## PARAMETERS
 

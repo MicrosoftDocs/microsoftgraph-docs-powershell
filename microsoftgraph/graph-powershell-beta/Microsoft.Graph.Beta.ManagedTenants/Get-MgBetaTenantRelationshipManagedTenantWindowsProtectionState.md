@@ -38,16 +38,17 @@ Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -InputObject <IM
 Read the properties and relationships of a windowsProtectionState object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.ManagedTenants
+
+Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState Cmdlet.
+
 
 ## PARAMETERS
 

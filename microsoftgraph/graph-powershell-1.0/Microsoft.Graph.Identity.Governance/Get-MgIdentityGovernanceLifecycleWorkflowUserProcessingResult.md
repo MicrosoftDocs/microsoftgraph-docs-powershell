@@ -41,16 +41,28 @@ Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult -InputObject <IIde
 Per-user workflow execution results.
 
 ## EXAMPLES
+### Example 1: List the user processing results for a workflow
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult -WorkflowId $workflowId
+
 ```
-{{ Add code here }}
+This example will list the user processing results for a workflow
+
+### Example 2: List specific properties of user processing results for a workflow
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult -WorkflowId $workflowId -Property "id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,workflowExecutionType,subject" 
+
 ```
+This example will list specific properties of user processing results for a workflow
+
 
 ## PARAMETERS
 

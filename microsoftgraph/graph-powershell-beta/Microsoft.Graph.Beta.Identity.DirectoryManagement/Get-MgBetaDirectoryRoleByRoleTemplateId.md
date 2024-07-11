@@ -39,16 +39,17 @@ The template ID of a built-in role is immutable and can be seen in the role desc
 For details, see Role template IDs.
 
 ## EXAMPLES
+### Example 1: Get the definition of a directory role using roleTemplateId
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectoryRoleByRoleTemplateId
+
 ```
-{{ Add code here }}
-```
+This example will get the definition of a directory role using roletemplateid
+
 
 ## PARAMETERS
 

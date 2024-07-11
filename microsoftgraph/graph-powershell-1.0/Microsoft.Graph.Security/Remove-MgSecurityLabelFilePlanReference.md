@@ -33,16 +33,17 @@ Remove-MgSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> [-IfMat
 Delete a filePlanReferenceTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Remove-MgSecurityLabelFilePlanReference -FilePlanReferenceTemplateId $filePlanReferenceTemplateId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgSecurityLabelFilePlanReference Cmdlet.
+
 
 ## PARAMETERS
 

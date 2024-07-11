@@ -57,17 +57,23 @@ For copy operations, you follow an asynchronous calling pattern:  First call the
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/page-copytosection-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
+
 $params = @{
-	Id = "id-value"
-	GroupId = "groupId-value"
+	id = "id-value"
+	groupId = "groupId-value"
 }
+
 # A UPN can also be used as -UserId.
 Copy-MgUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
+
 ```
+This example shows how to use the Copy-MgUserOnenotePageToSection Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,20 +33,17 @@ Remove-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementI
 Deletes a iosCompliancePolicy.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Remove-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId $deviceCompliancePolicyId
 
-{{ Add output here }}
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceCompliancePolicy Cmdlet.
+
 
 ## PARAMETERS
 

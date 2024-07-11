@@ -35,20 +35,17 @@ Retrieve the accessReviewInstanceDecisionItem objects for a specific accessRevie
 A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
 
 ## EXAMPLES
+### Example 1: Retrieve all decision items for which you're a reviewer and expand the definitions
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgBetaFilterIdentityGovernanceAccessReviewDecisionByCurrentUser -ExpandProperty "instance(`$expand=definition)"  -On $onId 
 
-{{ Add output here }}
+```
+This example will retrieve all decision items for which you're a reviewer and expand the definitions
+
 
 ## PARAMETERS
 

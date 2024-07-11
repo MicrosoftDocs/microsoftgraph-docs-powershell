@@ -35,12 +35,17 @@ Get the connectivity history of a specific Cloud PC.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getcloudpcconnectivityhistory-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+
 Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory -CloudPCId $cloudPCId
+
 ```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory Cmdlet.
+
 
 ## PARAMETERS
 

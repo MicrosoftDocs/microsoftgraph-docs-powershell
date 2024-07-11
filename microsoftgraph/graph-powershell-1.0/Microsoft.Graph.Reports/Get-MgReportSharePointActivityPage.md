@@ -32,20 +32,17 @@ Get-MgReportSharePointActivityPage -InputObject <IReportsIdentity> -OutFile <Str
 Get the number of unique pages visited by users.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportSharePointActivityPage -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportSharePointActivityPage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -51,20 +51,24 @@ Update-MgBetaPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdenti
 Update the properties of a homeRealmDiscoveryPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	definition = @(
+	'{"HomeRealmDiscoveryPolicy":{"AccelerateToFederatedDomain":true,"PreferredDomain":"federated.example.edu","AlternateIdLogin":{"Enabled":true}}}'
+)
+displayName = "Contoso default HRD Policy"
+}
 
-{{ Add output here }}
+Update-MgBetaPolicyHomeRealmDiscoveryPolicy -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyHomeRealmDiscoveryPolicy Cmdlet.
+
 
 ## PARAMETERS
 

@@ -37,16 +37,20 @@ Only teachers can perform this operation.
 The teacher determines what resources to upload to the SharePoint folder for the module.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Education
+
+$params = @{
+}
+
+Set-MgBetaEducationClassModuleUpResourceFolder -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Set-MgBetaEducationClassModuleUpResourceFolder Cmdlet.
+
 
 ## PARAMETERS
 

@@ -32,16 +32,17 @@ Read the properties and relationships of an informationProtectionPolicySetting o
 The settings exposed by this API should be used in applications to populate the moreInfoUrl property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaUserSecurityInformationProtectionLabelPolicySetting -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaUserSecurityInformationProtectionLabelPolicySetting Cmdlet.
+
 
 ## PARAMETERS
 

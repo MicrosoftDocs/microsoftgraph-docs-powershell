@@ -32,16 +32,17 @@ Delete a businessScenario object.
 The deletion of a scenario causes all data associated with the scenario to be deleted.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Remove-MgBetaBusinessScenario -BusinessScenarioId $businessScenarioId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaBusinessScenario Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,16 +46,17 @@ A group can have users, contacts, devices, service principals, and other groups 
 This operation isn't transitive.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Groups
+
+Get-MgBetaGroupMemberAsServicePrincipal -GroupId $groupId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaGroupMemberAsServicePrincipal Cmdlet.
+
 
 ## PARAMETERS
 

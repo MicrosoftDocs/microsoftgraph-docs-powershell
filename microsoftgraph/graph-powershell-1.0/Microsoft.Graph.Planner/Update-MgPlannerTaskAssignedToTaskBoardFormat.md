@@ -49,11 +49,11 @@ Update-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> -I
 Update the properties of plannerAssignedToTaskBoardTaskFormat object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	orderHintsByAssignee = @{
@@ -61,7 +61,12 @@ $params = @{
 	}
 }
 
-Update-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
+Update-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
+
+
+```
+This example shows how to use the Update-MgPlannerTaskAssignedToTaskBoardFormat Cmdlet.
+
 
 ## PARAMETERS
 

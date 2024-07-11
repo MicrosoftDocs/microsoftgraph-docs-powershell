@@ -33,16 +33,17 @@ Remove-MgEducationClassMemberEducationUserByRef -InputObject <IEducationIdentity
 Remove an educationUser from an educationClass.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Education
+
+Remove-MgEducationClassMemberEducationUserByRef -EducationClassId $educationClassId -EducationUserId $educationUserId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgEducationClassMemberEducationUserByRef Cmdlet.
+
 
 ## PARAMETERS
 

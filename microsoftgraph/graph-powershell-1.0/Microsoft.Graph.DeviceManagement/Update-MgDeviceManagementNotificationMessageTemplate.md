@@ -53,20 +53,27 @@ Update-MgDeviceManagementNotificationMessageTemplate -InputObject <IDeviceManage
 Update the properties of a notificationMessageTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.notificationMessageTemplate"
+	displayName = "Display Name value"
+	defaultLocale = "Default Locale value"
+	brandingOptions = "includeCompanyLogo"
+	roleScopeTagIds = @(
+	"Role Scope Tag Ids value"
+)
+}
 
-{{ Add output here }}
+Update-MgDeviceManagementNotificationMessageTemplate -NotificationMessageTemplateId $notificationMessageTemplateId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementNotificationMessageTemplate Cmdlet.
+
 
 ## PARAMETERS
 

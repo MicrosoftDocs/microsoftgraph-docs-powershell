@@ -57,16 +57,50 @@ An optional expiration date and time can be supplied.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setstatusmessage-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Set status message with expiry date
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+$params = @{
+	statusMessage = @{
+		message = @{
+			content = "Hey I'm currently in a meeting."
+			contentType = "text"
+		}
+		expiryDateTime = @{
+			dateTime = "2022-10-18T17:05:33.2079781"
+			timeZone = "Pacific Standard Time"
+		}
+	}
+}
+
+Set-MgBetaUserPresenceStatusMessage -UserId $userId -BodyParameter $params
+
 ```
-{{ Add code here }}
+This example will set status message with expiry date
+
+### Example 2: Set status message of another user
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+$params = @{
+	statusMessage = @{
+		message = @{
+			content = "Hey I am available now"
+			contentType = "text"
+		}
+	}
+}
+
+Set-MgBetaUserPresenceStatusMessage -UserId $userId -BodyParameter $params
+
 ```
+This example will set status message of another user
+
 
 ## PARAMETERS
 

@@ -48,30 +48,24 @@ Update-MgBetaPolicyMobileAppManagementPolicy -InputObject <IIdentitySignInsIdent
 Update the properties of a mobilityManagementPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.mobilityManagementPolicy"
-	ComplianceUrl = "https://portal.mg.contoso.com/?portalAction=Compliance"
-	DiscoveryUrl = "https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc"
-	TermsOfUseUrl = "https://portal.mg.contoso.com/TermsofUse.aspx"
+	complianceUrl = "https://portal.mg.contoso.com/?portalAction=Compliance"
+	discoveryUrl = "https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc"
+	termsOfUseUrl = "https://portal.mg.contoso.com/TermsofUse.aspx"
 }
-Update-MgBetaPolicyMobileAppManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
-```
 
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-$params = @{
-	"@odata.type" = "#microsoft.graph.mobilityManagementPolicy"
-	ComplianceUrl = "https://portal.mg.contoso.com/?portalAction=Compliance"
-	DiscoveryUrl = "https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc"
-	TermsOfUseUrl = "https://portal.mg.contoso.com/TermsofUse.aspx"
-}
 Update-MgBetaPolicyMobileAppManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaPolicyMobileAppManagementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

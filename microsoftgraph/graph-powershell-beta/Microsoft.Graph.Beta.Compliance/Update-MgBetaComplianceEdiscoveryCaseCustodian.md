@@ -54,17 +54,21 @@ Update-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity
 Update the properties of a custodian object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 $params = @{
 	applyHoldToSources = "false"
 }
 
 Update-MgBetaComplianceEdiscoveryCaseCustodian -CaseId $caseId -CustodianId $custodianId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet.
+
 
 ## PARAMETERS
 

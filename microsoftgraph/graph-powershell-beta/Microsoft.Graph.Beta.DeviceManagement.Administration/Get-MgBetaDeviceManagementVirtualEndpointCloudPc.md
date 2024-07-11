@@ -41,24 +41,28 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagement
 Read the properties and relationships of a specific cloudPC object.
 
 ## EXAMPLES
+### Example 1: List all cloudPC devices in a tenant
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointCloudPC -CloudPCId $cloudPCId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointCloudPC -CloudPCId $cloudPCId -Property "id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult"
-```
 
-### EXAMPLE 3
+Get-MgBetaDeviceManagementVirtualEndpointCloudPc
+
 ```
+This example will list all cloudpc devices in a tenant
+
+### Example 2: Get the top two cloudPC devices in a tenant
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointCloudPC
+
+Get-MgBetaDeviceManagementVirtualEndpointCloudPc -Top 2 
+
 ```
+This example will get the top two cloudpc devices in a tenant
+
 
 ## PARAMETERS
 

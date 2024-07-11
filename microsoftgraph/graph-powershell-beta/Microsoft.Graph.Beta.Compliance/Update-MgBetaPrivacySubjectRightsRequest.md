@@ -69,16 +69,22 @@ Update-MgBetaPrivacySubjectRightsRequest -InputObject <IComplianceIdentity>
 Update the properties of a subjectRightsRequest object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Compliance
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.subjectRightsRequest"
+	internalDueDateTime = [System.DateTime]::Parse("2021-08-30T00:00:00Z")
+}
+
+Update-MgBetaPrivacySubjectRightsRequest -SubjectRightsRequestId $subjectRightsRequestId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaPrivacySubjectRightsRequest Cmdlet.
+
 
 ## PARAMETERS
 

@@ -42,16 +42,17 @@ Get-MgDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevicesCorpo
 Read properties and relationships of the androidManagedAppProtection object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementAndroidManagedAppProtection
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceAppManagementAndroidManagedAppProtection Cmdlet.
+
 
 ## PARAMETERS
 
