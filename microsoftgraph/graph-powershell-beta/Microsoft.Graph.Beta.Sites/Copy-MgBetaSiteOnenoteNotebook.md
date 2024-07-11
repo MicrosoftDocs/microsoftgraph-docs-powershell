@@ -58,18 +58,6 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-copynotebook-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -396,6 +384,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebook)
 
 [https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-beta](https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-beta)
+
 
 
 

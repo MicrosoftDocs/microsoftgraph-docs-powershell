@@ -35,18 +35,6 @@ Provide a summary of the most processed tasks, known as top tasks, for a specifi
 The task definition is provided, along with numerical counts of total, successful, and failed runs.
 For information about workflows processed, see insights: topWorkflowsProcessedSummary.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -337,6 +325,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetatopidentitygovernancelifecycleworkflowinsighttaskprocessedsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetatopidentitygovernancelifecycleworkflowinsighttaskprocessedsummary)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-insights-toptasksprocessedsummary?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-insights-toptasksprocessedsummary?view=graph-rest-beta)
+
 
 
 

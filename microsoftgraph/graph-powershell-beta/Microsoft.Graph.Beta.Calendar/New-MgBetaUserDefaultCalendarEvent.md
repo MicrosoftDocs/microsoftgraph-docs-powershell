@@ -80,18 +80,6 @@ New-MgBetaUserDefaultCalendarEvent -InputObject <ICalendarIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to events for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -2389,6 +2377,7 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserdefaultcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserdefaultcalendarevent)
+
 
 
 

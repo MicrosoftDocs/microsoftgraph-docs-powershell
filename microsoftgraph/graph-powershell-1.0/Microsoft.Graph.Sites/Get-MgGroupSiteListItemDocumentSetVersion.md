@@ -41,18 +41,6 @@ Get-MgGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-Expand
 ## DESCRIPTION
 Version information for a document set version created by a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -407,6 +395,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemdocumentsetversion)
+
 
 
 

@@ -25,18 +25,6 @@ Get-MgBetaServicePrincipalOwnerByRef -ServicePrincipalId <String> [-Filter <Stri
 ## DESCRIPTION
 Retrieve a list of owners of the servicePrincipal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -252,6 +240,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownerbyref)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-beta)
+
 
 
 

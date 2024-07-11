@@ -49,18 +49,6 @@ Update-MgBetaBackupRestoreExchangeRestoreSession -InputObject <IBookingsIdentity
 ## DESCRIPTION
 Update the properties of an exchangeRestoreSession.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -559,6 +547,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoreexchangerestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoreexchangerestoresession)
 
 [https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-beta)
+
 
 
 

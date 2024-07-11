@@ -29,18 +29,6 @@ Get-MgBetaUserDeviceCommandResponsepayload -InputObject <ICrossDeviceExperiences
 ## DESCRIPTION
 Get responsepayload from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CommandId
@@ -208,6 +196,7 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicecommandresponsepayload](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicecommandresponsepayload)
+
 
 
 

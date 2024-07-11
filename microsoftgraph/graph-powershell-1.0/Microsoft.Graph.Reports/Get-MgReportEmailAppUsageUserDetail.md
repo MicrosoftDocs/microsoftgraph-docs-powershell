@@ -44,18 +44,6 @@ Get-MgReportEmailAppUsageUserDetail -InputObject <IReportsIdentity> -OutFile <St
 ## DESCRIPTION
 Get details about which activities users performed on the various email apps.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Date
@@ -222,6 +210,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageuserdetail)
+
 
 
 

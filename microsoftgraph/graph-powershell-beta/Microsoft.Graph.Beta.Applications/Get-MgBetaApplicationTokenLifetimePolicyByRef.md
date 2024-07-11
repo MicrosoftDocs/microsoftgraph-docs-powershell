@@ -26,18 +26,6 @@ Get-MgBetaApplicationTokenLifetimePolicyByRef -ApplicationId <String> [-Filter <
 List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -237,6 +225,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenlifetimepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenlifetimepolicybyref)
 
 [https://learn.microsoft.com/graph/api/application-list-tokenlifetimepolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-list-tokenlifetimepolicies?view=graph-rest-beta)
+
 
 
 

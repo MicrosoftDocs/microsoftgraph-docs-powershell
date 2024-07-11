@@ -32,18 +32,6 @@ New-MgBetaBackupRestoreMailboxProtectionUnit -BodyParameter <IMicrosoftGraphMail
 ## DESCRIPTION
 Create new navigation property to mailboxProtectionUnits for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -385,6 +373,7 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoremailboxprotectionunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoremailboxprotectionunit)
+
 
 
 

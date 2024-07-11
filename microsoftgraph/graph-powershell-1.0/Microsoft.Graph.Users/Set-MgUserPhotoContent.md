@@ -48,22 +48,6 @@ Set-MgUserPhotoContent -InputObject <IUsersIdentity> [-Data <Stream>] [-Response
 The user's profile photo.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -288,6 +272,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mguserphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mguserphotocontent)
+
 
 
 

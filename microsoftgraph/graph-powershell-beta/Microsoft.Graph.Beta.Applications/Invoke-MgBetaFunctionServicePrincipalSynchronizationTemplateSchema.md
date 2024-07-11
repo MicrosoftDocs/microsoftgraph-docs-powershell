@@ -35,22 +35,6 @@ Invoke-MgBetaFunctionServicePrincipalSynchronizationTemplateSchema -InputObject 
 ## DESCRIPTION
 List all the functions currently supported in the attributeMappingSource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -321,6 +305,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationtemplateschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationtemplateschema)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-beta)
+
 
 
 

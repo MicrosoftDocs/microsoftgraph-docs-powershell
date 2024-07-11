@@ -46,18 +46,6 @@ Remove-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 The group's profile photo.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -279,6 +267,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupphotocontent)
+
 
 
 

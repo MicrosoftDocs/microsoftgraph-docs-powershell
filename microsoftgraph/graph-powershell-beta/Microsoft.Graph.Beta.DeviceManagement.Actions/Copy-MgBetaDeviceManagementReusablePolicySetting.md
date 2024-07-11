@@ -29,18 +29,6 @@ Copy-MgBetaDeviceManagementReusablePolicySetting -InputObject <IDeviceManagement
 ## DESCRIPTION
 Invoke action clone
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementReusablePolicySettingId
@@ -225,6 +213,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/copy-mgbetadevicemanagementreusablepolicysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/copy-mgbetadevicemanagementreusablepolicysetting)
+
 
 
 

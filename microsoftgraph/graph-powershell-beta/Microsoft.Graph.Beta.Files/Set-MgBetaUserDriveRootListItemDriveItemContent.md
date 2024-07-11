@@ -32,22 +32,6 @@ Set-MgBetaUserDriveRootListItemDriveItemContent -InputObject <IFilesIdentity> [-
 ## DESCRIPTION
 Update content for the navigation property driveItem in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -266,6 +250,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriverootlistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriverootlistitemdriveitemcontent)
+
 
 
 

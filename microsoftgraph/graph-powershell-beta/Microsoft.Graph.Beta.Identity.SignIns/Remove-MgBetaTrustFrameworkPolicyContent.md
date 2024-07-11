@@ -29,18 +29,6 @@ Remove-MgBetaTrustFrameworkPolicyContent -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Delete an existing trustFrameworkPolicy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -282,6 +270,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatrustframeworkpolicycontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatrustframeworkpolicycontent)
 
 [https://learn.microsoft.com/graph/api/trustframeworkpolicy-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/trustframeworkpolicy-delete?view=graph-rest-beta)
+
 
 
 

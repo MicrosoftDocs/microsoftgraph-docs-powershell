@@ -29,18 +29,6 @@ Remove-MgShareDriveItemContent -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -225,6 +213,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharedriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharedriveitemcontent)
+
 
 
 

@@ -37,18 +37,6 @@ Get-MgBetaBackupRestoreProtectionUnit -InputObject <IBookingsIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a protectionUnitBase object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -344,6 +332,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoreprotectionunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoreprotectionunit)
 
 [https://learn.microsoft.com/graph/api/protectionunitbase-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/protectionunitbase-get?view=graph-rest-beta)
+
 
 
 

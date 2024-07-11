@@ -47,18 +47,6 @@ Update-MgEntitlementManagementResourceRoleScope -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Update the navigation property resourceRoleScopes in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageResourceRoleScopeId
@@ -569,6 +557,7 @@ Supports $expand.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerolescope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerolescope)
+
 
 
 

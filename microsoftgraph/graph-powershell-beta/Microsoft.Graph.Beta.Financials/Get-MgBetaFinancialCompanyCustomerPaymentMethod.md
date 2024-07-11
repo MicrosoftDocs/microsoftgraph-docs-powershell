@@ -43,18 +43,6 @@ Get-MgBetaFinancialCompanyCustomerPaymentMethod -InputObject <IFinancialsIdentit
 ## DESCRIPTION
 Get paymentMethod from financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -250,6 +238,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanycustomerpaymentmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanycustomerpaymentmethod)
+
 
 
 

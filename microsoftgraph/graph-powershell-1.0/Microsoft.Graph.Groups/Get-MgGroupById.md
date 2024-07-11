@@ -41,18 +41,6 @@ Some common uses for this function are to:
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getbyids-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -218,6 +206,7 @@ BODYPARAMETER `<IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentA
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyid)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
+
 
 
 

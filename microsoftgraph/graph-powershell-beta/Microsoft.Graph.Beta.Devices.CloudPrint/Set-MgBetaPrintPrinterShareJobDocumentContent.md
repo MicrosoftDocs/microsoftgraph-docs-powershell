@@ -32,18 +32,6 @@ Set-MgBetaPrintPrinterShareJobDocumentContent -InputObject <IDevicesCloudPrintId
 The unique identifier for an entity.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentType
@@ -281,6 +269,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/set-mgbetaprintprintersharejobdocumentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/set-mgbetaprintprintersharejobdocumentcontent)
+
 
 
 

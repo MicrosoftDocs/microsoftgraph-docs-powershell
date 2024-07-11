@@ -58,18 +58,6 @@ New-MgSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to contentTypes for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1844,6 +1832,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcontenttype)
+
 
 
 

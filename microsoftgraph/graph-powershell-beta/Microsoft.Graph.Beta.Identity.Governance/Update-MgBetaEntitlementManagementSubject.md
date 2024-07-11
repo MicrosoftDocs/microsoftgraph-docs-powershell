@@ -51,22 +51,6 @@ Update-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdent
 ## DESCRIPTION
 Update an existing accessPackageSubject object to change the subject lifecycle.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageSubjectId
@@ -592,6 +576,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsubject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsubject)
 
 [https://learn.microsoft.com/graph/api/accesspackagesubject-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackagesubject-update?view=graph-rest-beta)
+
 
 
 

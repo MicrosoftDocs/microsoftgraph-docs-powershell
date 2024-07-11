@@ -46,18 +46,6 @@ New-MgUserChatPinnedMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to pinnedMessages for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -548,6 +536,7 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatpinnedmessage)
+
 
 
 

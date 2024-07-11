@@ -55,18 +55,6 @@ Update-MgBetaBackupRestoreSharePointProtectionPolicy -InputObject <IBookingsIden
 Update a SharePoint protection policy.
 This method adds a sharepointprotectionunit to or removes it from the protection policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -587,6 +575,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoresharepointprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoresharepointprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-update?view=graph-rest-beta)
+
 
 
 

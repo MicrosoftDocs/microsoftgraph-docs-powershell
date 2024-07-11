@@ -31,18 +31,6 @@ Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight -InputObject <IIden
 Provide a summary of workflows processed, by category, in a tenant.
 This allows you to quickly get category information, by numerical value, bypassing other information found in the WorkflowsProcessedSummary call.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EndDateTime
@@ -258,6 +246,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetagraphidentitygovernancelifecycleworkflowinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetagraphidentitygovernancelifecycleworkflowinsight)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-insights-workflowsprocessedbycategory?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-insights-workflowsprocessedbycategory?view=graph-rest-beta)
+
 
 
 

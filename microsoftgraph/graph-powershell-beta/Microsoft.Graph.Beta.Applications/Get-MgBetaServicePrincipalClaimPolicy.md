@@ -29,18 +29,6 @@ Get-MgBetaServicePrincipalClaimPolicy -InputObject <IApplicationsIdentity> [-Exp
 ## DESCRIPTION
 Get the properties and relationships of a customClaimsPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -206,6 +194,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimpolicy)
 
 [https://learn.microsoft.com/graph/api/customclaimspolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customclaimspolicy-get?view=graph-rest-beta)
+
 
 
 

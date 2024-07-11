@@ -50,18 +50,6 @@ New-MgEducationUserAssignmentSubmissionSubmittedResource -InputObject <IEducatio
 ## DESCRIPTION
 Create new navigation property to submittedResources for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -351,6 +339,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentsubmissionsubmittedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentsubmissionsubmittedresource)
+
 
 
 

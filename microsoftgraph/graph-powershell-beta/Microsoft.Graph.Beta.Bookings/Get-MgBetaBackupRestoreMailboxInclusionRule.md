@@ -37,18 +37,6 @@ Get-MgBetaBackupRestoreMailboxInclusionRule -InputObject <IBookingsIdentity> [-E
 ## DESCRIPTION
 The list of mailbox inclusion rules applied to the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -342,6 +330,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoremailboxinclusionrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoremailboxinclusionrule)
+
 
 
 

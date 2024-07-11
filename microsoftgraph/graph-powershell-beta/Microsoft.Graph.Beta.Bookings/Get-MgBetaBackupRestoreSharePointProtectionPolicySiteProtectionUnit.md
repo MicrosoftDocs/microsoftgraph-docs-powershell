@@ -38,18 +38,6 @@ Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnit -InputObject
 ## DESCRIPTION
 The protection units (sites) that are protected under the site protection policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -360,6 +348,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoresharepointprotectionpolicysiteprotectionunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoresharepointprotectionpolicysiteprotectionunit)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-list-siteprotectionunits?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-list-siteprotectionunits?view=graph-rest-beta)
+
 
 
 

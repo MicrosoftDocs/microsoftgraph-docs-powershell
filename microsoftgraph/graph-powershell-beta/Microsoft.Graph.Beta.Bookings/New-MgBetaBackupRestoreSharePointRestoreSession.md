@@ -32,18 +32,6 @@ New-MgBetaBackupRestoreSharePointRestoreSession -BodyParameter <IMicrosoftGraphS
 ## DESCRIPTION
 Create a new sharePointRestoreSession object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -465,6 +453,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoresharepointrestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoresharepointrestoresession)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta)
+
 
 
 

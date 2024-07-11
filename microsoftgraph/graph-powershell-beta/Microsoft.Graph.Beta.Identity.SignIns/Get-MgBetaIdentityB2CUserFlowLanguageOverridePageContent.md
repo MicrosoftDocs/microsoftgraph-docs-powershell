@@ -32,18 +32,6 @@ Get-MgBetaIdentityB2CUserFlowLanguageOverridePageContent -InputObject <IIdentity
 Get the userFlowLanguagePage resources from the overridesPages navigation property.
 These pages are used to customize the values shown to the user during a user journey in a user flow.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2CIdentityUserFlowId
@@ -284,6 +272,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguageoverridepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguageoverridepagecontent)
 
 [https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-list-overridespages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-list-overridespages?view=graph-rest-beta)
+
 
 
 

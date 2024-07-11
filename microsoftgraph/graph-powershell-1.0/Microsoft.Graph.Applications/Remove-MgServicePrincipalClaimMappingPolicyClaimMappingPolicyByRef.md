@@ -29,18 +29,6 @@ Remove-MgServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef -InputObject 
 ## DESCRIPTION
 Delete ref of navigation property claimsMappingPolicies for servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ClaimsMappingPolicyId
@@ -240,6 +228,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalclaimmappingpolicyclaimmappingpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalclaimmappingpolicyclaimmappingpolicybyref)
+
 
 
 

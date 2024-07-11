@@ -46,18 +46,6 @@ An inclusion rule indicates that a protection policy should contain protection u
 The initial status of a protection rule upon creation is active.
 After the rule is applied, the state is either completed or completedWithErrors.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -370,6 +358,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-list-siteinclusionrules?view=graph-rest-beta](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-list-siteinclusionrules?view=graph-rest-beta)
+
 
 
 

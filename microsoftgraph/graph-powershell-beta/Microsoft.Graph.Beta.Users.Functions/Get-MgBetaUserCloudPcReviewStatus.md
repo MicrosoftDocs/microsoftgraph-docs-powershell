@@ -27,18 +27,6 @@ Get-MgBetaUserCloudPcReviewStatus -InputObject <IUsersFunctionsIdentity> [-Respo
 ## DESCRIPTION
 Invoke function retrieveReviewStatus
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -191,6 +179,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcreviewstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcreviewstatus)
+
 
 
 

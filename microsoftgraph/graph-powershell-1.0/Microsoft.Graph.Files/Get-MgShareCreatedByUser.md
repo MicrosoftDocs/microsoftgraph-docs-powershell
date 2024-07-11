@@ -34,18 +34,6 @@ Get-MgShareCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty <String[
 Identity of the user who created the item.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -199,6 +187,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecreatedbyuser)
+
 
 
 

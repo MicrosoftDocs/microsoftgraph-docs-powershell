@@ -51,18 +51,6 @@ Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSession -InputObject <IBooki
 ## DESCRIPTION
 Update the properties of a oneDriveForBusinessRestoreSession object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -561,6 +549,7 @@ This property is read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoreonedriveforbusinessrestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoreonedriveforbusinessrestoresession)
 
 [https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-update?view=graph-rest-beta)
+
 
 
 

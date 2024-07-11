@@ -32,18 +32,6 @@ Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId -InputObject <IIdentityD
 ## DESCRIPTION
 List of commercial subscriptions that an organization has.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CommerceSubscriptionId
@@ -220,6 +208,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbycommercesubscriptionid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbycommercesubscriptionid)
+
 
 
 

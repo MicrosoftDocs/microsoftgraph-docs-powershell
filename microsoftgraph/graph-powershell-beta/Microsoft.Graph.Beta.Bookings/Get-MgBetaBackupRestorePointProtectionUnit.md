@@ -29,18 +29,6 @@ Get-MgBetaBackupRestorePointProtectionUnit -InputObject <IBookingsIdentity> [-Ex
 ## DESCRIPTION
 The site, drive, or mailbox units that are protected under a protection policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -213,6 +201,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestorepointprotectionunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestorepointprotectionunit)
+
 
 
 

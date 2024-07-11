@@ -34,18 +34,6 @@ Get-MgUserTodoTaskAttachmentContent -InputObject <IUsersIdentity> -OutFile <Stri
 The unique identifier for an entity.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AttachmentBaseId
@@ -235,6 +223,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachmentcontent)
+
 
 
 

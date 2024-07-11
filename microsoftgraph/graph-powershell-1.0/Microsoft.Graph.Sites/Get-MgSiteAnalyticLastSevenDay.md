@@ -32,18 +32,6 @@ Get-MgSiteAnalyticLastSevenDay -InputObject <ISitesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get lastSevenDays from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -217,6 +205,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalyticlastsevenday](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalyticlastsevenday)
+
 
 
 

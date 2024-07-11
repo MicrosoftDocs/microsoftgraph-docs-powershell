@@ -63,22 +63,6 @@ Update-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -815,6 +799,7 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment)
 
 [https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0)
+
 
 
 

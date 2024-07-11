@@ -54,18 +54,6 @@ New-MgBetaGroupOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to notebooks for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -836,6 +824,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotenotebook)
+
 
 
 

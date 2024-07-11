@@ -31,18 +31,6 @@ Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary
 Provide a summary of all workflows processed within a tenant for a specified period.
 Because the amount of results for listed workflows as returned by the List workflows does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EndDateTime
@@ -258,6 +246,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaworkflowidentitygovernancelifecycleworkflowinsightprocessedsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaworkflowidentitygovernancelifecycleworkflowinsightprocessedsummary)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-insights-workflowsprocessedsummary?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-insights-workflowsprocessedsummary?view=graph-rest-beta)
+
 
 
 

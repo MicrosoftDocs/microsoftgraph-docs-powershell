@@ -37,18 +37,6 @@ Get-MgBetaSecurityPartnerSecurityAlert -InputObject <ISecurityIdentity> [-Expand
 ## DESCRIPTION
 Read the properties and relationships of a partnerSecurityAlert object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -387,6 +375,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-list-securityalerts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-list-securityalerts?view=graph-rest-beta)
+
 
 
 

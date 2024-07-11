@@ -53,18 +53,6 @@ Only IT admin users can perform this action.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-poweroff-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -270,6 +258,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/cloudpc-poweroff?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-poweroff?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/cloudpc-stop?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-stop?view=graph-rest-beta)
+
 
 
 

@@ -35,18 +35,6 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroup -InputObjec
 References the group that is the scope of the membership or ownership assignment through PIM for groups.
 Supports $expand and $select nested in $expand for select properties like id, displayName, and mail.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -243,6 +231,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentschedulegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentschedulegroup)
+
 
 
 

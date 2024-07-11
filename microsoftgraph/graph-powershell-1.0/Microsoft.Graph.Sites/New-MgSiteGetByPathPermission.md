@@ -94,18 +94,6 @@ New-MgSiteGetByPathPermission -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to permissions for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -767,6 +755,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathpermission)
+
 
 
 

@@ -40,22 +40,6 @@ Get-MgGroupDriveRootListItemVersion -InputObject <IFilesIdentity> [-ExpandProper
 ## DESCRIPTION
 The list of previous versions of the list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -360,6 +344,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemversion)
+
 
 
 

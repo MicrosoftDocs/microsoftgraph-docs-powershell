@@ -29,18 +29,6 @@ Remove-MgBetaBackupRestoreExchangeProtectionPolicy -InputObject <IBookingsIdenti
 ## DESCRIPTION
 Delete navigation property exchangeProtectionPolicies for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExchangeProtectionPolicyId
@@ -244,6 +232,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabackuprestoreexchangeprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabackuprestoreexchangeprotectionpolicy)
+
 
 
 

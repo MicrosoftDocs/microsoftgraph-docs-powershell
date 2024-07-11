@@ -48,22 +48,6 @@ New-MgUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Create new navigation property to scopedRoleMemberOf for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -336,6 +320,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mguserscopedrolememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mguserscopedrolememberof)
+
 
 
 

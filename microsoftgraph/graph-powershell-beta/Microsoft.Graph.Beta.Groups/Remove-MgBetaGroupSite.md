@@ -48,22 +48,6 @@ Remove-MgBetaGroupSite -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Unfollow a user's site or multiple sites.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -16036,6 +16020,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsite)
 
 [https://learn.microsoft.com/graph/api/site-unfollow?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-unfollow?view=graph-rest-beta)
+
 
 
 

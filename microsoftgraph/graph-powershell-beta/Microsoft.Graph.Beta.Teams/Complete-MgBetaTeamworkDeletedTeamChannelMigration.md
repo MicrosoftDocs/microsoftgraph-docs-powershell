@@ -42,18 +42,6 @@ You can add members to the team after the request returns a successful response.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-completemigration-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -257,6 +245,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamworkdeletedteamchannelmigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamworkdeletedteamchannelmigration)
 
 [https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-beta)
+
 
 
 

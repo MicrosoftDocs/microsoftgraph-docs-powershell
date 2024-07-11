@@ -40,22 +40,6 @@ Get-MgBetaUserEventExceptionOccurrenceInstanceExtension -InputObject <ICalendarI
 The collection of open extensions defined for the event.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -380,6 +364,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventexceptionoccurrenceinstanceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventexceptionoccurrenceinstanceextension)
+
 
 
 

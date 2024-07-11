@@ -53,22 +53,6 @@ New-MgSiteOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to pages for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -878,6 +862,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotepage)
+
 
 
 
