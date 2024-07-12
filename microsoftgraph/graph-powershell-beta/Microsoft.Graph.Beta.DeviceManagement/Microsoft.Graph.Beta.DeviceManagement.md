@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 Module Guid: e28788e6-ed86-49a3-9355-6f0045bd3647
 Download Help Link: {{ Update Download Link }}
@@ -2911,4 +2911,5 @@ Locale: en-US
 
 ### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
 {{ Fill in the Description }}
+
 

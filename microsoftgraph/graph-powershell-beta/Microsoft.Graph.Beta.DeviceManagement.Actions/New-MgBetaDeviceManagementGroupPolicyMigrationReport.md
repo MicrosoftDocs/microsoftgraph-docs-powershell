@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementgrouppolicymigrationreport
@@ -187,31 +187,34 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[GroupPolicyObjectFile \<IMicrosoftGraphGroupPolicyObjectFile\>\]: The Group Policy Object file uploaded by admin.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[GroupPolicyObjectFile <IMicrosoftGraphGroupPolicyObjectFile>]`: The Group Policy Object file uploaded by admin.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Content \<String\>\]: The Group Policy Object file content.
-    \[CreatedDateTime \<DateTime?\>\]: The date and time at which the GroupPolicy was first uploaded.
-    \[GroupPolicyObjectId \<String\>\]: The Group Policy Object GUID from GPO Xml content
-    \[LastModifiedDateTime \<DateTime?\>\]: The date and time at which the GroupPolicyObjectFile was last modified.
-    \[OuDistinguishedName \<String\>\]: The distinguished name of the OU.
-    \[RoleScopeTagIds \<String\[\]\>\]: The list of scope tags for the configuration.
+    - `[Content <String>]`: The Group Policy Object file content.
+    - `[CreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicy was first uploaded.
+    - `[GroupPolicyObjectId <String>]`: The Group Policy Object GUID from GPO Xml content
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyObjectFile was last modified.
+    - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
+    - `[RoleScopeTagIds <String- `[]`>]`: The list of scope tags for the configuration.
 
-GROUPPOLICYOBJECTFILE \<IMicrosoftGraphGroupPolicyObjectFile\>: The Group Policy Object file uploaded by admin.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+GROUPPOLICYOBJECTFILE `<IMicrosoftGraphGroupPolicyObjectFile>`: The Group Policy Object file uploaded by admin.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Content \<String\>\]: The Group Policy Object file content.
-  \[CreatedDateTime \<DateTime?\>\]: The date and time at which the GroupPolicy was first uploaded.
-  \[GroupPolicyObjectId \<String\>\]: The Group Policy Object GUID from GPO Xml content
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time at which the GroupPolicyObjectFile was last modified.
-  \[OuDistinguishedName \<String\>\]: The distinguished name of the OU.
-  \[RoleScopeTagIds \<String\[\]\>\]: The list of scope tags for the configuration.
+  - `[Content <String>]`: The Group Policy Object file content.
+  - `[CreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicy was first uploaded.
+  - `[GroupPolicyObjectId <String>]`: The Group Policy Object GUID from GPO Xml content
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyObjectFile was last modified.
+  - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
+  - `[RoleScopeTagIds <String- `[]`>]`: The list of scope tags for the configuration.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementgrouppolicymigrationreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementgrouppolicymigrationreport)
+
+
+
 
