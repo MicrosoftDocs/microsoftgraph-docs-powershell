@@ -34,16 +34,22 @@ New-MgSecurityLabelCategory -BodyParameter <IMicrosoftGraphSecurityCategoryTempl
 Create a new categoryTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.categoryTemplate"
+	displayName = "Accounts Payable"
+}
+
+New-MgSecurityLabelCategory -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgSecurityLabelCategory Cmdlet.
+
 
 ## PARAMETERS
 

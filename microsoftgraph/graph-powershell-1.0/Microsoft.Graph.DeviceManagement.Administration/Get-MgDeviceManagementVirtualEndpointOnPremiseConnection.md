@@ -45,16 +45,28 @@ Read the properties and relationships of the cloudPcOnPremisesConnection object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpconpremisesconnection-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the default properties of an Azure network connection
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId
+
 ```
-{{ Add code here }}
+This example will get the default properties of an azure network connection
+
+### Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetail
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -Property "id,displayName,healthCheckStatus,healthCheckStatusDetail,inUse" 
+
 ```
+This example will get the selected properties of an azure network connection, including healthcheckstatusdetail
+
 
 ## PARAMETERS
 

@@ -43,16 +43,17 @@ Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 Contains the management details of a service in the customer tenant that's managed by delegated administration.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Partner
+
+Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail -DelegatedAdminCustomerId $delegatedAdminCustomerId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail Cmdlet.
+
 
 ## PARAMETERS
 

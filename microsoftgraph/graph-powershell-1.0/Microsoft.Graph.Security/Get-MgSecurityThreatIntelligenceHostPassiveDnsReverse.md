@@ -41,16 +41,17 @@ Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse -InputObject <ISecurityIde
 Reverse passive DNS retrieval about this host.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse -HostId $hostId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse Cmdlet.
+
 
 ## PARAMETERS
 

@@ -51,20 +51,24 @@ Restore a driveItem that has been deleted and is currently in the recycle bin.
 NOTE: This functionality is currently only available for OneDrive Personal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Files
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	parentReference = @{
+		id = "String"
+	}
+	name = "String"
+}
 
-{{ Add output here }}
+Restore-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Restore-MgDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

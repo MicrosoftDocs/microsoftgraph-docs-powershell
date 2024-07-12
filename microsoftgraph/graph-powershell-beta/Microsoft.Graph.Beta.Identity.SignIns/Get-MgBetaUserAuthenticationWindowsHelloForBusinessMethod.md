@@ -42,16 +42,17 @@ Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod -InputObject <IIdentit
 Read the properties and relationships of a windowsHelloForBusinessAuthenticationMethod object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod Cmdlet.
+
 
 ## PARAMETERS
 

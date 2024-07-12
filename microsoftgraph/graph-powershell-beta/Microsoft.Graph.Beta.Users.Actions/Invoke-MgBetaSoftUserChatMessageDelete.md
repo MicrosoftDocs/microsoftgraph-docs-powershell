@@ -37,12 +37,17 @@ Delete a single chatMessage or a chat message reply in a channel or a chat.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-softdelete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Soft-delete message in a chat
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 Invoke-MgBetaSoftUserChatMessageDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId
+
 ```
+This example will soft-delete message in a chat
+
 
 ## PARAMETERS
 

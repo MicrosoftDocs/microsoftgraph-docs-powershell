@@ -31,16 +31,17 @@ For more details, see Best practices for discovering files and detecting changes
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-getallsites-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaAllSite -Skiptoken "U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ" 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaAllSite Cmdlet.
+
 
 ## PARAMETERS
 

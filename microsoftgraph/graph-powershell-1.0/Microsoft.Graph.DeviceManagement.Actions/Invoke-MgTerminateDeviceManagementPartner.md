@@ -34,16 +34,17 @@ Invoke-MgTerminateDeviceManagementPartner -InputObject <IDeviceManagementActions
 Not yet documented
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+Invoke-MgTerminateDeviceManagementPartner -DeviceManagementPartnerId $deviceManagementPartnerId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgTerminateDeviceManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 

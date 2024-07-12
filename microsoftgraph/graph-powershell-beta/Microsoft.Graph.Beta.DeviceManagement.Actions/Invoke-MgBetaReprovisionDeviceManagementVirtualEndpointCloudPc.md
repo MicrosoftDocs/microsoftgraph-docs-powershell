@@ -52,16 +52,22 @@ Reprovision a specific Cloud PC.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reprovision-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Reprovision the cloudPC for the administrator
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
 $params = @{
-	UserAccountType = "administrator"
-	OsVersion = "windows10"
+	userAccountType = "administrator"
+	osVersion = "windows10"
 }
+
 Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
+
 ```
+This example will reprovision the cloudpc for the administrator
+
 
 ## PARAMETERS
 

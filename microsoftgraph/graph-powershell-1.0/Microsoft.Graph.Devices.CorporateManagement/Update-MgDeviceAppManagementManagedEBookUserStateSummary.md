@@ -52,16 +52,25 @@ Update-MgDeviceAppManagementManagedEBookUserStateSummary -InputObject <IDevicesC
 Update the properties of a userInstallStateSummary object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.userInstallStateSummary"
+	userName = "User Name value"
+	installedDeviceCount = 4
+	failedDeviceCount = 1
+	notInstalledDeviceCount = 7
+}
+
+Update-MgDeviceAppManagementManagedEBookUserStateSummary -ManagedEBookId $managedEBookId -UserInstallStateSummaryId $userInstallStateSummaryId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgDeviceAppManagementManagedEBookUserStateSummary Cmdlet.
+
 
 ## PARAMETERS
 

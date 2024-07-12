@@ -26,16 +26,17 @@ The Microsoft Entra service Level Agreement (SLA) commits to at least 99.99% aut
 This object provides you with your tenant's actual performance against this commitment.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportSlaAzureAdAuthentication
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaReportSlaAzureAdAuthentication Cmdlet.
+
 
 ## PARAMETERS
 

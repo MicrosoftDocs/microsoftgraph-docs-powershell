@@ -65,32 +65,38 @@ Alternatively, create a draft to reply to an existing message and send it later.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-reply-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
+
 $params = @{
-	Message = @{
-		ToRecipients = @(
+	message = @{
+		toRecipients = @(
 			@{
-				EmailAddress = @{
-					Address = "samanthab@contoso.onmicrosoft.com"
-					Name = "Samantha Booth"
+				emailAddress = @{
+					address = "samanthab@contoso.com"
+					name = "Samantha Booth"
 				}
 			}
 			@{
-				EmailAddress = @{
-					Address = "randiw@contoso.onmicrosoft.com"
-					Name = "Randi Welch"
+				emailAddress = @{
+					address = "randiw@contoso.com"
+					name = "Randi Welch"
 				}
 			}
 		)
 	}
-	Comment = "Samantha, Randi, would you name the group please?"
+	comment = "Samantha, Randi, would you name the group please?"
 }
+
 # A UPN can also be used as -UserId.
 Invoke-MgReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+
 ```
+This example shows how to use the Invoke-MgReplyUserMessage Cmdlet.
+
 
 ## PARAMETERS
 

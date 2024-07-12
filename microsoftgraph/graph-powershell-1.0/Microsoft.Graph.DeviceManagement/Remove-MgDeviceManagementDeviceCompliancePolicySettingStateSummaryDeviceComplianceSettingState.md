@@ -35,20 +35,17 @@ Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplian
 Deletes a deviceComplianceSettingState.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState -DeviceCompliancePolicySettingStateSummaryId $deviceCompliancePolicySettingStateSummaryId -DeviceComplianceSettingStateId $deviceComplianceSettingStateId
 
-{{ Add output here }}
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState Cmdlet.
+
 
 ## PARAMETERS
 

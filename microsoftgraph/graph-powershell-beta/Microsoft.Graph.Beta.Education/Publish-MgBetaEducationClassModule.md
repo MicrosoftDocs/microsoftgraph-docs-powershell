@@ -38,16 +38,17 @@ When a module is in draft status, students won't see the module.
 When you call this API, the module appears in the student's class work list.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Education
+
+Publish-MgBetaEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Publish-MgBetaEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

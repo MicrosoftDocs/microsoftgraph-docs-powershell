@@ -39,36 +39,48 @@ Note that files must be located in this folder in order to be added as resources
 Only a student in the class can determine what files to upload in a given submission-level resource folder.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 }
 
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 }
 
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 }
 
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
+
 
 ## PARAMETERS
 

@@ -41,16 +41,17 @@ Get-MgDeviceAppManagementWindowsInformationProtectionPolicy -InputObject <IDevic
 Read properties and relationships of the windowsInformationProtectionPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementWindowsInformationProtectionPolicy
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceAppManagementWindowsInformationProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 

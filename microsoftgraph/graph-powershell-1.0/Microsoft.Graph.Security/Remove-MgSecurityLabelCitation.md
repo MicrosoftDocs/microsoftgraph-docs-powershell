@@ -33,16 +33,17 @@ Remove-MgSecurityLabelCitation -InputObject <ISecurityIdentity> [-IfMatch <Strin
 Delete a citationTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Remove-MgSecurityLabelCitation -CitationTemplateId $citationTemplateId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgSecurityLabelCitation Cmdlet.
+
 
 ## PARAMETERS
 

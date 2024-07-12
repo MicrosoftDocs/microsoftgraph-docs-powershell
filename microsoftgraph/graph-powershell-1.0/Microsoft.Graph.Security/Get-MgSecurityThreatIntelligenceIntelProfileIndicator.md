@@ -42,16 +42,17 @@ Get-MgSecurityThreatIntelligenceIntelProfileIndicator -InputObject <ISecurityIde
 Includes an assemblage of high-fidelity network indicators of compromise.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceIntelProfileIndicator -IntelligenceProfileId $intelligenceProfileId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgSecurityThreatIntelligenceIntelProfileIndicator Cmdlet.
+
 
 ## PARAMETERS
 

@@ -40,16 +40,17 @@ Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
 Read the properties and relationships of a managementActionTenantDeploymentStatus object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.ManagedTenants
+
+Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus Cmdlet.
+
 
 ## PARAMETERS
 

@@ -31,16 +31,22 @@ Update-MgBetaIdentityContinuouAccessEvaluationPolicy
 Update the properties of a continuousAccessEvaluationPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.continuousAccessEvaluationPolicy"
-	Migrate = $true
+	migrate = $true
 }
+
 Update-MgBetaIdentityContinuouAccessEvaluationPolicy -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet.
+
 
 ## PARAMETERS
 

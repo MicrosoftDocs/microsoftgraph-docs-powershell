@@ -38,16 +38,17 @@ Get-MgBetaVirtualEventTownhall -InputObject <IBookingsIdentity> [-ExpandProperty
 Read the properties and relationships of a virtualEventTownhall object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaVirtualEventTownhall -VirtualEventTownhallId $virtualEventTownhallId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaVirtualEventTownhall Cmdlet.
+
 
 ## PARAMETERS
 

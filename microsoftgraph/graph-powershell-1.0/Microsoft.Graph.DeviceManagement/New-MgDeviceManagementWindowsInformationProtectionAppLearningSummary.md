@@ -35,16 +35,24 @@ New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 Create a new windowsInformationProtectionAppLearningSummary object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.windowsInformationProtectionAppLearningSummary"
+	applicationName = "Application Name value"
+	applicationType = "desktop"
+	deviceCount = 11
+}
+
+New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary Cmdlet.
+
 
 ## PARAMETERS
 

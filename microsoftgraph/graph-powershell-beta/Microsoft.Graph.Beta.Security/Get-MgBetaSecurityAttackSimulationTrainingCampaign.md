@@ -38,16 +38,17 @@ Get-MgBetaSecurityAttackSimulationTrainingCampaign -InputObject <ISecurityIdenti
 Read the properties and relationships of a trainingCampaign object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityAttackSimulationTrainingCampaign
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityAttackSimulationTrainingCampaign Cmdlet.
+
 
 ## PARAMETERS
 

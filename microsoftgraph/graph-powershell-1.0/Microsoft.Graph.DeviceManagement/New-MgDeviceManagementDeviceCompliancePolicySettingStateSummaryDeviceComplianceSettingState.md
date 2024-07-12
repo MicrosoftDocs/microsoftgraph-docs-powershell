@@ -55,20 +55,32 @@ New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceS
 Create a new deviceComplianceSettingState object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceComplianceSettingState"
+	setting = "Setting value"
+	settingName = "Setting Name value"
+	deviceId = "Device Id value"
+	deviceName = "Device Name value"
+	userId = "User Id value"
+	userEmail = "User Email value"
+	userName = "User Name value"
+	userPrincipalName = "User Principal Name value"
+	deviceModel = "Device Model value"
+	state = "notApplicable"
+	complianceGracePeriodExpirationDateTime = [System.DateTime]::Parse("2016-12-31T23:56:44.951111-08:00")
+}
 
-{{ Add output here }}
+New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState -DeviceCompliancePolicySettingStateSummaryId $deviceCompliancePolicySettingStateSummaryId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState Cmdlet.
+
 
 ## PARAMETERS
 

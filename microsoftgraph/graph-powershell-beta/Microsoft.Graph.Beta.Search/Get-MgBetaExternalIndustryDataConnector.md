@@ -38,16 +38,17 @@ Get-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-ExpandP
 Read the properties and relationships of an industryDataConnector object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalIndustryDataConnector
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaExternalIndustryDataConnector Cmdlet.
+
 
 ## PARAMETERS
 

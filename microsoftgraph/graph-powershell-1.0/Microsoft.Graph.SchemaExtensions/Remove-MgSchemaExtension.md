@@ -38,13 +38,17 @@ Only the app that created the schema extension (owner app) can delete the schema
 Deleting a schema extension definition does not affect accessing custom data that has been added to resource instances based on that definition.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.SchemaExtensions
-```
 
 Remove-MgSchemaExtension -SchemaExtensionId $schemaExtensionId
+
+```
+This example shows how to use the Remove-MgSchemaExtension Cmdlet.
+
 
 ## PARAMETERS
 

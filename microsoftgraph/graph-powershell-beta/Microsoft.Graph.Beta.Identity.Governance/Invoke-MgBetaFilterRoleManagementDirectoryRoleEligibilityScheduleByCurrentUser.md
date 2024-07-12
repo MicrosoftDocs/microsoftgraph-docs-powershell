@@ -36,16 +36,17 @@ Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser
 Get a list of the unifiedRoleEligibilitySchedule objects and their properties associated with a particular principal object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser -On $onId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

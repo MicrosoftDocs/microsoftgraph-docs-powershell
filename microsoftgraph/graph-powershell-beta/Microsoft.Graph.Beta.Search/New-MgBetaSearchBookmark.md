@@ -37,11 +37,11 @@ New-MgBetaSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-Respon
 Create a new bookmark object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	displayName = "Contoso Install Site"
@@ -73,6 +73,10 @@ state = "published"
 }
 
 New-MgBetaSearchBookmark -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSearchBookmark Cmdlet.
+
 
 ## PARAMETERS
 

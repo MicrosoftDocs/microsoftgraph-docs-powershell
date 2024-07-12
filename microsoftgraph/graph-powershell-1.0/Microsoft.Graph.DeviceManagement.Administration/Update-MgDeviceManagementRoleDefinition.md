@@ -51,20 +51,40 @@ Update-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministr
 Update the properties of a deviceAndAppManagementRoleDefinition object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceAndAppManagementRoleDefinition"
+	displayName = "Display Name value"
+	description = "Description value"
+	rolePermissions = @(
+		@{
+			"@odata.type" = "microsoft.graph.rolePermission"
+			resourceActions = @(
+				@{
+					"@odata.type" = "microsoft.graph.resourceAction"
+					allowedResourceActions = @(
+					"Allowed Resource Actions value"
+				)
+				notAllowedResourceActions = @(
+				"Not Allowed Resource Actions value"
+			)
+		}
+	)
+}
+)
+isBuiltIn = $true
+}
 
-{{ Add output here }}
+Update-MgDeviceManagementRoleDefinition -RoleDefinitionId $roleDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

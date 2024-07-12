@@ -38,16 +38,30 @@ Create a new custom unifiedRoleDefinition object.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	description = "Update basic properties of application registrations"
+	displayName = "Application Registration Support Administrator"
+	rolePermissions = @(
+		@{
+			allowedResourceActions = @(
+			"microsoft.directory/applications/basic/read"
+		)
+	}
+)
+isEnabled = $true
+}
+
+New-MgRoleManagementDirectoryRoleDefinition -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgRoleManagementDirectoryRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

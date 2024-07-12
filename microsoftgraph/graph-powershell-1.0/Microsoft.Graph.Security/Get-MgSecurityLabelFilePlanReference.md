@@ -41,16 +41,17 @@ Get-MgSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> [-ExpandPr
 Read the properties and relationships of a filePlanReferenceTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityLabelFilePlanReference
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgSecurityLabelFilePlanReference Cmdlet.
+
 
 ## PARAMETERS
 

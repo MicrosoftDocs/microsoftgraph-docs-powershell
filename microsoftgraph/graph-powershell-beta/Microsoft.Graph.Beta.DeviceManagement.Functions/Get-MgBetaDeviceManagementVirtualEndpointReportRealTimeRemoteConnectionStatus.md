@@ -34,16 +34,17 @@ Get the real-time connection status information, such as signInStatus or daysSin
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getrealtimeremoteconnectionstatus-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+
+Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus Cmdlet.
+
 
 ## PARAMETERS
 

@@ -38,16 +38,17 @@ Don't create scripts to call the start job continuously while it's running becau
 Use the start job only when the job is currently paused or in quarantine.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Applications
+
+Start-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Start-MgServicePrincipalSynchronizationJob Cmdlet.
+
 
 ## PARAMETERS
 

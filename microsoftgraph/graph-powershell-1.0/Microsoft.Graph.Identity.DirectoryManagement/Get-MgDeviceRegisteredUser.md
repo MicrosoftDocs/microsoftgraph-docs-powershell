@@ -28,13 +28,17 @@ Retrieve a list of users that are registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDeviceRegisteredUser -DeviceId $deviceId
+
+```
+This example shows how to use the Get-MgDeviceRegisteredUser Cmdlet.
+
 
 ## PARAMETERS
 

@@ -35,20 +35,17 @@ Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser -InputObject <IId
 In Microsoft Entra Entitlement Management, retrieve a list of accessPackage objects filtered on the signed-in user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser -On $onId 
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

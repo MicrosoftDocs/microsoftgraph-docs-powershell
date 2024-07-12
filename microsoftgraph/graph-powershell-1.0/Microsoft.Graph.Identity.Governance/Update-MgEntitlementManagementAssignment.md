@@ -70,20 +70,17 @@ The state of the access package assignment must be Delivered for the administrat
 Only admins with the Access Package Assignment Manager role, or higher, in Microsoft Entra entitlement management can perform this action.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Update-MgEntitlementManagementAssignment -AccessPackageAssignmentId $accessPackageAssignmentId
 
-{{ Add output here }}
+```
+This example shows how to use the Update-MgEntitlementManagementAssignment Cmdlet.
+
 
 ## PARAMETERS
 

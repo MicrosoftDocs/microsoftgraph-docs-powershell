@@ -30,16 +30,17 @@ Remove-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-IfMa
 Delete a businessScenarioTask object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Remove-MgBetaBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -BusinessScenarioTaskId $businessScenarioTaskId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaBusinessScenarioPlannerTask Cmdlet.
+
 
 ## PARAMETERS
 

@@ -41,16 +41,28 @@ Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -InputObject <IIdenti
 In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object.
 
 ## EXAMPLES
+### Example 1: Retrieve role assignment requests
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
+
 ```
-{{ Add code here }}
+This example will retrieve role assignment requests
+
+### Example 2: Retrieve specified properties of role assignment requests and expand the relationships
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -Property "principalId,action,roleDefinitionId" -ExpandProperty "roleDefinition,activatedUsing,principal,targetSchedule" 
+
 ```
+This example will retrieve specified properties of role assignment requests and expand the relationships
+
 
 ## PARAMETERS
 

@@ -38,18 +38,17 @@ Get-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 Retrieve the properties and relationships of a specific endpoint object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Groups
-Get-MgBetaGroupEndpoint -GroupId $groupId -EndpointId $endpointId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Groups
+
 Get-MgBetaGroupEndpoint -GroupId $groupId
+
 ```
+This example shows how to use the Get-MgBetaGroupEndpoint Cmdlet.
+
 
 ## PARAMETERS
 

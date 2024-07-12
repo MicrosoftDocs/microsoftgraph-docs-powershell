@@ -37,16 +37,35 @@ Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport -OutFile <String
 Not yet documented
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	name = "Name value"
+	select = @(
+	"Select value"
+)
+search = "Search value"
+groupBy = @(
+"Group By value"
+)
+orderBy = @(
+"Order By value"
+)
+skip = 4
+top = 3
+sessionId = "Session Id value"
+filter = "Filter value"
+}
+
+Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport Cmdlet.
+
 
 ## PARAMETERS
 

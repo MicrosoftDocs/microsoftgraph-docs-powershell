@@ -43,16 +43,17 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance
 Read the properties and relationships of a privilegedAccessGroupEligibilityScheduleInstance object.
 
 ## EXAMPLES
+### Example 1: Get all eligibility schedule instances
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance -PrivilegedAccessGroupEligibilityScheduleInstanceId $privilegedAccessGroupEligibilityScheduleInstanceId
+
 ```
-{{ Add code here }}
-```
+This example will get all eligibility schedule instances
+
 
 ## PARAMETERS
 

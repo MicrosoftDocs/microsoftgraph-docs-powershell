@@ -35,16 +35,17 @@ Remove an owner from a Microsoft 365 group or a security group through the owner
 Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Groups
+
+Remove-MgGroupOwnerDirectoryObjectByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgGroupOwnerDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 

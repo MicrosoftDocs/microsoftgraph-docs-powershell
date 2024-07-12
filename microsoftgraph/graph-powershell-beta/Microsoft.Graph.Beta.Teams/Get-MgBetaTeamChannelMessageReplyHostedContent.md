@@ -58,13 +58,17 @@ Get-MgBetaTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity> [-E
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## EXAMPLES
+### Example 1: List hosted content for reply to a channel message
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamChannelMessageReplyHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
+
+```
+This example will list hosted content for reply to a channel message
+
 
 ## PARAMETERS
 

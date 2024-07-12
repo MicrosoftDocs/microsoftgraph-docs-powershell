@@ -45,16 +45,39 @@ Read the properties and relationships of a cloudPcProvisioningPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the properties of the specified provisioning policy
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId
+
 ```
-{{ Add code here }}
+This example will get the properties of the specified provisioning policy
+
+### Example 2: Get the properties of the specified provisioning policy and expand on the assignments
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId -ExpandProperty "assignments" 
+
 ```
+This example will get the properties of the specified provisioning policy and expand on the assignments
+
+### Example 3: Get the selected properties of the specified provisioning policy
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId -Property "id,description,displayName,domainJoinConfigurations,imageDisplayName,imageId,imageType,windowsSetting,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl" 
+
+```
+This example will get the selected properties of the specified provisioning policy
+
 
 ## PARAMETERS
 

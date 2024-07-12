@@ -32,16 +32,19 @@ Set-MgOrganizationBrandingLocalizationBannerLogo -InputObject <IIdentityDirector
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
 ## EXAMPLES
+### Example 1: Setting **bannerLogo** for the fr-FR localization using PUT
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = Binary data for the image
+
+Set-MgOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows setting **bannerlogo** for the fr-fr localization using put
+
 
 ## PARAMETERS
 

@@ -62,17 +62,23 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
+
 $params = @{
-	DisplayName = "Myprefix_test_mysuffix"
-	MailNickname = "Myprefix_test_mysuffix"
-	OnBehalfOfUserId = "onBehalfOfUserId-value"
+	displayName = "Myprefix_test_mysuffix"
+	mailNickname = "Myprefix_test_mysuffix"
+	onBehalfOfUserId = "onBehalfOfUserId-value"
 }
+
 Test-MgGroupProperty -GroupId $groupId -BodyParameter $params
+
 ```
+This example shows how to use the Test-MgGroupProperty Cmdlet.
+
 
 ## PARAMETERS
 

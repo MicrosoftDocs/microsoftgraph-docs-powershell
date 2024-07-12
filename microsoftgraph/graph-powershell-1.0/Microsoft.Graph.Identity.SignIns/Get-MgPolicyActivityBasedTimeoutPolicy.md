@@ -41,13 +41,17 @@ Get-MgPolicyActivityBasedTimeoutPolicy -InputObject <IIdentitySignInsIdentity> [
 The policy that controls the idle time out for web sessions for applications.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyActivityBasedTimeoutPolicy
+
+```
+This example shows how to use the Get-MgPolicyActivityBasedTimeoutPolicy Cmdlet.
+
 
 ## PARAMETERS
 

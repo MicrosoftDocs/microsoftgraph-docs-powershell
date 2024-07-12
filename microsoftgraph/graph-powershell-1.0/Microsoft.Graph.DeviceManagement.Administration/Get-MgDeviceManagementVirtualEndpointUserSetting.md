@@ -41,16 +41,28 @@ Get-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagement
 Read the properties and relationships of a cloudPcUserSetting object.
 
 ## EXAMPLES
+### Example 1: Get the properties of the specified user setting
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId
+
 ```
-{{ Add code here }}
+This example will get the properties of the specified user setting
+
+### Example 2: Get the properties of the specified user setting and expand on the assignments
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -ExpandProperty "assignments" 
+
 ```
+This example will get the properties of the specified user setting and expand on the assignments
+
 
 ## PARAMETERS
 

@@ -33,20 +33,17 @@ Remove-MgDeviceManagementMobileThreatDefenseConnector -InputObject <IDeviceManag
 Deletes a mobileThreatDefenseConnector.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Remove-MgDeviceManagementMobileThreatDefenseConnector -MobileThreatDefenseConnectorId $mobileThreatDefenseConnectorId
 
-{{ Add output here }}
+```
+This example shows how to use the Remove-MgDeviceManagementMobileThreatDefenseConnector Cmdlet.
+
 
 ## PARAMETERS
 

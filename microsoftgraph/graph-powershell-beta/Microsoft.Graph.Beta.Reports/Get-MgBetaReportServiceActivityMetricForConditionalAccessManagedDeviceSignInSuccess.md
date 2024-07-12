@@ -35,16 +35,17 @@ Get the number of user authentication requests, during a specific time period, t
 Managed devices are computers joined to and managed by your on-premises directory and hybrid devices joined to Microsoft Entra.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess Cmdlet.
+
 
 ## PARAMETERS
 

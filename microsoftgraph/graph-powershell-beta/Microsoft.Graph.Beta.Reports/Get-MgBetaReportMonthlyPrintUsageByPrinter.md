@@ -41,20 +41,17 @@ Get-MgBetaReportMonthlyPrintUsageByPrinter -InputObject <IReportsIdentity> [-Exp
 Retrieve a list of monthly print usage summaries, grouped by printer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgBetaReportMonthlyPrintUsageByPrinter
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgBetaReportMonthlyPrintUsageByPrinter Cmdlet.
+
 
 ## PARAMETERS
 

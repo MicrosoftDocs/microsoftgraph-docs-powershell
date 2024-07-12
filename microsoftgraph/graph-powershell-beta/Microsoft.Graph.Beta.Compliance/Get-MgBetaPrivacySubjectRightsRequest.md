@@ -41,16 +41,17 @@ Get-MgBetaPrivacySubjectRightsRequest -InputObject <IComplianceIdentity> [-Expan
 Read the properties and relationships of a subjectRightsRequest object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Compliance
+
+Get-MgBetaPrivacySubjectRightsRequest
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaPrivacySubjectRightsRequest Cmdlet.
+
 
 ## PARAMETERS
 

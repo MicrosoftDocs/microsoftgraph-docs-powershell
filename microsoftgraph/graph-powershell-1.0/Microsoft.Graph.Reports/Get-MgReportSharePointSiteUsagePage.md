@@ -32,20 +32,17 @@ Get-MgReportSharePointSiteUsagePage -InputObject <IReportsIdentity> -OutFile <St
 Get the number of pages viewed across all sites.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportSharePointSiteUsagePage -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportSharePointSiteUsagePage Cmdlet.
+
 
 ## PARAMETERS
 

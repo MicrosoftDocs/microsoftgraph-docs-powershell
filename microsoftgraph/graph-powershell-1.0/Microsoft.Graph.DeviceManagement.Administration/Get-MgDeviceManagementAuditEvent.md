@@ -42,16 +42,17 @@ Get-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationId
 Read properties and relationships of the auditEvent object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementAuditEvent
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceManagementAuditEvent Cmdlet.
+
 
 ## PARAMETERS
 

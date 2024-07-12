@@ -69,16 +69,24 @@ Only the properties listed in the request body table can be updated.
 To update any other workflow properties, see workflow: createNewVersion.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	description = "Configure new hire tasks for onboarding employees on their first day"
+	displayName = "Australia Onboard new hire employee"
+	isEnabled = $true
+	isSchedulingEnabled = $false
+}
+
+Update-MgIdentityGovernanceLifecycleWorkflow -WorkflowId $workflowId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgIdentityGovernanceLifecycleWorkflow Cmdlet.
+
 
 ## PARAMETERS
 
