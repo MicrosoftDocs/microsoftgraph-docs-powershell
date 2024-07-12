@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementauditevent
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementAuditEvent
 
 ## SYNOPSIS
 Read properties and relationships of the auditEvent object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 

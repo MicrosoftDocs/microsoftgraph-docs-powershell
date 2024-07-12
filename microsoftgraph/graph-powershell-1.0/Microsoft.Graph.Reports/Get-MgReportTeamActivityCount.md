@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the number of team activities across Microsoft Teams.
 The activity types are related to meetings and messages.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

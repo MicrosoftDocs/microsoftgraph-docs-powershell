@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaunfollowuserdriveroot
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgBetaUnfollowUserDriveRoot
 
 ## SYNOPSIS
 Unfollow a driveItem.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnfollowUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgUnfollowUserDriveRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +32,9 @@ Invoke-MgBetaUnfollowUserDriveRoot -InputObject <IUsersActionsIdentity> [-Respon
 
 ## DESCRIPTION
 Unfollow a driveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-unfollow-permissions.md)]
 
 ## EXAMPLES
 

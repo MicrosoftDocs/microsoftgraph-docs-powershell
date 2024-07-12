@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of owners of the servicePrincipal.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalOwner](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

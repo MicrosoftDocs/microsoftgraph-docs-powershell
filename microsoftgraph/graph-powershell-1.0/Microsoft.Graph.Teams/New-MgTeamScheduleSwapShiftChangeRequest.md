@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to swapShiftsChangeRequests for teams
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

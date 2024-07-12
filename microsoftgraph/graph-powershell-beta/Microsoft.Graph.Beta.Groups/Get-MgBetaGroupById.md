@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyid
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaGroupById
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupById](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupById?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,6 +35,9 @@ Get-MgBetaGroupById
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-getbyids-permissions.md)]
 
 ## EXAMPLES
 

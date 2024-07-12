@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Users that are flagged as at-risk by Microsoft Entra ID Protection.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

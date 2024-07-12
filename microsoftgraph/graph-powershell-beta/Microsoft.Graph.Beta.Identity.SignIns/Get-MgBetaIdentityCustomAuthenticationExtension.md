@@ -11,6 +11,9 @@ schema: 2.0.0
 Read the properties and relationships of an authenticationEventListener object.
 The @odata.type property in the response object indicates the type of the authenticationEventListener object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityCustomAuthenticationExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

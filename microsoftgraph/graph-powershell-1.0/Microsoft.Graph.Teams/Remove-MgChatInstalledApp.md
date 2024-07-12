@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property installedApps for chats
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

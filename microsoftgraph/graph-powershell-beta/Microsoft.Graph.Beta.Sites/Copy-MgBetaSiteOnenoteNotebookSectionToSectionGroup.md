@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebooksectiontosectiongroup
 schema: 2.0.0
+ms.subservice: onenote
 ---
 
 # Copy-MgBetaSiteOnenoteNotebookSectionToSectionGroup
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgSiteOnenoteNotebookSectionToSectionGroup](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteNotebookSectionToSectionGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +53,9 @@ Copy-MgBetaSiteOnenoteNotebookSectionToSectionGroup -InputObject <ISitesIdentity
 ## DESCRIPTION
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/section-copytosectiongroup-permissions.md)]
 
 ## EXAMPLES
 

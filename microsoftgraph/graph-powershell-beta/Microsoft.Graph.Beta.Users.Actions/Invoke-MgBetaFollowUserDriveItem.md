@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetafollowuserdriveitem
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgBetaFollowUserDriveItem
 
 ## SYNOPSIS
 Follow a driveItem.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFollowUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgFollowUserDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,6 +31,9 @@ Invoke-MgBetaFollowUserDriveItem -InputObject <IUsersActionsIdentity> [-Response
 
 ## DESCRIPTION
 Follow a driveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-follow-permissions.md)]
 
 ## EXAMPLES
 

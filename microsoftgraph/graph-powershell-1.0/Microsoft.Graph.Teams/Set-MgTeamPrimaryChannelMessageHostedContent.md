@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property hostedContents in teams
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaTeamPrimaryChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamPrimaryChannelMessageHostedContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

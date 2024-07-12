@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 In Microsoft Entra Entitlement Management, retrieve a list of accessPackage objects filtered on the signed-in user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

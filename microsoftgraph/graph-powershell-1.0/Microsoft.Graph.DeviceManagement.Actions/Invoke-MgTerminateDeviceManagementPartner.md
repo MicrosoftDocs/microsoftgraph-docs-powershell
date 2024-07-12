@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgterminatedevicemanagementpartner
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Invoke-MgTerminateDeviceManagementPartner
 
 ## SYNOPSIS
 Not yet documented
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaTerminateDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaTerminateDeviceManagementPartner?view=graph-powershell-beta)
 
 ## SYNTAX
 

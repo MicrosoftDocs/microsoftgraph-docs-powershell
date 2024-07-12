@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/reset-mgdevicemanagementmanageddevicepasscode
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Reset-MgDeviceManagementManagedDevicePasscode
 
 ## SYNOPSIS
 Reset passcode
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Reset-MgBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Reset-MgBetaDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgContactDelta
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection.
 See change tracking for details.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -22,6 +26,9 @@ Get-MgContactDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <S
 ## DESCRIPTION
 Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection.
 See change tracking for details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/orgcontact-delta-permissions.md)]
 
 ## EXAMPLES
 

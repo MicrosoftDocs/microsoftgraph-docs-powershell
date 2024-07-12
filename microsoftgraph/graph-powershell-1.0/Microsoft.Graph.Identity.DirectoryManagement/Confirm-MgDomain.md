@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdomain
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Confirm-MgDomain
 
 ## SYNOPSIS
 Validates the ownership of the domain.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaDomain?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,6 +30,9 @@ Confirm-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ResponseH
 
 ## DESCRIPTION
 Validates the ownership of the domain.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-verify-permissions.md)]
 
 ## EXAMPLES
 

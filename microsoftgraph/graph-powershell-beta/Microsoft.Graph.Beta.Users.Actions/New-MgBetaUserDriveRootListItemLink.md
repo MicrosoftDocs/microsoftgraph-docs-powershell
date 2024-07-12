@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootlistitemlink
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # New-MgBetaUserDriveRootListItemLink
@@ -11,6 +12,9 @@ schema: 2.0.0
 Create a sharing link for a listItem.
 The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveRootListItemLink](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDriveRootListItemLink?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,6 +56,9 @@ New-MgBetaUserDriveRootListItemLink -InputObject <IUsersActionsIdentity>
 Create a sharing link for a listItem.
 The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-createlink-permissions.md)]
 
 ## EXAMPLES
 

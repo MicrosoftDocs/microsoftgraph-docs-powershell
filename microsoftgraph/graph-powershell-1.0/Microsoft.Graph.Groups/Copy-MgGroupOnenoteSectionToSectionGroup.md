@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotesectiontosectiongroup
 schema: 2.0.0
+ms.subservice: onenote
 ---
 
 # Copy-MgGroupOnenoteSectionToSectionGroup
 
 ## SYNOPSIS
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaGroupOnenoteSectionToSectionGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupOnenoteSectionToSectionGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +50,9 @@ Copy-MgGroupOnenoteSectionToSectionGroup -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-copytosectiongroup-permissions.md)]
 
 ## EXAMPLES
 

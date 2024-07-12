@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription
 schema: 2.0.0
+ms.subservice: change-notifications
 ---
 
 # Invoke-MgReauthorizeSubscription
 
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Invoke-MgBetaReauthorizeSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 

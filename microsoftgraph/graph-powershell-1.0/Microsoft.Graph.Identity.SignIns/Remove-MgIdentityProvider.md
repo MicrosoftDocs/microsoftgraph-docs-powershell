@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property identityProviders for identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

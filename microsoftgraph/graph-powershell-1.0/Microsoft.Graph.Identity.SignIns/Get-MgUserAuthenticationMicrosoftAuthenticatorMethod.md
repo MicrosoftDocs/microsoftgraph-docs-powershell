@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The details of the Microsoft Authenticator app registered to a user for authentication.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

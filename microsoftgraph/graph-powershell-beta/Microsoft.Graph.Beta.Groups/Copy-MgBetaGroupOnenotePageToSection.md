@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotepagetosection
 schema: 2.0.0
+ms.subservice: onenote
 ---
 
 # Copy-MgBetaGroupOnenotePageToSection
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgGroupOnenotePageToSection](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupOnenotePageToSection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,6 +52,9 @@ Copy-MgBetaGroupOnenotePageToSection -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/page-copytosection-permissions.md)]
 
 ## EXAMPLES
 

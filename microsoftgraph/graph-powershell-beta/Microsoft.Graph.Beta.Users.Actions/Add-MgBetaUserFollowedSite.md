@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserfollowedsite
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgBetaUserFollowedSite
 
 ## SYNOPSIS
 Follow a user's site or multiple sites.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgUserFollowedSite](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserFollowedSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,6 +48,9 @@ Add-MgBetaUserFollowedSite -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Follow a user's site or multiple sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-follow-permissions.md)]
 
 ## EXAMPLES
 

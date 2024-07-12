@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroup
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # Get-MgExternalConnectionGroup
 
 ## SYNOPSIS
 Get an externalGroup object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +40,9 @@ Get-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Get an externalGroup object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalgroup-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.
 See Using Delta Query for details.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

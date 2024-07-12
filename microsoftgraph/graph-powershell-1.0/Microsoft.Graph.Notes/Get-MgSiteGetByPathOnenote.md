@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Calls the OneNote service for notebook related operations.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteGetByPathOnenote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)

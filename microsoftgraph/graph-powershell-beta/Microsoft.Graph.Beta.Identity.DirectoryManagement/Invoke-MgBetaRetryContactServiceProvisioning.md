@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retry the orgContact service provisioning.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRetryContactServiceProvisioning](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgRetryContactServiceProvisioning?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Retry (Default)

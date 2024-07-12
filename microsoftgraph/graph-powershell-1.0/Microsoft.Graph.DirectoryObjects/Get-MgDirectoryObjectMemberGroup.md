@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmembergroup
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryObjectMemberGroup
@@ -13,6 +14,9 @@ This function is transitive.
 This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
 As a workaround, use the List group transitive memberOf API.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObjectMemberGroup](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectMemberGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 

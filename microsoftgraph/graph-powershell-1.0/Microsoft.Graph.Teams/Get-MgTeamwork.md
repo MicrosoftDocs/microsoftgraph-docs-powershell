@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamwork?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

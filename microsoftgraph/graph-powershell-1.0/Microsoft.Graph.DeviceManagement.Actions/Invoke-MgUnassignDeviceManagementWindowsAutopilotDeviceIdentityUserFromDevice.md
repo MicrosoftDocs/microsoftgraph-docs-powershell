@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgunassigndevicemanagementwindowsautopilotdeviceidentityuserfromdevice
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice
 
 ## SYNOPSIS
 Unassigns the user from an Autopilot device.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 

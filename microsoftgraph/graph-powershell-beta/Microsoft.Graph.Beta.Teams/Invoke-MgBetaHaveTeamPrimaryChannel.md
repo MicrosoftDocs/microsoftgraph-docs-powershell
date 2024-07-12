@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Determine whether a user has access to a shared channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgHaveTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgHaveTeamPrimaryChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Have (Default)
