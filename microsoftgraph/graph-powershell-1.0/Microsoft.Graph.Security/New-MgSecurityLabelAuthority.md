@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority
@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgSecurityLabelAuthority
 
 ## SYNOPSIS
-Create new navigation property to authorities for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelAuthority?view=graph-powershell-beta)
+Create a new authorityTemplate object.
 
 ## SYNTAX
 
@@ -29,7 +26,19 @@ New-MgSecurityLabelAuthority -BodyParameter <Hashtable> [-ResponseHeadersVariabl
 ```
 
 ## DESCRIPTION
-Create new navigation property to authorities for security
+Create a new authorityTemplate object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -217,22 +226,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority)
 
-
-
-
+[https://learn.microsoft.com/graph/api/security-labelsroot-post-authorities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-authorities?view=graph-rest-1.0)
 

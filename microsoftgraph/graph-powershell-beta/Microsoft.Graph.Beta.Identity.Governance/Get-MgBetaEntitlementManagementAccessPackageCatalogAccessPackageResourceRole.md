@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackageresourcerole
@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceRole
 
 ## SYNOPSIS
-The roles in each resource in a catalog.
-Read-only.
+Retrieve a list of accessPackageResourceRole objects of an accessPackageResource in an accessPackageCatalog.
+The resource should have been added to the catalog by creating an accessPackageResourceRequest.
+This list of roles can then be used by the caller to select a role, which is needed when subsequently creating an accessPackageResourceRoleScope.
 
 ## SYNTAX
 
@@ -21,36 +22,32 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceRole -Ac
 ```
 
 ## DESCRIPTION
-The roles in each resource in a catalog.
-Read-only.
+Retrieve a list of accessPackageResourceRole objects of an accessPackageResource in an accessPackageCatalog.
+The resource should have been added to the catalog by creating an accessPackageResourceRequest.
+This list of roles can then be used by the caller to select a role, which is needed when subsequently creating an accessPackageResourceRoleScope.
 
 ## EXAMPLES
-### Example 1: Get catalog resource roles
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceRole -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -Filter "originSystem eq 'AadGroup' and accessPackageResource/id eq '36d8d18f-b081-4867-acf5-4a8b893761e8'"
+```
 
 Id                                   Description DisplayName OriginId                                    OriginSystem
 --                                   ----------- ----------- --------                                    ------------
 00000000-0000-0000-0000-000000000000             Owner       Owner_b5cd9d19-91c0-4622-93e2-537ad8a0b3ad  AadGroup
 00000000-0000-0000-0000-000000000000             Member      Member_b5cd9d19-91c0-4622-93e2-537ad8a0b3ad AadGroup
+
+### EXAMPLE 2
 ```
-
-This example gets the resource roles for the specified catalog id and filtering the results for the specified access package resource id.
-
-### Example 2: Extend the -Filter to get the resource roles with the display name 'Member'
-
-```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceRole -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -Filter "originSystem eq 'AadGroup' and accessPackageResource/id eq '36d8d18f-b081-4867-acf5-4a8b893761e8' and DisplayName eq 'Member'"
+```
 
 Id                                   Description DisplayName OriginId                                    OriginSystem
 --                                   ----------- ----------- --------                                    ------------
 00000000-0000-0000-0000-000000000000             Member      Member_b5cd9d19-91c0-4622-93e2-537ad8a0b3ad AadGroup
-```
-
-This example extends the filter in example 1 to return access roles whose display name is 'Member'.
 
 ## PARAMETERS
 
@@ -280,6 +277,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackageresourcerole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackageresourcerole)
 
-
-
+[https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackageresourceroles?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackageresourceroles?view=graph-rest-beta)
 

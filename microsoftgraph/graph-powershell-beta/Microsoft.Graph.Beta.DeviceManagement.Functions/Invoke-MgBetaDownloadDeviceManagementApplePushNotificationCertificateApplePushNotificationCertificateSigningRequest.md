@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetadownloaddevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Download Apple push notification certificate signing request
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,22 @@ Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNo
 
 ## DESCRIPTION
 Download Apple push notification certificate signing request
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -85,8 +98,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetadownloaddevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetadownloaddevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest)
-
-
-
-
 

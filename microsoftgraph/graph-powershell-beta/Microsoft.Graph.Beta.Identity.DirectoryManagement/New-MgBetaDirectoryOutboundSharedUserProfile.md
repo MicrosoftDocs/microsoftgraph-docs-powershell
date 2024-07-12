@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryoutboundshareduserprofile
@@ -28,6 +28,22 @@ New-MgBetaDirectoryOutboundSharedUserProfile -BodyParameter <IMicrosoftGraphOutb
 
 ## DESCRIPTION
 Create new navigation property to outboundSharedUserProfiles for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -187,27 +203,23 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOutboundSharedUserProfile>`: outboundSharedUserProfile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Tenants <IMicrosoftGraphTenantReference- `[]`>]`: The collection of external Microsoft Entra tenants that the user has shared profile data with.
+BODYPARAMETER \<IMicrosoftGraphOutboundSharedUserProfile\>: outboundSharedUserProfile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Tenants \<IMicrosoftGraphTenantReference\[\]\>\]: The collection of external Microsoft Entra tenants that the user has shared profile data with.
 Read-only.
-    - `[TenantId <String>]`: The identifier of the Microsoft Entra tenant.
+    \[TenantId \<String\>\]: The identifier of the Microsoft Entra tenant.
 Read-only.
 Key.
-  - `[UserId <String>]`: The object id of the external user.
+  \[UserId \<String\>\]: The object id of the external user.
 Read-only.
 
-TENANTS <IMicrosoftGraphTenantReference- `[]`>: The collection of external Microsoft Entra tenants that the user has shared profile data with.
+TENANTS \<IMicrosoftGraphTenantReference\[\]\>: The collection of external Microsoft Entra tenants that the user has shared profile data with.
 Read-only.
-  - `[TenantId <String>]`: The identifier of the Microsoft Entra tenant.
+  \[TenantId \<String\>\]: The identifier of the Microsoft Entra tenant.
 Read-only.
 Key.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryoutboundshareduserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryoutboundshareduserprofile)
-
-
-
-
 

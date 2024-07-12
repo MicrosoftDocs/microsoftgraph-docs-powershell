@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationlandingpage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to landingPages for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationLandingPage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,6 +31,18 @@ New-MgBetaSecurityAttackSimulationLandingPage -BodyParameter <IMicrosoftGraphLan
 
 ## DESCRIPTION
 Create new navigation property to landingPages for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -348,65 +357,61 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphLandingPage>`: landingPage
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphLandingPage\>: landingPage
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+  \[CreatedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-    - `[Email <String>]`: Email address of the user.
-  - `[CreatedDateTime <DateTime?>]`: Date and time when the landing page was created.
+    \[Email \<String\>\]: Email address of the user.
+  \[CreatedDateTime \<DateTime?\>\]: Date and time when the landing page was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Description <String>]`: Description of the landing page as defined by the user.
-  - `[Details <IMicrosoftGraphLandingPageDetail- `[]`>]`: The detail information for a landing page associated with a simulation during its creation.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Description \<String\>\]: Description of the landing page as defined by the user.
+  \[Details \<IMicrosoftGraphLandingPageDetail\[\]\>\]: The detail information for a landing page associated with a simulation during its creation.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Content <String>]`: Landing page detail content.
-    - `[IsDefaultLangauge <Boolean?>]`: Indicates whether this language detail is default for the landing page.
-    - `[Language <String>]`: The content language for the landing page.
-  - `[DisplayName <String>]`: The display name of the landing page.
-  - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the landing page was last modified.
+    \[Content \<String\>\]: Landing page detail content.
+    \[IsDefaultLangauge \<Boolean?\>\]: Indicates whether this language detail is default for the landing page.
+    \[Language \<String\>\]: The content language for the landing page.
+  \[DisplayName \<String\>\]: The display name of the landing page.
+  \[LastModifiedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
+  \[LastModifiedDateTime \<DateTime?\>\]: Date and time when the landing page was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Locale <String>]`: Content locale.
-  - `[Source <String>]`: simulationContentSource
-  - `[Status <String>]`: simulationContentStatus
-  - `[SupportedLocales <String- `[]`>]`: Supported locales.
+  \[Locale \<String\>\]: Content locale.
+  \[Source \<String\>\]: simulationContentSource
+  \[Status \<String\>\]: simulationContentStatus
+  \[SupportedLocales \<String\[\]\>\]: Supported locales.
 
-CREATEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-  - `[Id <String>]`: The identifier of the identity.
+  \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Email <String>]`: Email address of the user.
+  \[Email \<String\>\]: Email address of the user.
 
-DETAILS <IMicrosoftGraphLandingPageDetail- `[]`>: The detail information for a landing page associated with a simulation during its creation.
-  - `[Id <String>]`: The unique identifier for an entity.
+DETAILS \<IMicrosoftGraphLandingPageDetail\[\]\>: The detail information for a landing page associated with a simulation during its creation.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Content <String>]`: Landing page detail content.
-  - `[IsDefaultLangauge <Boolean?>]`: Indicates whether this language detail is default for the landing page.
-  - `[Language <String>]`: The content language for the landing page.
+  \[Content \<String\>\]: Landing page detail content.
+  \[IsDefaultLangauge \<Boolean?\>\]: Indicates whether this language detail is default for the landing page.
+  \[Language \<String\>\]: The content language for the landing page.
 
-LASTMODIFIEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity.
+LASTMODIFIEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-  - `[Id <String>]`: The identifier of the identity.
+  \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Email <String>]`: Email address of the user.
+  \[Email \<String\>\]: Email address of the user.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationlandingpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationlandingpage)
-
-
-
-
 

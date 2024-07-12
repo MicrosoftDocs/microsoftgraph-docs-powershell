@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcloudpcoverview
@@ -15,17 +15,17 @@ Create new navigation property to cloudPcsOverview for tenantRelationships
 ### CreateExpanded (Default)
 ```
 New-MgBetaTenantRelationshipManagedTenantCloudPcOverview [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastRefreshedDateTime <DateTime>]
- [-NumberOfCloudPcConnectionStatusFailed <Int32>] [-NumberOfCloudPcConnectionStatusPassed <Int32>]
- [-NumberOfCloudPcConnectionStatusPending <Int32>] [-NumberOfCloudPcConnectionStatusRunning <Int32>]
- [-NumberOfCloudPcConnectionStatusUnkownFutureValue <Int32>] [-NumberOfCloudPcStatusDeprovisioning <Int32>]
- [-NumberOfCloudPcStatusFailed <Int32>] [-NumberOfCloudPcStatusInGracePeriod <Int32>]
- [-NumberOfCloudPcStatusNotProvisioned <Int32>] [-NumberOfCloudPcStatusProvisioned <Int32>]
- [-NumberOfCloudPcStatusProvisioning <Int32>] [-NumberOfCloudPcStatusUnknown <Int32>]
- [-NumberOfCloudPcStatusUpgrading <Int32>] [-TenantDisplayName <String>] [-TenantId <String>]
- [-TotalBusinessLicenses <Int32>] [-TotalCloudPcConnectionStatus <Int32>] [-TotalCloudPcStatus <Int32>]
- [-TotalEnterpriseLicenses <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-FrontlineLicensesCount <Int32>] [-Id <String>]
+ [-LastRefreshedDateTime <DateTime>] [-NumberOfCloudPcConnectionStatusFailed <Int32>]
+ [-NumberOfCloudPcConnectionStatusPassed <Int32>] [-NumberOfCloudPcConnectionStatusPending <Int32>]
+ [-NumberOfCloudPcConnectionStatusRunning <Int32>] [-NumberOfCloudPcConnectionStatusUnkownFutureValue <Int32>]
+ [-NumberOfCloudPcStatusDeprovisioning <Int32>] [-NumberOfCloudPcStatusFailed <Int32>]
+ [-NumberOfCloudPcStatusInGracePeriod <Int32>] [-NumberOfCloudPcStatusNotProvisioned <Int32>]
+ [-NumberOfCloudPcStatusProvisioned <Int32>] [-NumberOfCloudPcStatusProvisioning <Int32>]
+ [-NumberOfCloudPcStatusUnknown <Int32>] [-NumberOfCloudPcStatusUpgrading <Int32>]
+ [-TenantDisplayName <String>] [-TenantId <String>] [-TotalBusinessLicenses <Int32>]
+ [-TotalCloudPcConnectionStatus <Int32>] [-TotalCloudPcStatus <Int32>] [-TotalEnterpriseLicenses <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -37,6 +37,22 @@ New-MgBetaTenantRelationshipManagedTenantCloudPcOverview
 
 ## DESCRIPTION
 Create new navigation property to cloudPcsOverview for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -68,6 +84,23 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -FrontlineLicensesCount
+The total number of cloud PC devices that have the Frontline SKU.
+Optional.
+Read-only.
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -517,74 +550,73 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsCloudPcOverview>`: cloudPcOverview
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsCloudPcOverview\>: cloudPcOverview
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[LastRefreshedDateTime <DateTime?>]`: Date and time the entity was last updated in the multi-tenant management platform.
+  \[FrontlineLicensesCount \<Int32?\>\]: The total number of cloud PC devices that have the Frontline SKU.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusFailed <Int32?>]`: The number of cloud PC connections that have a status of failed.
+  \[LastRefreshedDateTime \<DateTime?\>\]: Date and time the entity was last updated in the multi-tenant management platform.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusPassed <Int32?>]`: The number of cloud PC connections that have a status of passed.
+  \[NumberOfCloudPcConnectionStatusFailed \<Int32?\>\]: The number of cloud PC connections that have a status of failed.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusPending <Int32?>]`: The number of cloud PC connections that have a status of pending.
+  \[NumberOfCloudPcConnectionStatusPassed \<Int32?\>\]: The number of cloud PC connections that have a status of passed.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusRunning <Int32?>]`: The number of cloud PC connections that have a status of running.
+  \[NumberOfCloudPcConnectionStatusPending \<Int32?\>\]: The number of cloud PC connections that have a status of pending.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusUnkownFutureValue <Int32?>]`: The number of cloud PC connections that have a status of unknownFutureValue.
+  \[NumberOfCloudPcConnectionStatusRunning \<Int32?\>\]: The number of cloud PC connections that have a status of running.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusDeprovisioning <Int32?>]`: The number of cloud PCs that have a status of deprovisioning.
+  \[NumberOfCloudPcConnectionStatusUnkownFutureValue \<Int32?\>\]: The number of cloud PC connections that have a status of unknownFutureValue.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusFailed <Int32?>]`: The number of cloud PCs that have a status of failed.
+  \[NumberOfCloudPcStatusDeprovisioning \<Int32?\>\]: The number of cloud PCs that have a status of deprovisioning.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusInGracePeriod <Int32?>]`: The number of cloud PCs that have a status of inGracePeriod.
+  \[NumberOfCloudPcStatusFailed \<Int32?\>\]: The number of cloud PCs that have a status of failed.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusNotProvisioned <Int32?>]`: The number of cloud PCs that have a status of notProvisioned.
+  \[NumberOfCloudPcStatusInGracePeriod \<Int32?\>\]: The number of cloud PCs that have a status of inGracePeriod.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusProvisioned <Int32?>]`: The number of cloud PCs that have a status of provisioned.
+  \[NumberOfCloudPcStatusNotProvisioned \<Int32?\>\]: The number of cloud PCs that have a status of notProvisioned.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusProvisioning <Int32?>]`: The number of cloud PCs that have a status of provisioning.
+  \[NumberOfCloudPcStatusProvisioned \<Int32?\>\]: The number of cloud PCs that have a status of provisioned.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusUnknown <Int32?>]`: The number of cloud PCs that have a status of unknown.
+  \[NumberOfCloudPcStatusProvisioning \<Int32?\>\]: The number of cloud PCs that have a status of provisioning.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusUpgrading <Int32?>]`: The number of cloud PCs that have a status of upgrading.
+  \[NumberOfCloudPcStatusUnknown \<Int32?\>\]: The number of cloud PCs that have a status of unknown.
 Optional.
 Read-only.
-  - `[TenantDisplayName <String>]`: The display name for the managed tenant.
+  \[NumberOfCloudPcStatusUpgrading \<Int32?\>\]: The number of cloud PCs that have a status of upgrading.
 Optional.
 Read-only.
-  - `[TenantId <String>]`: 
-  - `[TotalBusinessLicenses <Int32?>]`: The total number of cloud PC devices that have the Business SKU.
+  \[TenantDisplayName \<String\>\]: The display name for the managed tenant.
 Optional.
 Read-only.
-  - `[TotalCloudPcConnectionStatus <Int32?>]`: The total number of cloud PC connection statuses for the given managed tenant.
+  \[TenantId \<String\>\]: 
+  \[TotalBusinessLicenses \<Int32?\>\]: The total number of cloud PC devices that have the Business SKU.
 Optional.
 Read-only.
-  - `[TotalCloudPcStatus <Int32?>]`: The total number of cloud PC statues for the given managed tenant.
+  \[TotalCloudPcConnectionStatus \<Int32?\>\]: The total number of cloud PC connection statuses for the given managed tenant.
 Optional.
 Read-only.
-  - `[TotalEnterpriseLicenses <Int32?>]`: The total number of cloud PC devices that have the Enterprise SKU.
+  \[TotalCloudPcStatus \<Int32?\>\]: The total number of cloud PC statues for the given managed tenant.
+Optional.
+Read-only.
+  \[TotalEnterpriseLicenses \<Int32?\>\]: The total number of cloud PC devices that have the Enterprise SKU.
 Optional.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcloudpcoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcloudpcoverview)
-
-
-
-
 
