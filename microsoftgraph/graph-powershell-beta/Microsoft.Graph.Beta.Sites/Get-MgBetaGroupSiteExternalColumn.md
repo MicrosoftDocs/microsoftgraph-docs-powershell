@@ -40,22 +40,6 @@ Get-MgBetaGroupSiteExternalColumn -InputObject <ISitesIdentity> [-ExpandProperty
 ## DESCRIPTION
 The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -388,6 +372,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteexternalcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteexternalcolumn)
+
 
 
 

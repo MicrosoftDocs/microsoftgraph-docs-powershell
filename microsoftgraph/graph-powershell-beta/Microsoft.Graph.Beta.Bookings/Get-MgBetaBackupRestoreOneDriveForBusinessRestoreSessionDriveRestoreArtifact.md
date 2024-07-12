@@ -39,18 +39,6 @@ Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact -In
 ## DESCRIPTION
 A collection of restore points and destination details that can be used to restore a OneDrive for Business drive.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -361,6 +349,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoreonedriveforbusinessrestoresessiondriverestoreartifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoreonedriveforbusinessrestoresessiondriverestoreartifact)
 
 [https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-list-driverestoreartifacts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-list-driverestoreartifacts?view=graph-rest-beta)
+
 
 
 

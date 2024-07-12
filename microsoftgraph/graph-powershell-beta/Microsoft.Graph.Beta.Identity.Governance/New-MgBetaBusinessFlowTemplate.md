@@ -29,22 +29,6 @@ New-MgBetaBusinessFlowTemplate -BodyParameter <IMicrosoftGraphBusinessFlowTempla
 ## DESCRIPTION
 Add new entity to businessFlowTemplates
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -210,6 +194,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetabusinessflowtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetabusinessflowtemplate)
+
 
 
 

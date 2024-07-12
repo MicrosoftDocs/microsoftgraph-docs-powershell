@@ -54,22 +54,6 @@ New-MgGroupOnenoteSectionPage -InputObject <INotesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to pages for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -894,6 +878,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotesectionpage)
+
 
 
 

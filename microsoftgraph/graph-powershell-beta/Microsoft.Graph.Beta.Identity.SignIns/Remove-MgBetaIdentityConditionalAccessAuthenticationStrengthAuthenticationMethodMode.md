@@ -31,22 +31,6 @@ Remove-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethod
 ## DESCRIPTION
 Delete navigation property authenticationMethodModes for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AuthenticationMethodModeDetailId
@@ -286,6 +270,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccessauthenticationstrengthauthenticationmethodmode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccessauthenticationstrengthauthenticationmethodmode)
+
 
 
 

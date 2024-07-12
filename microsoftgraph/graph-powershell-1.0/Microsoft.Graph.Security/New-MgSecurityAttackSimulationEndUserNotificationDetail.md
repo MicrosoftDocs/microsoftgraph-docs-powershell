@@ -50,18 +50,6 @@ New-MgSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecurityI
 ## DESCRIPTION
 Create new navigation property to details for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -419,6 +407,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationendusernotificationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationendusernotificationdetail)
+
 
 
 

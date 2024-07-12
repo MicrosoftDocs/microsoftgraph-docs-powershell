@@ -29,18 +29,6 @@ Get-MgBetaBusinessScenarioByUniqueName -InputObject <IBookingsIdentity> [-Expand
 ## DESCRIPTION
 Read the properties and relationships of a businessScenario object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -215,6 +203,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenariobyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenariobyuniquename)
 
 [https://learn.microsoft.com/graph/api/businessscenario-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/businessscenario-get?view=graph-rest-beta)
+
 
 
 

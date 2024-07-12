@@ -53,22 +53,6 @@ Update-MgBetaDeviceManagementRoleDefinitionRoleAssignment
 ## DESCRIPTION
 Update the navigation property roleAssignments in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -505,6 +489,7 @@ These must match the actionName that is defined as part of the rolePermission.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementroledefinitionroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementroledefinitionroleassignment)
+
 
 
 

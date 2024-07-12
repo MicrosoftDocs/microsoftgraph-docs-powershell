@@ -32,22 +32,6 @@ Invoke-MgHaveTeamPrimaryChannel -InputObject <ITeamsIdentity> [-TenantId <String
 ## DESCRIPTION
 Determine whether a user has access to a shared channel.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -227,6 +211,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamprimarychannel)
 
 [https://learn.microsoft.com/graph/api/channel-doesuserhaveaccess?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-doesuserhaveaccess?view=graph-rest-1.0)
+
 
 
 

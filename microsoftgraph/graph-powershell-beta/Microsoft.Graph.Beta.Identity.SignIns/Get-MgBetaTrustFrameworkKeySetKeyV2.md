@@ -37,18 +37,6 @@ Get-MgBetaTrustFrameworkKeySetKeyV2 -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a trustFrameworkKeyv2 object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -395,6 +383,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkkeysetkeyv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkkeysetkeyv2)
 
 [https://learn.microsoft.com/graph/api/trustframeworkkey_v2-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/trustframeworkkey_v2-get?view=graph-rest-beta)
+
 
 
 

@@ -42,18 +42,6 @@ Get-MgBetaUserChatMessageReply -InputObject <ITeamsIdentity> [-ExpandProperty <S
 Replies for a specified message.
 Supports $expand for channel messages.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -390,6 +378,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatmessagereply)
+
 
 
 

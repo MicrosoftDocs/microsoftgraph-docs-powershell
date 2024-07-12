@@ -48,18 +48,6 @@ Update-MgSecurityLabelCategory -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property categories in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -414,6 +402,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelcategory)
+
 
 
 

@@ -31,18 +31,6 @@ Get-MgUserInferenceClassification -InputObject <IMailIdentity> [-Property <Strin
 ## DESCRIPTION
 Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -165,6 +153,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassification)
+
 
 
 

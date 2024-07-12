@@ -37,18 +37,6 @@ Get-MgBetaBackupRestoreServiceApp -InputObject <IBookingsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Read the properties and relationships of a serviceApp object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -346,6 +334,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/serviceapp-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceapp-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-list-serviceapps?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-list-serviceapps?view=graph-rest-beta)
+
 
 
 

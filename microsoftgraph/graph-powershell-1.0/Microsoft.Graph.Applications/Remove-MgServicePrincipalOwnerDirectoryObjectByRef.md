@@ -29,18 +29,6 @@ Remove-MgServicePrincipalOwnerDirectoryObjectByRef -InputObject <IApplicationsId
 ## DESCRIPTION
 Delete ref of navigation property owners for servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -240,6 +228,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalownerdirectoryobjectbyref)
+
 
 
 

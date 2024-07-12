@@ -29,18 +29,6 @@ Remove-MgDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity> [-
 ## DESCRIPTION
 Delete a registered device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -229,6 +217,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdevicebydeviceid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdevicebydeviceid)
 
 [https://learn.microsoft.com/graph/api/device-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-delete?view=graph-rest-1.0)
+
 
 
 

@@ -62,18 +62,6 @@ New-MgEducationUserAssignment -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create new navigation property to assignments for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddedStudentAction
@@ -866,6 +854,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignment)
+
 
 
 

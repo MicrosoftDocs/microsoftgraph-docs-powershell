@@ -31,18 +31,6 @@ Update-MgRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement> [-Respons
 ## DESCRIPTION
 Update roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1277,6 +1265,7 @@ Supports $filter (eq, ne).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement)
+
 
 
 

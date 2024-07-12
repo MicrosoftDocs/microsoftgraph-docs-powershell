@@ -31,22 +31,6 @@ Remove-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
 ## DESCRIPTION
 Delete navigation property conditionalAccessPolicyCoverages for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ConditionalAccessPolicyCoverageId
@@ -245,6 +229,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantconditionalaccesspolicycoverage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantconditionalaccesspolicycoverage)
+
 
 
 

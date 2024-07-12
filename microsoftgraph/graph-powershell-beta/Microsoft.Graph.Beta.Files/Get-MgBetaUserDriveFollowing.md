@@ -42,22 +42,6 @@ Get-MgBetaUserDriveFollowing -InputObject <IFilesIdentity> [-ExpandProperty <Str
 The list of items the user is following.
 Only in OneDrive for Business.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -362,6 +346,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivefollowing](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivefollowing)
+
 
 
 

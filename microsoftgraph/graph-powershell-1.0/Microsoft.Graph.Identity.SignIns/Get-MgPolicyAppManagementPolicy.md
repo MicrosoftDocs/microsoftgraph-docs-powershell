@@ -40,18 +40,6 @@ Get-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Expand
 ## DESCRIPTION
 The policies that enforce app management restrictions for specific applications and service principals, overriding the defaultAppManagementPolicy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -360,6 +348,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicy)
+
 
 
 

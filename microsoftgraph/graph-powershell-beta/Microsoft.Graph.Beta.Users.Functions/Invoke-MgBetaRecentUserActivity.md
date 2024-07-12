@@ -34,22 +34,6 @@ Invoke-MgBetaRecentUserActivity -InputObject <IUsersFunctionsIdentity> [-Count] 
 ## DESCRIPTION
 Invoke function recent
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -307,6 +291,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetarecentuseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetarecentuseractivity)
+
 
 
 

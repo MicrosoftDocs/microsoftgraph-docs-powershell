@@ -37,22 +37,6 @@ Get-MgBetaGroupDriveRootActivityByInterval -InputObject <IGroupsIdentity> [-Coun
 Get itemActivityStats for the activities that took place under this resource within the specified time interval.
 Analytics aggregates might not be available for all action types.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -380,6 +364,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdriverootactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdriverootactivitybyinterval)
 
 [https://learn.microsoft.com/graph/api/itemactivity-getbyinterval?view=graph-rest-beta](https://learn.microsoft.com/graph/api/itemactivity-getbyinterval?view=graph-rest-beta)
+
 
 
 

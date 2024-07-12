@@ -29,18 +29,6 @@ Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp -InputObject <IBookingsId
 ## DESCRIPTION
 Deactivate a serviceApp.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -216,6 +204,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/invoke-mgbetadeactivatesolutionbackuprestoreserviceapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/invoke-mgbetadeactivatesolutionbackuprestoreserviceapp)
 
 [https://learn.microsoft.com/graph/api/serviceapp-deactivate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceapp-deactivate?view=graph-rest-beta)
+
 
 
 

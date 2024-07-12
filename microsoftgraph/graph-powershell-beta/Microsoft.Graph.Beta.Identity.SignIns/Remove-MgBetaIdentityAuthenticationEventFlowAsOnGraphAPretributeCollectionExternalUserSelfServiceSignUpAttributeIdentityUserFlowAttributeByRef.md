@@ -35,18 +35,6 @@ Remove an attribute from an external identities self-service sign up user flow t
 You can add both custom and built-in attributes to a user flow.
 After this step, PATCH the user flow to remove the attribute from the attribute collection step.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId
@@ -303,6 +291,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributeidentityuserflowattributebyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributeidentityuserflowattributebyref)
 
 [https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-delete-attributes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-delete-attributes?view=graph-rest-beta)
+
 
 
 

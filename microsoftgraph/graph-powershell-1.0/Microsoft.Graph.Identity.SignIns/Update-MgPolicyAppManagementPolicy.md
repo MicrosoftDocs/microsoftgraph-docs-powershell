@@ -50,18 +50,6 @@ Update-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property appManagementPolicies in policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -447,6 +435,7 @@ To apply to all applications, enforcement datetime would be null.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyappmanagementpolicy)
+
 
 
 

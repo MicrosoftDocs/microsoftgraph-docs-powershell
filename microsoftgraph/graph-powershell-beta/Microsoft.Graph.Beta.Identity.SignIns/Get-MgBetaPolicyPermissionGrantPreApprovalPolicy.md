@@ -37,18 +37,6 @@ Get-MgBetaPolicyPermissionGrantPreApprovalPolicy -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Read the properties and relationships of a permissionGrantPreApprovalPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -382,6 +370,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/permissiongrantpreapprovalpolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permissiongrantpreapprovalpolicy-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/policyroot-list-permissiongrantpreapprovalpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/policyroot-list-permissiongrantpreapprovalpolicies?view=graph-rest-beta)
+
 
 
 

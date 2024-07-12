@@ -40,22 +40,6 @@ Get-MgBetaSiteListSubscription -InputObject <ISitesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The set of subscriptions on the list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -388,6 +372,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistsubscription)
+
 
 
 

@@ -47,22 +47,6 @@ New-MgBetaFinancialCompanyJournal -InputObject <IFinancialsIdentity> -BodyParame
 ## DESCRIPTION
 Create new navigation property to journals for financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Account
@@ -448,6 +432,7 @@ JOURNALLINES <IMicrosoftGraphJournalLine- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyjournal)
+
 
 
 

@@ -55,18 +55,6 @@ Update-MgBetaBackupRestoreExchangeProtectionPolicy -InputObject <IBookingsIdenti
 Update an Exchange protection policy.
 This method adds a mailboxprotectionunit to or removes it from the protection policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -587,6 +575,7 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting- `[]`>: Contains the retentio
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoreexchangeprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoreexchangeprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-update?view=graph-rest-beta)
+
 
 
 
