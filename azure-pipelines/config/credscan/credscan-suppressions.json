@@ -57,13 +57,15 @@
       "file": [
         "msgraph-sdk-powershell\\src\\Users.Actions\\beta\\examples\\Test-MgBetaUserPassword.md",
         "msgraph-sdk-powershell\\src\\Users.Actions\\beta\\examples\\Update-MgBetaUserPassword.md",
-        "msgraph-sdk-powershell\\src\\Users.Actions\\v1.0\\examples\\Update-MgUserPassword.md"
+        "msgraph-sdk-powershell\\src\\Users.Actions\\beta\\examples\\Reset-MgBetaAuthenticationMethodPassword.md",
+        "msgraph-sdk-powershell\\src\\Users.Actions\\v1.0\\examples\\Update-MgUserPassword.md",
+        "msgraph-sdk-powershell\\src\\Users.Actions\\v1.0\\examples\\Reset-MgAuthenticationMethodPassword.md"
       ],
       "_justification": "[Users.Actions] Examples contain random values recognized as secret"
     },
     {
       "file": [
-        "msgraph-sdk-powershell\\src\\DeviceManagement.Actions\\beta\\examples\\Update-MgBetaDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword.md"
+        "msgraph-sdk-powershell\\src\\DeviceManagement.Actions\\beta\\examples\\Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword.md"
       ],
       "_justification": "[DeviceManagement.Actions] Examples contain random values recognized as secret"
     },
