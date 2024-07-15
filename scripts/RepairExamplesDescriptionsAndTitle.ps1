@@ -80,16 +80,16 @@ function Copy-Files{
         foreach ($File in Get-ChildItem $DocPath) {
             # Read the content of the file searching for example headers.
             $EmptyFile = Test-FileEmpty $File
+            $Command = [System.IO.Path]::GetFileName($File)
+            $DestinationFile = Join-Path $Destination $Command
             if($EmptyFile){
                 Write-Host "File is empty $File"
-                continue
+                #For removing existing wrong examples and descriptions
+                Remove-WrongExamples -File $DestinationFile
+            }else{
+                $Content = Get-Content -Path $File
+                Import-Descriptions -Content $Content -File $DestinationFile
             }
-            $Command = [System.IO.Path]::GetFileName($File)
-            $content = Get-Content -Path $File
-            $DestinationFile = Join-Path $Destination $Command
-            $Content = Get-Content -Path $File
-            Import-Descriptions -Content $Content -File $DestinationFile
-           
         }
  
     }     
@@ -227,6 +227,14 @@ function Get-ExistingDescriptions {
         Get-ExistingDescriptions -Content $Content -File $File -start $Start -end $End -NoOfExamples $NoOfExamples
     }
    
+}
+function Remove-WrongExamples{
+    Param(
+        [string]$File
+    )
+    $DestinationContent = Get-Content -Encoding UTF8 -Raw $File
+    $DestinationContent = $DestinationContent -replace "## EXAMPLES(?s).*## PARAMETERS", "## PARAMETERS"
+    $DestinationContent | Out-File $File -Encoding UTF8
 }
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
