@@ -3,8 +3,8 @@
 Param(
     $ModulesToGenerate = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/config/ModulesMapping.jsonc"),
-	[string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
-	[string] $WorkLoadDocsPath =  (Join-Path $PSScriptRoot "../microsoftgraph")
+    [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
+    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -22,10 +22,10 @@ function Start-Copy {
     $GraphMapping = Get-GraphMapping 
     $GraphMapping.Keys | ForEach-Object {
         $graphProfile = $_
-		$profilePath = "graph-powershell-1.0"
-		if($graphProfile -eq "beta"){
-			$profilePath = "graph-powershell-beta"
-		}
+        $profilePath = "graph-powershell-1.0"
+        if ($graphProfile -eq "beta") {
+            $profilePath = "graph-powershell-beta"
+        }
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
     git config --global user.email "GraphTooling@service.microsoft.com"
@@ -33,8 +33,8 @@ function Start-Copy {
     git add .
     git commit -m "Corrected titles descriptions and examples" 
 }
-function Get-FilesByProfile{
- Param(
+function Get-FilesByProfile {
+    Param(
         [ValidateSet("beta", "v1.0")]
         [string] $GraphProfile = "v1.0",
         [ValidateNotNullOrEmpty()]
@@ -47,16 +47,17 @@ function Get-FilesByProfile{
 
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
-		$docs = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples"
+        $docs = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples"
         try {
             Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
-        } catch {
-            Write-Error "Failed to copy files for module $ModuleName" 
+        }
+        catch {
+            Write-Host "Failed to copy files for module $ModuleName" 
         }
     }
 
 }
-function Copy-Files{
+function Copy-Files {
     param(
         [ValidateSet("beta", "v1.0")]
         [string] $GraphProfile = "v1.0",
@@ -66,33 +67,40 @@ function Copy-Files{
         [string] $Module = "Users",
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph",
-		[ValidateNotNullOrEmpty()]
+        [ValidateNotNullOrEmpty()]
         [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\v1.0\examples"
     )
-    $Path = "$ModulePrefix.$ModuleName"
-    if($GraphProfile -eq 'beta'){
-       $Path = "$ModulePrefix.Beta.$ModuleName"
-    }
-     $Destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
-
-     if ((Test-Path $DocPath)) {
-       
-        foreach ($File in Get-ChildItem $DocPath) {
-            # Read the content of the file searching for example headers.
-            $EmptyFile = Test-FileEmpty $File
-            $Command = [System.IO.Path]::GetFileName($File)
-            $DestinationFile = Join-Path $Destination $Command
-            if($EmptyFile){
-                Write-Host "File is empty $File"
-                #For removing existing wrong examples and descriptions
-                Remove-WrongExamples -File $DestinationFile
-            }else{
-                $Content = Get-Content -Path $File
-                Import-Descriptions -Content $Content -File $DestinationFile
-            }
+    try {
+        $Path = "$ModulePrefix.$ModuleName"
+        if ($GraphProfile -eq 'beta') {
+            $Path = "$ModulePrefix.Beta.$ModuleName"
         }
+        $Destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
+
+        if ((Test-Path $DocPath)) {
+       
+            foreach ($File in Get-ChildItem $DocPath) {
+                # Read the content of the file searching for example headers.
+                $EmptyFile = Test-FileEmpty $File
+                $Command = [System.IO.Path]::GetFileName($File)
+                $DestinationFile = Join-Path $Destination $Command
+                if ($EmptyFile) {
+                    Write-Host "File is empty $File"
+                    #For removing existing wrong examples and descriptions
+                    Remove-WrongExamples -File $DestinationFile
+                }
+                else {
+                    $Content = Get-Content -Path $File
+                    Import-Descriptions -Content $Content -File $DestinationFile
+                }
+            }
  
-    }     
+        } 
+    
+    }
+    catch {
+        Write-Host "Error occured while copying files" 
+    }
 }
 
 function Test-FileEmpty {
@@ -123,62 +131,61 @@ function Import-Descriptions {
     }
     Write-Host $File
     Get-ExistingDescriptions -Content $Content -File $File  -start 0 -end $End -NoOfExamples $NoOfExamples
-    if(Test-Path $File){
-    $TitleCount = 1
-    $DestinationContent = Get-Content -Encoding UTF8 -Raw $File
-    $RetainedContent = $null
-    foreach ($Ex in $RetainedExamples) {
+    if (Test-Path $File) {
+        $TitleCount = 1
+        $DestinationContent = Get-Content -Encoding UTF8 -Raw $File
+        $RetainedContent = $null
+        foreach ($Ex in $RetainedExamples) {
             $ContentBody = $Ex.Split("**##@**")[0]
             $ContentDescription = $Ex.Split("**##@**")[2]
             $RetainedContent += "$ContentBody$ContentDescription"  
             $TitleCount++ 
                         
-    }
+        }
 
    
-    if(-not($Null -eq $RetainedContent) -and -not($RetainedContent.Contains("Add title here"))){
-     if($DestinationContent -match $Re){
-        $Extracted = $Matches[0]
-        $FinalOutput = "## EXAMPLES`r`n$RetainedContent`r`n## PARAMETERS"
-        $text = $DestinationContent.ToString()
-        if(($Extracted.Contains("``````powershell")) -or ($Extracted.Contains("### EXAMPLE"))){
-            $text = $text.Replace($Extracted, $FinalOutput)
-        }else{
-            $text = $text.Replace($Extracted, "## PARAMETERS")
-            Write-Host "Does not have snippet"
-        }
-          $text | Out-File $File -Encoding UTF8
-     }
-     if($DestinationContent -match $Re2){
-        $Extracted2 = $Matches[0]
-        $DescriptionCommand = [System.IO.Path]::GetFileNameWithoutExtension($File)
-        $Description1 = "This example shows how to use the $DescriptionCommand Cmdlet."
-        $Description2 = "To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference)."
+        if (-not($Null -eq $RetainedContent) -and -not($RetainedContent.Contains("Add title here"))) {
+            if ($DestinationContent -match $Re) {
+                $Extracted = $Matches[0]
+                $FinalOutput = "## EXAMPLES`r`n$RetainedContent`r`n## PARAMETERS"
+                $text = $DestinationContent.ToString()
+                if (($Extracted.Contains("``````powershell")) -or ($Extracted.Contains("### EXAMPLE"))) {
+                    $text = $text.Replace($Extracted, $FinalOutput)
+                }
+                else {
+                    $text = $text.Replace($Extracted, "## PARAMETERS")
+                    Write-Host "Does not have snippet"
+                }
+                $text | Out-File $File -Encoding UTF8
+            }
+            if ($DestinationContent -match $Re2) {
+                $Extracted2 = $Matches[0]
+                $DescriptionCommand = [System.IO.Path]::GetFileNameWithoutExtension($File)
+                $Description1 = "This example shows how to use the $DescriptionCommand Cmdlet."
+                $Description2 = "To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference)."
       
-        $text2 = $DestinationContent.ToString()
-        if(-not($Extracted2.Contains("## EXAMPLES"))){
-            Write-Host "Does not have snippet $DescriptionCommand"
-            $text2 = $text2.Replace($Description1, $null)
-            $text2 = $text2.Replace($Description2, $null)
-            $text2 | Out-File $File -Encoding UTF8
+                $text2 = $DestinationContent.ToString()
+                if (-not($Extracted2.Contains("## EXAMPLES"))) {
+                    Write-Host "Does not have snippet $DescriptionCommand"
+                    $text2 = $text2.Replace($Description1, $null)
+                    $text2 = $text2.Replace($Description2, $null)
+                    $text2 | Out-File $File -Encoding UTF8
 
-        }
-     }
-     $Stream = [IO.File]::OpenWrite($File)
-     try
-     {
-         $Stream.SetLength($stream.Length - 2)
-         $Stream.Close()
-     }
-     catch
-     {
+                }
+            }
+            $Stream = [IO.File]::OpenWrite($File)
+            try {
+                $Stream.SetLength($stream.Length - 2)
+                $Stream.Close()
+            }
+            catch {
          
-     }
-     $Stream.Dispose()
-     $RetainedExamples.Clear()
-    }
+            }
+            $Stream.Dispose()
+            $RetainedExamples.Clear()
+        }
     
-}
+    }
     
 }
 function Get-ExistingDescriptions {
@@ -228,7 +235,7 @@ function Get-ExistingDescriptions {
     }
    
 }
-function Remove-WrongExamples{
+function Remove-WrongExamples {
     Param(
         [string]$File
     )
