@@ -54,28 +54,6 @@ This action allows the organizer or attendee of a meeting event to forward theme
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this actionalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer'scopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Users.Actions
-```
-
-$params = @{
-	ToRecipients = @(
-		@{
-			EmailAddress = @{
-				Address = "danas@contoso.onmicrosoft.com"
-				Name = "Dana Swope"
-			}
-		}
-	)
-	Comment = "Dana, hope you can make this meeting."
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -357,6 +335,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupcalendarevent)
 
 [https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0)
+
 
 
 

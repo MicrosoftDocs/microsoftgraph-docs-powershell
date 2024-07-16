@@ -53,84 +53,6 @@ Create an open extension (openTypeExtension object) and add custom properties in
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Groups
-```
-
-$params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "Which quarter does that file cover?
-See my attachment."
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.fileAttachment"
-				Name = "Another file as attachment"
-				ContentBytes = "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
-			}
-		)
-	}
-}
-
-Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Groups
-```
-
-$params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "I attached an event."
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.itemAttachment"
-				Name = "Holiday event"
-				Item = @{
-					"@odata.type" = "microsoft.graph.event"
-					Subject = "Discuss gifts for children"
-				}
-			}
-		)
-	}
-}
-
-Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Groups
-```
-
-$params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "I attached a reference to a file on OneDrive."
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.referenceAttachment"
-				Name = "Personal pictures"
-				SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
-				ProviderType = "oneDriveConsumer"
-				Permission = "Edit"
-				IsFolder = "True"
-			}
-		)
-	}
-}
-
-Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -529,6 +451,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthread)
 
 [https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
+
 
 
 

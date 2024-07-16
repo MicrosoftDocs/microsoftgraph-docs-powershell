@@ -49,23 +49,6 @@ Invoke-MgSnoozeGroupCalendarEventReminder -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Users.Actions
-```
-
-$params = @{
-	NewReminderTime = @{
-		DateTime = "dateTime-value"
-		TimeZone = "timeZone-value"
-	}
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -331,6 +314,7 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsnoozegroupcalendareventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsnoozegroupcalendareventreminder)
 
 [https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-1.0)
+
 
 
 
