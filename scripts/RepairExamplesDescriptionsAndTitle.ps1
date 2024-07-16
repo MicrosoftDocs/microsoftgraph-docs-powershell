@@ -20,6 +20,7 @@ function Start-Copy {
             $GraphProfile = $_.ApiVersion
             if($GraphProfile -eq "beta") {
                 $GraphProfilePath = "graph-powershell-beta"
+                $ModulePrefix = "Microsoft.Graph.Beta"
             }
             $docs = Join-Path $SDKDocsPath $ModuleName.Replace("Beta.", "") $GraphProfile "examples"
             try {
