@@ -33,13 +33,17 @@ Unpublish-MgBetaSiteContentType -InputObject <ISitesIdentity> [-ResponseHeadersV
 Invoke action unpublish
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Unpublish-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
+
+```
+This example shows how to use the Unpublish-MgBetaSiteContentType Cmdlet.
+
 
 ## PARAMETERS
 
