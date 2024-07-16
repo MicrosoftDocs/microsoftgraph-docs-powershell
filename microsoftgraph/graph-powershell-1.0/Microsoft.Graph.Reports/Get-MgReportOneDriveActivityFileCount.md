@@ -32,20 +32,17 @@ Get-MgReportOneDriveActivityFileCount -InputObject <IReportsIdentity> -OutFile <
 Get the number of unique, licensed users that performed file interactions against any OneDrive account.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportOneDriveActivityFileCount -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportOneDriveActivityFileCount Cmdlet.
+
 
 ## PARAMETERS
 

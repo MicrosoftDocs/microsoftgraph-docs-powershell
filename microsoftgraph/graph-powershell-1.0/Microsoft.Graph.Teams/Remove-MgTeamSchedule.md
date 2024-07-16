@@ -32,15 +32,6 @@ Remove-MgTeamSchedule -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Respon
 ## DESCRIPTION
 Delete navigation property schedule for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Teams
-```
-
-Get-MgTeamSchedule -TeamId $teamId
-
 ## PARAMETERS
 
 ### -Headers
@@ -234,6 +225,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamschedule)
+
 
 
 

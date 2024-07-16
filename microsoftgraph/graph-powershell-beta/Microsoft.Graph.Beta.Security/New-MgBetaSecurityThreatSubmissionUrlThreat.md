@@ -34,11 +34,11 @@ New-MgBetaSecurityThreatSubmissionUrlThreat -BodyParameter <IMicrosoftGraphSecur
 Create a new urlThreatSubmission object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.urlThreatSubmission"
@@ -47,6 +47,10 @@ $params = @{
 }
 
 New-MgBetaSecurityThreatSubmissionUrlThreat -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet.
+
 
 ## PARAMETERS
 

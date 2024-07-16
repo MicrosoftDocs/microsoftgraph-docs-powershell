@@ -29,18 +29,6 @@ Remove-MgBetaBackupRestoreSession -InputObject <IBookingsIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete a draft restoreSessionBase object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -246,6 +234,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabackuprestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabackuprestoresession)
 
 [https://learn.microsoft.com/graph/api/restoresessionbase-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/restoresessionbase-delete?view=graph-rest-beta)
+
 
 
 

@@ -41,16 +41,17 @@ Get-MgDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporateManagem
 Read properties and relationships of the managedAppConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementManagedAppPolicy
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceAppManagementManagedAppPolicy Cmdlet.
+
 
 ## PARAMETERS
 

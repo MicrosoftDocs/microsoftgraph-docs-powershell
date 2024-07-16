@@ -41,16 +41,17 @@ Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance -InputObject <IIden
 Get the instance of a role eligibility.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance Cmdlet.
+
 
 ## PARAMETERS
 

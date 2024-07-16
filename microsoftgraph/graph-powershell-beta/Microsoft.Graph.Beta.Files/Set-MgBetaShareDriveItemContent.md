@@ -32,22 +32,6 @@ Set-MgBetaShareDriveItemContent -InputObject <IFilesIdentity> [-Data <Stream>]
 ## DESCRIPTION
 Update content for the navigation property driveItem in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -251,6 +235,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetasharedriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetasharedriveitemcontent)
+
 
 
 

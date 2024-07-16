@@ -24,21 +24,6 @@ Remove-MgPolicyAuthenticationFlowPolicy [-IfMatch <String>] [-ResponseHeadersVar
 ## DESCRIPTION
 Delete navigation property authenticationFlowsPolicy for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Identity.SignIns
-```
-
-$params = @{
-	selfServiceSignUp = @{
-		isEnabled = $true
-	}
-}
-
-Update-MgPolicyAuthenticationFlowPolicy -BodyParameter $params
-
 ## PARAMETERS
 
 ### -Headers
@@ -161,6 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationflowpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationflowpolicy)
+
 
 
 

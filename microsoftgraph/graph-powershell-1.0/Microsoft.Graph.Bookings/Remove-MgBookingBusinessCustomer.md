@@ -33,13 +33,17 @@ Remove-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> [-IfMatch <Str
 Delete the specified bookingCustomer object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Remove-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerBaseId $bookingCustomerBaseId
+
+```
+This example shows how to use the Remove-MgBookingBusinessCustomer Cmdlet.
+
 
 ## PARAMETERS
 

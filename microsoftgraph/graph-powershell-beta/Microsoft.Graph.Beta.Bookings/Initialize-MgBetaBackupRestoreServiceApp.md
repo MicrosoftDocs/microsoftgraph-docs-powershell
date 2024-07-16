@@ -45,18 +45,6 @@ Initialize-MgBetaBackupRestoreServiceApp -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Activate a serviceApp.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -283,6 +271,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoreserviceapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoreserviceapp)
 
 [https://learn.microsoft.com/graph/api/serviceapp-activate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceapp-activate?view=graph-rest-beta)
+
 
 
 

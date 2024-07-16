@@ -45,16 +45,17 @@ Read the properties and relationships of a subjectRightsRequest object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Compliance
+
+Get-MgPrivacySubjectRightsRequest
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgPrivacySubjectRightsRequest Cmdlet.
+
 
 ## PARAMETERS
 

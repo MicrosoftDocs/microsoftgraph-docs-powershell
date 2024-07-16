@@ -57,16 +57,27 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagem
 Create a new browserSite object in a browserSiteList.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.browserSite"
+	webUrl = "www.microsoft.com"
+	targetEnvironment = "InternetExplorer11"
+	comment = "A site that opens in InternetExplorer11"
+	mergeType = "default"
+	compatibilityMode = "default"
+	allowRedirect = $true
+}
+
+New-MgBetaAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaAdminEdgeInternetExplorerModeSiteListSite Cmdlet.
+
 
 ## PARAMETERS
 

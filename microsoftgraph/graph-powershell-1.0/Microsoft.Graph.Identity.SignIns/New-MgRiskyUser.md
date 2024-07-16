@@ -33,15 +33,6 @@ New-MgRiskyUser -BodyParameter <IMicrosoftGraphRiskyUser> [-ResponseHeadersVaria
 ## DESCRIPTION
 Create new navigation property to riskyUsers for identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Identity.SignIns
-```
-
-Get-MgRiskyUser
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -384,6 +375,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuser)
+
 
 
 

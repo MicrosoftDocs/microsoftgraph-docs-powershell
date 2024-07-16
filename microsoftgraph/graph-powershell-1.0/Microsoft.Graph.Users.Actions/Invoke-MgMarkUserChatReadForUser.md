@@ -52,22 +52,6 @@ Mark a chat as read for a user.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-markchatreadforuser-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -328,6 +312,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgmarkuserchatreadforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgmarkuserchatreadforuser)
 
 [https://learn.microsoft.com/graph/api/chat-markchatreadforuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-markchatreadforuser?view=graph-rest-1.0)
+
 
 
 

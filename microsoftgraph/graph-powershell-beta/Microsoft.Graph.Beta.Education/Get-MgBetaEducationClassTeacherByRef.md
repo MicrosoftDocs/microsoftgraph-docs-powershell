@@ -26,18 +26,6 @@ Get-MgBetaEducationClassTeacherByRef -EducationClassId <String> [-Filter <String
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -237,6 +225,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassteacherbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassteacherbyref)
 
 [https://learn.microsoft.com/graph/api/educationclass-list-teachers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationclass-list-teachers?view=graph-rest-beta)
+
 
 
 

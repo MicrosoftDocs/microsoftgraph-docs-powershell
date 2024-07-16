@@ -32,16 +32,17 @@ Get-MgReportEmailActivityCount -InputObject <IReportsIdentity> -OutFile <String>
 Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportEmailActivityCount -Period $periodId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgReportEmailActivityCount Cmdlet.
+
 
 ## PARAMETERS
 

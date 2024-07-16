@@ -42,16 +42,17 @@ Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment -InputObject <IDevice
 Read properties and relationships of the targetedManagedAppPolicyAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment -IosManagedAppProtectionId $iosManagedAppProtectionId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment Cmdlet.
+
 
 ## PARAMETERS
 

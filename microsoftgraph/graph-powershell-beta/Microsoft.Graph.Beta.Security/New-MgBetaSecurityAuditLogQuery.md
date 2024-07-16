@@ -34,16 +34,45 @@ New-MgBetaSecurityAuditLogQuery -BodyParameter <IMicrosoftGraphSecurityAuditLogQ
 Create a new auditLogQuery object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.auditLogQuery"
+	displayName = "String"
+	filterStartDateTime = [System.DateTime]::Parse("String (timestamp)")
+	filterEndDateTime = [System.DateTime]::Parse("String (timestamp)")
+	recordTypeFilters = @(
+	"String"
+)
+keywordFilter = "String"
+serviceFilter = "String"
+operationFilters = @(
+"String"
+)
+userPrincipalNameFilters = @(
+"String"
+)
+ipAddressFilters = @(
+"String"
+)
+objectIdFilters = @(
+"String"
+)
+administrativeUnitIdFilters = @(
+"String"
+)
+status = "String"
+}
+
+New-MgBetaSecurityAuditLogQuery -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaSecurityAuditLogQuery Cmdlet.
+
 
 ## PARAMETERS
 

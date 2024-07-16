@@ -31,17 +31,23 @@ New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 Create a new cloudPcExternalPartnerSetting object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcExternalPartnerSetting"
-	PartnerId = "198d7140-80bb-4843-8cc4-811377a49a92"
-	EnableConnection = $true
+	partnerId = "198d7140-80bb-4843-8cc4-811377a49a92"
+	enableConnection = $true
 }
+
 New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,13 +33,18 @@ Remove-MgPlannerTask -InputObject <IPlannerIdentity> [-IfMatch <String>] [-Respo
 Delete a plannerTask object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
-Remove-MgPlannerTask -PlannerTaskId $plannerTaskId -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
+Remove-MgPlannerTask -PlannerTaskId $plannerTaskId -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
+
+
+```
+This example shows how to use the Remove-MgPlannerTask Cmdlet.
+
 
 ## PARAMETERS
 

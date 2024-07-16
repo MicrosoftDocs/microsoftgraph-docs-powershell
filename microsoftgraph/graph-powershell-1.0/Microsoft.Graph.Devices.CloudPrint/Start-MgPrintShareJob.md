@@ -33,16 +33,17 @@ Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending jobs are completed, aborted, or canceled.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+Start-MgPrintShareJob -PrinterShareId $printerShareId -PrintJobId $printJobId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Start-MgPrintShareJob Cmdlet.
+
 
 ## PARAMETERS
 

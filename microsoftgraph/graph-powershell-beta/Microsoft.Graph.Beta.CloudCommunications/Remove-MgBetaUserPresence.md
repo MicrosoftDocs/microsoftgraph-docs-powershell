@@ -32,30 +32,6 @@ Remove-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property presence for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserPresence -UserId $userId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-Get-MgBetaUserPresence -UserId $userId
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-Get-MgBetaCommunicationPresence -PresenceId $presenceId
-
 ## PARAMETERS
 
 ### -Headers
@@ -235,6 +211,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauserpresence)
+
 
 
 

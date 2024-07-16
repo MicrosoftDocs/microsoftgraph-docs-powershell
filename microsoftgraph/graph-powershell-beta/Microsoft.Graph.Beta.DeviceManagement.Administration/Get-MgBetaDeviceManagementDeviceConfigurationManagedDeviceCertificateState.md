@@ -39,22 +39,6 @@ Get-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState
 ## DESCRIPTION
 Summary of all certificates for all devices.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -362,6 +346,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementdeviceconfigurationmanageddevicecertificatestate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementdeviceconfigurationmanageddevicecertificatestate)
+
 
 
 

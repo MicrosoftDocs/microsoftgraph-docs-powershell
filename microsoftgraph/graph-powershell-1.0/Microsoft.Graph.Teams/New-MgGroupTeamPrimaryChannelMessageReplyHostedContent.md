@@ -48,29 +48,6 @@ New-MgGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdent
 ## DESCRIPTION
 Create new navigation property to hostedContents for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Teams
-```
-
-Get-MgTeamChannelMessageHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Teams
-```
-
-Get-MgTeamChannelMessageReplyHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Teams
-```
-
-Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -344,6 +321,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelmessagereplyhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelmessagereplyhostedcontent)
+
 
 
 

@@ -41,22 +41,6 @@ The objects returned are those that are in scope for approval by the calling use
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approval-filterbycurrentuser-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -331,6 +315,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserapprovalbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserapprovalbycurrentuser)
 
 [https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-beta)
+
 
 
 

@@ -39,16 +39,23 @@ Export unbilled Azure usage data for a specific billing period and currency.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-unbilledusage-export-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+$params = @{
+	currencyCode = "USD"
+	attributeSet = "full"
+	billingPeriod = "current"
+}
+
+Export-MgReportPartnerBillingUsageUnbilled -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Export-MgReportPartnerBillingUsageUnbilled Cmdlet.
+
 
 ## PARAMETERS
 

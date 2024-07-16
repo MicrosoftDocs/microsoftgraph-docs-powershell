@@ -39,16 +39,40 @@ An inaccessible Cloud PC represents a Cloud PC that is in an unavailable state (
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getinaccessiblecloudpcreports-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+$params = @{
+	filter = "region eq 'westus2'"
+	orderBy = @(
+	"cloudPcId"
+)
+select = @(
+"cloudPcId"
+"aadDeviceId"
+"cloudPcName"
+"userPrincipalName"
+"provisioningStatus"
+"region"
+"deviceHealthStatus"
+"deviceHealthStatusDateTime"
+"recentDeviceHealthFailureCount"
+"recentConnectionFailureCount"
+"systemStatus"
+"systemStatusDateTime"
+)
+top = 10
+skip = 0
+}
+
+Get-MgBetaDeviceManagementVirtualEndpointReportInaccessibleCloudPcReport -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportInaccessibleCloudPcReport Cmdlet.
+
 
 ## PARAMETERS
 

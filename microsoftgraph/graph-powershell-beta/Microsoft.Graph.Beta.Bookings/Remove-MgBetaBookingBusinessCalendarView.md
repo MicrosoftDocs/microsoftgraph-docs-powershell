@@ -46,18 +46,6 @@ Remove-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property calendarView for bookingBusinesses
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BookingAppointmentId
@@ -276,6 +264,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscalendarview)
+
 
 
 

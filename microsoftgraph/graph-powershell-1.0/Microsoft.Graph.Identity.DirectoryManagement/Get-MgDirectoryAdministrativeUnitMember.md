@@ -26,13 +26,17 @@ Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId <String> [-ExpandP
 Use this API to get the members list (users, groups, or devices) in an administrative unit.
 
 ## EXAMPLES
+### Example 1: List member objects
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId
+
+```
+This example will list member objects
+
 
 ## PARAMETERS
 

@@ -41,16 +41,17 @@ Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -InputObject <IIdent
 In PIM, read the details of a request for for a role eligibility request made through the unifiedRoleEligibilityScheduleRequest object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 

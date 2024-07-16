@@ -33,22 +33,6 @@ Request-MgUserManagedDeviceRemoteAssistance -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Request remote assistance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -241,6 +225,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/request-mgusermanageddeviceremoteassistance](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/request-mgusermanageddeviceremoteassistance)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0)
+
 
 
 

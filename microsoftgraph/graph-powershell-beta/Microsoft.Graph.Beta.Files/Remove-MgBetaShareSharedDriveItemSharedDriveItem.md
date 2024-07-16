@@ -32,29 +32,6 @@ Remove-MgBetaShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [
 ## DESCRIPTION
 Delete entity from shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Files
-```
-
-Get-MgBetaShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.Files
-```
-
-Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Files
-```
-
-Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
-
 ## PARAMETERS
 
 ### -Headers
@@ -239,6 +216,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetashareshareddriveitemshareddriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetashareshareddriveitemshareddriveitem)
+
 
 
 

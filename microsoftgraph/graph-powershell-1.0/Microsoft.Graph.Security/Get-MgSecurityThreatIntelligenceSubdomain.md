@@ -41,16 +41,17 @@ Get-MgSecurityThreatIntelligenceSubdomain -InputObject <ISecurityIdentity> [-Exp
 Read the properties and relationships of a subdomain object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceSubdomain -SubdomainId $subdomainId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgSecurityThreatIntelligenceSubdomain Cmdlet.
+
 
 ## PARAMETERS
 

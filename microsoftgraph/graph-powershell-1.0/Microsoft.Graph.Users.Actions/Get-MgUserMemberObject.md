@@ -56,19 +56,6 @@ Note: Only users and role-enabled groups can be members of directory roles.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getmemberobjects-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.DirectoryObjects
-```
-
-$params = @{
-	SecurityEnabledOnly = $true
-}
-
-Get-MgDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -282,6 +269,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermemberobject)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)
+
 
 
 

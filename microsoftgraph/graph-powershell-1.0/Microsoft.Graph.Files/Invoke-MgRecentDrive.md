@@ -35,20 +35,17 @@ Invoke-MgRecentDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <St
 List a set of items that have been recently used by the signed in user.This collection includes items that are in the user's drive and items they have access to from other drives.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Files
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgRecentDrive -DriveId $driveId
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgRecentDrive Cmdlet.
+
 
 ## PARAMETERS
 

@@ -50,15 +50,6 @@ New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage
 ## DESCRIPTION
 Create new navigation property to stages for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Identity.Governance
-```
-
-Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId $approvalId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -467,6 +458,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequestuserconsentrequestapprovalstage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequestuserconsentrequestapprovalstage)
+
 
 
 

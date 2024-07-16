@@ -55,25 +55,6 @@ Invoke action copyToDefaultContentLocation
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Sites
-```
-
-$params = @{
-	SourceFile = @{
-		SharepointIds = @{
-			ListId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
-			ListItemId = "2"
-		}
-	}
-	DestinationFileName = "newname.txt"
-}
-
-Copy-MgBetaSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -416,6 +397,7 @@ For OneDrive, this property isn't populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdrivelistcontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdrivelistcontenttypetodefaultcontentlocation)
 
 [https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-beta)
+
 
 
 

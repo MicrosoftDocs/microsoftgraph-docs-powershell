@@ -40,16 +40,17 @@ Read the properties and relationships of a virtualEventPresenter object.
 Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaVirtualEventTownhallPresenter -VirtualEventTownhallId $virtualEventTownhallId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaVirtualEventTownhallPresenter Cmdlet.
+
 
 ## PARAMETERS
 

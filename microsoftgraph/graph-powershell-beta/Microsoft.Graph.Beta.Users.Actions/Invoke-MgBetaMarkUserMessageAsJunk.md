@@ -52,16 +52,22 @@ This API adds the sender to the list of blocked senders and moves the message to
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-markasjunk-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+$params = @{
+	moveToJunk = $true
+}
+
+# A UPN can also be used as -UserId.
+Invoke-MgBetaMarkUserMessageAsJunk -UserId $userId -MessageId $messageId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaMarkUserMessageAsJunk Cmdlet.
+
 
 ## PARAMETERS
 

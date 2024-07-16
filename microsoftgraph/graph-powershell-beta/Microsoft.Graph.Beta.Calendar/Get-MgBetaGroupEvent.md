@@ -41,13 +41,17 @@ Get-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]
 Get an event object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
-Get-MgBetaGroupEvent -GroupId $groupId -EventId $eventId
+Get-MgBetaGroupEvent -GroupId $groupId
+
+```
+This example shows how to use the Get-MgBetaGroupEvent Cmdlet.
+
 
 ## PARAMETERS
 

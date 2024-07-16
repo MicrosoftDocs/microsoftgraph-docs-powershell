@@ -33,20 +33,17 @@ Get-MgReportOffice365GroupActivityFileCount -InputObject <IReportsIdentity> -Out
 Get the total number of files and how many of them were active across all group sites associated with a Microsoft 365 group.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportOffice365GroupActivityFileCount -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportOffice365GroupActivityFileCount Cmdlet.
+
 
 ## PARAMETERS
 

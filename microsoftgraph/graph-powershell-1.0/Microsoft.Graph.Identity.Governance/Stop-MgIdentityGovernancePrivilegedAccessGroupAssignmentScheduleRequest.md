@@ -34,16 +34,17 @@ Stop-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 Cancel an access assignment request to a group whose membership and ownership are governed by PIM.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Stop-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest -PrivilegedAccessGroupAssignmentScheduleRequestId $privilegedAccessGroupAssignmentScheduleRequestId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Stop-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 

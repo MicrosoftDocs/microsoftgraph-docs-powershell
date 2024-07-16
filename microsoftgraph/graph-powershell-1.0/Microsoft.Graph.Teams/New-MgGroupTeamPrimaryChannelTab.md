@@ -48,18 +48,6 @@ New-MgGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to tabs for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -434,6 +422,7 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychanneltab)
+
 
 
 

@@ -35,16 +35,27 @@ New-MgDeviceManagementVirtualEndpointUserSetting -BodyParameter <IMicrosoftGraph
 Create a new cloudPcUserSetting object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.cloudPcUserSetting"
+	displayName = "Example"
+	localAdminEnabled = $true
+	restorePointSetting = @{
+		frequencyType = "sixteenHours"
+		userRestoreEnabled = $true
+	}
+}
+
+New-MgDeviceManagementVirtualEndpointUserSetting -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgDeviceManagementVirtualEndpointUserSetting Cmdlet.
+
 
 ## PARAMETERS
 

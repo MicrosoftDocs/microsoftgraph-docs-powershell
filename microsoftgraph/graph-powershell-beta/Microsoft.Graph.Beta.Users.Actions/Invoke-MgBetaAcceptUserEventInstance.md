@@ -53,21 +53,6 @@ Accept the specified event in a user calendar.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-accept-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Actions
-```
-
-$params = @{
-	Comment = "comment-value"
-	SendResponse = $true
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgBetaAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -353,6 +338,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptusereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptusereventinstance)
 
 [https://learn.microsoft.com/graph/api/event-accept?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-accept?view=graph-rest-beta)
+
 
 
 

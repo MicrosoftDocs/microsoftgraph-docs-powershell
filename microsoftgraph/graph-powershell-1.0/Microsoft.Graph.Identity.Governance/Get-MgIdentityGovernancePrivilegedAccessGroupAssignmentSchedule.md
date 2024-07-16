@@ -42,16 +42,17 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule -InputObject <II
 Read the properties and relationships of a privilegedAccessGroupAssignmentSchedule object.
 
 ## EXAMPLES
+### Example 1: Retrieve an assignment schedule
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule -PrivilegedAccessGroupAssignmentScheduleId $privilegedAccessGroupAssignmentScheduleId
+
 ```
-{{ Add code here }}
-```
+This example will retrieve an assignment schedule
+
 
 ## PARAMETERS
 

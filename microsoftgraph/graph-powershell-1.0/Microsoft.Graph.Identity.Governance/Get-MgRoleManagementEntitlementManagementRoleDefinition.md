@@ -41,16 +41,17 @@ Get-MgRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdentityG
 Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
 
 ## EXAMPLES
+### Example 1: Retrieve role definitions for the entitlement management provider
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementEntitlementManagementRoleDefinition
+
 ```
-{{ Add code here }}
-```
+This example will retrieve role definitions for the entitlement management provider
+
 
 ## PARAMETERS
 

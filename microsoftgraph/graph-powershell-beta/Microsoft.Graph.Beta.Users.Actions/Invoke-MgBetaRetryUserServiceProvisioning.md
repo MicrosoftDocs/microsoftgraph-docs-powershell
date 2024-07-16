@@ -37,16 +37,17 @@ Retry the user service provisioning.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-retryserviceprovisioning-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+Invoke-MgBetaRetryUserServiceProvisioning -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaRetryUserServiceProvisioning Cmdlet.
+
 
 ## PARAMETERS
 

@@ -48,16 +48,25 @@ Get information about the plannerPlan mapped to a given target.
 If a plannerPlan doesn't exist for the specified target at the time of the request, a new plan will be created for the businessScenario.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	target = @{
+		"@odata.type" = "microsoft.graph.businessScenarioGroupTarget"
+		taskTargetKind = "group"
+		groupId = "7a339254-4b2b-4410-b295-c890a16776ee"
+	}
+}
+
+Get-MgBetaBusinessScenarioPlannerPlan -BusinessScenarioId $businessScenarioId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaBusinessScenarioPlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 

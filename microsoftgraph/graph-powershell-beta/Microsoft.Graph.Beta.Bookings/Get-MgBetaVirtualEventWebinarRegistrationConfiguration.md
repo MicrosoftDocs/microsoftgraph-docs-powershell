@@ -30,16 +30,17 @@ Get-MgBetaVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsId
 Read the properties and relationships of a virtualEventWebinarRegistrationConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId $virtualEventWebinarId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaVirtualEventWebinarRegistrationConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

@@ -78,22 +78,6 @@ New-MgUserCalendarPermission -InputObject <ICalendarIdentity>
 ## DESCRIPTION
 Create new navigation property to calendarPermissions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -398,6 +382,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendarpermission)
+
 
 
 

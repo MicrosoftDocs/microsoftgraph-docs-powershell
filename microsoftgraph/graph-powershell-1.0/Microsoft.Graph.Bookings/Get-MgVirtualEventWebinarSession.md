@@ -41,16 +41,17 @@ Get-MgVirtualEventWebinarSession -InputObject <IBookingsIdentity> [-ExpandProper
 Read the properties and relationships of a virtualEventSession object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Bookings
+
+Get-MgVirtualEventWebinarSession -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventSessionId $virtualEventSessionId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgVirtualEventWebinarSession Cmdlet.
+
 
 ## PARAMETERS
 

@@ -55,22 +55,30 @@ Update-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceMan
 Update the properties of a cloudPcUserSetting object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcUserSetting"
-	DisplayName = "Example"
-	SelfServiceEnabled = $true
-	RestorePointSetting = @{
-		FrequencyInHours = 16
-		UserRestoreEnabled = $true
+	displayName = "Example"
+	selfServiceEnabled = $true
+	restorePointSetting = @{
+		frequencyInHours = 16
+		frequencyType = "sixteenHours"
+		userRestoreEnabled = $true
 	}
-	LocalAdminEnabled = $false
+	localAdminEnabled = $false
+	resetEnabled = $true
 }
+
 Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
+
 
 ## PARAMETERS
 

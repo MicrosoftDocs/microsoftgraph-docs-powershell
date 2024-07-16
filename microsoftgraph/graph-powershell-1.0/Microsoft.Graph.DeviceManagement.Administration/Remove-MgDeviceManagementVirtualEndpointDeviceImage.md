@@ -33,16 +33,17 @@ Remove-MgDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagem
 Delete a cloudPcDeviceImage object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Remove-MgDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId $cloudPcDeviceImageId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDeviceManagementVirtualEndpointDeviceImage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,13 +33,17 @@ Get-MgAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-ExpandPrope
 The details of the bot specified in the Teams app manifest.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgAppCatalogTeamAppDefinitionBot -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
+
+```
+This example shows how to use the Get-MgAppCatalogTeamAppDefinitionBot Cmdlet.
+
 
 ## PARAMETERS
 

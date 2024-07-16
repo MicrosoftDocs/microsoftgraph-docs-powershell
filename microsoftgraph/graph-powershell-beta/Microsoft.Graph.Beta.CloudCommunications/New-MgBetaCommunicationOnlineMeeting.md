@@ -49,47 +49,6 @@ New-MgBetaCommunicationOnlineMeeting -BodyParameter <IMicrosoftGraphOnlineMeetin
 ## DESCRIPTION
 Create new navigation property to onlineMeetings for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-Get-MgBetaCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserOnlineMeeting -UserId $userId -Filter "JoinWebUrl eq 'https://teams.microsoft.com/l/meetup-join/19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2/0?context"
-
-### EXAMPLE 4
-```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserOnlineMeeting -UserId $userId -Filter "joinMeetingIdSettings/joinMeetingId eq '1234567890'"
-
-### EXAMPLE 5
-```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserOnlineMeetingAttendeeReport -UserId $userId -OnlineMeetingId $onlineMeetingId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1432,6 +1391,7 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeeting)
+
 
 
 

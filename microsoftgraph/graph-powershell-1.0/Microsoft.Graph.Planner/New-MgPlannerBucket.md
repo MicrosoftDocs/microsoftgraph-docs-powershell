@@ -32,11 +32,11 @@ New-MgPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket> [-ResponseHead
 Create a new plannerBucket object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	name = "Advertising"
@@ -45,6 +45,10 @@ $params = @{
 }
 
 New-MgPlannerBucket -BodyParameter $params
+
+```
+This example shows how to use the New-MgPlannerBucket Cmdlet.
+
 
 ## PARAMETERS
 

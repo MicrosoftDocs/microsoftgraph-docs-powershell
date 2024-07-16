@@ -38,16 +38,17 @@ In PIM, retrieve the requests for active role assignments for a particular princ
 The principal can be the creator or approver of the unifiedRoleAssignmentScheduleRequest object, or they can be the target of the assignment.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleRequestByCurrentUser -On $onId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleRequestByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

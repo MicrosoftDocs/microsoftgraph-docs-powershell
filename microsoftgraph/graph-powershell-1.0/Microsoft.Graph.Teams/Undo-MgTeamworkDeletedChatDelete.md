@@ -33,16 +33,17 @@ Undo-MgTeamworkDeletedChatDelete -InputObject <ITeamsIdentity> [-ResponseHeaders
 Restore a  deletedChat to an active chat.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Teams
+
+Undo-MgTeamworkDeletedChatDelete -DeletedChatId $deletedChatId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Undo-MgTeamworkDeletedChatDelete Cmdlet.
+
 
 ## PARAMETERS
 

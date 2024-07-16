@@ -30,13 +30,17 @@ Remove-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> [-IfMatch <String>
 Deletes an itemPatent object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 Remove-MgBetaUserProfilePatent -UserId $userId -ItemPatentId $itemPatentId
+
+```
+This example shows how to use the Remove-MgBetaUserProfilePatent Cmdlet.
+
 
 ## PARAMETERS
 

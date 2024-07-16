@@ -43,16 +43,17 @@ Ending the grace period immediately deprovisions the Cloud PC without waiting th
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-endgraceperiod-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod -CloudPCId $cloudPCId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod Cmdlet.
+
 
 ## PARAMETERS
 

@@ -51,16 +51,25 @@ Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment
 Update the properties of a targetedManagedAppPolicyAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.targetedManagedAppPolicyAssignment"
+	target = @{
+		"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+		collectionId = "Collection Id value"
+	}
+}
+
+Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment -IosManagedAppProtectionId $iosManagedAppProtectionId -TargetedManagedAppPolicyAssignmentId $targetedManagedAppPolicyAssignmentId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment Cmdlet.
+
 
 ## PARAMETERS
 

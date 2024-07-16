@@ -65,36 +65,6 @@ Alternatively, create a draft to reply to a message, and send it later.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-reply-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Actions
-```
-
-$params = @{
-	Message = @{
-		ToRecipients = @(
-			@{
-				EmailAddress = @{
-					Address = "samanthab@contoso.onmicrosoft.com"
-					Name = "Samantha Booth"
-				}
-			}
-			@{
-				EmailAddress = @{
-					Address = "randiw@contoso.onmicrosoft.com"
-					Name = "Randi Welch"
-				}
-			}
-		)
-	}
-	Comment = "Samantha, Randi, would you name the group please?"
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgBetaReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -656,6 +626,7 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyusermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-beta)
+
 
 
 

@@ -42,13 +42,17 @@ Get-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManagemen
 Read properties and relationships of the complianceManagementPartner object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Get-MgDeviceManagementComplianceManagementPartner
+
+```
+This example shows how to use the Get-MgDeviceManagementComplianceManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 

@@ -49,20 +49,25 @@ Update-MgDeviceManagementDeviceCompliancePolicyAssignment -InputObject <IDeviceM
 Update the properties of a deviceCompliancePolicyAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceCompliancePolicyAssignment"
+	target = @{
+		"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+		collectionId = "Collection Id value"
+	}
+}
 
-{{ Add output here }}
+Update-MgDeviceManagementDeviceCompliancePolicyAssignment -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceCompliancePolicyAssignmentId $deviceCompliancePolicyAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicyAssignment Cmdlet.
+
 
 ## PARAMETERS
 

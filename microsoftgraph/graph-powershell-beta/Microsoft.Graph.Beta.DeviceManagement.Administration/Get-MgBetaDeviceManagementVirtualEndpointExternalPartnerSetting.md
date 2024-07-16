@@ -39,30 +39,28 @@ Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 Read the properties and relationships of a cloudPcExternalPartnerSetting object.
 
 ## EXAMPLES
+### Example 1: Get all external partner settings
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -CloudPcExternalPartnerSettingId $cloudPcExternalPartnerSettingId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
-```
 
-### EXAMPLE 3
 ```
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -Property "id,partnerId,enableConnection"  -OutFile $outFileId
-```
+This example will get all external partner settings
 
-### EXAMPLE 4
-```
+### Example 2: Use $select to get all external partner settings
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -Property "id,partnerId,enableConnection"
+
+Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -Property "id,partnerId,enableConnection" 
+
 ```
+This example will use $select to get all external partner settings
+
 
 ## PARAMETERS
 

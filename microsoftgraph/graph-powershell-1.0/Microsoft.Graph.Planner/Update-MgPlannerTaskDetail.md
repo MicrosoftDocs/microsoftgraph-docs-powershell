@@ -49,11 +49,11 @@ Update-MgPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 Update the properties of plannerTaskDetails object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	previewType = "noPreview"
@@ -84,7 +84,12 @@ $params = @{
 	}
 }
 
-Update-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
+Update-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
+
+
+```
+This example shows how to use the Update-MgPlannerTaskDetail Cmdlet.
+
 
 ## PARAMETERS
 

@@ -38,14 +38,17 @@ Get-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 Retrieve the properties and relationships of an itemEmail object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
-# A UPN can also be used as -UserId.
-Get-MgBetaUserProfileEmail -UserId $userId
+Get-MgBetaUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId
+
+```
+This example shows how to use the Get-MgBetaUserProfileEmail Cmdlet.
+
 
 ## PARAMETERS
 

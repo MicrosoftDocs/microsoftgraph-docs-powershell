@@ -40,22 +40,6 @@ Get-MgUserDriveListSubscription -InputObject <IFilesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The set of subscriptions on the list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -360,6 +344,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistsubscription)
+
 
 
 

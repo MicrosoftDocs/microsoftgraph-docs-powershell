@@ -29,18 +29,6 @@ Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy -InputObject <IBook
 ## DESCRIPTION
 Deactivate a protectionPolicyBase.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -216,6 +204,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/invoke-mgbetadeactivatesolutionbackuprestoreprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/invoke-mgbetadeactivatesolutionbackuprestoreprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/protectionpolicybase-deactivate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/protectionpolicybase-deactivate?view=graph-rest-beta)
+
 
 
 

@@ -51,16 +51,31 @@ Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp -InputObject <IDevicesCorp
 Not yet documented
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	apps = @(
+		@{
+			"@odata.type" = "#microsoft.graph.managedMobileApp"
+			mobileAppIdentifier = @{
+				"@odata.type" = "microsoft.graph.androidMobileAppIdentifier"
+				packageId = "Package Id value"
+			}
+			id = "0a129715-9715-0a12-1597-120a1597120a"
+			version = "Version value"
+		}
+	)
+}
+
+Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp -ManagedAppPolicyId $managedAppPolicyId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp Cmdlet.
+
 
 ## PARAMETERS
 

@@ -38,13 +38,17 @@ Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend -InputObje
 Read the properties and relationships of a managedDeviceComplianceTrend object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-```
 
 Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend -ManagedDeviceComplianceTrendId $managedDeviceComplianceTrendId
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend Cmdlet.
+
 
 ## PARAMETERS
 

@@ -41,16 +41,39 @@ Get-MgReportPartnerBillingOperation -InputObject <IReportsIdentity> [-ExpandProp
 Read the properties and relationships of an operation object.
 
 ## EXAMPLES
+### Example 1: Get operation succeeded
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportPartnerBillingOperation -OperationId $operationId
+
 ```
-{{ Add code here }}
+This example will get operation succeeded
+
+### Example 2: Get operation failed
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportPartnerBillingOperation -OperationId $operationId
+
 ```
+This example will get operation failed
+
+### Example 3: Get operation is still running
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportPartnerBillingOperation -OperationId $operationId
+
+```
+This example will get operation is still running
+
 
 ## PARAMETERS
 

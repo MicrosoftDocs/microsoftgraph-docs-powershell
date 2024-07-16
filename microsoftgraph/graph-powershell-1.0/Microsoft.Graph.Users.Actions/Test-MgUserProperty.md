@@ -56,22 +56,6 @@ To learn more about configuring naming policies, see Configure naming policy.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-validateproperties-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.DirectoryObjects
-```
-
-$params = @{
-	EntityType = "Group"
-	DisplayName = "Myprefix_test_mysuffix"
-	MailNickname = "Myprefix_test_mysuffix"
-	OnBehalfOfUserId = "onBehalfOfUserId-value"
-}
-
-Test-MgDirectoryObjectProperty -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -284,6 +268,7 @@ BODYPARAMETER `<IPaths1Tz6Rb9UsersMicrosoftGraphValidatepropertiesPostRequestbod
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/test-mguserproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/test-mguserproperty)
 
 [https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
+
 
 
 

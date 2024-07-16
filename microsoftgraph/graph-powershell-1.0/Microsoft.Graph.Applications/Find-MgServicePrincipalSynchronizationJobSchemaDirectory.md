@@ -37,16 +37,17 @@ Discover the latest schema definition for provisioning to an application.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-directorydefinition-discover-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Applications
+
+Find-MgServicePrincipalSynchronizationJobSchemaDirectory -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -DirectoryDefinitionId $directoryDefinitionId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Find-MgServicePrincipalSynchronizationJobSchemaDirectory Cmdlet.
+
 
 ## PARAMETERS
 

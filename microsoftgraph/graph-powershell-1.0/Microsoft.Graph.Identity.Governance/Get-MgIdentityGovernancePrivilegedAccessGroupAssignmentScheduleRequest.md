@@ -43,16 +43,17 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleRequest object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest -Filter "groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'" 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 
