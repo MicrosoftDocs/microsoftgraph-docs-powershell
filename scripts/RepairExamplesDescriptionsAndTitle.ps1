@@ -2,60 +2,33 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/config/ModulesMapping.jsonc"),
     [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
-    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph")
+    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
+    [string] $CommandMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json")
 )
-function Get-GraphMapping {
-    $graphMapping = @{}
-    $graphMapping.Add("v1.0", "v1.0")
-    $graphMapping.Add("beta", "beta")
-    return $graphMapping
-}
 
 function Start-Copy {
-    Param(
-        $ModulesToGenerate = @()
-    )
 
+    $GraphProfilePath = "graph-powershell-1.0"
     $ModulePrefix = "Microsoft.Graph"
-    $GraphMapping = Get-GraphMapping 
-    $GraphMapping.Keys | ForEach-Object {
-        $graphProfile = $_
-        $profilePath = "graph-powershell-1.0"
-        if ($graphProfile -eq "beta") {
-            $profilePath = "graph-powershell-beta"
-        }
-        Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
-    }
-    git config --global user.email "GraphTooling@service.microsoft.com"
-    git config --global user.name "Microsoft Graph DevX Tooling"
-    git add .
-    git commit -m "Corrected titles descriptions and examples" 
-}
-function Get-FilesByProfile {
-    Param(
-        [ValidateSet("beta", "v1.0")]
-        [string] $GraphProfile = "v1.0",
-        [ValidateNotNullOrEmpty()]
-        [string] $GraphProfilePath = "graph-powershell-1.0",
-        [ValidateNotNullOrEmpty()]
-        [string] $ModulePrefix = "Microsoft.Graph",
-        [ValidateNotNullOrEmpty()]
-        $ModulesToGenerate = @()
-    )
 
-    $ModulesToGenerate | ForEach-Object {
-        $ModuleName = $_
-        $docs = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples"
-        try {
-            Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
-        }
-        catch {
-            Write-Host "Failed to copy files for module $ModuleName" 
-        }
-    }
 
+    if (Test-Path $CommandMetadataPath) {
+        $CommandMetadataContent = Get-Content $CommandMetadataPath | ConvertFrom-Json
+        $CommandMetadataContent | ForEach-Object {
+            $ModuleName = $_.Module
+            $GraphProfile = $_.ApiVersion
+            $docs = Join-Path $SDKDocsPath $ModuleName.Replace("Beta.", "") $GraphProfile "examples"
+            try {
+                Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
+            }
+            catch {
+                Write-Host "Failed to copy files for module $ModuleName" 
+            }
+        
+        }
+
+    }
 }
 function Copy-Files {
     param(
@@ -83,7 +56,12 @@ function Copy-Files {
                 # Read the content of the file searching for example headers.
                 $EmptyFile = Test-FileEmpty $File
                 $Command = [System.IO.Path]::GetFileName($File)
+                
                 $DestinationFile = Join-Path $Destination $Command
+                if (!(Test-Path $DestinationFile)) {
+                    Write-Host "File does not exist $DestinationFile"
+                    continue
+                }
                 if ($EmptyFile) {
                     Write-Host "File is empty $File"
                     #For removing existing wrong examples and descriptions
@@ -94,6 +72,7 @@ function Copy-Files {
                     Import-Descriptions -Content $Content -File $DestinationFile
                 }
             }
+            
  
         } 
     
@@ -243,14 +222,8 @@ function Remove-WrongExamples {
     $DestinationContent = $DestinationContent -replace "## EXAMPLES(?s).*## PARAMETERS", "## PARAMETERS"
     $DestinationContent | Out-File $File -Encoding UTF8
 }
-if (-not (Test-Path $ModuleMappingConfigPath)) {
-    Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
-}
-if ($ModulesToGenerate.Count -eq 0) {
-    [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
-    $ModulesToGenerate = $ModuleMapping.Keys
-}
 
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
-Start-Copy -ModulesToGenerate $ModulesToGenerate
+Start-Copy
+
 Write-Host -ForegroundColor Green "-------------Done-------------"
