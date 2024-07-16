@@ -20,11 +20,10 @@ function Start-Copy {
             $GraphProfile = $_.ApiVersion
             if($GraphProfile -eq "beta") {
                 $GraphProfilePath = "graph-powershell-beta"
-                $ModulePrefix = "Microsoft.Graph.Beta"
             }
             $docs = Join-Path $SDKDocsPath $ModuleName.Replace("Beta.", "") $GraphProfile "examples"
             try {
-                Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
+                Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName.Replace("Beta.", "") -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
             }
             catch {
                 Write-Host "Failed to copy files for module $ModuleName" 
