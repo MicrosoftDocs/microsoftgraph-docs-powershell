@@ -18,6 +18,9 @@ function Start-Copy {
         $CommandMetadataContent | ForEach-Object {
             $ModuleName = $_.Module
             $GraphProfile = $_.ApiVersion
+            if($GraphProfile -eq "beta") {
+                $GraphProfilePath = "graph-powershell-beta"
+            }
             $docs = Join-Path $SDKDocsPath $ModuleName.Replace("Beta.", "") $GraphProfile "examples"
             try {
                 Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
