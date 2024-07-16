@@ -45,9 +45,6 @@ function Copy-Files {
     )
     try {
         $Path = "$ModulePrefix.$ModuleName"
-        if ($GraphProfile -eq 'beta') {
-            $Path = "$ModulePrefix.Beta.$ModuleName"
-        }
         $Destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
 
         if ((Test-Path $DocPath)) {
