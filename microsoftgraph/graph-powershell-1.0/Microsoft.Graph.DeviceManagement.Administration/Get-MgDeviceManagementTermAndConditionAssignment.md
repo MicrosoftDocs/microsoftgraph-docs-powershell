@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementtermandconditionassignment
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementTermAndConditionAssignment
 
 ## SYNOPSIS
 Read properties and relationships of the termsAndConditionsAssignment object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementTermAndConditionAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTermAndConditionAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 

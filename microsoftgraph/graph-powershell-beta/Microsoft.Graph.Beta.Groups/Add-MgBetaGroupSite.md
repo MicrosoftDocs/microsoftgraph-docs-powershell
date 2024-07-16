@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsite
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgBetaGroupSite
 
 ## SYNOPSIS
 Follow a user's site or multiple sites.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgGroupSite](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,6 +48,9 @@ Add-MgBetaGroupSite -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Follow a user's site or multiple sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-follow-permissions.md)]
 
 ## EXAMPLES
 

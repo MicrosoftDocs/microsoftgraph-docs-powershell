@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents an action performed by the Microsoft Entra provisioning service and its associated properties.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAuditLogProvisioning](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogProvisioning?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

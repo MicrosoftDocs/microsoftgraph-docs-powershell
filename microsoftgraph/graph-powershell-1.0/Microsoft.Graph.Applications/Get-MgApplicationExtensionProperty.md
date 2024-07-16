@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0).
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

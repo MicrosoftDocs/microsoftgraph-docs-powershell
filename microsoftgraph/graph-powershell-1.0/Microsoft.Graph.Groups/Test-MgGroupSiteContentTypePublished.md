@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Check the publishing status of a contentType in a content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaGroupSiteContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupSiteContentTypePublished?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Is (Default)

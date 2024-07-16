@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusageunbilled
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Export-MgBetaReportPartnerBillingUsageUnbilled
 
 ## SYNOPSIS
 Export unbilled Azure usage data for a specific billing period and currency.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Reports/Export-MgReportPartnerBillingUsageUnbilled?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +34,9 @@ Export-MgBetaReportPartnerBillingUsageUnbilled
 
 ## DESCRIPTION
 Export unbilled Azure usage data for a specific billing period and currency.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-unbilledusage-export-permissions.md)]
 
 ## EXAMPLES
 

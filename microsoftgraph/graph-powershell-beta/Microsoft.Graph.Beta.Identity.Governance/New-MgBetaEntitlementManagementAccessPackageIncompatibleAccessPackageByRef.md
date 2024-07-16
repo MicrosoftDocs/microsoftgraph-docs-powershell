@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add an accessPackage to the list of access packages marked as incompatible on an accessPackage.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

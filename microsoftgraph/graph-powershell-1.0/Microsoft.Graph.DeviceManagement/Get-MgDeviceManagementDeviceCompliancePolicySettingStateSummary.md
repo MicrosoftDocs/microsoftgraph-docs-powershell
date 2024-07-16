@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read properties and relationships of the deviceCompliancePolicySettingStateSummary object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

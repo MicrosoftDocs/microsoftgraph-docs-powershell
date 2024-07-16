@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdeviceconfiguration
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Set-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
 Not yet documented
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 

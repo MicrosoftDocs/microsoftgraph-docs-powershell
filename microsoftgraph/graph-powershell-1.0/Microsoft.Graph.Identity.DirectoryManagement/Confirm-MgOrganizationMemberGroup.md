@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgorganizationmembergroup
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Confirm-MgOrganizationMemberGroup
@@ -13,6 +14,9 @@ This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaOrganizationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaOrganizationMemberGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 

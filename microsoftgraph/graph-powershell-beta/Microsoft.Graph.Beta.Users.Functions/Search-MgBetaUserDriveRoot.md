@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/search-mgbetauserdriveroot
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Search-MgBetaUserDriveRoot
 
 ## SYNOPSIS
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Search-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Functions/Search-MgUserDriveRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +34,9 @@ Search-MgBetaUserDriveRoot -InputObject <IUsersFunctionsIdentity> [-Count] [-Exp
 
 ## DESCRIPTION
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-search-permissions.md)]
 
 ## EXAMPLES
 

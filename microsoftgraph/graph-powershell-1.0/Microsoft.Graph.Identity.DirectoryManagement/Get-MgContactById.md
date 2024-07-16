@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactbyid
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgContactById
@@ -11,6 +12,9 @@ schema: 2.0.0
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactById?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +37,9 @@ Get-MgContactById
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getbyids-permissions.md)]
 
 ## EXAMPLES
 

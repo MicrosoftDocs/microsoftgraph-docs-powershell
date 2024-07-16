@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcleanusermanageddevicewindowsdevice
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Invoke-MgCleanUserManagedDeviceWindowsDevice
 
 ## SYNOPSIS
 Clean Windows device
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCleanUserManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCleanUserManagedDeviceWindowsDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 

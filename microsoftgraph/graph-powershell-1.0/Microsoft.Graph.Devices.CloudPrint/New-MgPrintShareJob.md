@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new printJob for a printerShare.
 Also creates a new printDocument associated with the printJob.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

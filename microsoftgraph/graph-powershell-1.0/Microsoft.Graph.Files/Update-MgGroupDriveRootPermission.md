@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property permissions in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

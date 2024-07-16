@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusertodotaskdelta
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Get-MgUserTodoTaskDelta
@@ -11,6 +12,9 @@ schema: 2.0.0
 Get a set of todoTask resources that have been added, deleted, or updated in a specified todoTaskList.
 A delta function call for todoTask resources in a todoTaskList is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the todoTask in that todoTaskList.
 This allows you to maintain and synchronize a local store of a user's todoTask resources without having to fetch the entire set from the server every time.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserTodoTaskDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,6 +38,9 @@ Get-MgUserTodoTaskDelta -InputObject <IUsersFunctionsIdentity> [-ExpandProperty 
 Get a set of todoTask resources that have been added, deleted, or updated in a specified todoTaskList.
 A delta function call for todoTask resources in a todoTaskList is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the todoTask in that todoTaskList.
 This allows you to maintain and synchronize a local store of a user's todoTask resources without having to fetch the entire set from the server every time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-delta-permissions.md)]
 
 ## EXAMPLES
 

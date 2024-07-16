@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermembergroup
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgUserMemberGroup
@@ -13,6 +14,9 @@ This function is transitive.
 This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
 As a workaround, use the List group transitive memberOf API.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMemberGroup](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserMemberGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 

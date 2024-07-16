@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/disable-mgusermanageddevicelostmode
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Disable-MgUserManagedDeviceLostMode
 
 ## SYNOPSIS
 Disable lost mode
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Disable-MgBetaUserManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Disable-MgBetaUserManagedDeviceLostMode?view=graph-powershell-beta)
 
 ## SYNTAX
 

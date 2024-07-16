@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the groups and administrative units that the device is a member of.
 This API request is transitive, and will also return all groups and administrative units the device is a nested member of.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceTransitiveMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceTransitiveMemberOfAsGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

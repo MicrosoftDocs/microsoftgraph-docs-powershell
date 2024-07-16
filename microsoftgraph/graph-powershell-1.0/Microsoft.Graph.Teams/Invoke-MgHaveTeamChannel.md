@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Determine whether a user has access to a shared channel.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaHaveTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaHaveTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Have (Default)

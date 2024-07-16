@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusagebilled
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Export-MgReportPartnerBillingUsageBilled
 
 ## SYNOPSIS
 Export the billed Azure usage data.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Export-MgBetaReportPartnerBillingUsageBilled](/powershell/module/Microsoft.Graph.Beta.Reports/Export-MgBetaReportPartnerBillingUsageBilled?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,6 +33,9 @@ Export-MgReportPartnerBillingUsageBilled
 
 ## DESCRIPTION
 Export the billed Azure usage data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-billedusage-export-permissions.md)]
 
 ## EXAMPLES
 

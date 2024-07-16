@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveitemversion
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Restore-MgUserDriveItemVersion
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +34,9 @@ Restore-MgUserDriveItemVersion -InputObject <IUsersActionsIdentity> [-ResponseHe
 ## DESCRIPTION
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitemversion-restore-permissions.md)]
 
 ## EXAMPLES
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get details about Yammer activity by user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerActivityUserDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredential
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaApplicationFederatedIdentityCredential
 
 ## SYNOPSIS
 Read the properties and relationships of a federatedIdentityCredential object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,6 +41,9 @@ Get-MgBetaApplicationFederatedIdentityCredential -InputObject <IApplicationsIden
 
 ## DESCRIPTION
 Read the properties and relationships of a federatedIdentityCredential object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedidentitycredential-get-permissions.md)]
 
 ## EXAMPLES
 

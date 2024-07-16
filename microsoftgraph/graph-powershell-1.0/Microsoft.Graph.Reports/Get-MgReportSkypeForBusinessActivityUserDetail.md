@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get details about Skype for Business activity by user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessActivityUserDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

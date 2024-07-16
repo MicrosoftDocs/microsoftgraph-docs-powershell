@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a bookmark object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaSearchBookmark?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

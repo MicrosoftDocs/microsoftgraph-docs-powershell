@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/new-mgschemaextension
 schema: 2.0.0
+ms.subservice: extensions
 ---
 
 # New-MgSchemaExtension
@@ -13,6 +14,9 @@ Schema extensions let you add strongly-typed custom data to a resource.
 The app that creates a schema extension is the owner app.
 Depending on the state of the extension, the owner app, and only the owner app, may update or delete the extension.
 See examples of how to define a schema extension that describes a training course, use the schema extension definition to create a new group with training course data, and add training course data to an existing group.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/New-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 

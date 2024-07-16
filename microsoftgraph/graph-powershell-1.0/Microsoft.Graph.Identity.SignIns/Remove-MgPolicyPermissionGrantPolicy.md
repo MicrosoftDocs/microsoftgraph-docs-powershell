@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property permissionGrantPolicies for policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

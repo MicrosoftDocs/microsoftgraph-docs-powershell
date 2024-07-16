@@ -11,6 +11,9 @@ schema: 2.0.0
 In Microsoft Entra Entitlement Management, create a new accessPackageAssignmentRequest object.
 This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Read the properties and relationships of a virtualEventSession object.
 Currently, the following virtual event types are supported: virtualEventTownhall and virtualEventWebinar.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

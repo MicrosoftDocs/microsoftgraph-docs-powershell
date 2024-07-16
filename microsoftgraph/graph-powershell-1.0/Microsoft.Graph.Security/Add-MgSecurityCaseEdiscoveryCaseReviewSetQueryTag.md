@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasereviewsetquerytag
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Apply tags to files in an eDiscovery review set.
 For details, see Tag documents in a review set in eDiscovery.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag](/powershell/module/Microsoft.Graph.Beta.Security/Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,6 +55,9 @@ Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Apply tags to files in an eDiscovery review set.
 For details, see Tag documents in a review set in eDiscovery.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoveryreviewsetquery-applytags-permissions.md)]
 
 ## EXAMPLES
 

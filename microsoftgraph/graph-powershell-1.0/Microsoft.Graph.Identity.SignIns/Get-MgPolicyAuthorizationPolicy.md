@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The policy that controls Microsoft Entra authorization settings.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementcompliancemanagementpartner
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementComplianceManagementPartner
 
 ## SYNOPSIS
 Read properties and relationships of the complianceManagementPartner object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdrivelistitemdocumentsetversion
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Restore-MgBetaUserDriveListItemDocumentSetVersion
 
 ## SYNOPSIS
 Restore a document set version.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgUserDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +32,9 @@ Restore-MgBetaUserDriveListItemDocumentSetVersion -InputObject <IUsersActionsIde
 
 ## DESCRIPTION
 Restore a document set version.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-restore-permissions.md)]
 
 ## EXAMPLES
 

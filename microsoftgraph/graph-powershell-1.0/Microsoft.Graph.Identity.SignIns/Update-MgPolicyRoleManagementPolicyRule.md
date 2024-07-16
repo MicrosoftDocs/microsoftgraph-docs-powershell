@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property rules in policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyRoleManagementPolicyRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyRoleManagementPolicyRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

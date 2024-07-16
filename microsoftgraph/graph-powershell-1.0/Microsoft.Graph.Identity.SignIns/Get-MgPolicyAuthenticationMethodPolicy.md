@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The authentication methods and the users that are allowed to use them to sign in and perform multifactor authentication (MFA) in Microsoft Entra ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

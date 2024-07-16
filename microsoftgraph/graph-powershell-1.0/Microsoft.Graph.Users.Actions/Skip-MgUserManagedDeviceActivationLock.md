@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/skip-mgusermanageddeviceactivationlock
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Skip-MgUserManagedDeviceActivationLock
 
 ## SYNOPSIS
 Bypass activation lock
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Skip-MgBetaUserManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Skip-MgBetaUserManagedDeviceActivationLock?view=graph-powershell-beta)
 
 ## SYNTAX
 

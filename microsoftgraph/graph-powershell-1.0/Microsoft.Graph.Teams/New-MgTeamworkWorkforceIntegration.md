@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to workforceIntegrations for teamwork
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

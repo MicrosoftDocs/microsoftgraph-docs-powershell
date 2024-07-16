@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgUser
 
 ## SYNOPSIS
 Read properties and relationships of the user object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUser?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List a set of items recently used by the signed-in user.This collection includes items that are in the user's drive and items they have access to from other drives.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRecentGroupDrive](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRecentGroupDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Recent (Default)

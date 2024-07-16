@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get content for the navigation property bundles from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveBundleContent](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveBundleContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

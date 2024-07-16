@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementdeviceenrollmentconfiguration
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
 Update the properties of a deviceEnrollmentLimitConfiguration object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 

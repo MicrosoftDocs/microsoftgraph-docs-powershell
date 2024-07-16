@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Host used to reach the childHost.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostPairParentHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPairParentHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property termStore for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteGetByPathTermStore](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteGetByPathTermStore?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete1 (Default)

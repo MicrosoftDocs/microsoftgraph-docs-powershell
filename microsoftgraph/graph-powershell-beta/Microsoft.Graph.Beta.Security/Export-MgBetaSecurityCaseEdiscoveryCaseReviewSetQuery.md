@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasereviewsetquery
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Initiate an export from a ediscoveryReviewSetQuery.
 For details, see Export documents from a review set in eDiscovery (Premium).
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,6 +56,9 @@ Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIde
 ## DESCRIPTION
 Initiate an export from a ediscoveryReviewSetQuery.
 For details, see Export documents from a review set in eDiscovery (Premium).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewsetquery-export-permissions.md)]
 
 ## EXAMPLES
 
