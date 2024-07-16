@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanagerbyref
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgUserManagerByRef
 
 ## SYNOPSIS
-Delete ref of navigation property manager for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserManagerByRef?view=graph-powershell-beta)
+Remove a user's manager.
 
 ## SYNTAX
 
@@ -30,16 +27,14 @@ Remove-MgUserManagerByRef -InputObject <IUsersIdentity> [-IfMatch <String>] [-Re
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property manager for users
+Remove a user's manager.
 
 ## EXAMPLES
-### Example 1: Remove the manager of a user
 
-```powershell
+### EXAMPLE 1
+```
 Remove-MgUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
 ```
-
-This command removes the manager of the specified user.
 
 ## PARAMETERS
 
@@ -196,27 +191,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
-  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WindowsSettingId \<String\>\]: The unique identifier of windowsSetting
+  \[WindowsSettingInstanceId \<String\>\]: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanagerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanagerbyref)
 
-
-
+[https://learn.microsoft.com/graph/api/user-delete-manager?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-delete-manager?view=graph-rest-1.0)
 

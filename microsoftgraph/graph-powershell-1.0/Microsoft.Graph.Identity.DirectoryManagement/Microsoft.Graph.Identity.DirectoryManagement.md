@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: c767240d-585c-42cb-bb2f-6e76e6d639d4
 Download Help Link: {{ Update Download Link }}
@@ -863,7 +863,49 @@ Locale: en-US
 ### [Remove-MgOrganizationBranding](Remove-MgOrganizationBranding.md)
 {{ Fill in the Description }}
 
+### [Remove-MgOrganizationBrandingBackgroundImage](Remove-MgOrganizationBrandingBackgroundImage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgOrganizationBrandingBannerLogo](Remove-MgOrganizationBrandingBannerLogo.md)
+{{ Fill in the Description }}
+
+### [Remove-MgOrganizationBrandingCustomCss](Remove-MgOrganizationBrandingCustomCss.md)
+{{ Fill in the Description }}
+
+### [Remove-MgOrganizationBrandingFavicon](Remove-MgOrganizationBrandingFavicon.md)
+{{ Fill in the Description }}
+
+### [Remove-MgOrganizationBrandingHeaderLogo](Remove-MgOrganizationBrandingHeaderLogo.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgOrganizationBrandingLocalization](Remove-MgOrganizationBrandingLocalization.md)
+{{ Fill in the Description }}
+
+### [Remove-MgOrganizationBrandingLocalizationBackgroundImage](Remove-MgOrganizationBrandingLocalizationBackgroundImage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgOrganizationBrandingLocalizationBannerLogo](Remove-MgOrganizationBrandingLocalizationBannerLogo.md)
+{{ Fill in the Description }}
+
+### [Remove-MgOrganizationBrandingLocalizationCustomCss](Remove-MgOrganizationBrandingLocalizationCustomCss.md)
+{{ Fill in the Description }}
+
+### [Remove-MgOrganizationBrandingLocalizationFavicon](Remove-MgOrganizationBrandingLocalizationFavicon.md)
+{{ Fill in the Description }}
+
+### [Remove-MgOrganizationBrandingLocalizationHeaderLogo](Remove-MgOrganizationBrandingLocalizationHeaderLogo.md)
+{{ Fill in the Description }}
+
+### [Remove-MgOrganizationBrandingLocalizationSquareLogo](Remove-MgOrganizationBrandingLocalizationSquareLogo.md)
+{{ Fill in the Description }}
+
+### [Remove-MgOrganizationBrandingLocalizationSquareLogoDark](Remove-MgOrganizationBrandingLocalizationSquareLogoDark.md)
+{{ Fill in the Description }}
+
+### [Remove-MgOrganizationBrandingSquareLogo](Remove-MgOrganizationBrandingSquareLogo.md)
+{{ Fill in the Description }}
+
+### [Remove-MgOrganizationBrandingSquareLogoDark](Remove-MgOrganizationBrandingSquareLogoDark.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgOrganizationExtension](Remove-MgOrganizationExtension.md)
@@ -1042,5 +1084,4 @@ Locale: en-US
 
 ### [Update-MgUserScopedRoleMemberOf](Update-MgUserScopedRoleMemberOf.md)
 {{ Fill in the Description }}
-
 

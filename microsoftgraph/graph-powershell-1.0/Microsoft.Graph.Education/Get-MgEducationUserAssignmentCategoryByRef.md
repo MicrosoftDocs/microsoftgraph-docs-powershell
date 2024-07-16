@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategorybyref
@@ -11,9 +11,6 @@ schema: 2.0.0
 When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentCategoryByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +25,22 @@ Get-MgEducationUserAssignmentCategoryByRef -EducationAssignmentId <String> -Educ
 When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -241,8 +254,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategorybyref)
-
-
-
-
 

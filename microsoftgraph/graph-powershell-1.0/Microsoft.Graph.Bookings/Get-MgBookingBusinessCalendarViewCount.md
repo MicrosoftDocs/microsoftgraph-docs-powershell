@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarviewcount
@@ -10,27 +10,36 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessCalendarViewCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCalendarViewCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgBookingBusinessCalendarViewCount -BookingBusinessId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBookingBusinessCalendarViewCount -BookingBusinessId <String> -End <String> -Start <String>
+ [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBookingBusinessCalendarViewCount -InputObject <IBookingsIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBookingBusinessCalendarViewCount -InputObject <IBookingsIdentity> -End <String> -Start <String>
+ [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -40,6 +49,22 @@ The unique identifier of bookingBusiness
 ```yaml
 Type: String
 Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -End
+The end date and time of the time range, represented in ISO 8601 format.
+For example, 2019-11-08T20:00:00-08:00
+
+```yaml
+Type: String
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -140,6 +165,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Start
+The start date and time of the time range, represented in ISO 8601 format.
+For example, 2019-11-08T19:00:00-08:00
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -156,28 +197,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarviewcount](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarviewcount)
-
-
-
-
 

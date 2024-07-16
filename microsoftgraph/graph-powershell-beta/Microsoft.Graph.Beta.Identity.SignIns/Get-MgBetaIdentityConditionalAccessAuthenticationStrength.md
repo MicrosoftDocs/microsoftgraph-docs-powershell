@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrength
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityConditionalAccessAuthenticationStrength
 
 ## SYNOPSIS
-Get authenticationStrengths from identity
+DEPRECATED.
+See the authenticationStrength relationship instead.
 
 ## SYNTAX
 
@@ -19,9 +20,20 @@ Get-MgBetaIdentityConditionalAccessAuthenticationStrength [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get authenticationStrengths from identity
+DEPRECATED.
+See the authenticationStrength relationship instead.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -114,7 +126,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrength](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrength)
-
-
-
 

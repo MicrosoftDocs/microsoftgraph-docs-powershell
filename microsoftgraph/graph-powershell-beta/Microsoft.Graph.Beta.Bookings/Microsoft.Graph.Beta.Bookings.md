@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Bookings
 Module Guid: 6590187a-86e9-40ce-9e6c-7ed5e88a7979
 Download Help Link: {{ Update Download Link }}
@@ -11,6 +11,180 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.Bookings Cmdlets
+### [Enable-MgBetaBackupRestore](Enable-MgBetaBackupRestore.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestore](Get-MgBetaBackupRestore.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreDriveInclusionRule](Get-MgBetaBackupRestoreDriveInclusionRule.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreDriveInclusionRuleCount](Get-MgBetaBackupRestoreDriveInclusionRuleCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreDriveProtectionUnit](Get-MgBetaBackupRestoreDriveProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreDriveProtectionUnitCount](Get-MgBetaBackupRestoreDriveProtectionUnitCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreExchangeProtectionPolicy](Get-MgBetaBackupRestoreExchangeProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreExchangeProtectionPolicyCount](Get-MgBetaBackupRestoreExchangeProtectionPolicyCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRule](Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRule.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRuleCount](Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRuleCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit](Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitCount](Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreExchangeRestoreSession](Get-MgBetaBackupRestoreExchangeRestoreSession.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreExchangeRestoreSessionCount](Get-MgBetaBackupRestoreExchangeRestoreSessionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactCount](Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactRestorePoint](Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactRestorePoint.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreMailboxInclusionRule](Get-MgBetaBackupRestoreMailboxInclusionRule.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreMailboxInclusionRuleCount](Get-MgBetaBackupRestoreMailboxInclusionRuleCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreMailboxProtectionUnit](Get-MgBetaBackupRestoreMailboxProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreMailboxProtectionUnitCount](Get-MgBetaBackupRestoreMailboxProtectionUnitCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyCount](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRuleCount](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRuleCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitCount](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSession](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSession.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionCount](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactCount](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactRestorePoint](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactRestorePoint.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestorePoint](Get-MgBetaBackupRestorePoint.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestorePointCount](Get-MgBetaBackupRestorePointCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestorePointProtectionUnit](Get-MgBetaBackupRestorePointProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreProtectionPolicy](Get-MgBetaBackupRestoreProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreProtectionPolicyCount](Get-MgBetaBackupRestoreProtectionPolicyCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreProtectionUnit](Get-MgBetaBackupRestoreProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreProtectionUnitCount](Get-MgBetaBackupRestoreProtectionUnitCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreServiceApp](Get-MgBetaBackupRestoreServiceApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreServiceAppCount](Get-MgBetaBackupRestoreServiceAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSession](Get-MgBetaBackupRestoreSession.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSessionCount](Get-MgBetaBackupRestoreSessionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSharePointProtectionPolicy](Get-MgBetaBackupRestoreSharePointProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSharePointProtectionPolicyCount](Get-MgBetaBackupRestoreSharePointProtectionPolicyCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSharePointProtectionPolicySiteInclusionRule](Get-MgBetaBackupRestoreSharePointProtectionPolicySiteInclusionRule.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSharePointProtectionPolicySiteInclusionRuleCount](Get-MgBetaBackupRestoreSharePointProtectionPolicySiteInclusionRuleCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnit](Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnitCount](Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnitCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSharePointRestoreSession](Get-MgBetaBackupRestoreSharePointRestoreSession.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSharePointRestoreSessionCount](Get-MgBetaBackupRestoreSharePointRestoreSessionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifactCount](Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifactCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint](Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSiteInclusionRule](Get-MgBetaBackupRestoreSiteInclusionRule.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSiteInclusionRuleCount](Get-MgBetaBackupRestoreSiteInclusionRuleCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSiteProtectionUnit](Get-MgBetaBackupRestoreSiteProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaBackupRestoreSiteProtectionUnitCount](Get-MgBetaBackupRestoreSiteProtectionUnitCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaBookingBusiness](Get-MgBetaBookingBusiness.md)
 {{ Fill in the Description }}
 
@@ -323,6 +497,78 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventWebinarSessionRegistrationCount](Get-MgBetaVirtualEventWebinarSessionRegistrationCount.md)
 {{ Fill in the Description }}
 
+### [Initialize-MgBetaBackupRestoreProtectionPolicy](Initialize-MgBetaBackupRestoreProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Initialize-MgBetaBackupRestoreServiceApp](Initialize-MgBetaBackupRestoreServiceApp.md)
+{{ Fill in the Description }}
+
+### [Initialize-MgBetaBackupRestoreSession](Initialize-MgBetaBackupRestoreSession.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy](Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp](Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreDriveInclusionRule](New-MgBetaBackupRestoreDriveInclusionRule.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreDriveProtectionUnit](New-MgBetaBackupRestoreDriveProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreExchangeProtectionPolicy](New-MgBetaBackupRestoreExchangeProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreExchangeRestoreSession](New-MgBetaBackupRestoreExchangeRestoreSession.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](New-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreMailboxInclusionRule](New-MgBetaBackupRestoreMailboxInclusionRule.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreMailboxProtectionUnit](New-MgBetaBackupRestoreMailboxProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy](New-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreOneDriveForBusinessRestoreSession](New-MgBetaBackupRestoreOneDriveForBusinessRestoreSession.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](New-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestorePoint](New-MgBetaBackupRestorePoint.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreProtectionPolicy](New-MgBetaBackupRestoreProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreServiceApp](New-MgBetaBackupRestoreServiceApp.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreSession](New-MgBetaBackupRestoreSession.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreSharePointProtectionPolicy](New-MgBetaBackupRestoreSharePointProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreSharePointRestoreSession](New-MgBetaBackupRestoreSharePointRestoreSession.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](New-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreSiteInclusionRule](New-MgBetaBackupRestoreSiteInclusionRule.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaBackupRestoreSiteProtectionUnit](New-MgBetaBackupRestoreSiteProtectionUnit.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaBookingBusiness](New-MgBetaBookingBusiness.md)
 {{ Fill in the Description }}
 
@@ -408,6 +654,66 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Publish-MgBetaVirtualEvent](Publish-MgBetaVirtualEvent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestore](Remove-MgBetaBackupRestore.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreDriveInclusionRule](Remove-MgBetaBackupRestoreDriveInclusionRule.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreDriveProtectionUnit](Remove-MgBetaBackupRestoreDriveProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreExchangeProtectionPolicy](Remove-MgBetaBackupRestoreExchangeProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreExchangeRestoreSession](Remove-MgBetaBackupRestoreExchangeRestoreSession.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](Remove-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreMailboxInclusionRule](Remove-MgBetaBackupRestoreMailboxInclusionRule.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreMailboxProtectionUnit](Remove-MgBetaBackupRestoreMailboxProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy](Remove-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreOneDriveForBusinessRestoreSession](Remove-MgBetaBackupRestoreOneDriveForBusinessRestoreSession.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](Remove-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestorePoint](Remove-MgBetaBackupRestorePoint.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreProtectionPolicy](Remove-MgBetaBackupRestoreProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreServiceApp](Remove-MgBetaBackupRestoreServiceApp.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreSession](Remove-MgBetaBackupRestoreSession.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreSharePointProtectionPolicy](Remove-MgBetaBackupRestoreSharePointProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreSharePointRestoreSession](Remove-MgBetaBackupRestoreSharePointRestoreSession.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](Remove-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreSiteInclusionRule](Remove-MgBetaBackupRestoreSiteInclusionRule.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaBackupRestoreSiteProtectionUnit](Remove-MgBetaBackupRestoreSiteProtectionUnit.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaBookingBusiness](Remove-MgBetaBookingBusiness.md)
@@ -530,6 +836,9 @@ Locale: en-US
 ### [Remove-MgBetaVirtualEventWebinarSessionByJoinWebUrl](Remove-MgBetaVirtualEventWebinarSessionByJoinWebUrl.md)
 {{ Fill in the Description }}
 
+### [Search-MgBetaBackupRestorePoint](Search-MgBetaBackupRestorePoint.md)
+{{ Fill in the Description }}
+
 ### [Stop-MgBetaBookingBusinessAppointment](Stop-MgBetaBookingBusinessAppointment.md)
 {{ Fill in the Description }}
 
@@ -539,7 +848,76 @@ Locale: en-US
 ### [Stop-MgBetaVirtualEvent](Stop-MgBetaVirtualEvent.md)
 {{ Fill in the Description }}
 
+### [Stop-MgBetaVirtualEventWebinarRegistration](Stop-MgBetaVirtualEventWebinarRegistration.md)
+{{ Fill in the Description }}
+
+### [Stop-MgBetaVirtualEventWebinarRegistrationEmail](Stop-MgBetaVirtualEventWebinarRegistrationEmail.md)
+{{ Fill in the Description }}
+
+### [Stop-MgBetaVirtualEventWebinarRegistrationUserId](Stop-MgBetaVirtualEventWebinarRegistrationUserId.md)
+{{ Fill in the Description }}
+
 ### [Unpublish-MgBetaBookingBusiness](Unpublish-MgBetaBookingBusiness.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestore](Update-MgBetaBackupRestore.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreDriveInclusionRule](Update-MgBetaBackupRestoreDriveInclusionRule.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreDriveProtectionUnit](Update-MgBetaBackupRestoreDriveProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreExchangeProtectionPolicy](Update-MgBetaBackupRestoreExchangeProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreExchangeRestoreSession](Update-MgBetaBackupRestoreExchangeRestoreSession.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](Update-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreMailboxInclusionRule](Update-MgBetaBackupRestoreMailboxInclusionRule.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreMailboxProtectionUnit](Update-MgBetaBackupRestoreMailboxProtectionUnit.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy](Update-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSession](Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSession.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestorePoint](Update-MgBetaBackupRestorePoint.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreProtectionPolicy](Update-MgBetaBackupRestoreProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreServiceApp](Update-MgBetaBackupRestoreServiceApp.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreSession](Update-MgBetaBackupRestoreSession.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreSharePointProtectionPolicy](Update-MgBetaBackupRestoreSharePointProtectionPolicy.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreSharePointRestoreSession](Update-MgBetaBackupRestoreSharePointRestoreSession.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](Update-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreSiteInclusionRule](Update-MgBetaBackupRestoreSiteInclusionRule.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaBackupRestoreSiteProtectionUnit](Update-MgBetaBackupRestoreSiteProtectionUnit.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaBookingBusiness](Update-MgBetaBookingBusiness.md)
@@ -661,5 +1039,4 @@ Locale: en-US
 
 ### [Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl](Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl.md)
 {{ Fill in the Description }}
-
 

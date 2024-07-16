@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsessionattendancereport
@@ -8,11 +8,8 @@ schema: 2.0.0
 # Get-MgVirtualEventWebinarSessionAttendanceReport
 
 ## SYNOPSIS
-The attendance reports of an online meeting.
-Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarSessionAttendanceReport](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarSessionAttendanceReport?view=graph-powershell-beta)
+Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
+Each time an online meeting ends, an attendance report is generated for that session.
 
 ## SYNTAX
 
@@ -41,8 +38,20 @@ Get-MgVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIdentity
 ```
 
 ## DESCRIPTION
-The attendance reports of an online meeting.
-Read-only.
+Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
+Each time an online meeting ends, an attendance report is generated for that session.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -319,28 +328,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsessionattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsessionattendancereport)
 
+[https://learn.microsoft.com/graph/api/meetingattendancereport-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingattendancereport-get?view=graph-rest-1.0)
 
-
-
+[https://learn.microsoft.com/graph/api/meetingattendancereport-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingattendancereport-list?view=graph-rest-1.0)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfiguration
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaBusinessScenarioPlannerPlanConfiguration
 
 ## SYNOPSIS
-Update the navigation property planConfiguration in solutions
+Update the properties of a plannerPlanConfiguration object for a businessScenario.
 
 ## SYNTAX
 
@@ -49,7 +49,19 @@ Update-MgBetaBusinessScenarioPlannerPlanConfiguration -InputObject <IBookingsIde
 ```
 
 ## DESCRIPTION
-Update the navigation property planConfiguration in solutions
+Update the properties of a plannerPlanConfiguration object for a businessScenario.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -337,103 +349,121 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlanConfiguration>`: plannerPlanConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPlannerPlanConfiguration\>: plannerPlanConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition- `[]`>]`: List the buckets that should be created in the plan.
-    - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  \[Buckets \<IMicrosoftGraphPlannerPlanConfigurationBucketDefinition\[\]\>\]: List the buckets that should be created in the plan.
+    \[ExternalBucketId \<String\>\]: Application-specified identifier of the bucket.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the plan configuration was created.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when the plan configuration was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[DefaultLanguage <String>]`: The language code for the default language to be used for the names of the objects created for the plan.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the plan configuration was last modified.
+  \[DefaultLanguage \<String\>\]: The language code for the default language to be used for the names of the objects created for the plan.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the plan configuration was last modified.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization- `[]`>]`: Localized names for the plan configuration.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Localizations \<IMicrosoftGraphPlannerPlanConfigurationLocalization\[\]\>\]: Localized names for the plan configuration.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization- `[]`>]`: Localized names for configured buckets in the plan configuration.
-      - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
-      - `[Name <String>]`: Name of the bucket.
-    - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
-    - `[PlanTitle <String>]`: Localized title of the plan.
+    \[Buckets \<IMicrosoftGraphPlannerPlanConfigurationBucketLocalization\[\]\>\]: Localized names for configured buckets in the plan configuration.
+      \[ExternalBucketId \<String\>\]: Application-specified identifier of the bucket.
+      \[Name \<String\>\]: Name of the bucket.
+    \[LanguageTag \<String\>\]: The language code associated with the localized names in this object.
+    \[PlanTitle \<String\>\]: Localized title of the plan.
 
-BUCKETS <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition- `[]`>: List the buckets that should be created in the plan.
-  - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
+BUCKETS \<IMicrosoftGraphPlannerPlanConfigurationBucketDefinition\[\]\>: List the buckets that should be created in the plan.
+  \[ExternalBucketId \<String\>\]: Application-specified identifier of the bucket.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[Email <String>]`: Alternate key of virtualEventRegistration
-  - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[UniqueName <String>]`: Alternate key of businessScenario
-  - `[UserId <String>]`: Alternate key of virtualEventRegistration
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerId \<String\>\]: The unique identifier of bookingCustomer
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[DriveProtectionRuleId \<String\>\]: The unique identifier of driveProtectionRule
+  \[DriveProtectionUnitId \<String\>\]: The unique identifier of driveProtectionUnit
+  \[DriveRestoreArtifactId \<String\>\]: The unique identifier of driveRestoreArtifact
+  \[Email \<String\>\]: Alternate key of virtualEventRegistration
+  \[ExchangeProtectionPolicyId \<String\>\]: The unique identifier of exchangeProtectionPolicy
+  \[ExchangeRestoreSessionId \<String\>\]: The unique identifier of exchangeRestoreSession
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
+  \[MailboxProtectionRuleId \<String\>\]: The unique identifier of mailboxProtectionRule
+  \[MailboxProtectionUnitId \<String\>\]: The unique identifier of mailboxProtectionUnit
+  \[MailboxRestoreArtifactId \<String\>\]: The unique identifier of mailboxRestoreArtifact
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[OneDriveForBusinessProtectionPolicyId \<String\>\]: The unique identifier of oneDriveForBusinessProtectionPolicy
+  \[OneDriveForBusinessRestoreSessionId \<String\>\]: The unique identifier of oneDriveForBusinessRestoreSession
+  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
+  \[ProtectionPolicyBaseId \<String\>\]: The unique identifier of protectionPolicyBase
+  \[ProtectionUnitBaseId \<String\>\]: The unique identifier of protectionUnitBase
+  \[RestorePointId \<String\>\]: The unique identifier of restorePoint
+  \[RestoreSessionBaseId \<String\>\]: The unique identifier of restoreSessionBase
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[ServiceAppId \<String\>\]: The unique identifier of serviceApp
+  \[SharePointProtectionPolicyId \<String\>\]: The unique identifier of sharePointProtectionPolicy
+  \[SharePointRestoreSessionId \<String\>\]: The unique identifier of sharePointRestoreSession
+  \[SiteProtectionRuleId \<String\>\]: The unique identifier of siteProtectionRule
+  \[SiteProtectionUnitId \<String\>\]: The unique identifier of siteProtectionUnit
+  \[SiteRestoreArtifactId \<String\>\]: The unique identifier of siteRestoreArtifact
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
+  \[UserId \<String\>\]: Alternate key of virtualEventRegistration
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-LOCALIZATIONS <IMicrosoftGraphPlannerPlanConfigurationLocalization- `[]`>: Localized names for the plan configuration.
-  - `[Id <String>]`: The unique identifier for an entity.
+LOCALIZATIONS \<IMicrosoftGraphPlannerPlanConfigurationLocalization\[\]\>: Localized names for the plan configuration.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization- `[]`>]`: Localized names for configured buckets in the plan configuration.
-    - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
-    - `[Name <String>]`: Name of the bucket.
-  - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
-  - `[PlanTitle <String>]`: Localized title of the plan.
+  \[Buckets \<IMicrosoftGraphPlannerPlanConfigurationBucketLocalization\[\]\>\]: Localized names for configured buckets in the plan configuration.
+    \[ExternalBucketId \<String\>\]: Application-specified identifier of the bucket.
+    \[Name \<String\>\]: Name of the bucket.
+  \[LanguageTag \<String\>\]: The language code associated with the localized names in this object.
+  \[PlanTitle \<String\>\]: Localized title of the plan.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfiguration)
 
-
-
-
+[https://learn.microsoft.com/graph/api/plannerplanconfiguration-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerplanconfiguration-update?view=graph-rest-beta)
 

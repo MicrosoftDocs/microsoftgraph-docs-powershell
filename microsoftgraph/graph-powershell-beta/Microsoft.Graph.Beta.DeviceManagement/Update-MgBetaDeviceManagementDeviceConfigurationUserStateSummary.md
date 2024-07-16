@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationuserstatesummary
@@ -30,6 +30,22 @@ Update-MgBetaDeviceManagementDeviceConfigurationUserStateSummary
 
 ## DESCRIPTION
 Update the navigation property deviceConfigurationUserStateSummaries in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -277,23 +293,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationUserStateSummary>`: deviceConfigurationUserStateSummary
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceConfigurationUserStateSummary\>: deviceConfigurationUserStateSummary
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CompliantUserCount <Int32?>]`: Number of compliant users
-  - `[ConflictUserCount <Int32?>]`: Number of conflict users
-  - `[ErrorUserCount <Int32?>]`: Number of error users
-  - `[NonCompliantUserCount <Int32?>]`: Number of NonCompliant users
-  - `[NotApplicableUserCount <Int32?>]`: Number of not applicable users
-  - `[RemediatedUserCount <Int32?>]`: Number of remediated users
-  - `[UnknownUserCount <Int32?>]`: Number of unknown users
+  \[CompliantUserCount \<Int32?\>\]: Number of compliant users
+  \[ConflictUserCount \<Int32?\>\]: Number of conflict users
+  \[ErrorUserCount \<Int32?\>\]: Number of error users
+  \[NonCompliantUserCount \<Int32?\>\]: Number of NonCompliant users
+  \[NotApplicableUserCount \<Int32?\>\]: Number of not applicable users
+  \[RemediatedUserCount \<Int32?\>\]: Number of remediated users
+  \[UnknownUserCount \<Int32?\>\]: Number of unknown users
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationuserstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationuserstatesummary)
-
-
-
-
 

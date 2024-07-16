@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategory
@@ -8,11 +8,8 @@ schema: 2.0.0
 # Get-MgBetaEducationClassAssignmentCategory
 
 ## SYNOPSIS
-All categories associated with this class.
-Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentCategory?view=graph-powershell-1.0)
+Retrieve an educationCategory object.
+Only teachers, students, and applications with application permissions can perform this operation.
 
 ## SYNTAX
 
@@ -47,43 +44,31 @@ Get-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-E
 ```
 
 ## DESCRIPTION
-All categories associated with this class.
-Nullable.
+Retrieve an educationCategory object.
+Only teachers, students, and applications with application permissions can perform this operation.
 
 ## EXAMPLES
-### Example 1: Get assignment categories
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId
 
+### EXAMPLE 2
 ```
-This example will get assignment categories
-
-### Example 2: Using `$filter` to get assignment categories
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Education
-
-Get-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId -Filter "id eq 'd4cb4f68-9136-48d3-9054-c1208ea274f0'" 
-
 ```
-This example shows using `$filter` to get assignment categories
 
-### Example 3: Using `$orderby` to get assignment categories
+Get-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId -Filter "id eq 'd4cb4f68-9136-48d3-9054-c1208ea274f0'"
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.Education
-
-Get-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId -Sort "displayName" 
-
 ```
-This example shows using `$orderby` to get assignment categories
 
+Get-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId -Sort "displayName"
 
 ## PARAMETERS
 
@@ -360,30 +345,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
-  - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationAssignmentResourceId1 <String>]`: The unique identifier of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
-  - `[EducationClassId <String>]`: The unique identifier of educationClass
-  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
-  - `[EducationGradingSchemeId <String>]`: The unique identifier of educationGradingScheme
-  - `[EducationModuleId <String>]`: The unique identifier of educationModule
-  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
-  - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
-  - `[EducationRubricId <String>]`: The unique identifier of educationRubric
-  - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
-  - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSubmissionResourceId1 <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
-  - `[EducationUserId <String>]`: The unique identifier of educationUser
+INPUTOBJECT \<IEducationIdentity\>: Identity Parameter
+  \[EducationAssignmentId \<String\>\]: The unique identifier of educationAssignment
+  \[EducationAssignmentResourceId \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationAssignmentResourceId1 \<String\>\]: The unique identifier of educationAssignmentResource
+  \[EducationCategoryId \<String\>\]: The unique identifier of educationCategory
+  \[EducationClassId \<String\>\]: The unique identifier of educationClass
+  \[EducationGradingCategoryId \<String\>\]: The unique identifier of educationGradingCategory
+  \[EducationGradingSchemeId \<String\>\]: The unique identifier of educationGradingScheme
+  \[EducationModuleId \<String\>\]: The unique identifier of educationModule
+  \[EducationModuleResourceId \<String\>\]: The unique identifier of educationModuleResource
+  \[EducationOutcomeId \<String\>\]: The unique identifier of educationOutcome
+  \[EducationRubricId \<String\>\]: The unique identifier of educationRubric
+  \[EducationSchoolId \<String\>\]: The unique identifier of educationSchool
+  \[EducationSubmissionId \<String\>\]: The unique identifier of educationSubmission
+  \[EducationSubmissionResourceId \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationSubmissionResourceId1 \<String\>\]: The unique identifier of educationSubmissionResource
+  \[EducationSynchronizationErrorId \<String\>\]: The unique identifier of educationSynchronizationError
+  \[EducationSynchronizationProfileId \<String\>\]: The unique identifier of educationSynchronizationProfile
+  \[EducationUserId \<String\>\]: The unique identifier of educationUser
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategory)
 
+[https://learn.microsoft.com/graph/api/educationcategory-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationcategory-get?view=graph-rest-beta)
 
+[https://learn.microsoft.com/graph/api/educationclass-list-categories?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationclass-list-categories?view=graph-rest-beta)
 
+[https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-beta)
 

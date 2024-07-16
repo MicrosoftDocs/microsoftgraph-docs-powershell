@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgavailableidentityprovidertype
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get all identity providers supported in a directory.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAvailableIdentityProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaAvailableIdentityProviderType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,27 +22,24 @@ Invoke-MgAvailableIdentityProviderType [-Count] [-Filter <String>] [-Search <Str
 Get all identity providers supported in a directory.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgAvailableIdentityProviderType Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
 Invoke-MgAvailableIdentityProviderType
 ```
-This example shows how to use the Invoke-MgAvailableIdentityProviderType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Invoke-MgAvailableIdentityProviderType Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Identity.SignIns
 Invoke-MgAvailableIdentityProviderType
 ```
-This example shows how to use the Invoke-MgAvailableIdentityProviderType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Invoke-MgAvailableIdentityProviderType Cmdlet
-```powershell
+
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Identity.SignIns
 Invoke-MgAvailableIdentityProviderType -OutFile $outFileId
 ```
-This example shows how to use the Invoke-MgAvailableIdentityProviderType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -185,7 +179,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgavailableidentityprovidertype](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgavailableidentityprovidertype)
 
 [https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-1.0)
-
-
-
 

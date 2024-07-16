@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphoto
@@ -10,58 +10,55 @@ schema: 2.0.0
 ## SYNOPSIS
 The group's profile photo
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPhoto?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgGroupPhoto -GroupId <String> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgGroupPhoto -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### List
 ```
-Get-MgGroupPhoto -GroupId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgGroupPhoto -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgGroupPhoto -GroupId <String> -ProfilePhotoId <String> [-Property <String[]>]
+Get-MgGroupPhoto -GroupId <String> -ProfilePhotoId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgGroupPhoto -InputObject <IGroupsIdentity> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgGroupPhoto -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupPhoto -InputObject <IGroupsIdentity> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgGroupPhoto -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The group's profile photo
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 Get-MgGroupPhoto -GroupId $groupId
-```
-This example shows how to use the Get-MgGroupPhoto Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -88,6 +85,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -232,6 +244,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -293,53 +320,52 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ConversationId <String>]`: The unique identifier of conversation
-  - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EventId <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
-  - `[GroupSettingId <String>]`: The unique identifier of groupSetting
-  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
-  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
-  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: The unique identifier of list
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[Path1 <String>]`: Usage: path='{path1}'
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PostId <String>]`: The unique identifier of post
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UniqueName <String>]`: Alternate key of group
-  - `[User <String>]`: Usage: User='{User}'
-  - `[WebPartId <String>]`: The unique identifier of webPart
+INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[BaseSitePageId \<String\>\]: The unique identifier of baseSitePage
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ConversationId \<String\>\]: The unique identifier of conversation
+  \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EventId \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[GroupSettingId \<String\>\]: The unique identifier of groupSetting
+  \[GroupSettingTemplateId \<String\>\]: The unique identifier of groupSettingTemplate
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListId \<String\>\]: The unique identifier of list
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[PostId \<String\>\]: The unique identifier of post
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UniqueName \<String\>\]: Alternate key of group
+  \[User \<String\>\]: Usage: User='{User}'
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphoto)
 
-
-
+[https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-1.0)
 

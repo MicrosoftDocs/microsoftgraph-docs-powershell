@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmerubric
@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgBetaEducationMeRubric
 
 ## SYNOPSIS
-Create new navigation property to rubrics for education
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeRubric?view=graph-powershell-1.0)
+Create a new educationRubric object.
 
 ## SYNTAX
 
@@ -31,14 +28,14 @@ New-MgBetaEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-Re
 ```
 
 ## DESCRIPTION
-Create new navigation property to rubrics for education
+Create a new educationRubric object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	displayName = "Example Credit Rubric"
@@ -107,10 +104,6 @@ $params = @{
 }
 
 New-MgBetaEducationMeRubric -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaEducationMeRubric Cmdlet.
-
 
 ## PARAMETERS
 
@@ -363,95 +356,94 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationRubric>`: educationRubric
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphEducationRubric\>: educationRubric
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: 
-    - `[ContentType <String>]`: bodyType
-  - `[DisplayName <String>]`: The name of this rubric.
-  - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[Levels <IMicrosoftGraphRubricLevel- `[]`>]`: The collection of levels making up this rubric.
-    - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-    - `[DisplayName <String>]`: The name of this rubric level.
-    - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
-    - `[LevelId <String>]`: The ID of this resource.
-  - `[Qualities <IMicrosoftGraphRubricQuality- `[]`>]`: The collection of qualities making up this rubric.
-    - `[Criteria <IMicrosoftGraphRubricCriterion- `[]`>]`: The collection of criteria for this rubric quality.
-      - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-    - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-    - `[DisplayName <String>]`: The name of this rubric quality.
-    - `[QualityId <String>]`: The ID of this resource.
-    - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Content \<String\>\]: 
+    \[ContentType \<String\>\]: bodyType
+  \[DisplayName \<String\>\]: The name of this rubric.
+  \[Grading \<IMicrosoftGraphEducationAssignmentGradeType\>\]: educationAssignmentGradeType
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[Levels \<IMicrosoftGraphRubricLevel\[\]\>\]: The collection of levels making up this rubric.
+    \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
+    \[DisplayName \<String\>\]: The name of this rubric level.
+    \[Grading \<IMicrosoftGraphEducationAssignmentGradeType\>\]: educationAssignmentGradeType
+    \[LevelId \<String\>\]: The ID of this resource.
+  \[Qualities \<IMicrosoftGraphRubricQuality\[\]\>\]: The collection of qualities making up this rubric.
+    \[Criteria \<IMicrosoftGraphRubricCriterion\[\]\>\]: The collection of criteria for this rubric quality.
+      \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
+    \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
+    \[DisplayName \<String\>\]: The name of this rubric quality.
+    \[QualityId \<String\>\]: The ID of this resource.
+    \[Weight \<Single?\>\]: If present, a numerical weight for this quality. 
 Weights must add up to 100.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-DESCRIPTION `<IMicrosoftGraphEducationItemBody>`: educationItemBody
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: 
-  - `[ContentType <String>]`: bodyType
+DESCRIPTION \<IMicrosoftGraphEducationItemBody\>: educationItemBody
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Content \<String\>\]: 
+  \[ContentType \<String\>\]: bodyType
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-LEVELS <IMicrosoftGraphRubricLevel- `[]`>: The collection of levels making up this rubric.
-  - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: 
-    - `[ContentType <String>]`: bodyType
-  - `[DisplayName <String>]`: The name of this rubric level.
-  - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[LevelId <String>]`: The ID of this resource.
+LEVELS \<IMicrosoftGraphRubricLevel\[\]\>: The collection of levels making up this rubric.
+  \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Content \<String\>\]: 
+    \[ContentType \<String\>\]: bodyType
+  \[DisplayName \<String\>\]: The name of this rubric level.
+  \[Grading \<IMicrosoftGraphEducationAssignmentGradeType\>\]: educationAssignmentGradeType
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[LevelId \<String\>\]: The ID of this resource.
 
-QUALITIES <IMicrosoftGraphRubricQuality- `[]`>: The collection of qualities making up this rubric.
-  - `[Criteria <IMicrosoftGraphRubricCriterion- `[]`>]`: The collection of criteria for this rubric quality.
-    - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Content <String>]`: 
-      - `[ContentType <String>]`: bodyType
-  - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
-  - `[DisplayName <String>]`: The name of this rubric quality.
-  - `[QualityId <String>]`: The ID of this resource.
-  - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
+QUALITIES \<IMicrosoftGraphRubricQuality\[\]\>: The collection of qualities making up this rubric.
+  \[Criteria \<IMicrosoftGraphRubricCriterion\[\]\>\]: The collection of criteria for this rubric quality.
+    \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Content \<String\>\]: 
+      \[ContentType \<String\>\]: bodyType
+  \[Description \<IMicrosoftGraphEducationItemBody\>\]: educationItemBody
+  \[DisplayName \<String\>\]: The name of this rubric quality.
+  \[QualityId \<String\>\]: The ID of this resource.
+  \[Weight \<Single?\>\]: If present, a numerical weight for this quality. 
 Weights must add up to 100.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmerubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmerubric)
 
-
-
+[https://learn.microsoft.com/graph/api/educationuser-post-rubrics?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationuser-post-rubrics?view=graph-rest-beta)
 

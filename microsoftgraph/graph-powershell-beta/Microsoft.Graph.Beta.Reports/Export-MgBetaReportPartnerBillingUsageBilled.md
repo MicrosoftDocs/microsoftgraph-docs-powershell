@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusagebilled
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Export the billed Azure usage data.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Export-MgReportPartnerBillingUsageBilled](/powershell/module/Microsoft.Graph.Reports/Export-MgReportPartnerBillingUsageBilled?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,8 +30,17 @@ Export-MgBetaReportPartnerBillingUsageBilled
 ## DESCRIPTION
 Export the billed Azure usage data.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-billedusage-export-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -191,18 +197,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ij96IaReportsPartnersBillingUsageBilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttributeSet <String>]`: attributeSet
-  - `[InvoiceId <String>]`:
+BODYPARAMETER \<IPaths1Ij96IaReportsPartnersBillingUsageBilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AttributeSet \<String\>\]: attributeSet
+  \[InvoiceId \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusagebilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusagebilled)
 
 [https://learn.microsoft.com/graph/api/partners-billing-billedusage-export?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partners-billing-billedusage-export?view=graph-rest-beta)
-
-
-
-
 

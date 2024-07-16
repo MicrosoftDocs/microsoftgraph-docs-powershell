@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeviceregistrationpolicy
@@ -8,35 +8,46 @@ schema: 2.0.0
 # Get-MgBetaPolicyDeviceRegistrationPolicy
 
 ## SYNOPSIS
-Get deviceRegistrationPolicy from policies
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyDeviceRegistrationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDeviceRegistrationPolicy?view=graph-powershell-1.0)
+Read the properties and relationships of a deviceRegistrationPolicy object.
+Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
 ## SYNTAX
 
 ```
-Get-MgBetaPolicyDeviceRegistrationPolicy [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaPolicyDeviceRegistrationPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get deviceRegistrationPolicy from policies
+Read the properties and relationships of a deviceRegistrationPolicy object.
+Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyDeviceRegistrationPolicy
 
-```
-This example shows how to use the Get-MgBetaPolicyDeviceRegistrationPolicy Cmdlet.
-
-
 ## PARAMETERS
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -113,6 +124,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeviceregistrationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeviceregistrationpolicy)
 
-
-
+[https://learn.microsoft.com/graph/api/deviceregistrationpolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/deviceregistrationpolicy-get?view=graph-rest-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Notes
 Module Guid: dfba33b1-0baf-47e5-9deb-4f381cdd48e7
 Download Help Link: {{ Update Download Link }}
@@ -254,6 +254,9 @@ Locale: en-US
 ### [Remove-MgBetaGroupOnenotePage](Remove-MgBetaGroupOnenotePage.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupOnenotePageContent](Remove-MgBetaGroupOnenotePageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupOnenoteSection](Remove-MgBetaGroupOnenoteSection.md)
 {{ Fill in the Description }}
 
@@ -279,6 +282,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnenotePage](Remove-MgBetaUserOnenotePage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserOnenotePageContent](Remove-MgBetaUserOnenotePageContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnenoteSection](Remove-MgBetaUserOnenoteSection.md)
@@ -352,5 +358,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserOnenoteSectionGroup](Update-MgBetaUserOnenoteSectionGroup.md)
 {{ Fill in the Description }}
-
 

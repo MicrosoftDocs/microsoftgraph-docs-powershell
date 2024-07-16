@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Financials
 Module Guid: 0138bb72-afbe-4daf-b849-452ecc75a99f
 Download Help Link: {{ Update Download Link }}
@@ -764,6 +764,9 @@ Locale: en-US
 ### [Remove-MgBetaFinancialCompanyCustomerPaymentCustomerPicture](Remove-MgBetaFinancialCompanyCustomerPaymentCustomerPicture.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaFinancialCompanyCustomerPaymentCustomerPictureContent](Remove-MgBetaFinancialCompanyCustomerPaymentCustomerPictureContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaFinancialCompanyCustomerPaymentCustomerShipmentMethod](Remove-MgBetaFinancialCompanyCustomerPaymentCustomerShipmentMethod.md)
 {{ Fill in the Description }}
 
@@ -780,6 +783,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPicture](Remove-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPicture.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPictureContent](Remove-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPictureContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerShipmentMethod](Remove-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerShipmentMethod.md)
@@ -800,6 +806,9 @@ Locale: en-US
 ### [Remove-MgBetaFinancialCompanyCustomerPicture](Remove-MgBetaFinancialCompanyCustomerPicture.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaFinancialCompanyCustomerPictureContent](Remove-MgBetaFinancialCompanyCustomerPictureContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaFinancialCompanyCustomerShipmentMethod](Remove-MgBetaFinancialCompanyCustomerShipmentMethod.md)
 {{ Fill in the Description }}
 
@@ -809,6 +818,12 @@ Locale: en-US
 ### [Remove-MgBetaFinancialCompanyEmployeePicture](Remove-MgBetaFinancialCompanyEmployeePicture.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaFinancialCompanyEmployeePictureContent](Remove-MgBetaFinancialCompanyEmployeePictureContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaFinancialCompanyInformationPicture](Remove-MgBetaFinancialCompanyInformationPicture.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaFinancialCompanyItem](Remove-MgBetaFinancialCompanyItem.md)
 {{ Fill in the Description }}
 
@@ -816,6 +831,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanyItemPicture](Remove-MgBetaFinancialCompanyItemPicture.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaFinancialCompanyItemPictureContent](Remove-MgBetaFinancialCompanyItemPictureContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanyJournal](Remove-MgBetaFinancialCompanyJournal.md)
@@ -833,6 +851,9 @@ Locale: en-US
 ### [Remove-MgBetaFinancialCompanyPicture](Remove-MgBetaFinancialCompanyPicture.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaFinancialCompanyPictureContent](Remove-MgBetaFinancialCompanyPictureContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaFinancialCompanyPurchaseInvoiceCurrency](Remove-MgBetaFinancialCompanyPurchaseInvoiceCurrency.md)
 {{ Fill in the Description }}
 
@@ -843,6 +864,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture](Remove-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent](Remove-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanyPurchaseInvoiceVendor](Remove-MgBetaFinancialCompanyPurchaseInvoiceVendor.md)
@@ -858,6 +882,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanyPurchaseInvoiceVendorPicture](Remove-MgBetaFinancialCompanyPurchaseInvoiceVendorPicture.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaFinancialCompanyPurchaseInvoiceVendorPictureContent](Remove-MgBetaFinancialCompanyPurchaseInvoiceVendorPictureContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanySaleCreditMemoCurrency](Remove-MgBetaFinancialCompanySaleCreditMemoCurrency.md)
@@ -878,6 +905,9 @@ Locale: en-US
 ### [Remove-MgBetaFinancialCompanySaleCreditMemoCustomerPicture](Remove-MgBetaFinancialCompanySaleCreditMemoCustomerPicture.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaFinancialCompanySaleCreditMemoCustomerPictureContent](Remove-MgBetaFinancialCompanySaleCreditMemoCustomerPictureContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaFinancialCompanySaleCreditMemoCustomerShipmentMethod](Remove-MgBetaFinancialCompanySaleCreditMemoCustomerShipmentMethod.md)
 {{ Fill in the Description }}
 
@@ -890,6 +920,9 @@ Locale: en-US
 ### [Remove-MgBetaFinancialCompanySaleCreditMemoLineItemPicture](Remove-MgBetaFinancialCompanySaleCreditMemoLineItemPicture.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaFinancialCompanySaleCreditMemoLineItemPictureContent](Remove-MgBetaFinancialCompanySaleCreditMemoLineItemPictureContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaFinancialCompanySaleCreditMemoPaymentTerm](Remove-MgBetaFinancialCompanySaleCreditMemoPaymentTerm.md)
 {{ Fill in the Description }}
 
@@ -900,6 +933,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPicture](Remove-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPicture.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPictureContent](Remove-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPictureContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanySaleInvoiceCurrency](Remove-MgBetaFinancialCompanySaleInvoiceCurrency.md)
@@ -920,6 +956,9 @@ Locale: en-US
 ### [Remove-MgBetaFinancialCompanySaleInvoiceCustomerPicture](Remove-MgBetaFinancialCompanySaleInvoiceCustomerPicture.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaFinancialCompanySaleInvoiceCustomerPictureContent](Remove-MgBetaFinancialCompanySaleInvoiceCustomerPictureContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaFinancialCompanySaleInvoiceCustomerShipmentMethod](Remove-MgBetaFinancialCompanySaleInvoiceCustomerShipmentMethod.md)
 {{ Fill in the Description }}
 
@@ -930,6 +969,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanySaleInvoiceLineItemPicture](Remove-MgBetaFinancialCompanySaleInvoiceLineItemPicture.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaFinancialCompanySaleInvoiceLineItemPictureContent](Remove-MgBetaFinancialCompanySaleInvoiceLineItemPictureContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanySaleInvoicePaymentTerm](Remove-MgBetaFinancialCompanySaleInvoicePaymentTerm.md)
@@ -956,6 +998,9 @@ Locale: en-US
 ### [Remove-MgBetaFinancialCompanySaleOrderCustomerPicture](Remove-MgBetaFinancialCompanySaleOrderCustomerPicture.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaFinancialCompanySaleOrderCustomerPictureContent](Remove-MgBetaFinancialCompanySaleOrderCustomerPictureContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaFinancialCompanySaleOrderCustomerShipmentMethod](Remove-MgBetaFinancialCompanySaleOrderCustomerShipmentMethod.md)
 {{ Fill in the Description }}
 
@@ -966,6 +1011,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanySaleOrderLineItemPicture](Remove-MgBetaFinancialCompanySaleOrderLineItemPicture.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaFinancialCompanySaleOrderLineItemPictureContent](Remove-MgBetaFinancialCompanySaleOrderLineItemPictureContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanySaleOrderPaymentTerm](Remove-MgBetaFinancialCompanySaleOrderPaymentTerm.md)
@@ -989,6 +1037,9 @@ Locale: en-US
 ### [Remove-MgBetaFinancialCompanySaleQuoteCustomerPicture](Remove-MgBetaFinancialCompanySaleQuoteCustomerPicture.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaFinancialCompanySaleQuoteCustomerPictureContent](Remove-MgBetaFinancialCompanySaleQuoteCustomerPictureContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaFinancialCompanySaleQuoteCustomerShipmentMethod](Remove-MgBetaFinancialCompanySaleQuoteCustomerShipmentMethod.md)
 {{ Fill in the Description }}
 
@@ -999,6 +1050,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanySaleQuoteLineItemPicture](Remove-MgBetaFinancialCompanySaleQuoteLineItemPicture.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaFinancialCompanySaleQuoteLineItemPictureContent](Remove-MgBetaFinancialCompanySaleQuoteLineItemPictureContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanySaleQuotePaymentTerm](Remove-MgBetaFinancialCompanySaleQuotePaymentTerm.md)
@@ -1032,6 +1086,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaFinancialCompanyVendorPicture](Remove-MgBetaFinancialCompanyVendorPicture.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaFinancialCompanyVendorPictureContent](Remove-MgBetaFinancialCompanyVendorPictureContent.md)
 {{ Fill in the Description }}
 
 ### [Send-MgBetaFinancialCompanySalesInvoice](Send-MgBetaFinancialCompanySalesInvoice.md)
@@ -1435,5 +1492,4 @@ Locale: en-US
 
 ### [Update-MgBetaFinancialCompanyVendorPicture](Update-MgBetaFinancialCompanyVendorPicture.md)
 {{ Fill in the Description }}
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharealloweduserbyref
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPrintShareAllowedUserByRef
 
 ## SYNOPSIS
-The users who have access to print using the printer.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedUserByRef?view=graph-powershell-1.0)
+Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 
 ## SYNTAX
 
@@ -22,9 +19,19 @@ Get-MgBetaPrintShareAllowedUserByRef -PrinterShareId <String> [-Filter <String>]
 ```
 
 ## DESCRIPTION
-The users who have access to print using the printer.
+Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -224,6 +231,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharealloweduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharealloweduserbyref)
 
-
-
+[https://learn.microsoft.com/graph/api/printershare-list-allowedusers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printershare-list-allowedusers?view=graph-rest-beta)
 

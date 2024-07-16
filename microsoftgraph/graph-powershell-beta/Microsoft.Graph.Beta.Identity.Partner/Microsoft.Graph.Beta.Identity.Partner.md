@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 Module Guid: 1525dc26-296e-4bdc-93d0-76c21a870001
 Download Help Link: {{ Update Download Link }}
@@ -100,5 +100,4 @@ Locale: en-US
 
 ### [Update-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest](Update-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest.md)
 {{ Fill in the Description }}
-
 

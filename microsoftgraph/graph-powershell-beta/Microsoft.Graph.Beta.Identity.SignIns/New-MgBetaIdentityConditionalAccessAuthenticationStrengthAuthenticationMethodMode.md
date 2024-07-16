@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthauthenticationmethodmode
@@ -29,6 +29,22 @@ New-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMod
 
 ## DESCRIPTION
 Create new navigation property to authenticationMethodModes for identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -201,18 +217,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationMethodModeDetail>`: authenticationMethodModeDetail
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAuthenticationMethodModeDetail\>: authenticationMethodModeDetail
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AuthenticationMethod <String>]`: baseAuthenticationMethod
-  - `[DisplayName <String>]`: The display name of this mode
+  \[AuthenticationMethod \<String\>\]: baseAuthenticationMethod
+  \[DisplayName \<String\>\]: The display name of this mode
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthauthenticationmethodmode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthauthenticationmethodmode)
-
-
-
-
 

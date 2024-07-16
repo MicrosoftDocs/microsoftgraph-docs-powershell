@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycontinuouaccessevaluationpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityContinuouAccessEvaluationPolicy
 
 ## SYNOPSIS
-Represents entry point for continuous access evaluation policy.
+Read the properties and relationships of a continuousAccessEvaluationPolicy object.
 
 ## SYNTAX
 
@@ -19,20 +19,16 @@ Get-MgBetaIdentityContinuouAccessEvaluationPolicy [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Represents entry point for continuous access evaluation policy.
+Read the properties and relationships of a continuousAccessEvaluationPolicy object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaIdentityContinuouAccessEvaluationPolicy
-
-```
-This example shows how to use the Get-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -126,6 +122,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycontinuouaccessevaluationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycontinuouaccessevaluationpolicy)
 
-
-
+[https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-get?view=graph-rest-beta)
 
