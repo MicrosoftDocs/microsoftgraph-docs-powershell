@@ -32,18 +32,6 @@ Invoke-MgRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-Response
 ## DESCRIPTION
 Retry the group service provisioning.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -232,6 +220,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgretrygroupserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgretrygroupserviceprovisioning)
 
 [https://learn.microsoft.com/graph/api/group-retryserviceprovisioning?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-retryserviceprovisioning?view=graph-rest-1.0)
+
 
 
 

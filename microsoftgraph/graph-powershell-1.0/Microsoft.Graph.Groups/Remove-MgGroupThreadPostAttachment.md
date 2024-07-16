@@ -32,22 +32,6 @@ Remove-MgGroupThreadPostAttachment -InputObject <IGroupsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property attachments for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AttachmentId
@@ -294,6 +278,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthreadpostattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthreadpostattachment)
+
 
 
 

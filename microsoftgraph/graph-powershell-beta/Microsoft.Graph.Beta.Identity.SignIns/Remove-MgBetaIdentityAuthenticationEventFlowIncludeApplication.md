@@ -32,18 +32,6 @@ Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication -InputObject <IId
 Remove or unlink an application from an external identities self-service sign-up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 This disables the authentication experience that's defined by the user flow for the application.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationConditionApplicationAppId
@@ -300,6 +288,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflowincludeapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflowincludeapplication)
 
 [https://learn.microsoft.com/graph/api/authenticationconditionapplication-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationconditionapplication-delete?view=graph-rest-beta)
+
 
 
 

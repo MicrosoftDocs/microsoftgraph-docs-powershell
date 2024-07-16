@@ -41,18 +41,6 @@ Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Get appliesTo from policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -399,6 +387,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicyapplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicyapplyto)
 
 [https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list-appliesto?view=graph-rest-beta](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list-appliesto?view=graph-rest-beta)
+
 
 
 

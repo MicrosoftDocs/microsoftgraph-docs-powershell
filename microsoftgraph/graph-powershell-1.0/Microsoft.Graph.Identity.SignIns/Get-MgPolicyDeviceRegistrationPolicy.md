@@ -23,18 +23,6 @@ Get-MgPolicyDeviceRegistrationPolicy [-Property <String[]>] [-ResponseHeadersVar
 ## DESCRIPTION
 Get deviceRegistrationPolicy from policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -111,6 +99,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy)
+
 
 
 

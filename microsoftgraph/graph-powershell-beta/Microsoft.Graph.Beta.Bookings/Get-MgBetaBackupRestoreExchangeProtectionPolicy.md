@@ -37,18 +37,6 @@ Get-MgBetaBackupRestoreExchangeProtectionPolicy -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 The list of Exchange protection policies in the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -342,6 +330,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoreexchangeprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoreexchangeprotectionpolicy)
+
 
 
 

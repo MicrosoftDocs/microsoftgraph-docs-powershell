@@ -21,18 +21,6 @@ Get-MgBetaPolicyFederatedTokenValidationPolicy [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Read the properties and relationships of a federatedTokenValidationPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -126,6 +114,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfederatedtokenvalidationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfederatedtokenvalidationpolicy)
 
 [https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-get?view=graph-rest-beta)
+
 
 
 

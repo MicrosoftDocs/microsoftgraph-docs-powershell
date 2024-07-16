@@ -25,18 +25,6 @@ Get-MgBetaServicePrincipalDelta [-ExpandProperty <String[]>] [-Filter <String>] 
 ## DESCRIPTION
 Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -251,6 +239,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-delta?view=graph-rest-beta)
+
 
 
 

@@ -34,18 +34,6 @@ Remove-MgBetaTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIden
 Remove a tenant from a multitenant organization.
 A tenant can be removed in the following scenarios: To allow for asynchronous processing, you must wait for up to 2 hours before removal of a tenant is completed.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -287,6 +275,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatenantrelationshipmultitenantorganizationtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatenantrelationshipmultitenantorganizationtenant)
 
 [https://learn.microsoft.com/graph/api/multitenantorganization-delete-tenants?view=graph-rest-beta](https://learn.microsoft.com/graph/api/multitenantorganization-delete-tenants?view=graph-rest-beta)
+
 
 
 

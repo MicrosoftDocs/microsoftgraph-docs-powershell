@@ -47,18 +47,6 @@ Update-MgBetaUserAuthenticationSignInPreference -InputObject <IIdentitySignInsId
 Update the properties of a user's authentication method states.
 Use this API to update the following information:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -337,6 +325,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationsigninpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationsigninpreference)
 
 [https://learn.microsoft.com/graph/api/authentication-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authentication-update?view=graph-rest-beta)
+
 
 
 

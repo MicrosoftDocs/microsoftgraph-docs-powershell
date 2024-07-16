@@ -45,18 +45,6 @@ Get a list of the group's direct members.
 A group can have users, contacts, devices, service principals, and other groups as members.
 This operation isn't transitive.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -386,6 +374,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberasserviceprincipal)
 
 [https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-beta)
+
 
 
 

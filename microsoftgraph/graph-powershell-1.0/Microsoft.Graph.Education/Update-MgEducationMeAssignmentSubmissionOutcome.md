@@ -49,18 +49,6 @@ Update-MgEducationMeAssignmentSubmissionOutcome -InputObject <IEducationIdentity
 ## DESCRIPTION
 Update the navigation property outcomes in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -346,6 +334,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentsubmissionoutcome)
+
 
 
 

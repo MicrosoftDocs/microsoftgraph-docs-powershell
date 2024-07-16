@@ -31,18 +31,6 @@ Get-MgBetaUserAuthenticationSignInPreference -InputObject <IIdentitySignInsIdent
 Read the properties of a user's authentication states.
 Use this API to retrieve the following information:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -253,6 +241,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationsigninpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationsigninpreference)
 
 [https://learn.microsoft.com/graph/api/authentication-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authentication-get?view=graph-rest-beta)
+
 
 
 

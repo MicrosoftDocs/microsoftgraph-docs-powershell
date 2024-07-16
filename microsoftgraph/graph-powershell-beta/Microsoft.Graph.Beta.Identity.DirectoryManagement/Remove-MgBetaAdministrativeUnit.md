@@ -29,18 +29,6 @@ Remove-MgBetaAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdenti
 ## DESCRIPTION
 Delete an administrativeUnit.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdministrativeUnitId
@@ -250,6 +238,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadministrativeunit)
 
 [https://learn.microsoft.com/graph/api/administrativeunit-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/administrativeunit-delete?view=graph-rest-beta)
+
 
 
 

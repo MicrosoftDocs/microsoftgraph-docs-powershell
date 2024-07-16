@@ -29,18 +29,6 @@ Get-MgBetaCommunicationOnlineMeetingBroadcastRecording -InputObject <ICloudCommu
 ## DESCRIPTION
 Get broadcastRecording for the navigation property onlineMeetings from communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -189,6 +177,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingbroadcastrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingbroadcastrecording)
+
 
 
 

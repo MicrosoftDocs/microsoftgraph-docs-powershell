@@ -78,18 +78,6 @@ During schedule provisioning, clients can use the GET method to get the schedule
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivitiesIncludedWhenCopyingShiftsEnabled
@@ -1332,6 +1320,7 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamschedule)
 
 [https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-beta](https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-beta)
+
 
 
 

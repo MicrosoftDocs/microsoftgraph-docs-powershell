@@ -41,18 +41,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask -InputObject <IIdentity
 ## DESCRIPTION
 Get a specific task from a workflow or workflowVersion.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -436,6 +424,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/identitygovernance-task-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-task-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-workflowversion-list-tasks?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-workflowversion-list-tasks?view=graph-rest-beta)
+
 
 
 

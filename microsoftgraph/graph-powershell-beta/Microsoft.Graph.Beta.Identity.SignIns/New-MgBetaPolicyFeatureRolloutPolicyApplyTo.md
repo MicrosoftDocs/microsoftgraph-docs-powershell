@@ -48,18 +48,6 @@ New-MgBetaPolicyFeatureRolloutPolicyApplyTo -InputObject <IIdentitySignInsIdenti
 ## DESCRIPTION
 Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject to which the featureRolloutPolicy should be applied.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -342,6 +330,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyfeaturerolloutpolicyapplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyfeaturerolloutpolicyapplyto)
 
 [https://learn.microsoft.com/graph/api/featurerolloutpolicy-post-appliesto?view=graph-rest-beta](https://learn.microsoft.com/graph/api/featurerolloutpolicy-post-appliesto?view=graph-rest-beta)
+
 
 
 

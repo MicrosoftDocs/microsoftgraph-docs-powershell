@@ -32,18 +32,6 @@ It allows you to maintain and synchronize a local store of a user's sites withou
 After you receive all the changes, you can apply them to your local state.To monitor future changes, call the delta API by using the @odata.deltaLink in the previous response.
 Any resources marked as deleted should be removed from your local state.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -258,6 +246,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedelta)
 
 [https://learn.microsoft.com/graph/api/site-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-delta?view=graph-rest-1.0)
+
 
 
 

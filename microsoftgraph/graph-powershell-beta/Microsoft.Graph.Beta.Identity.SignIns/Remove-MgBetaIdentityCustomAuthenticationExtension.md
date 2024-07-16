@@ -32,22 +32,6 @@ Remove-MgBetaIdentityCustomAuthenticationExtension -InputObject <IIdentitySignIn
 ## DESCRIPTION
 Delete a customAuthenticationExtension object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CustomAuthenticationExtensionId
@@ -289,6 +273,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentitycustomauthenticationextension)
 
 [https://learn.microsoft.com/graph/api/customauthenticationextension-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customauthenticationextension-delete?view=graph-rest-beta)
+
 
 
 

@@ -46,18 +46,6 @@ Remove-MgBetaGroupPasswordSingleSignOnCredential -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Delete the password-based single sign-on credentials for a given group to a given service principal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -302,6 +290,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouppasswordsinglesignoncredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouppasswordsinglesignoncredential)
 
 [https://learn.microsoft.com/graph/api/group-deletepasswordsinglesignoncredentials?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-deletepasswordsinglesignoncredentials?view=graph-rest-beta)
+
 
 
 
