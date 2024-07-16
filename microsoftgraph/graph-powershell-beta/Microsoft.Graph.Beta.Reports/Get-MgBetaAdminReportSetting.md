@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsetting
@@ -126,4 +126,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsetting)
 
 [https://learn.microsoft.com/graph/api/adminreportsettings-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/adminreportsettings-get?view=graph-rest-beta)
+
+
+
 

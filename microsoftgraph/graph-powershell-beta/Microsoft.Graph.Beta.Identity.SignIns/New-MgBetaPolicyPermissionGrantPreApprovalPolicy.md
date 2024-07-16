@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpreapprovalpolicy
@@ -215,35 +215,38 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPermissionGrantPreApprovalPolicy\>: permissionGrantPreApprovalPolicy
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+BODYPARAMETER `<IMicrosoftGraphPermissionGrantPreApprovalPolicy>`: permissionGrantPreApprovalPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Conditions \<IMicrosoftGraphPreApprovalDetail\[\]\>\]: A list of condition sets describing the conditions under which the permission to grant consent for the app has been preapproved.
-    \[Permissions \<IMicrosoftGraphPreApprovedPermissions\>\]: preApprovedPermissions
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[PermissionKind \<String\>\]: permissionKind
-      \[PermissionType \<String\>\]: permissionType
-    \[ScopeType \<String\>\]: resourceScopeType
-    \[SensitivityLabels \<IMicrosoftGraphScopeSensitivityLabels\>\]: scopeSensitivityLabels
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[LabelKind \<String\>\]: labelKind
+  - `[Conditions <IMicrosoftGraphPreApprovalDetail- `[]`>]`: A list of condition sets describing the conditions under which the permission to grant consent for the app has been preapproved.
+    - `[Permissions <IMicrosoftGraphPreApprovedPermissions>]`: preApprovedPermissions
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[PermissionKind <String>]`: permissionKind
+      - `[PermissionType <String>]`: permissionType
+    - `[ScopeType <String>]`: resourceScopeType
+    - `[SensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]`: scopeSensitivityLabels
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[LabelKind <String>]`: labelKind
 
-CONDITIONS \<IMicrosoftGraphPreApprovalDetail\[\]\>: A list of condition sets describing the conditions under which the permission to grant consent for the app has been preapproved.
-  \[Permissions \<IMicrosoftGraphPreApprovedPermissions\>\]: preApprovedPermissions
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[PermissionKind \<String\>\]: permissionKind
-    \[PermissionType \<String\>\]: permissionType
-  \[ScopeType \<String\>\]: resourceScopeType
-  \[SensitivityLabels \<IMicrosoftGraphScopeSensitivityLabels\>\]: scopeSensitivityLabels
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[LabelKind \<String\>\]: labelKind
+CONDITIONS <IMicrosoftGraphPreApprovalDetail- `[]`>: A list of condition sets describing the conditions under which the permission to grant consent for the app has been preapproved.
+  - `[Permissions <IMicrosoftGraphPreApprovedPermissions>]`: preApprovedPermissions
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[PermissionKind <String>]`: permissionKind
+    - `[PermissionType <String>]`: permissionType
+  - `[ScopeType <String>]`: resourceScopeType
+  - `[SensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]`: scopeSensitivityLabels
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[LabelKind <String>]`: labelKind
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpreapprovalpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpreapprovalpolicy)
 
 [https://learn.microsoft.com/graph/api/policyroot-post-permissiongrantpreapprovalpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/policyroot-post-permissiongrantpreapprovalpolicies?view=graph-rest-beta)
+
+
+
 
