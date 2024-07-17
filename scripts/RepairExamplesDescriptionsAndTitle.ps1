@@ -9,35 +9,43 @@ Param(
 
 function Start-Copy {
 
-    $GraphProfilePath = "graph-powershell-1.0"
+    
     $ModulePrefix = "Microsoft.Graph"
-
+    $Count = 0
 
     if (Test-Path $CommandMetadataPath) {
         $CommandMetadataContent = Get-Content $CommandMetadataPath | ConvertFrom-Json
         $CommandMetadataContent | ForEach-Object {
             $ModuleName = $_.Module
             $GraphProfile = $_.ApiVersion
+            $Command = $_.Command
+            $GraphProfilePath = "graph-powershell-1.0"
             if($GraphProfile -eq "beta") {
                 $GraphProfilePath = "graph-powershell-beta"
                 $ModulePrefix = "Microsoft.Graph.Beta"
                 $ModuleName = $ModuleName.Replace("Beta.", "")
             }
-            $docs = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples"
+            $Count++
+            $DocPath = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples" "$Command.md"
             try {
-                Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
+                Copy-Files -DocPath $DocPath -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile -Command $Command
             }
             catch {
-                Write-Host "Failed to copy files for module $ModuleName" 
+                Write-Host "`nError Message: " $_.Exception.Message
+                Write-Host "`nError in Line: " $_.InvocationInfo.Line
+                Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+                Write-Host "`nError Item Name: "$_.Exception.ItemName
             }
         
         }
+        Write-Host "Total number of files copied: $Count"
         git config --global user.email "GraphTooling@service.microsoft.com"
         git config --global user.name "Microsoft Graph DevX Tooling"
         git add .
-        git commit -m "Repaired examples descriptions and titles" 
+        git commit -m "Repaired examples and descriptions" 
 
     }
+    
 }
 function Copy-Files {
     param(
@@ -50,41 +58,39 @@ function Copy-Files {
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph",
         [ValidateNotNullOrEmpty()]
-        [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\v1.0\examples"
+        [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\v1.0\examples\Get-MgUser.md",
+        [ValidateNotNullOrEmpty()]
+        [string] $Command = "Get-MgUser"
     )
     try {
         $Path = "$ModulePrefix.$ModuleName"
-        $Destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
-
+        Write-Host $DocPath
+        $DestinationFile = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path "$Command.md"
         if ((Test-Path $DocPath)) {
-       
-            foreach ($File in Get-ChildItem $DocPath) {
                 # Read the content of the file searching for example headers.
-                $EmptyFile = Test-FileEmpty $File
-                $Command = [System.IO.Path]::GetFileName($File)
+                $EmptyFile = Test-FileEmpty $DocPath
                 
-                $DestinationFile = Join-Path $Destination $Command
                 if (!(Test-Path $DestinationFile)) {
                     Write-Host "File does not exist $DestinationFile"
                     continue
                 }
                 if ($EmptyFile) {
-                    Write-Host "File is empty $File"
+                    #Write-Host "File is empty $DocPath"
                     #For removing existing wrong examples and descriptions
                     Remove-WrongExamples -File $DestinationFile
                 }
                 else {
-                    $Content = Get-Content -Path $File
+                    $Content = Get-Content -Path $DocPath
                     Import-Descriptions -Content $Content -File $DestinationFile
                 }
             }
-            
- 
-        } 
     
     }
-    catch {
-        Write-Host "Error occured while copying files" 
+    catch { 
+        Write-Host "`nError Message: " $_.Exception.Message
+        Write-Host "`nError in Line: " $_.InvocationInfo.Line
+        Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+        Write-Host "`nError Item Name: "$_.Exception.ItemName
     }
 }
 
