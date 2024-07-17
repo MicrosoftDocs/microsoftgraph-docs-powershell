@@ -354,3 +354,36 @@ BODYPARAMETER `<IPaths3CrhpzDevicemanagementReportsMicrosoftGraphGetdeviceconfig
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

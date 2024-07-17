@@ -33,13 +33,17 @@ Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentity
 Delete a users's temporaryAccessPassAuthenticationMethod object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod -UserId $userId -TemporaryAccessPassAuthenticationMethodId $temporaryAccessPassAuthenticationMethodId
+
+```
+This example shows how to use the Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod Cmdlet.
+
 
 ## PARAMETERS
 

@@ -48,15 +48,6 @@ Update-MgBetaDataPolicyOperation -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update entity in dataPolicyOperations
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
-
-Get-MgBetaDataPolicyOperation -DataPolicyOperationId $dataPolicyOperationId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -421,6 +412,11 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetadatapolicyoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetadatapolicyoperation)
+
+
+
+
+
 
 
 

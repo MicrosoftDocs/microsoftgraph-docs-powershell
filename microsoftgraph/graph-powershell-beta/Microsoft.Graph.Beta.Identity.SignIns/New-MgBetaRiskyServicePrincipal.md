@@ -35,15 +35,6 @@ New-MgBetaRiskyServicePrincipal -BodyParameter <IMicrosoftGraphRiskyServicePrinc
 ## DESCRIPTION
 Create new navigation property to riskyServicePrincipals for identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
-
-Get-MgBetaRiskyServicePrincipal
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -428,6 +419,11 @@ The possible values are: investigationsThreatIntelligence, generic, adminConfirm
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyserviceprincipal)
+
+
+
+
+
 
 
 

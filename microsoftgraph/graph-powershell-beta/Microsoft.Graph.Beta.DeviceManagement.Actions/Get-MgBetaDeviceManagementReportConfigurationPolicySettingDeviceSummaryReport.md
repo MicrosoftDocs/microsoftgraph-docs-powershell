@@ -354,3 +354,36 @@ BODYPARAMETER `<IPaths7Mtw3WDevicemanagementReportsMicrosoftGraphGetconfiguratio
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

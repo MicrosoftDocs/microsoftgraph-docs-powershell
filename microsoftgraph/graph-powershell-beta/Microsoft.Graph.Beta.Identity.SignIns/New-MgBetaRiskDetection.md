@@ -36,15 +36,6 @@ New-MgBetaRiskDetection -BodyParameter <IMicrosoftGraphRiskDetection> [-Response
 ## DESCRIPTION
 Create new navigation property to riskDetections for identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
-
-Get-MgBetaRiskDetection
-
 ## PARAMETERS
 
 ### -Activity
@@ -591,6 +582,11 @@ This is calculated using latitude/longitude information from the sign-in activit
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskdetection)
+
+
+
+
+
 
 
 

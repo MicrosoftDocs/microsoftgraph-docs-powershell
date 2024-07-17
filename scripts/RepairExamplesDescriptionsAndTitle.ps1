@@ -20,16 +20,22 @@ function Start-Copy {
             $GraphProfile = $_.ApiVersion
             if($GraphProfile -eq "beta") {
                 $GraphProfilePath = "graph-powershell-beta"
+                $ModulePrefix = "Microsoft.Graph.Beta"
+                $ModuleName = $ModuleName.Replace("Beta.", "")
             }
-            $docs = Join-Path $SDKDocsPath $ModuleName.Replace("Beta.", "") $GraphProfile "examples"
+            $docs = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples"
             try {
-                Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName.Replace("Beta.", "") -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
+                Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
             }
             catch {
                 Write-Host "Failed to copy files for module $ModuleName" 
             }
         
         }
+        git config --global user.email "GraphTooling@service.microsoft.com"
+        git config --global user.name "Microsoft Graph DevX Tooling"
+        git add .
+        git commit -m "Repaired examples descriptions and titles" 
 
     }
 }

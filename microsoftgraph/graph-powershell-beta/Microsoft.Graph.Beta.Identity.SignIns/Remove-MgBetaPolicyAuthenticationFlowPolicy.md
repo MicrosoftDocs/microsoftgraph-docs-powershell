@@ -24,21 +24,6 @@ Remove-MgBetaPolicyAuthenticationFlowPolicy [-IfMatch <String>] [-ResponseHeader
 ## DESCRIPTION
 Delete navigation property authenticationFlowsPolicy for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
-
-$params = @{
-	selfServiceSignUp = @{
-		isEnabled = $true
-	}
-}
-
-Update-MgBetaPolicyAuthenticationFlowPolicy -BodyParameter $params
-
 ## PARAMETERS
 
 ### -Headers
@@ -161,6 +146,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationflowpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationflowpolicy)
+
+
+
+
+
 
 
 

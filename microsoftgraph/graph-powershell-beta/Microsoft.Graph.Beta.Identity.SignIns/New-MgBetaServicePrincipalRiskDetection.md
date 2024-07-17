@@ -38,22 +38,6 @@ New-MgBetaServicePrincipalRiskDetection -BodyParameter <IMicrosoftGraphServicePr
 ## DESCRIPTION
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
-
-Get-MgBetaServicePrincipalRiskDetection
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
-
-Get-MgBetaServicePrincipalRiskDetection -Filter "riskEventType eq 'investigationsThreatIntelligence' or riskLevel eq 'medium'"
-
 ## PARAMETERS
 
 ### -Activity
@@ -600,6 +584,11 @@ This is calculated using latitude/longitude information from the sign-in activit
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaserviceprincipalriskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaserviceprincipalriskdetection)
+
+
+
+
+
 
 
 

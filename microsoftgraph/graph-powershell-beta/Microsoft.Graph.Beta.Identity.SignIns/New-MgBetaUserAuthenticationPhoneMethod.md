@@ -59,11 +59,11 @@ Adding a phone number makes it available for use in both Azure multifactor authe
 Additionally, if a user is enabled by policy to use SMS sign-in and a mobile number is added, the system attempts to register the number for use in that system.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	phoneNumber = "+1 2065555555"
@@ -71,6 +71,10 @@ $params = @{
 }
 
 New-MgBetaUserAuthenticationPhoneMethod -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserAuthenticationPhoneMethod Cmdlet.
+
 
 ## PARAMETERS
 
