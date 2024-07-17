@@ -632,3 +632,9 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>
 
 
 
+
+
+
+
+
+

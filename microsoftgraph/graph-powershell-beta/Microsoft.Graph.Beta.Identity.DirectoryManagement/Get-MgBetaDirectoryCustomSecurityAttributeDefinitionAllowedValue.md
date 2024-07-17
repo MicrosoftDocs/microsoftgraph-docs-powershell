@@ -47,13 +47,17 @@ This navigation property is not returned by default and must be specified in an 
 For example, /directory/customSecurityAttributeDefinitions?$expand=allowedValues.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId
+
+```
+This example shows how to use the Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue Cmdlet.
+
 
 ## PARAMETERS
 

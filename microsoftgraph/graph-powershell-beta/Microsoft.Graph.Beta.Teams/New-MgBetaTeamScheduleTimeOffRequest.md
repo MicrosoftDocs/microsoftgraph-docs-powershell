@@ -52,15 +52,6 @@ New-MgBetaTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to timeOffRequests for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Teams
-```
-
-Get-MgBetaTeamScheduleTimeOffRequest -TeamId $teamId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -466,6 +457,20 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffrequest)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

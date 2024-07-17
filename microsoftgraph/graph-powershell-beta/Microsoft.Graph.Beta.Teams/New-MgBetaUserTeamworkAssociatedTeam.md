@@ -48,16 +48,6 @@ New-MgBetaUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to associatedTeams for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Teams
-```
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserTeamworkAssociatedTeam -UserId $userId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -8194,6 +8184,20 @@ This URL should be treated as an opaque blob, and not parsed.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserteamworkassociatedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserteamworkassociatedteam)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

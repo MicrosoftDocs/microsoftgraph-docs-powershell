@@ -38,15 +38,6 @@ The content property will have a potentially breaking change in behavior in the 
 It will stream content directly instead of redirecting.
 To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Teams
-```
-
-Get-MgBetaTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -282,6 +273,20 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamchannelfilefoldercontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamchannelfilefoldercontent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -47,29 +47,6 @@ New-MgBetaTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> -BodyPar
 ## DESCRIPTION
 Create new navigation property to hostedContents for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Teams
-```
-
-Get-MgBetaTeamChannelMessageHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.Teams
-```
-
-Get-MgBetaTeamChannelMessageReplyHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Teams
-```
-
-Get-MgBetaChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -350,6 +327,20 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessagehostedcontent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
