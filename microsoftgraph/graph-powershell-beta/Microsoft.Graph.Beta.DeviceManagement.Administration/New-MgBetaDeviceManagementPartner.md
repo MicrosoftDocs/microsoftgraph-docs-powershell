@@ -559,3 +559,18 @@ GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignme
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

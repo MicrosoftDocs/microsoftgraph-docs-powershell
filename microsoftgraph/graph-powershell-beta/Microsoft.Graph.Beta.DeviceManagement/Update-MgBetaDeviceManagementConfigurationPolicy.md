@@ -1274,3 +1274,21 @@ TEMPLATEREFERENCE `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateRe
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

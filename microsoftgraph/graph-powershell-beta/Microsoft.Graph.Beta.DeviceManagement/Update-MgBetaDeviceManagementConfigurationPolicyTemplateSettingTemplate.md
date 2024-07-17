@@ -1065,3 +1065,21 @@ SETTINGINSTANCETEMPLATE `<IMicrosoftGraphDeviceManagementConfigurationSettingIns
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

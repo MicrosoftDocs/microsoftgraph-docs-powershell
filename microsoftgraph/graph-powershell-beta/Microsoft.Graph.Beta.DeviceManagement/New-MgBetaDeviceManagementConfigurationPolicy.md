@@ -1078,3 +1078,21 @@ TEMPLATEREFERENCE `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateRe
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
