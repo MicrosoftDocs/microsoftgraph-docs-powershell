@@ -31,22 +31,6 @@ Get-MgReportTeamDeviceUsageUserCount -InputObject <IReportsIdentity> -OutFile <S
 ## DESCRIPTION
 Get the number of Microsoft Teams daily unique users by device type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -200,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusageusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusageusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-1.0)
+
 
 
 

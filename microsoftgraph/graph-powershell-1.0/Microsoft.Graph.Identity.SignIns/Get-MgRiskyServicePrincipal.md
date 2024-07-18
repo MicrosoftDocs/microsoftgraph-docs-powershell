@@ -40,18 +40,6 @@ Get-MgRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-ExpandProp
 ## DESCRIPTION
 Microsoft Entra service principals that are at risk.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -360,6 +348,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyserviceprincipal)
+
 
 
 

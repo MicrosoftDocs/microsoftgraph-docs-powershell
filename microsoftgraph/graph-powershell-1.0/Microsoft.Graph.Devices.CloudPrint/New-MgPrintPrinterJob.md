@@ -54,18 +54,6 @@ New-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <
 Create a new printJob for a printer.
 Also creates a new printDocument associated with the printJob.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -601,6 +589,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinterjob)
 
 [https://learn.microsoft.com/graph/api/printer-post-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-post-jobs?view=graph-rest-1.0)
+
 
 
 

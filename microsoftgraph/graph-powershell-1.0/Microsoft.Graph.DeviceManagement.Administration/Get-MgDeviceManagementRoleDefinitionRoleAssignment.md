@@ -40,22 +40,6 @@ Get-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManageme
 ## DESCRIPTION
 Read properties and relationships of the roleAssignment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -350,6 +334,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-list?view=graph-rest-1.0)
+
 
 
 

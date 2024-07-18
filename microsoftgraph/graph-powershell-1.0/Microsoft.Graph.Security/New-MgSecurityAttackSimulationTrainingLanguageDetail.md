@@ -52,18 +52,6 @@ New-MgSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecurityIden
 ## DESCRIPTION
 Create new navigation property to languageDetails for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -487,6 +475,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationtraininglanguagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationtraininglanguagedetail)
+
 
 
 

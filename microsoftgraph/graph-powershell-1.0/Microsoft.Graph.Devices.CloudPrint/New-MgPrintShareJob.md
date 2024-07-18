@@ -54,18 +54,6 @@ New-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IM
 Create a new printJob for a printerShare.
 Also creates a new printDocument associated with the printJob.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -601,6 +589,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejob)
 
 [https://learn.microsoft.com/graph/api/printershare-post-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-post-jobs?view=graph-rest-1.0)
+
 
 
 

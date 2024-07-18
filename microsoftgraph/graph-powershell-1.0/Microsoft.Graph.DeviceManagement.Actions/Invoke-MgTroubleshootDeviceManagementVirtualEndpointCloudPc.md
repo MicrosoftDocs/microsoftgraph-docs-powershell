@@ -37,18 +37,6 @@ Use this API to check the health status of the Cloud PC and the session host.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-troubleshoot-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -212,6 +200,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgtroubleshootdevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgtroubleshootdevicemanagementvirtualendpointcloudpc)
 
 [https://learn.microsoft.com/graph/api/cloudpc-troubleshoot?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-troubleshoot?view=graph-rest-1.0)
+
 
 
 

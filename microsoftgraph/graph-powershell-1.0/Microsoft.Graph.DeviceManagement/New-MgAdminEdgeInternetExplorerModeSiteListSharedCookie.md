@@ -54,18 +54,6 @@ New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDeviceMan
 ## DESCRIPTION
 Create a new browserSharedCookie object in a browserSiteList.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -549,6 +537,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsharedcookie)
 
 [https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-1.0)
+
 
 
 

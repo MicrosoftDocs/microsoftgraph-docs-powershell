@@ -30,18 +30,6 @@ Get-MgReportTeamCount -InputObject <IReportsIdentity> -OutFile <String> [-Respon
 ## DESCRIPTION
 Get the number of teams of a particular type in an instance of Microsoft Teams.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -195,6 +183,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getteamsteamcounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getteamsteamcounts?view=graph-rest-1.0)
+
 
 
 

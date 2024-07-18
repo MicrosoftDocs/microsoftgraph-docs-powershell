@@ -31,18 +31,6 @@ Set-MgOrganizationBrandingLocalizationBannerLogo -InputObject <IIdentityDirector
 ## DESCRIPTION
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentType
@@ -280,6 +268,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationbannerlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationbannerlogo)
 
 [https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-1.0)
+
 
 
 

@@ -32,18 +32,6 @@ Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice
 ## DESCRIPTION
 Unassigns the user from an Autopilot device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -207,6 +195,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgunassigndevicemanagementwindowsautopilotdeviceidentityuserfromdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgunassigndevicemanagementwindowsautopilotdeviceidentityuserfromdevice)
 
 [https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice?view=graph-rest-1.0)
+
 
 
 

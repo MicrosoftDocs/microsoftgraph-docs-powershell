@@ -40,18 +40,6 @@ Get-MgSitePageAsSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Returns the metadata for a sitePage in the site pages list in a site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -363,6 +351,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepage)
 
 [https://learn.microsoft.com/graph/api/sitepage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sitepage-get?view=graph-rest-1.0)
+
 
 
 

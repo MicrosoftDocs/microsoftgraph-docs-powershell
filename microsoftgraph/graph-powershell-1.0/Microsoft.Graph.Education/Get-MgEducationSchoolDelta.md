@@ -27,18 +27,6 @@ Get-MgEducationSchoolDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pro
 Get newly created or updated schools without having to perform a full read of the entire school collection.
 See Use delta query for details.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -253,6 +241,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooldelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooldelta)
 
 [https://learn.microsoft.com/graph/api/educationschool-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-delta?view=graph-rest-1.0)
+
 
 
 

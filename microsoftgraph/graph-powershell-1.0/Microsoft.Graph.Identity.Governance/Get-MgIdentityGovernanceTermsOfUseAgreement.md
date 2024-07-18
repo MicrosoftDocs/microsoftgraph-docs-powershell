@@ -40,18 +40,6 @@ Get-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Retrieve the properties and relationships of an agreement object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementId
@@ -373,6 +361,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/agreement-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-1.0)
+
 
 
 

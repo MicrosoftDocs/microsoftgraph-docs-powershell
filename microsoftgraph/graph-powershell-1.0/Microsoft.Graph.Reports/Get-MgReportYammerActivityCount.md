@@ -31,22 +31,6 @@ Get-MgReportYammerActivityCount -InputObject <IReportsIdentity> -OutFile <String
 ## DESCRIPTION
 Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -200,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivitycount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-1.0)
+
 
 
 

@@ -33,18 +33,6 @@ Get-MgReportMailboxUsageMailboxCount -InputObject <IReportsIdentity> -OutFile <S
 Get the total number of user mailboxes in your organization and how many are active each day of the reporting period.
 A mailbox is considered active if the user sent or read any email.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -198,6 +186,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagemailboxcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagemailboxcount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-1.0)
+
 
 
 

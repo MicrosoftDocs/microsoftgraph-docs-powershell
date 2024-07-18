@@ -31,22 +31,6 @@ Get-MgReportSharePointSiteUsagePage -InputObject <IReportsIdentity> -OutFile <St
 ## DESCRIPTION
 Get the number of pages viewed across all sites.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -200,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagepage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagepage)
 
 [https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-1.0)
+
 
 
 

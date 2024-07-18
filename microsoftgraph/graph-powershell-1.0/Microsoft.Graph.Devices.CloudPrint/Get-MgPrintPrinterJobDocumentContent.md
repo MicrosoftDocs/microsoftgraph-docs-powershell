@@ -34,18 +34,6 @@ Get-MgPrintPrinterJobDocumentContent -InputObject <IDevicesCloudPrintIdentity> -
 Download the binary file associated with a printDocument.
 Calling this method yields a redirect response with a preauthenticated URL that can be used to download the payload.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -220,6 +208,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjobdocumentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjobdocumentcontent)
 
 [https://learn.microsoft.com/graph/api/printdocument-get-file?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printdocument-get-file?view=graph-rest-1.0)
+
 
 
 

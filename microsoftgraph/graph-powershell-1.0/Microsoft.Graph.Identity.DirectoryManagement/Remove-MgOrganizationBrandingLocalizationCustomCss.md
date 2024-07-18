@@ -32,18 +32,6 @@ Remove-MgOrganizationBrandingLocalizationCustomCss -InputObject <IIdentityDirect
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -245,6 +233,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbrandinglocalizationcustomcss](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbrandinglocalizationcustomcss)
+
 
 
 

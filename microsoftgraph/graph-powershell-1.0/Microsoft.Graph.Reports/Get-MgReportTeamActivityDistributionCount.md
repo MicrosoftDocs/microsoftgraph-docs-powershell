@@ -32,18 +32,6 @@ Get-MgReportTeamActivityDistributionCount -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Get the number of team activities across Microsoft Teams over a selected period.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -197,6 +185,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydistributioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydistributioncount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getteamsteamactivitydistributioncounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getteamsteamactivitydistributioncounts?view=graph-rest-1.0)
+
 
 
 

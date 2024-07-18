@@ -49,18 +49,6 @@ Update-MgDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDirec
 ## DESCRIPTION
 Update the properties of a customSecurityAttributeDefinition object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -469,6 +457,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinition)
 
 [https://learn.microsoft.com/graph/api/customsecurityattributedefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-update?view=graph-rest-1.0)
+
 
 
 

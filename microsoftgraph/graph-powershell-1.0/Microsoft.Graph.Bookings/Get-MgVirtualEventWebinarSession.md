@@ -40,18 +40,6 @@ Get-MgVirtualEventWebinarSession -InputObject <IBookingsIdentity> [-ExpandProper
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventSession object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -334,6 +322,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsession)
 
 [https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-1.0)
+
 
 
 

@@ -53,18 +53,6 @@ Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministratio
 ## DESCRIPTION
 Update the properties of a auditEvent object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activity
@@ -489,6 +477,7 @@ RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent)
 
 [https://learn.microsoft.com/graph/api/intune-auditing-auditevent-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-update?view=graph-rest-1.0)
+
 
 
 

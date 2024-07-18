@@ -41,22 +41,6 @@ This allows you to maintain and synchronizea local store of a user's mail folder
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-delta-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -350,6 +334,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermailfolderdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermailfolderdelta)
 
 [https://learn.microsoft.com/graph/api/mailfolder-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-delta?view=graph-rest-1.0)
+
 
 
 

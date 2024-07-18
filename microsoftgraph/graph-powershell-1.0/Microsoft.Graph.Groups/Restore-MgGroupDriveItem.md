@@ -51,22 +51,6 @@ Restore-MgGroupDriveItem -InputObject <IGroupsIdentity>
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 NOTE: This functionality is currently only available for OneDrive Personal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -394,6 +378,7 @@ For OneDrive, this property is not populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdriveitem)
 
 [https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0)
+
 
 
 

@@ -33,22 +33,6 @@ Get-MgReportOneDriveUsageFileCount -InputObject <IReportsIdentity> -OutFile <Str
 Get the total number of files across all sites and how many are active files.
 A file is considered active if it has been saved, synced, modified, or shared within the specified time period.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -202,6 +186,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagefilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagefilecount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-1.0)
+
 
 
 

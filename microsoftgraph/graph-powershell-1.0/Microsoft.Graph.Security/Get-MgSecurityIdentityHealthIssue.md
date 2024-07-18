@@ -40,18 +40,6 @@ Get-MgSecurityIdentityHealthIssue -InputObject <ISecurityIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get healthIssues from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -363,6 +351,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityhealthissue](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityhealthissue)
+
 
 
 

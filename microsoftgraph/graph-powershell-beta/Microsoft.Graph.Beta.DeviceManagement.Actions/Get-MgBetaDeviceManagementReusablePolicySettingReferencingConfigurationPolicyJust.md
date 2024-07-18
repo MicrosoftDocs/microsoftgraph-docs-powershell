@@ -30,18 +30,6 @@ Get-MgBetaDeviceManagementReusablePolicySettingReferencingConfigurationPolicyJus
 ## DESCRIPTION
 Invoke action retrieveJustInTimeConfiguration
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementConfigurationPolicyId
@@ -241,6 +229,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreusablepolicysettingreferencingconfigurationpolicyjust](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreusablepolicysettingreferencingconfigurationpolicyjust)
+
 
 
 

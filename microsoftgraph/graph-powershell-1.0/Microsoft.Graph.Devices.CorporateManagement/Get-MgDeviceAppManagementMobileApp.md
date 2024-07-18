@@ -40,18 +40,6 @@ Get-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIden
 ## DESCRIPTION
 Read properties and relationships of the mobileLobApp object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -341,6 +329,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-apps-mobilelobapp-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobilelobapp-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-apps-managedioslobapp-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-managedioslobapp-list?view=graph-rest-1.0)
+
 
 
 

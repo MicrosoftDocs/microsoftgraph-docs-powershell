@@ -44,18 +44,6 @@ Get-MgDeviceTransitiveMemberOfAsGroup -InputObject <IIdentityDirectoryManagement
 Get the groups and administrative units that the device is a member of.
 This API request is transitive, and will also return all groups and administrative units the device is a nested member of.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -365,6 +353,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberofasgroup)
 
 [https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-1.0)
+
 
 
 

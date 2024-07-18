@@ -32,22 +32,6 @@ Remove-MgRiskyUser -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property riskyUsers for identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -266,6 +250,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgriskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgriskyuser)
+
 
 
 

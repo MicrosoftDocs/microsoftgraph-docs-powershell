@@ -32,18 +32,6 @@ Remove-MgDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagem
 ## DESCRIPTION
 Delete a cloudPcDeviceImage object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcDeviceImageId
@@ -231,6 +219,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointdeviceimage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointdeviceimage)
 
 [https://learn.microsoft.com/graph/api/cloudpcdeviceimage-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcdeviceimage-delete?view=graph-rest-1.0)
+
 
 
 

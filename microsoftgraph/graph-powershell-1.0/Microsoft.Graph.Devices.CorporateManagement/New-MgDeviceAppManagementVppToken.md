@@ -34,18 +34,6 @@ New-MgDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken> [-Res
 ## DESCRIPTION
 Create a new vppToken object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -379,6 +367,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-create?view=graph-rest-1.0)
+
 
 
 

@@ -40,18 +40,6 @@ Get-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty
 ## DESCRIPTION
 Retrieve the properties and relationships of a print job.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -334,6 +322,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/printjob-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printjob-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/printer-list-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-list-jobs?view=graph-rest-1.0)
+
 
 
 

@@ -50,18 +50,6 @@ Set-MgExternalConnectionItem -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of an externalItem object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Acl
@@ -394,6 +382,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem)
 
 [https://learn.microsoft.com/graph/api/externalconnectors-externalitem-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-update?view=graph-rest-1.0)
+
 
 
 

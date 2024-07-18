@@ -40,18 +40,6 @@ Get-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagement
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcUserSetting object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -331,6 +319,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/cloudpcusersetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcusersetting-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/virtualendpoint-list-usersettings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-usersettings?view=graph-rest-1.0)
+
 
 
 

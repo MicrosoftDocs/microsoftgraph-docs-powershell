@@ -44,18 +44,6 @@ The users and groups responsible for this guest's privileges in the tenant and k
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -338,6 +326,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor)
 
 [https://learn.microsoft.com/graph/api/user-list-sponsors?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-sponsors?view=graph-rest-1.0)
+
 
 
 

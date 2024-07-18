@@ -32,22 +32,6 @@ Invoke-MgRetireDeviceManagementManagedDevice -InputObject <IDeviceManagementActi
 ## DESCRIPTION
 Retire a device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -211,6 +195,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgretiredevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgretiredevicemanagementmanageddevice)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-retire?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-retire?view=graph-rest-1.0)
+
 
 
 

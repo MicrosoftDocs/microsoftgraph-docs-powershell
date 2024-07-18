@@ -40,18 +40,6 @@ Get-MgSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ## DESCRIPTION
 Get the metadata for a baseSitePage in the site pages list in a site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -365,6 +353,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/basesitepage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/basesitepage-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/basesitepage-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/basesitepage-list?view=graph-rest-1.0)
+
 
 
 

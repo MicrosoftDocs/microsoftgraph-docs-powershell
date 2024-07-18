@@ -32,22 +32,6 @@ Restore-MgDeviceManagementManagedDevicePasscode -InputObject <IDeviceManagementA
 ## DESCRIPTION
 Recover passcode
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -211,6 +195,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restore-mgdevicemanagementmanageddevicepasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restore-mgdevicemanagementmanageddevicepasscode)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-recoverpasscode?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-recoverpasscode?view=graph-rest-1.0)
+
 
 
 

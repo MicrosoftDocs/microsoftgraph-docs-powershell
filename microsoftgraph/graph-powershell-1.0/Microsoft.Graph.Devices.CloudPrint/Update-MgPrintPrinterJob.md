@@ -58,18 +58,6 @@ Only the configuration property can be updated.
 Updating a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -620,6 +608,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinterjob)
 
 [https://learn.microsoft.com/graph/api/printjob-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printjob-update?view=graph-rest-1.0)
+
 
 
 

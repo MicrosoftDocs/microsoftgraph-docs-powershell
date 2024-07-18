@@ -48,18 +48,6 @@ New-MgSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> -BodyPar
 ## DESCRIPTION
 Create a new subcategoryTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -358,6 +346,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategorysubcategory)
 
 [https://learn.microsoft.com/graph/api/security-categorytemplate-post-subcategories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-categorytemplate-post-subcategories?view=graph-rest-1.0)
+
 
 
 

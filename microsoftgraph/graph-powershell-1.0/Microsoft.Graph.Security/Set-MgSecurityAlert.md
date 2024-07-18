@@ -32,18 +32,6 @@ Set-MgSecurityAlert -InputObject <ISecurityIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Create a comment for an existing alert based on the specified alert id property.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AlertId
@@ -274,6 +262,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert)
 
 [https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-1.0)
+
 
 
 
