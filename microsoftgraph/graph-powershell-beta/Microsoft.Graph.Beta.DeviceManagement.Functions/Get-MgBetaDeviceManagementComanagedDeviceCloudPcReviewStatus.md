@@ -29,6 +29,9 @@ Get-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus -InputObject <IDevi
 ## DESCRIPTION
 Get the review status of a specific Cloud PC device.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-getcloudpcreviewstatus-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

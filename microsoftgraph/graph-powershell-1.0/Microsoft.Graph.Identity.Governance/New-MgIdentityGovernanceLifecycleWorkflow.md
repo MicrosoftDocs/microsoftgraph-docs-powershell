@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new workflow object.
 You can create up to 100 workflows in a tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

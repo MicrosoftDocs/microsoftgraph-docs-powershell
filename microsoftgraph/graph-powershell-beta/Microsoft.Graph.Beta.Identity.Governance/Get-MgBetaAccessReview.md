@@ -47,6 +47,9 @@ If this is a recurring access review, no decisions will be associated with the r
 Instead, use the instances relationship of that series to retrieve an accessReview collection of the past, current, and future instances of the access review.
 Each past and current instance will have decisions.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

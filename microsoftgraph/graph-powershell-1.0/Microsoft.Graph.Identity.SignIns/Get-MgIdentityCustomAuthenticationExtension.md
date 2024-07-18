@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents custom extensions to authentication flows in Azure AD for workforce and customers.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityCustomAuthenticationExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

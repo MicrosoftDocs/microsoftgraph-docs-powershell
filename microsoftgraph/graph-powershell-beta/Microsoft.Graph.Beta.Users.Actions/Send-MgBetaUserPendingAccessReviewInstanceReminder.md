@@ -29,6 +29,9 @@ Send-MgBetaUserPendingAccessReviewInstanceReminder -InputObject <IUsersActionsId
 ## DESCRIPTION
 Send a reminder to the reviewers of a currently active accessReviewInstance.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-sendreminder-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

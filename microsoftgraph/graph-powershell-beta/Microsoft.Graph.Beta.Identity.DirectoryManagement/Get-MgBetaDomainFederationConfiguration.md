@@ -11,6 +11,9 @@ schema: 2.0.0
 Domain settings configured by customer when federated with Microsoft Entra ID.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainFederationConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

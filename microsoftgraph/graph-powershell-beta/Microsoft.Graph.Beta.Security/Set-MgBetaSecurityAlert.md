@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a comment for an existing alert based on the specified alert id property.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Set-MgSecurityAlert?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

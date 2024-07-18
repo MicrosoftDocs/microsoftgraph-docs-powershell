@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Search-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Search-MgDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Search (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retry the user service provisioning.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRetryUserServiceProvisioning?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Retry (Default)
@@ -28,6 +31,9 @@ Invoke-MgBetaRetryUserServiceProvisioning -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Retry the user service provisioning.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-retryserviceprovisioning-permissions.md)]
 
 ## EXAMPLES
 

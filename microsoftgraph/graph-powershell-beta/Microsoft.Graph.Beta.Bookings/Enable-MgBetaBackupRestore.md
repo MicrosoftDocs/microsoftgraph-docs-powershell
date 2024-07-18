@@ -30,6 +30,9 @@ Enable-MgBetaBackupRestore
 ## DESCRIPTION
 Enable the Microsoft 365 Backup Storage service for a tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-enable-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

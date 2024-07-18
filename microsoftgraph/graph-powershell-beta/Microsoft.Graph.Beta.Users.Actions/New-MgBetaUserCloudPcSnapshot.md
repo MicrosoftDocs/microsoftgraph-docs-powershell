@@ -29,6 +29,9 @@ New-MgBetaUserCloudPcSnapshot -InputObject <IUsersActionsIdentity> [-ResponseHea
 ## DESCRIPTION
 Create a snapshot for a specific Cloud PC device.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-createsnapshot-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

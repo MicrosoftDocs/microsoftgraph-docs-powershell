@@ -11,6 +11,9 @@ schema: 2.0.0
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgUserChatActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserChatActivityNotification?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SendExpanded (Default)
@@ -52,6 +55,9 @@ Send-MgBetaUserChatActivityNotification -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-sendactivitynotification-permissions.md)]
 
 ## EXAMPLES
 

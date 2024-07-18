@@ -50,6 +50,9 @@ Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -InputObject <IComplianceIde
 ## DESCRIPTION
 Apply tags to documents that match the specified reviewSetQuery.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewsetquery-applytags-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

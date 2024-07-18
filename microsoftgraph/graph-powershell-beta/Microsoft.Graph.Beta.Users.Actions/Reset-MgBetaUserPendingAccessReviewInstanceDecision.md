@@ -29,6 +29,9 @@ Reset-MgBetaUserPendingAccessReviewInstanceDecision -InputObject <IUsersActionsI
 ## DESCRIPTION
 Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-resetdecisions-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

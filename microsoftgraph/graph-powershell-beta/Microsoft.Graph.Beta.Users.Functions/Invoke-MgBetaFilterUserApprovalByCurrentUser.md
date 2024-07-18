@@ -37,6 +37,9 @@ The objects returned are those that are in scope for approval by the calling use
 In PIM for groups, return a collection of assignment approvals.
 The objects returned are those that are in scope for approval by the calling user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approval-filterbycurrentuser-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a bookmark object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchBookmark?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

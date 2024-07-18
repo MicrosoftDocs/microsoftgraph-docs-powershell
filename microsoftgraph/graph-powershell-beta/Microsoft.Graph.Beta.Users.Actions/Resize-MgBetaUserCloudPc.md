@@ -45,6 +45,9 @@ Resize-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-resize-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

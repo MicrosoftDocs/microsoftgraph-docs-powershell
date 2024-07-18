@@ -39,6 +39,9 @@ Get-MgBetaAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdentity>
 Retrieve the properties and relationships of an administrativeUnit object.
 Since the administrativeUnit resource supports extensions, you can also use the GET operation to get custom properties and extension data in an administrativeUnit instance.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1
