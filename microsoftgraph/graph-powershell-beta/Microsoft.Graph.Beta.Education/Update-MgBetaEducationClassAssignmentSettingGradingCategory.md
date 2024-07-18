@@ -52,16 +52,21 @@ Update a single gradingCategory on the educationAssignmentSettings.
 Only teachers can perform this operation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Education
+
+$params = @{
+	displayName = "Quiz-1"
+}
+
+Update-MgBetaEducationClassAssignmentSettingGradingCategory -EducationClassId $educationClassId -EducationGradingCategoryId $educationGradingCategoryId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaEducationClassAssignmentSettingGradingCategory Cmdlet.
+
 
 ## PARAMETERS
 

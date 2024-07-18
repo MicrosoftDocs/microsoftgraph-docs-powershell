@@ -53,22 +53,6 @@ However, you can validate both the mail nickname and the display name and receiv
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-validateproperties-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.DirectoryObjects
-```
-
-$params = @{
-	EntityType = "Group"
-	DisplayName = "Myprefix_test_mysuffix"
-	MailNickname = "Myprefix_test_mysuffix"
-	OnBehalfOfUserId = "onBehalfOfUserId-value"
-}
-
-Test-MgBetaDirectoryObjectProperty -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -281,6 +265,7 @@ BODYPARAMETER `<IPaths1Tz6Rb9UsersMicrosoftGraphValidatepropertiesPostRequestbod
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserproperty)
 
 [https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
+
 
 
 

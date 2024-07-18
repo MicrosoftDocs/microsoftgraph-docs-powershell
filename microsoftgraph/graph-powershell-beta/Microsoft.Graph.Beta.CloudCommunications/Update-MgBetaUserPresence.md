@@ -50,30 +50,6 @@ Update-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> -BodyParam
 ## DESCRIPTION
 Update the navigation property presence in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserPresence -UserId $userId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-Get-MgBetaUserPresence -UserId $userId
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-Get-MgBetaCommunicationPresence -PresenceId $presenceId
-
 ## PARAMETERS
 
 ### -Activity
@@ -380,6 +356,7 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauserpresence)
+
 
 
 

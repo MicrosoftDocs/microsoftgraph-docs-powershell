@@ -36,16 +36,17 @@ This action sets the isPinned property to false for an educationModule.
 Only teachers in the class can perform this operation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Education
+
+Invoke-MgBetaUnpinEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaUnpinEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

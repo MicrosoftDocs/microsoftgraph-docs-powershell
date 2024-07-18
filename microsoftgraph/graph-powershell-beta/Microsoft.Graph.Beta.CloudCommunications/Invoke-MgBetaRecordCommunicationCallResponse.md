@@ -65,11 +65,11 @@ The maximum length of recording is 2 minutes.The Cloud Communications Platform d
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value provided in the completed notification.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	bargeInAllowed = $true
@@ -77,6 +77,10 @@ $params = @{
 	prompts = @(
 		@{
 			"@odata.type" = "#microsoft.graph.mediaPrompt"
+			mediaInfo = @{
+				uri = "https://cdn.contoso.com/beep.wav"
+				resourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E"
+			}
 		}
 	)
 	maxRecordDurationInSeconds = 10
@@ -84,13 +88,17 @@ $params = @{
 	maxSilenceTimeoutInSeconds = 2
 	playBeep = $true
 	stopTones = @(
-		"#"
-		"1"
-		"*"
-	)
+	"#"
+"1"
+"*"
+)
 }
 
 Invoke-MgBetaRecordCommunicationCallResponse -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaRecordCommunicationCallResponse Cmdlet.
+
 
 ## PARAMETERS
 

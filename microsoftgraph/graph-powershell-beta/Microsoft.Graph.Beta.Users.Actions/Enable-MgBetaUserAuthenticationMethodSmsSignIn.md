@@ -29,22 +29,6 @@ Enable-MgBetaUserAuthenticationMethodSmsSignIn -InputObject <IUsersActionsIdenti
 ## DESCRIPTION
 Invoke action enableSmsSignIn
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AuthenticationMethodId
@@ -246,6 +230,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/enable-mgbetauserauthenticationmethodsmssignin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/enable-mgbetauserauthenticationmethodsmssignin)
+
 
 
 

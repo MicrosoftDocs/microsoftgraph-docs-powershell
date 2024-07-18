@@ -40,13 +40,17 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -InputObjec
 noncustodialDataSource sources that are included in the sourceCollection
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -CaseId $caseId -SourceCollectionId $sourceCollectionId
+
+```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource Cmdlet.
+
 
 ## PARAMETERS
 

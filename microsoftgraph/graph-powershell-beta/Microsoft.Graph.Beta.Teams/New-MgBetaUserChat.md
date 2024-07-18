@@ -61,29 +61,6 @@ New-MgBetaUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create new navigation property to chats for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Teams
-```
-
-Get-MgBetaUserChat -UserId $userId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.Teams
-```
-
-Get-MgBetaUserChat -UserId $userId -ExpandProperty "members"
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Teams
-```
-
-Get-MgBetaChat -Sort "lastMessagePreview/createdDateTime desc"
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1471,6 +1448,7 @@ VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchat)
+
 
 
 

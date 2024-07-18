@@ -41,16 +41,17 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTask -InputObject <IIdentityGoverna
 The tasks in the workflow.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowTask -WorkflowId $workflowId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTask Cmdlet.
+
 
 ## PARAMETERS
 

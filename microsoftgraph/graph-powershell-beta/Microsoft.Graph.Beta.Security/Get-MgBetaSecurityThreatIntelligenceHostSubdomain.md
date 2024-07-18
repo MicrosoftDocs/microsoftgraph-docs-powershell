@@ -41,16 +41,17 @@ Get-MgBetaSecurityThreatIntelligenceHostSubdomain -InputObject <ISecurityIdentit
 The subdomains that are associated with this host.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceHostSubdomain -HostId $hostId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostSubdomain Cmdlet.
+
 
 ## PARAMETERS
 

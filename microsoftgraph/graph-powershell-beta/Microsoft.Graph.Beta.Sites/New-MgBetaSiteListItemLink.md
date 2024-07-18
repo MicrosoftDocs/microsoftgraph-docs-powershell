@@ -57,34 +57,61 @@ The createLink action creates a new sharing link if the specified link type does
 listItem resources inherit sharing permissions from the list the item resides in.
 
 ## EXAMPLES
+### Example 1: Create an anonymous sharing link
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Sites
-$params = @{
-	Type = "embed"
-}
-New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Sites
-$params = @{
-	Type = "edit"
-	Scope = "organization"
-}
-New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
-```
 
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Sites
 $params = @{
-	Type = "embed"
+	type = "view"
+	scope = "anonymous"
+	password = "String"
+	recipients = @(
+		@{
+			"@odata.type" = "microsoft.graph.driveRecipient"
+		}
+	)
+	sendNotification = $true
+	retainInheritedPermissions = $false
 }
+
 New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+
 ```
+This example will create an anonymous sharing link
+
+### Example 2: Creating company sharable links
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+$params = @{
+	type = "edit"
+	scope = "organization"
+}
+
+New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+
+```
+This example shows creating company sharable links
+
+### Example 3: Creating embeddable links
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+$params = @{
+	type = "embed"
+}
+
+New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+
+```
+This example shows creating embeddable links
+
 
 ## PARAMETERS
 

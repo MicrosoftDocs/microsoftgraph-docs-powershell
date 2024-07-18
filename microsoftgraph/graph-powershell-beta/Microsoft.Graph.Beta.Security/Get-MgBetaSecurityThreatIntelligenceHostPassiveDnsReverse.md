@@ -41,16 +41,17 @@ Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse -InputObject <ISecurit
 Reverse passive DNS retrieval about this host.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse -HostId $hostId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse Cmdlet.
+
 
 ## PARAMETERS
 

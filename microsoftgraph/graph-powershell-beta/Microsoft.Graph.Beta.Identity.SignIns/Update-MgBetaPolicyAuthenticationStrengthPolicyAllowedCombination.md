@@ -51,20 +51,23 @@ Update the allowedCombinations property of an authenticationStrengthPolicy objec
 To update other properties of an authenticationStrengthPolicy object, use the Update authenticationStrengthPolicy method.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	allowedCombinations = @(
+	"password, voice"
+)
+}
 
-{{ Add output here }}
+Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination Cmdlet.
+
 
 ## PARAMETERS
 

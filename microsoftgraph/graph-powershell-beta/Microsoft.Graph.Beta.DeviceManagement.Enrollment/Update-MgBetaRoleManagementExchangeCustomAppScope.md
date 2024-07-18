@@ -48,16 +48,23 @@ Update an existing customAppScope object of an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+$params = @{
+	customAttributes = @{
+		RecipientFilter = "City -eq 'Seattle'"
+	}
+}
+
+Update-MgBetaRoleManagementExchangeCustomAppScope -CustomAppScopeId $customAppScopeId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaRoleManagementExchangeCustomAppScope Cmdlet.
+
 
 ## PARAMETERS
 

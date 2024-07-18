@@ -52,16 +52,17 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition -InputObject <IIdentit
 Defines an alert, its impact, and measures to mitigate or prevent it.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'" 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition Cmdlet.
+
 
 ## PARAMETERS
 

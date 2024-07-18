@@ -43,20 +43,17 @@ The tokenLifetimePolicies assigned to this service principal.
 Supports $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Applications
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgBetaServicePrincipalTokenLifetimePolicy -ServicePrincipalId $servicePrincipalId
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgBetaServicePrincipalTokenLifetimePolicy Cmdlet.
+
 
 ## PARAMETERS
 

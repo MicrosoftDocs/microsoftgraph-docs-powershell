@@ -35,20 +35,17 @@ Get-MgBetaSiteApplicableContentTypeForList -InputObject <ISitesIdentity> [-Count
 Get site contentTypes that can be added to a list.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Sites
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgBetaSiteApplicableContentTypeForList -SiteId $siteId
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgBetaSiteApplicableContentTypeForList Cmdlet.
+
 
 ## PARAMETERS
 

@@ -37,20 +37,17 @@ Get a list of driveItem objects shared with the owner of a drive.
 The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they're items from a different drive.
 
 ## EXAMPLES
+### Example 1: Get driveItems shared with me
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Files
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgBetaGraphDrive -DriveId $driveId
 
-{{ Add output here }}
+```
+This example will get driveitems shared with me
+
 
 ## PARAMETERS
 

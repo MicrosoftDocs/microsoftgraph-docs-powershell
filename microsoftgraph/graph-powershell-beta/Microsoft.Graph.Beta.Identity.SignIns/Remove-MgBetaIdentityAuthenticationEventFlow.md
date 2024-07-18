@@ -32,16 +32,17 @@ Delete a specific authenticationEventsFlow resource by ID.
 Only externalUsersSelfServiceSignupEventsFlow object types are available.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Remove-MgBetaIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaIdentityAuthenticationEventFlow Cmdlet.
+
 
 ## PARAMETERS
 

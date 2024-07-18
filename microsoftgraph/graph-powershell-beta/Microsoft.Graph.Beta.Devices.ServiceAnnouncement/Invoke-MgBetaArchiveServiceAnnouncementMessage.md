@@ -34,11 +34,11 @@ Invoke-MgBetaArchiveServiceAnnouncementMessage
 Archive a list of serviceUpdateMessages for the signed in user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
 
 $params = @{
 	messageIds = @(
@@ -48,6 +48,10 @@ $params = @{
 }
 
 Invoke-MgBetaArchiveServiceAnnouncementMessage -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaArchiveServiceAnnouncementMessage Cmdlet.
+
 
 ## PARAMETERS
 

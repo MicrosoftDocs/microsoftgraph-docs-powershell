@@ -35,9 +35,8 @@ New-MgBetaIdentityB2CUserFlow -BodyParameter <IMicrosoftGraphB2CIdentityUserFlow
 Create a new b2cIdentityUserFlow object.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaIdentityB2CUserFlow Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Id = "UserFlowWithAPIConnector"
@@ -54,9 +53,10 @@ $params = @{
 }
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the New-MgBetaIdentityB2CUserFlow Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the New-MgBetaIdentityB2CUserFlow Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Id = "Customer"
@@ -70,9 +70,10 @@ $params = @{
 }
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
 ```
-
-### EXAMPLE 3
-```
+This example shows how to use the New-MgBetaIdentityB2CUserFlow Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the New-MgBetaIdentityB2CUserFlow Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Id = "Customer"
@@ -81,6 +82,8 @@ $params = @{
 }
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaIdentityB2CUserFlow Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

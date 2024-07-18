@@ -46,20 +46,28 @@ This operation provides the health information of a specified service for a tena
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/servicehealth-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the properties of a serviceHealth object
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
 
 Get-MgBetaServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
+This example will get the properties of a servicehealth object
 
-Get-MgBetaServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId -ExpandProperty "issues"
+### Example 2: Include navigation property issues
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+
+Get-MgBetaServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId -ExpandProperty "issues" 
+
+```
+This example will include navigation property issues
+
 
 ## PARAMETERS
 

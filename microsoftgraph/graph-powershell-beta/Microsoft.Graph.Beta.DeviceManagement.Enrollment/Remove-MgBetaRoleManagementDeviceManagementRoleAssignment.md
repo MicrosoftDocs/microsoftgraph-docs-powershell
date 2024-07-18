@@ -34,16 +34,17 @@ This is applicable for a RBAC application that supports multiple principals and 
 The following RBAC providers are currently supported:- Cloud PC - device management (Intune)
 
 ## EXAMPLES
+### Example 1: Delete a unifiedRoleAssignmentMultiple in an Intune provider
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+Remove-MgBetaRoleManagementDeviceManagementRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId
+
 ```
-{{ Add code here }}
-```
+This example will delete a unifiedroleassignmentmultiple in an intune provider
+
 
 ## PARAMETERS
 

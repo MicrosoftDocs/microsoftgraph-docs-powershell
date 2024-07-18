@@ -52,11 +52,11 @@ Update-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> -BodyParameter <I
 Update the properties of an itemAddress object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	allowedAudiences = "me"
@@ -64,6 +64,10 @@ $params = @{
 }
 
 Update-MgBetaUserProfileAddress -UserId $userId -ItemAddressId $itemAddressId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileAddress Cmdlet.
+
 
 ## PARAMETERS
 

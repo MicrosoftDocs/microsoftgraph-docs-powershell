@@ -32,44 +32,6 @@ Remove-MgBetaDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-ResponseH
 ## DESCRIPTION
 Delete entity from drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Files
-```
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserDefaultDrive -UserId $userId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.Files
-```
-
-Get-MgBetaUserDefaultDrive -UserId $userId
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Files
-```
-
-Get-MgBetaGroupDefaultDrive -GroupId $groupId
-
-### EXAMPLE 4
-```
-Import-Module Microsoft.Graph.Beta.Sites
-```
-
-Get-MgBetaSiteDefaultDrive -SiteId $siteId
-
-### EXAMPLE 5
-```
-Import-Module Microsoft.Graph.Beta.Files
-```
-
-Get-MgBetaDrive -DriveId $driveId
-
 ## PARAMETERS
 
 ### -DriveId
@@ -254,6 +216,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadrive)
+
 
 
 

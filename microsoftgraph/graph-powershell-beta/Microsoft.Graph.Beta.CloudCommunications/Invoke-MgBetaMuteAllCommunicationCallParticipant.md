@@ -47,18 +47,24 @@ Invoke-MgBetaMuteAllCommunicationCallParticipant -InputObject <ICloudCommunicati
 Mute all participants in the call.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	Participants = @(
-		""
-	)
-	ClientContext = "clientContext-value"
+	participants = @(
+	""
+)
+clientContext = "clientContext-value"
 }
+
 Invoke-MgBetaMuteAllCommunicationCallParticipant -CallId $callId -BodyParameter $params
+
 ```
+This example shows how to use the Invoke-MgBetaMuteAllCommunicationCallParticipant Cmdlet.
+
 
 ## PARAMETERS
 

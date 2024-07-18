@@ -31,20 +31,21 @@ Update-MgBetaPolicyExternalIdentityPolicy -BodyParameter <IMicrosoftGraphExterna
 Update the settings of the tenant-wide externalIdentitiesPolicy object that controls whether external users can leave a Microsoft Entra tenant via self-service controls.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	allowExternalIdentitiesToLeave = $false
+}
 
-{{ Add output here }}
+Update-MgBetaPolicyExternalIdentityPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyExternalIdentityPolicy Cmdlet.
+
 
 ## PARAMETERS
 
