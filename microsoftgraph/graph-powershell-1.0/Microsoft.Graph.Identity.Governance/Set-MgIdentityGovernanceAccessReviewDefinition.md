@@ -62,18 +62,6 @@ Set-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovernance
 ## DESCRIPTION
 Update an existing accessReviewScheduleDefinition object to change one or more of its properties.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId
@@ -1143,6 +1131,7 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgidentitygovernanceaccessreviewdefinition)
 
 [https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-update?view=graph-rest-1.0)
+
 
 
 

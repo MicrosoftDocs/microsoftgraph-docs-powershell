@@ -55,18 +55,6 @@ Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevice
 ## DESCRIPTION
 Update the properties of a browserSharedCookie object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -565,6 +553,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsharedcookie)
 
 [https://learn.microsoft.com/graph/api/browsersharedcookie-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersharedcookie-update?view=graph-rest-1.0)
+
 
 
 

@@ -33,22 +33,6 @@ Get-MgReportTeamUserActivityCount -InputObject <IReportsIdentity> -OutFile <Stri
 Get the number of Microsoft Teams activities by activity type.
 The activities are performed by Microsoft Teams licensed users.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -202,6 +186,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivitycount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-1.0)
+
 
 
 

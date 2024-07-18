@@ -39,18 +39,6 @@ Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
 For help creating the required Certificate Signing Request (CSR) for creating printer, see the CSR generation code sample.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -324,6 +312,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter)
 
 [https://learn.microsoft.com/graph/api/printer-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-create?view=graph-rest-1.0)
+
 
 
 

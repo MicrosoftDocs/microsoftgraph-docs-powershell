@@ -32,18 +32,6 @@ Remove-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministratio
 ## DESCRIPTION
 Deletes a auditEvent.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuditEventId
@@ -231,6 +219,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementauditevent)
 
 [https://learn.microsoft.com/graph/api/intune-auditing-auditevent-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-delete?view=graph-rest-1.0)
+
 
 
 

@@ -57,18 +57,6 @@ Update-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManageme
 ## DESCRIPTION
 Update the properties of a iosVppEBook object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -590,6 +578,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebook](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebook)
 
 [https://learn.microsoft.com/graph/api/intune-books-iosvppebook-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-iosvppebook-update?view=graph-rest-1.0)
+
 
 
 

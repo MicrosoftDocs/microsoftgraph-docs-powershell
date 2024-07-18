@@ -32,22 +32,6 @@ Remove-MgGroupDriveRootListItemVersionField -InputObject <IFilesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property fields for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -262,6 +246,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootlistitemversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriverootlistitemversionfield)
+
 
 
 

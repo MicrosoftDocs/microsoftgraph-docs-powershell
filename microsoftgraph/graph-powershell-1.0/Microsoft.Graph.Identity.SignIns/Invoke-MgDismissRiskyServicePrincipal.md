@@ -37,18 +37,6 @@ Dismiss the risk of one or more riskyServicePrincipal objects.
 This action sets the targeted service principal account's risk level to none.
 You can dismiss up to 60 service principal accounts in one request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -213,6 +201,7 @@ BODYPARAMETER `<IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGra
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyserviceprincipal)
 
 [https://learn.microsoft.com/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-1.0)
+
 
 
 

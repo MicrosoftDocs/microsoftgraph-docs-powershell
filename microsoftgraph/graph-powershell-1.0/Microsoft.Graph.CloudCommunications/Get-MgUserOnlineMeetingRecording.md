@@ -46,18 +46,6 @@ This API doesn't support getting call recordings from channel meetings.
 For a recording, this API returns the metadata of the single recording associated with the online meeting.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -354,6 +342,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingrecording)
 
 [https://learn.microsoft.com/graph/api/callrecording-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/callrecording-get?view=graph-rest-1.0)
+
 
 
 

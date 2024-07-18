@@ -40,18 +40,6 @@ Get-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReportsIde
 ## DESCRIPTION
 Read the properties and relationships of a userRegistrationDetails object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -328,6 +316,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/userregistrationdetails-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userregistrationdetails-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userregistrationdetails?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userregistrationdetails?view=graph-rest-1.0)
+
 
 
 

@@ -41,18 +41,6 @@ Get-MgDeviceAppManagementiOSManagedAppProtectionApp -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Read properties and relationships of the managedMobileApp object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -357,6 +345,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-mam-managedmobileapp-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedmobileapp-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-mam-managedmobileapp-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedmobileapp-list?view=graph-rest-1.0)
+
 
 
 

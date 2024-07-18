@@ -41,18 +41,6 @@ Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObject 
 ## DESCRIPTION
 Read the properties of a delegatedAdminAccessAssignment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -328,6 +316,7 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-accessassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-accessassignments?view=graph-rest-1.0)
+
 
 
 

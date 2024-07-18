@@ -31,22 +31,6 @@ Get-MgReportOneDriveUsageStorage -InputObject <IReportsIdentity> -OutFile <Strin
 ## DESCRIPTION
 Get the trend on the amount of storage you're using in OneDrive for Business.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -200,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagestorage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagestorage)
 
 [https://learn.microsoft.com/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-1.0)
+
 
 
 

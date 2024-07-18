@@ -31,18 +31,6 @@ Get-MgReportEmailAppUsageUserCount -InputObject <IReportsIdentity> -OutFile <Str
 ## DESCRIPTION
 Get the count of unique users that connected to Exchange Online using any email app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -196,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-1.0)
+
 
 
 

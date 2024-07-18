@@ -31,18 +31,6 @@ New-MgSecurityLabelAuthority -BodyParameter <Hashtable> [-ResponseHeadersVariabl
 ## DESCRIPTION
 Create a new authorityTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -246,6 +234,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-post-authorities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-authorities?view=graph-rest-1.0)
+
 
 
 

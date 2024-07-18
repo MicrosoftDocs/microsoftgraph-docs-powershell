@@ -47,18 +47,6 @@ Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration [-Respon
 ## DESCRIPTION
 An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -318,6 +306,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentitycustomauthenticationextensionauthenticationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentitycustomauthenticationextensionauthenticationconfiguration)
 
 [https://learn.microsoft.com/graph/api/customauthenticationextension-validateauthenticationconfiguration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customauthenticationextension-validateauthenticationconfiguration?view=graph-rest-1.0)
+
 
 
 

@@ -34,18 +34,6 @@ Invoke-MgFunctionServicePrincipalSynchronizationJobSchema -InputObject <IApplica
 ## DESCRIPTION
 List all the functions currently supported in the attributeMappingSource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -306,6 +294,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionserviceprincipalsynchronizationjobschema)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-1.0)
+
 
 
 

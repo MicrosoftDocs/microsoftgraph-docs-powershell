@@ -32,18 +32,6 @@ Remove-MgSitePage -InputObject <ISitesIdentity> [-IfMatch <String>] [-ResponseHe
 ## DESCRIPTION
 Delete a baseSitePage from the site pages list in a site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -265,6 +253,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepage)
 
 [https://learn.microsoft.com/graph/api/basesitepage-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/basesitepage-delete?view=graph-rest-1.0)
+
 
 
 

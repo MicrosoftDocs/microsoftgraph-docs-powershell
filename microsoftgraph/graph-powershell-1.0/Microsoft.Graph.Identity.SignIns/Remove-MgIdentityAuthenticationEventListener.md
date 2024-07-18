@@ -32,18 +32,6 @@ Remove-MgIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Delete navigation property authenticationEventListeners for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationEventListenerId
@@ -262,6 +250,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventlistener)
+
 
 
 

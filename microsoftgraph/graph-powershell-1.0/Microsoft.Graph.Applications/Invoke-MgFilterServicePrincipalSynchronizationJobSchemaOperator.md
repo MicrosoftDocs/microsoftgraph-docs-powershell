@@ -34,18 +34,6 @@ Invoke-MgFilterServicePrincipalSynchronizationJobSchemaOperator -InputObject <IA
 ## DESCRIPTION
 List all operators supported in the scoping filters.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -306,6 +294,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfilterserviceprincipalsynchronizationjobschemaoperator](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfilterserviceprincipalsynchronizationjobschemaoperator)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-filteroperators?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-filteroperators?view=graph-rest-1.0)
+
 
 
 

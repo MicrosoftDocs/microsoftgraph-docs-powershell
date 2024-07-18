@@ -32,22 +32,6 @@ Send-MgDeviceManagementNotificationMessageTemplateTestMessage -InputObject <IDev
 ## DESCRIPTION
 Sends test message using the specified notificationMessageTemplate in the default locale
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -211,6 +195,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/send-mgdevicemanagementnotificationmessagetemplatetestmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/send-mgdevicemanagementnotificationmessagetemplatetestmessage)
 
 [https://learn.microsoft.com/graph/api/intune-notification-notificationmessagetemplate-sendtestmessage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-notification-notificationmessagetemplate-sendtestmessage?view=graph-rest-1.0)
+
 
 
 

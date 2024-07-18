@@ -54,18 +54,6 @@ Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
 ## DESCRIPTION
 Updates properties on Autopilot devices.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -328,6 +316,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementwindowsautopilotdeviceidentitydeviceproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementwindowsautopilotdeviceidentitydeviceproperty)
 
 [https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties?view=graph-rest-1.0)
+
 
 
 

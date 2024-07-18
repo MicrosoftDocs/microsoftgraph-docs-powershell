@@ -32,18 +32,6 @@ Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentitySig
 ## DESCRIPTION
 Get the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -203,6 +191,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowuserattributeassignmentorder](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowuserattributeassignmentorder)
 
 [https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-getorder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-getorder?view=graph-rest-1.0)
+
 
 
 

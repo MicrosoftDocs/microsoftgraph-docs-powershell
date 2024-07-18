@@ -33,18 +33,6 @@ Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef -InputObject <IId
 ## DESCRIPTION
 Delete ref of navigation property appliesTo for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -278,6 +266,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyfeaturerolloutpolicyapplytodirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyfeaturerolloutpolicyapplytodirectoryobjectbyref)
+
 
 
 

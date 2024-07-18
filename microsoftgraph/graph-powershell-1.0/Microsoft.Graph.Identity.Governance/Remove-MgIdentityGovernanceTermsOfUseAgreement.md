@@ -32,18 +32,6 @@ Remove-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernance
 ## DESCRIPTION
 Delete an agreement object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementId
@@ -273,6 +261,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancetermsofuseagreement)
 
 [https://learn.microsoft.com/graph/api/agreement-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-delete?view=graph-rest-1.0)
+
 
 
 

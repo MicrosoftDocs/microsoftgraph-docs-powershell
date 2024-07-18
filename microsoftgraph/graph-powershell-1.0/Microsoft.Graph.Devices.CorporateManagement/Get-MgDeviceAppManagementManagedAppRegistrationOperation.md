@@ -41,18 +41,6 @@ Get-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevicesC
 ## DESCRIPTION
 Read properties and relationships of the managedAppOperation object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -357,6 +345,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-list?view=graph-rest-1.0)
+
 
 
 

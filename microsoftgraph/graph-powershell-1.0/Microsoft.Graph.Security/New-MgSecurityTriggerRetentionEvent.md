@@ -37,18 +37,6 @@ New-MgSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityReten
 ## DESCRIPTION
 Create a new retentionEvent object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -516,6 +504,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent)
 
 [https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0)
+
 
 
 

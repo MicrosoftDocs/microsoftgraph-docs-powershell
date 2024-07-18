@@ -44,22 +44,6 @@ Get-MgReportYammerGroupActivityDetail -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get details about Yammer groups activity by group.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -228,6 +212,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitydetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitydetail)
 
 [https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-1.0)
+
 
 
 

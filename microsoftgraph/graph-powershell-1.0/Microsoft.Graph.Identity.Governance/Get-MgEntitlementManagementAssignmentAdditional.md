@@ -41,18 +41,6 @@ Get-MgEntitlementManagementAssignmentAdditional -InputObject <IIdentityGovernanc
 In Microsoft Entra Entitlement Management, retrieve a collection of accessPackageAssignment objects that indicate a target user has an assignment to a specified access package and also an assignment to another, potentially incompatible, access package.
 This can be used to prepare to configure the incompatible access packages for a specific access package.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -356,6 +344,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentadditional](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentadditional)
 
 [https://learn.microsoft.com/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-1.0)
+
 
 
 

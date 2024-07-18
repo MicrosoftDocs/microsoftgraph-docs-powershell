@@ -31,22 +31,6 @@ Get-MgReportOffice365ActiveUserCount -InputObject <IReportsIdentity> -OutFile <S
 ## DESCRIPTION
 Get the count of daily active users in the reporting period by product.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -200,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activeusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activeusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-1.0)
+
 
 
 

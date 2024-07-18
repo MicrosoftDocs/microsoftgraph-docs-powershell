@@ -32,18 +32,6 @@ Get-MgUserManagedDeviceWithAppFailure -InputObject <IUsersFunctionsIdentity> [-C
 ## DESCRIPTION
 Retrieves the list of devices with failed apps
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -246,6 +234,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanageddevicewithappfailure](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanageddevicewithappfailure)
 
 [https://learn.microsoft.com/graph/api/intune-troubleshooting-user-getmanageddeviceswithappfailures?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-troubleshooting-user-getmanageddeviceswithappfailures?view=graph-rest-1.0)
+
 
 
 

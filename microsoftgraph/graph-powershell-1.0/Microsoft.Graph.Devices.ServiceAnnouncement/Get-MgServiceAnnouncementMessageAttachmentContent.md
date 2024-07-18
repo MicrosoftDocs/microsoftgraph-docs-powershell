@@ -32,18 +32,6 @@ Get-MgServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServiceA
 ## DESCRIPTION
 Read the properties and relationships of a serviceAnnouncementAttachment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -194,6 +182,7 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentcontent)
 
 [https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-1.0)
+
 
 
 

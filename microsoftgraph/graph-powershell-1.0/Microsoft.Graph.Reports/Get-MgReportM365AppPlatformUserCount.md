@@ -31,18 +31,6 @@ Get-MgReportM365AppPlatformUserCount -InputObject <IReportsIdentity> -OutFile <S
 ## DESCRIPTION
 Get a report that provides the trend of active users across all apps for each platform (Windows, Mac, web, and mobile) in your organization.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -196,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appplatformusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appplatformusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getm365appplatformusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getm365appplatformusercounts?view=graph-rest-1.0)
+
 
 
 

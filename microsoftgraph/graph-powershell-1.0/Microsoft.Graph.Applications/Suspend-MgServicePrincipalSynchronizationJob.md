@@ -31,18 +31,6 @@ Suspend-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 Temporarily stop a running synchronization job.
 All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -229,6 +217,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/suspend-mgserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/suspend-mgserviceprincipalsynchronizationjob)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-1.0)
+
 
 
 

@@ -32,18 +32,6 @@ Invoke-MgTerminateDeviceManagementPartner -InputObject <IDeviceManagementActions
 ## DESCRIPTION
 Not yet documented
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementPartnerId
@@ -207,6 +195,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgterminatedevicemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgterminatedevicemanagementpartner)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementpartner-terminate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementpartner-terminate?view=graph-rest-1.0)
+
 
 
 

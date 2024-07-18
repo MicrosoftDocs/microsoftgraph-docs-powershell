@@ -34,22 +34,6 @@ Invoke-MgRecentGroupDrive -InputObject <IGroupsIdentity> [-Count] [-ExpandProper
 ## DESCRIPTION
 List a set of items that have been recently used by the signed in user.This collection includes items that are in the user's drive and items they have access to from other drives.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -327,6 +311,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgrecentgroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgrecentgroupdrive)
 
 [https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-1.0)
+
 
 
 

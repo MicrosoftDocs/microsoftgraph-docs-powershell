@@ -32,22 +32,6 @@ Invoke-MgDownUserManagedDeviceShut -InputObject <IUsersActionsIdentity> [-Respon
 ## DESCRIPTION
 Shut down device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -240,6 +224,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdownusermanageddeviceshut](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdownusermanageddeviceshut)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-shutdown?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-shutdown?view=graph-rest-1.0)
+
 
 
 

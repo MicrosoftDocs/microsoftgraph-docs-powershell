@@ -37,22 +37,6 @@ This operation prevents access to the organization's data through applications o
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-revokesigninsessions-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -215,6 +199,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession)
 
 [https://learn.microsoft.com/graph/api/user-revokesigninsessions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-revokesigninsessions?view=graph-rest-1.0)
+
 
 
 

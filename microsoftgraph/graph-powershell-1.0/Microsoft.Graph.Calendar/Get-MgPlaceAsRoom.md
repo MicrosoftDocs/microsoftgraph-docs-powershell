@@ -49,18 +49,6 @@ By default, this operation returns 100 places per page.
 Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
 See details for how they compare.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -324,6 +312,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroom](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroom)
 
 [https://learn.microsoft.com/graph/api/place-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-1.0)
+
 
 
 

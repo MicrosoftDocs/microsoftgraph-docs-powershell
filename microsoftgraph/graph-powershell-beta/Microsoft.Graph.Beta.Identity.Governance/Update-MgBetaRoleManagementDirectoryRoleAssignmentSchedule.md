@@ -58,18 +58,6 @@ Update-MgBetaRoleManagementDirectoryRoleAssignmentSchedule -InputObject <IIdenti
 ## DESCRIPTION
 Update the navigation property roleAssignmentSchedules in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivatedUsing
@@ -1003,6 +991,7 @@ In PIM, when the  eligible or active assignment becomes active.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignmentschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignmentschedule)
+
 
 
 

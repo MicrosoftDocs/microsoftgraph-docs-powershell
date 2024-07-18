@@ -23,22 +23,6 @@ Get-MgReportOffice365ActivationUserDetail -OutFile <String> [-ResponseHeadersVar
 ## DESCRIPTION
 Get details about users who have activated Microsoft 365.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -132,6 +116,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationuserdetail)
 
 [https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-1.0)
+
 
 
 

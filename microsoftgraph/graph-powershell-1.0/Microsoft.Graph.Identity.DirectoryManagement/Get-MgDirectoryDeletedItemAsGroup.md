@@ -42,18 +42,6 @@ Get-MgDirectoryDeletedItemAsGroup -InputObject <IIdentityDirectoryManagementIden
 Retrieve a list of recently deleted directory objects.
 Currently, deleted items functionality is only supported for the application, servicePrincipal, group, administrative unit, and user resources.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -332,6 +320,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemasgroup)
 
 [https://learn.microsoft.com/graph/api/directory-deleteditems-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-deleteditems-list?view=graph-rest-1.0)
+
 
 
 

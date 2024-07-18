@@ -36,18 +36,6 @@ New-MgAdminEdgeInternetExplorerModeSiteList -BodyParameter <IMicrosoftGraphBrows
 ## DESCRIPTION
 Create a new browserSiteList object to support Internet Explorer mode.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -511,6 +499,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist)
 
 [https://learn.microsoft.com/graph/api/internetexplorermode-post-sitelists?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/internetexplorermode-post-sitelists?view=graph-rest-1.0)
+
 
 
 

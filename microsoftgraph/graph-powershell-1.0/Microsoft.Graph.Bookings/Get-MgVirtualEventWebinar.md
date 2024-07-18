@@ -40,18 +40,6 @@ Get-MgVirtualEventWebinar -InputObject <IBookingsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventWebinar object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -321,6 +309,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/virtualeventwebinar-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventwebinar-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0)
+
 
 
 

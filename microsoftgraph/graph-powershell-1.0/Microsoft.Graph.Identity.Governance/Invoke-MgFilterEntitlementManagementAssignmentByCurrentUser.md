@@ -31,22 +31,6 @@ Invoke-MgFilterEntitlementManagementAssignmentByCurrentUser -InputObject <IIdent
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, retrieve a list of accessPackageAssignment objects filtered on the signed-in user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -335,6 +319,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementassignmentbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementassignmentbycurrentuser)
 
 [https://learn.microsoft.com/graph/api/accesspackageassignment-filterbycurrentuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignment-filterbycurrentuser?view=graph-rest-1.0)
+
 
 
 

@@ -46,18 +46,6 @@ Update-MgDeviceAppManagementMobileAppCategory -InputObject <IDevicesCorporateMan
 ## DESCRIPTION
 Update the properties of a mobileAppCategory object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -294,6 +282,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappcategory)
 
 [https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-update?view=graph-rest-1.0)
+
 
 
 

@@ -40,22 +40,6 @@ Get-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdministr
 ## DESCRIPTION
 Read properties and relationships of the resourceOperation object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -335,6 +319,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-list?view=graph-rest-1.0)
+
 
 
 

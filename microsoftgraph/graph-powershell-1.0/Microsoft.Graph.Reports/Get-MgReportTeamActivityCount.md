@@ -33,18 +33,6 @@ Get-MgReportTeamActivityCount -InputObject <IReportsIdentity> -OutFile <String>
 Get the number of team activities across Microsoft Teams.
 The activity types are related to meetings and messages.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -198,6 +186,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitycount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getteamsteamactivitycounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getteamsteamactivitycounts?view=graph-rest-1.0)
+
 
 
 

@@ -40,18 +40,6 @@ Get-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The list of jobs that are queued for printing by the printer/printerShare.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -332,6 +320,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharejob)
 
 [https://learn.microsoft.com/graph/api/printershare-list-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-list-jobs?view=graph-rest-1.0)
+
 
 
 

@@ -50,18 +50,6 @@ Update-MgSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the properties of an acronym object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcronymId
@@ -393,6 +381,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym)
 
 [https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-1.0)
+
 
 
 

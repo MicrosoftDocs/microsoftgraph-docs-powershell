@@ -42,18 +42,6 @@ Get-MgDeviceMemberOfAsGroup -InputObject <IIdentityDirectoryManagementIdentity> 
 Get groups and administrative units that this device is a direct member of.
 This operation is not transitive.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -363,6 +351,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicememberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicememberofasgroup)
 
 [https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-1.0)
+
 
 
 

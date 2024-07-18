@@ -52,18 +52,6 @@ New-MgEducationUserRubric -InputObject <IEducationIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to rubrics for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -453,6 +441,7 @@ Weights must add up to 100.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserrubric)
+
 
 
 
