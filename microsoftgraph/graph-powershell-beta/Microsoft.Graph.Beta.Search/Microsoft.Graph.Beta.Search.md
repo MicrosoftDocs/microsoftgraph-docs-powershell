@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Search
 Module Guid: 218d60fa-638d-404f-b7f0-592c63bac4bb
 Download Help Link: {{ Update Download Link }}
@@ -296,6 +296,9 @@ Locale: en-US
 ### [Remove-MgBetaSearchQna](Remove-MgBetaSearchQna.md)
 {{ Fill in the Description }}
 
+### [Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow](Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaExternalConnectionItem](Set-MgBetaExternalConnectionItem.md)
 {{ Fill in the Description }}
 
@@ -370,5 +373,4 @@ Locale: en-US
 
 ### [Update-MgBetaSearchQna](Update-MgBetaSearchQna.md)
 {{ Fill in the Description }}
-
 

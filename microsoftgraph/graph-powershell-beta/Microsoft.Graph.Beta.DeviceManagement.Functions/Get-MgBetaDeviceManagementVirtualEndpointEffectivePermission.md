@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointeffectivepermission
@@ -21,17 +21,13 @@ Get-MgBetaDeviceManagementVirtualEndpointEffectivePermission [-Count] [-Filter <
 ## DESCRIPTION
 Get the effective permissions of the currently authenticated user, helping UX hide or disable content that the current user doesn't have access to.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-geteffectivepermissions-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointEffectivePermission Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 Get-MgBetaDeviceManagementVirtualEndpointEffectivePermission
 ```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointEffectivePermission Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -171,7 +167,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointeffectivepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointeffectivepermission)
 
 [https://learn.microsoft.com/graph/api/virtualendpoint-geteffectivepermissions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-geteffectivepermissions?view=graph-rest-beta)
-
-
-
 

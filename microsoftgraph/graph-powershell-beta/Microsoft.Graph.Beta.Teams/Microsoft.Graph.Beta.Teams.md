@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Teams
 Module Guid: e264919d-7ae2-4a89-ba8b-524bd93ddc08
 Download Help Link: {{ Update Download Link }}
@@ -1547,6 +1547,12 @@ Locale: en-US
 ### [Remove-MgBetaGroupTeamChannel](Remove-MgBetaGroupTeamChannel.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupTeamChannelFileFolderContent](Remove-MgBetaGroupTeamChannelFileFolderContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupTeamChannelFileFolderContentStream](Remove-MgBetaGroupTeamChannelFileFolderContentStream.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupTeamChannelMember](Remove-MgBetaGroupTeamChannelMember.md)
 {{ Fill in the Description }}
 
@@ -1580,7 +1586,16 @@ Locale: en-US
 ### [Remove-MgBetaGroupTeamPermissionGrant](Remove-MgBetaGroupTeamPermissionGrant.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupTeamPhotoContent](Remove-MgBetaGroupTeamPhotoContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupTeamPrimaryChannel](Remove-MgBetaGroupTeamPrimaryChannel.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupTeamPrimaryChannelFileFolderContent](Remove-MgBetaGroupTeamPrimaryChannelFileFolderContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupTeamPrimaryChannelFileFolderContentStream](Remove-MgBetaGroupTeamPrimaryChannelFileFolderContentStream.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupTeamPrimaryChannelMember](Remove-MgBetaGroupTeamPrimaryChannelMember.md)
@@ -1661,6 +1676,12 @@ Locale: en-US
 ### [Remove-MgBetaTeamChannelEmail](Remove-MgBetaTeamChannelEmail.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaTeamChannelFileFolderContent](Remove-MgBetaTeamChannelFileFolderContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaTeamChannelFileFolderContentStream](Remove-MgBetaTeamChannelFileFolderContentStream.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaTeamChannelMember](Remove-MgBetaTeamChannelMember.md)
 {{ Fill in the Description }}
 
@@ -1685,10 +1706,19 @@ Locale: en-US
 ### [Remove-MgBetaTeamPermissionGrant](Remove-MgBetaTeamPermissionGrant.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaTeamPhotoContent](Remove-MgBetaTeamPhotoContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaTeamPrimaryChannel](Remove-MgBetaTeamPrimaryChannel.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaTeamPrimaryChannelEmail](Remove-MgBetaTeamPrimaryChannelEmail.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaTeamPrimaryChannelFileFolderContent](Remove-MgBetaTeamPrimaryChannelFileFolderContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaTeamPrimaryChannelFileFolderContentStream](Remove-MgBetaTeamPrimaryChannelFileFolderContentStream.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaTeamPrimaryChannelMember](Remove-MgBetaTeamPrimaryChannelMember.md)
@@ -1758,6 +1788,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaTeamworkDeletedTeamChannelEmail](Remove-MgBetaTeamworkDeletedTeamChannelEmail.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaTeamworkDeletedTeamChannelFileFolderContent](Remove-MgBetaTeamworkDeletedTeamChannelFileFolderContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaTeamworkDeletedTeamChannelFileFolderContentStream](Remove-MgBetaTeamworkDeletedTeamChannelFileFolderContentStream.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaTeamworkDeletedTeamChannelMember](Remove-MgBetaTeamworkDeletedTeamChannelMember.md)
@@ -2395,5 +2431,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserTeamworkAssociatedTeam](Update-MgBetaUserTeamworkAssociatedTeam.md)
 {{ Fill in the Description }}
-
 

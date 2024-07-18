@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityAction
 
 ## SYNOPSIS
-Create new navigation property to securityActions for security
+Create a new securityAction object.
 
 ## SYNTAX
 
@@ -30,14 +30,14 @@ New-MgBetaSecurityAction -BodyParameter <IMicrosoftGraphSecurityAction> [-Respon
 ```
 
 ## DESCRIPTION
-Create new navigation property to securityActions for security
+Create a new securityAction object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	name = "BlockIp"
@@ -55,10 +55,6 @@ $params = @{
 }
 
 New-MgBetaSecurityAction -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityAction Cmdlet.
-
 
 ## PARAMETERS
 
@@ -141,7 +137,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientContext
-.
+Unique client context string.
+Can have a maximum of 256 characters.
 
 ```yaml
 Type: String
@@ -425,90 +422,90 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAction>`: securityAction
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphSecurityAction\>: securityAction
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActionReason <String>]`: Reason for invoking this action.
-  - `[AppId <String>]`: The Application ID of the calling application that submitted (POST) the action.
+  \[ActionReason \<String\>\]: Reason for invoking this action.
+  \[AppId \<String\>\]: The Application ID of the calling application that submitted (POST) the action.
 The appId should be extracted from the auth token and not entered manually by the calling application.
-  - `[AzureTenantId <String>]`: Azure tenant ID of the entity to determine which tenant the entity belongs to (multi-tenancy support).
+  \[AzureTenantId \<String\>\]: Azure tenant ID of the entity to determine which tenant the entity belongs to (multi-tenancy support).
 The azureTenantId should be extracted from the auth token and not entered manually by the calling application.
-  - `[ClientContext <String>]`: 
-  - `[CompletedDateTime <DateTime?>]`: Timestamp when the action was completed.
+  \[ClientContext \<String\>\]: Unique client context string.
+Can have a maximum of 256 characters.
+  \[CompletedDateTime \<DateTime?\>\]: Timestamp when the action was completed.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[CreatedDateTime <DateTime?>]`: Timestamp when the action is created.
+  \[CreatedDateTime \<DateTime?\>\]: Timestamp when the action is created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[ErrorInfo <IMicrosoftGraphResultInfo>]`: resultInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <Int32?>]`: The result code.
-    - `[Message <String>]`: The message.
-    - `[Subcode <Int32?>]`: The result sub-code.
-  - `[LastActionDateTime <DateTime?>]`: Timestamp when this action was last updated.
+  \[ErrorInfo \<IMicrosoftGraphResultInfo\>\]: resultInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<Int32?\>\]: The result code.
+    \[Message \<String\>\]: The message.
+    \[Subcode \<Int32?\>\]: The result sub-code.
+  \[LastActionDateTime \<DateTime?\>\]: Timestamp when this action was last updated.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Name <String>]`: Action name.
-  - `[Parameters <IMicrosoftGraphKeyValuePair- `[]`>]`: Collection of parameters (key-value pairs) necessary to invoke the action, for example, URL or fileHash to block.).
+  \[Name \<String\>\]: Action name.
+  \[Parameters \<IMicrosoftGraphKeyValuePair\[\]\>\]: Collection of parameters (key-value pairs) necessary to invoke the action, for example, URL or fileHash to block.).
 Required.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[States <IMicrosoftGraphSecurityActionState- `[]`>]`: Collection of securityActionState to keep the history of an action.
-    - `[AppId <String>]`: The Application ID of the calling application that submitted an update (PATCH) to the action.
+    \[Name \<String\>\]: Name for this key-value pair
+    \[Value \<String\>\]: Value for this key-value pair
+  \[States \<IMicrosoftGraphSecurityActionState\[\]\>\]: Collection of securityActionState to keep the history of an action.
+    \[AppId \<String\>\]: The Application ID of the calling application that submitted an update (PATCH) to the action.
 The appId should be extracted from the auth token and not entered manually by the calling application.
-    - `[Status <String>]`: operationStatus
-    - `[UpdatedDateTime <DateTime?>]`: Timestamp when the actionState was updated.
+    \[Status \<String\>\]: operationStatus
+    \[UpdatedDateTime \<DateTime?\>\]: Timestamp when the actionState was updated.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[User <String>]`: The user principal name of the signed-in user that submitted an update (PATCH) to the action.
+    \[User \<String\>\]: The user principal name of the signed-in user that submitted an update (PATCH) to the action.
 The user should be extracted from the auth token and not entered manually by the calling application.
-  - `[Status <String>]`: operationStatus
-  - `[User <String>]`: The user principal name of the signed-in user that submitted  (POST) the action.
+  \[Status \<String\>\]: operationStatus
+  \[User \<String\>\]: The user principal name of the signed-in user that submitted  (POST) the action.
 The user should be extracted from the auth token and not entered manually by the calling application.
-  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+  \[VendorInformation \<IMicrosoftGraphSecurityVendorInformation\>\]: securityVendorInformation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+    \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-ERRORINFO `<IMicrosoftGraphResultInfo>`: resultInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Code <Int32?>]`: The result code.
-  - `[Message <String>]`: The message.
-  - `[Subcode <Int32?>]`: The result sub-code.
+ERRORINFO \<IMicrosoftGraphResultInfo\>: resultInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Code \<Int32?\>\]: The result code.
+  \[Message \<String\>\]: The message.
+  \[Subcode \<Int32?\>\]: The result sub-code.
 
-PARAMETERS <IMicrosoftGraphKeyValuePair- `[]`>: Collection of parameters (key-value pairs) necessary to invoke the action, for example, URL or fileHash to block.).
+PARAMETERS \<IMicrosoftGraphKeyValuePair\[\]\>: Collection of parameters (key-value pairs) necessary to invoke the action, for example, URL or fileHash to block.).
 Required.
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
+  \[Name \<String\>\]: Name for this key-value pair
+  \[Value \<String\>\]: Value for this key-value pair
 
-STATES <IMicrosoftGraphSecurityActionState- `[]`>: Collection of securityActionState to keep the history of an action.
-  - `[AppId <String>]`: The Application ID of the calling application that submitted an update (PATCH) to the action.
+STATES \<IMicrosoftGraphSecurityActionState\[\]\>: Collection of securityActionState to keep the history of an action.
+  \[AppId \<String\>\]: The Application ID of the calling application that submitted an update (PATCH) to the action.
 The appId should be extracted from the auth token and not entered manually by the calling application.
-  - `[Status <String>]`: operationStatus
-  - `[UpdatedDateTime <DateTime?>]`: Timestamp when the actionState was updated.
+  \[Status \<String\>\]: operationStatus
+  \[UpdatedDateTime \<DateTime?\>\]: Timestamp when the actionState was updated.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[User <String>]`: The user principal name of the signed-in user that submitted an update (PATCH) to the action.
+  \[User \<String\>\]: The user principal name of the signed-in user that submitted an update (PATCH) to the action.
 The user should be extracted from the auth token and not entered manually by the calling application.
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
+VENDORINFORMATION \<IMicrosoftGraphSecurityVendorInformation\>: securityVendorInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+  \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+  \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+  \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction)
 
-
-
+[https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-beta)
 

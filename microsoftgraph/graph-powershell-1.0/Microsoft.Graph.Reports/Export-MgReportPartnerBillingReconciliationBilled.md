@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationbilled
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Export the billed invoice reconciliation data.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Export-MgBetaReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Beta.Reports/Export-MgBetaReportPartnerBillingReconciliationBilled?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,8 +30,17 @@ Export-MgReportPartnerBillingReconciliationBilled
 ## DESCRIPTION
 Export the billed invoice reconciliation data.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-billedreconciliation-export-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -191,18 +197,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsYgrmj4ReportsPartnersBillingReconciliationBilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttributeSet <String>]`: attributeSet
-  - `[InvoiceId <String>]`:
+BODYPARAMETER \<IPathsYgrmj4ReportsPartnersBillingReconciliationBilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AttributeSet \<String\>\]: attributeSet
+  \[InvoiceId \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationbilled)
 
 [https://learn.microsoft.com/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-1.0)
-
-
-
-
 

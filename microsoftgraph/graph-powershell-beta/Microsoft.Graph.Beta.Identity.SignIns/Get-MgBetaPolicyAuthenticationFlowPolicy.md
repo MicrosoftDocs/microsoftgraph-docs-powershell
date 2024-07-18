@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationflowpolicy
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyAuthenticationFlowPolicy
 
 ## SYNOPSIS
-The policy configuration of the self-service sign-up experience of guests.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationFlowPolicy?view=graph-powershell-1.0)
+Read the properties and relationships of an authenticationFlowsPolicy object.
 
 ## SYNTAX
 
@@ -22,20 +19,16 @@ Get-MgBetaPolicyAuthenticationFlowPolicy [-ExpandProperty <String[]>] [-Property
 ```
 
 ## DESCRIPTION
-The policy configuration of the self-service sign-up experience of guests.
+Read the properties and relationships of an authenticationFlowsPolicy object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyAuthenticationFlowPolicy
-
-```
-This example shows how to use the Get-MgBetaPolicyAuthenticationFlowPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -129,6 +122,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationflowpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationflowpolicy)
 
-
-
+[https://learn.microsoft.com/graph/api/authenticationflowspolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationflowspolicy-get?view=graph-rest-beta)
 

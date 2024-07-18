@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatretainedmessage
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
 ## SYNTAX
 
@@ -20,6 +21,19 @@ Get-MgBetaChatRetainedMessage [-Count] [-ExpandProperty <String[]>] [-Filter <St
 
 ## DESCRIPTION
 Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -204,8 +218,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatretainedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatretainedmessage)
 
 [https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-beta)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsetting
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgBetaEntitlementManagementSetting
 
 ## SYNOPSIS
-Update the navigation property settings in identityGovernance
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementSetting?view=graph-powershell-1.0)
+Update an existing entitlementManagementSettings object to change one or more of its properties.
 
 ## SYNTAX
 
@@ -31,24 +28,20 @@ Update-MgBetaEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitle
 ```
 
 ## DESCRIPTION
-Update the navigation property settings in identityGovernance
+Update an existing entitlementManagementSettings object to change one or more of its properties.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 $params = @{
 	externalUserLifecycleAction = "None"
 }
 
 Update-MgBetaEntitlementManagementSetting -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaEntitlementManagementSetting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -221,17 +214,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEntitlementManagementSettings>`: entitlementManagementSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphEntitlementManagementSettings\>: entitlementManagementSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DaysUntilExternalUserDeletedAfterBlocked <Int32?>]`: If externalUserLifecycleAction is BlockSignInAndDelete, the number of days after an external user is blocked from sign in before their account is deleted.
-  - `[ExternalUserLifecycleAction <String>]`: One of None, BlockSignIn, or BlockSignInAndDelete.
+  \[DaysUntilExternalUserDeletedAfterBlocked \<Int32?\>\]: If externalUserLifecycleAction is BlockSignInAndDelete, the number of days after an external user is blocked from sign in before their account is deleted.
+  \[ExternalUserLifecycleAction \<String\>\]: One of None, BlockSignIn, or BlockSignInAndDelete.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsetting)
 
-
-
+[https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta)
 
