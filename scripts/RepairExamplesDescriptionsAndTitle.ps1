@@ -26,7 +26,7 @@ function Start-Copy {
             }
             $DocPath = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples" "$Command.md"
             try {
-                Copy-Files -DocPath $DocPath -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile -Command $Command
+                Copy-Files -DocPath $DocPath -GraphProfilePath $GraphProfilePath -ModuleName $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile -Command $Command
             }
             catch {
                 Write-Host "`nError Message: " $_.Exception.Message
@@ -51,7 +51,7 @@ function Copy-Files {
         [ValidateNotNullOrEmpty()]
         [string] $GraphProfilePath = "graph-powershell-1.0",
         [ValidateNotNullOrEmpty()]
-        [string] $Module = "Users",
+        [string] $ModuleName = "Users",
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph",
         [ValidateNotNullOrEmpty()]
