@@ -27,6 +27,9 @@ Get-MgBetaPrintPrinterCapability -InputObject <IDevicesCloudPrintIdentity> [-Res
 ## DESCRIPTION
 Get a list of capabilities for the printer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-getcapabilities-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

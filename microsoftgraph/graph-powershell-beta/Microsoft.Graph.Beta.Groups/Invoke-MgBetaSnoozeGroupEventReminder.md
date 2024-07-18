@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Postpone a reminder for an event in a user calendar until a new time.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgSnoozeGroupEventReminder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SnoozeExpanded (Default)

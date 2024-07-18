@@ -11,6 +11,9 @@ schema: 2.0.0
 Get newly created, updated, or deleted oauth2permissiongrant objects without performing a full read of the entire resource collection.
 For details, see Using delta query.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOauth2PermissionGrantDelta](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgOauth2PermissionGrantDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

@@ -11,6 +11,9 @@ schema: 2.0.0
 Get cloudPcSourceDeviceImage objects that can be uploaded and used on Cloud PCs.
 View a list of all the managed image resources from your Microsoft Entra subscriptions.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -22,6 +25,9 @@ Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage [-Count] [-Filter <S
 ## DESCRIPTION
 Get cloudPcSourceDeviceImage objects that can be uploaded and used on Cloud PCs.
 View a list of all the managed image resources from your Microsoft Entra subscriptions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcdeviceimage-getsourceimages-permissions.md)]
 
 ## EXAMPLES
 

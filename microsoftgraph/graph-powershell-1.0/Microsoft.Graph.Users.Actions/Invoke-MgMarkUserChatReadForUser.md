@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Mark a chat as read for a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaMarkUserChatReadForUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaMarkUserChatReadForUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MarkExpanded (Default)
@@ -44,6 +47,9 @@ Invoke-MgMarkUserChatReadForUser -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Mark a chat as read for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-markchatreadforuser-permissions.md)]
 
 ## EXAMPLES
 

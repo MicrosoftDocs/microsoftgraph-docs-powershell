@@ -31,6 +31,9 @@ Find-MgBetaPolicyAuthenticationStrengthPolicyByMethodMode -InputObject <IIdentit
 ## DESCRIPTION
 Get a list of the authenticationStrengthPolicy objects and their properties filtered to only include policies that include the authentication method mode specified in the request.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthpolicy-findbymethodmode-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

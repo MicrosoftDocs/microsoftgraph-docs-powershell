@@ -33,6 +33,9 @@ Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyConfig
 Update the provisioning policy configuration for a set of Cloud PC devices by their IDs.
 This method supports retry and allows you to apply the configuration to a subset of Cloud PCs initially to test.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-applyconfig-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

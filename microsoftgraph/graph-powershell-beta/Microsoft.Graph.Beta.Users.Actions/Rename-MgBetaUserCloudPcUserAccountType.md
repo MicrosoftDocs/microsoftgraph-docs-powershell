@@ -47,6 +47,9 @@ Rename-MgBetaUserCloudPcUserAccountType -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Change the account type of the user on a specific Cloud PC.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-changeuseraccounttype-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

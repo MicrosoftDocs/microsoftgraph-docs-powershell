@@ -38,6 +38,9 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ICom
 ## DESCRIPTION
 Read the properties and relationships of a unifiedGroupSource object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-unifiedgroupsource-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

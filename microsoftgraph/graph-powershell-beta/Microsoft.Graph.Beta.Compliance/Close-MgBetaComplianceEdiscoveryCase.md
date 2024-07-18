@@ -31,6 +31,9 @@ Close-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-Respon
 Close an eDiscovery case.
 For details, see Close a case.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-close-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -31,6 +31,9 @@ Get-MgBetaUserCloudPcProvisionedCloudPc -InputObject <IUsersFunctionsIdentity> [
 ## DESCRIPTION
 Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getprovisionedcloudpcs-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

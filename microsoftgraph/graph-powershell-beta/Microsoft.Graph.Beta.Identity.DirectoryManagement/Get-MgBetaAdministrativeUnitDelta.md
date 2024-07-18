@@ -24,6 +24,9 @@ Get-MgBetaAdministrativeUnitDelta [-ExpandProperty <String[]>] [-Filter <String>
 Get newly created, updated, or deleted administrativeUnits without having to perform a full read of the entire resource collection.
 For details, see Using delta query.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delta-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

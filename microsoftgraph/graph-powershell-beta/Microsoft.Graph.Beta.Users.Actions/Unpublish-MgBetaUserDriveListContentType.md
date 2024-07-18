@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action unpublish
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Unpublish-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Users.Actions/Unpublish-MgUserDriveListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unpublish (Default)
@@ -28,6 +31,9 @@ Unpublish-MgBetaUserDriveListContentType -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Invoke action unpublish
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## EXAMPLES
 

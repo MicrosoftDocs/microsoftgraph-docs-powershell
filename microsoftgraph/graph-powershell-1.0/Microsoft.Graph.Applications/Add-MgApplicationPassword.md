@@ -11,6 +11,9 @@ schema: 2.0.0
 Adds a strong password or secret to an application.
 You can also add passwords while creating the application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationPassword?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -46,6 +49,9 @@ Add-MgApplicationPassword -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Adds a strong password or secret to an application.
 You can also add passwords while creating the application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-addpassword-permissions.md)]
 
 ## EXAMPLES
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCheckinUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckinUserDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CheckinExpanded (Default)
@@ -44,6 +47,9 @@ Invoke-MgBetaCheckinUserDriveRoot -InputObject <IUsersActionsIdentity> [-Respons
 
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-checkin-permissions.md)]
 
 ## EXAMPLES
 

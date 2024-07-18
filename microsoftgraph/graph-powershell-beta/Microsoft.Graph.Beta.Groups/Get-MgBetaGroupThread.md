@@ -11,6 +11,9 @@ schema: 2.0.0
 Get a specific thread that belongs to a group.
 You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

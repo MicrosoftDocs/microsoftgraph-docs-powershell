@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserOnenoteRecentNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgUserOnenoteRecentNotebook -InputObject <IUsersFunctionsIdentity> [-Count] 
 
 ## DESCRIPTION
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-getrecentnotebooks-permissions.md)]
 
 ## EXAMPLES
 

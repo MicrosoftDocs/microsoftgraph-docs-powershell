@@ -32,6 +32,9 @@ Get-MgDirectoryObjectAvailableExtensionProperty
 Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps.
 The following entities support extension properties:
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getavailableextensionproperties-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1
