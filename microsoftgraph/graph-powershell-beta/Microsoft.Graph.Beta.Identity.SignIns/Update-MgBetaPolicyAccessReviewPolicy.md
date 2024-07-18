@@ -30,15 +30,21 @@ Update-MgBetaPolicyAccessReviewPolicy -BodyParameter <IMicrosoftGraphAccessRevie
 Update the properties of an accessReviewPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
-	IsGroupOwnerManagementEnabled = $true
+	isGroupOwnerManagementEnabled = $true
 }
+
 Update-MgBetaPolicyAccessReviewPolicy -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaPolicyAccessReviewPolicy Cmdlet.
+
 
 ## PARAMETERS
 

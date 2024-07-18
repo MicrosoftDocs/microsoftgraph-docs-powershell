@@ -32,22 +32,6 @@ Get-MgBetaDeviceManagementReportUnhealthyFirewallReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getUnhealthyFirewallReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -353,6 +337,7 @@ BODYPARAMETER `<IPaths4Dr5S6DevicemanagementReportsMicrosoftGraphGetunhealthyfir
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportunhealthyfirewallreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportunhealthyfirewallreport)
+
 
 
 

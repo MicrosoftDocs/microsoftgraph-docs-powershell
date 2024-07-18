@@ -35,33 +35,39 @@ Group settings apply to only Microsoft 365 groups.
 The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
 
 ## EXAMPLES
+### Example 1: Create a directory or tenant-level setting
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 $params = @{
-	TemplateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
-	Values = @(
+	templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
+	values = @(
 		@{
-			Name = "GuestUsageGuidelinesUrl"
-			Value = "https://privacy.contoso.com/privacystatement"
+			name = "GuestUsageGuidelinesUrl"
+			value = "https://privacy.contoso.com/privacystatement"
 		}
 		@{
-			Name = "EnableMSStandardBlockedWords"
-			Value = "true"
+			name = "EnableMSStandardBlockedWords"
+			value = "true"
 		}
 		@{
-			Name = "EnableMIPLabels"
-			Value = "true"
+			name = "EnableMIPLabels"
+			value = "true"
 		}
 		@{
-			Name = "PrefixSuffixNamingRequirement"
-			Value = "[Contoso-][GroupName]"
+			name = "PrefixSuffixNamingRequirement"
+			value = "[Contoso-][GroupName]"
 		}
 	)
 }
+
 New-MgBetaDirectorySetting -BodyParameter $params
+
 ```
+This example will create a directory or tenant-level setting
+
 
 ## PARAMETERS
 

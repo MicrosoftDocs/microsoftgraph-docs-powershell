@@ -24,21 +24,6 @@ Remove-MgBetaPolicyCrossTenantAccessPolicy [-IfMatch <String>] [-ResponseHeaders
 ## DESCRIPTION
 Delete navigation property crossTenantAccessPolicy for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
-
-$params = @{
-	allowedCloudEndpoints = @(
-		"microsoftonline.us"
-	)
-}
-
-Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter $params
-
 ## PARAMETERS
 
 ### -Headers
@@ -161,6 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicy)
+
 
 
 

@@ -32,22 +32,6 @@ Get-MgBetaUserDriveFollowingContent -InputObject <IFilesIdentity> [-Format <Stri
 ## DESCRIPTION
 Get content for the navigation property following from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -246,6 +230,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivefollowingcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivefollowingcontent)
+
 
 
 

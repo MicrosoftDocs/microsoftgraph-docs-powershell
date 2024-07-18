@@ -32,16 +32,17 @@ Get-MgBetaReportCredentialUsageSummary -InputObject <IReportsIdentity> [-Count] 
 Report the current state of how many users in your organization used the self-service password reset capabilities.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportCredentialUsageSummary -Filter "feature eq 'registration'"  -Period $periodId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaReportCredentialUsageSummary Cmdlet.
+
 
 ## PARAMETERS
 

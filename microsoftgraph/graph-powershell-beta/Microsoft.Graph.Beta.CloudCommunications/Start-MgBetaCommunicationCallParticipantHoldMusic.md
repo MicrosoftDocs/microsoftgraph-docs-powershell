@@ -51,22 +51,28 @@ Start-MgBetaCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicat
 Put a participant on hold and play music in the background.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	CustomPrompt = @{
+	customPrompt = @{
 		"@odata.type" = "#microsoft.graph.mediaPrompt"
-		MediaInfo = @{
+		mediaInfo = @{
 			"@odata.type" = "#microsoft.graph.mediaInfo"
-			Uri = "https://bot.contoso.com/onHold.wav"
+			uri = "https://bot.contoso.com/onHold.wav"
 		}
 	}
-	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
+	clientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
 }
+
 Start-MgBetaCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
+
 ```
+This example shows how to use the Start-MgBetaCommunicationCallParticipantHoldMusic Cmdlet.
+
 
 ## PARAMETERS
 

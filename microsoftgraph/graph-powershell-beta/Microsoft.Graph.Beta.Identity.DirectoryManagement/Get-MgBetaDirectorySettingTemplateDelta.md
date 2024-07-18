@@ -24,18 +24,6 @@ Get-MgBetaDirectorySettingTemplateDelta [-ExpandProperty <String[]>] [-Filter <S
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -250,6 +238,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysettingtemplatedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysettingtemplatedelta)
 
 [https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta)
+
 
 
 

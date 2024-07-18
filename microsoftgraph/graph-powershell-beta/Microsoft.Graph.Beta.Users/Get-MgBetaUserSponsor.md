@@ -45,16 +45,17 @@ The users and groups responsible for this guest user's privileges in the tenant 
 Supports $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Users
+
+Get-MgBetaUserSponsor -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaUserSponsor Cmdlet.
+
 
 ## PARAMETERS
 

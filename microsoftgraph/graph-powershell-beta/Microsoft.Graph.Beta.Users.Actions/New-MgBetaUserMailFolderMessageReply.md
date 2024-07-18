@@ -62,16 +62,6 @@ Alternatively, reply to a message in a single operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-createreply-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Actions
-```
-
-# A UPN can also be used as -UserId.
-New-MgBetaUserMessageReply -UserId $userId -MessageId $messageId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -603,6 +593,7 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfoldermessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfoldermessagereply)
 
 [https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-beta)
+
 
 
 

@@ -48,16 +48,33 @@ New-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicat
 Create single sign-on credentials using a password for a user or group.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Applications
+
+$params = @{
+	id = "5793aa3b-cca9-4794-679a240f8b58"
+	credentials = @(
+		@{
+			fieldId = "param_username"
+			value = "myusername"
+			type = "username"
+		}
+		@{
+			fieldId = "param_password"
+			value = "pa$$w0rd"
+			type = "password"
+		}
+	)
+}
+
+New-MgBetaServicePrincipalPasswordSingleSignOnCredential -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaServicePrincipalPasswordSingleSignOnCredential Cmdlet.
+
 
 ## PARAMETERS
 

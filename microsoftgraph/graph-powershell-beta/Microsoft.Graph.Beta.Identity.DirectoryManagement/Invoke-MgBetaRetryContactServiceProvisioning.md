@@ -33,16 +33,17 @@ Invoke-MgBetaRetryContactServiceProvisioning -InputObject <IIdentityDirectoryMan
 Retry the orgContact service provisioning.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Invoke-MgBetaRetryContactServiceProvisioning -OrgContactId $orgContactId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaRetryContactServiceProvisioning Cmdlet.
+
 
 ## PARAMETERS
 

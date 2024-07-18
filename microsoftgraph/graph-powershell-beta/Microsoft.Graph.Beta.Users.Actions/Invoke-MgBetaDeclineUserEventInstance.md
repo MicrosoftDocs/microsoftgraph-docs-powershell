@@ -57,32 +57,6 @@ For more information on how to propose a time, and how to receive and accept a n
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-decline-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Actions
-```
-
-$params = @{
-	Comment = "I won't be able to make this week.
-How about next week?"
-	SendResponse = $true
-	ProposedNewTime = @{
-		Start = @{
-			DateTime = "2019-12-02T18:00:00"
-			TimeZone = "Pacific Standard Time"
-		}
-		End = @{
-			DateTime = "2019-12-02T19:00:00"
-			TimeZone = "Pacific Standard Time"
-		}
-	}
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgBetaDeclineUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -403,6 +377,7 @@ See below for possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeclineusereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeclineusereventinstance)
 
 [https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-beta)
+
 
 
 

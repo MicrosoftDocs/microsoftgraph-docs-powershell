@@ -29,22 +29,6 @@ Remove-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance -InputObj
 ## DESCRIPTION
 Delete navigation property aggregatedPolicyCompliances for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AggregatedPolicyComplianceId
@@ -243,6 +227,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantaggregatedpolicycompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantaggregatedpolicycompliance)
+
 
 
 

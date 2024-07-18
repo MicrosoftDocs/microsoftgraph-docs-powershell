@@ -35,16 +35,17 @@ Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Applications
+
+Remove-MgBetaApplicationOwnerDirectoryObjectByRef -ApplicationId $applicationId -DirectoryObjectId $directoryObjectId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaApplicationOwnerDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 

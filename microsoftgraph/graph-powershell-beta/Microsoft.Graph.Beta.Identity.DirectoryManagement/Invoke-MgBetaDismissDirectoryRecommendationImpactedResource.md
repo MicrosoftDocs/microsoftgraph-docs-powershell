@@ -48,20 +48,21 @@ Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -InputObject <IIdent
 Dismiss an impactedResources object and update its status to dismissed.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	dismissReason = "Application is no longer needed."
+}
 
-{{ Add output here }}
+Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -RecommendationId $recommendationId -ImpactedResourceId $impactedResourceId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaDismissDirectoryRecommendationImpactedResource Cmdlet.
+
 
 ## PARAMETERS
 

@@ -35,16 +35,26 @@ referenceDefinition objects associate incoming data with standardized reference 
 You can extend the following reference types with other codes that better align with your source data.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Search
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.industryData.referenceDefinition"
+	referenceType = "RefGradeLevel"
+	code = "TestGrade"
+	isDisabled = $false
+	sortIndex = 300
+	displayName = "New Test Grade Level"
+}
+
+New-MgBetaExternalIndustryDataReferenceDefinition -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaExternalIndustryDataReferenceDefinition Cmdlet.
+
 
 ## PARAMETERS
 

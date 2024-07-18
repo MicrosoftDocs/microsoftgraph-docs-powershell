@@ -33,22 +33,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue
 ## DESCRIPTION
 Create new navigation property to metricValues for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -232,6 +216,7 @@ Examples: none, percentage, count, seconds, score.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthoverviewmetricvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthoverviewmetricvalue)
+
 
 
 

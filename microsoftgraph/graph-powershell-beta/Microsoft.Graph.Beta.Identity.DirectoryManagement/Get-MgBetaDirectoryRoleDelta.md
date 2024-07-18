@@ -28,12 +28,17 @@ Get newly created, updated, or deleted directory roles without having to perform
 See Using Delta Query for details.
 
 ## EXAMPLES
+### Example
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 Get-MgBetaDirectoryRoleDelta
+
 ```
+This example will### example
+
 
 ## PARAMETERS
 

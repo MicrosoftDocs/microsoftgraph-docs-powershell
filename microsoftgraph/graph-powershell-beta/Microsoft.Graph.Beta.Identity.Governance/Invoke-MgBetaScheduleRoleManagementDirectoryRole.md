@@ -24,16 +24,17 @@ Invoke-MgBetaScheduleRoleManagementDirectoryRole [-AppScopeId <String>] [-Count]
 Retrieve both roleAssignmentSchedules and roleEligibilitySchedules.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaScheduleRoleManagementDirectoryRole
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaScheduleRoleManagementDirectoryRole Cmdlet.
+
 
 ## PARAMETERS
 

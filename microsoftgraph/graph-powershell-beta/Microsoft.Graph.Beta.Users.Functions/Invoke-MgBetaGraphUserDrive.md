@@ -39,22 +39,6 @@ The driveItems returned from the sharedWithMe method always include the remoteIt
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-sharedwithme-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -329,6 +313,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetagraphuserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetagraphuserdrive)
 
 [https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-beta](https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-beta)
+
 
 
 

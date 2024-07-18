@@ -32,22 +32,6 @@ Remove-MgBetaGroupThreadPostExtension -InputObject <IGroupsIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property extensions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ConversationThreadId
@@ -299,6 +283,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthreadpostextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthreadpostextension)
+
 
 
 

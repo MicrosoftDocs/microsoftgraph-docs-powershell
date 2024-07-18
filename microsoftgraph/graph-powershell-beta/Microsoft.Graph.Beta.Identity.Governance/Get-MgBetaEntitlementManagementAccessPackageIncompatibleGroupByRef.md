@@ -25,18 +25,6 @@ Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackag
 ## DESCRIPTION
 Retrieve a list of the group objects marked as incompatible on an accessPackage.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -236,6 +224,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatiblegroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatiblegroupbyref)
 
 [https://learn.microsoft.com/graph/api/accesspackage-list-incompatiblegroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-list-incompatiblegroups?view=graph-rest-beta)
+
 
 
 

@@ -33,13 +33,17 @@ Get-MgBetaDriveItemAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 Analytics about the view activities that took place on this item.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Get-MgBetaDriveItemAnalytic -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Get-MgBetaDriveItemAnalytic Cmdlet.
+
 
 ## PARAMETERS
 

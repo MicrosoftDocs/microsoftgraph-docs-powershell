@@ -49,18 +49,6 @@ Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <ICompl
 ## DESCRIPTION
 Update the navigation property noncustodialDataSources in compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -469,6 +457,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasenoncustodialdatasource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasenoncustodialdatasource)
+
 
 
 

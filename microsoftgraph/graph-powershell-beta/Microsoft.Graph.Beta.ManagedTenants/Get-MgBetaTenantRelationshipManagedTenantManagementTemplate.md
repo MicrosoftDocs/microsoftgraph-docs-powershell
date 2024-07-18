@@ -38,18 +38,17 @@ Get-MgBetaTenantRelationshipManagedTenantManagementTemplate -InputObject <IManag
 Read the properties and relationships of a managementTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.ManagedTenants
-Get-MgBetaTenantRelationshipManagedTenantManagementTemplate -ManagementTemplateId $managementTemplateId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 Get-MgBetaTenantRelationshipManagedTenantManagementTemplate
+
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagementTemplate Cmdlet.
+
 
 ## PARAMETERS
 

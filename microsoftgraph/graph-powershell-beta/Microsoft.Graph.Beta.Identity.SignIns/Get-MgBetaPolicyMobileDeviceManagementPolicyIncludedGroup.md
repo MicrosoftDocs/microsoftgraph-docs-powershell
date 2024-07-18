@@ -23,12 +23,17 @@ Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroup -MobilityManagementPol
 Get the list of groups that are included in a mobile device management policy.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId
+
 ```
+This example shows how to use the Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroup Cmdlet.
+
 
 ## PARAMETERS
 

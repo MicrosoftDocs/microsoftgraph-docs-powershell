@@ -32,16 +32,17 @@ Delete a virtualEventPresenter from a virtual event.
 Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Remove-MgBetaVirtualEventTownhallPresenter -VirtualEventTownhallId $virtualEventTownhallId -VirtualEventPresenterId $virtualEventPresenterId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaVirtualEventTownhallPresenter Cmdlet.
+
 
 ## PARAMETERS
 

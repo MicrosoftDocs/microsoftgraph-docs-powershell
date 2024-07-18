@@ -30,12 +30,17 @@ Remove-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity> [-IfMa
 Delete a trustFrameworkKeySet.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 Remove-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId $trustFrameworkKeySetId
+
 ```
+This example shows how to use the Remove-MgBetaTrustFrameworkKeySet Cmdlet.
+
 
 ## PARAMETERS
 

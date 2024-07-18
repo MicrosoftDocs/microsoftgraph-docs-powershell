@@ -55,16 +55,17 @@ Aborting a print job will only succeed if there is a printTask in a processing s
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+Invoke-MgBetaAbortPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaAbortPrintPrinterJob Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,16 +46,22 @@ Update-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity>
 Update the properties of a yearTimePeriodDefinition object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Search
+
+$params = @{
+	displayName = "Fiscal Year 2022"
+	id = "ebf18762-ab92-487e-21d1-08daddab28bb"
+}
+
+Update-MgBetaExternalIndustryDataYear -YearTimePeriodDefinitionId $yearTimePeriodDefinitionId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaExternalIndustryDataYear Cmdlet.
+
 
 ## PARAMETERS
 

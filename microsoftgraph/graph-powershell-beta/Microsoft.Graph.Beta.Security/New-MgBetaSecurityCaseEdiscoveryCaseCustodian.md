@@ -57,17 +57,21 @@ New-MgBetaSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
 Create a new ediscoveryCustodian object.After the custodian object is created, you will need to create the custodian's userSource to reference their mailbox and OneDrive for Business site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	email = "AdeleV@contoso.com"
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseCustodian Cmdlet.
+
 
 ## PARAMETERS
 

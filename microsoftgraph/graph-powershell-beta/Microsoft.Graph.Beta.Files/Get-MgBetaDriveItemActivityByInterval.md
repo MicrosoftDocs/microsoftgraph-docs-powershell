@@ -38,16 +38,17 @@ Get itemActivityStats for the activities that took place under this resource wit
 Analytics aggregates might not be available for all action types.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Files
+
+Get-MgBetaDriveItemActivityByInterval -DriveId $driveId -DriveItemId $driveItemId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaDriveItemActivityByInterval Cmdlet.
+
 
 ## PARAMETERS
 

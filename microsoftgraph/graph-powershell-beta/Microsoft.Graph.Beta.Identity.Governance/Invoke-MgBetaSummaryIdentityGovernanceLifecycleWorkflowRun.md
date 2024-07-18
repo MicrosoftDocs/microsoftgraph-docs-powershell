@@ -34,22 +34,6 @@ Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun -InputObject <IIdenti
 Get a summary of runs for a specified time period.
 Because the amount of runs returned by the List API call can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EndDateTime
@@ -278,6 +262,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetasummaryidentitygovernancelifecycleworkflowrun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetasummaryidentitygovernancelifecycleworkflowrun)
+
 
 
 

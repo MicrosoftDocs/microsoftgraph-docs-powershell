@@ -33,16 +33,17 @@ Get-MgBetaServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-ExpandP
 Retrieve the properties and relationships of a servicePrincipal object.
 
 ## EXAMPLES
+### Example 1: Retrieve a service principal by its appId and only specific properties
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Applications
+
+Get-MgBetaServicePrincipalByAppId -Property "id,appId,displayName,appRoles,publishedPermissionScopes,resourceSpecificApplicationPermissions" 
+
 ```
-{{ Add code here }}
-```
+This example will retrieve a service principal by its appid and only specific properties
+
 
 ## PARAMETERS
 

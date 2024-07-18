@@ -41,16 +41,17 @@ Get-MgBetaRoleManagementDirectoryResourceNamespace -InputObject <IIdentityGovern
 Read the properties and relationships of an unifiedRbacResourceNamespace object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryResourceNamespace
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaRoleManagementDirectoryResourceNamespace Cmdlet.
+
 
 ## PARAMETERS
 

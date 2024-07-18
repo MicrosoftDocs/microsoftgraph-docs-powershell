@@ -46,22 +46,6 @@ Get-MgBetaShareListItemDriveItem -InputObject <IFilesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -230,6 +214,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemdriveitem)
+
 
 
 

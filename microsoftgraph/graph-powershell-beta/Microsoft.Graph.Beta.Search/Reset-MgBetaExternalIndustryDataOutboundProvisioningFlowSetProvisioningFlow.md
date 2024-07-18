@@ -32,18 +32,6 @@ Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow -Inp
 Reset a provisioningFlow.
 This action reprovisions all current data as if it were the initial run, and clears out the existing errors associated with the flow.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -227,6 +215,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/reset-mgbetaexternalindustrydataoutboundprovisioningflowsetprovisioningflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/reset-mgbetaexternalindustrydataoutboundprovisioningflowsetprovisioningflow)
 
 [https://learn.microsoft.com/graph/api/industrydata-provisioningflow-reset?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-provisioningflow-reset?view=graph-rest-beta)
+
 
 
 

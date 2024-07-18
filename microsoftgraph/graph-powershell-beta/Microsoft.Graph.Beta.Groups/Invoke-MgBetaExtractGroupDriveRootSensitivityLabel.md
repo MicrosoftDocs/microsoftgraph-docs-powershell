@@ -32,22 +32,6 @@ Invoke-MgBetaExtractGroupDriveRootSensitivityLabel -InputObject <IGroupsIdentity
 ## DESCRIPTION
 Invoke action extractSensitivityLabels
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -239,6 +223,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaextractgroupdriverootsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaextractgroupdriverootsensitivitylabel)
+
 
 
 

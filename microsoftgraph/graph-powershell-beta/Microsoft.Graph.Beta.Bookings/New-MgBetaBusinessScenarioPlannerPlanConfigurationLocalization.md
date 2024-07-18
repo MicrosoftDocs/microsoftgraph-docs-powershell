@@ -48,16 +48,45 @@ New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBo
 Create a new plannerPlanConfigurationLocalization object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.plannerPlanConfigurationLocalization"
+	languageTag = "en-us"
+	planTitle = "Order Tracking"
+	buckets = @(
+		@{
+			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+			externalBucketId = "deliveryBucket"
+			name = "Deliveries"
+		}
+		@{
+			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+			externalBucketId = "storePickupBucket"
+			name = "Pickup"
+		}
+		@{
+			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+			externalBucketId = "specialOrdersBucket"
+			name = "Special Orders"
+		}
+		@{
+			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+			externalBucketId = "returnProcessingBucket"
+			name = "Customer Returns"
+		}
+	)
+}
+
+New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization Cmdlet.
+
 
 ## PARAMETERS
 

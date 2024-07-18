@@ -53,11 +53,11 @@ Update a rule defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object: For more information about rules for Microsoft Entra roles and examples of updating rules, see the following articles:+ Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph+ Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules
 
 ## EXAMPLES
+### Example 1: Update a rule defined for a policy in PIM for Microsoft Entra roles
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
@@ -68,22 +68,26 @@ $params = @{
 		"@odata.type" = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
 		caller = "EndUser"
 		operations = @(
-			"All"
-		)
-		level = "Assignment"
-		inheritableSettings = @(
-		)
-		enforcedSettings = @(
-		)
-	}
+		"All"
+	)
+	level = "Assignment"
+	inheritableSettings = @(
+	)
+	enforcedSettings = @(
+	)
+}
 }
 
 Update-MgBetaPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will update a rule defined for a policy in pim for microsoft entra roles
+
+### Example 2: Update a rule defined for a policy in PIM for groups
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
@@ -93,17 +97,21 @@ $params = @{
 	target = @{
 		caller = "EndUser"
 		operations = @(
-			"All"
-		)
-		level = "Assignment"
-		inheritableSettings = @(
-		)
-		enforcedSettings = @(
-		)
-	}
+		"All"
+	)
+	level = "Assignment"
+	inheritableSettings = @(
+	)
+	enforcedSettings = @(
+	)
+}
 }
 
 Update-MgBetaPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId -BodyParameter $params
+
+```
+This example will update a rule defined for a policy in pim for groups
+
 
 ## PARAMETERS
 
