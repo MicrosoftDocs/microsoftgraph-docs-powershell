@@ -27,6 +27,8 @@ function Start-Copy {
             $DocPath = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples" "$Command.md"
             try {
                 Copy-Files -DocPath $DocPath -GraphProfilePath $GraphProfilePath -ModuleName $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile -Command $Command
+                #Add sleep time after each copy to avoid rate limiting
+                Start-Sleep -Seconds 5
             }
             catch {
                 Write-Host "`nError Message: " $_.Exception.Message
@@ -230,5 +232,5 @@ function Remove-WrongExamples {
 
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy
-
+#Copy-Files -DocPath "..\msgraph-sdk-powershell\src\DeviceManagement.Enrollment\beta\examples\New-MgBetaRoleManagementCloudPcRoleDefinition.md" -GraphProfilePath "graph-powershell-beta" -ModuleName "DeviceManagement.Enrollment" -ModulePrefix "Microsoft.Graph.Beta" -GraphProfile "beta" -Command "New-MgBetaRoleManagementCloudPcRoleDefinition"
 Write-Host -ForegroundColor Green "-------------Done-------------"
