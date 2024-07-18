@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 Module Guid: e8ca1faa-96b4-465b-a704-854b64e58526
 Download Help Link: {{ Update Download Link }}
@@ -353,6 +353,9 @@ Locale: en-US
 ### [Remove-MgBetaPrintPrinterJobDocument](Remove-MgBetaPrintPrinterJobDocument.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaPrintPrinterJobDocumentContent](Remove-MgBetaPrintPrinterJobDocumentContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaPrintPrinterJobTask](Remove-MgBetaPrintPrinterJobTask.md)
 {{ Fill in the Description }}
 
@@ -369,6 +372,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintPrinterShareJobDocument](Remove-MgBetaPrintPrinterShareJobDocument.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaPrintPrinterShareJobDocumentContent](Remove-MgBetaPrintPrinterShareJobDocumentContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintPrinterShareJobTask](Remove-MgBetaPrintPrinterShareJobTask.md)
@@ -396,6 +402,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintShareJobDocument](Remove-MgBetaPrintShareJobDocument.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaPrintShareJobDocumentContent](Remove-MgBetaPrintShareJobDocumentContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaPrintShareJobTask](Remove-MgBetaPrintShareJobTask.md)
@@ -523,5 +532,4 @@ Locale: en-US
 
 ### [Update-MgBetaPrintTaskDefinitionTask](Update-MgBetaPrintTaskDefinitionTask.md)
 {{ Fill in the Description }}
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get newly created, updated, or deleted oauth2permissiongrant objects without performing a full read of the entire resource collection.
 For details, see Using delta query.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaOauth2PermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaOauth2PermissionGrantDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +25,16 @@ Get newly created, updated, or deleted oauth2permissiongrant objects without per
 For details, see Using delta query.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -243,7 +250,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta)
 
 [https://learn.microsoft.com/graph/api/oauth2permissiongrant-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/oauth2permissiongrant-delta?view=graph-rest-1.0)
-
-
-
 

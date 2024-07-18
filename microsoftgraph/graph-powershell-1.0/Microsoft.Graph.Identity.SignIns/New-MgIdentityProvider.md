@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to identityProviders for identity
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityProvider?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,10 +29,11 @@ New-MgIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-Re
 Create new navigation property to identityProviders for identity
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.socialIdentityProvider"
@@ -46,11 +44,6 @@ $params = @{
 }
 
 New-MgIdentityProvider -BodyParameter $params
-```
-This example shows how to use the New-MgIdentityProvider Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -208,16 +201,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityProviderBase>`: identityProviderBase
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIdentityProviderBase\>: identityProviderBase
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The display name of the identity provider.
+  \[DisplayName \<String\>\]: The display name of the identity provider.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider)
-
-
-
 

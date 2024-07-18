@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 Module Guid: f07aeb05-f355-4116-a587-f725d4797aa2
 Download Help Link: {{ Update Download Link }}
@@ -380,16 +380,28 @@ Locale: en-US
 ### [Remove-MgBetaCommunicationOnlineMeeting](Remove-MgBetaCommunicationOnlineMeeting.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaCommunicationOnlineMeetingAlternativeRecording](Remove-MgBetaCommunicationOnlineMeetingAlternativeRecording.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaCommunicationOnlineMeetingAttendanceReport](Remove-MgBetaCommunicationOnlineMeetingAttendanceReport.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaCommunicationOnlineMeetingAttendeeReport](Remove-MgBetaCommunicationOnlineMeetingAttendeeReport.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaCommunicationOnlineMeetingBroadcastRecording](Remove-MgBetaCommunicationOnlineMeetingBroadcastRecording.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaCommunicationOnlineMeetingByJoinWebUrl](Remove-MgBetaCommunicationOnlineMeetingByJoinWebUrl.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationOnlineMeetingRecording](Remove-MgBetaCommunicationOnlineMeetingRecording.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaCommunicationOnlineMeetingRecordingContent](Remove-MgBetaCommunicationOnlineMeetingRecordingContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaCommunicationOnlineMeetingRegistration](Remove-MgBetaCommunicationOnlineMeetingRegistration.md)
@@ -404,10 +416,19 @@ Locale: en-US
 ### [Remove-MgBetaCommunicationOnlineMeetingTranscript](Remove-MgBetaCommunicationOnlineMeetingTranscript.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaCommunicationOnlineMeetingTranscriptContent](Remove-MgBetaCommunicationOnlineMeetingTranscriptContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent](Remove-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaCommunicationPresence](Remove-MgBetaCommunicationPresence.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnlineMeeting](Remove-MgBetaUserOnlineMeeting.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserOnlineMeetingAlternativeRecording](Remove-MgBetaUserOnlineMeetingAlternativeRecording.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnlineMeetingAttendanceReport](Remove-MgBetaUserOnlineMeetingAttendanceReport.md)
@@ -416,10 +437,19 @@ Locale: en-US
 ### [Remove-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserOnlineMeetingAttendeeReport](Remove-MgBetaUserOnlineMeetingAttendeeReport.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserOnlineMeetingBroadcastRecording](Remove-MgBetaUserOnlineMeetingBroadcastRecording.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserOnlineMeetingByJoinWebUrl](Remove-MgBetaUserOnlineMeetingByJoinWebUrl.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnlineMeetingRecording](Remove-MgBetaUserOnlineMeetingRecording.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserOnlineMeetingRecordingContent](Remove-MgBetaUserOnlineMeetingRecordingContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnlineMeetingRegistration](Remove-MgBetaUserOnlineMeetingRegistration.md)
@@ -432,6 +462,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserOnlineMeetingTranscript](Remove-MgBetaUserOnlineMeetingTranscript.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserOnlineMeetingTranscriptContent](Remove-MgBetaUserOnlineMeetingTranscriptContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserOnlineMeetingTranscriptMetadataContent](Remove-MgBetaUserOnlineMeetingTranscriptMetadataContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserPresence](Remove-MgBetaUserPresence.md)
@@ -598,5 +634,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserPresence](Update-MgBetaUserPresence.md)
 {{ Fill in the Description }}
-
 

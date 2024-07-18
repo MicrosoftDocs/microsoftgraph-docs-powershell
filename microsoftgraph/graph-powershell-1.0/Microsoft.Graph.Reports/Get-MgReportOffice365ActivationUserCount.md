@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationusercount
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActivationUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActivationUserCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,22 @@ Get-MgReportOffice365ActivationUserCount -OutFile <String> [-ResponseHeadersVari
 
 ## DESCRIPTION
 Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -116,8 +129,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-1.0)
-
-
-
-
 

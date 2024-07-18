@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Sites
 Module Guid: 7587c600-0c13-4efa-bc56-869a6245ef96
 Download Help Link: {{ Update Download Link }}
@@ -449,6 +449,12 @@ Locale: en-US
 ### [Get-MgBetaGroupSiteListItemField](Get-MgBetaGroupSiteListItemField.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupSiteListItemPermission](Get-MgBetaGroupSiteListItemPermission.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSiteListItemPermissionCount](Get-MgBetaGroupSiteListItemPermissionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupSiteListItemVersion](Get-MgBetaGroupSiteListItemVersion.md)
 {{ Fill in the Description }}
 
@@ -462,6 +468,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupSiteListOperationCount](Get-MgBetaGroupSiteListOperationCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSiteListPermission](Get-MgBetaGroupSiteListPermission.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSiteListPermissionCount](Get-MgBetaGroupSiteListPermissionCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupSiteListSubscription](Get-MgBetaGroupSiteListSubscription.md)
@@ -1412,6 +1424,12 @@ Locale: en-US
 ### [Get-MgBetaSiteListItemField](Get-MgBetaSiteListItemField.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaSiteListItemPermission](Get-MgBetaSiteListItemPermission.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSiteListItemPermissionCount](Get-MgBetaSiteListItemPermissionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaSiteListItemVersion](Get-MgBetaSiteListItemVersion.md)
 {{ Fill in the Description }}
 
@@ -1425,6 +1443,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSiteListOperationCount](Get-MgBetaSiteListOperationCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSiteListPermission](Get-MgBetaSiteListPermission.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSiteListPermissionCount](Get-MgBetaSiteListPermissionCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSiteListSubscription](Get-MgBetaSiteListSubscription.md)
@@ -1862,6 +1886,12 @@ Locale: en-US
 ### [Get-MgBetaUserFollowedSiteCount](Get-MgBetaUserFollowedSiteCount.md)
 {{ Fill in the Description }}
 
+### [Grant-MgBetaSiteListItemPermission](Grant-MgBetaSiteListItemPermission.md)
+{{ Fill in the Description }}
+
+### [Grant-MgBetaSiteListPermission](Grant-MgBetaSiteListPermission.md)
+{{ Fill in the Description }}
+
 ### [Grant-MgBetaSitePermission](Grant-MgBetaSitePermission.md)
 {{ Fill in the Description }}
 
@@ -1982,10 +2012,16 @@ Locale: en-US
 ### [New-MgBetaGroupSiteListItemDocumentSetVersion](New-MgBetaGroupSiteListItemDocumentSetVersion.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaGroupSiteListItemPermission](New-MgBetaGroupSiteListItemPermission.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaGroupSiteListItemVersion](New-MgBetaGroupSiteListItemVersion.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaGroupSiteListOperation](New-MgBetaGroupSiteListOperation.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaGroupSiteListPermission](New-MgBetaGroupSiteListPermission.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaGroupSiteListSubscription](New-MgBetaGroupSiteListSubscription.md)
@@ -2201,10 +2237,16 @@ Locale: en-US
 ### [New-MgBetaSiteListItemLink](New-MgBetaSiteListItemLink.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaSiteListItemPermission](New-MgBetaSiteListItemPermission.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaSiteListItemVersion](New-MgBetaSiteListItemVersion.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaSiteListOperation](New-MgBetaSiteListOperation.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaSiteListPermission](New-MgBetaSiteListPermission.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaSiteListSubscription](New-MgBetaSiteListSubscription.md)
@@ -2330,6 +2372,12 @@ Locale: en-US
 ### [Remove-MgBetaGroupSiteAnalyticItemActivityStatActivity](Remove-MgBetaGroupSiteAnalyticItemActivityStatActivity.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContent](Remove-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContentStream](Remove-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupSiteColumn](Remove-MgBetaGroupSiteColumn.md)
 {{ Fill in the Description }}
 
@@ -2405,13 +2453,28 @@ Locale: en-US
 ### [Remove-MgBetaGroupSiteListItemActivity](Remove-MgBetaGroupSiteListItemActivity.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupSiteListItemActivityDriveItemContent](Remove-MgBetaGroupSiteListItemActivityDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupSiteListItemActivityDriveItemContentStream](Remove-MgBetaGroupSiteListItemActivityDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupSiteListItemDocumentSetVersion](Remove-MgBetaGroupSiteListItemDocumentSetVersion.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupSiteListItemDocumentSetVersionField](Remove-MgBetaGroupSiteListItemDocumentSetVersionField.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupSiteListItemDriveItemContent](Remove-MgBetaGroupSiteListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupSiteListItemDriveItemContentStream](Remove-MgBetaGroupSiteListItemDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupSiteListItemField](Remove-MgBetaGroupSiteListItemField.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupSiteListItemPermission](Remove-MgBetaGroupSiteListItemPermission.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupSiteListItemVersion](Remove-MgBetaGroupSiteListItemVersion.md)
@@ -2421,6 +2484,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupSiteListOperation](Remove-MgBetaGroupSiteListOperation.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupSiteListPermission](Remove-MgBetaGroupSiteListPermission.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupSiteListSubscription](Remove-MgBetaGroupSiteListSubscription.md)
@@ -2444,7 +2510,13 @@ Locale: en-US
 ### [Remove-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage](Remove-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageContent](Remove-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupSiteOnenoteNotebookSectionPage](Remove-MgBetaGroupSiteOnenoteNotebookSectionPage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupSiteOnenoteNotebookSectionPageContent](Remove-MgBetaGroupSiteOnenoteNotebookSectionPageContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupSiteOnenoteOperation](Remove-MgBetaGroupSiteOnenoteOperation.md)
@@ -2453,7 +2525,13 @@ Locale: en-US
 ### [Remove-MgBetaGroupSiteOnenotePage](Remove-MgBetaGroupSiteOnenotePage.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupSiteOnenotePageContent](Remove-MgBetaGroupSiteOnenotePageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupSiteOnenoteResource](Remove-MgBetaGroupSiteOnenoteResource.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupSiteOnenoteResourceContent](Remove-MgBetaGroupSiteOnenoteResourceContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupSiteOnenoteSection](Remove-MgBetaGroupSiteOnenoteSection.md)
@@ -2468,7 +2546,13 @@ Locale: en-US
 ### [Remove-MgBetaGroupSiteOnenoteSectionGroupSectionPage](Remove-MgBetaGroupSiteOnenoteSectionGroupSectionPage.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupSiteOnenoteSectionGroupSectionPageContent](Remove-MgBetaGroupSiteOnenoteSectionGroupSectionPageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupSiteOnenoteSectionPage](Remove-MgBetaGroupSiteOnenoteSectionPage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupSiteOnenoteSectionPageContent](Remove-MgBetaGroupSiteOnenoteSectionPageContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupSiteOperation](Remove-MgBetaGroupSiteOperation.md)
@@ -2648,6 +2732,9 @@ Locale: en-US
 ### [Remove-MgBetaSiteListItemField](Remove-MgBetaSiteListItemField.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaSiteListItemPermission](Remove-MgBetaSiteListItemPermission.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaSiteListItemVersion](Remove-MgBetaSiteListItemVersion.md)
 {{ Fill in the Description }}
 
@@ -2655,6 +2742,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSiteListOperation](Remove-MgBetaSiteListOperation.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSiteListPermission](Remove-MgBetaSiteListPermission.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSiteListSubscription](Remove-MgBetaSiteListSubscription.md)
@@ -2778,6 +2868,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Restore-MgBetaSiteListItemVersion](Restore-MgBetaSiteListItemVersion.md)
+{{ Fill in the Description }}
+
+### [Revoke-MgBetaSiteListItemPermissionGrant](Revoke-MgBetaSiteListItemPermissionGrant.md)
+{{ Fill in the Description }}
+
+### [Revoke-MgBetaSiteListPermissionGrant](Revoke-MgBetaSiteListPermissionGrant.md)
 {{ Fill in the Description }}
 
 ### [Revoke-MgBetaSitePermissionGrant](Revoke-MgBetaSitePermissionGrant.md)
@@ -2984,6 +3080,9 @@ Locale: en-US
 ### [Update-MgBetaGroupSiteListItemLastModifiedByUserMailboxSetting](Update-MgBetaGroupSiteListItemLastModifiedByUserMailboxSetting.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaGroupSiteListItemPermission](Update-MgBetaGroupSiteListItemPermission.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaGroupSiteListItemVersion](Update-MgBetaGroupSiteListItemVersion.md)
 {{ Fill in the Description }}
 
@@ -2994,6 +3093,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaGroupSiteListOperation](Update-MgBetaGroupSiteListOperation.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaGroupSiteListPermission](Update-MgBetaGroupSiteListPermission.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaGroupSiteListSubscription](Update-MgBetaGroupSiteListSubscription.md)
@@ -3257,6 +3359,9 @@ Locale: en-US
 ### [Update-MgBetaSiteListItemLastModifiedByUserMailboxSetting](Update-MgBetaSiteListItemLastModifiedByUserMailboxSetting.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaSiteListItemPermission](Update-MgBetaSiteListItemPermission.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaSiteListItemVersion](Update-MgBetaSiteListItemVersion.md)
 {{ Fill in the Description }}
 
@@ -3267,6 +3372,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaSiteListOperation](Update-MgBetaSiteListOperation.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSiteListPermission](Update-MgBetaSiteListPermission.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaSiteListSubscription](Update-MgBetaSiteListSubscription.md)
@@ -3412,5 +3520,4 @@ Locale: en-US
 
 ### [Update-MgBetaSiteTermStoreSetTermRelation](Update-MgBetaSiteTermStoreSetTermRelation.md)
 {{ Fill in the Description }}
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyaccessreviewpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyAccessReviewPolicy
 
 ## SYNOPSIS
-The policy that contains directory-level access review settings.
+Read the properties and relationships of an accessReviewPolicy object.
 
 ## SYNTAX
 
@@ -19,20 +19,16 @@ Get-MgBetaPolicyAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <Stri
 ```
 
 ## DESCRIPTION
-The policy that contains directory-level access review settings.
+Read the properties and relationships of an accessReviewPolicy object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyAccessReviewPolicy
-
-```
-This example shows how to use the Get-MgBetaPolicyAccessReviewPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -126,6 +122,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyaccessreviewpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyaccessreviewpolicy)
 
-
-
+[https://learn.microsoft.com/graph/api/accessreviewpolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewpolicy-get?view=graph-rest-beta)
 

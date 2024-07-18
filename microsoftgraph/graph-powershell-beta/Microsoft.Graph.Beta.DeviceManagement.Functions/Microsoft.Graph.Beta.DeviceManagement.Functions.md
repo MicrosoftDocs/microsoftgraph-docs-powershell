@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 Module Guid: a629509a-ebee-475b-aa2d-5201c47a425c
 Download Help Link: {{ Update Download Link }}
@@ -155,6 +155,9 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc](Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcReviewStatus](Get-MgBetaDeviceManagementVirtualEndpointCloudPcReviewStatus.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState](Get-MgBetaDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState.md)
 {{ Fill in the Description }}
 
@@ -214,5 +217,4 @@ Locale: en-US
 
 ### [Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance](Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance.md)
 {{ Fill in the Description }}
-
 

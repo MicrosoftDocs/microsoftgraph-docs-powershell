@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Reports
 Module Guid: 51fa7a02-1099-4183-b155-e14ffb788a3c
 Download Help Link: {{ Update Download Link }}
@@ -533,12 +533,6 @@ Locale: en-US
 ### [Get-MgBetaReportUserInsightDailyActiveUser](Get-MgBetaReportUserInsightDailyActiveUser.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaReportUserInsightDailyActiveUserBreakdown](Get-MgBetaReportUserInsightDailyActiveUserBreakdown.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaReportUserInsightDailyActiveUserBreakdownCount](Get-MgBetaReportUserInsightDailyActiveUserBreakdownCount.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaReportUserInsightDailyActiveUserCount](Get-MgBetaReportUserInsightDailyActiveUserCount.md)
 {{ Fill in the Description }}
 
@@ -585,12 +579,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaReportUserInsightMonthlyActiveUser](Get-MgBetaReportUserInsightMonthlyActiveUser.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaReportUserInsightMonthlyActiveUserBreakdown](Get-MgBetaReportUserInsightMonthlyActiveUserBreakdown.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaReportUserInsightMonthlyActiveUserBreakdownCount](Get-MgBetaReportUserInsightMonthlyActiveUserBreakdownCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaReportUserInsightMonthlyActiveUserCount](Get-MgBetaReportUserInsightMonthlyActiveUserCount.md)
@@ -760,5 +748,4 @@ Locale: en-US
 
 ### [Update-MgBetaReportUserInsightMonthly](Update-MgBetaReportUserInsightMonthly.md)
 {{ Fill in the Description }}
-
 

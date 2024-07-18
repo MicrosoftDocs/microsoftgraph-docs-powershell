@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 Module Guid: 22317fb0-f305-44b0-a696-5806cf8041fb
 Download Help Link: {{ Update Download Link }}
@@ -101,6 +101,12 @@ Locale: en-US
 ### [Remove-MgBetaServiceAnnouncementMessageAttachment](Remove-MgBetaServiceAnnouncementMessageAttachment.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaServiceAnnouncementMessageAttachmentArchive](Remove-MgBetaServiceAnnouncementMessageAttachmentArchive.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaServiceAnnouncementMessageAttachmentContent](Remove-MgBetaServiceAnnouncementMessageAttachmentContent.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaServiceAnnouncementMessageAttachmentArchive](Set-MgBetaServiceAnnouncementMessageAttachmentArchive.md)
 {{ Fill in the Description }}
 
@@ -121,5 +127,4 @@ Locale: en-US
 
 ### [Update-MgBetaServiceAnnouncementMessageAttachment](Update-MgBetaServiceAnnouncementMessageAttachment.md)
 {{ Fill in the Description }}
-
 

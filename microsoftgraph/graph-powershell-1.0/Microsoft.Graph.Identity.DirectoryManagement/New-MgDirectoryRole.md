@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrole
@@ -12,9 +12,6 @@ Activate a directory role.
 To read a directory role or update its members, it must first be activated in the tenant.
 The Company Administrators and the implicit user directory roles (User, Guest User, and Restricted Guest User roles) are activated by default.
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRole?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,21 +37,17 @@ The Company Administrators and the implicit user directory roles (User, Guest Us
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 $params = @{
 	roleTemplateId = "fe930be7-5e62-47db-91af-98c3a49a38b1"
 }
 
 New-MgDirectoryRole -BodyParameter $params
-
-```
-This example shows how to use the New-MgDirectoryRole Cmdlet.
-
 
 ## PARAMETERS
 
@@ -303,75 +296,74 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDirectoryRole>`: directoryRole
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+BODYPARAMETER \<IMicrosoftGraphDirectoryRole\>: directoryRole
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: The description for the directory role.
-Read-only.
-Supports $filter (eq), $search, $select.
-  - `[DisplayName <String>]`: The display name for the directory role.
+  \[Description \<String\>\]: The description for the directory role.
 Read-only.
 Supports $filter (eq), $search, $select.
-  - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users that are members of this directory role.
+  \[DisplayName \<String\>\]: The display name for the directory role.
+Read-only.
+Supports $filter (eq), $search, $select.
+  \[Members \<IMicrosoftGraphDirectoryObject\[\]\>\]: Users that are members of this directory role.
 HTTP Methods: GET, POST, DELETE.
 Read-only.
 Nullable.
 Supports $expand.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[RoleTemplateId <String>]`: The id of the directoryRoleTemplate that this role is based on.
+  \[RoleTemplateId \<String\>\]: The id of the directoryRoleTemplate that this role is based on.
 The property must be specified when activating a directory role in a tenant with a POST operation.
 After the directory role has been activated, the property is read only.
 Supports $filter (eq), $select.
-  - `[ScopedMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Members of this directory role that are scoped to administrative units.
+  \[ScopedMembers \<IMicrosoftGraphScopedRoleMembership\[\]\>\]: Members of this directory role that are scoped to administrative units.
 Read-only.
 Nullable.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
-    - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
-    - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+    \[AdministrativeUnitId \<String\>\]: Unique identifier for the administrative unit that the directory role is scoped to
+    \[RoleId \<String\>\]: Unique identifier for the directory role that the member is in.
+    \[RoleMemberInfo \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
 
-MEMBERS <IMicrosoftGraphDirectoryObject- `[]`>: Users that are members of this directory role.
+MEMBERS \<IMicrosoftGraphDirectoryObject\[\]\>: Users that are members of this directory role.
 HTTP Methods: GET, POST, DELETE.
 Read-only.
 Nullable.
 Supports $expand.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-SCOPEDMEMBERS <IMicrosoftGraphScopedRoleMembership- `[]`>: Members of this directory role that are scoped to administrative units.
+SCOPEDMEMBERS \<IMicrosoftGraphScopedRoleMembership\[\]\>: Members of this directory role that are scoped to administrative units.
 Read-only.
 Nullable.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
-  - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
-  - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+  \[AdministrativeUnitId \<String\>\]: Unique identifier for the administrative unit that the directory role is scoped to
+  \[RoleId \<String\>\]: Unique identifier for the directory role that the member is in.
+  \[RoleMemberInfo \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
+    \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrole)
 
 [https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-1.0)
-
-
-
 

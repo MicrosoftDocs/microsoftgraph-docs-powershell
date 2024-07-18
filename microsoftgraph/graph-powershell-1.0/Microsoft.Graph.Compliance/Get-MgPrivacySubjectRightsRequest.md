@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequest
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgPrivacySubjectRightsRequest
 
 ## SYNOPSIS
-Get subjectRightsRequests from privacy
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
+Read the properties and relationships of a subjectRightsRequest object.
 
 ## SYNTAX
 
@@ -38,7 +35,19 @@ Get-MgPrivacySubjectRightsRequest -InputObject <IComplianceIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Get subjectRightsRequests from privacy
+Read the properties and relationships of a subjectRightsRequest object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -285,16 +294,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequest)
 
+[https://learn.microsoft.com/graph/api/subjectrightsrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-get?view=graph-rest-1.0)
 
-
-
+[https://learn.microsoft.com/graph/api/subjectrightsrequest-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-list?view=graph-rest-1.0)
 
