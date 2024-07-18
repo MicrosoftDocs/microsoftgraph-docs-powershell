@@ -27,8 +27,6 @@ function Start-Copy {
             $DocPath = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples" "$Command.md"
             try {
                 Copy-Files -DocPath $DocPath -GraphProfilePath $GraphProfilePath -ModuleName $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile -Command $Command
-                #Add sleep time after each copy to avoid rate limiting
-                Start-Sleep -Seconds 5
             }
             catch {
                 Write-Host "`nError Message: " $_.Exception.Message
