@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents entry point for identity userflow attributes.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

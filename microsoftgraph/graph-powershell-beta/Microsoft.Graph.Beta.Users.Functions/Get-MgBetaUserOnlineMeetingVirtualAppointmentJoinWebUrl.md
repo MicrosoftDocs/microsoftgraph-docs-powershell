@@ -12,6 +12,9 @@ Get a join web URL for a Teams Virtual Appointment.
 This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms.
 With Teams Premium, you can configure a custom lobby room experience for attendees by adding your company logo and access the Virtual Appointments usage report for organizational analytics.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -32,6 +35,9 @@ Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl -InputObject <IUsersFunc
 Get a join web URL for a Teams Virtual Appointment.
 This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms.
 With Teams Premium, you can configure a custom lobby room experience for attendees by adding your company logo and access the Virtual Appointments usage report for organizational analytics.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualappointment-getvirtualappointmentjoinweburl-permissions.md)]
 
 ## EXAMPLES
 

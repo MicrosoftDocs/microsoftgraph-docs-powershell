@@ -11,6 +11,9 @@ schema: 2.0.0
 The permissions associated with the site.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)

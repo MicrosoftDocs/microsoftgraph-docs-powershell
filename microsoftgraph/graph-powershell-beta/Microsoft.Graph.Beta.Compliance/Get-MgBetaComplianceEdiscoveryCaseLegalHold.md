@@ -37,6 +37,9 @@ Get-MgBetaComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity> [
 ## DESCRIPTION
 Read the properties and relationships of a legalHold object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

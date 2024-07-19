@@ -46,6 +46,9 @@ Remove-MgBetaUserPasswordSingleSignOnCredential -InputObject <IUsersActionsIdent
 ## DESCRIPTION
 Delete the password-based single sign-on credentials for a given user to a given service principal.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-deletepasswordsinglesignoncredentials-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to rubrics for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationUserRubric](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserRubric?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

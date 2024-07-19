@@ -49,6 +49,9 @@ This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
 After a Windows 365 Frontline Cloud PC is powered on, it is allocated to a user, and licenses are assigned immediately.
 Only IT admin users can perform this action.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-poweron-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

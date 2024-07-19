@@ -11,6 +11,9 @@ schema: 2.0.0
 Add or remove subscriptions for the user.
 You can also enable and disable specific plans associated with a subscription.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserLicense](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserLicense?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -48,6 +51,9 @@ Set-MgUserLicense -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Add or remove subscriptions for the user.
 You can also enable and disable specific plans associated with a subscription.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-assignlicense-permissions.md)]
 
 ## EXAMPLES
 

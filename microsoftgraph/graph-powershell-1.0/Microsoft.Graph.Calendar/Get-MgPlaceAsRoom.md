@@ -15,6 +15,9 @@ By default, this operation returns 100 places per page.
 Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
 See details for how they compare.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoom?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

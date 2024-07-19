@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Asynchronously create a copy of a driveItem (including any children) under a new parent item or with a new name.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -46,6 +49,9 @@ Copy-MgBetaUserDriveRoot -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Asynchronously create a copy of a driveItem (including any children) under a new parent item or with a new name.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-copy-permissions.md)]
 
 ## EXAMPLES
 

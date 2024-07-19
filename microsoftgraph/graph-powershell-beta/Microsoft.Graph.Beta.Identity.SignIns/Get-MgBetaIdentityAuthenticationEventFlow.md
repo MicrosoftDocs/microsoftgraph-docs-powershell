@@ -39,6 +39,9 @@ Get-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdentity
 Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
 Only externalUsersSelfServiceSignupEventsFlow object types are available.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventsflow-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

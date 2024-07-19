@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to teamsApps for appCatalogs
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

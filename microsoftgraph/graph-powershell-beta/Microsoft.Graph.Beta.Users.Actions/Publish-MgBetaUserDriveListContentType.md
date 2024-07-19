@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action publish
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Users.Actions/Publish-MgUserDriveListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Publish (Default)
@@ -28,6 +31,9 @@ Publish-MgBetaUserDriveListContentType -InputObject <IUsersActionsIdentity> [-Re
 
 ## DESCRIPTION
 Invoke action publish
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
 
 ## EXAMPLES
 

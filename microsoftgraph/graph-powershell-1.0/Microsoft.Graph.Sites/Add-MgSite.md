@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Follow a user's site or multiple sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -28,6 +31,9 @@ Add-MgSite -BodyParameter <IPathsV2U0Z1SitesMicrosoftGraphAddPostRequestbodyCont
 
 ## DESCRIPTION
 Follow a user's site or multiple sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-follow-permissions.md)]
 
 ## EXAMPLES
 

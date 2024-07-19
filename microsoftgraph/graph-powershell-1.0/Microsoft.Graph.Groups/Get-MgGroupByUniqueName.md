@@ -13,6 +13,9 @@ This operation returns by default only a subset of all the available properties,
 To get properties that aren't_ returned by default, specify them in a $select OData query option.
 The hasMembersWithLicenseErrors and isArchived properties are an exception and aren't returned in the $select query.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupByUniqueName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -34,6 +37,9 @@ Get the properties and relationships of a group object.
 This operation returns by default only a subset of all the available properties, as noted in the Properties section.
 To get properties that aren't_ returned by default, specify them in a $select OData query option.
 The hasMembersWithLicenseErrors and isArchived properties are an exception and aren't returned in the $select query.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-permissions.md)]
 
 ## EXAMPLES
 

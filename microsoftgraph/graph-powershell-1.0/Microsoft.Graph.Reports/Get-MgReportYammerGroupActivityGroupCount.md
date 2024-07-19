@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the total number of groups that existed and how many included group conversation activities.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerGroupActivityGroupCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerGroupActivityGroupCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

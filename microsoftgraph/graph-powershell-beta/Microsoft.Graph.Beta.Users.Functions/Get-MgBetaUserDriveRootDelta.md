@@ -14,6 +14,9 @@ After you finish receiving all the changes, you may apply them to your local sta
 Deleted items are returned with the deleted facet.Items with this property set should be removed from your local state.
 Note: you should only delete a folder locally if it's empty after syncing all the changes.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveRootDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDriveRootDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -54,6 +57,9 @@ Your app begins by calling delta without any parameters.The service starts enume
 After you finish receiving all the changes, you may apply them to your local state.To check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
 Deleted items are returned with the deleted facet.Items with this property set should be removed from your local state.
 Note: you should only delete a folder locally if it's empty after syncing all the changes.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-delta-permissions.md)]
 
 ## EXAMPLES
 

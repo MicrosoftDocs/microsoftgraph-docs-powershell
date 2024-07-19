@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Clear the preferred availability and activity status for a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserPresenceUserPreferredPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Clear (Default)
@@ -28,6 +31,9 @@ Clear-MgUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Clear the preferred availability and activity status for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-clearuserpreferredpresence-permissions.md)]
 
 ## EXAMPLES
 

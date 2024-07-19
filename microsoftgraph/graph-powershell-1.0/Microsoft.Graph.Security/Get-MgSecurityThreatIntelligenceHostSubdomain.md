@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The subdomains that are associated with this host.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostSubdomain](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostSubdomain?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

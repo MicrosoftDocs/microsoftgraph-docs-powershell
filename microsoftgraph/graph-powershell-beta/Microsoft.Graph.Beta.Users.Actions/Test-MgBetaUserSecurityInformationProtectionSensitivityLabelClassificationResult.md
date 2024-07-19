@@ -56,6 +56,9 @@ This API is useful when a label should be set automatically based on classificat
 To evaluate based on classification results, provide the contentInfo, which includes existing content metadata key-value pairs, and classification results.
 The API returns an informationProtectionAction that contains one of more of the following:
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensitivitylabel-evaluateclassificationresults-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

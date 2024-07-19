@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The policy to control Microsoft Entra authentication behavior for federated users.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

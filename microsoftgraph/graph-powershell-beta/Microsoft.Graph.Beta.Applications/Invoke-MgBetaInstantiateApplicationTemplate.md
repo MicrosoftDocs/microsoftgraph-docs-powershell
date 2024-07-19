@@ -11,6 +11,9 @@ schema: 2.0.0
 Add an instance of an application from the Microsoft Entra application gallery into your directory.
 The application template with ID 8adf8e6e-67b2-4cf2-a259-e3dc5476c621 can be used to add a non-gallery app that you can configure different single-sign on (SSO) modes like SAML SSO and password-based SSO.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgInstantiateApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Invoke-MgInstantiateApplicationTemplate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### InstantiateExpanded (Default)

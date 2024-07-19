@@ -37,6 +37,9 @@ Get-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-ExpandPr
 ## DESCRIPTION
 Retrieve the properties and relationships of a case object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

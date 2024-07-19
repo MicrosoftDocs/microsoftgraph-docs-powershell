@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The group's conversations.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgGroupConversation -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 The group's conversations.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-conversation-permissions.md)]
 
 ## EXAMPLES
 

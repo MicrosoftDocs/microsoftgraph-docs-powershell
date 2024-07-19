@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Follow a driveItem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFollowUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgFollowUserDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Follow (Default)
@@ -26,6 +29,9 @@ Invoke-MgBetaFollowUserDriveRoot -InputObject <IUsersActionsIdentity> [-Response
 
 ## DESCRIPTION
 Follow a driveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-follow-permissions.md)]
 
 ## EXAMPLES
 

@@ -27,6 +27,9 @@ Get-MgBetaUserCloudPcLaunchInfo -InputObject <IUsersFunctionsIdentity> [-Respons
 ## DESCRIPTION
 Get the cloudPCLaunchInfo for the signed-in user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getcloudpclaunchinfo-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

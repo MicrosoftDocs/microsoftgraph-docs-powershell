@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update content for the navigation property root in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserDriveRootContent](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveRootContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

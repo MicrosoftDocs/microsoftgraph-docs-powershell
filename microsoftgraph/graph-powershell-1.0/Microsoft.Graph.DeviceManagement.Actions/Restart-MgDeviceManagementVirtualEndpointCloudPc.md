@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reboot a specific cloudPC object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restart-MgBetaDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restart-MgBetaDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reboot (Default)
@@ -28,6 +31,9 @@ Restart-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagement
 
 ## DESCRIPTION
 Reboot a specific cloudPC object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-reboot-permissions.md)]
 
 ## EXAMPLES
 

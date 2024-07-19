@@ -21,6 +21,9 @@ Get-MgBetaDeviceManagementVirtualEndpointScopedPermission [-Count] [-Filter <Str
 ## DESCRIPTION
 Get the permissions and corresponding scope IDs for which the authenticated user has access.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-retrievescopedpermissions-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

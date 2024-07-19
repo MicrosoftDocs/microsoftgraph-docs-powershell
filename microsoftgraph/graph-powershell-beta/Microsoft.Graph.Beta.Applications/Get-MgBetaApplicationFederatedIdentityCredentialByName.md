@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a federatedIdentityCredential object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationFederatedIdentityCredentialByName](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationFederatedIdentityCredentialByName?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgBetaApplicationFederatedIdentityCredentialByName -InputObject <IApplicatio
 
 ## DESCRIPTION
 Read the properties and relationships of a federatedIdentityCredential object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedidentitycredential-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -17,6 +17,9 @@ When set during creation through the displayName property, the subject of the ce
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaServicePrincipalTokenSigningCertificate](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaServicePrincipalTokenSigningCertificate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -59,6 +62,9 @@ It and the associated private key object have the same value of keyId.
 When set during creation through the displayName property, the subject of the certificate cannot be updated.
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-addtokensigningcertificate-permissions.md)]
 
 ## EXAMPLES
 

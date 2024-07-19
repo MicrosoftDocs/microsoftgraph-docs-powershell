@@ -12,6 +12,9 @@ The users and groups responsible for this guest's privileges in the tenant and k
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSponsor](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSponsor?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

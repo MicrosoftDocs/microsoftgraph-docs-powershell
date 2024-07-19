@@ -21,6 +21,9 @@ Get-MgBetaAdminReportSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get the tenant-level settings for Microsoft 365 reports.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminreportsettings-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an externalItem object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Set-MgBetaExternalConnectionItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

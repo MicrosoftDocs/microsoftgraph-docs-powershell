@@ -11,6 +11,9 @@ schema: 2.0.0
 Get a list of driveItem objects shared with the owner of a drive.
 The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they are items from a different drive.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphUserDrive](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaGraphUserDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Graph (Default)
@@ -32,6 +35,9 @@ Invoke-MgGraphUserDrive -InputObject <IUsersFunctionsIdentity> [-Count] [-Expand
 ## DESCRIPTION
 Get a list of driveItem objects shared with the owner of a drive.
 The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they are items from a different drive.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-sharedwithme-permissions.md)]
 
 ## EXAMPLES
 
