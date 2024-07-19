@@ -32,8 +32,6 @@ Remove-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property endpoints for print
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -222,6 +220,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintserviceendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintserviceendpoint)
+
+
 
 
 

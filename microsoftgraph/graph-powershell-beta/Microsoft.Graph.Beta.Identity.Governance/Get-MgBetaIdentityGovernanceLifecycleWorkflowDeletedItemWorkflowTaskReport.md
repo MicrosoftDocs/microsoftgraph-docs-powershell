@@ -41,8 +41,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport
 ## DESCRIPTION
 Represents the aggregation of task execution data for tasks within a workflow object.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -407,6 +405,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowtaskreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowtaskreport)
+
+
+
+
 
 
 

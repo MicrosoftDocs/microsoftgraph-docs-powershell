@@ -42,8 +42,6 @@ Get-MgUserChatMessageReply -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 Replies for a specified message.
 Supports $expand for channel messages.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -372,6 +370,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmessagereply)
+
+
+
 
 
 

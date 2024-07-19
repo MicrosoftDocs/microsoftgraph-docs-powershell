@@ -881,6 +881,9 @@ Locale: en-US
 ### [Remove-MgGroupPhoto](Remove-MgGroupPhoto.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupPhotoContent](Remove-MgGroupPhotoContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupRejectedSenderDirectoryObjectByRef](Remove-MgGroupRejectedSenderDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 

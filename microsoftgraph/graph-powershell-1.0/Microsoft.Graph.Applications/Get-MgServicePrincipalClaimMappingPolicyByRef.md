@@ -27,8 +27,6 @@ Get-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId <String> [-Fil
 The claimsMappingPolicies assigned to this service principal.
 Supports $expand.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -226,6 +224,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalclaimmappingpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalclaimmappingpolicybyref)
+
+
 
 
 

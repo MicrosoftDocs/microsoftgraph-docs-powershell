@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamworkDeviceConfiguration
 
 ## SYNOPSIS
-The configuration properties of the device.
+Get the configuration details of a Microsoft Teams-enabled device, including software versions, peripheral device configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
 
 ## SYNTAX
 
@@ -27,16 +27,20 @@ Get-MgBetaTeamworkDeviceConfiguration -InputObject <ITeamsIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-The configuration properties of the device.
+Get the configuration details of a Microsoft Teams-enabled device, including software versions, peripheral device configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaTeamworkDeviceConfiguration Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaTeamworkDeviceConfiguration -TeamworkDeviceId $teamworkDeviceId
+
 ```
 This example shows how to use the Get-MgBetaTeamworkDeviceConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -208,6 +212,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeviceconfiguration)
+
+[https://learn.microsoft.com/graph/api/teamworkdeviceconfiguration-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamworkdeviceconfiguration-get?view=graph-rest-beta)
 
 
 

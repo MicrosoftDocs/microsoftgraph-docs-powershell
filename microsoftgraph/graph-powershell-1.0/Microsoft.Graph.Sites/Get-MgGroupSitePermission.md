@@ -42,8 +42,6 @@ Get-MgGroupSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <String
 The permissions associated with the site.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -368,6 +366,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepermission)
+
+
+
 
 
 

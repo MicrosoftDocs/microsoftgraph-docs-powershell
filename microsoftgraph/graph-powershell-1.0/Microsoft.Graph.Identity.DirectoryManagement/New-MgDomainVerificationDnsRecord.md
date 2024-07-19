@@ -48,8 +48,6 @@ New-MgDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Create new navigation property to verificationDnsRecords for domains
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -345,6 +343,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainverificationdnsrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainverificationdnsrecord)
+
+
 
 
 

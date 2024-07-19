@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy
 
 ## SYNOPSIS
-Invoke function asHierarchy
+Return a list of tag objects in hierarchial form
 
 ## SYNTAX
 
@@ -29,9 +29,7 @@ Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy -InputObject <IComplianceIde
 ```
 
 ## DESCRIPTION
-Invoke function asHierarchy
-
-## EXAMPLES
+Return a list of tag objects in hierarchial form
 
 ## PARAMETERS
 
@@ -269,6 +267,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaascomplianceediscoverycasetaghierarchy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaascomplianceediscoverycasetaghierarchy)
+
+
 
 
 

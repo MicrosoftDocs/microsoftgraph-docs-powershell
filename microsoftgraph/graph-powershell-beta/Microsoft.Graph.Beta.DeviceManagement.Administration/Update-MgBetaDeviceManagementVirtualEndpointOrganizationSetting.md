@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 
 ## SYNOPSIS
-Update the navigation property organizationSettings in deviceManagement
+Update the properties of the cloudPcOrganizationSettings object in a tenant.
 
 ## SYNTAX
 
@@ -28,25 +28,30 @@ Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 ```
 
 ## DESCRIPTION
-Update the navigation property organizationSettings in deviceManagement
+Update the properties of the cloudPcOrganizationSettings object in a tenant.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcOrganizationSettings"
-	EnableMEMAutoEnroll = $true
-	OsVersion = "windows11"
-	UserAccountType = "standardUser"
-	WindowsSettings = @{
-		Language = "en-US"
+	enableMEMAutoEnroll = $true
+	osVersion = "windows11"
+	userAccountType = "standardUser"
+	windowsSettings = @{
+		language = "en-US"
 	}
 }
+
 Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -296,6 +301,8 @@ The default value is en-US, which corresponds to English (United States).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting)
+
+[https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-update?view=graph-rest-beta)
 
 
 

@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceAccessReviewDefinitionInstance
 
 ## SYNOPSIS
-If the accessReviewScheduleDefinition is a recurring access review, instances represent each recurrence.
-A review that doesn't recur will have exactly one instance.
-Instances also represent each unique resource under review in the accessReviewScheduleDefinition.
-If a review has multiple resources and multiple instances, each resource has a unique instance for each recurrence.
+Read the properties and relationships of an accessReviewInstance object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
@@ -42,22 +39,19 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIdentityGo
 ```
 
 ## DESCRIPTION
-If the accessReviewScheduleDefinition is a recurring access review, instances represent each recurrence.
-A review that doesn't recur will have exactly one instance.
-Instances also represent each unique resource under review in the accessReviewScheduleDefinition.
-If a review has multiple resources and multiple instances, each resource has a unique instance for each recurrence.
+Read the properties and relationships of an accessReviewInstance object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
+Get-MgIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId
+
 ```
 This example shows how to use the Get-MgIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -392,6 +386,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstance)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstance-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-list-instances?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-list-instances?view=graph-rest-1.0)
 
 
 

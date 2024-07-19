@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityB2XUserFlowUserAttributeAssignment
 
 ## SYNOPSIS
-Create new navigation property to userAttributeAssignments for identity
+Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-1.0)
@@ -48,12 +48,13 @@ New-MgBetaIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 ```
 
 ## DESCRIPTION
-Create new navigation property to userAttributeAssignments for identity
+Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -69,10 +70,9 @@ $params = @{
 }
 
 New-MgBetaIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaIdentityB2XUserFlowUserAttributeAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -359,7 +359,7 @@ This is only used for verifying the user's phone number or email address.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DataType <String>]`: identityUserFlowAttributeDataType
-    - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
+    - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
     - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
     - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
@@ -421,6 +421,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -440,6 +441,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -454,7 +456,7 @@ USERATTRIBUTE `<IMicrosoftGraphIdentityUserFlowAttribute>`: identityUserFlowAttr
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DataType <String>]`: identityUserFlowAttributeDataType
-  - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
+  - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
   - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
@@ -468,6 +470,8 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflowuserattributeassignment)
+
+[https://learn.microsoft.com/graph/api/b2xidentityuserflow-post-userattributeassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/b2xidentityuserflow-post-userattributeassignments?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSiteTermStoreGroupSetTerm
 
 ## SYNOPSIS
-All the terms under the set.
+Read the properties and relationships of a term object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetTerm?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-All the terms under the set.
+Read the properties and relationships of a term object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -400,6 +400,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsetterm)
+
+[https://learn.microsoft.com/graph/api/termstore-term-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/termstore-term-get?view=graph-rest-beta)
 
 
 

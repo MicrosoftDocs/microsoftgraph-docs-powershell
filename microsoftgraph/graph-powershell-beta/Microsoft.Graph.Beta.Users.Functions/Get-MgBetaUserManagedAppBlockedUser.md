@@ -21,8 +21,6 @@ Get-MgBetaUserManagedAppBlockedUser [-Count] [-Filter <String>] [-Search <String
 ## DESCRIPTION
 Invoke function getManagedAppBlockedUsers
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Count
@@ -159,6 +157,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanagedappblockeduser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanagedappblockeduser)
+
+
 
 
 

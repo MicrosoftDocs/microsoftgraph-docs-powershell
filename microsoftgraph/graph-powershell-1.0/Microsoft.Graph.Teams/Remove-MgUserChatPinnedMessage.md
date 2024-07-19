@@ -32,8 +32,6 @@ Remove-MgUserChatPinnedMessage -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property pinnedMessages for users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChatId
@@ -257,6 +255,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatpinnedmessage)
+
+
 
 
 

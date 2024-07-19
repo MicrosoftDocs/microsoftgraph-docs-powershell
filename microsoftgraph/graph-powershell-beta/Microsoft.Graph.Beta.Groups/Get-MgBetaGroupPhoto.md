@@ -17,34 +17,38 @@ The group's profile photo.
 
 ### Get (Default)
 ```
-Get-MgBetaGroupPhoto -GroupId <String> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### List
-```
-Get-MgBetaGroupPhoto -GroupId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgBetaGroupPhoto -GroupId <String> -ProfilePhotoId <String> [-Property <String[]>]
+Get-MgBetaGroupPhoto -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
+### List
+```
+Get-MgBetaGroupPhoto -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgBetaGroupPhoto -GroupId <String> -ProfilePhotoId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
 ### GetViaIdentity1
 ```
-Get-MgBetaGroupPhoto -InputObject <IGroupsIdentity> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaGroupPhoto -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaGroupPhoto -InputObject <IGroupsIdentity> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaGroupPhoto -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,13 +58,13 @@ The group's profile photo.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupPhoto -GroupId $groupId
-```
-This example shows how to use the Get-MgBetaBetaGroupPhoto Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example shows how to use the Get-MgBetaGroupPhoto Cmdlet.
 
 
 ## PARAMETERS
@@ -88,6 +92,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -232,6 +251,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -344,6 +378,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphoto)
+
+[https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteColumn
 
 ## SYNOPSIS
-Create new navigation property to columns for sites
+Create a column for a site with a request that specifies a columnDefinition.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteColumn?view=graph-powershell-beta)
@@ -65,7 +65,7 @@ New-MgSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphCo
 ```
 
 ## DESCRIPTION
-Create new navigation property to columns for sites
+Create a column for a site with a request that specifies a columnDefinition.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1284,6 +1284,8 @@ For examples, see Examples of common formulas in lists.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecolumn)
+
+[https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-1.0)
 
 
 

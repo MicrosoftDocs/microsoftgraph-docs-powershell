@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDomainFederationConfiguration
 
 ## SYNOPSIS
-Update the navigation property federationConfiguration in domains
+Update the properties of an internalDomainFederation object.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Update the navigation property federationConfiguration in domains
+Update the properties of an internalDomainFederation object.
 
 ## EXAMPLES
 ### Example 1: Update the federation settings for a federated domain
@@ -529,6 +529,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration)
+
+[https://learn.microsoft.com/graph/api/internaldomainfederation-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/internaldomainfederation-update?view=graph-rest-1.0)
 
 
 

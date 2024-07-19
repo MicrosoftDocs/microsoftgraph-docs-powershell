@@ -34,6 +34,19 @@ Invoke-MgBetaFilterIdentityGovernanceAccessReviewDecisionByCurrentUser
 Retrieve the accessReviewInstanceDecisionItem objects for a specific accessReviewInstance.
 A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
 
+## EXAMPLES
+### Example 1: Retrieve all decision items for which you're a reviewer and expand the definitions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterIdentityGovernanceAccessReviewDecisionByCurrentUser -ExpandProperty "instance(`$expand=definition)"  -On $onId 
+
+```
+This example will retrieve all decision items for which you're a reviewer and expand the definitions
+
+
 ## PARAMETERS
 
 ### -Count
@@ -354,7 +367,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceaccessreviewdecisionbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceaccessreviewdecisionbycurrentuser)
 
 [https://learn.microsoft.com/graph/api/accessreviewinstance-list-decisions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstance-list-decisions?view=graph-rest-beta)
-
 
 
 

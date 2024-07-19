@@ -68,8 +68,6 @@ Update-MgGroupSiteContentTypeColumn -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property columns in groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1305,6 +1303,8 @@ For examples, see Examples of common formulas in lists.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitecontenttypecolumn)
+
+
 
 
 

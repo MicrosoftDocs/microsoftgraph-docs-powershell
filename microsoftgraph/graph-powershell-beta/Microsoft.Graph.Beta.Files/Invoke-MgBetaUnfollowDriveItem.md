@@ -32,6 +32,19 @@ Invoke-MgBetaUnfollowDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVa
 ## DESCRIPTION
 Unfollow a driveItem.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Files
+
+Invoke-MgBetaUnfollowDriveItem -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Invoke-MgBetaUnfollowDriveItem Cmdlet.
+
+
 ## PARAMETERS
 
 ### -DriveId
@@ -218,7 +231,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaunfollowdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaunfollowdriveitem)
 
 [https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-beta)
-
 
 
 

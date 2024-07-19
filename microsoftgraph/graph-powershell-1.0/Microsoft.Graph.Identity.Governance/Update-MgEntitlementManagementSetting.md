@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgEntitlementManagementSetting
 
 ## SYNOPSIS
-Update the navigation property settings in identityGovernance
+Update an existing entitlementManagementSettings object to change one or more of its properties.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementSetting?view=graph-powershell-beta)
@@ -31,12 +31,13 @@ Update-MgEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitlement
 ```
 
 ## DESCRIPTION
-Update the navigation property settings in identityGovernance
+Update an existing entitlementManagementSettings object to change one or more of its properties.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
@@ -44,10 +45,9 @@ $params = @{
 }
 
 Update-MgEntitlementManagementSetting -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgEntitlementManagementSetting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -231,6 +231,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsetting)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-1.0)
 
 
 

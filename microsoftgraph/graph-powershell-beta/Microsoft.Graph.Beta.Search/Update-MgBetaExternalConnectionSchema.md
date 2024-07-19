@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaExternalConnectionSchema
 
 ## SYNOPSIS
-Update the navigation property schema in external
+Update the properties of a schema for an externalConnection.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionSchema?view=graph-powershell-1.0)
@@ -46,19 +46,46 @@ Update-MgBetaExternalConnectionSchema -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property schema in external
+Update the properties of a schema for an externalConnection.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
 
-Get-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId
-```
-This example shows how to use the Update-MgBetaBetaExternalConnectionSchema Cmdlet.
+$params = @{
+	baseType = "microsoft.graph.externalItem"
+	properties = @(
+		@{
+			name = "ticketTitle"
+			type = "string"
+			isSearchable = "true"
+			isRetrievable = "true"
+			labels = @(
+			"title"
+		)
+	}
+	@{
+		name = "priority"
+		type = "string"
+		isQueryable = "true"
+		isRetrievable = "true"
+		isSearchable = "false"
+	}
+	@{
+		name = "assignee"
+		type = "string"
+		isRetrievable = "true"
+	}
+)
+}
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Update-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaExternalConnectionSchema Cmdlet.
 
 
 ## PARAMETERS
@@ -377,6 +404,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-beta)
 
 
 

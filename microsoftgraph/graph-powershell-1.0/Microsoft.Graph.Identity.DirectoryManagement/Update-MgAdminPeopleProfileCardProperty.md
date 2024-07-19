@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgAdminPeopleProfileCardProperty
 
 ## SYNOPSIS
-Update the navigation property profileCardProperties in admin
+Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManageme
 ```
 
 ## DESCRIPTION
-Update the navigation property profileCardProperties in admin
+Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
 
 ## PARAMETERS
 
@@ -305,6 +305,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilecardproperty)
+
+[https://learn.microsoft.com/graph/api/profilecardproperty-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profilecardproperty-update?view=graph-rest-1.0)
 
 
 

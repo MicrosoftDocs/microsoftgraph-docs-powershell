@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension
 
 ## SYNOPSIS
-The customTaskExtension instance.
+Read the properties and relationships of a customTaskExtension object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject <IIden
 ```
 
 ## DESCRIPTION
-The customTaskExtension instance.
+Read the properties and relationships of a customTaskExtension object.
 
 ## PARAMETERS
 
@@ -357,6 +357,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowcustomtaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowcustomtaskextension)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions?view=graph-rest-1.0)
 
 
 

@@ -48,8 +48,6 @@ Update-MgGroupTeamChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property members in groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -354,6 +352,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelmember)
+
+
 
 
 

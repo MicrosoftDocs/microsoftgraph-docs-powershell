@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource
 
 ## SYNOPSIS
-Create new navigation property to noncustodialDataSources for compliance
+Create a new noncustodialDataSource object.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplian
 ```
 
 ## DESCRIPTION
-Create new navigation property to noncustodialDataSources for compliance
+Create a new noncustodialDataSource object.
 
 ## EXAMPLES
 ### Example 1: Add a noncustodial data source user or group mailbox with an email
@@ -484,6 +484,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasenoncustodialdatasource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasenoncustodialdatasource)
+
+[https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-post?view=graph-rest-beta)
 
 
 

@@ -15,9 +15,11 @@ Create new navigation property to tenantsCustomizedInformation for tenantRelatio
 ### CreateExpanded (Default)
 ```
 New-MgBetaTenantRelationshipManagedTenantCustomizedInformation [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>]
- [-DisplayName <String>] [-Id <String>] [-TenantId <String>] [-Website <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-BusinessRelationship <String>] [-ComplianceRequirements <String[]>]
+ [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>] [-DisplayName <String>] [-Id <String>]
+ [-ManagedServicesPlans <String[]>] [-Note <String>] [-NoteLastModifiedDateTime <DateTime>]
+ [-PartnerRelationshipManagerUserIds <String[]>] [-TenantId <String>] [-Website <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -60,6 +62,40 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BusinessRelationship
+Describes the relationship between the Managed Services Provider and the managed tenant; for example, Managed, Co-managed, Licensing.
+The maximum length is 250 characters.
+Optional.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ComplianceRequirements
+Contains the compliance requirements for the customer tenant; for example, HIPPA, NIST, CMMC.
+The maximum length is 250 characters per compliance requirement.
+Optional.
+
+```yaml
+Type: String[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -118,6 +154,72 @@ Read-only.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ManagedServicesPlans
+This is the Managed Services Plans for the customer tenant that the Managed Services Provider manages.
+The maximum length is 250 characters per managed service plan.
+Optional.
+
+```yaml
+Type: String[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Note
+A field for the Managed Services Provider technician to input custom text to share notes between technicians within the Managed Service Providers.
+The maximum length is 5000 characters.
+Optional.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NoteLastModifiedDateTime
+The date on which the note field of this entity was last modified.
+Optional.
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PartnerRelationshipManagerUserIds
+The list of Entra user IDs for users in the Managed Services Provider that manage the relationship with the managed tenant.
+Optional.
+
+```yaml
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -242,6 +344,12 @@ BODYPARAMETER `<IMicrosoftGraphManagedTenantsTenantCustomizedInformation>`: tena
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[BusinessRelationship <String>]`: Describes the relationship between the Managed Services Provider and the managed tenant; for example, Managed, Co-managed, Licensing.
+The maximum length is 250 characters.
+Optional.
+  - `[ComplianceRequirements <String- `[]`>]`: Contains the compliance requirements for the customer tenant; for example, HIPPA, NIST, CMMC.
+The maximum length is 250 characters per compliance requirement.
+Optional.
   - `[Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation- `[]`>]`: The collection of contacts for the managed tenant.
 Optional.
     - `[Email <String>]`: The email address for the contact.
@@ -257,6 +365,16 @@ Required.
   - `[DisplayName <String>]`: The display name for the managed tenant.
 Required.
 Read-only.
+  - `[ManagedServicesPlans <String- `[]`>]`: This is the Managed Services Plans for the customer tenant that the Managed Services Provider manages.
+The maximum length is 250 characters per managed service plan.
+Optional.
+  - `[Note <String>]`: A field for the Managed Services Provider technician to input custom text to share notes between technicians within the Managed Service Providers.
+The maximum length is 5000 characters.
+Optional.
+  - `[NoteLastModifiedDateTime <DateTime?>]`: The date on which the note field of this entity was last modified.
+Optional.
+  - `[PartnerRelationshipManagerUserIds <String- `[]`>]`: The list of Entra user IDs for users in the Managed Services Provider that manage the relationship with the managed tenant.
+Optional.
   - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 Read-only.
@@ -279,6 +397,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcustomizedinformation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcustomizedinformation)
+
 
 
 

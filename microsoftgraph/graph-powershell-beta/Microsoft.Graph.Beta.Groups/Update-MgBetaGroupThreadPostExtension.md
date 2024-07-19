@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaGroupThreadPostExtension
 
 ## SYNOPSIS
-Update the navigation property extensions in groups
+Update an open extension (openTypeExtension object) with the properties in the request body: The data in an extension can be primitive types, or arrays of primitive types.
+See the table in the Permissions section for the list of resources that support open extensions.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThreadPostExtension?view=graph-powershell-1.0)
@@ -44,12 +45,14 @@ Update-MgBetaGroupThreadPostExtension -InputObject <IGroupsIdentity> -BodyParame
 ```
 
 ## DESCRIPTION
-Update the navigation property extensions in groups
+Update an open extension (openTypeExtension object) with the properties in the request body: The data in an extension can be primitive types, or arrays of primitive types.
+See the table in the Permissions section for the list of resources that support open extensions.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
@@ -59,17 +62,16 @@ $params = @{
 	expirationDate = "2016-07-30T11:00:00.000Z"
 	DealValue = 
 	topPicks = @(
-		"Employees only"
-		"Add spouse or guest"
-		"Add family"
-	)
+	"Employees only"
+"Add spouse or guest"
+"Add family"
+)
 }
 
 Update-MgBetaGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaGroupThreadPostExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -340,6 +342,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthreadpostextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthreadpostextension)
+
+[https://learn.microsoft.com/graph/api/opentypeextension-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/opentypeextension-update?view=graph-rest-beta)
 
 
 

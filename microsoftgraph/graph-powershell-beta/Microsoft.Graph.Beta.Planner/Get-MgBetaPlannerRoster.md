@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPlannerRoster
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Returns a collection of the specified rosters
+Read the properties and relationships of a plannerRoster object.
 
 ## SYNTAX
 
@@ -37,9 +35,7 @@ Get-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Returns a collection of the specified rosters
+Read the properties and relationships of a plannerRoster object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -312,6 +308,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerroster](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerroster)
+
+[https://learn.microsoft.com/graph/api/plannerroster-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerroster-get?view=graph-rest-beta)
 
 
 

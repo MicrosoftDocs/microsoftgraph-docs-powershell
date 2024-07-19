@@ -32,8 +32,6 @@ Get-MgGroupTeamPhotoContent -InputObject <ITeamsIdentity> [-Format <String>] -Ou
 ## DESCRIPTION
 Get media content for the navigation property photo from groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Format
@@ -211,6 +209,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamphotocontent)
+
+
 
 
 

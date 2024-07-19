@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgAdminEdgeInternetExplorerModeSiteList
 
 ## SYNOPSIS
-Delete navigation property siteLists for admin
+Delete a browserSiteList object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementId
 ```
 
 ## DESCRIPTION
-Delete navigation property siteLists for admin
+Delete a browserSiteList object.
 
 ## PARAMETERS
 
@@ -246,6 +246,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgadminedgeinternetexplorermodesitelist)
+
+[https://learn.microsoft.com/graph/api/internetexplorermode-delete-sitelists?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/internetexplorermode-delete-sitelists?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie
 
 ## SYNOPSIS
-A collection of shared cookies defined for the site list.
+Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-1.0)
@@ -39,7 +39,23 @@ Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-A collection of shared cookies defined for the site list.
+Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersharedcookie-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId
+
+```
+This example shows how to use the Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie Cmdlet.
+
 
 ## PARAMETERS
 
@@ -448,6 +464,9 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
 
+[https://learn.microsoft.com/graph/api/browsersharedcookie-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersharedcookie-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/browsersitelist-list-sharedcookies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersitelist-list-sharedcookies?view=graph-rest-beta)
 
 
 

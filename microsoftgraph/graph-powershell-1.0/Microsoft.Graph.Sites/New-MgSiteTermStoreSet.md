@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteTermStoreSet
 
 ## SYNOPSIS
-Create new navigation property to sets for sites
+Create a new set object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
@@ -84,7 +84,7 @@ New-MgSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Create new navigation property to sets for sites
+Create a new set object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -739,6 +739,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoreset)
+
+[https://learn.microsoft.com/graph/api/termstore-set-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-set-post?view=graph-rest-1.0)
 
 
 

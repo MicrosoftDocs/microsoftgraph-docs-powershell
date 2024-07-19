@@ -48,8 +48,6 @@ New-MgBetaDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagement
 ## DESCRIPTION
 Create new navigation property to verificationDnsRecords for domains
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -366,6 +364,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainverificationdnsrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainverificationdnsrecord)
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceConfigurationAssignment
 
 ## SYNOPSIS
-The list of assignments for the device configuration profile.
+Read properties and relationships of the deviceConfigurationAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-The list of assignments for the device configuration profile.
+Read properties and relationships of the deviceConfigurationAssignment object.
 
 ## PARAMETERS
 
@@ -360,6 +360,10 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationassignment)
+
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationassignment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationassignment-list?view=graph-rest-1.0)
 
 
 

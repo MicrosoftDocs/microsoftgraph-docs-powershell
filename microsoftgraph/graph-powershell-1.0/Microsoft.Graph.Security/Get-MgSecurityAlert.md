@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityAlert
 
 ## SYNOPSIS
-Get alerts from security
+Retrieve the properties and relationships of an alert object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlert?view=graph-powershell-beta)
@@ -37,7 +37,10 @@ Get-MgSecurityAlert -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get alerts from security
+Retrieve the properties and relationships of an alert object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/alert-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -321,6 +324,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -362,6 +366,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalert)
+
+[https://learn.microsoft.com/graph/api/alert-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/alert-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/alert-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/alert-list?view=graph-rest-1.0)
 
 
 

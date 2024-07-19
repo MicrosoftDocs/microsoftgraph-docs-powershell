@@ -54,8 +54,6 @@ Update-MgBetaSecuritySecureScore -InputObject <ISecurityIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property secureScores in security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ActiveUserCount
@@ -383,8 +381,8 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 AVERAGECOMPARATIVESCORES <IMicrosoftGraphAverageComparativeScore- `[]`>: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
-  - `[AverageScore <Double?>]`: 
-  - `[Basis <String>]`: 
+  - `[AverageScore <Double?>]`: Average score within a specified basis.
+  - `[Basis <String>]`: Scope type (by AllTenants, TotalSeats, IndustryTypes).
 
 BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -392,14 +390,14 @@ BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
 Read-only.
   - `[ActiveUserCount <Int32?>]`: Active user count of the given tenant.
   - `[AverageComparativeScores <IMicrosoftGraphAverageComparativeScore- `[]`>]`: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
-    - `[AverageScore <Double?>]`: 
-    - `[Basis <String>]`: 
+    - `[AverageScore <Double?>]`: Average score within a specified basis.
+    - `[Basis <String>]`: Scope type (by AllTenants, TotalSeats, IndustryTypes).
   - `[AzureTenantId <String>]`: GUID string for tenant ID.
   - `[ControlScores <IMicrosoftGraphControlScore- `[]`>]`: Contains tenant scores for a set of controls.
-    - `[ControlCategory <String>]`: 
-    - `[ControlName <String>]`: 
-    - `[Description <String>]`: 
-    - `[Score <Double?>]`: 
+    - `[ControlCategory <String>]`: Control action category (Identity, Data, Device, Apps, Infrastructure).
+    - `[ControlName <String>]`: Control unique name
+    - `[Description <String>]`: Description of the control.
+    - `[Score <Double?>]`: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
   - `[CreatedDateTime <DateTime?>]`: The date when the entity is created.
   - `[CurrentScore <Double?>]`: Tenant current attained score on specified date.
   - `[EnabledServices <String- `[]`>]`: Microsoft-provided services for the tenant (for example, Exchange online, Skype, SharePoint).
@@ -415,10 +413,10 @@ Required
 Required
 
 CONTROLSCORES <IMicrosoftGraphControlScore- `[]`>: Contains tenant scores for a set of controls.
-  - `[ControlCategory <String>]`: 
-  - `[ControlName <String>]`: 
-  - `[Description <String>]`: 
-  - `[Score <Double?>]`: 
+  - `[ControlCategory <String>]`: Control action category (Identity, Data, Device, Apps, Infrastructure).
+  - `[ControlName <String>]`: Control unique name
+  - `[Description <String>]`: Description of the control.
+  - `[Score <Double?>]`: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
@@ -472,6 +470,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -482,6 +481,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -516,6 +516,8 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescore)
+
+
 
 
 

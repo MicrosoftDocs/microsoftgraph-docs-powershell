@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBookingBusinessCustomQuestion
 
 ## SYNOPSIS
-Update the navigation property customQuestions in solutions
+Update the properties of a bookingCustomQuestion object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property customQuestions in solutions
+Update the properties of a bookingCustomQuestion object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -330,6 +330,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomquestion)
+
+[https://learn.microsoft.com/graph/api/bookingcustomquestion-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcustomquestion-update?view=graph-rest-1.0)
 
 
 

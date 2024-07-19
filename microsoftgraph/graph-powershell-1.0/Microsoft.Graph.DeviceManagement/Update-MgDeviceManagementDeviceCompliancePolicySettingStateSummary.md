@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
 
 ## SYNOPSIS
-Update the navigation property deviceCompliancePolicySettingStateSummaries in deviceManagement
+Update the properties of a deviceCompliancePolicySettingStateSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary?view=graph-powershell-beta)
@@ -55,7 +55,7 @@ Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary -InputObject 
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceCompliancePolicySettingStateSummaries in deviceManagement
+Update the properties of a deviceCompliancePolicySettingStateSummary object.
 
 ## PARAMETERS
 
@@ -499,6 +499,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicysettingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicysettingstatesummary)
+
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgAdminSharepointSetting
 
 ## SYNOPSIS
-Update the navigation property settings in admin
+Update one or more tenant-level settings for SharePoint and OneDrive.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaAdminSharepointSetting?view=graph-powershell-beta)
@@ -41,7 +41,7 @@ Update-MgAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSetting
 ```
 
 ## DESCRIPTION
-Update the navigation property settings in admin
+Update one or more tenant-level settings for SharePoint and OneDrive.
 
 ## PARAMETERS
 
@@ -677,6 +677,8 @@ IDLESESSIONSIGNOUT `<IMicrosoftGraphIdleSessionSignOut>`: idleSessionSignOut
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepointsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepointsetting)
+
+[https://learn.microsoft.com/graph/api/sharepointsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharepointsettings-update?view=graph-rest-1.0)
 
 
 

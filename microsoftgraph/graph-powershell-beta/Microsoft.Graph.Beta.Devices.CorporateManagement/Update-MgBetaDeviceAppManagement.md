@@ -794,7 +794,9 @@ Read-only.
   - `[BlockAfterCompanyPortalUpdateDeferralInDays <Int32?>]`: Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.
   - `[ConnectToVpnOnLaunch <Boolean?>]`: Whether the app should connect to the configured VPN on launch.
   - `[CustomBrowserDisplayName <String>]`: Friendly name of the preferred custom browser to open weblink on Android.
-  - `[CustomBrowserPackageId <String>]`: Unique identifier of a custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+  - `[CustomBrowserPackageId <String>]`: Unique identifier of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
   - `[CustomDialerAppDisplayName <String>]`: Friendly name of a custom dialer app to click-to-open a phone number on Android.
   - `[CustomDialerAppPackageId <String>]`: PackageId of a custom dialer app to click-to-open a phone number on Android.
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
@@ -936,7 +938,9 @@ Read-only.
     - `[BlockAfterCompanyPortalUpdateDeferralInDays <Int32?>]`: Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.
     - `[ConnectToVpnOnLaunch <Boolean?>]`: Whether the app should connect to the configured VPN on launch.
     - `[CustomBrowserDisplayName <String>]`: Friendly name of the preferred custom browser to open weblink on Android.
-    - `[CustomBrowserPackageId <String>]`: Unique identifier of a custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+    - `[CustomBrowserPackageId <String>]`: Unique identifier of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
     - `[CustomDialerAppDisplayName <String>]`: Friendly name of a custom dialer app to click-to-open a phone number on Android.
     - `[CustomDialerAppPackageId <String>]`: PackageId of a custom dialer app to click-to-open a phone number on Android.
     - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
@@ -1035,6 +1039,7 @@ Default is anyApp.
     - `[Version <String>]`: Version of the entity.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[AllowWidgetContentSync <Boolean?>]`: Indicates  if content sync for widgets is allowed for iOS on App Protection Policies
     - `[AllowedAndroidDeviceManufacturers <String>]`: Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work.
 (Android only)
     - `[AllowedAndroidDeviceModels <String- `[]`>]`: List of device models allowed, as a string, for the managed app to work.
@@ -1169,7 +1174,7 @@ $Search is not supported.
   - `[IosLobAppProvisioningConfigurations <IMicrosoftGraphIosLobAppProvisioningConfiguration- `[]`>]`: The IOS Lob App Provisioning Configurations.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>]`: The associated group assignments for IosLobAppProvisioningConfiguration.
+    - `[Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>]`: The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -1188,6 +1193,9 @@ Read-only.
       - `[UserPrincipalName <String>]`: UserPrincipalName.
     - `[DisplayName <String>]`: Admin provided name of the device configuration.
     - `[ExpirationDateTime <DateTime?>]`: Optional profile expiration date and time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
     - `[GroupAssignments <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment- `[]`>]`: The associated group assignments.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1269,12 +1277,14 @@ Default is anyApp.
     - `[Version <String>]`: Version of the entity.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[AllowWidgetContentSync <Boolean?>]`: Indicates  if content sync for widgets is allowed for iOS on App Protection Policies
     - `[AllowedIosDeviceModels <String>]`: Semicolon seperated list of device models allowed, as a string, for the managed app to work.
     - `[AppActionIfAccountIsClockedOut <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[AppActionIfIosDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[AppDataEncryptionType <ManagedAppDataEncryptionType?>]`: Represents the level to which app data is encrypted for managed apps
     - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.
     - `[CustomBrowserProtocol <String>]`: A custom browser protocol to open weblink on iOS.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
     - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
     - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
     - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
@@ -1355,6 +1365,7 @@ Such components can be the application itself, the MAM SDK, and other on-device 
 Read-only.
         - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
 Read-only.
+        - `[Status <ManagedAppLogUploadState?>]`: Represents the current status of the associated \`managedAppLogCollectionRequest\`.
       - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
       - `[Version <String>]`: Version of the entity.
     - `[ManagedDeviceId <String>]`: The Managed Device identifier of the host device.
@@ -1586,7 +1597,7 @@ Read-only.
     - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
     - `[Publisher <String>]`: The publisher of the app.
     - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
-    - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: The set of direct relationships for this app.
+    - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: List of relationships for this mobile app.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[TargetId <String>]`: The target mobile app's app id.
@@ -1664,7 +1675,7 @@ A MinDeviceOccurrence of 0 means setting is optional
         - `[OffsetUri <String>]`: Offset CSP Path from Base
         - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
           - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
+Applicable for reusable setting.
         - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
         - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
         - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
@@ -1975,6 +1986,7 @@ Default is anyApp.
   - `[Version <String>]`: Version of the entity.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[AllowWidgetContentSync <Boolean?>]`: Indicates  if content sync for widgets is allowed for iOS on App Protection Policies
   - `[AllowedAndroidDeviceManufacturers <String>]`: Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work.
 (Android only)
   - `[AllowedAndroidDeviceModels <String- `[]`>]`: List of device models allowed, as a string, for the managed app to work.
@@ -2129,7 +2141,7 @@ $Search is not supported.
 IOSLOBAPPPROVISIONINGCONFIGURATIONS <IMicrosoftGraphIosLobAppProvisioningConfiguration- `[]`>: The IOS Lob App Provisioning Configurations.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>]`: The associated group assignments for IosLobAppProvisioningConfiguration.
+  - `[Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>]`: The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -2151,6 +2163,9 @@ Read-only.
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[DisplayName <String>]`: Admin provided name of the device configuration.
   - `[ExpirationDateTime <DateTime?>]`: Optional profile expiration date and time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
   - `[GroupAssignments <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment- `[]`>]`: The associated group assignments.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2241,6 +2256,7 @@ Default is anyApp.
   - `[Version <String>]`: Version of the entity.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[AllowWidgetContentSync <Boolean?>]`: Indicates  if content sync for widgets is allowed for iOS on App Protection Policies
   - `[AllowedIosDeviceModels <String>]`: Semicolon seperated list of device models allowed, as a string, for the managed app to work.
   - `[AppActionIfAccountIsClockedOut <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfIosDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
@@ -2252,6 +2268,7 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Version <String>]`: Version of the entity.
   - `[CustomBrowserProtocol <String>]`: A custom browser protocol to open weblink on iOS.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
   - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
   - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
@@ -2354,6 +2371,7 @@ Such components can be the application itself, the MAM SDK, and other on-device 
 Read-only.
       - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
 Read-only.
+      - `[Status <ManagedAppLogUploadState?>]`: Represents the current status of the associated \`managedAppLogCollectionRequest\`.
     - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
     - `[Version <String>]`: Version of the entity.
   - `[ManagedDeviceId <String>]`: The Managed Device identifier of the host device.
@@ -2628,7 +2646,7 @@ Read-only.
   - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
   - `[Publisher <String>]`: The publisher of the app.
   - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
-  - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: The set of direct relationships for this app.
+  - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: List of relationships for this mobile app.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[TargetId <String>]`: The target mobile app's app id.
@@ -2714,7 +2732,7 @@ A MinDeviceOccurrence of 0 means setting is optional
       - `[OffsetUri <String>]`: Offset CSP Path from Base
       - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
         - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
+Applicable for reusable setting.
       - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
       - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
       - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX

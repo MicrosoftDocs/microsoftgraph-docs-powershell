@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementManagedDevice
 
 ## SYNOPSIS
-Delete navigation property managedDevices for deviceManagement
+Deletes a managedDevice.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity> 
 ```
 
 ## DESCRIPTION
-Delete navigation property managedDevices for deviceManagement
+Deletes a managedDevice.
 
 ## PARAMETERS
 
@@ -246,6 +246,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmanageddevice)
+
+[https://learn.microsoft.com/graph/api/intune-devices-manageddevice-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-delete?view=graph-rest-1.0)
 
 
 

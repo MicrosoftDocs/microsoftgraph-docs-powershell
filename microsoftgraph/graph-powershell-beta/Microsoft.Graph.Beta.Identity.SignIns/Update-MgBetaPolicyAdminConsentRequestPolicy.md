@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyAdminConsentRequestPolicy
 
 ## SYNOPSIS
-Update the navigation property adminConsentRequestPolicy in policies
+Update the properties of an adminConsentRequestPolicy object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAdminConsentRequestPolicy?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Update-MgBetaPolicyAdminConsentRequestPolicy -BodyParameter <IMicrosoftGraphAdmi
 ```
 
 ## DESCRIPTION
-Update the navigation property adminConsentRequestPolicy in policies
+Update the properties of an adminConsentRequestPolicy object.
 
 ## PARAMETERS
 
@@ -303,6 +303,8 @@ Examples include MicrosoftGraph and ARM.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyadminconsentrequestpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyadminconsentrequestpolicy)
+
+[https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-update?view=graph-rest-beta)
 
 
 

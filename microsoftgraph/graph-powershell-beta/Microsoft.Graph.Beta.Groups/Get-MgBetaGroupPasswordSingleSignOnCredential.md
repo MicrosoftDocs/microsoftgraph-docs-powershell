@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaGroupPasswordSingleSignOnCredential
 
 ## SYNOPSIS
-Invoke action getPasswordSingleSignOnCredentials
+Get the list of password-based single sign-on credentials for a group.
+This API returns the encrypted passwords as null.
 
 ## SYNTAX
 
@@ -26,7 +27,21 @@ Get-MgBetaGroupPasswordSingleSignOnCredential -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action getPasswordSingleSignOnCredentials
+Get the list of password-based single sign-on credentials for a group.
+This API returns the encrypted passwords as null.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Get-MgBetaGroupPasswordSingleSignOnCredential -GroupId $groupId
+
+```
+This example shows how to use the Get-MgBetaGroupPasswordSingleSignOnCredential Cmdlet.
+
 
 ## PARAMETERS
 
@@ -205,6 +220,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppasswordsinglesignoncredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppasswordsinglesignoncredential)
 
+[https://learn.microsoft.com/graph/api/group-getpasswordsinglesignoncredentials?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-getpasswordsinglesignoncredentials?view=graph-rest-beta)
 
 
 

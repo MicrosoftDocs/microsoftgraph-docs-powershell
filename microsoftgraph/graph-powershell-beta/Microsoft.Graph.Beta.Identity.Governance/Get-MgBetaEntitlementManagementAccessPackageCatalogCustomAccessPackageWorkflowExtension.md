@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension
 
 ## SYNOPSIS
-Get customAccessPackageWorkflowExtensions from identityGovernance
+Read the properties and relationships of a customAccessPackageWorkflowExtension object for an accessPackageCatalog object.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowEx
 ```
 
 ## DESCRIPTION
-Get customAccessPackageWorkflowExtensions from identityGovernance
+Read the properties and relationships of a customAccessPackageWorkflowExtension object for an accessPackageCatalog object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -417,6 +417,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension)
+
+[https://learn.microsoft.com/graph/api/customaccesspackageworkflowextension-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customaccesspackageworkflowextension-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/accesspackagecatalog-list-customaccesspackageworkflowextensions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-customaccesspackageworkflowextensions?view=graph-rest-beta)
 
 
 

@@ -8,9 +8,8 @@ schema: 2.0.0
 # Get-MgBetaPrintTaskDefinitionTask
 
 ## SYNOPSIS
-A list of tasks that have been created based on this definition.
-The list includes currently running tasks and recently completed tasks.
-Read-only.
+Get details about a print task.
+For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintTaskDefinitionTask?view=graph-powershell-1.0)
@@ -40,9 +39,8 @@ Get-MgBetaPrintTaskDefinitionTask -InputObject <IDevicesCloudPrintIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-A list of tasks that have been created based on this definition.
-The list includes currently running tasks and recently completed tasks.
-Read-only.
+Get details about a print task.
+For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -335,6 +333,10 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprinttaskdefinitiontask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprinttaskdefinitiontask)
+
+[https://learn.microsoft.com/graph/api/printtask-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printtask-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/printtaskdefinition-list-tasks?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printtaskdefinition-list-tasks?view=graph-rest-beta)
 
 
 

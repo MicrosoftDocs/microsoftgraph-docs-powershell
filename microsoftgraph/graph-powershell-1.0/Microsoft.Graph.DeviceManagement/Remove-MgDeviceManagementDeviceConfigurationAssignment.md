@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDeviceConfigurationAssignment
 
 ## SYNOPSIS
-Delete navigation property assignments for deviceManagement
+Deletes a deviceConfigurationAssignment.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Delete navigation property assignments for deviceManagement
+Deletes a deviceConfigurationAssignment.
 
 ## PARAMETERS
 
@@ -262,6 +262,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationassignment)
+
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationassignment-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSiteOperation
 
 ## SYNOPSIS
-The collection of long running operations for the site.
+Read the properties of a richLongRunningOperation object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteOperation?view=graph-powershell-1.0)
@@ -38,7 +38,20 @@ Get-MgBetaSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-The collection of long running operations for the site.
+Read the properties of a richLongRunningOperation object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteOperation -SiteId $siteId
+
+```
+This example shows how to use the Get-MgBetaSiteOperation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -358,6 +371,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteoperation)
 
+[https://learn.microsoft.com/graph/api/richlongrunningoperation-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/richlongrunningoperation-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-beta)
 
 
 

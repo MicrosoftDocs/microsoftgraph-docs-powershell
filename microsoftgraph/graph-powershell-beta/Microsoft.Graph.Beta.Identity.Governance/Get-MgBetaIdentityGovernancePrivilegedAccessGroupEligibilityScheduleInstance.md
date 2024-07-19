@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance
 
 ## SYNOPSIS
-The instances of eligibility schedules to activate a just-in-time access.
+Read the properties and relationships of a privilegedAccessGroupEligibilityScheduleInstance object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance?view=graph-powershell-1.0)
@@ -40,7 +40,20 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance
 ```
 
 ## DESCRIPTION
-The instances of eligibility schedules to activate a just-in-time access.
+Read the properties and relationships of a privilegedAccessGroupEligibilityScheduleInstance object.
+
+## EXAMPLES
+### Example 1: Get all eligibility schedule instances
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance -PrivilegedAccessGroupEligibilityScheduleInstanceId $privilegedAccessGroupEligibilityScheduleInstanceId
+
+```
+This example will get all eligibility schedule instances
+
 
 ## PARAMETERS
 
@@ -392,6 +405,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityscheduleinstance)
 
+[https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityscheduleinstance-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityscheduleinstance-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityscheduleinstances?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityscheduleinstances?view=graph-rest-beta)
 
 
 

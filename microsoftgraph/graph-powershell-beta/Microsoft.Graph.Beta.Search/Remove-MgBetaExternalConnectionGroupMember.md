@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaExternalConnectionGroupMember
 
 ## SYNOPSIS
-Delete navigation property members for external
+Delete an externalGroupMember object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionGroupMember?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaExternalConnectionGroupMember -InputObject <ISearchIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Delete navigation property members for external
+Delete an externalGroupMember object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -256,6 +256,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectiongroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectiongroupmember)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalgroupmember-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalgroupmember-delete?view=graph-rest-beta)
 
 
 

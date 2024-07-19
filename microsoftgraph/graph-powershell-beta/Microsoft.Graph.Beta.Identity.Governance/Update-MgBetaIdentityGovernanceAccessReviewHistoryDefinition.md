@@ -435,7 +435,7 @@ Read-only.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: Timestamp when the access review definition was created.
   - `[Decisions <String- `[]`>]`: Determines which review decisions will be included in the fetched review history data if specified.
@@ -458,9 +458,9 @@ Required.
     - `[FulfilledDateTime <DateTime?>]`: Timestamp when all of the available data for this instance was collected.
 This will be set after this instance's status is set to done.
 Required.
-    - `[ReviewHistoryPeriodEndDateTime <DateTime?>]`: Timestamp, reviews ending on or before this date are in the fetched history data.
-    - `[ReviewHistoryPeriodStartDateTime <DateTime?>]`: Timestamp, reviews starting on or after this date are in the fetched history data.
-    - `[RunDateTime <DateTime?>]`: Timestamp when the instance's history data is scheduled to be generated.
+    - `[ReviewHistoryPeriodEndDateTime <DateTime?>]`: The date and time for which reviews ended before this date are included in the fetched history data.
+    - `[ReviewHistoryPeriodStartDateTime <DateTime?>]`: The date and time for which reviews started on or after this date are included in the fetched history data.
+    - `[RunDateTime <DateTime?>]`: The date and time when the instance's history data is scheduled to be generated.
     - `[Status <String>]`: accessReviewHistoryStatus
   - `[ReviewHistoryPeriodEndDateTime <DateTime?>]`: A timestamp.
 Reviews ending on or before this date will be included in the fetched history data.
@@ -518,7 +518,7 @@ CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
 This property is read-only.
   - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+  - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
@@ -634,9 +634,9 @@ Required.
   - `[FulfilledDateTime <DateTime?>]`: Timestamp when all of the available data for this instance was collected.
 This will be set after this instance's status is set to done.
 Required.
-  - `[ReviewHistoryPeriodEndDateTime <DateTime?>]`: Timestamp, reviews ending on or before this date are in the fetched history data.
-  - `[ReviewHistoryPeriodStartDateTime <DateTime?>]`: Timestamp, reviews starting on or after this date are in the fetched history data.
-  - `[RunDateTime <DateTime?>]`: Timestamp when the instance's history data is scheduled to be generated.
+  - `[ReviewHistoryPeriodEndDateTime <DateTime?>]`: The date and time for which reviews ended before this date are included in the fetched history data.
+  - `[ReviewHistoryPeriodStartDateTime <DateTime?>]`: The date and time for which reviews started on or after this date are included in the fetched history data.
+  - `[RunDateTime <DateTime?>]`: The date and time when the instance's history data is scheduled to be generated.
   - `[Status <String>]`: accessReviewHistoryStatus
 
 SCHEDULESETTINGS `<IMicrosoftGraphAccessReviewHistoryScheduleSettings>`: accessReviewHistoryScheduleSettings
@@ -682,6 +682,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewhistorydefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewhistorydefinition)
+
 
 
 

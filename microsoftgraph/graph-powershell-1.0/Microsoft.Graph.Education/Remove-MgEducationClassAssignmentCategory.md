@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgEducationClassAssignmentCategory
 
 ## SYNOPSIS
-Delete navigation property assignmentCategories for education
+Delete an existing category.
+Only teachers can perform this operation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
@@ -30,7 +31,8 @@ Remove-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-If
 ```
 
 ## DESCRIPTION
-Delete navigation property assignmentCategories for education
+Delete an existing category.
+Only teachers can perform this operation.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -233,6 +235,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentcategory)
+
+[https://learn.microsoft.com/graph/api/educationcategory-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationcategory-delete?view=graph-rest-1.0)
 
 
 

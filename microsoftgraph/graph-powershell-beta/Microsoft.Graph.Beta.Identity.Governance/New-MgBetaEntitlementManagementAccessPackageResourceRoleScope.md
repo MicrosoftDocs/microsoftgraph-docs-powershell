@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBetaEntitlementManagementAccessPackageResourceRoleScope
 
 ## SYNOPSIS
-Create new navigation property to accessPackageResourceRoleScopes for identityGovernance
+Create a new accessPackageResourceRoleScope for adding a resource role to an access package.
+The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
+Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-1.0)
@@ -50,7 +52,9 @@ New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIde
 ```
 
 ## DESCRIPTION
-Create new navigation property to accessPackageResourceRoleScopes for identityGovernance
+Create a new accessPackageResourceRoleScope for adding a resource role to an access package.
+The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
+Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
 ## EXAMPLES
 ### Example 1: Create a new access package resource role scope
@@ -442,7 +446,7 @@ Supports $filter (eq).
   - `[Description <String>]`: A description for the resource role.
   - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
   - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
-For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+For a SharePoint Online site, the originId is the sequence number of the role in the site.
   - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
 
 ACCESSPACKAGERESOURCESCOPE `<IMicrosoftGraphAccessPackageResourceScope>`: accessPackageResourceScope
@@ -486,7 +490,7 @@ Read-only.
       - `[Description <String>]`: A description for the resource role.
       - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
       - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
-For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+For a SharePoint Online site, the originId is the sequence number of the role in the site.
       - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
     - `[AccessPackageResourceScopes <IMicrosoftGraphAccessPackageResourceScope- `[]`>]`: Read-only.
 Nullable.
@@ -608,7 +612,7 @@ Supports $filter (eq).
     - `[Description <String>]`: A description for the resource role.
     - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
     - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
-For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+For a SharePoint Online site, the originId is the sequence number of the role in the site.
     - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
   - `[AccessPackageResourceScope <IMicrosoftGraphAccessPackageResourceScope>]`: accessPackageResourceScope
   - `[CreatedBy <String>]`: 
@@ -722,6 +726,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope)
+
+[https://learn.microsoft.com/graph/api/accesspackage-post-accesspackageresourcerolescopes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-post-accesspackageresourcerolescopes?view=graph-rest-beta)
 
 
 

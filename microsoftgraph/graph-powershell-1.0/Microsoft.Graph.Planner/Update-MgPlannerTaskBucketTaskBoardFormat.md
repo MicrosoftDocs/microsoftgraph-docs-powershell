@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPlannerTaskBucketTaskBoardFormat
 
 ## SYNOPSIS
-Update the navigation property bucketTaskBoardFormat in planner
+Update the properties of a plannerBucketTaskBoardTaskFormat object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> -IfMat
 ```
 
 ## DESCRIPTION
-Update the navigation property bucketTaskBoardFormat in planner
+Update the properties of a plannerBucketTaskBoardTaskFormat object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -285,6 +285,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskbuckettaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskbuckettaskboardformat)
+
+[https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-update?view=graph-rest-1.0)
 
 
 

@@ -29,8 +29,6 @@ Disable-MgBetaDeviceManagementManagedDevice -InputObject <IDeviceManagementActio
 ## DESCRIPTION
 Invoke action disable
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -230,6 +228,8 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/disable-mgbetadevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/disable-mgbetadevicemanagementmanageddevice)
+
+
 
 
 

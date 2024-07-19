@@ -48,8 +48,6 @@ Update-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property members in teams
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,6 +337,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmember)
+
+
 
 
 

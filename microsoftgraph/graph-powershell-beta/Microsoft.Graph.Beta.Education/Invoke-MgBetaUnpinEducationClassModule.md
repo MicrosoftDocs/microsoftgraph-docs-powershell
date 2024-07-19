@@ -35,6 +35,19 @@ Unpin an educationModule in the classwork list.
 This action sets the isPinned property to false for an educationModule.
 Only teachers in the class can perform this operation.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Invoke-MgBetaUnpinEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
+
+```
+This example shows how to use the Invoke-MgBetaUnpinEducationClassModule Cmdlet.
+
+
 ## PARAMETERS
 
 ### -EducationClassId
@@ -200,7 +213,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunpineducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunpineducationclassmodule)
 
 [https://learn.microsoft.com/graph/api/educationmodule-unpin?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationmodule-unpin?view=graph-rest-beta)
-
 
 
 

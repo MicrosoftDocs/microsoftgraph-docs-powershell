@@ -44,8 +44,6 @@ Learning objects that are associated with this assignment.
 Only teachers can modify this list.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -329,6 +327,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentresource)
+
+
+
+
 
 
 

@@ -32,8 +32,6 @@ Remove-MgBetaExternalConnectionItemActivity -InputObject <ISearchIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property activities for external
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExternalActivityId
@@ -245,6 +243,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionitemactivity)
+
+
 
 
 

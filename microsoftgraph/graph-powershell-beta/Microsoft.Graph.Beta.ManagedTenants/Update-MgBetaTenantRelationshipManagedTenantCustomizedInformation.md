@@ -8,17 +8,19 @@ schema: 2.0.0
 # Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation
 
 ## SYNOPSIS
-Update the navigation property tenantsCustomizedInformation in tenantRelationships
+Update the properties of a tenantCustomizedInformation object.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>] [-DisplayName <String>] [-Id <String>]
- [-TenantId <String>] [-Website <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BusinessRelationship <String>]
+ [-ComplianceRequirements <String[]>] [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>]
+ [-DisplayName <String>] [-Id <String>] [-ManagedServicesPlans <String[]>] [-Note <String>]
+ [-NoteLastModifiedDateTime <DateTime>] [-PartnerRelationshipManagerUserIds <String[]>] [-TenantId <String>]
+ [-Website <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -31,10 +33,12 @@ Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomi
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <IManagedTenantsIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>] [-DisplayName <String>] [-Id <String>]
- [-TenantId <String>] [-Website <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BusinessRelationship <String>]
+ [-ComplianceRequirements <String[]>] [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>]
+ [-DisplayName <String>] [-Id <String>] [-ManagedServicesPlans <String[]>] [-Note <String>]
+ [-NoteLastModifiedDateTime <DateTime>] [-PartnerRelationshipManagerUserIds <String[]>] [-TenantId <String>]
+ [-Website <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -45,31 +49,36 @@ Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <
 ```
 
 ## DESCRIPTION
-Update the navigation property tenantsCustomizedInformation in tenantRelationships
+Update the properties of a tenantCustomizedInformation object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.managedTenants.tenantCustomizedInformation"
-	TenantId = "String"
-	Contacts = @(
+	tenantId = "String"
+	contacts = @(
 		@{
 			"@odata.type" = "microsoft.graph.managedTenants.tenantContactInformation"
-			Name = "String"
-			Title = "String"
-			Email = "String"
-			Phone = "String"
-			Notes = "String"
+			name = "String"
+			title = "String"
+			email = "String"
+			phone = "String"
+			notes = "String"
 		}
 	)
-	Website = "String"
+	website = "String"
 }
+
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId $tenantCustomizedInformationId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -101,6 +110,40 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BusinessRelationship
+Describes the relationship between the Managed Services Provider and the managed tenant; for example, Managed, Co-managed, Licensing.
+The maximum length is 250 characters.
+Optional.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ComplianceRequirements
+Contains the compliance requirements for the customer tenant; for example, HIPPA, NIST, CMMC.
+The maximum length is 250 characters per compliance requirement.
+Optional.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -182,6 +225,72 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ManagedServicesPlans
+This is the Managed Services Plans for the customer tenant that the Managed Services Provider manages.
+The maximum length is 250 characters per managed service plan.
+Optional.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Note
+A field for the Managed Services Provider technician to input custom text to share notes between technicians within the Managed Service Providers.
+The maximum length is 5000 characters.
+Optional.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NoteLastModifiedDateTime
+The date on which the note field of this entity was last modified.
+Optional.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PartnerRelationshipManagerUserIds
+The list of Entra user IDs for users in the Managed Services Provider that manage the relationship with the managed tenant.
+Optional.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -315,6 +424,12 @@ BODYPARAMETER `<IMicrosoftGraphManagedTenantsTenantCustomizedInformation>`: tena
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[BusinessRelationship <String>]`: Describes the relationship between the Managed Services Provider and the managed tenant; for example, Managed, Co-managed, Licensing.
+The maximum length is 250 characters.
+Optional.
+  - `[ComplianceRequirements <String- `[]`>]`: Contains the compliance requirements for the customer tenant; for example, HIPPA, NIST, CMMC.
+The maximum length is 250 characters per compliance requirement.
+Optional.
   - `[Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation- `[]`>]`: The collection of contacts for the managed tenant.
 Optional.
     - `[Email <String>]`: The email address for the contact.
@@ -330,6 +445,16 @@ Required.
   - `[DisplayName <String>]`: The display name for the managed tenant.
 Required.
 Read-only.
+  - `[ManagedServicesPlans <String- `[]`>]`: This is the Managed Services Plans for the customer tenant that the Managed Services Provider manages.
+The maximum length is 250 characters per managed service plan.
+Optional.
+  - `[Note <String>]`: A field for the Managed Services Provider technician to input custom text to share notes between technicians within the Managed Service Providers.
+The maximum length is 5000 characters.
+Optional.
+  - `[NoteLastModifiedDateTime <DateTime?>]`: The date on which the note field of this entity was last modified.
+Optional.
+  - `[PartnerRelationshipManagerUserIds <String- `[]`>]`: The list of Entra user IDs for users in the Managed Services Provider that manage the relationship with the managed tenant.
+Optional.
   - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 Read-only.
@@ -392,6 +517,8 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcustomizedinformation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcustomizedinformation)
+
+[https://learn.microsoft.com/graph/api/managedtenants-tenantcustomizedinformation-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-tenantcustomizedinformation-update?view=graph-rest-beta)
 
 
 

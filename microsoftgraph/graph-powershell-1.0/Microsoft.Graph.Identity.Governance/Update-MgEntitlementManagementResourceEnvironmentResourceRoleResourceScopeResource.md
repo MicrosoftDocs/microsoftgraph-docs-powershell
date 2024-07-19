@@ -296,7 +296,7 @@ Accept wildcard characters: False
 
 ### -OriginId
 The unique identifier of the resource in the origin system.
-In the case of a Microsoft Entra group, this is the identifier of the group.
+For a Microsoft Entra group, this is the identifier of the group.
 
 ```yaml
 Type: String
@@ -493,7 +493,7 @@ Required.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   - `[OriginId <String>]`: The unique identifier of the resource in the origin system.
-In the case of a Microsoft Entra group, this is the identifier of the group.
+For a Microsoft Entra group, this is the identifier of the group.
   - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
   - `[Roles <IMicrosoftGraphAccessPackageResourceRole- `[]`>]`: Read-only.
 Nullable.
@@ -503,8 +503,8 @@ Read-only.
     - `[Description <String>]`: A description for the resource role.
     - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
     - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
-For a SharePoint Online site, the originId will be the sequence number of the role in the site.
-    - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+For a SharePoint Online site, the originId is the sequence number of the role in the site.
+    - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
     - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
   - `[Scopes <IMicrosoftGraphAccessPackageResourceScope- `[]`>]`: Read-only.
 Nullable.
@@ -561,7 +561,7 @@ Read-only.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
     - `[OriginId <String>]`: The unique identifier of the resource in the origin system.
-In the case of a Microsoft Entra group, this is the identifier of the group.
+For a Microsoft Entra group, this is the identifier of the group.
     - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
     - `[Roles <IMicrosoftGraphAccessPackageResourceRole- `[]`>]`: Read-only.
 Nullable.
@@ -571,8 +571,8 @@ Read-only.
       - `[Description <String>]`: A description for the resource role.
       - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
       - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
-For a SharePoint Online site, the originId will be the sequence number of the role in the site.
-      - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+For a SharePoint Online site, the originId is the sequence number of the role in the site.
+      - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
       - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
     - `[Scopes <IMicrosoftGraphAccessPackageResourceScope- `[]`>]`: Read-only.
 Nullable.
@@ -663,8 +663,8 @@ Read-only.
   - `[Description <String>]`: A description for the resource role.
   - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
   - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
-For a SharePoint Online site, the originId will be the sequence number of the role in the site.
-  - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+For a SharePoint Online site, the originId is the sequence number of the role in the site.
+  - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
   - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -709,7 +709,7 @@ Required.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
     - `[OriginId <String>]`: The unique identifier of the resource in the origin system.
-In the case of a Microsoft Entra group, this is the identifier of the group.
+For a Microsoft Entra group, this is the identifier of the group.
     - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
     - `[Roles <IMicrosoftGraphAccessPackageResourceRole- `[]`>]`: Read-only.
 Nullable.
@@ -780,7 +780,7 @@ Required.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
     - `[OriginId <String>]`: The unique identifier of the resource in the origin system.
-In the case of a Microsoft Entra group, this is the identifier of the group.
+For a Microsoft Entra group, this is the identifier of the group.
     - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
     - `[Roles <IMicrosoftGraphAccessPackageResourceRole- `[]`>]`: Read-only.
 Nullable.
@@ -790,8 +790,8 @@ Read-only.
       - `[Description <String>]`: A description for the resource role.
       - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
       - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
-For a SharePoint Online site, the originId will be the sequence number of the role in the site.
-      - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+For a SharePoint Online site, the originId is the sequence number of the role in the site.
+      - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
       - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
     - `[Scopes <IMicrosoftGraphAccessPackageResourceScope- `[]`>]`: Read-only.
 Nullable.

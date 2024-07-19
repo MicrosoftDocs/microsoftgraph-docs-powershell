@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBetaAppCatalogTeamAppDefinition
 
 ## SYNOPSIS
-Create new navigation property to appDefinitions for appCatalogs
+Update an app previously published to the Microsoft Teams app catalog.
+To update an app, the distributionMethod property for the app must be set to organization.
+This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)
@@ -56,10 +58,12 @@ New-MgBetaAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to appDefinitions for appCatalogs
+Update an app previously published to the Microsoft Teams app catalog.
+To update an app, the distributionMethod property for the app must be set to organization.
+This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Update an application previously published to the Microsoft Teams app catalog
 
 ```powershell
 
@@ -71,7 +75,21 @@ $params = app.zip
 New-MgBetaAppCatalogTeamAppDefinition -TeamsAppId $teamsAppId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgBetaAppCatalogTeamAppDefinition Cmdlet.
+This example will update an application previously published to the microsoft teams app catalog
+
+### Example 2: Update a new version of an existing app for admin review before publication in the current tenant catalog
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = app.zip
+
+
+New-MgBetaAppCatalogTeamAppDefinition -TeamsAppId $teamsAppId -Requiresreview true  -BodyParameter $params
+
+```
+This example will update a new version of an existing app for admin review before publication in the current tenant catalog
 
 
 ## PARAMETERS
@@ -680,6 +698,8 @@ Content type, such as image/png, image/jpg.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamappdefinition)
+
+[https://learn.microsoft.com/graph/api/teamsapp-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamsapp-update?view=graph-rest-beta)
 
 
 

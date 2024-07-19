@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityAttackSimulationOperation
 
 ## SYNOPSIS
-Represents an attack simulation training operation.
+Get an attack simulation operation to track a long-running operation request for a tenant.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationOperation?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Represents an attack simulation training operation.
+Get an attack simulation operation to track a long-running operation request for a tenant.
 
 ## PARAMETERS
 
@@ -309,6 +309,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -350,6 +351,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationoperation)
+
+[https://learn.microsoft.com/graph/api/attacksimulationoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationoperation-get?view=graph-rest-1.0)
 
 
 

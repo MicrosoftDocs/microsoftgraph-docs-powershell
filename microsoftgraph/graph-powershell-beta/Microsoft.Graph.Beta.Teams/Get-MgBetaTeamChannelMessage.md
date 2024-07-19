@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamChannelMessage
 
 ## SYNOPSIS
-A collection of all the messages in the channel.
-A navigation property.
-Nullable.
+Retrieve a single message or a message reply in a channel or a chat.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelMessage?view=graph-powershell-1.0)
@@ -56,9 +54,7 @@ Get-MgBetaTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-A collection of all the messages in the channel.
-A navigation property.
-Nullable.
+Retrieve a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
 ### Example 1: Get a message in a channel
@@ -425,7 +421,11 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessage)
 
+[https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-beta)
+
 [https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/channel-list-messages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-list-messages?view=graph-rest-beta)
 
 
 

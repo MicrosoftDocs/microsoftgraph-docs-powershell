@@ -48,6 +48,26 @@ Restore-MgBetaDriveItem -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Files
+
+$params = @{
+	parentReference = @{
+		id = "String"
+	}
+	name = "String"
+}
+
+Restore-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Restore-MgBetaDriveItem Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -343,7 +363,6 @@ For OneDrive, this property is not populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveitem)
 
 [https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-beta)
-
 
 
 

@@ -37,19 +37,6 @@ This will create a new version with the contents of the previous version, but pr
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-restore-permissions.md)]
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Sites
-
-Restore-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
-```
-This example shows how to use the Restore-MgUserDriveItemListItemVersion Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -DriveId
@@ -272,6 +259,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveitemlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveitemlistitemversion)
 
 [https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0)
+
 
 
 

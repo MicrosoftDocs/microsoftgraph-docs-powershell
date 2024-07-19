@@ -41,8 +41,6 @@ Get-MgEducationMeAssignmentSubmissionResource -InputObject <IEducationIdentity> 
 ## DESCRIPTION
 Get resources from education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -336,6 +334,9 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentsubmissionresource)
+
+
+
 
 
 

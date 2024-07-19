@@ -32,8 +32,6 @@ Remove-MgEducationUserAssignmentRubricByRef -InputObject <IEducationIdentity> [-
 ## DESCRIPTION
 Delete ref of navigation property rubric for education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -222,6 +220,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentrubricbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentrubricbyref)
+
+
 
 
 

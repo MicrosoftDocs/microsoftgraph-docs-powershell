@@ -29,8 +29,6 @@ Get-MgBetaFinancialCompanySaleQuoteCustomer -InputObject <IFinancialsIdentity> [
 ## DESCRIPTION
 Get customer from financials
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -211,6 +209,8 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalequotecustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalequotecustomer)
+
+
 
 
 

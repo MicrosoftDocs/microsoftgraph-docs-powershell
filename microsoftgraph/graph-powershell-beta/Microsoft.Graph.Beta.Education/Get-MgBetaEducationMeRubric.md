@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaEducationMeRubric
 
 ## SYNOPSIS
-When set, the grading rubric attached to the assignment.
+Retrieve the properties and relationships of an educationRubric object.
+Only teachers and students can perform this operation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeRubric?view=graph-powershell-1.0)
@@ -38,7 +39,8 @@ Get-MgBetaEducationMeRubric -InputObject <IEducationIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-When set, the grading rubric attached to the assignment.
+Retrieve the properties and relationships of an educationRubric object.
+Only teachers and students can perform this operation.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -321,6 +323,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmerubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmerubric)
+
+[https://learn.microsoft.com/graph/api/educationrubric-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationrubric-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/educationuser-list-rubrics?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationuser-list-rubrics?view=graph-rest-beta)
 
 
 

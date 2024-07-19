@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaPrintPrinterShareJobDocumentContent
 
 ## SYNOPSIS
-Get media content for the navigation property documents from print
+The unique identifier for an entity.
+Read-only.
 
 ## SYNTAX
 
@@ -27,7 +28,8 @@ Get-MgBetaPrintPrinterShareJobDocumentContent -InputObject <IDevicesCloudPrintId
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property documents from print
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 

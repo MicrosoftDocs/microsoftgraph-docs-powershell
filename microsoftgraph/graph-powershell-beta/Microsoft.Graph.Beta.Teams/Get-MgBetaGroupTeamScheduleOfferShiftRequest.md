@@ -40,8 +40,6 @@ Get-MgBetaGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-Exp
 ## DESCRIPTION
 The offer requests for shifts in the schedule.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -348,6 +346,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduleoffershiftrequest)
+
+
+
+
 
 
 

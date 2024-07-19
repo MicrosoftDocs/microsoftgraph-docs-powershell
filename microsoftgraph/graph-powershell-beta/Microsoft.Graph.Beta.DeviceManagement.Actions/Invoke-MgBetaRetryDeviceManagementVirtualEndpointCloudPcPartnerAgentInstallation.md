@@ -34,6 +34,19 @@ Service side checks which agent installation failed firstly and retry.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-retrypartneragentinstallation-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+Invoke-MgBetaRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation -CloudPCId $cloudPCId
+
+```
+This example shows how to use the Invoke-MgBetaRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation Cmdlet.
+
+
 ## PARAMETERS
 
 ### -CloudPcId
@@ -235,7 +248,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaretrydevicemanagementvirtualendpointcloudpcpartneragentinstallation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaretrydevicemanagementvirtualendpointcloudpcpartneragentinstallation)
 
 [https://learn.microsoft.com/graph/api/cloudpc-retrypartneragentinstallation?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-retrypartneragentinstallation?view=graph-rest-beta)
-
 
 
 

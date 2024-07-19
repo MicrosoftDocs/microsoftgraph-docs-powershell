@@ -40,8 +40,6 @@ Get-MgBetaGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-ExpandPrope
 ## DESCRIPTION
 The set of open shifts in a scheduling group in the schedule.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -348,6 +346,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduleopenshift)
+
+
+
+
 
 
 

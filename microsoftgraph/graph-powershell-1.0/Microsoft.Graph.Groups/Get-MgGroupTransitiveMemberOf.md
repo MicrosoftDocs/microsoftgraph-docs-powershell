@@ -46,13 +46,13 @@ Nullable.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupTransitiveMemberOf -GroupId $groupId
+
 ```
 This example shows how to use the Get-MgGroupTransitiveMemberOf Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -377,6 +377,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberof)
+
+[https://learn.microsoft.com/graph/api/group-list-transitivememberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-transitivememberof?view=graph-rest-1.0)
 
 
 

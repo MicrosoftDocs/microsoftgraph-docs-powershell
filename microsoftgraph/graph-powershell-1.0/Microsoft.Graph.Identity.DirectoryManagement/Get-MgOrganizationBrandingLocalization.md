@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgOrganizationBrandingLocalization
 
 ## SYNOPSIS
-Add different branding based on a locale.
+Read the properties and relationships of an organizationalBrandingLocalization object.
+To retrieve a localization branding object, specify the value of id in the URL.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
@@ -38,7 +39,8 @@ Get-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Add different branding based on a locale.
+Read the properties and relationships of an organizationalBrandingLocalization object.
+To retrieve a localization branding object, specify the value of id in the URL.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -344,6 +346,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalization)
+
+[https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/organizationalbranding-list-localizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-list-localizations?view=graph-rest-1.0)
 
 
 

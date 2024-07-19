@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaExternalConnectionGroupMember
 
 ## SYNOPSIS
-Create new navigation property to members for external
+Create a new externalGroupMember object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionGroupMember?view=graph-powershell-1.0)
@@ -44,7 +44,7 @@ New-MgBetaExternalConnectionGroupMember -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to members for external
+Create a new externalGroupMember object.
 
 ## EXAMPLES
 ### Example 1: Add an Azure Active Directory user as a member
@@ -331,6 +331,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroupmember)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-post-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-post-members?view=graph-rest-beta)
 
 
 

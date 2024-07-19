@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the list of security principals (users, groups, and service principals) that are assigned to a specific role for different scopes either directly or transitively.
 You can use the $count query parameter to also get the count.
+This API is supported for the directory (Microsoft Entra ID) provider only.
 To list the direct and transitive role assignments for a specific principal, use the List transitiveRoleAssignments API.
 
 ## SYNTAX
@@ -36,6 +37,7 @@ Invoke-MgBetaAssignedRoleManagementEntitlementManagementRoleDefinitionPrincipal
 ## DESCRIPTION
 Get the list of security principals (users, groups, and service principals) that are assigned to a specific role for different scopes either directly or transitively.
 You can use the $count query parameter to also get the count.
+This API is supported for the directory (Microsoft Entra ID) provider only.
 To list the direct and transitive role assignments for a specific principal, use the List transitiveRoleAssignments API.
 
 ## PARAMETERS
@@ -403,6 +405,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaassignedrolemanagemententitlementmanagementroledefinitionprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaassignedrolemanagemententitlementmanagementroledefinitionprincipal)
 
 [https://learn.microsoft.com/graph/api/unifiedroledefinition-assignedprincipals?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroledefinition-assignedprincipals?view=graph-rest-beta)
+
 
 
 

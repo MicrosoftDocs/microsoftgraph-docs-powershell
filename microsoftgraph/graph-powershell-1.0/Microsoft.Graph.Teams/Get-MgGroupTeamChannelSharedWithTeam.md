@@ -56,8 +56,6 @@ Get-MgGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ExpandPrope
 ## DESCRIPTION
 A collection of teams with which a channel is shared.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -372,6 +370,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelsharedwithteam)
+
+
+
 
 
 

@@ -48,8 +48,6 @@ Update-MgGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the navigation property tags in groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -392,6 +390,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamtag)
+
+
 
 
 

@@ -36,8 +36,6 @@ Read-only.
 Nullable.
 Extra details about the plan.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -187,6 +185,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplandetail](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplandetail)
+
+
 
 
 

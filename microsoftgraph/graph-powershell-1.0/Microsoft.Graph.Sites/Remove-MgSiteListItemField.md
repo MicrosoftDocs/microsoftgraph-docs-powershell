@@ -32,8 +32,6 @@ Remove-MgSiteListItemField -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property fields for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -268,6 +266,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitemfield)
+
+
 
 
 

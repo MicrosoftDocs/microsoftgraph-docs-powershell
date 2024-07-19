@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPrintPrinter
 
 ## SYNOPSIS
-Delete navigation property printers for print
+Delete (unregister) a printer.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintPrinter?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Delete navigation property printers for print
+Delete (unregister) a printer.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -218,6 +218,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintprinter)
+
+[https://learn.microsoft.com/graph/api/printer-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-delete?view=graph-rest-1.0)
 
 
 

@@ -36,8 +36,6 @@ Provide the Post-Incident Review (PIR) document of a specified service issue for
 An issue only with status of PostIncidentReviewPublished indicates that the PIR document exists for the issue.
 The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -187,7 +185,7 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementhealthoverviewissueincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementhealthoverviewissueincident)
 
-[https://learn.microsoft.com/graph/api/servicehealthissue-incidentreport?view=graph-rest-beta](https://learn.microsoft.com/graph/api/servicehealthissue-incidentreport?view=graph-rest-beta)
+
 
 
 

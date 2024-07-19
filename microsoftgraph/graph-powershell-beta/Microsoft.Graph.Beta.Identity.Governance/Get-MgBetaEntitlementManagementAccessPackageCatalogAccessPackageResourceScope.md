@@ -22,8 +22,6 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceScope -A
 ## DESCRIPTION
 Get accessPackageResourceScopes from identityGovernance
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -251,6 +249,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackageresourcescope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackageresourcescope)
+
+
 
 
 

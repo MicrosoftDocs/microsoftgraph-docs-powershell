@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEducationUser
 
 ## SYNOPSIS
-Get users from education
+Retrieve the properties and relationships of a user.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUser?view=graph-powershell-1.0)
@@ -52,7 +52,7 @@ Get-MgBetaEducationUser -InputObject <IEducationIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get users from education
+Retrieve the properties and relationships of a user.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -336,6 +336,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuser)
+
+[https://learn.microsoft.com/graph/api/educationuser-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationuser-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/educationroot-list-users?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationroot-list-users?view=graph-rest-beta)
 
 
 

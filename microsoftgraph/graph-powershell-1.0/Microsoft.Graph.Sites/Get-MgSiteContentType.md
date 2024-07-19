@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteContentType
 
 ## SYNOPSIS
-The collection of content types defined for this site.
+Retrieve the metadata for a content type in a site or a list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentType?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-The collection of content types defined for this site.
+Retrieve the metadata for a content type in a site or a list.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -362,6 +362,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/site-list-contenttypes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-contenttypes?view=graph-rest-1.0)
 
 
 

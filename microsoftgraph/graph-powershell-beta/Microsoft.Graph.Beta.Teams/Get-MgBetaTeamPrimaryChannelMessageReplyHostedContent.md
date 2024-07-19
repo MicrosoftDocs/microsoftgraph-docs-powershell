@@ -56,8 +56,6 @@ Get-MgBetaTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -425,6 +423,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelmessagereplyhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelmessagereplyhostedcontent)
+
+
+
+
 
 
 

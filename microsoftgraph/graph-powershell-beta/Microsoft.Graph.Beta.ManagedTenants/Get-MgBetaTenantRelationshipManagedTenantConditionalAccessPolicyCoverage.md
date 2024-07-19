@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
 
 ## SYNOPSIS
-Aggregate view of conditional access policy coverage across managed tenants.
+Read the properties and relationships of a conditionalAccessPolicyCoverage object.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage -InputO
 ```
 
 ## DESCRIPTION
-Aggregate view of conditional access policy coverage across managed tenants.
+Read the properties and relationships of a conditionalAccessPolicyCoverage object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -339,6 +339,10 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantconditionalaccesspolicycoverage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantconditionalaccesspolicycoverage)
+
+[https://learn.microsoft.com/graph/api/managedtenants-conditionalaccesspolicycoverage-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-conditionalaccesspolicycoverage-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-conditionalaccesspolicycoverages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-conditionalaccesspolicycoverages?view=graph-rest-beta)
 
 
 

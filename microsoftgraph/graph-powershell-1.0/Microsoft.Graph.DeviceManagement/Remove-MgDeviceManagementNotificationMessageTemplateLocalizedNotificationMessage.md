@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage
 
 ## SYNOPSIS
-Delete navigation property localizedNotificationMessages for deviceManagement
+Deletes a localizedNotificationMessage.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage
 ```
 
 ## DESCRIPTION
-Delete navigation property localizedNotificationMessages for deviceManagement
+Deletes a localizedNotificationMessage.
 
 ## PARAMETERS
 
@@ -263,6 +263,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage)
+
+[https://learn.microsoft.com/graph/api/intune-notification-localizednotificationmessage-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-notification-localizednotificationmessage-delete?view=graph-rest-1.0)
 
 
 

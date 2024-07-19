@@ -32,8 +32,6 @@ Remove-MgBetaGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property openShifts for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId
@@ -250,6 +248,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduleopenshift)
+
+
 
 
 

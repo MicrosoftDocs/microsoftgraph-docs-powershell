@@ -32,6 +32,28 @@ Get-MgBetaReportM365AppPlatformUserCount -InputObject <IReportsIdentity> -OutFil
 Get a report that provides the trend of active users across all apps for each platform (Windows, Mac, web, and mobile) in your organization.
 
 ## EXAMPLES
+### Example 1: CSV output
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportM365AppPlatformUserCount -Format "text/csv"  -Period $periodId 
+
+```
+This example will csv output
+
+### Example 2: JSON output
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportM365AppPlatformUserCount -Format "application/json"  -Period $periodId 
+
+```
+This example will json output
+
 
 ## PARAMETERS
 
@@ -158,7 +180,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary

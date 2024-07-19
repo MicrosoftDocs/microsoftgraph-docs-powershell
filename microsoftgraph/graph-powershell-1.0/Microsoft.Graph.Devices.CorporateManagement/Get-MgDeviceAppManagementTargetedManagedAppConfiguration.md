@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementTargetedManagedAppConfiguration
 
 ## SYNOPSIS
-Targeted managed app configurations.
+Read properties and relationships of the targetedManagedAppConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceAppManagementTargetedManagedAppConfiguration -InputObject <IDevicesC
 ```
 
 ## DESCRIPTION
-Targeted managed app configurations.
+Read properties and relationships of the targetedManagedAppConfiguration object.
 
 ## PARAMETERS
 
@@ -325,6 +325,10 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementtargetedmanagedappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementtargetedmanagedappconfiguration)
+
+[https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-list?view=graph-rest-1.0)
 
 
 

@@ -50,8 +50,6 @@ Join-MgSiteListContentTypeWithHubSite -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Associate a published content type present in a content type hub with a list of hub sites.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -340,6 +338,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/join-mgsitelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/join-mgsitelistcontenttypewithhubsite)
 
 [https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)
+
+
 
 
 

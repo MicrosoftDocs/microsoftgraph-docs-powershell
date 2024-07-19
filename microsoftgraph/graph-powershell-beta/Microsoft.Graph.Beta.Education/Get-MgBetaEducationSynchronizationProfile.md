@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEducationSynchronizationProfile
 
 ## SYNOPSIS
-Get synchronizationProfiles from education
+Retrieve a school data synchronization profile in the tenant based on the identifier.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Get synchronizationProfiles from education
+Retrieve a school data synchronization profile in the tenant based on the identifier.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -318,6 +318,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofile)
+
+[https://learn.microsoft.com/graph/api/educationsynchronizationprofile-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsynchronizationprofile-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/educationsynchronizationprofile-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsynchronizationprofile-list?view=graph-rest-beta)
 
 
 

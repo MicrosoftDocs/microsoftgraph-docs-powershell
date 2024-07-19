@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBookingBusinessCustomQuestion
 
 ## SYNOPSIS
-Create new navigation property to customQuestions for solutions
+Create a new bookingCustomQuestion object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to customQuestions for solutions
+Create a new bookingCustomQuestion object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -315,6 +315,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomquestion)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-post-customquestions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-customquestions?view=graph-rest-1.0)
 
 
 

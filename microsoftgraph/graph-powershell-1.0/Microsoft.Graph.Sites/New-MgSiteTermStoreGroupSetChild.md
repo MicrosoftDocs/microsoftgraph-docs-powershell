@@ -166,8 +166,6 @@ New-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to children for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -797,6 +795,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupsetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupsetchild)
+
+
 
 
 

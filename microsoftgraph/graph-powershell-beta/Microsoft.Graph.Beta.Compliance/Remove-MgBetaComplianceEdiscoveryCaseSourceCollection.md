@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaComplianceEdiscoveryCaseSourceCollection
 
 ## SYNOPSIS
-Delete navigation property sourceCollections for compliance
+Delete a sourceCollection object.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceI
 ```
 
 ## DESCRIPTION
-Delete navigation property sourceCollections for compliance
+Delete a sourceCollection object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -234,6 +234,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasesourcecollection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasesourcecollection)
+
+[https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-delete?view=graph-rest-beta)
 
 
 

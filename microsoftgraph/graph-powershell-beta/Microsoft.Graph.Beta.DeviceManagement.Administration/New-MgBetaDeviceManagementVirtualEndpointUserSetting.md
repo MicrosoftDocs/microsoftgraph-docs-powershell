@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaDeviceManagementVirtualEndpointUserSetting
 
 ## SYNOPSIS
-Create new navigation property to userSettings for deviceManagement
+Create a new cloudPcUserSetting object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-1.0)
@@ -34,26 +34,32 @@ New-MgBetaDeviceManagementVirtualEndpointUserSetting -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Create new navigation property to userSettings for deviceManagement
+Create a new cloudPcUserSetting object.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcUserSetting"
-	DisplayName = "Example"
-	SelfServiceEnabled = $false
-	LocalAdminEnabled = $true
-	RestorePointSetting = @{
-		FrequencyInHours = 16
-		UserRestoreEnabled = $true
+	displayName = "Example"
+	selfServiceEnabled = $false
+	localAdminEnabled = $true
+	restorePointSetting = @{
+		frequencyInHours = 16
+		frequencyType = "sixteenHours"
+		userRestoreEnabled = $true
 	}
 }
+
 New-MgBetaDeviceManagementVirtualEndpointUserSetting -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -285,7 +291,10 @@ Accept wildcard characters: False
 ```
 
 ### -SelfServiceEnabled
-.
+Indicates whether the self-service option is enabled.
+Default value is false.
+To enable the self-service option, change the setting to true. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the Cloud PC through the end user portal.
+The selfServiceEnabled property is deprecated and will stop returning data on December 1, 2023.
 
 ```yaml
 Type: SwitchParameter
@@ -394,11 +403,18 @@ When false, end-user initiated reset is not allowed.
 The default value is false.
   - `[RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>]`: cloudPcRestorePointSetting
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[FrequencyInHours <Int32?>]`: 
+    - `[FrequencyInHours <Int32?>]`: The time interval in hours to take snapshots (restore points) of a Cloud PC automatically.
+Possible values are 4, 6, 12, 16, and 24.
+The default frequency is 12 hours.
+The frequencyInHours property is deprecated and will stop returning data on January 31, 2024.
+Going forward, use the frequencyType property.
     - `[FrequencyType <String>]`: cloudPcRestorePointFrequencyType
     - `[UserRestoreEnabled <Boolean?>]`: If true, the user has the ability to use snapshots to restore Cloud PCs.
 If false, non-admin users can't use snapshots to restore the Cloud PC.
-  - `[SelfServiceEnabled <Boolean?>]`: 
+  - `[SelfServiceEnabled <Boolean?>]`: Indicates whether the self-service option is enabled.
+Default value is false.
+To enable the self-service option, change the setting to true. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the Cloud PC through the end user portal.
+The selfServiceEnabled property is deprecated and will stop returning data on December 1, 2023.
 
 CROSSREGIONDISASTERRECOVERYSETTING `<IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>`: cloudPcCrossRegionDisasterRecoverySetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -409,7 +425,11 @@ CROSSREGIONDISASTERRECOVERYSETTING `<IMicrosoftGraphCloudPcCrossRegionDisasterRe
 
 RESTOREPOINTSETTING `<IMicrosoftGraphCloudPcRestorePointSetting>`: cloudPcRestorePointSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[FrequencyInHours <Int32?>]`: 
+  - `[FrequencyInHours <Int32?>]`: The time interval in hours to take snapshots (restore points) of a Cloud PC automatically.
+Possible values are 4, 6, 12, 16, and 24.
+The default frequency is 12 hours.
+The frequencyInHours property is deprecated and will stop returning data on January 31, 2024.
+Going forward, use the frequencyType property.
   - `[FrequencyType <String>]`: cloudPcRestorePointFrequencyType
   - `[UserRestoreEnabled <Boolean?>]`: If true, the user has the ability to use snapshots to restore Cloud PCs.
 If false, non-admin users can't use snapshots to restore the Cloud PC.
@@ -417,6 +437,8 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointusersetting)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-post-usersettings?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-post-usersettings?view=graph-rest-beta)
 
 
 

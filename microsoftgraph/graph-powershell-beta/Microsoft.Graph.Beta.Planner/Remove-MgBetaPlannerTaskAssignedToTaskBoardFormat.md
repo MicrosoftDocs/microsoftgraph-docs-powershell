@@ -32,8 +32,6 @@ Remove-MgBetaPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity
 ## DESCRIPTION
 Delete navigation property assignedToTaskBoardFormat for planner
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -202,6 +200,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannertaskassignedtotaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannertaskassignedtotaskboardformat)
+
+
 
 
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Set-MgBetaExternalConnectionItem
 
 ## SYNOPSIS
-Update the navigation property items in external
+Create a new externalItem.
+This API can be used to create a custom item.
+The containing externalConnection must have a schema registered of the corresponding type.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Set-MgExternalConnectionItem?view=graph-powershell-1.0)
@@ -48,7 +50,48 @@ Set-MgBetaExternalConnectionItem -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property items in external
+Create a new externalItem.
+This API can be used to create a custom item.
+The containing externalConnection must have a schema registered of the corresponding type.
+
+## EXAMPLES
+### Example: Create a custom item
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+$params = @{
+	acl = @(
+		@{
+			type = "user"
+			value = "e811976d-83df-4cbd-8b9b-5215b18aa874"
+			accessType = "grant"
+			identitySource = "azureActiveDirectory"
+		}
+		@{
+			type = "group"
+			value = "14m1b9c38qe647f6a"
+			accessType = "deny"
+			identitySource = "external"
+		}
+	)
+	properties = @{
+		title = "Error in the payment gateway"
+		priority = 
+		assignee = "john@contoso.com"
+	}
+	content = @{
+		value = "Error in payment gateway..."
+		type = "text"
+	}
+}
+
+Set-MgBetaExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId -BodyParameter $params
+
+```
+This example will### example: create a custom item
+
 
 ## PARAMETERS
 
@@ -395,6 +438,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/set-mgbetaexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/set-mgbetaexternalconnectionitem)
 
+[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta)
 
 
 

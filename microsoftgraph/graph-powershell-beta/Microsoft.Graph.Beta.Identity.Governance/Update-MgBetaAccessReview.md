@@ -64,16 +64,21 @@ To stop an already-started one-time review, or an already-started instance of a 
 To apply the decisions to the target group or app access rights, use the apply API.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaAccessReview Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 $params = @{
-	DisplayName = "TestReview new name"
+	displayName = "TestReview new name"
 }
+
 Update-MgBetaAccessReview -AccessReviewId $accessReviewId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaAccessReview Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -487,7 +492,7 @@ This value is case sensitive.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Decisions <IMicrosoftGraphAccessReviewDecision- `[]`>]`: The collection of decisions for this access review.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -564,7 +569,7 @@ CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
 This property is read-only.
   - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+  - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 DECISIONS <IMicrosoftGraphAccessReviewDecision- `[]`>: The collection of decisions for this access review.
@@ -578,7 +583,7 @@ Read-only.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[AppliedDateTime <DateTime?>]`: The date and time when the review decision was applied.
   - `[ApplyResult <String>]`: The outcome of applying the decision, one of: NotApplied, Success, Failed, NotFound, NotSupported.
@@ -700,7 +705,7 @@ This value is case sensitive.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Decisions <IMicrosoftGraphAccessReviewDecision- `[]`>]`: The collection of decisions for this access review.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -782,7 +787,7 @@ Read-only.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[AppliedDateTime <DateTime?>]`: The date and time when the review decision was applied.
   - `[ApplyResult <String>]`: The outcome of applying the decision, one of: NotApplied, Success, Failed, NotFound, NotSupported.

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaTeamScheduleOpenShift
 
 ## SYNOPSIS
-Update the navigation property openShifts in teams
+Update the properties of an openShift object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
@@ -52,7 +52,7 @@ Update-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Update the navigation property openShifts in teams
+Update the properties of an openShift object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -594,6 +594,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleopenshift)
+
+[https://learn.microsoft.com/graph/api/openshift-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/openshift-update?view=graph-rest-beta)
 
 
 

@@ -93,8 +93,6 @@ Update-MgGroupSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property terms in groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -739,6 +737,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoregroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoregroupsetterm)
+
+
 
 
 

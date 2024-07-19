@@ -48,8 +48,6 @@ New-MgDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Create new navigation property to serviceConfigurationRecords for domains
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -345,6 +343,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainserviceconfigurationrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainserviceconfigurationrecord)
+
+
 
 
 

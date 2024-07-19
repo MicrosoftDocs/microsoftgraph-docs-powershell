@@ -46,8 +46,6 @@ New-MgExternalConnectionOperation -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for external
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -303,6 +301,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionoperation)
+
+
 
 
 

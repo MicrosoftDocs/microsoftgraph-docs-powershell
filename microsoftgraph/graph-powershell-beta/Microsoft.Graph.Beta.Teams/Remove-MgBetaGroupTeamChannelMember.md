@@ -32,8 +32,6 @@ Remove-MgBetaGroupTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property members for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -265,6 +263,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamchannelmember)
+
+
 
 
 

@@ -45,8 +45,6 @@ Update-MgDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Update entity in directoryRoleTemplates
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -310,6 +308,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryroletemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryroletemplate)
+
+
 
 
 

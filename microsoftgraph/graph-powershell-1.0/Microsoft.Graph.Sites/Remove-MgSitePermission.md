@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSitePermission
 
 ## SYNOPSIS
-Delete navigation property permissions for sites
+Delete a permission object on a site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSitePermission?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgSitePermission -InputObject <ISitesIdentity> [-IfMatch <String>] [-Resp
 ```
 
 ## DESCRIPTION
-Delete navigation property permissions for sites
+Delete a permission object on a site.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -264,6 +264,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepermission)
+
+[https://learn.microsoft.com/graph/api/site-delete-permission?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-delete-permission?view=graph-rest-1.0)
 
 
 

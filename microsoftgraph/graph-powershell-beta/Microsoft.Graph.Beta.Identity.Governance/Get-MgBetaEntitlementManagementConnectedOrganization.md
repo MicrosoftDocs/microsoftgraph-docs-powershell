@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementConnectedOrganization
 
 ## SYNOPSIS
-Represents references to a directory or domain of another organization whose users can request access.
+Retrieve the properties and relationships of a connectedOrganization object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganization?view=graph-powershell-1.0)
@@ -58,7 +58,7 @@ Get-MgBetaEntitlementManagementConnectedOrganization [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Represents references to a directory or domain of another organization whose users can request access.
+Retrieve the properties and relationships of a connectedOrganization object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -452,6 +452,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementconnectedorganization)
+
+[https://learn.microsoft.com/graph/api/connectedorganization-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/connectedorganization-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagement-list-connectedorganizations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagement-list-connectedorganizations?view=graph-rest-beta)
 
 
 

@@ -24,8 +24,6 @@ Get-MgApplicationTokenLifetimePolicyByRef -ApplicationId <String> [-Filter <Stri
 ## DESCRIPTION
 Get ref of tokenLifetimePolicies from applications
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -223,6 +221,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenlifetimepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenlifetimepolicybyref)
+
+
 
 
 

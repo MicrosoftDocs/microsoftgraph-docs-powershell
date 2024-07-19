@@ -349,6 +349,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainverificationdnsrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainverificationdnsrecord)
 
+[https://learn.microsoft.com/graph/api/domain-list-verificationdnsrecords?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-list-verificationdnsrecords?view=graph-rest-1.0)
+
 
 
 

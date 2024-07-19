@@ -37,8 +37,6 @@ New-MgServiceAnnouncementMessage -BodyParameter <IMicrosoftGraphServiceUpdateMes
 ## DESCRIPTION
 Create new navigation property to messages for admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ActionRequiredByDateTime
@@ -493,6 +491,8 @@ VIEWPOINT `<IMicrosoftGraphServiceUpdateMessageViewpoint>`: serviceUpdateMessage
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessage)
+
+
 
 
 

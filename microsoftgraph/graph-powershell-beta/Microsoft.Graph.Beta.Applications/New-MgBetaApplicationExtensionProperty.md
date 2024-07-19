@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaApplicationExtensionProperty
 
 ## SYNOPSIS
-Create new navigation property to extensionProperties for applications
+Create a new directory extension definition, represented by an extensionProperty object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationExtensionProperty?view=graph-powershell-1.0)
@@ -48,12 +48,13 @@ New-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to extensionProperties for applications
+Create a new directory extension definition, represented by an extensionProperty object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
 
 $params = @{
@@ -61,15 +62,14 @@ $params = @{
 	dataType = "String"
 	isMultiValued = $true
 	targetObjects = @(
-		"User"
-	)
+	"User"
+)
 }
 
 New-MgBetaApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaApplicationExtensionProperty Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -407,6 +407,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[IPApplicationSegmentId <String>]`: The unique identifier of ipApplicationSegment
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
@@ -414,6 +415,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -427,6 +429,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationextensionproperty)
+
+[https://learn.microsoft.com/graph/api/application-post-extensionproperty?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-post-extensionproperty?view=graph-rest-beta)
 
 
 

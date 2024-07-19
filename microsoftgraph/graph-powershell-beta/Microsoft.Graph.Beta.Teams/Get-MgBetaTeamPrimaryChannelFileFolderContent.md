@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgBetaTeamPrimaryChannelFileFolderContent
 
 ## SYNOPSIS
-Get content for the navigation property filesFolder from teams
+The content stream, if the item represents a file.
+The content property will have a potentially breaking change in behavior in the future.
+It will stream content directly instead of redirecting.
+To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelFileFolderContent?view=graph-powershell-1.0)
@@ -30,9 +33,10 @@ Get-MgBetaTeamPrimaryChannelFileFolderContent -InputObject <ITeamsIdentity> [-Fo
 ```
 
 ## DESCRIPTION
-Get content for the navigation property filesFolder from teams
-
-## EXAMPLES
+The content stream, if the item represents a file.
+The content property will have a potentially breaking change in behavior in the future.
+It will stream content directly instead of redirecting.
+To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
 ## PARAMETERS
 
@@ -219,6 +223,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelfilefoldercontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelfilefoldercontent)
+
+
 
 
 

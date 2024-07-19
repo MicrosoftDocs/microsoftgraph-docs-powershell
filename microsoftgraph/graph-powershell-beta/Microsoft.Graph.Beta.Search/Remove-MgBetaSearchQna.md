@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSearchQna
 
 ## SYNOPSIS
-Delete navigation property qnas for search
+Delete a qna object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Remove-MgSearchQna?view=graph-powershell-1.0)
@@ -30,16 +30,20 @@ Remove-MgBetaSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-Resp
 ```
 
 ## DESCRIPTION
-Delete navigation property qnas for search
+Delete a qna object.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaSearchQna Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
+
 Remove-MgBetaSearchQna -QnaId $qnaId
+
 ```
 This example shows how to use the Remove-MgBetaSearchQna Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -222,6 +226,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchqna)
+
+[https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-beta)
 
 
 

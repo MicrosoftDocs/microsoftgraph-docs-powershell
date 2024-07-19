@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPrintShare
 
 ## SYNOPSIS
-The list of printer shares registered in the tenant.
+Retrieve the properties and relationships of a printer share.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShare?view=graph-powershell-1.0)
@@ -37,7 +37,7 @@ Get-MgBetaPrintShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-The list of printer shares registered in the tenant.
+Retrieve the properties and relationships of a printer share.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -315,6 +315,10 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshare](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshare)
+
+[https://learn.microsoft.com/graph/api/printershare-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printershare-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/print-list-shares?view=graph-rest-beta](https://learn.microsoft.com/graph/api/print-list-shares?view=graph-rest-beta)
 
 
 

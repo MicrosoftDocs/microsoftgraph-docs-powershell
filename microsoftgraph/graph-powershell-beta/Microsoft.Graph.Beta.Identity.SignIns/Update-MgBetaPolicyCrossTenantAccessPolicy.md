@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
-Update the navigation property crossTenantAccessPolicy in policies
+Update the properties of a cross-tenant access policy.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicy?view=graph-powershell-1.0)
@@ -34,26 +34,26 @@ Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter <IMicrosoftGraphCrossT
 ```
 
 ## DESCRIPTION
-Update the navigation property crossTenantAccessPolicy in policies
+Update the properties of a cross-tenant access policy.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	allowedCloudEndpoints = @(
-		"microsoftonline.us"
-		"partner.microsoftonline.cn"
-	)
+	"microsoftonline.us"
+"partner.microsoftonline.cn"
+)
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -123,7 +123,9 @@ Accept wildcard characters: False
 ```
 
 ### -Definition
-.
+The raw JSON definition of the cross-tenant access policy.
+Deprecated.
+Do not use.
 
 ```yaml
 Type: String[]
@@ -327,7 +329,9 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicy>`: crossTenantAccessPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Definition <String- `[]`>]`: 
+  - `[Definition <String- `[]`>]`: The raw JSON definition of the cross-tenant access policy.
+Deprecated.
+Do not use.
   - `[Description <String>]`: Description for this policy.
 Required.
   - `[DisplayName <String>]`: Display name for this policy.
@@ -566,6 +570,8 @@ Office365 - Includes the applications mentioned as part of the Office365 suite.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy)
+
+[https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-beta)
 
 
 

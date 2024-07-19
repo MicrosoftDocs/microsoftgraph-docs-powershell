@@ -41,6 +41,20 @@ If this happens, the application will need to acquire a new refresh token by mak
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-revokesigninsessions-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+# A UPN can also be used as -UserId.
+Revoke-MgBetaUserSignInSession -UserId $userId
+
+```
+This example shows how to use the Revoke-MgBetaUserSignInSession Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -214,7 +228,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetausersigninsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetausersigninsession)
 
 [https://learn.microsoft.com/graph/api/user-revokesigninsessions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-revokesigninsessions?view=graph-rest-beta)
-
 
 
 

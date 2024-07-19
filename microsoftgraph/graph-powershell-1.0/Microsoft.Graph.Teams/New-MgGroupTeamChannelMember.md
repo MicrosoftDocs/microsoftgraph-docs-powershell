@@ -48,8 +48,6 @@ New-MgGroupTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to members for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,6 +337,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmember)
+
+
 
 
 

@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage
 
 ## SYNOPSIS
-If the instance has multiple stages, this returns the collection of stages.
-A new stage will only be created when the previous stage ends.
-The existence, number, and settings of stages on a review instance are created based on the accessReviewStageSettings on the parent accessReviewScheduleDefinition.
+Retrieve the properties and relationships of an accessReviewStage object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-1.0)
@@ -42,9 +40,7 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject <II
 ```
 
 ## DESCRIPTION
-If the instance has multiple stages, this returns the collection of stages.
-A new stage will only be created when the previous stage ends.
-The existence, number, and settings of stages on a review instance are created based on the accessReviewStageSettings on the parent accessReviewScheduleDefinition.
+Retrieve the properties and relationships of an accessReviewStage object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -438,6 +434,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinitioninstancestage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinitioninstancestage)
+
+[https://learn.microsoft.com/graph/api/accessreviewstage-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewstage-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstance-list-stages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstance-list-stages?view=graph-rest-beta)
 
 
 

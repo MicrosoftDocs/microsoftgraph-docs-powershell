@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgPlannerPlanBucket
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Collection of buckets in the plan.
+Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlanBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanBucket?view=graph-powershell-beta)
@@ -25,9 +23,7 @@ Get-MgPlannerPlanBucket -PlannerPlanId <String> [-ExpandProperty <String[]>] [-F
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Collection of buckets in the plan.
+Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -269,6 +265,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplanbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplanbucket)
+
+[https://learn.microsoft.com/graph/api/plannerplan-list-buckets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplan-list-buckets?view=graph-rest-1.0)
 
 
 

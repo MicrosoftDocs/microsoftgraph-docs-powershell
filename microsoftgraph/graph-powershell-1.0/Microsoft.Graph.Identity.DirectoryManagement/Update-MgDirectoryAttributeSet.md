@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDirectoryAttributeSet
 
 ## SYNOPSIS
-Update the navigation property attributeSets in directory
+Update the properties of an attributeSet object.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Update-MgDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdentit
 ```
 
 ## DESCRIPTION
-Update the navigation property attributeSets in directory
+Update the properties of an attributeSet object.
 
 ## PARAMETERS
 
@@ -295,6 +295,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryattributeset](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryattributeset)
+
+[https://learn.microsoft.com/graph/api/attributeset-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attributeset-update?view=graph-rest-1.0)
 
 
 

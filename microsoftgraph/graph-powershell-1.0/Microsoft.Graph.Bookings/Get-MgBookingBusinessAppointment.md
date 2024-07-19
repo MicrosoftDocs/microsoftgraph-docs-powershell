@@ -8,9 +8,8 @@ schema: 2.0.0
 # Get-MgBookingBusinessAppointment
 
 ## SYNOPSIS
-All the appointments of this business.
-Read-only.
-Nullable.
+Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
+The startDateTime and endDateTime properties are always returned in UTC.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
@@ -40,9 +39,11 @@ Get-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-All the appointments of this business.
-Read-only.
-Nullable.
+Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
+The startDateTime and endDateTime properties are always returned in UTC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingappointment-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -337,6 +338,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessappointment)
+
+[https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-list-appointments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-list-appointments?view=graph-rest-1.0)
 
 
 

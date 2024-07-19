@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDeviceConfigurationUserStatus
 
 ## SYNOPSIS
-Delete navigation property userStatuses for deviceManagement
+Deletes a deviceConfigurationUserStatus.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceConfigurationUserStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationUserStatus?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgDeviceManagementDeviceConfigurationUserStatus -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Delete navigation property userStatuses for deviceManagement
+Deletes a deviceConfigurationUserStatus.
 
 ## PARAMETERS
 
@@ -262,6 +262,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationuserstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationuserstatus)
+
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationuserstatus-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationuserstatus-delete?view=graph-rest-1.0)
 
 
 

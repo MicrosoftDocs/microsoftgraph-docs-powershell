@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaDeviceManagementVirtualEndpointUserSetting
 
 ## SYNOPSIS
-Delete navigation property userSettings for deviceManagement
+Delete a cloudPcUserSetting object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-1.0)
@@ -30,16 +30,20 @@ Remove-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-Delete navigation property userSettings for deviceManagement
+Delete a cloudPcUserSetting object.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 Remove-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId
+
 ```
 This example shows how to use the Remove-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -258,6 +262,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointusersetting)
+
+[https://learn.microsoft.com/graph/api/cloudpcusersetting-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcusersetting-delete?view=graph-rest-beta)
 
 
 

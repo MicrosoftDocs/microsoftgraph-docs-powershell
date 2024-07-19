@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 
 ## SYNOPSIS
-Create new navigation property to externalPartnerSettings for deviceManagement
+Create a new cloudPcExternalPartnerSetting object.
 
 ## SYNTAX
 
@@ -28,21 +28,26 @@ New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 ```
 
 ## DESCRIPTION
-Create new navigation property to externalPartnerSettings for deviceManagement
+Create a new cloudPcExternalPartnerSetting object.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcExternalPartnerSetting"
-	PartnerId = "198d7140-80bb-4843-8cc4-811377a49a92"
-	EnableConnection = $true
+	partnerId = "198d7140-80bb-4843-8cc4-811377a49a92"
+	enableConnection = $true
 }
+
 New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -283,6 +288,8 @@ For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointexternalpartnersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-post-externalpartnersettings?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-post-externalpartnersettings?view=graph-rest-beta)
 
 
 

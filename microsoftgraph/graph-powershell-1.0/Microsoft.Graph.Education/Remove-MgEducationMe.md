@@ -23,8 +23,6 @@ Remove-MgEducationMe [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-H
 ## DESCRIPTION
 Delete navigation property me for education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -147,6 +145,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationme](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationme)
+
+
 
 
 

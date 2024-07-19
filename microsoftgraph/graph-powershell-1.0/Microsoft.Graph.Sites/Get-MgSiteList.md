@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteList
 
 ## SYNOPSIS
-The collection of lists under this site.
+Get a list of rich long-running operations associated with a list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteList?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-The collection of lists under this site.
+Get a list of rich long-running operations associated with a list.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -362,6 +362,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelist)
+
+[https://learn.microsoft.com/graph/api/list-list-operations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list-operations?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0)
 
 
 

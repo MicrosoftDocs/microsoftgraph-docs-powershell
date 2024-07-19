@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef
 
 ## SYNOPSIS
-Create new navigation property ref to internalSponsors for identityGovernance
+Add a user or a group to the connected organization's internal sponsors.
+The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-1.0)
@@ -47,12 +48,14 @@ New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to internalSponsors for identityGovernance
+Add a user or a group to the connected organization's internal sponsors.
+The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
@@ -60,10 +63,9 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -363,6 +365,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganizationinternalsponsorbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganizationinternalsponsorbyref)
+
+[https://learn.microsoft.com/graph/api/connectedorganization-post-internalsponsors?view=graph-rest-beta](https://learn.microsoft.com/graph/api/connectedorganization-post-internalsponsors?view=graph-rest-beta)
 
 
 

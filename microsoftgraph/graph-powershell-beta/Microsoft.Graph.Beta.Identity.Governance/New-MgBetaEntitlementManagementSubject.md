@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnPremisesSecurityIdentifier
-.
+A string representation of the principal's security identifier, if known, or null if the subject doesn't have a security identifier.
 
 ```yaml
 Type: String
@@ -385,7 +385,7 @@ Read-only.
   - `[ObjectId <String>]`: The object identifier of the subject.
 null if the subject isn't yet a user in the tenant.
 Alternate key.
-  - `[OnPremisesSecurityIdentifier <String>]`: 
+  - `[OnPremisesSecurityIdentifier <String>]`: A string representation of the principal's security identifier, if known, or null if the subject doesn't have a security identifier.
   - `[PrincipalName <String>]`: The principal name, if known, of the subject.
   - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
   - `[Type <String>]`: The resource type of the subject.
@@ -423,6 +423,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementsubject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementsubject)
+
 
 
 

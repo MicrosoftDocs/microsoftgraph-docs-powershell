@@ -64,8 +64,6 @@ New-MgBetaEducationUserAssignment -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create new navigation property to assignments for education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AddedStudentAction
@@ -902,6 +900,8 @@ If the value is null, the student uploaded the resource.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserassignment)
+
+
 
 
 

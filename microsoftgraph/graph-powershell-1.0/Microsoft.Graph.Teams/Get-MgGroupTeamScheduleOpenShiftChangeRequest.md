@@ -40,8 +40,6 @@ Get-MgGroupTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity> [-Ex
 ## DESCRIPTION
 The open shift requests in the schedule.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -340,6 +338,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleopenshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleopenshiftchangerequest)
+
+
+
 
 
 

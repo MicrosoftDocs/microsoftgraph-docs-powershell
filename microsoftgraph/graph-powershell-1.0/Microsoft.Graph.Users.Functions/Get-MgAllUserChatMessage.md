@@ -37,8 +37,6 @@ Get all messages from all chats that a user is a participant in, including one-o
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chats-getallmessages-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Count
@@ -301,6 +299,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluserchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluserchatmessage)
 
 [https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-1.0)
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceTermsOfUseAgreement
 
 ## SYNOPSIS
-Represents a tenant's customizable terms of use agreement that's created and managed with Microsoft Entra ID Governance.
+Retrieve the properties and relationships of an agreement object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanceIde
 ```
 
 ## DESCRIPTION
-Represents a tenant's customizable terms of use agreement that's created and managed with Microsoft Entra ID Governance.
+Retrieve the properties and relationships of an agreement object.
 
 ## PARAMETERS
 
@@ -357,6 +357,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreement)
+
+[https://learn.microsoft.com/graph/api/agreement-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-1.0)
 
 
 

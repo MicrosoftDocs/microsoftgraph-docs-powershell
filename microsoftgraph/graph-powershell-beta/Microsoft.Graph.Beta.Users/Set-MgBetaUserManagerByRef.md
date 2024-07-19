@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaUserManagerByRef
 
 ## SYNOPSIS
-Update the ref of navigation property manager in users
+Assign a user's manager.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Set-MgUserManagerByRef?view=graph-powershell-1.0)
@@ -44,7 +44,7 @@ Set-MgBetaUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <IRefere
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property manager in users
+Assign a user's manager.
 
 ## EXAMPLES
 ### Example 1: Update a user's manager
@@ -301,6 +301,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref)
+
+[https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-beta)
 
 
 

@@ -51,8 +51,6 @@ Asynchronously creates a copy of an driveItem (including any children), under a 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-copy-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -333,6 +331,8 @@ For OneDrive, this property is not populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
+
+
 
 
 

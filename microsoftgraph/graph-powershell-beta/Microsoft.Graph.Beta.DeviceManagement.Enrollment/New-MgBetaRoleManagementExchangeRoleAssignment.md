@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaRoleManagementExchangeRoleAssignment
 
 ## SYNOPSIS
-Create new navigation property to roleAssignments for roleManagement
+Create a new unifiedRoleAssignment object.
 
 ## SYNTAX
 
@@ -31,7 +31,27 @@ New-MgBetaRoleManagementExchangeRoleAssignment -BodyParameter <IMicrosoftGraphUn
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleAssignments for roleManagement
+Create a new unifiedRoleAssignment object.
+
+## EXAMPLES
+### Example 1: Create a role assignment for Exchange Online provider with administrative unit scope
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+$params = @{
+	principalId = "/ServicePrincipals/0451dbb9-6336-42ea-b58f-5953dc053ece"
+	roleDefinitionId = "f66ab1ee-3cac-4d03-8a64-dadc56e563f8"
+	directoryScopeId = "/AdministrativeUnits/8b532c7a-4d3e-4e99-8ffa-2dfec92c62eb"
+	appScopeId = $null
+}
+
+New-MgBetaRoleManagementExchangeRoleAssignment -BodyParameter $params
+
+```
+This example will create a role assignment for exchange online provider with administrative unit scope
+
 
 ## PARAMETERS
 
@@ -70,7 +90,8 @@ Accept wildcard characters: False
 Identifier of the app specific scope when the assignment scope is app specific.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
 App scopes are scopes that are defined and understood by a resource application only.
-For the entitlement management provider, use this property to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+For the entitlement management provider, use this property to specify a catalog.
+For example, /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
 Supports $filter (eq, in).
 For example /roleManagement/entitlementManagement/roleAssignments$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'.
 
@@ -384,7 +405,8 @@ This property is read only.
   - `[AppScopeId <String>]`: Identifier of the app specific scope when the assignment scope is app specific.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
 App scopes are scopes that are defined and understood by a resource application only.
-For the entitlement management provider, use this property to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+For the entitlement management provider, use this property to specify a catalog.
+For example, /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
 Supports $filter (eq, in).
 For example /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'.
   - `[Condition <String>]`: 
@@ -514,6 +536,7 @@ Read-only when isBuiltIn is true.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangeroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangeroleassignment)
 
+[https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-beta)
 
 
 

@@ -66,28 +66,33 @@ Alternatively, create a draft to forward a message, and send it later.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-forward-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaForwardUserMessage Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	Message = @{
-		IsDeliveryReceiptRequested = $true
-		ToRecipients = @(
+	message = @{
+		isDeliveryReceiptRequested = $true
+		toRecipients = @(
 			@{
-				EmailAddress = @{
-					Address = "danas@contoso.onmicrosoft.com"
-					Name = "Dana Swope"
+				emailAddress = @{
+					address = "danas@contoso.com"
+					name = "Dana Swope"
 				}
 			}
 		)
 	}
-	Comment = "Dana, just want to make sure you get this."
+	comment = "Dana, just want to make sure you get this."
 }
+
 # A UPN can also be used as -UserId.
 Invoke-MgBetaForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaForwardUserMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -328,8 +333,11 @@ BODYPARAMETER `<IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPos
   - `[Comment <String>]`: 
   - `[Message <IMicrosoftGraphMessage>]`: message
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Categories <String- `[]`>]`: 
-    - `[ChangeKey <String>]`: 
+    - `[Categories <String- `[]`>]`: The categories associated with the item.
+    - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -500,8 +508,11 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 MESSAGE `<IMicrosoftGraphMessage>`: message
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.

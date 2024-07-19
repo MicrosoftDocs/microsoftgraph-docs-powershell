@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportTeamDeviceUsageUserDetail
 
 ## SYNOPSIS
-Invoke function getTeamsDeviceUsageUserDetail
+Get details about Microsoft Teams device usage by user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportTeamDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamDeviceUsageUserDetail?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Get-MgReportTeamDeviceUsageUserDetail -InputObject <IReportsIdentity> -OutFile <
 ```
 
 ## DESCRIPTION
-Invoke function getTeamsDeviceUsageUserDetail
+Get details about Microsoft Teams device usage by user.
 
 ## PARAMETERS
 
@@ -210,6 +210,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusageuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusageuserdetail)
+
 
 
 

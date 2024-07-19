@@ -44,8 +44,6 @@ Get-MgBetaFinancialCompanyPurchaseInvoiceLineItem -InputObject <IFinancialsIdent
 ## DESCRIPTION
 Get item from financials
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -241,6 +239,8 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanypurchaseinvoicelineitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanypurchaseinvoicelineitem)
+
+
 
 
 

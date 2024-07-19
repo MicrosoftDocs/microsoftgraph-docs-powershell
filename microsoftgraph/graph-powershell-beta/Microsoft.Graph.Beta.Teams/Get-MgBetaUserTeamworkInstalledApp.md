@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserTeamworkInstalledApp
 
 ## SYNOPSIS
-The apps installed in the personal scope of this user.
+Retrieve the app installed in the personal scope of the specified user.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledApp?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-The apps installed in the personal scope of this user.
+Retrieve the app installed in the personal scope of the specified user.
 
 ## EXAMPLES
 ### Example 1: List apps installed for the specified user
@@ -381,6 +381,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledapp)
+
+[https://learn.microsoft.com/graph/api/userteamwork-get-installedapps?view=graph-rest-beta](https://learn.microsoft.com/graph/api/userteamwork-get-installedapps?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/userteamwork-list-installedapps?view=graph-rest-beta](https://learn.microsoft.com/graph/api/userteamwork-list-installedapps?view=graph-rest-beta)
 
 
 

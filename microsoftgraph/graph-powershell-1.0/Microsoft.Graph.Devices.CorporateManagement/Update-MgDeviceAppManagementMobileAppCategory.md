@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementMobileAppCategory
 
 ## SYNOPSIS
-Update the navigation property mobileAppCategories in deviceAppManagement
+Update the properties of a mobileAppCategory object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Update-MgDeviceAppManagementMobileAppCategory -InputObject <IDevicesCorporateMan
 ```
 
 ## DESCRIPTION
-Update the navigation property mobileAppCategories in deviceAppManagement
+Update the properties of a mobileAppCategory object.
 
 ## PARAMETERS
 
@@ -280,6 +280,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappcategory)
+
+[https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-update?view=graph-rest-1.0)
 
 
 

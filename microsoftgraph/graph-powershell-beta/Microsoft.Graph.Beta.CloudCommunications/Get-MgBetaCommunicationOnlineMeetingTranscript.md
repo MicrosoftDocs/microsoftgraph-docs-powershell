@@ -19,7 +19,8 @@ Read-only.
 ### Get1 (Default)
 ```
 Get-MgBetaCommunicationOnlineMeetingTranscript [-ExpandProperty <String[]>] [-Property <String[]>] [-Count]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-EndDateTime <DateTime>] [-Filter <String>] [-MeetingOrganizerUserId <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-StartDateTime <DateTime>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
@@ -49,8 +50,6 @@ Get-MgBetaCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunication
 ## DESCRIPTION
 The transcripts of an online meeting.
 Read-only.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -107,6 +106,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EndDateTime
+Usage: endDateTime=@endDateTime
+
+```yaml
+Type: DateTime
+Parameter Sets: Get1
+Aliases:
 
 Required: False
 Position: Named
@@ -173,6 +187,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -MeetingOrganizerUserId
+Usage: meetingOrganizerUserId='@meetingOrganizerUserId'
+
+```yaml
+Type: String
+Parameter Sets: Get1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -281,6 +310,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -StartDateTime
+Usage: startDateTime=@startDateTime
+
+```yaml
+Type: DateTime
+Parameter Sets: Get1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Top
 Show only the first n items
 
@@ -353,6 +397,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingtranscript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingtranscript)
 
 [https://learn.microsoft.com/graph/api/onlinemeeting-getalltranscripts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onlinemeeting-getalltranscripts?view=graph-rest-beta)
+
+
+
+
 
 
 

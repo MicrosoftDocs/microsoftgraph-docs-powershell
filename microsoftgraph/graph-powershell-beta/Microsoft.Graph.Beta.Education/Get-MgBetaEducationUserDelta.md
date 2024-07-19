@@ -28,6 +28,17 @@ Get newly created or updated educationUser without having to perform a full read
 See Use delta query for details.
 
 ## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationUserDelta
+
+```
+This example shows how to use the Get-MgBetaEducationUserDelta Cmdlet.
+
 
 ## PARAMETERS
 

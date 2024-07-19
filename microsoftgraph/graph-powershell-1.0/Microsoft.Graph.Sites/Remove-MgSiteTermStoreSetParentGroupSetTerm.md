@@ -46,8 +46,6 @@ Remove-MgSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property terms for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -312,6 +310,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoresetparentgroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoresetparentgroupsetterm)
+
+
 
 
 

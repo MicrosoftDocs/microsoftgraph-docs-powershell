@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityThreatIntelligenceHostComponent
 
 ## SYNOPSIS
-Retrieve details about hostComponent objects.Note: List retrieval is not yet supported.
+Read the properties and relationships of a hostComponent object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostComponent?view=graph-powershell-beta)
@@ -60,7 +60,7 @@ Get-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity> [
 ```
 
 ## DESCRIPTION
-Retrieve details about hostComponent objects.Note: List retrieval is not yet supported.
+Read the properties and relationships of a hostComponent object.
 
 ## PARAMETERS
 
@@ -346,6 +346,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -387,6 +388,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponent)
+
+[https://learn.microsoft.com/graph/api/security-hostcomponent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-hostcomponent-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-host-list-components?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-components?view=graph-rest-1.0)
 
 
 

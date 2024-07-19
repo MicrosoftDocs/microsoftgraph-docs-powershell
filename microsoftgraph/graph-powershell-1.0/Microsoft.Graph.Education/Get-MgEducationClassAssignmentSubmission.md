@@ -8,9 +8,15 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentSubmission
 
 ## SYNOPSIS
-Once published, there's a submission object for each student representing their work and grade.
-Read-only.
-Nullable.
+Retrieve a particular submission.
+Only teachers, students, and applications with application permissions can perform this operation.
+A submission object represents a student's work for an assignment.
+Resources associated with the submission represent this work.
+Only the assignedTo student can see and modify the submission.
+A teacher or application with application permissions has full access to all submissions.
+The grade and feedback from a teacher are part of the educationOutcome associated with this object.
+Only teachers or applications with application permissions can add or change grades and feedback.
+Students will not see the grade or feedback until the assignment has been released.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmission?view=graph-powershell-beta)
@@ -41,9 +47,15 @@ Get-MgEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Once published, there's a submission object for each student representing their work and grade.
-Read-only.
-Nullable.
+Retrieve a particular submission.
+Only teachers, students, and applications with application permissions can perform this operation.
+A submission object represents a student's work for an assignment.
+Resources associated with the submission represent this work.
+Only the assignedTo student can see and modify the submission.
+A teacher or application with application permissions has full access to all submissions.
+The grade and feedback from a teacher are part of the educationOutcome associated with this object.
+Only teachers or applications with application permissions can add or change grades and feedback.
+Students will not see the grade or feedback until the assignment has been released.
 
 ## EXAMPLES
 ### Example 1: Get submissions
@@ -362,6 +374,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmission)
+
+[https://learn.microsoft.com/graph/api/educationsubmission-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/educationassignment-list-submissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-submissions?view=graph-rest-1.0)
 
 
 

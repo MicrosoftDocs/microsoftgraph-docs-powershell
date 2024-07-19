@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityLabelAuthority
 
 ## SYNOPSIS
-Specifies the underlying authority that describes the type of content to be retained and its retention schedule.
+Read the properties and relationships of a authorityTemplate object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelAuthority?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityLabelAuthority -InputObject <ISecurityIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Specifies the underlying authority that describes the type of content to be retained and its retention schedule.
+Read the properties and relationships of a authorityTemplate object.
 
 ## PARAMETERS
 
@@ -309,6 +309,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -350,6 +351,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelauthority)
+
+[https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-1.0)
 
 
 

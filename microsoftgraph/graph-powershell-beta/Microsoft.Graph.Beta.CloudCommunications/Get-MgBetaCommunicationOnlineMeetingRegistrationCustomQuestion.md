@@ -38,8 +38,6 @@ Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <ICl
 ## DESCRIPTION
 Custom registration questions.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -324,6 +322,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistrationcustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistrationcustomquestion)
+
+
+
+
 
 
 

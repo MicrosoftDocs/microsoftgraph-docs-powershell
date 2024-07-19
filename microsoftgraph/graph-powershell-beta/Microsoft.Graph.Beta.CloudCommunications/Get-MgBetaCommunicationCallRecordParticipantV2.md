@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of distinct participants in the call.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallRecordParticipantV2](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecordParticipantV2?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,19 @@ Get-MgBetaCommunicationCallRecordParticipantV2 -InputObject <ICloudCommunication
 
 ## DESCRIPTION
 List of distinct participants in the call.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+Get-MgBetaCommunicationCallRecordParticipantV2 -CallRecordId $callRecordId
+
+```
+This example shows how to use the Get-MgBetaCommunicationCallRecordParticipantV2 Cmdlet.
+
 
 ## PARAMETERS
 
@@ -322,6 +338,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordparticipantv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordparticipantv2)
 
+[https://learn.microsoft.com/graph/api/callrecords-callrecord-list-participants_v2?view=graph-rest-beta](https://learn.microsoft.com/graph/api/callrecords-callrecord-list-participants_v2?view=graph-rest-beta)
 
 
 

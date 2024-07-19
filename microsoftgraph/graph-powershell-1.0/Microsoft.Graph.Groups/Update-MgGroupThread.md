@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupThread
 
 ## SYNOPSIS
-Update the navigation property threads in groups
+Update conversation thread
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThread?view=graph-powershell-beta)
@@ -48,27 +48,31 @@ Update-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Update the navigation property threads in groups
+Update conversation thread
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
 	originalStartTimeZone = "originalStartTimeZone-value"
 	originalEndTimeZone = "originalEndTimeZone-value"
+	responseStatus = @{
+		response = ""
+		time = "datetime-value"
+	}
 	iCalUId = "iCalUId-value"
 	reminderMinutesBeforeStart = 
 	isReminderOn = $true
 }
 
 Update-MgGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgGroupThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -614,6 +618,8 @@ Returned only on $select.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread)
+
+[https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-1.0)
 
 
 

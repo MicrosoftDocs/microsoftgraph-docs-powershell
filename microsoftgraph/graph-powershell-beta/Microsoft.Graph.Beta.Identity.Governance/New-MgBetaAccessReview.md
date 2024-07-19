@@ -38,50 +38,55 @@ Before making this request, the caller must have previously retrieved the list o
 After making this request, the caller should create a programControl, to link the access review to a program.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaAccessReview Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 $params = @{
-	DisplayName = "TestReview"
-	StartDateTime = [System.DateTime]::Parse("2017-02-10T00:35:53.214Z")
-	EndDateTime = [System.DateTime]::Parse("2017-03-12T00:35:53.214Z")
-	ReviewedEntity = @{
-		Id = "99025615-a0b1-47ec-9117-35377b10998b"
+	displayName = "TestReview"
+	startDateTime = [System.DateTime]::Parse("2017-02-10T00:35:53.214Z")
+	endDateTime = [System.DateTime]::Parse("2017-03-12T00:35:53.214Z")
+	reviewedEntity = @{
+		id = "99025615-a0b1-47ec-9117-35377b10998b"
 	}
-	ReviewerType = "delegated"
-	BusinessFlowTemplateId = "6e4f3d20-c5c3-407f-9695-8460952bcc68"
-	Description = "Sample description"
-	Reviewers = @(
+	reviewerType = "delegated"
+	businessFlowTemplateId = "6e4f3d20-c5c3-407f-9695-8460952bcc68"
+	description = "Sample description"
+	reviewers = @(
 		@{
-			Id = "f260246a-09b1-4fd5-8d18-daed736071ec"
+			id = "f260246a-09b1-4fd5-8d18-daed736071ec"
 		}
 		@{
-			Id = "5a4e184c-4ee5-4883-96e9-b371f8da88e3"
+			id = "5a4e184c-4ee5-4883-96e9-b371f8da88e3"
 		}
 	)
-	Settings = @{
-		MailNotificationsEnabled = $true
-		RemindersEnabled = $true
-		JustificationRequiredOnApproval = $true
-		AutoReviewEnabled = $false
-		ActivityDurationInDays = 30
-		AutoApplyReviewResultsEnabled = $false
-		AccessRecommendationsEnabled = $false
-		RecurrenceSettings = @{
-			RecurrenceType = "onetime"
-			RecurrenceEndType = "endBy"
-			DurationInDays = 0
-			RecurrenceCount = 0
+	settings = @{
+		mailNotificationsEnabled = $true
+		remindersEnabled = $true
+		justificationRequiredOnApproval = $true
+		autoReviewEnabled = $false
+		activityDurationInDays = 30
+		autoApplyReviewResultsEnabled = $false
+		accessRecommendationsEnabled = $false
+		recurrenceSettings = @{
+			recurrenceType = "onetime"
+			recurrenceEndType = "endBy"
+			durationInDays = 0
+			recurrenceCount = 0
 		}
-		AutoReviewSettings = @{
-			NotReviewedResult = "Deny"
+		autoReviewSettings = @{
+			notReviewedResult = "Deny"
 		}
 	}
 }
+
 New-MgBetaAccessReview -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaAccessReview Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -463,7 +468,7 @@ This value is case sensitive.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Decisions <IMicrosoftGraphAccessReviewDecision- `[]`>]`: The collection of decisions for this access review.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -540,7 +545,7 @@ CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
 This property is read-only.
   - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+  - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 DECISIONS <IMicrosoftGraphAccessReviewDecision- `[]`>: The collection of decisions for this access review.
@@ -554,7 +559,7 @@ Read-only.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[AppliedDateTime <DateTime?>]`: The date and time when the review decision was applied.
   - `[ApplyResult <String>]`: The outcome of applying the decision, one of: NotApplied, Success, Failed, NotFound, NotSupported.
@@ -575,7 +580,7 @@ This value is case sensitive.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Decisions <IMicrosoftGraphAccessReviewDecision- `[]`>]`: The collection of decisions for this access review.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -657,7 +662,7 @@ Read-only.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[AppliedDateTime <DateTime?>]`: The date and time when the review decision was applied.
   - `[ApplyResult <String>]`: The outcome of applying the decision, one of: NotApplied, Success, Failed, NotFound, NotSupported.

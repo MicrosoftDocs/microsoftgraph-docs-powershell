@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
 
 ## SYNOPSIS
-Front-line service plans for a Cloud PC.
+Get the properties and relationships of a cloudPcFrontLineServicePlan object.
 
 ## SYNTAX
 
@@ -36,7 +36,20 @@ Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
 ```
 
 ## DESCRIPTION
-Front-line service plans for a Cloud PC.
+Get the properties and relationships of a cloudPcFrontLineServicePlan object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan Cmdlet.
+
 
 ## PARAMETERS
 
@@ -346,6 +359,9 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointfrontlineserviceplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointfrontlineserviceplan)
 
+[https://learn.microsoft.com/graph/api/cloudpcfrontlineserviceplan-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcfrontlineserviceplan-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-frontlineserviceplans?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-frontlineserviceplans?view=graph-rest-beta)
 
 
 

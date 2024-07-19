@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgBetaInformationProtectionBitlockerRecoveryKey
 
 ## SYNOPSIS
-The recovery keys associated with the bitlocker entity.
+Retrieve the properties and relationships of a bitlockerRecoveryKey object.
+By default, this operation does not return the key property that represents the actual recovery key.
+To include the key property in the response, use the $select OData query parameter.
+Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
+You can find the log in Microsoft Entra audit logs under the KeyManagement category.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionBitlockerRecoveryKey?view=graph-powershell-1.0)
@@ -38,7 +42,11 @@ Get-MgBetaInformationProtectionBitlockerRecoveryKey -InputObject <IIdentitySignI
 ```
 
 ## DESCRIPTION
-The recovery keys associated with the bitlocker entity.
+Retrieve the properties and relationships of a bitlockerRecoveryKey object.
+By default, this operation does not return the key property that represents the actual recovery key.
+To include the key property in the response, use the $select OData query parameter.
+Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
+You can find the log in Microsoft Entra audit logs under the KeyManagement category.
 
 ## EXAMPLES
 ### Example 1: Get the BitLocker key by specifying the key **id**
@@ -360,6 +368,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -379,6 +388,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -391,6 +401,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykey)
+
+[https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-beta](https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-beta)
 
 
 

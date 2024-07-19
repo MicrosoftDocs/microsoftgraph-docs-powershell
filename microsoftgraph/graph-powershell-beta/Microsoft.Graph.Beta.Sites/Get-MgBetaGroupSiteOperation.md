@@ -40,8 +40,6 @@ Get-MgBetaGroupSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The collection of long running operations for the site.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -374,6 +372,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteoperation)
+
+
+
+
 
 
 

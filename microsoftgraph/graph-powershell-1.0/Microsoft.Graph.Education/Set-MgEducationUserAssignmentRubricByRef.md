@@ -47,8 +47,6 @@ Set-MgEducationUserAssignmentRubricByRef -InputObject <IEducationIdentity> -Body
 ## DESCRIPTION
 Update the ref of navigation property rubric in education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -291,6 +289,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationuserassignmentrubricbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationuserassignmentrubricbyref)
+
+
 
 
 

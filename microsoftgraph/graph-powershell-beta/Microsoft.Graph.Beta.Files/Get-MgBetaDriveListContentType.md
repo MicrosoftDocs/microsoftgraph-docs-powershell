@@ -40,8 +40,6 @@ Get-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The collection of content types present in this list.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -331,6 +329,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttype)
+
+
+
+
 
 
 

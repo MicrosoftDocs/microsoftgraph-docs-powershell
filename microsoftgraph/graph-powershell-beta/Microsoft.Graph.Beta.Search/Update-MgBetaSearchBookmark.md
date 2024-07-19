@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSearchBookmark
 
 ## SYNOPSIS
-Update the navigation property bookmarks in search
+Update the properties of a bookmark object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Update-MgSearchBookmark?view=graph-powershell-1.0)
@@ -56,19 +56,24 @@ Update-MgBetaSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the navigation property bookmarks in search
+Update the properties of a bookmark object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaSearchBookmark Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
+
 $params = @{
-	Description = "Book a fancy vacation in Tuscany or browse museums in Florence."
+	description = "Book a fancy vacation in Tuscany or browse museums in Florence."
 }
+
 Update-MgBetaSearchBookmark -BookmarkId $bookmarkId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaSearchBookmark Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -613,6 +618,8 @@ When users select this answer variation from the search results, they're directe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark)
+
+[https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-beta)
 
 
 

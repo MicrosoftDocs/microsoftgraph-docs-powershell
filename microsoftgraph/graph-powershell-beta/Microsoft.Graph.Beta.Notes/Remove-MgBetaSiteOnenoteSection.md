@@ -32,8 +32,6 @@ Remove-MgBetaSiteOnenoteSection -InputObject <INotesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property sections for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -220,6 +218,8 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetasiteonenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetasiteonenotesection)
+
+
 
 
 

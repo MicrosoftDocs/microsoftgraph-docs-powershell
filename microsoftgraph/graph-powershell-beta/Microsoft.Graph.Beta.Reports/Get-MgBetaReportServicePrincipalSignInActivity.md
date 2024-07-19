@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaReportServicePrincipalSignInActivity
 
 ## SYNOPSIS
-Represents a collection of sign-in activities of service principals.
+Get a servicePrincipalSignInActivity object that contains sign-in activity information for a service principal in a Microsoft Entra tenant.
+You can use a service principal as a client or resource.
+A service principal supports delegated or app-only authentication context.
 
 ## SYNTAX
 
@@ -35,7 +37,33 @@ Get-MgBetaReportServicePrincipalSignInActivity -InputObject <IReportsIdentity> [
 ```
 
 ## DESCRIPTION
-Represents a collection of sign-in activities of service principals.
+Get a servicePrincipalSignInActivity object that contains sign-in activity information for a service principal in a Microsoft Entra tenant.
+You can use a service principal as a client or resource.
+A service principal supports delegated or app-only authentication context.
+
+## EXAMPLES
+### Example 1: Get a list of servicePrincipalSignInActivity objects
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportServicePrincipalSignInActivity
+
+```
+This example will get a list of serviceprincipalsigninactivity objects
+
+### Example 2: Get a servicePrincipalSignInActivity filtered by appId
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportServicePrincipalSignInActivity -Filter "appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'" 
+
+```
+This example will get a serviceprincipalsigninactivity filtered by appid
+
 
 ## PARAMETERS
 
@@ -283,7 +311,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -332,6 +359,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceprincipalsigninactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceprincipalsigninactivity)
 
+[https://learn.microsoft.com/graph/api/serviceprincipalsigninactivity-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipalsigninactivity-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/reportroot-list-serviceprincipalsigninactivities?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-list-serviceprincipalsigninactivities?view=graph-rest-beta)
 
 
 

@@ -37,6 +37,62 @@ The usage category report categorizes a Cloud PC as Undersized, Oversized, Right
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getcloudpcrecommendationreports-permissions.md)]
 
+## EXAMPLES
+### Example 1: List recommendation reports by device
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+$params = @{
+	reportName = "cloudPcUsageCategoryReports"
+	top = 50
+	skip = 0
+	search = ""
+	filter = ""
+	select = @(
+	"CloudPcId"
+"ManagedDeviceName"
+"UserPrincipalName"
+"UsageInsight"
+"CurrentSize"
+"RecommendedSize"
+"UsageInHour"
+"DevicePerfSummary"
+)
+orderBy = @(
+"ManagedDeviceName"
+)
+}
+
+Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
+
+```
+This example will list recommendation reports by device
+
+### Example 2: Get summary reports by usage insight
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+$params = @{
+	reportName = "cloudPcUsageCategoryReports"
+	select = @(
+	"UsageInsight"
+)
+groupBy = @(
+"UsageInsight"
+)
+filter = ""
+}
+
+Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
+
+```
+This example will get summary reports by usage insight
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -328,7 +384,6 @@ BODYPARAMETER `<IPaths1Vvo8XoDevicemanagementVirtualendpointReportsMicrosoftGrap
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcloudpcrecommendationreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcloudpcrecommendationreport)
 
 [https://learn.microsoft.com/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta)
-
 
 
 

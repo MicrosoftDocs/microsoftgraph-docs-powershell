@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaApplicationFederatedIdentityCredentialByName
 
 ## SYNOPSIS
-Delete navigation property federatedIdentityCredentials for applications
+Deletes a federatedIdentityCredential object from an application.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgApplicationFederatedIdentityCredentialByName](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationFederatedIdentityCredentialByName?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaApplicationFederatedIdentityCredentialByName -InputObject <IApplica
 ```
 
 ## DESCRIPTION
-Delete navigation property federatedIdentityCredentials for applications
+Deletes a federatedIdentityCredential object from an application.
 
 ## PARAMETERS
 
@@ -219,6 +219,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[IPApplicationSegmentId <String>]`: The unique identifier of ipApplicationSegment
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
@@ -226,6 +227,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -239,6 +241,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationfederatedidentitycredentialbyname](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationfederatedidentitycredentialbyname)
+
+[https://learn.microsoft.com/graph/api/federatedidentitycredential-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/federatedidentitycredential-delete?view=graph-rest-beta)
+
 
 
 

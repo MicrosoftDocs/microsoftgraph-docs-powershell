@@ -45,8 +45,6 @@ Once published, there's a submission object for each student representing their 
 Read-only.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -340,6 +338,9 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentsubmission)
+
+
+
 
 
 

@@ -63,8 +63,6 @@ Update-MgBetaUserProfile -InputObject <IPeopleIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property profile in users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Account
@@ -565,6 +563,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AgeGroup <String>]`: Shows the age group of user.
@@ -601,6 +603,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Detail <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -649,6 +655,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Date <DateTime?>]`: 
@@ -678,6 +688,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: Descpription of the award or honor.
@@ -714,6 +728,10 @@ This property is read-only.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Type <String- `[]`>]`: 
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+      - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+      - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+      - `[SourceId <String>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AgeGroup <String>]`: Shows the age group of user.
@@ -735,6 +753,7 @@ The language component follows 2-letter codes as defined in ISO 639-1, and the c
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Detail <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -768,6 +787,7 @@ Writable on OneDrive Personal.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Date <DateTime?>]`: 
@@ -782,6 +802,7 @@ Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Description <String>]`: Descpription of the award or honor.
@@ -799,6 +820,7 @@ Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[CertificationId <String>]`: The referenceable identifier for the certification.
@@ -820,6 +842,7 @@ Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[CompletionMonthYear <DateTime?>]`: The month and year the user graduated or completed the activity.
@@ -852,6 +875,7 @@ Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Address <String>]`: The email address itself.
@@ -866,6 +890,7 @@ Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Categories <String- `[]`>]`: Contains categories a user has associated with the interest (for example, personal, recipies).
@@ -884,6 +909,7 @@ Allowed values in the collection are: askMeAbout, ableToMentor, wantsToLearn, wa
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: Contains the long-form name for the language.
@@ -902,6 +928,7 @@ Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.
@@ -930,6 +957,7 @@ Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Detail <IMicrosoftGraphItemBody>]`: itemBody
@@ -947,6 +975,7 @@ Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Description <String>]`: Descpription of the patent or filing.
@@ -965,6 +994,7 @@ Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: Friendly name the user has assigned this phone number.
@@ -979,6 +1009,7 @@ Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Categories <String- `[]`>]`: Categories that the user has associated with this position.
@@ -1016,6 +1047,7 @@ Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Categories <String- `[]`>]`: Contains categories a user has associated with the project (for example, digital transformation, oil rig).
@@ -1036,6 +1068,7 @@ Allowed values in the collection are: askMeAbout, ableToMentor, wantsToLearn, wa
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Description <String>]`: Description of the publication.
@@ -1053,6 +1086,7 @@ Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Categories <String- `[]`>]`: Contains categories a user has associated with the skill (for example, personal, professional, hobby).
@@ -1071,6 +1105,7 @@ Allowed values in the collection are: askMeAbout, ableToMentor, wantsToLearn, wa
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Description <String>]`: Contains the description the user has provided for the account on the service being referenced.
@@ -1091,6 +1126,7 @@ Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
     - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
+    - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Categories <String- `[]`>]`: Contains categories a user has associated with the website (for example, personal, recipes).
@@ -1122,6 +1158,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CertificationId <String>]`: The referenceable identifier for the certification.
@@ -1158,6 +1198,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompletionMonthYear <DateTime?>]`: The month and year the user graduated or completed the activity.
@@ -1214,6 +1258,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Address <String>]`: The email address itself.
@@ -1267,6 +1315,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Categories <String- `[]`>]`: Contains categories a user has associated with the interest (for example, personal, recipies).
@@ -1300,6 +1352,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Contains the long-form name for the language.
@@ -1333,6 +1389,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.
@@ -1376,6 +1436,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Detail <IMicrosoftGraphItemBody>]`: itemBody
@@ -1408,6 +1472,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: Descpription of the patent or filing.
@@ -1441,6 +1509,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Friendly name the user has assigned this phone number.
@@ -1470,6 +1542,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Categories <String- `[]`>]`: Categories that the user has associated with this position.
@@ -1531,6 +1607,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Categories <String- `[]`>]`: Contains categories a user has associated with the project (for example, digital transformation, oil rig).
@@ -1596,6 +1676,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: Description of the publication.
@@ -1628,6 +1712,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Categories <String- `[]`>]`: Contains categories a user has associated with the skill (for example, personal, professional, hobby).
@@ -1661,6 +1749,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: Contains the description the user has provided for the account on the service being referenced.
@@ -1696,6 +1788,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Categories <String- `[]`>]`: Contains categories a user has associated with the website (for example, personal, recipes).
@@ -1707,6 +1803,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofile)
+
+
 
 
 

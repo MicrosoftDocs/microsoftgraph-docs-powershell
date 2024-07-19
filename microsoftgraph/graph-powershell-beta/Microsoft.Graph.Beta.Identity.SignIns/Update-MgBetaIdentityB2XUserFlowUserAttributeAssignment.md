@@ -368,7 +368,7 @@ This is only used for verifying the user's phone number or email address.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DataType <String>]`: identityUserFlowAttributeDataType
-    - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
+    - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
     - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
     - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
@@ -430,6 +430,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -449,6 +450,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -463,7 +465,7 @@ USERATTRIBUTE `<IMicrosoftGraphIdentityUserFlowAttribute>`: identityUserFlowAttr
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DataType <String>]`: identityUserFlowAttributeDataType
-  - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
+  - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
   - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType

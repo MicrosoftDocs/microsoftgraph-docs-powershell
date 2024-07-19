@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization
 
 ## SYNOPSIS
-Create new navigation property to localizations for solutions
+Create a new plannerPlanConfigurationLocalization object.
 
 ## SYNTAX
 
@@ -45,7 +45,48 @@ New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBo
 ```
 
 ## DESCRIPTION
-Create new navigation property to localizations for solutions
+Create a new plannerPlanConfigurationLocalization object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.plannerPlanConfigurationLocalization"
+	languageTag = "en-us"
+	planTitle = "Order Tracking"
+	buckets = @(
+		@{
+			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+			externalBucketId = "deliveryBucket"
+			name = "Deliveries"
+		}
+		@{
+			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+			externalBucketId = "storePickupBucket"
+			name = "Pickup"
+		}
+		@{
+			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+			externalBucketId = "specialOrdersBucket"
+			name = "Special Orders"
+		}
+		@{
+			"@odata.type" = "microsoft.graph.plannerPlanConfigurationBucketLocalization"
+			externalBucketId = "returnProcessingBucket"
+			name = "Customer Returns"
+		}
+	)
+}
+
+New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization Cmdlet.
+
 
 ## PARAMETERS
 
@@ -291,11 +332,31 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
+  - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
   - `[Email <String>]`: Alternate key of virtualEventRegistration
+  - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
+  - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
+  - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
+  - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
+  - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[ProtectionUnitBaseId <String>]`: The unique identifier of protectionUnitBase
+  - `[RestorePointId <String>]`: The unique identifier of restorePoint
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
+  - `[SharePointProtectionPolicyId <String>]`: The unique identifier of sharePointProtectionPolicy
+  - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
+  - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
+  - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
   - `[UniqueName <String>]`: Alternate key of businessScenario
   - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
@@ -309,6 +370,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannerplanconfigurationlocalization)
 
+[https://learn.microsoft.com/graph/api/plannerplanconfiguration-post-localizations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerplanconfiguration-post-localizations?view=graph-rest-beta)
 
 
 

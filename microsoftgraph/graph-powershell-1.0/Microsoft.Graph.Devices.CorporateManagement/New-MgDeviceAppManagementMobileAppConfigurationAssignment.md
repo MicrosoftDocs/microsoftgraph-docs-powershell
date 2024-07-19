@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementMobileAppConfigurationAssignment
 
 ## SYNOPSIS
-Create new navigation property to assignments for deviceAppManagement
+Create a new managedDeviceMobileAppConfigurationAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppConfigurationAssignment?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgDeviceAppManagementMobileAppConfigurationAssignment -InputObject <IDevices
 ```
 
 ## DESCRIPTION
-Create new navigation property to assignments for deviceAppManagement
+Create a new managedDeviceMobileAppConfigurationAssignment object.
 
 ## PARAMETERS
 
@@ -283,6 +283,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappconfigurationassignment)
+
+[https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationassignment-create?view=graph-rest-1.0)
 
 
 

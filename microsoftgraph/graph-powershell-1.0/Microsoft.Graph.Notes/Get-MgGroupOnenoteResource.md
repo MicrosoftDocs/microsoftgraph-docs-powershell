@@ -38,8 +38,6 @@ Getting a resources collection isn't supported, but you can get the binary conte
 Read-only.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -195,6 +193,8 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenoteresource](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenoteresource)
+
+
 
 
 

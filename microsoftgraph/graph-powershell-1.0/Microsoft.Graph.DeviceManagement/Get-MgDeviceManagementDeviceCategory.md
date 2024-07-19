@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceCategory
 
 ## SYNOPSIS
-The list of device categories with the tenant.
+Read properties and relationships of the deviceCategory object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCategory?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity> [-
 ```
 
 ## DESCRIPTION
-The list of device categories with the tenant.
+Read properties and relationships of the deviceCategory object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -357,6 +357,10 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecategory)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-list?view=graph-rest-1.0)
 
 
 

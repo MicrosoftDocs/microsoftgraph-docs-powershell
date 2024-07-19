@@ -32,8 +32,6 @@ Remove-MgGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property schedulingGroups for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId
@@ -242,6 +240,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamscheduleschedulinggroup)
+
+
 
 
 

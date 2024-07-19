@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaComplianceEdiscoveryCaseSetting
 
 ## SYNOPSIS
-Update the navigation property settings in compliance
+Update the properties of a an eDiscovery caseSettings object.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property settings in compliance
+Update the properties of a an eDiscovery caseSettings object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -373,6 +373,8 @@ TOPICMODELING `<IMicrosoftGraphEdiscoveryTopicModelingSettings>`: topicModelingS
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting)
+
+[https://learn.microsoft.com/graph/api/ediscovery-casesettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-casesettings-update?view=graph-rest-beta)
 
 
 

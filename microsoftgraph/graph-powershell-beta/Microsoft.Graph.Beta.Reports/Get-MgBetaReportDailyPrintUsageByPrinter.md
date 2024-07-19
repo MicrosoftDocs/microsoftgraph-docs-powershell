@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaReportDailyPrintUsageByPrinter
 
 ## SYNOPSIS
-Retrieve a list of daily print usage summaries, grouped by printer.
+Retrieve a printer's usage summary for a particular time period.
+For descriptions of each of the endpoints, see printUsageByPrinter.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportDailyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageByPrinter?view=graph-powershell-1.0)
@@ -38,7 +39,8 @@ Get-MgBetaReportDailyPrintUsageByPrinter -InputObject <IReportsIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Retrieve a list of daily print usage summaries, grouped by printer.
+Retrieve a printer's usage summary for a particular time period.
+For descriptions of each of the endpoints, see printUsageByPrinter.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -299,7 +301,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -347,6 +348,10 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyprinter)
+
+[https://learn.microsoft.com/graph/api/printusagebyprinter-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printusagebyprinter-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyprinter?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyprinter?view=graph-rest-beta)
 
 
 

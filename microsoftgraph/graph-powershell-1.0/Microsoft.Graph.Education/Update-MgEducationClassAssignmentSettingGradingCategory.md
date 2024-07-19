@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgEducationClassAssignmentSettingGradingCategory
 
 ## SYNOPSIS
-Update the navigation property gradingCategories in education
+Update a single gradingCategory on the educationAssignmentSettings.
+Only teachers can perform this operation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSettingGradingCategory?view=graph-powershell-beta)
@@ -47,7 +48,8 @@ Update-MgEducationClassAssignmentSettingGradingCategory -InputObject <IEducation
 ```
 
 ## DESCRIPTION
-Update the navigation property gradingCategories in education
+Update a single gradingCategory on the educationAssignmentSettings.
+Only teachers can perform this operation.
 
 ## PARAMETERS
 
@@ -292,6 +294,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsettinggradingcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsettinggradingcategory)
+
+[https://learn.microsoft.com/graph/api/educationgradingcategory-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationgradingcategory-update?view=graph-rest-1.0)
 
 
 

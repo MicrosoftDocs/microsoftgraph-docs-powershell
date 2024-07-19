@@ -37,6 +37,32 @@ New-MgBetaPrintPrinter
 Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+$params = @{
+	displayName = "Test Printer"
+	manufacturer = "Test Printer Manufacturer"
+	model = "Test Printer Model"
+	physicalDeviceId = $null
+	hasPhysicalDevice = $false
+	certificateSigningRequest = @{
+		content = '{content}'
+		transportKey = '{sampleTransportKey}'
+	}
+	connectorId = $null
+}
+
+New-MgBetaPrintPrinter -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrintPrinter Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -310,7 +336,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinter)
 
 [https://learn.microsoft.com/graph/api/printer-create?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printer-create?view=graph-rest-beta)
-
 
 
 

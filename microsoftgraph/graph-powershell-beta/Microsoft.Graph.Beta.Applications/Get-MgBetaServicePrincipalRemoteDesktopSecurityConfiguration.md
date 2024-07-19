@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration
 
 ## SYNOPSIS
-The remoteDesktopSecurityConfiguration object applied to this service principal.
-Supports $filter (eq) for isRemoteDesktopProtocolEnabled property.
+Read the properties and relationships of a remoteDesktopSecurityConfiguration object on a servicePrincipal.
+Use this configuration to view the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices.
+Additionally you can view any targetDeviceGroups that have been configured for SSO.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-1.0)
@@ -31,8 +32,22 @@ Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IAppl
 ```
 
 ## DESCRIPTION
-The remoteDesktopSecurityConfiguration object applied to this service principal.
-Supports $filter (eq) for isRemoteDesktopProtocolEnabled property.
+Read the properties and relationships of a remoteDesktopSecurityConfiguration object on a servicePrincipal.
+Use this configuration to view the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices.
+Additionally you can view any targetDeviceGroups that have been configured for SSO.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -175,6 +190,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[IPApplicationSegmentId <String>]`: The unique identifier of ipApplicationSegment
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
@@ -182,6 +198,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -196,6 +213,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfiguration)
 
+[https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-get?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupPhotoContent
 
 ## SYNOPSIS
-Get media content for the navigation property photo from groups
+The group's profile photo.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupPhotoContent](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPhotoContent?view=graph-powershell-1.0)
@@ -43,7 +43,7 @@ Get-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String>
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property photo from groups
+The group's profile photo.
 
 ## PARAMETERS
 
@@ -235,6 +235,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphotocontent)
+
+[https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-beta)
+
 
 
 

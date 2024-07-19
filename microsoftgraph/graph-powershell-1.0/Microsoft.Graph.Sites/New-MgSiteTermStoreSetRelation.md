@@ -79,8 +79,6 @@ New-MgSiteTermStoreSetRelation -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to relations for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -604,6 +602,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetrelation)
+
+
 
 
 

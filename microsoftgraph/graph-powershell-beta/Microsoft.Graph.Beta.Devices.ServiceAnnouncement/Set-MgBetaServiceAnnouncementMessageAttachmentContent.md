@@ -33,8 +33,6 @@ Set-MgBetaServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServ
 ## DESCRIPTION
 The attachment content.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContentType
@@ -233,6 +231,8 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/set-mgbetaserviceannouncementmessageattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/set-mgbetaserviceannouncementmessageattachmentcontent)
+
+
 
 
 

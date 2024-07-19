@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgBetaGroupOwnerByRef
 
 ## SYNOPSIS
-Create new navigation property ref to owners for groups
+Add a user or service principal to a Microsoft 365 or security group's owners.
+The owners are a set of users or service principals who are allowed to modify the group object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupOwnerByRef?view=graph-powershell-1.0)
@@ -44,7 +45,8 @@ New-MgBetaGroupOwnerByRef -InputObject <IGroupsIdentity> -BodyParameter <IRefere
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to owners for groups
+Add a user or service principal to a Microsoft 365 or security group's owners.
+The owners are a set of users or service principals who are allowed to modify the group object.
 
 ## EXAMPLES
 ### Example 1: Add an owner to a group
@@ -303,6 +305,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupownerbyref)
+
+[https://learn.microsoft.com/graph/api/group-post-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-post-owners?view=graph-rest-beta)
 
 
 

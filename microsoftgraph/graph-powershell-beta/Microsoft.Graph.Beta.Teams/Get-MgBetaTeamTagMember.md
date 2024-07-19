@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamTagMember
 
 ## SYNOPSIS
-Users assigned to the tag.
+Get the properties and relationships of a member of a standard tag in a team.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamTagMember?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaTeamTagMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Users assigned to the tag.
+Get the properties and relationships of a member of a standard tag in a team.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -47,7 +47,7 @@ Users assigned to the tag.
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -TeamworkTagMemberId $teamworkTagMemberId
+Get-MgBetaTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId
 
 ```
 This example shows how to use the Get-MgBetaTeamTagMember Cmdlet.
@@ -374,6 +374,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtagmember)
+
+[https://learn.microsoft.com/graph/api/teamworktagmember-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamworktagmember-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/teamworktagmember-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamworktagmember-list?view=graph-rest-beta)
 
 
 

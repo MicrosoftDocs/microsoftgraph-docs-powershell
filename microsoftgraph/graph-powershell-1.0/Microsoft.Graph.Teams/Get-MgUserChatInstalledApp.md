@@ -42,8 +42,6 @@ Get-MgUserChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 A collection of all the apps in the chat.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -357,6 +355,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatinstalledapp)
+
+
+
 
 
 

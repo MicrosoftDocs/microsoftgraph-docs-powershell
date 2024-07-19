@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBookingBusinessService
 
 ## SYNOPSIS
-Delete navigation property services for solutions
+Delete a bookingService object in the specified bookingBusiness.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessService?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgBookingBusinessService -InputObject <IBookingsIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete navigation property services for solutions
+Delete a bookingService object in the specified bookingBusiness.
 
 ## PARAMETERS
 
@@ -222,6 +222,9 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessservice)
+
+[https://learn.microsoft.com/graph/api/bookingservice-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingservice-delete?view=graph-rest-1.0)
+
 
 
 

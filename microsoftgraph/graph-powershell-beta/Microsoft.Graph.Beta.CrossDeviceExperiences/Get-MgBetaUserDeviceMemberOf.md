@@ -44,8 +44,6 @@ Read-only.
 Nullable.
 Supports $expand.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -350,6 +348,10 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicememberof)
+
+
+
+
 
 
 

@@ -21,8 +21,6 @@ Get-MgBetaInformationProtectionPolicy [-ExpandProperty <String[]>] [-Property <S
 ## DESCRIPTION
 Get policy from informationProtection
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -114,6 +112,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionpolicy)
+
+
 
 
 

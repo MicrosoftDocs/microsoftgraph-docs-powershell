@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## SYNOPSIS
-Values that are predefined for this custom security attribute.
-This navigation property is not returned by default and must be specified in an $expand query.
-For example, /directory/customSecurityAttributeDefinitions?$expand=allowedValues.
+Read the properties and relationships of an allowedValue object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-beta)
@@ -42,9 +40,7 @@ Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ```
 
 ## DESCRIPTION
-Values that are predefined for this custom security attribute.
-This navigation property is not returned by default and must be specified in an $expand query.
-For example, /directory/customSecurityAttributeDefinitions?$expand=allowedValues.
+Read the properties and relationships of an allowedValue object.
 
 ## PARAMETERS
 
@@ -337,6 +333,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorycustomsecurityattributedefinitionallowedvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorycustomsecurityattributedefinitionallowedvalue)
+
+[https://learn.microsoft.com/graph/api/allowedvalue-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/allowedvalue-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/customsecurityattributedefinition-list-allowedvalues?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-list-allowedvalues?view=graph-rest-1.0)
 
 
 

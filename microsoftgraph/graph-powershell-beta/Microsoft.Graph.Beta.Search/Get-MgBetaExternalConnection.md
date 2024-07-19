@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalConnection
 
 ## SYNOPSIS
-Get connections from external
+Retrieve the properties and relationships of an externalConnection.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnection?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaExternalConnection -InputObject <ISearchIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get connections from external
+Retrieve the properties and relationships of an externalConnection.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -324,6 +324,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnection)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta)
 
 
 

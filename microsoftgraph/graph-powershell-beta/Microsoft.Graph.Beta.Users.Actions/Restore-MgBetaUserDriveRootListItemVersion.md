@@ -32,19 +32,6 @@ Restore-MgBetaUserDriveRootListItemVersion -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action restoreVersion
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Sites
-
-Restore-MgBetaSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
-```
-This example shows how to use the Restore-MgBetaUserDriveRootListItemVersion Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -DriveId
@@ -261,6 +248,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriverootlistitemversion)
+
+
 
 
 

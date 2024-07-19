@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
-Update the navigation property permissionGrantPolicies in policies
+Update properties of a  permissionGrantPolicy.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
@@ -20,8 +20,9 @@ Update the navigation property permissionGrantPolicies in policies
 Update-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Excludes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-Id <String>]
- [-Includes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-ResourceScopeType <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IncludeAllPreApprovedApplications] [-Includes <IMicrosoftGraphPermissionGrantConditionSet[]>]
+ [-ResourceScopeType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -36,8 +37,9 @@ Update-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId <String>
 Update-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Excludes <IMicrosoftGraphPermissionGrantConditionSet[]>]
- [-Id <String>] [-Includes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-ResourceScopeType <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-IncludeAllPreApprovedApplications] [-Includes <IMicrosoftGraphPermissionGrantConditionSet[]>]
+ [-ResourceScopeType <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -48,7 +50,7 @@ Update-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property permissionGrantPolicies in policies
+Update properties of a  permissionGrantPolicy.
 
 ## EXAMPLES
 ### Example 1: Update a permission grant policy
@@ -186,6 +188,23 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncludeAllPreApprovedApplications
+Set to true to create all pre-approval policies in the tenant.
+Set to false to disable all pre-approval policies in the tenant.
+The default is false.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -368,6 +387,12 @@ Default is the single value all.
     - `[ResourceApplication <String>]`: The appId of the resource application (e.g.
 the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
+    - `[ScopeSensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]`: scopeSensitivityLabels
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[LabelKind <String>]`: labelKind
+  - `[IncludeAllPreApprovedApplications <Boolean?>]`: Set to true to create all pre-approval policies in the tenant.
+Set to false to disable all pre-approval policies in the tenant.
+The default is false.
   - `[Includes <IMicrosoftGraphPermissionGrantConditionSet- `[]`>]`: Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
   - `[ResourceScopeType <String>]`: resourceScopeType
@@ -399,6 +424,9 @@ Default is the single value all.
   - `[ResourceApplication <String>]`: The appId of the resource application (e.g.
 the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
+  - `[ScopeSensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]`: scopeSensitivityLabels
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[LabelKind <String>]`: labelKind
 
 INCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
@@ -427,6 +455,9 @@ Default is the single value all.
   - `[ResourceApplication <String>]`: The appId of the resource application (e.g.
 the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
+  - `[ScopeSensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]`: scopeSensitivityLabels
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[LabelKind <String>]`: labelKind
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
@@ -479,6 +510,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -498,6 +530,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -510,6 +543,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy)
+
+[https://learn.microsoft.com/graph/api/permissiongrantpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permissiongrantpolicy-update?view=graph-rest-beta)
 
 
 

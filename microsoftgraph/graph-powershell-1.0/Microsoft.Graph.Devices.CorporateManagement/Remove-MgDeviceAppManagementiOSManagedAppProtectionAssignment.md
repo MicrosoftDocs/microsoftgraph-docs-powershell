@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementiOSManagedAppProtectionAssignment
 
 ## SYNOPSIS
-Delete navigation property assignments for deviceAppManagement
+Deletes a targetedManagedAppPolicyAssignment.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Remove-MgDeviceAppManagementiOSManagedAppProtectionAssignment
 ```
 
 ## DESCRIPTION
-Delete navigation property assignments for deviceAppManagement
+Deletes a targetedManagedAppPolicyAssignment.
 
 ## PARAMETERS
 
@@ -244,6 +244,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementiosmanagedappprotectionassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementiosmanagedappprotectionassignment)
+
+[https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedapppolicyassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedapppolicyassignment-delete?view=graph-rest-1.0)
 
 
 

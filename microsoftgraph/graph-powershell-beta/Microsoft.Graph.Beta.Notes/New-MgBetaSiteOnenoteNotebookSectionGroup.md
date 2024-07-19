@@ -56,8 +56,6 @@ New-MgBetaSiteOnenoteNotebookSectionGroup -InputObject <INotesIdentity>
 ## DESCRIPTION
 Create new navigation property to sectionGroups for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1022,6 +1020,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenotenotebooksectiongroup)
+
+
 
 
 

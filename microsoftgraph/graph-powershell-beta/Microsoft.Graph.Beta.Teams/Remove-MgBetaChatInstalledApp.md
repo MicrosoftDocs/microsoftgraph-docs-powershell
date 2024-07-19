@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaChatInstalledApp
 
 ## SYNOPSIS
-Delete navigation property installedApps for chats
+Uninstall an app installed within a chat.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatInstalledApp?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaChatInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete navigation property installedApps for chats
+Uninstall an app installed within a chat.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -261,6 +261,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatinstalledapp)
+
+[https://learn.microsoft.com/graph/api/chat-delete-installedapps?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-delete-installedapps?view=graph-rest-beta)
 
 
 

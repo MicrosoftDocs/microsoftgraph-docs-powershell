@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPrintPrinterShareAllowedUserByRef
 
 ## SYNOPSIS
-Delete ref of navigation property allowedUsers for print
+Revoke the specified user's access to submit print jobs to the associated printerShare.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Remove-MgBetaPrintPrinterShareAllowedUserByRef -InputObject <IDevicesCloudPrintI
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property allowedUsers for print
+Revoke the specified user's access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaPrintPrinterShareAllowedUserByRef Cmdlet
@@ -255,6 +255,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintprintersharealloweduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintprintersharealloweduserbyref)
+
+[https://learn.microsoft.com/graph/api/printershare-delete-alloweduser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)
 
 
 

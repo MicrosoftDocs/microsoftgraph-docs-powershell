@@ -52,8 +52,6 @@ Update-MgBetaEducationUserAssignmentRubric -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property rubric in education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -460,6 +458,8 @@ Weights must add up to 100.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentrubric)
+
+
 
 
 

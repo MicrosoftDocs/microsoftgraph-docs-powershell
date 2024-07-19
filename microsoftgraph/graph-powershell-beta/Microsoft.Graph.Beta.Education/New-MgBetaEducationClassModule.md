@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBetaEducationClassModule
 
 ## SYNOPSIS
-Create new navigation property to modules for education
+Create a new module in a class.
+Only teachers in a class can create a module.
+Modules start in the draft state, which means that students won't see the modules until publication.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEducationClassModule](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassModule?view=graph-powershell-1.0)
@@ -48,7 +50,27 @@ New-MgBetaEducationClassModule -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to modules for education
+Create a new module in a class.
+Only teachers in a class can create a module.
+Modules start in the draft state, which means that students won't see the modules until publication.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+$params = @{
+	displayName = "Module 2"
+	description = "Description for Module 2"
+}
+
+New-MgBetaEducationClassModule -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 
@@ -351,7 +373,7 @@ This property is read-only.
   - `[DisplayName <String>]`: Name of the module.
   - `[IsPinned <Boolean?>]`: Indicates whether the module is pinned or not.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[Resources <IMicrosoftGraphEducationModuleResource- `[]`>]`: Learning objects that are associated with this module. 
+  - `[Resources <IMicrosoftGraphEducationModuleResource- `[]`>]`: Learning objects that are associated with this module.
 Only teachers can modify this list.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -429,6 +451,7 @@ This property is read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmodule)
 
+[https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-beta)
 
 
 

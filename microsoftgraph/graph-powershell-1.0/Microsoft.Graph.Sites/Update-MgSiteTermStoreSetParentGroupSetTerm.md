@@ -92,8 +92,6 @@ Update-MgSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property terms in sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -723,6 +721,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresetparentgroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresetparentgroupsetterm)
+
+
 
 
 

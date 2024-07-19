@@ -19,7 +19,7 @@ Read-only.
 
 ```
 Get-MgBetaUserCalendarEvent -CalendarId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Filter <String>] [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
@@ -28,91 +28,6 @@ Get-MgBetaUserCalendarEvent -CalendarId <String> -UserId <String> [-ExpandProper
 The events in the calendar.
 Navigation property.
 Read-only.
-
-## EXAMPLES
-### Example 1: Create an event in a specific calendar
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Calendar
-
-$params = @{
-	Subject = "Let's go for lunch"
-	Body = @{
-		ContentType = "HTML"
-		Content = "Does mid month work for you?"
-	}
-	Start = @{
-		DateTime = "2019-03-15T12:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	End = @{
-		DateTime = "2019-03-15T14:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	Location = @{
-		DisplayName = "Harry's Bar"
-	}
-	Attendees = @(
-		@{
-			EmailAddress = @{
-				Address = "adelev@contoso.onmicrosoft.com"
-				Name = "Adele Vance"
-			}
-			Type = "required"
-		}
-	)
-	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
-}
-
-# A UPN can also be used as -UserId.
-New-MgBetaUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaUserCalendarEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create and enable an event as an online meeting
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Calendar
-
-$params = @{
-	Subject = "Let's go for lunch"
-	Body = @{
-		ContentType = "HTML"
-		Content = "Does next month work for you?"
-	}
-	Start = @{
-		DateTime = "2019-03-10T12:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	End = @{
-		DateTime = "2019-03-10T14:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	Location = @{
-		DisplayName = "Harry's Bar"
-	}
-	Attendees = @(
-		@{
-			EmailAddress = @{
-				Address = "adelev@contoso.onmicrosoft.com"
-				Name = "Adele Vance"
-			}
-			Type = "required"
-		}
-	)
-	IsOnlineMeeting = $true
-	OnlineMeetingProvider = "teamsForBusiness"
-}
-
-# A UPN can also be used as -UserId.
-New-MgBetaUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaUserCalendarEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -267,6 +182,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -341,6 +271,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarevent)
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaTeamChannelMessageReply
 
 ## SYNOPSIS
-Create new navigation property to replies for teams
+Send a new reply to a chatMessage in a specified channel.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMessageReply?view=graph-powershell-1.0)
@@ -63,10 +63,10 @@ New-MgBetaTeamChannelMessageReply -InputObject <ITeamsIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Create new navigation property to replies for teams
+Send a new reply to a chatMessage in a specified channel.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Send a new reply to a chatMessage
 
 ```powershell
 
@@ -82,7 +82,32 @@ $params = @{
 New-MgBetaTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgBetaTeamChannelMessageReply Cmdlet.
+This example will send a new reply to a chatmessage
+
+### Example 2: Import messages
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = @{
+	createdDateTime = [System.DateTime]::Parse("2019-02-04T19:58:15.511Z")
+	from = @{
+		user = @{
+			id = "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca"
+			displayName = "John Doe"
+		}
+	}
+	body = @{
+		contentType = "html"
+		content = "Hello World"
+	}
+}
+
+New-MgBetaTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+
+```
+This example will import messages
 
 
 ## PARAMETERS
@@ -802,9 +827,11 @@ This property is read-only.
     - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
     - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+      - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+      - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
+Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
       - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -928,9 +955,11 @@ MESSAGEHISTORY <IMicrosoftGraphChatMessageHistoryItem- `[]`>: List of activity h
   - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
   - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+    - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+    - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
+Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
     - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -957,9 +986,11 @@ Each DLP app defines its own conditions, examples include 'Credit Card Number' a
   - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
 
 REACTIONS <IMicrosoftGraphChatMessageReaction- `[]`>: Reactions for this chat message (for example, Like).
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+  - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+  - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
+Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
   - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1064,9 +1095,11 @@ This property is read-only.
     - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
     - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+      - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+      - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
+Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
       - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1102,6 +1135,8 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessagereply)
+
+[https://learn.microsoft.com/graph/api/chatmessage-post-replies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-post-replies?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaExternalIndustryDataYear
 
 ## SYNOPSIS
-Delete navigation property years for external
+Delete a yearTimePeriodDefinition object.
 
 ## SYNTAX
 
@@ -27,7 +27,20 @@ Remove-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete navigation property years for external
+Delete a yearTimePeriodDefinition object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Remove-MgBetaExternalIndustryDataYear -YearTimePeriodDefinitionId $yearTimePeriodDefinitionId
+
+```
+This example shows how to use the Remove-MgBetaExternalIndustryDataYear Cmdlet.
+
 
 ## PARAMETERS
 
@@ -211,6 +224,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatayear](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatayear)
 
+[https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-delete?view=graph-rest-beta)
 
 
 

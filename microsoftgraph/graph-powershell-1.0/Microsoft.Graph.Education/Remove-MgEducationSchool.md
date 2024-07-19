@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationSchool
 
 ## SYNOPSIS
-Delete navigation property schools for education
+Delete a school.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchool?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgEducationSchool -InputObject <IEducationIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete navigation property schools for education
+Delete a school.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -218,6 +218,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschool)
+
+[https://learn.microsoft.com/graph/api/educationschool-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-delete?view=graph-rest-1.0)
 
 
 

@@ -48,8 +48,6 @@ Grant-MgBetaSitePermission -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Grant users access to a link represented by a permission.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -327,6 +325,8 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitepermission)
 
 [https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
+
+
 
 
 

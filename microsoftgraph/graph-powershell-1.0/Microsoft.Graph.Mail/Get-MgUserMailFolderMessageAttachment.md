@@ -40,8 +40,6 @@ Get-MgUserMailFolderMessageAttachment -InputObject <IMailIdentity> [-ExpandPrope
 ## DESCRIPTION
 The fileAttachment and itemAttachment attachments for the message.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -300,6 +298,9 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageattachment)
+
+
+
 
 
 

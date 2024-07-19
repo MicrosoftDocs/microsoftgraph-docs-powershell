@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent
 
 ## SYNOPSIS
-The contents of the app icon if the icon is hosted within the Teams infrastructure.
+Retrieve the hosted content in an app's icon.
 
 ## SYNTAX
 
@@ -41,16 +41,20 @@ Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITeams
 ```
 
 ## DESCRIPTION
-The contents of the app icon if the icon is hosted within the Teams infrastructure.
+Retrieve the hosted content in an app's icon.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
+
 ```
 This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -268,6 +272,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloriconhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloriconhostedcontent)
+
+[https://learn.microsoft.com/graph/api/teamworkhostedcontent-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamworkhostedcontent-get?view=graph-rest-beta)
 
 
 

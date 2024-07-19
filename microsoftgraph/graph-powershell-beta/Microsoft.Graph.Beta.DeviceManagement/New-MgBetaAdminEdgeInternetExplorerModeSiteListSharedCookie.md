@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie
 
 ## SYNOPSIS
-Create new navigation property to sharedCookies for admin
+Create a new browserSharedCookie object in a browserSiteList.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-1.0)
@@ -52,7 +52,30 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Create new navigation property to sharedCookies for admin
+Create a new browserSharedCookie object in a browserSiteList.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.browserSharedCookie"
+	hostOrDomain = "www.microsoft.com"
+	sourceEnvironment = "InternetExplorer11"
+	displayName = "Microsoft Cookie"
+	hostOnly = $true
+	comment = "A cookie for microsoft.com"
+	path = "/"
+}
+
+New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie Cmdlet.
+
 
 ## PARAMETERS
 
@@ -620,6 +643,7 @@ This property is read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
 
+[https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-beta)
 
 
 

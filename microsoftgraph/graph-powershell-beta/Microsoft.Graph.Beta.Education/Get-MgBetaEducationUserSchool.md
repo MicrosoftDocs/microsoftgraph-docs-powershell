@@ -42,8 +42,6 @@ Get-MgBetaEducationUserSchool -InputObject <IEducationIdentity> [-ExpandProperty
 Schools to which the user belongs.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -327,6 +325,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserschool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserschool)
+
+
+
+
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension
 
 ## SYNOPSIS
-Delete navigation property customTaskExtensions for identityGovernance
+Delete a customTaskExtension object.
+A custom task extension  can only be deleted if it is not referenced in any task objects in a lifecycle workflow.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-1.0)
@@ -30,19 +31,20 @@ Remove-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject
 ```
 
 ## DESCRIPTION
-Delete navigation property customTaskExtensions for identityGovernance
+Delete a customTaskExtension object.
+A custom task extension  can only be deleted if it is not referenced in any task objects in a lifecycle workflow.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Remove-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskExtensionId $customTaskExtensionId
+
 ```
 This example shows how to use the Remove-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -304,6 +306,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancelifecycleworkflowcustomtaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancelifecycleworkflowcustomtaskextension)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-delete?view=graph-rest-beta)
 
 
 

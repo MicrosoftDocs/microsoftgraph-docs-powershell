@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgBetaEducationClass
 
 ## SYNOPSIS
-Delete navigation property classes for education
+Delete an educationClass.
+Because a class is also a universal group, deleting a class deletes the group.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClass?view=graph-powershell-1.0)
@@ -30,7 +31,8 @@ Remove-MgBetaEducationClass -InputObject <IEducationIdentity> [-IfMatch <String>
 ```
 
 ## DESCRIPTION
-Delete navigation property classes for education
+Delete an educationClass.
+Because a class is also a universal group, deleting a class deletes the group.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -223,6 +225,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclass](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclass)
+
+[https://learn.microsoft.com/graph/api/educationclass-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationclass-delete?view=graph-rest-beta)
 
 
 

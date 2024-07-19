@@ -44,6 +44,20 @@ If sharedCloudPcAccessState is not active/activating/standbyMode, the web client
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getshiftworkcloudpcaccessstate-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Functions
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserCloudPcShiftWorkCloudPcAccessState -UserId $userId -CloudPCId $cloudPCId
+
+```
+This example shows how to use the Get-MgBetaUserCloudPcShiftWorkCloudPcAccessState Cmdlet.
+
+
 ## PARAMETERS
 
 ### -CloudPcId
@@ -198,7 +212,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcshiftworkcloudpcaccessstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcshiftworkcloudpcaccessstate)
 
 [https://learn.microsoft.com/graph/api/cloudpc-getshiftworkcloudpcaccessstate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-getshiftworkcloudpcaccessstate?view=graph-rest-beta)
-
 
 
 

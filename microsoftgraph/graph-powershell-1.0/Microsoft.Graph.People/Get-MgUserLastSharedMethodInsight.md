@@ -29,8 +29,6 @@ Get-MgUserLastSharedMethodInsight -InputObject <IPeopleIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get lastSharedMethod from users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -180,6 +178,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserlastsharedmethodinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserlastsharedmethodinsight)
+
+
 
 
 

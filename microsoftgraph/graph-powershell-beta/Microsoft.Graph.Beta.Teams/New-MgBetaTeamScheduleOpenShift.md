@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaTeamScheduleOpenShift
 
 ## SYNOPSIS
-Create new navigation property to openShifts for teams
+Create an instance of an openshift object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
@@ -52,7 +52,7 @@ New-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Create new navigation property to openShifts for teams
+Create an instance of an openshift object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -591,6 +591,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshift)
+
+[https://learn.microsoft.com/graph/api/openshift-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/openshift-post?view=graph-rest-beta)
 
 
 

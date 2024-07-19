@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgOrganizationBrandingLocalization
 
 ## SYNOPSIS
-Delete navigation property localizations for organization
+Delete a localized branding object.
+To delete the organizationalBrandingLocalization object, all images (Stream types) must first be removed from the object.
 
 ## SYNTAX
 
@@ -28,7 +29,8 @@ Remove-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManage
 ```
 
 ## DESCRIPTION
-Delete navigation property localizations for organization
+Delete a localized branding object.
+To delete the organizationalBrandingLocalization object, all images (Stream types) must first be removed from the object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -244,6 +246,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbrandinglocalization)
+
+[https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-delete?view=graph-rest-1.0)
 
 
 

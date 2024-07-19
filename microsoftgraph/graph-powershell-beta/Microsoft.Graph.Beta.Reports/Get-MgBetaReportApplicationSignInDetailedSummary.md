@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportApplicationSignInDetailedSummary
 
 ## SYNOPSIS
-Represents a detailed summary of an application sign-in.
+Retrieve the properties and relationships of an applicationSignInDetailedSummary object.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaReportApplicationSignInDetailedSummary -InputObject <IReportsIdentity>
 ```
 
 ## DESCRIPTION
-Represents a detailed summary of an application sign-in.
+Retrieve the properties and relationships of an applicationSignInDetailedSummary object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -296,7 +296,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -344,6 +343,10 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportapplicationsignindetailedsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportapplicationsignindetailedsummary)
+
+[https://learn.microsoft.com/graph/api/applicationsignindetailedsummary-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/applicationsignindetailedsummary-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/reportroot-list-applicationsignindetailedsummary?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-list-applicationsignindetailedsummary?view=graph-rest-beta)
 
 
 

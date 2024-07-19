@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgEducationClass
 
 ## SYNOPSIS
-Get classes from education
+Retrieve a class from the system.
+A class is a universal group with a special property that indicates to the system that the group is a class.
+Group members represent the students; group admins represent the teachers in the class.
+If you're using the delegated token, the user will only see classes in which they are members.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClass?view=graph-powershell-beta)
@@ -37,7 +40,13 @@ Get-MgEducationClass -InputObject <IEducationIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get classes from education
+Retrieve a class from the system.
+A class is a universal group with a special property that indicates to the system that the group is a class.
+Group members represent the students; group admins represent the teachers in the class.
+If you're using the delegated token, the user will only see classes in which they are members.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -315,6 +324,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclass)
+
+[https://learn.microsoft.com/graph/api/educationclass-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/educationclass-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list?view=graph-rest-1.0)
 
 
 

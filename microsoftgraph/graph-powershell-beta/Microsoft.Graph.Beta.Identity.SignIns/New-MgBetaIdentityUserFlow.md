@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityUserFlow
 
 ## SYNOPSIS
-Create new navigation property to userFlows for identity
+Create a new userFlow object.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgBetaIdentityUserFlow -BodyParameter <IMicrosoftGraphIdentityUserFlow> [-Re
 ```
 
 ## DESCRIPTION
-Create new navigation property to userFlows for identity
+Create a new userFlow object.
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaIdentityUserFlow Cmdlet
@@ -223,6 +223,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflow)
+
+[https://learn.microsoft.com/graph/api/identityuserflow-post-userflows?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityuserflow-post-userflows?view=graph-rest-beta)
 
 
 

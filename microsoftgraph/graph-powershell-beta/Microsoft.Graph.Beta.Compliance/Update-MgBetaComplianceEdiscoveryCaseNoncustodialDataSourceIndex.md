@@ -29,8 +29,6 @@ Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceIndex -InputObject <I
 ## DESCRIPTION
 Invoke action updateIndex
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CaseId
@@ -208,6 +206,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasenoncustodialdatasourceindex](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasenoncustodialdatasourceindex)
+
+
 
 
 

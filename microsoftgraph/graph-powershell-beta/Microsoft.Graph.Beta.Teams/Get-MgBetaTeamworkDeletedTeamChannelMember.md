@@ -41,8 +41,6 @@ Get-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-Expan
 ## DESCRIPTION
 A collection of membership records associated with the channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -364,6 +362,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmember)
+
+
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteTermStore
 
 ## SYNOPSIS
-The default termStore under this site.
+Read the properties and relationships of a store object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStore?view=graph-powershell-beta)
@@ -52,7 +52,7 @@ Get-MgSiteTermStore -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-The default termStore under this site.
+Read the properties and relationships of a store object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -376,6 +376,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstore)
+
+[https://learn.microsoft.com/graph/api/termstore-store-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-store-get?view=graph-rest-1.0)
 
 
 

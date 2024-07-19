@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaEducationSchoolUserByRef
 
 ## SYNOPSIS
-Create new navigation property ref to users for education
+Add a user to a school.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchoolUserByRef?view=graph-powershell-1.0)
@@ -44,7 +44,7 @@ New-MgBetaEducationSchoolUserByRef -InputObject <IEducationIdentity> -BodyParame
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to users for education
+Add a user to a school.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -279,6 +279,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschooluserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschooluserbyref)
+
+[https://learn.microsoft.com/graph/api/educationschool-post-users?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationschool-post-users?view=graph-rest-beta)
 
 
 

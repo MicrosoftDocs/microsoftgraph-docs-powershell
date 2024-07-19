@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
 
 ## SYNOPSIS
-Cloud PC organization mapping between public and US Government Community Cloud (GCC) organizations.
+Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object.
 
 ## SYNTAX
 
@@ -19,7 +19,20 @@ Get-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
 ```
 
 ## DESCRIPTION
-Cloud PC organization mapping between public and US Government Community Cloud (GCC) organizations.
+Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping Cmdlet.
+
 
 ## PARAMETERS
 
@@ -113,6 +126,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcrosscloudgovernmentorganizationmapping](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcrosscloudgovernmentorganizationmapping)
 
+[https://learn.microsoft.com/graph/api/cloudpccrosscloudgovernmentorganizationmapping-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpccrosscloudgovernmentorganizationmapping-get?view=graph-rest-beta)
 
 
 

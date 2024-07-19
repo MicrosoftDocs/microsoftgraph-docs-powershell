@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDirectoryAdministrativeUnit
 
 ## SYNOPSIS
-Conceptual container for user and group directory objects.
+Retrieve the properties and relationships of an administrativeUnit object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementIden
 ```
 
 ## DESCRIPTION
-Conceptual container for user and group directory objects.
+Retrieve the properties and relationships of an administrativeUnit object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -329,6 +329,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunit)
+
+[https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaEducationClassTeacherByRef
 
 ## SYNOPSIS
-Create new navigation property ref to teachers for education
+Add a teacher to a class.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassTeacherByRef?view=graph-powershell-1.0)
@@ -44,7 +44,7 @@ New-MgBetaEducationClassTeacherByRef -InputObject <IEducationIdentity> -BodyPara
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to teachers for education
+Add a teacher to a class.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -279,6 +279,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassteacherbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassteacherbyref)
+
+[https://learn.microsoft.com/graph/api/educationclass-post-teachers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationclass-post-teachers?view=graph-rest-beta)
 
 
 

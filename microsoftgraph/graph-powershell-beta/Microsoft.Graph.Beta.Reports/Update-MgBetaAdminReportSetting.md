@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaAdminReportSetting
 
 ## SYNOPSIS
-Update the navigation property reportSettings in admin
+Update tenant-level settings for Microsoft 365 reports.
 
 ## SYNTAX
 
@@ -27,7 +27,24 @@ Update-MgBetaAdminReportSetting -BodyParameter <IMicrosoftGraphAdminReportSettin
 ```
 
 ## DESCRIPTION
-Update the navigation property reportSettings in admin
+Update tenant-level settings for Microsoft 365 reports.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+$params = @{
+	displayConcealedNames = $true
+}
+
+Update-MgBetaAdminReportSetting -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaAdminReportSetting Cmdlet.
+
 
 ## PARAMETERS
 
@@ -201,6 +218,7 @@ Required.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting)
 
+[https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSearchAcronym
 
 ## SYNOPSIS
-Administrative answer in Microsoft Search results to define common acronyms in an organization.
+Read the properties and relationships of an acronym object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Get-MgSearchAcronym?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaSearchAcronym -InputObject <ISearchIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Administrative answer in Microsoft Search results to define common acronyms in an organization.
+Read the properties and relationships of an acronym object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -324,6 +324,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchacronym)
+
+[https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-beta)
 
 
 

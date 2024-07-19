@@ -52,19 +52,6 @@ New-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Create new navigation property to history for identityProtection
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-
-Get-MgRiskyUserHistory -RiskyUserId $riskyUserId
-```
-This example shows how to use the New-MgRiskyUserHistory Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -Activity
@@ -536,6 +523,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuserhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuserhistory)
+
 
 
 

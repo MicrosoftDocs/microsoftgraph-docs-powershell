@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataReferenceDefinition
 
 ## SYNOPSIS
-Set of user modifiable system picker types.
+Read the properties and relationships of a referenceDefinition object.
 
 ## SYNTAX
 
@@ -35,7 +35,20 @@ Get-MgBetaExternalIndustryDataReferenceDefinition -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Set of user modifiable system picker types.
+Read the properties and relationships of a referenceDefinition object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalIndustryDataReferenceDefinition
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataReferenceDefinition Cmdlet.
+
 
 ## PARAMETERS
 
@@ -309,6 +322,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatareferencedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatareferencedefinition)
 
+[https://learn.microsoft.com/graph/api/industrydata-referencedefinition-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-referencedefinition-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/industrydata-referencedefinition-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-referencedefinition-list?view=graph-rest-beta)
 
 
 

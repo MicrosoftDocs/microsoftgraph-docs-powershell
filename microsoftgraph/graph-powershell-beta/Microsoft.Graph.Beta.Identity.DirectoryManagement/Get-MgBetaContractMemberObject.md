@@ -48,8 +48,6 @@ Get-MgBetaContractMemberObject -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Invoke action getMemberObjects
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -278,6 +276,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontractmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontractmemberobject)
+
+
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgBetaVirtualEventTownhallPresenter
 
 ## SYNOPSIS
-Create new navigation property to presenters for solutions
+Create a new virtualEventPresenter object on a virtual event.
+Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
 
 ## SYNTAX
 
@@ -45,7 +46,47 @@ New-MgBetaVirtualEventTownhallPresenter -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to presenters for solutions
+Create a new virtualEventPresenter object on a virtual event.
+Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
+
+## EXAMPLES
+### Example 1: Create an in-tenant presenter
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	identity = @{
+		"@odata.type" = "#microsoft.graph.communicationsUserIdentity"
+		id = "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b"
+	}
+}
+
+New-MgBetaVirtualEventTownhallPresenter -VirtualEventTownhallId $virtualEventTownhallId -BodyParameter $params
+
+```
+This example will create an in-tenant presenter
+
+### Example 2: Create an out-of-tenant presenter
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	identity = @{
+		"@odata.type" = "#microsoft.graph.communicationsGuestIdentity"
+		displayName = "Guest Speaker"
+		email = "guest.speaker@fabrikam.com"
+	}
+}
+
+New-MgBetaVirtualEventTownhallPresenter -VirtualEventTownhallId $virtualEventTownhallId -BodyParameter $params
+
+```
+This example will create an out-of-tenant presenter
+
 
 ## PARAMETERS
 
@@ -309,11 +350,15 @@ This property is read-only.
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+    - `[AllowBreakoutRooms <Boolean?>]`: 
+    - `[AllowLiveShare <Boolean?>]`: 
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    - `[AllowPowerPointSharing <Boolean?>]`: 
     - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+    - `[AllowWhiteboard <Boolean?>]`: 
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -347,9 +392,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ConferenceId <String>]`: The conference id of the online meeting.
       - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-      - `[TollFreeNumber <String>]`: 
+      - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
       - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-      - `[TollNumber <String>]`: 
+      - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
       - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
     - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -408,6 +453,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Email <String>]`: Email address of the registrant.
       - `[FirstName <String>]`: First name of the registrant.
       - `[LastName <String>]`: Last name of the registrant.
+      - `[PreferredLanguage <String>]`: 
+      - `[PreferredTimezone <String>]`: 
       - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -444,11 +491,31 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
+  - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
   - `[Email <String>]`: Alternate key of virtualEventRegistration
+  - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
+  - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
+  - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
+  - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
+  - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[ProtectionUnitBaseId <String>]`: The unique identifier of protectionUnitBase
+  - `[RestorePointId <String>]`: The unique identifier of restorePoint
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
+  - `[SharePointProtectionPolicyId <String>]`: The unique identifier of sharePointProtectionPolicy
+  - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
+  - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
+  - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
   - `[UniqueName <String>]`: Alternate key of businessScenario
   - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
@@ -474,11 +541,15 @@ PRESENTERDETAILS `<IMicrosoftGraphVirtualEventPresenterDetails>`: virtualEventPr
 SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: .
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+  - `[AllowBreakoutRooms <Boolean?>]`: 
+  - `[AllowLiveShare <Boolean?>]`: 
   - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+  - `[AllowPowerPointSharing <Boolean?>]`: 
   - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
   - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+  - `[AllowWhiteboard <Boolean?>]`: 
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -517,9 +588,9 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ConferenceId <String>]`: The conference id of the online meeting.
     - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-    - `[TollFreeNumber <String>]`: 
+    - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
     - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-    - `[TollNumber <String>]`: 
+    - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
     - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -595,6 +666,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Email <String>]`: Email address of the registrant.
     - `[FirstName <String>]`: First name of the registrant.
     - `[LastName <String>]`: Last name of the registrant.
+    - `[PreferredLanguage <String>]`: 
+    - `[PreferredTimezone <String>]`: 
     - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -617,6 +690,7 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhallpresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhallpresenter)
 
+[https://learn.microsoft.com/graph/api/virtualevent-post-presenters?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualevent-post-presenters?view=graph-rest-beta)
 
 
 

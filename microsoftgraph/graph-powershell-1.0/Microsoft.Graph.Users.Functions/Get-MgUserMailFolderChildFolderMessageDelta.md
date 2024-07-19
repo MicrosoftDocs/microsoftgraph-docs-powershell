@@ -42,8 +42,6 @@ This allows you to maintain and synchronize a local store of a user's messages w
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-delta-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -383,6 +381,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermailfolderchildfoldermessagedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermailfolderchildfoldermessagedelta)
 
 [https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0)
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceRegisteredUserDirectoryObjectByRef
 
 ## SYNOPSIS
-Delete ref of navigation property registeredUsers for devices
+Remove a user as a registered user of the device.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgDeviceRegisteredUserDirectoryObjectByRef -InputObject <IIdentityDirecto
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property registeredUsers for devices
+Remove a user as a registered user of the device.
 
 ## PARAMETERS
 
@@ -230,6 +230,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregistereduserdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregistereduserdirectoryobjectbyref)
+
+[https://learn.microsoft.com/graph/api/device-delete-registeredusers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-delete-registeredusers?view=graph-rest-1.0)
 
 
 

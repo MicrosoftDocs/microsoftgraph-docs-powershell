@@ -32,8 +32,6 @@ Remove-MgGroupOnenotePage -InputObject <INotesIdentity> [-IfMatch <String>] [-Re
 ## DESCRIPTION
 Delete navigation property pages for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId
@@ -220,6 +218,8 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mggrouponenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mggrouponenotepage)
+
+
 
 
 

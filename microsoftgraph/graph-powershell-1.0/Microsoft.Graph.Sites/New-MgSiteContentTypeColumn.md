@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteContentTypeColumn
 
 ## SYNOPSIS
-Create new navigation property to columns for sites
+Add a column to a content type in a site, or a list with a request that specifies a columnDefinition.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
@@ -66,7 +66,7 @@ New-MgSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Create new navigation property to columns for sites
+Add a column to a content type in a site, or a list with a request that specifies a columnDefinition.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1290,6 +1290,8 @@ For examples, see Examples of common formulas in lists.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecontenttypecolumn)
+
+[https://learn.microsoft.com/graph/api/contenttype-post-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-post-columns?view=graph-rest-1.0)
 
 
 

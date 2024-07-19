@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPrintServiceEndpoint
 
 ## SYNOPSIS
-Endpoints that can be used to access the service.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a print service endpoint.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintServiceEndpoint?view=graph-powershell-1.0)
@@ -40,9 +38,7 @@ Get-MgBetaPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Endpoints that can be used to access the service.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a print service endpoint.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -335,6 +331,10 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintserviceendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintserviceendpoint)
+
+[https://learn.microsoft.com/graph/api/printserviceendpoint-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printserviceendpoint-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/printservice-list-endpoints?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printservice-list-endpoints?view=graph-rest-beta)
 
 
 

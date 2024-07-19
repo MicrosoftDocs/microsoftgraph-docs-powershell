@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Details of the app specific scope when the assignment scope is app specific.
 Containment entity.
+Supports $expand for the entitlement provider only.
 
 ## SYNTAX
 
@@ -30,6 +31,7 @@ Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignmentAppScope -InputObject <
 ## DESCRIPTION
 Details of the app specific scope when the assignment scope is app specific.
 Containment entity.
+Supports $expand for the entitlement provider only.
 
 ## PARAMETERS
 

@@ -33,8 +33,6 @@ Remove-MgBetaGroupSiteListContentTypeColumn -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property columns for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -307,6 +305,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistcontenttypecolumn)
+
+
 
 
 

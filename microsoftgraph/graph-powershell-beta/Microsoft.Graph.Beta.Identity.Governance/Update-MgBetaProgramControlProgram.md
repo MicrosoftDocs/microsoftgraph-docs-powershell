@@ -329,7 +329,7 @@ Required on create.
 This property is read-only.
       - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-      - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+      - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[Program <IMicrosoftGraphProgram>]`: program
     - `[ProgramId <String>]`: The programId of the program this control is a part of.
@@ -361,7 +361,7 @@ Required on create.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Program <IMicrosoftGraphProgram>]`: program
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -486,6 +486,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogramcontrolprogram](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogramcontrolprogram)
+
 
 
 

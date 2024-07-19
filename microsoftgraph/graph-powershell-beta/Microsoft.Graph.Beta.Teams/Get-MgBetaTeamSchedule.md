@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgBetaTeamSchedule
 
 ## SYNOPSIS
-The schedule of shifts for this team.
+Retrieve the properties and relationships of a schedule object.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).When clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
+If the provisioning failed, clients can get additional information from the provisionStatusCode property.
+Clients can also inspect the configuration of the schedule.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamSchedule?view=graph-powershell-1.0)
@@ -30,7 +34,11 @@ Get-MgBetaTeamSchedule -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-The schedule of shifts for this team.
+Retrieve the properties and relationships of a schedule object.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).When clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
+If the provisioning failed, clients can get additional information from the provisionStatusCode property.
+Clients can also inspect the configuration of the schedule.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -215,6 +223,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamschedule)
+
+[https://learn.microsoft.com/graph/api/schedule-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/schedule-get?view=graph-rest-beta)
 
 
 

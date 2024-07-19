@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBookingBusinessStaffMember
 
 ## SYNOPSIS
-All the staff members that provide services in this business.
-Read-only.
-Nullable.
+Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
@@ -40,9 +38,7 @@ Get-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-All the staff members that provide services in this business.
-Read-only.
-Nullable.
+Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,6 +334,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessstaffmember)
+
+[https://learn.microsoft.com/graph/api/bookingstaffmember-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingstaffmember-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-1.0)
 
 
 

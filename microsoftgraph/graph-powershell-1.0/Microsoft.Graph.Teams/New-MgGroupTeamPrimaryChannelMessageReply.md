@@ -63,8 +63,6 @@ New-MgGroupTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to replies for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1027,6 +1025,8 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelmessagereply)
+
+
 
 
 

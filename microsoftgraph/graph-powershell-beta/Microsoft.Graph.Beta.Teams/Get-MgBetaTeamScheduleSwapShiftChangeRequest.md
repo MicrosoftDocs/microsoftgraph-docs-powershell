@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamScheduleSwapShiftChangeRequest
 
 ## SYNOPSIS
-The swap requests for shifts in the schedule.
+Retrieve the properties and relationships of a swapShiftsChangeRequest object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleSwapShiftChangeRequest?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-The swap requests for shifts in the schedule.
+Retrieve the properties and relationships of a swapShiftsChangeRequest object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -359,6 +359,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleswapshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleswapshiftchangerequest)
+
+[https://learn.microsoft.com/graph/api/swapshiftschangerequest-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/swapshiftschangerequest-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/swapshiftschangerequest-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/swapshiftschangerequest-list?view=graph-rest-beta)
 
 
 

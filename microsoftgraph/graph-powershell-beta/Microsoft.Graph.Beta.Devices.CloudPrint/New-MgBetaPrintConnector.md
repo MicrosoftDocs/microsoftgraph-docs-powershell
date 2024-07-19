@@ -33,8 +33,6 @@ New-MgBetaPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector> [-Respon
 ## DESCRIPTION
 Create new navigation property to connectors for print
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -370,6 +368,8 @@ The elements should be in hierarchical order.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintconnector)
+
+
 
 
 

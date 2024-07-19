@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyAdminConsentRequestPolicy
 
 ## SYNOPSIS
-The policy by which consent requests are created and managed for the entire tenant.
+Read the properties and relationships of an adminConsentRequestPolicy object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAdminConsentRequestPolicy?view=graph-powershell-1.0)
@@ -22,7 +22,7 @@ Get-MgBetaPolicyAdminConsentRequestPolicy [-ExpandProperty <String[]>] [-Propert
 ```
 
 ## DESCRIPTION
-The policy by which consent requests are created and managed for the entire tenant.
+Read the properties and relationships of an adminConsentRequestPolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -128,6 +128,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyadminconsentrequestpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyadminconsentrequestpolicy)
+
+[https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-get?view=graph-rest-beta)
 
 
 

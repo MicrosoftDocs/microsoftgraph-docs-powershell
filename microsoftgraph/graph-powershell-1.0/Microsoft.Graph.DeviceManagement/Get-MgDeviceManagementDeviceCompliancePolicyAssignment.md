@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceCompliancePolicyAssignment
 
 ## SYNOPSIS
-The collection of assignments for this compliance policy.
+Read properties and relationships of the deviceCompliancePolicyAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgDeviceManagementDeviceCompliancePolicyAssignment -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-The collection of assignments for this compliance policy.
+Read properties and relationships of the deviceCompliancePolicyAssignment object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -373,6 +373,10 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicyassignment)
+
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-list?view=graph-rest-1.0)
 
 
 

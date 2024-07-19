@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityTiIndicator
 
 ## SYNOPSIS
-Create new navigation property to tiIndicators for security
+Create a new tiIndicator object.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ New-MgBetaSecurityTiIndicator -BodyParameter <IMicrosoftGraphTiIndicator> [-Resp
 ```
 
 ## DESCRIPTION
-Create new navigation property to tiIndicators for security
+Create a new tiIndicator object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1210,6 +1210,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator)
+
+[https://learn.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta)
 
 
 

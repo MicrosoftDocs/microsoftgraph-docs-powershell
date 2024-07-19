@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaIdentityAuthenticationEventListener
 
 ## SYNOPSIS
-Update the navigation property authenticationEventListeners in identity
+Update the properties of an authenticationEventListener object.
+You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityAuthenticationEventListener?view=graph-powershell-1.0)
@@ -46,7 +47,31 @@ Update-MgBetaIdentityAuthenticationEventListener -InputObject <IIdentitySignInsI
 ```
 
 ## DESCRIPTION
-Update the navigation property authenticationEventListeners in identity
+Update the properties of an authenticationEventListener object.
+You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartListener"
+	conditions = @{
+		applications = @{
+			includeAllApplications = $false
+		}
+	}
+	priority = 500
+}
+
+Update-MgBetaIdentityAuthenticationEventListener -AuthenticationEventListenerId $authenticationEventListenerId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityAuthenticationEventListener Cmdlet.
+
 
 ## PARAMETERS
 
@@ -344,6 +369,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -363,6 +389,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -376,6 +403,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityauthenticationeventlistener)
 
+[https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-beta)
 
 
 

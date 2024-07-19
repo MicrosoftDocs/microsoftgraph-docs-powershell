@@ -32,6 +32,17 @@ Get-MgBetaReportAzureAdApplicationSignInSummary -InputObject <IReportsIdentity> 
 Retrieve applicationSigninSummary objects within either the last seven or 30 days.
 
 ## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportAzureAdApplicationSignInSummary -Period $periodId 
+
+```
+This example shows how to use the Get-MgBetaReportAzureAdApplicationSignInSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -248,7 +259,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary

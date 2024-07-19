@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Delete navigation property inboundFlows for external
+Delete an inboundFlow object.
 
 ## SYNTAX
 
@@ -27,7 +27,20 @@ Remove-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-If
 ```
 
 ## DESCRIPTION
-Delete navigation property inboundFlows for external
+Delete an inboundFlow object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Remove-MgBetaExternalIndustryDataInboundFlow -InboundFlowId $inboundFlowId
+
+```
+This example shows how to use the Remove-MgBetaExternalIndustryDataInboundFlow Cmdlet.
+
 
 ## PARAMETERS
 
@@ -211,6 +224,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatainboundflow)
 
+[https://learn.microsoft.com/graph/api/industrydata-inboundflow-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-inboundflow-delete?view=graph-rest-beta)
 
 
 

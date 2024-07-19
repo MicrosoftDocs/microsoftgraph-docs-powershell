@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile
 
 ## SYNOPSIS
-Create new navigation property to exemptAppLockerFiles for deviceAppManagement
+Create a new windowsInformationProtectionAppLockerFile object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ New-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile
 ```
 
 ## DESCRIPTION
-Create new navigation property to exemptAppLockerFiles for deviceAppManagement
+Create a new windowsInformationProtectionAppLockerFile object.
 
 ## PARAMETERS
 
@@ -334,6 +334,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile)
+
+[https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-create?view=graph-rest-1.0)
 
 
 

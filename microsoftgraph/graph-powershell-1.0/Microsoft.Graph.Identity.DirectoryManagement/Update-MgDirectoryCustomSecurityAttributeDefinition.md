@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDirectoryCustomSecurityAttributeDefinition
 
 ## SYNOPSIS
-Update the navigation property customSecurityAttributeDefinitions in directory
+Update the properties of a customSecurityAttributeDefinition object.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDirec
 ```
 
 ## DESCRIPTION
-Update the navigation property customSecurityAttributeDefinitions in directory
+Update the properties of a customSecurityAttributeDefinition object.
 
 ## PARAMETERS
 
@@ -455,6 +455,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinition)
+
+[https://learn.microsoft.com/graph/api/customsecurityattributedefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-update?view=graph-rest-1.0)
 
 
 

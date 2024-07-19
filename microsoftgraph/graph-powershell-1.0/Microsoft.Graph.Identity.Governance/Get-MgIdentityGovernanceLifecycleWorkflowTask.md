@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceLifecycleWorkflowTask
 
 ## SYNOPSIS
-The tasks in the workflow.
+Get a specific task from a workflow or workflowVersion.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTask?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgIdentityGovernanceLifecycleWorkflowTask -InputObject <IIdentityGovernanceI
 ```
 
 ## DESCRIPTION
-The tasks in the workflow.
+Get a specific task from a workflow or workflowVersion.
 
 ## PARAMETERS
 
@@ -372,6 +372,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtask](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtask)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-task-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-task-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-task?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-task?view=graph-rest-1.0)
 
 
 

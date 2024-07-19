@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## SYNOPSIS
-Create new navigation property to allowedValues for directory
+Create a new allowedValue object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ```
 
 ## DESCRIPTION
-Create new navigation property to allowedValues for directory
+Create a new allowedValue object.
 
 ## PARAMETERS
 
@@ -275,6 +275,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinitionallowedvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinitionallowedvalue)
+
+[https://learn.microsoft.com/graph/api/customsecurityattributedefinition-post-allowedvalues?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-post-allowedvalues?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityConditionalAccessAuthenticationStrength
 
 ## SYNOPSIS
-Get authenticationStrengths from identity
+DEPRECATED.
+See the authenticationStrength relationship instead.
 
 ## SYNTAX
 
@@ -19,9 +20,8 @@ Get-MgBetaIdentityConditionalAccessAuthenticationStrength [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get authenticationStrengths from identity
-
-## EXAMPLES
+DEPRECATED.
+See the authenticationStrength relationship instead.
 
 ## PARAMETERS
 
@@ -114,6 +114,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrength](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrength)
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaExternalConnectionGroup
 
 ## SYNOPSIS
-Create new navigation property to groups for external
+Create a new externalGroup object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionGroup?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ New-MgBetaExternalConnectionGroup -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to groups for external
+Create a new externalGroup object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -335,6 +335,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroup)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-post-groups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-post-groups?view=graph-rest-beta)
 
 
 

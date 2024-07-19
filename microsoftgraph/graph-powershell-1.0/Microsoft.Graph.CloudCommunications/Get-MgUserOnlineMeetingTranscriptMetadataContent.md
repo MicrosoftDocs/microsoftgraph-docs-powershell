@@ -8,8 +8,10 @@ schema: 2.0.0
 # Get-MgUserOnlineMeetingTranscriptMetadataContent
 
 ## SYNOPSIS
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+Retrieve a callTranscript object associated with a scheduled onlineMeeting.
+This API doesn't support getting call transcripts from channel meetings.
+Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
+Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeetingTranscriptMetadataContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingTranscriptMetadataContent?view=graph-powershell-beta)
@@ -31,8 +33,10 @@ Get-MgUserOnlineMeetingTranscriptMetadataContent -InputObject <ICloudCommunicati
 ```
 
 ## DESCRIPTION
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+Retrieve a callTranscript object associated with a scheduled onlineMeeting.
+This API doesn't support getting call transcripts from channel meetings.
+Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
+Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
 ## PARAMETERS
 
@@ -207,6 +211,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingtranscriptmetadatacontent](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingtranscriptmetadatacontent)
+
+[https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-1.0)
 
 
 

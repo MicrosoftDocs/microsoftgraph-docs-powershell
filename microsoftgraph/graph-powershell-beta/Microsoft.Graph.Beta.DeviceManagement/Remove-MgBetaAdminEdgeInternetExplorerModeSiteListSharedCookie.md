@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie
 
 ## SYNOPSIS
-Delete navigation property sharedCookies for admin
+Delete a browserSharedCookie from a browserSiteList.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-1.0)
@@ -30,7 +30,31 @@ Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDe
 ```
 
 ## DESCRIPTION
-Delete navigation property sharedCookies for admin
+Delete a browserSharedCookie from a browserSiteList.
+
+## EXAMPLES
+### Example 1: Delete a shared cookie that was not previously published
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BrowserSharedCookieId $browserSharedCookieId
+
+```
+This example will delete a shared cookie that was not previously published
+
+### Example 2: Delete a shared cookie that was previously published
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BrowserSharedCookieId $browserSharedCookieId
+
+```
+This example will delete a shared cookie that was previously published
+
 
 ## PARAMETERS
 
@@ -349,6 +373,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
 
+[https://learn.microsoft.com/graph/api/browsersitelist-delete-sharedcookies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersitelist-delete-sharedcookies?view=graph-rest-beta)
 
 
 

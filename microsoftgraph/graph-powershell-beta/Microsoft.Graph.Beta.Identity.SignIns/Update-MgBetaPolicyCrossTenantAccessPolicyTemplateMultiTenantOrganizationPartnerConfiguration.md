@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration
 
 ## SYNOPSIS
-Update the navigation property multiTenantOrganizationPartnerConfiguration in policies
+Update the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration?view=graph-powershell-1.0)
@@ -37,7 +37,33 @@ Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartner
 ```
 
 ## DESCRIPTION
-Update the navigation property multiTenantOrganizationPartnerConfiguration in policies
+Update the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	inboundTrust = @{
+		isMfaAccepted = $true
+		isCompliantDeviceAccepted = $true
+		isHybridAzureADJoinedDeviceAccepted = $true
+	}
+	automaticUserConsentSettings = @{
+		inboundAllowed = $true
+		outboundAllowed = $true
+	}
+	templateApplicationLevel = "newPartners,existingPartners"
+}
+
+Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -378,6 +404,7 @@ INBOUNDTRUST `<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenant
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration)
 
+[https://learn.microsoft.com/graph/api/multitenantorganizationpartnerconfigurationtemplate-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/multitenantorganizationpartnerconfigurationtemplate-update?view=graph-rest-beta)
 
 
 

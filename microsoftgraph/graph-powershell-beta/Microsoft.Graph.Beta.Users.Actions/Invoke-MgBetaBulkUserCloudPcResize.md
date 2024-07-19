@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaBulkUserCloudPcResize
 
 ## SYNOPSIS
-Perform a bulk resize action to resize a group of cloudPCs that have successfully passed validation.
+Perform a bulk resize action to resize a group of cloudPCs that successfully pass validation.
 If any devices can't be resized, those devices indicate 'resize failed'.
 The remaining devices are provisioned for the resize process.
 
@@ -45,7 +45,7 @@ Invoke-MgBetaBulkUserCloudPcResize -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Perform a bulk resize action to resize a group of cloudPCs that have successfully passed validation.
+Perform a bulk resize action to resize a group of cloudPCs that successfully pass validation.
 If any devices can't be resized, those devices indicate 'resize failed'.
 The remaining devices are provisioned for the resize process.
 
@@ -292,6 +292,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkusercloudpcresize](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkusercloudpcresize)
 
 [https://learn.microsoft.com/graph/api/cloudpc-bulkresize?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-bulkresize?view=graph-rest-beta)
+
 
 
 

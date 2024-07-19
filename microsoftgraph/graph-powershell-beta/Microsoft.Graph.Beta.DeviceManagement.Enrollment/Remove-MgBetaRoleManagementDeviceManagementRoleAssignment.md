@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgBetaRoleManagementDeviceManagementRoleAssignment
 
 ## SYNOPSIS
-Delete navigation property roleAssignments for roleManagement
+Delete a unifiedRoleAssignmentMultiple object of an RBAC provider.
+This is applicable for a RBAC application that supports multiple principals and scopes.
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune)
 
 ## SYNTAX
 
@@ -27,7 +29,22 @@ Remove-MgBetaRoleManagementDeviceManagementRoleAssignment -InputObject <IDeviceM
 ```
 
 ## DESCRIPTION
-Delete navigation property roleAssignments for roleManagement
+Delete a unifiedRoleAssignmentMultiple object of an RBAC provider.
+This is applicable for a RBAC application that supports multiple principals and scopes.
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune)
+
+## EXAMPLES
+### Example 1: Delete a unifiedRoleAssignmentMultiple in an Intune provider
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+Remove-MgBetaRoleManagementDeviceManagementRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId
+
+```
+This example will delete a unifiedroleassignmentmultiple in an intune provider
+
 
 ## PARAMETERS
 
@@ -217,6 +234,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementdevicemanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementdevicemanagementroleassignment)
 
+[https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta)
 
 
 

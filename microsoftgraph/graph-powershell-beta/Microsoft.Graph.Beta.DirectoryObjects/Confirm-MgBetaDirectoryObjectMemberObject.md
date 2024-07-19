@@ -48,8 +48,6 @@ Confirm-MgBetaDirectoryObjectMemberObject -InputObject <IDirectoryObjectsIdentit
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -232,6 +230,8 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/confirm-mgbetadirectoryobjectmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/confirm-mgbetadirectoryobjectmemberobject)
+
+
 
 
 

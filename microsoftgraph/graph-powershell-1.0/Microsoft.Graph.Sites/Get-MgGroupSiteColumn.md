@@ -40,8 +40,6 @@ Get-MgGroupSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 The collection of column definitions reusable across lists under this site.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -366,6 +364,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecolumn)
+
+
+
 
 
 

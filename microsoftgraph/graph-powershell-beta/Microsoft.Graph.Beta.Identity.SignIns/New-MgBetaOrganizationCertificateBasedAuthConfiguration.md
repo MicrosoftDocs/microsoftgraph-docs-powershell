@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaOrganizationCertificateBasedAuthConfiguration
 
 ## SYNOPSIS
-Create new navigation property to certificateBasedAuthConfiguration for organization
+Create a new certificateBasedAuthConfiguration object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-1.0)
@@ -46,7 +46,29 @@ New-MgBetaOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentityS
 ```
 
 ## DESCRIPTION
-Create new navigation property to certificateBasedAuthConfiguration for organization
+Create a new certificateBasedAuthConfiguration object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	certificateAuthorities = @(
+		@{
+			isRootAuthority = $true
+			certificate = [System.Text.Encoding]::ASCII.GetBytes("Binary")
+		}
+	)
+}
+
+New-MgBetaOrganizationCertificateBasedAuthConfiguration -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaOrganizationCertificateBasedAuthConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -316,6 +338,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -335,6 +358,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -348,6 +372,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaorganizationcertificatebasedauthconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaorganizationcertificatebasedauthconfiguration)
 
+[https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration?view=graph-rest-beta](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration?view=graph-rest-beta)
 
 
 

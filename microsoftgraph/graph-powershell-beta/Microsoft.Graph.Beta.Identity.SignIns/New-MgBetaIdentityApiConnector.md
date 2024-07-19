@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityApiConnector
 
 ## SYNOPSIS
-Create new navigation property to apiConnectors for identity
+Create a new identityApiConnector object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityApiConnector?view=graph-powershell-1.0)
@@ -30,12 +30,13 @@ New-MgBetaIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnect
 ```
 
 ## DESCRIPTION
-Create new navigation property to apiConnectors for identity
+Create a new identityApiConnector object.
 
 ## EXAMPLES
 ### Example 1: Create an API connector with basic authentication
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -43,20 +44,20 @@ $params = @{
 	targetUrl = "https://someapi.com/api"
 	authenticationConfiguration = @{
 		"@odata.type" = "#microsoft.graph.basicAuthentication"
-		username = "&lt;USERNAME&gt;"
-		password = "&lt;PASSWORD&gt;"
+		username = "<USERNAME>"
+		password = "<PASSWORD>"
 	}
 }
 
 New-MgBetaIdentityApiConnector -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityApiConnector Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will create an api connector with basic authentication
 
 ### Example 2: Create an API connector with client certificate authentication
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -65,15 +66,14 @@ $params = @{
 	authenticationConfiguration = @{
 		"@odata.type" = "#microsoft.graph.pkcs12Certificate"
 		pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
-		password = "&lt;password&gt;"
+		password = "<password>"
 	}
 }
 
 New-MgBetaIdentityApiConnector -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityApiConnector Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will create an api connector with client certificate authentication
 
 
 ## PARAMETERS
@@ -274,6 +274,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector)
+
+[https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-beta)
 
 
 

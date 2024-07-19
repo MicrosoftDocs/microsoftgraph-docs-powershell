@@ -388,6 +388,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchanneltab)
 
+[https://learn.microsoft.com/graph/api/channel-list-tabs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-list-tabs?view=graph-rest-beta)
+
 
 
 

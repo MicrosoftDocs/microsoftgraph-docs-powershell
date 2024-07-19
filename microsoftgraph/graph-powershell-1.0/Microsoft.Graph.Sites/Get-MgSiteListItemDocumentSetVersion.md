@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListItemDocumentSetVersion
 
 ## SYNOPSIS
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemDocumentSetVersion?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -392,6 +392,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemdocumentsetversion)
+
+[https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserInvitedBy
 
 ## SYNOPSIS
-Get invitedBy from users
+Get the user or servicePrincipal that invited the specified user into the tenant.
 
 ## SYNTAX
 
@@ -27,7 +27,20 @@ Get-MgBetaUserInvitedBy -InputObject <IUsersIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get invitedBy from users
+Get the user or servicePrincipal that invited the specified user into the tenant.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users
+
+Get-MgBetaUserInvitedBy -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserInvitedBy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -185,6 +198,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinvitedby](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinvitedby)
 
+[https://learn.microsoft.com/graph/api/user-list-invitedby?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-list-invitedby?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
 
 ## SYNOPSIS
-Represents a change event of the scheduledPermissionsRequest entity.
+Read the properties and relationships of a permissionsRequestChange object.
 
 ## SYNTAX
 
@@ -36,7 +36,20 @@ Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
 ```
 
 ## DESCRIPTION
-Represents a change event of the scheduledPermissionsRequest entity.
+Read the properties and relationships of a permissionsRequestChange object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange -Filter "modificationDateTime gt {t}" 
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange Cmdlet.
+
 
 ## PARAMETERS
 
@@ -388,6 +401,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionmanagementpermissionrequestchange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionmanagementpermissionrequestchange)
 
+[https://learn.microsoft.com/graph/api/permissionsrequestchange-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permissionsrequestchange-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/permissionsmanagement-list-permissionsrequestchanges?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permissionsmanagement-list-permissionsrequestchanges?view=graph-rest-beta)
 
 
 

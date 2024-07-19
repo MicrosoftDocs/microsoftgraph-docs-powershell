@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAssignmentPolicy
 
 ## SYNOPSIS
-Access package assignment policies govern which subjects can request or be assigned an access package via an access package assignment.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Get-MgEntitlementManagementAssignmentPolicy -InputObject <IIdentityGovernanceIde
 ```
 
 ## DESCRIPTION
-Access package assignment policies govern which subjects can request or be assigned an access package via an access package assignment.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -396,6 +396,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentpolicy)
+
+[https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagement-list-assignmentpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-list-assignmentpolicies?view=graph-rest-1.0)
 
 
 

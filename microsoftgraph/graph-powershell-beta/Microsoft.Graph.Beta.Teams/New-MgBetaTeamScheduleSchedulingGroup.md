@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
-Create new navigation property to schedulingGroups for teams
+Create a new schedulingGroup.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ New-MgBetaTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to schedulingGroups for teams
+Create a new schedulingGroup.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -58,10 +58,11 @@ Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	displayName = "Cashiers"
 	isActive = $true
+	code = "CashierCode"
 	userIds = @(
-		"c5d0c76b-80c4-481c-be50-923cd8d680a1"
-		"2a4296b3-a28a-44ba-bc66-0274b9b95851"
-	)
+	"c5d0c76b-80c4-481c-be50-923cd8d680a1"
+"2a4296b3-a28a-44ba-bc66-0274b9b95851"
+)
 }
 
 New-MgBetaTeamScheduleSchedulingGroup -TeamId $teamId -BodyParameter $params
@@ -413,6 +414,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleschedulinggroup)
+
+[https://learn.microsoft.com/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta)
 
 
 

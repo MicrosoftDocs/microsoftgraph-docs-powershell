@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPlannerTaskDetail
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-More details about the task.
+Retrieve the properties and relationships of a plannerTaskDetails object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPlannerTaskDetail](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTaskDetail?view=graph-powershell-1.0)
@@ -32,9 +30,7 @@ Get-MgBetaPlannerTaskDetail -InputObject <IPlannerIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-More details about the task.
+Retrieve the properties and relationships of a plannerTaskDetails object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -186,6 +182,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskdetail)
+
+[https://learn.microsoft.com/graph/api/plannertaskdetails-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannertaskdetails-get?view=graph-rest-beta)
 
 
 

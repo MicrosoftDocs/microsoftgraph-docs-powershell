@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgBetaTeamPrimaryChannelMessageHostedContent
 
 ## SYNOPSIS
-Update media content for the navigation property hostedContents in teams
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgTeamPrimaryChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamPrimaryChannelMessageHostedContent?view=graph-powershell-1.0)
@@ -31,7 +32,8 @@ Set-MgBetaTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> [
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property hostedContents in teams
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 

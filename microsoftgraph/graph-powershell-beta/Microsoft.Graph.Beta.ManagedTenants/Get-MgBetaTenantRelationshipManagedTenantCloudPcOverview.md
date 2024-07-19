@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview
 
 ## SYNOPSIS
-Overview of cloud PC information across managed tenants.
+Read the properties and relationships of a cloudPcOverview object.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview -InputObject <IManagedT
 ```
 
 ## DESCRIPTION
-Overview of cloud PC information across managed tenants.
+Read the properties and relationships of a cloudPcOverview object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,6 +338,10 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcoverview)
+
+[https://learn.microsoft.com/graph/api/managedtenants-cloudpcoverview-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-cloudpcoverview-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-cloudpcsoverview?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-cloudpcsoverview?view=graph-rest-beta)
 
 
 

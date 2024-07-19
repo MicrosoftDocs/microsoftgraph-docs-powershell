@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaCommunicationCallOperation
 
 ## SYNOPSIS
-Get operations from communications
+Get the status of an operation that adds the large gallery view to a call.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallOperation?view=graph-powershell-1.0)
@@ -38,7 +38,10 @@ Get-MgBetaCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Get operations from communications
+Get the status of an operation that adds the large gallery view to a call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/addlargegalleryviewoperation-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -337,6 +340,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcalloperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcalloperation)
+
+[https://learn.microsoft.com/graph/api/addlargegalleryviewoperation-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/addlargegalleryviewoperation-get?view=graph-rest-beta)
 
 
 

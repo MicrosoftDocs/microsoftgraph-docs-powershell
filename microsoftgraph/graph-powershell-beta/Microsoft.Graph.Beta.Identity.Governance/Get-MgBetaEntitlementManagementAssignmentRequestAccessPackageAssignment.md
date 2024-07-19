@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAssignmentRequestAccessPackageAssignment
 
 ## SYNOPSIS
-For a requestType of UserAdd or AdminAdd, this is an access package assignment requested to be created.
-For a requestType of UserRemove, AdminRemove or SystemRemove, this has the id property of an existing assignment to be removed.
+For a requestType of UserAdd or AdminAdd, an access package assignment requested to be created.
+For a requestType of UserRemove, AdminRemove, or SystemRemove, this property has the id property of an existing assignment to be removed.
 Supports $expand.
 
 ## SYNTAX
@@ -31,8 +31,8 @@ Get-MgBetaEntitlementManagementAssignmentRequestAccessPackageAssignment
 ```
 
 ## DESCRIPTION
-For a requestType of UserAdd or AdminAdd, this is an access package assignment requested to be created.
-For a requestType of UserRemove, AdminRemove or SystemRemove, this has the id property of an existing assignment to be removed.
+For a requestType of UserAdd or AdminAdd, an access package assignment requested to be created.
+For a requestType of UserRemove, AdminRemove, or SystemRemove, this property has the id property of an existing assignment to be removed.
 Supports $expand.
 
 ## PARAMETERS

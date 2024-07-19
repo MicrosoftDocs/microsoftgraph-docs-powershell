@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaEducationClassAssignmentSubmissionOutcome
 
 ## SYNOPSIS
-Update the navigation property outcomes in education
+Update the properties of an educationOutcome object.
+Only teachers can perform this operation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentSubmissionOutcome?view=graph-powershell-1.0)
@@ -48,7 +49,8 @@ Update-MgBetaEducationClassAssignmentSubmissionOutcome -InputObject <IEducationI
 ```
 
 ## DESCRIPTION
-Update the navigation property outcomes in education
+Update the properties of an educationOutcome object.
+Only teachers can perform this operation.
 
 ## EXAMPLES
 ### Example 1: Update a feedback outcome
@@ -408,6 +410,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsubmissionoutcome)
+
+[https://learn.microsoft.com/graph/api/educationoutcome-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationoutcome-update?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaBusinessScenario
 
 ## SYNOPSIS
-Create new navigation property to businessScenarios for solutions
+Create a new businessScenario object.
 
 ## SYNTAX
 
@@ -28,7 +28,26 @@ New-MgBetaBusinessScenario -BodyParameter <IMicrosoftGraphBusinessScenario> [-Re
 ```
 
 ## DESCRIPTION
-Create new navigation property to businessScenarios for solutions
+Create a new businessScenario object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.businessScenario"
+	displayName = "Contoso Order Tracking"
+	uniqueName = "com.contoso.apps.ordertracking"
+}
+
+New-MgBetaBusinessScenario -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaBusinessScenario Cmdlet.
+
 
 ## PARAMETERS
 
@@ -418,7 +437,7 @@ Read-only.
         - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
       - `[AssigneePriority <String>]`: A hint that is used to order items of this type in a list view.
-For more information, see Using order hints in Planner.
+For more information, see Using order hints in planner.
       - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[BucketId <String>]`: Bucket ID to which the task belongs.
@@ -495,19 +514,18 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
         - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DueDateTime <DateTime?>]`: The date and time at which the task is due.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
       - `[IsArchived <Boolean?>]`: 
-      - `[IsOnMyDay <Boolean?>]`: A Boolean value that indicates whether to show this task in the MyDay view.
-true to show the task.
-Otherwise, false.
+      - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
+If true, it shows the task.
       - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
       - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
-For more information, see Using order hints in Plannern.
+For more information, see Using order hints in plannern.
       - `[PercentComplete <Int32?>]`: The percentage of task completion.
 When set to 100, the task is completed.
       - `[PlanId <String>]`: Plan ID to which the task belongs.
@@ -516,8 +534,8 @@ When set to 100, the task is completed.
 Valid values are between 0 and 10, inclusive.
 Larger values indicate lower priority.
 For example, 0 has the highest priority and 10 has the lowest priority.
-Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
-Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
+Currently, planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
+Currently, planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
       - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -723,7 +741,7 @@ Read-only.
       - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
     - `[AssigneePriority <String>]`: A hint that is used to order items of this type in a list view.
-For more information, see Using order hints in Planner.
+For more information, see Using order hints in planner.
     - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[BucketId <String>]`: Bucket ID to which the task belongs.
@@ -800,19 +818,18 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
       - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DueDateTime <DateTime?>]`: The date and time at which the task is due.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
     - `[IsArchived <Boolean?>]`: 
-    - `[IsOnMyDay <Boolean?>]`: A Boolean value that indicates whether to show this task in the MyDay view.
-true to show the task.
-Otherwise, false.
+    - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
+If true, it shows the task.
     - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
     - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
-For more information, see Using order hints in Plannern.
+For more information, see Using order hints in plannern.
     - `[PercentComplete <Int32?>]`: The percentage of task completion.
 When set to 100, the task is completed.
     - `[PlanId <String>]`: Plan ID to which the task belongs.
@@ -821,8 +838,8 @@ When set to 100, the task is completed.
 Valid values are between 0 and 10, inclusive.
 Larger values indicate lower priority.
 For example, 0 has the highest priority and 10 has the lowest priority.
-Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
-Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
+Currently, planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
+Currently, planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
     - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -903,6 +920,7 @@ Optional.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenario](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenario)
 
+[https://learn.microsoft.com/graph/api/solutionsroot-post-businessscenarios?view=graph-rest-beta](https://learn.microsoft.com/graph/api/solutionsroot-post-businessscenarios?view=graph-rest-beta)
 
 
 

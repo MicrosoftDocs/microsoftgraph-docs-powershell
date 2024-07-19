@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgIdentityGovernanceAccessReviewDefinition
 
 ## SYNOPSIS
-Create new navigation property to definitions for identityGovernance
+Create a new accessReviewScheduleDefinition object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
@@ -37,12 +37,13 @@ New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter <IMicrosoftGraphAc
 ```
 
 ## DESCRIPTION
-Create new navigation property to definitions for identityGovernance
+Create a new accessReviewScheduleDefinition object.
 
 ## EXAMPLES
 ### Example 1: Create an access review on a group
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
@@ -82,14 +83,14 @@ $params = @{
 }
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will create an access review on a group
 
 ### Example 2: Create an access review on all teams with inactive guest users
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
@@ -143,14 +144,14 @@ $params = @{
 }
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will create an access review on all teams with inactive guest users
 
 ### Example 3: Create an access review of all users to an application
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
@@ -181,6 +182,10 @@ $params = @{
 		}
 	)
 	backupReviewers = @(
+		@{
+			query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+			queryType = "MicrosoftGraph"
+		}
 	)
 	fallbackReviewers = @(
 		@{
@@ -213,14 +218,14 @@ $params = @{
 }
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will create an access review of all users to an application
 
 ### Example 4: Create an access review on a group with multiple stages
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
@@ -238,59 +243,58 @@ $params = @{
 			durationInDays = 2
 			recommendationsEnabled = $false
 			decisionsThatWillMoveToNextStage = @(
-				"NotReviewed"
-				"Approve"
-			)
-			reviewers = @(
-				@{
-					query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
-					queryType = "MicrosoftGraph"
-				}
-			)
-		}
+			"NotReviewed"
+		"Approve"
+	)
+	reviewers = @(
 		@{
-			stageId = "2"
-			dependsOn = @(
-				"1"
-			)
-			durationInDays = 2
-			recommendationsEnabled = $true
-			reviewers = @(
-				@{
-					query = "./manager"
-					queryType = "MicrosoftGraph"
-					queryRoot = "decisions"
-				}
-			)
-			fallbackReviewers = @(
-				@{
-					query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
-					queryType = "MicrosoftGraph"
-				}
-			)
+			query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+			queryType = "MicrosoftGraph"
 		}
 	)
-	settings = @{
-		instanceDurationInDays = 4
-		recurrence = @{
-			pattern = @{
-				type = "weekly"
-				interval = 1
-			}
-			range = @{
-				type = "noEnd"
-				startDate = "2020-09-08T12:02:30.667Z"
-			}
-		}
-		decisionHistoriesForReviewersEnabled = $true
+}
+@{
+	stageId = "2"
+	dependsOn = @(
+	"1"
+)
+durationInDays = 2
+recommendationsEnabled = $true
+reviewers = @(
+	@{
+		query = "./manager"
+		queryType = "MicrosoftGraph"
+		queryRoot = "decisions"
 	}
+)
+fallbackReviewers = @(
+	@{
+		query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+		queryType = "MicrosoftGraph"
+	}
+)
+}
+)
+settings = @{
+instanceDurationInDays = 4
+recurrence = @{
+pattern = @{
+	type = "weekly"
+	interval = 1
+}
+range = @{
+	type = "noEnd"
+	startDate = "2020-09-08T12:02:30.667Z"
+}
+}
+decisionHistoriesForReviewersEnabled = $true
+}
 }
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will create an access review on a group with multiple stages
 
 
 ## PARAMETERS
@@ -716,9 +720,10 @@ Supported template type is CompletedAdditionalRecipients, which sends review com
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: Timestamp when the access review series was created.
 Supports $select.
@@ -791,15 +796,14 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[PrincipalLink <String>]`: A link to the principal object.
 For example, https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9.
 Read-only.
       - `[Recommendation <String>]`: A system-generated recommendation for the approval decision based off last interactive sign-in to tenant.
-Recommend approve if sign-in is within thirty days of start of review.
-Recommend deny if sign-in is greater than thirty days of start of review.
-Recommendation not available otherwise.
+The value is Approve if the sign-in is fewer than 30 days after the start of review, Deny if the sign-in is greater than 30 days after, or NoInfoAvailable.
 Possible values: Approve, Deny, or NoInfoAvailable.
 Supports $select, $orderby, and $filter (eq only).
 Read-only.
@@ -983,9 +987,10 @@ CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
-  - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+  - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 FALLBACKREVIEWERS <IMicrosoftGraphAccessReviewReviewerScope- `[]`>: This collection of reviewer scopes is used to define the list of fallback reviewers.
@@ -1027,9 +1032,10 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
-      - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+      - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.00000000-0000-0000-0000-000000000000 if the assigned reviewer hasn't applied the decision or it was automatically applied.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1053,15 +1059,14 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[PrincipalLink <String>]`: A link to the principal object.
 For example, https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9.
 Read-only.
     - `[Recommendation <String>]`: A system-generated recommendation for the approval decision based off last interactive sign-in to tenant.
-Recommend approve if sign-in is within thirty days of start of review.
-Recommend deny if sign-in is greater than thirty days of start of review.
-Recommendation not available otherwise.
+The value is Approve if the sign-in is fewer than 30 days after the start of review, Deny if the sign-in is greater than 30 days after, or NoInfoAvailable.
 Possible values: Approve, Deny, or NoInfoAvailable.
 Supports $select, $orderby, and $filter (eq only).
 Read-only.
@@ -1258,6 +1263,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition)
+
+[https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0)
 
 
 

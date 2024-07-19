@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgBetaPolicyPermissionGrantPolicyInclude
 
 ## SYNOPSIS
-Create new navigation property to includes for policies
+Add conditions under which a permission grant event is *included* in a permission grant policy.
+You do this by adding a permissionGrantConditionSet to the includes collection of a  permissionGrantPolicy.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyPermissionGrantPolicyInclude?view=graph-powershell-1.0)
@@ -22,8 +23,8 @@ New-MgBetaPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId <String>
  [-ClientApplicationIds <String[]>] [-ClientApplicationPublisherIds <String[]>]
  [-ClientApplicationTenantIds <String[]>] [-ClientApplicationsFromVerifiedPublisherOnly] [-Id <String>]
  [-PermissionClassification <String>] [-PermissionType <String>] [-Permissions <String[]>]
- [-ResourceApplication <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResourceApplication <String>] [-ScopeSensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -40,8 +41,8 @@ New-MgBetaPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdent
  [-ClientApplicationIds <String[]>] [-ClientApplicationPublisherIds <String[]>]
  [-ClientApplicationTenantIds <String[]>] [-ClientApplicationsFromVerifiedPublisherOnly] [-Id <String>]
  [-PermissionClassification <String>] [-PermissionType <String>] [-Permissions <String[]>]
- [-ResourceApplication <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResourceApplication <String>] [-ScopeSensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -52,7 +53,8 @@ New-MgBetaPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdent
 ```
 
 ## DESCRIPTION
-Create new navigation property to includes for policies
+Add conditions under which a permission grant event is *included* in a permission grant policy.
+You do this by adding a permissionGrantConditionSet to the includes collection of a  permissionGrantPolicy.
 
 ## EXAMPLES
 ### Example 1: Create a permission grant policy include 
@@ -349,6 +351,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ScopeSensitivityLabels
+scopeSensitivityLabels
+To construct, see NOTES section for SCOPESENSITIVITYLABELS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphScopeSensitivityLabels
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -424,6 +442,9 @@ Default is the single value all.
   - `[ResourceApplication <String>]`: The appId of the resource application (e.g.
 the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
+  - `[ScopeSensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]`: scopeSensitivityLabels
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[LabelKind <String>]`: labelKind
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
@@ -476,6 +497,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -495,6 +517,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -504,9 +527,15 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
+SCOPESENSITIVITYLABELS `<IMicrosoftGraphScopeSensitivityLabels>`: scopeSensitivityLabels
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[LabelKind <String>]`: labelKind
+
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicyinclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicyinclude)
+
+[https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-includes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-includes?view=graph-rest-beta)
 
 
 

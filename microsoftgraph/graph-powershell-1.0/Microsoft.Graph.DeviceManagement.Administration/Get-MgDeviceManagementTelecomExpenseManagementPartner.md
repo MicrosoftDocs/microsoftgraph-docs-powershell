@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementTelecomExpenseManagementPartner
 
 ## SYNOPSIS
-The telecom expense management partners.
+Read properties and relationships of the telecomExpenseManagementPartner object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
@@ -38,19 +38,19 @@ Get-MgDeviceManagementTelecomExpenseManagementPartner -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-The telecom expense management partners.
+Read properties and relationships of the telecomExpenseManagementPartner object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-Get-MgDeviceManagementTelecomExpenseManagementPartner -TelecomExpenseManagementPartnerId $telecomExpenseManagementPartnerId
+Get-MgDeviceManagementTelecomExpenseManagementPartner
+
 ```
 This example shows how to use the Get-MgDeviceManagementTelecomExpenseManagementPartner Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -328,6 +328,10 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementtelecomexpensemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementtelecomexpensemanagementpartner)
+
+[https://learn.microsoft.com/graph/api/intune-tem-telecomexpensemanagementpartner-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-tem-telecomexpensemanagementpartner-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-tem-telecomexpensemanagementpartner-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-tem-telecomexpensemanagementpartner-list?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowRun
 
 ## SYNOPSIS
-Workflow runs.
+Read the properties and relationships of a run object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowRun](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowRun?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowRun -InputObject <IIdentityGovernan
 ```
 
 ## DESCRIPTION
-Workflow runs.
+Read the properties and relationships of a run object.
 
 ## EXAMPLES
 ### Example 1: Get a run report for a workflow
@@ -428,6 +428,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowrun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowrun)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-run-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-run-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-runs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-runs?view=graph-rest-beta)
 
 
 

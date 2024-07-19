@@ -76,13 +76,13 @@ $params = @{
 		blob = "<Media Session Configuration Blob>"
 	}
 	acceptedModalities = @(
-		"audio"
-	)
-	callOptions = @{
-		"@odata.type" = "#microsoft.graph.incomingCallOptions"
-		isContentSharingNotificationEnabled = $true
-	}
-	participantCapacity = 200
+	"audio"
+)
+callOptions = @{
+	"@odata.type" = "#microsoft.graph.incomingCallOptions"
+	isContentSharingNotificationEnabled = $true
+}
+participantCapacity = 200
 }
 
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
@@ -99,12 +99,12 @@ Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	callbackUri = "https://bot.contoso.com/api/calls"
 	acceptedModalities = @(
-		"audio"
-	)
-	mediaConfig = @{
-		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration Blob>"
-	}
+	"audio"
+)
+mediaConfig = @{
+	"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
+	blob = "<Media Session Configuration Blob>"
+}
 }
 
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
@@ -371,7 +371,7 @@ BODYPARAMETER `<IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostReq
   - `[CallbackUri <String>]`: 
   - `[MediaConfig <IMicrosoftGraphMediaConfig>]`: mediaConfig
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[RemoveFromDefaultAudioGroup <Boolean?>]`: 
+    - `[RemoveFromDefaultAudioGroup <Boolean?>]`: Remove media from the default audio group.
   - `[ParticipantCapacity <Int32?>]`: 
 
 INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
@@ -397,7 +397,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 MEDIACONFIG `<IMicrosoftGraphMediaConfig>`: mediaConfig
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[RemoveFromDefaultAudioGroup <Boolean?>]`:
+  - `[RemoveFromDefaultAudioGroup <Boolean?>]`: Remove media from the default audio group.
 
 ## RELATED LINKS
 

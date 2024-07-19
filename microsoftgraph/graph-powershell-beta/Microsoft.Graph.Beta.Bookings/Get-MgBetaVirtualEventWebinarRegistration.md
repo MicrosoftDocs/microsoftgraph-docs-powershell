@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaVirtualEventWebinarRegistration
 
 ## SYNOPSIS
-Registration records of the webinar.
+Get the properties and relationships of a virtualEventRegistration object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarRegistration?view=graph-powershell-1.0)
@@ -38,7 +38,42 @@ Get-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Registration records of the webinar.
+Get the properties and relationships of a virtualEventRegistration object.
+
+## EXAMPLES
+### Example 1: Retrieve a list of virtual event registrations
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId
+
+```
+This example will retrieve a list of virtual event registrations
+
+### Example 2: Retrieve a virtual event registration by user ID
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -Filter "userId eq 'b7ef013a-c73c-4ec7-8ccb-e56290f45f68'" 
+
+```
+This example will retrieve a virtual event registration by user id
+
+### Example 3: Retrieve a virtual event registration by email
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -Filter "email eq 'EmileeMPham@contoso.com'" 
+
+```
+This example will retrieve a virtual event registration by email
+
 
 ## PARAMETERS
 
@@ -311,11 +346,31 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
+  - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
   - `[Email <String>]`: Alternate key of virtualEventRegistration
+  - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
+  - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
+  - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
+  - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
+  - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[ProtectionUnitBaseId <String>]`: The unique identifier of protectionUnitBase
+  - `[RestorePointId <String>]`: The unique identifier of restorePoint
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
+  - `[SharePointProtectionPolicyId <String>]`: The unique identifier of sharePointProtectionPolicy
+  - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
+  - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
+  - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
   - `[UniqueName <String>]`: Alternate key of businessScenario
   - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
@@ -329,6 +384,9 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistration)
 
+[https://learn.microsoft.com/graph/api/virtualeventregistration-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventregistration-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/virtualeventregistration-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventregistration-list?view=graph-rest-beta)
 
 
 

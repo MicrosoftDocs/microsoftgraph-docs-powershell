@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest
 
 ## SYNOPSIS
-Delete navigation property accessPackageAssignmentRequests for identityGovernance
+Delete an accessPackageAssignmentRequest object.
+This request can be made to remove a denied or completed request.
+You can't delete an access package assignment request if it has any accessPackageAssignment objects.
 
 ## SYNTAX
 
@@ -27,16 +29,22 @@ Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest -InputObject <I
 ```
 
 ## DESCRIPTION
-Delete navigation property accessPackageAssignmentRequests for identityGovernance
+Delete an accessPackageAssignmentRequest object.
+This request can be made to remove a denied or completed request.
+You can't delete an access package assignment request if it has any accessPackageAssignment objects.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId
+
 ```
 This example shows how to use the Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -297,6 +305,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageassignmentrequest)
+
+[https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta)
 
 
 

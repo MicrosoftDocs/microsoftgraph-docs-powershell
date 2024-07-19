@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDirectoryAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Delete navigation property scopedRoleMembers for directory
+Remove a Microsoft Entra role assignment with administrative unit scope.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDire
 ```
 
 ## DESCRIPTION
-Delete navigation property scopedRoleMembers for directory
+Remove a Microsoft Entra role assignment with administrative unit scope.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -244,6 +244,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitscopedrolemember](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitscopedrolemember)
+
+[https://learn.microsoft.com/graph/api/administrativeunit-delete-scopedrolemembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-delete-scopedrolemembers?view=graph-rest-1.0)
 
 
 

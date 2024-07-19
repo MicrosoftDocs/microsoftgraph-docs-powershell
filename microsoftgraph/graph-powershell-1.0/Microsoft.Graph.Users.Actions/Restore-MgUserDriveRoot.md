@@ -271,7 +271,7 @@ See drive resource for values.
 Read-only.
     - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-    - `[Path <String>]`: Path that can be used to navigate to the item.
+    - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
     - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
     - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -332,7 +332,7 @@ See drive resource for values.
 Read-only.
   - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-  - `[Path <String>]`: Path that can be used to navigate to the item.
+  - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
   - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
   - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -354,6 +354,7 @@ For OneDrive, this property is not populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0)
+
 
 
 

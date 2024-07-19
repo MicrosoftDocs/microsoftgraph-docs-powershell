@@ -27,8 +27,6 @@ Get-MgEducationClassDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Prop
 Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection.
 See Use delta query for details.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -243,6 +241,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassdelta)
 
 [https://learn.microsoft.com/graph/api/educationclass-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-delta?view=graph-rest-1.0)
+
 
 
 

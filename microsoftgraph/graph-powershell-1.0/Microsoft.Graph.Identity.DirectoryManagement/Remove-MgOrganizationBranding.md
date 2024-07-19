@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgOrganizationBranding
 
 ## SYNOPSIS
-Delete navigation property branding for organization
+Delete the default organizational branding object.
+To delete the organizationalBranding object, all images (Stream types) must first be removed from the object.
 
 ## SYNTAX
 
@@ -27,7 +28,8 @@ Remove-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity
 ```
 
 ## DESCRIPTION
-Delete navigation property branding for organization
+Delete the default organizational branding object.
+To delete the organizationalBranding object, all images (Stream types) must first be removed from the object.
 
 ## PARAMETERS
 
@@ -215,6 +217,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbranding](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbranding)
+
+[https://learn.microsoft.com/graph/api/organizationalbranding-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-delete?view=graph-rest-1.0)
 
 
 

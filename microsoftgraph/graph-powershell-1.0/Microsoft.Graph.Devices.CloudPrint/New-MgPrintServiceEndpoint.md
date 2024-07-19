@@ -46,8 +46,6 @@ New-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Create new navigation property to endpoints for print
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -276,6 +274,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintserviceendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintserviceendpoint)
+
+
 
 
 

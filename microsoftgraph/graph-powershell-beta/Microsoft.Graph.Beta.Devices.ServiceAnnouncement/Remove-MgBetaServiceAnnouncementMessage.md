@@ -32,8 +32,6 @@ Remove-MgBetaServiceAnnouncementMessage -InputObject <IDevicesServiceAnnouncemen
 ## DESCRIPTION
 Delete navigation property messages for admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -198,6 +196,8 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/remove-mgbetaserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/remove-mgbetaserviceannouncementmessage)
+
+
 
 
 

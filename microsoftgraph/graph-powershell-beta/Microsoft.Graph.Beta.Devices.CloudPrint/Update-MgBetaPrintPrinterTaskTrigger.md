@@ -48,8 +48,6 @@ Update-MgBetaPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the navigation property taskTriggers in print
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -349,6 +347,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprintertasktrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprintertasktrigger)
+
+
 
 
 

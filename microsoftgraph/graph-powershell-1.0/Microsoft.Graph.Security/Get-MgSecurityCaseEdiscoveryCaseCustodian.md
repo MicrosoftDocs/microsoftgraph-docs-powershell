@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseCustodian
 
 ## SYNOPSIS
-Returns a list of case ediscoveryCustodian objects for this case.
+Read the properties and relationships of an ediscoveryCustodian object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Returns a list of case ediscoveryCustodian objects for this case.
+Read the properties and relationships of an ediscoveryCustodian object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -337,6 +337,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -378,6 +379,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodian)
+
+[https://learn.microsoft.com/graph/api/security-ediscoverycustodian-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-ediscoverycase-list-custodians?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-list-custodians?view=graph-rest-1.0)
 
 
 

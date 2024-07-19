@@ -56,29 +56,6 @@ The file can then be added as a default file or template via a POST operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Sites
-
-$params = @{
-	SourceFile = @{
-		SharepointIds = @{
-			ListId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
-			ListItemId = "2"
-		}
-	}
-	DestinationFileName = "newname.txt"
-}
-
-Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
-```
-This example shows how to use the Copy-MgUserDriveListContentTypeToDefaultContentLocation Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -327,7 +304,7 @@ See drive resource for values.
 Read-only.
     - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-    - `[Path <String>]`: Path that can be used to navigate to the item.
+    - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
     - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
     - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -388,7 +365,7 @@ See drive resource for values.
 Read-only.
   - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-  - `[Path <String>]`: Path that can be used to navigate to the item.
+  - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
   - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
   - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -410,6 +387,7 @@ For OneDrive, this property is not populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdrivelistcontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdrivelistcontenttypetodefaultcontentlocation)
 
 [https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0)
+
 
 
 

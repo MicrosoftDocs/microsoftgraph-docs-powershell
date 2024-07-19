@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatIntelligenceHost
 
 ## SYNOPSIS
-Refers to host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
+Read the properties and relationships of a host object.
+The host resource is the abstract base type that returns an implementation.
+A host can be of one of the following types:
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)
@@ -38,7 +40,22 @@ Get-MgBetaSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Refers to host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
+Read the properties and relationships of a host object.
+The host resource is the abstract base type that returns an implementation.
+A host can be of one of the following types:
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceHost -HostId $hostId
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHost Cmdlet.
+
 
 ## PARAMETERS
 
@@ -337,6 +354,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -347,6 +365,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -373,6 +392,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehost)
 
+[https://learn.microsoft.com/graph/api/security-host-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-host-get?view=graph-rest-beta)
 
 
 

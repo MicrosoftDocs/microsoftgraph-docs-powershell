@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementPartner
 
 ## SYNOPSIS
-The list of Device Management Partners configured by the tenant.
+Read properties and relationships of the deviceManagementPartner object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementPartner?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementPartner -InputObject <IDeviceManagementAdministrationIdent
 ```
 
 ## DESCRIPTION
-The list of Device Management Partners configured by the tenant.
+Read properties and relationships of the deviceManagementPartner object.
 
 ## PARAMETERS
 
@@ -315,6 +315,10 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementpartner)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementpartner-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementpartner-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementpartner-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementpartner-list?view=graph-rest-1.0)
 
 
 

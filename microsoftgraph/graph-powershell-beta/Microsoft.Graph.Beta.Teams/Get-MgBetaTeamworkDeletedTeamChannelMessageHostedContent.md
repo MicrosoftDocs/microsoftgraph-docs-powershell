@@ -57,8 +57,6 @@ Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIde
 ## DESCRIPTION
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -426,6 +424,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessagehostedcontent)
+
+
+
+
 
 
 

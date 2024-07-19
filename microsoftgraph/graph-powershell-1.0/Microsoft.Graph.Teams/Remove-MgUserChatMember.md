@@ -32,8 +32,6 @@ Remove-MgUserChatMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Resp
 ## DESCRIPTION
 Delete navigation property members for users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChatId
@@ -257,6 +255,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatmember)
+
+
 
 
 

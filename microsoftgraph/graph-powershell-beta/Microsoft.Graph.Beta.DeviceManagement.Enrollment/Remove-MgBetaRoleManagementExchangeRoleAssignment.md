@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaRoleManagementExchangeRoleAssignment
 
 ## SYNOPSIS
-Delete navigation property roleAssignments for roleManagement
+Delete a unifiedRoleAssignment object.
 
 ## SYNTAX
 
@@ -27,7 +27,20 @@ Remove-MgBetaRoleManagementExchangeRoleAssignment -InputObject <IDeviceManagemen
 ```
 
 ## DESCRIPTION
-Delete navigation property roleAssignments for roleManagement
+Delete a unifiedRoleAssignment object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+Remove-MgBetaRoleManagementExchangeRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
+
+```
+This example shows how to use the Remove-MgBetaRoleManagementExchangeRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -217,6 +230,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangeroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangeroleassignment)
 
+[https://learn.microsoft.com/graph/api/unifiedroleassignment-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleassignment-delete?view=graph-rest-beta)
 
 
 

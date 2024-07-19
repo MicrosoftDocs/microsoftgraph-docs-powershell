@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPlannerRosterMember
 
 ## SYNOPSIS
-Create new navigation property to members for planner
+Add a member to the plannerRoster object.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to members for planner
+Add a member to the plannerRoster object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -304,6 +304,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerrostermember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerrostermember)
+
+[https://learn.microsoft.com/graph/api/plannerroster-post-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerroster-post-members?view=graph-rest-beta)
 
 
 

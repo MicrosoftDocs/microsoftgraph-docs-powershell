@@ -44,6 +44,19 @@ If sharedCloudPcAccessState isn't active/activating/standbyMode, the web client 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getfrontlinecloudpcaccessstate-permissions.md)]
 
+## EXAMPLES
+### Example 1: Get the frontline Cloud PC access state for the administrator
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+
+Get-MgBetaDeviceManagementVirtualEndpointCloudPcFrontlineCloudPcAccessState -CloudPCId $cloudPCId
+
+```
+This example will get the frontline cloud pc access state for the administrator
+
+
 ## PARAMETERS
 
 ### -CloudPcId
@@ -176,7 +189,6 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcfrontlinecloudpcaccessstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcfrontlinecloudpcaccessstate)
 
 [https://learn.microsoft.com/graph/api/cloudpc-getfrontlinecloudpcaccessstate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-getfrontlinecloudpcaccessstate?view=graph-rest-beta)
-
 
 
 

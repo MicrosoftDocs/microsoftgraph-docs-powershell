@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgExternalConnectionItem
 
 ## SYNOPSIS
-Get items from external
+Read the properties and relationships of an externalItem object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItem?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgExternalConnectionItem -InputObject <ISearchIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get items from external
+Read the properties and relationships of an externalItem object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -327,6 +327,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitem)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-get?view=graph-rest-1.0)
 
 
 

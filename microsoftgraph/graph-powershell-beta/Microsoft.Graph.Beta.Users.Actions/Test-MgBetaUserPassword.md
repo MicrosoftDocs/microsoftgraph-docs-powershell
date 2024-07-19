@@ -36,16 +36,21 @@ Use this action to provide real-time feedback on password strength while the use
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-validatepassword-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Test-MgBetaUserPassword Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	Password = "1234567890"
+	password = "1234567890"
 }
+
 Test-MgBetaUserPassword -BodyParameter $params
+
 ```
 This example shows how to use the Test-MgBetaUserPassword Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

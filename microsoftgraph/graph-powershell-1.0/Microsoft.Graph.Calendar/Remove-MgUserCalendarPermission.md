@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserCalendarPermission
 
 ## SYNOPSIS
-Delete navigation property calendarPermissions for users
+Delete calendarPermission.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarPermission?view=graph-powershell-beta)
@@ -44,19 +44,19 @@ Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete navigation property calendarPermissions for users
+Delete calendarPermission.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Calendar
 
 Remove-MgUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
+
 ```
 This example shows how to use the Remove-MgUserCalendarPermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -260,6 +260,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendarpermission)
+
+[https://learn.microsoft.com/graph/api/calendarpermission-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendarpermission-delete?view=graph-rest-1.0)
 
 
 

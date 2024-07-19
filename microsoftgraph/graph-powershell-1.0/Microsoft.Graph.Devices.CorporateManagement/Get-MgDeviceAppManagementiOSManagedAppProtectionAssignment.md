@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment
 
 ## SYNOPSIS
-Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+Read properties and relationships of the targetedManagedAppPolicyAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment -InputObject <IDevice
 ```
 
 ## DESCRIPTION
-Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+Read properties and relationships of the targetedManagedAppPolicyAssignment object.
 
 ## PARAMETERS
 
@@ -341,6 +341,10 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementiosmanagedappprotectionassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementiosmanagedappprotectionassignment)
+
+[https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedapppolicyassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedapppolicyassignment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedapppolicyassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedapppolicyassignment-list?view=graph-rest-1.0)
 
 
 

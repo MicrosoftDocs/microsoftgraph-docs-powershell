@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSecurityIncident
 
 ## SYNOPSIS
-Update the navigation property incidents in security
+Update the properties of an incident object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIncident?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ Update-MgSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the navigation property incidents in security
+Update the properties of an incident object.
 
 ## PARAMETERS
 
@@ -513,7 +513,7 @@ Read-only.
   - `[AdditionalData <IMicrosoftGraphSecurityDictionary>]`: dictionary
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AlertPolicyId <String>]`: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
-  - `[AlertWebUrl <String>]`: 
+  - `[AlertWebUrl <String>]`: URL for the Microsoft 365 Defender portal alert page.
   - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
   - `[Category <String>]`: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
@@ -544,7 +544,7 @@ Values are free-form.
   - `[LastActivityDateTime <DateTime?>]`: The oldest activity associated with the alert.
   - `[LastUpdateDateTime <DateTime?>]`: Time when the alert was last updated at Microsoft 365 Defender.
   - `[MitreTechniques <String- `[]`>]`: The attack techniques, as aligned with the MITRE ATT&CK framework.
-  - `[ProductName <String>]`: 
+  - `[ProductName <String>]`: The name of the product which published this alert.
   - `[ProviderAlertId <String>]`: The ID of the alert as it appears in the security provider product that generated the alert.
   - `[RecommendedActions <String>]`: Recommended response and remediation actions to take in the event this alert was generated.
   - `[ResolvedDateTime <DateTime?>]`: Time when the alert was resolved.
@@ -569,7 +569,7 @@ Read-only.
     - `[AdditionalData <IMicrosoftGraphSecurityDictionary>]`: dictionary
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AlertPolicyId <String>]`: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
-    - `[AlertWebUrl <String>]`: 
+    - `[AlertWebUrl <String>]`: URL for the Microsoft 365 Defender portal alert page.
     - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
     - `[Category <String>]`: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
@@ -600,7 +600,7 @@ Values are free-form.
     - `[LastActivityDateTime <DateTime?>]`: The oldest activity associated with the alert.
     - `[LastUpdateDateTime <DateTime?>]`: Time when the alert was last updated at Microsoft 365 Defender.
     - `[MitreTechniques <String- `[]`>]`: The attack techniques, as aligned with the MITRE ATT&CK framework.
-    - `[ProductName <String>]`: 
+    - `[ProductName <String>]`: The name of the product which published this alert.
     - `[ProviderAlertId <String>]`: The ID of the alert as it appears in the security provider product that generated the alert.
     - `[RecommendedActions <String>]`: Recommended response and remediation actions to take in the event this alert was generated.
     - `[ResolvedDateTime <DateTime?>]`: Time when the alert was resolved.
@@ -662,6 +662,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -703,6 +704,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityincident)
+
+[https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0)
 
 
 

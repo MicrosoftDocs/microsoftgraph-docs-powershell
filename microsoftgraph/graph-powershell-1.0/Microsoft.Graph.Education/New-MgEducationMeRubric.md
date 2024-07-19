@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgEducationMeRubric
 
 ## SYNOPSIS
-Create new navigation property to rubrics for education
+Create a new educationRubric object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeRubric?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ New-MgEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-Respon
 ```
 
 ## DESCRIPTION
-Create new navigation property to rubrics for education
+Create a new educationRubric object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -373,8 +373,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
@@ -405,8 +406,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -421,8 +423,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -451,6 +454,8 @@ Weights must add up to 100.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmerubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmerubric)
+
+[https://learn.microsoft.com/graph/api/educationuser-post-rubrics?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-post-rubrics?view=graph-rest-1.0)
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgDomainFederationConfiguration
 
 ## SYNOPSIS
-Domain settings configured by a customer when federated with Microsoft Entra ID.
-Supports $expand.
+Read the properties and relationships of an internalDomainFederation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
@@ -39,8 +38,7 @@ Get-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementId
 ```
 
 ## DESCRIPTION
-Domain settings configured by a customer when federated with Microsoft Entra ID.
-Supports $expand.
+Read the properties and relationships of an internalDomainFederation object.
 
 ## EXAMPLES
 ### Example 1: Get the federation settings for a federated domain
@@ -358,6 +356,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration)
+
+[https://learn.microsoft.com/graph/api/internaldomainfederation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/internaldomainfederation-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/domain-list-federationconfiguration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-list-federationconfiguration?view=graph-rest-1.0)
 
 
 

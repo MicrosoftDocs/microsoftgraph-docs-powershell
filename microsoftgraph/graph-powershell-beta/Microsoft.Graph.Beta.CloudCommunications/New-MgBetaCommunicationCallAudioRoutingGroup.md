@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
-Create new navigation property to audioRoutingGroups for communications
+Create a new audioRoutingGroup.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ New-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsI
 ```
 
 ## DESCRIPTION
-Create new navigation property to audioRoutingGroups for communications
+Create a new audioRoutingGroup.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -59,11 +59,11 @@ $params = @{
 	id = "oneToOne"
 	routingMode = "oneToOne"
 	sources = @(
-		"632899f8-2ea1-4604-8413-27bd2892079f"
-	)
-	receivers = @(
-		"550fae72-d251-43ec-868c-373732c2704f"
-	)
+	"632899f8-2ea1-4604-8413-27bd2892079f"
+)
+receivers = @(
+"550fae72-d251-43ec-868c-373732c2704f"
+)
 }
 
 New-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -BodyParameter $params
@@ -322,6 +322,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallaudioroutinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallaudioroutinggroup)
+
+[https://learn.microsoft.com/graph/api/call-post-audioroutinggroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/call-post-audioroutinggroups?view=graph-rest-beta)
 
 
 

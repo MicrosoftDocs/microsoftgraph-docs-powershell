@@ -67,8 +67,6 @@ Deleted indicates that the item is deleted and can't be restored.Items with this
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-delta-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -404,6 +402,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdrivelistitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdrivelistitemdelta)
 
 [https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-beta)
+
+
 
 
 

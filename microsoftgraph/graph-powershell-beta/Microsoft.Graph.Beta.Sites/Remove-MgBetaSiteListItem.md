@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSiteListItem
 
 ## SYNOPSIS
-Delete navigation property items for sites
+Removes an item from a list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItem?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaSiteListItem -InputObject <ISitesIdentity> [-IfMatch <String>] [-Re
 ```
 
 ## DESCRIPTION
-Delete navigation property items for sites
+Removes an item from a list.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -287,6 +287,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelistitem)
+
+[https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-beta)
 
 
 

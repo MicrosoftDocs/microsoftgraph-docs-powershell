@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementDirectoryResourceNamespace
 
 ## SYNOPSIS
-Get resourceNamespaces from roleManagement
+Read the properties and relationships of an unifiedRbacResourceNamespace object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-1.0)
@@ -38,7 +38,20 @@ Get-MgBetaRoleManagementDirectoryResourceNamespace -InputObject <IIdentityGovern
 ```
 
 ## DESCRIPTION
-Get resourceNamespaces from roleManagement
+Read the properties and relationships of an unifiedRbacResourceNamespace object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryResourceNamespace
+
+```
+This example shows how to use the Get-MgBetaRoleManagementDirectoryResourceNamespace Cmdlet.
+
 
 ## PARAMETERS
 
@@ -390,6 +403,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespace)
 
+[https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/rbacapplicationmultiple-list-resourcenamespaces?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-list-resourcenamespaces?view=graph-rest-beta)
 
 
 

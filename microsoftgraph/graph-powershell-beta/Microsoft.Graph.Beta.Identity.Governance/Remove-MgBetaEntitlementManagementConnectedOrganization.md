@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaEntitlementManagementConnectedOrganization
 
 ## SYNOPSIS
-Delete navigation property connectedOrganizations for identityGovernance
+Delete a connectedOrganization object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementConnectedOrganization?view=graph-powershell-1.0)
@@ -30,19 +30,19 @@ Remove-MgBetaEntitlementManagementConnectedOrganization -InputObject <IIdentityG
 ```
 
 ## DESCRIPTION
-Delete navigation property connectedOrganizations for identityGovernance
+Delete a connectedOrganization object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Remove-MgBetaEntitlementManagementConnectedOrganization -ConnectedOrganizationId $connectedOrganizationId
+
 ```
 This example shows how to use the Remove-MgBetaEntitlementManagementConnectedOrganization Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -304,6 +304,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementconnectedorganization)
+
+[https://learn.microsoft.com/graph/api/connectedorganization-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/connectedorganization-delete?view=graph-rest-beta)
 
 
 

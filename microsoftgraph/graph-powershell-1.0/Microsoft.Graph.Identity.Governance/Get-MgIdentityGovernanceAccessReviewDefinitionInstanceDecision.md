@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
 
 ## SYNOPSIS
-Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
+Read the properties and relationships of an accessReviewInstanceDecisionItem object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
@@ -40,19 +40,19 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <IId
 ```
 
 ## DESCRIPTION
-Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
+Read the properties and relationships of an accessReviewInstanceDecisionItem object.
 
 ## EXAMPLES
 ### Example 1: Retrieve a decision on an accessReviewInstance
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId
-```
-This example shows how to use the Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will retrieve a decision on an accessreviewinstance
 
 
 ## PARAMETERS
@@ -402,6 +402,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancedecision)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstance-list-decisions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-list-decisions?view=graph-rest-1.0)
 
 
 

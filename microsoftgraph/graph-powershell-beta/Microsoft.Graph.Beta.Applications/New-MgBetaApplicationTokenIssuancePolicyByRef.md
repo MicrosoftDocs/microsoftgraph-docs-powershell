@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaApplicationTokenIssuancePolicyByRef
 
 ## SYNOPSIS
-Create new navigation property ref to tokenIssuancePolicies for applications
+Assign a tokenIssuancePolicy to an application.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-1.0)
@@ -45,12 +45,13 @@ New-MgBetaApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentit
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to tokenIssuancePolicies for applications
+Assign a tokenIssuancePolicy to an application.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
 
 $params = @{
@@ -58,10 +59,9 @@ $params = @{
 }
 
 New-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId $applicationId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaApplicationTokenIssuancePolicyByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -274,6 +274,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[IPApplicationSegmentId <String>]`: The unique identifier of ipApplicationSegment
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
@@ -281,6 +282,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -294,6 +296,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationtokenissuancepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationtokenissuancepolicybyref)
+
+[https://learn.microsoft.com/graph/api/application-post-tokenissuancepolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-post-tokenissuancepolicies?view=graph-rest-beta)
 
 
 

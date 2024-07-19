@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementConditionalAccessSetting
 
 ## SYNOPSIS
-The Exchange on premises conditional access settings.
-On premises conditional access will require devices to be both enrolled and compliant for mail access
+Read properties and relationships of the onPremisesConditionalAccessSettings object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
@@ -23,8 +22,7 @@ Get-MgDeviceManagementConditionalAccessSetting [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-The Exchange on premises conditional access settings.
-On premises conditional access will require devices to be both enrolled and compliant for mail access
+Read properties and relationships of the onPremisesConditionalAccessSettings object.
 
 ## PARAMETERS
 
@@ -117,6 +115,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementconditionalaccesssetting](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementconditionalaccesssetting)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-onpremisesconditionalaccesssettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-onpremisesconditionalaccesssettings-get?view=graph-rest-1.0)
 
 
 

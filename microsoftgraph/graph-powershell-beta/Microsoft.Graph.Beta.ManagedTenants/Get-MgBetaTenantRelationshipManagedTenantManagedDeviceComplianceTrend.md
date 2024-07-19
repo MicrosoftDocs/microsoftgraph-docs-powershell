@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend
 
 ## SYNOPSIS
-Trend insights for device compliance across managed tenants.
+Read the properties and relationships of a managedDeviceComplianceTrend object.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend -InputObje
 ```
 
 ## DESCRIPTION
-Trend insights for device compliance across managed tenants.
+Read the properties and relationships of a managedDeviceComplianceTrend object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,6 +338,10 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanageddevicecompliancetrend](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanageddevicecompliancetrend)
+
+[https://learn.microsoft.com/graph/api/managedtenants-manageddevicecompliancetrend-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-manageddevicecompliancetrend-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-manageddevicecompliancetrends?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-manageddevicecompliancetrends?view=graph-rest-beta)
 
 
 

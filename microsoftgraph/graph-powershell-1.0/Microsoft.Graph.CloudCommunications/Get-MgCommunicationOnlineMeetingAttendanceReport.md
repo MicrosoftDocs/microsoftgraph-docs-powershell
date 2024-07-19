@@ -42,8 +42,6 @@ Get-MgCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicati
 The attendance reports of an online meeting.
 Read-only.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -323,6 +321,9 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingattendancereport)
+
+
+
 
 
 

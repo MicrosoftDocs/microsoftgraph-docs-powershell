@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaDeviceManagementMonitoringAlertRule
 
 ## SYNOPSIS
-Update the navigation property alertRules in deviceManagement
+Update the properties of an alertRule object.
 
 ## SYNTAX
 
@@ -49,7 +49,55 @@ Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Update the navigation property alertRules in deviceManagement
+Update the properties of an alertRule object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+$params = @{
+	severity = "informational"
+	enabled = $true
+	threshold = @{
+		aggregation = "count"
+		operator = "greaterOrEqual"
+		target = 90
+	}
+	conditions = @(
+		@{
+			relationshipType = "or"
+			conditionCategory = "azureNetworkConnectionCheckFailures"
+			aggregation = "count"
+			operator = "greaterOrEqual"
+			thresholdValue = "90"
+		}
+	)
+	notificationChannels = @(
+		@{
+			notificationChannelType = "portal"
+			notificationReceivers = @(
+			)
+		}
+		@{
+			notificationChannelType = "email"
+			notificationReceivers = @(
+				@{
+					locale = "en-us"
+					contactInformation = "serena.davis@contoso.com"
+				}
+			)
+		}
+	)
+}
+
+Update-MgBetaDeviceManagementMonitoringAlertRule -AlertRuleId $alertRuleId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDeviceManagementMonitoringAlertRule Cmdlet.
+
 
 ## PARAMETERS
 
@@ -576,6 +624,7 @@ THRESHOLD `<IMicrosoftGraphDeviceManagementRuleThreshold>`: ruleThreshold
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule)
 
+[https://learn.microsoft.com/graph/api/devicemanagement-alertrule-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-update?view=graph-rest-beta)
 
 
 

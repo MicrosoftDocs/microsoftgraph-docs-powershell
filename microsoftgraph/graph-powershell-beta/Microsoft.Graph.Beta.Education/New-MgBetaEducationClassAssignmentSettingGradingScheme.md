@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaEducationClassAssignmentSettingGradingScheme
 
 ## SYNOPSIS
-Create new navigation property to gradingSchemes for education
+Create a new educationGradingScheme object.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducationI
 ```
 
 ## DESCRIPTION
-Create new navigation property to gradingSchemes for education
+Create a new educationGradingScheme object.
 
 ## PARAMETERS
 
@@ -305,6 +305,9 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingscheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingscheme)
+
+[https://learn.microsoft.com/graph/api/educationgradingscheme-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationgradingscheme-post?view=graph-rest-beta)
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaTeamTag
 
 ## SYNOPSIS
-Update the navigation property tags in teams
+Update the properties of a teamworkTag object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgTeamTag](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamTag?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ Update-MgBetaTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Update the navigation property tags in teams
+Update the properties of a teamworkTag object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -427,6 +427,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtag)
+
+[https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-beta)
 
 
 

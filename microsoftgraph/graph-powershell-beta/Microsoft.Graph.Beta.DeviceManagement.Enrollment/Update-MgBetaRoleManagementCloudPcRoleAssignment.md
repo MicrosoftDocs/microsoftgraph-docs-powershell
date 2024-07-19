@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaRoleManagementCloudPcRoleAssignment
 
 ## SYNOPSIS
-Update the navigation property roleAssignments in roleManagement
+Update an existing unifiedRoleAssignmentMultiple object of an RBAC provider.
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune) In contrast, unifiedRoleAssignment does not support update.
 
 ## SYNTAX
 
@@ -49,7 +50,26 @@ Update-MgBetaRoleManagementCloudPcRoleAssignment -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Update the navigation property roleAssignments in roleManagement
+Update an existing unifiedRoleAssignmentMultiple object of an RBAC provider.
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune) In contrast, unifiedRoleAssignment does not support update.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+$params = @{
+	displayName = "NewName"
+	description = "A new roleAssignment"
+}
+
+Update-MgBetaRoleManagementCloudPcRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaRoleManagementCloudPcRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -600,6 +620,7 @@ Read-only when isBuiltIn is true.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementcloudpcroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementcloudpcroleassignment)
 
+[https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)
 
 
 

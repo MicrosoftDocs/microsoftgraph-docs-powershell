@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgCommunicationOnlineMeetingAttendeeReport
 
 ## SYNOPSIS
-Get attendeeReport for the navigation property onlineMeetings from communications
+The content stream of the attendee report of a Microsoft Teams live event.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingAttendeeReport?view=graph-powershell-beta)
@@ -30,9 +31,8 @@ Get-MgCommunicationOnlineMeetingAttendeeReport -InputObject <ICloudCommunication
 ```
 
 ## DESCRIPTION
-Get attendeeReport for the navigation property onlineMeetings from communications
-
-## EXAMPLES
+The content stream of the attendee report of a Microsoft Teams live event.
+Read-only.
 
 ## PARAMETERS
 
@@ -177,6 +177,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingattendeereport](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingattendeereport)
+
+
 
 
 

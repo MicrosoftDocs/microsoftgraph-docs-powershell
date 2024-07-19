@@ -41,13 +41,17 @@ The method allows users to pull content types directly from the content type hub
 For more information, see addCopyFromContentTypeHub and the blog post Syntex Product Updates - August 2021.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSiteListContentTypeCompatibleHubContentType Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
+
 Get-MgBetaSiteListContentTypeCompatibleHubContentType -SiteId $siteId -ListId $listId
+
 ```
 This example shows how to use the Get-MgBetaSiteListContentTypeCompatibleHubContentType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

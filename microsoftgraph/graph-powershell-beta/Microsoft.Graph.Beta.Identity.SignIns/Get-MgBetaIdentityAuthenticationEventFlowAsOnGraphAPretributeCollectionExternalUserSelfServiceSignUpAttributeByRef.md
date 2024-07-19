@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef
 
 ## SYNOPSIS
-Get ref of attributes from identity
+Get an identityUserFlowAttribute collection associated with an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
+These are the attributes that are collected from the user during the authentication experience that's defined by the user flow.
 
 ## SYNTAX
 
@@ -20,7 +21,8 @@ Get-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalU
 ```
 
 ## DESCRIPTION
-Get ref of attributes from identity
+Get an identityUserFlowAttribute collection associated with an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
+These are the attributes that are collected from the user during the authentication experience that's defined by the user flow.
 
 ## PARAMETERS
 
@@ -219,6 +221,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributebyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributebyref)
+
+[https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-list-attributes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-list-attributes?view=graph-rest-beta)
+
 
 
 

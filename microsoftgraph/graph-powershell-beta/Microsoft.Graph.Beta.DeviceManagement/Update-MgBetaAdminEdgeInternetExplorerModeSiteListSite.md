@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite
 
 ## SYNOPSIS
-Update the navigation property sites in admin
+Update the properties of a browserSite object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-1.0)
@@ -54,7 +54,29 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Update the navigation property sites in admin
+Update the properties of a browserSite object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+$params = @{
+	webUrl = "www.microsoft.com"
+	targetEnvironment = "microsoftEdge"
+	mergeType = "default"
+	compatibilityMode = "default"
+	allowRedirect = $false
+	comment = "Updating to Edge."
+}
+
+Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BrowserSiteId $browserSiteId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite Cmdlet.
+
 
 ## PARAMETERS
 
@@ -639,6 +661,7 @@ This property is read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelistsite)
 
+[https://learn.microsoft.com/graph/api/browsersite-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersite-update?view=graph-rest-beta)
 
 
 

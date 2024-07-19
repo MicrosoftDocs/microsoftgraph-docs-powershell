@@ -36,6 +36,19 @@ Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser
 ## DESCRIPTION
 Returns all accessReviewInstance objects on a given accessReviewScheduleDefinition where the calling user is a reviewer on one or more accessReviewInstanceDecisionItem objects.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId
@@ -371,7 +384,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceaccessreviewdefinitioninstancebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceaccessreviewdefinitioninstancebycurrentuser)
 
 [https://learn.microsoft.com/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta)
-
 
 
 

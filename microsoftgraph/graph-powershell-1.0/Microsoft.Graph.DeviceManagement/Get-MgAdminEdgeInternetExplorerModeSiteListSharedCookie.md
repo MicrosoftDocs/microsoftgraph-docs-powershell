@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie
 
 ## SYNOPSIS
-A collection of shared cookies defined for the site list.
+Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
@@ -39,7 +39,10 @@ Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-A collection of shared cookies defined for the site list.
+Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersharedcookie-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -360,6 +363,10 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedgeinternetexplorermodesitelistsharedcookie)
+
+[https://learn.microsoft.com/graph/api/browsersharedcookie-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersharedcookie-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/browsersitelist-list-sharedcookies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-list-sharedcookies?view=graph-rest-1.0)
 
 
 

@@ -27,8 +27,6 @@ Get-MgEducationUserDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Prope
 Get newly created or updated educationUser without having to perform a full read of the entire collection.
 See Use delta query for details.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -243,6 +241,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserdelta)
 
 [https://learn.microsoft.com/graph/api/educationuser-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-delta?view=graph-rest-1.0)
+
 
 
 

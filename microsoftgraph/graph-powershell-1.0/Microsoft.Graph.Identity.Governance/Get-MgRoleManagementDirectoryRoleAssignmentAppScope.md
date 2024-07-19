@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Read-only property with details of the app specific scope when the assignment scope is app specific.
 Containment entity.
-Supports $expand.
+Supports $expand for the entitlement provider only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-beta)
@@ -34,7 +34,7 @@ Get-MgRoleManagementDirectoryRoleAssignmentAppScope -InputObject <IIdentityGover
 ## DESCRIPTION
 Read-only property with details of the app specific scope when the assignment scope is app specific.
 Containment entity.
-Supports $expand.
+Supports $expand for the entitlement provider only.
 
 ## PARAMETERS
 

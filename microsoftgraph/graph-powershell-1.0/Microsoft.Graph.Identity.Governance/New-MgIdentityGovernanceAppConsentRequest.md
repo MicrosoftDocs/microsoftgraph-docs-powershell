@@ -34,30 +34,6 @@ New-MgIdentityGovernanceAppConsentRequest -BodyParameter <IMicrosoftGraphAppCons
 ## DESCRIPTION
 Create new navigation property to appConsentRequests for identityGovernance
 
-## EXAMPLES
-### Example 1:  List all appConsentRequests
-
-```powershell
-Import-Module Microsoft.Graph.Identity.Governance
-
-Get-MgIdentityGovernanceAppConsentRequest
-```
-This example shows how to use the New-MgIdentityGovernanceAppConsentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: List all appConsentRequests with at least one userConsentRequest whose status is InProgress
-
-```powershell
-Import-Module Microsoft.Graph.Identity.Governance
-
-Get-MgIdentityGovernanceAppConsentRequest -Filter "userConsentRequests/any (u:u/status eq 'InProgress')"
-```
-This example shows how to use the New-MgIdentityGovernanceAppConsentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -290,8 +266,9 @@ Supports $filter (eq).
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: The request creation date time.
@@ -342,8 +319,9 @@ Supports $filter (eq).
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The request creation date time.
@@ -383,6 +361,7 @@ Supports $filter (eq only) and $orderby.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequest)
+
 
 
 

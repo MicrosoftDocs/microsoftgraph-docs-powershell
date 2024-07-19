@@ -50,19 +50,6 @@ Update-MgAgreementFile -InputObject <IIdentityGovernanceIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property file in agreements
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Identity.Governance
-
-Get-MgIdentityGovernanceTermOfUseAgreementFile -AgreementId $agreementId
-```
-This example shows how to use the Update-MgAgreementFile Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -562,6 +549,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementfile)
+
 
 
 

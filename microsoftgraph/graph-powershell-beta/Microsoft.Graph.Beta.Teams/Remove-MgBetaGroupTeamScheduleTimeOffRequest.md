@@ -32,8 +32,6 @@ Remove-MgBetaGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property timeOffRequests for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId
@@ -250,6 +248,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduletimeoffrequest)
+
+
 
 
 

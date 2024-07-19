@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityB2CUserFlow
 
 ## SYNOPSIS
-Update the navigation property b2cUserFlows in identity
+Update the properties of a b2cIdentityUserFlow object.
 
 ## SYNTAX
 
@@ -53,20 +53,25 @@ Update-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property b2cUserFlows in identity
+Update the properties of a b2cIdentityUserFlow object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaIdentityB2CUserFlow Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
-	IsLanguageCustomizationEnabled = $true
-	DefaultLanguageTag = "en"
+	isLanguageCustomizationEnabled = $true
+	defaultLanguageTag = "en"
 }
+
 Update-MgBetaIdentityB2CUserFlow -B2cIdentityUserFlowId $b2cIdentityUserFlowId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaIdentityB2CUserFlow Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -180,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityProviders
-.
+The identity providers included in the user flow.
 To construct, see NOTES section for IDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
@@ -291,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserFlowIdentityProviders
-.
+The identity providers included in the user flow.
 To construct, see NOTES section for USERFLOWIDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
@@ -417,7 +422,7 @@ Read-only.
     - `[PreTokenIssuance <IMicrosoftGraphIdentityApiConnector>]`: identityApiConnector
   - `[DefaultLanguageTag <String>]`: Indicates the default language of the b2cIdentityUserFlow that is used when no ui_locale tag is specified in the request.
 This field is RFC 5646 compliant.
-  - `[IdentityProviders <IMicrosoftGraphIdentityProvider- `[]`>]`: 
+  - `[IdentityProviders <IMicrosoftGraphIdentityProvider- `[]`>]`: The identity providers included in the user flow.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider.
@@ -465,7 +470,7 @@ This is only used for verifying the user's phone number or email address.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DataType <String>]`: identityUserFlowAttributeDataType
-      - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
+      - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
       - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
       - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
@@ -475,12 +480,12 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
       - `[Name <String>]`: The display name of the property displayed to the end user in the user flow.
       - `[Value <String>]`: The value that is set when this item is selected.
     - `[UserInputType <String>]`: identityUserFlowAttributeInputType
-  - `[UserFlowIdentityProviders <IMicrosoftGraphIdentityProviderBase- `[]`>]`: 
+  - `[UserFlowIdentityProviders <IMicrosoftGraphIdentityProviderBase- `[]`>]`: The identity providers included in the user flow.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The display name of the identity provider.
 
-IDENTITYPROVIDERS <IMicrosoftGraphIdentityProvider- `[]`>: .
+IDENTITYPROVIDERS <IMicrosoftGraphIdentityProvider- `[]`>: The identity providers included in the user flow.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider.
@@ -551,6 +556,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -570,6 +576,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -607,7 +614,7 @@ This is only used for verifying the user's phone number or email address.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DataType <String>]`: identityUserFlowAttributeDataType
-    - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
+    - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
     - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
     - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
@@ -618,7 +625,7 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
     - `[Value <String>]`: The value that is set when this item is selected.
   - `[UserInputType <String>]`: identityUserFlowAttributeInputType
 
-USERFLOWIDENTITYPROVIDERS <IMicrosoftGraphIdentityProviderBase- `[]`>: .
+USERFLOWIDENTITYPROVIDERS <IMicrosoftGraphIdentityProviderBase- `[]`>: The identity providers included in the user flow.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the identity provider.
@@ -626,6 +633,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow)
+
+[https://learn.microsoft.com/graph/api/b2cidentityuserflow-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/b2cidentityuserflow-update?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
-Delete navigation property remoteAssistancePartners for deviceManagement
+Deletes a remoteAssistancePartner.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
@@ -30,19 +30,19 @@ Remove-MgDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Delete navigation property remoteAssistancePartners for deviceManagement
+Deletes a remoteAssistancePartner.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Remove-MgDeviceManagementRemoteAssistancePartner -RemoteAssistancePartnerId $remoteAssistancePartnerId
+
 ```
 This example shows how to use the Remove-MgDeviceManagementRemoteAssistancePartner Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -230,6 +230,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementremoteassistancepartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementremoteassistancepartner)
+
+[https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-delete?view=graph-rest-1.0)
 
 
 

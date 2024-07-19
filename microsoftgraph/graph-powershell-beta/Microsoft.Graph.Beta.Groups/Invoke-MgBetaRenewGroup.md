@@ -34,13 +34,17 @@ Renews a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaRenewGroup Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 Invoke-MgBetaRenewGroup -GroupId $groupId
+
 ```
 This example shows how to use the Invoke-MgBetaRenewGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSitePage
 
 ## SYNOPSIS
-The collection of pages in the baseSitePages list in this site.
+Get the metadata for a baseSitePage in the site pages list in a site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePage?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-The collection of pages in the baseSitePages list in this site.
+Get the metadata for a baseSitePage in the site pages list in a site.
 
 ## PARAMETERS
 
@@ -349,6 +349,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepage)
+
+[https://learn.microsoft.com/graph/api/basesitepage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/basesitepage-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/basesitepage-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/basesitepage-list?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaComplianceEdiscoveryCaseSetting
 
 ## SYNOPSIS
-Get settings from compliance
+Read the properties and relationships of an eDiscovery caseSettings object.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get settings from compliance
+Read the properties and relationships of an eDiscovery caseSettings object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -188,6 +188,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesetting)
+
+[https://learn.microsoft.com/graph/api/ediscovery-casesettings-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-casesettings-get?view=graph-rest-beta)
 
 
 

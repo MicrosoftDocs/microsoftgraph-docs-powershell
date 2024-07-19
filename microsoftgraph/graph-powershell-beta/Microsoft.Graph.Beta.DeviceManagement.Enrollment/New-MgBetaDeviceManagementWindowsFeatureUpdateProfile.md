@@ -18,9 +18,10 @@ New-MgBetaDeviceManagementWindowsFeatureUpdateProfile [-ResponseHeadersVariable 
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>]
  [-CreatedDateTime <DateTime>] [-DeployableContentDisplayName <String>] [-Description <String>]
  [-DisplayName <String>] [-EndOfSupportDate <DateTime>] [-FeatureUpdateVersion <String>] [-Id <String>]
- [-InstallLatestWindows10OnWindows11IneligibleDevice] [-LastModifiedDateTime <DateTime>]
- [-RoleScopeTagIds <String[]>] [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InstallFeatureUpdatesOptional] [-InstallLatestWindows10OnWindows11IneligibleDevice]
+ [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
+ [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -204,6 +205,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -InstallFeatureUpdatesOptional
+If true, the Windows 11 update will become optional
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InstallLatestWindows10OnWindows11IneligibleDevice
 If true, the latest Microsoft Windows 10 update will be installed on devices ineligible for Microsoft Windows 11
 
@@ -368,6 +384,7 @@ Read-only.
   - `[EndOfSupportDate <DateTime?>]`: The last supported date for a feature update
   - `[FeatureUpdateVersion <String>]`: The feature update version that will be deployed to the devices targeted by this profile.
 The version could be any supported version for example 1709, 1803 or 1809 and so on.
+  - `[InstallFeatureUpdatesOptional <Boolean?>]`: If true, the Windows 11 update will become optional
   - `[InstallLatestWindows10OnWindows11IneligibleDevice <Boolean?>]`: If true, the latest Microsoft Windows 10 update will be installed on devices ineligible for Microsoft Windows 11
   - `[LastModifiedDateTime <DateTime?>]`: The date time that the profile was last modified.
   - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Feature Update entity.

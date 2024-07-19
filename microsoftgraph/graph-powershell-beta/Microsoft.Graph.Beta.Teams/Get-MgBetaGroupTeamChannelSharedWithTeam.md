@@ -56,8 +56,6 @@ Get-MgBetaGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ExpandP
 ## DESCRIPTION
 A collection of teams with which a channel is shared.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -380,6 +378,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamchannelsharedwithteam)
+
+
+
+
 
 
 

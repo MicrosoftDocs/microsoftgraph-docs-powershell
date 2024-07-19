@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgDirectoryDeletedItem
 
 ## SYNOPSIS
-Recently deleted items.
-Read-only.
-Nullable.
+Retrieve the properties of a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
@@ -32,9 +30,7 @@ Get-MgDirectoryDeletedItem -InputObject <IIdentityDirectoryManagementIdentity> [
 ```
 
 ## DESCRIPTION
-Recently deleted items.
-Read-only.
-Nullable.
+Retrieve the properties of a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 
 ## EXAMPLES
 ### Example 1: Retrieve a list of recently deleted items
@@ -204,6 +200,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditem](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditem)
+
+[https://learn.microsoft.com/graph/api/directory-deleteditems-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-deleteditems-get?view=graph-rest-1.0)
 
 
 

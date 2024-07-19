@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementTelecomExpenseManagementPartner
 
 ## SYNOPSIS
-Delete navigation property telecomExpenseManagementPartners for deviceManagement
+Deletes a telecomExpenseManagementPartner.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
@@ -30,19 +30,19 @@ Remove-MgDeviceManagementTelecomExpenseManagementPartner -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Delete navigation property telecomExpenseManagementPartners for deviceManagement
+Deletes a telecomExpenseManagementPartner.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Remove-MgDeviceManagementTelecomExpenseManagementPartner -TelecomExpenseManagementPartnerId $telecomExpenseManagementPartnerId
+
 ```
 This example shows how to use the Remove-MgDeviceManagementTelecomExpenseManagementPartner Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -230,6 +230,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementtelecomexpensemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementtelecomexpensemanagementpartner)
+
+[https://learn.microsoft.com/graph/api/intune-tem-telecomexpensemanagementpartner-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-tem-telecomexpensemanagementpartner-delete?view=graph-rest-1.0)
 
 
 

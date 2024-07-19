@@ -35,6 +35,19 @@ Pin an educationModule in the class work list.
 This action sets the isPinned property to true for an educationModule.
 Only teachers can perform this action and only one module at a time can be pinned in the class work list.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Invoke-MgBetaPinEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
+
+```
+This example shows how to use the Invoke-MgBetaPinEducationClassModule Cmdlet.
+
+
 ## PARAMETERS
 
 ### -EducationClassId
@@ -200,7 +213,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetapineducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetapineducationclassmodule)
 
 [https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-beta)
-
 
 
 

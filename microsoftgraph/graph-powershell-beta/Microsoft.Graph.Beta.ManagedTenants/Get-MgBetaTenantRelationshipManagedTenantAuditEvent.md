@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantAuditEvent
 
 ## SYNOPSIS
-The collection of audit events across managed tenants.
+Read the properties and relationships of an auditEvent object.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaTenantRelationshipManagedTenantAuditEvent -InputObject <IManagedTenant
 ```
 
 ## DESCRIPTION
-The collection of audit events across managed tenants.
+Read the properties and relationships of an auditEvent object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,6 +338,10 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantauditevent)
+
+[https://learn.microsoft.com/graph/api/managedtenants-auditevent-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-auditevent-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta)
 
 
 

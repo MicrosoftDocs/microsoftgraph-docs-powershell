@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAssignment
 
 ## SYNOPSIS
-The assignment of an access package to a subject for a period of time.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an accessPackageAssignment object.
 
 ## SYNTAX
 
@@ -47,10 +47,10 @@ Get-MgEntitlementManagementAssignment [-ExpandProperty <String[]>] [-Property <S
 ```
 
 ## DESCRIPTION
-The assignment of an access package to a subject for a period of time.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an accessPackageAssignment object.
 
 ## EXAMPLES
-### Example scenarios for using query parameters
+### Example 1cenario1 for u1ing query parameter1
 
 ```powershell
 
@@ -394,6 +394,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignment)
+
+[https://learn.microsoft.com/graph/api/accesspackageassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagement-list-assignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-list-assignments?view=graph-rest-1.0)
 
 
 

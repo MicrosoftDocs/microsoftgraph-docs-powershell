@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServiceAnnouncementMessageAttachmentArchive
 
 ## SYNOPSIS
-The zip file that contains all attachments for a message.
+Get the list of attachments associated with a service message.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessageAttachmentArchive](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessageAttachmentArchive?view=graph-powershell-beta)
@@ -30,9 +30,7 @@ Get-MgServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceA
 ```
 
 ## DESCRIPTION
-The zip file that contains all attachments for a message.
-
-## EXAMPLES
+Get the list of attachments associated with a service message.
 
 ## PARAMETERS
 
@@ -167,6 +165,9 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentarchive](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentarchive)
+
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-1.0)
+
 
 
 

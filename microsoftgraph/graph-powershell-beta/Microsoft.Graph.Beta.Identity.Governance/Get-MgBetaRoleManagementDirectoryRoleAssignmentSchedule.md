@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule
 
 ## SYNOPSIS
-Get roleAssignmentSchedules from roleManagement
+Retrieve the schedule for an active role assignment operation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-1.0)
@@ -38,7 +38,20 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule -InputObject <IIdentityG
 ```
 
 ## DESCRIPTION
-Get roleAssignmentSchedules from roleManagement
+Retrieve the schedule for an active role assignment operation.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule
+
+```
+This example shows how to use the Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule Cmdlet.
+
 
 ## PARAMETERS
 
@@ -390,6 +403,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleassignmentschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleassignmentschedule)
 
+[https://learn.microsoft.com/graph/api/unifiedroleassignmentschedule-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleassignmentschedule-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignmentschedules?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignmentschedules?view=graph-rest-beta)
 
 
 

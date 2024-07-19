@@ -23,8 +23,6 @@ Get-MgSecurityCase [-ExpandProperty <String[]>] [-Property <String[]>] [-Respons
 ## DESCRIPTION
 Get cases from security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -116,6 +114,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycase)
+
+
 
 
 

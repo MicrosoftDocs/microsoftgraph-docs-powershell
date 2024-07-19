@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgUserPhotoContent
 
 ## SYNOPSIS
-Update media content for the navigation property photo in users
+The user's profile photo.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserPhotoContent](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserPhotoContent?view=graph-powershell-beta)
@@ -44,7 +45,8 @@ Set-MgUserPhotoContent -InputObject <IUsersIdentity> [-Data <Stream>] [-Response
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property photo in users
+The user's profile photo.
+Read-only.
 
 ## PARAMETERS
 
@@ -270,6 +272,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mguserphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mguserphotocontent)
+
 
 
 

@@ -32,6 +32,19 @@ Get the real-time connection status information, such as signInStatus or daysSin
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getrealtimeremoteconnectionstatus-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+
+Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus Cmdlet.
+
+
 ## PARAMETERS
 
 ### -CloudPcId
@@ -194,7 +207,6 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointreportrealtimeremoteconnectionstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointreportrealtimeremoteconnectionstatus)
 
 [https://learn.microsoft.com/graph/api/cloudpcreports-getrealtimeremoteconnectionstatus?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getrealtimeremoteconnectionstatus?view=graph-rest-beta)
-
 
 
 

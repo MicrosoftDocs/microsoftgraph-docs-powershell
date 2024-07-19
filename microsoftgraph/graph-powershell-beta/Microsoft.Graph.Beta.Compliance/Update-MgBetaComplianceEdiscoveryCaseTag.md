@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaComplianceEdiscoveryCaseTag
 
 ## SYNOPSIS
-Update the navigation property tags in compliance
+Update the properties of a tag object.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property tags in compliance
+Update the properties of a tag object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -457,6 +457,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasetag)
+
+[https://learn.microsoft.com/graph/api/ediscovery-tag-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-tag-update?view=graph-rest-beta)
 
 
 

@@ -32,8 +32,6 @@ Remove-MgBetaTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity> [-If
 ## DESCRIPTION
 Delete navigation property sharedWithTeams for teams
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -250,6 +248,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelsharedwithteam)
+
+
 
 
 

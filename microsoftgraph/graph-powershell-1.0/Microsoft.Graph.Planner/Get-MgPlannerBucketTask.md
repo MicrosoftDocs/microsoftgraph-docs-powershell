@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgPlannerBucketTask
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-The collection of tasks in the bucket.
+Retrieve a list of plannerTask objects associated to a plannerBucket object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlannerBucketTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucketTask?view=graph-powershell-beta)
@@ -25,9 +23,7 @@ Get-MgPlannerBucketTask -PlannerBucketId <String> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-The collection of tasks in the bucket.
+Retrieve a list of plannerTask objects associated to a plannerBucket object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -269,6 +265,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbuckettask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbuckettask)
+
+[https://learn.microsoft.com/graph/api/plannerbucket-list-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerbucket-list-tasks?view=graph-rest-1.0)
 
 
 

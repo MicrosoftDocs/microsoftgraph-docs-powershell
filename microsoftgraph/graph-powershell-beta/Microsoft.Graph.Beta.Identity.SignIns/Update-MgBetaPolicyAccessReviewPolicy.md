@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyAccessReviewPolicy
 
 ## SYNOPSIS
-Update the navigation property accessReviewPolicy in policies
+Update the properties of an accessReviewPolicy object.
 
 ## SYNTAX
 
@@ -27,19 +27,24 @@ Update-MgBetaPolicyAccessReviewPolicy -BodyParameter <IMicrosoftGraphAccessRevie
 ```
 
 ## DESCRIPTION
-Update the navigation property accessReviewPolicy in policies
+Update the properties of an accessReviewPolicy object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaPolicyAccessReviewPolicy Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
-	IsGroupOwnerManagementEnabled = $true
+	isGroupOwnerManagementEnabled = $true
 }
+
 Update-MgBetaPolicyAccessReviewPolicy -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaPolicyAccessReviewPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -242,6 +247,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy)
+
+[https://learn.microsoft.com/graph/api/accessreviewpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewpolicy-update?view=graph-rest-beta)
 
 
 

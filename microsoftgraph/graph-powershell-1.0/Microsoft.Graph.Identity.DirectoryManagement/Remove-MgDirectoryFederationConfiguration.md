@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDirectoryFederationConfiguration
 
 ## SYNOPSIS
-Delete navigation property federationConfigurations for directory
+Delete a samlOrWsFedExternalDomainFederation object.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgDirectoryFederationConfiguration -InputObject <IIdentityDirectoryManage
 ```
 
 ## DESCRIPTION
-Delete navigation property federationConfigurations for directory
+Delete a samlOrWsFedExternalDomainFederation object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -228,6 +228,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryfederationconfiguration)
+
+[https://learn.microsoft.com/graph/api/samlorwsfedexternaldomainfederation-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/samlorwsfedexternaldomainfederation-delete?view=graph-rest-1.0)
 
 
 

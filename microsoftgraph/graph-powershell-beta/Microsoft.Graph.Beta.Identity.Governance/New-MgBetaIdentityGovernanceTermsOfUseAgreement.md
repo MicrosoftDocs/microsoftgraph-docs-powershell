@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityGovernanceTermsOfUseAgreement
 
 ## SYNOPSIS
-Create new navigation property to agreements for identityGovernance
+Create a new agreement object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-1.0)
@@ -34,7 +34,35 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphA
 ```
 
 ## DESCRIPTION
-Create new navigation property to agreements for identityGovernance
+Create a new agreement object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	displayName = "Contoso ToU for guest users"
+	isViewingBeforeAcceptanceRequired = $true
+	files = @(
+		@{
+			fileName = "TOU.pdf"
+			language = "en"
+			isDefault = $true
+			fileData = @{
+				data = [System.Text.Encoding]::ASCII.GetBytes("SGVsbG8gd29ybGQ=//truncated-binary")
+			}
+		}
+	)
+}
+
+New-MgBetaIdentityGovernanceTermsOfUseAgreement -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaIdentityGovernanceTermsOfUseAgreement Cmdlet.
+
 
 ## PARAMETERS
 
@@ -590,6 +618,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreement)
 
+[https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-beta](https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-beta)
 
 
 

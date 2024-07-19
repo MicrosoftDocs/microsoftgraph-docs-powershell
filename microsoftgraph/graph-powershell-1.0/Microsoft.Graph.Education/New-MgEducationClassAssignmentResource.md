@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgEducationClassAssignmentResource
 
 ## SYNOPSIS
-Create new navigation property to resources for education
+Create an assignment resource.
+Only teachers can perform this operation.
+You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentResource?view=graph-powershell-beta)
@@ -46,7 +48,9 @@ New-MgEducationClassAssignmentResource -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to resources for education
+Create an assignment resource.
+Only teachers can perform this operation.
+You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
 ## EXAMPLES
 ### Example 1: Create an educationLinkResource
@@ -427,8 +431,9 @@ Required
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DisplayName <String>]`: Display name of resource.
@@ -457,8 +462,9 @@ RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DisplayName <String>]`: Display name of resource.
@@ -467,6 +473,8 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentresource)
+
+[https://learn.microsoft.com/graph/api/educationassignment-post-resource?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-post-resource?view=graph-rest-1.0)
 
 
 

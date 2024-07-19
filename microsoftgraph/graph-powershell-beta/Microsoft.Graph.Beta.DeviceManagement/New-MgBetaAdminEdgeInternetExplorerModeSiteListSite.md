@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaAdminEdgeInternetExplorerModeSiteListSite
 
 ## SYNOPSIS
-Create new navigation property to sites for admin
+Create a new browserSite object in a browserSiteList.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-1.0)
@@ -54,7 +54,30 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Create new navigation property to sites for admin
+Create a new browserSite object in a browserSiteList.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.browserSite"
+	webUrl = "www.microsoft.com"
+	targetEnvironment = "InternetExplorer11"
+	comment = "A site that opens in InternetExplorer11"
+	mergeType = "default"
+	compatibilityMode = "default"
+	allowRedirect = $true
+}
+
+New-MgBetaAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaAdminEdgeInternetExplorerModeSiteListSite Cmdlet.
+
 
 ## PARAMETERS
 
@@ -624,6 +647,7 @@ This property is read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsite)
 
+[https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-beta)
 
 
 

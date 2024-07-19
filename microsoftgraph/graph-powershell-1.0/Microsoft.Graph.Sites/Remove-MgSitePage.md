@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSitePage
 
 ## SYNOPSIS
-Delete navigation property pages for sites
+Delete a baseSitePage from the site pages list in a site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSitePage?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgSitePage -InputObject <ISitesIdentity> [-IfMatch <String>] [-ResponseHe
 ```
 
 ## DESCRIPTION
-Delete navigation property pages for sites
+Delete a baseSitePage from the site pages list in a site.
 
 ## PARAMETERS
 
@@ -251,6 +251,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepage)
+
+[https://learn.microsoft.com/graph/api/basesitepage-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/basesitepage-delete?view=graph-rest-1.0)
 
 
 

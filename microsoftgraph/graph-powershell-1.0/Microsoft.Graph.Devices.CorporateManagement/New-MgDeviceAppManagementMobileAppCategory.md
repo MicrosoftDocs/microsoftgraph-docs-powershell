@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementMobileAppCategory
 
 ## SYNOPSIS
-Create new navigation property to mobileAppCategories for deviceAppManagement
+Create a new mobileAppCategory object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ New-MgDeviceAppManagementMobileAppCategory -BodyParameter <IMicrosoftGraphMobile
 ```
 
 ## DESCRIPTION
-Create new navigation property to mobileAppCategories for deviceAppManagement
+Create a new mobileAppCategory object.
 
 ## PARAMETERS
 
@@ -197,6 +197,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory)
+
+[https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-create?view=graph-rest-1.0)
 
 
 

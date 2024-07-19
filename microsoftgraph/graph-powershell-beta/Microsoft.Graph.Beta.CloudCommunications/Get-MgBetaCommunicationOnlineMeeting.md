@@ -492,9 +492,9 @@ This property is read-only.
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[Role <String>]`: onlineMeetingRole
       - `[Upn <String>]`: User principal name of the participant.
-    - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+    - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
     - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-    - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+    - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
   - `[StartDateTime <DateTime?>]`: 
   - `[Subject <String>]`: 
 
@@ -540,15 +540,17 @@ This property is read-only.
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Role <String>]`: onlineMeetingRole
     - `[Upn <String>]`: User principal name of the participant.
-  - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+  - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
   - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-  - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`:
+  - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeeting)
 
 [https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-beta)
 
 
 

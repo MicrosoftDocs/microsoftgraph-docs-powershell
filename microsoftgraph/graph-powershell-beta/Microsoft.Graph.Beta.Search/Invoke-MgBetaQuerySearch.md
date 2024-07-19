@@ -313,7 +313,7 @@ Default is false, with the sort order as ascending.
 Optional.
       - `[Name <String>]`: The name of the property to sort on.
 Required.
-    - `[StoredFields <String- `[]`>]`: 
+    - `[StoredFields <String- `[]`>]`: This is now replaced by the fields property.
     - `[TrimDuplicates <Boolean?>]`: Indicates whether to trim away the duplicate SharePoint files from search results.
 Default value is false.
 Optional.
@@ -417,7 +417,7 @@ Default is false, with the sort order as ascending.
 Optional.
     - `[Name <String>]`: The name of the property to sort on.
 Required.
-  - `[StoredFields <String- `[]`>]`: 
+  - `[StoredFields <String- `[]`>]`: This is now replaced by the fields property.
   - `[TrimDuplicates <Boolean?>]`: Indicates whether to trim away the duplicate SharePoint files from search results.
 Default value is false.
 Optional.

@@ -8,11 +8,9 @@ schema: 2.0.0
 # Get-MgGroupMemberByRef
 
 ## SYNOPSIS
-The members of this group, who can be users, devices, other groups, or service principals.
-Supports the List members, Add member, and Remove member operations.
-Nullable.
-Supports $expand including nested $select.
-For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
+Get a list of the group's direct members.
+A group can have users, organizational contacts, devices, service principals and other groups as members.
+This operation is not transitive.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberByRef?view=graph-powershell-beta)
@@ -27,35 +25,9 @@ Get-MgGroupMemberByRef -GroupId <String> [-Filter <String>] [-Search <String>] [
 ```
 
 ## DESCRIPTION
-The members of this group, who can be users, devices, other groups, or service principals.
-Supports the List members, Add member, and Remove member operations.
-Nullable.
-Supports $expand including nested $select.
-For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Groups
-
-Get-MgGroupMember -GroupId $groupId
-```
-This example shows how to use the Get-MgGroupMemberByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Groups
-
-Get-MgGroupMember -GroupId $groupId -CountVariable CountVar -Filter "startswith(displayName, 'a')" -ConsistencyLevel eventual
-```
-This example shows how to use the Get-MgGroupMemberByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
+Get a list of the group's direct members.
+A group can have users, organizational contacts, devices, service principals and other groups as members.
+This operation is not transitive.
 
 ## PARAMETERS
 
@@ -270,6 +242,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref)
+
+[https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0)
+
 
 
 

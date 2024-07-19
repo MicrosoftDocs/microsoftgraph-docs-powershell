@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserSettingShiftPreference
 
 ## SYNOPSIS
-Update the navigation property shiftPreferences in users
+Update the properties and relationships of a shiftPreferences object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingShiftPreference?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ Update-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property shiftPreferences in users
+Update the properties and relationships of a shiftPreferences object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -451,6 +451,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingshiftpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingshiftpreference)
+
+[https://learn.microsoft.com/graph/api/shiftpreferences-put?view=graph-rest-beta](https://learn.microsoft.com/graph/api/shiftpreferences-put?view=graph-rest-beta)
 
 
 

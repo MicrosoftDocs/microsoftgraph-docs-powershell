@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 
 ## SYNOPSIS
-Create new navigation property to onPremisesConnections for deviceManagement
+Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-1.0)
@@ -37,7 +37,33 @@ New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ```
 
 ## DESCRIPTION
-Create new navigation property to onPremisesConnections for deviceManagement
+Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+$params = @{
+	displayName = "test-canary-02"
+	connectionType = "hybridAzureADJoin"
+	type = "hybridAzureADJoin"
+	subscriptionId = "0ac520ee-14c0-480f-b6c9-0a90c585ffff"
+	adDomainName = "contoso001.com"
+	adDomainUsername = "dcadmin"
+	organizationalUnit = "OU=Domain Controllers, DC=contoso001, DC=com"
+	resourceGroupId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG"
+	virtualNetworkId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET"
+	subnetId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet"
+}
+
+New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection Cmdlet.
+
 
 ## PARAMETERS
 
@@ -521,7 +547,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[HealthChecks <IMicrosoftGraphCloudPcOnPremisesConnectionHealthCheck- `[]`>]`: All checks that are done on the connection.
       - `[AdditionalDetail <String>]`: More details about the health check or the recommended action.
 Read-only.
-      - `[AdditionalDetails <String>]`: 
+      - `[AdditionalDetails <String>]`: More details about the health check or the recommended action.
+Read-only.
+The additionalDetails property is deprecated and stopped returning data on January 31, 2024.
+Goind forward, use the additionalDetail property.
       - `[CorrelationId <String>]`: The unique identifier of the health check item-related activities.
 This identifier can be useful in troubleshooting.
       - `[DisplayName <String>]`: The display name for this health check item.
@@ -576,7 +605,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[HealthChecks <IMicrosoftGraphCloudPcOnPremisesConnectionHealthCheck- `[]`>]`: All checks that are done on the connection.
     - `[AdditionalDetail <String>]`: More details about the health check or the recommended action.
 Read-only.
-    - `[AdditionalDetails <String>]`: 
+    - `[AdditionalDetails <String>]`: More details about the health check or the recommended action.
+Read-only.
+The additionalDetails property is deprecated and stopped returning data on January 31, 2024.
+Goind forward, use the additionalDetail property.
     - `[CorrelationId <String>]`: The unique identifier of the health check item-related activities.
 This identifier can be useful in troubleshooting.
     - `[DisplayName <String>]`: The display name for this health check item.
@@ -599,7 +631,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[HealthChecks <IMicrosoftGraphCloudPcOnPremisesConnectionHealthCheck- `[]`>]`: All checks that are done on the connection.
     - `[AdditionalDetail <String>]`: More details about the health check or the recommended action.
 Read-only.
-    - `[AdditionalDetails <String>]`: 
+    - `[AdditionalDetails <String>]`: More details about the health check or the recommended action.
+Read-only.
+The additionalDetails property is deprecated and stopped returning data on January 31, 2024.
+Goind forward, use the additionalDetail property.
     - `[CorrelationId <String>]`: The unique identifier of the health check item-related activities.
 This identifier can be useful in troubleshooting.
     - `[DisplayName <String>]`: The display name for this health check item.
@@ -618,6 +653,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointonpremiseconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointonpremiseconnection)
 
+[https://learn.microsoft.com/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta)
 
 
 

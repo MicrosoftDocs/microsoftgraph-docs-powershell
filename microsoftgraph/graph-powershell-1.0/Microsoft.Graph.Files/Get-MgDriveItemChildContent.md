@@ -32,8 +32,6 @@ Get-MgDriveItemChildContent -InputObject <IFilesIdentity> [-Format <String>] -Ou
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -DriveId
@@ -232,6 +230,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemchildcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemchildcontent)
+
+
 
 
 

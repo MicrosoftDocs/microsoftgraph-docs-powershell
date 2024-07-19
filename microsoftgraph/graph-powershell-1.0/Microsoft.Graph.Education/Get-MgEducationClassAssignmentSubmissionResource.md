@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentSubmissionResource
 
 ## SYNOPSIS
-Get resources from education
+Retrieve the properties of a specific resource associated with a submission.
+Only teachers, students, and applications with application permissions can perform this operation.
+This resource is in the 'working' resource list and should be considered work in process by a student.
+This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
@@ -40,7 +43,10 @@ Get-MgEducationClassAssignmentSubmissionResource -InputObject <IEducationIdentit
 ```
 
 ## DESCRIPTION
-Get resources from education
+Retrieve the properties of a specific resource associated with a submission.
+Only teachers, students, and applications with application permissions can perform this operation.
+This resource is in the 'working' resource list and should be considered work in process by a student.
+This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
 ## EXAMPLES
 ### Example 1: Get an educationWordResource
@@ -418,6 +424,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionresource)
+
+[https://learn.microsoft.com/graph/api/educationsubmissionresource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmissionresource-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/educationsubmission-list-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-list-resources?view=graph-rest-1.0)
 
 
 

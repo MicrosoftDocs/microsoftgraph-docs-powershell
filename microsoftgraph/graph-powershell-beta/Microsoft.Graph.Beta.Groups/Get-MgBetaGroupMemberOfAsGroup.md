@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaGroupMemberOfAsGroup
 
 ## SYNOPSIS
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups and administrative units that the group is a direct member of.
+This operation is not transitive.
+Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberOfAsGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberOfAsGroup?view=graph-powershell-1.0)
@@ -38,7 +40,23 @@ Get-MgBetaGroupMemberOfAsGroup -InputObject <IGroupsIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups and administrative units that the group is a direct member of.
+This operation is not transitive.
+Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Get-MgBetaGroupMemberOfAsGroup -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'A')"  -ConsistencyLevel eventual 
+
+
+```
+This example shows how to use the Get-MgBetaGroupMemberOfAsGroup Cmdlet.
+
 
 ## PARAMETERS
 
@@ -368,6 +386,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberofasgroup)
 
+[https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-beta)
 
 
 

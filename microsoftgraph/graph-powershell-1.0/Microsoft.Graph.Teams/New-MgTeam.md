@@ -68,6 +68,32 @@ Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
+	displayName = "My Sample Team"
+	description = "My Sample Team’s Description"
+	members = @(
+		@{
+			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+			roles = @(
+			"owner"
+		)
+		"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('0040b377-61d8-43db-94f5-81374122dc7e')"
+	}
+)
+}
+
+New-MgTeam -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeam Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+$params = @{
+	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
 	visibility = "Private"
 	displayName = "Sample Engineering Team"
 	description = "This is a sample engineering team, used to showcase the range of properties supported by this API"
@@ -133,6 +159,9 @@ $params = @{
 		allowTeamMentions = $true
 		allowChannelMentions = $true
 	}
+	discoverySettings = @{
+		showInTeamsSearchAndSuggestions = $true
+	}
 	installedApps = @(
 		@{
 			"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
@@ -148,7 +177,7 @@ New-MgTeam -BodyParameter $params
 ```
 This example shows how to use the New-MgTeam Cmdlet.
 
-### Example 3: Code snippet
+### Example 4: Code snippet
 
 ```powershell
 
@@ -164,7 +193,7 @@ New-MgTeam -BodyParameter $params
 ```
 This example shows how to use the New-MgTeam Cmdlet.
 
-### Example 4: Code snippet
+### Example 5: Code snippet
 
 ```powershell
 
@@ -205,7 +234,7 @@ New-MgTeam -BodyParameter $params
 ```
 This example shows how to use the New-MgTeam Cmdlet.
 
-### Example 5: Code snippet
+### Example 6: Code snippet
 
 ```powershell
 
@@ -222,7 +251,7 @@ New-MgTeam -BodyParameter $params
 ```
 This example shows how to use the New-MgTeam Cmdlet.
 
-### Example 6: Code snippet
+### Example 7: Code snippet
 
 ```powershell
 
@@ -264,7 +293,7 @@ New-MgTeam -BodyParameter $params
 ```
 This example shows how to use the New-MgTeam Cmdlet.
 
-### Example 7: Code snippet
+### Example 8: Code snippet
 
 ```powershell
 
@@ -278,11 +307,11 @@ $params = @{
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
-		}
-	)
+			"owner"
+		)
+		"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+	}
+)
 }
 
 New-MgTeam -BodyParameter $params

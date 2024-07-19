@@ -8,7 +8,11 @@ schema: 2.0.0
 # New-MgGroupConversationThread
 
 ## SYNOPSIS
-Create new navigation property to threads for groups
+Create a new thread in the specified conversation.
+A thread and post are created as specified.
+Use reply thread to further post to that thread.
+Or, if you get the post ID, you can also reply to that post in that thread.
+Note: You can also start a new conversation by first creating a thread.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
@@ -48,12 +52,17 @@ New-MgGroupConversationThread -InputObject <IGroupsIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Create new navigation property to threads for groups
+Create a new thread in the specified conversation.
+A thread and post are created as specified.
+Use reply thread to further post to that thread.
+Or, if you get the post ID, you can also reply to that post in that thread.
+Note: You can also start a new conversation by first creating a thread.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
@@ -69,10 +78,9 @@ $params = @{
 }
 
 New-MgGroupConversationThread -GroupId $groupId -ConversationId $conversationId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgGroupConversationThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -618,6 +626,8 @@ Returned only on $select.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread)
+
+[https://learn.microsoft.com/graph/api/conversation-post-threads?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversation-post-threads?view=graph-rest-1.0)
 
 
 

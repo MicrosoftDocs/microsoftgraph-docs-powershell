@@ -40,6 +40,19 @@ Get-MgBetaPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProper
 ## DESCRIPTION
 Get jobs from print
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+Get-MgBetaPrintShareJob -PrinterShareId $printerShareId
+
+```
+This example shows how to use the Get-MgBetaPrintShareJob Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -319,6 +332,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharejob)
 
+[https://learn.microsoft.com/graph/api/printershare-list-jobs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printershare-list-jobs?view=graph-rest-beta)
 
 
 

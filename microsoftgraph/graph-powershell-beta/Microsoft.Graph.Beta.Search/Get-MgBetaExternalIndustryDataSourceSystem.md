@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataSourceSystem
 
 ## SYNOPSIS
-Set of source definitions that represents real-world external systems.
+Read the properties and relationships of a sourceSystemDefinition object.
 
 ## SYNTAX
 
@@ -35,7 +35,20 @@ Get-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Set of source definitions that represents real-world external systems.
+Read the properties and relationships of a sourceSystemDefinition object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalIndustryDataSourceSystem
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataSourceSystem Cmdlet.
+
 
 ## PARAMETERS
 
@@ -309,6 +322,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatasourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatasourcesystem)
 
+[https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-list?view=graph-rest-beta)
 
 
 

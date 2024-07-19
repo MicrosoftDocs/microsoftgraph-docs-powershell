@@ -8,7 +8,10 @@ schema: 2.0.0
 # Set-MgBetaTeamChannelFileFolderContent
 
 ## SYNOPSIS
-Update content for the navigation property filesFolder in teams
+The content stream, if the item represents a file.
+The content property will have a potentially breaking change in behavior in the future.
+It will stream content directly instead of redirecting.
+To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamChannelFileFolderContent?view=graph-powershell-1.0)
@@ -30,20 +33,10 @@ Set-MgBetaTeamChannelFileFolderContent -InputObject <ITeamsIdentity> [-Data <Str
 ```
 
 ## DESCRIPTION
-Update content for the navigation property filesFolder in teams
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
-```
-This example shows how to use the Set-MgBetaBetaTeamChannelFileFolderContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
+The content stream, if the item represents a file.
+The content property will have a potentially breaking change in behavior in the future.
+It will stream content directly instead of redirecting.
+To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
 ## PARAMETERS
 
@@ -280,6 +273,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamchannelfilefoldercontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamchannelfilefoldercontent)
+
+
 
 
 

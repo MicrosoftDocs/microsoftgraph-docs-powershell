@@ -47,8 +47,6 @@ Update-MgBetaPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the navigation property endpoints in print
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -308,6 +306,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintserviceendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintserviceendpoint)
+
+
 
 
 

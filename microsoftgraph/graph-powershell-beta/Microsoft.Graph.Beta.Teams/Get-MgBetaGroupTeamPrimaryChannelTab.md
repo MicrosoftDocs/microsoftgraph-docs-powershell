@@ -42,8 +42,6 @@ Get-MgBetaGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-ExpandPrope
 A collection of all the tabs in the channel.
 A navigation property.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -350,6 +348,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychanneltab)
+
+
+
+
 
 
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaTeamChannel
 
 ## SYNOPSIS
-The collection of channels and messages associated with the team.
+Retrieve the properties and relationships of a channel.
+This method supports federation.
+Only a user who is a member of the shared channel can retrieve channel information.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannel?view=graph-powershell-1.0)
@@ -38,7 +40,9 @@ Get-MgBetaTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-The collection of channels and messages associated with the team.
+Retrieve the properties and relationships of a channel.
+This method supports federation.
+Only a user who is a member of the shared channel can retrieve channel information.
 
 ## EXAMPLES
 ### Example 1: List all channels
@@ -370,6 +374,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannel)
+
+[https://learn.microsoft.com/graph/api/channel-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/channel-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-list?view=graph-rest-beta)
 
 
 

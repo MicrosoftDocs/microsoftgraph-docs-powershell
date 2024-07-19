@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgExternalConnection
 
 ## SYNOPSIS
-Create new navigation property to connections for external
+Create a new externalConnection object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnection?view=graph-powershell-beta)
@@ -36,7 +36,7 @@ New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExtern
 ```
 
 ## DESCRIPTION
-Create new navigation property to connections for external
+Create a new externalConnection object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -500,8 +500,7 @@ Maximum of 2 search result templates per connection.
       - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets.
 Maximum 16 characters.
 Only alphanumeric characters allowed.
-      - `[Layout <IMicrosoftGraphJson>]`: Json
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Layout <IAny>]`: The definition of the content's appearance, represented by an Adaptive Card, which is a JSON-serialized card object model.
       - `[Priority <Int32?>]`: Defines the priority of a display template.
 A display template with priority 1 is evaluated before a template with priority 4.
 Gaps in priority values are supported.
@@ -632,8 +631,7 @@ Maximum of 2 search result templates per connection.
     - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets.
 Maximum 16 characters.
 Only alphanumeric characters allowed.
-    - `[Layout <IMicrosoftGraphJson>]`: Json
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Layout <IAny>]`: The definition of the content's appearance, represented by an Adaptive Card, which is a JSON-serialized card object model.
     - `[Priority <Int32?>]`: Defines the priority of a display template.
 A display template with priority 1 is evaluated before a template with priority 4.
 Gaps in priority values are supported.
@@ -651,6 +649,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSearchAcronym
 
 ## SYNOPSIS
-Create new navigation property to acronyms for search
+Create a new acronym object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchAcronym?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ New-MgSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-ResponseHead
 ```
 
 ## DESCRIPTION
-Create new navigation property to acronyms for search
+Create a new acronym object.
 
 ## PARAMETERS
 
@@ -319,6 +319,8 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym)
+
+[https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-1.0)
 
 
 

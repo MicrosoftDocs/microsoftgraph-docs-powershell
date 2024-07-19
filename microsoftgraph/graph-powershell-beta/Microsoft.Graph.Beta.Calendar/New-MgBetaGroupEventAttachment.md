@@ -48,8 +48,6 @@ New-MgBetaGroupEventAttachment -InputObject <ICalendarIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to attachments for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -345,6 +343,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupeventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupeventattachment)
+
+
 
 
 

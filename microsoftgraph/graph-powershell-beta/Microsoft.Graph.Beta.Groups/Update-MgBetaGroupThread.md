@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaGroupThread
 
 ## SYNOPSIS
-Update the navigation property threads in groups
+Update a thread object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThread?view=graph-powershell-1.0)
@@ -48,27 +48,31 @@ Update-MgBetaGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Update the navigation property threads in groups
+Update a thread object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
 	originalStartTimeZone = "originalStartTimeZone-value"
 	originalEndTimeZone = "originalEndTimeZone-value"
+	responseStatus = @{
+		response = ""
+		time = "datetime-value"
+	}
 	uid = "iCalUId-value"
 	reminderMinutesBeforeStart = 
 	isReminderOn = $true
 }
 
 Update-MgBetaGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaGroupThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -425,8 +429,11 @@ Returned by default.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
   - `[Posts <IMicrosoftGraphPost- `[]`>]`: 
-    - `[Categories <String- `[]`>]`: 
-    - `[ChangeKey <String>]`: 
+    - `[Categories <String- `[]`>]`: The categories associated with the item.
+    - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -569,8 +576,11 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 POSTS <IMicrosoftGraphPost- `[]`>: .
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -663,6 +673,8 @@ Returned only on $select.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthread)
+
+[https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteOperation
 
 ## SYNOPSIS
-The collection of long-running operations on the site.
+Get the status of a rich long-running operation on a site or a list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteOperation?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-The collection of long-running operations on the site.
+Get the status of a rich long-running operation on a site or a list.
 
 ## PARAMETERS
 
@@ -349,6 +349,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteoperation)
+
+[https://learn.microsoft.com/graph/api/richlongrunningoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/richlongrunningoperation-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-1.0)
 
 
 

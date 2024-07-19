@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementTelecomExpenseManagementPartner
 
 ## SYNOPSIS
-Update the navigation property telecomExpenseManagementPartners in deviceManagement
+Update the properties of a telecomExpenseManagementPartner object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
@@ -46,12 +46,13 @@ Update-MgDeviceManagementTelecomExpenseManagementPartner -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Update the navigation property telecomExpenseManagementPartners in deviceManagement
+Update the properties of a telecomExpenseManagementPartner object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 $params = @{
@@ -64,10 +65,9 @@ $params = @{
 }
 
 Update-MgDeviceManagementTelecomExpenseManagementPartner -TelecomExpenseManagementPartnerId $telecomExpenseManagementPartnerId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgDeviceManagementTelecomExpenseManagementPartner Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -360,6 +360,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtelecomexpensemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtelecomexpensemanagementpartner)
+
+[https://learn.microsoft.com/graph/api/intune-tem-telecomexpensemanagementpartner-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-tem-telecomexpensemanagementpartner-update?view=graph-rest-1.0)
 
 
 

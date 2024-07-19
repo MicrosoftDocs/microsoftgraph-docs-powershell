@@ -49,8 +49,6 @@ New-MgBetaSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to relations for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -582,6 +580,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoregroupsetrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoregroupsetrelation)
+
+
 
 
 

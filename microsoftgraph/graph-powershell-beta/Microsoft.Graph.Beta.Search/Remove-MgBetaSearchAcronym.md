@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSearchAcronym
 
 ## SYNOPSIS
-Delete navigation property acronyms for search
+Delete an acronym object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Remove-MgSearchAcronym?view=graph-powershell-1.0)
@@ -30,16 +30,20 @@ Remove-MgBetaSearchAcronym -InputObject <ISearchIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete navigation property acronyms for search
+Delete an acronym object.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaSearchAcronym Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
+
 Remove-MgBetaSearchAcronym -AcronymId $acronymId
+
 ```
 This example shows how to use the Remove-MgBetaSearchAcronym Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -222,6 +226,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchacronym)
+
+[https://learn.microsoft.com/graph/api/search-acronym-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-acronym-delete?view=graph-rest-beta)
 
 
 

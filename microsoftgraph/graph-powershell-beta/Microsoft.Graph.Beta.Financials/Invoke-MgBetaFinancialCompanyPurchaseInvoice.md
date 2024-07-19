@@ -29,8 +29,6 @@ Invoke-MgBetaFinancialCompanyPurchaseInvoice -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Invoke action post
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -227,6 +225,8 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/invoke-mgbetafinancialcompanypurchaseinvoice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/invoke-mgbetafinancialcompanypurchaseinvoice)
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSiteListItem
 
 ## SYNOPSIS
-All items contained in the list.
+Returns the metadata for an item in a list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItem?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-All items contained in the list.
+Returns the metadata for an item in a list.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -385,6 +385,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitem)
+
+[https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-beta)
 
 
 

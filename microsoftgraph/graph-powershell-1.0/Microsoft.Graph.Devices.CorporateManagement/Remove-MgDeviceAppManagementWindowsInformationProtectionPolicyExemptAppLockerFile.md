@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile
 
 ## SYNOPSIS
-Delete navigation property exemptAppLockerFiles for deviceAppManagement
+Deletes a windowsInformationProtectionAppLockerFile.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFil
 ```
 
 ## DESCRIPTION
-Delete navigation property exemptAppLockerFiles for deviceAppManagement
+Deletes a windowsInformationProtectionAppLockerFile.
 
 ## PARAMETERS
 
@@ -244,6 +244,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile)
+
+[https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-delete?view=graph-rest-1.0)
 
 
 

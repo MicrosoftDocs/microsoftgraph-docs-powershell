@@ -32,8 +32,6 @@ Publish-MgSiteListContentType -InputObject <ISitesIdentity> [-ResponseHeadersVar
 ## DESCRIPTION
 Publishes a contentType present in the content type hub site.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -255,6 +253,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
+
+
 
 
 

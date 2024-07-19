@@ -42,8 +42,6 @@ Get-MgEducationUserClass -InputObject <IEducationIdentity> [-ExpandProperty <Str
 Classes to which the user belongs.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -322,6 +320,9 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserclass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserclass)
+
+
+
 
 
 

@@ -62,8 +62,6 @@ Get-MgGroupSiteTermStoreSetParentGroupSet -InputObject <ISitesIdentity> [-Expand
 ## DESCRIPTION
 All sets under the group in a term \[store\].
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -418,6 +416,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupset)
+
+
+
 
 
 

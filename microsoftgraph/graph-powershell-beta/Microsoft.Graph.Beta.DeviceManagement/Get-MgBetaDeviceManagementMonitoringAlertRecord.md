@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementMonitoringAlertRecord
 
 ## SYNOPSIS
-The collection of records of alert events.
+Read the properties and relationships of an alertRecord object.
 
 ## SYNTAX
 
@@ -35,7 +35,20 @@ Get-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManagementI
 ```
 
 ## DESCRIPTION
-The collection of records of alert events.
+Read the properties and relationships of an alertRecord object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Get-MgBetaDeviceManagementMonitoringAlertRecord
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementMonitoringAlertRecord Cmdlet.
+
 
 ## PARAMETERS
 
@@ -429,6 +442,9 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmonitoringalertrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmonitoringalertrecord)
 
+[https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-list?view=graph-rest-beta)
 
 
 

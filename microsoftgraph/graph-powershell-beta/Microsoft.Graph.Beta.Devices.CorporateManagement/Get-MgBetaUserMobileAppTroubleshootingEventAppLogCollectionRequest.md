@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-Indicates collection of App Log Upload Request.
+The collection property of AppLogUploadRequest.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ```
 
 ## DESCRIPTION
-Indicates collection of App Log Upload Request.
+The collection property of AppLogUploadRequest.
 
 ## PARAMETERS
 
@@ -389,6 +389,9 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermobileapptroubleshootingeventapplogcollectionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermobileapptroubleshootingeventapplogcollectionrequest)
+
+
+
 
 
 

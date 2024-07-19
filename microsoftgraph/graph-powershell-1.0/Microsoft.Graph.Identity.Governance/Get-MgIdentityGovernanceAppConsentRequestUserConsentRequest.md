@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest
 
 ## SYNOPSIS
-A list of pending user consent requests.
-Supports $filter (eq).
+Read the properties and relationships of a userConsentRequest object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-beta)
@@ -40,20 +39,19 @@ Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdent
 ```
 
 ## DESCRIPTION
-A list of pending user consent requests.
-Supports $filter (eq).
+Read the properties and relationships of a userConsentRequest object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId $appConsentRequestId -UserConsentRequestId $userConsentRequestId
+Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId $appConsentRequestId
+
 ```
 This example shows how to use the Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -388,6 +386,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceappconsentrequestuserconsentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceappconsentrequestuserconsentrequest)
+
+[https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-1.0)
 
 
 

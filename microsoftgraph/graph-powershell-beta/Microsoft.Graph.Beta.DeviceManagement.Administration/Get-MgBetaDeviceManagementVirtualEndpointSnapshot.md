@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointSnapshot
 
 ## SYNOPSIS
-Cloud PC snapshots.
+Read the properties and relationships of a cloudPcSnapshot object.
 
 ## SYNTAX
 
@@ -35,30 +35,20 @@ Get-MgBetaDeviceManagementVirtualEndpointSnapshot -InputObject <IDeviceManagemen
 ```
 
 ## DESCRIPTION
-Cloud PC snapshots.
+Read the properties and relationships of a cloudPcSnapshot object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointSnapshot Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointSnapshot -CloudPcSnapshotId $cloudPcSnapshotId
-```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSnapshot Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointSnapshot Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointSnapshot -CloudPcSnapshotId $cloudPcSnapshotId
-```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSnapshot Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaDeviceManagementVirtualEndpointSnapshot Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 Get-MgBetaDeviceManagementVirtualEndpointSnapshot
+
 ```
 This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSnapshot Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -367,6 +357,10 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointsnapshot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointsnapshot)
+
+[https://learn.microsoft.com/graph/api/cloudpcsnapshot-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcsnapshot-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-snapshots?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaRoleManagementExchangeCustomAppScope
 
 ## SYNOPSIS
-Update the navigation property customAppScopes in roleManagement
+Update an existing customAppScope object of an RBAC provider.
+Currently only the Exchange Online RBAC provider is supported.
 
 ## SYNTAX
 
@@ -43,7 +44,27 @@ Update-MgBetaRoleManagementExchangeCustomAppScope -InputObject <IDeviceManagemen
 ```
 
 ## DESCRIPTION
-Update the navigation property customAppScopes in roleManagement
+Update an existing customAppScope object of an RBAC provider.
+Currently only the Exchange Online RBAC provider is supported.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+$params = @{
+	customAttributes = @{
+		RecipientFilter = "City -eq 'Seattle'"
+	}
+}
+
+Update-MgBetaRoleManagementExchangeCustomAppScope -CustomAppScopeId $customAppScopeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaRoleManagementExchangeCustomAppScope Cmdlet.
+
 
 ## PARAMETERS
 
@@ -311,6 +332,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchangecustomappscope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchangecustomappscope)
 
+[https://learn.microsoft.com/graph/api/customappscope-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customappscope-update?view=graph-rest-beta)
 
 
 

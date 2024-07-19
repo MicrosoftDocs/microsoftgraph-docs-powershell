@@ -14,14 +14,14 @@ Get the number of the resource
 
 ### Get (Default)
 ```
-Get-MgBetaUserMessageMentionCount -MessageId <String> -UserId <String> [-Filter <String>]
+Get-MgBetaUserMessageMentionCount -MessageId <String> -UserId <String> [-Filter <String>] [-Search <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserMessageMentionCount -InputObject <IMailIdentity> [-Filter <String>]
+Get-MgBetaUserMessageMentionCount -InputObject <IMailIdentity> [-Filter <String>] [-Search <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
@@ -114,6 +114,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named

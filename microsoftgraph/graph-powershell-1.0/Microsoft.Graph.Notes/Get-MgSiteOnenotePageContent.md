@@ -32,8 +32,6 @@ Get-MgSiteOnenotePageContent -InputObject <INotesIdentity> -OutFile <String>
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -189,6 +187,8 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotepagecontent)
+
+
 
 
 

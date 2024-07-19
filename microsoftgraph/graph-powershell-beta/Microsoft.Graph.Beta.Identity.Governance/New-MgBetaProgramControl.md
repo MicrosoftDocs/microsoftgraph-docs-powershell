@@ -102,18 +102,23 @@ This links an access review to a program.
 Prior to making this request, the caller must have previously
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaProgramControl Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 $params = @{
-	ControlId = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"
-	ControlTypeId = "6e4f3d20-c5c3-407f-9695-8460952bcc68"
-	ProgramId = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"
+	controlId = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"
+	controlTypeId = "6e4f3d20-c5c3-407f-9695-8460952bcc68"
+	programId = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"
 }
+
 New-MgBetaProgramControl -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaProgramControl Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -472,7 +477,7 @@ Required on create.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Program <IMicrosoftGraphProgram>]`: program
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -600,7 +605,7 @@ OWNER `<IMicrosoftGraphUserIdentity>`: userIdentity
 This property is read-only.
   - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+  - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 PROGRAM `<IMicrosoftGraphProgram>`: program
@@ -622,7 +627,7 @@ Required on create.
 This property is read-only.
       - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-      - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+      - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[Program <IMicrosoftGraphProgram>]`: program
     - `[ProgramId <String>]`: The programId of the program this control is a part of.

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaEducationClassAssignmentDefault
 
 ## SYNOPSIS
-Update the navigation property assignmentDefaults in education
+Update the properties of an educationAssignmentDefaults object.
+Only teachers can update these settings.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
@@ -46,7 +47,8 @@ Update-MgBetaEducationClassAssignmentDefault -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property assignmentDefaults in education
+Update the properties of an educationAssignmentDefaults object.
+Only teachers can update these settings.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -336,6 +338,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault)
+
+[https://learn.microsoft.com/graph/api/educationassignmentdefaults-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignmentdefaults-update?view=graph-rest-beta)
 
 
 

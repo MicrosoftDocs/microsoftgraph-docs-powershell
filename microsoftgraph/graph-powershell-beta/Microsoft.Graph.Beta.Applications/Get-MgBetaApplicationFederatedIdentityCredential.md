@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaApplicationFederatedIdentityCredential
 
 ## SYNOPSIS
-Federated identities for applications.
-Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
+Read the properties and relationships of a federatedIdentityCredential object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0)
@@ -40,8 +39,10 @@ Get-MgBetaApplicationFederatedIdentityCredential -InputObject <IApplicationsIden
 ```
 
 ## DESCRIPTION
-Federated identities for applications.
-Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
+Read the properties and relationships of a federatedIdentityCredential object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedidentitycredential-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -333,6 +334,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[IPApplicationSegmentId <String>]`: The unique identifier of ipApplicationSegment
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
@@ -340,6 +342,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -353,6 +356,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredential)
+
+[https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/application-list-federatedidentitycredentials?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-list-federatedidentitycredentials?view=graph-rest-beta)
 
 
 

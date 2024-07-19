@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataInboundFlowYear
 
 ## SYNOPSIS
-The year that the data brought in via this flow applies to.
+The year associated to the data that this flow brings in.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaExternalIndustryDataInboundFlowYear -InputObject <ISearchIdentity> [-E
 ```
 
 ## DESCRIPTION
-The year that the data brought in via this flow applies to.
+The year associated to the data that this flow brings in.
 
 ## PARAMETERS
 

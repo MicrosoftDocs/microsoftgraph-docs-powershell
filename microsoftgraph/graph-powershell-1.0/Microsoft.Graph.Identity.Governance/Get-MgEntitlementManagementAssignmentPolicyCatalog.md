@@ -31,8 +31,6 @@ Get-MgEntitlementManagementAssignmentPolicyCatalog -InputObject <IIdentityGovern
 Catalog of the access package containing this policy.
 Read-only.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId
@@ -229,6 +227,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentpolicycatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentpolicycatalog)
+
+
 
 
 

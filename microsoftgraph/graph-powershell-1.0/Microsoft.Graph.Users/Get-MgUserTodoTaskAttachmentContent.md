@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserTodoTaskAttachmentContent
 
 ## SYNOPSIS
-Get media content for the navigation property attachments from users
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskAttachmentContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentContent?view=graph-powershell-beta)
@@ -30,7 +31,8 @@ Get-MgUserTodoTaskAttachmentContent -InputObject <IUsersIdentity> -OutFile <Stri
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property attachments from users
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 

@@ -37,6 +37,19 @@ Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSet -InputObject <ISearchI
 ## DESCRIPTION
 Get outboundProvisioningFlowSets from external
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSet
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSet Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -309,6 +322,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoutboundprovisioningflowset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoutboundprovisioningflowset)
 
+[https://learn.microsoft.com/graph/api/industrydata-industrydataroot-list-outboundprovisioningflowsets?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-industrydataroot-list-outboundprovisioningflowsets?view=graph-rest-beta)
 
 
 

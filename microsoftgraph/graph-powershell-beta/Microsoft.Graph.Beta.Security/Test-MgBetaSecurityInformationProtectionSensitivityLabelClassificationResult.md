@@ -38,8 +38,6 @@ This API is useful when a label should be set automatically based on classificat
 To evaluate based on classification results, provide the contentInfo, which includes existing content metadata key-value pairs, and classification results.
 The API returns an informationProtectionAction that contains one of more of the following:
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -233,6 +231,8 @@ Possible values are: file, email.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecurityinformationprotectionsensitivitylabelclassificationresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecurityinformationprotectionsensitivitylabelclassificationresult)
 
 [https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateclassificationresults?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateclassificationresults?view=graph-rest-beta)
+
+
 
 
 

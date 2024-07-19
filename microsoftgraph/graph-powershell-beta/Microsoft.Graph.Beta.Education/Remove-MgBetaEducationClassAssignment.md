@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgBetaEducationClassAssignment
 
 ## SYNOPSIS
-Delete navigation property assignments for education
+Delete an existing assignment.
+Only teachers within a class can delete assignments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignment?view=graph-powershell-1.0)
@@ -30,7 +31,8 @@ Remove-MgBetaEducationClassAssignment -InputObject <IEducationIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Delete navigation property assignments for education
+Delete an existing assignment.
+Only teachers within a class can delete assignments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -238,6 +240,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignment)
+
+[https://learn.microsoft.com/graph/api/educationassignment-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-delete?view=graph-rest-beta)
 
 
 

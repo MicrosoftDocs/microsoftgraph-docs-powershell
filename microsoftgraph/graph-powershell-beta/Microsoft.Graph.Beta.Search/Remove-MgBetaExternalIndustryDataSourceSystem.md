@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaExternalIndustryDataSourceSystem
 
 ## SYNOPSIS
-Delete navigation property sourceSystems for external
+Delete a sourceSystemDefinition object.
 
 ## SYNTAX
 
@@ -27,7 +27,20 @@ Remove-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity> [-I
 ```
 
 ## DESCRIPTION
-Delete navigation property sourceSystems for external
+Delete a sourceSystemDefinition object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Remove-MgBetaExternalIndustryDataSourceSystem -SourceSystemDefinitionId $sourceSystemDefinitionId
+
+```
+This example shows how to use the Remove-MgBetaExternalIndustryDataSourceSystem Cmdlet.
+
 
 ## PARAMETERS
 
@@ -211,6 +224,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatasourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatasourcesystem)
 
+[https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-delete?view=graph-rest-beta)
 
 
 

@@ -8,8 +8,10 @@ schema: 2.0.0
 # Get-MgBetaUserOnlineMeetingTranscriptMetadataContent
 
 ## SYNOPSIS
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+Retrieve a callTranscript object associated with a scheduled onlineMeeting.
+This API doesn't support getting call transcripts from channel meetings.
+Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
+Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingTranscriptMetadataContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingTranscriptMetadataContent?view=graph-powershell-1.0)
@@ -31,8 +33,23 @@ Get-MgBetaUserOnlineMeetingTranscriptMetadataContent -InputObject <ICloudCommuni
 ```
 
 ## DESCRIPTION
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+Retrieve a callTranscript object associated with a scheduled onlineMeeting.
+This API doesn't support getting call transcripts from channel meetings.
+Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
+Retrieving the content of the transcript returns the stream of text associated with the transcript.
+
+## EXAMPLES
+### Example 1: Get a callTranscript metadataContent
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+Get-MgBetaUserOnlineMeetingTranscriptMetadataContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
+
+```
+This example will get a calltranscript metadatacontent
+
 
 ## PARAMETERS
 
@@ -213,6 +230,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptmetadatacontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptmetadatacontent)
 
+[https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-beta)
 
 
 

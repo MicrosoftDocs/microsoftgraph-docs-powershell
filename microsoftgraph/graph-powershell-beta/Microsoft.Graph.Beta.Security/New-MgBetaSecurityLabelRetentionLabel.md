@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgBetaSecurityLabelRetentionLabel
 
 ## SYNOPSIS
-Create new navigation property to retentionLabels for security
+Create a new retentionLabel object.
+To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelRetentionLabel?view=graph-powershell-1.0)
@@ -37,7 +38,8 @@ New-MgBetaSecurityLabelRetentionLabel -BodyParameter <IMicrosoftGraphSecurityRet
 ```
 
 ## DESCRIPTION
-Create new navigation property to retentionLabels for security
+Create a new retentionLabel object.
+To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -532,7 +534,7 @@ Read-only.
       - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
+      - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
 Read-only.
@@ -542,8 +544,8 @@ Read-only.
     - `[Citation <IMicrosoftGraphSecurityFilePlanCitation>]`: filePlanCitation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
-      - `[CitationJurisdiction <String>]`: 
-      - `[CitationUrl <String>]`: 
+      - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the filePlanCitation.
+      - `[CitationUrl <String>]`: Represents the URL to the published filePlanCitation.
     - `[CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>]`: citationTemplate
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -582,7 +584,7 @@ Read-only.
 Read-only.
     - `[Name <String>]`: Name representing each stage within a collection.
     - `[ReviewersEmailAddresses <String- `[]`>]`: A collection of reviewers at each stage.
-    - `[StageNumber <String>]`: The sequence number for each stage of the disposition review.
+    - `[StageNumber <String>]`: The unique sequence number for each stage of the disposition review.
   - `[IsInUse <Boolean?>]`: Specifies whether the label is currently being used.
   - `[LabelToBeApplied <String>]`: Specifies the replacement label to be applied automatically after the retention period of the current label ends.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -650,7 +652,7 @@ Read-only.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
+    - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
 Read-only.
@@ -660,8 +662,8 @@ Read-only.
   - `[Citation <IMicrosoftGraphSecurityFilePlanCitation>]`: filePlanCitation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
-    - `[CitationJurisdiction <String>]`: 
-    - `[CitationUrl <String>]`: 
+    - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the filePlanCitation.
+    - `[CitationUrl <String>]`: Represents the URL to the published filePlanCitation.
   - `[CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>]`: citationTemplate
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -700,7 +702,7 @@ DISPOSITIONREVIEWSTAGES <IMicrosoftGraphSecurityDispositionReviewStage- `[]`>: W
 Read-only.
   - `[Name <String>]`: Name representing each stage within a collection.
   - `[ReviewersEmailAddresses <String- `[]`>]`: A collection of reviewers at each stage.
-  - `[StageNumber <String>]`: The sequence number for each stage of the disposition review.
+  - `[StageNumber <String>]`: The unique sequence number for each stage of the disposition review.
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -736,6 +738,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelretentionlabel)
+
+[https://learn.microsoft.com/graph/api/security-labelsroot-post-retentionlabel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-labelsroot-post-retentionlabel?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityThreatIntelligenceArticleIndicator
 
 ## SYNOPSIS
-Refers to indicators of threat or compromise highlighted in an article.Note: List retrieval is not yet supported.
+Read the properties and relationships of an articleIndicator object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
@@ -60,7 +60,7 @@ Get-MgSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIdentity
 ```
 
 ## DESCRIPTION
-Refers to indicators of threat or compromise highlighted in an article.Note: List retrieval is not yet supported.
+Read the properties and relationships of an articleIndicator object.
 
 ## PARAMETERS
 
@@ -346,6 +346,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -387,6 +388,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticleindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticleindicator)
+
+[https://learn.microsoft.com/graph/api/security-articleindicator-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-articleindicator-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-article-list-indicators?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-article-list-indicators?view=graph-rest-1.0)
 
 
 

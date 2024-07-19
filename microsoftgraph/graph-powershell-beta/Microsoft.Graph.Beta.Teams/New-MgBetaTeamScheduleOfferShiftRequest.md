@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaTeamScheduleOfferShiftRequest
 
 ## SYNOPSIS
-Create new navigation property to offerShiftRequests for teams
+Create an instance of an offerShiftRequest.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
@@ -50,7 +50,7 @@ New-MgBetaTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to offerShiftRequests for teams
+Create an instance of an offerShiftRequest.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -472,6 +472,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleoffershiftrequest)
+
+[https://learn.microsoft.com/graph/api/offershiftrequest-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/offershiftrequest-post?view=graph-rest-beta)
 
 
 

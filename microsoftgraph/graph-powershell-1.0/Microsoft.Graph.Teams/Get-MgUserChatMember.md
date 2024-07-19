@@ -42,8 +42,6 @@ Get-MgUserChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 A collection of all the members in the chat.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -357,6 +355,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmember)
+
+
+
 
 
 

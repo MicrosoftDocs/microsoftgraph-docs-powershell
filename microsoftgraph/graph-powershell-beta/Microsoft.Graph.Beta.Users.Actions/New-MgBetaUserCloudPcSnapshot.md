@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserCloudPcSnapshot
 
 ## SYNOPSIS
-Invoke action createSnapshot
+Create a snapshot for a specific Cloud PC device.
 
 ## SYNTAX
 
@@ -27,7 +27,10 @@ New-MgBetaUserCloudPcSnapshot -InputObject <IUsersActionsIdentity> [-ResponseHea
 ```
 
 ## DESCRIPTION
-Invoke action createSnapshot
+Create a snapshot for a specific Cloud PC device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-createsnapshot-permissions.md)]
 
 ## PARAMETERS
 
@@ -230,6 +233,9 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausercloudpcsnapshot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausercloudpcsnapshot)
+
+[https://learn.microsoft.com/graph/api/cloudpc-createsnapshot?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-createsnapshot?view=graph-rest-beta)
+
 
 
 

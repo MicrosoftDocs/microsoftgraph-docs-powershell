@@ -32,8 +32,6 @@ Unpublish-MgSiteListContentType -InputObject <ISitesIdentity> [-ResponseHeadersV
 ## DESCRIPTION
 Unpublish a contentType from a content type hub site.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -255,6 +253,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
+
+
 
 
 

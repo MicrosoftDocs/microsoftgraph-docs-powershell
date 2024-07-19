@@ -80,8 +80,6 @@ New-MgSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to relations for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -620,6 +618,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupsetrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupsetrelation)
+
+
 
 
 

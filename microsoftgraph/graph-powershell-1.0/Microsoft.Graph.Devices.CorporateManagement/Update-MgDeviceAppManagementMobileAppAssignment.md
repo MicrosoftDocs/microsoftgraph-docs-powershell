@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementMobileAppAssignment
 
 ## SYNOPSIS
-Update the navigation property assignments in deviceAppManagement
+Update the properties of a mobileAppAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppAssignment?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Update the navigation property assignments in deviceAppManagement
+Update the properties of a mobileAppAssignment object.
 
 ## PARAMETERS
 
@@ -331,6 +331,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappassignment)
+
+[https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef
 
 ## SYNOPSIS
-Delete ref of navigation property members for directory
+Use this API to remove a member (user, group, or device) from an administrative unit.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property members for directory
+Use this API to remove a member (user, group, or device) from an administrative unit.
 
 ## PARAMETERS
 
@@ -231,6 +231,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitmemberdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitmemberdirectoryobjectbyref)
+
+[https://learn.microsoft.com/graph/api/administrativeunit-delete-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-delete-members?view=graph-rest-1.0)
 
 
 

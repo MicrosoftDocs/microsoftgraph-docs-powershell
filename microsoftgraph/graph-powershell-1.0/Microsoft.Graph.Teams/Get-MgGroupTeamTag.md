@@ -40,8 +40,6 @@ Get-MgGroupTeamTag -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 The tags associated with the team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -340,6 +338,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamtag)
+
+
+
 
 
 

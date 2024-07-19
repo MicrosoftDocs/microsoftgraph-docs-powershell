@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgEntitlementManagementAssignmentRequest
 
 ## SYNOPSIS
-Delete navigation property assignmentRequests for identityGovernance
+Delete an accessPackageAssignmentRequest object.
+This request can be made to remove a denied or completed request.
+You cannot delete an access package assignment request if it has any accessPackageAssignment objects.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
@@ -30,19 +32,21 @@ Remove-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanc
 ```
 
 ## DESCRIPTION
-Delete navigation property assignmentRequests for identityGovernance
+Delete an accessPackageAssignmentRequest object.
+This request can be made to remove a denied or completed request.
+You cannot delete an access package assignment request if it has any accessPackageAssignment objects.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
 Remove-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId
+
 ```
 This example shows how to use the Remove-MgEntitlementManagementAssignmentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -272,6 +276,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementassignmentrequest)
+
+[https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-1.0)
 
 
 

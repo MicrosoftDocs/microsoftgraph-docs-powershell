@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
 
 ## SYNOPSIS
-The eligibility schedules to activate a just-in-time access.
+Read the properties and relationships of a privilegedAccessGroupEligibilitySchedule object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule?view=graph-powershell-1.0)
@@ -39,7 +39,31 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule -InputObjec
 ```
 
 ## DESCRIPTION
-The eligibility schedules to activate a just-in-time access.
+Read the properties and relationships of a privilegedAccessGroupEligibilitySchedule object.
+
+## EXAMPLES
+### Example 1: Retrieve all eligibility schedules scoped to a group and a principal
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule -Filter "groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'" 
+
+```
+This example will retrieve all eligibility schedules scoped to a group and a principal
+
+### Example 2: Retrieve specific properties of all eligibility schedules scoped to a group and a principal
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule -Filter "groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'" -Property "accessId,principalId,groupId" 
+
+```
+This example will retrieve specific properties of all eligibility schedules scoped to a group and a principal
+
 
 ## PARAMETERS
 
@@ -391,6 +415,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedule)
 
+[https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedule-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedule-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityschedules?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityschedules?view=graph-rest-beta)
 
 
 

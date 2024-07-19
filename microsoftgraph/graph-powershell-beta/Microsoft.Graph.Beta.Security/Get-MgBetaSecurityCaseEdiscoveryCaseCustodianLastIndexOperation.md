@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation
 
 ## SYNOPSIS
-Operation entity that represents the latest indexing for the custodian.
+Get a list of the ediscoveryIndexOperation associated with an ediscoveryCustodian.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -InputObject <IS
 ```
 
 ## DESCRIPTION
-Operation entity that represents the latest indexing for the custodian.
+Get a list of the ediscoveryIndexOperation associated with an ediscoveryCustodian.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -237,6 +237,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -247,6 +248,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -272,6 +274,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasecustodianlastindexoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasecustodianlastindexoperation)
+
+[https://learn.microsoft.com/graph/api/security-ediscoverycustodian-list-lastindexoperation?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-list-lastindexoperation?view=graph-rest-beta)
 
 
 

@@ -40,8 +40,6 @@ Get-MgGroupSiteListContentType -InputObject <ISitesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The collection of content types present in this list.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -381,6 +379,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistcontenttype)
+
+
+
 
 
 

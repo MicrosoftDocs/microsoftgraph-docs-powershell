@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataInboundFlowDataConnector
 
 ## SYNOPSIS
-The data connector in the context of which this flow pulls in data from a source system.
+The data connector to the source system from where this flow gets its data.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaExternalIndustryDataInboundFlowDataConnector -InputObject <ISearchIden
 ```
 
 ## DESCRIPTION
-The data connector in the context of which this flow pulls in data from a source system.
+The data connector to the source system from where this flow gets its data.
 
 ## PARAMETERS
 

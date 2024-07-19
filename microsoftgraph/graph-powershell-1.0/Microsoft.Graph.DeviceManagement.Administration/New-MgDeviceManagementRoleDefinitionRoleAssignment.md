@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementRoleDefinitionRoleAssignment
 
 ## SYNOPSIS
-Create new navigation property to roleAssignments for deviceManagement
+Create a new roleAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ New-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManageme
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleAssignments for deviceManagement
+Create a new roleAssignment object.
 
 ## PARAMETERS
 
@@ -390,6 +390,8 @@ These must match the actionName that is defined as part of the rolePermission.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinitionroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinitionroleassignment)
+
+[https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-create?view=graph-rest-1.0)
 
 
 

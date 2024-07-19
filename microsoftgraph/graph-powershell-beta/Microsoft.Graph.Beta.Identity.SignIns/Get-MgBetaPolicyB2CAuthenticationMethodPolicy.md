@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyB2CAuthenticationMethodPolicy
 
 ## SYNOPSIS
-The Azure AD B2C policies that define how end users register via local accounts.
+Read the properties of a b2cAuthenticationMethodsPolicy object.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgBetaPolicyB2CAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-The Azure AD B2C policies that define how end users register via local accounts.
+Read the properties of a b2cAuthenticationMethodsPolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -125,6 +125,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyb2cauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyb2cauthenticationmethodpolicy)
+
+[https://learn.microsoft.com/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta)
 
 
 

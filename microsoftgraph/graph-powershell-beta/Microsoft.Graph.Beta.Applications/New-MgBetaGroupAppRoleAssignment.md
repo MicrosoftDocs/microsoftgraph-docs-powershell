@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgBetaGroupAppRoleAssignment
 
 ## SYNOPSIS
-Create new navigation property to appRoleAssignments for groups
+Use this API to assign an app role to a security group.
+All direct members of the group will be considered assigned.
+Security groups with dynamic memberships are supported.
+To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/New-MgGroupAppRoleAssignment?view=graph-powershell-1.0)
@@ -48,7 +51,10 @@ New-MgBetaGroupAppRoleAssignment -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to appRoleAssignments for groups
+Use this API to assign an app role to a security group.
+All direct members of the group will be considered assigned.
+Security groups with dynamic memberships are supported.
+To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
 
 ## EXAMPLES
 ### Example 1: Assign an app role to a group
@@ -423,6 +429,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[IPApplicationSegmentId <String>]`: The unique identifier of ipApplicationSegment
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
@@ -430,6 +437,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -443,6 +451,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetagroupapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetagroupapproleassignment)
+
+[https://learn.microsoft.com/graph/api/group-post-approleassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-post-approleassignments?view=graph-rest-beta)
 
 
 

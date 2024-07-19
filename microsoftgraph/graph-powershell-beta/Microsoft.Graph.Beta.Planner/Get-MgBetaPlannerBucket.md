@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPlannerBucket
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Returns a collection of the specified buckets
+Retrieve the properties and relationships of a plannerBucket object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerBucket?view=graph-powershell-1.0)
@@ -40,9 +38,7 @@ Get-MgBetaPlannerBucket -InputObject <IPlannerIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Returns a collection of the specified buckets
+Retrieve the properties and relationships of a plannerBucket object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -315,6 +311,10 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucket)
+
+[https://learn.microsoft.com/graph/api/plannerbucket-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerbucket-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/planner-list-buckets?view=graph-rest-beta](https://learn.microsoft.com/graph/api/planner-list-buckets?view=graph-rest-beta)
 
 
 

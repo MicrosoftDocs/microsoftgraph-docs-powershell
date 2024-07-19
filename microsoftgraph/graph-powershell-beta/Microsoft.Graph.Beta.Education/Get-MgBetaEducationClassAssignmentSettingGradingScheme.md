@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEducationClassAssignmentSettingGradingScheme
 
 ## SYNOPSIS
-Get gradingSchemes from education
+Read the properties and relationships of an educationGradingScheme object.
 
 ## SYNTAX
 
@@ -36,7 +36,20 @@ Get-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducationI
 ```
 
 ## DESCRIPTION
-Get gradingSchemes from education
+Read the properties and relationships of an educationGradingScheme object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationClassAssignmentSettingGradingScheme -EducationClassId $educationClassId -EducationGradingSchemeId $educationGradingSchemeId
+
+```
+This example shows how to use the Get-MgBetaEducationClassAssignmentSettingGradingScheme Cmdlet.
+
 
 ## PARAMETERS
 
@@ -322,6 +335,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsettinggradingscheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsettinggradingscheme)
 
+[https://learn.microsoft.com/graph/api/educationgradingscheme-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationgradingscheme-get?view=graph-rest-beta)
 
 
 

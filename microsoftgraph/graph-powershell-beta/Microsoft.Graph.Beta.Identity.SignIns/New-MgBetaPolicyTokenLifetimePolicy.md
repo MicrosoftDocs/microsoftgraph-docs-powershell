@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyTokenLifetimePolicy
 
 ## SYNOPSIS
-Create new navigation property to tokenLifetimePolicies for policies
+Create a new tokenLifetimePolicy object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
@@ -30,27 +30,27 @@ New-MgBetaPolicyTokenLifetimePolicy -BodyParameter <Hashtable> [-ResponseHeaders
 ```
 
 ## DESCRIPTION
-Create new navigation property to tokenLifetimePolicies for policies
+Create a new tokenLifetimePolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	definition = @(
-		'{"TokenLifetimePolicy":{"Version":1,"AccessTokenLifetime":"8:00:00"}}'
-	)
-	displayName = "Contoso token lifetime policy"
-	isOrganizationDefault = $true
+	'{"TokenLifetimePolicy":{"Version":1,"AccessTokenLifetime":"8:00:00"}}'
+)
+displayName = "Contoso token lifetime policy"
+isOrganizationDefault = $true
 }
 
 New-MgBetaPolicyTokenLifetimePolicy -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaPolicyTokenLifetimePolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -300,6 +300,8 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenlifetimepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenlifetimepolicy)
+
+[https://learn.microsoft.com/graph/api/tokenlifetimepolicy-post-tokenlifetimepolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-post-tokenlifetimepolicies?view=graph-rest-beta)
 
 
 

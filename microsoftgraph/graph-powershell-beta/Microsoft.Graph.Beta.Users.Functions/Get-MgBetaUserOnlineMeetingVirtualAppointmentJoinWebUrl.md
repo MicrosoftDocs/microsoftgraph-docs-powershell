@@ -39,6 +39,20 @@ With Teams Premium, you can configure a custom lobby room experience for attende
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualappointment-getvirtualappointmentjoinweburl-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Functions
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl -UserId $userId -OnlineMeetingId $onlineMeetingId
+
+```
+This example shows how to use the Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -193,7 +207,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronlinemeetingvirtualappointmentjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronlinemeetingvirtualappointmentjoinweburl)
 
 [https://learn.microsoft.com/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-beta)
-
 
 
 

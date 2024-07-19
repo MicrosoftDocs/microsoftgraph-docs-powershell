@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaEducationSynchronizationProfileStatus
 
 ## SYNOPSIS
-The synchronization status.
+Get the status of a specific school data synchronization profile in the tenant.
+The response will indicate the status of the sync.
 
 ## SYNTAX
 
@@ -27,7 +28,8 @@ Get-MgBetaEducationSynchronizationProfileStatus -InputObject <IEducationIdentity
 ```
 
 ## DESCRIPTION
-The synchronization status.
+Get the status of a specific school data synchronization profile in the tenant.
+The response will indicate the status of the sync.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -189,6 +191,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofilestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofilestatus)
+
+[https://learn.microsoft.com/graph/api/educationsynchronizationprofilestatus-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsynchronizationprofilestatus-get?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ## SYNOPSIS
-The policy that represents the security defaults that protect against common attacks.
+Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-1.0)
@@ -22,7 +22,7 @@ Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-The policy that represents the security defaults that protect against common attacks.
+Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -128,6 +128,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyidentitysecuritydefaultenforcementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyidentitysecuritydefaultenforcementpolicy)
+
+[https://learn.microsoft.com/graph/api/identitysecuritydefaultsenforcementpolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitysecuritydefaultsenforcementpolicy-get?view=graph-rest-beta)
 
 
 

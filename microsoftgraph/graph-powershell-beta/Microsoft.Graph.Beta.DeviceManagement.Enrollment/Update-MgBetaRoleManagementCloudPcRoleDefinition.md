@@ -8,7 +8,10 @@ schema: 2.0.0
 # Update-MgBetaRoleManagementCloudPcRoleDefinition
 
 ## SYNOPSIS
-Update the navigation property roleDefinitions in roleManagement
+Update the properties of a unifiedRoleDefinition object for an RBAC provider.
+You cannot update built-in roles.
+This feature requires a Microsoft Entra ID P1 or P2 license.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
 
 ## SYNTAX
 
@@ -49,7 +52,35 @@ Update-MgBetaRoleManagementCloudPcRoleDefinition -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Update the navigation property roleDefinitions in roleManagement
+Update the properties of a unifiedRoleDefinition object for an RBAC provider.
+You cannot update built-in roles.
+This feature requires a Microsoft Entra ID P1 or P2 license.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+$params = @{
+	description = "Update basic properties and permission of application registrations"
+### Example 2
+	rolePermissions = @(
+		@{
+			allowedResourceActions = @(
+			"Microsoft.CloudPC/CloudPCs/Read"
+		"Microsoft.CloudPC/CloudPCs/Reprovision"
+	)
+}
+)
+}
+
+Update-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
 
 ## PARAMETERS
 
@@ -541,6 +572,7 @@ Not supported for custom roles.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementcloudpcroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementcloudpcroledefinition)
 
+[https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-beta)
 
 
 

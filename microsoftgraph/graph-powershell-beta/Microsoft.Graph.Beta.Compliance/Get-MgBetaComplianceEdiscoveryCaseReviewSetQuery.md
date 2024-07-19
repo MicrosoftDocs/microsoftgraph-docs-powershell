@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaComplianceEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Get queries from compliance
+Retrieve the properties and relationships of an eDiscovery reviewSetQuery object.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIdenti
 ```
 
 ## DESCRIPTION
-Get queries from compliance
+Retrieve the properties and relationships of an eDiscovery reviewSetQuery object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -348,6 +348,10 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasereviewsetquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasereviewsetquery)
+
+[https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-list?view=graph-rest-beta)
 
 
 

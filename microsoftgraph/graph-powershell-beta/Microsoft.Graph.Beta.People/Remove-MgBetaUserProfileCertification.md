@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfileCertification
 
 ## SYNOPSIS
-Delete navigation property certifications for users
+Deletes a personCertification object from a user's profile.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfileCertification -InputObject <IPeopleIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete navigation property certifications for users
+Deletes a personCertification object from a user's profile.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -239,6 +239,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilecertification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilecertification)
+
+[https://learn.microsoft.com/graph/api/personcertification-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/personcertification-delete?view=graph-rest-beta)
 
 
 

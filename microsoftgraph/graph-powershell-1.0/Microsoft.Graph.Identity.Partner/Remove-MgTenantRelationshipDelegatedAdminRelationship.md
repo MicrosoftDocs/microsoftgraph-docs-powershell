@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgTenantRelationshipDelegatedAdminRelationship
 
 ## SYNOPSIS
-Delete navigation property delegatedAdminRelationships for tenantRelationships
+Delete a delegatedAdminRelationship object.
+A relationship can only be deleted if it's in the 'created' status.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Remove-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
@@ -30,7 +31,8 @@ Remove-MgTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentityPar
 ```
 
 ## DESCRIPTION
-Delete navigation property delegatedAdminRelationships for tenantRelationships
+Delete a delegatedAdminRelationship object.
+A relationship can only be deleted if it's in the 'created' status.
 
 ## PARAMETERS
 
@@ -198,6 +200,8 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationship)
+
+[https://learn.microsoft.com/graph/api/delegatedadminrelationship-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationship-delete?view=graph-rest-1.0)
 
 
 

@@ -23,6 +23,21 @@ Remove-MgBetaTeamworkDeletedTeamChannelMessageHostedContent -ChannelId <String>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Delete1
+```
+Remove-MgBetaTeamworkDeletedTeamChannelMessageHostedContent -ChannelId <String>
+ -ChatMessageHostedContentId <String> -ChatMessageId <String> -DeletedTeamId <String> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgBetaTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### DeleteViaIdentity
 ```
 Remove-MgBetaTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> [-IfMatch <String>]
@@ -40,7 +55,7 @@ The unique identifier of channel
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -55,7 +70,7 @@ The unique identifier of chatMessageHostedContent
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -70,7 +85,7 @@ The unique identifier of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -85,7 +100,7 @@ The unique identifier of deletedTeam
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -131,7 +146,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -279,6 +294,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchannelmessagehostedcontent)
+
 
 
 

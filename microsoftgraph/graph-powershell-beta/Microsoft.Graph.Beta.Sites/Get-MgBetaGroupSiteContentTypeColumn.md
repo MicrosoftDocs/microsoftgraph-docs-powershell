@@ -40,8 +40,6 @@ Get-MgBetaGroupSiteContentTypeColumn -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 The collection of column definitions for this content type.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -389,6 +387,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttypecolumn)
+
+
+
+
 
 
 

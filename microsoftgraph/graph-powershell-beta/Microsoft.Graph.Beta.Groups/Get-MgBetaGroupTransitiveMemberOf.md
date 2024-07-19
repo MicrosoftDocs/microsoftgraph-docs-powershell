@@ -43,13 +43,17 @@ The groups a group is a member of, either directly or through nested membership.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaGroupTransitiveMemberOf Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 Get-MgBetaGroupTransitiveMemberOf -GroupId $groupId
+
 ```
 This example shows how to use the Get-MgBetaGroupTransitiveMemberOf Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -378,6 +382,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberof)
+
+[https://learn.microsoft.com/graph/api/group-list-transitivememberof?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-transitivememberof?view=graph-rest-beta)
 
 
 

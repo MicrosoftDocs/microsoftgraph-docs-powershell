@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityAttackSimulation
 
 ## SYNOPSIS
-Create new navigation property to simulations for security
+Create an attack simulation campaign for a tenant.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulation?view=graph-powershell-1.0)
@@ -40,7 +40,7 @@ New-MgBetaSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation>
 ```
 
 ## DESCRIPTION
-Create new navigation property to simulations for security
+Create an attack simulation campaign for a tenant.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -734,7 +734,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Description <String>]`: Description of the attack simulation and training campaign payload.
     - `[Detail <IMicrosoftGraphPayloadDetail>]`: payloadDetail
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: Payload coachmark details.
+      - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: 
         - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Length <Int32?>]`: Length of coachmark.
@@ -974,7 +974,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Description <String>]`: Description of the attack simulation and training campaign payload.
   - `[Detail <IMicrosoftGraphPayloadDetail>]`: payloadDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: Payload coachmark details.
+    - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: 
       - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Length <Int32?>]`: Length of coachmark.
@@ -1070,6 +1070,8 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation)
+
+[https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-beta](https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-beta)
 
 
 

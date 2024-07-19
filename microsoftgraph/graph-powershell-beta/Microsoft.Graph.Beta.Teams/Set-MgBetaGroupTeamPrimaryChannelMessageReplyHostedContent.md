@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent
 
 ## SYNOPSIS
-Update media content for the navigation property hostedContents in groups
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgGroupTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-1.0)
@@ -31,7 +32,8 @@ Set-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsI
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property hostedContents in groups
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 

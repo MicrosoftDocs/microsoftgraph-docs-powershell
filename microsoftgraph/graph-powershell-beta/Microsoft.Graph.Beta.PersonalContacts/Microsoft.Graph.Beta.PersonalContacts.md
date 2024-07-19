@@ -119,10 +119,19 @@ Locale: en-US
 ### [Remove-MgBetaUserContactFolderChildFolderContactExtension](Remove-MgBetaUserContactFolderChildFolderContactExtension.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserContactFolderChildFolderContactPhotoContent](Remove-MgBetaUserContactFolderChildFolderContactPhotoContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserContactFolderContact](Remove-MgBetaUserContactFolderContact.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserContactFolderContactExtension](Remove-MgBetaUserContactFolderContactExtension.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserContactFolderContactPhotoContent](Remove-MgBetaUserContactFolderContactPhotoContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserContactPhotoContent](Remove-MgBetaUserContactPhotoContent.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaUserContactFolderChildFolderContactPhotoContent](Set-MgBetaUserContactFolderChildFolderContactPhotoContent.md)

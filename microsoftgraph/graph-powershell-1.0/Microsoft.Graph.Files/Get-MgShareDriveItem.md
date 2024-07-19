@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgShareDriveItem
 
 ## SYNOPSIS
-Used to access the underlying driveItem
+Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
+To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareDriveItem?view=graph-powershell-beta)
@@ -30,30 +31,31 @@ Get-MgShareDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Used to access the underlying driveItem
+Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
+To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Files
 
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
+
 ```
 This example shows how to use the Get-MgShareDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 2: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Files
 
-Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
+Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children" 
+
 ```
 This example shows how to use the Get-MgShareDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -209,6 +211,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitem)
+
+[https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0)
 
 
 

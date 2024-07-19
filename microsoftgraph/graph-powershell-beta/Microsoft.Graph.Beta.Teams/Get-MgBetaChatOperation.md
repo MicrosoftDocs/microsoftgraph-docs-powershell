@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaChatOperation
 
 ## SYNOPSIS
-A collection of all the Teams async operations that ran or are running on the chat.
-Nullable.
+Get the specified Teams async operation that ran or is running on a specific resource.
 
 ## SYNTAX
 
@@ -36,24 +35,20 @@ Get-MgBetaChatOperation -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-A collection of all the Teams async operations that ran or are running on the chat.
-Nullable.
+Get the specified Teams async operation that ran or is running on a specific resource.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaChatOperation Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaChatOperation -ChatId $chatId -TeamsAsyncOperationId $teamsAsyncOperationId
-```
-This example shows how to use the Get-MgBetaChatOperation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaChatOperation Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaChatOperation -ChatId $chatId
+
 ```
 This example shows how to use the Get-MgBetaChatOperation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -361,6 +356,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatoperation)
+
+[https://learn.microsoft.com/graph/api/teamsasyncoperation-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamsasyncoperation-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/chat-list-operations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-list-operations?view=graph-rest-beta)
 
 
 

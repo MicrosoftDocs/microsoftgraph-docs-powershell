@@ -296,6 +296,9 @@ Locale: en-US
 ### [Remove-MgBetaSearchQna](Remove-MgBetaSearchQna.md)
 {{ Fill in the Description }}
 
+### [Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow](Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaExternalConnectionItem](Set-MgBetaExternalConnectionItem.md)
 {{ Fill in the Description }}
 

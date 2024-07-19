@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaIdentityProvider
 
 ## SYNOPSIS
-Represents entry point for identity provider base.
+Get the properties and relationships of the specified identity provider configured in the tenant.
+Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Microsoft Entra ID.
+In Azure AD B2C, this operation can currently get a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityProvider?view=graph-powershell-1.0)
@@ -38,7 +40,9 @@ Get-MgBetaIdentityProvider -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Represents entry point for identity provider base.
+Get the properties and relationships of the specified identity provider configured in the tenant.
+Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Microsoft Entra ID.
+In Azure AD B2C, this operation can currently get a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
 ## EXAMPLES
 ### Example 1: List all identity provider resources configured in an Azure AD tenant
@@ -360,6 +364,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -379,6 +384,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -391,6 +397,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityprovider)
+
+[https://learn.microsoft.com/graph/api/identityproviderbase-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityproviderbase-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/identitycontainer-list-identityproviders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitycontainer-list-identityproviders?view=graph-rest-beta)
 
 
 

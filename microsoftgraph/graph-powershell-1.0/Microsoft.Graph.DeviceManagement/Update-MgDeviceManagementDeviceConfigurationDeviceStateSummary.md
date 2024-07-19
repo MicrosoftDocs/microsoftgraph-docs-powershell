@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary
 
 ## SYNOPSIS
-Update the navigation property deviceConfigurationDeviceStateSummaries in deviceManagement
+Update the properties of a deviceConfigurationDeviceStateSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceConfigurationDeviceStateSummaries in deviceManagement
+Update the properties of a deviceConfigurationDeviceStateSummary object.
 
 ## PARAMETERS
 
@@ -295,6 +295,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatesummary)
+
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatesummary-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatesummary-update?view=graph-rest-1.0)
 
 
 

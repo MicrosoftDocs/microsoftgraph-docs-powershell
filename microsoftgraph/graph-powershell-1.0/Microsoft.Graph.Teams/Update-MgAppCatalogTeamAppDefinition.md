@@ -54,8 +54,6 @@ Update-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property appDefinitions in appCatalogs
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -498,6 +496,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgappcatalogteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgappcatalogteamappdefinition)
+
+
 
 
 

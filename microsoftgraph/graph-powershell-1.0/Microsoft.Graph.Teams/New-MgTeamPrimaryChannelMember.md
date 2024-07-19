@@ -48,8 +48,6 @@ New-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to members for teams
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -324,6 +322,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelmember)
+
+
 
 
 

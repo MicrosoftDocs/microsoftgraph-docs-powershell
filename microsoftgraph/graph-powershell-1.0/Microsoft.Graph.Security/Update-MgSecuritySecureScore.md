@@ -54,8 +54,6 @@ Update-MgSecuritySecureScore -InputObject <ISecurityIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property secureScores in security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ActiveUserCount
@@ -446,6 +444,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -496,6 +495,8 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescore)
+
+
 
 
 

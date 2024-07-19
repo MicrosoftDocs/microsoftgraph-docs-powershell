@@ -50,8 +50,6 @@ Update-MgBetaEducationUserAssignmentSubmissionOutcome -InputObject <IEducationId
 ## DESCRIPTION
 Update the navigation property outcomes in education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -355,6 +353,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentsubmissionoutcome)
+
+
 
 
 

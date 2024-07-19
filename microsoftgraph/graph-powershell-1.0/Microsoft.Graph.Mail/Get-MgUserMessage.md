@@ -81,18 +81,6 @@ This example shows how to use the Get-MgUserMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 4: Get MIME content
-
-```powershell
-Import-Module Microsoft.Graph.Mail
-
-# A UPN can also be used as -UserId.
-Get-MgUserMessageContent -UserId $userId -MessageId $messageId -OutFile $outFileId
-```
-This example shows how to use the Get-MgUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

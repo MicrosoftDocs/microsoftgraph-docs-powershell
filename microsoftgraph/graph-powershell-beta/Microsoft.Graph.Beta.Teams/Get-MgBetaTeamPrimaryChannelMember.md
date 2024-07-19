@@ -40,8 +40,6 @@ Get-MgBetaTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-ExpandPropert
 ## DESCRIPTION
 A collection of membership records associated with the channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -348,6 +346,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelmember)
+
+
+
+
 
 
 

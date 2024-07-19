@@ -16,6 +16,9 @@ If the Prefer: include-unknown-enum-members request header is provided, the excu
 Otherwise, the submission status changes to returned.
 For more information about how to use this header, see the Examples section.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgExcuseEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgExcuseEducationClassAssignmentSubmission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Excuse (Default)
@@ -40,6 +43,30 @@ Only teachers can perform this action.
 If the Prefer: include-unknown-enum-members request header is provided, the excused submission retains the excused status.
 Otherwise, the submission status changes to returned.
 For more information about how to use this header, see the Examples section.
+
+## EXAMPLES
+### Example 1: Request with optional Prefer header
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Invoke-MgBetaExcuseEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+
+```
+This example will request with optional prefer header
+
+### Example 2: Request without the Prefer request header
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Invoke-MgBetaExcuseEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+
+```
+This example will request without the prefer request header
+
 
 ## PARAMETERS
 
@@ -221,7 +248,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaexcuseeducationclassassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaexcuseeducationclassassignmentsubmission)
 
 [https://learn.microsoft.com/graph/api/educationsubmission-excuse?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsubmission-excuse?view=graph-rest-beta)
-
 
 
 

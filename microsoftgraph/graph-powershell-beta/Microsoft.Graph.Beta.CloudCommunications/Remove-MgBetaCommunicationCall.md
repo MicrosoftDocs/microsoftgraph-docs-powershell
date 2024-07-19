@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgBetaCommunicationCall
 
 ## SYNOPSIS
-Delete navigation property calls for communications
+Delete or hang up an active call.
+For group calls, this will only delete your call leg and the underlying group call will still continue.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCall?view=graph-powershell-1.0)
@@ -30,19 +31,20 @@ Remove-MgBetaCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Delete navigation property calls for communications
+Delete or hang up an active call.
+For group calls, this will only delete your call leg and the underlying group call will still continue.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Remove-MgBetaCommunicationCall -CallId $callId
+
 ```
 This example shows how to use the Remove-MgBetaCommunicationCall Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -224,6 +226,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcall)
+
+[https://learn.microsoft.com/graph/api/call-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/call-delete?view=graph-rest-beta)
 
 
 

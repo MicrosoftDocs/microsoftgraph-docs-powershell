@@ -48,8 +48,6 @@ New-MgBetaUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to members for users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -347,6 +345,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatmember)
+
+
 
 
 

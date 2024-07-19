@@ -50,19 +50,6 @@ New-MgGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to timeOffRequests for groups
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamScheduleTimeOffRequest -TeamId $teamId
-```
-This example shows how to use the New-MgGroupTeamScheduleTimeOffRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -432,6 +419,7 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduletimeoffrequest)
+
 
 
 

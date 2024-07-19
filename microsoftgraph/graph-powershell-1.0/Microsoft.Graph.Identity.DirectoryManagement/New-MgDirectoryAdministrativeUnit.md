@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDirectoryAdministrativeUnit
 
 ## SYNOPSIS
-Create new navigation property to administrativeUnits for directory
+Use this API to create a new administrativeUnit.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ New-MgDirectoryAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeU
 ```
 
 ## DESCRIPTION
-Create new navigation property to administrativeUnits for directory
+Use this API to create a new administrativeUnit.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -339,8 +339,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public.
 Can be set to HiddenMembership.
 If not set (value is null), the default behavior is public.
@@ -367,12 +368,15 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit)
+
+[https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-1.0)
 
 
 

@@ -43,8 +43,6 @@ Get-MgUserMailFolderChildFolderMessageExtension -InputObject <IMailIdentity> [-E
 The collection of open extensions defined for the message.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -349,6 +347,9 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessageextension)
+
+
+
 
 
 

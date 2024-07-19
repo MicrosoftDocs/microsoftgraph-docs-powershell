@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityContinuouAccessEvaluationPolicy
 
 ## SYNOPSIS
-Update the navigation property continuousAccessEvaluationPolicy in identity
+Update the properties of a continuousAccessEvaluationPolicy object.
 
 ## SYNTAX
 
@@ -28,20 +28,25 @@ Update-MgBetaIdentityContinuouAccessEvaluationPolicy
 ```
 
 ## DESCRIPTION
-Update the navigation property continuousAccessEvaluationPolicy in identity
+Update the properties of a continuousAccessEvaluationPolicy object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.continuousAccessEvaluationPolicy"
-	Migrate = $true
+	migrate = $true
 }
+
 Update-MgBetaIdentityContinuouAccessEvaluationPolicy -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -302,6 +307,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy)
+
+[https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-beta)
 
 
 

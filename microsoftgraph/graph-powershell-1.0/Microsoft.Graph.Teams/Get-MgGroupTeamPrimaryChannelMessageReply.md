@@ -42,8 +42,6 @@ Get-MgGroupTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity> [-Expand
 Replies for a specified message.
 Supports $expand for channel messages.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -357,6 +355,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelmessagereply)
+
+
+
 
 
 

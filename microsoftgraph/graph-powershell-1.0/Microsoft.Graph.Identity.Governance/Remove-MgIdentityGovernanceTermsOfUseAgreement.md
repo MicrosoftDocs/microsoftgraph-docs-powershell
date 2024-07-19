@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgIdentityGovernanceTermsOfUseAgreement
 
 ## SYNOPSIS
-Delete navigation property agreements for identityGovernance
+Delete an agreement object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernance
 ```
 
 ## DESCRIPTION
-Delete navigation property agreements for identityGovernance
+Delete an agreement object.
 
 ## PARAMETERS
 
@@ -259,6 +259,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancetermsofuseagreement)
+
+[https://learn.microsoft.com/graph/api/agreement-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-delete?view=graph-rest-1.0)
 
 
 

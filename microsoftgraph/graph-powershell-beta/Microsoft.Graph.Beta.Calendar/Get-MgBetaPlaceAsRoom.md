@@ -8,7 +8,12 @@ schema: 2.0.0
 # Get-MgBetaPlaceAsRoom
 
 ## SYNOPSIS
-Get the item of type microsoft.graph.place as microsoft.graph.room
+Get a collection of the specified type of place objects defined in the tenant.
+You can do the following for a given tenant:- List all the rooms.- List all the workspaces.- List all the room lists.- List rooms in a specific room list.- List workspaces in a specific room list.
+A place object can be one of the following types: The room, workspace and roomList resources are derived from the place object.
+By default, this operation returns up to 100 places per page.
+Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
+For details about how they compare, see Using the places API.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsRoom](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsRoom?view=graph-powershell-1.0)
@@ -37,7 +42,25 @@ Get-MgBetaPlaceAsRoom -InputObject <ICalendarIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get the item of type microsoft.graph.place as microsoft.graph.room
+Get a collection of the specified type of place objects defined in the tenant.
+You can do the following for a given tenant:- List all the rooms.- List all the workspaces.- List all the room lists.- List rooms in a specific room list.- List workspaces in a specific room list.
+A place object can be one of the following types: The room, workspace and roomList resources are derived from the place object.
+By default, this operation returns up to 100 places per page.
+Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists.
+For details about how they compare, see Using the places API.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+Get-MgBetaPlaceAsRoom
+
+```
+This example shows how to use the Get-MgBetaPlaceAsRoom Cmdlet.
+
 
 ## PARAMETERS
 
@@ -303,6 +326,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroom)
 
+[https://learn.microsoft.com/graph/api/place-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-beta)
 
 
 

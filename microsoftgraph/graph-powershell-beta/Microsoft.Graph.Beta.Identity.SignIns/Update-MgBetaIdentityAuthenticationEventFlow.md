@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaIdentityAuthenticationEventFlow
 
 ## SYNOPSIS
-Update the navigation property authenticationEventsFlows in identity
+Update the properties of an authenticationEventsFlow object.
+Only the externalUsersSelfServiceSignupEventsFlow object type is supported.
 
 ## SYNTAX
 
@@ -45,7 +46,176 @@ Update-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdent
 ```
 
 ## DESCRIPTION
-Update the navigation property authenticationEventsFlows in identity
+Update the properties of an authenticationEventsFlow object.
+Only the externalUsersSelfServiceSignupEventsFlow object type is supported.
+
+## EXAMPLES
+### Example 1: Update the display name and priority of an authenticationEventsFlow
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
+	displayName = "New user flow description"
+	priority = 200
+}
+
+Update-MgBetaIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
+```
+This example will update the display name and priority of an authenticationeventsflow
+
+### Example 2: Update the onAttributeCollection event of a self-service sign up user flow
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
+	onAttributeCollection = @{
+		"@odata.type" = "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp"
+		attributeCollectionPage = @{
+			customStringsFileId = $null
+			views = @(
+				@{
+					title = $null
+					description = $null
+					inputs = @(
+						@{
+							attribute = "email"
+							label = "Email Address"
+							inputType = "text"
+							defaultValue = $null
+							hidden = $true
+							editable = $false
+							writeToDirectory = $true
+							required = $true
+							validationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
+							options = @(
+							)
+						}
+						@{
+							attribute = "displayName"
+							label = "Display Name"
+							inputType = "text"
+							defaultValue = $null
+							hidden = $false
+							editable = $true
+							writeToDirectory = $true
+							required = $false
+							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
+							options = @(
+							)
+						}
+						@{
+							attribute = "city"
+							label = "City"
+							inputType = "text"
+							defaultValue = $null
+							hidden = $false
+							editable = $true
+							writeToDirectory = $true
+							required = $false
+							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
+							options = @(
+							)
+						}
+						@{
+							attribute = "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor"
+							label = "Favorite color"
+							inputType = "text"
+							defaultValue = $null
+							hidden = $false
+							editable = $true
+							writeToDirectory = $true
+							required = $false
+							validationRegEx = "^.*"
+							options = @(
+							)
+						}
+					)
+				}
+			)
+		}
+	}
+}
+
+Update-MgBetaIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
+```
+This example will update the onattributecollection event of a self-service sign up user flow
+
+### Example 3: Remove an attribute collected during a self-service sign up user flow
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow"
+	onAttributeCollection = @{
+		"@odata.type" = "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp"
+		attributeCollectionPage = @{
+			customStringsFileId = $null
+			views = @(
+				@{
+					title = $null
+					description = $null
+					inputs = @(
+						@{
+							attribute = "email"
+							label = "Email Address"
+							inputType = "text"
+							defaultValue = $null
+							hidden = $true
+							editable = $false
+							writeToDirectory = $true
+							required = $true
+							validationRegEx = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
+							options = @(
+							)
+						}
+						@{
+							attribute = "displayName"
+							label = "Display Name"
+							inputType = "text"
+							defaultValue = $null
+							hidden = $false
+							editable = $true
+							writeToDirectory = $true
+							required = $false
+							validationRegEx = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
+							options = @(
+							)
+						}
+						@{
+							attribute = "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor"
+							label = "Favorite color"
+							inputType = "text"
+							defaultValue = $null
+							hidden = $false
+							editable = $true
+							writeToDirectory = $true
+							required = $false
+							validationRegEx = "^.*"
+							options = @(
+							)
+						}
+					)
+				}
+			)
+		}
+	}
+}
+
+Update-MgBetaIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
+```
+This example will remove an attribute collected during a self-service sign up user flow
+
 
 ## PARAMETERS
 
@@ -363,6 +533,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -382,6 +553,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -395,6 +567,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityauthenticationeventflow)
 
+[https://learn.microsoft.com/graph/api/authenticationeventsflow-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationeventsflow-update?view=graph-rest-beta)
 
 
 

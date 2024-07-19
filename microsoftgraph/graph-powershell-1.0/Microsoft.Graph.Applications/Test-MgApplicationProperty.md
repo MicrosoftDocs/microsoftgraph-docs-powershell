@@ -49,26 +49,6 @@ If the properties fail multiple validations, only the first validation failure i
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
-
-$params = @{
-	EntityType = "Group"
-	DisplayName = "Myprefix_test_mysuffix"
-	MailNickname = "Myprefix_test_mysuffix"
-	OnBehalfOfUserId = "onBehalfOfUserId-value"
-}
-
-Test-MgDirectoryObjectProperty -BodyParameter $params
-```
-This example shows how to use the Test-MgApplicationProperty Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -281,6 +261,7 @@ BODYPARAMETER `<IPathsW28MefApplicationsMicrosoftGraphValidatepropertiesPostRequ
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationproperty)
 
 [https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
+
 
 
 

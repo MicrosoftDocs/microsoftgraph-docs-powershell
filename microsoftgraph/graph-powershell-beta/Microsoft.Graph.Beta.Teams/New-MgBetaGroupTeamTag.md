@@ -48,8 +48,6 @@ New-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to tags for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -385,6 +383,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamtag)
+
+
 
 
 

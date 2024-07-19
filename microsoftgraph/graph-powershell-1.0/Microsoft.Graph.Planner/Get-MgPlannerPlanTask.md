@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgPlannerPlanTask
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Collection of tasks in the plan.
+Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlanTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanTask?view=graph-powershell-beta)
@@ -25,9 +23,7 @@ Get-MgPlannerPlanTask -PlannerPlanId <String> [-ExpandProperty <String[]>] [-Fil
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Collection of tasks in the plan.
+Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -269,6 +265,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplantask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplantask)
+
+[https://learn.microsoft.com/graph/api/plannerplan-list-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplan-list-tasks?view=graph-rest-1.0)
 
 
 

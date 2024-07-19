@@ -8,14 +8,24 @@ schema: 2.0.0
 # Get-MgBetaAllUserOnlineMeetingRecording
 
 ## SYNOPSIS
-Invoke function getAllRecordings
+Get all recordings from scheduled onlineMeeting instances for which the specified user is the organizer.
+This API currently doesn't support getting call recordings from channel meetings.
+You can apply the delta function on getAllRecordings to synchronize and get callRecording resources as they're added for onlineMeeting instances organized by the specified user.
+The delta query supports both full synchronization and incremental synchronization.
+Full synchronization gets all the recordings for online meetings organized by the user.
+Incremental synchronization gets recordings that are added since the last synchronization.
+Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+Find more information in the delta query documentation.
+For more examples, see callRecording: delta.
+To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgBetaAllUserOnlineMeetingRecording -UserId <String> [-Count] [-ExpandProperty <String[]>]
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+Get-MgBetaAllUserOnlineMeetingRecording -UserId <String> [-Count] [-EndDateTime <DateTime>]
+ [-ExpandProperty <String[]>] [-Filter <String>] [-MeetingOrganizerUserId <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-StartDateTime <DateTime>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
@@ -23,13 +33,26 @@ Get-MgBetaAllUserOnlineMeetingRecording -UserId <String> [-Count] [-ExpandProper
 ### GetViaIdentity
 ```
 Get-MgBetaAllUserOnlineMeetingRecording -InputObject <IUsersFunctionsIdentity> [-Count]
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-EndDateTime <DateTime>] [-ExpandProperty <String[]>] [-Filter <String>] [-MeetingOrganizerUserId <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-StartDateTime <DateTime>]
+ [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function getAllRecordings
+Get all recordings from scheduled onlineMeeting instances for which the specified user is the organizer.
+This API currently doesn't support getting call recordings from channel meetings.
+You can apply the delta function on getAllRecordings to synchronize and get callRecording resources as they're added for onlineMeeting instances organized by the specified user.
+The delta query supports both full synchronization and incremental synchronization.
+Full synchronization gets all the recordings for online meetings organized by the user.
+Incremental synchronization gets recordings that are added since the last synchronization.
+Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+Find more information in the delta query documentation.
+For more examples, see callRecording: delta.
+To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-getallrecordings-permissions.md)]
 
 ## PARAMETERS
 
@@ -44,6 +67,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EndDateTime
+Usage: endDateTime=@endDateTime
+
+```yaml
+Type: DateTime
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -106,6 +144,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -MeetingOrganizerUserId
+Usage: meetingOrganizerUserId='@meetingOrganizerUserId'
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -176,6 +229,21 @@ Order items by property values
 Type: String[]
 Parameter Sets: (All)
 Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartDateTime
+Usage: startDateTime=@startDateTime
+
+```yaml
+Type: DateTime
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
@@ -288,6 +356,9 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetaalluseronlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetaalluseronlinemeetingrecording)
+
+[https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta)
+
 
 
 

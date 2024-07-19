@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementVppToken
 
 ## SYNOPSIS
-Create new navigation property to vppTokens for deviceAppManagement
+Create a new vppToken object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ New-MgDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken> [-Res
 ```
 
 ## DESCRIPTION
-Create new navigation property to vppTokens for deviceAppManagement
+Create a new vppToken object.
 
 ## PARAMETERS
 
@@ -365,6 +365,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-create?view=graph-rest-1.0)
 
 
 

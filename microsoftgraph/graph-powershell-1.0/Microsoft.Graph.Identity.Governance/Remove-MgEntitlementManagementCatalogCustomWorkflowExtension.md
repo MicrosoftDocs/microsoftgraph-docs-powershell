@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgEntitlementManagementCatalogCustomWorkflowExtension
 
 ## SYNOPSIS
-Delete navigation property customWorkflowExtensions for identityGovernance
+Delete an accessPackageAssignmentRequestWorkflowExtension object.
+The custom workflow extension must first be removed from any associated policies before it can be deleted.
+Follow these steps to remove the custom workflow extension from any associated policies:
 
 ## SYNTAX
 
@@ -28,7 +30,9 @@ Remove-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIden
 ```
 
 ## DESCRIPTION
-Delete navigation property customWorkflowExtensions for identityGovernance
+Delete an accessPackageAssignmentRequestWorkflowExtension object.
+The custom workflow extension must first be removed from any associated policies before it can be deleted.
+Follow these steps to remove the custom workflow extension from any associated policies:
 
 ## PARAMETERS
 
@@ -272,6 +276,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalogcustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalogcustomworkflowextension)
+
+[https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-delete?view=graph-rest-1.0)
 
 
 

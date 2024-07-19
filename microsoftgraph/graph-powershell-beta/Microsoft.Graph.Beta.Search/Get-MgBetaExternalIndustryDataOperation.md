@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataOperation
 
 ## SYNOPSIS
-Set of ephemeral operations that the system runs currently.
-Read-only.
+Read the properties and relationships of a fileValidateOperation object.
 
 ## SYNTAX
 
@@ -36,8 +35,20 @@ Get-MgBetaExternalIndustryDataOperation -InputObject <ISearchIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Set of ephemeral operations that the system runs currently.
-Read-only.
+Read the properties and relationships of a fileValidateOperation object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalIndustryDataOperation
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataOperation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -311,6 +322,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoperation)
 
+[https://learn.microsoft.com/graph/api/industrydata-filevalidateoperation-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-filevalidateoperation-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/industrydata-filevalidateoperation-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-filevalidateoperation-list?view=graph-rest-beta)
 
 
 

@@ -48,20 +48,6 @@ New-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> -BodyParameter <H
 ## DESCRIPTION
 Create new navigation property to associatedTeams for users
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Teams
-
-# A UPN can also be used as -UserId.
-Get-MgUserTeamworkAssociatedTeam -UserId $userId
-```
-This example shows how to use the New-MgUserTeamworkAssociatedTeam Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -5019,6 +5005,7 @@ This URL should be treated as an opaque blob, and not parsed.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserteamworkassociatedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserteamworkassociatedteam)
+
 
 
 

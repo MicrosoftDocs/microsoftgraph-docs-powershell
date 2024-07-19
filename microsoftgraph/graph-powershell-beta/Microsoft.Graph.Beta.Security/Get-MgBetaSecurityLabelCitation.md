@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityLabelCitation
 
 ## SYNOPSIS
-The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
+Read the properties and relationships of a citationTemplate object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelCitation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCitation?view=graph-powershell-1.0)
@@ -38,7 +38,20 @@ Get-MgBetaSecurityLabelCitation -InputObject <ISecurityIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
+Read the properties and relationships of a citationTemplate object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityLabelCitation
+
+```
+This example shows how to use the Get-MgBetaSecurityLabelCitation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -337,6 +350,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -347,6 +361,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -373,6 +388,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcitation)
 
+[https://learn.microsoft.com/graph/api/security-citationtemplate-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-citationtemplate-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/security-labelsroot-list-citations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-labelsroot-list-citations?view=graph-rest-beta)
 
 
 

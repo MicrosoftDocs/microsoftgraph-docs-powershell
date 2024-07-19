@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup
 
 ## SYNOPSIS
-Microsoft Entra groups under the scope of the mobility management application if appliesTo is selected
+Get the list of groups that are included in a mobile app management policy.
 
 ## SYNTAX
 
@@ -20,23 +20,20 @@ Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicy
 ```
 
 ## DESCRIPTION
-Microsoft Entra groups under the scope of the mobility management application if appliesTo is selected
+Get the list of groups that are included in a mobile app management policy.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId -OutFile $outFileId
-```
-This example shows how to use the Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId
+
 ```
 This example shows how to use the Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -265,6 +262,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroup)
+
+[https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list-includedgroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list-includedgroups?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyAuthenticationMethodPolicy
 
 ## SYNOPSIS
-Update the navigation property authenticationMethodsPolicy in policies
+Update the properties of an authenticationMethodsPolicy object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-1.0)
@@ -36,18 +36,20 @@ Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAut
 ```
 
 ## DESCRIPTION
-Update the navigation property authenticationMethodsPolicy in policies
+Update the properties of an authenticationMethodsPolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	registrationEnforcement = @{
 		authenticationMethodsRegistrationCampaign = @{
 			snoozeDurationInDays = 1
+			enforceRegistrationAfterAllowedSnoozes = $true
 			state = "enabled"
 			excludeTargets = @(
 			)
@@ -71,10 +73,9 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaPolicyAuthenticationMethodPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -477,6 +478,8 @@ SYSTEMCREDENTIALPREFERENCES `<IMicrosoftGraphSystemCredentialPreferences>`: syst
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy)
+
+[https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintPrinterJob
 
 ## SYNOPSIS
-The list of jobs that are queued for printing by the printer/printerShare.
+Retrieve the properties and relationships of a print job.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJob?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-The list of jobs that are queued for printing by the printer/printerShare.
+Retrieve the properties and relationships of a print job.
 
 ## PARAMETERS
 
@@ -318,6 +318,10 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjob)
+
+[https://learn.microsoft.com/graph/api/printjob-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printjob-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/printer-list-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-list-jobs?view=graph-rest-1.0)
 
 
 

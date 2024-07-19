@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgEntitlementManagementCatalogCustomWorkflowExtension
 
 ## SYNOPSIS
-Create new navigation property to customWorkflowExtensions for identityGovernance
+Create a new accessPackageAssignmentRequestWorkflowExtension or accessPackageAssignmentWorkflowExtension object and add it to an existing accessPackageCatalog object.
+You must explicitly provide an @odata.type property that indicates whether the object is an  accessPackageAssignmentRequestWorkflowExtension or an accessPackageAssignmentWorkflowExtension.
 
 ## SYNTAX
 
@@ -47,7 +48,8 @@ New-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentit
 ```
 
 ## DESCRIPTION
-Create new navigation property to customWorkflowExtensions for identityGovernance
+Create a new accessPackageAssignmentRequestWorkflowExtension or accessPackageAssignmentWorkflowExtension object and add it to an existing accessPackageCatalog object.
+You must explicitly provide an @odata.type property that indicates whether the object is an  accessPackageAssignmentRequestWorkflowExtension or an accessPackageAssignmentWorkflowExtension.
 
 ## PARAMETERS
 
@@ -306,6 +308,9 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>]`: customExtensionClientConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[MaximumRetries <Int32?>]`: The max number of retries that Microsoft Entra ID makes to the external API.
+Values of 0 or 1 are supported.
+If null, the default for the service applies.
     - `[TimeoutInMilliseconds <Int32?>]`: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
 The valid range is between 200 and 2000 milliseconds.
 Default duration is 1000.
@@ -316,6 +321,9 @@ Default duration is 1000.
 
 CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[MaximumRetries <Int32?>]`: The max number of retries that Microsoft Entra ID makes to the external API.
+Values of 0 or 1 are supported.
+If null, the default for the service applies.
   - `[TimeoutInMilliseconds <Int32?>]`: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
 The valid range is between 200 and 2000 milliseconds.
 Default duration is 1000.
@@ -392,6 +400,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogcustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogcustomworkflowextension)
+
+[https://learn.microsoft.com/graph/api/accesspackagecatalog-post-accesspackagecustomworkflowextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-post-accesspackagecustomworkflowextensions?view=graph-rest-1.0)
 
 
 

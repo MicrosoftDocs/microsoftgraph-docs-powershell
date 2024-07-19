@@ -48,8 +48,6 @@ Update-MgUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Update the navigation property tabs in users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -454,6 +452,8 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchattab)
+
+
 
 
 

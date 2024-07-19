@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataRun
 
 ## SYNOPSIS
-Set of ephemeral runs which present the point-in-time that diagnostic state of activities performed by the system.
-Read-only.
+Read the properties and relationships of an industryDataRun object.
 
 ## SYNTAX
 
@@ -36,8 +35,20 @@ Get-MgBetaExternalIndustryDataRun -InputObject <ISearchIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Set of ephemeral runs which present the point-in-time that diagnostic state of activities performed by the system.
-Read-only.
+Read the properties and relationships of an industryDataRun object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalIndustryDataRun
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataRun Cmdlet.
+
 
 ## PARAMETERS
 
@@ -311,6 +322,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarun)
 
+[https://learn.microsoft.com/graph/api/industrydata-industrydatarun-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-industrydatarun-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/industrydata-industrydatarun-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-industrydatarun-list?view=graph-rest-beta)
 
 
 

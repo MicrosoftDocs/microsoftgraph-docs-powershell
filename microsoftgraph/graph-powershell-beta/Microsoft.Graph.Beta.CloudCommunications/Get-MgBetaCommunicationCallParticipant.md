@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaCommunicationCallParticipant
 
 ## SYNOPSIS
-Get participants from communications
+Retrieve the properties and relationships of a participant object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallParticipant?view=graph-powershell-1.0)
@@ -38,7 +38,10 @@ Get-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentit
 ```
 
 ## DESCRIPTION
-Get participants from communications
+Retrieve the properties and relationships of a participant object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -337,6 +340,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallparticipant)
+
+[https://learn.microsoft.com/graph/api/participant-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/participant-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/call-list-participants?view=graph-rest-beta](https://learn.microsoft.com/graph/api/call-list-participants?view=graph-rest-beta)
 
 
 

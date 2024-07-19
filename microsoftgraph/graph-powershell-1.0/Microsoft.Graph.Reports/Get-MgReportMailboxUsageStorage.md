@@ -31,8 +31,6 @@ Get-MgReportMailboxUsageStorage -InputObject <IReportsIdentity> -OutFile <String
 ## DESCRIPTION
 Get the amount of storage used in your organization.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -186,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagestorage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagestorage)
 
 [https://learn.microsoft.com/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-1.0)
+
 
 
 

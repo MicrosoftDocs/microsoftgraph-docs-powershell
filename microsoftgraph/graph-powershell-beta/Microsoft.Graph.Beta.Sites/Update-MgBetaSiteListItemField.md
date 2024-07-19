@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSiteListItemField
 
 ## SYNOPSIS
-Update the navigation property fields in sites
+Update the properties on a listItem.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItemField?view=graph-powershell-1.0)
@@ -44,7 +44,7 @@ Update-MgBetaSiteListItemField -InputObject <ISitesIdentity> -BodyParameter <Has
 ```
 
 ## DESCRIPTION
-Update the navigation property fields in sites
+Update the properties on a listItem.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -323,6 +323,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemfield)
+
+[https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-beta)
 
 
 

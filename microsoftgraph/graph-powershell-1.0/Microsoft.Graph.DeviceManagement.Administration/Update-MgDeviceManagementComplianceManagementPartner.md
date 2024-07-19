@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementComplianceManagementPartner
 
 ## SYNOPSIS
-Update the navigation property complianceManagementPartners in deviceManagement
+Update the properties of a complianceManagementPartner object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
@@ -56,7 +56,7 @@ Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManage
 ```
 
 ## DESCRIPTION
-Update the navigation property complianceManagementPartners in deviceManagement
+Update the properties of a complianceManagementPartner object.
 
 ## PARAMETERS
 
@@ -427,6 +427,8 @@ MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-update?view=graph-rest-1.0)
 
 
 

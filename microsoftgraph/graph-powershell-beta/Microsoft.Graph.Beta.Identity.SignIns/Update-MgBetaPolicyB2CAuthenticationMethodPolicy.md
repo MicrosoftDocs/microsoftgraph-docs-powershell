@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyB2CAuthenticationMethodPolicy
 
 ## SYNOPSIS
-Update the navigation property b2cAuthenticationMethodsPolicy in policies
+Update the properties of a b2cAuthenticationMethodsPolicy object.
 
 ## SYNTAX
 
@@ -28,7 +28,26 @@ Update-MgBetaPolicyB2CAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Update the navigation property b2cAuthenticationMethodsPolicy in policies
+Update the properties of a b2cAuthenticationMethodsPolicy object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	isEmailPasswordAuthenticationEnabled = $false
+	isUserNameAuthenticationEnabled = $true
+	isPhoneOneTimePasswordAuthenticationEnabled = $true
+}
+
+Update-MgBetaPolicyB2CAuthenticationMethodPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyB2CAuthenticationMethodPolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -228,6 +247,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2cauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2cauthenticationmethodpolicy)
 
+[https://learn.microsoft.com/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta)
 
 
 

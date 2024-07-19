@@ -40,8 +40,6 @@ Get-MgGroupSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 All items contained in the list.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -381,6 +379,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitem)
+
+
+
 
 
 

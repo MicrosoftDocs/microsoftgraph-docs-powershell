@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaTeamworkWorkforceIntegration
 
 ## SYNOPSIS
-Create new navigation property to workforceIntegrations for teamwork
+Create a new workforceIntegration object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkWorkforceIntegration?view=graph-powershell-1.0)
@@ -33,7 +33,7 @@ New-MgBetaTeamworkWorkforceIntegration -BodyParameter <IMicrosoftGraphWorkforceI
 ```
 
 ## DESCRIPTION
-Create new navigation property to workforceIntegrations for teamwork
+Create a new workforceIntegration object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -413,6 +413,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkworkforceintegration)
+
+[https://learn.microsoft.com/graph/api/workforceintegration-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/workforceintegration-post?view=graph-rest-beta)
 
 
 

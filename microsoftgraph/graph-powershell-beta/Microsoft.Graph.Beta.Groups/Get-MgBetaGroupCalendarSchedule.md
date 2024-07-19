@@ -53,8 +53,6 @@ Get the free/busy availability information for a collection of users, distributi
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendar-getschedule-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -353,6 +351,8 @@ See below for possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcalendarschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcalendarschedule)
 
 [https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-beta](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-beta)
+
+
 
 
 

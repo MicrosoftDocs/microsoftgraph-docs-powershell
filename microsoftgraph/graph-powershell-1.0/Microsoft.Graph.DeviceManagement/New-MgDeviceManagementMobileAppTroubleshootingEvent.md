@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementMobileAppTroubleshootingEvent
 
 ## SYNOPSIS
-Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
+Create a new mobileAppTroubleshootingEvent object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ New-MgDeviceManagementMobileAppTroubleshootingEvent
 ```
 
 ## DESCRIPTION
-Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
+Create a new mobileAppTroubleshootingEvent object.
 
 ## PARAMETERS
 
@@ -213,6 +213,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent)
+
+[https://learn.microsoft.com/graph/api/intune-devices-mobileapptroubleshootingevent-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-mobileapptroubleshootingevent-create?view=graph-rest-1.0)
 
 
 

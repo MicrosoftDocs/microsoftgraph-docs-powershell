@@ -34,6 +34,19 @@ Stop-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseH
 Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+Stop-MgBetaPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId
+
+```
+This example shows how to use the Stop-MgBetaPrintPrinterJob Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -209,7 +222,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/stop-mgbetaprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/stop-mgbetaprintprinterjob)
 
 [https://learn.microsoft.com/graph/api/printjob-cancel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printjob-cancel?view=graph-rest-beta)
-
 
 
 

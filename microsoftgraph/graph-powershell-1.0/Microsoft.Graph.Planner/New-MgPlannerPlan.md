@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPlannerPlan
 
 ## SYNOPSIS
-Create new navigation property to plans for planner
+Create a new plannerPlan object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-ResponseHeadersV
 ```
 
 ## DESCRIPTION
-Create new navigation property to plans for planner
+Create a new plannerPlan object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -203,7 +203,10 @@ Accept wildcard characters: False
 ```
 
 ### -Owner
-.
+Use the container property instead.
+ID of the group that owns the plan.
+After it's set, this property can't be updated.
+This property won't return a valid group ID if the container of the plan isn't a group.
 
 ```yaml
 Type: String
@@ -378,8 +381,9 @@ For details about the supported format, see Using order hints in Planner.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
           - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[CompletedDateTime <DateTime?>]`: Read-only.
@@ -474,7 +478,10 @@ Read-only.
       - `[Category9 <String>]`: The label associated with Category 9
     - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Owner <String>]`: 
+  - `[Owner <String>]`: Use the container property instead.
+ID of the group that owns the plan.
+After it's set, this property can't be updated.
+This property won't return a valid group ID if the container of the plan isn't a group.
   - `[Tasks <IMicrosoftGraphPlannerTask- `[]`>]`: Read-only.
 Nullable.
 Collection of tasks in the plan.
@@ -527,8 +534,9 @@ For details about the supported format, see Using order hints in Planner.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CompletedDateTime <DateTime?>]`: Read-only.
@@ -593,8 +601,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -669,8 +678,9 @@ For details about the supported format, see Using order hints in Planner.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CompletedDateTime <DateTime?>]`: Read-only.
@@ -724,6 +734,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan)
+
+[https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-1.0)
 
 
 

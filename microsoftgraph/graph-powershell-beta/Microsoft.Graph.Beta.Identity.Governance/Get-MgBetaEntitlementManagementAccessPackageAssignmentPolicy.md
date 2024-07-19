@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 
 ## SYNOPSIS
-Represents the policy that governs which subjects can request or be assigned an access package via an access package assignment.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
@@ -58,7 +58,7 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Represents the policy that governs which subjects can request or be assigned an access package via an access package assignment.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 
 ## EXAMPLES
 ### Example 1: Get all access package policy assignment policies
@@ -468,6 +468,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
+
+[https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageassignmentpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageassignmentpolicies?view=graph-rest-beta)
 
 
 

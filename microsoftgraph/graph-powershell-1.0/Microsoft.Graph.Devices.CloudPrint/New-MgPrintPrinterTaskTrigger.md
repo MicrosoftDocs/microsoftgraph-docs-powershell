@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgPrintPrinterTaskTrigger
 
 ## SYNOPSIS
-Create new navigation property to taskTriggers for print
+Create a new task trigger on the specified printer.
+Currently, only one task trigger can be specified per printer, but this limit might be removed in the future.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterTaskTrigger?view=graph-powershell-beta)
@@ -46,7 +47,8 @@ New-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to taskTriggers for print
+Create a new task trigger on the specified printer.
+Currently, only one task trigger can be specified per printer, but this limit might be removed in the future.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -350,6 +352,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprintertasktrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprintertasktrigger)
+
+[https://learn.microsoft.com/graph/api/printer-post-tasktriggers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-post-tasktriggers?view=graph-rest-1.0)
 
 
 

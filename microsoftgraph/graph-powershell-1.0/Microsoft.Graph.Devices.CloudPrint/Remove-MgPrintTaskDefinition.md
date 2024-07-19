@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgPrintTaskDefinition
 
 ## SYNOPSIS
-Delete navigation property taskDefinitions for print
+Delete a taskDefinition.
+For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
@@ -30,7 +31,8 @@ Remove-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-IfMatch
 ```
 
 ## DESCRIPTION
-Delete navigation property taskDefinitions for print
+Delete a taskDefinition.
+For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -218,6 +220,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprinttaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprinttaskdefinition)
+
+[https://learn.microsoft.com/graph/api/print-delete-taskdefinition?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/print-delete-taskdefinition?view=graph-rest-1.0)
 
 
 

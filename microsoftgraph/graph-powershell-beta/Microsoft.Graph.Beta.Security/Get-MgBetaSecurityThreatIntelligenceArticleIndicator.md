@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatIntelligenceArticleIndicator
 
 ## SYNOPSIS
-Refers to indicators of threat or compromise highlighted in an article.Note: List retrieval is not yet supported.
+Read the properties and relationships of an articleIndicator object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-1.0)
@@ -60,7 +60,20 @@ Get-MgBetaSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIden
 ```
 
 ## DESCRIPTION
-Refers to indicators of threat or compromise highlighted in an article.Note: List retrieval is not yet supported.
+Read the properties and relationships of an articleIndicator object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceArticleIndicator -ArticleIndicatorId $articleIndicatorId
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceArticleIndicator Cmdlet.
+
 
 ## PARAMETERS
 
@@ -374,6 +387,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -384,6 +398,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -410,6 +425,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticleindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticleindicator)
 
+[https://learn.microsoft.com/graph/api/security-articleindicator-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-articleindicator-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/security-article-list-indicators?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-article-list-indicators?view=graph-rest-beta)
 
 
 

@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of the virtual event.
+The display name of the virtual event.
 
 ```yaml
 Type: String
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sessions
-Sessions for the virtual event.
+The sessions for the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml
@@ -327,7 +327,7 @@ This property is read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
-  - `[DisplayName <String>]`: Display name of the virtual event.
+  - `[DisplayName <String>]`: The display name of the virtual event.
   - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
@@ -351,11 +351,15 @@ Read-only.
     - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+      - `[AllowBreakoutRooms <Boolean?>]`: 
+      - `[AllowLiveShare <Boolean?>]`: 
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      - `[AllowPowerPointSharing <Boolean?>]`: 
       - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+      - `[AllowWhiteboard <Boolean?>]`: 
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -389,9 +393,9 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ConferenceId <String>]`: The conference id of the online meeting.
         - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-        - `[TollFreeNumber <String>]`: 
+        - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
         - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-        - `[TollNumber <String>]`: 
+        - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
         - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
       - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -445,6 +449,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Email <String>]`: Email address of the registrant.
         - `[FirstName <String>]`: First name of the registrant.
         - `[LastName <String>]`: Last name of the registrant.
+        - `[PreferredLanguage <String>]`: 
+        - `[PreferredTimezone <String>]`: 
         - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -462,7 +468,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
         - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
       - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: Sessions for the virtual event.
+  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Status <String>]`: virtualEventStatus
 
@@ -522,11 +528,15 @@ This property is read-only.
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+    - `[AllowBreakoutRooms <Boolean?>]`: 
+    - `[AllowLiveShare <Boolean?>]`: 
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    - `[AllowPowerPointSharing <Boolean?>]`: 
     - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+    - `[AllowWhiteboard <Boolean?>]`: 
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -560,9 +570,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ConferenceId <String>]`: The conference id of the online meeting.
       - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-      - `[TollFreeNumber <String>]`: 
+      - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
       - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-      - `[TollNumber <String>]`: 
+      - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
       - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
     - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -621,6 +631,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Email <String>]`: Email address of the registrant.
       - `[FirstName <String>]`: First name of the registrant.
       - `[LastName <String>]`: Last name of the registrant.
+      - `[PreferredLanguage <String>]`: 
+      - `[PreferredTimezone <String>]`: 
       - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -639,14 +651,18 @@ Appears when answerInputType is text, multilineText or singleChoice.
 Only appears when the registrant is registered in Microsoft Entra ID.
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: Sessions for the virtual event.
+SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: The sessions for the virtual event.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+  - `[AllowBreakoutRooms <Boolean?>]`: 
+  - `[AllowLiveShare <Boolean?>]`: 
   - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+  - `[AllowPowerPointSharing <Boolean?>]`: 
   - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
   - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+  - `[AllowWhiteboard <Boolean?>]`: 
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -685,9 +701,9 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ConferenceId <String>]`: The conference id of the online meeting.
     - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-    - `[TollFreeNumber <String>]`: 
+    - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
     - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-    - `[TollNumber <String>]`: 
+    - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
     - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -763,6 +779,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Email <String>]`: Email address of the registrant.
     - `[FirstName <String>]`: First name of the registrant.
     - `[LastName <String>]`: Last name of the registrant.
+    - `[PreferredLanguage <String>]`: 
+    - `[PreferredTimezone <String>]`: 
     - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.

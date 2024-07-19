@@ -40,8 +40,6 @@ Get-MgBetaSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 All the terms under the set.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -374,6 +372,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetterm)
+
+
+
+
 
 
 

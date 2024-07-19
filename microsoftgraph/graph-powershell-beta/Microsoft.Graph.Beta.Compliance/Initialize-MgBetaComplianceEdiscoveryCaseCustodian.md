@@ -8,7 +8,8 @@ schema: 2.0.0
 # Initialize-MgBetaComplianceEdiscoveryCaseCustodian
 
 ## SYNOPSIS
-Activate a custodian that has been released from a case to make them part of the case again.
+Activate a custodian that was released from a case.
+This method makes the custodian part of the case again.
 For details, see Manage custodians in an Advanced eDiscovery case.
 
 ## SYNTAX
@@ -28,7 +29,8 @@ Initialize-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIden
 ```
 
 ## DESCRIPTION
-Activate a custodian that has been released from a case to make them part of the case again.
+Activate a custodian that was released from a case.
+This method makes the custodian part of the case again.
 For details, see Manage custodians in an Advanced eDiscovery case.
 
 ## EXAMPLES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaExternalConnection
 
 ## SYNOPSIS
-Create new navigation property to connections for external
+Create a new externalConnection.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnection?view=graph-powershell-1.0)
@@ -39,7 +39,7 @@ New-MgBetaExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsEx
 ```
 
 ## DESCRIPTION
-Create new navigation property to connections for external
+Create a new externalConnection.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -460,8 +460,7 @@ Read-only.
       - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets.
 Maximum 16 characters.
 Only alphanumeric characters allowed.
-      - `[Layout <IMicrosoftGraphJson>]`: Json
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Layout <IAny>]`: The definition of the content's appearance, represented by an Adaptive Card, which is a JSON-serialized card object model.
       - `[Priority <Int32?>]`: Defines the priority of a display template.
 A display template with priority 1 is evaluated before a template with priority 4.
 Gaps in priority values are supported.
@@ -611,8 +610,7 @@ COMPLIANCESETTINGS `<IMicrosoftGraphExternalConnectorsComplianceSettings>`: comp
     - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets.
 Maximum 16 characters.
 Only alphanumeric characters allowed.
-    - `[Layout <IMicrosoftGraphJson>]`: Json
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Layout <IAny>]`: The definition of the content's appearance, represented by an Adaptive Card, which is a JSON-serialized card object model.
     - `[Priority <Int32?>]`: Defines the priority of a display template.
 A display template with priority 1 is evaluated before a template with priority 4.
 Gaps in priority values are supported.
@@ -757,8 +755,7 @@ Maximum of 2 search result templates per connection.
     - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets.
 Maximum 16 characters.
 Only alphanumeric characters allowed.
-    - `[Layout <IMicrosoftGraphJson>]`: Json
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Layout <IAny>]`: The definition of the content's appearance, represented by an Adaptive Card, which is a JSON-serialized card object model.
     - `[Priority <Int32?>]`: Defines the priority of a display template.
 A display template with priority 1 is evaluated before a template with priority 4.
 Gaps in priority values are supported.
@@ -776,6 +773,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnection)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-beta)
 
 
 

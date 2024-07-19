@@ -45,8 +45,6 @@ New-MgBetaUserDeviceRegisteredOwnerByRef -InputObject <ICrossDeviceExperiencesId
 ## DESCRIPTION
 Create new navigation property ref to registeredOwners for users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -268,6 +266,8 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdeviceregisteredownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdeviceregisteredownerbyref)
+
+
 
 
 

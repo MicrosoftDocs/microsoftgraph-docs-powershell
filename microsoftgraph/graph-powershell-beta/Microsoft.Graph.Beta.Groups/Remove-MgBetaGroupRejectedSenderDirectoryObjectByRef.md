@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef
 
 ## SYNOPSIS
-Delete ref of navigation property rejectedSenders for groups
+Remove a user or group from the rejected-senders list of the specified group.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupRejectedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupRejectedSenderDirectoryObjectByRef?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef -InputObject <IGroupsIdenti
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property rejectedSenders for groups
+Remove a user or group from the rejected-senders list of the specified group.
 
 ## PARAMETERS
 
@@ -253,6 +253,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouprejectedsenderdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouprejectedsenderdirectoryobjectbyref)
+
+[https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-beta)
+
 
 
 

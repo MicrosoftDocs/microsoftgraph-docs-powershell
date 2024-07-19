@@ -28,6 +28,17 @@ Get newly created, updated, or deleted oauth2permissiongrant objects without per
 For details, see Using delta query.
 
 ## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaOauth2PermissionGrantDelta
+
+```
+This example shows how to use the Get-MgBetaOauth2PermissionGrantDelta Cmdlet.
+
 
 ## PARAMETERS
 

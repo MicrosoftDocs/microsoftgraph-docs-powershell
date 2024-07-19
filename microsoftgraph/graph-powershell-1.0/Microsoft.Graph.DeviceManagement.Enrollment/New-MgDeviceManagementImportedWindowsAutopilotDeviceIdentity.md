@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 
 ## SYNOPSIS
-Create new navigation property to importedWindowsAutopilotDeviceIdentities for deviceManagement
+Create a new importedWindowsAutopilotDeviceIdentity object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 ```
 
 ## DESCRIPTION
-Create new navigation property to importedWindowsAutopilotDeviceIdentities for deviceManagement
+Create a new importedWindowsAutopilotDeviceIdentity object.
 
 ## PARAMETERS
 
@@ -308,6 +308,8 @@ STATE `<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>`: importedWi
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementimportedwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementimportedwindowsautopilotdeviceidentity)
+
+[https://learn.microsoft.com/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentity-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentity-create?view=graph-rest-1.0)
 
 
 

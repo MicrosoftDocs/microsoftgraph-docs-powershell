@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaCommunicationPresence
 
 ## SYNOPSIS
-Get presences from communications
+Get a user's presence information.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresence?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Get presences from communications
+Get a user's presence information.
 
 ## EXAMPLES
 ### Example 1: Get the presence information of another user
@@ -322,6 +322,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresence)
+
+[https://learn.microsoft.com/graph/api/presence-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/presence-get?view=graph-rest-beta)
 
 
 

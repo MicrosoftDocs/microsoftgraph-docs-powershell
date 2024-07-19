@@ -27,8 +27,6 @@ Get-MgOauth2PermissionGrantDelta [-ExpandProperty <String[]>] [-Filter <String>]
 Get newly created, updated, or deleted oauth2permissiongrant objects without performing a full read of the entire resource collection.
 For details, see Using delta query.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -243,6 +241,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta)
 
 [https://learn.microsoft.com/graph/api/oauth2permissiongrant-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/oauth2permissiongrant-delta?view=graph-rest-1.0)
+
 
 
 

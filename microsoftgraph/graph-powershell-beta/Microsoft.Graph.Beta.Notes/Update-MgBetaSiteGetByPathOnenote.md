@@ -538,8 +538,8 @@ Nullable.
     - `[Self <String>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Content <Byte- `[]`>]`: 
-    - `[ContentUrl <String>]`: 
+    - `[Content <Byte- `[]`>]`: The content of the resource.
+    - `[ContentUrl <String>]`: The URL for the content stream.
   - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in all OneNote notebooks that are owned by the user or group. 
 Read-only.
 Nullable.
@@ -804,8 +804,8 @@ Nullable.
   - `[Self <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Content <Byte- `[]`>]`: 
-  - `[ContentUrl <String>]`: 
+  - `[Content <Byte- `[]`>]`: The content of the resource.
+  - `[ContentUrl <String>]`: The URL for the content stream.
 
 SECTIONGROUPS <IMicrosoftGraphSectionGroup- `[]`>: The section groups in all OneNote notebooks that are owned by the user or group.
 Read-only.

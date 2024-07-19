@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage
 
 ## SYNOPSIS
-If the instance has multiple stages, this returns the collection of stages.
-A new stage will only be created when the previous stage ends.
-The existence, number, and settings of stages on a review instance are created based on the accessReviewStageSettings on the parent accessReviewScheduleDefinition.
+Retrieve the properties and relationships of an accessReviewStage object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-beta)
@@ -42,21 +40,19 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject <IIdent
 ```
 
 ## DESCRIPTION
-If the instance has multiple stages, this returns the collection of stages.
-A new stage will only be created when the previous stage ends.
-The existence, number, and settings of stages on a review instance are created based on the accessReviewStageSettings on the parent accessReviewScheduleDefinition.
+Retrieve the properties and relationships of an accessReviewStage object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId
+Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
+
 ```
 This example shows how to use the Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -406,6 +402,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancestage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancestage)
+
+[https://learn.microsoft.com/graph/api/accessreviewstage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewstage-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstance-list-stages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-list-stages?view=graph-rest-1.0)
 
 
 

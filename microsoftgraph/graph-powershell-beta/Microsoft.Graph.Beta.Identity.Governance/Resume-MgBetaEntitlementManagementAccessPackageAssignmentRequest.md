@@ -49,6 +49,30 @@ Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest -InputObject <I
 In Microsoft Entra entitlement management, when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action.
 It is performed on an accessPackageAssignmentRequest object whose requestStatus is in a WaitingForCallback state.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	source = "Contoso.SodCheckProcess"
+	type = "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated"
+	data = @{
+		"@odata.type" = "microsoft.graph.accessPackageAssignmentRequestCallbackData"
+		stage = "assignmentRequestCreated"
+		customExtensionStageInstanceId = "957d0c50-466b-4840-bb5b-c92cea7141ff"
+		customExtensionStageInstanceDetail = "This user is all verified"
+	}
+}
+
+Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId -BodyParameter $params
+
+```
+This example shows how to use the Resume-MgBetaEntitlementManagementAccessPackageAssignmentRequest Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentRequestId
@@ -379,7 +403,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaentitlementmanagementaccesspackageassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaentitlementmanagementaccesspackageassignmentrequest)
 
 [https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-resume?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-resume?view=graph-rest-beta)
-
 
 
 

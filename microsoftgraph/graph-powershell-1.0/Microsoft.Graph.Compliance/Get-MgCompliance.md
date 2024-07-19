@@ -23,8 +23,6 @@ Get-MgCompliance [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseH
 ## DESCRIPTION
 Get compliance
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -116,6 +114,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgcompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgcompliance)
+
+
 
 
 

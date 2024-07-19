@@ -40,8 +40,6 @@ Get-MgGroupTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 The collection of channels and messages associated with the team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -340,6 +338,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannel)
+
+
+
 
 
 

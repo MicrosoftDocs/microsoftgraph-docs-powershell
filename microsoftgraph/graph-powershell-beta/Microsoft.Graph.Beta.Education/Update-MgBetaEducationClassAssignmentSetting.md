@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaEducationClassAssignmentSetting
 
 ## SYNOPSIS
-Update the navigation property assignmentSettings in education
+Update the properties of an educationAssignmentSettings object.
+Only teachers can update these settings.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentSetting?view=graph-powershell-1.0)
@@ -49,7 +50,8 @@ Update-MgBetaEducationClassAssignmentSetting -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property assignmentSettings in education
+Update the properties of an educationAssignmentSettings object.
+Only teachers can update these settings.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -270,8 +272,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubmissionAnimationDisabled
-Indicates whether turn-in celebration animation will be shown.
-If true, the animation won't be shown.
+Indicates whether turn-in celebration animation is shown.
+If true, the animation doesn't show.
 The default value is false.
 
 ```yaml
@@ -355,8 +357,8 @@ Read-only.
     - `[DisplayName <String>]`: The name of the grading category.
     - `[PercentageWeight <Int32?>]`: The weight of the category; an integer between 0 and 100.
   - `[GradingSchemes <IMicrosoftGraphEducationGradingScheme- `[]`>]`: 
-  - `[SubmissionAnimationDisabled <Boolean?>]`: Indicates whether turn-in celebration animation will be shown.
-If true, the animation won't be shown.
+  - `[SubmissionAnimationDisabled <Boolean?>]`: Indicates whether turn-in celebration animation is shown.
+If true, the animation doesn't show.
 The default value is false.
 
 DEFAULTGRADINGSCHEME `<IMicrosoftGraphEducationGradingScheme>`: educationGradingScheme
@@ -411,6 +413,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsetting)
+
+[https://learn.microsoft.com/graph/api/educationassignmentsettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignmentsettings-update?view=graph-rest-beta)
 
 
 

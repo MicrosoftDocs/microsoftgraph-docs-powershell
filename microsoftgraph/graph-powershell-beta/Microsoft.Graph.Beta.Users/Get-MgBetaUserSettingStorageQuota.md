@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserSettingStorageQuota
 
 ## SYNOPSIS
-Get quota from users
+Read the properties and relationships of a unifiedStorageQuota object.
 
 ## SYNTAX
 
@@ -27,7 +27,44 @@ Get-MgBetaUserSettingStorageQuota -InputObject <IUsersIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Get quota from users
+Read the properties and relationships of a unifiedStorageQuota object.
+
+## EXAMPLES
+### Example 1: Get the unified quota information for the current user
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserSettingStorageQuota -UserId $userId
+
+```
+This example will get the unified quota information for the current user
+
+### Example 2: Get the unified quota information for the current user
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users
+
+Get-MgBetaUserSettingStorageQuota -UserId $userId
+
+```
+This example will get the unified quota information for the current user
+
+### Example 3: Get the unified quota information, along with the service breakdowns, for the current user
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserSettingStorageQuota -UserId $userId -ExpandProperty "services" 
+
+```
+This example will get the unified quota information, along with the service breakdowns, for the current user
+
 
 ## PARAMETERS
 
@@ -185,6 +222,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequota)
 
+[https://learn.microsoft.com/graph/api/unifiedstoragequota-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedstoragequota-get?view=graph-rest-beta)
 
 
 

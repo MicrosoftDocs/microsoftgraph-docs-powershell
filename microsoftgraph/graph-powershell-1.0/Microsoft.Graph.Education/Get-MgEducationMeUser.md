@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationMeUser
 
 ## SYNOPSIS
-The directory user that corresponds to this user.
+Retrieve the simple directory user that corresponds to this educationUser.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMeUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUser?view=graph-powershell-beta)
@@ -21,7 +21,7 @@ Get-MgEducationMeUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Resp
 ```
 
 ## DESCRIPTION
-The directory user that corresponds to this user.
+Retrieve the simple directory user that corresponds to this educationUser.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -127,6 +127,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser)
+
+[https://learn.microsoft.com/graph/api/educationuser-get-user?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-get-user?view=graph-rest-1.0)
 
 
 

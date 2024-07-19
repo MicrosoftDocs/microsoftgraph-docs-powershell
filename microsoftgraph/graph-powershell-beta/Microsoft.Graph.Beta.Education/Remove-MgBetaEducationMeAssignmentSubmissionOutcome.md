@@ -33,8 +33,6 @@ Remove-MgBetaEducationMeAssignmentSubmissionOutcome -InputObject <IEducationIden
 ## DESCRIPTION
 Delete navigation property outcomes for education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -243,6 +241,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationmeassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationmeassignmentsubmissionoutcome)
+
+
 
 
 

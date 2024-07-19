@@ -8,7 +8,10 @@ schema: 2.0.0
 # Update-MgBetaPrintPrinterJob
 
 ## SYNOPSIS
-Update the navigation property jobs in print
+Update a print job.
+Only the configuration property can be updated.
+Updating a print job will only succeed if a printTask in a processing state, started by a trigger that the requesting app created, is associated with the print job.
+For details about how to register a task trigger, see Extending Universal Print to support pull printing.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPrintPrinterJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintPrinterJob?view=graph-powershell-1.0)
@@ -52,7 +55,57 @@ Update-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> -BodyPara
 ```
 
 ## DESCRIPTION
-Update the navigation property jobs in print
+Update a print job.
+Only the configuration property can be updated.
+Updating a print job will only succeed if a printTask in a processing state, started by a trigger that the requesting app created, is associated with the print job.
+For details about how to register a task trigger, see Extending Universal Print to support pull printing.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+$params = @{
+	configuration = @{
+		feedOrientation = "longEdgeFirst"
+		pageRanges = @(
+			@{
+				start = 1
+				end = 1
+			}
+		)
+		quality = "medium"
+		dpi = 600
+		orientation = "landscape"
+		copies = 1
+		duplexMode = "oneSided"
+		colorMode = "blackAndWhite"
+		inputBin = "by-pass-tray"
+		outputBin = "output-tray"
+		mediaSize = "A4"
+		margin = @{
+			top = 0
+			bottom = 0
+			left = 0
+			right = 0
+		}
+		mediaType = "stationery"
+		finishings = $null
+		pagesPerSheet = 1
+		multipageLayout = "clockwiseFromBottomLeft"
+		collate = $false
+		scaling = "shrinkToFit"
+		fitPdfToPage = $false
+	}
+}
+
+Update-MgBetaPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPrintPrinterJob Cmdlet.
+
 
 ## PARAMETERS
 
@@ -492,7 +545,7 @@ Read-only.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
 Read-only.
@@ -622,7 +675,7 @@ CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
 This property is read-only.
   - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+  - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 DOCUMENTS <IMicrosoftGraphPrintDocument- `[]`>: .
@@ -732,6 +785,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinterjob)
 
+[https://learn.microsoft.com/graph/api/printjob-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printjob-update?view=graph-rest-beta)
 
 
 

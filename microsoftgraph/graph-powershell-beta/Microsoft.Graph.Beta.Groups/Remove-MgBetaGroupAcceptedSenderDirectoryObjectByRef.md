@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef
 
 ## SYNOPSIS
-Delete ref of navigation property acceptedSenders for groups
+Remove a user or group from the accepted-senders list of the specified group.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupAcceptedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupAcceptedSenderDirectoryObjectByRef?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef -InputObject <IGroupsIdenti
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property acceptedSenders for groups
+Remove a user or group from the accepted-senders list of the specified group.
 
 ## PARAMETERS
 
@@ -253,6 +253,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupacceptedsenderdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupacceptedsenderdirectoryobjectbyref)
+
+[https://learn.microsoft.com/graph/api/group-delete-acceptedsenders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-delete-acceptedsenders?view=graph-rest-beta)
+
 
 
 

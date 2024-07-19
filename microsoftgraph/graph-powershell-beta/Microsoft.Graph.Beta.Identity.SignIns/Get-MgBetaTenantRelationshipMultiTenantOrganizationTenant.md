@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant
 
 ## SYNOPSIS
-Defines tenants added to a multitenant organization.
+Get a tenant and its properties in the multi-tenant organization.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipMultiTenantOrganizationTenant](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTenantRelationshipMultiTenantOrganizationTenant?view=graph-powershell-1.0)
@@ -38,7 +38,20 @@ Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentit
 ```
 
 ## DESCRIPTION
-Defines tenants added to a multitenant organization.
+Get a tenant and its properties in the multi-tenant organization.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant Cmdlet.
+
 
 ## PARAMETERS
 
@@ -336,6 +349,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -355,6 +369,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -368,6 +383,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganizationtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganizationtenant)
 
+[https://learn.microsoft.com/graph/api/multitenantorganizationmember-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/multitenantorganizationmember-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/multitenantorganization-list-tenants?view=graph-rest-beta](https://learn.microsoft.com/graph/api/multitenantorganization-list-tenants?view=graph-rest-beta)
 
 
 

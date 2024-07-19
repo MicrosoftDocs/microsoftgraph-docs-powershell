@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaChatInstalledApp
 
 ## SYNOPSIS
-Create new navigation property to installedApps for chats
+Install a teamsApp to the specified chat.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgChatInstalledApp?view=graph-powershell-1.0)
@@ -19,7 +19,8 @@ Create new navigation property to installedApps for chats
 ```
 New-MgBetaChatInstalledApp -ChatId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]
- [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]
+ [-Id <String>] [-ScopeInfo <IMicrosoftGraphTeamsAppInstallationScopeInfo>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +35,8 @@ New-MgBetaChatInstalledApp -ChatId <String> -BodyParameter <IMicrosoftGraphTeams
 ```
 New-MgBetaChatInstalledApp -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]
- [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]
+ [-Id <String>] [-ScopeInfo <IMicrosoftGraphTeamsAppInstallationScopeInfo>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,10 +48,25 @@ New-MgBetaChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to installedApps for chats
+Install a teamsApp to the specified chat.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Install app in a chat
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = @{
+	"teamsApp@odata.bind" = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+}
+
+New-MgBetaChatInstalledApp -ChatId $chatId -BodyParameter $params
+
+```
+This example will install app in a chat
+
+### Example 2: Install app in a chat and consent to the resource-specific permissions required by the app
 
 ```powershell
 
@@ -82,7 +99,7 @@ $params = @{
 New-MgBetaChatInstalledApp -ChatId $chatId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgBetaChatInstalledApp Cmdlet.
+This example will install app in a chat and consent to the resource-specific permissions required by the app
 
 
 ## PARAMETERS
@@ -226,6 +243,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ScopeInfo
+teamsAppInstallationScopeInfo
+To construct, see NOTES section for SCOPEINFO properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTeamsAppInstallationScopeInfo
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TeamsApp
 teamsApp
 To construct, see NOTES section for TEAMSAPP properties and create a hash table.
@@ -315,6 +348,9 @@ Read-only.
     - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission- `[]`>]`: A collection of resource-specific permissions.
       - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
       - `[PermissionValue <String>]`: The name of the resource-specific permission.
+  - `[ScopeInfo <IMicrosoftGraphTeamsAppInstallationScopeInfo>]`: teamsAppInstallationScopeInfo
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Scope <String>]`: teamsAppInstallationScopes
   - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -439,6 +475,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
+
+SCOPEINFO `<IMicrosoftGraphTeamsAppInstallationScopeInfo>`: teamsAppInstallationScopeInfo
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Scope <String>]`: teamsAppInstallationScopes
 
 TEAMSAPP `<IMicrosoftGraphTeamsApp>`: teamsApp
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -595,6 +635,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatinstalledapp)
+
+[https://learn.microsoft.com/graph/api/chat-post-installedapps?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-post-installedapps?view=graph-rest-beta)
 
 
 

@@ -87,8 +87,6 @@ New-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to sets for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -731,6 +729,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupset)
+
+
 
 
 

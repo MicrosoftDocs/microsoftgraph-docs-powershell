@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaComplianceEdiscoveryCase
 
 ## SYNOPSIS
-Get cases from compliance
+Retrieve the properties and relationships of a case object.
 
 ## SYNTAX
 
@@ -35,7 +35,10 @@ Get-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get cases from compliance
+Retrieve the properties and relationships of a case object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -317,6 +320,10 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycase)
+
+[https://learn.microsoft.com/graph/api/ediscovery-case-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-case-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/ediscovery-case-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-case-list?view=graph-rest-beta)
 
 
 

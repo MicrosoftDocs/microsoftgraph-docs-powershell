@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementTelecomExpenseManagementPartner
 
 ## SYNOPSIS
-Create new navigation property to telecomExpenseManagementPartners for deviceManagement
+Create a new telecomExpenseManagementPartner object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
@@ -31,12 +31,13 @@ New-MgDeviceManagementTelecomExpenseManagementPartner
 ```
 
 ## DESCRIPTION
-Create new navigation property to telecomExpenseManagementPartners for deviceManagement
+Create a new telecomExpenseManagementPartner object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 $params = @{
@@ -49,10 +50,9 @@ $params = @{
 }
 
 New-MgDeviceManagementTelecomExpenseManagementPartner -BodyParameter $params
+
 ```
 This example shows how to use the New-MgDeviceManagementTelecomExpenseManagementPartner Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -286,6 +286,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtelecomexpensemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtelecomexpensemanagementpartner)
+
+[https://learn.microsoft.com/graph/api/intune-tem-telecomexpensemanagementpartner-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-tem-telecomexpensemanagementpartner-create?view=graph-rest-1.0)
 
 
 

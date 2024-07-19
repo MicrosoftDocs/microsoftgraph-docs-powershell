@@ -369,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### -Relationships
-The set of direct relationships for this app.
+List of relationships for this mobile app.
 To construct, see NOTES section for RELATIONSHIPS properties and create a hash table.
 
 ```yaml
@@ -510,7 +510,7 @@ Read-only.
   - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
   - `[Publisher <String>]`: The publisher of the app.
   - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
-  - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: The set of direct relationships for this app.
+  - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: List of relationships for this mobile app.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[TargetId <String>]`: The target mobile app's app id.
@@ -599,7 +599,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
   - `[Type <String>]`: Indicates the content mime type.
   - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
 
-RELATIONSHIPS <IMicrosoftGraphMobileAppRelationship- `[]`>: The set of direct relationships for this app.
+RELATIONSHIPS <IMicrosoftGraphMobileAppRelationship- `[]`>: List of relationships for this mobile app.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[TargetId <String>]`: The target mobile app's app id.

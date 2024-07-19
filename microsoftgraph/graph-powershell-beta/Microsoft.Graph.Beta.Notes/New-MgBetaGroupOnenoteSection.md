@@ -54,8 +54,6 @@ New-MgBetaGroupOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to sections for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -900,6 +898,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotesection)
+
+
 
 
 

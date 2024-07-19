@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgSecurityThreatIntelligenceHostWhoi
 
 ## SYNOPSIS
-The most recent whoisRecord for this host.
+Get the specified whoisRecord resource.
+Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
+- Specify an id value to get the corresponding whoisRecord.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostWhoi](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostWhoi?view=graph-powershell-beta)
@@ -30,7 +32,9 @@ Get-MgSecurityThreatIntelligenceHostWhoi -InputObject <ISecurityIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-The most recent whoisRecord for this host.
+Get the specified whoisRecord resource.
+Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
+- Specify an id value to get the corresponding whoisRecord.
 
 ## PARAMETERS
 
@@ -180,6 +184,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -221,6 +226,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostwhoi](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostwhoi)
+
+[https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceAppManagementMobileAppRelationship
 
 ## SYNOPSIS
-The set of direct relationships for this app.
+List of relationships for this mobile app.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-The set of direct relationships for this app.
+List of relationships for this mobile app.
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 
 ## SYNOPSIS
-The instances of assignment schedules to activate a just-in-time access.
+Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleInstance object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance?view=graph-powershell-1.0)
@@ -40,7 +40,20 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 ```
 
 ## DESCRIPTION
-The instances of assignment schedules to activate a just-in-time access.
+Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleInstance object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance -Filter "groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d'" 
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance Cmdlet.
+
 
 ## PARAMETERS
 
@@ -392,6 +405,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentscheduleinstance)
 
+[https://learn.microsoft.com/graph/api/privilegedaccessgroupassignmentscheduleinstance-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroupassignmentscheduleinstance-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-assignmentscheduleinstances?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-assignmentscheduleinstances?view=graph-rest-beta)
 
 
 

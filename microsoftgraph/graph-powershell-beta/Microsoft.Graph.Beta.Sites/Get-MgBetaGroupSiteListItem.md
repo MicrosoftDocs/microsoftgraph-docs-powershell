@@ -40,8 +40,6 @@ Get-MgBetaGroupSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 All items contained in the list.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -389,6 +387,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistitem)
+
+
+
+
 
 
 

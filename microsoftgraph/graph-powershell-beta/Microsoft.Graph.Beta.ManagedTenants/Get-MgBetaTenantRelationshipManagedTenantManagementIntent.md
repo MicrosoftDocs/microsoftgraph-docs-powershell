@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantManagementIntent
 
 ## SYNOPSIS
-The collection of baseline management intents across managed tenants.
+Read the properties and relationships of a managementIntent object.
 
 ## SYNTAX
 
@@ -35,23 +35,20 @@ Get-MgBetaTenantRelationshipManagedTenantManagementIntent -InputObject <IManaged
 ```
 
 ## DESCRIPTION
-The collection of baseline management intents across managed tenants.
+Read the properties and relationships of a managementIntent object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantManagementIntent Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-Get-MgBetaTenantRelationshipManagedTenantManagementIntent -ManagementIntentId $managementIntentId
-```
-This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagementIntent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaTenantRelationshipManagedTenantManagementIntent Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 Get-MgBetaTenantRelationshipManagedTenantManagementIntent
+
 ```
 This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagementIntent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -341,6 +338,10 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementintent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementintent)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managementintent-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managementintent-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementintents?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementintents?view=graph-rest-beta)
 
 
 

@@ -47,8 +47,6 @@ New-MgBetaComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for compliance
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Action
@@ -393,6 +391,8 @@ RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycaseoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycaseoperation)
+
+
 
 
 

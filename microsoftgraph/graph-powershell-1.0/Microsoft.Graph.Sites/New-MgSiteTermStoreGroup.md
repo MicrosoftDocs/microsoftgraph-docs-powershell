@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteTermStoreGroup
 
 ## SYNOPSIS
-Create new navigation property to groups for sites
+Create a new group object in a term store.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
@@ -80,7 +80,7 @@ New-MgSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Create new navigation property to groups for sites
+Create a new group object in a term store.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -528,6 +528,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroup)
+
+[https://learn.microsoft.com/graph/api/termstore-group-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-group-post?view=graph-rest-1.0)
 
 
 

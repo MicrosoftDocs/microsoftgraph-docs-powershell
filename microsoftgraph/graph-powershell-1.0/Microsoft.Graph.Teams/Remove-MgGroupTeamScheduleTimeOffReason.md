@@ -32,8 +32,6 @@ Remove-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property timeOffReasons for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId
@@ -242,6 +240,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamscheduletimeoffreason)
+
+
 
 
 

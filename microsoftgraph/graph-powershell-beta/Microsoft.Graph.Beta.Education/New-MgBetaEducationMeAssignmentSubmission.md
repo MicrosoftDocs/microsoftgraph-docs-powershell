@@ -56,8 +56,6 @@ New-MgBetaEducationMeAssignmentSubmission -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create new navigation property to submissions for education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -567,6 +565,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentsubmission)
+
+
 
 
 

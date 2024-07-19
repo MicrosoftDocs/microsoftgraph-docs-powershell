@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaComplianceEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Create new navigation property to queries for compliance
+Create a new reviewSetQuery object.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgBetaComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIdenti
 ```
 
 ## DESCRIPTION
-Create new navigation property to queries for compliance
+Create a new reviewSetQuery object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -423,6 +423,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasereviewsetquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasereviewsetquery)
+
+[https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-post?view=graph-rest-beta)
 
 
 

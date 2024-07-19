@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgBetaUserOnlineMeetingRecording
 
 ## SYNOPSIS
-Delete navigation property recordings for users
+The content stream of the recording of a Teams live event.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeetingRecording?view=graph-powershell-1.0)
@@ -17,9 +18,23 @@ Delete navigation property recordings for users
 
 ### Delete (Default)
 ```
-Remove-MgBetaUserOnlineMeetingRecording -CallRecordingId <String> -OnlineMeetingId <String> -UserId <String>
+Remove-MgBetaUserOnlineMeetingRecording -OnlineMeetingId <String> -UserId <String> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete1
+```
+Remove-MgBetaUserOnlineMeetingRecording -OnlineMeetingId <String> -UserId <String> -CallRecordingId <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -30,7 +45,8 @@ Remove-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdenti
 ```
 
 ## DESCRIPTION
-Delete navigation property recordings for users
+The content stream of the recording of a Teams live event.
+Read-only.
 
 ## PARAMETERS
 
@@ -39,7 +55,7 @@ The unique identifier of callRecording
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -85,7 +101,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -100,7 +116,7 @@ The unique identifier of onlineMeeting
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -160,7 +176,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaComplianceEdiscoveryCaseCustodianUserSource
 
 ## SYNOPSIS
-Create new navigation property to userSources for compliance
+Create a new custodian userSource object.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceI
 ```
 
 ## DESCRIPTION
-Create new navigation property to userSources for compliance
+Create a new custodian userSource object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -415,6 +415,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasecustodianusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasecustodianusersource)
+
+[https://learn.microsoft.com/graph/api/ediscovery-custodian-post-usersources?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-custodian-post-usersources?view=graph-rest-beta)
 
 
 

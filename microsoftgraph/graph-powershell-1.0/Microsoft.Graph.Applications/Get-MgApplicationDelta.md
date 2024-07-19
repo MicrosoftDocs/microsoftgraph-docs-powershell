@@ -30,8 +30,6 @@ For details, see Using delta query.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delta-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -246,6 +244,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta)
 
 [https://learn.microsoft.com/graph/api/application-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delta?view=graph-rest-1.0)
+
 
 
 

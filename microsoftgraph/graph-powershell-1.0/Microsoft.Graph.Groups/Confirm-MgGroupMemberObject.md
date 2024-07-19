@@ -48,8 +48,6 @@ Confirm-MgGroupMemberObject -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -272,6 +270,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupmemberobject)
+
+
 
 
 

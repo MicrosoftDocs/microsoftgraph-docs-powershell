@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserSettingItemInsight
 
 ## SYNOPSIS
-Update the navigation property itemInsights in users
+Update the privacy settings for itemInsights and meeting hours insights of a user.
 
 ## SYNTAX
 
@@ -41,19 +41,24 @@ Update-MgBetaUserSettingItemInsight -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property itemInsights in users
+Update the privacy settings for itemInsights and meeting hours insights of a user.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserSettingItemInsight Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
+
 $params = @{
-	IsEnabled = "false"
+	isEnabled = "false"
 }
+
 Update-MgBetaUserSettingItemInsight -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaUserSettingItemInsight Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -284,6 +289,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingiteminsight)
+
+[https://learn.microsoft.com/graph/api/userinsightssettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/userinsightssettings-update?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDomainFederationConfiguration
 
 ## SYNOPSIS
-Delete navigation property federationConfiguration for domains
+Delete an internalDomainFederation object.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Delete navigation property federationConfiguration for domains
+Delete an internalDomainFederation object.
 
 ## EXAMPLES
 ### Example 1: Remove federation settigs for a federated domain
@@ -239,6 +239,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomainfederationconfiguration)
+
+[https://learn.microsoft.com/graph/api/internaldomainfederation-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/internaldomainfederation-delete?view=graph-rest-1.0)
 
 
 

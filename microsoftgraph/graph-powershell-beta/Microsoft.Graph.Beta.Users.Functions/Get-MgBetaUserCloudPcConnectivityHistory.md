@@ -32,8 +32,6 @@ Get the connectivity history of a specific Cloud PC.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getcloudpcconnectivityhistory-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -263,6 +261,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcconnectivityhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcconnectivityhistory)
 
 [https://learn.microsoft.com/graph/api/cloudpc-getcloudpcconnectivityhistory?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-getcloudpcconnectivityhistory?view=graph-rest-beta)
+
+
 
 
 

@@ -8,7 +8,11 @@ schema: 2.0.0
 # Set-MgBetaTeamSchedule
 
 ## SYNOPSIS
-Update the navigation property schedule in teams
+Create or replace a schedule object.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).When clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
+If the provisioning failed, clients can get additional information from the provisionStatusCode property.
+Clients can also inspect the configuration of the schedule.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamSchedule?view=graph-powershell-1.0)
@@ -68,7 +72,29 @@ Set-MgBetaTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the navigation property schedule in teams
+Create or replace a schedule object.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).When clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
+If the provisioning failed, clients can get additional information from the provisionStatusCode property.
+Clients can also inspect the configuration of the schedule.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = @{
+	enabled = $true
+	timeZone = "America/Chicago"
+}
+
+Set-MgBetaTeamSchedule -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaTeamSchedule Cmdlet.
+
 
 ## PARAMETERS
 
@@ -1311,6 +1337,7 @@ Required.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamschedule)
 
+[https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-beta](https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-beta)
 
 
 

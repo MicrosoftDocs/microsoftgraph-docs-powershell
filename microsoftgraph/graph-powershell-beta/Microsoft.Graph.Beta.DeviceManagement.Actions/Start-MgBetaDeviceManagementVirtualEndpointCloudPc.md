@@ -52,6 +52,19 @@ Only IT admin users can perform this action.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-poweron-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+Start-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId
+
+```
+This example shows how to use the Start-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet.
+
+
 ## PARAMETERS
 
 ### -CloudPcId
@@ -255,7 +268,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/cloudpc-poweron?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-poweron?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/cloudpc-start?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-start?view=graph-rest-beta)
-
 
 
 

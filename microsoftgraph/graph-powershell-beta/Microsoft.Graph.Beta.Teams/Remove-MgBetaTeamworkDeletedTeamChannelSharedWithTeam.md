@@ -33,8 +33,6 @@ Remove-MgBetaTeamworkDeletedTeamChannelSharedWithTeam -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Delete navigation property sharedWithTeams for teamwork
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -266,6 +264,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchannelsharedwithteam)
+
+
 
 
 

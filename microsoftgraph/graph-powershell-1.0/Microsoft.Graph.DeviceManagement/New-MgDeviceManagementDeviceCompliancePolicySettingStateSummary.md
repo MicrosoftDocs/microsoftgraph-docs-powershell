@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
 
 ## SYNOPSIS
-Create new navigation property to deviceCompliancePolicySettingStateSummaries for deviceManagement
+Create a new deviceCompliancePolicySettingStateSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary?view=graph-powershell-beta)
@@ -34,7 +34,7 @@ New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceCompliancePolicySettingStateSummaries for deviceManagement
+Create a new deviceCompliancePolicySettingStateSummary object.
 
 ## PARAMETERS
 
@@ -390,6 +390,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicysettingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicysettingstatesummary)
+
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-create?view=graph-rest-1.0)
 
 
 

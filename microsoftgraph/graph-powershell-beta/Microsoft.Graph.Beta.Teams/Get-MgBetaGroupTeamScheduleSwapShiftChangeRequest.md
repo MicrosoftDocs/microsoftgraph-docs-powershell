@@ -40,8 +40,6 @@ Get-MgBetaGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> 
 ## DESCRIPTION
 The swap requests for shifts in the schedule.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -348,6 +346,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduleswapshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduleswapshiftchangerequest)
+
+
+
+
 
 
 

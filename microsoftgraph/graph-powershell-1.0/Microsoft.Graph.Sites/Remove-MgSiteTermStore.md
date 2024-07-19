@@ -46,8 +46,6 @@ Remove-MgSiteTermStore -InputObject <ISitesIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property termStore for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -267,6 +265,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstore)
+
+
 
 
 

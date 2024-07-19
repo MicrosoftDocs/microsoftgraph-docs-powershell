@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult
 
 ## SYNOPSIS
-The associated individual user execution.
+Get the user processing result of a user processing result of a run.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult?view=graph-powershell-1.0)
@@ -39,7 +39,7 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult -InputObjec
 ```
 
 ## DESCRIPTION
-The associated individual user execution.
+Get the user processing result of a user processing result of a run.
 
 ## EXAMPLES
 ### Example 1: Get a user processing result in a run report
@@ -444,6 +444,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowrunuserprocessingresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowrunuserprocessingresult)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-userprocessingresult-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-userprocessingresult-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-run-list-userprocessingresults?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-run-list-userprocessingresults?view=graph-rest-beta)
 
 
 

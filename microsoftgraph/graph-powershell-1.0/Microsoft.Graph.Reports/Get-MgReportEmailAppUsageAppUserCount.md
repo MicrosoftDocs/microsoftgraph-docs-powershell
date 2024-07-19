@@ -31,8 +31,6 @@ Get-MgReportEmailAppUsageAppUserCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get the count of unique users per email app.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -186,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageappusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageappusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-1.0)
+
 
 
 

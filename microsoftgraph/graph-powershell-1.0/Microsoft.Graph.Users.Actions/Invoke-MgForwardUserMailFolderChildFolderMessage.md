@@ -67,32 +67,6 @@ Alternatively, create a draft to forward a message, and send it later.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-forward-permissions.md)]
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	Comment = "comment-value"
-	ToRecipients = @(
-		@{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
-			}
-		}
-	)
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgForwardUserMailFolderChildFolderMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -596,6 +570,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-1.0)
+
 
 
 

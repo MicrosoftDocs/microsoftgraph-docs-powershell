@@ -34,6 +34,19 @@ Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSucc
 Get the number of user authentication requests, during a specific time period, that satisfy a Conditional Access policy requiring devices to be managed.
 Managed devices are computers joined to and managed by your on-premises directory and hybrid devices joined to Microsoft Entra.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AggregationIntervalInMinutes
@@ -234,7 +247,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -284,7 +296,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccessmanageddevicesigninsuccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccessmanageddevicesigninsuccess)
 
 [https://learn.microsoft.com/graph/api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess?view=graph-rest-beta)
-
 
 
 

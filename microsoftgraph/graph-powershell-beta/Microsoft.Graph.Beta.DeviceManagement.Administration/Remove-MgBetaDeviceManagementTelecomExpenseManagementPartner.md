@@ -33,8 +33,6 @@ Remove-MgBetaDeviceManagementTelecomExpenseManagementPartner
 ## DESCRIPTION
 Delete navigation property telecomExpenseManagementPartners for deviceManagement
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -252,6 +250,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementtelecomexpensemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementtelecomexpensemanagementpartner)
+
+
 
 
 

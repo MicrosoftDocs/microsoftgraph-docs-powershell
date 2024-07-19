@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationClassTeacherEducationUserByRef
 
 ## SYNOPSIS
-Delete ref of navigation property teachers for education
+Remove a teacher from an educationClass.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassTeacherEducationUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassTeacherEducationUserByRef?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgEducationClassTeacherEducationUserByRef -InputObject <IEducationIdentit
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property teachers for education
+Remove a teacher from an educationClass.
 
 ## PARAMETERS
 
@@ -220,6 +220,9 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassteachereducationuserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassteachereducationuserbyref)
+
+[https://learn.microsoft.com/graph/api/educationclass-delete-teachers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-delete-teachers?view=graph-rest-1.0)
+
 
 
 

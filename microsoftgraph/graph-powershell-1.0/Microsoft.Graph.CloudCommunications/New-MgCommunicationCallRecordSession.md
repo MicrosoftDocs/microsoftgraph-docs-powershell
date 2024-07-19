@@ -52,8 +52,6 @@ New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Create new navigation property to sessions for communications
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -674,6 +672,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallrecordsession](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallrecordsession)
+
+
 
 
 

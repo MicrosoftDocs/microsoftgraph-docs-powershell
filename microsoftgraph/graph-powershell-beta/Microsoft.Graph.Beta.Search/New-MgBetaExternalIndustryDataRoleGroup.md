@@ -213,9 +213,11 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-      - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+      - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+      - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
       - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-      - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+      - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
 
 ROLES <IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>: The set of roles included in the role group.
   - `[Code <String>]`: The code of the desired referenceDefinition entry.
@@ -224,9 +226,11 @@ ROLES <IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>: The set of roles in
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-    - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+    - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+    - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
     - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-    - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+    - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
 
 ## RELATED LINKS
 

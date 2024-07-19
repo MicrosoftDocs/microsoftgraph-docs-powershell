@@ -52,8 +52,6 @@ New-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter 
 ## DESCRIPTION
 Create new navigation property to timesOff for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -487,6 +485,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimeoff)
+
+
 
 
 

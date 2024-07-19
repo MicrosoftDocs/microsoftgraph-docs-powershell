@@ -43,8 +43,6 @@ Update-MgBetaUserDeviceExtension -InputObject <ICrossDeviceExperiencesIdentity> 
 ## DESCRIPTION
 Update the navigation property extensions in users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -260,6 +258,8 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdeviceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdeviceextension)
+
+
 
 
 

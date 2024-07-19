@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgBetaTenantRelationshipMultiTenantOrganizationTenant
 
 ## SYNOPSIS
-Create new navigation property to tenants for tenantRelationships
+Add a tenant to a multitenant organization.
+The administrator of an owner tenant has the permissions to add tenants to the multitenant organization.
+The added tenant is in the pending state until the administrator of the added tenant joins the multitenant organization by submitting a join request.
+A tenant can be part of only one multitenant organization.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipMultiTenantOrganizationTenant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTenantRelationshipMultiTenantOrganizationTenant?view=graph-powershell-1.0)
@@ -33,7 +36,28 @@ New-MgBetaTenantRelationshipMultiTenantOrganizationTenant
 ```
 
 ## DESCRIPTION
-Create new navigation property to tenants for tenantRelationships
+Add a tenant to a multitenant organization.
+The administrator of an owner tenant has the permissions to add tenants to the multitenant organization.
+The added tenant is in the pending state until the administrator of the added tenant joins the multitenant organization by submitting a join request.
+A tenant can be part of only one multitenant organization.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	tenantId = "4a12efe6-aa14-4d03-8dff-88fc89e2e2ad"
+	displayName = "Fabrikam"
+}
+
+New-MgBetaTenantRelationshipMultiTenantOrganizationTenant -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTenantRelationshipMultiTenantOrganizationTenant Cmdlet.
+
 
 ## PARAMETERS
 
@@ -356,6 +380,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatenantrelationshipmultitenantorganizationtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatenantrelationshipmultitenantorganizationtenant)
 
+[https://learn.microsoft.com/graph/api/multitenantorganization-post-tenants?view=graph-rest-beta](https://learn.microsoft.com/graph/api/multitenantorganization-post-tenants?view=graph-rest-beta)
 
 
 

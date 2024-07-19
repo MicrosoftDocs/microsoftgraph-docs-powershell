@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEducationSchoolUserByRef
 
 ## SYNOPSIS
-Users in the school.
-Nullable.
+Retrieve a list of users at a school.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolUserByRef?view=graph-powershell-1.0)
@@ -23,10 +22,7 @@ Get-MgBetaEducationSchoolUserByRef -EducationSchoolId <String> [-Filter <String>
 ```
 
 ## DESCRIPTION
-Users in the school.
-Nullable.
-
-## EXAMPLES
+Retrieve a list of users at a school.
 
 ## PARAMETERS
 
@@ -225,6 +221,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooluserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooluserbyref)
+
+[https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-beta)
+
+
 
 
 

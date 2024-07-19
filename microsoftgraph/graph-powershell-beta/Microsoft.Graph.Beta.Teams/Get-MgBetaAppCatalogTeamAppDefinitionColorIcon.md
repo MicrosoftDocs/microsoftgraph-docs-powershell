@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAppCatalogTeamAppDefinitionColorIcon
 
 ## SYNOPSIS
-The color version of the Teams app's icon.
+Retrieve a Teams app icon associated with a specific definition of an app.
 
 ## SYNTAX
 
@@ -27,23 +27,31 @@ Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -InputObject <ITeamsIdentity> [-E
 ```
 
 ## DESCRIPTION
-The color version of the Teams app's icon.
+Retrieve a Teams app icon associated with a specific definition of an app.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaAppCatalogTeamAppDefinitionColorIcon Cmdlet
+### Example 1: Get color icon of a *custom* Teams app
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
+
 ```
-This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionColorIcon Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaAppCatalogTeamAppDefinitionColorIcon Cmdlet
+This example will get color icon of a *custom* teams app
+
+### Example 2: Get color icon of a *store* Teams app
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
+
 ```
-This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionColorIcon Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will get color icon of a *store* teams app
+
 
 ## PARAMETERS
 
@@ -230,6 +238,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloricon](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloricon)
+
+[https://learn.microsoft.com/graph/api/teamsappicon-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamsappicon-get?view=graph-rest-beta)
 
 
 

@@ -40,8 +40,6 @@ Get-MgGroupTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Members and owners of the team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -340,6 +338,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteammember)
+
+
+
 
 
 

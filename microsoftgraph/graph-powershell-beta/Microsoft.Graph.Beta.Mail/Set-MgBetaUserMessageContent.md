@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgBetaUserMessageContent
 
 ## SYNOPSIS
-Update media content for the navigation property messages in users
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgUserMessageContent](/powershell/module/Microsoft.Graph.Mail/Set-MgUserMessageContent?view=graph-powershell-1.0)
@@ -30,7 +31,8 @@ Set-MgBetaUserMessageContent -InputObject <IMailIdentity> [-Data <Stream>] [-Res
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property messages in users
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 
@@ -251,6 +253,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/set-mgbetausermessagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/set-mgbetausermessagecontent)
+
 
 
 

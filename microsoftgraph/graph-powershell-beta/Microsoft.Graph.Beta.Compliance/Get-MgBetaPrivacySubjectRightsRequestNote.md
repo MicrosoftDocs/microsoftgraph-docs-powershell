@@ -40,6 +40,19 @@ Get-MgBetaPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-E
 ## DESCRIPTION
 List of notes associated with the request.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Compliance
+
+Get-MgBetaPrivacySubjectRightsRequestNote -SubjectRightsRequestId $subjectRightsRequestId
+
+```
+This example shows how to use the Get-MgBetaPrivacySubjectRightsRequestNote Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -323,6 +336,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestnote)
 
+[https://learn.microsoft.com/graph/api/subjectrightsrequest-list-notes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/subjectrightsrequest-list-notes?view=graph-rest-beta)
 
 
 

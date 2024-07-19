@@ -32,8 +32,6 @@ Remove-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property tabs for teams
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -242,6 +240,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychanneltab)
+
+
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgBetaRoleManagementExchangeCustomAppScope
 
 ## SYNOPSIS
-Create new navigation property to customAppScopes for roleManagement
+Create a new customAppScope object for an RBAC provider.
+Currently only the Exchange Online RBAC provider is supported.
 
 ## SYNTAX
 
@@ -28,7 +29,30 @@ New-MgBetaRoleManagementExchangeCustomAppScope -BodyParameter <IMicrosoftGraphCu
 ```
 
 ## DESCRIPTION
-Create new navigation property to customAppScopes for roleManagement
+Create a new customAppScope object for an RBAC provider.
+Currently only the Exchange Online RBAC provider is supported.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+$params = @{
+	type = "RecipientScope"
+	displayName = "Protected Exec Users"
+	customAttributes = @{
+		Exclusive = $false
+		RecipientFilter = "Title -like 'VP*'"
+	}
+}
+
+New-MgBetaRoleManagementExchangeCustomAppScope -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaRoleManagementExchangeCustomAppScope Cmdlet.
+
 
 ## PARAMETERS
 
@@ -235,6 +259,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangecustomappscope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangecustomappscope)
 
+[https://learn.microsoft.com/graph/api/unifiedrbacapplication-post-customappscope?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedrbacapplication-post-customappscope?view=graph-rest-beta)
 
 
 

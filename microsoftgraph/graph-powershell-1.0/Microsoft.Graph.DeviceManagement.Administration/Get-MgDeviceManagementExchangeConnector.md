@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementExchangeConnector
 
 ## SYNOPSIS
-The list of Exchange Connectors configured by the tenant.
+Read properties and relationships of the deviceManagementExchangeConnector object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementExchangeConnector -InputObject <IDeviceManagementAdministr
 ```
 
 ## DESCRIPTION
-The list of Exchange Connectors configured by the tenant.
+Read properties and relationships of the deviceManagementExchangeConnector object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -328,6 +328,10 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementexchangeconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementexchangeconnector)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementexchangeconnector-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementexchangeconnector-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementexchangeconnector-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementexchangeconnector-list?view=graph-rest-1.0)
 
 
 

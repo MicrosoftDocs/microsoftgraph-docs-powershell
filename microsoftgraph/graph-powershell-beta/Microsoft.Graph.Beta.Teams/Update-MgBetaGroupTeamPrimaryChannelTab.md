@@ -254,7 +254,9 @@ Accept wildcard characters: False
 ```
 
 ### -TeamsAppId
-.
+App definition identifier of the tab.
+This value can't be changed after tab creation.
+Because this property is deprecated, we recommend expanding teamsApp to retrieve the application that is linked to the tab.
 
 ```yaml
 Type: String
@@ -439,7 +441,9 @@ Required.
     - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
     - `[DistributionMethod <String>]`: teamsAppDistributionMethod
     - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
-  - `[TeamsAppId <String>]`: 
+  - `[TeamsAppId <String>]`: App definition identifier of the tab.
+This value can't be changed after tab creation.
+Because this property is deprecated, we recommend expanding teamsApp to retrieve the application that is linked to the tab.
   - `[WebUrl <String>]`: Deep link URL of the tab instance.
 Read only.
 
@@ -576,6 +580,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamprimarychanneltab)
+
 
 
 

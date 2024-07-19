@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaComplianceEdiscoveryCaseSourceCollection
 
 ## SYNOPSIS
-Create new navigation property to sourceCollections for compliance
+Create a new sourceCollection object.
 
 ## SYNTAX
 
@@ -56,7 +56,7 @@ New-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIden
 ```
 
 ## DESCRIPTION
-Create new navigation property to sourceCollections for compliance
+Create a new sourceCollection object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -922,6 +922,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasesourcecollection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasesourcecollection)
+
+[https://learn.microsoft.com/graph/api/ediscovery-case-post-sourcecollections?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-case-post-sourcecollections?view=graph-rest-beta)
 
 
 

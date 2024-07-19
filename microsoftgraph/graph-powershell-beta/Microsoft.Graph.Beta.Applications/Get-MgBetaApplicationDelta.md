@@ -31,6 +31,17 @@ See Using Delta Query for details.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delta-permissions.md)]
 
 ## EXAMPLES
+### Example
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+Get-MgBetaApplicationDelta
+
+```
+This example will### example
+
 
 ## PARAMETERS
 

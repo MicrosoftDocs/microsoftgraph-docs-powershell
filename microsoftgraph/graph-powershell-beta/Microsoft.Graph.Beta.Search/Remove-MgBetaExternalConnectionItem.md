@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaExternalConnectionItem
 
 ## SYNOPSIS
-Delete navigation property items for external
+Delete an externalitem.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionItem?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Delete navigation property items for external
+Delete an externalitem.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -241,6 +241,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionitem)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalitem-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-delete?view=graph-rest-beta)
 
 
 

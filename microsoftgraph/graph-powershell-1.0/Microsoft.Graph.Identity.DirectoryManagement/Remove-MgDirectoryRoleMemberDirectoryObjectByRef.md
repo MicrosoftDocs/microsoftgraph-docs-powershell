@@ -8,7 +8,10 @@ schema: 2.0.0
 # Remove-MgDirectoryRoleMemberDirectoryObjectByRef
 
 ## SYNOPSIS
-Delete ref of navigation property members for directoryRoles
+Remove a member from a directoryRole.
+You can use both the object ID and template ID of the directoryRole with this API.
+The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
+For details, see Role template IDs.
 
 ## SYNTAX
 
@@ -27,7 +30,10 @@ Remove-MgDirectoryRoleMemberDirectoryObjectByRef -InputObject <IIdentityDirector
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property members for directoryRoles
+Remove a member from a directoryRole.
+You can use both the object ID and template ID of the directoryRole with this API.
+The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
+For details, see Role template IDs.
 
 ## PARAMETERS
 
@@ -230,6 +236,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolememberdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolememberdirectoryobjectbyref)
+
+[https://learn.microsoft.com/graph/api/directoryrole-delete-member?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryrole-delete-member?view=graph-rest-1.0)
 
 
 

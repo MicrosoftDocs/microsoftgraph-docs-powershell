@@ -42,8 +42,6 @@ Get-MgBetaGroupSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <St
 The permissions associated with the site.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -376,6 +374,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepermission)
+
+
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDirectoryOnPremiseSynchronization
 
 ## SYNOPSIS
-Update the navigation property onPremisesSynchronization in directory
+Update the properties of an onPremisesDirectorySynchronization object.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryManag
 ```
 
 ## DESCRIPTION
-Update the navigation property onPremisesSynchronization in directory
+Update the properties of an onPremisesDirectorySynchronization object.
 
 ## PARAMETERS
 
@@ -350,6 +350,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryonpremisesynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryonpremisesynchronization)
+
+[https://learn.microsoft.com/graph/api/onpremisesdirectorysynchronization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesdirectorysynchronization-update?view=graph-rest-1.0)
 
 
 

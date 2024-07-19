@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementNotificationMessageTemplate
 
 ## SYNOPSIS
-Delete navigation property notificationMessageTemplates for deviceManagement
+Deletes a notificationMessageTemplate.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementNotificationMessageTemplate -InputObject <IDeviceManage
 ```
 
 ## DESCRIPTION
-Delete navigation property notificationMessageTemplates for deviceManagement
+Deletes a notificationMessageTemplate.
 
 ## PARAMETERS
 
@@ -246,6 +246,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementnotificationmessagetemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementnotificationmessagetemplate)
+
+[https://learn.microsoft.com/graph/api/intune-notification-notificationmessagetemplate-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-notification-notificationmessagetemplate-delete?view=graph-rest-1.0)
 
 
 

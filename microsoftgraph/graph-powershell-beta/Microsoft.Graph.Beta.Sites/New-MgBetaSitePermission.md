@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSitePermission
 
 ## SYNOPSIS
-Create new navigation property to permissions for sites
+Create a new permission object on a site.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/New-MgSitePermission?view=graph-powershell-1.0)
@@ -54,7 +54,7 @@ New-MgBetaSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Create new navigation property to permissions for sites
+Create a new permission object on a site.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -65,16 +65,16 @@ Import-Module Microsoft.Graph.Beta.Sites
 
 $params = @{
 	roles = @(
-		"write"
-	)
-	grantedToIdentities = @(
-		@{
-			application = @{
-				id = "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
-				displayName = "Contoso Time Manager App"
-			}
+	"write"
+)
+grantedToIdentities = @(
+	@{
+		application = @{
+			id = "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
+			displayName = "Contoso Time Manager App"
 		}
-	)
+	}
+)
 }
 
 New-MgBetaSitePermission -SiteId $siteId -BodyParameter $params
@@ -150,7 +150,8 @@ Accept wildcard characters: False
 ```
 
 ### -GrantedToIdentities
-.
+For type permissions, the details of the users to whom permission was granted.
+Read-only.
 To construct, see NOTES section for GRANTEDTOIDENTITIES properties and create a hash table.
 
 ```yaml
@@ -455,7 +456,8 @@ This property is read-only.
 This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[GrantedToIdentities <IMicrosoftGraphIdentitySet- `[]`>]`: 
+  - `[GrantedToIdentities <IMicrosoftGraphIdentitySet- `[]`>]`: For type permissions, the details of the users to whom permission was granted.
+Read-only.
   - `[GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet- `[]`>]`: For link type permissions, the details of the users to whom permission was granted.
 Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -482,13 +484,13 @@ For OneDrive Personal only.
 Only returned if the item is located in a drive.
 Read-only.
     - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a drive. 
+Only returned if the item is located in a drive.
 See drive resource for values.
     - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
     - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-    - `[Path <String>]`: Path that can be used to navigate to the item.
+    - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
     - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
     - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -502,8 +504,8 @@ Read-only.
       - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
     - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
 The value is the same as the id property of that site resource.
-It is an opaque string that consists of three identifiers of the site.
-For OneDrive, this property is not populated.
+It's an opaque string that consists of three identifiers of the site.
+For OneDrive, this property isn't populated.
   - `[Invitation <IMicrosoftGraphSharingInvitation>]`: sharingInvitation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Email <String>]`: The email address provided for the recipient of the sharing invitation.
@@ -540,7 +542,8 @@ This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-GRANTEDTOIDENTITIES <IMicrosoftGraphIdentitySet- `[]`>: .
+GRANTEDTOIDENTITIES <IMicrosoftGraphIdentitySet- `[]`>: For type permissions, the details of the users to whom permission was granted.
+Read-only.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
@@ -596,13 +599,13 @@ INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
 Only returned if the item is located in a drive.
 Read-only.
   - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a drive. 
+Only returned if the item is located in a drive.
 See drive resource for values.
   - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
   - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-  - `[Path <String>]`: Path that can be used to navigate to the item.
+  - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
   - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
   - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -616,8 +619,8 @@ Read-only.
     - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
 The value is the same as the id property of that site resource.
-It is an opaque string that consists of three identifiers of the site.
-For OneDrive, this property is not populated.
+It's an opaque string that consists of three identifiers of the site.
+For OneDrive, this property isn't populated.
 
 INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
@@ -711,6 +714,8 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepermission)
+
+[https://learn.microsoft.com/graph/api/site-post-permissions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-post-permissions?view=graph-rest-beta)
 
 
 

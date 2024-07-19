@@ -32,6 +32,41 @@ It allows you to maintain and synchronize a local store of a user's sites withou
 After you receive all the changes, you can apply them to your local state.To monitor future changes, call the delta API by using the @odata.deltaLink in the previous response.
 Any resources marked as deleted should be removed from your local state.
 
+## EXAMPLES
+### Example 1: Initial request
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteDelta
+
+```
+This example will initial request
+
+### Example 2: Last page request
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteDelta -Token "1230919asd190410jlka" 
+
+```
+This example will last page request
+
+### Example 3: Delta link request
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteDelta -Token "latest" 
+
+```
+This example will delta link request
+
+
 ## PARAMETERS
 
 ### -All
@@ -246,7 +281,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitedelta)
 
 [https://learn.microsoft.com/graph/api/site-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-delta?view=graph-rest-beta)
-
 
 
 

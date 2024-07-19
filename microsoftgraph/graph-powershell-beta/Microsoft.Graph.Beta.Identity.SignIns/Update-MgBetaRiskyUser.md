@@ -384,8 +384,12 @@ Read-only.
     - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Detail <String>]`: riskDetail
-      - `[EventTypes <String- `[]`>]`: 
-      - `[RiskEventTypes <String- `[]`>]`: 
+      - `[EventTypes <String- `[]`>]`: List of risk event types.
+Deprecated.
+Use riskEventType instead.
+      - `[RiskEventTypes <String- `[]`>]`: The type of risk event detected.
+The possible values are: anonymizedIPAddress, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, suspiciousAPITraffic, suspiciousIPAddress,   unfamiliarFeatures, unlikelyTravel.
+For more information about each value, see Risk types and detection.
     - `[InitiatedBy <String>]`: The ID of actor that does the operation.
     - `[UserId <String>]`: The ID of the user.
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted.
@@ -418,8 +422,12 @@ Read-only.
   - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Detail <String>]`: riskDetail
-    - `[EventTypes <String- `[]`>]`: 
-    - `[RiskEventTypes <String- `[]`>]`: 
+    - `[EventTypes <String- `[]`>]`: List of risk event types.
+Deprecated.
+Use riskEventType instead.
+    - `[RiskEventTypes <String- `[]`>]`: The type of risk event detected.
+The possible values are: anonymizedIPAddress, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, suspiciousAPITraffic, suspiciousIPAddress,   unfamiliarFeatures, unlikelyTravel.
+For more information about each value, see Risk types and detection.
   - `[InitiatedBy <String>]`: The ID of actor that does the operation.
   - `[UserId <String>]`: The ID of the user.
 
@@ -474,6 +482,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -493,6 +502,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -505,6 +515,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyuser)
+
 
 
 

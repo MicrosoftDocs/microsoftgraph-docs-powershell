@@ -32,8 +32,6 @@ Remove-MgBetaTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property members for teams
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ConversationMemberId
@@ -250,6 +248,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelmember)
+
+
 
 
 

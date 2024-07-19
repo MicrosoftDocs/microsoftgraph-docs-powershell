@@ -64,8 +64,6 @@ Update-MgBetaEducationMeAssignment -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property assignments in education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AddedStudentAction
@@ -902,6 +900,8 @@ If the value is null, the student uploaded the resource.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignment)
+
+
 
 
 

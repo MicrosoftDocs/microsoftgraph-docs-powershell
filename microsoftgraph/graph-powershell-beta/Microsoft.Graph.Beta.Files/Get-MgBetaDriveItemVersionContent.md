@@ -32,8 +32,6 @@ Get-MgBetaDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <String
 ## DESCRIPTION
 Get content for the navigation property versions from drives
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -DriveId
@@ -217,6 +215,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemversioncontent)
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityTriggerRetentionEvent
 
 ## SYNOPSIS
-Create new navigation property to retentionEvents for security
+Create a new retentionEvent object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ New-MgSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityReten
 ```
 
 ## DESCRIPTION
-Create new navigation property to retentionEvents for security
+Create a new retentionEvent object.
 
 ## PARAMETERS
 
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventPropagationResults
-.
+Represents the success status of a created event and additional information.
 To construct, see NOTES section for EVENTPROPAGATIONRESULTS properties and create a hash table.
 
 ```yaml
@@ -374,14 +374,15 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEvent was created.
   - `[Description <String>]`: Optional information about the event.
   - `[DisplayName <String>]`: Name of the event.
-  - `[EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult- `[]`>]`: 
+  - `[EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult- `[]`>]`: Represents the success status of a created event and additional information.
     - `[Location <String>]`: The name of the specific location in the workload associated with the event.
     - `[ServiceName <String>]`: The name of the workload associated with the event.
     - `[Status <String>]`: eventPropagationStatus
@@ -429,12 +430,13 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-EVENTPROPAGATIONRESULTS <IMicrosoftGraphSecurityEventPropagationResult- `[]`>: .
+EVENTPROPAGATIONRESULTS <IMicrosoftGraphSecurityEventPropagationResult- `[]`>: Represents the success status of a created event and additional information.
   - `[Location <String>]`: The name of the specific location in the workload associated with the event.
   - `[ServiceName <String>]`: The name of the workload associated with the event.
   - `[Status <String>]`: eventPropagationStatus
@@ -470,8 +472,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -485,8 +488,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEventType was created.
@@ -498,6 +502,8 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent)
+
+[https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0)
 
 
 

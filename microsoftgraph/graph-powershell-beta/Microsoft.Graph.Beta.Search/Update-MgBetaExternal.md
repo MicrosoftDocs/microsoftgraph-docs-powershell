@@ -255,8 +255,7 @@ Read-only.
         - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets.
 Maximum 16 characters.
 Only alphanumeric characters allowed.
-        - `[Layout <IMicrosoftGraphJson>]`: Json
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Layout <IAny>]`: The definition of the content's appearance, represented by an Adaptive Card, which is a JSON-serialized card object model.
         - `[Priority <Int32?>]`: Defines the priority of a display template.
 A display template with priority 1 is evaluated before a template with priority 4.
 Gaps in priority values are supported.
@@ -423,9 +422,11 @@ Maximum supported length is 100 characters.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-              - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+              - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+              - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
               - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-              - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+              - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
           - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
           - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -526,8 +527,7 @@ Read-only.
       - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets.
 Maximum 16 characters.
 Only alphanumeric characters allowed.
-      - `[Layout <IMicrosoftGraphJson>]`: Json
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Layout <IAny>]`: The definition of the content's appearance, represented by an Adaptive Card, which is a JSON-serialized card object model.
       - `[Priority <Int32?>]`: Defines the priority of a display template.
 A display template with priority 1 is evaluated before a template with priority 4.
 Gaps in priority values are supported.
@@ -695,9 +695,11 @@ Maximum supported length is 100 characters.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-            - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+            - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+            - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
             - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-            - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+            - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
         - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
         - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -802,6 +804,7 @@ Maximum supported length is 100 characters.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal)
+
 
 
 

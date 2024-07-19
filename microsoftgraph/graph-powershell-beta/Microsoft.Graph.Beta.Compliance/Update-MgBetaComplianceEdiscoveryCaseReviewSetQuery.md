@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaComplianceEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Update the navigation property queries in compliance
+Update the properties of an eDiscovery reviewSetQuery.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ Update-MgBetaComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIde
 ```
 
 ## DESCRIPTION
-Update the navigation property queries in compliance
+Update the properties of an eDiscovery reviewSetQuery.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -438,6 +438,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasereviewsetquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasereviewsetquery)
+
+[https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-update?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataYear
 
 ## SYNOPSIS
-Set of years represented in the system.
+Read the properties and relationships of a yearTimePeriodDefinition object.
 
 ## SYNTAX
 
@@ -35,7 +35,20 @@ Get-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Set of years represented in the system.
+Read the properties and relationships of a yearTimePeriodDefinition object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalIndustryDataYear
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataYear Cmdlet.
+
 
 ## PARAMETERS
 
@@ -309,6 +322,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatayear](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatayear)
 
+[https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-list?view=graph-rest-beta)
 
 
 

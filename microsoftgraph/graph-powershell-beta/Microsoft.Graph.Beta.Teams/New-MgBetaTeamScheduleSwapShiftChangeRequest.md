@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaTeamScheduleSwapShiftChangeRequest
 
 ## SYNOPSIS
-Create new navigation property to swapShiftsChangeRequests for teams
+Create an instance of a swapShiftsChangeRequest object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleSwapShiftChangeRequest?view=graph-powershell-1.0)
@@ -50,7 +50,7 @@ New-MgBetaTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to swapShiftsChangeRequests for teams
+Create an instance of a swapShiftsChangeRequest object.
 
 ## PARAMETERS
 
@@ -469,6 +469,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleswapshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleswapshiftchangerequest)
+
+[https://learn.microsoft.com/graph/api/swapshiftschangerequest-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/swapshiftschangerequest-post?view=graph-rest-beta)
 
 
 

@@ -40,19 +40,6 @@ Get-MgBetaShareListContentType -InputObject <IFilesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The collection of content types present in this list.
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Sites
-
-Get-MgBetaSiteListContentType -SiteId $siteId -ListId $listId
-```
-This example shows how to use the Get-MgBetaShareListContentType Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -All
@@ -342,6 +329,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcontenttype)
+
+
+
+
 
 
 

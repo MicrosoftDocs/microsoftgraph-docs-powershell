@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyActivityBasedTimeoutPolicy
 
 ## SYNOPSIS
-Create new navigation property to activityBasedTimeoutPolicies for policies
+Create a new activityBasedTimeoutPolicy object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-1.0)
@@ -31,27 +31,27 @@ New-MgBetaPolicyActivityBasedTimeoutPolicy -BodyParameter <Hashtable> [-Response
 ```
 
 ## DESCRIPTION
-Create new navigation property to activityBasedTimeoutPolicies for policies
+Create a new activityBasedTimeoutPolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	definition = @(
-		"definition-value"
-	)
-	displayName = "displayName-value"
-	isOrganizationDefault = $true
+	"definition-value"
+)
+displayName = "displayName-value"
+isOrganizationDefault = $true
 }
 
 New-MgBetaPolicyActivityBasedTimeoutPolicy -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaPolicyActivityBasedTimeoutPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -301,6 +301,8 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyactivitybasedtimeoutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyactivitybasedtimeoutpolicy)
+
+[https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies?view=graph-rest-beta)
 
 
 

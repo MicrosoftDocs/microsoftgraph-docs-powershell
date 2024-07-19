@@ -32,8 +32,6 @@ Remove-MgEducationUserRubric -InputObject <IEducationIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property rubrics for education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationRubricId
@@ -222,6 +220,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserrubric)
+
+
 
 
 

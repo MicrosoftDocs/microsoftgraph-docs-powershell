@@ -32,8 +32,6 @@ Get-MgReportMailboxUsageQuotaStatusMailboxCount -InputObject <IReportsIdentity> 
 ## DESCRIPTION
 Get the count of user mailboxes in each quota category.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -187,6 +185,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagequotastatusmailboxcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagequotastatusmailboxcount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-1.0)
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSecurityAlertV2
 
 ## SYNOPSIS
-Update the navigation property alerts_v2 in security
+Update the properties of an alert object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlertV2?view=graph-powershell-1.0)
@@ -62,7 +62,27 @@ Update-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Update the navigation property alerts_v2 in security
+Update the properties of an alert object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	assignedTo = "secAdmin@contoso.com"
+	classification = "truePositive"
+	determination = "malware"
+	status = "inProgress"
+}
+
+Update-MgBetaSecurityAlertV2 -AlertId $alertId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityAlertV2 Cmdlet.
+
 
 ## PARAMETERS
 
@@ -841,6 +861,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -851,6 +872,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -877,6 +899,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2)
 
+[https://learn.microsoft.com/graph/api/security-alert-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-alert-update?view=graph-rest-beta)
 
 
 

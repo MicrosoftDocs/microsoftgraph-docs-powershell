@@ -44,13 +44,13 @@ Get permissionGrants from groups
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupPermissionGrant -GroupId $groupId
+
 ```
 This example shows how to use the Get-MgGroupPermissionGrant Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -359,6 +359,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrant)
+
+[https://learn.microsoft.com/graph/api/group-list-permissiongrants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-permissiongrants?view=graph-rest-1.0)
 
 
 

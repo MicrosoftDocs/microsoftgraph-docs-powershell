@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBetaDeviceManagementVirtualEndpointReportExportJob
 
 ## SYNOPSIS
-Create new navigation property to exportJobs for deviceManagement
+Create a new cloudPcExportJob resource to initiate downloading the entire or specified portion of a report.
+Use the GET cloudPcExportJob operation to verify the exportJobStatus property of the cloudPcExportJob resource.
+When the property result is completed, the report finishes downloading to the location specified by the exportUrl property.
 
 ## SYNTAX
 
@@ -29,7 +31,62 @@ New-MgBetaDeviceManagementVirtualEndpointReportExportJob -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to exportJobs for deviceManagement
+Create a new cloudPcExportJob resource to initiate downloading the entire or specified portion of a report.
+Use the GET cloudPcExportJob operation to verify the exportJobStatus property of the cloudPcExportJob resource.
+When the property result is completed, the report finishes downloading to the location specified by the exportUrl property.
+
+## EXAMPLES
+### Example 1: Create an export job to download the TotalAggregatedRemoteConnectionReports report
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+$params = @{
+	reportName = "TotalAggregatedRemoteConnectionReports"
+	select = @(
+	"CloudPcId"
+"ManagedDeviceName"
+"UserPrincipalName"
+"DaysSinceLastSignIn"
+"TotalUsageInHour"
+)
+}
+
+New-MgBetaDeviceManagementVirtualEndpointReportExportJob -BodyParameter $params
+
+```
+This example will create an export job to download the totalaggregatedremoteconnectionreports report
+
+### Example 2: Create an export job to download the RemoteConnectionQualityReports report.
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+$params = @{
+	reportName = "RemoteConnectionQualityReports"
+	select = @(
+	"CloudPcId"
+"ManagedDeviceName"
+"AvgRoundTripTimeInMsP50"
+"LastConnectionRoundTripTimeInMs"
+"AvgAvailableBandwidthInMBpsP50"
+"LastConnectionAvailableBandWidthInMSps"
+"AvgRemoteSignInTimeInSecP50"
+"UDPConnectionPercentage"
+"LastConnectionGateway"
+"LastConnectionProtocol"
+"EventDateTime"
+)
+filter = "EventDateTime gt datetime'2023-06-14T07:40:41.694Z'"
+}
+
+New-MgBetaDeviceManagementVirtualEndpointReportExportJob -BodyParameter $params
+
+```
+This example will create an export job to download the remoteconnectionqualityreports report.
+
 
 ## PARAMETERS
 
@@ -311,6 +368,7 @@ It can be used to download the file.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob)
 
+[https://learn.microsoft.com/graph/api/cloudpcreports-post-exportjobs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-post-exportjobs?view=graph-rest-beta)
 
 
 

@@ -29,8 +29,6 @@ Disable-MgBetaDeviceManagementComanagedDeviceLostMode -InputObject <IDeviceManag
 ## DESCRIPTION
 Disable lost mode
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -230,6 +228,8 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/disable-mgbetadevicemanagementcomanageddevicelostmode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/disable-mgbetadevicemanagementcomanageddevicelostmode)
+
+
 
 
 

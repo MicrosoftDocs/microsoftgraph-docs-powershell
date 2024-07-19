@@ -46,8 +46,6 @@ Remove-MgSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property terms for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId
@@ -312,6 +310,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroupsetterm)
+
+
 
 
 

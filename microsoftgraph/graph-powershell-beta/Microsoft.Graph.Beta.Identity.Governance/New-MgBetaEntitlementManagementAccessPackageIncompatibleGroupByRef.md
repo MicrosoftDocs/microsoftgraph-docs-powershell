@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef
 
 ## SYNOPSIS
-Create new navigation property ref to incompatibleGroups for identityGovernance
+Add a group to the list of groups marked as incompatible on an accessPackage.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-1.0)
@@ -46,12 +46,13 @@ New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -InputObject 
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to incompatibleGroups for identityGovernance
+Add a group to the list of groups marked as incompatible on an accessPackage.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
@@ -59,10 +60,9 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId $accessPackageId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -362,6 +362,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageincompatiblegroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageincompatiblegroupbyref)
+
+[https://learn.microsoft.com/graph/api/accesspackage-post-incompatiblegroup?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-post-incompatiblegroup?view=graph-rest-beta)
 
 
 

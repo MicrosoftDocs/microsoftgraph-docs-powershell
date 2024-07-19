@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassTeacherByRef
 
 ## SYNOPSIS
-All teachers in the class.
-Nullable.
+Retrieve a list of teachers for a class.
+Delegated tokens must be members of the class to get the teacher list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
@@ -23,10 +23,8 @@ Get-MgEducationClassTeacherByRef -EducationClassId <String> [-Filter <String>] [
 ```
 
 ## DESCRIPTION
-All teachers in the class.
-Nullable.
-
-## EXAMPLES
+Retrieve a list of teachers for a class.
+Delegated tokens must be members of the class to get the teacher list.
 
 ## PARAMETERS
 
@@ -225,6 +223,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassteacherbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassteacherbyref)
+
+[https://learn.microsoft.com/graph/api/educationclass-list-teachers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-teachers?view=graph-rest-1.0)
+
+
 
 
 

@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgBetaUserAuthenticationSignInPreference
 
 ## SYNOPSIS
-The settings and preferences for to the sign-in experience of a user.
-Use this property to configure the user's default multifactor authentication (MFA) method.
+Read the properties of a user's authentication states.
+Use this API to retrieve the following information:
 
 ## SYNTAX
 
@@ -28,8 +28,21 @@ Get-MgBetaUserAuthenticationSignInPreference -InputObject <IIdentitySignInsIdent
 ```
 
 ## DESCRIPTION
-The settings and preferences for to the sign-in experience of a user.
-Use this property to configure the user's default multifactor authentication (MFA) method.
+Read the properties of a user's authentication states.
+Use this API to retrieve the following information:
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaUserAuthenticationSignInPreference -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserAuthenticationSignInPreference Cmdlet.
+
 
 ## PARAMETERS
 
@@ -206,6 +219,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -225,6 +239,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -238,6 +253,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationsigninpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationsigninpreference)
 
+[https://learn.microsoft.com/graph/api/authentication-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authentication-get?view=graph-rest-beta)
 
 
 

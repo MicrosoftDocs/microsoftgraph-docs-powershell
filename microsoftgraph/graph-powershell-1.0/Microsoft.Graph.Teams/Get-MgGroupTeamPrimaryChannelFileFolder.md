@@ -32,8 +32,6 @@ Get-MgGroupTeamPrimaryChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandPr
 ## DESCRIPTION
 Metadata for the location where the channel's files are stored.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -196,6 +194,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelfilefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelfilefolder)
+
+
 
 
 

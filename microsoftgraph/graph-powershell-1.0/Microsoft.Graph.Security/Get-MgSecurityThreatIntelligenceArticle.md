@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityThreatIntelligenceArticle
 
 ## SYNOPSIS
-A list of article objects.
+Read the properties and relationships of an article object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-A list of article objects.
+Read the properties and relationships of an article object.
 
 ## PARAMETERS
 
@@ -309,6 +309,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -350,6 +351,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticle](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticle)
+
+[https://learn.microsoft.com/graph/api/security-article-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-article-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-threatintelligence-list-articles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-threatintelligence-list-articles?view=graph-rest-1.0)
 
 
 

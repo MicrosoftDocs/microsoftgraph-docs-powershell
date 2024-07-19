@@ -32,6 +32,19 @@ Reactivate a completed, dismissed, or postponed recommendation object.
 This action updates the status of the recommendation to active.
 This method only works when the status of the recommendation is completedByUser, dismissed, or postponed.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Invoke-MgBetaReactivateDirectoryRecommendation -RecommendationId $recommendationId
+
+```
+This example shows how to use the Invoke-MgBetaReactivateDirectoryRecommendation Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -211,7 +224,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryrecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryrecommendation)
 
 [https://learn.microsoft.com/graph/api/recommendation-reactivate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/recommendation-reactivate?view=graph-rest-beta)
-
 
 
 

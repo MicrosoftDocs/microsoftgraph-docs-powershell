@@ -29,8 +29,6 @@ Get-MgUserTrendingResourceInsight -InputObject <IPeopleIdentity> [-ExpandPropert
 ## DESCRIPTION
 Used for navigating to the trending document.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -180,6 +178,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendingresourceinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendingresourceinsight)
+
+
 
 
 

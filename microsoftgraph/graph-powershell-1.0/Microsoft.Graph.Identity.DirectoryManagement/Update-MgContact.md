@@ -60,8 +60,6 @@ Update-MgContact -InputObject <IIdentityDirectoryManagementIdentity> -BodyParame
 ## DESCRIPTION
 Update entity in contacts
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -749,6 +747,8 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontact)
+
+
 
 
 

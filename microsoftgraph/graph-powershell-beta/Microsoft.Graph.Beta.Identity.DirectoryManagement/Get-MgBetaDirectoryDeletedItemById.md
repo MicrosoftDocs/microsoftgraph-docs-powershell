@@ -35,8 +35,6 @@ Get-MgBetaDirectoryDeletedItemById
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -202,6 +200,8 @@ BODYPARAMETER `<IPaths1I5T24RDirectoryDeleteditemsMicrosoftGraphGetbyidsPostRequ
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydeleteditembyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydeleteditembyid)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta)
+
+
 
 
 

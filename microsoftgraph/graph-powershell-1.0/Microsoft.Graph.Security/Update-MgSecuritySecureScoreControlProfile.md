@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSecuritySecureScoreControlProfile
 
 ## SYNOPSIS
-Update the navigation property secureScoreControlProfiles in security
+Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
@@ -57,7 +57,7 @@ Update-MgSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property secureScoreControlProfiles in security
+Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
 ## EXAMPLES
 ### Example 1: Request without Prefer header
@@ -446,7 +446,7 @@ Accept wildcard characters: False
 ```
 
 ### -Threats
-List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage,
+List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, spoofing).
 
 ```yaml
 Type: String[]
@@ -461,7 +461,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tier
-.
+Control tier (Core, Defense in Depth, Advanced.)
 
 ```yaml
 Type: String
@@ -476,7 +476,7 @@ Accept wildcard characters: False
 ```
 
 ### -Title
-.
+Title of the control.
 
 ```yaml
 Type: String
@@ -491,7 +491,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserImpact
-.
+User impact of implementing control (low, moderate, high).
 
 ```yaml
 Type: String
@@ -597,10 +597,10 @@ The Timestamp type represents date and time
   - `[Remediation <String>]`: Description of what the control will help remediate.
   - `[RemediationImpact <String>]`: Description of the impact on users of the remediation.
   - `[Service <String>]`: Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).
-  - `[Threats <String- `[]`>]`: List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage,
-  - `[Tier <String>]`: 
-  - `[Title <String>]`: 
-  - `[UserImpact <String>]`: 
+  - `[Threats <String- `[]`>]`: List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, spoofing).
+  - `[Tier <String>]`: Control tier (Core, Defense in Depth, Advanced.)
+  - `[Title <String>]`: Title of the control.
+  - `[UserImpact <String>]`: User impact of implementing control (low, moderate, high).
   - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
@@ -647,6 +647,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -697,6 +698,8 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile)
+
+[https://learn.microsoft.com/graph/api/securescorecontrolprofile-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securescorecontrolprofile-update?view=graph-rest-1.0)
 
 
 

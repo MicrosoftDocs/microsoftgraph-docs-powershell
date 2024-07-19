@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyCrossTenantAccessPolicyDefault
 
 ## SYNOPSIS
-Update the navigation property default in policies
+Update the default configuration of a cross-tenant access policy.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-1.0)
@@ -39,12 +39,13 @@ Update-MgBetaPolicyCrossTenantAccessPolicyDefault
 ```
 
 ## DESCRIPTION
-Update the navigation property default in policies
+Update the default configuration of a cross-tenant access policy.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Block outbound B2B collaboration for a group of users
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -71,10 +72,53 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicyDefault Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will block outbound b2b collaboration for a group of users
+
+### Example 2: Update default invitation redemption configuration
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	invitationRedemptionIdentityProviderConfiguration = @{
+		primaryIdentityProviderPrecedenceOrder = @(
+		"externalFederation"
+	"azureActiveDirectory"
+"socialIdentityProviders"
+)
+fallbackIdentityProvider = "defaultConfiguredIdp"
+}
+}
+
+Update-MgBetaPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
+
+```
+This example will update default invitation redemption configuration
+
+### Example 3: Disallow Microsoft accounts as an option for redeeming B2B invitations
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	invitationRedemptionIdentityProviderConfiguration = @{
+		primaryIdentityProviderPrecedenceOrder = @(
+		"externalFederation"
+	"azureActiveDirectory"
+"socialIdentityProviders"
+)
+fallbackIdentityProvider = "emailOneTimePasscode"
+}
+}
+
+Update-MgBetaPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
+
+```
+This example will disallow microsoft accounts as an option for redeeming b2b invitations
 
 
 ## PARAMETERS
@@ -478,6 +522,8 @@ For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicydefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicydefault)
+
+[https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-update?view=graph-rest-beta)
 
 
 

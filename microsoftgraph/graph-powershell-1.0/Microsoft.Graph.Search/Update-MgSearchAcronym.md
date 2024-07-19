@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSearchAcronym
 
 ## SYNOPSIS
-Update the navigation property acronyms in search
+Update the properties of an acronym object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchAcronym?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Update-MgSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Update the navigation property acronyms in search
+Update the properties of an acronym object.
 
 ## PARAMETERS
 
@@ -379,6 +379,8 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym)
+
+[https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-1.0)
 
 
 

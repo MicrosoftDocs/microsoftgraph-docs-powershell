@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBetaIdentityProvider
 
 ## SYNOPSIS
-Create new navigation property to identityProviders for identity
+Create an identity provider object that is of the type specified in the request body.
+Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Microsoft Entra ID.
+In Azure AD B2C, this operation can currently create a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityProvider?view=graph-powershell-1.0)
@@ -30,12 +32,15 @@ New-MgBetaIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase>
 ```
 
 ## DESCRIPTION
-Create new navigation property to identityProviders for identity
+Create an identity provider object that is of the type specified in the request body.
+Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Microsoft Entra ID.
+In Azure AD B2C, this operation can currently create a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
 ## EXAMPLES
-### Example 1: Create a specific <strong>social identity provider</strong> (Azure AD and Azure AD B2C)
+### Example 1: Create a specific **social identity provider** (Microsoft Entra ID and Azure AD B2C)
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -47,14 +52,14 @@ $params = @{
 }
 
 New-MgBetaIdentityProvider -BodyParameter $params
+
 ```
-This example shows how to use the New-MgBetaIdentityProvider Cmdlet.
+This example will create a specific **social identity provider** (microsoft entra id and azure ad b2c)
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create a specific <strong>OpenID Connect identity provider</strong> (only for Azure AD B2C)
+### Example 2: Create a specific **OpenID Connect identity provider** (only for Azure AD B2C)
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -62,6 +67,13 @@ $params = @{
 	displayName = "Login with the Contoso identity provider"
 	clientId = "56433757-cadd-4135-8431-2c9e3fd68ae8"
 	clientSecret = "12345"
+	claimsMapping = @{
+		userId = "myUserId"
+		givenName = "myGivenName"
+		surname = "mySurname"
+		email = "myEmail"
+		displayName = "myDisplayName"
+	}
 	domainHint = "mycustomoidc"
 	metadataUrl = "https://mycustomoidc.com/.well-known/openid-configuration"
 	responseMode = "form_post"
@@ -70,14 +82,14 @@ $params = @{
 }
 
 New-MgBetaIdentityProvider -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityProvider Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will create a specific **openid connect identity provider** (only for azure ad b2c)
 
 ### Example 3: Retrieves Apple identity provider (only for Azure AD B2C)
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -90,10 +102,9 @@ $params = @{
 }
 
 New-MgBetaIdentityProvider -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityProvider Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example retrieves apple identity provider (only for azure ad b2c)
 
 
 ## PARAMETERS
@@ -261,6 +272,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityprovider)
+
+[https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-beta)
 
 
 

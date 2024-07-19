@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintOperation
 
 ## SYNOPSIS
-The list of print long running operations.
+Retrieve the properties and relationships of a printOperation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintOperation?view=graph-powershell-beta)
@@ -37,7 +37,10 @@ Get-MgPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-The list of print long running operations.
+Retrieve the properties and relationships of a printOperation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printoperation-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -315,6 +318,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintoperation)
+
+[https://learn.microsoft.com/graph/api/printoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printoperation-get?view=graph-rest-1.0)
 
 
 

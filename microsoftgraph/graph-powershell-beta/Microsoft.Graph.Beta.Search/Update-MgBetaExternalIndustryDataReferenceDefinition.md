@@ -15,9 +15,9 @@ Update the navigation property referenceDefinitions in external
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaExternalIndustryDataReferenceDefinition -ReferenceDefinitionId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Code <String>] [-Id <String>]
- [-IsDisabled] [-ReferenceType <String>] [-SortIndex <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Code <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsDisabled] [-ReferenceType <String>] [-SortIndex <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -30,9 +30,9 @@ Update-MgBetaExternalIndustryDataReferenceDefinition -ReferenceDefinitionId <Str
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaExternalIndustryDataReferenceDefinition -InputObject <ISearchIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Code <String>] [-Id <String>]
- [-IsDisabled] [-ReferenceType <String>] [-SortIndex <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Code <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsDisabled] [-ReferenceType <String>] [-SortIndex <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -80,6 +80,21 @@ Accept wildcard characters: False
 
 ### -Code
 The code value for the definition that must be unique within the referenceType.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisplayName
+A human-readable representation of the reference code value for display in a user interface.
 
 ```yaml
 Type: String
@@ -141,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDisabled
-Indicates whether the definition has been disabled.
+Indicates whether the definition is disabled.
 
 ```yaml
 Type: SwitchParameter
@@ -216,7 +231,8 @@ Accept wildcard characters: False
 ```
 
 ### -SortIndex
-The ordering index to present the definitions within a type consistently in user interfaces.
+The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
 
 ```yaml
 Type: Int32
@@ -283,9 +299,11 @@ BODYPARAMETER `<IMicrosoftGraphIndustryDataReferenceDefinition>`: referenceDefin
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-  - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+  - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+  - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
   - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-  - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+  - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
 
 INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym

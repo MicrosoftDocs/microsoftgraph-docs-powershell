@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteContentTypeColumn
 
 ## SYNOPSIS
-The collection of column definitions for this content type.
+Retrieve the metadata for a site, a list, or a contentType column.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSiteContentTypeColumn -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-The collection of column definitions for this content type.
+Retrieve the metadata for a site, a list, or a contentType column.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -377,6 +377,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecolumn)
+
+[https://learn.microsoft.com/graph/api/columndefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/contenttype-list-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-list-columns?view=graph-rest-1.0)
 
 
 

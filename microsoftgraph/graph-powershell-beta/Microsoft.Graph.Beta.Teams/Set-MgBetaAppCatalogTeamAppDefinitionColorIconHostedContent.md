@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent
 
 ## SYNOPSIS
-Update media content for the navigation property hostedContent in appCatalogs
+The contents of the app icon if the icon is hosted within the Teams infrastructure.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Set-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITeams
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property hostedContent in appCatalogs
+The contents of the app icon if the icon is hosted within the Teams infrastructure.
 
 ## PARAMETERS
 
@@ -280,6 +280,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetaappcatalogteamappdefinitioncoloriconhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetaappcatalogteamappdefinitioncoloriconhostedcontent)
+
 
 
 

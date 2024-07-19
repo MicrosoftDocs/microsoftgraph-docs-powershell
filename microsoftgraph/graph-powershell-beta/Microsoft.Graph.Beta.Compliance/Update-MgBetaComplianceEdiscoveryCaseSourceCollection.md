@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaComplianceEdiscoveryCaseSourceCollection
 
 ## SYNOPSIS
-Update the navigation property sourceCollections in compliance
+Update the properties of a sourceCollection object.
 
 ## SYNTAX
 
@@ -57,7 +57,7 @@ Update-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceI
 ```
 
 ## DESCRIPTION
-Update the navigation property sourceCollections in compliance
+Update the properties of a sourceCollection object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -934,6 +934,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesourcecollection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesourcecollection)
+
+[https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-update?view=graph-rest-beta)
 
 
 

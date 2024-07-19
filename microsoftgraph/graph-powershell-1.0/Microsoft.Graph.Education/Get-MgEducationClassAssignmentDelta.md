@@ -38,7 +38,8 @@ Get a list of newly-created or updated assignments without reading the whole col
 A teacher or an application running with application permissions can see all assignment objects for the class.
 Students can only see assignments that are assigned to them.
 
-## EXAMPLES
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-delta-permissions.md)]
 
 ## PARAMETERS
 
@@ -320,6 +321,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentdelta)
 
 [https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0)
+
 
 
 

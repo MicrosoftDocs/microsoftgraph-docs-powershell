@@ -33,8 +33,6 @@ Remove-MgBetaServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceA
 ## DESCRIPTION
 Delete navigation property attachments for admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -214,6 +212,8 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/remove-mgbetaserviceannouncementmessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/remove-mgbetaserviceannouncementmessageattachment)
+
+
 
 
 

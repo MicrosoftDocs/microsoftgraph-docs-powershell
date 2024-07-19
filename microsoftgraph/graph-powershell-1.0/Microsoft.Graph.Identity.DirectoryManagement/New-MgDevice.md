@@ -76,7 +76,7 @@ true if the account is enabled; otherwise, false.
 Required.
 Default is true.
 Supports $filter (eq, ne, not, in).
-Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
+Only callers with at least the Cloud Device Administrator role can set this property.
 
 ```yaml
 Type: SwitchParameter
@@ -407,7 +407,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsRooted
-true if the device is rooted; false if the device is jail-broken.
+true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
 
 ```yaml
@@ -831,7 +831,7 @@ Read-only.
 Required.
 Default is true. 
 Supports $filter (eq, ne, not, in).
-Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
+Only callers with at least the Cloud Device Administrator role can set this property.
   - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId- `[]`>]`: For internal use only.
 Not nullable.
 Supports $filter (eq, not, ge, le).
@@ -877,7 +877,7 @@ Supports $filter (eq, ne, not).
   - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
-  - `[IsRooted <Boolean?>]`: true if the device is rooted; false if the device is jail-broken.
+  - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
   - `[ManagementType <String>]`: The management channel of the device.
 This property is set by Intune.

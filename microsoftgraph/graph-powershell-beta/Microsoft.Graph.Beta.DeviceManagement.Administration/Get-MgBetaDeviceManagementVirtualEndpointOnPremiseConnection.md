@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 
 ## SYNOPSIS
-A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
+Read the properties and relationships of the cloudPcOnPremisesConnection object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-1.0)
@@ -39,7 +39,31 @@ Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ```
 
 ## DESCRIPTION
-A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
+Read the properties and relationships of the cloudPcOnPremisesConnection object.
+
+## EXAMPLES
+### Example 1: Get the default properties of an Azure network connection
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId
+
+```
+This example will get the default properties of an azure network connection
+
+### Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetails
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -Property "id,displayName,healthCheckStatus,healthCheckStatusDetail,healthCheckStatusDetails,inUse" 
+
+```
+This example will get the selected properties of an azure network connection, including healthcheckstatusdetails
+
 
 ## PARAMETERS
 
@@ -349,6 +373,9 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointonpremiseconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointonpremiseconnection)
 
+[https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta)
 
 
 

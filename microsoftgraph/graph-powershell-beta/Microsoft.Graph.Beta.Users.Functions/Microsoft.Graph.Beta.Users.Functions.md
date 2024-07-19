@@ -53,6 +53,9 @@ Locale: en-US
 ### [Get-MgBetaUserCloudPcProvisionedCloudPc](Get-MgBetaUserCloudPcProvisionedCloudPc.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserCloudPcReviewStatus](Get-MgBetaUserCloudPcReviewStatus.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserCloudPcShiftWorkCloudPcAccessState](Get-MgBetaUserCloudPcShiftWorkCloudPcAccessState.md)
 {{ Fill in the Description }}
 

@@ -32,8 +32,6 @@ Remove-MgGroupTeamChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property tabs for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -257,6 +255,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchanneltab)
+
+
 
 
 

@@ -15,8 +15,7 @@ Update the navigation property daily in reports
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaReportUserInsightDaily [-ResponseHeadersVariable <String>]
- [-ActiveUsers <IMicrosoftGraphActiveUsersMetric[]>]
- [-ActiveUsersBreakdown <IMicrosoftGraphActiveUsersBreakdownMetric[]>] [-AdditionalProperties <Hashtable>]
+ [-ActiveUsers <IMicrosoftGraphActiveUsersMetric[]>] [-AdditionalProperties <Hashtable>]
  [-Authentications <IMicrosoftGraphAuthenticationsMetric[]>] [-Id <String>]
  [-InactiveUsers <IMicrosoftGraphDailyInactiveUsersMetric[]>]
  [-InactiveUsersByApplication <IMicrosoftGraphDailyInactiveUsersByApplicationMetric[]>]
@@ -43,22 +42,6 @@ To construct, see NOTES section for ACTIVEUSERS properties and create a hash tab
 
 ```yaml
 Type: IMicrosoftGraphActiveUsersMetric[]
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ActiveUsersBreakdown
-.
-To construct, see NOTES section for ACTIVEUSERSBREAKDOWN properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphActiveUsersBreakdownMetric[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -331,15 +314,6 @@ Read-only.
   - `[Language <String>]`: 
   - `[OS <String>]`: 
 
-ACTIVEUSERSBREAKDOWN <IMicrosoftGraphActiveUsersBreakdownMetric- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-  - `[AppId <String>]`: 
-  - `[AppName <String>]`: 
-  - `[Count <Int64?>]`: 
-  - `[FactDate <DateTime?>]`: 
-  - `[OS <String>]`: 
-
 AUTHENTICATIONS <IMicrosoftGraphAuthenticationsMetric- `[]`>: Insights for authentications on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -370,14 +344,6 @@ Read-only.
     - `[Country <String>]`: 
     - `[FactDate <DateTime?>]`: Date of the insight.
     - `[Language <String>]`: 
-    - `[OS <String>]`: 
-  - `[ActiveUsersBreakdown <IMicrosoftGraphActiveUsersBreakdownMetric- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-    - `[AppId <String>]`: 
-    - `[AppName <String>]`: 
-    - `[Count <Int64?>]`: 
-    - `[FactDate <DateTime?>]`: 
     - `[OS <String>]`: 
   - `[Authentications <IMicrosoftGraphAuthenticationsMetric- `[]`>]`: Insights for authentications on apps registered in the tenant for a specified period.
     - `[Id <String>]`: The unique identifier for an entity.

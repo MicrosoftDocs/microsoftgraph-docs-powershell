@@ -8,9 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassModuleResource
 
 ## SYNOPSIS
-Learning objects that are associated with this module.
-Only teachers can modify this list.
-Nullable.
+Get the properties of a resource associated with a module.
+Only teachers, students, and applications with application permissions can perform this operation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
@@ -41,9 +40,8 @@ Get-MgEducationClassModuleResource -InputObject <IEducationIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Learning objects that are associated with this module.
-Only teachers can modify this list.
-Nullable.
+Get the properties of a resource associated with a module.
+Only teachers, students, and applications with application permissions can perform this operation.
 
 ## PARAMETERS
 
@@ -338,6 +336,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmoduleresource)
+
+[https://learn.microsoft.com/graph/api/educationmoduleresource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmoduleresource-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/educationmodule-list-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-list-resources?view=graph-rest-1.0)
 
 
 

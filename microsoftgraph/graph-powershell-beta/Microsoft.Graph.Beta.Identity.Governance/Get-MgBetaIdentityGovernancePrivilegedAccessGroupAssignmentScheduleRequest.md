@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 
 ## SYNOPSIS
-The schedule requests for operations to create, update, delete, extend, and renew an assignment.
+Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleRequest object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest?view=graph-powershell-1.0)
@@ -40,7 +40,20 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 ```
 
 ## DESCRIPTION
-The schedule requests for operations to create, update, delete, extend, and renew an assignment.
+Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleRequest object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest -Filter "groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'" 
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 
@@ -392,6 +405,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentschedulerequest)
 
+[https://learn.microsoft.com/graph/api/privilegedaccessgroupassignmentschedulerequest-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroupassignmentschedulerequest-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-assignmentschedulerequests?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-assignmentschedulerequests?view=graph-rest-beta)
 
 
 

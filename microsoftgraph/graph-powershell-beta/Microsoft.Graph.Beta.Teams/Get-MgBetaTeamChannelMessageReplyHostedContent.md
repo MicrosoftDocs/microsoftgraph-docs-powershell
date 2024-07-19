@@ -453,6 +453,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessagereplyhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessagereplyhostedcontent)
 
+[https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-beta)
+
 
 
 

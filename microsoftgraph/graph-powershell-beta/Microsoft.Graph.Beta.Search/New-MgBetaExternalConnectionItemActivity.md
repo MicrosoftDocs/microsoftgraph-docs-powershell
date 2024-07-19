@@ -48,8 +48,6 @@ New-MgBetaExternalConnectionItemActivity -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create new navigation property to activities for external
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -332,6 +330,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectionitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectionitemactivity)
+
+
 
 
 

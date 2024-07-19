@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataRoleGroup
 
 ## SYNOPSIS
-Set of groups of individual roles that makes role-based admin simpler.
+Read the properties and relationships of a roleGroup object.
 
 ## SYNTAX
 
@@ -35,7 +35,20 @@ Get-MgBetaExternalIndustryDataRoleGroup -InputObject <ISearchIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Set of groups of individual roles that makes role-based admin simpler.
+Read the properties and relationships of a roleGroup object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalIndustryDataRoleGroup
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataRoleGroup Cmdlet.
+
 
 ## PARAMETERS
 
@@ -309,6 +322,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarolegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarolegroup)
 
+[https://learn.microsoft.com/graph/api/industrydata-rolegroup-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-rolegroup-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/industrydata-rolegroup-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-rolegroup-list?view=graph-rest-beta)
 
 
 

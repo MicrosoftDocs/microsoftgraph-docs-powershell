@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgSecurityAlert
 
 ## SYNOPSIS
-Update the navigation property alerts in security
+Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
+This method updates any solution that has a record of the referenced alert ID.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlert?view=graph-powershell-beta)
@@ -79,7 +80,8 @@ Update-MgSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Update the navigation property alerts in security
+Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
+This method updates any solution that has a record of the referenced alert ID.
 
 ## EXAMPLES
 ### Example 1: Request without Prefer header
@@ -1203,6 +1205,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -1389,6 +1392,8 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState- `[]`>: Threat intelligen
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert)
+
+[https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-1.0)
 
 
 

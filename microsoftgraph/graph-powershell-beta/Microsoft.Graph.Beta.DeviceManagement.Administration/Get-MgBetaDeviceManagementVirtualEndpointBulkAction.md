@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointBulkAction
 
 ## SYNOPSIS
-Bulk actions applied to a Cloud PC.
+Read the properties and relationships of a cloudPcBulkAction object.
 
 ## SYNTAX
 
@@ -35,7 +35,20 @@ Get-MgBetaDeviceManagementVirtualEndpointBulkAction -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Bulk actions applied to a Cloud PC.
+Read the properties and relationships of a cloudPcBulkAction object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointBulkAction
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointBulkAction Cmdlet.
+
 
 ## PARAMETERS
 
@@ -345,6 +358,9 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointbulkaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointbulkaction)
 
+[https://learn.microsoft.com/graph/api/cloudpcbulkaction-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcbulkaction-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-bulkactions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-bulkactions?view=graph-rest-beta)
 
 
 

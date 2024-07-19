@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementExchangeConnector
 
 ## SYNOPSIS
-Update the navigation property exchangeConnectors in deviceManagement
+Update the properties of a deviceManagementExchangeConnector object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ Update-MgDeviceManagementExchangeConnector -InputObject <IDeviceManagementAdmini
 ```
 
 ## DESCRIPTION
-Update the navigation property exchangeConnectors in deviceManagement
+Update the properties of a deviceManagementExchangeConnector object.
 
 ## PARAMETERS
 
@@ -404,6 +404,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementexchangeconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementexchangeconnector)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementexchangeconnector-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementexchangeconnector-update?view=graph-rest-1.0)
 
 
 

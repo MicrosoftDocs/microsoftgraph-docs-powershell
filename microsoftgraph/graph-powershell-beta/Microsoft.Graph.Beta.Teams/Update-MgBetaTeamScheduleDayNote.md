@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaTeamScheduleDayNote
 
 ## SYNOPSIS
-Update the navigation property dayNotes in teams
+Update the properties of a day note.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgBetaTeamScheduleDayNote -InputObject <ITeamsIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Update the navigation property dayNotes in teams
+Update the properties of a day note.
 
 ## PARAMETERS
 
@@ -414,6 +414,9 @@ SHAREDDAYNOTE `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduledaynote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduledaynote)
+
+[https://learn.microsoft.com/graph/api/daynote-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/daynote-update?view=graph-rest-beta)
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementMobileThreatDefenseConnector
 
 ## SYNOPSIS
-The list of Mobile threat Defense connectors configured by the tenant.
+Read properties and relationships of the mobileThreatDefenseConnector object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementMobileThreatDefenseConnector -InputObject <IDeviceManageme
 ```
 
 ## DESCRIPTION
-The list of Mobile threat Defense connectors configured by the tenant.
+Read properties and relationships of the mobileThreatDefenseConnector object.
 
 ## PARAMETERS
 
@@ -315,6 +315,10 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementmobilethreatdefenseconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementmobilethreatdefenseconnector)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-mobilethreatdefenseconnector-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-mobilethreatdefenseconnector-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-mobilethreatdefenseconnector-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-mobilethreatdefenseconnector-list?view=graph-rest-1.0)
 
 
 

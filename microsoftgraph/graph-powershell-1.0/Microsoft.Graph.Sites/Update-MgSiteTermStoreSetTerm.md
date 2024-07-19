@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSiteTermStoreSetTerm
 
 ## SYNOPSIS
-Update the navigation property terms in sites
+Update the properties of a term object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSetTerm?view=graph-powershell-beta)
@@ -90,7 +90,7 @@ Update-MgSiteTermStoreSetTerm -InputObject <ISitesIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Update the navigation property terms in sites
+Update the properties of a term object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -729,6 +729,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresetterm)
+
+[https://learn.microsoft.com/graph/api/termstore-term-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-update?view=graph-rest-1.0)
 
 
 

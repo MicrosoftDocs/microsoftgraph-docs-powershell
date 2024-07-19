@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupCalendarEvent
 
 ## SYNOPSIS
-Update the navigation property events in groups
+Update an event object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
@@ -76,7 +76,7 @@ Update-MgGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Update the navigation property events in groups
+Update an event object.
 
 ## PARAMETERS
 
@@ -1970,6 +1970,8 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent)
+
+[https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0)
 
 
 

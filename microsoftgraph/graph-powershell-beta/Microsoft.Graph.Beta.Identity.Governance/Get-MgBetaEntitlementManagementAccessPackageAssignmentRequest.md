@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest
 
 ## SYNOPSIS
-Represents access package assignment requests created by or on behalf of a user.
-DO NOT USE.
-TO BE RETIRED SOON.
-Use the assignmentRequests relationship instead.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
 
 ## SYNTAX
 
@@ -51,10 +48,7 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Represents access package assignment requests created by or on behalf of a user.
-DO NOT USE.
-TO BE RETIRED SOON.
-Use the assignmentRequests relationship instead.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
 
 ## EXAMPLES
 ### Example 1: Get all access package assignment requests
@@ -470,6 +464,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentrequest)
+
+[https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageassignmentrequests?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageassignmentrequests?view=graph-rest-beta)
 
 
 

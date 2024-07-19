@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementExchangeRoleAssignment
 
 ## SYNOPSIS
-Resource to grant access to users or groups.
+Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
 ## SYNTAX
 
@@ -35,7 +35,20 @@ Get-MgBetaRoleManagementExchangeRoleAssignment -InputObject <IDeviceManagementEn
 ```
 
 ## DESCRIPTION
-Resource to grant access to users or groups.
+Retrieve the properties and relationships of a unifiedRoleAssignment object.
+
+## EXAMPLES
+### Example 1: Get details of a role assignment from Exchange Online Provider
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+Get-MgBetaRoleManagementExchangeRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
+
+```
+This example will get details of a role assignment from exchange online provider
+
 
 ## PARAMETERS
 
@@ -315,6 +328,9 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangeroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangeroleassignment)
 
+[https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta)
 
 
 

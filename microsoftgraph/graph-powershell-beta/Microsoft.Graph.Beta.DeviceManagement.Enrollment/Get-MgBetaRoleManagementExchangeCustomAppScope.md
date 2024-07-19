@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementExchangeCustomAppScope
 
 ## SYNOPSIS
-Workload-specific scope object that represents the resources for which the principal has been granted access.
+Get the properties of a customAppScope object for an RBAC provider.
+Currently only the Exchange Online RBAC provider is supported.
 
 ## SYNTAX
 
@@ -35,7 +36,21 @@ Get-MgBetaRoleManagementExchangeCustomAppScope -InputObject <IDeviceManagementEn
 ```
 
 ## DESCRIPTION
-Workload-specific scope object that represents the resources for which the principal has been granted access.
+Get the properties of a customAppScope object for an RBAC provider.
+Currently only the Exchange Online RBAC provider is supported.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+Get-MgBetaRoleManagementExchangeCustomAppScope
+
+```
+This example shows how to use the Get-MgBetaRoleManagementExchangeCustomAppScope Cmdlet.
+
 
 ## PARAMETERS
 
@@ -315,6 +330,9 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangecustomappscope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangecustomappscope)
 
+[https://learn.microsoft.com/graph/api/customappscope-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customappscope-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/unifiedrbacapplication-list-customappscopes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedrbacapplication-list-customappscopes?view=graph-rest-beta)
 
 
 

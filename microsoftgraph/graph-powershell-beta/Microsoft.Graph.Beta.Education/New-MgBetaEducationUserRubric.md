@@ -52,8 +52,6 @@ New-MgBetaEducationUserRubric -InputObject <IEducationIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to rubrics for education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -445,6 +443,8 @@ Weights must add up to 100.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserrubric)
+
+
 
 
 

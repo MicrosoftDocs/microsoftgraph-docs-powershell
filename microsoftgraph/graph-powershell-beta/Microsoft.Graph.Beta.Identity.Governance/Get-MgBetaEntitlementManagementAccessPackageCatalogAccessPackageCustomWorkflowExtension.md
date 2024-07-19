@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
 
 ## SYNOPSIS
-The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle.
+Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
 
 ## SYNTAX
 
@@ -38,7 +38,20 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowEx
 ```
 
 ## DESCRIPTION
-The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle.
+Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId
+
+```
+This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension Cmdlet.
+
 
 ## PARAMETERS
 
@@ -405,6 +418,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackagecustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackagecustomworkflowextension)
 
+[https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackagecustomworkflowextensions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackagecustomworkflowextensions?view=graph-rest-beta)
 
 
 

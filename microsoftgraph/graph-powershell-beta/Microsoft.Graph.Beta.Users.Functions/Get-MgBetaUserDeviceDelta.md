@@ -36,8 +36,6 @@ For more information, see Using delta query.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delta-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -343,6 +341,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdevicedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdevicedelta)
 
 [https://learn.microsoft.com/graph/api/device-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/device-delta?view=graph-rest-beta)
+
+
 
 
 

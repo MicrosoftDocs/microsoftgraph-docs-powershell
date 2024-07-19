@@ -338,8 +338,11 @@ You can't remove 'My organization' as a recipient to a calendar.
     - `[CalendarView <IMicrosoftGraphEvent- `[]`>]`: The calendar view for the calendar.
 Navigation property.
 Read-only.
-      - `[Categories <String- `[]`>]`: 
-      - `[ChangeKey <String>]`: 
+      - `[Categories <String- `[]`>]`: The categories associated with the item.
+      - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -398,6 +401,9 @@ Read-only.
       - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
       - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
 Default is false.
+      - `[ICalUId <String>]`: A unique identifier for an event across calendars.
+This ID is different for each occurrence in a recurring series.
+Read-only.
       - `[Importance <String>]`: importance
       - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
 This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
@@ -615,8 +621,11 @@ You can't remove 'My organization' as a recipient to a calendar.
   - `[CalendarView <IMicrosoftGraphEvent- `[]`>]`: The calendar view for the calendar.
 Navigation property.
 Read-only.
-    - `[Categories <String- `[]`>]`: 
-    - `[ChangeKey <String>]`: 
+    - `[Categories <String- `[]`>]`: The categories associated with the item.
+    - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -675,6 +684,9 @@ Read-only.
     - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
     - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
 Default is false.
+    - `[ICalUId <String>]`: A unique identifier for an event across calendars.
+This ID is different for each occurrence in a recurring series.
+Read-only.
     - `[Importance <String>]`: importance
     - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
 This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.

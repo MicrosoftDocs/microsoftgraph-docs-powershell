@@ -34,8 +34,6 @@ New-MgBetaSecuritySecureScore -BodyParameter <IMicrosoftGraphSecureScore> [-Resp
 ## DESCRIPTION
 Create new navigation property to secureScores for security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ActiveUserCount
@@ -331,8 +329,8 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 AVERAGECOMPARATIVESCORES <IMicrosoftGraphAverageComparativeScore- `[]`>: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
-  - `[AverageScore <Double?>]`: 
-  - `[Basis <String>]`: 
+  - `[AverageScore <Double?>]`: Average score within a specified basis.
+  - `[Basis <String>]`: Scope type (by AllTenants, TotalSeats, IndustryTypes).
 
 BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -340,14 +338,14 @@ BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
 Read-only.
   - `[ActiveUserCount <Int32?>]`: Active user count of the given tenant.
   - `[AverageComparativeScores <IMicrosoftGraphAverageComparativeScore- `[]`>]`: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
-    - `[AverageScore <Double?>]`: 
-    - `[Basis <String>]`: 
+    - `[AverageScore <Double?>]`: Average score within a specified basis.
+    - `[Basis <String>]`: Scope type (by AllTenants, TotalSeats, IndustryTypes).
   - `[AzureTenantId <String>]`: GUID string for tenant ID.
   - `[ControlScores <IMicrosoftGraphControlScore- `[]`>]`: Contains tenant scores for a set of controls.
-    - `[ControlCategory <String>]`: 
-    - `[ControlName <String>]`: 
-    - `[Description <String>]`: 
-    - `[Score <Double?>]`: 
+    - `[ControlCategory <String>]`: Control action category (Identity, Data, Device, Apps, Infrastructure).
+    - `[ControlName <String>]`: Control unique name
+    - `[Description <String>]`: Description of the control.
+    - `[Score <Double?>]`: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
   - `[CreatedDateTime <DateTime?>]`: The date when the entity is created.
   - `[CurrentScore <Double?>]`: Tenant current attained score on specified date.
   - `[EnabledServices <String- `[]`>]`: Microsoft-provided services for the tenant (for example, Exchange online, Skype, SharePoint).
@@ -363,10 +361,10 @@ Required
 Required
 
 CONTROLSCORES <IMicrosoftGraphControlScore- `[]`>: Contains tenant scores for a set of controls.
-  - `[ControlCategory <String>]`: 
-  - `[ControlName <String>]`: 
-  - `[Description <String>]`: 
-  - `[Score <Double?>]`: 
+  - `[ControlCategory <String>]`: Control action category (Identity, Data, Device, Apps, Infrastructure).
+  - `[ControlName <String>]`: Control unique name
+  - `[Description <String>]`: Description of the control.
+  - `[Score <Double?>]`: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
 
 VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -380,6 +378,8 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescore)
+
+
 
 
 

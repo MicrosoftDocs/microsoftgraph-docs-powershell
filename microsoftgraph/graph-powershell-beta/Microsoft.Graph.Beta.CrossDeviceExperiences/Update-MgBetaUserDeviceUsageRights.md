@@ -45,8 +45,6 @@ Update-MgBetaUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity
 ## DESCRIPTION
 Update the navigation property usageRights in users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -316,6 +314,8 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdeviceusagerights](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdeviceusagerights)
+
+
 
 
 

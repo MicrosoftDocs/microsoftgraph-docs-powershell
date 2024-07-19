@@ -36,13 +36,17 @@ Cloud PC supports reprovision and resize remote actions.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-getcloudpcremoteactionresults-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+
 Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult -ManagedDeviceId $managedDeviceId
+
 ```
 This example shows how to use the Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

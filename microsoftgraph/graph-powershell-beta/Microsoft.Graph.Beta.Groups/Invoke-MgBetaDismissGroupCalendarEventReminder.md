@@ -32,20 +32,6 @@ Invoke-MgBetaDismissGroupCalendarEventReminder -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Users.Actions
-
-# A UPN can also be used as -UserId.
-Invoke-MgBetaDismissUserEventReminder -UserId $userId -EventId $eventId
-```
-This example shows how to use the Invoke-MgBetaDismissGroupCalendarEventReminder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -EventId
@@ -254,6 +240,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupcalendareventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupcalendareventreminder)
 
 [https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-beta)
+
+
 
 
 

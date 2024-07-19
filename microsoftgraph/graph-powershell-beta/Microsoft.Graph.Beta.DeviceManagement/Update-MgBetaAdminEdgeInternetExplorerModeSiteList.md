@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaAdminEdgeInternetExplorerModeSiteList
 
 ## SYNOPSIS
-Update the navigation property siteLists in admin
+Update the properties of a browserSiteList object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-1.0)
@@ -52,7 +52,25 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManageme
 ```
 
 ## DESCRIPTION
-Update the navigation property siteLists in admin
+Update the properties of a browserSiteList object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+$params = @{
+	displayName = "Production Site List A"
+	description = "Production site list for team A"
+}
+
+Update-MgBetaAdminEdgeInternetExplorerModeSiteList -BrowserSiteListId $browserSiteListId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaAdminEdgeInternetExplorerModeSiteList Cmdlet.
+
 
 ## PARAMETERS
 
@@ -686,6 +704,7 @@ This property is read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelist)
 
+[https://learn.microsoft.com/graph/api/browsersitelist-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersitelist-update?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointGalleryImage
 
 ## SYNOPSIS
-The gallery image resource on Cloud PC.
+Read the properties and relationships of a specific cloudPcGalleryImage object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointGalleryImage](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointGalleryImage?view=graph-powershell-1.0)
@@ -38,23 +38,20 @@ Get-MgBetaDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-The gallery image resource on Cloud PC.
+Read the properties and relationships of a specific cloudPcGalleryImage object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointGalleryImage Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointGalleryImage -CloudPcGalleryImageId $cloudPcGalleryImageId
-```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointGalleryImage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointGalleryImage Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 Get-MgBetaDeviceManagementVirtualEndpointGalleryImage
+
 ```
 This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointGalleryImage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -363,6 +360,10 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointgalleryimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointgalleryimage)
+
+[https://learn.microsoft.com/graph/api/cloudpcgalleryimage-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcgalleryimage-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-galleryimages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-galleryimages?view=graph-rest-beta)
 
 
 

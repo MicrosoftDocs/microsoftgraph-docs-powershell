@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteTermStoreSetChild
 
 ## SYNOPSIS
-Create new navigation property to children for sites
+Create a new term object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSetChild?view=graph-powershell-beta)
@@ -163,7 +163,7 @@ New-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Create new navigation property to children for sites
+Create a new term object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -802,6 +802,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetchild)
+
+[https://learn.microsoft.com/graph/api/termstore-term-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-post?view=graph-rest-1.0)
 
 
 

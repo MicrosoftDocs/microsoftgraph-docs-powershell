@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementTermAndConditionAcceptanceStatus
 
 ## SYNOPSIS
-Create new navigation property to acceptanceStatuses for deviceManagement
+Create a new termsAndConditionsAcceptanceStatus object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ New-MgDeviceManagementTermAndConditionAcceptanceStatus -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Create new navigation property to acceptanceStatuses for deviceManagement
+Create a new termsAndConditionsAcceptanceStatus object.
 
 ## PARAMETERS
 
@@ -400,6 +400,8 @@ Incremented when an administrator makes a change to the terms and wishes to requ
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandconditionacceptancestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandconditionacceptancestatus)
+
+[https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsacceptancestatus-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsacceptancestatus-create?view=graph-rest-1.0)
 
 
 

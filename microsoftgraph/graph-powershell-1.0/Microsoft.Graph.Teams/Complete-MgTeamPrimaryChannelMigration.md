@@ -41,8 +41,6 @@ You can add members to the team after the request returns a successful response.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-completemigration-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -223,6 +221,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamprimarychannelmigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamprimarychannelmigration)
 
 [https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-1.0)
+
+
 
 
 

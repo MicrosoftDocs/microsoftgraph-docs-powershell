@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaApplicationOwner
 
 ## SYNOPSIS
-Directory objects that are owners of the application.
-Read-only.
-Nullable.
-Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
+Retrieve a list of owners for an application that are directoryObject objects.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationOwner](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwner?view=graph-powershell-1.0)
@@ -26,10 +23,7 @@ Get-MgBetaApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Directory objects that are owners of the application.
-Read-only.
-Nullable.
-Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
+Retrieve a list of owners for an application that are directoryObject objects.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -287,6 +281,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationowner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationowner)
+
+[https://learn.microsoft.com/graph/api/application-list-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-list-owners?view=graph-rest-beta)
 
 
 

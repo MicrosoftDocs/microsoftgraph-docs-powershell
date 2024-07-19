@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityLabelFilePlanReference
 
 ## SYNOPSIS
-Create new navigation property to filePlanReferences for security
+Create a new filePlanReferenceTemplate object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelFilePlanReference?view=graph-powershell-1.0)
@@ -30,7 +30,25 @@ New-MgBetaSecurityLabelFilePlanReference -BodyParameter <Hashtable> [-ResponseHe
 ```
 
 ## DESCRIPTION
-Create new navigation property to filePlanReferences for security
+Create a new filePlanReferenceTemplate object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.filePlanReferenceTemplate"
+	displayName = "FIN 01-02-001"
+}
+
+New-MgBetaSecurityLabelFilePlanReference -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityLabelFilePlanReference Cmdlet.
+
 
 ## PARAMETERS
 
@@ -234,6 +252,7 @@ This property is read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelfileplanreference)
 
+[https://learn.microsoft.com/graph/api/security-labelsroot-post-fileplanreferences?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-labelsroot-post-fileplanreferences?view=graph-rest-beta)
 
 
 

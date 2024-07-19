@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaServiceAnnouncementMessageAttachment
 
 ## SYNOPSIS
-A collection of serviceAnnouncementAttachments.
+Read the properties and relationships of a serviceAnnouncementAttachment object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachment?view=graph-powershell-1.0)
@@ -39,7 +39,7 @@ Get-MgBetaServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnno
 ```
 
 ## DESCRIPTION
-A collection of serviceAnnouncementAttachments.
+Read the properties and relationships of a serviceAnnouncementAttachment object.
 
 ## EXAMPLES
 ### Example 1: Get an attachment with message ID
@@ -323,6 +323,10 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachment)
+
+[https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-beta)
 
 
 

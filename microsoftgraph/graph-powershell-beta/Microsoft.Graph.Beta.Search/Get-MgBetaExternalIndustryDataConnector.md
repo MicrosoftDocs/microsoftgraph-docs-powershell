@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Set of connectors for importing data from source systems.
+Read the properties and relationships of an industryDataConnector object.
 
 ## SYNTAX
 
@@ -35,7 +35,20 @@ Get-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Set of connectors for importing data from source systems.
+Read the properties and relationships of an industryDataConnector object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalIndustryDataConnector
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataConnector Cmdlet.
+
 
 ## PARAMETERS
 
@@ -309,6 +322,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataconnector)
 
+[https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-list?view=graph-rest-beta)
 
 
 

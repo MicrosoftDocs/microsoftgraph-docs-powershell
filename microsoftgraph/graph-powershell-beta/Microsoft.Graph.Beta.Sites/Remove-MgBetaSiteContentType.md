@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSiteContentType
 
 ## SYNOPSIS
-Delete navigation property contentTypes for sites
+Remove a content type from a list or a site.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteContentType?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaSiteContentType -InputObject <ISitesIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete navigation property contentTypes for sites
+Remove a content type from a list or a site.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -272,6 +272,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-delete?view=graph-rest-beta)
 
 
 

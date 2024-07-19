@@ -378,8 +378,11 @@ Nullable.
 Navigation property.
 Read-only.
 Nullable.
-    - `[Categories <String- `[]`>]`: 
-    - `[ChangeKey <String>]`: 
+    - `[Categories <String- `[]`>]`: The categories associated with the item.
+    - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -421,7 +424,7 @@ See below for possible values.
       - `[FlagStatus <String>]`: followupFlagStatus
       - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[Gender <String>]`: The contact's gender.
-    - `[Generation <String>]`: The contact's generation.
+    - `[Generation <String>]`: The contact's suffix.
     - `[GivenName <String>]`: The contact's given name.
     - `[ImAddresses <String- `[]`>]`: The contact's instant messaging (IM) addresses.
     - `[Initials <String>]`: The contact's initials.
@@ -502,8 +505,11 @@ Nullable.
 Navigation property.
 Read-only.
 Nullable.
-    - `[Categories <String- `[]`>]`: 
-    - `[ChangeKey <String>]`: 
+    - `[Categories <String- `[]`>]`: The categories associated with the item.
+    - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -545,7 +551,7 @@ See below for possible values.
       - `[FlagStatus <String>]`: followupFlagStatus
       - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[Gender <String>]`: The contact's gender.
-    - `[Generation <String>]`: The contact's generation.
+    - `[Generation <String>]`: The contact's suffix.
     - `[GivenName <String>]`: The contact's given name.
     - `[ImAddresses <String- `[]`>]`: The contact's instant messaging (IM) addresses.
     - `[Initials <String>]`: The contact's initials.
@@ -616,8 +622,11 @@ CONTACTS <IMicrosoftGraphContact- `[]`>: The contacts in the folder.
 Navigation property.
 Read-only.
 Nullable.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -659,7 +668,7 @@ See below for possible values.
     - `[FlagStatus <String>]`: followupFlagStatus
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Gender <String>]`: The contact's gender.
-  - `[Generation <String>]`: The contact's generation.
+  - `[Generation <String>]`: The contact's suffix.
   - `[GivenName <String>]`: The contact's given name.
   - `[ImAddresses <String- `[]`>]`: The contact's instant messaging (IM) addresses.
   - `[Initials <String>]`: The contact's initials.

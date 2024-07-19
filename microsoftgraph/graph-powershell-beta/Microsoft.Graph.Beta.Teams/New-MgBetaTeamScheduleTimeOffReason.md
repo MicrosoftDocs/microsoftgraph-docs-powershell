@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaTeamScheduleTimeOffReason
 
 ## SYNOPSIS
-Create new navigation property to timeOffReasons for teams
+Create a new timeOffReason.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleTimeOffReason?view=graph-powershell-1.0)
@@ -48,25 +48,26 @@ New-MgBetaTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Create new navigation property to timeOffReasons for teams
+Create a new timeOffReason.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	displayName = "Vacation"
+	code = "VacationCode"
 	iconType = "plane"
 	isActive = $true
 }
 
 New-MgBetaTeamScheduleTimeOffReason -TeamId $teamId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaTeamScheduleTimeOffReason Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -428,6 +429,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoffreason)
+
+[https://learn.microsoft.com/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta](https://learn.microsoft.com/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta)
 
 
 

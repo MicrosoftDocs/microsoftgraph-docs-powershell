@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupEvent
 
 ## SYNOPSIS
-Delete navigation property events for groups
+Delete an event object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEvent?view=graph-powershell-1.0)
@@ -30,19 +30,19 @@ Remove-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete navigation property events for groups
+Delete an event object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Remove-MgBetaGroupEvent -GroupId $groupId -EventId $eventId
+
 ```
 This example shows how to use the Remove-MgBetaGroupEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -233,6 +233,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupevent)
+
+[https://learn.microsoft.com/graph/api/group-delete-event?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-delete-event?view=graph-rest-beta)
 
 
 

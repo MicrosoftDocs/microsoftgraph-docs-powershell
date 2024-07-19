@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgCommunicationCall
 
 ## SYNOPSIS
-Get calls from communications
+Retrieve the properties and relationships of a call object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCall?view=graph-powershell-beta)
@@ -30,7 +30,10 @@ Get-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Get calls from communications
+Retrieve the properties and relationships of a call object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Getting a Peer-to-Peer call
@@ -199,6 +202,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcall)
+
+[https://learn.microsoft.com/graph/api/call-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-get?view=graph-rest-1.0)
 
 
 

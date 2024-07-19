@@ -8,8 +8,11 @@ schema: 2.0.0
 # Get-MgBetaIdentityB2CUserFlowLanguage
 
 ## SYNOPSIS
-The languages supported for customization within the user flow.
-Language customization is not enabled by default in B2C user flows.
+Read the properties and relationships of a userFlowLanguageConfiguration object.
+These objects represent a language available in a user flow.
+Note: To retrieve a language supported for customization, you must first enable language customization on your Azure AD B2C user flow.
+For more information, see Update b2cIdentityUserFlow.
+Language customization is enabled by default in Microsoft Entra user flows.
 
 ## SYNTAX
 
@@ -36,8 +39,11 @@ Get-MgBetaIdentityB2CUserFlowLanguage -InputObject <IIdentitySignInsIdentity> [-
 ```
 
 ## DESCRIPTION
-The languages supported for customization within the user flow.
-Language customization is not enabled by default in B2C user flows.
+Read the properties and relationships of a userFlowLanguageConfiguration object.
+These objects represent a language available in a user flow.
+Note: To retrieve a language supported for customization, you must first enable language customization on your Azure AD B2C user flow.
+For more information, see Update b2cIdentityUserFlow.
+Language customization is enabled by default in Microsoft Entra user flows.
 
 ## EXAMPLES
 ### Example 1: Retrieve a list of all languages
@@ -374,6 +380,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -393,6 +400,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -405,6 +413,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguage)
+
+[https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-languages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-languages?view=graph-rest-beta)
 
 
 

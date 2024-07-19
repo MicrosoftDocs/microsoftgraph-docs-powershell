@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgBetaTrustFrameworkKeySet
 
 ## SYNOPSIS
-Update the navigation property keySets in trustFramework
+Update the properties of a trustFrameworkKeyset.
+This operation will replace the content of an existing keyset.
+Specifying the ID in the request payload is optional.
 
 ## SYNTAX
 
@@ -16,7 +18,8 @@ Update the navigation property keySets in trustFramework
 ```
 Update-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Keys <IMicrosoftGraphTrustFrameworkKey[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-KeysV2 <IMicrosoftGraphTrustFrameworkKeyV2[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -30,7 +33,8 @@ Update-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId <String>
 ```
 Update-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Keys <IMicrosoftGraphTrustFrameworkKey[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-KeysV2 <IMicrosoftGraphTrustFrameworkKeyV2[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -41,7 +45,9 @@ Update-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property keySets in trustFramework
+Update the properties of a trustFrameworkKeyset.
+This operation will replace the content of an existing keyset.
+Specifying the ID in the request payload is optional.
 
 ## PARAMETERS
 
@@ -129,6 +135,22 @@ To construct, see NOTES section for KEYS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTrustFrameworkKey[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -KeysV2
+A collection of the keys.
+To construct, see NOTES section for KEYSV2 properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTrustFrameworkKeyV2[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -238,30 +260,69 @@ BODYPARAMETER `<IMicrosoftGraphTrustFrameworkKeySet>`: trustFrameworkKeySet
 Read-only.
   - `[Keys <IMicrosoftGraphTrustFrameworkKey- `[]`>]`: A collection of the keys.
     - `[D <String>]`: RSA Key - private exponent.
-Field can't be read back.
+The field isn't readable.
     - `[Dp <String>]`: RSA Key - first exponent.
-Field can't be read back.
+The field isn't readable.
     - `[Dq <String>]`: RSA Key - second exponent.
-Field can't be read back.
-    - `[E <String>]`: RSA Key - public exponent
-    - `[Exp <Int64?>]`: This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)
+The field isn't readable.
+    - `[E <String>]`: RSA Key - public exponent.
+    - `[Exp <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
     - `[K <String>]`: Symmetric Key for oct key type.
-Field can't be read back.
+The field isn't readable.
     - `[Kid <String>]`: The unique identifier for the key.
-    - `[Kty <String>]`: The kty (key type) parameter identifies the cryptographic algorithm family used with the key, The valid values are rsa, oct.
-    - `[N <String>]`: RSA Key - modulus
-    - `[Nbf <Int64?>]`: This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)
+    - `[Kty <String>]`: The kty (key type) parameter identifies the cryptographic algorithm family used with the key.
+The valid values are rsa, oct.
+    - `[N <String>]`: RSA Key - modulus.
+    - `[Nbf <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
     - `[P <String>]`: RSA Key - first prime.
-Field can't be read back.
+The field isn't readable.
     - `[Q <String>]`: RSA Key - second prime.
-Field can't be read back.
+The field isn't readable.
     - `[Qi <String>]`: RSA Key - Coefficient.
-Field can't be read back.
-    - `[Use <String>]`: The use (public key use) parameter identifies the intended use of the public key. 
+The field isn't readable.
+    - `[Status <String>]`: trustFrameworkKeyStatus
+    - `[Use <String>]`: The use (public key use) parameter identifies the intended use of the public key.
 The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
-Possible values are: sig (signature), enc (encryption)
-    - `[X5C <String- `[]`>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates RFC 5280.
-    - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate RFC 5280.
+Possible values are: sig (signature), enc (encryption).
+    - `[X5C <String- `[]`>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
+For more information, see RFC 5280.
+    - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
+For more information, see RFC 5280.
+  - `[KeysV2 <IMicrosoftGraphTrustFrameworkKeyV2- `[]`>]`: A collection of the keys.
+    - `[D <String>]`: RSA Key - private exponent.
+The field isn't readable.
+    - `[Dp <String>]`: RSA Key - first exponent.
+The field isn't readable.
+    - `[Dq <String>]`: RSA Key - second exponent.
+The field isn't readable.
+    - `[E <String>]`: RSA Key - public exponent.
+    - `[Exp <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
+    - `[K <String>]`: Symmetric Key for oct key type.
+The field isn't readable.
+    - `[Kid <String>]`: The unique identifier for the key.
+Primary key.
+    - `[Kty <String>]`: The kty (key type) parameter identifies the cryptographic algorithm family used with the key.
+The valid values are rsa, oct.
+    - `[N <String>]`: RSA Key - modulus.
+    - `[Nbf <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
+    - `[P <String>]`: RSA Key - first prime.
+The field isn't readable.
+    - `[Q <String>]`: RSA Key - second prime.
+The field isn't readable.
+    - `[Qi <String>]`: RSA Key - Coefficient.
+The field isn't readable.
+    - `[Status <String>]`: trustFrameworkKeyStatus
+    - `[Use <String>]`: The use (public key use) parameter identifies the intended use of the public key.
+The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
+Possible values are: sig (signature), enc (encryption).
+    - `[X5C <String- `[]`>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
+For more information, see RFC 5280.
+    - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
+For more information, see RFC 5280.
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
@@ -314,6 +375,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -333,6 +395,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -344,34 +407,76 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 KEYS <IMicrosoftGraphTrustFrameworkKey- `[]`>: A collection of the keys.
   - `[D <String>]`: RSA Key - private exponent.
-Field can't be read back.
+The field isn't readable.
   - `[Dp <String>]`: RSA Key - first exponent.
-Field can't be read back.
+The field isn't readable.
   - `[Dq <String>]`: RSA Key - second exponent.
-Field can't be read back.
-  - `[E <String>]`: RSA Key - public exponent
-  - `[Exp <Int64?>]`: This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)
+The field isn't readable.
+  - `[E <String>]`: RSA Key - public exponent.
+  - `[Exp <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
   - `[K <String>]`: Symmetric Key for oct key type.
-Field can't be read back.
+The field isn't readable.
   - `[Kid <String>]`: The unique identifier for the key.
-  - `[Kty <String>]`: The kty (key type) parameter identifies the cryptographic algorithm family used with the key, The valid values are rsa, oct.
-  - `[N <String>]`: RSA Key - modulus
-  - `[Nbf <Int64?>]`: This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.)
+  - `[Kty <String>]`: The kty (key type) parameter identifies the cryptographic algorithm family used with the key.
+The valid values are rsa, oct.
+  - `[N <String>]`: RSA Key - modulus.
+  - `[Nbf <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
   - `[P <String>]`: RSA Key - first prime.
-Field can't be read back.
+The field isn't readable.
   - `[Q <String>]`: RSA Key - second prime.
-Field can't be read back.
+The field isn't readable.
   - `[Qi <String>]`: RSA Key - Coefficient.
-Field can't be read back.
-  - `[Use <String>]`: The use (public key use) parameter identifies the intended use of the public key. 
+The field isn't readable.
+  - `[Status <String>]`: trustFrameworkKeyStatus
+  - `[Use <String>]`: The use (public key use) parameter identifies the intended use of the public key.
 The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
-Possible values are: sig (signature), enc (encryption)
-  - `[X5C <String- `[]`>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates RFC 5280.
-  - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate RFC 5280.
+Possible values are: sig (signature), enc (encryption).
+  - `[X5C <String- `[]`>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
+For more information, see RFC 5280.
+  - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
+For more information, see RFC 5280.
+
+KEYSV2 <IMicrosoftGraphTrustFrameworkKeyV2- `[]`>: A collection of the keys.
+  - `[D <String>]`: RSA Key - private exponent.
+The field isn't readable.
+  - `[Dp <String>]`: RSA Key - first exponent.
+The field isn't readable.
+  - `[Dq <String>]`: RSA Key - second exponent.
+The field isn't readable.
+  - `[E <String>]`: RSA Key - public exponent.
+  - `[Exp <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
+  - `[K <String>]`: Symmetric Key for oct key type.
+The field isn't readable.
+  - `[Kid <String>]`: The unique identifier for the key.
+Primary key.
+  - `[Kty <String>]`: The kty (key type) parameter identifies the cryptographic algorithm family used with the key.
+The valid values are rsa, oct.
+  - `[N <String>]`: RSA Key - modulus.
+  - `[Nbf <Int64?>]`: This value is a NumericDate as defined in RFC 7519.
+That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.
+  - `[P <String>]`: RSA Key - first prime.
+The field isn't readable.
+  - `[Q <String>]`: RSA Key - second prime.
+The field isn't readable.
+  - `[Qi <String>]`: RSA Key - Coefficient.
+The field isn't readable.
+  - `[Status <String>]`: trustFrameworkKeyStatus
+  - `[Use <String>]`: The use (public key use) parameter identifies the intended use of the public key.
+The use parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data.
+Possible values are: sig (signature), enc (encryption).
+  - `[X5C <String- `[]`>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates.
+For more information, see RFC 5280.
+  - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate.
+For more information, see RFC 5280.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset)
+
+[https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-beta)
 
 
 

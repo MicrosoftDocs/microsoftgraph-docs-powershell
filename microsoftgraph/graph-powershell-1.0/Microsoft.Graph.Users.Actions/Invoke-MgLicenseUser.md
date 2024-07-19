@@ -38,13 +38,17 @@ Also see Identify and resolve license assignment problems for a group in Microso
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-reprocesslicenseassignment-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgLicenseUser Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
+
 Invoke-MgLicenseUser -UserId $userId
+
 ```
 This example shows how to use the Invoke-MgLicenseUser Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

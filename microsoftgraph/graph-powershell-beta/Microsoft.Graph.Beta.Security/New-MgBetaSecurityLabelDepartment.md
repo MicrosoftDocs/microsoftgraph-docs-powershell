@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityLabelDepartment
 
 ## SYNOPSIS
-Create new navigation property to departments for security
+Create a new departmentTemplate object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelDepartment?view=graph-powershell-1.0)
@@ -29,7 +29,25 @@ New-MgBetaSecurityLabelDepartment -BodyParameter <Hashtable> [-ResponseHeadersVa
 ```
 
 ## DESCRIPTION
-Create new navigation property to departments for security
+Create a new departmentTemplate object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.departmentTemplate"
+	displayName = "Finance"
+}
+
+New-MgBetaSecurityLabelDepartment -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityLabelDepartment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -233,6 +251,7 @@ This property is read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment)
 
+[https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-beta)
 
 
 

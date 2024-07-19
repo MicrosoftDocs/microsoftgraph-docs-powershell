@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageCatalog
 
 ## SYNOPSIS
-A container of access packages.
+Retrieve the properties and relationships of an accessPackageCatalog object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageCatalog](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalog?view=graph-powershell-1.0)
@@ -58,7 +58,7 @@ Get-MgBetaEntitlementManagementAccessPackageCatalog [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-A container of access packages.
+Retrieve the properties and relationships of an accessPackageCatalog object.
 
 ## EXAMPLES
 ### Example 1: Get a list of all access package catalogs
@@ -490,6 +490,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalog)
+
+[https://learn.microsoft.com/graph/api/accesspackagecatalog-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackagecatalog-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackagecatalogs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackagecatalogs?view=graph-rest-beta)
 
 
 

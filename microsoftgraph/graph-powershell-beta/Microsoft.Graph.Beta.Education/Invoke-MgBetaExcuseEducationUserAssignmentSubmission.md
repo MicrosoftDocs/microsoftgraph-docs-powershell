@@ -16,6 +16,9 @@ If the Prefer: include-unknown-enum-members request header is provided, the excu
 Otherwise, the submission status changes to returned.
 For more information about how to use this header, see the Examples section.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgExcuseEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgExcuseEducationUserAssignmentSubmission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Excuse (Default)
@@ -221,6 +224,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaexcuseeducationuserassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaexcuseeducationuserassignmentsubmission)
 
 [https://learn.microsoft.com/graph/api/educationsubmission-excuse?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsubmission-excuse?view=graph-rest-beta)
+
 
 
 

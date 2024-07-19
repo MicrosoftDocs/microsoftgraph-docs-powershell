@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction
 
 ## SYNOPSIS
-Operations that an authorized principal is allowed to perform.
+Read the properties and relationships of an unifiedRbacResourceAction object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryResourceNamespaceResourceAction?view=graph-powershell-1.0)
@@ -39,7 +39,42 @@ Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <I
 ```
 
 ## DESCRIPTION
-Operations that an authorized principal is allowed to perform.
+Read the properties and relationships of an unifiedRbacResourceAction object.
+
+## EXAMPLES
+### Example 1: List microsoft.directory actions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId
+
+```
+This example will list microsoft.directory actions
+
+### Example 2: List microsoft.insights actions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId
+
+```
+This example will list microsoft.insights actions
+
+### Example 3: List privileged actions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId -Filter "isPrivileged eq true" 
+
+```
+This example will list privileged actions
+
 
 ## PARAMETERS
 
@@ -406,6 +441,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespaceresourceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespaceresourceaction)
 
+[https://learn.microsoft.com/graph/api/unifiedrbacresourceaction-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedrbacresourceaction-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-list-resourceactions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-list-resourceactions?view=graph-rest-beta)
 
 
 

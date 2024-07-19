@@ -38,13 +38,17 @@ Get-MgBetaDeviceManagementVirtualEndpointServicePlan -InputObject <IDeviceManage
 Cloud PC service plans.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointServicePlan Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 Get-MgBetaDeviceManagementVirtualEndpointServicePlan
+
 ```
 This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointServicePlan Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -353,6 +357,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointserviceplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointserviceplan)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-serviceplans?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-serviceplans?view=graph-rest-beta)
 
 
 

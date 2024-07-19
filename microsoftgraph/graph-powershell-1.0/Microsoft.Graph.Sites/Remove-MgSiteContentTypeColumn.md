@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSiteContentTypeColumn
 
 ## SYNOPSIS
-Delete navigation property columns for sites
+Remove a column from a site, a list, or a content type.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgSiteContentTypeColumn -InputObject <ISitesIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete navigation property columns for sites
+Remove a column from a site, a list, or a content type.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -279,6 +279,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitecontenttypecolumn)
+
+[https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0)
 
 
 

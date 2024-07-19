@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## SYNOPSIS
-Update the navigation property allowedValues in directory
+Update the properties of an allowedValue object.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ```
 
 ## DESCRIPTION
-Update the navigation property allowedValues in directory
+Update the properties of an allowedValue object.
 
 ## PARAMETERS
 
@@ -289,6 +289,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinitionallowedvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinitionallowedvalue)
+
+[https://learn.microsoft.com/graph/api/allowedvalue-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/allowedvalue-update?view=graph-rest-1.0)
 
 
 

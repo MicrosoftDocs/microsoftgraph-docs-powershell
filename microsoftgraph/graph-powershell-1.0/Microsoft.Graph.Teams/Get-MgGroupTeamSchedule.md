@@ -32,8 +32,6 @@ Get-MgGroupTeamSchedule -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 The schedule of shifts for this team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -196,6 +194,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamschedule)
+
+
 
 
 

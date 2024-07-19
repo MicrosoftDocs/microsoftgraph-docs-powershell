@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgBetaCommunicationCall
 
 ## SYNOPSIS
-Create new navigation property to calls for communications
+Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
+You need to register the calling bot and go through the list of permissions needed.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-1.0)
@@ -41,7 +42,8 @@ New-MgBetaCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-ResponseHeade
 ```
 
 ## DESCRIPTION
-Create new navigation property to calls for communications
+Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
+You need to register the calling bot and go through the list of permissions needed.
 
 ## EXAMPLES
 ### Example 1: Create peer-to-peer VoIP call with service hosted media
@@ -966,7 +968,8 @@ Accept wildcard characters: False
 ```
 
 ### -RequestedModalities
-.
+The list of requested modalities.
+Possible values are: unknown, audio, video, videoBasedScreenSharing, data.
 
 ```yaml
 Type: String[]
@@ -1012,7 +1015,8 @@ Accept wildcard characters: False
 ```
 
 ### -RingingTimeoutInSeconds
-.
+Ringing timeout in seconds for outgoing peer to peer calls.
+The max value for this attribute is 115 seconds.
 
 ```yaml
 Type: Int32
@@ -1027,7 +1031,8 @@ Accept wildcard characters: False
 ```
 
 ### -RoutingPolicies
-.
+This property is applicable for peer to peer calls only.
+Possible values are: none, noMissedCall, disableForwardingExceptPhone, disableForwarding, preferSkypeForBusiness, unknownFutureValue.
 
 ```yaml
 Type: String[]
@@ -1073,7 +1078,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subject
-.
+The subject of the conversation.
 
 ```yaml
 Type: String
@@ -1088,7 +1093,8 @@ Accept wildcard characters: False
 ```
 
 ### -Targets
-.
+The targets of the call.
+Required information for creating peer to peer call.
 To construct, see NOTES section for TARGETS properties and create a hash table.
 
 ```yaml
@@ -1104,7 +1110,8 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-.
+Read-only.
+tenantId in Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -1315,7 +1322,7 @@ Read-only.
     - `[Transferor <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[MediaConfig <IMicrosoftGraphMediaConfig>]`: mediaConfig
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[RemoveFromDefaultAudioGroup <Boolean?>]`: 
+    - `[RemoveFromDefaultAudioGroup <Boolean?>]`: Remove media from the default audio group.
   - `[MediaState <IMicrosoftGraphCallMediaState>]`: callMediaState
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Audio <String>]`: mediaState
@@ -1367,14 +1374,18 @@ Read-only.
       - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
       - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
     - `[RosterSequenceNumber <Int64?>]`: Indicates the roster sequence number the participant was last updated in.
-  - `[RequestedModalities <String- `[]`>]`: 
+  - `[RequestedModalities <String- `[]`>]`: The list of requested modalities.
+Possible values are: unknown, audio, video, videoBasedScreenSharing, data.
   - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
-  - `[RingingTimeoutInSeconds <Int32?>]`: 
-  - `[RoutingPolicies <String- `[]`>]`: 
+  - `[RingingTimeoutInSeconds <Int32?>]`: Ringing timeout in seconds for outgoing peer to peer calls.
+The max value for this attribute is 115 seconds.
+  - `[RoutingPolicies <String- `[]`>]`: This property is applicable for peer to peer calls only.
+Possible values are: none, noMissedCall, disableForwardingExceptPhone, disableForwarding, preferSkypeForBusiness, unknownFutureValue.
   - `[Source <IMicrosoftGraphParticipantInfo>]`: participantInfo
   - `[State <String>]`: callState
-  - `[Subject <String>]`: 
-  - `[Targets <IMicrosoftGraphInvitationParticipantInfo- `[]`>]`: 
+  - `[Subject <String>]`: The subject of the conversation.
+  - `[Targets <IMicrosoftGraphInvitationParticipantInfo- `[]`>]`: The targets of the call.
+Required information for creating peer to peer call.
     - `[EndpointType <String>]`: endpointType
     - `[Hidden <Boolean?>]`: Optional.
 Whether to hide the participant from the roster.
@@ -1386,7 +1397,8 @@ Whether to remove them from the main mixer.
     - `[ReplacesCallId <String>]`: Optional.
 The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
-  - `[TenantId <String>]`: 
+  - `[TenantId <String>]`: Read-only.
+tenantId in Microsoft Entra ID.
   - `[TerminationReason <String>]`: 
   - `[ToneInfo <IMicrosoftGraphToneInfo>]`: toneInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1447,7 +1459,7 @@ Read-only.
 
 MEDIACONFIG `<IMicrosoftGraphMediaConfig>`: mediaConfig
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[RemoveFromDefaultAudioGroup <Boolean?>]`: 
+  - `[RemoveFromDefaultAudioGroup <Boolean?>]`: Remove media from the default audio group.
 
 MEDIASTATE `<IMicrosoftGraphCallMediaState>`: callMediaState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1560,7 +1572,8 @@ Read-only.
 The region doesn't change based on the participant's current physical location, unlike countryCode.
 Read-only.
 
-TARGETS <IMicrosoftGraphInvitationParticipantInfo- `[]`>: .
+TARGETS <IMicrosoftGraphInvitationParticipantInfo- `[]`>: The targets of the call.
+Required information for creating peer to peer call.
   - `[EndpointType <String>]`: endpointType
   - `[Hidden <Boolean?>]`: Optional.
 Whether to hide the participant from the roster.
@@ -1595,6 +1608,8 @@ TRANSCRIPTION `<IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall)
+
+[https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-beta)
 
 
 

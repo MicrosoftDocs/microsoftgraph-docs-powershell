@@ -40,8 +40,6 @@ Get-MgGroupSiteContentTypeColumn -InputObject <ISitesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The collection of column definitions for this content type.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -381,6 +379,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecontenttypecolumn)
+
+
+
 
 
 

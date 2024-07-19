@@ -48,8 +48,6 @@ Update-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdenti
 ## DESCRIPTION
 Update the navigation property errors in education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -362,6 +360,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationsynchronizationprofileerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationsynchronizationprofileerror)
+
+
 
 
 

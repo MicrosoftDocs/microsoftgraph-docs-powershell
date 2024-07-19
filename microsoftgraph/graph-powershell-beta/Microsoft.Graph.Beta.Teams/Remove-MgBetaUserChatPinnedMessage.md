@@ -32,8 +32,6 @@ Remove-MgBetaUserChatPinnedMessage -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property pinnedMessages for users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChatId
@@ -265,6 +263,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatpinnedmessage)
+
+
 
 
 

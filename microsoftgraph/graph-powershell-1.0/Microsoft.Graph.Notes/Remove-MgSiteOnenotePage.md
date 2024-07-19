@@ -32,8 +32,6 @@ Remove-MgSiteOnenotePage -InputObject <INotesIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property pages for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -220,6 +218,8 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mgsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mgsiteonenotepage)
+
+
 
 
 

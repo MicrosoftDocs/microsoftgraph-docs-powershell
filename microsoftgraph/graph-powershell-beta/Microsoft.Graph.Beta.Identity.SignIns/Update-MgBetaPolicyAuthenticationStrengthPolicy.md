@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgBetaPolicyAuthenticationStrengthPolicy
 
 ## SYNOPSIS
-Update the navigation property authenticationStrengthPolicies in policies
+Update the properties of an authenticationStrengthPolicy object.
+You cannot update the allowed auth method combinations using this request.
+To do so, use the Update allowed combinations action.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationStrengthPolicy?view=graph-powershell-1.0)
@@ -50,12 +52,15 @@ Update-MgBetaPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsId
 ```
 
 ## DESCRIPTION
-Update the navigation property authenticationStrengthPolicies in policies
+Update the properties of an authenticationStrengthPolicy object.
+You cannot update the allowed auth method combinations using this request.
+To do so, use the Update allowed combinations action.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -65,10 +70,9 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaPolicyAuthenticationStrengthPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -443,6 +447,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -462,6 +467,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -474,6 +480,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicy)
+
+[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-update?view=graph-rest-beta)
 
 
 

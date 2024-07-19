@@ -32,8 +32,6 @@ Remove-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-If
 ## DESCRIPTION
 Delete navigation property members for teamwork
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -265,6 +263,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchannelmember)
+
+
 
 
 

@@ -32,8 +32,6 @@ Remove-MgBetaGroupSiteContentType -InputObject <ISitesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property contentTypes for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -276,6 +274,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitecontenttype)
+
+
 
 
 

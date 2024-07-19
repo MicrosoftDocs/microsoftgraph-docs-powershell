@@ -59,8 +59,6 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-checkmembergroups-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -290,6 +288,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupmembergroup)
 
 [https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta)
+
+
 
 
 

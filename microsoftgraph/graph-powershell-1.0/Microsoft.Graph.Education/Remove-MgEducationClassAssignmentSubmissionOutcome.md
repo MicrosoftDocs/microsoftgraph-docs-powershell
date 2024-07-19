@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgEducationClassAssignmentSubmissionOutcome
 
 ## SYNOPSIS
-Delete navigation property outcomes for education
+Delete a feedback resource from a submission.
+This can only be done by a teacher.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
@@ -31,7 +32,8 @@ Remove-MgEducationClassAssignmentSubmissionOutcome -InputObject <IEducationIdent
 ```
 
 ## DESCRIPTION
-Delete navigation property outcomes for education
+Delete a feedback resource from a submission.
+This can only be done by a teacher.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -264,6 +266,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentsubmissionoutcome)
+
+[https://learn.microsoft.com/graph/api/educationfeedbackresourceoutcome-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationfeedbackresourceoutcome-delete?view=graph-rest-1.0)
 
 
 

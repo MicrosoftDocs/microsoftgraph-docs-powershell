@@ -44,13 +44,13 @@ Retrieve a list of monthly print usage summaries, grouped by user.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportMonthlyPrintUsageByUser
+
 ```
 This example shows how to use the Get-MgReportMonthlyPrintUsageByUser Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -325,6 +325,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagebyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagebyuser)
+
+[https://learn.microsoft.com/graph/api/reportroot-list-monthlyprintusagebyuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-list-monthlyprintusagebyuser?view=graph-rest-1.0)
 
 
 

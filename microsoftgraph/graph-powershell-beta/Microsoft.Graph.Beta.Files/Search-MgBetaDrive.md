@@ -34,6 +34,19 @@ Search-MgBetaDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <Stri
 ## DESCRIPTION
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Files
+
+Search-MgBetaDrive -DriveId $driveId
+
+```
+This example shows how to use the Search-MgBetaDrive Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Count
@@ -294,7 +307,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadrive)
 
 [https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta)
-
 
 
 

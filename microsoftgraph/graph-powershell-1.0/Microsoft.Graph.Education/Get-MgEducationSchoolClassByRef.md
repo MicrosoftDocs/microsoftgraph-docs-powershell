@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgEducationSchoolClassByRef
 
 ## SYNOPSIS
-Classes taught at the school.
-Nullable.
+Get the educationClass resources owned by an educationSchool.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
@@ -23,10 +22,7 @@ Get-MgEducationSchoolClassByRef -EducationSchoolId <String> [-Filter <String>] [
 ```
 
 ## DESCRIPTION
-Classes taught at the school.
-Nullable.
-
-## EXAMPLES
+Get the educationClass resources owned by an educationSchool.
 
 ## PARAMETERS
 
@@ -225,6 +221,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschoolclassbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschoolclassbyref)
+
+[https://learn.microsoft.com/graph/api/educationschool-list-classes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-list-classes?view=graph-rest-1.0)
+
+
 
 
 

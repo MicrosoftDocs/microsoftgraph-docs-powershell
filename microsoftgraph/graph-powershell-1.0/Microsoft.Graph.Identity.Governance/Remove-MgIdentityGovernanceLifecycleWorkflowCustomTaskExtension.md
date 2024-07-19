@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension
 
 ## SYNOPSIS
-Delete navigation property customTaskExtensions for identityGovernance
+Delete a customTaskExtension object.
+A custom task extension  can only be deleted if it is not referenced in any task objects in a lifecycle workflow.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-beta)
@@ -30,7 +31,8 @@ Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject <II
 ```
 
 ## DESCRIPTION
-Delete navigation property customTaskExtensions for identityGovernance
+Delete a customTaskExtension object.
+A custom task extension  can only be deleted if it is not referenced in any task objects in a lifecycle workflow.
 
 ## PARAMETERS
 
@@ -259,6 +261,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancelifecycleworkflowcustomtaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancelifecycleworkflowcustomtaskextension)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-delete?view=graph-rest-1.0)
 
 
 

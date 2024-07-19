@@ -8,7 +8,11 @@ schema: 2.0.0
 # Remove-MgCommunicationCallParticipant
 
 ## SYNOPSIS
-Delete navigation property participants for communications
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
@@ -30,7 +34,11 @@ Remove-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity
 ```
 
 ## DESCRIPTION
-Delete navigation property participants for communications
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -245,6 +253,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallparticipant)
+
+[https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-1.0)
 
 
 

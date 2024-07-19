@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTenantRelationshipDelegatedAdminRelationship
 
 ## SYNOPSIS
-The details of the delegated administrative privileges that a Microsoft partner has in a customer tenant.
+Read the properties of a delegatedAdminRelationship object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentityPartne
 ```
 
 ## DESCRIPTION
-The details of the delegated administrative privileges that a Microsoft partner has in a customer tenant.
+Read the properties of a delegatedAdminRelationship object.
 
 ## PARAMETERS
 
@@ -296,6 +296,10 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationship)
+
+[https://learn.microsoft.com/graph/api/delegatedadminrelationship-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationship-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/tenantrelationship-list-delegatedadminrelationships?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tenantrelationship-list-delegatedadminrelationships?view=graph-rest-1.0)
 
 
 

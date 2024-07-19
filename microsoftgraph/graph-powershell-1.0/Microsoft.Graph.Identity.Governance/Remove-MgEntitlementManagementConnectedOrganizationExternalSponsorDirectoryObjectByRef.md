@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef
 
 ## SYNOPSIS
-Delete ref of navigation property externalSponsors for identityGovernance
+Remove a user or a group from the connected organization's external sponsors.
+The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef?view=graph-powershell-beta)
@@ -32,7 +33,8 @@ Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjec
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property externalSponsors for identityGovernance
+Remove a user or a group from the connected organization's external sponsors.
+The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## PARAMETERS
 
@@ -276,6 +278,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementconnectedorganizationexternalsponsordirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementconnectedorganizationexternalsponsordirectoryobjectbyref)
+
+[https://learn.microsoft.com/graph/api/connectedorganization-delete-externalsponsors?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectedorganization-delete-externalsponsors?view=graph-rest-1.0)
 
 
 

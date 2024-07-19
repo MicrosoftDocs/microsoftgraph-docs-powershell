@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 
 ## SYNOPSIS
-Collection of imported Windows autopilot devices.
+Read properties and relationships of the importedWindowsAutopilotDeviceIdentity object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity -InputObject <IDevi
 ```
 
 ## DESCRIPTION
-Collection of imported Windows autopilot devices.
+Read properties and relationships of the importedWindowsAutopilotDeviceIdentity object.
 
 ## PARAMETERS
 
@@ -294,6 +294,10 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementimportedwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementimportedwindowsautopilotdeviceidentity)
+
+[https://learn.microsoft.com/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentity-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentity-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentity-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentity-list?view=graph-rest-1.0)
 
 
 

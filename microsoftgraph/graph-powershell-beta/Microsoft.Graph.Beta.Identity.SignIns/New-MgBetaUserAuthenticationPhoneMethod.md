@@ -8,7 +8,12 @@ schema: 2.0.0
 # New-MgBetaUserAuthenticationPhoneMethod
 
 ## SYNOPSIS
-Create new navigation property to phoneMethods for users
+Add a new phone authentication method.
+A user may only have one phone of each type, captured in the phoneType property.
+This means, for example, adding a mobile phone to a user with a preexisting mobile phone will fail.
+Additionally, a user must always have a mobile phone before adding an alternateMobile phone.
+Adding a phone number makes it available for use in both Azure multifactor authentication (MFA) and self-service password reset (SSPR), if enabled.
+Additionally, if a user is enabled by policy to use SMS sign-in and a mobile number is added, the system attempts to register the number for use in that system.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationPhoneMethod?view=graph-powershell-1.0)
@@ -46,12 +51,18 @@ New-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to phoneMethods for users
+Add a new phone authentication method.
+A user may only have one phone of each type, captured in the phoneType property.
+This means, for example, adding a mobile phone to a user with a preexisting mobile phone will fail.
+Additionally, a user must always have a mobile phone before adding an alternateMobile phone.
+Adding a phone number makes it available for use in both Azure multifactor authentication (MFA) and self-service password reset (SSPR), if enabled.
+Additionally, if a user is enabled by policy to use SMS sign-in and a mobile number is added, the system attempts to register the number for use in that system.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -60,10 +71,9 @@ $params = @{
 }
 
 New-MgBetaUserAuthenticationPhoneMethod -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaUserAuthenticationPhoneMethod Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -349,6 +359,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -368,6 +379,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -380,6 +392,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationphonemethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationphonemethod)
+
+[https://learn.microsoft.com/graph/api/authentication-post-phonemethods?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authentication-post-phonemethods?view=graph-rest-beta)
 
 
 

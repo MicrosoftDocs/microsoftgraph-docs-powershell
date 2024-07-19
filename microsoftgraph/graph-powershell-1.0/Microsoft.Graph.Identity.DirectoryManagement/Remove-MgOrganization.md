@@ -29,8 +29,6 @@ Remove-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-IfMa
 ## DESCRIPTION
 Delete entity from organization
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -217,6 +215,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganization)
+
+
 
 
 

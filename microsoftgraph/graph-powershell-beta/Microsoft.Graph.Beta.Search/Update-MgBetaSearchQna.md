@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSearchQna
 
 ## SYNOPSIS
-Update the navigation property qnas in search
+Update the properties of a qna object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Update-MgSearchQna?view=graph-powershell-1.0)
@@ -54,7 +54,24 @@ Update-MgBetaSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Update the navigation property qnas in search
+Update the properties of a qna object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+$params = @{
+	description = "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a weekend."
+}
+
+Update-MgBetaSearchQna -QnaId $qnaId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSearchQna Cmdlet.
+
 
 ## PARAMETERS
 
@@ -564,6 +581,7 @@ When users select this answer variation from the search results, they're directe
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna)
 
+[https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-beta)
 
 
 

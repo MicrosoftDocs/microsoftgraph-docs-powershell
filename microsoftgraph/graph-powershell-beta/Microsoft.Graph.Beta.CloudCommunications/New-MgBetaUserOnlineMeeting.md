@@ -19,8 +19,9 @@ Create new navigation property to onlineMeetings for users
 ```
 New-MgBetaUserOnlineMeeting -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
- [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions]
- [-AllowTranscription] [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
+ [-AllowBreakoutRooms] [-AllowLiveShare] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName]
+ [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard]
+ [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
  [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastRecordingInputFile <String>] [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]
@@ -49,8 +50,9 @@ New-MgBetaUserOnlineMeeting -UserId <String> -BodyParameter <IMicrosoftGraphOnli
 ```
 New-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
- [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions]
- [-AllowTranscription] [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
+ [-AllowBreakoutRooms] [-AllowLiveShare] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName]
+ [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard]
+ [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
  [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastRecordingInputFile <String>] [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]
@@ -166,6 +168,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AllowBreakoutRooms
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -AllowedPresenters
 onlineMeetingPresenters
 
@@ -177,6 +194,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowLiveShare
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -198,6 +230,21 @@ Accept wildcard characters: False
 
 ### -AllowParticipantsToChangeName
 Specifies if participants are allowed to rename themselves in an instance of the meeting.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowPowerPointSharing
+.
 
 ```yaml
 Type: SwitchParameter
@@ -256,8 +303,24 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AllowWhiteboard
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -AlternativeRecordingInputFile
-Input File for AlternativeRecording (.)
+Input File for AlternativeRecording (The content stream of the alternative recording of a Microsoft Teams live event.
+Read-only.)
 
 ```yaml
 Type: String
@@ -306,7 +369,8 @@ Accept wildcard characters: False
 ```
 
 ### -AttendeeReportInputFile
-Input File for AttendeeReport (.)
+Input File for AttendeeReport (The content stream of the attendee report of a Teams live event.
+Read-only.)
 
 ```yaml
 Type: String
@@ -384,7 +448,8 @@ Accept wildcard characters: False
 ```
 
 ### -Capabilities
-.
+The list of meeting capabilities.
+Possible values are: questionAndAnswer,unknownFutureValue.
 
 ```yaml
 Type: String[]
@@ -527,7 +592,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsBroadcast
-.
+Indicates whether this event is a Teams live event.
 
 ```yaml
 Type: SwitchParameter
@@ -728,7 +793,8 @@ Accept wildcard characters: False
 ```
 
 ### -RecordingInputFile
-Input File for Recording (.)
+Input File for Recording (The content stream of the recording of a Teams live event.
+Read-only.)
 
 ```yaml
 Type: String
@@ -983,20 +1049,24 @@ AUDIOCONFERENCING `<IMicrosoftGraphAudioConferencing>`: audioConferencing
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConferenceId <String>]`: The conference id of the online meeting.
   - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-  - `[TollFreeNumber <String>]`: 
+  - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
   - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-  - `[TollNumber <String>]`: 
+  - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
   - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
 
 BODYPARAMETER `<IMicrosoftGraphOnlineMeeting>`: onlineMeeting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+  - `[AllowBreakoutRooms <Boolean?>]`: 
+  - `[AllowLiveShare <Boolean?>]`: 
   - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+  - `[AllowPowerPointSharing <Boolean?>]`: 
   - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
   - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+  - `[AllowWhiteboard <Boolean?>]`: 
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -1035,9 +1105,9 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ConferenceId <String>]`: The conference id of the online meeting.
     - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-    - `[TollFreeNumber <String>]`: 
+    - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
     - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-    - `[TollNumber <String>]`: 
+    - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
     - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1082,8 +1152,10 @@ Read-only.
     - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AlternativeRecording <Byte- `[]`>]`: 
-  - `[AttendeeReport <Byte- `[]`>]`: 
+  - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
+Read-only.
+  - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.
+Read-only.
   - `[BroadcastRecording <Byte- `[]`>]`: 
   - `[BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]`: broadcastMeetingSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1101,7 +1173,8 @@ Default value is false.
 Default value is false.
     - `[IsVideoOnDemandEnabled <Boolean?>]`: Indicates whether video on demand is enabled for this Teams live event.
 Default value is false.
-  - `[Capabilities <String- `[]`>]`: 
+  - `[Capabilities <String- `[]`>]`: The list of meeting capabilities.
+Possible values are: questionAndAnswer,unknownFutureValue.
   - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC.
 Read-only.
   - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
@@ -1109,7 +1182,7 @@ Required when you create an online meeting.
   - `[ExternalId <String>]`: The external ID.
 A custom ID.
 Optional.
-  - `[IsBroadcast <Boolean?>]`: 
+  - `[IsBroadcast <Boolean?>]`: Indicates whether this event is a Teams live event.
   - `[JoinUrl <String>]`: 
   - `[MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]`: meetingAttendanceReport
   - `[MeetingTemplateId <String>]`: The ID of the meeting template.
@@ -1123,17 +1196,26 @@ Optional.
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[Role <String>]`: onlineMeetingRole
       - `[Upn <String>]`: User principal name of the participant.
-    - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+    - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
     - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-    - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
-  - `[Recording <Byte- `[]`>]`: 
+    - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
+  - `[Recording <Byte- `[]`>]`: The content stream of the recording of a Teams live event.
+Read-only.
   - `[Recordings <IMicrosoftGraphCallRecording- `[]`>]`: The recordings of an online meeting.
 Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[CallId <String>]`: The unique identifier for the call that is related to this recording.
+Read-only.
     - `[Content <Byte- `[]`>]`: The content of the recording.
 Read-only.
+    - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+    - `[EndDateTime <DateTime?>]`: Date and time at which the recording ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -1142,7 +1224,7 @@ Read-only.
     - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording.
 Read-only.
-    - `[RecordingContentUrl <String>]`: The URL which can be used to access the content of the recording.
+    - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
   - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1179,10 +1261,18 @@ Required when you create an online meeting.
 Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[CallId <String>]`: The unique identifier for the call that is related to this transcript.
+Read-only.
     - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
+    - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
-The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+    - `[EndDateTime <DateTime?>]`: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
     - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
@@ -1192,7 +1282,7 @@ Read-only.
 Read-only.
     - `[MetadataContent <Byte- `[]`>]`: The time-aligned metadata of the utterances in the transcript.
 Read-only.
-    - `[TranscriptContentUrl <String>]`: The URL which can be used to access the content of the transcript.
+    - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
 Read-only.
 
 BROADCASTSETTINGS `<IMicrosoftGraphBroadcastMeetingSettings>`: broadcastMeetingSettings
@@ -1312,17 +1402,25 @@ This property is read-only.
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Role <String>]`: onlineMeetingRole
     - `[Upn <String>]`: User principal name of the participant.
-  - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+  - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
   - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-  - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+  - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
 
 RECORDINGS <IMicrosoftGraphCallRecording- `[]`>: The recordings of an online meeting.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[CallId <String>]`: The unique identifier for the call that is related to this recording.
+Read-only.
   - `[Content <Byte- `[]`>]`: The content of the recording.
 Read-only.
+  - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+  - `[EndDateTime <DateTime?>]`: Date and time at which the recording ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -1340,7 +1438,7 @@ This property is read-only.
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording.
 Read-only.
-  - `[RecordingContentUrl <String>]`: The URL which can be used to access the content of the recording.
+  - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
 
 REGISTRATION `<IMicrosoftGraphMeetingRegistration>`: meetingRegistration
@@ -1377,10 +1475,18 @@ TRANSCRIPTS <IMicrosoftGraphCallTranscript- `[]`>: The transcripts of an online 
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[CallId <String>]`: The unique identifier for the call that is related to this transcript.
+Read-only.
   - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
+  - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
-The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+  - `[EndDateTime <DateTime?>]`: Date and time at which the transcription ends.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
@@ -1399,7 +1505,7 @@ This property is read-only.
 Read-only.
   - `[MetadataContent <Byte- `[]`>]`: The time-aligned metadata of the utterances in the transcript.
 Read-only.
-  - `[TranscriptContentUrl <String>]`: The URL which can be used to access the content of the transcript.
+  - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
 Read-only.
 
 WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProtectionValues

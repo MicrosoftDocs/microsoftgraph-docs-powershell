@@ -27,13 +27,17 @@ List training coverage for tenant users in attack simulation and training campai
 This function supports @odata.nextLink for pagination.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
+
 Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage
+
 ```
 This example shows how to use the Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

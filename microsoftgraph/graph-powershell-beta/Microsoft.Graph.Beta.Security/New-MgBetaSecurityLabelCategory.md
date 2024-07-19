@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityLabelCategory
 
 ## SYNOPSIS
-Create new navigation property to categories for security
+Create a new categoryTemplate object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelCategory](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelCategory?view=graph-powershell-1.0)
@@ -31,7 +31,25 @@ New-MgBetaSecurityLabelCategory -BodyParameter <IMicrosoftGraphSecurityCategoryT
 ```
 
 ## DESCRIPTION
-Create new navigation property to categories for security
+Create a new categoryTemplate object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.categoryTemplate"
+	displayName = "Accounts Payable"
+}
+
+New-MgBetaSecurityLabelCategory -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityLabelCategory Cmdlet.
+
 
 ## PARAMETERS
 
@@ -175,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subcategories
-.
+Represents all subcategories under a particular category.
 To construct, see NOTES section for SUBCATEGORIES properties and create a hash table.
 
 ```yaml
@@ -254,7 +272,7 @@ Read-only.
   - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
+  - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
 Read-only.
@@ -273,7 +291,7 @@ This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SUBCATEGORIES <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>: .
+SUBCATEGORIES <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>: Represents all subcategories under a particular category.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -294,6 +312,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategory)
 
+[https://learn.microsoft.com/graph/api/security-labelsroot-post-categories?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-labelsroot-post-categories?view=graph-rest-beta)
 
 
 

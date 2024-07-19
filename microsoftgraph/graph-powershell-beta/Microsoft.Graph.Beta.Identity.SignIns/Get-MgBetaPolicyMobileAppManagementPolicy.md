@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyMobileAppManagementPolicy
 
 ## SYNOPSIS
-The policy that defines autoenrollment configuration for a mobility management (MDM or MAM) application.
+Read the properties and relationships of a mobilityManagementPolicy object.
 
 ## SYNTAX
 
@@ -35,23 +35,20 @@ Get-MgBetaPolicyMobileAppManagementPolicy -InputObject <IIdentitySignInsIdentity
 ```
 
 ## DESCRIPTION
-The policy that defines autoenrollment configuration for a mobility management (MDM or MAM) application.
+Read the properties and relationships of a mobilityManagementPolicy object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPolicyMobileAppManagementPolicy Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaPolicyMobileAppManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId
-```
-This example shows how to use the Get-MgBetaPolicyMobileAppManagementPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaPolicyMobileAppManagementPolicy Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 Get-MgBetaPolicyMobileAppManagementPolicy
+
 ```
 This example shows how to use the Get-MgBetaPolicyMobileAppManagementPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -349,6 +346,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -368,6 +366,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -380,6 +379,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicy)
+
+[https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list?view=graph-rest-beta)
 
 
 

@@ -24,8 +24,6 @@ Get-MgBetaDeviceManagementApplePushNotificationCertificate [-ExpandProperty <Str
 ## DESCRIPTION
 Apple push notification certificate.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -117,6 +115,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementapplepushnotificationcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementapplepushnotificationcertificate)
+
+
 
 
 

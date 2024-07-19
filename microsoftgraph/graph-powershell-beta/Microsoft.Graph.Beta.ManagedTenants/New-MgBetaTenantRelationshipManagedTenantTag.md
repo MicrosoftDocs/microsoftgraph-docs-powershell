@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaTenantRelationshipManagedTenantTag
 
 ## SYNOPSIS
-Create new navigation property to tenantTags for tenantRelationships
+Create a new tenantTag object.
 
 ## SYNTAX
 
@@ -30,20 +30,25 @@ New-MgBetaTenantRelationshipManagedTenantTag -BodyParameter <IMicrosoftGraphMana
 ```
 
 ## DESCRIPTION
-Create new navigation property to tenantTags for tenantRelationships
+Create a new tenantTag object.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaTenantRelationshipManagedTenantTag Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 $params = @{
-	DisplayName = "Support"
-	Description = "Tenants that have purchased extended support"
+	displayName = "Support"
+	description = "Tenants that have purchased extended support"
 }
+
 New-MgBetaTenantRelationshipManagedTenantTag -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -360,6 +365,8 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenanttag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenanttag)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-post-tenanttags?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-post-tenanttags?view=graph-rest-beta)
 
 
 

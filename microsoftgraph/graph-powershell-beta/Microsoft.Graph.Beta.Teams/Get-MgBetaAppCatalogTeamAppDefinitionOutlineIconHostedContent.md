@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent
 
 ## SYNOPSIS
-The contents of the app icon if the icon is hosted within the Teams infrastructure.
+Retrieve the hosted content in an app's icon.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITea
 ```
 
 ## DESCRIPTION
-The contents of the app icon if the icon is hosted within the Teams infrastructure.
+Retrieve the hosted content in an app's icon.
 
 ## PARAMETERS
 
@@ -259,6 +259,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineiconhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineiconhostedcontent)
+
+[https://learn.microsoft.com/graph/api/teamworkhostedcontent-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamworkhostedcontent-get?view=graph-rest-beta)
+
 
 
 

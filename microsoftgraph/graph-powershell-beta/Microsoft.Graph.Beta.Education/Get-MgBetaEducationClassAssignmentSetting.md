@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaEducationClassAssignmentSetting
 
 ## SYNOPSIS
-Specifies class-level assignments settings.
+Read the properties and relationships of an educationAssignmentSettings object.
+Only teachers can perform this operation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSetting?view=graph-powershell-1.0)
@@ -30,7 +31,8 @@ Get-MgBetaEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Specifies class-level assignments settings.
+Read the properties and relationships of an educationAssignmentSettings object.
+Only teachers can perform this operation.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -203,6 +205,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsetting)
+
+[https://learn.microsoft.com/graph/api/educationassignmentsettings-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignmentsettings-get?view=graph-rest-beta)
 
 
 

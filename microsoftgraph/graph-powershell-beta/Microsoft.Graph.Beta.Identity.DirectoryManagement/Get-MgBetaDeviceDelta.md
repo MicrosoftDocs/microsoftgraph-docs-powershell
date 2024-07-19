@@ -26,6 +26,19 @@ Get-MgBetaDeviceDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property
 Get newly created, updated, or deleted devices without performing a full read of the entire resource collection.
 For more information, see Using delta query.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDeviceDelta
+
+```
+This example shows how to use the Get-MgBetaDeviceDelta Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -240,7 +253,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicedelta)
 
 [https://learn.microsoft.com/graph/api/device-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/device-delta?view=graph-rest-beta)
-
 
 
 

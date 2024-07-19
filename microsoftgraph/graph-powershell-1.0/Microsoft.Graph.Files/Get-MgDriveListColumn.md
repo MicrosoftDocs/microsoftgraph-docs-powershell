@@ -40,8 +40,6 @@ Get-MgDriveListColumn -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 The collection of field definitions for this list.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -331,6 +329,9 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcolumn)
+
+
+
 
 
 

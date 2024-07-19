@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource
 
 ## SYNOPSIS
-Data source entity for SharePoint sites associated with the custodian.
+Read the properties and relationships of a siteSource object.
 
 ## SYNTAX
 
@@ -35,7 +35,10 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource -InputObject <IComplianceI
 ```
 
 ## DESCRIPTION
-Data source entity for SharePoint sites associated with the custodian.
+Read the properties and relationships of a siteSource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sitesource-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -347,6 +350,10 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodiansitesource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodiansitesource)
+
+[https://learn.microsoft.com/graph/api/ediscovery-sitesource-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-sitesource-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/ediscovery-custodian-list-sitesources?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-custodian-list-sitesources?view=graph-rest-beta)
 
 
 

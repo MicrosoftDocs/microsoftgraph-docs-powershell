@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Delete navigation property dataConnectors for external
+Delete an industryDataConnector object.
 
 ## SYNTAX
 
@@ -27,7 +27,20 @@ Remove-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Delete navigation property dataConnectors for external
+Delete an industryDataConnector object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Remove-MgBetaExternalIndustryDataConnector -IndustryDataConnectorId $industryDataConnectorId
+
+```
+This example shows how to use the Remove-MgBetaExternalIndustryDataConnector Cmdlet.
+
 
 ## PARAMETERS
 
@@ -211,6 +224,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydataconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydataconnector)
 
+[https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-delete?view=graph-rest-beta)
 
 
 

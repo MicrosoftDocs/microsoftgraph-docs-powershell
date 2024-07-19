@@ -32,8 +32,6 @@ Get-MgGroupTeamPrimaryChannelFileFolderContent -InputObject <ITeamsIdentity> [-F
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Format
@@ -211,6 +209,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelfilefoldercontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelfilefoldercontent)
+
+
 
 
 

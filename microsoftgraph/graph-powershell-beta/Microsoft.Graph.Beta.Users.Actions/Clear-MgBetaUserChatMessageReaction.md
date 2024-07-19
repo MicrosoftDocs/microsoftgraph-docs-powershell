@@ -49,8 +49,6 @@ Clear-MgBetaUserChatMessageReaction -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action unsetReaction
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -318,6 +316,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetauserchatmessagereaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetauserchatmessagereaction)
+
+
 
 
 

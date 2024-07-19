@@ -50,27 +50,6 @@ Invoke-MgBetaSnoozeGroupCalendarEventReminder -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Users.Actions
-
-$params = @{
-	NewReminderTime = @{
-		DateTime = "dateTime-value"
-		TimeZone = "timeZone-value"
-	}
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgBetaSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaSnoozeGroupCalendarEventReminder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -343,6 +322,8 @@ See below for possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasnoozegroupcalendareventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasnoozegroupcalendareventreminder)
 
 [https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-beta)
+
+
 
 
 

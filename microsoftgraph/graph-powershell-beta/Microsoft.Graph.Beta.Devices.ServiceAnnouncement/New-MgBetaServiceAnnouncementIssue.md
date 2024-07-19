@@ -35,8 +35,6 @@ New-MgBetaServiceAnnouncementIssue -BodyParameter <IMicrosoftGraphServiceHealthI
 ## DESCRIPTION
 Create new navigation property to issues for admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -435,6 +433,8 @@ POSTS <IMicrosoftGraphServiceHealthIssuePost- `[]`>: Collection of historical po
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementissue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementissue)
+
+
 
 
 

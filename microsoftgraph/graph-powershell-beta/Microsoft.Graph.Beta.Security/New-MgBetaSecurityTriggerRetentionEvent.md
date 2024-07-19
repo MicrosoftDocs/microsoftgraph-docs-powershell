@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityTriggerRetentionEvent
 
 ## SYNOPSIS
-Create new navigation property to retentionEvents for security
+Create a new retentionEvent object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityTriggerRetentionEvent?view=graph-powershell-1.0)
@@ -35,7 +35,7 @@ New-MgBetaSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityR
 ```
 
 ## DESCRIPTION
-Create new navigation property to retentionEvents for security
+Create a new retentionEvent object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventPropagationResults
-.
+Represents the success status of a created event and additional information.
 To construct, see NOTES section for EVENTPROPAGATIONRESULTS properties and create a hash table.
 
 ```yaml
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventQueries
-.
+Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
 To construct, see NOTES section for EVENTQUERIES properties and create a hash table.
 
 ```yaml
@@ -418,12 +418,12 @@ This property is read-only.
   - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEvent was created.
   - `[Description <String>]`: Optional information about the event.
   - `[DisplayName <String>]`: Name of the event.
-  - `[EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult- `[]`>]`: 
+  - `[EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult- `[]`>]`: Represents the success status of a created event and additional information.
     - `[Location <String>]`: The name of the specific location in the workload associated with the event.
     - `[ServiceName <String>]`: The name of the workload associated with the event.
     - `[Status <String>]`: eventPropagationStatus
     - `[StatusInformation <String>]`: Additional information about the status of the event creation request.
-  - `[EventQueries <IMicrosoftGraphSecurityEventQuery- `[]`>]`: 
+  - `[EventQueries <IMicrosoftGraphSecurityEventQuery- `[]`>]`: Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
     - `[Query <String>]`: Represents unique identification for the  query.
 'Asset ID' for SharePoint Online and OneDrive for Business, 'keywords' for Exchange Online.
     - `[QueryType <String>]`: queryType
@@ -471,13 +471,13 @@ This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-EVENTPROPAGATIONRESULTS <IMicrosoftGraphSecurityEventPropagationResult- `[]`>: .
+EVENTPROPAGATIONRESULTS <IMicrosoftGraphSecurityEventPropagationResult- `[]`>: Represents the success status of a created event and additional information.
   - `[Location <String>]`: The name of the specific location in the workload associated with the event.
   - `[ServiceName <String>]`: The name of the workload associated with the event.
   - `[Status <String>]`: eventPropagationStatus
   - `[StatusInformation <String>]`: Additional information about the status of the event creation request.
 
-EVENTQUERIES <IMicrosoftGraphSecurityEventQuery- `[]`>: .
+EVENTQUERIES <IMicrosoftGraphSecurityEventQuery- `[]`>: Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
   - `[Query <String>]`: Represents unique identification for the  query.
 'Asset ID' for SharePoint Online and OneDrive for Business, 'keywords' for Exchange Online.
   - `[QueryType <String>]`: queryType
@@ -535,6 +535,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent)
+
+[https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-beta)
 
 
 

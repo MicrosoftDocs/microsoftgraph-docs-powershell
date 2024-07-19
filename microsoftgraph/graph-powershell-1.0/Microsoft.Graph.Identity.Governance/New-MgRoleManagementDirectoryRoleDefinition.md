@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgRoleManagementDirectoryRoleDefinition
 
 ## SYNOPSIS
-Create new navigation property to roleDefinitions for roleManagement
+Create a new custom unifiedRoleDefinition object.
+This feature requires a Microsoft Entra ID P1 or P2 license.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
@@ -33,7 +34,8 @@ New-MgRoleManagementDirectoryRoleDefinition -BodyParameter <IMicrosoftGraphUnifi
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleDefinitions for roleManagement
+Create a new custom unifiedRoleDefinition object.
+This feature requires a Microsoft Entra ID P1 or P2 license.
 
 ## PARAMETERS
 
@@ -424,6 +426,8 @@ Not yet supported.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroledefinition)
+
+[https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-1.0)
 
 
 

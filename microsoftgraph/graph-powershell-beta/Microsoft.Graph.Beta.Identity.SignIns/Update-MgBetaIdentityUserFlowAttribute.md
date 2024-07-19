@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityUserFlowAttribute
 
 ## SYNOPSIS
-Update the navigation property userFlowAttributes in identity
+Update the properties of a custom identityUserFlowAttribute object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
@@ -46,12 +46,13 @@ Update-MgBetaIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property userFlowAttributes in identity
+Update the properties of a custom identityUserFlowAttribute object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -59,10 +60,9 @@ $params = @{
 }
 
 Update-MgBetaIdentityUserFlowAttribute -IdentityUserFlowAttributeId $identityUserFlowAttributeId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaIdentityUserFlowAttribute Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-The description of the user flow attribute that's shown to the user at the time of sign-up.
+The description of the user flow attribute that's shown to the user at the time of sign up.
 
 ```yaml
 Type: String
@@ -304,7 +304,7 @@ BODYPARAMETER `<IMicrosoftGraphIdentityUserFlowAttribute>`: identityUserFlowAttr
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DataType <String>]`: identityUserFlowAttributeDataType
-  - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
+  - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
   - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
@@ -360,6 +360,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -379,6 +380,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -391,6 +393,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityuserflowattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityuserflowattribute)
+
+[https://learn.microsoft.com/graph/api/identityuserflowattribute-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityuserflowattribute-update?view=graph-rest-beta)
 
 
 

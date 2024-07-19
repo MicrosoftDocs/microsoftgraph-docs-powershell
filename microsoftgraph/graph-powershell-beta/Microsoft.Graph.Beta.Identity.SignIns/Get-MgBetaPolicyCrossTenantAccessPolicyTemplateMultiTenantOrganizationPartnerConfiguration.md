@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration
 
 ## SYNOPSIS
-Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization.
+Get the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration?view=graph-powershell-1.0)
@@ -22,7 +22,20 @@ Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerCon
 ```
 
 ## DESCRIPTION
-Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization.
+Get the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration
+
+```
+This example shows how to use the Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -116,6 +129,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration)
 
+[https://learn.microsoft.com/graph/api/multitenantorganizationpartnerconfigurationtemplate-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/multitenantorganizationpartnerconfigurationtemplate-get?view=graph-rest-beta)
 
 
 

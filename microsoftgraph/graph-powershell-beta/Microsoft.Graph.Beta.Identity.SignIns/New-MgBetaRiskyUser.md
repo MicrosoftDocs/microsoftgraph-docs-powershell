@@ -33,19 +33,6 @@ New-MgBetaRiskyUser -BodyParameter <IMicrosoftGraphRiskyUser> [-ResponseHeadersV
 ## DESCRIPTION
 Create new navigation property to riskyUsers for identityProtection
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaRiskyUser
-```
-This example shows how to use the New-MgBetaBetaRiskyUser Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -348,8 +335,12 @@ Read-only.
     - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Detail <String>]`: riskDetail
-      - `[EventTypes <String- `[]`>]`: 
-      - `[RiskEventTypes <String- `[]`>]`: 
+      - `[EventTypes <String- `[]`>]`: List of risk event types.
+Deprecated.
+Use riskEventType instead.
+      - `[RiskEventTypes <String- `[]`>]`: The type of risk event detected.
+The possible values are: anonymizedIPAddress, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, suspiciousAPITraffic, suspiciousIPAddress,   unfamiliarFeatures, unlikelyTravel.
+For more information about each value, see Risk types and detection.
     - `[InitiatedBy <String>]`: The ID of actor that does the operation.
     - `[UserId <String>]`: The ID of the user.
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted.
@@ -382,14 +373,20 @@ Read-only.
   - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Detail <String>]`: riskDetail
-    - `[EventTypes <String- `[]`>]`: 
-    - `[RiskEventTypes <String- `[]`>]`: 
+    - `[EventTypes <String- `[]`>]`: List of risk event types.
+Deprecated.
+Use riskEventType instead.
+    - `[RiskEventTypes <String- `[]`>]`: The type of risk event detected.
+The possible values are: anonymizedIPAddress, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, suspiciousAPITraffic, suspiciousIPAddress,   unfamiliarFeatures, unlikelyTravel.
+For more information about each value, see Risk types and detection.
   - `[InitiatedBy <String>]`: The ID of actor that does the operation.
   - `[UserId <String>]`: The ID of the user.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyuser)
+
+
 
 
 

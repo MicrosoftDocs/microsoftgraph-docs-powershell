@@ -33,6 +33,19 @@ Get-MgBetaReportUserArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-
 ## DESCRIPTION
 Get a list of archived print jobs for a particular user.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportUserArchivedPrintJob
+
+```
+This example shows how to use the Get-MgBetaReportUserArchivedPrintJob Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Count
@@ -233,7 +246,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -283,7 +295,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserarchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserarchivedprintjob)
 
 [https://learn.microsoft.com/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-beta)
-
 
 
 

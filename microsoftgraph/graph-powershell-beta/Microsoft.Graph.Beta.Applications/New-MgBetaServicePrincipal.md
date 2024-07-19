@@ -24,7 +24,8 @@ New-MgBetaServicePrincipal [-ResponseHeadersVariable <String>] [-AccountEnabled]
  [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoleAssignmentRequired]
  [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
  [-ApplicationTemplateId <String>] [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
- [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>] [-CustomSecurityAttributes <Hashtable>]
+ [-ClaimsPolicy <IMicrosoftGraphCustomClaimsPolicy>] [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>]
+ [-CustomSecurityAttributes <Hashtable>]
  [-DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
  [-DisplayName <String>] [-Endpoints <IMicrosoftGraphEndpoint[]>] [-ErrorUrl <String>]
@@ -37,6 +38,7 @@ New-MgBetaServicePrincipal [-ResponseHeadersVariable <String>] [-AccountEnabled]
  [-OwnedObjects <IMicrosoftGraphDirectoryObject[]>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
  [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>]
  [-PasswordSingleSignOnSettings <IMicrosoftGraphPasswordSingleSignOnSettings>]
+ [-PermissionGrantPreApprovalPolicies <IMicrosoftGraphPermissionGrantPreApprovalPolicy[]>]
  [-PreferredSingleSignOnMode <String>] [-PreferredTokenSigningKeyEndDateTime <DateTime>]
  [-PreferredTokenSigningKeyThumbprint <String>] [-PublishedPermissionScopes <IMicrosoftGraphPermissionScope[]>]
  [-PublisherName <String>]
@@ -337,6 +339,22 @@ To construct, see NOTES section for CLAIMSMAPPINGPOLICIES properties and create 
 
 ```yaml
 Type: IMicrosoftGraphClaimsMappingPolicy[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ClaimsPolicy
+customClaimsPolicy
+To construct, see NOTES section for CLAIMSPOLICY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomClaimsPolicy
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -800,6 +818,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PermissionGrantPreApprovalPolicies
+.
+To construct, see NOTES section for PERMISSIONGRANTPREAPPROVALPOLICIES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPermissionGrantPreApprovalPolicy[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PreferredSingleSignOnMode
 Specifies the single sign-on mode configured for this application.
 Microsoft Entra ID uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
@@ -1199,11 +1233,13 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 ADDINS <IMicrosoftGraphAddIn- `[]`>: Defines custom behavior that a consuming service can use to call an app in specific contexts.
 For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality.
 This lets services like Microsoft 365 call the application in the context of a document the user is working on.
-  - `[Id <String>]`: 
-  - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: 
+  - `[Id <String>]`: The unique identifier for the addIn object.
+  - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
+You must specify this property when performing a POST or a PATCH operation on the addIns collection.
+Required.
     - `[Key <String>]`: Contains the name of the field that a value is associated with.
     - `[Value <String>]`: Contains the corresponding value for the specified key.
-  - `[Type <String>]`: 
+  - `[Type <String>]`: The unique name for the functionality exposed by the app.
 
 APPMANAGEMENTPOLICIES <IMicrosoftGraphAppManagementPolicy- `[]`>: The appManagementPolicy applied to this service principal.
   - `[Description <String>]`: Description for this policy.
@@ -1224,14 +1260,20 @@ Always null when the object hasn't been deleted.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
       - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that point to the certificateBasedApplicationConfiguration that contains the collection of allowed root and intermediate certificate authorities.
-      - `[MaxLifetime <TimeSpan?>]`: 
+      - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
+Defined in ISO 8601 format for Durations.
+For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restrictionType is set to keyLifetime.
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications regardless of their creation date, this property would be null.
 Nullable.
       - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
     - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-      - `[MaxLifetime <TimeSpan?>]`: 
+      - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
+Defined in ISO 8601 format for Durations.
+For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restriction type is set to passwordLifetime.
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
 For existing applications, the enforcement date would be backdated.
 To apply to all applications, this date would be null.
@@ -1326,11 +1368,13 @@ Supports $filter (eq, ne, not, in).
   - `[AddIns <IMicrosoftGraphAddIn- `[]`>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts.
 For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality.
 This lets services like Microsoft 365 call the application in the context of a document the user is working on.
-    - `[Id <String>]`: 
-    - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for the addIn object.
+    - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
+You must specify this property when performing a POST or a PATCH operation on the addIns collection.
+Required.
       - `[Key <String>]`: Contains the name of the field that a value is associated with.
       - `[Value <String>]`: Contains the corresponding value for the specified key.
-    - `[Type <String>]`: 
+    - `[Type <String>]`: The unique name for the functionality exposed by the app.
   - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
   - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -1357,14 +1401,20 @@ Always null when the object hasn't been deleted.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
         - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that point to the certificateBasedApplicationConfiguration that contains the collection of allowed root and intermediate certificate authorities.
-        - `[MaxLifetime <TimeSpan?>]`: 
+        - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
+Defined in ISO 8601 format for Durations.
+For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restrictionType is set to keyLifetime.
         - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications regardless of their creation date, this property would be null.
 Nullable.
         - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
       - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-        - `[MaxLifetime <TimeSpan?>]`: 
+        - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
+Defined in ISO 8601 format for Durations.
+For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restriction type is set to passwordLifetime.
         - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
 For existing applications, the enforcement date would be backdated.
 To apply to all applications, this date would be null.
@@ -1448,6 +1498,33 @@ Required.
 Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[ClaimsPolicy <IMicrosoftGraphCustomClaimsPolicy>]`: customClaimsPolicy
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[AudienceOverride <String>]`: If specified, it overrides the content of the audience claim for WS-Federation and SAML2 protocols.
+A custom signing key must be used for audienceOverride to be applied, otherwise, the audienceOverride value is ignored.
+The value provided must be in the format of an absolute URI.
+    - `[Claims <IMicrosoftGraphCustomClaimBase- `[]`>]`: Defines which claims are present in the tokens affected by the policy, in addition to the basic claim and the core claim set.
+Inherited from customclaimbase.
+      - `[Configurations <IMicrosoftGraphCustomClaimConfiguration- `[]`>]`: One or more configurations that describe how the claim is sourced and under what conditions.
+        - `[Attribute <IMicrosoftGraphCustomClaimAttributeBase>]`: customClaimAttributeBase
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Condition <IMicrosoftGraphCustomClaimConditionBase>]`: customClaimConditionBase
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Transformations <IMicrosoftGraphCustomClaimTransformation- `[]`>]`: An ordered list of transformations that are applied in sequence.
+          - `[Input <IMicrosoftGraphTransformationAttribute>]`: transformationAttribute
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Attribute <IMicrosoftGraphCustomClaimAttributeBase>]`: customClaimAttributeBase
+            - `[TreatAsMultiValue <Boolean?>]`: This flag is only relevant in the case where the attribute is multivalued.
+By default, transformations are only applied to the first element in a multi-valued claim, however setting this flag to true ensures the transformation is applied to all values, resulting in a multivalued output.
+    - `[IncludeApplicationIdInIssuer <Boolean?>]`: Indicates whether the application ID is added to the claim.
+It is relevant only for SAML2.0 and if a custom signing key is used.
+the default value is true.
+Optional.
+    - `[IncludeBasicClaimSet <Boolean?>]`: Determines whether the basic claim set is included in tokens affected by this policy.
+If set to true, all claims in the basic claim set are emitted in tokens affected by the policy.
+By default the basic claim set isn't in the tokens unless they're explicitly configured in this policy.
   - `[CreatedObjects <IMicrosoftGraphDirectoryObject- `[]`>]`: Directory objects created by this service principal.
 Read-only.
 Nullable.
@@ -1664,7 +1741,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
   - `[PasswordSingleSignOnSettings <IMicrosoftGraphPasswordSingleSignOnSettings>]`: passwordSingleSignOnSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Fields <IMicrosoftGraphPasswordSingleSignOnField- `[]`>]`: 
+    - `[Fields <IMicrosoftGraphPasswordSingleSignOnField- `[]`>]`: The fields to capture to fill the user credentials for password-based single sign-on.
       - `[CustomizedLabel <String>]`: Title/label override for customization.
       - `[DefaultLabel <String>]`: Label that would be used if no customizedLabel is provided.
 Read only.
@@ -1672,6 +1749,20 @@ Read only.
 This is an internal ID and possible values are param1, param2, paramuserName, parampassword.
       - `[Type <String>]`: Type of the credential.
 The values can be text, password.
+  - `[PermissionGrantPreApprovalPolicies <IMicrosoftGraphPermissionGrantPreApprovalPolicy- `[]`>]`: 
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Conditions <IMicrosoftGraphPreApprovalDetail- `[]`>]`: A list of condition sets describing the conditions under which the permission to grant consent for the app has been preapproved.
+      - `[Permissions <IMicrosoftGraphPreApprovedPermissions>]`: preApprovedPermissions
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[PermissionKind <String>]`: permissionKind
+        - `[PermissionType <String>]`: permissionType
+      - `[ScopeType <String>]`: resourceScopeType
+      - `[SensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]`: scopeSensitivityLabels
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[LabelKind <String>]`: labelKind
   - `[PreferredSingleSignOnMode <String>]`: Specifies the single sign-on mode configured for this application.
 Microsoft Entra ID uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 The supported values are password, saml, notSupported, and oidc.
@@ -1782,7 +1873,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
                 - `[Value <String>]`: Value.
               - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-              - `[DefaultValue <String>]`: 
+              - `[DefaultValue <String>]`: The default value of the attribute.
               - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
               - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
                 - `[Key <String>]`: attributeDefinitionMetadata
@@ -2057,6 +2148,34 @@ Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
+CLAIMSPOLICY `<IMicrosoftGraphCustomClaimsPolicy>`: customClaimsPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[AudienceOverride <String>]`: If specified, it overrides the content of the audience claim for WS-Federation and SAML2 protocols.
+A custom signing key must be used for audienceOverride to be applied, otherwise, the audienceOverride value is ignored.
+The value provided must be in the format of an absolute URI.
+  - `[Claims <IMicrosoftGraphCustomClaimBase- `[]`>]`: Defines which claims are present in the tokens affected by the policy, in addition to the basic claim and the core claim set.
+Inherited from customclaimbase.
+    - `[Configurations <IMicrosoftGraphCustomClaimConfiguration- `[]`>]`: One or more configurations that describe how the claim is sourced and under what conditions.
+      - `[Attribute <IMicrosoftGraphCustomClaimAttributeBase>]`: customClaimAttributeBase
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Condition <IMicrosoftGraphCustomClaimConditionBase>]`: customClaimConditionBase
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Transformations <IMicrosoftGraphCustomClaimTransformation- `[]`>]`: An ordered list of transformations that are applied in sequence.
+        - `[Input <IMicrosoftGraphTransformationAttribute>]`: transformationAttribute
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Attribute <IMicrosoftGraphCustomClaimAttributeBase>]`: customClaimAttributeBase
+          - `[TreatAsMultiValue <Boolean?>]`: This flag is only relevant in the case where the attribute is multivalued.
+By default, transformations are only applied to the first element in a multi-valued claim, however setting this flag to true ensures the transformation is applied to all values, resulting in a multivalued output.
+  - `[IncludeApplicationIdInIssuer <Boolean?>]`: Indicates whether the application ID is added to the claim.
+It is relevant only for SAML2.0 and if a custom signing key is used.
+the default value is true.
+Optional.
+  - `[IncludeBasicClaimSet <Boolean?>]`: Determines whether the basic claim set is included in tokens affected by this policy.
+If set to true, all claims in the basic claim set are emitted in tokens affected by the policy.
+By default the basic claim set isn't in the tokens unless they're explicitly configured in this policy.
+
 CREATEDOBJECTS <IMicrosoftGraphDirectoryObject- `[]`>: Directory objects created by this service principal.
 Read-only.
 Nullable.
@@ -2283,7 +2402,7 @@ Optional.
 
 PASSWORDSINGLESIGNONSETTINGS `<IMicrosoftGraphPasswordSingleSignOnSettings>`: passwordSingleSignOnSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Fields <IMicrosoftGraphPasswordSingleSignOnField- `[]`>]`: 
+  - `[Fields <IMicrosoftGraphPasswordSingleSignOnField- `[]`>]`: The fields to capture to fill the user credentials for password-based single sign-on.
     - `[CustomizedLabel <String>]`: Title/label override for customization.
     - `[DefaultLabel <String>]`: Label that would be used if no customizedLabel is provided.
 Read only.
@@ -2291,6 +2410,21 @@ Read only.
 This is an internal ID and possible values are param1, param2, paramuserName, parampassword.
     - `[Type <String>]`: Type of the credential.
 The values can be text, password.
+
+PERMISSIONGRANTPREAPPROVALPOLICIES <IMicrosoftGraphPermissionGrantPreApprovalPolicy- `[]`>: .
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[Conditions <IMicrosoftGraphPreApprovalDetail- `[]`>]`: A list of condition sets describing the conditions under which the permission to grant consent for the app has been preapproved.
+    - `[Permissions <IMicrosoftGraphPreApprovedPermissions>]`: preApprovedPermissions
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[PermissionKind <String>]`: permissionKind
+      - `[PermissionType <String>]`: permissionType
+    - `[ScopeType <String>]`: resourceScopeType
+    - `[SensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]`: scopeSensitivityLabels
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[LabelKind <String>]`: labelKind
 
 PUBLISHEDPERMISSIONSCOPES <IMicrosoftGraphPermissionScope- `[]`>: The delegated permissions exposed by the application.
 For more information, see the oauth2PermissionScopes property on the application entity's api property.
@@ -2379,7 +2513,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
               - `[Value <String>]`: Value.
             - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-            - `[DefaultValue <String>]`: 
+            - `[DefaultValue <String>]`: The default value of the attribute.
             - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
             - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
               - `[Key <String>]`: attributeDefinitionMetadata

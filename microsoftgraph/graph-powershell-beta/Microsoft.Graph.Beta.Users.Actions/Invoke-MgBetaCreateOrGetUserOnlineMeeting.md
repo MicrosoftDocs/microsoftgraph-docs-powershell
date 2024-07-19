@@ -55,62 +55,72 @@ Create an onlineMeeting object with a custom specified external ID.
 If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet
+### Example 1: Create or get an online meeting with an external ID
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	StartDateTime = [System.DateTime]::Parse("2020-02-06T01:49:21.3524945+00:00")
-	EndDateTime = [System.DateTime]::Parse("2020-02-06T02:19:21.3524945+00:00")
-	Subject = "Create a meeting with customId provided"
-	ExternalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56"
-	Participants = @{
-		Attendees = @(
+	startDateTime = [System.DateTime]::Parse("2020-02-06T01:49:21.3524945+00:00")
+	endDateTime = [System.DateTime]::Parse("2020-02-06T02:19:21.3524945+00:00")
+	subject = "Create a meeting with customId provided"
+	externalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56"
+	participants = @{
+		attendees = @(
 			@{
-				Identity = @{
-					User = @{
-						Id = "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
+				identity = @{
+					user = @{
+						id = "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
 					}
 				}
-				Role = "presenter"
-				Upn = "test1@contoso.com"
+				role = "presenter"
+				upn = "test1@contoso.com"
 			}
 		)
 	}
 }
+
 # A UPN can also be used as -UserId.
 Invoke-MgBetaCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
+
 ```
-This example shows how to use the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet
+This example will create or get an online meeting with an external id
+
+### Example 2: Create or get an online meeting in a Microsoft Teams channel with an external ID
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	ChatInfo = @{
-		ThreadId = "19:7ebda77322dd4505ac4dedb5b67df076@thread.tacv2"
+	chatInfo = @{
+		threadId = "19:7ebda77322dd4505ac4dedb5b67df076@thread.tacv2"
 	}
-	StartDateTime = [System.DateTime]::Parse("2020-02-06T01:49:21.3524945+00:00")
-	EndDateTime = [System.DateTime]::Parse("2020-02-06T02:19:21.3524945+00:00")
-	ExternalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56"
-	Participants = @{
-		Attendees = @(
+	startDateTime = [System.DateTime]::Parse("2020-02-06T01:49:21.3524945+00:00")
+	endDateTime = [System.DateTime]::Parse("2020-02-06T02:19:21.3524945+00:00")
+	externalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56"
+	participants = @{
+		attendees = @(
 			@{
-				Identity = @{
-					User = @{
-						Id = "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
+				identity = @{
+					user = @{
+						id = "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
 					}
 				}
-				Upn = "test1@contoso.com"
+				upn = "test1@contoso.com"
 			}
 		)
 	}
-	Subject = "Create a meeting with customId provided"
+	subject = "Create a meeting with customId provided"
 }
+
 # A UPN can also be used as -UserId.
 Invoke-MgBetaCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
+
 ```
-This example shows how to use the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will create or get an online meeting in a microsoft teams channel with an external id
+
 
 ## PARAMETERS
 
@@ -385,9 +395,9 @@ This property is read-only.
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[Role <String>]`: onlineMeetingRole
       - `[Upn <String>]`: User principal name of the participant.
-    - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+    - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
     - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-    - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+    - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
   - `[StartDateTime <DateTime?>]`: 
   - `[Subject <String>]`: 
 
@@ -455,9 +465,9 @@ This property is read-only.
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Role <String>]`: onlineMeetingRole
     - `[Upn <String>]`: User principal name of the participant.
-  - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+  - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
   - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-  - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`:
+  - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
 
 ## RELATED LINKS
 

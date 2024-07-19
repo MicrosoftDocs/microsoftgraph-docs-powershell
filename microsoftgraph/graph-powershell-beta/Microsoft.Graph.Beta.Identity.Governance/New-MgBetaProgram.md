@@ -29,17 +29,22 @@ New-MgBetaProgram -BodyParameter <IMicrosoftGraphProgram> [-ResponseHeadersVaria
 In the Microsoft Entra access reviews feature, create a new program object.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaProgram Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 $params = @{
-	DisplayName = "testprogram3"
-	Description = "test description"
+	displayName = "testprogram3"
+	description = "test description"
 }
+
 New-MgBetaProgram -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaProgram Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -248,7 +253,7 @@ Required on create.
 This property is read-only.
       - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-      - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+      - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[Program <IMicrosoftGraphProgram>]`: program
     - `[ProgramId <String>]`: The programId of the program this control is a part of.
@@ -280,7 +285,7 @@ Required on create.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Program <IMicrosoftGraphProgram>]`: program
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

@@ -32,8 +32,6 @@ Remove-MgGroupTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property members for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -257,6 +255,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannelmember)
+
+
 
 
 

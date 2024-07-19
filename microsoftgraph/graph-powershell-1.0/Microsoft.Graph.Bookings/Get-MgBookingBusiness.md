@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBookingBusiness
 
 ## SYNOPSIS
-Get bookingBusinesses from solutions
+Get the properties and relationships of a bookingBusiness object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusiness?view=graph-powershell-beta)
@@ -37,7 +37,10 @@ Get-MgBookingBusiness -InputObject <IBookingsIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get bookingBusinesses from solutions
+Get the properties and relationships of a bookingBusiness object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -317,6 +320,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusiness)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-list?view=graph-rest-1.0)
 
 
 

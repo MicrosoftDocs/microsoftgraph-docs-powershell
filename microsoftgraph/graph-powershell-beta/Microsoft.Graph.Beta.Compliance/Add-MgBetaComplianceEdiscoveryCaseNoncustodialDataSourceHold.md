@@ -63,8 +63,6 @@ Add-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold -InputObject <IComp
 ## DESCRIPTION
 Invoke action applyHold
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -293,6 +291,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/add-mgbetacomplianceediscoverycasenoncustodialdatasourcehold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/add-mgbetacomplianceediscoverycasenoncustodialdatasourcehold)
+
+
 
 
 

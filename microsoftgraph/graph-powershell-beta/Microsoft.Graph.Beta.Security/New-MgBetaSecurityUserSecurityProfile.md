@@ -32,8 +32,6 @@ New-MgBetaSecurityUserSecurityProfile -BodyParameter <IMicrosoftGraphUserSecurit
 ## DESCRIPTION
 Create new navigation property to userSecurityProfiles for security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Accounts
@@ -375,6 +373,8 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityusersecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityusersecurityprofile)
+
+
 
 
 

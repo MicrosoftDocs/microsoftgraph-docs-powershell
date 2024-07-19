@@ -62,8 +62,6 @@ Get-MgSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 All the terms under the set.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -403,6 +401,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetterm)
+
+
+
 
 
 

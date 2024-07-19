@@ -32,8 +32,6 @@ Remove-MgUserChatTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Respons
 ## DESCRIPTION
 Delete navigation property tabs for users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChatId
@@ -257,6 +255,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchattab)
+
+
 
 
 

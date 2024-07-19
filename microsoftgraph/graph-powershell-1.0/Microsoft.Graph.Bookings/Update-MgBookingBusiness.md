@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBookingBusiness
 
 ## SYNOPSIS
-Update the navigation property bookingBusinesses in solutions
+Update the properties of a bookingBusiness object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
@@ -58,7 +58,7 @@ Update-MgBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Update the navigation property bookingBusinesses in solutions
+Update the properties of a bookingBusiness object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -734,8 +734,8 @@ Nullable.
 Read-only.
     - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
     - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
-      - `[IsRequired <Boolean?>]`: The ID of the custom question.
-      - `[QuestionId <String>]`: Indicates whether it's mandatory to answer the custom question.
+      - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
+      - `[QuestionId <String>]`: The ID of the custom question.
     - `[DefaultDuration <TimeSpan?>]`: The default length of the service, represented in numbers of days, hours, minutes, and seconds.
 For example, P11D23H59M59.999999999999S.
     - `[DefaultLocation <IMicrosoftGraphLocation>]`: location
@@ -902,8 +902,8 @@ Nullable.
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
-    - `[IsRequired <Boolean?>]`: The ID of the custom question.
-    - `[QuestionId <String>]`: Indicates whether it's mandatory to answer the custom question.
+    - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
+    - `[QuestionId <String>]`: The ID of the custom question.
   - `[DefaultDuration <TimeSpan?>]`: The default length of the service, represented in numbers of days, hours, minutes, and seconds.
 For example, P11D23H59M59.999999999999S.
   - `[DefaultLocation <IMicrosoftGraphLocation>]`: location
@@ -974,6 +974,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-update?view=graph-rest-1.0)
 
 
 

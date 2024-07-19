@@ -28,13 +28,17 @@ For details, see Using delta query.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delta-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaAdministrativeUnitDelta Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 Get-MgBetaAdministrativeUnitDelta
+
 ```
 This example shows how to use the Get-MgBetaAdministrativeUnitDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

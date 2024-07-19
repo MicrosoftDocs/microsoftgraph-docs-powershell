@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserOwnedDevice
 
 ## SYNOPSIS
-Devices that are owned by the user.
+Devices the user owns.
 Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
@@ -41,7 +41,7 @@ Get-MgUserOwnedDevice -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Devices that are owned by the user.
+Devices the user owns.
 Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).

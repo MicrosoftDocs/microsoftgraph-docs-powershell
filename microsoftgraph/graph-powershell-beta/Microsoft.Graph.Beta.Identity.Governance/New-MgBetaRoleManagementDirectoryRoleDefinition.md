@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBetaRoleManagementDirectoryRoleDefinition
 
 ## SYNOPSIS
-Create new navigation property to roleDefinitions for roleManagement
+Create a new unifiedRoleDefinition object for an RBAC provider.
+This feature requires a Microsoft Entra ID P1 or P2 license.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-1.0)
@@ -33,7 +35,35 @@ New-MgBetaRoleManagementDirectoryRoleDefinition -BodyParameter <IMicrosoftGraphU
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleDefinitions for roleManagement
+Create a new unifiedRoleDefinition object for an RBAC provider.
+This feature requires a Microsoft Entra ID P1 or P2 license.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	description = "Update basic properties of application registrations"
+	displayName = "Application Registration Support Administrator"
+	rolePermissions = @(
+		@{
+			allowedResourceActions = @(
+			"microsoft.directory/applications/basic/read"
+		)
+	}
+)
+isEnabled = "true"
+}
+
+New-MgBetaRoleManagementDirectoryRoleDefinition -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaRoleManagementDirectoryRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 
@@ -464,6 +494,7 @@ Not supported for custom roles.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroledefinition)
 
+[https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta)
 
 
 

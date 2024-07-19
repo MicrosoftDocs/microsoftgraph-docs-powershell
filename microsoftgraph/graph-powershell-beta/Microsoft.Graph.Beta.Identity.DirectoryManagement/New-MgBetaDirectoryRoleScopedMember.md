@@ -48,8 +48,6 @@ New-MgBetaDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Create new navigation property to scopedMembers for directoryRoles
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -341,6 +339,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrolescopedmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrolescopedmember)
+
+
 
 
 

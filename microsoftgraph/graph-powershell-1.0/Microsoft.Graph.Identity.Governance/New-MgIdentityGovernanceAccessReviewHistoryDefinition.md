@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgIdentityGovernanceAccessReviewHistoryDefinition
 
 ## SYNOPSIS
-Create new navigation property to historyDefinitions for identityGovernance
+Create a new accessReviewHistoryDefinition object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
@@ -35,46 +35,46 @@ New-MgIdentityGovernanceAccessReviewHistoryDefinition
 ```
 
 ## DESCRIPTION
-Create new navigation property to historyDefinitions for identityGovernance
+Create a new accessReviewHistoryDefinition object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
 	displayName = "Last quarter's group reviews April 2021"
 	decisions = @(
-		"approve"
-		"deny"
-		"dontKnow"
-		"notReviewed"
-		"notNotified"
-	)
-	reviewHistoryPeriodStartDateTime = [System.DateTime]::Parse("2021-01-01T00:00:00Z")
-	reviewHistoryPeriodEndDateTime = [System.DateTime]::Parse("2021-04-30T23:59:59Z")
-	scopes = @(
-		@{
-			"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-			queryType = "MicrosoftGraph"
-			query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')"
-			queryRoot = $null
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-			queryType = "MicrosoftGraph"
-			query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')"
-			queryRoot = $null
-		}
-	)
+	"approve"
+"deny"
+"dontKnow"
+"notReviewed"
+"notNotified"
+)
+reviewHistoryPeriodStartDateTime = [System.DateTime]::Parse("2021-01-01T00:00:00Z")
+reviewHistoryPeriodEndDateTime = [System.DateTime]::Parse("2021-04-30T23:59:59Z")
+scopes = @(
+@{
+"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+queryType = "MicrosoftGraph"
+query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')"
+queryRoot = $null
+}
+@{
+"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+queryType = "MicrosoftGraph"
+query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')"
+queryRoot = $null
+}
+)
 }
 
 New-MgIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
+
 ```
 This example shows how to use the New-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -390,9 +390,10 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: Timestamp when the access review definition was created.
   - `[Decisions <String- `[]`>]`: Determines which review decisions will be included in the fetched review history data if specified.
@@ -470,9 +471,10 @@ CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
-  - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+  - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 INSTANCES <IMicrosoftGraphAccessReviewHistoryInstance- `[]`>: If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
@@ -534,6 +536,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition)
+
+[https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-1.0)
 
 
 

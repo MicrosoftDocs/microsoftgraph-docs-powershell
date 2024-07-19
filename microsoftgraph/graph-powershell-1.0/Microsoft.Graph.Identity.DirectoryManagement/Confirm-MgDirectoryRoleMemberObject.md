@@ -48,8 +48,6 @@ Confirm-MgDirectoryRoleMemberObject -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -257,6 +255,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdirectoryrolememberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdirectoryrolememberobject)
+
+
 
 
 

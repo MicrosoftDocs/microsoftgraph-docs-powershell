@@ -33,8 +33,6 @@ Read-only.
 Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -248,6 +246,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerbyref)
+
+
 
 
 

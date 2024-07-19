@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaVirtualEventTownhall
 
 ## SYNOPSIS
-Create new navigation property to townhalls for solutions
+Create a new virtualEventTownhall object in draft mode.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ New-MgBetaVirtualEventTownhall -BodyParameter <IMicrosoftGraphVirtualEventTownha
 ```
 
 ## DESCRIPTION
-Create new navigation property to townhalls for solutions
+Create a new virtualEventTownhall object in draft mode.
 
 ## PARAMETERS
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -CoOrganizers
-.
+Identity information of the coorganizers of the town hall.
 To construct, see NOTES section for COORGANIZERS properties and create a hash table.
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of the virtual event.
+The display name of the virtual event.
 
 ```yaml
 Type: String
@@ -193,7 +193,8 @@ Accept wildcard characters: False
 ```
 
 ### -InvitedAttendees
-.
+The attendees invited to the town hall.
+The supported identities are: communicationsUserIdentity and communicationsGuestIdentity.
 To construct, see NOTES section for INVITEDATTENDEES properties and create a hash table.
 
 ```yaml
@@ -209,7 +210,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsInviteOnly
-.
+Indicates whether the town hall is only open to invited people and groups within your organization.
+The isInviteOnly property can only be true if the value of the audience property is set to organization.
 
 ```yaml
 Type: SwitchParameter
@@ -270,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sessions
-Sessions for the virtual event.
+The sessions for the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml
@@ -387,7 +389,7 @@ This property is read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
-  - `[DisplayName <String>]`: Display name of the virtual event.
+  - `[DisplayName <String>]`: The display name of the virtual event.
   - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
@@ -411,11 +413,15 @@ Read-only.
     - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+      - `[AllowBreakoutRooms <Boolean?>]`: 
+      - `[AllowLiveShare <Boolean?>]`: 
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+      - `[AllowPowerPointSharing <Boolean?>]`: 
       - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+      - `[AllowWhiteboard <Boolean?>]`: 
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -449,9 +455,9 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ConferenceId <String>]`: The conference id of the online meeting.
         - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-        - `[TollFreeNumber <String>]`: 
+        - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
         - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-        - `[TollNumber <String>]`: 
+        - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
         - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
       - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -505,6 +511,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Email <String>]`: Email address of the registrant.
         - `[FirstName <String>]`: First name of the registrant.
         - `[LastName <String>]`: Last name of the registrant.
+        - `[PreferredLanguage <String>]`: 
+        - `[PreferredTimezone <String>]`: 
         - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -522,22 +530,24 @@ Appears when answerInputType is text, multilineText or singleChoice.
         - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
       - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: Sessions for the virtual event.
+  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Status <String>]`: virtualEventStatus
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Audience <String>]`: meetingAudience
-  - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: 
+  - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of the coorganizers of the town hall.
     - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
     - `[TenantId <String>]`: The user's tenant ID.
-  - `[InvitedAttendees <IMicrosoftGraphIdentity- `[]`>]`: 
-  - `[IsInviteOnly <Boolean?>]`: 
+  - `[InvitedAttendees <IMicrosoftGraphIdentity- `[]`>]`: The attendees invited to the town hall.
+The supported identities are: communicationsUserIdentity and communicationsGuestIdentity.
+  - `[IsInviteOnly <Boolean?>]`: Indicates whether the town hall is only open to invited people and groups within your organization.
+The isInviteOnly property can only be true if the value of the audience property is set to organization.
 
-COORGANIZERS <IMicrosoftGraphCommunicationsUserIdentity- `[]`>: .
+COORGANIZERS <IMicrosoftGraphCommunicationsUserIdentity- `[]`>: Identity information of the coorganizers of the town hall.
   - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
   - `[Id <String>]`: The identifier of the identity.
@@ -575,7 +585,8 @@ For example, '2019-04-16T09:00:00'.
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-INVITEDATTENDEES <IMicrosoftGraphIdentity- `[]`>: .
+INVITEDATTENDEES <IMicrosoftGraphIdentity- `[]`>: The attendees invited to the town hall.
+The supported identities are: communicationsUserIdentity and communicationsGuestIdentity.
   - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
   - `[Id <String>]`: The identifier of the identity.
@@ -606,11 +617,15 @@ This property is read-only.
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+    - `[AllowBreakoutRooms <Boolean?>]`: 
+    - `[AllowLiveShare <Boolean?>]`: 
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    - `[AllowPowerPointSharing <Boolean?>]`: 
     - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+    - `[AllowWhiteboard <Boolean?>]`: 
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -644,9 +659,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ConferenceId <String>]`: The conference id of the online meeting.
       - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-      - `[TollFreeNumber <String>]`: 
+      - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
       - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-      - `[TollNumber <String>]`: 
+      - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
       - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
     - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -705,6 +720,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Email <String>]`: Email address of the registrant.
       - `[FirstName <String>]`: First name of the registrant.
       - `[LastName <String>]`: Last name of the registrant.
+      - `[PreferredLanguage <String>]`: 
+      - `[PreferredTimezone <String>]`: 
       - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -723,14 +740,18 @@ Appears when answerInputType is text, multilineText or singleChoice.
 Only appears when the registrant is registered in Microsoft Entra ID.
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: Sessions for the virtual event.
+SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: The sessions for the virtual event.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+  - `[AllowBreakoutRooms <Boolean?>]`: 
+  - `[AllowLiveShare <Boolean?>]`: 
   - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+  - `[AllowPowerPointSharing <Boolean?>]`: 
   - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
   - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+  - `[AllowWhiteboard <Boolean?>]`: 
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -769,9 +790,9 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ConferenceId <String>]`: The conference id of the online meeting.
     - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-    - `[TollFreeNumber <String>]`: 
+    - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
     - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-    - `[TollNumber <String>]`: 
+    - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
     - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -847,6 +868,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Email <String>]`: Email address of the registrant.
     - `[FirstName <String>]`: First name of the registrant.
     - `[LastName <String>]`: Last name of the registrant.
+    - `[PreferredLanguage <String>]`: 
+    - `[PreferredTimezone <String>]`: 
     - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -875,6 +898,9 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall)
+
+[https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta)
+
 
 
 

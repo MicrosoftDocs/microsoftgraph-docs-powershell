@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgBetaChatMessageReplyHostedContent
 
 ## SYNOPSIS
-Update media content for the navigation property hostedContents in chats
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgChatMessageReplyHostedContent?view=graph-powershell-1.0)
@@ -31,7 +32,8 @@ Set-MgBetaChatMessageReplyHostedContent -InputObject <ITeamsIdentity> [-Data <St
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property hostedContents in chats
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 

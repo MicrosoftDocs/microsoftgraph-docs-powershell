@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgGroupAcceptedSenderByRef
 
 ## SYNOPSIS
-Create new navigation property ref to acceptedSenders for groups
+Specify the user or group in @odata.id in the request body.
+Users in the accepted senders list can post to conversations of the group.
+Make sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you'll get an error.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupAcceptedSenderByRef?view=graph-powershell-beta)
@@ -44,12 +46,15 @@ New-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> -BodyParameter <IR
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to acceptedSenders for groups
+Specify the user or group in @odata.id in the request body.
+Users in the accepted senders list can post to conversations of the group.
+Make sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you'll get an error.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
@@ -57,10 +62,9 @@ $params = @{
 }
 
 New-MgGroupAcceptedSenderByRef -GroupId $groupId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgGroupAcceptedSenderByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -302,6 +306,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupacceptedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupacceptedsenderbyref)
+
+[https://learn.microsoft.com/graph/api/group-post-acceptedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-acceptedsenders?view=graph-rest-1.0)
 
 
 

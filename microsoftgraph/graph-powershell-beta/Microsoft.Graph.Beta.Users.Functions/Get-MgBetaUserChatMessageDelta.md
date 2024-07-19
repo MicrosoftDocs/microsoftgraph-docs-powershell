@@ -55,8 +55,6 @@ For more information, see the delta query documentation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-delta-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -377,6 +375,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserchatmessagedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserchatmessagedelta)
 
 [https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-beta)
+
+
 
 
 

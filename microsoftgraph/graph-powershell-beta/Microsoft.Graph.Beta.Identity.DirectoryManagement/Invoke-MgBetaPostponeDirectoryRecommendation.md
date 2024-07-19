@@ -47,6 +47,23 @@ Invoke-MgBetaPostponeDirectoryRecommendation -InputObject <IIdentityDirectoryMan
 Postpone action on a recommendation object to a specified future date and time by marking its status as postponed.
 On the date and time provided, Microsoft Entra ID will automatically update the status of the recommendation object to active again.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	postponeUntilDateTime = [System.DateTime]::Parse("2023-02-01T02:53:00Z")
+}
+
+Invoke-MgBetaPostponeDirectoryRecommendation -RecommendationId $recommendationId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaPostponeDirectoryRecommendation Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -277,7 +294,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapostponedirectoryrecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapostponedirectoryrecommendation)
 
 [https://learn.microsoft.com/graph/api/recommendation-postpone?view=graph-rest-beta](https://learn.microsoft.com/graph/api/recommendation-postpone?view=graph-rest-beta)
-
 
 
 

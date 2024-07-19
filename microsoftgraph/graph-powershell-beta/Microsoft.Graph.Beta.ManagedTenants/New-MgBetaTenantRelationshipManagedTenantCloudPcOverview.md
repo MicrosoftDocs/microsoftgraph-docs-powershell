@@ -15,17 +15,17 @@ Create new navigation property to cloudPcsOverview for tenantRelationships
 ### CreateExpanded (Default)
 ```
 New-MgBetaTenantRelationshipManagedTenantCloudPcOverview [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastRefreshedDateTime <DateTime>]
- [-NumberOfCloudPcConnectionStatusFailed <Int32>] [-NumberOfCloudPcConnectionStatusPassed <Int32>]
- [-NumberOfCloudPcConnectionStatusPending <Int32>] [-NumberOfCloudPcConnectionStatusRunning <Int32>]
- [-NumberOfCloudPcConnectionStatusUnkownFutureValue <Int32>] [-NumberOfCloudPcStatusDeprovisioning <Int32>]
- [-NumberOfCloudPcStatusFailed <Int32>] [-NumberOfCloudPcStatusInGracePeriod <Int32>]
- [-NumberOfCloudPcStatusNotProvisioned <Int32>] [-NumberOfCloudPcStatusProvisioned <Int32>]
- [-NumberOfCloudPcStatusProvisioning <Int32>] [-NumberOfCloudPcStatusUnknown <Int32>]
- [-NumberOfCloudPcStatusUpgrading <Int32>] [-TenantDisplayName <String>] [-TenantId <String>]
- [-TotalBusinessLicenses <Int32>] [-TotalCloudPcConnectionStatus <Int32>] [-TotalCloudPcStatus <Int32>]
- [-TotalEnterpriseLicenses <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-FrontlineLicensesCount <Int32>] [-Id <String>]
+ [-LastRefreshedDateTime <DateTime>] [-NumberOfCloudPcConnectionStatusFailed <Int32>]
+ [-NumberOfCloudPcConnectionStatusPassed <Int32>] [-NumberOfCloudPcConnectionStatusPending <Int32>]
+ [-NumberOfCloudPcConnectionStatusRunning <Int32>] [-NumberOfCloudPcConnectionStatusUnkownFutureValue <Int32>]
+ [-NumberOfCloudPcStatusDeprovisioning <Int32>] [-NumberOfCloudPcStatusFailed <Int32>]
+ [-NumberOfCloudPcStatusInGracePeriod <Int32>] [-NumberOfCloudPcStatusNotProvisioned <Int32>]
+ [-NumberOfCloudPcStatusProvisioned <Int32>] [-NumberOfCloudPcStatusProvisioning <Int32>]
+ [-NumberOfCloudPcStatusUnknown <Int32>] [-NumberOfCloudPcStatusUpgrading <Int32>]
+ [-TenantDisplayName <String>] [-TenantId <String>] [-TotalBusinessLicenses <Int32>]
+ [-TotalCloudPcConnectionStatus <Int32>] [-TotalCloudPcStatus <Int32>] [-TotalEnterpriseLicenses <Int32>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -68,6 +68,23 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -FrontlineLicensesCount
+The total number of cloud PC devices that have the Frontline SKU.
+Optional.
+Read-only.
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -521,6 +538,9 @@ BODYPARAMETER `<IMicrosoftGraphManagedTenantsCloudPcOverview>`: cloudPcOverview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[FrontlineLicensesCount <Int32?>]`: The total number of cloud PC devices that have the Frontline SKU.
+Optional.
+Read-only.
   - `[LastRefreshedDateTime <DateTime?>]`: Date and time the entity was last updated in the multi-tenant management platform.
 Optional.
 Read-only.
@@ -583,6 +603,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcloudpcoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcloudpcoverview)
+
 
 
 

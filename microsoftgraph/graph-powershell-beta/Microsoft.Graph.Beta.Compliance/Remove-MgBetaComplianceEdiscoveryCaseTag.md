@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaComplianceEdiscoveryCaseTag
 
 ## SYNOPSIS
-Delete navigation property tags for compliance
+Delete a tag object.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-If
 ```
 
 ## DESCRIPTION
-Delete navigation property tags for compliance
+Delete a tag object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -234,6 +234,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasetag)
+
+[https://learn.microsoft.com/graph/api/ediscovery-tag-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-tag-delete?view=graph-rest-beta)
 
 
 

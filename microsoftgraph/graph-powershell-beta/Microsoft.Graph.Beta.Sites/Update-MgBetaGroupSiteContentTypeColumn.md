@@ -68,8 +68,6 @@ Update-MgBetaGroupSiteContentTypeColumn -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property columns in groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1313,6 +1311,8 @@ For examples, see Examples of common formulas in lists
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitecontenttypecolumn)
+
+
 
 
 

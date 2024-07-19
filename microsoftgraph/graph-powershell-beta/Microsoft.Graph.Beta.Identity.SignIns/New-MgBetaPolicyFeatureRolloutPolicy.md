@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyFeatureRolloutPolicy
 
 ## SYNOPSIS
-Create new navigation property to featureRolloutPolicies for policies
+Create a new featureRolloutPolicy object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyFeatureRolloutPolicy?view=graph-powershell-1.0)
@@ -31,12 +31,13 @@ New-MgBetaPolicyFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRollo
 ```
 
 ## DESCRIPTION
-Create new navigation property to featureRolloutPolicies for policies
+Create a new featureRolloutPolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -48,10 +49,9 @@ $params = @{
 }
 
 New-MgBetaPolicyFeatureRolloutPolicy -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaPolicyFeatureRolloutPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 
 ### -AppliesTo
 Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
+Specifies a list of directoryObject resources that feature is enabled for.
 To construct, see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
@@ -288,7 +288,7 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 APPLIESTO <IMicrosoftGraphDirectoryObject- `[]`>: Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
+Specifies a list of directoryObject resources that feature is enabled for.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -299,7 +299,7 @@ BODYPARAMETER `<IMicrosoftGraphFeatureRolloutPolicy>`: featureRolloutPolicy
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
+Specifies a list of directoryObject resources that feature is enabled for.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -313,6 +313,8 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyfeaturerolloutpolicy)
+
+[https://learn.microsoft.com/graph/api/post-featurerolloutpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/post-featurerolloutpolicies?view=graph-rest-beta)
 
 
 

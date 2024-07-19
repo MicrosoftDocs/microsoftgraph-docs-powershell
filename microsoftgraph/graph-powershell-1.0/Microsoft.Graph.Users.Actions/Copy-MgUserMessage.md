@@ -52,17 +52,22 @@ Copy a message to a folder within the user's mailbox.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-copy-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Copy-MgUserMessage Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
+
 $params = @{
-	DestinationId = "destinationId-value"
+	destinationId = "destinationId-value"
 }
+
 # A UPN can also be used as -UserId.
 Copy-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+
 ```
 This example shows how to use the Copy-MgUserMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

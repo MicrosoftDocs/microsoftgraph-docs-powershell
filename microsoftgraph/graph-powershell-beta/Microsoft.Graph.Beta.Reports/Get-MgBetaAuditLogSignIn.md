@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAuditLogSignIn
 
 ## SYNOPSIS
-Get signIns from auditLogs
+Get a signIn object that contains a specific user sign-in event for your tenant that includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignIn?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get signIns from auditLogs
+Get a signIn object that contains a specific user sign-in event for your tenant that includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
 ## EXAMPLES
 ### Example 1: List all sign-ins
@@ -321,7 +321,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -369,6 +368,10 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin)
+
+[https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-beta)
 
 
 

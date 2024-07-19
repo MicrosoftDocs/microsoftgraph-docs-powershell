@@ -29,8 +29,6 @@ Get a list of newly-created or updated assignments without reading the entire co
 A teacher or an application running with application permissions can see all assignment objects for the class.
 Students can only see assignments that are assigned to them.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -245,6 +243,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentdelta)
 
 [https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-beta)
+
+
 
 
 

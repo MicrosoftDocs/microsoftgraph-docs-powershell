@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaEntitlementManagementConnectedOrganization
 
 ## SYNOPSIS
-Create new navigation property to connectedOrganizations for identityGovernance
+Create a new connectedOrganization object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganization?view=graph-powershell-1.0)
@@ -41,12 +41,13 @@ New-MgBetaEntitlementManagementConnectedOrganization [-ResponseHeadersVariable <
 ```
 
 ## DESCRIPTION
-Create new navigation property to connectedOrganizations for identityGovernance
+Create a new connectedOrganization object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
@@ -63,10 +64,9 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementConnectedOrganization -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaEntitlementManagementConnectedOrganization Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -433,6 +433,8 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganization)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagement-post-connectedorganizations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagement-post-connectedorganizations?view=graph-rest-beta)
 
 
 

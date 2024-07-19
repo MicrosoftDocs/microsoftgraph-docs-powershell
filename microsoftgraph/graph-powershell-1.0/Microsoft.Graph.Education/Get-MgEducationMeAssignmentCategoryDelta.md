@@ -34,8 +34,6 @@ Get-MgEducationMeAssignmentCategoryDelta -InputObject <IEducationIdentity> [-Exp
 ## DESCRIPTION
 Get a list of newly created or updated educationCategory objects without having to perform a full read of the collection.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -316,6 +314,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcategorydelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcategorydelta)
 
 [https://learn.microsoft.com/graph/api/educationcategory-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationcategory-delta?view=graph-rest-1.0)
+
+
 
 
 

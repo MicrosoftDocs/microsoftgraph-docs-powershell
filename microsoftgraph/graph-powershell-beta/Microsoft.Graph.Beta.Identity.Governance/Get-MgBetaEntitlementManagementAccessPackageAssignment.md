@@ -51,7 +51,7 @@ Get-MgBetaEntitlementManagementAccessPackageAssignment [-ExpandProperty <String[
 The assignment of an access package to a subject for a period of time.
 
 ## EXAMPLES
-### Example scenarios for using query parameters
+### Example 1cenario1 for u1ing query parameter1
 
 ```powershell
 
@@ -427,6 +427,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignment)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageassignments?view=graph-rest-beta)
 
 
 

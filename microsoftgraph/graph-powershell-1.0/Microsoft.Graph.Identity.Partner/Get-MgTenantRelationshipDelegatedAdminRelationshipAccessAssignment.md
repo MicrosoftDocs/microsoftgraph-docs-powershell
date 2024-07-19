@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 
 ## SYNOPSIS
-The access assignments associated with the delegated admin relationship.
+Read the properties of a delegatedAdminAccessAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObject 
 ```
 
 ## DESCRIPTION
-The access assignments associated with the delegated admin relationship.
+Read the properties of a delegatedAdminAccessAssignment object.
 
 ## PARAMETERS
 
@@ -312,6 +312,10 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipaccessassignment)
+
+[https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-accessassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-accessassignments?view=graph-rest-1.0)
 
 
 

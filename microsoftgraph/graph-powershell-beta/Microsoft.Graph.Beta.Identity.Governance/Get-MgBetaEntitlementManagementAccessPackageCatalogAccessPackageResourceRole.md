@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceRole
 
 ## SYNOPSIS
-The roles in each resource in a catalog.
-Read-only.
+Retrieve a list of accessPackageResourceRole objects of an accessPackageResource in an accessPackageCatalog.
+The resource should have been added to the catalog by creating an accessPackageResourceRequest.
+This list of roles can then be used by the caller to select a role, which is needed when subsequently creating an accessPackageResourceRoleScope.
 
 ## SYNTAX
 
@@ -21,8 +22,9 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceRole -Ac
 ```
 
 ## DESCRIPTION
-The roles in each resource in a catalog.
-Read-only.
+Retrieve a list of accessPackageResourceRole objects of an accessPackageResource in an accessPackageCatalog.
+The resource should have been added to the catalog by creating an accessPackageResourceRequest.
+This list of roles can then be used by the caller to select a role, which is needed when subsequently creating an accessPackageResourceRoleScope.
 
 ## EXAMPLES
 ### Example 1: Get catalog resource roles
@@ -279,6 +281,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackageresourcerole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackageresourcerole)
+
+[https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackageresourceroles?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackageresourceroles?view=graph-rest-beta)
 
 
 

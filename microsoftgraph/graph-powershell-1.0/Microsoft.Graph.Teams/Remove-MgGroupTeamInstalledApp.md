@@ -32,8 +32,6 @@ Remove-MgGroupTeamInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property installedApps for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId
@@ -242,6 +240,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteaminstalledapp)
+
+
 
 
 

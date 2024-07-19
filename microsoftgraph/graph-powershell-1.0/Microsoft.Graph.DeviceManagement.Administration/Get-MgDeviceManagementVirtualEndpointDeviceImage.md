@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointDeviceImage
 
 ## SYNOPSIS
-A collection of device image resources on Cloud PC.
+Read the properties and relationships of a specific cloudPcDeviceImage object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-beta)
@@ -38,7 +38,10 @@ Get-MgDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-A collection of device image resources on Cloud PC.
+Read the properties and relationships of a specific cloudPcDeviceImage object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcdeviceimage-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -315,6 +318,10 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointdeviceimage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointdeviceimage)
+
+[https://learn.microsoft.com/graph/api/cloudpcdeviceimage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcdeviceimage-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-deviceimages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-deviceimages?view=graph-rest-1.0)
 
 
 

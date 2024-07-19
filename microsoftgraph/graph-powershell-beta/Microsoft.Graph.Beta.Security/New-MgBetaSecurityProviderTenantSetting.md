@@ -30,8 +30,6 @@ New-MgBetaSecurityProviderTenantSetting -BodyParameter <IMicrosoftGraphProviderT
 ## DESCRIPTION
 Create new navigation property to providerTenantSettings for security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -261,6 +259,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityprovidertenantsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityprovidertenantsetting)
+
+
 
 
 

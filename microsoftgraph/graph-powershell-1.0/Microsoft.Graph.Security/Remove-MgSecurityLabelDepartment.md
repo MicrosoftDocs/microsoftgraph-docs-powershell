@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSecurityLabelDepartment
 
 ## SYNOPSIS
-Delete navigation property departments for security
+Delete a departmentTemplate object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgSecurityLabelDepartment -InputObject <ISecurityIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete navigation property departments for security
+Delete a departmentTemplate object.
 
 ## PARAMETERS
 
@@ -211,6 +211,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -252,6 +253,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabeldepartment)
+
+[https://learn.microsoft.com/graph/api/security-labelsroot-delete-departments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-delete-departments?view=graph-rest-1.0)
 
 
 

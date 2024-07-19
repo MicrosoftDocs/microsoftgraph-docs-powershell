@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseSetting
 
 ## SYNOPSIS
-Returns a list of eDIscoverySettings objects in the case.
+Read the properties and relationships of an ediscoveryCaseSettings object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Returns a list of eDIscoverySettings objects in the case.
+Read the properties and relationships of an ediscoveryCaseSettings object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -193,6 +193,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -234,6 +235,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesetting)
+
+[https://learn.microsoft.com/graph/api/security-ediscoverycasesettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycasesettings-get?view=graph-rest-1.0)
 
 
 

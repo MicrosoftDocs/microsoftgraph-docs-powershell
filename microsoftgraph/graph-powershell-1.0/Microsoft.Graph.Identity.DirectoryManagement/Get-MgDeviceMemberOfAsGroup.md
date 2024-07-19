@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDeviceMemberOfAsGroup
 
 ## SYNOPSIS
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups and administrative units that this device is a direct member of.
+This operation is not transitive.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceMemberOfAsGroup?view=graph-powershell-beta)
@@ -38,7 +39,8 @@ Get-MgDeviceMemberOfAsGroup -InputObject <IIdentityDirectoryManagementIdentity> 
 ```
 
 ## DESCRIPTION
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups and administrative units that this device is a direct member of.
+This operation is not transitive.
 
 ## PARAMETERS
 
@@ -347,6 +349,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicememberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicememberofasgroup)
+
+[https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-1.0)
 
 
 

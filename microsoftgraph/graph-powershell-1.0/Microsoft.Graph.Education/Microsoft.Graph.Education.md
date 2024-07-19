@@ -389,6 +389,15 @@ Locale: en-US
 ### [Invoke-MgDeactivateEducationUserAssignment](Invoke-MgDeactivateEducationUserAssignment.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgExcuseEducationClassAssignmentSubmission](Invoke-MgExcuseEducationClassAssignmentSubmission.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgExcuseEducationMeAssignmentSubmission](Invoke-MgExcuseEducationMeAssignmentSubmission.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgExcuseEducationUserAssignmentSubmission](Invoke-MgExcuseEducationUserAssignmentSubmission.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgPinEducationClassModule](Invoke-MgPinEducationClassModule.md)
 {{ Fill in the Description }}
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecuritySecureScore
 
 ## SYNOPSIS
-Get secureScores from security
+Retrieve the properties and relationships of a secureScore object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScore?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecuritySecureScore -InputObject <ISecurityIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get secureScores from security
+Retrieve the properties and relationships of a secureScore object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -322,6 +322,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -363,6 +364,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysecurescore)
+
+[https://learn.microsoft.com/graph/api/securescore-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securescore-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-list-securescores?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-list-securescores?view=graph-rest-1.0)
 
 
 

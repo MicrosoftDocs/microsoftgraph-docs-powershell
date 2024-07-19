@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPlannerBucket
 
 ## SYNOPSIS
-Update the navigation property buckets in planner
+Update the properties of plannerbucket object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerBucket?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgPlannerBucket -InputObject <IPlannerIdentity> -IfMatch <String>
 ```
 
 ## DESCRIPTION
-Update the navigation property buckets in planner
+Update the properties of plannerbucket object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -363,8 +363,9 @@ For details about the supported format, see Using order hints in Planner.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CompletedDateTime <DateTime?>]`: Read-only.
@@ -459,8 +460,9 @@ For details about the supported format, see Using order hints in Planner.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CompletedDateTime <DateTime?>]`: Read-only.
@@ -514,6 +516,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerbucket)
+
+[https://learn.microsoft.com/graph/api/plannerbucket-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerbucket-update?view=graph-rest-1.0)
 
 
 

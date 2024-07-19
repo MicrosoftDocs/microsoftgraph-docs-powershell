@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationSchoolClassEducationClassByRef
 
 ## SYNOPSIS
-Delete ref of navigation property classes for education
+Delete a class from a school.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationSchoolClassEducationClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchoolClassEducationClassByRef?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgEducationSchoolClassEducationClassByRef -InputObject <IEducationIdentit
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property classes for education
+Delete a class from a school.
 
 ## PARAMETERS
 
@@ -220,6 +220,9 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolclasseducationclassbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolclasseducationclassbyref)
+
+[https://learn.microsoft.com/graph/api/educationschool-delete-classes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-delete-classes?view=graph-rest-1.0)
+
 
 
 

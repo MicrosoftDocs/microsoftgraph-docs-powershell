@@ -21,8 +21,6 @@ Get-MgBetaPrintPrinterShareAllowedUserByRef -PrinterShareId <String> [-Filter <S
 ## DESCRIPTION
 The users who have access to print using the printer.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -220,6 +218,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintersharealloweduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintersharealloweduserbyref)
+
+
 
 
 

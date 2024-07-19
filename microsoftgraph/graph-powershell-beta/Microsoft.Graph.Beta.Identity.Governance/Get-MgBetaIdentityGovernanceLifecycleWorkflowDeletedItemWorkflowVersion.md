@@ -42,8 +42,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion
 ## DESCRIPTION
 The workflow versions that are available.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -408,6 +406,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowversion)
+
+
+
+
 
 
 

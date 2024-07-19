@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceLifecycleWorkflowVersion
 
 ## SYNOPSIS
-The workflow versions that are available.
+Read the properties and relationships of a workflowVersion object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgIdentityGovernanceLifecycleWorkflowVersion -InputObject <IIdentityGovernan
 ```
 
 ## DESCRIPTION
-The workflow versions that are available.
+Read the properties and relationships of a workflowVersion object.
 
 ## PARAMETERS
 
@@ -372,6 +372,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowversion](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowversion)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-workflowversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflowversion-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-versions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-versions?view=graph-rest-1.0)
 
 
 

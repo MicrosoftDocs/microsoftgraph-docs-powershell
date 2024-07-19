@@ -48,8 +48,6 @@ Update-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property tags in groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -400,6 +398,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamtag)
+
+
 
 
 

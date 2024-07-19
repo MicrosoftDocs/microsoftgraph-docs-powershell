@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Set of data import flow activities to bring data into the canonical store via a connector.
+Read the properties and relationships of an inboundFlow object.
 
 ## SYNTAX
 
@@ -35,7 +35,20 @@ Get-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Set of data import flow activities to bring data into the canonical store via a connector.
+Read the properties and relationships of an inboundFlow object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalIndustryDataInboundFlow
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataInboundFlow Cmdlet.
+
 
 ## PARAMETERS
 
@@ -309,6 +322,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow)
 
+[https://learn.microsoft.com/graph/api/industrydata-inboundflow-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-inboundflow-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/industrydata-inboundflow-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-inboundflow-list?view=graph-rest-beta)
 
 
 

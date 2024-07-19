@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaSecurityIncident
 
 ## SYNOPSIS
-A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.
+Retrieve the properties and relationships of an incident object.
+Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple alert objects.
+Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an incident.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIncident?view=graph-powershell-1.0)
@@ -38,7 +40,9 @@ Get-MgBetaSecurityIncident -InputObject <ISecurityIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.
+Retrieve the properties and relationships of an incident object.
+Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple alert objects.
+Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an incident.
 
 ## EXAMPLES
 ### Example 1: List all incidents
@@ -361,6 +365,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -371,6 +376,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -396,6 +402,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityincident)
+
+[https://learn.microsoft.com/graph/api/security-incident-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-incident-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/security-list-incidents?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-list-incidents?view=graph-rest-beta)
 
 
 

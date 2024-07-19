@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserSettingShiftPreference
 
 ## SYNOPSIS
-The shift preferences for the user.
+Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingShiftPreference?view=graph-powershell-1.0)
@@ -30,19 +30,19 @@ Get-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-The shift preferences for the user.
+Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
 
 Get-MgBetaUserSettingShiftPreference -UserId $userId
+
 ```
 This example shows how to use the Get-MgBetaUserSettingShiftPreference Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -200,6 +200,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingshiftpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingshiftpreference)
+
+[https://learn.microsoft.com/graph/api/shiftpreferences-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/shiftpreferences-get?view=graph-rest-beta)
 
 
 

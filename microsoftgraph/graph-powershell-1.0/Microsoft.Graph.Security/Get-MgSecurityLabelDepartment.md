@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityLabelDepartment
 
 ## SYNOPSIS
-Specifies the department or business unit of an organization to which a label belongs.
+Read the properties and relationships of a departmentTemplate object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityLabelDepartment -InputObject <ISecurityIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Specifies the department or business unit of an organization to which a label belongs.
+Read the properties and relationships of a departmentTemplate object.
 
 ## PARAMETERS
 
@@ -309,6 +309,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -350,6 +351,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabeldepartment)
+
+[https://learn.microsoft.com/graph/api/security-departmenttemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-departmenttemplate-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-labelsroot-list-departments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-departments?view=graph-rest-1.0)
 
 
 

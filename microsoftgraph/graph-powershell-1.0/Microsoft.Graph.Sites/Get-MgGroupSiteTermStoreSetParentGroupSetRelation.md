@@ -65,8 +65,6 @@ Get-MgGroupSiteTermStoreSetParentGroupSetRelation -InputObject <ISitesIdentity> 
 ## DESCRIPTION
 Indicates which terms have been pinned or reused directly under the set.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -436,6 +434,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupsetrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupsetrelation)
+
+
+
 
 
 

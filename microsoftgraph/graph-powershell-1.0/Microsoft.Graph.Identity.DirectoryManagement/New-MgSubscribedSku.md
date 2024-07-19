@@ -34,8 +34,6 @@ New-MgSubscribedSku -BodyParameter <IMicrosoftGraphSubscribedSku> [-ResponseHead
 ## DESCRIPTION
 Add new entity to subscribedSkus
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AccountId
@@ -274,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionIds
-.
+A list of all subscription IDs associated with this SKU.
 
 ```yaml
 Type: String[]
@@ -367,7 +365,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
   - `[SkuId <String>]`: The unique identifier (GUID) for the service SKU.
   - `[SkuPartNumber <String>]`: The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'.
 To get a list of commercial subscriptions that an organization has acquired, see List subscribedSkus.
-  - `[SubscriptionIds <String- `[]`>]`: 
+  - `[SubscriptionIds <String- `[]`>]`: A list of all subscription IDs associated with this SKU.
 
 PREPAIDUNITS `<IMicrosoftGraphLicenseUnitsDetail>`: licenseUnitsDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -390,6 +388,8 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgsubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgsubscribedsku)
+
+
 
 
 

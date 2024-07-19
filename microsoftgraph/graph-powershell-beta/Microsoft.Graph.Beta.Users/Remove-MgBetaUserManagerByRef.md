@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserManagerByRef
 
 ## SYNOPSIS
-Delete ref of navigation property manager for users
+Remove a user's manager.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Remove-MgUserManagerByRef?view=graph-powershell-1.0)
@@ -30,19 +30,19 @@ Remove-MgBetaUserManagerByRef -InputObject <IUsersIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property manager for users
+Remove a user's manager.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
 
 Remove-MgBetaUserManagerByRef -UserId $userId
+
 ```
 This example shows how to use the Remove-MgBetaUserManagerByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -231,6 +231,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausermanagerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausermanagerbyref)
+
+[https://learn.microsoft.com/graph/api/user-delete-manager?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-delete-manager?view=graph-rest-beta)
 
 
 

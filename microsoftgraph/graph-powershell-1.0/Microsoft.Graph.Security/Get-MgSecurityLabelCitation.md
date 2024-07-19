@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityLabelCitation
 
 ## SYNOPSIS
-The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
+Read the properties and relationships of a citationTemplate object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityLabelCitation -InputObject <ISecurityIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
+Read the properties and relationships of a citationTemplate object.
 
 ## PARAMETERS
 
@@ -309,6 +309,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -350,6 +351,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcitation)
+
+[https://learn.microsoft.com/graph/api/security-citationtemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-citationtemplate-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-labelsroot-list-citations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-citations?view=graph-rest-1.0)
 
 
 

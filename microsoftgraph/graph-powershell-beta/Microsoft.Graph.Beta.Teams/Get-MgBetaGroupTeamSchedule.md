@@ -32,8 +32,6 @@ Get-MgBetaGroupTeamSchedule -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 The schedule of shifts for this team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -204,6 +202,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamschedule)
+
+
 
 
 

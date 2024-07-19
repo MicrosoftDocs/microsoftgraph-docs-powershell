@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBookingBusiness
 
 ## SYNOPSIS
-Create new navigation property to bookingBusinesses for solutions
+Create a new Microsoft Bookings business in a tenant.
+This is the first step in setting up a Bookings business where you must specify the business display name.
+You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the bookingBusiness.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusiness?view=graph-powershell-beta)
@@ -36,7 +38,9 @@ New-MgBookingBusiness -BodyParameter <IMicrosoftGraphBookingBusiness> [-Response
 ```
 
 ## DESCRIPTION
-Create new navigation property to bookingBusinesses for solutions
+Create a new Microsoft Bookings business in a tenant.
+This is the first step in setting up a Bookings business where you must specify the business display name.
+You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the bookingBusiness.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -685,8 +689,8 @@ Nullable.
 Read-only.
     - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
     - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
-      - `[IsRequired <Boolean?>]`: The ID of the custom question.
-      - `[QuestionId <String>]`: Indicates whether it's mandatory to answer the custom question.
+      - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
+      - `[QuestionId <String>]`: The ID of the custom question.
     - `[DefaultDuration <TimeSpan?>]`: The default length of the service, represented in numbers of days, hours, minutes, and seconds.
 For example, P11D23H59M59.999999999999S.
     - `[DefaultLocation <IMicrosoftGraphLocation>]`: location
@@ -836,8 +840,8 @@ Nullable.
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
-    - `[IsRequired <Boolean?>]`: The ID of the custom question.
-    - `[QuestionId <String>]`: Indicates whether it's mandatory to answer the custom question.
+    - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
+    - `[QuestionId <String>]`: The ID of the custom question.
   - `[DefaultDuration <TimeSpan?>]`: The default length of the service, represented in numbers of days, hours, minutes, and seconds.
 For example, P11D23H59M59.999999999999S.
   - `[DefaultLocation <IMicrosoftGraphLocation>]`: location
@@ -908,6 +912,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusiness)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-1.0)
 
 
 

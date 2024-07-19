@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgServiceAnnouncementIssue
 
 ## SYNOPSIS
-A collection of service issues for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+Retrieve the properties and relationships of a serviceHealthIssue object.
+This operation retrieves a specified service health issue for tenant.
+The operation returns an error if the issue does not exist for the tenant.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
@@ -39,8 +40,9 @@ Get-MgServiceAnnouncementIssue -InputObject <IDevicesServiceAnnouncementIdentity
 ```
 
 ## DESCRIPTION
-A collection of service issues for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+Retrieve the properties and relationships of a serviceHealthIssue object.
+This operation retrieves a specified service health issue for tenant.
+The operation returns an error if the issue does not exist for the tenant.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -309,6 +311,10 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementissue](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementissue)
+
+[https://learn.microsoft.com/graph/api/servicehealthissue-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/servicehealthissue-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/serviceannouncement-list-issues?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceannouncement-list-issues?view=graph-rest-1.0)
 
 
 

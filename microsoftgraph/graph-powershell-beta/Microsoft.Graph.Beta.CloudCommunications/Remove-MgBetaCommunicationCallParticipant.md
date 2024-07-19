@@ -8,7 +8,11 @@ schema: 2.0.0
 # Remove-MgBetaCommunicationCallParticipant
 
 ## SYNOPSIS
-Delete navigation property participants for communications
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCallParticipant?view=graph-powershell-1.0)
@@ -30,30 +34,34 @@ Remove-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIden
 ```
 
 ## DESCRIPTION
-Delete navigation property participants for communications
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Remove-MgBetaCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+
 ```
 This example shows how to use the Remove-MgBetaCommunicationCallParticipant Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 2: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Remove-MgBetaCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+
 ```
 This example shows how to use the Remove-MgBetaCommunicationCallParticipant Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -250,6 +258,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcallparticipant)
+
+[https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-beta)
 
 
 

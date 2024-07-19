@@ -29,6 +29,24 @@ Stop-MgBetaEntitlementManagementAccessPackageAssignmentRequest -InputObject <IId
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancelable state: accepted, pendingApproval, pendingNotBefore, pendingApprovalEscalated.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	id = "request-id"
+	requestStatus = "cancelled"
+}
+
+Stop-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId -BodyParameter $params
+
+```
+This example shows how to use the Stop-MgBetaEntitlementManagementAccessPackageAssignmentRequest Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentRequestId
@@ -275,7 +293,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaentitlementmanagementaccesspackageassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaentitlementmanagementaccesspackageassignmentrequest)
 
 [https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-cancel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-cancel?view=graph-rest-beta)
-
 
 
 

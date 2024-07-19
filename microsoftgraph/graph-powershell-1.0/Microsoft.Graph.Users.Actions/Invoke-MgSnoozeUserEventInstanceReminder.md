@@ -53,27 +53,6 @@ Postpone a reminder for an event in a user calendar until a new time.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-snoozereminder-permissions.md)]
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	NewReminderTime = @{
-		DateTime = "dateTime-value"
-		TimeZone = "timeZone-value"
-	}
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgSnoozeUserEventInstanceReminder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -343,6 +322,7 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgsnoozeusereventinstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgsnoozeusereventinstancereminder)
 
 [https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-1.0)
+
 
 
 

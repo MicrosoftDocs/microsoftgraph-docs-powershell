@@ -40,8 +40,6 @@ Get-MgBetaGroupSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The collection of content types defined for this site.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -374,6 +372,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttype)
+
+
+
+
 
 
 

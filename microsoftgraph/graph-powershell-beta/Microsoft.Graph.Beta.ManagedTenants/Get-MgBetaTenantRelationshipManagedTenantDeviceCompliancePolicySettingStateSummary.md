@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary
 
 ## SYNOPSIS
-Summary information for device compliance policy setting states across managed tenants.
+Read the properties and relationships of a deviceCompliancePolicySettingStateSummary object.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSumma
 ```
 
 ## DESCRIPTION
-Summary information for device compliance policy setting states across managed tenants.
+Read the properties and relationships of a deviceCompliancePolicySettingStateSummary object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -340,6 +340,10 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantdevicecompliancepolicysettingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantdevicecompliancepolicysettingstatesummary)
+
+[https://learn.microsoft.com/graph/api/managedtenants-devicecompliancepolicysettingstatesummary-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-devicecompliancepolicysettingstatesummary-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary?view=graph-rest-beta)
 
 
 

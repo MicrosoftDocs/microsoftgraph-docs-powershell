@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListItem
 
 ## SYNOPSIS
-All items contained in the list.
+Returns the metadata for an item in a list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItem?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-All items contained in the list.
+Returns the metadata for an item in a list.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -47,7 +47,7 @@ All items contained in the list.
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(select=Name,Color,Quantity)" 
+Get-MgSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(`$select=Name,Color,Quantity)" 
 
 ```
 This example shows how to use the Get-MgSiteListItem Cmdlet.
@@ -377,6 +377,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem)
+
+[https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-1.0)
 
 
 

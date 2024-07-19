@@ -32,8 +32,6 @@ New-MgBetaContract -BodyParameter <IMicrosoftGraphContract> [-ResponseHeadersVar
 ## DESCRIPTION
 Add new entity to contracts
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -279,6 +277,8 @@ It isn't automatically updated if the customer tenant's display name changes.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetacontract](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetacontract)
+
+
 
 
 

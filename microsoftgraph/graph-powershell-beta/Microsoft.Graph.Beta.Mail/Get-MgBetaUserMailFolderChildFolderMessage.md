@@ -40,8 +40,6 @@ Get-MgBetaUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-Expand
 ## DESCRIPTION
 The collection of messages in the mailFolder.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -347,6 +345,10 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessage)
+
+
+
+
 
 
 

@@ -40,8 +40,6 @@ Get-MgBetaGroupSiteListColumn -InputObject <ISitesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 The collection of field definitions for this list.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -389,6 +387,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistcolumn)
+
+
+
+
 
 
 

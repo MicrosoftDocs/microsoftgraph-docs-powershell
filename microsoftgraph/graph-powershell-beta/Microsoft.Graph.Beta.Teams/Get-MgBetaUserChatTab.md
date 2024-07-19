@@ -42,8 +42,6 @@ Get-MgBetaUserChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 A collection of all the tabs in the chat.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -365,6 +363,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchattab)
+
+
+
+
 
 
 

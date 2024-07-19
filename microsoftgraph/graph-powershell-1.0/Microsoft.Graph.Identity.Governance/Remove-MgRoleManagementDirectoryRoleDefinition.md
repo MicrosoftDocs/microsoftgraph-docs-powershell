@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgRoleManagementDirectoryRoleDefinition
 
 ## SYNOPSIS
-Delete navigation property roleDefinitions for roleManagement
+Delete a unifiedRoleDefinition object.
+You can't delete built-in roles.
+This feature requires a Microsoft Entra ID P1 or P2 license.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
@@ -30,7 +32,9 @@ Remove-MgRoleManagementDirectoryRoleDefinition -InputObject <IIdentityGovernance
 ```
 
 ## DESCRIPTION
-Delete navigation property roleDefinitions for roleManagement
+Delete a unifiedRoleDefinition object.
+You can't delete built-in roles.
+This feature requires a Microsoft Entra ID P1 or P2 license.
 
 ## PARAMETERS
 
@@ -259,6 +263,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroledefinition)
+
+[https://learn.microsoft.com/graph/api/unifiedroledefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroledefinition-delete?view=graph-rest-1.0)
 
 
 

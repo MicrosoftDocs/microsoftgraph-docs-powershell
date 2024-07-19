@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage
 
 ## SYNOPSIS
-The access packages whose assigned users are ineligible to be assigned this access package.
+Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage?view=graph-powershell-beta)
@@ -23,7 +23,7 @@ Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackage
 ```
 
 ## DESCRIPTION
-The access packages whose assigned users are ineligible to be assigned this access package.
+Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -265,6 +265,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatibleaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatibleaccesspackage)
+
+[https://learn.microsoft.com/graph/api/accesspackage-list-incompatibleaccesspackages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackage-list-incompatibleaccesspackages?view=graph-rest-1.0)
 
 
 

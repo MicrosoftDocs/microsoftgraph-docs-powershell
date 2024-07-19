@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityAlertV2
 
 ## SYNOPSIS
-A collection of alerts in Microsoft 365 Defender.
+Get the properties and relationships of an alert object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlertV2?view=graph-powershell-beta)
@@ -37,7 +37,10 @@ Get-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-A collection of alerts in Microsoft 365 Defender.
+Get the properties and relationships of an alert object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-alert-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -308,6 +311,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -349,6 +353,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalertv2)
+
+[https://learn.microsoft.com/graph/api/security-alert-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-alert-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-list-alerts_v2?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-list-alerts_v2?view=graph-rest-1.0)
 
 
 

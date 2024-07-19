@@ -35,19 +35,6 @@ Unpublish a contentType from a content type hub site.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Sites
-
-Unpublish-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
-```
-This example shows how to use the Unpublish-MgUserDriveListContentType Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -255,6 +242,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/unpublish-mguserdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/unpublish-mguserdrivelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
+
 
 
 

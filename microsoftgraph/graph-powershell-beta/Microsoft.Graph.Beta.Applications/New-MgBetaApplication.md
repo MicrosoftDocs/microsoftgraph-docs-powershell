@@ -1095,14 +1095,20 @@ Always null when the object hasn't been deleted.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
       - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that point to the certificateBasedApplicationConfiguration that contains the collection of allowed root and intermediate certificate authorities.
-      - `[MaxLifetime <TimeSpan?>]`: 
+      - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
+Defined in ISO 8601 format for Durations.
+For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restrictionType is set to keyLifetime.
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications regardless of their creation date, this property would be null.
 Nullable.
       - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
     - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-      - `[MaxLifetime <TimeSpan?>]`: 
+      - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
+Defined in ISO 8601 format for Durations.
+For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restriction type is set to passwordLifetime.
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
 For existing applications, the enforcement date would be backdated.
 To apply to all applications, this date would be null.
@@ -1218,14 +1224,20 @@ Always null when the object hasn't been deleted.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
         - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that point to the certificateBasedApplicationConfiguration that contains the collection of allowed root and intermediate certificate authorities.
-        - `[MaxLifetime <TimeSpan?>]`: 
+        - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
+Defined in ISO 8601 format for Durations.
+For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restrictionType is set to keyLifetime.
         - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications regardless of their creation date, this property would be null.
 Nullable.
         - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
       - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-        - `[MaxLifetime <TimeSpan?>]`: 
+        - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
+Defined in ISO 8601 format for Durations.
+For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restriction type is set to passwordLifetime.
         - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
 For existing applications, the enforcement date would be backdated.
 To apply to all applications, this date would be null.
@@ -1476,7 +1488,9 @@ Default value is true.
 Keep this value as false unless you have hardcoded HTML links to other on-premises applications and don't use custom domains.
 For more information, see Link translation with Application Proxy.
 Default value is false.
-    - `[OnPremisesApplicationSegments <IMicrosoftGraphOnPremisesApplicationSegment- `[]`>]`: 
+    - `[OnPremisesApplicationSegments <IMicrosoftGraphOnPremisesApplicationSegment- `[]`>]`: Represents the application segment collection for an on-premises wildcard application.
+This property is deprecated and will stop returning data on June 1, 2023.
+Use segmentsConfiguration instead.
       - `[AlternateUrl <String>]`: If you're configuring a traffic manager in front of multiple App Proxy application segments, contains the user-friendly URL that will point to the traffic manager.
       - `[CorsConfigurations <IMicrosoftGraphCorsConfiguration- `[]`>]`: CORS Rule definition for a particular application segment.
         - `[AllowedHeaders <String- `[]`>]`: The request headers that the origin domain may specify on the CORS request.
@@ -1656,7 +1670,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
                 - `[Value <String>]`: Value.
               - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-              - `[DefaultValue <String>]`: 
+              - `[DefaultValue <String>]`: The default value of the attribute.
               - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
               - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
                 - `[Key <String>]`: attributeDefinitionMetadata
@@ -2018,14 +2032,20 @@ Always null when the object hasn't been deleted.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
           - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that point to the certificateBasedApplicationConfiguration that contains the collection of allowed root and intermediate certificate authorities.
-          - `[MaxLifetime <TimeSpan?>]`: 
+          - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
+Defined in ISO 8601 format for Durations.
+For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restrictionType is set to keyLifetime.
           - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications regardless of their creation date, this property would be null.
 Nullable.
           - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
         - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-          - `[MaxLifetime <TimeSpan?>]`: 
+          - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
+Defined in ISO 8601 format for Durations.
+For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restriction type is set to passwordLifetime.
           - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
 For existing applications, the enforcement date would be backdated.
 To apply to all applications, this date would be null.
@@ -2256,7 +2276,9 @@ Default value is true.
 Keep this value as false unless you have hardcoded HTML links to other on-premises applications and don't use custom domains.
 For more information, see Link translation with Application Proxy.
 Default value is false.
-      - `[OnPremisesApplicationSegments <IMicrosoftGraphOnPremisesApplicationSegment- `[]`>]`: 
+      - `[OnPremisesApplicationSegments <IMicrosoftGraphOnPremisesApplicationSegment- `[]`>]`: Represents the application segment collection for an on-premises wildcard application.
+This property is deprecated and will stop returning data on June 1, 2023.
+Use segmentsConfiguration instead.
         - `[AlternateUrl <String>]`: If you're configuring a traffic manager in front of multiple App Proxy application segments, contains the user-friendly URL that will point to the traffic manager.
         - `[CorsConfigurations <IMicrosoftGraphCorsConfiguration- `[]`>]`: CORS Rule definition for a particular application segment.
           - `[AllowedHeaders <String- `[]`>]`: The request headers that the origin domain may specify on the CORS request.
@@ -2436,7 +2458,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
                   - `[Value <String>]`: Value.
                 - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-                - `[DefaultValue <String>]`: 
+                - `[DefaultValue <String>]`: The default value of the attribute.
                 - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
                 - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
                   - `[Key <String>]`: attributeDefinitionMetadata
@@ -2896,7 +2918,9 @@ Default value is true.
 Keep this value as false unless you have hardcoded HTML links to other on-premises applications and don't use custom domains.
 For more information, see Link translation with Application Proxy.
 Default value is false.
-  - `[OnPremisesApplicationSegments <IMicrosoftGraphOnPremisesApplicationSegment- `[]`>]`: 
+  - `[OnPremisesApplicationSegments <IMicrosoftGraphOnPremisesApplicationSegment- `[]`>]`: Represents the application segment collection for an on-premises wildcard application.
+This property is deprecated and will stop returning data on June 1, 2023.
+Use segmentsConfiguration instead.
     - `[AlternateUrl <String>]`: If you're configuring a traffic manager in front of multiple App Proxy application segments, contains the user-friendly URL that will point to the traffic manager.
     - `[CorsConfigurations <IMicrosoftGraphCorsConfiguration- `[]`>]`: CORS Rule definition for a particular application segment.
       - `[AllowedHeaders <String- `[]`>]`: The request headers that the origin domain may specify on the CORS request.
@@ -3110,7 +3134,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
               - `[Value <String>]`: Value.
             - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-            - `[DefaultValue <String>]`: 
+            - `[DefaultValue <String>]`: The default value of the attribute.
             - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
             - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
               - `[Key <String>]`: attributeDefinitionMetadata

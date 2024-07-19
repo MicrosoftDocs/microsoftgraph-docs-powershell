@@ -39,8 +39,6 @@ Get-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-Property <String[
 ## DESCRIPTION
 The instances of times off in the schedule.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -324,6 +322,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoff)
+
+
+
 
 
 

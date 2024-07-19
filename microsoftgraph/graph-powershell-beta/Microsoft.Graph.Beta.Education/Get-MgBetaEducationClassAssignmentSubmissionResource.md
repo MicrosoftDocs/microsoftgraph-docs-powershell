@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgBetaEducationClassAssignmentSubmissionResource
 
 ## SYNOPSIS
-Get resources from education
+Retrieve the properties of a specific resource associated with a submission.
+Only teachers, students, and applications with application permissions can perform this operation.
+This resource is in the 'working' resource list and should be considered work in process by a student.
+This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSubmissionResource?view=graph-powershell-1.0)
@@ -40,7 +43,10 @@ Get-MgBetaEducationClassAssignmentSubmissionResource -InputObject <IEducationIde
 ```
 
 ## DESCRIPTION
-Get resources from education
+Retrieve the properties of a specific resource associated with a submission.
+Only teachers, students, and applications with application permissions can perform this operation.
+This resource is in the 'working' resource list and should be considered work in process by a student.
+This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
 ## EXAMPLES
 ### Example 1: Get an educationWordResource
@@ -423,6 +429,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsubmissionresource)
+
+[https://learn.microsoft.com/graph/api/educationsubmissionresource-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsubmissionresource-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/educationsubmission-list-resources?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsubmission-list-resources?view=graph-rest-beta)
 
 
 

@@ -8,9 +8,7 @@ schema: 2.0.0
 # Set-MgOrganizationBrandingLocalizationBannerLogo
 
 ## SYNOPSIS
-A banner version of your company logo that appears on the sign-in page.
-The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
-We recommend using a transparent image with no padding around the logo.
+Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
 ## SYNTAX
 
@@ -31,11 +29,7 @@ Set-MgOrganizationBrandingLocalizationBannerLogo -InputObject <IIdentityDirector
 ```
 
 ## DESCRIPTION
-A banner version of your company logo that appears on the sign-in page.
-The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
-We recommend using a transparent image with no padding around the logo.
-
-## EXAMPLES
+Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
 ## PARAMETERS
 
@@ -272,6 +266,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationbannerlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationbannerlogo)
+
+[https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-1.0)
+
 
 
 

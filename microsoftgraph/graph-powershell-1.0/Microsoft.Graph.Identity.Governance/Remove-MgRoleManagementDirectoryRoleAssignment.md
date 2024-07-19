@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgRoleManagementDirectoryRoleAssignment
 
 ## SYNOPSIS
-Delete navigation property roleAssignments for roleManagement
+Delete a unifiedRoleAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryRoleAssignment?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovernance
 ```
 
 ## DESCRIPTION
-Delete navigation property roleAssignments for roleManagement
+Delete a unifiedRoleAssignment object.
 
 ## PARAMETERS
 
@@ -259,6 +259,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroleassignment)
+
+[https://learn.microsoft.com/graph/api/unifiedroleassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignment-delete?view=graph-rest-1.0)
 
 
 

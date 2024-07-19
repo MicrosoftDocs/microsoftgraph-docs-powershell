@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgGroupOwnerDirectoryObjectByRef
 
 ## SYNOPSIS
-Delete ref of navigation property owners for groups
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupOwnerDirectoryObjectByRef?view=graph-powershell-beta)
@@ -30,7 +31,8 @@ Remove-MgGroupOwnerDirectoryObjectByRef -InputObject <IGroupsIdentity> [-IfMatch
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property owners for groups
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 ## PARAMETERS
 
@@ -248,6 +250,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupownerdirectoryobjectbyref)
+
+[https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-1.0)
 
 
 

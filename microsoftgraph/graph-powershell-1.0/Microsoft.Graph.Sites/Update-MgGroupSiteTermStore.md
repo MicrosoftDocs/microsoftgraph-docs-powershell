@@ -79,8 +79,6 @@ Update-MgGroupSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property termStore in groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -553,6 +551,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstore)
+
+
 
 
 

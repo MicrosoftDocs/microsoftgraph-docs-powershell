@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite
 
 ## SYNOPSIS
-Delete navigation property sites for admin
+Delete a browserSite from a browserSiteList.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-1.0)
@@ -30,7 +30,31 @@ Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Delete navigation property sites for admin
+Delete a browserSite from a browserSiteList.
+
+## EXAMPLES
+### Example 1: Delete a site that was not previously published
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BrowserSiteId $browserSiteId
+
+```
+This example will delete a site that was not previously published
+
+### Example 2: Delete a site that was previously published
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BrowserSiteId $browserSiteId
+
+```
+This example will delete a site that was previously published
+
 
 ## PARAMETERS
 
@@ -349,6 +373,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsite)
 
+[https://learn.microsoft.com/graph/api/browsersitelist-delete-sites?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersitelist-delete-sites?view=graph-rest-beta)
 
 
 

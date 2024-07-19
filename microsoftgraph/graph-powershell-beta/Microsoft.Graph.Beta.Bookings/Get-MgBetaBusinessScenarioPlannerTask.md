@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaBusinessScenarioPlannerTask
 
 ## SYNOPSIS
-The Planner tasks for the scenario.
+Read the properties and relationships of a businessScenarioTask object.
 
 ## SYNTAX
 
@@ -35,7 +35,42 @@ Get-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-The Planner tasks for the scenario.
+Read the properties and relationships of a businessScenarioTask object.
+
+## EXAMPLES
+### Example 1: Get all tasks for a scenario
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId
+
+```
+This example will get all tasks for a scenario
+
+### Example 2: Get tasks associated with a specific externalContextId
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -Filter "businessScenarioProperties/externalContextId eq 'Warehouse-CA-36'" 
+
+```
+This example will get tasks associated with a specific externalcontextid
+
+### Example 3: Get scenario tasks created in a specific group
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -Filter "location/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'" 
+
+```
+This example will get scenario tasks created in a specific group
+
 
 ## PARAMETERS
 
@@ -308,11 +343,31 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
+  - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
   - `[Email <String>]`: Alternate key of virtualEventRegistration
+  - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
+  - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
+  - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
+  - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
+  - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[ProtectionUnitBaseId <String>]`: The unique identifier of protectionUnitBase
+  - `[RestorePointId <String>]`: The unique identifier of restorePoint
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
+  - `[SharePointProtectionPolicyId <String>]`: The unique identifier of sharePointProtectionPolicy
+  - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
+  - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
+  - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
   - `[UniqueName <String>]`: Alternate key of businessScenario
   - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
@@ -326,6 +381,9 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertask)
 
+[https://learn.microsoft.com/graph/api/businessscenariotask-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/businessscenariotask-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/businessscenarioplanner-list-tasks?view=graph-rest-beta](https://learn.microsoft.com/graph/api/businessscenarioplanner-list-tasks?view=graph-rest-beta)
 
 
 

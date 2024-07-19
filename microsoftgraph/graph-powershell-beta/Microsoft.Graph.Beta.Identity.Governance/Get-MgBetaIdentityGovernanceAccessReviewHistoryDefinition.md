@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
 
 ## SYNOPSIS
-Represents a collection of access review history data and the scopes used to collect that data.
+Retrieve an accessReviewHistoryDefinition object by its identifier.
+All of the properties of the access review history definition object are returned.
+If the definition is 30 days or older, a 404 Not Found error is returned.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-1.0)
@@ -38,7 +40,9 @@ Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIdentit
 ```
 
 ## DESCRIPTION
-Represents a collection of access review history data and the scopes used to collect that data.
+Retrieve an accessReviewHistoryDefinition object by its identifier.
+All of the properties of the access review history definition object are returned.
+If the definition is 30 days or older, a 404 Not Found error is returned.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -402,6 +406,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewhistorydefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewhistorydefinition)
+
+[https://learn.microsoft.com/graph/api/accessreviewhistorydefinition-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewhistorydefinition-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/accessreviewset-list-historydefinitions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewset-list-historydefinitions?view=graph-rest-beta)
 
 
 

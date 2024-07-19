@@ -31,8 +31,6 @@ Get-MgReportEmailActivityUserCount -InputObject <IReportsIdentity> -OutFile <Str
 ## DESCRIPTION
 Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -186,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-1.0)
+
 
 
 

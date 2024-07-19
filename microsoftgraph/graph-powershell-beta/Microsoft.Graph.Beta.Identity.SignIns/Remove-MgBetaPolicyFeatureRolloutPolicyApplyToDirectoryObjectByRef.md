@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef
 
 ## SYNOPSIS
-Delete ref of navigation property appliesTo for policies
+Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef?view=graph-powershell-1.0)
@@ -31,7 +31,20 @@ Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef -InputObject 
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property appliesTo for policies
+Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef -FeatureRolloutPolicyId $featureRolloutPolicyId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 
@@ -254,6 +267,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -273,6 +287,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -286,6 +301,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyfeaturerolloutpolicyapplytodirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyfeaturerolloutpolicyapplytodirectoryobjectbyref)
 
+[https://learn.microsoft.com/graph/api/featurerolloutpolicy-delete-appliesto?view=graph-rest-beta](https://learn.microsoft.com/graph/api/featurerolloutpolicy-delete-appliesto?view=graph-rest-beta)
 
 
 

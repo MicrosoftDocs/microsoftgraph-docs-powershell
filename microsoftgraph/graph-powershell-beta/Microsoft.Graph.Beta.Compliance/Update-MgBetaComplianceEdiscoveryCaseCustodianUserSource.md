@@ -48,8 +48,6 @@ Update-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplian
 ## DESCRIPTION
 Update the navigation property userSources in compliance
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -415,6 +413,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasecustodianusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasecustodianusersource)
+
+
 
 
 

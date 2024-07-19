@@ -54,8 +54,6 @@ Update-MgBetaUserOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property sections in users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -915,6 +913,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetauseronenotesection)
+
+
 
 
 

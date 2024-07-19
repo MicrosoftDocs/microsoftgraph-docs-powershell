@@ -18,8 +18,9 @@ Update the navigation property recordings in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserOnlineMeetingRecording -CallRecordingId <String> -OnlineMeetingId <String> -UserId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CallId <String>]
+ [-ContentCorrelationId <String>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>]
+ [-EndDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
  [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MeetingOrganizerId <String>]
  [-RecordingContentUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -35,8 +36,9 @@ Update-MgBetaUserOnlineMeetingRecording -CallRecordingId <String> -OnlineMeeting
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CallId <String>]
+ [-ContentCorrelationId <String>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>]
+ [-EndDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
  [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MeetingOrganizerId <String>]
  [-RecordingContentUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -85,6 +87,22 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -CallId
+The unique identifier for the call that is related to this recording.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CallRecordingId
 The unique identifier of callRecording
 
@@ -94,6 +112,22 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ContentCorrelationId
+The unique identifier that links the transcript with its corresponding recording.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -118,6 +152,24 @@ Accept wildcard characters: False
 
 ### -CreatedDateTime
 Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EndDateTime
+Date and time at which the recording ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -260,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecordingContentUrl
-The URL which can be used to access the content of the recording.
+The URL that can be used to access the content of the recording.
 Read-only.
 
 ```yaml
@@ -357,9 +409,17 @@ BODYPARAMETER `<IMicrosoftGraphCallRecording>`: callRecording
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[CallId <String>]`: The unique identifier for the call that is related to this recording.
+Read-only.
   - `[Content <Byte- `[]`>]`: The content of the recording.
 Read-only.
+  - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+  - `[EndDateTime <DateTime?>]`: Date and time at which the recording ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -377,7 +437,7 @@ This property is read-only.
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording.
 Read-only.
-  - `[RecordingContentUrl <String>]`: The URL which can be used to access the content of the recording.
+  - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
 
 INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter

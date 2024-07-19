@@ -33,8 +33,6 @@ Set-MgServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServiceA
 ## DESCRIPTION
 The attachment content.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContentType
@@ -233,6 +231,8 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/set-mgserviceannouncementmessageattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/set-mgserviceannouncementmessageattachmentcontent)
+
+
 
 
 

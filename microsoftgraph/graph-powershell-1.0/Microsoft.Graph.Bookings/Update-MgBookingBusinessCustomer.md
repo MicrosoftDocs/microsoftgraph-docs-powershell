@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBookingBusinessCustomer
 
 ## SYNOPSIS
-Update the navigation property customers in solutions
+Update the properties of a bookingCustomer object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Update-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Update the navigation property customers in solutions
+Update the properties of a bookingCustomer object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -272,6 +272,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomer)
+
+[https://learn.microsoft.com/graph/api/bookingcustomer-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcustomer-update?view=graph-rest-1.0)
 
 
 

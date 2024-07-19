@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementIoUpdateStatus
 
 ## SYNOPSIS
-The IOS software update installation statuses for this account.
+Read properties and relationships of the iosUpdateDeviceStatus object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementIoUpdateStatus?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementIoUpdateStatus -InputObject <IDeviceManagementAdministrati
 ```
 
 ## DESCRIPTION
-The IOS software update installation statuses for this account.
+Read properties and relationships of the iosUpdateDeviceStatus object.
 
 ## PARAMETERS
 
@@ -315,6 +315,10 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementioupdatestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementioupdatestatus)
+
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-iosupdatedevicestatus-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-iosupdatedevicestatus-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-iosupdatedevicestatus-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-iosupdatedevicestatus-list?view=graph-rest-1.0)
 
 
 

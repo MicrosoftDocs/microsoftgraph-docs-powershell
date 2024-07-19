@@ -8,7 +8,9 @@ schema: 2.0.0
 # Set-MgBetaTeamPhotoContent
 
 ## SYNOPSIS
-Update media content for the navigation property photo in teams
+Update the photo for the specified contact, group, team, or user in a tenant.
+The size of the photo you can update to is limited to 4 MB.
+You can use either PATCH or PUT for this operation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgTeamPhotoContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamPhotoContent?view=graph-powershell-1.0)
@@ -30,7 +32,24 @@ Set-MgBetaTeamPhotoContent -InputObject <ITeamsIdentity> [-Data <Stream>] [-Resp
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property photo in teams
+Update the photo for the specified contact, group, team, or user in a tenant.
+The size of the photo you can update to is limited to 4 MB.
+You can use either PATCH or PUT for this operation.
+
+## EXAMPLES
+### Example 1: Update the photo of a team
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = Binary data for the image
+
+Set-MgBetaTeamPhotoContent -TeamId $teamId -BodyParameter $params
+
+```
+This example will update the photo of a team
+
 
 ## PARAMETERS
 
@@ -268,6 +287,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamphotocontent)
 
+[https://learn.microsoft.com/graph/api/profilephoto-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/profilephoto-update?view=graph-rest-beta)
 
 
 

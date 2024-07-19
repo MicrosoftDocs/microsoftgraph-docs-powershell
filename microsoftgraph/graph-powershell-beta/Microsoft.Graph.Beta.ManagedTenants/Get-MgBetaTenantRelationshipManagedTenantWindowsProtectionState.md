@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState
 
 ## SYNOPSIS
-The protection state for Windows devices, registered with Microsoft Endpoint Manager, across managed tenants.
+Read the properties and relationships of a windowsProtectionState object.
 
 ## SYNTAX
 
@@ -35,7 +35,20 @@ Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -InputObject <IM
 ```
 
 ## DESCRIPTION
-The protection state for Windows devices, registered with Microsoft Endpoint Manager, across managed tenants.
+Read the properties and relationships of a windowsProtectionState object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.ManagedTenants
+
+Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState Cmdlet.
+
 
 ## PARAMETERS
 
@@ -326,6 +339,9 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantwindowsprotectionstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantwindowsprotectionstate)
 
+[https://learn.microsoft.com/graph/api/managedtenants-windowsprotectionstate-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-windowsprotectionstate-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-windowsprotectionstates?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-windowsprotectionstates?view=graph-rest-beta)
 
 
 

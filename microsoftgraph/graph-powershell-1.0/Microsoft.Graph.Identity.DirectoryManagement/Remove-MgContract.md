@@ -29,8 +29,6 @@ Remove-MgContract -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete entity from contracts
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContractId
@@ -217,6 +215,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgcontract](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgcontract)
+
+
 
 
 

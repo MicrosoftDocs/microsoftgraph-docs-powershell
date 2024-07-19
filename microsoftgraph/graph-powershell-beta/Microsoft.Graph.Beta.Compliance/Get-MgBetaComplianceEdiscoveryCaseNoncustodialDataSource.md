@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource
 
 ## SYNOPSIS
-Returns a list of case noncustodialDataSource objects for this case.
-Nullable.
+Read the properties and relationships of a noncustodialDataSource object.
 
 ## SYNTAX
 
@@ -36,8 +35,7 @@ Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplian
 ```
 
 ## DESCRIPTION
-Returns a list of case noncustodialDataSource objects for this case.
-Nullable.
+Read the properties and relationships of a noncustodialDataSource object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -334,6 +332,10 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasenoncustodialdatasource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasenoncustodialdatasource)
+
+[https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-list?view=graph-rest-beta)
 
 
 

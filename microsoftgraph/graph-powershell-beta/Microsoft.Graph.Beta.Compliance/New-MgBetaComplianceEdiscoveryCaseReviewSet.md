@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgBetaComplianceEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Create new navigation property to reviewSets for compliance
+Create a new reviewSet object.
+The request body contains the display name of the review set, which is the only writable property.
 
 ## SYNTAX
 
@@ -44,7 +45,8 @@ New-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to reviewSets for compliance
+Create a new reviewSet object.
+The request body contains the display name of the review set, which is the only writable property.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -398,6 +400,8 @@ You can refine searches by using fields listed in the searchable field name pair
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasereviewset)
+
+[https://learn.microsoft.com/graph/api/ediscovery-case-post-reviewsets?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-case-post-reviewsets?view=graph-rest-beta)
 
 
 

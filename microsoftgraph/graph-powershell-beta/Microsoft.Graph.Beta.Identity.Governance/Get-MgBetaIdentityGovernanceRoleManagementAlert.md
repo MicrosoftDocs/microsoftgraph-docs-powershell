@@ -37,6 +37,19 @@ Get-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Represents the alert entity.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceRoleManagementAlert -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'" -ExpandProperty "alertDefinition,alertConfiguration,alertIncidents" 
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceRoleManagementAlert Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -387,6 +400,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalert)
 
+[https://learn.microsoft.com/graph/api/rolemanagementalert-list-alerts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rolemanagementalert-list-alerts?view=graph-rest-beta)
 
 
 

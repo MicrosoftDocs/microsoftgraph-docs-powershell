@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintService
 
 ## SYNOPSIS
-The list of available Universal Print service endpoints.
+Retrieve the properties and relationships of a print service.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintService?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgPrintService -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-The list of available Universal Print service endpoints.
+Retrieve the properties and relationships of a print service.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -315,6 +315,10 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintservice](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintservice)
+
+[https://learn.microsoft.com/graph/api/printservice-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printservice-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/print-list-services?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/print-list-services?view=graph-rest-1.0)
 
 
 

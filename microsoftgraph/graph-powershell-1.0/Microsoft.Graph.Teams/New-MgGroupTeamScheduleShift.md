@@ -50,8 +50,6 @@ New-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to shifts for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -451,6 +449,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleshift)
+
+
 
 
 

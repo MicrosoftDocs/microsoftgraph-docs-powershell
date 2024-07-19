@@ -32,8 +32,6 @@ Get-MgBetaGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ExpandProperty
 ## DESCRIPTION
 The general channel for the team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -204,6 +202,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannel)
+
+
 
 
 

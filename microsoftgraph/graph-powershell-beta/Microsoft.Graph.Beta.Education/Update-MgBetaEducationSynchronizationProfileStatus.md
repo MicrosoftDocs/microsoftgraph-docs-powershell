@@ -47,8 +47,6 @@ Update-MgBetaEducationSynchronizationProfileStatus -InputObject <IEducationIdent
 ## DESCRIPTION
 Update the navigation property profileStatus in education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -330,6 +328,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationsynchronizationprofilestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationsynchronizationprofilestatus)
+
+
 
 
 

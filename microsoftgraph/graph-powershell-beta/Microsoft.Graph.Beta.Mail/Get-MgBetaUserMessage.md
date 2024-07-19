@@ -93,18 +93,6 @@ This example shows how to use the Get-MgBetaUserMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 5: Get MIME content
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Mail
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserMessageContent -UserId $userId -MessageId $messageId -OutFile $outFileId
-```
-This example shows how to use the Get-MgBetaUserMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

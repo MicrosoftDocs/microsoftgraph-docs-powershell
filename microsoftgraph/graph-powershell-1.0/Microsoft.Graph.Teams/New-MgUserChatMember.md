@@ -48,8 +48,6 @@ New-MgUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to members for users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,6 +337,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmember)
+
+
 
 
 

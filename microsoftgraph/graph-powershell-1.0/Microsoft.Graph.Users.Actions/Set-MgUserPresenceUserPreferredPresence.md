@@ -64,18 +64,23 @@ For more details, see presence sessions and time-out and expiration.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setuserpreferredpresence-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Set-MgUserPresenceUserPreferredPresence Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
+
 $params = @{
-	Availability = "DoNotDisturb"
-	Activity = "DoNotDisturb"
-	ExpirationDuration = "PT8H"
+	availability = "DoNotDisturb"
+	activity = "DoNotDisturb"
+	expirationDuration = "PT8H"
 }
+
 Set-MgUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the Set-MgUserPresenceUserPreferredPresence Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

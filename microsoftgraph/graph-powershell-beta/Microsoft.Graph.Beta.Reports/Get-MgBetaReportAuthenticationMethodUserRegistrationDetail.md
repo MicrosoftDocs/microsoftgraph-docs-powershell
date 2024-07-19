@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportAuthenticationMethodUserRegistrationDetail
 
 ## SYNOPSIS
-Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multifactor authentication, self-service password reset, and passwordless authentication).
+Read the properties and relationships of a userRegistrationDetails object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaReportAuthenticationMethodUserRegistrationDetail -InputObject <IReport
 ```
 
 ## DESCRIPTION
-Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multifactor authentication, self-service password reset, and passwordless authentication).
+Read the properties and relationships of a userRegistrationDetails object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -299,7 +299,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -347,6 +346,10 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethoduserregistrationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethoduserregistrationdetail)
+
+[https://learn.microsoft.com/graph/api/userregistrationdetails-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/userregistrationdetails-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userregistrationdetails?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userregistrationdetails?view=graph-rest-beta)
 
 
 

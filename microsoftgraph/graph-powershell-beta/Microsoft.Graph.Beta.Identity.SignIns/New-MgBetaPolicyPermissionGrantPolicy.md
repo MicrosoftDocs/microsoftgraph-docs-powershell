@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBetaPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
-Create new navigation property to permissionGrantPolicies for policies
+Creates a permissionGrantPolicy.
+A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
+After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
@@ -19,7 +21,7 @@ Create new navigation property to permissionGrantPolicies for policies
 ```
 New-MgBetaPolicyPermissionGrantPolicy [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-Excludes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-Id <String>]
+ [-Excludes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-Id <String>] [-IncludeAllPreApprovedApplications]
  [-Includes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-ResourceScopeType <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -32,7 +34,9 @@ New-MgBetaPolicyPermissionGrantPolicy -BodyParameter <IMicrosoftGraphPermissionG
 ```
 
 ## DESCRIPTION
-Create new navigation property to permissionGrantPolicies for policies
+Creates a permissionGrantPolicy.
+A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
+After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
 
 ## EXAMPLES
 ### Example 1: Create a permission grant policy
@@ -178,6 +182,23 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncludeAllPreApprovedApplications
+Set to true to create all pre-approval policies in the tenant.
+Set to false to disable all pre-approval policies in the tenant.
+The default is false.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -328,6 +349,12 @@ Default is the single value all.
     - `[ResourceApplication <String>]`: The appId of the resource application (e.g.
 the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
+    - `[ScopeSensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]`: scopeSensitivityLabels
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[LabelKind <String>]`: labelKind
+  - `[IncludeAllPreApprovedApplications <Boolean?>]`: Set to true to create all pre-approval policies in the tenant.
+Set to false to disable all pre-approval policies in the tenant.
+The default is false.
   - `[Includes <IMicrosoftGraphPermissionGrantConditionSet- `[]`>]`: Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
   - `[ResourceScopeType <String>]`: resourceScopeType
@@ -359,6 +386,9 @@ Default is the single value all.
   - `[ResourceApplication <String>]`: The appId of the resource application (e.g.
 the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
+  - `[ScopeSensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]`: scopeSensitivityLabels
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[LabelKind <String>]`: labelKind
 
 INCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
@@ -387,10 +417,15 @@ Default is the single value all.
   - `[ResourceApplication <String>]`: The appId of the resource application (e.g.
 the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
+  - `[ScopeSensitivityLabels <IMicrosoftGraphScopeSensitivityLabels>]`: scopeSensitivityLabels
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[LabelKind <String>]`: labelKind
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicy)
+
+[https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-permissiongrantpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-permissiongrantpolicies?view=graph-rest-beta)
 
 
 

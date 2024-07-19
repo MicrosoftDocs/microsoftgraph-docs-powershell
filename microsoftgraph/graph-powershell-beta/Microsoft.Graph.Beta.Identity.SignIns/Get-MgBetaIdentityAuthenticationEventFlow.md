@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityAuthenticationEventFlow
 
 ## SYNOPSIS
-Represents the entry point for self-service sign up and sign in user flows in both Microsoft Entra workforce and customer tenants.
+Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
+Only externalUsersSelfServiceSignupEventsFlow object types are available.
 
 ## SYNTAX
 
@@ -35,7 +36,57 @@ Get-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdentity
 ```
 
 ## DESCRIPTION
-Represents the entry point for self-service sign up and sign in user flows in both Microsoft Entra workforce and customer tenants.
+Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
+Only externalUsersSelfServiceSignupEventsFlow object types are available.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventsflow-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: List all user flows
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityAuthenticationEventFlow
+
+```
+This example will list all user flows
+
+### Example 2: List all user flows that include Google as an identity provider
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityAuthenticationEventFlow -Filter "microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/any(idp:idp/id eq 'Google-OAUTH')" 
+
+```
+This example will list all user flows that include google as an identity provider
+
+### Example 3: List all user flows that collect 'city' during attribute collection at account creation
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityAuthenticationEventFlow -Filter "microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/any(attribute:attribute/id eq 'city')" 
+
+```
+This example will list all user flows that collect 'city' during attribute collection at account creation
+
+### Example 4: List user flow associated with specific application ID
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityAuthenticationEventFlow -Filter "microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/conditions/applications/includeApplications/any(appId:appId/appId eq '63856651-13d9-4784-9abf-20758d509e19')" 
+
+```
+This example will list user flow associated with specific application id
+
 
 ## PARAMETERS
 
@@ -333,6 +384,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -352,6 +404,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -365,6 +418,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflow)
 
+[https://learn.microsoft.com/graph/api/authenticationeventsflow-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationeventsflow-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta)
 
 
 

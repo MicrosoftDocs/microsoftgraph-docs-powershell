@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgBetaEducationClassAssignmentDefault
 
 ## SYNOPSIS
-Specifies class-level defaults respected by new assignments created in the class.
+Read the properties and relationships of an educationAssignmentDefaults object.
+These are the class-level assignment defaults respected by new assignments created in the class.
+Callers can continue to specify custom values on each assignment creation if they don't want the default behaviors.
+Only teachers can perform this operation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
@@ -30,7 +33,13 @@ Get-MgBetaEducationClassAssignmentDefault -InputObject <IEducationIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Specifies class-level defaults respected by new assignments created in the class.
+Read the properties and relationships of an educationAssignmentDefaults object.
+These are the class-level assignment defaults respected by new assignments created in the class.
+Callers can continue to specify custom values on each assignment creation if they don't want the default behaviors.
+Only teachers can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentdefaults-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -192,6 +201,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentdefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentdefault)
+
+[https://learn.microsoft.com/graph/api/educationassignmentdefaults-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignmentdefaults-get?view=graph-rest-beta)
 
 
 

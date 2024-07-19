@@ -27,7 +27,21 @@ Get-MgBetaPrintPrinterCapability -InputObject <IDevicesCloudPrintIdentity> [-Res
 ## DESCRIPTION
 Get a list of capabilities for the printer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-getcapabilities-permissions.md)]
+
 ## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+Get-MgBetaPrintPrinterCapability -PrinterId $printerId
+
+```
+This example shows how to use the Get-MgBetaPrintPrinterCapability Cmdlet.
+
 
 ## PARAMETERS
 

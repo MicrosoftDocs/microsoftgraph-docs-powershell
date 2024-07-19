@@ -32,8 +32,6 @@ Remove-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property shifts for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId
@@ -242,6 +240,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamscheduleshift)
+
+
 
 
 

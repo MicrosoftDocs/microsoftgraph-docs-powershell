@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementSetting
 
 ## SYNOPSIS
-Represents the settings that control the behavior of Microsoft Entra entitlement management.
+Retrieve the properties of an entitlementManagementSettings object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementSetting?view=graph-powershell-1.0)
@@ -22,7 +22,7 @@ Get-MgBetaEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <
 ```
 
 ## DESCRIPTION
-Represents the settings that control the behavior of Microsoft Entra entitlement management.
+Retrieve the properties of an entitlementManagementSettings object.
 
 ## EXAMPLES
 ### Example 1: Get the identity governance settings
@@ -129,6 +129,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementsetting)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagementsettings-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagementsettings-get?view=graph-rest-beta)
 
 
 

@@ -48,8 +48,6 @@ New-MgBetaGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create new navigation property to members for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -332,6 +330,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamprimarychannelmember)
+
+
 
 
 

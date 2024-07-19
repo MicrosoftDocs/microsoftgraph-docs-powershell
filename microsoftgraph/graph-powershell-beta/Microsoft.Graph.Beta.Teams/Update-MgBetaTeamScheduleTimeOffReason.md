@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaTeamScheduleTimeOffReason
 
 ## SYNOPSIS
-Update the navigation property timeOffReasons in teams
+Replace an existing timeOffReason.
+If the specified timeOffReason doesn't exist, this method returns 404 Not found.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeOffReason?view=graph-powershell-1.0)
@@ -48,7 +49,8 @@ Update-MgBetaTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property timeOffReasons in teams
+Replace an existing timeOffReason.
+If the specified timeOffReason doesn't exist, this method returns 404 Not found.
 
 ## PARAMETERS
 
@@ -424,6 +426,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoffreason)
+
+[https://learn.microsoft.com/graph/api/timeoffreason-put?view=graph-rest-beta](https://learn.microsoft.com/graph/api/timeoffreason-put?view=graph-rest-beta)
 
 
 

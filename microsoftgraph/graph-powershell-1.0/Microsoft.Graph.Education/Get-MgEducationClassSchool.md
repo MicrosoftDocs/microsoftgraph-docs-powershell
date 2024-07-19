@@ -334,6 +334,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassschool)
 
+[https://learn.microsoft.com/graph/api/educationclass-list-schools?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-schools?view=graph-rest-1.0)
+
 
 
 

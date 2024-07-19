@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityLabelCategorySubcategory
 
 ## SYNOPSIS
-Create new navigation property to subcategories for security
+Create a new subcategoryTemplate object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelCategorySubcategory?view=graph-powershell-1.0)
@@ -46,7 +46,25 @@ New-MgBetaSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> -Bod
 ```
 
 ## DESCRIPTION
-Create new navigation property to subcategories for security
+Create a new subcategoryTemplate object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.subcategoryTemplate"
+	displayName = "Vendor Invoice"
+}
+
+New-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId $categoryTemplateId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityLabelCategorySubcategory Cmdlet.
+
 
 ## PARAMETERS
 
@@ -330,6 +348,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -340,6 +359,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -366,6 +386,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategorysubcategory)
 
+[https://learn.microsoft.com/graph/api/security-categorytemplate-post-subcategories?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-categorytemplate-post-subcategories?view=graph-rest-beta)
 
 
 

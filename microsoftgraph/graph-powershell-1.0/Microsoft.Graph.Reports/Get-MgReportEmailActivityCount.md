@@ -31,8 +31,6 @@ Get-MgReportEmailActivityCount -InputObject <IReportsIdentity> -OutFile <String>
 ## DESCRIPTION
 Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -186,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivitycount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getemailactivitycounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getemailactivitycounts?view=graph-rest-1.0)
+
 
 
 

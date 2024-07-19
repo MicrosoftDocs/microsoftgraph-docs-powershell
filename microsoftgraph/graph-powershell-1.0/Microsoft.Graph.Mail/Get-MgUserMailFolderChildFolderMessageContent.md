@@ -32,8 +32,6 @@ Get-MgUserMailFolderChildFolderMessageContent -InputObject <IMailIdentity> [-For
 ## DESCRIPTION
 Get media content for the navigation property messages from users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Format
@@ -231,6 +229,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessagecontent)
+
+
 
 
 

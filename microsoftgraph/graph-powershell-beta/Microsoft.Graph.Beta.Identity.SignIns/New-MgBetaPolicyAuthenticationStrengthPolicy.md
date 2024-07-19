@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyAuthenticationStrengthPolicy
 
 ## SYNOPSIS
-Create new navigation property to authenticationStrengthPolicies for policies
+Create a new custom authenticationStrengthPolicy object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthenticationStrengthPolicy?view=graph-powershell-1.0)
@@ -33,12 +33,13 @@ New-MgBetaPolicyAuthenticationStrengthPolicy -BodyParameter <IMicrosoftGraphAuth
 ```
 
 ## DESCRIPTION
-Create new navigation property to authenticationStrengthPolicies for policies
+Create a new custom authenticationStrengthPolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -46,16 +47,15 @@ $params = @{
 	displayName = "Contoso authentication level"
 	description = "The only authentication level allowed to access our secret apps"
 	allowedCombinations = @(
-		"password, hardwareOath"
-		"password, sms"
-	)
+	"password, hardwareOath"
+"password, sms"
+)
 }
 
 New-MgBetaPolicyAuthenticationStrengthPolicy -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaPolicyAuthenticationStrengthPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -350,6 +350,8 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicy)
+
+[https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-beta)
 
 
 

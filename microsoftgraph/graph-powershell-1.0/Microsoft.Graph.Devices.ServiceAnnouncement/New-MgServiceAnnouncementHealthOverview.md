@@ -32,8 +32,6 @@ New-MgServiceAnnouncementHealthOverview -BodyParameter <IMicrosoftGraphServiceHe
 ## DESCRIPTION
 Create new navigation property to healthOverviews for admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -286,6 +284,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementhealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementhealthoverview)
+
+
 
 
 

@@ -62,8 +62,6 @@ Update-MgTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property messages in teams
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1026,6 +1024,8 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessage)
+
+
 
 
 

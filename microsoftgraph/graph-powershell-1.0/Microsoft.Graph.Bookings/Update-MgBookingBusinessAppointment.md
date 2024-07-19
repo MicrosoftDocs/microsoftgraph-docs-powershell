@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBookingBusinessAppointment
 
 ## SYNOPSIS
-Update the navigation property appointments in solutions
+Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
@@ -61,7 +61,7 @@ Update-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property appointments in solutions
+Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
 ## PARAMETERS
 
@@ -797,6 +797,9 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment)
+
+[https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0)
+
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaInformationProtectionThreatAssessmentRequest
 
 ## SYNOPSIS
-Get threatAssessmentRequests from informationProtection
+Retrieve the properties and relationships of a specified threatAssessmentRequest object.
+A threat assessment request can be one of the following types:
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-1.0)
@@ -38,7 +39,8 @@ Get-MgBetaInformationProtectionThreatAssessmentRequest -InputObject <IIdentitySi
 ```
 
 ## DESCRIPTION
-Get threatAssessmentRequests from informationProtection
+Retrieve the properties and relationships of a specified threatAssessmentRequest object.
+A threat assessment request can be one of the following types:
 
 ## EXAMPLES
 ### Example 1: Get the properties of a mail assessment request
@@ -393,6 +395,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -412,6 +415,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -424,6 +428,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionthreatassessmentrequest)
+
+[https://learn.microsoft.com/graph/api/threatassessmentrequest-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/threatassessmentrequest-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta](https://learn.microsoft.com/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta)
 
 
 

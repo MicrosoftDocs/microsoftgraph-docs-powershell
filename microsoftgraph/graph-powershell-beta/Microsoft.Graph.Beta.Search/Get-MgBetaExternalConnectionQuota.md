@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalConnectionQuota
 
 ## SYNOPSIS
-Get quota from external
+Retrieve the properties and relationships of a connectionQuota object.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaExternalConnectionQuota -InputObject <ISearchIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get quota from external
+Retrieve the properties and relationships of a connectionQuota object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -192,6 +192,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta)
 
 
 

@@ -33,14 +33,18 @@ Reboot a specific Cloud PC.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reboot-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Restart-MgBetaUserCloudPc Cmdlet
+### Example 1: Reboot the cloudPC for the signed-in user
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 # A UPN can also be used as -UserId.
 Restart-MgBetaUserCloudPc -UserId $userId -CloudPCId $cloudPCId
+
 ```
-This example shows how to use the Restart-MgBetaUserCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will reboot the cloudpc for the signed-in user
+
 
 ## PARAMETERS
 

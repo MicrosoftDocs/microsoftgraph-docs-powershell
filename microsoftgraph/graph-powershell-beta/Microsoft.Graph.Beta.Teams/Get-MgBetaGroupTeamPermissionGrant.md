@@ -40,8 +40,6 @@ Get-MgBetaGroupTeamPermissionGrant -InputObject <ITeamsIdentity> [-ExpandPropert
 ## DESCRIPTION
 A collection of permissions granted to apps to access the team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -348,6 +346,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteampermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteampermissiongrant)
+
+
+
+
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaCommunicationOnlineMeetingRecording
 
 ## SYNOPSIS
-Get recording for the navigation property onlineMeetings from communications
+The content stream of the recording of a Teams live event.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingRecording?view=graph-powershell-1.0)
@@ -18,7 +19,8 @@ Get recording for the navigation property onlineMeetings from communications
 ### Get2 (Default)
 ```
 Get-MgBetaCommunicationOnlineMeetingRecording [-ExpandProperty <String[]>] [-Property <String[]>] [-Count]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-EndDateTime <DateTime>] [-Filter <String>] [-MeetingOrganizerUserId <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-StartDateTime <DateTime>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
@@ -60,9 +62,8 @@ Get-MgBetaCommunicationOnlineMeetingRecording -InputObject <ICloudCommunications
 ```
 
 ## DESCRIPTION
-Get recording for the navigation property onlineMeetings from communications
-
-## EXAMPLES
+The content stream of the recording of a Teams live event.
+Read-only.
 
 ## PARAMETERS
 
@@ -119,6 +120,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EndDateTime
+Usage: endDateTime=@endDateTime
+
+```yaml
+Type: DateTime
+Parameter Sets: Get2
+Aliases:
 
 Required: False
 Position: Named
@@ -185,6 +201,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -MeetingOrganizerUserId
+Usage: meetingOrganizerUserId='@meetingOrganizerUserId'
+
+```yaml
+Type: String
+Parameter Sets: Get2
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -323,6 +354,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -StartDateTime
+Usage: startDateTime=@startDateTime
+
+```yaml
+Type: DateTime
+Parameter Sets: Get2
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Top
 Show only the first n items
 
@@ -394,6 +440,12 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingrecording)
+
+[https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta)
+
+
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamMember
 
 ## SYNOPSIS
-Members and owners of the team.
+Get a conversationMember from a team.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamMember?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Members and owners of the team.
+Get a conversationMember from a team.
 
 ## EXAMPLES
 ### Example 1: Get list of members in team
@@ -392,6 +392,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateammember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateammember)
+
+[https://learn.microsoft.com/graph/api/team-get-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/team-get-members?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/team-list-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/team-list-members?view=graph-rest-beta)
 
 
 

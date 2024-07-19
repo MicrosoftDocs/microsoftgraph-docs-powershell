@@ -33,8 +33,6 @@ Set-MgServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceA
 ## DESCRIPTION
 The zip file that contains all attachments for a message.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContentType
@@ -233,6 +231,8 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/set-mgserviceannouncementmessageattachmentarchive](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/set-mgserviceannouncementmessageattachmentarchive)
+
+
 
 
 

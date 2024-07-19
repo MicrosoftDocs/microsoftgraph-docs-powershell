@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgEducationClassAssignmentSubmissionOutcome
 
 ## SYNOPSIS
-Update the navigation property outcomes in education
+Update the properties of an educationOutcome object.
+Only teachers can perform this operation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
@@ -48,7 +49,8 @@ Update-MgEducationClassAssignmentSubmissionOutcome -InputObject <IEducationIdent
 ```
 
 ## DESCRIPTION
-Update the navigation property outcomes in education
+Update the properties of an educationOutcome object.
+Only teachers can perform this operation.
 
 ## EXAMPLES
 ### Example 1: Update a feedback outcome
@@ -366,8 +368,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: The moment in time when the resource was last modified.
@@ -395,14 +398,17 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsubmissionoutcome)
+
+[https://learn.microsoft.com/graph/api/educationoutcome-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationoutcome-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSearchAcronym
 
 ## SYNOPSIS
-Update the navigation property acronyms in search
+Update the properties of an acronym object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Update-MgSearchAcronym?view=graph-powershell-1.0)
@@ -48,19 +48,24 @@ Update-MgBetaSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Update the navigation property acronyms in search
+Update the properties of an acronym object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaSearchAcronym Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
+
 $params = @{
-	Description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers."
+	description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers."
 }
+
 Update-MgBetaSearchAcronym -AcronymId $acronymId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaSearchAcronym Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -403,6 +408,8 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchacronym)
+
+[https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-beta)
 
 
 

@@ -56,8 +56,6 @@ New-MgGroupTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to channels for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14795,6 +14793,8 @@ Read only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannel)
+
+
 
 
 

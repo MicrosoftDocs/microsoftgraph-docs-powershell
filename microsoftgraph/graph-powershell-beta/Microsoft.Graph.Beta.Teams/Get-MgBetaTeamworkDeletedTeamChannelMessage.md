@@ -60,8 +60,6 @@ A collection of all the messages in the channel.
 A navigation property.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -415,6 +413,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessage)
 
 [https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-beta)
+
+
+
+
 
 
 

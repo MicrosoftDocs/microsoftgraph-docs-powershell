@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfileEmail
 
 ## SYNOPSIS
-Represents detailed information about email addresses associated with the user.
+Retrieve the properties and relationships of an itemEmail object in a user's profile.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Represents detailed information about email addresses associated with the user.
+Retrieve the properties and relationships of an itemEmail object in a user's profile.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -44,8 +44,7 @@ Represents detailed information about email addresses associated with the user.
 
 Import-Module Microsoft.Graph.Beta.People
 
-# A UPN can also be used as -UserId.
-Get-MgBetaUserProfileEmail -UserId $userId
+Get-MgBetaUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId
 
 ```
 This example shows how to use the Get-MgBetaUserProfileEmail Cmdlet.
@@ -338,6 +337,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileemail)
+
+[https://learn.microsoft.com/graph/api/itememail-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/itememail-get?view=graph-rest-beta)
 
 
 

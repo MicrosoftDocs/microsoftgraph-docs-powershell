@@ -42,14 +42,18 @@ Alternatively, send a new message in a single operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-send-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Send-MgBetaUserMessage Cmdlet
+### Example 1: Send an existing draft message
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMessage -UserId $userId -MessageId $messageId
+
 ```
-This example shows how to use the Send-MgBetaUserMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will send an existing draft message
+
 
 ## PARAMETERS
 

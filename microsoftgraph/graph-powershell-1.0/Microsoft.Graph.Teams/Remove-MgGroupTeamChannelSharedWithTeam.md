@@ -33,8 +33,6 @@ Remove-MgGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property sharedWithTeams for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -258,6 +256,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannelsharedwithteam)
+
+
 
 
 

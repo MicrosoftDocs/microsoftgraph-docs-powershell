@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementAndroidManagedAppProtection
 
 ## SYNOPSIS
-Android managed app policies.
+Read properties and relationships of the androidManagedAppProtection object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevicesCorpo
 ```
 
 ## DESCRIPTION
-Android managed app policies.
+Read properties and relationships of the androidManagedAppProtection object.
 
 ## PARAMETERS
 
@@ -325,6 +325,10 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementandroidmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementandroidmanagedappprotection)
+
+[https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-list?view=graph-rest-1.0)
 
 
 

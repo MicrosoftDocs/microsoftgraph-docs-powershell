@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon
 
 ## SYNOPSIS
-The outline version of the Teams app's icon.
+Retrieve a Teams app icon associated with a specific definition of an app.
 
 ## SYNTAX
 
@@ -27,30 +27,31 @@ Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity> [
 ```
 
 ## DESCRIPTION
-The outline version of the Teams app's icon.
+Retrieve a Teams app icon associated with a specific definition of an app.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
+### Example 1: Get outline icon of a *custom* Teams app
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
+
 ```
-This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
+This example will get outline icon of a *custom* teams app
+
+### Example 2: Get outline icon of a *store* Teams app
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
+
 ```
-This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId -OutFile $outFileId
-```
-This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will get outline icon of a *store* teams app
+
 
 ## PARAMETERS
 
@@ -237,6 +238,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineicon](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineicon)
+
+[https://learn.microsoft.com/graph/api/teamsappicon-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamsappicon-get?view=graph-rest-beta)
 
 
 

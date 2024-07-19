@@ -328,6 +328,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplan)
 
+[https://learn.microsoft.com/graph/api/plannergroup-list-plans?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannergroup-list-plans?view=graph-rest-1.0)
+
 
 
 

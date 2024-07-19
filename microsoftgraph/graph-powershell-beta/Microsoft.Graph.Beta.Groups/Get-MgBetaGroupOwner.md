@@ -8,11 +8,9 @@ schema: 2.0.0
 # Get-MgBetaGroupOwner
 
 ## SYNOPSIS
-The owners of the group who can be users or service principals.
-Nullable.
-If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
-Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
-For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+Retrieve a list of the group's owners.
+The owners are a set of users who are allowed to modify the group object.
+Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupOwner](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwner?view=graph-powershell-1.0)
@@ -27,11 +25,9 @@ Get-MgBetaGroupOwner -GroupId <String> [-ExpandProperty <String[]>] [-Filter <St
 ```
 
 ## DESCRIPTION
-The owners of the group who can be users or service principals.
-Nullable.
-If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
-Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
-For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+Retrieve a list of the group's owners.
+The owners are a set of users who are allowed to modify the group object.
+Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
 
 ## EXAMPLES
 ### Example 1: Get an owner of a group
@@ -289,6 +285,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupowner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupowner)
+
+[https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-beta)
 
 
 

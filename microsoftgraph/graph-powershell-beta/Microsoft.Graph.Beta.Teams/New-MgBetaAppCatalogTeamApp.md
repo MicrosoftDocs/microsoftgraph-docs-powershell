@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBetaAppCatalogTeamApp
 
 ## SYNOPSIS
-Create new navigation property to teamsApps for appCatalogs
+Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource has a distributionMethod property value of organization.
+The requiresReview property allows any user to submit an app for review by an administrator.
+Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamApp?view=graph-powershell-1.0)
@@ -30,7 +32,9 @@ New-MgBetaAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp> [-ResponseH
 ```
 
 ## DESCRIPTION
-Create new navigation property to teamsApps for appCatalogs
+Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource has a distributionMethod property value of organization.
+The requiresReview property allows any user to submit an app for review by an administrator.
+Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -415,6 +419,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp)
+
+[https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)
 
 
 

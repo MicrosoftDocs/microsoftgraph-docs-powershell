@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgBetaComplianceEdiscoveryCaseTag
 
 ## SYNOPSIS
-Create new navigation property to tags for compliance
+Create a new tag for the specified case.
+The tags are used in review sets while reviewing content.
 
 ## SYNTAX
 
@@ -47,7 +48,8 @@ New-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to tags for compliance
+Create a new tag for the specified case.
+The tags are used in review sets while reviewing content.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -444,6 +446,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasetag)
+
+[https://learn.microsoft.com/graph/api/ediscovery-case-post-tags?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-case-post-tags?view=graph-rest-beta)
 
 
 

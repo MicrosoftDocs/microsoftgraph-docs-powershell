@@ -49,6 +49,23 @@ Delete the password-based single sign-on credentials for a given user to a given
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-deletepasswordsinglesignoncredentials-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+$params = @{
+	id = "314ac440-129f-4cb3-ad61-24ef4a7de1d9"
+}
+
+Remove-MgBetaUserPasswordSingleSignOnCredential -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgBetaUserPasswordSingleSignOnCredential Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -288,7 +305,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserpasswordsinglesignoncredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserpasswordsinglesignoncredential)
 
 [https://learn.microsoft.com/graph/api/user-deletepasswordsinglesignoncredentials?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-deletepasswordsinglesignoncredentials?view=graph-rest-beta)
-
 
 
 

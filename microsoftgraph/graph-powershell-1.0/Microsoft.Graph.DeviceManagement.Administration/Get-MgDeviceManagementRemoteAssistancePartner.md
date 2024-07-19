@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
-The remote assist partners.
+Read properties and relationships of the remoteAssistancePartner object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
@@ -38,19 +38,19 @@ Get-MgDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManagementAdm
 ```
 
 ## DESCRIPTION
-The remote assist partners.
+Read properties and relationships of the remoteAssistancePartner object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-Get-MgDeviceManagementRemoteAssistancePartner -RemoteAssistancePartnerId $remoteAssistancePartnerId
+Get-MgDeviceManagementRemoteAssistancePartner
+
 ```
 This example shows how to use the Get-MgDeviceManagementRemoteAssistancePartner Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -328,6 +328,10 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementremoteassistancepartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementremoteassistancepartner)
+
+[https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-list?view=graph-rest-1.0)
 
 
 

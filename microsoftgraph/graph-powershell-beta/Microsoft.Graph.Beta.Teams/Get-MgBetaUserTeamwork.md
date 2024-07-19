@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserTeamwork
 
 ## SYNOPSIS
-A container for Microsoft Teams features available for the user.
-Read-only.
-Nullable.
+Get the userTeamwork settings for a specified user, which includes the Microsoft Teams region and the locale chosen by the user.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserTeamwork](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamwork?view=graph-powershell-1.0)
@@ -32,9 +30,20 @@ Get-MgBetaUserTeamwork -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-A container for Microsoft Teams features available for the user.
-Read-only.
-Nullable.
+Get the userTeamwork settings for a specified user, which includes the Microsoft Teams region and the locale chosen by the user.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaUserTeamwork -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserTeamwork Cmdlet.
+
 
 ## PARAMETERS
 
@@ -207,6 +216,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamwork)
 
+[https://learn.microsoft.com/graph/api/userteamwork-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/userteamwork-get?view=graph-rest-beta)
 
 
 

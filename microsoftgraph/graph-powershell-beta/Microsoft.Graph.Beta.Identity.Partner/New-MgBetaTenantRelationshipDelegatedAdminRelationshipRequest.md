@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest
 
 ## SYNOPSIS
-Create new navigation property to requests for tenantRelationships
+Create a new delegatedAdminRelationshipRequest object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminRelationshipRequest](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationshipRequest?view=graph-powershell-1.0)
@@ -46,7 +46,24 @@ New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <IIde
 ```
 
 ## DESCRIPTION
-Create new navigation property to requests for tenantRelationships
+Create a new delegatedAdminRelationshipRequest object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Partner
+
+$params = @{
+	action = "lockForApproval"
+}
+
+New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest Cmdlet.
+
 
 ## PARAMETERS
 
@@ -306,6 +323,7 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshiprequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshiprequest)
 
+[https://learn.microsoft.com/graph/api/delegatedadminrelationship-post-requests?view=graph-rest-beta](https://learn.microsoft.com/graph/api/delegatedadminrelationship-post-requests?view=graph-rest-beta)
 
 
 

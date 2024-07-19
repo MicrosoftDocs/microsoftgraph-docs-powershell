@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementWindowsInformationProtectionPolicy
 
 ## SYNOPSIS
-Update the navigation property windowsInformationProtectionPolicies in deviceAppManagement
+Update the properties of a windowsInformationProtectionPolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-beta)
@@ -99,7 +99,7 @@ Update-MgDeviceAppManagementWindowsInformationProtectionPolicy
 ```
 
 ## DESCRIPTION
-Update the navigation property windowsInformationProtectionPolicies in deviceAppManagement
+Update the properties of a windowsInformationProtectionPolicy object.
 
 ## PARAMETERS
 
@@ -1190,6 +1190,8 @@ SMBAUTOENCRYPTEDFILEEXTENSIONS <IMicrosoftGraphWindowsInformationProtectionResou
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementwindowsinformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementwindowsinformationprotectionpolicy)
+
+[https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionpolicy-update?view=graph-rest-1.0)
 
 
 

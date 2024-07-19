@@ -260,6 +260,9 @@ Locale: en-US
 ### [Remove-MgPrintPrinterJobDocument](Remove-MgPrintPrinterJobDocument.md)
 {{ Fill in the Description }}
 
+### [Remove-MgPrintPrinterJobDocumentContent](Remove-MgPrintPrinterJobDocumentContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgPrintPrinterJobTask](Remove-MgPrintPrinterJobTask.md)
 {{ Fill in the Description }}
 
@@ -285,6 +288,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgPrintShareJobDocument](Remove-MgPrintShareJobDocument.md)
+{{ Fill in the Description }}
+
+### [Remove-MgPrintShareJobDocumentContent](Remove-MgPrintShareJobDocumentContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgPrintShareJobTask](Remove-MgPrintShareJobTask.md)

@@ -29,8 +29,6 @@ Remove-MgDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity> [-IfM
 ## DESCRIPTION
 Delete entity from directoryRoles
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -DirectoryRoleId
@@ -217,6 +215,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrole)
+
+
 
 
 

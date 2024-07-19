@@ -32,8 +32,6 @@ Get-MgGroupTeamPhoto -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 The profile photo for the team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -196,6 +194,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamphoto)
+
+
 
 
 

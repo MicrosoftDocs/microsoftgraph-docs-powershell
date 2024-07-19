@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserCalendarPermission
 
 ## SYNOPSIS
-Update the navigation property calendarPermissions in users
+Update the permissions assigned to an existing share recipient or delegate, through the corresponding \<b\>calendarPermission\</b\> object for a calendar.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserCalendarPermission?view=graph-powershell-beta)
@@ -78,12 +78,13 @@ Update-MgUserCalendarPermission -InputObject <ICalendarIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property calendarPermissions in users
+Update the permissions assigned to an existing share recipient or delegate, through the corresponding \<b\>calendarPermission\</b\> object for a calendar.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Calendar
 
 $params = @{
@@ -91,10 +92,9 @@ $params = @{
 }
 
 Update-MgUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgUserCalendarPermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -416,6 +416,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission)
+
+[https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-1.0)
 
 
 

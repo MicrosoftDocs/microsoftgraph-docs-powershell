@@ -40,8 +40,6 @@ Get-MgBetaGroupTeamTagMember -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Users assigned to the tag.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -363,6 +361,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamtagmember)
+
+
+
+
 
 
 

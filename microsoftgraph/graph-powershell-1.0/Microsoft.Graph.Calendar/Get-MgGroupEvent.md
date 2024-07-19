@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupEvent
 
 ## SYNOPSIS
-The group's calendar events.
+Get an event object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEvent?view=graph-powershell-beta)
@@ -17,37 +17,40 @@ The group's calendar events.
 
 ### List (Default)
 ```
-Get-MgGroupEvent -GroupId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgGroupEvent -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgGroupEvent -EventId <String> -GroupId <String> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgGroupEvent -EventId <String> -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgGroupEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The group's calendar events.
+Get an event object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Calendar
 
-Get-MgGroupEvent -GroupId $groupId -EventId $eventId
+Get-MgGroupEvent -GroupId $groupId
+
 ```
 This example shows how to use the Get-MgGroupEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -92,6 +95,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -219,6 +237,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -296,6 +329,10 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupevent)
+
+[https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-1.0)
 
 
 

@@ -32,19 +32,6 @@ Restore-MgBetaDriveListItemVersion -InputObject <IFilesIdentity> [-ResponseHeade
 ## DESCRIPTION
 Invoke action restoreVersion
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Sites
-
-Restore-MgBetaSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
-```
-This example shows how to use the Restore-MgBetaDriveListItemVersion Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -DriveId
@@ -244,6 +231,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadrivelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadrivelistitemversion)
+
+
 
 
 

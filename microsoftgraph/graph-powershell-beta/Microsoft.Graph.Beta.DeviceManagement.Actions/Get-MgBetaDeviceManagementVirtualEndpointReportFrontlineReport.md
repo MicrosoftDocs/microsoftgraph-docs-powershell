@@ -35,6 +35,32 @@ Get the Windows 365 Frontline reports, such as real-time or historical data repo
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getfrontlinereport-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+$params = @{
+	reportName = "frontlineLicenseUsageReport"
+	filter = "ServicePlanId eq '2d1d344e-d10c-41bb-953b-b3a47521dca0' and DateTimeUTC gt datetime'2022-11-30'"
+	select = @(
+	"ServicePlanId"
+"LicenseCount"
+"ClaimedLicenseCount"
+"DateTimeUTC"
+)
+skip = 0
+top = 100
+}
+
+Get-MgBetaDeviceManagementVirtualEndpointReportFrontlineReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportFrontlineReport Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -326,7 +352,6 @@ BODYPARAMETER `<IPaths1Q4BouvDevicemanagementVirtualendpointReportsMicrosoftGrap
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportfrontlinereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportfrontlinereport)
 
 [https://learn.microsoft.com/graph/api/cloudpcreports-getfrontlinereport?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getfrontlinereport?view=graph-rest-beta)
-
 
 
 

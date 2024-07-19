@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgCommunicationOnlineMeetingAttendeeReport
 
 ## SYNOPSIS
-Update attendeeReport for the navigation property onlineMeetings in communications
+The content stream of the attendee report of a Microsoft Teams live event.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaCommunicationOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationOnlineMeetingAttendeeReport?view=graph-powershell-beta)
@@ -30,9 +31,8 @@ Set-MgCommunicationOnlineMeetingAttendeeReport -InputObject <ICloudCommunication
 ```
 
 ## DESCRIPTION
-Update attendeeReport for the navigation property onlineMeetings in communications
-
-## EXAMPLES
+The content stream of the attendee report of a Microsoft Teams live event.
+Read-only.
 
 ## PARAMETERS
 
@@ -242,6 +242,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationonlinemeetingattendeereport](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationonlinemeetingattendeereport)
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary
 
 ## SYNOPSIS
-App configuration user status summary.
+Read properties and relationships of the managedDeviceMobileAppConfigurationUserSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary
 ```
 
 ## DESCRIPTION
-App configuration user status summary.
+Read properties and relationships of the managedDeviceMobileAppConfigurationUserSummary object.
 
 ## PARAMETERS
 
@@ -198,6 +198,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappconfigurationuserstatussummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappconfigurationuserstatussummary)
+
+[https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationusersummary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationusersummary-get?view=graph-rest-1.0)
 
 
 

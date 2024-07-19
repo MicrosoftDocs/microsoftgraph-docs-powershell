@@ -31,8 +31,6 @@ New-MgBetaPrintService -BodyParameter <IMicrosoftGraphPrintService> [-ResponseHe
 ## DESCRIPTION
 Create new navigation property to services for print
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -217,6 +215,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintservice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintservice)
+
+
 
 
 

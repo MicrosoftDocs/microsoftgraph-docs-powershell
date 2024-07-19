@@ -618,6 +618,7 @@ Such components can be the application itself, the MAM SDK, and other on-device 
 Read-only.
       - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
 Read-only.
+      - `[Status <ManagedAppLogUploadState?>]`: Represents the current status of the associated \`managedAppLogCollectionRequest\`.
     - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
     - `[Version <String>]`: Version of the entity.
   - `[ManagedDeviceId <String>]`: The Managed Device identifier of the host device.
@@ -748,6 +749,7 @@ Such components can be the application itself, the MAM SDK, and other on-device 
 Read-only.
     - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
 Read-only.
+    - `[Status <ManagedAppLogUploadState?>]`: Represents the current status of the associated \`managedAppLogCollectionRequest\`.
   - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
   - `[Version <String>]`: Version of the entity.
 

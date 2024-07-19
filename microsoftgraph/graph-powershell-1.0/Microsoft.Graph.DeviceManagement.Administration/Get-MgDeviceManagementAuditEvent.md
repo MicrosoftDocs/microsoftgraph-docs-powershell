@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementAuditEvent
 
 ## SYNOPSIS
-The Audit Events
+Read properties and relationships of the auditEvent object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationId
 ```
 
 ## DESCRIPTION
-The Audit Events
+Read properties and relationships of the auditEvent object.
 
 ## PARAMETERS
 
@@ -315,6 +315,10 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementauditevent)
+
+[https://learn.microsoft.com/graph/api/intune-auditing-auditevent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-auditing-auditevent-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-list?view=graph-rest-1.0)
 
 
 

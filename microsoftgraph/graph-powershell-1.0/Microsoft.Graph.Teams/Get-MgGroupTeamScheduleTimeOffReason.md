@@ -40,8 +40,6 @@ Get-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-Property <S
 ## DESCRIPTION
 The set of reasons for a time off in the schedule.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -325,6 +323,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoffreason)
+
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
-The logical grouping of users in the schedule (usually by role).
+Retrieve the properties and relationships of a schedulingGroup by ID.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
@@ -17,28 +17,28 @@ The logical grouping of users in the schedule (usually by role).
 
 ### List (Default)
 ```
-Get-MgBetaTeamScheduleSchedulingGroup -TeamId <String> [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaTeamScheduleSchedulingGroup -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgBetaTeamScheduleSchedulingGroup -SchedulingGroupId <String> -TeamId <String> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaTeamScheduleSchedulingGroup -SchedulingGroupId <String> -TeamId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The logical grouping of users in the schedule (usually by role).
+Retrieve the properties and relationships of a schedulingGroup by ID.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -78,6 +78,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -344,6 +359,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleschedulinggroup)
+
+[https://learn.microsoft.com/graph/api/schedulinggroup-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/schedulinggroup-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta)
 
 
 

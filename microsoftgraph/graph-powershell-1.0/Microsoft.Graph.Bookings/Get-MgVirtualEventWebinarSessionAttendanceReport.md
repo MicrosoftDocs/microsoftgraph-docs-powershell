@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgVirtualEventWebinarSessionAttendanceReport
 
 ## SYNOPSIS
-The attendance reports of an online meeting.
-Read-only.
+Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
+Each time an online meeting ends, an attendance report is generated for that session.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarSessionAttendanceReport](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarSessionAttendanceReport?view=graph-powershell-beta)
@@ -41,8 +41,8 @@ Get-MgVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIdentity
 ```
 
 ## DESCRIPTION
-The attendance reports of an online meeting.
-Read-only.
+Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
+Each time an online meeting ends, an attendance report is generated for that session.
 
 ## PARAMETERS
 
@@ -339,6 +339,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsessionattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsessionattendancereport)
+
+[https://learn.microsoft.com/graph/api/meetingattendancereport-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingattendancereport-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/meetingattendancereport-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingattendancereport-list?view=graph-rest-1.0)
 
 
 

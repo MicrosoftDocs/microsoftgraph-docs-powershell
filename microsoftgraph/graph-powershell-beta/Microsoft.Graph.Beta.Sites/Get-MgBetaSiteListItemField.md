@@ -32,8 +32,6 @@ Get-MgBetaSiteListItemField -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 The values of the columns set on this list item.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -245,6 +243,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemfield)
+
+
 
 
 

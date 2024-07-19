@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementDirectoryRoleDefinition
 
 ## SYNOPSIS
-Get roleDefinitions from roleManagement
+Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Microsoft Entra directory roles)- entitlement management (Microsoft Entra entitlement management)- Exchange Online
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-1.0)
@@ -38,7 +39,32 @@ Get-MgBetaRoleManagementDirectoryRoleDefinition -InputObject <IIdentityGovernanc
 ```
 
 ## DESCRIPTION
-Get roleDefinitions from roleManagement
+Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Microsoft Entra directory roles)- entitlement management (Microsoft Entra entitlement management)- Exchange Online
+
+## EXAMPLES
+### Example 1: Get the definition of a custom role for a directory provider
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example will get the definition of a custom role for a directory provider
+
+### Example 2: Get the definition of a built-in role for a directory provider
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example will get the definition of a built-in role for a directory provider
+
 
 ## PARAMETERS
 
@@ -390,6 +416,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroledefinition)
 
+[https://learn.microsoft.com/graph/api/unifiedroledefinition-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroledefinition-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta)
 
 
 

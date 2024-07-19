@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgEducationClassAssignmentCategoryByRef
 
 ## SYNOPSIS
-Create new navigation property ref to categories for education
+Add one or more existing educationCategory objects to the specified  educationAssignment.
+Only teachers can perform this operation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentCategoryByRef?view=graph-powershell-beta)
@@ -46,7 +47,8 @@ New-MgEducationClassAssignmentCategoryByRef -InputObject <IEducationIdentity> -B
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to categories for education
+Add one or more existing educationCategory objects to the specified  educationAssignment.
+Only teachers can perform this operation.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -291,6 +293,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategorybyref)
+
+[https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-1.0)
 
 
 

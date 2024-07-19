@@ -42,8 +42,6 @@ Get-MgUserChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 A collection of all the messages in the chat.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -357,6 +355,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmessage)
+
+
+
 
 
 

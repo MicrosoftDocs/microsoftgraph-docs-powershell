@@ -58,13 +58,13 @@ Retrieve the properties and relationships of a groupLifecyclePolicies object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId
+Get-MgGroupLifecyclePolicy
+
 ```
 This example shows how to use the Get-MgGroupLifecyclePolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaSecurityAlert
 
 ## SYNOPSIS
-Update the navigation property alerts in security
+Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
+This method updates any solution that has a record of the referenced alert ID.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlert?view=graph-powershell-1.0)
@@ -79,7 +80,8 @@ Update-MgBetaSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Update the navigation property alerts in security
+Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
+This method updates any solution that has a record of the referenced alert ID.
 
 ## EXAMPLES
 ### Example 1: Request without Prefer header
@@ -1237,6 +1239,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -1247,6 +1250,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -1417,6 +1421,8 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState- `[]`>: Threat intelligen
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalert)
+
+[https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-beta)
 
 
 

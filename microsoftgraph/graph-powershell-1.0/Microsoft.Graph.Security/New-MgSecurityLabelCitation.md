@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityLabelCitation
 
 ## SYNOPSIS
-Create new navigation property to citations for security
+Create a new citationTemplate object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ New-MgSecurityLabelCitation -BodyParameter <IMicrosoftGraphSecurityCitationTempl
 ```
 
 ## DESCRIPTION
-Create new navigation property to citations for security
+Create a new citationTemplate object.
 
 ## PARAMETERS
 
@@ -258,8 +258,9 @@ BODYPARAMETER `<IMicrosoftGraphSecurityCitationTemplate>`: citationTemplate
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
@@ -275,14 +276,17 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation)
+
+[https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-1.0)
 
 
 

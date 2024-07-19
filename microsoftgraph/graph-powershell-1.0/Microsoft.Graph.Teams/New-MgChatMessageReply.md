@@ -62,8 +62,6 @@ New-MgChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to replies for chats
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1038,6 +1036,8 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessagereply)
+
+
 
 
 

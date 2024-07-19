@@ -45,8 +45,6 @@ Confirm-MgBetaAdministrativeUnitMemberObject -InputObject <IIdentityDirectoryMan
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -275,6 +273,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetaadministrativeunitmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetaadministrativeunitmemberobject)
+
+
 
 
 

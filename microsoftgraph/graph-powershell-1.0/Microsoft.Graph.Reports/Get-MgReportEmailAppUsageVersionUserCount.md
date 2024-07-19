@@ -32,8 +32,6 @@ Get-MgReportEmailAppUsageVersionUserCount -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Get the count of unique users by Outlook desktop version.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -187,6 +185,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageversionusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageversionusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-1.0)
+
 
 
 

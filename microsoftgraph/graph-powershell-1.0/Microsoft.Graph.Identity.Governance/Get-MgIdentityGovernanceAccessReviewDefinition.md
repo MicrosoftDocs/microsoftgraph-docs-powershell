@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceAccessReviewDefinition
 
 ## SYNOPSIS
-Represents the template and scheduling for an access review.
+Read the properties and relationships of an accessReviewScheduleDefinition object.
+To retrieve the instances of the access review series, use the list accessReviewInstance API.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
@@ -38,19 +39,31 @@ Get-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovernance
 ```
 
 ## DESCRIPTION
-Represents the template and scheduling for an access review.
+Read the properties and relationships of an accessReviewScheduleDefinition object.
+To retrieve the instances of the access review series, use the list accessReviewInstance API.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: List the first one hundred access review definitions
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId
-```
-This example shows how to use the Get-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
+Get-MgIdentityGovernanceAccessReviewDefinition -Top 100 -Skip 0 
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will list the first one hundred access review definitions
+
+### Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in a tenant
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceAccessReviewDefinition -Filter "contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')" 
+
+```
+This example will retrieve all access review definitions scoped to all microsoft 365 groups in a tenant
 
 
 ## PARAMETERS
@@ -370,6 +383,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinition)
+
+[https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/accessreviewset-list-definitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewset-list-definitions?view=graph-rest-1.0)
 
 
 

@@ -32,8 +32,6 @@ Remove-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property bucketTaskBoardFormat for planner
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -199,6 +197,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertaskbuckettaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertaskbuckettaskboardformat)
+
+
 
 
 

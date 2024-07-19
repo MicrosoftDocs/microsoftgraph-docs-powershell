@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBetaGroupMemberByRef
 
 ## SYNOPSIS
-Create new navigation property ref to members for groups
+Add a member to a security or Microsoft 365 group.
+When using the API to add multiple members in one request, you can add up to only 20 members.
+The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupMemberByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupMemberByRef?view=graph-powershell-1.0)
@@ -44,12 +46,15 @@ New-MgBetaGroupMemberByRef -InputObject <IGroupsIdentity> -BodyParameter <IRefer
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to members for groups
+Add a member to a security or Microsoft 365 group.
+When using the API to add multiple members in one request, you can add up to only 20 members.
+The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
@@ -57,10 +62,9 @@ $params = @{
 }
 
 New-MgBetaGroupMemberByRef -GroupId $groupId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaGroupMemberByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -307,6 +311,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupmemberbyref)
+
+[https://learn.microsoft.com/graph/api/group-post-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-post-members?view=graph-rest-beta)
 
 
 

@@ -32,8 +32,6 @@ New-MgCommunicationPresence -BodyParameter <IMicrosoftGraphPresence> [-ResponseH
 ## DESCRIPTION
 Create new navigation property to presences for communications
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Activity
@@ -260,6 +258,8 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationpresence)
+
+
 
 
 

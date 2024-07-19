@@ -32,8 +32,6 @@ Remove-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity> 
 ## DESCRIPTION
 Delete navigation property historyItems for users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ActivityHistoryItemId
@@ -227,6 +225,8 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivityhistoryitem](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivityhistoryitem)
+
+
 
 
 

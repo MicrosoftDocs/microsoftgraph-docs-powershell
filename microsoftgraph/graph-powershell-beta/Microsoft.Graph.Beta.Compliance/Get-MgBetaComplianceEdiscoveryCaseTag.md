@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaComplianceEdiscoveryCaseTag
 
 ## SYNOPSIS
-Returns a list of tag objects associated to this case.
+Read the properties and relationships of a tag object.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Returns a list of tag objects associated to this case.
+Read the properties and relationships of a tag object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -332,6 +332,10 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetag)
+
+[https://learn.microsoft.com/graph/api/ediscovery-tag-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-tag-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/ediscovery-case-list-tags?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-case-list-tags?view=graph-rest-beta)
 
 
 

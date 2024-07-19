@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementPartner
 
 ## SYNOPSIS
-Create new navigation property to deviceManagementPartners for deviceManagement
+Create a new deviceManagementPartner object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementPartner?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ New-MgDeviceManagementPartner -BodyParameter <IMicrosoftGraphDeviceManagementPar
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceManagementPartners for deviceManagement
+Create a new deviceManagementPartner object.
 
 ## PARAMETERS
 
@@ -337,6 +337,8 @@ GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignme
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementpartner)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementpartner-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementpartner-create?view=graph-rest-1.0)
 
 
 

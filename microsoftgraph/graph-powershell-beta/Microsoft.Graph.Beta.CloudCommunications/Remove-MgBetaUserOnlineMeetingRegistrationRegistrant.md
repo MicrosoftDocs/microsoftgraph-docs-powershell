@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgBetaUserOnlineMeetingRegistrationRegistrant
 
 ## SYNOPSIS
-Delete navigation property registrants for users
+Cancel an onlineMeeting registration for a meetingRegistrant on behalf of the registrant.
+Only use this method when the allowedRegistrant property of the meetingRegistration object has a value of organization and the registrant's delegated permission was used to enroll.
+When the allowedRegistrant value is everyone, registrants can only use the link in the email they receive to cancel their registration.
 
 ## SYNTAX
 
@@ -28,7 +30,22 @@ Remove-MgBetaUserOnlineMeetingRegistrationRegistrant -InputObject <ICloudCommuni
 ```
 
 ## DESCRIPTION
-Delete navigation property registrants for users
+Cancel an onlineMeeting registration for a meetingRegistrant on behalf of the registrant.
+Only use this method when the allowedRegistrant property of the meetingRegistration object has a value of organization and the registrant's delegated permission was used to enroll.
+When the allowedRegistrant value is everyone, registrants can only use the link in the email they receive to cancel their registration.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+Remove-MgBetaUserOnlineMeetingRegistrationRegistrant -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingRegistrantBaseId $meetingRegistrantBaseId
+
+```
+This example shows how to use the Remove-MgBetaUserOnlineMeetingRegistrationRegistrant Cmdlet.
+
 
 ## PARAMETERS
 
@@ -240,6 +257,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingregistrationregistrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingregistrationregistrant)
 
+[https://learn.microsoft.com/graph/api/meetingregistrant-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/meetingregistrant-delete?view=graph-rest-beta)
 
 
 

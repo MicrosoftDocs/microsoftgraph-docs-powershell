@@ -47,8 +47,6 @@ New-MgBetaOrganization -BodyParameter <IMicrosoftGraphOrganization> [-ResponseHe
 ## DESCRIPTION
 Add new entity to organization
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1299,6 +1297,8 @@ Not nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganization)
+
+
 
 
 

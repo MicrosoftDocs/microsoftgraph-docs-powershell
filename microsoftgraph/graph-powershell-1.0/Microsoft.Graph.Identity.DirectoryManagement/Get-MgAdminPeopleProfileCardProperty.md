@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgAdminPeopleProfileCardProperty
 
 ## SYNOPSIS
-Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
+Retrieve the properties of a profileCardProperty entity.
+The profileCardProperty is identified by its directoryPropertyName property.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
@@ -38,7 +39,11 @@ Get-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManagementI
 ```
 
 ## DESCRIPTION
-Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
+Retrieve the properties of a profileCardProperty entity.
+The profileCardProperty is identified by its directoryPropertyName property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/profilecardproperty-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -316,6 +321,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleprofilecardproperty)
+
+[https://learn.microsoft.com/graph/api/profilecardproperty-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profilecardproperty-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-1.0)
 
 
 

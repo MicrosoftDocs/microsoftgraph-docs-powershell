@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaEducationClassAssignmentSettingGradingScheme
 
 ## SYNOPSIS
-Delete navigation property gradingSchemes for education
+Delete an educationGradingScheme object.
 
 ## SYNTAX
 
@@ -28,7 +28,20 @@ Remove-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducati
 ```
 
 ## DESCRIPTION
-Delete navigation property gradingSchemes for education
+Delete an educationGradingScheme object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Remove-MgBetaEducationClassAssignmentSettingGradingScheme -EducationClassId $educationClassId -EducationGradingSchemeId $educationGradingSchemeId
+
+```
+This example shows how to use the Remove-MgBetaEducationClassAssignmentSettingGradingScheme Cmdlet.
+
 
 ## PARAMETERS
 
@@ -224,6 +237,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentsettinggradingscheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentsettinggradingscheme)
 
+[https://learn.microsoft.com/graph/api/educationgradingscheme-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationgradingscheme-delete?view=graph-rest-beta)
 
 
 

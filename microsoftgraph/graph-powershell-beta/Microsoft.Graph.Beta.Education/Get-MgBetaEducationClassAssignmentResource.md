@@ -8,9 +8,8 @@ schema: 2.0.0
 # Get-MgBetaEducationClassAssignmentResource
 
 ## SYNOPSIS
-Learning objects that are associated with this assignment.
-Only teachers can modify this list.
-Nullable.
+Get the properties of an education assignment resource associated with an assignment.
+Only teachers, students, and applications with application permissions can perform this operation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentResource?view=graph-powershell-1.0)
@@ -41,9 +40,11 @@ Get-MgBetaEducationClassAssignmentResource -InputObject <IEducationIdentity> [-E
 ```
 
 ## DESCRIPTION
-Learning objects that are associated with this assignment.
-Only teachers can modify this list.
-Nullable.
+Get the properties of an education assignment resource associated with an assignment.
+Only teachers, students, and applications with application permissions can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentresource-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get an educationWordResource
@@ -411,6 +412,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentresource)
+
+[https://learn.microsoft.com/graph/api/educationassignmentresource-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignmentresource-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/educationassignment-list-resources?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-list-resources?view=graph-rest-beta)
 
 
 

@@ -42,6 +42,30 @@ Since the administrativeUnit resource supports extensions, you can also use the 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-get-permissions.md)]
 
+## EXAMPLES
+### Example 1: Get an administrative unit
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
+
+```
+This example will get an administrative unit
+
+### Example 2: Get a restricted management administrative unit
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
+
+```
+This example will get a restricted management administrative unit
+
+
 ## PARAMETERS
 
 ### -AdministrativeUnitId
@@ -359,7 +383,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-beta)
-
 
 
 

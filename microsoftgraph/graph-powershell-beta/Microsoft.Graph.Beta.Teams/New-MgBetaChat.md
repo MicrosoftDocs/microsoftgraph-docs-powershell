@@ -18,7 +18,8 @@ Create a new chat object.
 ### CreateExpanded (Default)
 ```
 New-MgBetaChat [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ChatType <String>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>] [-IsHiddenForAllMembers]
  [-LastMessagePreview <IMicrosoftGraphChatMessageInfo>] [-LastUpdatedDateTime <DateTime>]
  [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage[]>]
  [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]
@@ -39,7 +40,7 @@ New-MgBetaChat -BodyParameter <IMicrosoftGraphChat> [-ResponseHeadersVariable <S
 Create a new chat object.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Create a one-on-one chat
 
 ```powershell
 
@@ -51,26 +52,26 @@ $params = @{
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
-		}
+			"owner"
+		)
+		"user@odata.bind" = "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+	}
+	@{
+		"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+		roles = @(
+		"owner"
 	)
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
+}
+)
 }
 
 New-MgBetaChat -BodyParameter $params
 
 ```
-This example shows how to use the New-MgBetaChat Cmdlet.
+This example will create a one-on-one chat
 
-### Example 2: Code snippet
+### Example 2: Create a group chat
 
 ```powershell
 
@@ -83,33 +84,33 @@ $params = @{
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"
-		}
+			"owner"
+		)
+		"user@odata.bind" = "https://graph.microsoft.com/beta/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
+	}
+	@{
+		"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+		roles = @(
+		"owner"
 	)
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
+}
+@{
+	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+	roles = @(
+	"owner"
+)
+"user@odata.bind" = "https://graph.microsoft.com/beta/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"
+}
+)
 }
 
 New-MgBetaChat -BodyParameter $params
 
 ```
-This example shows how to use the New-MgBetaChat Cmdlet.
+This example will create a group chat
 
-### Example 3: Code snippet
+### Example 3: Create a one-on-one chat with installed apps
 
 ```powershell
 
@@ -121,31 +122,62 @@ $params = @{
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
-		}
+			"owner"
+		)
+		"user@odata.bind" = "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+	}
+	@{
+		"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+		roles = @(
+		"owner"
 	)
-	installedApps = @(
-		@{
-			"teamsApp@odata.bind" = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/05F59CEC-A742-4A50-A62E-202A57E478A4"
-		}
-	)
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
+}
+)
+installedApps = @(
+@{
+	"teamsApp@odata.bind" = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/05F59CEC-A742-4A50-A62E-202A57E478A4"
+}
+)
 }
 
 New-MgBetaChat -BodyParameter $params
 
 ```
-This example shows how to use the New-MgBetaChat Cmdlet.
+This example will create a one-on-one chat with installed apps
 
-### Example 4: Code snippet
+### Example 4: Create a one-on-one chat using user principal name
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = @{
+	chatType = "oneOnOne"
+	members = @(
+		@{
+			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+			roles = @(
+			"owner"
+		)
+		"user@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+	}
+	@{
+		"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+		roles = @(
+		"owner"
+	)
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users('alex@contoso.com')"
+}
+)
+}
+
+New-MgBetaChat -BodyParameter $params
+
+```
+This example will create a one-on-one chat using user principal name
+
+### Example 5: Create a group chat with in-tenant guest
 
 ```powershell
 
@@ -158,31 +190,63 @@ $params = @{
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			roles = @(
-				"owner"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			roles = @(
-				"guest"
-			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')"
-		}
+			"owner"
+		)
+		"user@odata.bind" = "https://graph.microsoft.com/beta/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
+	}
+	@{
+		"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+		roles = @(
+		"owner"
 	)
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
+}
+@{
+	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+	roles = @(
+	"guest"
+)
+"user@odata.bind" = "https://graph.microsoft.com/beta/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')"
+}
+)
 }
 
 New-MgBetaChat -BodyParameter $params
 
 ```
-This example shows how to use the New-MgBetaChat Cmdlet.
+This example will create a group chat with in-tenant guest
+
+### Example 6: Create a one-on-one chat with a federated user (outside of own organization)
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = @{
+	chatType = "oneOnOne"
+	members = @(
+		@{
+			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+			roles = @(
+			"owner"
+		)
+		"user@odata.bind" = "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+	}
+	@{
+		"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+		roles = @(
+		"owner"
+	)
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
+	tenantId = "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1"
+}
+)
+}
+
+New-MgBetaChat -BodyParameter $params
+
+```
+This example will create a one-on-one chat with a federated user (outside of own organization)
 
 
 ## PARAMETERS
@@ -223,6 +287,22 @@ chatType
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CreatedBy
+identitySet
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -293,6 +373,22 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsHiddenForAllMembers
+Indicates whether the chat is hidden for all its members.
+Read-only.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -593,6 +689,16 @@ BODYPARAMETER `<IMicrosoftGraphChat>`: chat
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ChatType <String>]`: chatType
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Date and time at which the chat was created.
 Read-only.
   - `[InstalledApps <IMicrosoftGraphTeamsAppInstallation- `[]`>]`: A collection of all the apps in the chat.
@@ -604,6 +710,9 @@ Read-only.
       - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission- `[]`>]`: A collection of resource-specific permissions.
         - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
         - `[PermissionValue <String>]`: The name of the resource-specific permission.
+    - `[ScopeInfo <IMicrosoftGraphTeamsAppInstallationScopeInfo>]`: teamsAppInstallationScopeInfo
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Scope <String>]`: teamsAppInstallationScopes
     - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -634,15 +743,6 @@ Bytes for the hosted content (such as images).
 Content type, such as image/png, image/jpg.
           - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Application <IMicrosoftGraphIdentity>]`: identity
-            - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-            - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
-          - `[Device <IMicrosoftGraphIdentity>]`: identity
-          - `[User <IMicrosoftGraphIdentity>]`: identity
         - `[DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>]`: Dashboard cards specified in the Teams app manifest.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -679,6 +779,8 @@ Required.
       - `[DistributionMethod <String>]`: teamsAppDistributionMethod
       - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
     - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
+  - `[IsHiddenForAllMembers <Boolean?>]`: Indicates whether the chat is hidden for all its members.
+Read-only.
   - `[LastMessagePreview <IMicrosoftGraphChatMessageInfo>]`: chatMessageInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -791,9 +893,11 @@ This property is read-only.
       - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
       - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+        - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+        - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
+Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
         - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -888,7 +992,9 @@ Required.
     - `[MessageId <String>]`: 
     - `[SortOrderIndex <String>]`: Index of the order used for sorting tabs.
     - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
-    - `[TeamsAppId <String>]`: 
+    - `[TeamsAppId <String>]`: App definition identifier of the tab.
+This value can't be changed after tab creation.
+Because this property is deprecated, we recommend expanding teamsApp to retrieve the application that is linked to the tab.
     - `[WebUrl <String>]`: Deep link URL of the tab instance.
 Read only.
   - `[TenantId <String>]`: The identifier of the tenant in which the chat was created.
@@ -903,6 +1009,17 @@ Only available for group chats.
 The URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
+
 INSTALLEDAPPS <IMicrosoftGraphTeamsAppInstallation- `[]`>: A collection of all the apps in the chat.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -912,6 +1029,9 @@ Read-only.
     - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission- `[]`>]`: A collection of resource-specific permissions.
       - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
       - `[PermissionValue <String>]`: The name of the resource-specific permission.
+  - `[ScopeInfo <IMicrosoftGraphTeamsAppInstallationScopeInfo>]`: teamsAppInstallationScopeInfo
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Scope <String>]`: teamsAppInstallationScopes
   - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1118,9 +1238,11 @@ This property is read-only.
     - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
     - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+      - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+      - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
+Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
       - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1296,9 +1418,11 @@ This property is read-only.
       - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
       - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+        - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+        - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
+Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
         - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1423,7 +1547,9 @@ Required.
     - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
     - `[DistributionMethod <String>]`: teamsAppDistributionMethod
     - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
-  - `[TeamsAppId <String>]`: 
+  - `[TeamsAppId <String>]`: App definition identifier of the tab.
+This value can't be changed after tab creation.
+Because this property is deprecated, we recommend expanding teamsApp to retrieve the application that is linked to the tab.
   - `[WebUrl <String>]`: Deep link URL of the tab instance.
 Read only.
 

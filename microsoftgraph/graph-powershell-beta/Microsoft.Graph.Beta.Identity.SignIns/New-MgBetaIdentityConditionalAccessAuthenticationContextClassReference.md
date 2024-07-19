@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 
 ## SYNOPSIS
-Create new navigation property to authenticationContextClassReferences for identity
+Create a new authenticationContextClassReference.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-1.0)
@@ -31,19 +31,26 @@ New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 ```
 
 ## DESCRIPTION
-Create new navigation property to authenticationContextClassReferences for identity
+Create a new authenticationContextClassReference.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
-```
-This example shows how to use the New-MgBetaBetaIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
+$params = @{
+	id = "c1"
+	displayName = "Contoso medium"
+	description = "Medium protection level defined for Contoso policy"
+	isAvailable = $true
+}
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
 
 
 ## PARAMETERS
@@ -255,6 +262,8 @@ Supports $filter (eq).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationcontextclassreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationcontextclassreference)
+
+[https://learn.microsoft.com/graph/api/conditionalaccessroot-post-authenticationcontextclassreferences?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-authenticationcontextclassreferences?view=graph-rest-beta)
 
 
 

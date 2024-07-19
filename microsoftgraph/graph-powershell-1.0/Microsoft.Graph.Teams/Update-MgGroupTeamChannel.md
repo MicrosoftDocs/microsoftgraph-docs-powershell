@@ -56,8 +56,6 @@ Update-MgGroupTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property channels in groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14810,6 +14808,8 @@ Read only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannel)
+
+
 
 
 

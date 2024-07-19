@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatIntelligenceWhoisRecord
 
 ## SYNOPSIS
-A list of whoisRecord objects.
+Get the specified whoisRecord resource.
+Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
+- Specify an id value to get the corresponding whoisRecord.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-1.0)
@@ -38,7 +40,22 @@ Get-MgBetaSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-A list of whoisRecord objects.
+Get the specified whoisRecord resource.
+Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
+- Specify an id value to get the corresponding whoisRecord.
+
+## EXAMPLES
+### Example 1: Get the whoisRecord resource using its id property
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceWhoisRecord -WhoisRecordId $whoisRecordId
+
+```
+This example will get the whoisrecord resource using its id property
+
 
 ## PARAMETERS
 
@@ -337,6 +354,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -347,6 +365,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -373,6 +392,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencewhoisrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencewhoisrecord)
 
+[https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/security-threatintelligence-list-whoisrecords?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-threatintelligence-list-whoisrecords?view=graph-rest-beta)
 
 
 

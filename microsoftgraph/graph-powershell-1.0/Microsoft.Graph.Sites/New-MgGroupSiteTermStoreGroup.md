@@ -82,8 +82,6 @@ New-MgGroupSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to groups for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -528,6 +526,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitetermstoregroup)
+
+
 
 
 

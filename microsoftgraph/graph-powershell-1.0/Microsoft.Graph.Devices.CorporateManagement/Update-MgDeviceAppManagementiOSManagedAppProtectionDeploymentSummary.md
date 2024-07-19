@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 
 ## SYNOPSIS
-Update the navigation property deploymentSummary in deviceAppManagement
+Update the properties of a managedAppPolicyDeploymentSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary?view=graph-powershell-beta)
@@ -51,7 +51,7 @@ Update-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 ```
 
 ## DESCRIPTION
-Update the navigation property deploymentSummary in deviceAppManagement
+Update the properties of a managedAppPolicyDeploymentSummary object.
 
 ## PARAMETERS
 
@@ -360,6 +360,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementiosmanagedappprotectiondeploymentsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementiosmanagedappprotectiondeploymentsummary)
+
+[https://learn.microsoft.com/graph/api/intune-mam-managedapppolicydeploymentsummary-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedapppolicydeploymentsummary-update?view=graph-rest-1.0)
 
 
 

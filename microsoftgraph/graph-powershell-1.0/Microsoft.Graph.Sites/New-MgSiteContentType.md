@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteContentType
 
 ## SYNOPSIS
-Create new navigation property to contentTypes for sites
+Create a new contentType in a site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentType?view=graph-powershell-beta)
@@ -56,7 +56,7 @@ New-MgSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Create new navigation property to contentTypes for sites
+Create a new contentType in a site.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -756,7 +756,7 @@ See drive resource for values.
 Read-only.
     - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-    - `[Path <String>]`: Path that can be used to navigate to the item.
+    - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
     - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
     - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -987,7 +987,7 @@ See drive resource for values.
 Read-only.
     - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-    - `[Path <String>]`: Path that can be used to navigate to the item.
+    - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
     - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
     - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -1219,7 +1219,7 @@ See drive resource for values.
 Read-only.
     - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-    - `[Path <String>]`: Path that can be used to navigate to the item.
+    - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
     - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
     - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -1769,7 +1769,7 @@ See drive resource for values.
 Read-only.
   - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-  - `[Path <String>]`: Path that can be used to navigate to the item.
+  - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
   - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
   - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -1840,6 +1840,8 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecontenttype)
+
+[https://learn.microsoft.com/graph/api/site-post-contenttypes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-post-contenttypes?view=graph-rest-1.0)
 
 
 
