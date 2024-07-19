@@ -9,15 +9,13 @@ Param(
 
 function Start-Copy {
 
-    
-    $ModulePrefix = "Microsoft.Graph"
-
     if (Test-Path $CommandMetadataPath) {
         $CommandMetadataContent = Get-Content $CommandMetadataPath | ConvertFrom-Json
         $CommandMetadataContent | ForEach-Object {
             $ModuleName = $_.Module
             $GraphProfile = $_.ApiVersion
             $Command = $_.Command
+            $ModulePrefix = "Microsoft.Graph"
             $GraphProfilePath = "graph-powershell-1.0"
             if ($GraphProfile -eq "beta") {
                 $GraphProfilePath = "graph-powershell-beta"
