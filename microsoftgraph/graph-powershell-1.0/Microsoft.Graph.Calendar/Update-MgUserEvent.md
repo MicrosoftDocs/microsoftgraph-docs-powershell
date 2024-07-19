@@ -81,9 +81,9 @@ Update the navigation property events in users
 ## EXAMPLES
 
 ### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Calendar
-```
+
 
 $params = @{
 	originalStartTimeZone = "originalStartTimeZone-value"
@@ -105,7 +105,7 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-
+```
 ## PARAMETERS
 
 ### -AdditionalProperties

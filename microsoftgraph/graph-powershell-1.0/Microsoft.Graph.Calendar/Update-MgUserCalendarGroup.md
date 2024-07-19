@@ -51,9 +51,8 @@ Update the navigation property calendarGroups in users
 ## EXAMPLES
 
 ### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	name = "name-value"
@@ -61,7 +60,7 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserCalendarGroup -UserId $userId -CalendarGroupId $calendarGroupId -BodyParameter $params
-
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
