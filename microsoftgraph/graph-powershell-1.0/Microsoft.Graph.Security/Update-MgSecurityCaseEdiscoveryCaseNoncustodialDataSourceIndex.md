@@ -33,13 +33,17 @@ Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex -InputObject <ISe
 Trigger an indexOperation to make a non-custodial data source and its associated data source searchable.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
+
+```
+This example shows how to use the Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex Cmdlet.
+
 
 ## PARAMETERS
 

@@ -32,44 +32,6 @@ Remove-MgDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-ResponseHeade
 ## DESCRIPTION
 Delete entity from drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Files
-```
-
-# A UPN can also be used as -UserId.
-Get-MgUserDefaultDrive -UserId $userId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgUserDefaultDrive -UserId $userId
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgGroupDefaultDrive -GroupId $groupId
-
-### EXAMPLE 4
-```
-Import-Module Microsoft.Graph.Sites
-```
-
-Get-MgSiteDefaultDrive -SiteId $siteId
-
-### EXAMPLE 5
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgDrive -DriveId $driveId
-
 ## PARAMETERS
 
 ### -DriveId
@@ -254,6 +216,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrive)
+
 
 
 

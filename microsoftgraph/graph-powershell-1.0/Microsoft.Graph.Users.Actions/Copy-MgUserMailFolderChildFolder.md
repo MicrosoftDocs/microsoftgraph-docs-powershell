@@ -51,20 +51,6 @@ Copy a mailfolder and its contents to another mailfolder.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-copy-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Users.Actions
-```
-
-$params = @{
-	DestinationId = "destinationId-value"
-}
-
-# A UPN can also be used as -UserId.
-Copy-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -308,6 +294,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfolderchildfolder)
 
 [https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-1.0)
+
 
 
 

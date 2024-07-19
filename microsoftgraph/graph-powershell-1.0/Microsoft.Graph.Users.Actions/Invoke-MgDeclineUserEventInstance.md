@@ -57,32 +57,6 @@ For more information on how to propose a time, and how to receive and accept a n
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-decline-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Users.Actions
-```
-
-$params = @{
-	Comment = "I won't be able to make this week.
-How about next week?"
-	SendResponse = $true
-	ProposedNewTime = @{
-		Start = @{
-			DateTime = "2019-12-02T18:00:00"
-			TimeZone = "Pacific Standard Time"
-		}
-		End = @{
-			DateTime = "2019-12-02T19:00:00"
-			TimeZone = "Pacific Standard Time"
-		}
-	}
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgDeclineUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -390,6 +364,7 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdeclineusereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdeclineusereventinstance)
 
 [https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-1.0)
+
 
 
 

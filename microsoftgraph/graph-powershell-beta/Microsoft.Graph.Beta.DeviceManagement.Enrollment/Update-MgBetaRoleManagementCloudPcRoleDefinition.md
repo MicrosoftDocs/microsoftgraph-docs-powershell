@@ -66,6 +66,7 @@ Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 $params = @{
 	description = "Update basic properties and permission of application registrations"
+### Example 2
 	rolePermissions = @(
 		@{
 			allowedResourceActions = @(
@@ -77,6 +78,9 @@ $params = @{
 }
 
 Update-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
 
 ```
 This example shows how to use the Update-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.

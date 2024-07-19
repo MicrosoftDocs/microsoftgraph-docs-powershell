@@ -43,13 +43,17 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <IId
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
 
 ## EXAMPLES
+### Example 1: Retrieve a decision on an accessReviewInstance
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId
+
+```
+This example will retrieve a decision on an accessreviewinstance
+
 
 ## PARAMETERS
 

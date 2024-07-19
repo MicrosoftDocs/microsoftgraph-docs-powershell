@@ -92,13 +92,15 @@ Update-MgApplication -InputObject <IApplicationsIdentity> -BodyParameter <IMicro
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
 ## EXAMPLES
+### Example 1: Update an application
 
-### EXAMPLE 1
-```
+```powershell
 Update-MgApplication `
   -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7' `
   -DisplayName 'Testing App'
 ```
+
+This example updates the specified application's display name.
 
 ## PARAMETERS
 

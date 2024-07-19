@@ -48,15 +48,21 @@ Set the verifiedPublisher on an application.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
+
 $params = @{
-	VerifiedPublisherId = "1234567"
+	verifiedPublisherId = "1234567"
 }
+
 Set-MgApplicationVerifiedPublisher -ApplicationId $applicationId -BodyParameter $params
+
 ```
+This example shows how to use the Set-MgApplicationVerifiedPublisher Cmdlet.
+
 
 ## PARAMETERS
 

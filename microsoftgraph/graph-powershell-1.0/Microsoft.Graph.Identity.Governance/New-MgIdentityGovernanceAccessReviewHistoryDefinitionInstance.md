@@ -52,15 +52,6 @@ New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance -InputObject <IIde
 ## DESCRIPTION
 Create new navigation property to instances for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Identity.Governance
-```
-
-Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId
-
 ## PARAMETERS
 
 ### -AccessReviewHistoryDefinitionId
@@ -431,6 +422,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinitioninstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinitioninstance)
+
 
 
 

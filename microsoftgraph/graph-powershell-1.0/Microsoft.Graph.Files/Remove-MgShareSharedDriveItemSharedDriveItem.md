@@ -32,29 +32,6 @@ Remove-MgShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [-IfM
 ## DESCRIPTION
 Delete entity from shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
-
 ## PARAMETERS
 
 ### -Headers
@@ -239,6 +216,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgshareshareddriveitemshareddriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgshareshareddriveitemshareddriveitem)
+
 
 
 

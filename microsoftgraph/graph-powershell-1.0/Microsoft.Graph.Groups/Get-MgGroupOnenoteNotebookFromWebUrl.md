@@ -50,20 +50,6 @@ Get-MgGroupOnenoteNotebookFromWebUrl -InputObject <IGroupsIdentity>
 Retrieve the properties and relationships of a notebook object by using its URL path.
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Users.Actions
-```
-
-$params = @{
-	WebUrl = "webUrl value"
-}
-
-# A UPN can also be used as -UserId.
-Get-MgUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -288,6 +274,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouponenotenotebookfromweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouponenotenotebookfromweburl)
 
 [https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0)
+
 
 
 

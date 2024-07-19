@@ -61,17 +61,21 @@ After the assignment is published, an immutable copy of the rubric is made that 
 That rubric can be retrieved using GET /education/classes/{class-id}/assignments/{assignment-id}/rubric, but it cannot be updated.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	displayName = "Example Credit Rubric after display name patch"
 }
 
 Update-MgEducationMeRubric -EducationRubricId $educationRubricId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgEducationMeRubric Cmdlet.
+
 
 ## PARAMETERS
 

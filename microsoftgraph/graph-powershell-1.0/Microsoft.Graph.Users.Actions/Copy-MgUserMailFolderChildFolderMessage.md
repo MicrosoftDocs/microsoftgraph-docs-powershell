@@ -53,20 +53,6 @@ Copy a message to a folder within the user's mailbox.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-copy-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Users.Actions
-```
-
-$params = @{
-	DestinationId = "destinationId-value"
-}
-
-# A UPN can also be used as -UserId.
-Copy-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -325,6 +311,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-1.0)
+
 
 
 

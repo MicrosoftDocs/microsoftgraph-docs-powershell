@@ -40,20 +40,28 @@ Get-MgSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property
 Retrieve properties and relationships for a site resource.A site resource represents a team site in SharePoint.
 
 ## EXAMPLES
+### Example 1: List sites using query parameters
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
-Get-MgSite -Property "siteCollection,webUrl" -Filter "siteCollection/root ne null"
+Get-MgSite -Property "siteCollection,webUrl" -Filter "siteCollection/root ne null" 
 
-### EXAMPLE 2
 ```
+This example will list sites using query parameters
+
+### Example 2: List all sites
+
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSite
+
+```
+This example will list all sites
+
 
 ## PARAMETERS
 

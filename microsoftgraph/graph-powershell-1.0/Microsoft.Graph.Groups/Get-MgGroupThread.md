@@ -41,13 +41,17 @@ Get-MgGroupThread -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-
 Get a thread object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
-Get-MgGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId
+Get-MgGroupThread -GroupId $groupId
+
+```
+This example shows how to use the Get-MgGroupThread Cmdlet.
+
 
 ## PARAMETERS
 

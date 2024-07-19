@@ -61,37 +61,6 @@ New-MgGroupDrive -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDr
 ## DESCRIPTION
 Create new navigation property to drives for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgGroupDrive -GroupId $groupId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Sites
-```
-
-Get-MgSiteDrive -SiteId $siteId
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgUserDrive -UserId $userId
-
-### EXAMPLE 4
-```
-Import-Module Microsoft.Graph.Files
-```
-
-# A UPN can also be used as -UserId.
-Get-MgUserDrive -UserId $userId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -43435,6 +43404,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrive)
+
 
 
 
