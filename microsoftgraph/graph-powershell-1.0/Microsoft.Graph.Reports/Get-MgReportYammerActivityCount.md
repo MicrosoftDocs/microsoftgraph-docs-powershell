@@ -32,20 +32,17 @@ Get-MgReportYammerActivityCount -InputObject <IReportsIdentity> -OutFile <String
 Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportYammerActivityCount -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportYammerActivityCount Cmdlet.
+
 
 ## PARAMETERS
 

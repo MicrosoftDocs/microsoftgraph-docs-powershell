@@ -27,20 +27,17 @@ List the tenant users who have yielded to attacks more than once in attack simul
 This function supports @odata.nextLink for pagination.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportSecurityAttackSimulationRepeatOffender
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportSecurityAttackSimulationRepeatOffender Cmdlet.
+
 
 ## PARAMETERS
 

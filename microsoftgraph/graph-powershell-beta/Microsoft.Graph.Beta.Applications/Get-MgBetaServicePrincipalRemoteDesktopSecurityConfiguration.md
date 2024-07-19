@@ -37,16 +37,17 @@ Use this configuration to view the Microsoft Entra ID Remote Desktop Services (R
 Additionally you can view any targetDeviceGroups that have been configured for SSO.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Applications
+
+Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -ServicePrincipalId $servicePrincipalId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

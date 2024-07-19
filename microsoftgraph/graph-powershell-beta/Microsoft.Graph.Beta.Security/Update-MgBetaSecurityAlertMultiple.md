@@ -31,17 +31,17 @@ Update-MgBetaSecurityAlertMultiple
 Update multiple alerts in one request instead of multiple requests.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	value = @(
 		@{
 			assignedTo = "String"
-			closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+			closedDateTime = [System.DateTime]::Parse("String (timestamp)")
 			comments = @(
 			"String"
 		)
@@ -64,6 +64,10 @@ $params = @{
 }
 
 Update-MgBetaSecurityAlertMultiple -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityAlertMultiple Cmdlet.
+
 
 ## PARAMETERS
 

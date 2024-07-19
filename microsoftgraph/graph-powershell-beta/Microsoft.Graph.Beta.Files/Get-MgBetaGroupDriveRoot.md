@@ -34,22 +34,6 @@ Get-MgBetaGroupDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[
 The root folder of the drive.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -218,6 +202,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveroot)
+
 
 
 

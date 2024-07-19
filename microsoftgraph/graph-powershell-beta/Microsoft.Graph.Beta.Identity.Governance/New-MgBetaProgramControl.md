@@ -102,17 +102,23 @@ This links an access review to a program.
 Prior to making this request, the caller must have previously
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 $params = @{
-	ControlId = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"
-	ControlTypeId = "6e4f3d20-c5c3-407f-9695-8460952bcc68"
-	ProgramId = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"
+	controlId = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"
+	controlTypeId = "6e4f3d20-c5c3-407f-9695-8460952bcc68"
+	programId = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"
 }
+
 New-MgBetaProgramControl -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaProgramControl Cmdlet.
+
 
 ## PARAMETERS
 

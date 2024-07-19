@@ -62,18 +62,6 @@ Update-MgEducationMeAssignment -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property assignments in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddedStudentAction
@@ -866,6 +854,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignment)
+
 
 
 

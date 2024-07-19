@@ -36,16 +36,17 @@ This action sets the isPinned property to true for an educationModule.
 Only teachers can perform this action and only one module at a time can be pinned in the class work list.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Education
+
+Invoke-MgPinEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgPinEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

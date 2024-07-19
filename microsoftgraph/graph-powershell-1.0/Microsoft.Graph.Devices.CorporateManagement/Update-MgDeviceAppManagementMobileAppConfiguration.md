@@ -61,16 +61,36 @@ Update-MgDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorpora
 Update the properties of a iosMobileAppConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.iosMobileAppConfiguration"
+	targetedMobileApps = @(
+	"Targeted Mobile Apps value"
+)
+description = "Description value"
+displayName = "Display Name value"
+version = 7
+encodedSettingXml = "ZW5jb2RlZFNldHRpbmdYbWw="
+settings = @(
+	@{
+		"@odata.type" = "microsoft.graph.appConfigurationSettingItem"
+		appConfigKey = "App Config Key value"
+		appConfigKeyType = "integerType"
+		appConfigKeyValue = "App Config Key Value value"
+	}
+)
+}
+
+Update-MgDeviceAppManagementMobileAppConfiguration -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgDeviceAppManagementMobileAppConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

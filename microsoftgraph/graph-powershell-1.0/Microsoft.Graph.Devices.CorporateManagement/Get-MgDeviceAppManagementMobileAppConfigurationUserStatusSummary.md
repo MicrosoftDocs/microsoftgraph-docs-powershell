@@ -35,16 +35,17 @@ Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary
 Read properties and relationships of the managedDeviceMobileAppConfigurationUserSummary object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary Cmdlet.
+
 
 ## PARAMETERS
 

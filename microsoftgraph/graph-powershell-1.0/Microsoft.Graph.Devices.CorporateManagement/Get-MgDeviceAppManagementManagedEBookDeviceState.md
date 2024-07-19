@@ -41,16 +41,17 @@ Get-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorporate
 Read properties and relationships of the deviceInstallState object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementManagedEBookDeviceState -ManagedEBookId $managedEBookId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDeviceAppManagementManagedEBookDeviceState Cmdlet.
+
 
 ## PARAMETERS
 

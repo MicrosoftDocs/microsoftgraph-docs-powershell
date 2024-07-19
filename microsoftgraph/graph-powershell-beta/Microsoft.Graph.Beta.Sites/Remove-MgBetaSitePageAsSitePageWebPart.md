@@ -33,16 +33,17 @@ Remove-MgBetaSitePageAsSitePageWebPart -InputObject <ISitesIdentity> [-IfMatch <
 Delete a webPart object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Sites
+
+Remove-MgBetaSitePageAsSitePageWebPart -SiteId $siteId -BaseSitePageId $baseSitePageId -WebPartId $webPartId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaSitePageAsSitePageWebPart Cmdlet.
+
 
 ## PARAMETERS
 

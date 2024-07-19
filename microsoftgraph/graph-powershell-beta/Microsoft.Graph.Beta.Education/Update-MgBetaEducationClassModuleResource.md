@@ -53,16 +53,23 @@ Only teachers can perform this operation.
 The only one property that can be updated is displayName, for all resource types.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Education
+
+$params = @{
+	resource = @{
+		displayName = "new pdf file patched.pdf"
+	}
+}
+
+Update-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaEducationClassModuleResource Cmdlet.
+
 
 ## PARAMETERS
 

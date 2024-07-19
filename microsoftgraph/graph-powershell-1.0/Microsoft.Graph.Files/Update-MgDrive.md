@@ -61,44 +61,6 @@ Update-MgDrive -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDriv
 ## DESCRIPTION
 Update entity in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Files
-```
-
-# A UPN can also be used as -UserId.
-Get-MgUserDefaultDrive -UserId $userId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgUserDefaultDrive -UserId $userId
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgGroupDefaultDrive -GroupId $groupId
-
-### EXAMPLE 4
-```
-Import-Module Microsoft.Graph.Sites
-```
-
-Get-MgSiteDefaultDrive -SiteId $siteId
-
-### EXAMPLE 5
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgDrive -DriveId $driveId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -43442,6 +43404,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrive)
+
 
 
 

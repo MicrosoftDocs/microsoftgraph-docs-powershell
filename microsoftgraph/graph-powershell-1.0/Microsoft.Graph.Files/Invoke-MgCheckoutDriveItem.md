@@ -33,12 +33,17 @@ Invoke-MgCheckoutDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariab
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
+
 Invoke-MgCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
+
 ```
+This example shows how to use the Invoke-MgCheckoutDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

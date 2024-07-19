@@ -41,16 +41,39 @@ Get-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty
 Retrieve the properties and relationships of a print job.
 
 ## EXAMPLES
+### Example 1: Get print job
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+Get-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId
+
 ```
-{{ Add code here }}
+This example will get print job
+
+### Example 2: Get print job with task list
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+Get-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "tasks" 
+
 ```
+This example will get print job with task list
+
+### Example 3: Get a print job and its associated document data
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+Get-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "documents" 
+
+```
+This example will get a print job and its associated document data
+
 
 ## PARAMETERS
 

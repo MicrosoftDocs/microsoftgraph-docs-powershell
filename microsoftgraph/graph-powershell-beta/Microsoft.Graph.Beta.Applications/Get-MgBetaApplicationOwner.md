@@ -26,13 +26,17 @@ Get-MgBetaApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] 
 Retrieve a list of owners for an application that are directoryObject objects.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Get-MgBetaApplicationOwner -ApplicationId $applicationId
+
+```
+This example shows how to use the Get-MgBetaApplicationOwner Cmdlet.
+
 
 ## PARAMETERS
 

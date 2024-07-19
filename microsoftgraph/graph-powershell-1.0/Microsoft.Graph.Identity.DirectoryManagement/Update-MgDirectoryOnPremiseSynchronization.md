@@ -48,16 +48,29 @@ Update-MgDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryManag
 Update the properties of an onPremisesDirectorySynchronization object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = @{
+	configuration = @{
+		accidentalDeletionPrevention = @{
+			synchronizationPreventionType = "enabledForCount"
+			alertThreshold = 500
+		}
+	}
+	features = @{
+		groupWriteBackEnabled = $true
+	}
+}
+
+Update-MgDirectoryOnPremiseSynchronization -OnPremisesDirectorySynchronizationId $onPremisesDirectorySynchronizationId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgDirectoryOnPremiseSynchronization Cmdlet.
+
 
 ## PARAMETERS
 

@@ -31,16 +31,17 @@ Get the list of password-based single sign-on credentials for a group.
 This API returns the encrypted passwords as null.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Groups
+
+Get-MgBetaGroupPasswordSingleSignOnCredential -GroupId $groupId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaGroupPasswordSingleSignOnCredential Cmdlet.
+
 
 ## PARAMETERS
 

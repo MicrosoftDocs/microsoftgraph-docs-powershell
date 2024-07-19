@@ -33,16 +33,17 @@ Invoke-MgRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-Response
 Retry the group service provisioning.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Groups
+
+Invoke-MgRetryGroupServiceProvisioning -GroupId $groupId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgRetryGroupServiceProvisioning Cmdlet.
+
 
 ## PARAMETERS
 

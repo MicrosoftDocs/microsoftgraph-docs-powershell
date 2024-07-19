@@ -33,20 +33,17 @@ Get-MgReportOffice365GroupActivityGroupCount -InputObject <IReportsIdentity> -Ou
 Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportOffice365GroupActivityGroupCount -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportOffice365GroupActivityGroupCount Cmdlet.
+
 
 ## PARAMETERS
 

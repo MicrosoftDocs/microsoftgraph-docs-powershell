@@ -33,20 +33,17 @@ Remove-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIden
 Deletes a windows10TeamGeneralConfiguration.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Remove-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId $deviceConfigurationId
 
-{{ Add output here }}
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

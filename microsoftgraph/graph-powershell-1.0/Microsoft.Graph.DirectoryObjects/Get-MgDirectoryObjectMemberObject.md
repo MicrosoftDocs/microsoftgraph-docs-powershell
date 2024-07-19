@@ -56,17 +56,21 @@ Note: Only users and role-enabled groups can be members of directory roles.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getmemberobjects-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 $params = @{
 	securityEnabledOnly = $true
 }
 
 Get-MgDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDirectoryObjectMemberObject Cmdlet.
+
 
 ## PARAMETERS
 

@@ -48,21 +48,6 @@ Invoke-MgBetaAcceptGroupEvent -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Accept the specified event in a user calendar.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Actions
-```
-
-$params = @{
-	Comment = "comment-value"
-	SendResponse = $true
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgBetaAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -338,6 +323,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaacceptgroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaacceptgroupevent)
 
 [https://learn.microsoft.com/graph/api/event-accept?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-accept?view=graph-rest-beta)
+
 
 
 

@@ -33,16 +33,17 @@ Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentitySig
 Get the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -B2xIdentityUserFlowId $b2xIdentityUserFlowId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder Cmdlet.
+
 
 ## PARAMETERS
 

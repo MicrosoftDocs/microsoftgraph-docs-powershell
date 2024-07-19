@@ -48,20 +48,17 @@ Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration [-Re
 An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration -CustomAuthenticationExtensionId $customAuthenticationExtensionId
 
-{{ Add output here }}
+```
+This example shows how to use the Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

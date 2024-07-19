@@ -32,16 +32,6 @@ Invoke-MgDismissGroupCalendarEventReminder -InputObject <IGroupsIdentity> [-Resp
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Users.Actions
-```
-
-# A UPN can also be used as -UserId.
-Invoke-MgDismissUserEventReminder -UserId $userId -EventId $eventId
-
 ## PARAMETERS
 
 ### -EventId
@@ -245,6 +235,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgdismissgroupcalendareventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgdismissgroupcalendareventreminder)
 
 [https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-1.0)
+
 
 
 

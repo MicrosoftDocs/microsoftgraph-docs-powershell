@@ -41,16 +41,6 @@ Alternatively, send a new message in a single operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-send-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Actions
-```
-
-# A UPN can also be used as -UserId.
-Send-MgBetaUserMessage -UserId $userId -MessageId $messageId
-
 ## PARAMETERS
 
 ### -Headers
@@ -269,6 +259,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermailfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-send?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-send?view=graph-rest-beta)
+
 
 
 

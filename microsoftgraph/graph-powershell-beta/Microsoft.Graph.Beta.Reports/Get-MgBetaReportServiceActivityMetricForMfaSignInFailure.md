@@ -34,16 +34,17 @@ Get the number of times users fail to complete interactive MFA sign-ins using th
 Sign-in failures happen, for example, when users abandon or cancel MFA requests, or refresh MFA sessions without doing interactive MFA.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportServiceActivityMetricForMfaSignInFailure
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaReportServiceActivityMetricForMfaSignInFailure Cmdlet.
+
 
 ## PARAMETERS
 

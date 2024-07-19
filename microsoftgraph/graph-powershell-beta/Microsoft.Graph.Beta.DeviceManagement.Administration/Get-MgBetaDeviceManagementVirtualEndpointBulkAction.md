@@ -38,16 +38,17 @@ Get-MgBetaDeviceManagementVirtualEndpointBulkAction -InputObject <IDeviceManagem
 Read the properties and relationships of a cloudPcBulkAction object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointBulkAction
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointBulkAction Cmdlet.
+
 
 ## PARAMETERS
 

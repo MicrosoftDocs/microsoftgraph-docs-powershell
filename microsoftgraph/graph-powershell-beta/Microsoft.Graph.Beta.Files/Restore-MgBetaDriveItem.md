@@ -49,20 +49,24 @@ Restore-MgBetaDriveItem -InputObject <IFilesIdentity>
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Files
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	parentReference = @{
+		id = "String"
+	}
+	name = "String"
+}
 
-{{ Add output here }}
+Restore-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Restore-MgBetaDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

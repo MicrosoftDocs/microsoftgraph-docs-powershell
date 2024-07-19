@@ -38,16 +38,23 @@ This action sets the targeted service principal account's risk level to none.
 You can dismiss up to 60 service principal accounts in one request.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	servicePrincipalIds = @(
+	"9089a539-a539-9089-39a5-899039a58990"
+)
+}
+
+Invoke-MgDismissRiskyServicePrincipal -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgDismissRiskyServicePrincipal Cmdlet.
+
 
 ## PARAMETERS
 

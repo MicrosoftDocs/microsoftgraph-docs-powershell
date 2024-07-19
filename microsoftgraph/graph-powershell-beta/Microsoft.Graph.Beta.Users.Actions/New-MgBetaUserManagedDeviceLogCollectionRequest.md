@@ -47,22 +47,6 @@ New-MgBetaUserManagedDeviceLogCollectionRequest -InputObject <IUsersActionsIdent
 ## DESCRIPTION
 Invoke action createDeviceLogCollectionRequest
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -309,6 +293,7 @@ TEMPLATETYPE `<IMicrosoftGraphDeviceLogCollectionRequest>`: Windows Log Collecti
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermanageddevicelogcollectionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermanageddevicelogcollectionrequest)
+
 
 
 

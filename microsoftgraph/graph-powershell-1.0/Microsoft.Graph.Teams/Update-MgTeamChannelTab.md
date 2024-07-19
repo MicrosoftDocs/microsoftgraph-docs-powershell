@@ -50,17 +50,21 @@ Update-MgTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 Update the navigation property tabs in teams
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "My Contoso Tab - updated"
 }
 
 Update-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -TeamsTabId $teamsTabId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTeamChannelTab Cmdlet.
+
 
 ## PARAMETERS
 

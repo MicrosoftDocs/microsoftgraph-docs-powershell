@@ -25,13 +25,17 @@ Get-MgPolicyAuthorizationPolicy [-ExpandProperty <String[]>] [-Property <String[
 The policy that controls Microsoft Entra authorization settings.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyAuthorizationPolicy
+
+```
+This example shows how to use the Get-MgPolicyAuthorizationPolicy Cmdlet.
+
 
 ## PARAMETERS
 

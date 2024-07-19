@@ -56,25 +56,6 @@ The file can then be added as a default file or template via a POST operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Sites
-```
-
-$params = @{
-	SourceFile = @{
-		SharepointIds = @{
-			ListId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
-			ListItemId = "2"
-		}
-	}
-	DestinationFileName = "newname.txt"
-}
-
-Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -406,6 +387,7 @@ For OneDrive, this property is not populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdrivelistcontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdrivelistcontenttypetodefaultcontentlocation)
 
 [https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0)
+
 
 
 

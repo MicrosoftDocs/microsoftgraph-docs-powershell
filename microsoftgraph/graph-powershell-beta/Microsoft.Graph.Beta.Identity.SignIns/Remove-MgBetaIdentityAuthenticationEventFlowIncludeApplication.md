@@ -33,16 +33,17 @@ Remove or unlink an application from an external identities self-service sign-up
 This disables the authentication experience that's defined by the user flow for the application.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication -AuthenticationEventsFlowId $authenticationEventsFlowId -AuthenticationConditionApplicationAppId $authenticationConditionApplicationAppId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication Cmdlet.
+
 
 ## PARAMETERS
 

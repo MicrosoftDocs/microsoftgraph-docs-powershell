@@ -51,20 +51,24 @@ Join-MgBetaSiteContentTypeWithHubSite -InputObject <ISitesIdentity>
 Invoke action associateWithHubSites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	hubSiteUrls = @(
-		"https://graph.microsoft.com/beta/sites/id"
-	)
-	propagateToExistingLists = $false
+	"https://graph.microsoft.com/beta/sites/id"
+)
+propagateToExistingLists = $false
 }
 
 Join-MgBetaSiteContentTypeWithHubSite -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+
+```
+This example shows how to use the Join-MgBetaSiteContentTypeWithHubSite Cmdlet.
+
 
 ## PARAMETERS
 

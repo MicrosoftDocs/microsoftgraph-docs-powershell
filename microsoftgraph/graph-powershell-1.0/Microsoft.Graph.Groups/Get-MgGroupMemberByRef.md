@@ -29,22 +29,6 @@ Get a list of the group's direct members.
 A group can have users, organizational contacts, devices, service principals and other groups as members.
 This operation is not transitive.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Groups
-```
-
-Get-MgGroupMember -GroupId $groupId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Groups
-```
-
-Get-MgGroupMember -GroupId $groupId -CountVariable CountVar -Filter "startswith(displayName, 'a')" -ConsistencyLevel eventual
-
 ## PARAMETERS
 
 ### -All
@@ -260,6 +244,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref)
 
 [https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0)
+
 
 
 

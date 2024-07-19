@@ -55,16 +55,17 @@ Get-MgBetaSecurityAttackSimulationLandingPage -InputObject <ISecurityIdentity> [
 Represents an attack simulation training landing page.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityAttackSimulationLandingPage -Filter "source eq 'tenant'" 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityAttackSimulationLandingPage Cmdlet.
+
 
 ## PARAMETERS
 

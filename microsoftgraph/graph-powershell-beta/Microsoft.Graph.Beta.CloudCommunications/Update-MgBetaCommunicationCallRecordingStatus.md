@@ -52,16 +52,22 @@ Update the application's recording status associated with a call.
 This requires the use of the Teams policy-based recording solution.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	ClientContext = "clientContext-value"
-	Status = "notRecording | recording | failed"
+	clientContext = "clientContext-value"
+	status = "notRecording | recording | failed"
 }
+
 Update-MgBetaCommunicationCallRecordingStatus -CallId $callId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaCommunicationCallRecordingStatus Cmdlet.
+
 
 ## PARAMETERS
 

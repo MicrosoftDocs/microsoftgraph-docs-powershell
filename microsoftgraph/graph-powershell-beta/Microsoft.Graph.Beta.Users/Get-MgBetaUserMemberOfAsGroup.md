@@ -45,16 +45,17 @@ This operation isn't transitive.
 To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the List user transitive memberOf API.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Users
+
+Get-MgBetaUserMemberOfAsGroup -UserId $userId -Filter "appRoleAssignments/`$count gt 0" -Property "id,displayName" 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaUserMemberOfAsGroup Cmdlet.
+
 
 ## PARAMETERS
 

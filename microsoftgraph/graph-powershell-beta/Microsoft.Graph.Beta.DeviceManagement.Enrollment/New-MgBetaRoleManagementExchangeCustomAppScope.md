@@ -33,16 +33,26 @@ Create a new customAppScope object for an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+$params = @{
+	type = "RecipientScope"
+	displayName = "Protected Exec Users"
+	customAttributes = @{
+		Exclusive = $false
+		RecipientFilter = "Title -like 'VP*'"
+	}
+}
+
+New-MgBetaRoleManagementExchangeCustomAppScope -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaRoleManagementExchangeCustomAppScope Cmdlet.
+
 
 ## PARAMETERS
 

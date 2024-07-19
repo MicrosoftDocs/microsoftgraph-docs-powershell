@@ -32,15 +32,6 @@ Remove-MgTeamPrimaryChannel -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property primaryChannel for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Teams
-```
-
-Get-MgTeamPrimaryChannel -TeamId $teamId
-
 ## PARAMETERS
 
 ### -Headers
@@ -234,6 +225,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychannel)
+
 
 
 

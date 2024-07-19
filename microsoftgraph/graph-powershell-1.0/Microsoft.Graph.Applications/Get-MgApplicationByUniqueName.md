@@ -35,18 +35,6 @@ Get the properties and relationships of an application object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -202,6 +190,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyuniquename)
 
 [https://learn.microsoft.com/graph/api/application-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-get?view=graph-rest-1.0)
+
 
 
 

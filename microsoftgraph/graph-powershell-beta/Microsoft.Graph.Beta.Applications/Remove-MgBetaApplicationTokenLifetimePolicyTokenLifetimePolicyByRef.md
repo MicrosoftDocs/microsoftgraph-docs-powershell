@@ -34,16 +34,17 @@ Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef -InputObject
 Remove a tokenLifetimePolicy from an application or servicePrincipal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Applications
+
+Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef -ApplicationId $applicationId -TokenLifetimePolicyId $tokenLifetimePolicyId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef Cmdlet.
+
 
 ## PARAMETERS
 

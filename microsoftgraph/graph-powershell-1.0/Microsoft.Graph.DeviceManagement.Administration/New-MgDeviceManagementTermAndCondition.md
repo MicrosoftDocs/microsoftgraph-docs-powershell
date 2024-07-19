@@ -36,20 +36,27 @@ New-MgDeviceManagementTermAndCondition -BodyParameter <IMicrosoftGraphTermsAndCo
 Create a new termsAndConditions object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	"@odata.type" = "#microsoft.graph.termsAndConditions"
+	displayName = "Display Name value"
+	description = "Description value"
+	title = "Title value"
+	bodyText = "Body Text value"
+	acceptanceStatement = "Acceptance Statement value"
+	version = 7
+}
 
-{{ Add output here }}
+New-MgDeviceManagementTermAndCondition -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementTermAndCondition Cmdlet.
+
 
 ## PARAMETERS
 

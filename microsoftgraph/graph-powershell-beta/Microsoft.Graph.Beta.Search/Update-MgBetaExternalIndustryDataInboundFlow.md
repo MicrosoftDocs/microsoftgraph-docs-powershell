@@ -50,16 +50,22 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
 Update the properties of an inboundFileFlow object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Search
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.industryData.inboundFileFlow"
+	displayName = "Updated flow name"
+}
+
+Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId $inboundFlowId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaExternalIndustryDataInboundFlow Cmdlet.
+
 
 ## PARAMETERS
 

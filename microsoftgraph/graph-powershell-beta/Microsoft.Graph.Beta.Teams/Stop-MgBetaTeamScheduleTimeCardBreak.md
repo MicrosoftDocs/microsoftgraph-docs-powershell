@@ -46,20 +46,25 @@ Stop-MgBetaTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
 End the open break in a specific timeCard.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Teams
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	atAprovedLocation = $true
+	notes = @{
+		contentType = "text"
+		content = "end break smaple notes"
+	}
+}
 
-{{ Add output here }}
+Stop-MgBetaTeamScheduleTimeCardBreak -TeamId $teamId -TimeCardId $timeCardId -BodyParameter $params
+
+```
+This example shows how to use the Stop-MgBetaTeamScheduleTimeCardBreak Cmdlet.
+
 
 ## PARAMETERS
 

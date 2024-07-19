@@ -43,16 +43,28 @@ Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 Read the properties and relationships of a privilegedAccessGroupEligibilityScheduleRequest object.
 
 ## EXAMPLES
+### Example 1: Get all eligibility schedule requests
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest -PrivilegedAccessGroupEligibilityScheduleRequestId $privilegedAccessGroupEligibilityScheduleRequestId
+
 ```
-{{ Add code here }}
+This example will get all eligibility schedule requests
+
+### Example 2: Get specific properties of all eligibility schedule requests
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest -PrivilegedAccessGroupEligibilityScheduleRequestId $privilegedAccessGroupEligibilityScheduleRequestId -Property "principalId,action,groupId" 
+
 ```
+This example will get specific properties of all eligibility schedule requests
+
 
 ## PARAMETERS
 

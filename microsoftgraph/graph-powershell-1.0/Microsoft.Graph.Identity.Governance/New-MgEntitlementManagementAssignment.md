@@ -33,15 +33,6 @@ New-MgEntitlementManagementAssignment -BodyParameter <IMicrosoftGraphAccessPacka
 ## DESCRIPTION
 Create new navigation property to assignments for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Identity.Governance
-```
-
-Get-MgEntitlementManagementAssignment
-
 ## PARAMETERS
 
 ### -AccessPackage
@@ -15338,6 +15329,7 @@ null if the subject isn't yet a user in the tenant.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignment)
+
 
 
 

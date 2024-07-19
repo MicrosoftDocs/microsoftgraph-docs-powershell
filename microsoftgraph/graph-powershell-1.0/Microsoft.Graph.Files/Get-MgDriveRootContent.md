@@ -32,22 +32,6 @@ Get-MgDriveRootContent -InputObject <IFilesIdentity> [-Format <String>] -OutFile
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -216,6 +200,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootcontent)
+
 
 
 

@@ -41,13 +41,17 @@ Get-MgBetaTeamworkDeletedTeam -InputObject <ITeamsIdentity> [-ExpandProperty <St
 A collection of deleted teams.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamworkDeletedTeam
+
+```
+This example shows how to use the Get-MgBetaTeamworkDeletedTeam Cmdlet.
+
 
 ## PARAMETERS
 

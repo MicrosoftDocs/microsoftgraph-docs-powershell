@@ -41,16 +41,17 @@ Get-MgBetaSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 Read the properties of a richLongRunningOperation object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteOperation -SiteId $siteId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSiteOperation Cmdlet.
+
 
 ## PARAMETERS
 

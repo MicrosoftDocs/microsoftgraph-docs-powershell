@@ -39,16 +39,17 @@ Retrieving the transcript returns the metadata of the single transcript associat
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
 ## EXAMPLES
+### Example 1: Get a callTranscript metadataContent
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgUserOnlineMeetingTranscriptMetadataContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
+
 ```
-{{ Add code here }}
-```
+This example will get a calltranscript metadatacontent
+
 
 ## PARAMETERS
 

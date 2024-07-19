@@ -51,22 +51,26 @@ New-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 Create a new directory extension definition, represented by an extensionProperty object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	name = "jobGroup"
 	dataType = "String"
 	isMultiValued = $true
 	targetObjects = @(
-		"User"
-	)
+	"User"
+)
 }
 
 New-MgBetaApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaApplicationExtensionProperty Cmdlet.
+
 
 ## PARAMETERS
 

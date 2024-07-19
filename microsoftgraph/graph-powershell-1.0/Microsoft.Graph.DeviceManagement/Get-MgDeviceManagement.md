@@ -24,13 +24,17 @@ Get-MgDeviceManagement [-ExpandProperty <String[]>] [-Property <String[]>] [-Res
 Read properties and relationships of the deviceManagement object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Get-MgDeviceManagement
+
+```
+This example shows how to use the Get-MgDeviceManagement Cmdlet.
+
 
 ## PARAMETERS
 

@@ -53,11 +53,11 @@ Update-MgEntitlementManagementConnectedOrganization -InputObject <IIdentityGover
 Update a connectedOrganization object to change one or more of its properties.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Connected organization new name"
@@ -66,6 +66,10 @@ $params = @{
 }
 
 Update-MgEntitlementManagementConnectedOrganization -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgEntitlementManagementConnectedOrganization Cmdlet.
+
 
 ## PARAMETERS
 

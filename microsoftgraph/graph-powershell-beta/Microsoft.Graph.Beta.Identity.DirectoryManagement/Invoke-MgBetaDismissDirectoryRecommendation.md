@@ -46,20 +46,21 @@ Invoke-MgBetaDismissDirectoryRecommendation -InputObject <IIdentityDirectoryMana
 Dismiss a recommendation object that you consider to be inapplicable to your tenant and update its status to dismissed .
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	dismissReason = "Recommendations is not relevant for my organization because..."
+}
 
-{{ Add output here }}
+Invoke-MgBetaDismissDirectoryRecommendation -RecommendationId $recommendationId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaDismissDirectoryRecommendation Cmdlet.
+
 
 ## PARAMETERS
 

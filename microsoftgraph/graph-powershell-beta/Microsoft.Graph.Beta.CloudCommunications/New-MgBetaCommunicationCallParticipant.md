@@ -54,15 +54,6 @@ New-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentit
 ## DESCRIPTION
 Create new navigation property to participants for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-Get-MgBetaCommunicationCallParticipant -CallId $callId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -556,6 +547,7 @@ RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallparticipant)
+
 
 
 

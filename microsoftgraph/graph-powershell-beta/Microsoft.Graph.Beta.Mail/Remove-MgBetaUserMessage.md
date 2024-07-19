@@ -33,22 +33,18 @@ Remove-MgBetaUserMessage -InputObject <IMailIdentity> [-IfMatch <String>] [-Resp
 Delete navigation property messages for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserMessage -UserId $userId -MessageId $messageId
-
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Mail
-```
+This example shows how to use the Remove-MgBetaUserMessage Cmdlet.
 
-# A UPN can also be used as -UserId.
-Remove-MgBetaUserMessageMention -UserId $userId -MessageId $messageId -MentionId $mentionId
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

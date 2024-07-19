@@ -48,22 +48,6 @@ Update-MgBetaGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property settings in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -367,6 +351,7 @@ VALUES <IMicrosoftGraphSettingValue- `[]`>: Collection of name-value pairs corre
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupsetting)
+
 
 
 

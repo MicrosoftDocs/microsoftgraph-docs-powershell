@@ -33,16 +33,39 @@ After you receive all the changes, you can apply them to your local state.To mon
 Any resources marked as deleted should be removed from your local state.
 
 ## EXAMPLES
+### Example 1: Initial request
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSiteDelta
+
 ```
-{{ Add code here }}
+This example will initial request
+
+### Example 2: Last page request
+
+```powershell
+
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSiteDelta -Token "1230919asd190410jlka" 
+
 ```
+This example will last page request
+
+### Example 3: Delta link request
+
+```powershell
+
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSiteDelta -Token "latest" 
+
+```
+This example will delta link request
+
 
 ## PARAMETERS
 

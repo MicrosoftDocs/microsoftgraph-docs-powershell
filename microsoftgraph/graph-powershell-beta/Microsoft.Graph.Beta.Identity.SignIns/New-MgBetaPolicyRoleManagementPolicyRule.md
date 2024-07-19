@@ -48,15 +48,6 @@ New-MgBetaPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Create new navigation property to rules for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
-
-Get-MgBetaPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -370,6 +361,7 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyrolemanagementpolicyrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyrolemanagementpolicyrule)
+
 
 
 

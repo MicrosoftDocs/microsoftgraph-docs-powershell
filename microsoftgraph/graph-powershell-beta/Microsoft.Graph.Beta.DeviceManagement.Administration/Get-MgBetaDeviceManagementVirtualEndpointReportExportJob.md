@@ -44,20 +44,28 @@ Use this GET operation to verify the exportJobStatus property of the cloudPcExpo
 The property becomes completed when the report finishes downloading in the location specified by the exportUrl property.
 
 ## EXAMPLES
+### Example 1: Get an export job for the TotalAggregatedRemoteConnectionReports report
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId $cloudPcExportJobId
 
-{{ Add output here }}
+```
+This example will get an export job for the totalaggregatedremoteconnectionreports report
+
+### Example 2: Get an export job for the RemoteConnectionQualityReports report
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId $cloudPcExportJobId
+
+```
+This example will get an export job for the remoteconnectionqualityreports report
+
 
 ## PARAMETERS
 

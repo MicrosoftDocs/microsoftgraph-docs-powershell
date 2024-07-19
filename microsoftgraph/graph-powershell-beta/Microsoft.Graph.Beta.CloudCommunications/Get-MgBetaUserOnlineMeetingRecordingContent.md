@@ -39,16 +39,17 @@ For a recording, this API returns the metadata of the single recording associate
 For the content of a recording, this API returns the stream of bytes associated with the recording.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+Get-MgBetaUserOnlineMeetingRecordingContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallRecordingId $callRecordingId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaUserOnlineMeetingRecordingContent Cmdlet.
+
 
 ## PARAMETERS
 

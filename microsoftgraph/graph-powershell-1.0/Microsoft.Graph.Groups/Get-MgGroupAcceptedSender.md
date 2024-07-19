@@ -29,13 +29,17 @@ Users in the accepted senders list can post to conversations of the group (ident
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-acceptedsenders-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupAcceptedSender -GroupId $groupId
+
+```
+This example shows how to use the Get-MgGroupAcceptedSender Cmdlet.
+
 
 ## PARAMETERS
 

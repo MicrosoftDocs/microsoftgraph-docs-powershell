@@ -47,20 +47,25 @@ Revoke-MgBetaDriveItemPermissionGrant -InputObject <IFilesIdentity>
 Revoke access to a listItem or driveItem granted via a sharing link by removing the specified recipient from the link.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Files
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	grantees = @(
+		@{
+			email = "ryan@contoso.com"
+		}
+	)
+}
 
-{{ Add output here }}
+Revoke-MgBetaDriveItemPermissionGrant -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId -BodyParameter $params
+
+```
+This example shows how to use the Revoke-MgBetaDriveItemPermissionGrant Cmdlet.
+
 
 ## PARAMETERS
 

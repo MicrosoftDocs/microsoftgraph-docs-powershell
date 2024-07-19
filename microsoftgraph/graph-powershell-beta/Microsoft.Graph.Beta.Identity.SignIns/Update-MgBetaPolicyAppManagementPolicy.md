@@ -52,20 +52,21 @@ Update-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
 Update an appManagementPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	isEnabled = $false
+}
 
-{{ Add output here }}
+Update-MgBetaPolicyAppManagementPolicy -AppManagementPolicyId $appManagementPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyAppManagementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

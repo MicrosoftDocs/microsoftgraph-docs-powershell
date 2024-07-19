@@ -55,16 +55,25 @@ Update-MgDeviceManagementTermAndConditionAcceptanceStatus
 Update the properties of a termsAndConditionsAcceptanceStatus object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.termsAndConditionsAcceptanceStatus"
+	userDisplayName = "User Display Name value"
+	acceptedVersion = 15
+	acceptedDateTime = [System.DateTime]::Parse("2016-12-31T23:57:43.6165506-08:00")
+	userPrincipalName = "User Principal Name value"
+}
+
+Update-MgDeviceManagementTermAndConditionAcceptanceStatus -TermsAndConditionsId $termsAndConditionsId -TermsAndConditionsAcceptanceStatusId $termsAndConditionsAcceptanceStatusId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgDeviceManagementTermAndConditionAcceptanceStatus Cmdlet.
+
 
 ## PARAMETERS
 

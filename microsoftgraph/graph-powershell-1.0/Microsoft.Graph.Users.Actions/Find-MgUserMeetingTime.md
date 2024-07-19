@@ -64,9 +64,8 @@ In scenarios like test environments where the input parameters and calendar data
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-findmeetingtimes-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Find-MgUserMeetingTime Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	Attendees = @(
@@ -111,6 +110,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Find-MgUserMeetingTime -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Find-MgUserMeetingTime Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -35,12 +35,17 @@ The target object can be either a one-time access review, or an instance of a re
 After the access review stops, reviewers can no longer give input, and the access review decisions can be applied.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Stop-MgBetaAccessReview -AccessReviewId $accessReviewId
+
 ```
+This example shows how to use the Stop-MgBetaAccessReview Cmdlet.
+
 
 ## PARAMETERS
 

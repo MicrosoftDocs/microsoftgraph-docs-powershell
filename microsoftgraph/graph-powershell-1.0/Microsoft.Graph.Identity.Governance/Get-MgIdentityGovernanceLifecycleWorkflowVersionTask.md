@@ -42,16 +42,17 @@ Get-MgIdentityGovernanceLifecycleWorkflowVersionTask -InputObject <IIdentityGove
 Get a specific task from a workflow or workflowVersion.
 
 ## EXAMPLES
+### Example 1: Get a task from a workflow version
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowVersionTask -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber -TaskId $taskId
+
 ```
-{{ Add code here }}
-```
+This example will get a task from a workflow version
+
 
 ## PARAMETERS
 

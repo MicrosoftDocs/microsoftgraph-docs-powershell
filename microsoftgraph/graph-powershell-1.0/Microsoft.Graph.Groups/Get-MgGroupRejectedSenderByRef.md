@@ -26,15 +26,6 @@ Get-MgGroupRejectedSenderByRef -GroupId <String> [-Filter <String>] [-Search <St
 Users in the rejected senders list can't post to conversations of the group (identified in the GET request URL).
 Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you get an error.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Groups
-```
-
-Get-MgGroupRejectedSender -GroupId $groupId
-
 ## PARAMETERS
 
 ### -All
@@ -234,6 +225,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref)
 
 [https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-1.0)
+
 
 
 

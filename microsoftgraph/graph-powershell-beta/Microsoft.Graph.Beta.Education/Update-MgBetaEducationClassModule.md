@@ -58,16 +58,22 @@ Note that you can't use a PATCH request to change the status of a module.
 Use the publish action to change the module status.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Education
+
+$params = @{
+	displayName = "New_Module5 updated"
+	description = "updated for description"
+}
+
+Update-MgBetaEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

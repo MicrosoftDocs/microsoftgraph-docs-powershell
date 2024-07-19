@@ -34,15 +34,6 @@ Restore-MgDriveListItemVersion -InputObject <IFilesIdentity> [-ResponseHeadersVa
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Sites
-```
-
-Restore-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
-
 ## PARAMETERS
 
 ### -DriveId
@@ -244,6 +235,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdrivelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdrivelistitemversion)
 
 [https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0)
+
 
 
 

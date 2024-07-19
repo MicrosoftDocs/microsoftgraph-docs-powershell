@@ -60,20 +60,6 @@ You need to be an organizer to cancel a meeting.' This action differs from Delet
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-cancel-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Actions
-```
-
-$params = @{
-	Comment = "Cancelling for this week due to all hands"
-}
-
-# A UPN can also be used as -UserId.
-Stop-MgBetaUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -343,6 +329,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausereventinstance)
 
 [https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-beta)
+
 
 
 

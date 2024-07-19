@@ -50,22 +50,6 @@ Get-MgGroupSiteActivityByInterval -InputObject <IGroupsIdentity> [-Count] [-Expa
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -386,6 +370,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsiteactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsiteactivitybyinterval)
+
 
 
 
