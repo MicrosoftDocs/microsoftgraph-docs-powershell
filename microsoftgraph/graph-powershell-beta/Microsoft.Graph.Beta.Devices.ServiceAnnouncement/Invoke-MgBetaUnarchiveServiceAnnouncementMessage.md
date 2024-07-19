@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Unarchive a list of serviceUpdateMessages for the signed in user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUnarchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgUnarchiveServiceAnnouncementMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,11 +31,11 @@ Invoke-MgBetaUnarchiveServiceAnnouncementMessage
 Unarchive a list of serviceUpdateMessages for the signed in user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+```
 
 $params = @{
 	messageIds = @(
@@ -48,10 +45,6 @@ $params = @{
 }
 
 Invoke-MgBetaUnarchiveServiceAnnouncementMessage -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaUnarchiveServiceAnnouncementMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -193,16 +186,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsYkfdhbAdminServiceannouncementMessagesMicrosoftGraphUnarchivePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageIds <String- `[]`>]`:
+BODYPARAMETER \<IPathsYkfdhbAdminServiceannouncementMessagesMicrosoftGraphUnarchivePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[MessageIds \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage)
 
 [https://learn.microsoft.com/graph/api/serviceupdatemessage-unarchive?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceupdatemessage-unarchive?view=graph-rest-beta)
-
-
-
 

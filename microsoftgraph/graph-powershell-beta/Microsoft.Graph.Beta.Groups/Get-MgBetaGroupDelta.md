@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdelta
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection.
 See Using Delta Query for details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupDelta](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,20 +24,18 @@ Get newly created, updated, or deleted groups, including group membership change
 See Using Delta Query for details.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaGroupDelta Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupDelta
 ```
-This example shows how to use the Get-MgBetaGroupDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaGroupDelta Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Groups
-Get-MgBetaGroupDelta -Property "displayName,description,mailNickname" 
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgBetaGroupDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Import-Module Microsoft.Graph.Beta.Groups
+Get-MgBetaGroupDelta -Property "displayName,description,mailNickname"
+```
 
 ## PARAMETERS
 
@@ -256,7 +251,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdelta)
 
 [https://learn.microsoft.com/graph/api/group-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-delta?view=graph-rest-beta)
-
-
-
 

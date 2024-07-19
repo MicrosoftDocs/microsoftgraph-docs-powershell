@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowidentityproviderbyref
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityB2CUserFlowIdentityProviderByRef
 
 ## SYNOPSIS
-Get ref of identityProviders from identity
+Get the identity providers in a b2cIdentityUserFlow object.
 
 ## SYNTAX
 
@@ -20,9 +20,19 @@ Get-MgBetaIdentityB2CUserFlowIdentityProviderByRef -B2CIdentityUserFlowId <Strin
 ```
 
 ## DESCRIPTION
-Get ref of identityProviders from identity
+Get the identity providers in a b2cIdentityUserFlow object.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -222,6 +232,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowidentityproviderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowidentityproviderbyref)
 
-
-
+[https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-identityproviders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-identityproviders?view=graph-rest-beta)
 

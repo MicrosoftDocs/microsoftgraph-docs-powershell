@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Notes
 Module Guid: 21a6a116-6d91-49d3-a034-45218f5b5e72
 Download Help Link: {{ Update Download Link }}
@@ -254,6 +254,9 @@ Locale: en-US
 ### [Remove-MgGroupOnenotePage](Remove-MgGroupOnenotePage.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupOnenotePageContent](Remove-MgGroupOnenotePageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupOnenoteSection](Remove-MgGroupOnenoteSection.md)
 {{ Fill in the Description }}
 
@@ -279,6 +282,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgUserOnenotePage](Remove-MgUserOnenotePage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserOnenotePageContent](Remove-MgUserOnenotePageContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserOnenoteSection](Remove-MgUserOnenoteSection.md)
@@ -352,5 +358,4 @@ Locale: en-US
 
 ### [Update-MgUserOnenoteSectionGroup](Update-MgUserOnenoteSectionGroup.md)
 {{ Fill in the Description }}
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorysubscription
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to subscriptions for directory
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDirectorySubscription](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectorySubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,6 +31,18 @@ New-MgDirectorySubscription -BodyParameter <IMicrosoftGraphCompanySubscription>
 
 ## DESCRIPTION
 Create new navigation property to subscriptions for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -357,42 +366,38 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCompanySubscription>`: companySubscription
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCompanySubscription\>: companySubscription
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CommerceSubscriptionId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[IsTrial <Boolean?>]`: 
-  - `[NextLifecycleDateTime <DateTime?>]`: 
-  - `[OwnerId <String>]`: 
-  - `[OwnerTenantId <String>]`: 
-  - `[OwnerType <String>]`: 
-  - `[ServiceStatus <IMicrosoftGraphServicePlanInfo- `[]`>]`: 
-    - `[AppliesTo <String>]`: The object the service plan can be assigned to.
+  \[CommerceSubscriptionId \<String\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[IsTrial \<Boolean?\>\]: 
+  \[NextLifecycleDateTime \<DateTime?\>\]: 
+  \[OwnerId \<String\>\]: 
+  \[OwnerTenantId \<String\>\]: 
+  \[OwnerType \<String\>\]: 
+  \[ServiceStatus \<IMicrosoftGraphServicePlanInfo\[\]\>\]: 
+    \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
 The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-    - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
+    \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
 The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
-    - `[ServicePlanId <String>]`: The unique identifier of the service plan.
-    - `[ServicePlanName <String>]`: The name of the service plan.
-  - `[SkuId <String>]`: 
-  - `[SkuPartNumber <String>]`: 
-  - `[Status <String>]`: 
-  - `[TotalLicenses <Int32?>]`: 
+    \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
+    \[ServicePlanName \<String\>\]: The name of the service plan.
+  \[SkuId \<String\>\]: 
+  \[SkuPartNumber \<String\>\]: 
+  \[Status \<String\>\]: 
+  \[TotalLicenses \<Int32?\>\]: 
 
-SERVICESTATUS <IMicrosoftGraphServicePlanInfo- `[]`>: .
-  - `[AppliesTo <String>]`: The object the service plan can be assigned to.
+SERVICESTATUS \<IMicrosoftGraphServicePlanInfo\[\]\>: .
+  \[AppliesTo \<String\>\]: The object the service plan can be assigned to.
 The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-  - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
+  \[ProvisioningStatus \<String\>\]: The provisioning status of the service plan.
 The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
-  - `[ServicePlanId <String>]`: The unique identifier of the service plan.
-  - `[ServicePlanName <String>]`: The name of the service plan.
+  \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
+  \[ServicePlanName \<String\>\]: The name of the service plan.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorysubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorysubscription)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 Module Guid: 44387617-1017-4a69-bd37-7def067fd7cd
 Download Help Link: {{ Update Download Link }}
@@ -119,10 +119,19 @@ Locale: en-US
 ### [Remove-MgBetaUserContactFolderChildFolderContactExtension](Remove-MgBetaUserContactFolderChildFolderContactExtension.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserContactFolderChildFolderContactPhotoContent](Remove-MgBetaUserContactFolderChildFolderContactPhotoContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserContactFolderContact](Remove-MgBetaUserContactFolderContact.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserContactFolderContactExtension](Remove-MgBetaUserContactFolderContactExtension.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserContactFolderContactPhotoContent](Remove-MgBetaUserContactFolderContactPhotoContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserContactPhotoContent](Remove-MgBetaUserContactPhotoContent.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaUserContactFolderChildFolderContactPhotoContent](Set-MgBetaUserContactFolderChildFolderContactPhotoContent.md)
@@ -166,5 +175,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserContactPhoto](Update-MgBetaUserContactPhoto.md)
 {{ Fill in the Description }}
-
 

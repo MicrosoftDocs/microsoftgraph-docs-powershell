@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowcount
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowCount?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,18 @@ Get-MgBetaIdentityB2XUserFlowCount [-Filter <String>] [-Search <String>] [-Respo
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -114,8 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowcount)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicedelta
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get newly created, updated, or deleted devices without performing a full read of the entire resource collection.
 For more information, see Using delta query.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,6 +24,16 @@ Get newly created, updated, or deleted devices without performing a full read of
 For more information, see Using delta query.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -242,7 +249,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicedelta)
 
 [https://learn.microsoft.com/graph/api/device-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-delta?view=graph-rest-1.0)
-
-
-
 
