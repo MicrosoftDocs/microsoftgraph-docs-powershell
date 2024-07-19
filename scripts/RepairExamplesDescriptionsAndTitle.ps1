@@ -9,9 +9,6 @@ Param(
 
 function Start-Copy {
 
-    
-    $ModulePrefix = "Microsoft.Graph"
-
     if (Test-Path $CommandMetadataPath) {
         $CommandMetadataContent = Get-Content $CommandMetadataPath | ConvertFrom-Json
         $CommandMetadataContent | ForEach-Object {
@@ -19,6 +16,7 @@ function Start-Copy {
             $GraphProfile = $_.ApiVersion
             $Command = $_.Command
             $GraphProfilePath = "graph-powershell-1.0"
+            $ModulePrefix = "Microsoft.Graph"
             if ($GraphProfile -eq "beta") {
                 $GraphProfilePath = "graph-powershell-beta"
                 $ModulePrefix = "Microsoft.Graph.Beta"
@@ -26,6 +24,7 @@ function Start-Copy {
             }
             $DocPath = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples" "$Command.md"
             try {
+                
                 Copy-Files -DocPath $DocPath -GraphProfilePath $GraphProfilePath -ModuleName $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile -Command $Command
             }
             catch {
