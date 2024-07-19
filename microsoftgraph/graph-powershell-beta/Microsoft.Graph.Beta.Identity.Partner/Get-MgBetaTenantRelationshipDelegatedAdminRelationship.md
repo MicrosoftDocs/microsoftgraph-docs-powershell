@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadminrelationship
@@ -294,13 +294,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
-  \[DelegatedAdminAccessAssignmentId \<String\>\]: The unique identifier of delegatedAdminAccessAssignment
-  \[DelegatedAdminCustomerId \<String\>\]: The unique identifier of delegatedAdminCustomer
-  \[DelegatedAdminRelationshipId \<String\>\]: The unique identifier of delegatedAdminRelationship
-  \[DelegatedAdminRelationshipOperationId \<String\>\]: The unique identifier of delegatedAdminRelationshipOperation
-  \[DelegatedAdminRelationshipRequestId \<String\>\]: The unique identifier of delegatedAdminRelationshipRequest
-  \[DelegatedAdminServiceManagementDetailId \<String\>\]: The unique identifier of delegatedAdminServiceManagementDetail
+INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
+  - `[DelegatedAdminAccessAssignmentId <String>]`: The unique identifier of delegatedAdminAccessAssignment
+  - `[DelegatedAdminCustomerId <String>]`: The unique identifier of delegatedAdminCustomer
+  - `[DelegatedAdminRelationshipId <String>]`: The unique identifier of delegatedAdminRelationship
+  - `[DelegatedAdminRelationshipOperationId <String>]`: The unique identifier of delegatedAdminRelationshipOperation
+  - `[DelegatedAdminRelationshipRequestId <String>]`: The unique identifier of delegatedAdminRelationshipRequest
+  - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
 
@@ -309,4 +309,7 @@ INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
 [https://learn.microsoft.com/graph/api/delegatedadminrelationship-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/delegatedadminrelationship-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/tenantrelationship-list-delegatedadminrelationships?view=graph-rest-beta](https://learn.microsoft.com/graph/api/tenantrelationship-list-delegatedadminrelationships?view=graph-rest-beta)
+
+
+
 
