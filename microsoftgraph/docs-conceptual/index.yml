@@ -42,7 +42,7 @@ landingContent:
           - text: Cmdlet map
             url: azuread-msoline-cmdlet-map.md
           - text: Migration FAQ
-            url:  https://docs.microsoft.com/en-us/powershell/azure/active-directory/migration-faq?view=azureadps-2.0 
+            url:  /powershell/azure/active-directory/migration-faq?view=azureadps-2.0 
 
   # Card (optional)
   - title: Common use cases
@@ -77,9 +77,9 @@ landingContent:
       - linkListType: reference 
         links:
           - text: V1.0 cmdlet reference
-            url: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0
+            url: /powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0
           - text: Beta cmdlet reference
-            url: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.beta.applications/?view=graph-powershell-beta
+            url: /powershell/module/microsoft.graph.beta.applications/?view=graph-powershell-beta
 
 
 
@@ -91,10 +91,10 @@ landingContent:
           - text: Troubleshoot common errors in Microsoft Graph PowerShell
             url: troubleshooting.md
           - text: Permissions reference
-            url: https://docs.microsoft.com/en-us/graph/permissions-reference
+            url: /graph/permissions-reference
           - text: Advanced query capabilities
-            url: https://docs.microsoft.com/en-us/graph/aad-advanced-queries?tabs=http
+            url: /graph/aad-advanced-queries?tabs=http
           - text: API reference
-            url: https://docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0
+            url: /graph/api/overview?view=graph-rest-1.0
           - text: Microsoft Q&A
-            url: https://docs.microsoft.com/en-us/answers/index.html    
+            url: https://learn.microsoft.com/answers/questions/   
