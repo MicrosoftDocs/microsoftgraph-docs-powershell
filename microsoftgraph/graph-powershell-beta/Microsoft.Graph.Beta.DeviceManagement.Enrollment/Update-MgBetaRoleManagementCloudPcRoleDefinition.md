@@ -57,6 +57,31 @@ You cannot update built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+$params = @{
+	description = "Update basic properties and permission of application registrations"
+### Example 2
+	rolePermissions = @(
+		@{
+			allowedResourceActions = @(
+			"Microsoft.CloudPC/CloudPCs/Read"
+		"Microsoft.CloudPC/CloudPCs/Reprovision"
+	)
+}
+)
+}
+
+Update-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -547,8 +572,7 @@ Not supported for custom roles.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementcloudpcroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementcloudpcroledefinition)
 
-[https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-beta)
 
 
 

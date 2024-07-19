@@ -54,6 +54,23 @@ This API is supported when the type of the cloudPcOnPremisesConnection object is
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpconpremisesconnection-updateaddomainpassword-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+$params = @{
+	adDomainPassword = "AdDomainPassword value"
+}
+
+Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -282,6 +299,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
   - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+  - `[HardwareConfigurationId <String>]`: The unique identifier of hardwareConfiguration
   - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
@@ -304,8 +322,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementvirtualendpointonpremiseconnectionaddomainpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementvirtualendpointonpremiseconnectionaddomainpassword)
 
-[https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta)
 
 
 

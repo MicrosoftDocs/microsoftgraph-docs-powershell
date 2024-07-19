@@ -50,17 +50,22 @@ Update-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIde
 Update the properties of a tenantTag object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaTenantRelationshipManagedTenantTag Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 $params = @{
-	DisplayName = "Onboarding"
-	Description = "Tenants that we are currently onboarding"
+	displayName = "Onboarding"
+	description = "Tenants that we are currently onboarding"
 }
+
 Update-MgBetaTenantRelationshipManagedTenantTag -TenantTagId $tenantTagId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -450,7 +455,7 @@ Optional.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenanttag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenanttag)
 
-[https://learn.microsoft.com/graph/api/managedtenants-tenanttag-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-tenanttag-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/managedtenants-tenanttag-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-tenanttag-update?view=graph-rest-beta)
 
 
 

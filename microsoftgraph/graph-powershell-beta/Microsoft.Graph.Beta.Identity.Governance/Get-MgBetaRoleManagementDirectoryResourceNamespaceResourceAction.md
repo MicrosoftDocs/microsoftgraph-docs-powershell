@@ -41,6 +41,41 @@ Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <I
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRbacResourceAction object.
 
+## EXAMPLES
+### Example 1: List microsoft.directory actions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId
+
+```
+This example will list microsoft.directory actions
+
+### Example 2: List microsoft.insights actions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId
+
+```
+This example will list microsoft.insights actions
+
+### Example 3: List privileged actions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId -Filter "isPrivileged eq true" 
+
+```
+This example will list privileged actions
+
+
 ## PARAMETERS
 
 ### -All
@@ -406,10 +441,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespaceresourceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespaceresourceaction)
 
-[https://learn.microsoft.com/graph/api/unifiedrbacresourceaction-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedrbacresourceaction-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/unifiedrbacresourceaction-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedrbacresourceaction-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-list-resourceactions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-list-resourceactions?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-list-resourceactions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-list-resourceactions?view=graph-rest-beta)
 
 
 

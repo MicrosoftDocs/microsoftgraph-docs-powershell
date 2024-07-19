@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Return instances of membership and ownership eligibility schedules for the calling principal.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser?view=graph-powershell-1.0)
@@ -33,7 +33,20 @@ Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleIns
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Return instances of membership and ownership eligibility schedules for the calling principal.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 
@@ -354,6 +367,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceprivilegedaccessgroupeligibilityscheduleinstancebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceprivilegedaccessgroupeligibilityscheduleinstancebycurrentuser)
 
+[https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser?view=graph-rest-beta)
 
 
 

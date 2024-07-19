@@ -8,7 +8,13 @@ schema: 2.0.0
 # Get-MgBetaUserCloudPcShiftWorkCloudPcAccessState
 
 ## SYNOPSIS
-Invoke function getShiftWorkCloudPcAccessState
+Get the shiftWorkCloudPcAccessState of a shift work Cloud PC.
+This API only supports shared-use licenses.
+For more information, see cloudPcProvisioningPolicy.
+Shared-use licenses allow three users per license, with one user signed in at a time.
+Callers can get the latest shift work Cloud PC accessState and determine whether the shift work Cloud PC is accessible to the user.
+If a web client needs to connect to a shift work Cloud PC, the sharedCloudPcAccessState validates the bookmark scenario.
+If sharedCloudPcAccessState is not active/activating/standbyMode, the web client shows a 'bad bookmark'.
 
 ## SYNTAX
 
@@ -27,7 +33,30 @@ Get-MgBetaUserCloudPcShiftWorkCloudPcAccessState -InputObject <IUsersFunctionsId
 ```
 
 ## DESCRIPTION
-Invoke function getShiftWorkCloudPcAccessState
+Get the shiftWorkCloudPcAccessState of a shift work Cloud PC.
+This API only supports shared-use licenses.
+For more information, see cloudPcProvisioningPolicy.
+Shared-use licenses allow three users per license, with one user signed in at a time.
+Callers can get the latest shift work Cloud PC accessState and determine whether the shift work Cloud PC is accessible to the user.
+If a web client needs to connect to a shift work Cloud PC, the sharedCloudPcAccessState validates the bookmark scenario.
+If sharedCloudPcAccessState is not active/activating/standbyMode, the web client shows a 'bad bookmark'.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getshiftworkcloudpcaccessstate-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Functions
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserCloudPcShiftWorkCloudPcAccessState -UserId $userId -CloudPCId $cloudPCId
+
+```
+This example shows how to use the Get-MgBetaUserCloudPcShiftWorkCloudPcAccessState Cmdlet.
+
 
 ## PARAMETERS
 
@@ -182,6 +211,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcshiftworkcloudpcaccessstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcshiftworkcloudpcaccessstate)
 
+[https://learn.microsoft.com/graph/api/cloudpc-getshiftworkcloudpcaccessstate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-getshiftworkcloudpcaccessstate?view=graph-rest-beta)
 
 
 

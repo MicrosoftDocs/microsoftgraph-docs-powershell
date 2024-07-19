@@ -35,6 +35,19 @@ Get the properties and relationships of an application object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-get-permissions.md)]
 
+## EXAMPLES
+### Example 1: Retrieve an application by its appId and only specific properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+Get-MgBetaApplicationByAppId -Property "id,appId,displayName,requiredResourceAccess" 
+
+```
+This example will retrieve an application by its appid and only specific properties
+
+
 ## PARAMETERS
 
 ### -AppId
@@ -176,6 +189,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[IPApplicationSegmentId <String>]`: The unique identifier of ipApplicationSegment
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
@@ -183,6 +197,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -197,8 +212,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyappid)
 
-[https://learn.microsoft.com/graph/api/application-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-get?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/application-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-get?view=graph-rest-beta)
 
 
 

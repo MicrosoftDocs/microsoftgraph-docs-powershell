@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaTeamChannelRetainedMessage
 
 ## SYNOPSIS
-Invoke function getAllRetainedMessages
+Get retained messages across all channels in a team.
+To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
 ## SYNTAX
 
@@ -29,7 +30,21 @@ Get-MgBetaTeamChannelRetainedMessage -InputObject <ITeamsIdentity> [-Count] [-Ex
 ```
 
 ## DESCRIPTION
-Invoke function getAllRetainedMessages
+Get retained messages across all channels in a team.
+To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaTeamChannelRetainedMessage -TeamId $teamId
+
+```
+This example shows how to use the Get-MgBetaTeamChannelRetainedMessage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -292,6 +307,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelretainedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelretainedmessage)
 
+[https://learn.microsoft.com/graph/api/channel-getallretainedmessages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-getallretainedmessages?view=graph-rest-beta)
 
 
 

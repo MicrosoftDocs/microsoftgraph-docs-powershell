@@ -392,9 +392,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelsharedwithteam)
 
-[https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta)
 
 
 

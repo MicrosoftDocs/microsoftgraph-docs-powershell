@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserMailFolderChildFolderMessageRule
 
 ## SYNOPSIS
-Delete the specified messageRule object.
+Delete navigation property messageRules for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Remove-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity> [
 ```
 
 ## DESCRIPTION
-Delete the specified messageRule object.
+Delete navigation property messageRules for users
 
 ## PARAMETERS
 
@@ -249,7 +249,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessagerule)
 
-[https://learn.microsoft.com/graph/api/messagerule-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/messagerule-delete?view=graph-rest-1.0)
 
 
 

@@ -36,6 +36,22 @@ Create a SharePoint folder to upload files for a given educationModule.
 Only teachers can perform this operation.
 The teacher determines what resources to upload to the SharePoint folder for the module.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+$params = @{
+}
+
+Set-MgBetaEducationClassModuleUpResourceFolder -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaEducationClassModuleUpResourceFolder Cmdlet.
+
+
 ## PARAMETERS
 
 ### -EducationClassId
@@ -200,8 +216,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationclassmoduleupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationclassmoduleupresourcefolder)
 
-[https://learn.microsoft.com/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-beta)
 
 
 

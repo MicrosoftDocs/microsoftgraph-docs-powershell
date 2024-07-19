@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileProject
 
 ## SYNOPSIS
-Use this API to create a new projectParticipation object in a user's profile.
+Create new navigation property to projects for users
 
 ## SYNTAX
 
@@ -21,8 +21,9 @@ New-MgBetaUserProfileProject -UserId <String> [-ResponseHeadersVariable <String>
  [-CreatedDateTime <DateTime>] [-Detail <IMicrosoftGraphPositionDetail>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-Sponsors <IMicrosoftGraphRelatedPerson[]>] [-ThumbnailUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-Sponsors <IMicrosoftGraphRelatedPerson[]>]
+ [-ThumbnailUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -41,8 +42,9 @@ New-MgBetaUserProfileProject -InputObject <IPeopleIdentity> [-ResponseHeadersVar
  [-CreatedDateTime <DateTime>] [-Detail <IMicrosoftGraphPositionDetail>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-Sponsors <IMicrosoftGraphRelatedPerson[]>] [-ThumbnailUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-Sponsors <IMicrosoftGraphRelatedPerson[]>]
+ [-ThumbnailUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -53,7 +55,7 @@ New-MgBetaUserProfileProject -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Use this API to create a new projectParticipation object in a user's profile.
+Create new navigation property to projects for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -420,6 +422,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Sources
+Where the values within an entity originated if synced from another source.
+To construct, see NOTES section for SOURCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphProfileSourceAnnotation[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sponsors
 The Person or people who sponsored the project.
 To construct, see NOTES section for SPONSORS properties and create a hash table.
@@ -538,6 +556,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Categories <String- `[]`>]`: Contains categories a user has associated with the project (for example, digital transformation, oil rig).
@@ -687,6 +709,11 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String- `[]`>]`: 
 
+SOURCES <IMicrosoftGraphProfileSourceAnnotation- `[]`>: Where the values within an entity originated if synced from another source.
+  - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+  - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+  - `[SourceId <String>]`: 
+
 SPONSORS <IMicrosoftGraphRelatedPerson- `[]`>: The Person or people who sponsored the project.
   - `[DisplayName <String>]`: Name of the person.
   - `[Relationship <String>]`: personRelationship
@@ -696,8 +723,6 @@ SPONSORS <IMicrosoftGraphRelatedPerson- `[]`>: The Person or people who sponsore
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileproject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileproject)
-
-[https://learn.microsoft.com/graph/api/profile-post-projects?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-projects?view=graph-rest-1.0)
 
 
 

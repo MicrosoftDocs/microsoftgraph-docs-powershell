@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaUserTodoTaskAttachmentContent
 
 ## SYNOPSIS
-Get media content for the navigation property attachments from users
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskAttachmentContent](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachmentContent?view=graph-powershell-1.0)
@@ -30,7 +31,8 @@ Get-MgBetaUserTodoTaskAttachmentContent -InputObject <IUsersIdentity> -OutFile <
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property attachments from users
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 
@@ -232,8 +234,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskattachmentcontent)
-
-[https://learn.microsoft.com/graph/api/todotask-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-list-attachments?view=graph-rest-1.0)
 
 
 

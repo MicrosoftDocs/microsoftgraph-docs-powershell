@@ -29,6 +29,23 @@ Update-MgBetaAdminReportSetting -BodyParameter <IMicrosoftGraphAdminReportSettin
 ## DESCRIPTION
 Update tenant-level settings for Microsoft 365 reports.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+$params = @{
+	displayConcealedNames = $true
+}
+
+Update-MgBetaAdminReportSetting -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaAdminReportSetting Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -201,8 +218,7 @@ Required.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting)
 
-[https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-beta)
 
 
 

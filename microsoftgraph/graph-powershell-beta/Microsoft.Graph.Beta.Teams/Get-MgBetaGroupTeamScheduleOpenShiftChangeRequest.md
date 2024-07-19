@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupTeamScheduleOpenShiftChangeRequest
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an openShiftChangeRequest object.
+The open shift requests in the schedule.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleOpenShiftChangeRequest?view=graph-powershell-1.0)
@@ -38,9 +38,7 @@ Get-MgBetaGroupTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity> 
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an openShiftChangeRequest object.
-
-## EXAMPLES
+The open shift requests in the schedule.
 
 ## PARAMETERS
 
@@ -349,9 +347,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduleopenshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduleopenshiftchangerequest)
 
-[https://learn.microsoft.com/graph/api/openshiftchangerequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshiftchangerequest-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/openshiftchangerequest-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshiftchangerequest-list?view=graph-rest-1.0)
+
+
 
 
 

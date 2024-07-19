@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportYammerDeviceUsageUserCount
 
 ## SYNOPSIS
-Invoke function getYammerDeviceUsageUserCounts
+Get the number of daily users by device type.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportYammerDeviceUsageUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerDeviceUsageUserCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportYammerDeviceUsageUserCount -InputObject <IReportsIdentity> -OutFile 
 ```
 
 ## DESCRIPTION
-Invoke function getYammerDeviceUsageUserCounts
+Get the number of daily users by device type.
 
 ## PARAMETERS
 
@@ -182,6 +182,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammerdeviceusageusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammerdeviceusageusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-1.0)
 
 
 

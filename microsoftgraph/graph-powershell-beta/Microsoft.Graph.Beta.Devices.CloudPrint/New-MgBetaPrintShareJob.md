@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPrintShareJob
 
 ## SYNOPSIS
-Create new navigation property to jobs for print
+Create a new printJob for a printerShare.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShareJob?view=graph-powershell-1.0)
@@ -52,7 +52,55 @@ New-MgBetaPrintShareJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Create new navigation property to jobs for print
+Create a new printJob for a printerShare.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+$params = @{
+	displayName = "testjob"
+	configuration = @{
+		feedOrientation = "longEdgeFirst"
+		pageRanges = @(
+			@{
+				start = 1
+				end = 1
+			}
+		)
+		quality = "medium"
+		dpi = 600
+		orientation = "landscape"
+		copies = 1
+		duplexMode = "oneSided"
+		colorMode = "blackAndWhite"
+		inputBin = "by-pass-tray"
+		outputBin = "output-tray"
+		mediaSize = "A4"
+		margin = @{
+			top = 0
+			bottom = 0
+			left = 0
+			right = 0
+		}
+		mediaType = "stationery"
+		finishings = $null
+		pagesPerSheet = 1
+		multipageLayout = "clockwiseFromBottomLeft"
+		collate = $false
+		scaling = "shrinkToFit"
+		fitPdfToPage = $false
+	}
+}
+
+New-MgBetaPrintShareJob -PrinterShareId $printerShareId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrintShareJob Cmdlet.
+
 
 ## PARAMETERS
 
@@ -477,7 +525,7 @@ Read-only.
 This property is read-only.
     - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
 Read-only.
@@ -607,7 +655,7 @@ CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
 This property is read-only.
   - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+  - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 DOCUMENTS <IMicrosoftGraphPrintDocument- `[]`>: .
@@ -717,6 +765,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintsharejob)
 
+[https://learn.microsoft.com/graph/api/printershare-post-jobs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printershare-post-jobs?view=graph-rest-beta)
 
 
 

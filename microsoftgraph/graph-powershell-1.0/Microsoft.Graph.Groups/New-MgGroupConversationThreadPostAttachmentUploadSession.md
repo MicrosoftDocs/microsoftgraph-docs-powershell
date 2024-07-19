@@ -65,50 +65,6 @@ Request headers for each PUT operation let you specify the exact range of bytes 
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
-## EXAMPLES
-### Example 1: Create an upload session to add a large attachment to a draft message
-
-```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	AttachmentItem = @{
-		AttachmentType = "file"
-		Name = "flower"
-		Size = 3483322
-	}
-}
-
-# A UPN can also be used as -UserId.
-New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the New-MgGroupConversationThreadPostAttachmentUploadSession Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create an upload session to add a large in-line attachment to a draft message
-
-```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	AttachmentItem = @{
-		AttachmentType = "file"
-		Name = "scenary"
-		Size = 7208534
-		IsInline = $true
-		ContentId = "my_inline_picture"
-	}
-}
-
-# A UPN can also be used as -UserId.
-New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the New-MgGroupConversationThreadPostAttachmentUploadSession Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -407,6 +363,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostattachmentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostattachmentuploadsession)
 
 [https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-1.0)
+
 
 
 

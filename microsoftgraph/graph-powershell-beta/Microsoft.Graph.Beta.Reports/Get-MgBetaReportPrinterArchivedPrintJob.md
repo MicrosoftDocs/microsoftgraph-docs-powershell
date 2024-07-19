@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportPrinterArchivedPrintJob
 
 ## SYNOPSIS
-Invoke function getPrinterArchivedPrintJobs
+Get a list of archived print jobs that were queued for particular printer.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportPrinterArchivedPrintJob](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPrinterArchivedPrintJob?view=graph-powershell-1.0)
@@ -31,7 +31,20 @@ Get-MgBetaReportPrinterArchivedPrintJob -InputObject <IReportsIdentity> [-Count]
 ```
 
 ## DESCRIPTION
-Invoke function getPrinterArchivedPrintJobs
+Get a list of archived print jobs that were queued for particular printer.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportPrinterArchivedPrintJob
+
+```
+This example shows how to use the Get-MgBetaReportPrinterArchivedPrintJob Cmdlet.
+
 
 ## PARAMETERS
 
@@ -233,7 +246,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -282,6 +294,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportprinterarchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportprinterarchivedprintjob)
 
+[https://learn.microsoft.com/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta)
 
 
 

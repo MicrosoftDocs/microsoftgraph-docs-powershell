@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgUserMessageAttachment
 
 ## SYNOPSIS
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+The fileAttachment and itemAttachment attachments for the message.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageAttachment?view=graph-powershell-beta)
@@ -39,8 +38,7 @@ Get-MgUserMessageAttachment -InputObject <IMailIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+The fileAttachment and itemAttachment attachments for the message.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -347,10 +345,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessageattachment)
-
-[https://learn.microsoft.com/graph/api/attachment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attachment-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/eventmessage-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/eventmessage-list-attachments?view=graph-rest-1.0)
 
 
 

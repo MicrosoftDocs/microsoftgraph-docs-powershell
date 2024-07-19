@@ -51,8 +51,6 @@ Invoke action addCopy
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-addcopy-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -291,7 +289,9 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserdrivelistcontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserdrivelistcontenttypecopy)
 
-[https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-beta)
+
+
 
 
 

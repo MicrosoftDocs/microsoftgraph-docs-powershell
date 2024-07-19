@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportOffice365ActivationUserCount
 
 ## SYNOPSIS
-Invoke function getOffice365ActivationsUserCounts
+Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActivationUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActivationUserCount?view=graph-powershell-beta)
@@ -21,7 +21,7 @@ Get-MgReportOffice365ActivationUserCount -OutFile <String> [-ResponseHeadersVari
 ```
 
 ## DESCRIPTION
-Invoke function getOffice365ActivationsUserCounts
+Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers.
 
 ## PARAMETERS
 
@@ -114,6 +114,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-1.0)
 
 
 

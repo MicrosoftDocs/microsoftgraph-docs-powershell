@@ -58,10 +58,11 @@ Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	displayName = "Cashiers"
 	isActive = $true
+	code = "CashierCode"
 	userIds = @(
-		"c5d0c76b-80c4-481c-be50-923cd8d680a1"
-		"2a4296b3-a28a-44ba-bc66-0274b9b95851"
-	)
+	"c5d0c76b-80c4-481c-be50-923cd8d680a1"
+"2a4296b3-a28a-44ba-bc66-0274b9b95851"
+)
 }
 
 New-MgBetaTeamScheduleSchedulingGroup -TeamId $teamId -BodyParameter $params
@@ -330,10 +331,9 @@ BODYPARAMETER `<IMicrosoftGraphSchedulingGroup>`: schedulingGroup
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -351,10 +351,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -406,10 +405,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -417,7 +415,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleschedulinggroup)
 
-[https://learn.microsoft.com/graph/api/schedule-post-schedulinggroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-post-schedulinggroups?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta)
 
 
 

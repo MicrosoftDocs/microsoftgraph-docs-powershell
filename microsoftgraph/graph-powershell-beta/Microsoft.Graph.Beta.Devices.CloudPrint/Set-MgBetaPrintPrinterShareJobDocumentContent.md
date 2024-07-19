@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgBetaPrintPrinterShareJobDocumentContent
 
 ## SYNOPSIS
-Update media content for the navigation property documents in print
+The unique identifier for an entity.
+Read-only.
 
 ## SYNTAX
 
@@ -28,7 +29,8 @@ Set-MgBetaPrintPrinterShareJobDocumentContent -InputObject <IDevicesCloudPrintId
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property documents in print
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 

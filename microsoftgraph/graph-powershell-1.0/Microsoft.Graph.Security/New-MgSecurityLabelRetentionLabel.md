@@ -456,8 +456,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the retentionLabel is created.
@@ -493,7 +494,7 @@ Read-only.
       - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
+      - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
         - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
@@ -502,8 +503,8 @@ Read-only.
     - `[Citation <IMicrosoftGraphSecurityFilePlanCitation>]`: filePlanCitation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
-      - `[CitationJurisdiction <String>]`: 
-      - `[CitationUrl <String>]`: 
+      - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the filePlanCitation.
+      - `[CitationUrl <String>]`: Represents the URL to the published filePlanCitation.
     - `[CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>]`: citationTemplate
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -539,7 +540,7 @@ Read-only.
 Read-only.
     - `[Name <String>]`: Name representing each stage within a collection.
     - `[ReviewersEmailAddresses <String- `[]`>]`: A collection of reviewers at each stage.
-    - `[StageNumber <String>]`: The sequence number for each stage of the disposition review.
+    - `[StageNumber <String>]`: The unique sequence number for each stage of the disposition review.
   - `[IsInUse <Boolean?>]`: Specifies whether the label is currently being used.
   - `[LabelToBeApplied <String>]`: Specifies the replacement label to be applied automatically after the retention period of the current label ends.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -564,8 +565,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -584,8 +586,9 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
@@ -605,7 +608,7 @@ Read-only.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
+    - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
       - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
@@ -614,8 +617,8 @@ Read-only.
   - `[Citation <IMicrosoftGraphSecurityFilePlanCitation>]`: filePlanCitation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
-    - `[CitationJurisdiction <String>]`: 
-    - `[CitationUrl <String>]`: 
+    - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the filePlanCitation.
+    - `[CitationUrl <String>]`: Represents the URL to the published filePlanCitation.
   - `[CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>]`: citationTemplate
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -651,7 +654,7 @@ DISPOSITIONREVIEWSTAGES <IMicrosoftGraphSecurityDispositionReviewStage- `[]`>: W
 Read-only.
   - `[Name <String>]`: Name representing each stage within a collection.
   - `[ReviewersEmailAddresses <String- `[]`>]`: A collection of reviewers at each stage.
-  - `[StageNumber <String>]`: The sequence number for each stage of the disposition review.
+  - `[StageNumber <String>]`: The unique sequence number for each stage of the disposition review.
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -659,8 +662,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -674,8 +678,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEventType was created.
@@ -689,6 +694,7 @@ For example, if a user changes their display name, the API might show the new va
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelretentionlabel)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-post-retentionlabel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-retentionlabel?view=graph-rest-1.0)
+
 
 
 

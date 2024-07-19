@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasecustodianhold
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Add-MgSecurityCaseEdiscoveryCaseCustodianHold
@@ -315,6 +314,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host

@@ -52,6 +52,7 @@ Add a group to the list of groups marked as incompatible on an accessPackage.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
@@ -59,10 +60,9 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId $accessPackageId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -363,7 +363,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageincompatiblegroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageincompatiblegroupbyref)
 
-[https://learn.microsoft.com/graph/api/accesspackage-post-incompatiblegroup?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackage-post-incompatiblegroup?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/accesspackage-post-incompatiblegroup?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-post-incompatiblegroup?view=graph-rest-beta)
 
 
 

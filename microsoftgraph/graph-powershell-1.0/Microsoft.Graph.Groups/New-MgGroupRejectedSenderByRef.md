@@ -54,6 +54,7 @@ Make sure you don't specify the same user or group in the rejected senders and a
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
@@ -61,10 +62,9 @@ $params = @{
 }
 
 New-MgGroupRejectedSenderByRef -GroupId $groupId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgGroupRejectedSenderByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

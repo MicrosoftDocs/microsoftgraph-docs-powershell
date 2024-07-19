@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInstance
 
 ## SYNOPSIS
-There is exactly one accessReviewInstance associated with each decision.
+There's exactly one accessReviewInstance associated with each decision.
 The instance is the parent of the decision item, representing the recurrence of the access review the decision is made on.
 
 ## SYNTAX
@@ -31,7 +31,7 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInstance
 ```
 
 ## DESCRIPTION
-There is exactly one accessReviewInstance associated with each decision.
+There's exactly one accessReviewInstance associated with each decision.
 The instance is the parent of the decision item, representing the recurrence of the access review the decision is made on.
 
 ## PARAMETERS

@@ -38,13 +38,17 @@ Get-MgBetaReportUserCredentialUsageDetail -InputObject <IReportsIdentity> [-Expa
 Represents the self-service password reset (SSPR) usage for a given tenant.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaReportUserCredentialUsageDetail Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
+
 Get-MgBetaReportUserCredentialUsageDetail
+
 ```
 This example shows how to use the Get-MgBetaReportUserCredentialUsageDetail Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -292,7 +296,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -341,7 +344,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportusercredentialusagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportusercredentialusagedetail)
 
-[https://learn.microsoft.com/graph/api/reportroot-list-usercredentialusagedetails?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-list-usercredentialusagedetails?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/reportroot-list-usercredentialusagedetails?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-list-usercredentialusagedetails?view=graph-rest-beta)
 
 
 

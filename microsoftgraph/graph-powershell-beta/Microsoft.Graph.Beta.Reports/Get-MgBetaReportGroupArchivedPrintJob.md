@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportGroupArchivedPrintJob
 
 ## SYNOPSIS
-Invoke function getGroupArchivedPrintJobs
+Get a list of archived print jobs for a particular group.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportGroupArchivedPrintJob](/powershell/module/Microsoft.Graph.Reports/Get-MgReportGroupArchivedPrintJob?view=graph-powershell-1.0)
@@ -31,9 +31,20 @@ Get-MgBetaReportGroupArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [
 ```
 
 ## DESCRIPTION
-Invoke function getGroupArchivedPrintJobs
+Get a list of archived print jobs for a particular group.
 
 ## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportGroupArchivedPrintJob
+
+```
+This example shows how to use the Get-MgBetaReportGroupArchivedPrintJob Cmdlet.
+
 
 ## PARAMETERS
 
@@ -235,7 +246,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -283,6 +293,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportgrouparchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportgrouparchivedprintjob)
+
+[https://learn.microsoft.com/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta)
 
 
 

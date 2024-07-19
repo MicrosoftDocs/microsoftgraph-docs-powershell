@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Retrieve all decision items for an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer.
+The decision items are represented by accessReviewInstanceDecisionItem objects on a given accessReviewInstance or accessReviewStage for which the calling user is the reviewer.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCurrentUser?view=graph-powershell-beta)
@@ -34,7 +35,8 @@ Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCu
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Retrieve all decision items for an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer.
+The decision items are represented by accessReviewInstanceDecisionItem objects on a given accessReviewInstance or accessReviewStage for which the calling user is the reviewer.
 
 ## PARAMETERS
 
@@ -367,6 +369,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceaccessreviewdefinitioninstancestagedecisionbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceaccessreviewdefinitioninstancestagedecisionbycurrentuser)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-filterbycurrentuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-filterbycurrentuser?view=graph-rest-1.0)
 
 
 

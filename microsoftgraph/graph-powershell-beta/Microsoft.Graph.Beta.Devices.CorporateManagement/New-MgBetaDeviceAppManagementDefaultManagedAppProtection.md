@@ -18,7 +18,7 @@ Create new navigation property to defaultManagedAppProtections for deviceAppMana
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceAppManagementDefaultManagedAppProtection [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-AllowedAndroidDeviceManufacturers <String>]
+ [-AdditionalProperties <Hashtable>] [-AllowWidgetContentSync] [-AllowedAndroidDeviceManufacturers <String>]
  [-AllowedAndroidDeviceModels <String[]>] [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
  [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
  [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>] [-AllowedIosDeviceModels <String>]
@@ -245,6 +245,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowWidgetContentSync
+Indicates if content sync for widgets is allowed for iOS on App Protection Policies
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1999,6 +2014,7 @@ Default is anyApp.
   - `[Version <String>]`: Version of the entity.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[AllowWidgetContentSync <Boolean?>]`: Indicates  if content sync for widgets is allowed for iOS on App Protection Policies
   - `[AllowedAndroidDeviceManufacturers <String>]`: Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work.
 (Android only)
   - `[AllowedAndroidDeviceModels <String- `[]`>]`: List of device models allowed, as a string, for the managed app to work.

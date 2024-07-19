@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupTeamScheduleOfferShiftRequest
 
 ## SYNOPSIS
-Create an instance of an offerShiftRequest.
+Create new navigation property to offerShiftRequests for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
@@ -50,9 +50,7 @@ New-MgGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create an instance of an offerShiftRequest.
-
-## EXAMPLES
+Create new navigation property to offerShiftRequests for groups
 
 ## PARAMETERS
 
@@ -420,7 +418,7 @@ For example, if a user changes their display name, the API might show the new va
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleoffershiftrequest)
 
-[https://learn.microsoft.com/graph/api/offershiftrequest-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/offershiftrequest-post?view=graph-rest-1.0)
+
 
 
 

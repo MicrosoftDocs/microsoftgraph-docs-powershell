@@ -37,6 +37,7 @@ Create a new custom identityUserFlowAttribute object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -46,10 +47,9 @@ $params = @{
 }
 
 New-MgBetaIdentityUserFlowAttribute -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaIdentityUserFlowAttribute Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-The description of the user flow attribute that's shown to the user at the time of sign-up.
+The description of the user flow attribute that's shown to the user at the time of sign up.
 
 ```yaml
 Type: String
@@ -259,7 +259,7 @@ BODYPARAMETER `<IMicrosoftGraphIdentityUserFlowAttribute>`: identityUserFlowAttr
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DataType <String>]`: identityUserFlowAttributeDataType
-  - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
+  - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
   - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
@@ -268,7 +268,7 @@ Supports $filter (eq, ne).
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflowattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflowattribute)
 
-[https://learn.microsoft.com/graph/api/identityuserflowattribute-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattribute-post?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/identityuserflowattribute-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityuserflowattribute-post?view=graph-rest-beta)
 
 
 

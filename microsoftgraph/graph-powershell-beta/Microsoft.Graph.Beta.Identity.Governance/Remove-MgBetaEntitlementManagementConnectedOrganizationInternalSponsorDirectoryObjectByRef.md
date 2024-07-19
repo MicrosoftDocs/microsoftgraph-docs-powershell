@@ -36,6 +36,19 @@ Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryO
 Remove a user or a group from the connected organization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef -ConnectedOrganizationId $connectedOrganizationId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ConnectedOrganizationId
@@ -311,8 +324,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementconnectedorganizationinternalsponsordirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementconnectedorganizationinternalsponsordirectoryobjectbyref)
 
-[https://learn.microsoft.com/graph/api/connectedorganization-delete-internalsponsors?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectedorganization-delete-internalsponsors?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/connectedorganization-delete-internalsponsors?view=graph-rest-beta](https://learn.microsoft.com/graph/api/connectedorganization-delete-internalsponsors?view=graph-rest-beta)
 
 
 

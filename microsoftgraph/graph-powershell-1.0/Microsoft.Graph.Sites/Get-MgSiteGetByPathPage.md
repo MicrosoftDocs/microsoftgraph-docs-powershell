@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteGetByPathPage
 
 ## SYNOPSIS
-Get pages from sites
+The collection of pages in the baseSitePages list in this site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathPage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathPage?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Get-MgSiteGetByPathPage -Path <String> -SiteId <String> -Path1 <String> [-Expand
 ```
 
 ## DESCRIPTION
-Get pages from sites
+The collection of pages in the baseSitePages list in this site.
 
 ## PARAMETERS
 

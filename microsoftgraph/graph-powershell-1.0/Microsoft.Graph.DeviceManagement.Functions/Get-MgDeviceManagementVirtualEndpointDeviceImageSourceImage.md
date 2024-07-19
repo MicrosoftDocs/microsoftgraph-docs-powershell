@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage
 
 ## SYNOPSIS
-Invoke function getSourceImages
+Get cloudPcSourceDeviceImage objects that can be uploaded and used on Cloud PCs.
+View a list of all the managed image resources from your Microsoft Entra subscriptions.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage?view=graph-powershell-beta)
@@ -22,7 +23,11 @@ Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage [-Count] [-Filter <S
 ```
 
 ## DESCRIPTION
-Invoke function getSourceImages
+Get cloudPcSourceDeviceImage objects that can be uploaded and used on Cloud PCs.
+View a list of all the managed image resources from your Microsoft Entra subscriptions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcdeviceimage-getsourceimages-permissions.md)]
 
 ## PARAMETERS
 
@@ -160,6 +165,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementvirtualendpointdeviceimagesourceimage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementvirtualendpointdeviceimagesourceimage)
+
+[https://learn.microsoft.com/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-1.0)
 
 
 

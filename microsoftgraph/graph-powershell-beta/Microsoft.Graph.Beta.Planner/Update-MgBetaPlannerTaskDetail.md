@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPlannerTaskDetail
 
 ## SYNOPSIS
-Update the navigation property details in planner
+Update the properties of plannerTaskDetails object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPlannerTaskDetail](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskDetail?view=graph-powershell-1.0)
@@ -51,7 +51,7 @@ Update-MgBetaPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 ```
 
 ## DESCRIPTION
-Update the navigation property details in planner
+Update the properties of plannerTaskDetails object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -480,7 +480,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail)
 
-[https://learn.microsoft.com/graph/api/plannertaskdetails-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannertaskdetails-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/plannertaskdetails-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannertaskdetails-update?view=graph-rest-beta)
 
 
 

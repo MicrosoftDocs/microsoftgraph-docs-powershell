@@ -32,8 +32,6 @@ Get-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-Expand
 ## DESCRIPTION
 Specifies class-level assignments settings.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -176,6 +174,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsetting)
+
+
 
 
 

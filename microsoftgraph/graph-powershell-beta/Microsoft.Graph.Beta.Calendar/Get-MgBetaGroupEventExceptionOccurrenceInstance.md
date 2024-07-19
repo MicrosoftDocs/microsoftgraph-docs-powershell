@@ -19,24 +19,26 @@ Nullable.
 ### List (Default)
 ```
 Get-MgBetaGroupEventExceptionOccurrenceInstance -EventId <String> -EventId1 <String> -GroupId <String>
- -EndDateTime <String> -StartDateTime <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ -EndDateTime <String> -StartDateTime <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaGroupEventExceptionOccurrenceInstance -EventId <String> -EventId1 <String> -EventId2 <String>
- -GroupId <String> -EndDateTime <String> -StartDateTime <String> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ -GroupId <String> -EndDateTime <String> -StartDateTime <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaGroupEventExceptionOccurrenceInstance -InputObject <ICalendarIdentity> -EndDateTime <String>
- -StartDateTime <String> [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ -StartDateTime <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -134,6 +136,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -261,6 +278,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -357,7 +389,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventexceptionoccurrenceinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventexceptionoccurrenceinstance)
 
-[https://learn.microsoft.com/graph/api/event-list-instances?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-list-instances?view=graph-rest-1.0)
+
+
 
 
 

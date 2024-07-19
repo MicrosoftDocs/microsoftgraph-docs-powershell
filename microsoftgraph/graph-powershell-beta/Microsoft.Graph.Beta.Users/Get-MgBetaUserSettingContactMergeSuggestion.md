@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserSettingContactMergeSuggestion
 
 ## SYNOPSIS
-Read the properties and relationships of a contactMergeSuggestions object.
+The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a contactMergeSuggestions object.
+The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserSettingContactMergeSuggestion Cmdlet
@@ -194,8 +194,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingcontactmergesuggestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingcontactmergesuggestion)
-
-[https://learn.microsoft.com/graph/api/contactmergesuggestions-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactmergesuggestions-get?view=graph-rest-1.0)
 
 
 

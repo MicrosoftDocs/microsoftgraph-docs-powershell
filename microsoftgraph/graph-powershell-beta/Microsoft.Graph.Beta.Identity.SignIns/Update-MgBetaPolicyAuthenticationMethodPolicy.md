@@ -42,12 +42,14 @@ Update the properties of an authenticationMethodsPolicy object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	registrationEnforcement = @{
 		authenticationMethodsRegistrationCampaign = @{
 			snoozeDurationInDays = 1
+			enforceRegistrationAfterAllowedSnoozes = $true
 			state = "enabled"
 			excludeTargets = @(
 			)
@@ -71,10 +73,9 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaPolicyAuthenticationMethodPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -478,7 +479,7 @@ SYSTEMCREDENTIALPREFERENCES `<IMicrosoftGraphSystemCredentialPreferences>`: syst
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy)
 
-[https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-beta)
 
 
 

@@ -53,6 +53,7 @@ You can identify the room or roomList by specifying the id or emailAddress prope
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Calendar
 
 $params = @{
@@ -65,10 +66,9 @@ $params = @{
 }
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgPlace Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

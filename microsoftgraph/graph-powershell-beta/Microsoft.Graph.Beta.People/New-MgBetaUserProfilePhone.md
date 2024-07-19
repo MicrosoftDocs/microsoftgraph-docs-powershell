@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfilePhone
 
 ## SYNOPSIS
-Use this API to create a new itemPhone object in a user's profile.
+Create new navigation property to phones for users
 
 ## SYNTAX
 
@@ -19,8 +19,8 @@ New-MgBetaUserProfilePhone -UserId <String> [-ResponseHeadersVariable <String>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Number <String>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-Type <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -37,8 +37,8 @@ New-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> [-ResponseHeadersVaria
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Number <String>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-Type <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -49,7 +49,7 @@ New-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Use this API to create a new itemPhone object in a user's profile.
+Create new navigation property to phones for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -334,6 +334,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Sources
+Where the values within an entity originated if synced from another source.
+To construct, see NOTES section for SOURCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphProfileSourceAnnotation[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Type
 phoneType
 
@@ -436,6 +452,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Friendly name the user has assigned this phone number.
@@ -495,13 +515,16 @@ This property is read-only.
 
 SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String- `[]`>]`:
+  - `[Type <String- `[]`>]`: 
+
+SOURCES <IMicrosoftGraphProfileSourceAnnotation- `[]`>: Where the values within an entity originated if synced from another source.
+  - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+  - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+  - `[SourceId <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilephone](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilephone)
-
-[https://learn.microsoft.com/graph/api/profile-post-phones?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-phones?view=graph-rest-1.0)
 
 
 

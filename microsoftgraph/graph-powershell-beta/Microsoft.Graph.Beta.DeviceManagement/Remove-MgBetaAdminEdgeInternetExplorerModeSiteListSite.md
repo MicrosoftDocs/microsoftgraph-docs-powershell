@@ -32,6 +32,30 @@ Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceMana
 ## DESCRIPTION
 Delete a browserSite from a browserSiteList.
 
+## EXAMPLES
+### Example 1: Delete a site that was not previously published
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BrowserSiteId $browserSiteId
+
+```
+This example will delete a site that was not previously published
+
+### Example 2: Delete a site that was previously published
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BrowserSiteId $browserSiteId
+
+```
+This example will delete a site that was previously published
+
+
 ## PARAMETERS
 
 ### -BrowserSiteId
@@ -349,8 +373,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsite)
 
-[https://learn.microsoft.com/graph/api/browsersitelist-delete-sites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-delete-sites?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/browsersitelist-delete-sites?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersitelist-delete-sites?view=graph-rest-beta)
 
 
 

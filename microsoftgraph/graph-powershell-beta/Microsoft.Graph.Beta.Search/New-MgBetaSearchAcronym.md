@@ -341,7 +341,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym)
 
-[https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-beta)
 
 
 

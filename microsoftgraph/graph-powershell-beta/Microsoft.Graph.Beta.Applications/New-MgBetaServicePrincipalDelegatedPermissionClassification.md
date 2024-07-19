@@ -52,6 +52,7 @@ Classify a delegated permission by adding a delegatedPermissionClassification to
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
 
 $params = @{
@@ -61,10 +62,9 @@ $params = @{
 }
 
 New-MgBetaServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaServicePrincipalDelegatedPermissionClassification Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -316,6 +316,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[IPApplicationSegmentId <String>]`: The unique identifier of ipApplicationSegment
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
@@ -323,6 +324,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -337,7 +339,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipaldelegatedpermissionclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipaldelegatedpermissionclassification)
 
-[https://learn.microsoft.com/graph/api/serviceprincipal-post-delegatedpermissionclassifications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-post-delegatedpermissionclassifications?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/serviceprincipal-post-delegatedpermissionclassifications?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-post-delegatedpermissionclassifications?view=graph-rest-beta)
 
 
 

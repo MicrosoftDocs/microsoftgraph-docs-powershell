@@ -57,37 +57,61 @@ The createLink action creates a new sharing link if the specified link type does
 listItem resources inherit sharing permissions from the list the item resides in.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaSiteListItemLink Cmdlet
+### Example 1: Create an anonymous sharing link
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
+
 $params = @{
-	Type = "embed"
+	type = "view"
+	scope = "anonymous"
+	password = "String"
+	recipients = @(
+		@{
+			"@odata.type" = "microsoft.graph.driveRecipient"
+		}
+	)
+	sendNotification = $true
+	retainInheritedPermissions = $false
 }
+
 New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+
 ```
-This example shows how to use the New-MgBetaSiteListItemLink Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the New-MgBetaSiteListItemLink Cmdlet
+This example will create an anonymous sharing link
+
+### Example 2: Creating company sharable links
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
+
 $params = @{
-	Type = "edit"
-	Scope = "organization"
+	type = "edit"
+	scope = "organization"
 }
+
 New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+
 ```
-This example shows how to use the New-MgBetaSiteListItemLink Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the New-MgBetaSiteListItemLink Cmdlet
+This example shows creating company sharable links
+
+### Example 3: Creating embeddable links
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
+
 $params = @{
-	Type = "embed"
+	type = "embed"
 }
+
 New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+
 ```
-This example shows how to use the New-MgBetaSiteListItemLink Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example shows creating embeddable links
+
 
 ## PARAMETERS
 
@@ -476,7 +500,7 @@ security groups).
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemlink)
 
-[https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-beta](https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-beta)
 
 
 

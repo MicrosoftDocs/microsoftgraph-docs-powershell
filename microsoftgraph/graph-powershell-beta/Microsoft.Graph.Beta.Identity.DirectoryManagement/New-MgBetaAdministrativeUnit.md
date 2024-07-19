@@ -34,20 +34,42 @@ New-MgBetaAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeUnit>
 Use this API to create a new administrativeUnit.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaAdministrativeUnit Cmdlet
+### Example 1: Create an administrative unit
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 $params = @{
-	DisplayName = "Seattle District Technical Schools"
-	Description = "Seattle district technical schools administration"
-	MembershipType = "Dynamic"
-	MembershipRule = "(user.country -eq "United States")"
-	MembershipRuleProcessingState = "On"
+	displayName = "Seattle District Technical Schools"
+	description = "Seattle district technical schools administration"
+	membershipType = "Dynamic"
+	membershipRule = "(user.country -eq "United States")"
+	membershipRuleProcessingState = "On"
 }
+
 New-MgBetaAdministrativeUnit -BodyParameter $params
+
 ```
-This example shows how to use the New-MgBetaAdministrativeUnit Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will create an administrative unit
+
+### Example 2: Create a restricted management administrative unit
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	displayName = "Executive Division"
+	description = "Executive division administration"
+	isMemberManagementRestricted = $true
+}
+
+New-MgBetaAdministrativeUnit -BodyParameter $params
+
+```
+This example will create a restricted management administrative unit
+
 
 ## PARAMETERS
 
@@ -391,10 +413,9 @@ Read-only.
     - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Visibility <String>]`: 
 
 EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for this administrative unit.
@@ -417,16 +438,15 @@ Read-only.
   - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunit)
 
-[https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-beta)
 
 
 

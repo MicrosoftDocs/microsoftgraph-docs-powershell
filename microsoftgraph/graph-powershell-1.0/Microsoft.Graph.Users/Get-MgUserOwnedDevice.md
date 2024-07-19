@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserOwnedDevice
 
 ## SYNOPSIS
-Devices that are owned by the user.
+Devices the user owns.
 Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
@@ -41,7 +41,7 @@ Get-MgUserOwnedDevice -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Devices that are owned by the user.
+Devices the user owns.
 Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
@@ -356,8 +356,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevice)
-
-[https://learn.microsoft.com/graph/api/user-list-owneddevices?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-owneddevices?view=graph-rest-1.0)
 
 
 

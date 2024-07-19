@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount
 
 ## SYNOPSIS
-Invoke function getStorageAccounts
+List all storage accounts cloudPcForensicStorageAccount that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis.
 
 ## SYNTAX
 
@@ -28,7 +28,23 @@ Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount
 ```
 
 ## DESCRIPTION
-Invoke function getStorageAccounts
+List all storage accounts cloudPcForensicStorageAccount that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcsnapshot-getstorageaccounts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+
+Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount Cmdlet.
+
 
 ## PARAMETERS
 
@@ -236,6 +252,7 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointsnapshotstorageaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointsnapshotstorageaccount)
 
+[https://learn.microsoft.com/graph/api/cloudpcsnapshot-getstorageaccounts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcsnapshot-getstorageaccounts?view=graph-rest-beta)
 
 
 

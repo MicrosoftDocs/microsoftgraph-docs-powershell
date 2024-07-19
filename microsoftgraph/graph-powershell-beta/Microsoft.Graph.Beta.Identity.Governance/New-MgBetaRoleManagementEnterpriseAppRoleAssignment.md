@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaRoleManagementEnterpriseAppRoleAssignment
 
 ## SYNOPSIS
-Create a new unifiedRoleAssignment object.
+Create new navigation property to roleAssignments for roleManagement
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ New-MgBetaRoleManagementEnterpriseAppRoleAssignment -InputObject <IIdentityGover
 ```
 
 ## DESCRIPTION
-Create a new unifiedRoleAssignment object.
+Create new navigation property to roleAssignments for roleManagement
 
 ## PARAMETERS
 
@@ -88,7 +88,8 @@ Accept wildcard characters: False
 Identifier of the app specific scope when the assignment scope is app specific.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
 App scopes are scopes that are defined and understood by a resource application only.
-For the entitlement management provider, use this property to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+For the entitlement management provider, use this property to specify a catalog.
+For example, /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
 Supports $filter (eq, in).
 For example /roleManagement/entitlementManagement/roleAssignments$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'.
 
@@ -434,7 +435,8 @@ This property is read only.
   - `[AppScopeId <String>]`: Identifier of the app specific scope when the assignment scope is app specific.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
 App scopes are scopes that are defined and understood by a resource application only.
-For the entitlement management provider, use this property to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
+For the entitlement management provider, use this property to specify a catalog.
+For example, /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
 Supports $filter (eq, in).
 For example /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'.
   - `[Condition <String>]`: 
@@ -664,8 +666,6 @@ Read-only when isBuiltIn is true.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapproleassignment)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-1.0)
 
 
 

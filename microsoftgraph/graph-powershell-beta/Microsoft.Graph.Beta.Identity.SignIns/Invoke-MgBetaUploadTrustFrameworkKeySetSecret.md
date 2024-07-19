@@ -52,19 +52,24 @@ Examples of secrets are application secrets in Microsoft Entra ID, Google, Faceb
 his method returns trustFrameworkKey.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaUploadTrustFrameworkKeySetSecret Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
-	Use = "use-value"
-	K = "application-secret-to-be-uploaded"
-	Nbf = 1508969811
-	Exp = 1508973711
+	use = "use-value"
+	k = "application-secret-to-be-uploaded"
+	nbf = 1508969811
+	exp = 1508973711
 }
+
 Invoke-MgBetaUploadTrustFrameworkKeySetSecret -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaUploadTrustFrameworkKeySetSecret Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -341,6 +346,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -360,6 +366,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -373,7 +380,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadtrustframeworkkeysetsecret](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadtrustframeworkkeysetsecret)
 
-[https://learn.microsoft.com/graph/api/trustframeworkkeyset-uploadsecret?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trustframeworkkeyset-uploadsecret?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/trustframeworkkeyset-uploadsecret?view=graph-rest-beta](https://learn.microsoft.com/graph/api/trustframeworkkeyset-uploadsecret?view=graph-rest-beta)
 
 
 

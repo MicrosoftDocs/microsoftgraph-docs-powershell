@@ -24,23 +24,6 @@ Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy [-IfMatch <String>] [-Re
 ## DESCRIPTION
 Delete navigation property identitySecurityDefaultsEnforcementPolicy for policies
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-
-$params = @{
-	isEnabled = $false
-}
-
-Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy -BodyParameter $params
-```
-This example shows how to use the Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -Headers
@@ -163,6 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyidentitysecuritydefaultenforcementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyidentitysecuritydefaultenforcementpolicy)
+
 
 
 

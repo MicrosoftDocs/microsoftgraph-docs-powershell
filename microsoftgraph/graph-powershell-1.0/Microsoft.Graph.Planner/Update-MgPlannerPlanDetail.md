@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPlannerPlanDetail
 
 ## SYNOPSIS
-Update the navigation property details in planner
+Update the properties of plannerplandetails object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerPlanDetail?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 ```
 
 ## DESCRIPTION
-Update the navigation property details in planner
+Update the properties of plannerplandetails object.
 
 ## EXAMPLES
 ### Example 1: Code snippet

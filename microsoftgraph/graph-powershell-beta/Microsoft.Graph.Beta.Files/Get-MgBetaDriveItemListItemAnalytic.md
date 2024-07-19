@@ -32,8 +32,6 @@ Get-MgBetaDriveItemListItemAnalytic -InputObject <IFilesIdentity> [-ExpandProper
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -DriveId
@@ -202,6 +200,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemlistitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemlistitemanalytic)
+
+
 
 
 

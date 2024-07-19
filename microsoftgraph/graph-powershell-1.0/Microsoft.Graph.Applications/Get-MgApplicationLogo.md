@@ -33,8 +33,6 @@ Get-MgApplicationLogo -InputObject <IApplicationsIdentity> -OutFile <String>
 The main logo for the application.
 Not nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -174,6 +172,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -187,6 +186,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationlogo)
+
+
 
 
 

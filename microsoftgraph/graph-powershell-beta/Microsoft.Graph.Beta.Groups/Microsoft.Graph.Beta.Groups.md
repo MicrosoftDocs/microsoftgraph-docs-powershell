@@ -578,10 +578,28 @@ Locale: en-US
 ### [Get-MgBetaUserJoinedGroup](Get-MgBetaUserJoinedGroup.md)
 {{ Fill in the Description }}
 
+### [Grant-MgBetaGroupDriveItemListItemPermission](Grant-MgBetaGroupDriveItemListItemPermission.md)
+{{ Fill in the Description }}
+
 ### [Grant-MgBetaGroupDriveItemPermission](Grant-MgBetaGroupDriveItemPermission.md)
 {{ Fill in the Description }}
 
+### [Grant-MgBetaGroupDriveListItemPermission](Grant-MgBetaGroupDriveListItemPermission.md)
+{{ Fill in the Description }}
+
+### [Grant-MgBetaGroupDriveListPermission](Grant-MgBetaGroupDriveListPermission.md)
+{{ Fill in the Description }}
+
+### [Grant-MgBetaGroupDriveRootListItemPermission](Grant-MgBetaGroupDriveRootListItemPermission.md)
+{{ Fill in the Description }}
+
 ### [Grant-MgBetaGroupDriveRootPermission](Grant-MgBetaGroupDriveRootPermission.md)
+{{ Fill in the Description }}
+
+### [Grant-MgBetaGroupSiteListItemPermission](Grant-MgBetaGroupSiteListItemPermission.md)
+{{ Fill in the Description }}
+
+### [Grant-MgBetaGroupSiteListPermission](Grant-MgBetaGroupSiteListPermission.md)
 {{ Fill in the Description }}
 
 ### [Grant-MgBetaGroupSitePermission](Grant-MgBetaGroupSitePermission.md)
@@ -893,9 +911,6 @@ Locale: en-US
 ### [Remove-MgBetaGroup](Remove-MgBetaGroup.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaGroupAcceptedSenderByRef](Remove-MgBetaGroupAcceptedSenderByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef](Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
@@ -947,13 +962,7 @@ Locale: en-US
 ### [Remove-MgBetaGroupLifecyclePolicy](Remove-MgBetaGroupLifecyclePolicy.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaGroupMemberByRef](Remove-MgBetaGroupMemberByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaGroupMemberDirectoryObjectByRef](Remove-MgBetaGroupMemberDirectoryObjectByRef.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaGroupOwnerByRef](Remove-MgBetaGroupOwnerByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupOwnerDirectoryObjectByRef](Remove-MgBetaGroupOwnerDirectoryObjectByRef.md)
@@ -968,7 +977,7 @@ Locale: en-US
 ### [Remove-MgBetaGroupPhoto](Remove-MgBetaGroupPhoto.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaGroupRejectedSenderByRef](Remove-MgBetaGroupRejectedSenderByRef.md)
+### [Remove-MgBetaGroupPhotoContent](Remove-MgBetaGroupPhotoContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef](Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef.md)
@@ -1040,10 +1049,28 @@ Locale: en-US
 ### [Restore-MgBetaGroupSiteListItemVersion](Restore-MgBetaGroupSiteListItemVersion.md)
 {{ Fill in the Description }}
 
+### [Revoke-MgBetaGroupDriveItemListItemPermissionGrant](Revoke-MgBetaGroupDriveItemListItemPermissionGrant.md)
+{{ Fill in the Description }}
+
 ### [Revoke-MgBetaGroupDriveItemPermissionGrant](Revoke-MgBetaGroupDriveItemPermissionGrant.md)
 {{ Fill in the Description }}
 
+### [Revoke-MgBetaGroupDriveListItemPermissionGrant](Revoke-MgBetaGroupDriveListItemPermissionGrant.md)
+{{ Fill in the Description }}
+
+### [Revoke-MgBetaGroupDriveListPermissionGrant](Revoke-MgBetaGroupDriveListPermissionGrant.md)
+{{ Fill in the Description }}
+
+### [Revoke-MgBetaGroupDriveRootListItemPermissionGrant](Revoke-MgBetaGroupDriveRootListItemPermissionGrant.md)
+{{ Fill in the Description }}
+
 ### [Revoke-MgBetaGroupDriveRootPermissionGrant](Revoke-MgBetaGroupDriveRootPermissionGrant.md)
+{{ Fill in the Description }}
+
+### [Revoke-MgBetaGroupSiteListItemPermissionGrant](Revoke-MgBetaGroupSiteListItemPermissionGrant.md)
+{{ Fill in the Description }}
+
+### [Revoke-MgBetaGroupSiteListPermissionGrant](Revoke-MgBetaGroupSiteListPermissionGrant.md)
 {{ Fill in the Description }}
 
 ### [Revoke-MgBetaGroupSitePermissionGrant](Revoke-MgBetaGroupSitePermissionGrant.md)

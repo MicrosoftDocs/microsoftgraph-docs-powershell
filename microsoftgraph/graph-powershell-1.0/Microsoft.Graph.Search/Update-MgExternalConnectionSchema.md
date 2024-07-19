@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgExternalConnectionSchema
 
 ## SYNOPSIS
-Create a new schema object.
+Create a new or update an existing schema for a Microsoft Search connection.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
@@ -46,19 +46,46 @@ Update-MgExternalConnectionSchema -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Create a new schema object.
+Create a new or update an existing schema for a Microsoft Search connection.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Search
 
-Get-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId
+$params = @{
+	baseType = "microsoft.graph.externalItem"
+	properties = @(
+		@{
+			name = "ticketTitle"
+			type = "String"
+			isSearchable = "true"
+			isRetrievable = "true"
+			labels = @(
+			"title"
+		)
+	}
+	@{
+		name = "priority"
+		type = "String"
+		isQueryable = "true"
+		isRetrievable = "true"
+		isSearchable = "false"
+	}
+	@{
+		name = "assignee"
+		type = "String"
+		isRetrievable = "true"
+	}
+)
+}
+
+Update-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgExternalConnectionSchema Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

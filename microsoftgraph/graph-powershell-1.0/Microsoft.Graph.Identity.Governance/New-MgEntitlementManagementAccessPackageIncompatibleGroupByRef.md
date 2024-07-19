@@ -52,6 +52,7 @@ Add a group to the list of groups that have been marked as incompatible on an ac
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
@@ -59,10 +60,9 @@ $params = @{
 }
 
 New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId $accessPackageId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

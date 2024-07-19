@@ -43,6 +43,30 @@ You can download a report by first creating a new cloudPcExportJob resource to i
 Use this GET operation to verify the exportJobStatus property of the cloudPcExportJob resource.
 The property becomes completed when the report finishes downloading in the location specified by the exportUrl property.
 
+## EXAMPLES
+### Example 1: Get an export job for the TotalAggregatedRemoteConnectionReports report
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId $cloudPcExportJobId
+
+```
+This example will get an export job for the totalaggregatedremoteconnectionreports report
+
+### Example 2: Get an export job for the RemoteConnectionQualityReports report
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId $cloudPcExportJobId
+
+```
+This example will get an export job for the remoteconnectionqualityreports report
+
+
 ## PARAMETERS
 
 ### -All
@@ -351,8 +375,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointreportexportjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointreportexportjob)
 
-[https://learn.microsoft.com/graph/api/cloudpcexportjob-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcexportjob-get?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/cloudpcexportjob-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcexportjob-get?view=graph-rest-beta)
 
 
 

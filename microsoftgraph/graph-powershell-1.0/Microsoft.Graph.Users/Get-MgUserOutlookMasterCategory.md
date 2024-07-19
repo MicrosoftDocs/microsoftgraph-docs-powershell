@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserOutlookMasterCategory
 
 ## SYNOPSIS
-Get the properties and relationships of the specified outlookCategory object.
+A list of categories defined for the user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
@@ -17,27 +17,28 @@ Get the properties and relationships of the specified outlookCategory object.
 
 ### List (Default)
 ```
-Get-MgUserOutlookMasterCategory -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgUserOutlookMasterCategory -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgUserOutlookMasterCategory -OutlookCategoryId <String> -UserId <String> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgUserOutlookMasterCategory -OutlookCategoryId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of the specified outlookCategory object.
+A list of categories defined for the user.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -78,6 +79,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -207,6 +223,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -303,10 +334,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategory)
-
-[https://learn.microsoft.com/graph/api/outlookcategory-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookcategory-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/outlookuser-list-mastercategories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookuser-list-mastercategories?view=graph-rest-1.0)
 
 
 

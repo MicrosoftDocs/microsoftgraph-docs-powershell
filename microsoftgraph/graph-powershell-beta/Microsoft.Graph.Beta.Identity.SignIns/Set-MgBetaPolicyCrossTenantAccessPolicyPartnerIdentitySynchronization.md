@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 
 ## SYNOPSIS
-Update the navigation property identitySynchronization in policies
+Create a cross-tenant user synchronization policy for a partner-specific configuration.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-1.0)
@@ -48,7 +48,27 @@ Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObje
 ```
 
 ## DESCRIPTION
-Update the navigation property identitySynchronization in policies
+Create a cross-tenant user synchronization policy for a partner-specific configuration.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	displayName = "Fabrikam"
+	userSyncInbound = @{
+		isSyncAllowed = $true
+	}
+}
+
+Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization Cmdlet.
+
 
 ## PARAMETERS
 
@@ -320,6 +340,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -339,6 +360,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -358,6 +380,7 @@ This property has no impact on existing users who have already been synchronized
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetapolicycrosstenantaccesspolicypartneridentitysynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetapolicycrosstenantaccesspolicypartneridentitysynchronization)
 
+[https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization?view=graph-rest-beta](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization?view=graph-rest-beta)
 
 
 

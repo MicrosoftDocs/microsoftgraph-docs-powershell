@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserSettingContactMergeSuggestion
 
 ## SYNOPSIS
-Update the properties of a contactMergeSuggestions object.
+Update the navigation property contactMergeSuggestions in users
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a contactMergeSuggestions object.
+Update the navigation property contactMergeSuggestions in users
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserSettingContactMergeSuggestion Cmdlet
@@ -283,8 +283,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingcontactmergesuggestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingcontactmergesuggestion)
-
-[https://learn.microsoft.com/graph/api/contactmergesuggestions-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactmergesuggestions-update?view=graph-rest-1.0)
 
 
 

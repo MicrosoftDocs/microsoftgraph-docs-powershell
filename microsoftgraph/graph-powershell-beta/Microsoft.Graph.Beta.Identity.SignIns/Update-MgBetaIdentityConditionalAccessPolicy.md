@@ -401,7 +401,7 @@ Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
     - `[ClientAppTypes <String- `[]`>]`: Client application types included in the policy.
 Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other.
 Required. 
-The easUnsupported enumeration member will be deprecated in favor of exchangeActiveSync, which includes EAS supported and unsupported platforms.
+The easUnsupported enumeration member is deprecated in favor of exchangeActiveSync, which includes EAS supported and unsupported platforms.
     - `[ClientApplications <IMicrosoftGraphConditionalAccessClientApplications>]`: conditionalAccessClientApplications
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ExcludeServicePrincipals <String- `[]`>]`: Service principal IDs excluded from the policy scope.
@@ -416,11 +416,13 @@ All is the only allowed value.
     - `[Devices <IMicrosoftGraphConditionalAccessDevices>]`: conditionalAccessDevices
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceFilter <IMicrosoftGraphConditionalAccessFilter>]`: conditionalAccessFilter
-      - `[ExcludeDeviceStates <String- `[]`>]`: 
+      - `[ExcludeDeviceStates <String- `[]`>]`: States excluded from the scope of the policy.
+Possible values: Compliant, DomainJoined.
       - `[ExcludeDevices <String- `[]`>]`: States excluded from the scope of the policy.
 Possible values: Compliant, DomainJoined.
 Cannot be set if deviceFIlter is set.
-      - `[IncludeDeviceStates <String- `[]`>]`: 
+      - `[IncludeDeviceStates <String- `[]`>]`: States in the scope of the policy.
+All is the only allowed value.
       - `[IncludeDevices <String- `[]`>]`: States in the scope of the policy.
 All is the only allowed value.
 Cannot be set if deviceFilter is set.
@@ -542,7 +544,7 @@ Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
   - `[ClientAppTypes <String- `[]`>]`: Client application types included in the policy.
 Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other.
 Required. 
-The easUnsupported enumeration member will be deprecated in favor of exchangeActiveSync, which includes EAS supported and unsupported platforms.
+The easUnsupported enumeration member is deprecated in favor of exchangeActiveSync, which includes EAS supported and unsupported platforms.
   - `[ClientApplications <IMicrosoftGraphConditionalAccessClientApplications>]`: conditionalAccessClientApplications
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ExcludeServicePrincipals <String- `[]`>]`: Service principal IDs excluded from the policy scope.
@@ -557,11 +559,13 @@ All is the only allowed value.
   - `[Devices <IMicrosoftGraphConditionalAccessDevices>]`: conditionalAccessDevices
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceFilter <IMicrosoftGraphConditionalAccessFilter>]`: conditionalAccessFilter
-    - `[ExcludeDeviceStates <String- `[]`>]`: 
+    - `[ExcludeDeviceStates <String- `[]`>]`: States excluded from the scope of the policy.
+Possible values: Compliant, DomainJoined.
     - `[ExcludeDevices <String- `[]`>]`: States excluded from the scope of the policy.
 Possible values: Compliant, DomainJoined.
 Cannot be set if deviceFIlter is set.
-    - `[IncludeDeviceStates <String- `[]`>]`: 
+    - `[IncludeDeviceStates <String- `[]`>]`: States in the scope of the policy.
+All is the only allowed value.
     - `[IncludeDevices <String- `[]`>]`: States in the scope of the policy.
 All is the only allowed value.
 Cannot be set if deviceFilter is set.
@@ -677,6 +681,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -696,6 +701,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -737,7 +743,7 @@ SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditional
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccesspolicy)
 
-[https://learn.microsoft.com/graph/api/conditionalaccesspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/conditionalaccesspolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-update?view=graph-rest-beta)
 
 
 

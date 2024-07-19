@@ -42,8 +42,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingRe
 ## DESCRIPTION
 Per-user workflow execution results.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -409,7 +407,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowuserprocessingresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowuserprocessingresult)
 
-[https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-userprocessingresults?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-userprocessingresults?view=graph-rest-1.0)
+
+
+
 
 
 

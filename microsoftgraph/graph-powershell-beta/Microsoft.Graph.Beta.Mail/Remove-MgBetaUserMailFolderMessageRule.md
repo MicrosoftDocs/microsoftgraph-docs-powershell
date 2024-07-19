@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserMailFolderMessageRule
 
 ## SYNOPSIS
-Delete the specified messageRule object.
+Delete navigation property messageRules for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Delete the specified messageRule object.
+Delete navigation property messageRules for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -246,8 +246,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagerule)
-
-[https://learn.microsoft.com/graph/api/messagerule-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/messagerule-delete?view=graph-rest-1.0)
 
 
 

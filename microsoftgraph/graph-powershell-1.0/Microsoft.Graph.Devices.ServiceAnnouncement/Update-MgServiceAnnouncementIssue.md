@@ -54,8 +54,6 @@ Update-MgServiceAnnouncementIssue -InputObject <IDevicesServiceAnnouncementIdent
 ## DESCRIPTION
 Update the navigation property issues in admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -492,6 +490,8 @@ POSTS <IMicrosoftGraphServiceHealthIssuePost- `[]`>: Collection of historical po
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/update-mgserviceannouncementissue](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/update-mgserviceannouncementissue)
+
+
 
 
 

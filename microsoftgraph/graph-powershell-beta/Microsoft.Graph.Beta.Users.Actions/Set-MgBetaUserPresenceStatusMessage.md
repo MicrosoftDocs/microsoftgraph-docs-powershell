@@ -55,6 +55,52 @@ An optional expiration date and time can be supplied.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setstatusmessage-permissions.md)]
 
+## EXAMPLES
+### Example 1: Set status message with expiry date
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+$params = @{
+	statusMessage = @{
+		message = @{
+			content = "Hey I'm currently in a meeting."
+			contentType = "text"
+		}
+		expiryDateTime = @{
+			dateTime = "2022-10-18T17:05:33.2079781"
+			timeZone = "Pacific Standard Time"
+		}
+	}
+}
+
+Set-MgBetaUserPresenceStatusMessage -UserId $userId -BodyParameter $params
+
+```
+This example will set status message with expiry date
+
+### Example 2: Set status message of another user
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+$params = @{
+	statusMessage = @{
+		message = @{
+			content = "Hey I am available now"
+			contentType = "text"
+		}
+	}
+}
+
+Set-MgBetaUserPresenceStatusMessage -UserId $userId -BodyParameter $params
+
+```
+This example will set status message of another user
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -320,8 +366,7 @@ See below for possible values.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresencestatusmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresencestatusmessage)
 
-[https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-beta](https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-beta)
 
 
 

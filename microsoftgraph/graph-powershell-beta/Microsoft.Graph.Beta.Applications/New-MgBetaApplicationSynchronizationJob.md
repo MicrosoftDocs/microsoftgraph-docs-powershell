@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgBetaApplicationSynchronizationJob
 
 ## SYNOPSIS
-Create new synchronization job with a default synchronization schema.
-The job is created in a disabled state.
-Call Start job to start synchronization.
+Create new navigation property to jobs for applications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
@@ -52,9 +50,7 @@ New-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new synchronization job with a default synchronization schema.
-The job is created in a disabled state.
-Call Start job to start synchronization.
+Create new navigation property to jobs for applications
 
 ## PARAMETERS
 
@@ -365,7 +361,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
             - `[Value <String>]`: Value.
           - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-          - `[DefaultValue <String>]`: 
+          - `[DefaultValue <String>]`: The default value of the attribute.
           - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
           - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
             - `[Key <String>]`: attributeDefinitionMetadata
@@ -572,6 +568,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[IPApplicationSegmentId <String>]`: The unique identifier of ipApplicationSegment
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
@@ -579,6 +576,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -623,7 +621,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
           - `[Value <String>]`: Value.
         - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-        - `[DefaultValue <String>]`: 
+        - `[DefaultValue <String>]`: The default value of the attribute.
         - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
         - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
           - `[Key <String>]`: attributeDefinitionMetadata
@@ -818,7 +816,6 @@ Some settings are inherited from the template.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjob)
 
-[https://learn.microsoft.com/graph/api/synchronization-synchronization-post-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronization-post-jobs?view=graph-rest-1.0)
 
 
 

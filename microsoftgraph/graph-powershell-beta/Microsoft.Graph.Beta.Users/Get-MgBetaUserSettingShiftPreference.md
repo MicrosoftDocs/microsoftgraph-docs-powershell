@@ -36,13 +36,13 @@ Retrieve the properties and relationships of a shiftPreferences object by ID.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
 
 Get-MgBetaUserSettingShiftPreference -UserId $userId
+
 ```
 This example shows how to use the Get-MgBetaUserSettingShiftPreference Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -201,7 +201,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingshiftpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingshiftpreference)
 
-[https://learn.microsoft.com/graph/api/shiftpreferences-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shiftpreferences-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/shiftpreferences-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/shiftpreferences-get?view=graph-rest-beta)
 
 
 

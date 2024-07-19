@@ -37,20 +37,17 @@ Get-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity> [
 Retrieve the properties of a specific directory setting object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDirectorySetting Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-Get-MgBetaDirectorySetting -DirectorySettingId $directorySettingId
-```
-This example shows how to use the Get-MgBetaDirectorySetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaDirectorySetting Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 Get-MgBetaDirectorySetting
+
 ```
 This example shows how to use the Get-MgBetaDirectorySetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -335,9 +332,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysetting)
 
-[https://learn.microsoft.com/graph/api/directorysetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directorysetting-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/directorysetting-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directorysetting-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-beta)
 
 
 

@@ -37,6 +37,19 @@ Get-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIde
 ## DESCRIPTION
 Read the properties and relationships of an alertRule object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Get-MgBetaDeviceManagementMonitoringAlertRule
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementMonitoringAlertRule Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AlertRuleId
@@ -429,10 +442,9 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmonitoringalertrule)
 
-[https://learn.microsoft.com/graph/api/devicemanagement-alertrule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/devicemanagement-alertrule-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/devicemanagement-alertrule-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-list?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/devicemanagement-alertrule-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-list?view=graph-rest-beta)
 
 
 

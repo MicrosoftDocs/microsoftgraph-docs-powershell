@@ -50,8 +50,6 @@ Get-MgSiteOnenoteNotebookFromWebUrl -InputObject <ISitesIdentity>
 Retrieve the properties and relationships of a notebook object by using its URL path.
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -270,6 +268,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -278,6 +277,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteonenotenotebookfromweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteonenotenotebookfromweburl)
 
 [https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0)
+
+
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaEducationMeAssignmentRubricByRef
 
 ## SYNOPSIS
-Delete an educationRubric from an educationAssignment.
-This method doesn't delete the rubric itself and can only be performed by teachers.
+Delete ref of navigation property rubric for education
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEducationMeAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeAssignmentRubricByRef?view=graph-powershell-1.0)
@@ -31,10 +30,7 @@ Remove-MgBetaEducationMeAssignmentRubricByRef -InputObject <IEducationIdentity> 
 ```
 
 ## DESCRIPTION
-Delete an educationRubric from an educationAssignment.
-This method doesn't delete the rubric itself and can only be performed by teachers.
-
-## EXAMPLES
+Delete ref of navigation property rubric for education
 
 ## PARAMETERS
 
@@ -215,7 +211,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationmeassignmentrubricbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationmeassignmentrubricbyref)
 
-[https://learn.microsoft.com/graph/api/educationassignment-delete-rubric?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-delete-rubric?view=graph-rest-1.0)
+
 
 
 

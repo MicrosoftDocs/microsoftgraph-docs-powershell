@@ -101,6 +101,18 @@ Locale: en-US
 ### [Get-MgBetaExternalIndustryDataOperationCount](Get-MgBetaExternalIndustryDataOperationCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSet](Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSet.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetCount](Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow](Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlowCount](Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlowCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaExternalIndustryDataReferenceDefinition](Get-MgBetaExternalIndustryDataReferenceDefinition.md)
 {{ Fill in the Description }}
 
@@ -194,6 +206,12 @@ Locale: en-US
 ### [New-MgBetaExternalIndustryDataOperation](New-MgBetaExternalIndustryDataOperation.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaExternalIndustryDataOutboundProvisioningFlowSet](New-MgBetaExternalIndustryDataOutboundProvisioningFlowSet.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow](New-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaExternalIndustryDataReferenceDefinition](New-MgBetaExternalIndustryDataReferenceDefinition.md)
 {{ Fill in the Description }}
 
@@ -251,6 +269,12 @@ Locale: en-US
 ### [Remove-MgBetaExternalIndustryDataOperation](Remove-MgBetaExternalIndustryDataOperation.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaExternalIndustryDataOutboundProvisioningFlowSet](Remove-MgBetaExternalIndustryDataOutboundProvisioningFlowSet.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow](Remove-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaExternalIndustryDataReferenceDefinition](Remove-MgBetaExternalIndustryDataReferenceDefinition.md)
 {{ Fill in the Description }}
 
@@ -270,6 +294,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSearchQna](Remove-MgBetaSearchQna.md)
+{{ Fill in the Description }}
+
+### [Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow](Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaExternalConnectionItem](Set-MgBetaExternalConnectionItem.md)
@@ -315,6 +342,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaExternalIndustryDataOperation](Update-MgBetaExternalIndustryDataOperation.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaExternalIndustryDataOutboundProvisioningFlowSet](Update-MgBetaExternalIndustryDataOutboundProvisioningFlowSet.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow](Update-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaExternalIndustryDataReferenceDefinition](Update-MgBetaExternalIndustryDataReferenceDefinition.md)

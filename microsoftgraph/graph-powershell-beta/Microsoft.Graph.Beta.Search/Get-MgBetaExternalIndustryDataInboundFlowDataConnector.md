@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataInboundFlowDataConnector
 
 ## SYNOPSIS
-The data connector in the context of which this flow pulls in data from a source system.
+The data connector to the source system from where this flow gets its data.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaExternalIndustryDataInboundFlowDataConnector -InputObject <ISearchIden
 ```
 
 ## DESCRIPTION
-The data connector in the context of which this flow pulls in data from a source system.
+The data connector to the source system from where this flow gets its data.
 
 ## PARAMETERS
 
@@ -168,6 +168,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup

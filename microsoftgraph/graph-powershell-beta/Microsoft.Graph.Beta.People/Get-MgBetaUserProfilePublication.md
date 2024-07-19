@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfilePublication
 
 ## SYNOPSIS
-Read the properties and relationships of an itemPublication object in a user's profile.
+Represents details of any publications a user has added to their profile.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfilePublication -InputObject <IPeopleIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an itemPublication object in a user's profile.
+Represents details of any publications a user has added to their profile.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilepublication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilepublication)
-
-[https://learn.microsoft.com/graph/api/itempublication-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itempublication-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-publications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-publications?view=graph-rest-1.0)
 
 
 

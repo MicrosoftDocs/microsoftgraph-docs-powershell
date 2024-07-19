@@ -57,6 +57,34 @@ This feature requires Teams Premium and attendees must have a valid United State
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualappointment-sendvirtualappointmentremindersms-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+$params = @{
+	attendees = @(
+		@{
+			phoneNumber = "+13129224122"
+			timeZone = "Pacific Standard Time"
+		}
+		@{
+			phoneNumber = "+1242421412"
+			timeZone = "Eastern Standard Time"
+		}
+	)
+	remindBeforeTimeInMinutesType = "mins15"
+}
+
+# A UPN can also be used as -UserId.
+Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+
+```
+This example shows how to use the Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,8 +367,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauseronlinemeetingvirtualappointmentremindersm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauseronlinemeetingvirtualappointmentremindersm)
 
-[https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-beta)
 
 
 

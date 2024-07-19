@@ -201,7 +201,7 @@ BODYPARAMETER `<IPaths9Q4ErzAdminServiceannouncementMessagesMicrosoftGraphMarkre
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageread)
 
-[https://learn.microsoft.com/graph/api/serviceupdatemessage-markread?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-markread?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-markread?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceupdatemessage-markread?view=graph-rest-beta)
 
 
 

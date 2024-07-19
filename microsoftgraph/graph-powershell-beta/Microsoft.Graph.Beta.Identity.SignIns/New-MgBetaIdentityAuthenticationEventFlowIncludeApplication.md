@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBetaIdentityAuthenticationEventFlowIncludeApplication
 
 ## SYNOPSIS
-Create new navigation property to includeApplications for identity
+Add or link an application to an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
+This enables the authentication experience that's defined by the user flow to be enabled for the application.
+An application can only be linked to one user flow.
 
 ## SYNTAX
 
@@ -41,7 +43,27 @@ New-MgBetaIdentityAuthenticationEventFlowIncludeApplication -InputObject <IIdent
 ```
 
 ## DESCRIPTION
-Create new navigation property to includeApplications for identity
+Add or link an application to an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
+This enables the authentication experience that's defined by the user flow to be enabled for the application.
+An application can only be linked to one user flow.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.authenticationConditionApplication"
+	appId = "63856651-13d9-4784-9abf-20758d509e19"
+}
+
+New-MgBetaIdentityAuthenticationEventFlowIncludeApplication -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaIdentityAuthenticationEventFlowIncludeApplication Cmdlet.
+
 
 ## PARAMETERS
 
@@ -270,6 +292,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -289,6 +312,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -302,6 +326,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventflowincludeapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventflowincludeapplication)
 
+[https://learn.microsoft.com/graph/api/authenticationconditionsapplications-post-includeapplications?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationconditionsapplications-post-includeapplications?view=graph-rest-beta)
 
 
 

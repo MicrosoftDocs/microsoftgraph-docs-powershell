@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema
 
 ## SYNOPSIS
-Invoke function functions
+List all the functions currently supported in the attributeMappingSource.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFunctionServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFunctionServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
@@ -32,16 +32,20 @@ Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema -InputObject <IApp
 ```
 
 ## DESCRIPTION
-Invoke function functions
+List all the functions currently supported in the attributeMappingSource.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
+
 Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+
 ```
 This example shows how to use the Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -289,6 +293,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[IPApplicationSegmentId <String>]`: The unique identifier of ipApplicationSegment
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
@@ -296,6 +301,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -309,6 +315,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationjobschema)
+
+[https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-beta)
 
 
 

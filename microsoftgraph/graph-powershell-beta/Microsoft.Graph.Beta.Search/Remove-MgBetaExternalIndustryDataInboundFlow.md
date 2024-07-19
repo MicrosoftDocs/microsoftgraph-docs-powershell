@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Delete an inboundFileFlow object.
+Delete an inboundFlow object.
 
 ## SYNTAX
 
@@ -27,7 +27,20 @@ Remove-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-If
 ```
 
 ## DESCRIPTION
-Delete an inboundFileFlow object.
+Delete an inboundFlow object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+Remove-MgBetaExternalIndustryDataInboundFlow -InboundFlowId $inboundFlowId
+
+```
+This example shows how to use the Remove-MgBetaExternalIndustryDataInboundFlow Cmdlet.
+
 
 ## PARAMETERS
 
@@ -199,6 +212,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -209,8 +224,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatainboundflow)
 
-[https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-delete?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/industrydata-inboundflow-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-inboundflow-delete?view=graph-rest-beta)
 
 
 

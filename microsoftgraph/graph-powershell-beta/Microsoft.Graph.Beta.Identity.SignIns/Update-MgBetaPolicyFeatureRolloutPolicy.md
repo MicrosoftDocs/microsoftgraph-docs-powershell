@@ -53,6 +53,7 @@ Update the properties of featureRolloutPolicy object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -63,10 +64,9 @@ $params = @{
 }
 
 Update-MgBetaPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaPolicyFeatureRolloutPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 
 ### -AppliesTo
 Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
+Specifies a list of directoryObject resources that feature is enabled for.
 To construct, see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
@@ -335,7 +335,7 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 APPLIESTO <IMicrosoftGraphDirectoryObject- `[]`>: Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
+Specifies a list of directoryObject resources that feature is enabled for.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -346,7 +346,7 @@ BODYPARAMETER `<IMicrosoftGraphFeatureRolloutPolicy>`: featureRolloutPolicy
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
+Specifies a list of directoryObject resources that feature is enabled for.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -408,6 +408,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -427,6 +428,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -440,7 +442,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfeaturerolloutpolicy)
 
-[https://learn.microsoft.com/graph/api/featurerolloutpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/featurerolloutpolicy-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/featurerolloutpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/featurerolloutpolicy-update?view=graph-rest-beta)
 
 
 

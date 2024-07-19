@@ -593,6 +593,12 @@ Locale: en-US
 ### [Get-MgBetaPolicyPermissionGrantPolicyIncludeCount](Get-MgBetaPolicyPermissionGrantPolicyIncludeCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaPolicyPermissionGrantPreApprovalPolicy](Get-MgBetaPolicyPermissionGrantPreApprovalPolicy.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaPolicyPermissionGrantPreApprovalPolicyCount](Get-MgBetaPolicyPermissionGrantPreApprovalPolicyCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaPolicyRoleManagementPolicy](Get-MgBetaPolicyRoleManagementPolicy.md)
 {{ Fill in the Description }}
 
@@ -720,6 +726,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTrustFrameworkKeySetCount](Get-MgBetaTrustFrameworkKeySetCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaTrustFrameworkKeySetKey](Get-MgBetaTrustFrameworkKeySetKey.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaTrustFrameworkKeySetKeyV2](Get-MgBetaTrustFrameworkKeySetKeyV2.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTrustFrameworkPolicy](Get-MgBetaTrustFrameworkPolicy.md)
@@ -1091,6 +1103,9 @@ Locale: en-US
 ### [New-MgBetaPolicyPermissionGrantPolicyInclude](New-MgBetaPolicyPermissionGrantPolicyInclude.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaPolicyPermissionGrantPreApprovalPolicy](New-MgBetaPolicyPermissionGrantPreApprovalPolicy.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaPolicyRoleManagementPolicy](New-MgBetaPolicyRoleManagementPolicy.md)
 {{ Fill in the Description }}
 
@@ -1223,7 +1238,13 @@ Locale: en-US
 ### [Remove-MgBetaIdentityB2CUserFlowLanguageDefaultPage](Remove-MgBetaIdentityB2CUserFlowLanguageDefaultPage.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaIdentityB2CUserFlowLanguageDefaultPageContent](Remove-MgBetaIdentityB2CUserFlowLanguageDefaultPageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaIdentityB2CUserFlowLanguageOverridePage](Remove-MgBetaIdentityB2CUserFlowLanguageOverridePage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityB2CUserFlowLanguageOverridePageContent](Remove-MgBetaIdentityB2CUserFlowLanguageOverridePageContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityB2CUserFlowUserAttributeAssignment](Remove-MgBetaIdentityB2CUserFlowUserAttributeAssignment.md)
@@ -1235,16 +1256,19 @@ Locale: en-US
 ### [Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef](Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef](Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaIdentityB2XUserFlowLanguage](Remove-MgBetaIdentityB2XUserFlowLanguage.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPage](Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPage.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaIdentityB2XUserFlowLanguageOverridePage](Remove-MgBetaIdentityB2XUserFlowLanguageOverridePage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityB2XUserFlowLanguageOverridePageContent](Remove-MgBetaIdentityB2XUserFlowLanguageOverridePageContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityB2XUserFlowPostAttributeCollection](Remove-MgBetaIdentityB2XUserFlowPostAttributeCollection.md)
@@ -1400,9 +1424,6 @@ Locale: en-US
 ### [Remove-MgBetaPolicyFeatureRolloutPolicy](Remove-MgBetaPolicyFeatureRolloutPolicy.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
@@ -1434,6 +1455,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaPolicyPermissionGrantPolicyInclude](Remove-MgBetaPolicyPermissionGrantPolicyInclude.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaPolicyPermissionGrantPreApprovalPolicy](Remove-MgBetaPolicyPermissionGrantPreApprovalPolicy.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaPolicyRoleManagementPolicy](Remove-MgBetaPolicyRoleManagementPolicy.md)
@@ -1488,6 +1512,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaTrustFrameworkPolicy](Remove-MgBetaTrustFrameworkPolicy.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaTrustFrameworkPolicyContent](Remove-MgBetaTrustFrameworkPolicyContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserAuthenticationEmailMethod](Remove-MgBetaUserAuthenticationEmailMethod.md)
@@ -1793,9 +1820,6 @@ Locale: en-US
 ### [Update-MgBetaPolicyDefaultAppManagementPolicy](Update-MgBetaPolicyDefaultAppManagementPolicy.md)
 {{ Fill in the Description }}
 
-### [Update-MgBetaPolicyDeviceRegistrationPolicy](Update-MgBetaPolicyDeviceRegistrationPolicy.md)
-{{ Fill in the Description }}
-
 ### [Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy](Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy.md)
 {{ Fill in the Description }}
 
@@ -1827,6 +1851,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaPolicyPermissionGrantPolicyInclude](Update-MgBetaPolicyPermissionGrantPolicyInclude.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaPolicyPermissionGrantPreApprovalPolicy](Update-MgBetaPolicyPermissionGrantPreApprovalPolicy.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaPolicyRoleManagementPolicy](Update-MgBetaPolicyRoleManagementPolicy.md)

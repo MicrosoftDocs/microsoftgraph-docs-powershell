@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
 
 ## SYNOPSIS
-Get the instance of a role eligibility.
+Instances for role eligibility requests.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
 ```
 
 ## DESCRIPTION
-Get the instance of a role eligibility.
+Instances for role eligibility requests.
 
 ## PARAMETERS
 
@@ -359,10 +359,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleeligibilityscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleeligibilityscheduleinstance)
-
-[https://learn.microsoft.com/graph/api/unifiedroleeligibilityscheduleinstance-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleeligibilityscheduleinstance-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-list-roleeligibilityscheduleinstances?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleeligibilityscheduleinstances?view=graph-rest-1.0)
 
 
 

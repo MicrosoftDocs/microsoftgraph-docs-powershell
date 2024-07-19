@@ -313,10 +313,9 @@ Read-only.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
   - `[Role <String>]`: Role of the attendee.
@@ -339,10 +338,9 @@ Read-only.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
     - `[Role <String>]`: Role of the attendee.
@@ -366,11 +364,31 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
+  - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
   - `[Email <String>]`: Alternate key of virtualEventRegistration
+  - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
+  - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
+  - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
+  - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
+  - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[ProtectionUnitBaseId <String>]`: The unique identifier of protectionUnitBase
+  - `[RestorePointId <String>]`: The unique identifier of restorePoint
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
+  - `[SharePointProtectionPolicyId <String>]`: The unique identifier of sharePointProtectionPolicy
+  - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
+  - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
+  - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
   - `[UniqueName <String>]`: Alternate key of businessScenario
   - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent

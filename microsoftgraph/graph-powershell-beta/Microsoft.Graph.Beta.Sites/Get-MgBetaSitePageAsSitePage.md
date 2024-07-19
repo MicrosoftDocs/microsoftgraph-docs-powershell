@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSitePageAsSitePage
 
 ## SYNOPSIS
-Get the item of type microsoft.graph.baseSitePage as microsoft.graph.sitePage
+Returns the metadata for a sitePage in the site pages list in a site.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSitePageAsSitePage](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageAsSitePage?view=graph-powershell-1.0)
@@ -38,7 +38,31 @@ Get-MgBetaSitePageAsSitePage -InputObject <ISitesIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get the item of type microsoft.graph.baseSitePage as microsoft.graph.sitePage
+Returns the metadata for a sitePage in the site pages list in a site.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSitePageAsSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId
+
+```
+This example shows how to use the Get-MgBetaSitePageAsSitePage Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSitePageAsSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId -Property "id,name" 
+
+```
+This example shows how to use the Get-MgBetaSitePageAsSitePage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -358,6 +382,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepageassitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepageassitepage)
 
+[https://learn.microsoft.com/graph/api/sitepage-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/sitepage-get?view=graph-rest-beta)
 
 
 

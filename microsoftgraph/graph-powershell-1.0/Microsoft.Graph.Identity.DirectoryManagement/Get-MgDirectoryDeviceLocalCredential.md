@@ -17,23 +17,24 @@ Retrieve the properties of a deviceLocalCredentialInfo for a specified device ob
 
 ### List (Default)
 ```
-Get-MgDirectoryDeviceLocalCredential [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgDirectoryDeviceLocalCredential [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDirectoryDeviceLocalCredential -DeviceLocalCredentialInfoId <String> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgDirectoryDeviceLocalCredential -DeviceLocalCredentialInfoId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryManagementIdentity> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -81,6 +82,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -238,6 +254,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -258,6 +289,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -287,6 +320,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/devicelocalcredentialinfo-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicelocalcredentialinfo-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/directory-list-devicelocalcredentials?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-devicelocalcredentials?view=graph-rest-1.0)
+
+
 
 
 

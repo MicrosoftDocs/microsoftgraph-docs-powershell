@@ -56,18 +56,23 @@ For copy operations, you follow an asynchronous calling pattern:  First call the
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/page-copytosection-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Copy-MgBetaUserOnenotePageToSection Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	Id = "id-value"
-	GroupId = "groupId-value"
+	id = "id-value"
+	groupId = "groupId-value"
 }
+
 # A UPN can also be used as -UserId.
 Copy-MgBetaUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
+
 ```
 This example shows how to use the Copy-MgBetaUserOnenotePageToSection Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -355,7 +360,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauseronenotepagetosection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauseronenotepagetosection)
 
-[https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-beta](https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-beta)
 
 
 

@@ -339,9 +339,9 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcconnection)
 
-[https://learn.microsoft.com/graph/api/managedtenants-cloudpcconnection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-cloudpcconnection-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/managedtenants-cloudpcconnection-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-cloudpcconnection-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-cloudpcconnections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-cloudpcconnections?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-cloudpcconnections?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-cloudpcconnections?view=graph-rest-beta)
 
 
 

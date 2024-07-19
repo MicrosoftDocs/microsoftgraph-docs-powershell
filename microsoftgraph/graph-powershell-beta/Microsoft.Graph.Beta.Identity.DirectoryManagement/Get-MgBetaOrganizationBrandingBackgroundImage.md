@@ -36,8 +36,6 @@ Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
 A smaller image will reduce bandwidth requirements and make the page load faster.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -215,7 +213,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandingbackgroundimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandingbackgroundimage)
 
-[https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0)
+
 
 
 

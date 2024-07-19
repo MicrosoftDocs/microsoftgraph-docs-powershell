@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgBetaBookingBusinessService
 
 ## SYNOPSIS
-Update the properties of a bookingService object in the specified bookingBusiness.
-The following are some examples you can customize for a service:- Price- Typical length of an appointment- Reminders- Any, time buffer to set up before or finish up after the service- Scheduling policy parameters such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
+Update the navigation property services in bookingBusinesses
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessService?view=graph-powershell-1.0)
@@ -105,8 +104,7 @@ Update-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a bookingService object in the specified bookingBusiness.
-The following are some examples you can customize for a service:- Price- Typical length of an appointment- Reminders- Any, time buffer to set up before or finish up after the service- Scheduling policy parameters such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
+Update the navigation property services in bookingBusinesses
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaBookingBusinessService Cmdlet
@@ -675,7 +673,7 @@ Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date, time and timezone when the Service was created.
   - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
     - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
-    - `[QuestionId <String>]`: If it's mandatory to answer the custom question.
+    - `[QuestionId <String>]`: The ID of the custom question.
   - `[DefaultDuration <TimeSpan?>]`: The default length of the service, represented in numbers of days, hours, minutes, and seconds.
 For example, P11D23H59M59.999999999999S.
   - `[DefaultLocation <IMicrosoftGraphLocation>]`: location
@@ -763,7 +761,7 @@ Default value is false.
 
 CUSTOMQUESTIONS <IMicrosoftGraphBookingQuestionAssignment- `[]`>: Contains the set of custom questions associated with a particular service.
   - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
-  - `[QuestionId <String>]`: If it's mandatory to answer the custom question.
+  - `[QuestionId <String>]`: The ID of the custom question.
 
 DEFAULTLOCATION `<IMicrosoftGraphLocation>`: location
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -810,11 +808,31 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
+  - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
   - `[Email <String>]`: Alternate key of virtualEventRegistration
+  - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
+  - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
+  - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
+  - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
+  - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[ProtectionUnitBaseId <String>]`: The unique identifier of protectionUnitBase
+  - `[RestorePointId <String>]`: The unique identifier of restorePoint
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
+  - `[SharePointProtectionPolicyId <String>]`: The unique identifier of sharePointProtectionPolicy
+  - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
+  - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
+  - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
   - `[UniqueName <String>]`: Alternate key of businessScenario
   - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
@@ -857,8 +875,6 @@ Use the email address specified in the email property of the bookingBusiness ent
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessservice)
-
-[https://learn.microsoft.com/graph/api/bookingservice-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingservice-update?view=graph-rest-1.0)
 
 
 

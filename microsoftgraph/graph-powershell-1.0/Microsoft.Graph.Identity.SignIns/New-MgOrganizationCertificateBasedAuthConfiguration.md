@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgOrganizationCertificateBasedAuthConfiguration
 
 ## SYNOPSIS
-Create a new certificateBasedAuthConfiguration object.
+Create new navigation property to certificateBasedAuthConfiguration for organization
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentitySignI
 ```
 
 ## DESCRIPTION
-Create a new certificateBasedAuthConfiguration object.
+Create new navigation property to certificateBasedAuthConfiguration for organization
 
 ## PARAMETERS
 
@@ -270,6 +270,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
+  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
@@ -281,6 +282,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
   - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
@@ -295,6 +297,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -325,8 +328,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgorganizationcertificatebasedauthconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgorganizationcertificatebasedauthconfiguration)
-
-[https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration?view=graph-rest-1.0)
 
 
 

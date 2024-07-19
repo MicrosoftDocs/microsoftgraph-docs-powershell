@@ -25,8 +25,6 @@ Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef -AccessPa
 ## DESCRIPTION
 Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -226,6 +224,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatibleaccesspackagebyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatibleaccesspackagebyref)
 
 [https://learn.microsoft.com/graph/api/accesspackage-list-incompatibleaccesspackages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackage-list-incompatibleaccesspackages?view=graph-rest-1.0)
+
+
 
 
 

@@ -19,18 +19,18 @@ Read-only.
 
 ### List (Default)
 ```
-Get-MgUserCalendarView -UserId <String> -EndDateTime <String> -StartDateTime <String> [-Filter <String>]
- [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgUserCalendarView -UserId <String> -EndDateTime <String> -StartDateTime <String>
+ [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### List1
 ```
 Get-MgUserCalendarView -UserId <String> -CalendarId <String> -EndDateTime <String> -StartDateTime <String>
- [-Filter <String>] [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -106,6 +106,21 @@ Parameter Sets: (All)
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -194,6 +209,21 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
@@ -292,8 +322,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarview)
-
-[https://learn.microsoft.com/graph/api/calendar-list-calendarview?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-list-calendarview?view=graph-rest-1.0)
 
 
 

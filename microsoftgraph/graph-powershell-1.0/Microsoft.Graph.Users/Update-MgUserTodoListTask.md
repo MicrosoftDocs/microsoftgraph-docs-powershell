@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserTodoListTask
 
 ## SYNOPSIS
-Update the properties of a todoTask object.
+Update the navigation property tasks in users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserTodoListTask](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTask?view=graph-powershell-beta)
@@ -60,7 +60,7 @@ Update-MgUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Update the properties of a todoTask object.
+Update the navigation property tasks in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -837,8 +837,6 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttask](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttask)
-
-[https://learn.microsoft.com/graph/api/todotask-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-update?view=graph-rest-1.0)
 
 
 

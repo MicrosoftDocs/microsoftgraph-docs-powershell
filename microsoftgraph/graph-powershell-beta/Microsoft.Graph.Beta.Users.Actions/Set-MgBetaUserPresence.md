@@ -54,19 +54,24 @@ Set the availability and activity status in a presence session of an application
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setpresence-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Set-MgBetaUserPresence Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	SessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87"
-	Availability = "Available"
-	Activity = "Available"
-	ExpirationDuration = "PT1H"
+	sessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87"
+	availability = "Available"
+	activity = "Available"
+	expirationDuration = "PT1H"
 }
+
 Set-MgBetaUserPresence -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the Set-MgBetaUserPresence Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -354,7 +359,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresence)
 
-[https://learn.microsoft.com/graph/api/presence-setpresence?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-setpresence?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/presence-setpresence?view=graph-rest-beta](https://learn.microsoft.com/graph/api/presence-setpresence?view=graph-rest-beta)
 
 
 

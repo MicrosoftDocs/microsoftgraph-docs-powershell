@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDriveRootListItemDocumentSetVersion
 
 ## SYNOPSIS
-Read the properties and relationships of a documentSetVersion object.
+Version information for a document set version created by a user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a documentSetVersion object.
+Version information for a document set version created by a user.
 
 ## PARAMETERS
 
@@ -330,9 +330,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootlistitemdocumentsetversion)
 
-[https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0)
 
 
 

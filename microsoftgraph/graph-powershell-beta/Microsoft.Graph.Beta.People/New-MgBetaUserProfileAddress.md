@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileAddress
 
 ## SYNOPSIS
-Create a new itemAddress object in a user's profile.
+Create new navigation property to addresses for users
 
 ## SYNTAX
 
@@ -19,8 +19,8 @@ New-MgBetaUserProfileAddress -UserId <String> [-ResponseHeadersVariable <String>
  [-CreatedDateTime <DateTime>] [-Detail <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
  [-GeoCoordinates <IMicrosoftGraphGeoCoordinates>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
  [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -37,8 +37,8 @@ New-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-ResponseHeadersVar
  [-CreatedDateTime <DateTime>] [-Detail <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
  [-GeoCoordinates <IMicrosoftGraphGeoCoordinates>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
  [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -49,7 +49,7 @@ New-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Create a new itemAddress object in a user's profile.
+Create new navigation property to addresses for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -359,6 +359,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Sources
+Where the values within an entity originated if synced from another source.
+To construct, see NOTES section for SOURCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphProfileSourceAnnotation[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -446,6 +462,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Detail <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -547,13 +567,16 @@ This property is read-only.
 
 SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String- `[]`>]`:
+  - `[Type <String- `[]`>]`: 
+
+SOURCES <IMicrosoftGraphProfileSourceAnnotation- `[]`>: Where the values within an entity originated if synced from another source.
+  - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+  - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+  - `[SourceId <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaddress](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaddress)
-
-[https://learn.microsoft.com/graph/api/profile-post-addresses?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-addresses?view=graph-rest-1.0)
 
 
 

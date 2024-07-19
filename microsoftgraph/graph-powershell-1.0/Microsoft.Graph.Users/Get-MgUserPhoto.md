@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgUserPhoto
 
 ## SYNOPSIS
-Get the specified profilePhoto or its metadata (profilePhoto properties).
-The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,360x360, 432x432, 504x504, and 648x648.
-Photos can be any dimension if they're stored in Microsoft Entra ID.
-You can get the metadata of the largest available photo or specify a size to get the metadata for that photo size.If the size you request is unavailable, you can still get a smaller size that the user has uploaded and made available.For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of the photo is available for download.
+The user's profile photo.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserPhoto?view=graph-powershell-beta)
@@ -20,41 +18,43 @@ You can get the metadata of the largest available photo or specify a size to get
 
 ### Get (Default)
 ```
-Get-MgUserPhoto -UserId <String> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgUserPhoto -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### List
 ```
-Get-MgUserPhoto -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgUserPhoto -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgUserPhoto -UserId <String> -ProfilePhotoId <String> [-Property <String[]>]
+Get-MgUserPhoto -UserId <String> -ProfilePhotoId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgUserPhoto -InputObject <IUsersIdentity> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgUserPhoto -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserPhoto -InputObject <IUsersIdentity> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgUserPhoto -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the specified profilePhoto or its metadata (profilePhoto properties).
-The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,360x360, 432x432, 504x504, and 648x648.
-Photos can be any dimension if they're stored in Microsoft Entra ID.
-You can get the metadata of the largest available photo or specify a size to get the metadata for that photo size.If the size you request is unavailable, you can still get a smaller size that the user has uploaded and made available.For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of the photo is available for download.
+The user's profile photo.
+Read-only.
 
 ## EXAMPLES
 ### Example 1: Get a user's photo properties
@@ -94,6 +94,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -223,6 +238,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -319,8 +349,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphoto)
-
-[https://learn.microsoft.com/graph/api/profilephoto-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profilephoto-get?view=graph-rest-1.0)
 
 
 

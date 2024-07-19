@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSitePageAsSitePageWebPart
 
 ## SYNOPSIS
-Delete navigation property webParts for sites
+Delete a webPart object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/Remove-MgSitePageAsSitePageWebPart?view=graph-powershell-1.0)
@@ -30,7 +30,20 @@ Remove-MgBetaSitePageAsSitePageWebPart -InputObject <ISitesIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete navigation property webParts for sites
+Delete a webPart object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Remove-MgBetaSitePageAsSitePageWebPart -SiteId $siteId -BaseSitePageId $baseSitePageId -WebPartId $webPartId
+
+```
+This example shows how to use the Remove-MgBetaSitePageAsSitePageWebPart Cmdlet.
+
 
 ## PARAMETERS
 
@@ -275,6 +288,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepageassitepagewebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepageassitepagewebpart)
 
+[https://learn.microsoft.com/graph/api/webpart-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/webpart-delete?view=graph-rest-beta)
 
 
 

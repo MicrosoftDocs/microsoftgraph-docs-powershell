@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupTeamScheduleTimeOffReason
 
 ## SYNOPSIS
-Create a new timeOffReason.
+Create new navigation property to timeOffReasons for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleTimeOffReason?view=graph-powershell-beta)
@@ -46,9 +46,7 @@ New-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create a new timeOffReason.
-
-## EXAMPLES
+Create new navigation property to timeOffReasons for groups
 
 ## PARAMETERS
 
@@ -356,7 +354,7 @@ For example, if a user changes their display name, the API might show the new va
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduletimeoffreason)
 
-[https://learn.microsoft.com/graph/api/schedule-post-timeoffreasons?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-post-timeoffreasons?view=graph-rest-1.0)
+
 
 
 

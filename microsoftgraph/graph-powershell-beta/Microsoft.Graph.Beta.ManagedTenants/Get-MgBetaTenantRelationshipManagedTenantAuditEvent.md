@@ -339,9 +339,9 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantauditevent)
 
-[https://learn.microsoft.com/graph/api/managedtenants-auditevent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-auditevent-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/managedtenants-auditevent-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-auditevent-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta)
 
 
 

@@ -39,13 +39,17 @@ Stopping an instance will not effect future instances.
 To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
 
 ## EXAMPLES
-### Example 1: Using the Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstance Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
+
 ```
 This example shows how to use the Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -307,7 +311,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceaccessreviewdefinitioninstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceaccessreviewdefinitioninstance)
 
-[https://learn.microsoft.com/graph/api/accessreviewinstance-stop?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-stop?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/accessreviewinstance-stop?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstance-stop?view=graph-rest-beta)
 
 
 

@@ -569,7 +569,7 @@ Read-only.
       - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
+      - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
 Read-only.
@@ -579,8 +579,8 @@ Read-only.
     - `[Citation <IMicrosoftGraphSecurityFilePlanCitation>]`: filePlanCitation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
-      - `[CitationJurisdiction <String>]`: 
-      - `[CitationUrl <String>]`: 
+      - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the filePlanCitation.
+      - `[CitationUrl <String>]`: Represents the URL to the published filePlanCitation.
     - `[CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>]`: citationTemplate
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -619,7 +619,7 @@ Read-only.
 Read-only.
     - `[Name <String>]`: Name representing each stage within a collection.
     - `[ReviewersEmailAddresses <String- `[]`>]`: A collection of reviewers at each stage.
-    - `[StageNumber <String>]`: The sequence number for each stage of the disposition review.
+    - `[StageNumber <String>]`: The unique sequence number for each stage of the disposition review.
   - `[IsInUse <Boolean?>]`: Specifies whether the label is currently being used.
   - `[LabelToBeApplied <String>]`: Specifies the replacement label to be applied automatically after the retention period of the current label ends.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -687,7 +687,7 @@ Read-only.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
+    - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
 Read-only.
@@ -697,8 +697,8 @@ Read-only.
   - `[Citation <IMicrosoftGraphSecurityFilePlanCitation>]`: filePlanCitation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
-    - `[CitationJurisdiction <String>]`: 
-    - `[CitationUrl <String>]`: 
+    - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the filePlanCitation.
+    - `[CitationUrl <String>]`: Represents the URL to the published filePlanCitation.
   - `[CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>]`: citationTemplate
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -737,7 +737,7 @@ DISPOSITIONREVIEWSTAGES <IMicrosoftGraphSecurityDispositionReviewStage- `[]`>: W
 Read-only.
   - `[Name <String>]`: Name representing each stage within a collection.
   - `[ReviewersEmailAddresses <String- `[]`>]`: A collection of reviewers at each stage.
-  - `[StageNumber <String>]`: The sequence number for each stage of the disposition review.
+  - `[StageNumber <String>]`: The unique sequence number for each stage of the disposition review.
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
@@ -791,6 +791,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -801,6 +802,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -858,7 +860,7 @@ This property is read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabel)
 
-[https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-beta)
 
 
 

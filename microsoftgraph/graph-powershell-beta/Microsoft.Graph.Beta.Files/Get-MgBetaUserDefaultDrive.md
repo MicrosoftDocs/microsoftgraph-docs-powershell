@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgBetaUserDefaultDrive
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a drive resource.
-A drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
+The user's OneDrive.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserDefaultDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDefaultDrive?view=graph-powershell-1.0)
@@ -31,8 +31,8 @@ Get-MgBetaUserDefaultDrive -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a drive resource.
-A drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
+The user's OneDrive.
+Read-only.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -201,8 +201,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdefaultdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdefaultdrive)
-
-[https://learn.microsoft.com/graph/api/drive-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/drive-get?view=graph-rest-1.0)
 
 
 

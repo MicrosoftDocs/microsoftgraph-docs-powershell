@@ -31,6 +31,19 @@ Get-MgBetaUserSecurityInformationProtectionLabelPolicySetting -InputObject <ISec
 Read the properties and relationships of an informationProtectionPolicySetting object.
 The settings exposed by this API should be used in applications to populate the moreInfoUrl property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaUserSecurityInformationProtectionLabelPolicySetting -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserSecurityInformationProtectionLabelPolicySetting Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -207,6 +220,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -217,6 +231,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -243,8 +258,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetausersecurityinformationprotectionlabelpolicysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetausersecurityinformationprotectionlabelpolicysetting)
 
-[https://learn.microsoft.com/graph/api/security-informationprotectionpolicysetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-informationprotectionpolicysetting-get?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/security-informationprotectionpolicysetting-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-informationprotectionpolicysetting-get?view=graph-rest-beta)
 
 
 

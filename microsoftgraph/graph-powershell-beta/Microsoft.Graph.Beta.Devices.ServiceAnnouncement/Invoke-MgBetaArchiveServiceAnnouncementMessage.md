@@ -201,7 +201,7 @@ BODYPARAMETER `<IPaths19OsejwAdminServiceannouncementMessagesMicrosoftGraphArchi
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaarchiveserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaarchiveserviceannouncementmessage)
 
-[https://learn.microsoft.com/graph/api/serviceupdatemessage-archive?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-archive?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-archive?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceupdatemessage-archive?view=graph-rest-beta)
 
 
 

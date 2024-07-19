@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgBetaTeamworkDeletedTeamChannelFileFolderContent
 
 ## SYNOPSIS
-Get content for the navigation property filesFolder from teamwork
+The content stream, if the item represents a file.
+The content property will have a potentially breaking change in behavior in the future.
+It will stream content directly instead of redirecting.
+To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelFileFolderContent?view=graph-powershell-1.0)
@@ -30,9 +33,10 @@ Get-MgBetaTeamworkDeletedTeamChannelFileFolderContent -InputObject <ITeamsIdenti
 ```
 
 ## DESCRIPTION
-Get content for the navigation property filesFolder from teamwork
-
-## EXAMPLES
+The content stream, if the item represents a file.
+The content property will have a potentially breaking change in behavior in the future.
+It will stream content directly instead of redirecting.
+To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
 ## PARAMETERS
 
@@ -235,7 +239,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelfilefoldercontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelfilefoldercontent)
 
-[https://learn.microsoft.com/graph/api/channel-get-filesfolder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-get-filesfolder?view=graph-rest-1.0)
+
 
 
 

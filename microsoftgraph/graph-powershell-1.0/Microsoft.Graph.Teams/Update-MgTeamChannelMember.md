@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamChannelMember
 
 ## SYNOPSIS
-Update the role of a conversationMember in a team or channel.
+Update the navigation property members in teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelMember?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Update the role of a conversationMember in a team or channel.
+Update the navigation property members in teams
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -372,8 +372,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmember)
-
-[https://learn.microsoft.com/graph/api/conversationmember-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-update?view=graph-rest-1.0)
 
 
 

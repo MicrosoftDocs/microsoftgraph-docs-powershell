@@ -33,13 +33,17 @@ Remove-MgBetaSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-Resp
 Delete a qna object.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaSearchQna Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
+
 Remove-MgBetaSearchQna -QnaId $qnaId
+
 ```
 This example shows how to use the Remove-MgBetaSearchQna Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -211,6 +215,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -221,7 +227,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchqna)
 
-[https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-beta)
 
 
 

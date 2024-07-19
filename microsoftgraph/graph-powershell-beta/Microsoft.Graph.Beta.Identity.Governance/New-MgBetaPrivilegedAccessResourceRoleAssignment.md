@@ -514,10 +514,10 @@ Azure resources can include subscriptions, resource groups, virtual machines, an
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[DisplayName <String>]`: The display name of the role definition.
-        - `[ExternalId <String>]`: The external id of the role definition.
+        - `[ExternalId <String>]`: The external ID of the role definition.
         - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
         - `[ResourceId <String>]`: Required.
-The id of the resource associated with the role definition.
+The ID of the resource associated with the role definition.
         - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -546,7 +546,7 @@ The id of the role definition that the role setting is associated with.
           - `[UserEligibleSettings <IMicrosoftGraphGovernanceRuleSetting- `[]`>]`: The rule settings that are evaluated when a user tries to add an eligible role assignment.
 The setting is not supported for now.
           - `[UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting- `[]`>]`: The rule settings that are evaluated when a user tries to activate his role assignment.
-        - `[TemplateId <String>]`: 
+        - `[TemplateId <String>]`: The unique identifier for the template.
       - `[RoleDefinitionId <String>]`: Required.
 The identifier of the Azure role definition that the role assignment request is associated with.
       - `[Schedule <IMicrosoftGraphGovernanceSchedule>]`: governanceSchedule
@@ -758,10 +758,10 @@ Azure resources can include subscriptions, resource groups, virtual machines, an
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[DisplayName <String>]`: The display name of the role definition.
-        - `[ExternalId <String>]`: The external id of the role definition.
+        - `[ExternalId <String>]`: The external ID of the role definition.
         - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
         - `[ResourceId <String>]`: Required.
-The id of the resource associated with the role definition.
+The ID of the resource associated with the role definition.
         - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -790,7 +790,7 @@ The id of the role definition that the role setting is associated with.
           - `[UserEligibleSettings <IMicrosoftGraphGovernanceRuleSetting- `[]`>]`: The rule settings that are evaluated when a user tries to add an eligible role assignment.
 The setting is not supported for now.
           - `[UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting- `[]`>]`: The rule settings that are evaluated when a user tries to activate his role assignment.
-        - `[TemplateId <String>]`: 
+        - `[TemplateId <String>]`: The unique identifier for the template.
       - `[RoleDefinitionId <String>]`: Required.
 The identifier of the Azure role definition that the role assignment request is associated with.
       - `[Schedule <IMicrosoftGraphGovernanceSchedule>]`: governanceSchedule
@@ -887,10 +887,10 @@ Azure resources can include subscriptions, resource groups, virtual machines, an
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DisplayName <String>]`: The display name of the role definition.
-      - `[ExternalId <String>]`: The external id of the role definition.
+      - `[ExternalId <String>]`: The external ID of the role definition.
       - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
       - `[ResourceId <String>]`: Required.
-The id of the resource associated with the role definition.
+The ID of the resource associated with the role definition.
       - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -919,7 +919,7 @@ The id of the role definition that the role setting is associated with.
         - `[UserEligibleSettings <IMicrosoftGraphGovernanceRuleSetting- `[]`>]`: The rule settings that are evaluated when a user tries to add an eligible role assignment.
 The setting is not supported for now.
         - `[UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting- `[]`>]`: The rule settings that are evaluated when a user tries to activate his role assignment.
-      - `[TemplateId <String>]`: 
+      - `[TemplateId <String>]`: The unique identifier for the template.
     - `[RoleDefinitionId <String>]`: Required.
 The identifier of the Azure role definition that the role assignment request is associated with.
     - `[Schedule <IMicrosoftGraphGovernanceSchedule>]`: governanceSchedule
@@ -1002,7 +1002,7 @@ ROLEDEFINITION `<IMicrosoftGraphGovernanceRoleDefinition>`: governanceRoleDefini
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The display name of the role definition.
-  - `[ExternalId <String>]`: The external id of the role definition.
+  - `[ExternalId <String>]`: The external ID of the role definition.
   - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1134,9 +1134,9 @@ Note: This property may be extended in the future to support more scenarios.
 Resource type.
 For example, for Azure resources, the type could be 'Subscription', 'ResourceGroup', 'Microsoft.Sql/server', etc.
   - `[ResourceId <String>]`: Required.
-The id of the resource associated with the role definition.
+The ID of the resource associated with the role definition.
   - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
-  - `[TemplateId <String>]`: 
+  - `[TemplateId <String>]`: The unique identifier for the template.
 
 SUBJECT `<IMicrosoftGraphGovernanceSubject>`: governanceSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1153,6 +1153,7 @@ The value can be User, Group, and ServicePrincipal.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessresourceroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessresourceroleassignment)
+
 
 
 

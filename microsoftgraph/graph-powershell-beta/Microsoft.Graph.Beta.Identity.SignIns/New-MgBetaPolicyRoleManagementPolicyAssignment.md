@@ -33,30 +33,6 @@ New-MgBetaPolicyRoleManagementPolicyAssignment
 ## DESCRIPTION
 Create new navigation property to roleManagementPolicyAssignments for policies
 
-## EXAMPLES
-### Example 1: Retrieve the role management policy assignments
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaPolicyRoleManagementPolicyAssignment -Filter "scopeId eq '/' and scopeType eq 'Directory'"
-```
-This example shows how to use the New-MgBetaBetaPolicyRoleManagementPolicyAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Retrieve the role management policy assignments for an Azure AD role and expand the policy and its associated rules
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaPolicyRoleManagementPolicyAssignment -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole' and roleDefinitionId eq '62e90394-69f5-4237-9190-012177145e10'" -ExpandProperty "policy(`$expand=rules)"
-```
-This example shows how to use the New-MgBetaBetaPolicyRoleManagementPolicyAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -319,10 +295,9 @@ Supports $filter (eq, ne).
     - `[LastModifiedBy <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[LastModifiedDateTime <DateTime?>]`: The time when the role setting was last modified.
     - `[Rules <IMicrosoftGraphUnifiedRoleManagementPolicyRule- `[]`>]`: The collection of rules like approval rules and expiration rules.
 Supports $expand.
@@ -378,10 +353,9 @@ Supports $filter (eq, ne).
   - `[LastModifiedBy <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[LastModifiedDateTime <DateTime?>]`: The time when the role setting was last modified.
   - `[Rules <IMicrosoftGraphUnifiedRoleManagementPolicyRule- `[]`>]`: The collection of rules like approval rules and expiration rules.
 Supports $expand.
@@ -395,6 +369,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyrolemanagementpolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyrolemanagementpolicyassignment)
+
+
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaIdentityB2CUserFlowLanguageOverridePage
 
 ## SYNOPSIS
-Update the navigation property overridesPages in identity
+Update the values in an userFlowLanguagePage object.
+You may only update the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
 
 ## SYNTAX
 
@@ -43,7 +44,8 @@ Update-MgBetaIdentityB2CUserFlowLanguageOverridePage -InputObject <IIdentitySign
 ```
 
 ## DESCRIPTION
-Update the navigation property overridesPages in identity
+Update the values in an userFlowLanguagePage object.
+You may only update the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
 
 ## PARAMETERS
 
@@ -298,6 +300,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -317,6 +320,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -329,6 +333,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguageoverridepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguageoverridepage)
+
+[https://learn.microsoft.com/graph/api/userflowlanguagepage-put?view=graph-rest-beta](https://learn.microsoft.com/graph/api/userflowlanguagepage-put?view=graph-rest-beta)
+
 
 
 

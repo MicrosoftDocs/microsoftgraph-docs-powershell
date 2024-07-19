@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy
 
 ## SYNOPSIS
-Invoke function asHierarchy
+List eDiscovery review tags with the tag hierarchy shown.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy?view=graph-powershell-beta)
@@ -32,9 +32,7 @@ Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy -InputObject <ISecurityIdentit
 ```
 
 ## DESCRIPTION
-Invoke function asHierarchy
-
-## EXAMPLES
+List eDiscovery review tags with the tag hierarchy shown.
 
 ## PARAMETERS
 
@@ -274,6 +272,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -315,6 +314,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgassecuritycaseediscoverycasetaghierarchy](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgassecuritycaseediscoverycasetaghierarchy)
+
+
 
 
 

@@ -29,8 +29,6 @@ Get-MgBetaFinancialCompanySaleCreditMemoPaymentTerm -InputObject <IFinancialsIde
 ## DESCRIPTION
 Get paymentTerm from financials
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -211,6 +209,8 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalecreditmemopaymentterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalecreditmemopaymentterm)
+
+
 
 
 

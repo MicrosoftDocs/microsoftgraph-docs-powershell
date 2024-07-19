@@ -41,6 +41,19 @@ Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <IIde
 ## DESCRIPTION
 Read the properties and relationships of a delegatedAdminRelationshipRequest object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Partner
+
+Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -DelegatedAdminRelationshipId $delegatedAdminRelationshipId
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -313,10 +326,9 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadminrelationshiprequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadminrelationshiprequest)
 
-[https://learn.microsoft.com/graph/api/delegatedadminrelationshiprequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationshiprequest-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/delegatedadminrelationshiprequest-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/delegatedadminrelationshiprequest-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-requests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-requests?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-requests?view=graph-rest-beta](https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-requests?view=graph-rest-beta)
 
 
 

@@ -25,9 +25,9 @@ Update-MgBetaSecurityCollaborationAnalyzedEmail -AnalyzedEmailId <String> [-Resp
  [-LatestDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>] [-LoggedDateTime <DateTime>]
  [-NetworkMessageId <String>] [-OriginalDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>]
  [-OverrideSources <String[]>] [-PhishConfidenceLevel <String>] [-Policy <String>] [-PolicyAction <String>]
- [-RecipientEmailAddresses <String[]>] [-ReturnPath <String>]
+ [-RecipientEmailAddress <String>] [-ReturnPath <String>]
  [-SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>] [-SizeInBytes <Int32>]
- [-SpamConfidenceLevel <String>] [-Subject <String>] [-ThreatType <String>]
+ [-SpamConfidenceLevel <String>] [-Subject <String>] [-ThreatTypes <String[]>]
  [-Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl[]>] [-UrlsCount <Int32>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -52,9 +52,9 @@ Update-MgBetaSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity>
  [-LatestDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>] [-LoggedDateTime <DateTime>]
  [-NetworkMessageId <String>] [-OriginalDelivery <IMicrosoftGraphSecurityAnalyzedEmailDeliveryDetail>]
  [-OverrideSources <String[]>] [-PhishConfidenceLevel <String>] [-Policy <String>] [-PolicyAction <String>]
- [-RecipientEmailAddresses <String[]>] [-ReturnPath <String>]
+ [-RecipientEmailAddress <String>] [-ReturnPath <String>]
  [-SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>] [-SizeInBytes <Int32>]
- [-SpamConfidenceLevel <String>] [-Subject <String>] [-ThreatType <String>]
+ [-SpamConfidenceLevel <String>] [-Subject <String>] [-ThreatTypes <String[]>]
  [-Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl[]>] [-UrlsCount <Int32>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -501,11 +501,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RecipientEmailAddresses
-Contains the email addresses of the recipients.
+### -RecipientEmailAddress
+Contains the email address of the recipient.
 
 ```yaml
-Type: String[]
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -607,11 +607,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ThreatType
-threatType
+### -ThreatTypes
+Indicates the threat types.
+The possible values are: unknown, spam, malware, phish, none, unknownFutureValue.
 
 ```yaml
-Type: String
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -791,7 +792,7 @@ The message ID is in the format specified by RFC2822.
   - `[PhishConfidenceLevel <String>]`: The phish confidence level associated with the email
   - `[Policy <String>]`: The action policy that took effect.
   - `[PolicyAction <String>]`: The action taken on the email based on the configured policy.
-  - `[RecipientEmailAddresses <String- `[]`>]`: Contains the email addresses of the recipients.
+  - `[RecipientEmailAddress <String>]`: Contains the email address of the recipient.
   - `[ReturnPath <String>]`: A field that indicates where and how bounced emails are processed.
   - `[SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>]`: analyzedEmailSenderDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -802,7 +803,8 @@ Also known as P2 sender.
   - `[SizeInBytes <Int32?>]`: Size of the email in bytes.
   - `[SpamConfidenceLevel <String>]`: Spam confidence of the email.
   - `[Subject <String>]`: Subject of the email.
-  - `[ThreatType <String>]`: threatType
+  - `[ThreatTypes <String- `[]`>]`: Indicates the threat types.
+The possible values are: unknown, spam, malware, phish, none, unknownFutureValue.
   - `[Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl- `[]`>]`: A collection of the URLs in the email.
     - `[DetectionMethod <String>]`: The method used to detect threats in the URL.
     - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
@@ -867,6 +869,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -877,6 +880,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation

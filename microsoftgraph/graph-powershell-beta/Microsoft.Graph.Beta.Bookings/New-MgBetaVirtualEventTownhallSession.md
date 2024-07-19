@@ -16,8 +16,9 @@ Create new navigation property to sessions for solutions
 ```
 New-MgBetaVirtualEventTownhallSession -VirtualEventTownhallId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
- [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions]
- [-AllowTranscription] [-AllowedPresenters <String>] [-AnonymizeIdentityForRoles <String[]>]
+ [-AllowBreakoutRooms] [-AllowLiveShare] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName]
+ [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard]
+ [-AllowedPresenters <String>] [-AnonymizeIdentityForRoles <String[]>]
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-ChatInfo <IMicrosoftGraphChatInfo>]
  [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
@@ -42,8 +43,9 @@ New-MgBetaVirtualEventTownhallSession -VirtualEventTownhallId <String>
 ```
 New-MgBetaVirtualEventTownhallSession -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
- [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions]
- [-AllowTranscription] [-AllowedPresenters <String>] [-AnonymizeIdentityForRoles <String[]>]
+ [-AllowBreakoutRooms] [-AllowLiveShare] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName]
+ [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard]
+ [-AllowedPresenters <String>] [-AnonymizeIdentityForRoles <String[]>]
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-ChatInfo <IMicrosoftGraphChatInfo>]
  [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
@@ -114,6 +116,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AllowBreakoutRooms
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -AllowedPresenters
 onlineMeetingPresenters
 
@@ -125,6 +142,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowLiveShare
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -146,6 +178,21 @@ Accept wildcard characters: False
 
 ### -AllowParticipantsToChangeName
 Specifies if participants are allowed to rename themselves in an instance of the meeting.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowPowerPointSharing
+.
 
 ```yaml
 Type: SwitchParameter
@@ -191,6 +238,21 @@ Accept wildcard characters: False
 
 ### -AllowTranscription
 Indicates whether transcription is enabled for the meeting.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowWhiteboard
+.
 
 ```yaml
 Type: SwitchParameter
@@ -693,10 +755,9 @@ Read-only.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
     - `[Role <String>]`: Role of the attendee.
@@ -713,20 +774,24 @@ AUDIOCONFERENCING `<IMicrosoftGraphAudioConferencing>`: audioConferencing
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConferenceId <String>]`: The conference id of the online meeting.
   - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-  - `[TollFreeNumber <String>]`: 
+  - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
   - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-  - `[TollNumber <String>]`: 
+  - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
   - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
 
 BODYPARAMETER `<IMicrosoftGraphVirtualEventSession>`: virtualEventSession
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+  - `[AllowBreakoutRooms <Boolean?>]`: 
+  - `[AllowLiveShare <Boolean?>]`: 
   - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+  - `[AllowPowerPointSharing <Boolean?>]`: 
   - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
   - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+  - `[AllowWhiteboard <Boolean?>]`: 
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -747,10 +812,9 @@ Read-only.
       - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
       - `[Role <String>]`: Role of the attendee.
@@ -766,9 +830,9 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ConferenceId <String>]`: The conference id of the online meeting.
     - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-    - `[TollFreeNumber <String>]`: 
+    - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
     - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-    - `[TollNumber <String>]`: 
+    - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
     - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -844,6 +908,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Email <String>]`: Email address of the registrant.
     - `[FirstName <String>]`: First name of the registrant.
     - `[LastName <String>]`: Last name of the registrant.
+    - `[PreferredLanguage <String>]`: 
+    - `[PreferredTimezone <String>]`: 
     - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -891,11 +957,31 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
+  - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
   - `[Email <String>]`: Alternate key of virtualEventRegistration
+  - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
+  - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
+  - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
+  - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
+  - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[ProtectionUnitBaseId <String>]`: The unique identifier of protectionUnitBase
+  - `[RestorePointId <String>]`: The unique identifier of restorePoint
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
+  - `[SharePointProtectionPolicyId <String>]`: The unique identifier of sharePointProtectionPolicy
+  - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
+  - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
+  - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
   - `[UniqueName <String>]`: Alternate key of businessScenario
   - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
@@ -934,10 +1020,9 @@ Read-only.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
@@ -953,11 +1038,15 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+    - `[AllowBreakoutRooms <Boolean?>]`: 
+    - `[AllowLiveShare <Boolean?>]`: 
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    - `[AllowPowerPointSharing <Boolean?>]`: 
     - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+    - `[AllowWhiteboard <Boolean?>]`: 
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -991,9 +1080,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ConferenceId <String>]`: The conference id of the online meeting.
       - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-      - `[TollFreeNumber <String>]`: 
+      - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
       - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-      - `[TollNumber <String>]`: 
+      - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
       - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
     - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1052,6 +1141,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Email <String>]`: Email address of the registrant.
       - `[FirstName <String>]`: First name of the registrant.
       - `[LastName <String>]`: Last name of the registrant.
+      - `[PreferredLanguage <String>]`: 
+      - `[PreferredTimezone <String>]`: 
       - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1080,6 +1171,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Email <String>]`: Email address of the registrant.
   - `[FirstName <String>]`: First name of the registrant.
   - `[LastName <String>]`: Last name of the registrant.
+  - `[PreferredLanguage <String>]`: 
+  - `[PreferredTimezone <String>]`: 
   - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1095,11 +1188,15 @@ Appears when answerInputType is text, multilineText or singleChoice.
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+    - `[AllowBreakoutRooms <Boolean?>]`: 
+    - `[AllowLiveShare <Boolean?>]`: 
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    - `[AllowPowerPointSharing <Boolean?>]`: 
     - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
+    - `[AllowWhiteboard <Boolean?>]`: 
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -1120,10 +1217,9 @@ Read-only.
         - `[Identity <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
         - `[Role <String>]`: Role of the attendee.
@@ -1139,9 +1235,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ConferenceId <String>]`: The conference id of the online meeting.
       - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-      - `[TollFreeNumber <String>]`: 
+      - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
       - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-      - `[TollNumber <String>]`: 
+      - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
       - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
     - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from directoryRoleTemplates
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryRoleTemplate?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -31,8 +28,6 @@ Remove-MgDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIdentit
 
 ## DESCRIPTION
 Delete entity from directoryRoleTemplates
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -193,6 +188,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -218,6 +215,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryroletemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryroletemplate)
+
+
 
 
 

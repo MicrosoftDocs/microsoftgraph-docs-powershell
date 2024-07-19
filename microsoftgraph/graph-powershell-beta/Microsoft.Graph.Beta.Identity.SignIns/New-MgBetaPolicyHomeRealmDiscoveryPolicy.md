@@ -33,6 +33,27 @@ New-MgBetaPolicyHomeRealmDiscoveryPolicy -BodyParameter <Hashtable> [-ResponseHe
 ## DESCRIPTION
 Create a new homeRealmDiscoveryPolicy object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	definition = @(
+	'{"HomeRealmDiscoveryPolicy":{"AccelerateToFederatedDomain":true,"PreferredDomain":"federated.example.edu","AlternateIdLogin":{"Enabled":true}}}'
+)
+displayName = "displayName-value"
+isOrganizationDefault = $true
+}
+
+New-MgBetaPolicyHomeRealmDiscoveryPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPolicyHomeRealmDiscoveryPolicy Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -281,8 +302,7 @@ Always null when the object hasn't been deleted.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyhomerealmdiscoverypolicy)
 
-[https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies?view=graph-rest-beta)
 
 
 

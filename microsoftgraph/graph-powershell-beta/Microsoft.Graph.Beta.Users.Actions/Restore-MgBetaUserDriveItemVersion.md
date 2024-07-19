@@ -37,19 +37,6 @@ This will create a new version with the contents of the previous version, but pr
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitemversion-restore-permissions.md)]
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Files
-
-Restore-MgBetaDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
-```
-This example shows how to use the Restore-MgBetaUserDriveItemVersion Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -DriveId
@@ -282,7 +269,9 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveitemversion)
 
-[https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-beta)
+
+
 
 
 

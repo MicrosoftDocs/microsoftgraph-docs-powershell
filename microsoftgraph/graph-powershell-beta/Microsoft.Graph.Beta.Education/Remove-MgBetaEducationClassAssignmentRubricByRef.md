@@ -241,7 +241,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentrubricbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentrubricbyref)
 
-[https://learn.microsoft.com/graph/api/educationassignment-delete-rubric?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-delete-rubric?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/educationassignment-delete-rubric?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-delete-rubric?view=graph-rest-beta)
 
 
 

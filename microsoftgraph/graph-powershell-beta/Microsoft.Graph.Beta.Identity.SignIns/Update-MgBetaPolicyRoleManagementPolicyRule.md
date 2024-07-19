@@ -53,9 +53,10 @@ Update a rule defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object: For more information about rules for Microsoft Entra roles and examples of updating rules, see the following articles:+ Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph+ Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules
 
 ## EXAMPLES
-### Example 1: Update a rule defined for a policy in PIM for Azure AD roles
+### Example 1: Update a rule defined for a policy in PIM for Microsoft Entra roles
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -67,25 +68,25 @@ $params = @{
 		"@odata.type" = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
 		caller = "EndUser"
 		operations = @(
-			"All"
-		)
-		level = "Assignment"
-		inheritableSettings = @(
-		)
-		enforcedSettings = @(
-		)
-	}
+		"All"
+	)
+	level = "Assignment"
+	inheritableSettings = @(
+	)
+	enforcedSettings = @(
+	)
+}
 }
 
 Update-MgBetaPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyRoleManagementPolicyRule Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will update a rule defined for a policy in pim for microsoft entra roles
 
 ### Example 2: Update a rule defined for a policy in PIM for groups
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -96,21 +97,20 @@ $params = @{
 	target = @{
 		caller = "EndUser"
 		operations = @(
-			"All"
-		)
-		level = "Assignment"
-		inheritableSettings = @(
-		)
-		enforcedSettings = @(
-		)
-	}
+		"All"
+	)
+	level = "Assignment"
+	inheritableSettings = @(
+	)
+	enforcedSettings = @(
+	)
+}
 }
 
 Update-MgBetaPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyRoleManagementPolicyRule Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will update a rule defined for a policy in pim for groups
 
 
 ## PARAMETERS
@@ -390,6 +390,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -409,6 +410,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -440,7 +442,7 @@ Always null when the object hasn't been deleted.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyrule)
 
-[https://learn.microsoft.com/graph/api/unifiedrolemanagementpolicyrule-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedrolemanagementpolicyrule-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/unifiedrolemanagementpolicyrule-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedrolemanagementpolicyrule-update?view=graph-rest-beta)
 
 
 

@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityProviders
-.
+The identity providers included in the user flow.
 To construct, see NOTES section for IDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
@@ -321,7 +321,7 @@ Read-only.
       - `[TargetUrl <String>]`: The URL of the API endpoint to call.
     - `[PostFederationSignup <IMicrosoftGraphIdentityApiConnector>]`: identityApiConnector
     - `[PreTokenIssuance <IMicrosoftGraphIdentityApiConnector>]`: identityApiConnector
-  - `[IdentityProviders <IMicrosoftGraphIdentityProvider- `[]`>]`: 
+  - `[IdentityProviders <IMicrosoftGraphIdentityProvider- `[]`>]`: The identity providers included in the user flow.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider.
@@ -368,7 +368,7 @@ This is only used for verifying the user's phone number or email address.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DataType <String>]`: identityUserFlowAttributeDataType
-      - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
+      - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
       - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
       - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
@@ -383,7 +383,7 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
 Read-only.
     - `[DisplayName <String>]`: The display name of the identity provider.
 
-IDENTITYPROVIDERS <IMicrosoftGraphIdentityProvider- `[]`>: .
+IDENTITYPROVIDERS <IMicrosoftGraphIdentityProvider- `[]`>: The identity providers included in the user flow.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider.
@@ -432,7 +432,7 @@ This is only used for verifying the user's phone number or email address.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DataType <String>]`: identityUserFlowAttributeDataType
-    - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
+    - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
     - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
     - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
@@ -452,7 +452,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflow)
 
-[https://learn.microsoft.com/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-beta)
 
 
 

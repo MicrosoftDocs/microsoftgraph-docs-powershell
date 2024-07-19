@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfileAccount
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an userAccountInformation object in a user's profile.
+Get account from users
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfileAccount -InputObject <IPeopleIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an userAccountInformation object in a user's profile.
+Get account from users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaccount)
-
-[https://learn.microsoft.com/graph/api/useraccountinformation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/useraccountinformation-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-accounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-accounts?view=graph-rest-1.0)
 
 
 

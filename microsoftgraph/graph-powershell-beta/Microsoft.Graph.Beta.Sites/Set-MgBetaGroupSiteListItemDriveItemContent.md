@@ -8,7 +8,10 @@ schema: 2.0.0
 # Set-MgBetaGroupSiteListItemDriveItemContent
 
 ## SYNOPSIS
-Update content for the navigation property driveItem in groups
+The content stream, if the item represents a file.
+The content property will have a potentially breaking change in behavior in the future.
+It will stream content directly instead of redirecting.
+To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgGroupSiteListItemDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Set-MgGroupSiteListItemDriveItemContent?view=graph-powershell-1.0)
@@ -30,7 +33,10 @@ Set-MgBetaGroupSiteListItemDriveItemContent -InputObject <ISitesIdentity> [-Data
 ```
 
 ## DESCRIPTION
-Update content for the navigation property driveItem in groups
+The content stream, if the item represents a file.
+The content property will have a potentially breaking change in behavior in the future.
+It will stream content directly instead of redirecting.
+To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
 ## PARAMETERS
 
@@ -308,6 +314,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsitelistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsitelistitemdriveitemcontent)
+
 
 
 

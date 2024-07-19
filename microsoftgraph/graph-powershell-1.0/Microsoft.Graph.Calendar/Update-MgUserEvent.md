@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserEvent
 
 ## SYNOPSIS
-Update the properties of the event object.
+Update the navigation property events in users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
@@ -76,7 +76,7 @@ Update-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Update the properties of the event object.
+Update the navigation property events in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -2002,8 +2002,6 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent)
-
-[https://learn.microsoft.com/graph/api/event-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-update?view=graph-rest-1.0)
 
 
 

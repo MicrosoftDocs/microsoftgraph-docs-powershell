@@ -52,23 +52,6 @@ Return all IDs for the groups, administrative units, and directory roles that a 
 This function is transitive.
 Note: Only users and role-enabled groups can be members of directory roles.
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
-
-$params = @{
-	SecurityEnabledOnly = $true
-}
-
-Get-MgDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
-```
-This example shows how to use the Get-MgGroupMemberObject Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -293,6 +276,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberobject)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)
+
 
 
 

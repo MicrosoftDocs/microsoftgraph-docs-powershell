@@ -32,8 +32,6 @@ Get-MgBetaDriveBundleContent -InputObject <IFilesIdentity> [-Format <String>] -O
 ## DESCRIPTION
 Get content for the navigation property bundles from drives
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -DriveId
@@ -218,7 +216,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundlecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundlecontent)
 
-[https://learn.microsoft.com/graph/api/bundle-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-list?view=graph-rest-1.0)
+
 
 
 

@@ -64,40 +64,6 @@ Alternatively, create a draft to reply to an existing message and send it later.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-reply-permissions.md)]
 
-## EXAMPLES
-### Example 1: Reply in JSON format to an existing message
-
-```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	Message = @{
-		ToRecipients = @(
-			@{
-				EmailAddress = @{
-					Address = "samanthab@contoso.onmicrosoft.com"
-					Name = "Samantha Booth"
-				}
-			}
-			@{
-				EmailAddress = @{
-					Address = "randiw@contoso.onmicrosoft.com"
-					Name = "Randi Welch"
-				}
-			}
-		)
-	}
-	Comment = "Samantha, Randi, would you name the group please?"
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgReplyUserMailFolderChildFolderMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -578,6 +544,7 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreplyusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreplyusermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-reply?view=graph-rest-1.0)
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportM365AppUserDetail
 
 ## SYNOPSIS
-Invoke function getM365AppUserDetail
+Get a report that provides the details about which apps and platforms users have used.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportM365AppUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportM365AppUserDetail?view=graph-powershell-beta)
@@ -42,9 +42,7 @@ Get-MgReportM365AppUserDetail -InputObject <IReportsIdentity> -OutFile <String>
 ```
 
 ## DESCRIPTION
-Invoke function getM365AppUserDetail
-
-## EXAMPLES
+Get a report that provides the details about which apps and platforms users have used.
 
 ## PARAMETERS
 
@@ -212,6 +210,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appuserdetail)
+
+
 
 
 

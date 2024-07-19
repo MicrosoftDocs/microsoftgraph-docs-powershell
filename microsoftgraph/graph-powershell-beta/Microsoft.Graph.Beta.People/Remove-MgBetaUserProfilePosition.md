@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfilePosition
 
 ## SYNOPSIS
-Delete a specific workPosition object from a user's profile.
+Delete navigation property positions for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Delete a specific workPosition object from a user's profile.
+Delete navigation property positions for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -240,8 +240,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileposition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileposition)
-
-[https://learn.microsoft.com/graph/api/workposition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workposition-delete?view=graph-rest-1.0)
 
 
 

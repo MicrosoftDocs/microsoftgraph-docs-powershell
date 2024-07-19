@@ -371,7 +371,7 @@ Accept wildcard characters: False
 
 ### -RiskEventType
 The type of risk event detected.
-The possible values are adminConfirmedUserCompromised, anomalousUserActivity, anonymizedIPAddress, generic, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, suspiciousAPITraffic, suspiciousIPAddress, unfamiliarFeatures, unlikelyTravel, userReportedSuspiciousActivity.
+The possible values are adminConfirmedUserCompromised, anomalousUserActivity, anonymizedIPAddress,attackerinTheMiddle,attemptedPRTAccess, generic, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel,mcasFinSuspiciousFileAccess, mcasSuspiciousInboxManipulationRules,nationStateIP, suspiciousAPITraffic, suspiciousIPAddress,suspiciousSendingPatterns, unfamiliarFeatures, unlikelyTravel, userReportedSuspiciousActivity.
 For more information about each value, see Risk types and detection.
 
 ```yaml
@@ -598,7 +598,7 @@ This is calculated using latitude/longitude information from the sign-in activit
 This property is null if the risk detection is not associated with a sign-in.
   - `[RiskDetail <String>]`: riskDetail
   - `[RiskEventType <String>]`: The type of risk event detected.
-The possible values are adminConfirmedUserCompromised, anomalousUserActivity, anonymizedIPAddress, generic, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, suspiciousAPITraffic, suspiciousIPAddress,   unfamiliarFeatures, unlikelyTravel, userReportedSuspiciousActivity. 
+The possible values are adminConfirmedUserCompromised, anomalousUserActivity, anonymizedIPAddress,attackerinTheMiddle,attemptedPRTAccess, generic, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel,mcasFinSuspiciousFileAccess, mcasSuspiciousInboxManipulationRules,nationStateIP, suspiciousAPITraffic, suspiciousIPAddress,suspiciousSendingPatterns,   unfamiliarFeatures, unlikelyTravel, userReportedSuspiciousActivity. 
 For more information about each value, see Risk types and detection.
   - `[RiskLevel <String>]`: riskLevel
   - `[RiskState <String>]`: riskState
@@ -663,6 +663,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -682,6 +683,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -714,6 +716,7 @@ This is calculated using latitude/longitude information from the sign-in activit
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskdetection)
+
 
 
 

@@ -41,27 +41,28 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagement
 Read the properties and relationships of a specific cloudPC object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet
+### Example 1: List all cloudPC devices in a tenant
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointCloudPC -CloudPCId $cloudPCId
+
+Get-MgBetaDeviceManagementVirtualEndpointCloudPc
+
 ```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet
+This example will list all cloudpc devices in a tenant
+
+### Example 2: Get the top two cloudPC devices in a tenant
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointCloudPC -CloudPCId $cloudPCId -Property "id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult" 
+
+Get-MgBetaDeviceManagementVirtualEndpointCloudPc -Top 2 
+
 ```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointCloudPC
-```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will get the top two cloudpc devices in a tenant
+
 
 ## PARAMETERS
 
@@ -371,9 +372,9 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcloudpc)
 
-[https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-beta)
 
 
 

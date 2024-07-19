@@ -34,6 +34,19 @@ Remove-MgBetaGroupOwnerDirectoryObjectByRef -InputObject <IGroupsIdentity> [-IfM
 Use this API to remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
 When owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Remove-MgBetaGroupOwnerDirectoryObjectByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgBetaGroupOwnerDirectoryObjectByRef Cmdlet.
+
+
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -256,8 +269,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupownerdirectoryobjectbyref)
 
-[https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-beta)
 
 
 

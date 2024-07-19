@@ -42,6 +42,19 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanc
 Retrieve all files related to an agreement.
 This includes the default file and all localized files.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceTermsOfUseAgreement
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceTermsOfUseAgreement Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AgreementId
@@ -392,10 +405,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreement)
 
-[https://learn.microsoft.com/graph/api/agreement-list-files?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-list-files?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/agreement-list-files?view=graph-rest-beta](https://learn.microsoft.com/graph/api/agreement-list-files?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-beta](https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-beta)
 
 
 

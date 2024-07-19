@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserContactFolder
 
 ## SYNOPSIS
-Delete contactFolder other than the default contactFolder.
+Delete navigation property contactFolders for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserContactFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactFolder?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Delete contactFolder other than the default contactFolder.
+Delete navigation property contactFolders for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -226,8 +226,6 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfolder)
-
-[https://learn.microsoft.com/graph/api/contactfolder-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactfolder-delete?view=graph-rest-1.0)
 
 
 

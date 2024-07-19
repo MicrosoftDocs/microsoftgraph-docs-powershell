@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgGroupAppRoleAssignment
 
 ## SYNOPSIS
-Use this API to assign an app role to a security group.
-All direct members of the group will be considered assigned.
-Security groups with dynamic memberships are supported.
-To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
+Create new navigation property to appRoleAssignments for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
@@ -51,10 +48,7 @@ New-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Use this API to assign an app role to a security group.
-All direct members of the group will be considered assigned.
-Security groups with dynamic memberships are supported.
-To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
+Create new navigation property to appRoleAssignments for groups
 
 ## EXAMPLES
 ### Example 1: Assign an app role to a group
@@ -445,6 +439,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -458,8 +453,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mggroupapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mggroupapproleassignment)
-
-[https://learn.microsoft.com/graph/api/group-post-approleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-approleassignments?view=graph-rest-1.0)
 
 
 

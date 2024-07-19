@@ -42,8 +42,6 @@ New-MgOrganization -BodyParameter <IMicrosoftGraphOrganization> [-ResponseHeader
 ## DESCRIPTION
 Add new entity to organization
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -668,7 +666,7 @@ We recommend that you use the primary color of your banner logo or your organiza
 Specify this in hexadecimal format, for example, white is #FFFFFF.
     - `[BackgroundImage <Byte- `[]`>]`: Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.
+A smaller image reduces bandwidth requirements and make the page load faster.
     - `[BackgroundImageRelativeUrl <String>]`: A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
     - `[BannerLogo <Byte- `[]`>]`: A banner version of your company logo that appears on the sign-in page.
@@ -679,6 +677,14 @@ Read-only.
     - `[CdnList <String- `[]`>]`: A list of base URLs for all available CDN providers that are serving the assets of the current resource.
 Several CDN providers are used at the same time for high availability of read requests.
 Read-only.
+    - `[ContentCustomization <IMicrosoftGraphContentCustomization>]`: contentCustomization
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AttributeCollection <IMicrosoftGraphKeyValue- `[]`>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
+        - `[Key <String>]`: Key for the key-value pair.
+        - `[Value <String>]`: Value for the key-value pair.
+      - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
+      - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
+      - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
     - `[CustomAccountResetCredentialsUrl <String>]`: A custom URL for resetting account credentials.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters.
     - `[CustomCannotAccessYourAccountText <String>]`: A string to replace the default 'Can't access your account?' self-service password reset (SSPR) hyperlink text on the sign-in page.
@@ -749,7 +755,7 @@ We recommend that you use the primary color of your banner logo or your organiza
 Specify this in hexadecimal format, for example, white is #FFFFFF.
       - `[BackgroundImage <Byte- `[]`>]`: Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.
+A smaller image reduces bandwidth requirements and make the page load faster.
       - `[BackgroundImageRelativeUrl <String>]`: A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
       - `[BannerLogo <Byte- `[]`>]`: A banner version of your company logo that appears on the sign-in page.
@@ -760,6 +766,7 @@ Read-only.
       - `[CdnList <String- `[]`>]`: A list of base URLs for all available CDN providers that are serving the assets of the current resource.
 Several CDN providers are used at the same time for high availability of read requests.
 Read-only.
+      - `[ContentCustomization <IMicrosoftGraphContentCustomization>]`: contentCustomization
       - `[CustomAccountResetCredentialsUrl <String>]`: A custom URL for resetting account credentials.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters.
       - `[CustomCannotAccessYourAccountText <String>]`: A string to replace the default 'Can't access your account?' self-service password reset (SSPR) hyperlink text on the sign-in page.
@@ -884,7 +891,7 @@ Not nullable.
     - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
     - `[IsDefault <Boolean?>]`: true if this is the default domain associated with the tenant; otherwise, false.
     - `[IsInitial <Boolean?>]`: true if this is the initial domain associated with the tenant; otherwise, false.
-    - `[Name <String>]`: The domain name; for example, contoso.com\`.
+    - `[Name <String>]`: The domain name; for example, contoso.com.
     - `[Type <String>]`: For example, Managed.
 
 BRANDING `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
@@ -894,7 +901,7 @@ We recommend that you use the primary color of your banner logo or your organiza
 Specify this in hexadecimal format, for example, white is #FFFFFF.
   - `[BackgroundImage <Byte- `[]`>]`: Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.
+A smaller image reduces bandwidth requirements and make the page load faster.
   - `[BackgroundImageRelativeUrl <String>]`: A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
   - `[BannerLogo <Byte- `[]`>]`: A banner version of your company logo that appears on the sign-in page.
@@ -905,6 +912,14 @@ Read-only.
   - `[CdnList <String- `[]`>]`: A list of base URLs for all available CDN providers that are serving the assets of the current resource.
 Several CDN providers are used at the same time for high availability of read requests.
 Read-only.
+  - `[ContentCustomization <IMicrosoftGraphContentCustomization>]`: contentCustomization
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AttributeCollection <IMicrosoftGraphKeyValue- `[]`>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
+      - `[Key <String>]`: Key for the key-value pair.
+      - `[Value <String>]`: Value for the key-value pair.
+    - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
+    - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
+    - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
   - `[CustomAccountResetCredentialsUrl <String>]`: A custom URL for resetting account credentials.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters.
   - `[CustomCannotAccessYourAccountText <String>]`: A string to replace the default 'Can't access your account?' self-service password reset (SSPR) hyperlink text on the sign-in page.
@@ -975,7 +990,7 @@ We recommend that you use the primary color of your banner logo or your organiza
 Specify this in hexadecimal format, for example, white is #FFFFFF.
     - `[BackgroundImage <Byte- `[]`>]`: Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.
+A smaller image reduces bandwidth requirements and make the page load faster.
     - `[BackgroundImageRelativeUrl <String>]`: A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
     - `[BannerLogo <Byte- `[]`>]`: A banner version of your company logo that appears on the sign-in page.
@@ -986,6 +1001,7 @@ Read-only.
     - `[CdnList <String- `[]`>]`: A list of base URLs for all available CDN providers that are serving the assets of the current resource.
 Several CDN providers are used at the same time for high availability of read requests.
 Read-only.
+    - `[ContentCustomization <IMicrosoftGraphContentCustomization>]`: contentCustomization
     - `[CustomAccountResetCredentialsUrl <String>]`: A custom URL for resetting account credentials.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters.
     - `[CustomCannotAccessYourAccountText <String>]`: A string to replace the default 'Can't access your account?' self-service password reset (SSPR) hyperlink text on the sign-in page.
@@ -1081,12 +1097,14 @@ Not nullable.
   - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
   - `[IsDefault <Boolean?>]`: true if this is the default domain associated with the tenant; otherwise, false.
   - `[IsInitial <Boolean?>]`: true if this is the initial domain associated with the tenant; otherwise, false.
-  - `[Name <String>]`: The domain name; for example, contoso.com\`.
+  - `[Name <String>]`: The domain name; for example, contoso.com.
   - `[Type <String>]`: For example, Managed.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization)
+
+
 
 
 

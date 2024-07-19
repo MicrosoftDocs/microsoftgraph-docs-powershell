@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDriveItem
 
 ## SYNOPSIS
-Delete a \[bundle\]\[\] of driveItems by using its id.Deleting a bundle using this method permanently deletes the bundle and doesn't move it to the Recycle Bin.It doesn't, however, remove the items that were referenced by the bundle.They remain in their parent folders.
+Delete navigation property items for drives
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItem?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-ResponseH
 ```
 
 ## DESCRIPTION
-Delete a \[bundle\]\[\] of driveItems by using its id.Deleting a bundle using this method permanently deletes the bundle and doesn't move it to the Recycle Bin.It doesn't, however, remove the items that were referenced by the bundle.They remain in their parent folders.
+Delete navigation property items for drives
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -244,8 +244,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitem)
-
-[https://learn.microsoft.com/graph/api/bundle-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-delete?view=graph-rest-1.0)
 
 
 

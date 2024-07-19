@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+In Microsoft Entra Entitlement Management, retrieve a list of accessPackageAssignment objects filtered on the signed-in user.
 
 ## SYNTAX
 
@@ -30,7 +30,20 @@ Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentByCurrentUser
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+In Microsoft Entra Entitlement Management, retrieve a list of accessPackageAssignment objects filtered on the signed-in user.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 
@@ -351,6 +364,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackageassignmentbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackageassignmentbycurrentuser)
 
+[https://learn.microsoft.com/graph/api/accesspackageassignment-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignment-filterbycurrentuser?view=graph-rest-beta)
 
 
 

@@ -40,6 +40,41 @@ Get-MgBetaReportPartnerBillingOperation -InputObject <IReportsIdentity> [-Expand
 ## DESCRIPTION
 Read the properties and relationships of an operation object.
 
+## EXAMPLES
+### Example 1: Get operation succeeded
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportPartnerBillingOperation -OperationId $operationId
+
+```
+This example will get operation succeeded
+
+### Example 2: Get operation failed
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportPartnerBillingOperation -OperationId $operationId
+
+```
+This example will get operation failed
+
+### Example 3: Get operation is still running
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportPartnerBillingOperation -OperationId $operationId
+
+```
+This example will get operation is still running
+
+
 ## PARAMETERS
 
 ### -All
@@ -286,7 +321,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -335,8 +369,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingoperation)
 
-[https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-beta)
 
 
 

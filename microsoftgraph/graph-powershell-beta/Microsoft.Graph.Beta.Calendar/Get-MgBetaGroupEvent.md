@@ -17,21 +17,22 @@ Get an event object.
 
 ### List (Default)
 ```
-Get-MgBetaGroupEvent -GroupId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaGroupEvent -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgBetaGroupEvent -EventId <String> -GroupId <String> [-Property <String[]>]
+Get-MgBetaGroupEvent -EventId <String> -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>]
+Get-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
@@ -43,13 +44,13 @@ Get an event object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
 
-Get-MgBetaGroupEvent -GroupId $groupId -EventId $eventId
+Get-MgBetaGroupEvent -GroupId $groupId
+
 ```
 This example shows how to use the Get-MgBetaGroupEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -94,6 +95,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -221,6 +237,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -301,9 +332,9 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupevent)
 
-[https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-beta)
 
 
 

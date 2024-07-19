@@ -41,20 +41,17 @@ Get-MgBetaDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceManag
 Read the properties and relationships of a specific cloudPcGalleryImage object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointGalleryImage Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointGalleryImage -CloudPcGalleryImageId $cloudPcGalleryImageId
-```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointGalleryImage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointGalleryImage Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 Get-MgBetaDeviceManagementVirtualEndpointGalleryImage
+
 ```
 This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointGalleryImage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -364,9 +361,9 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointgalleryimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointgalleryimage)
 
-[https://learn.microsoft.com/graph/api/cloudpcgalleryimage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcgalleryimage-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpcgalleryimage-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcgalleryimage-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/virtualendpoint-list-galleryimages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-galleryimages?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-galleryimages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-galleryimages?view=graph-rest-beta)
 
 
 

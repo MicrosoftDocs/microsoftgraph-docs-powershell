@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserChatPinnedMessage
 
 ## SYNOPSIS
-Pin a chat message in the specified chat.
-This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
+Create new navigation property to pinnedMessages for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatPinnedMessage?view=graph-powershell-1.0)
@@ -45,10 +44,7 @@ New-MgBetaUserChatPinnedMessage -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Pin a chat message in the specified chat.
-This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
-
-## EXAMPLES
+Create new navigation property to pinnedMessages for users
 
 ## PARAMETERS
 
@@ -301,10 +297,9 @@ Version number of the chat message.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[HostedContents <IMicrosoftGraphChatMessageHostedContent- `[]`>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
@@ -337,26 +332,26 @@ For example, a user's display name, a team name.
         - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
           - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
         - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
       - `[Actions <String>]`: chatMessageActions
       - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
       - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+        - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+        - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
+Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
         - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -475,10 +470,9 @@ Version number of the chat message.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[HostedContents <IMicrosoftGraphChatMessageHostedContent- `[]`>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
@@ -511,26 +505,26 @@ For example, a user's display name, a team name.
       - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
       - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
     - `[Actions <String>]`: chatMessageActions
     - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
     - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+      - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
+      - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
+Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
       - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -567,7 +561,7 @@ Link to the message in Microsoft Teams.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatpinnedmessage)
 
-[https://learn.microsoft.com/graph/api/chat-post-pinnedmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-pinnedmessages?view=graph-rest-1.0)
+
 
 
 

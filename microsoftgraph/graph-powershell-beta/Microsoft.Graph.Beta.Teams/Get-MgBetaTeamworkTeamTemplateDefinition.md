@@ -38,13 +38,17 @@ Get-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity> [-ExpandP
 Read the properties and relationships of a teamTemplateDefinition object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaTeamworkTeamTemplateDefinition Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateId $teamTemplateId -TeamTemplateDefinitionId $teamTemplateDefinitionId
+
 ```
 This example shows how to use the Get-MgBetaTeamworkTeamTemplateDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -353,7 +357,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamtemplatedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamtemplatedefinition)
 
-[https://learn.microsoft.com/graph/api/teamtemplatedefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamtemplatedefinition-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/teamtemplatedefinition-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamtemplatedefinition-get?view=graph-rest-beta)
 
 
 

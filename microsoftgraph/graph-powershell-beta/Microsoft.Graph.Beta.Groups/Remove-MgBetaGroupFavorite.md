@@ -34,13 +34,17 @@ Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaGroupFavorite Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 Remove-MgBetaGroupFavorite -GroupId $groupId
+
 ```
 This example shows how to use the Remove-MgBetaGroupFavorite Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -234,7 +238,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfavorite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfavorite)
 
-[https://learn.microsoft.com/graph/api/group-removefavorite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-removefavorite?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-removefavorite?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-removefavorite?view=graph-rest-beta)
 
 
 

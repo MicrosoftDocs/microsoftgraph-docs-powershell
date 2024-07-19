@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupTeamInstalledApp
 
 ## SYNOPSIS
-Uninstalls an app from the specified team.
+Delete navigation property installedApps for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamInstalledApp?view=graph-powershell-1.0)
@@ -30,9 +30,7 @@ Remove-MgBetaGroupTeamInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Uninstalls an app from the specified team.
-
-## EXAMPLES
+Delete navigation property installedApps for groups
 
 ## PARAMETERS
 
@@ -251,7 +249,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteaminstalledapp)
 
-[https://learn.microsoft.com/graph/api/team-delete-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-delete-installedapps?view=graph-rest-1.0)
+
 
 
 

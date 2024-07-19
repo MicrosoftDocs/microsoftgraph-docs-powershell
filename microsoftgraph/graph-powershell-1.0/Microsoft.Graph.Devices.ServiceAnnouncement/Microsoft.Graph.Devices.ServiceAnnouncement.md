@@ -101,6 +101,12 @@ Locale: en-US
 ### [Remove-MgServiceAnnouncementMessageAttachment](Remove-MgServiceAnnouncementMessageAttachment.md)
 {{ Fill in the Description }}
 
+### [Remove-MgServiceAnnouncementMessageAttachmentArchive](Remove-MgServiceAnnouncementMessageAttachmentArchive.md)
+{{ Fill in the Description }}
+
+### [Remove-MgServiceAnnouncementMessageAttachmentContent](Remove-MgServiceAnnouncementMessageAttachmentContent.md)
+{{ Fill in the Description }}
+
 ### [Set-MgServiceAnnouncementMessageAttachmentArchive](Set-MgServiceAnnouncementMessageAttachmentArchive.md)
 {{ Fill in the Description }}
 

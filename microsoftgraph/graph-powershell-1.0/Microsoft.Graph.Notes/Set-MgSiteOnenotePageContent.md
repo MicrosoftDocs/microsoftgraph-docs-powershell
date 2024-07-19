@@ -32,8 +32,6 @@ Set-MgSiteOnenotePageContent -InputObject <INotesIdentity> [-Data <Stream>] [-Re
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContentType
@@ -239,6 +237,8 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mgsiteonenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mgsiteonenotepagecontent)
+
+
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaUserContactFolderContactPhotoContent
 
 ## SYNOPSIS
-Get media content for the navigation property photo from users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderContactPhotoContent](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderContactPhotoContent?view=graph-powershell-1.0)
@@ -30,7 +31,8 @@ Get-MgBetaUserContactFolderContactPhotoContent -InputObject <IPersonalContactsId
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property photo from users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 ## PARAMETERS
 
@@ -196,6 +198,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfoldercontactphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfoldercontactphotocontent)
+
 
 
 

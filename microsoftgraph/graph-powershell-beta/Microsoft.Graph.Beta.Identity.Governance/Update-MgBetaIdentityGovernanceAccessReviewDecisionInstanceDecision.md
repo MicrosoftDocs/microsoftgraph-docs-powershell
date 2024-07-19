@@ -162,7 +162,7 @@ Accept wildcard characters: False
 
 ### -ApplyResult
 The result of applying the decision.
-Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound and ApplyNotSupported.
+Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound, and ApplyNotSupported.
 Supports $select, $orderby, and $filter (eq only).
 Read-only.
 
@@ -372,8 +372,8 @@ Accept wildcard characters: False
 
 ### -Recommendation
 A system-generated recommendation for the approval decision based off last interactive sign-in to tenant.
-Recommend approve if sign-in is within thirty days of start of review.
-Recommend deny if sign-in is greater than thirty days of start of review.
+Recommend approve if sign-in is within 30 days of start of review.
+Recommend deny if sign-in is greater than 30 days of start of review.
 Recommendation not available otherwise.
 Possible values: Approve, Deny, or NoInfoAvailable.
 Supports $select, $orderby, and $filter (eq only).
@@ -539,11 +539,10 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 APPLIEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+This property is read-only.
+  - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
+  - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 BODYPARAMETER `<IMicrosoftGraphAccessReviewInstanceDecisionItem>`: accessReviewInstanceDecisionItem
@@ -556,19 +555,18 @@ Read-only.
   - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. 
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $select.
 Read-only.
   - `[ApplyResult <String>]`: The result of applying the decision.
-Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound and ApplyNotSupported.
+Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound, and ApplyNotSupported.
 Supports $select, $orderby, and $filter (eq only).
 Read-only.
   - `[Decision <String>]`: Result of the review.
@@ -602,7 +600,12 @@ Read-only.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[NotificationTemplateType <String>]`: Indicates the type of access review email to be sent.
 Supported template type is CompletedAdditionalRecipients which sends review completion notifications to the recipients.
-      - `[BackupReviewers <IMicrosoftGraphAccessReviewReviewerScope- `[]`>]`: 
+      - `[BackupReviewers <IMicrosoftGraphAccessReviewReviewerScope- `[]`>]`: This collection of reviewer scopes is used to define the list of fallback reviewers.
+These fallback reviewers are notified to take action if no users are found from the list of reviewers specified.
+This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist. 
+Supports $select.
+Note: This property has been replaced by fallbackReviewers.
+However, specifying either backupReviewers or fallbackReviewers automatically populates the same values to the other property.
         - `[Query <String>]`: The query specifying who will be the reviewer.
         - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query.
 This property is only required if a relative query, for example, ./manager, is specified.
@@ -815,10 +818,9 @@ Read-only.
   - `[Principal <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[PrincipalLink <String>]`: Link to the principal object.
 For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9.
 Read-only.
@@ -826,8 +828,8 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[MembershipType <String>]`: decisionItemPrincipalResourceMembershipType
   - `[Recommendation <String>]`: A system-generated recommendation for the approval decision based off last interactive sign-in to tenant.
-Recommend approve if sign-in is within thirty days of start of review.
-Recommend deny if sign-in is greater than thirty days of start of review.
+Recommend approve if sign-in is within 30 days of start of review.
+Recommend deny if sign-in is greater than 30 days of start of review.
 Recommendation not available otherwise.
 Possible values: Approve, Deny, or NoInfoAvailable.
 Supports $select, $orderby, and $filter (eq only).
@@ -978,19 +980,18 @@ Read-only.
     - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
+      - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. 
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $select.
 Read-only.
     - `[ApplyResult <String>]`: The result of applying the decision.
-Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound and ApplyNotSupported.
+Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound, and ApplyNotSupported.
 Supports $select, $orderby, and $filter (eq only).
 Read-only.
     - `[Decision <String>]`: Result of the review.
@@ -1006,10 +1007,9 @@ Read-only.
     - `[Principal <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[PrincipalLink <String>]`: Link to the principal object.
 For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9.
 Read-only.
@@ -1017,8 +1017,8 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[MembershipType <String>]`: decisionItemPrincipalResourceMembershipType
     - `[Recommendation <String>]`: A system-generated recommendation for the approval decision based off last interactive sign-in to tenant.
-Recommend approve if sign-in is within thirty days of start of review.
-Recommend deny if sign-in is greater than thirty days of start of review.
+Recommend approve if sign-in is within 30 days of start of review.
+Recommend deny if sign-in is greater than 30 days of start of review.
 Recommendation not available otherwise.
 Possible values: Approve, Deny, or NoInfoAvailable.
 Supports $select, $orderby, and $filter (eq only).
@@ -1048,7 +1048,12 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[NotificationTemplateType <String>]`: Indicates the type of access review email to be sent.
 Supported template type is CompletedAdditionalRecipients which sends review completion notifications to the recipients.
-    - `[BackupReviewers <IMicrosoftGraphAccessReviewReviewerScope- `[]`>]`: 
+    - `[BackupReviewers <IMicrosoftGraphAccessReviewReviewerScope- `[]`>]`: This collection of reviewer scopes is used to define the list of fallback reviewers.
+These fallback reviewers are notified to take action if no users are found from the list of reviewers specified.
+This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist. 
+Supports $select.
+Note: This property has been replaced by fallbackReviewers.
+However, specifying either backupReviewers or fallbackReviewers automatically populates the same values to the other property.
       - `[Query <String>]`: The query specifying who will be the reviewer.
       - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query.
 This property is only required if a relative query, for example, ./manager, is specified.
@@ -1261,10 +1266,9 @@ Read-only.
 PRINCIPAL `<IMicrosoftGraphIdentity>`: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+  - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
 
 PRINCIPALRESOURCEMEMBERSHIP `<IMicrosoftGraphDecisionItemPrincipalResourceMembership>`: decisionItemPrincipalResourceMembership
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1280,16 +1284,16 @@ Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageA
 REVIEWEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+This property is read-only.
+  - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
+  - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdecisioninstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdecisioninstancedecision)
+
 
 
 

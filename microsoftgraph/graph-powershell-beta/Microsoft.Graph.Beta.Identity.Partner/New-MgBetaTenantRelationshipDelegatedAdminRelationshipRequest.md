@@ -48,6 +48,23 @@ New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <IIde
 ## DESCRIPTION
 Create a new delegatedAdminRelationshipRequest object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Partner
+
+$params = @{
+	action = "lockForApproval"
+}
+
+New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Action
@@ -306,8 +323,7 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshiprequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshiprequest)
 
-[https://learn.microsoft.com/graph/api/delegatedadminrelationship-post-requests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationship-post-requests?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/delegatedadminrelationship-post-requests?view=graph-rest-beta](https://learn.microsoft.com/graph/api/delegatedadminrelationship-post-requests?view=graph-rest-beta)
 
 
 

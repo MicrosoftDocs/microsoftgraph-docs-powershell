@@ -8,11 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserOutlookTask
 
 ## SYNOPSIS
-Change writable properties of an Outlook task.
-The completedDateTime property can be set by the complete action, or explicitly by a PATCH operation.
-If you use PATCH to set completedDateTime, make sure you set status to completed as well.
-By default, this operation (and the POST, GET, and complete task operations) returns date-related properties in UTC.
-You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
+Update the navigation property tasks in users
 
 ## SYNTAX
 
@@ -63,11 +59,7 @@ Update-MgBetaUserOutlookTask -InputObject <IUsersIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Change writable properties of an Outlook task.
-The completedDateTime property can be set by the complete action, or explicitly by a PATCH operation.
-If you use PATCH to set completedDateTime, make sure you set status to completed as well.
-By default, this operation (and the POST, GET, and complete task operations) returns date-related properties in UTC.
-You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
+Update the navigation property tasks in users
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserOutlookTask Cmdlet
@@ -169,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Categories
-.
+The categories associated with the item.
 
 ```yaml
 Type: String[]
@@ -184,7 +176,10 @@ Accept wildcard characters: False
 ```
 
 ### -ChangeKey
-.
+Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
 
 ```yaml
 Type: String
@@ -641,8 +636,11 @@ BODY `<IMicrosoftGraphItemBody>`: itemBody
 
 BODYPARAMETER `<IMicrosoftGraphOutlookTask>`: outlookTask
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -835,8 +833,6 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktask)
-
-[https://learn.microsoft.com/graph/api/outlooktask-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktask-update?view=graph-rest-1.0)
 
 
 

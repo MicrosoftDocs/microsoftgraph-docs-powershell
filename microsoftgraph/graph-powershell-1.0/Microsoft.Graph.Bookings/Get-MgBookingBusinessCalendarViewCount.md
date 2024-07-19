@@ -17,16 +17,16 @@ Get the number of the resource
 
 ### Get (Default)
 ```
-Get-MgBookingBusinessCalendarViewCount -BookingBusinessId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBookingBusinessCalendarViewCount -BookingBusinessId <String> -End <String> -Start <String>
+ [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBookingBusinessCalendarViewCount -InputObject <IBookingsIdentity> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBookingBusinessCalendarViewCount -InputObject <IBookingsIdentity> -End <String> -Start <String>
+ [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,6 +40,22 @@ The unique identifier of bookingBusiness
 ```yaml
 Type: String
 Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -End
+The end date and time of the time range, represented in ISO 8601 format.
+For example, 2019-11-08T20:00:00-08:00
+
+```yaml
+Type: String
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -134,6 +150,22 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Start
+The start date and time of the time range, represented in ISO 8601 format.
+For example, 2019-11-08T19:00:00-08:00
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

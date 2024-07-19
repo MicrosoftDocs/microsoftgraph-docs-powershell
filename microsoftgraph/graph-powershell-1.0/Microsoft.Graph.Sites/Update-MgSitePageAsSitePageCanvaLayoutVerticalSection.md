@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Webparts
-.
+The set of web parts in this section.
 To construct, see NOTES section for WEBPARTS properties and create a hash table.
 
 ```yaml
@@ -272,7 +272,7 @@ BODYPARAMETER `<IMicrosoftGraphVerticalSection>`: verticalSection
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Emphasis <String>]`: sectionEmphasisType
-  - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: 
+  - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The set of web parts in this section.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
@@ -318,10 +318,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-WEBPARTS <IMicrosoftGraphWebPart- `[]`>: .
+WEBPARTS <IMicrosoftGraphWebPart- `[]`>: The set of web parts in this section.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 

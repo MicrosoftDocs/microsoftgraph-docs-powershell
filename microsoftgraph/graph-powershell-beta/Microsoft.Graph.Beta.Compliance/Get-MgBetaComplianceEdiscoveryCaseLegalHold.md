@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalhold
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseLegalHold
@@ -337,7 +336,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalhold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalhold)
 
-[https://learn.microsoft.com/graph/api/ediscovery-legalhold-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-legalhold-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/ediscovery-legalhold-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-legalhold-get?view=graph-rest-beta)
 
 
 

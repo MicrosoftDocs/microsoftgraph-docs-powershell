@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgSecuritySubjectRightsRequestFinalAttachment
 
 ## SYNOPSIS
-Invoke function getFinalAttachment
+Get the final attachment for a subject rights request.
+The attachment is a zip file that contains all the files that were included by the privacy administrator.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequestFinalAttachment](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestFinalAttachment?view=graph-powershell-beta)
@@ -30,7 +31,8 @@ Get-MgSecuritySubjectRightsRequestFinalAttachment -InputObject <ISecurityIdentit
 ```
 
 ## DESCRIPTION
-Invoke function getFinalAttachment
+Get the final attachment for a subject rights request.
+The attachment is a zip file that contains all the files that were included by the privacy administrator.
 
 ## PARAMETERS
 
@@ -180,6 +182,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -221,6 +224,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestfinalattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestfinalattachment)
+
+[https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalattachment?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalattachment?view=graph-rest-1.0)
+
 
 
 

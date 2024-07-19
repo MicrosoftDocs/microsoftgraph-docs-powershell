@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgReportOneDriveUsageAccountCount
 
 ## SYNOPSIS
-Invoke function getOneDriveUsageAccountCounts
+Get the trend in the number of active OneDrive for Business sites.
+Any site on which users viewed, modified, uploaded, downloaded, shared, or synced files is considered an active site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageAccountCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageAccountCount?view=graph-powershell-beta)
@@ -29,7 +30,8 @@ Get-MgReportOneDriveUsageAccountCount -InputObject <IReportsIdentity> -OutFile <
 ```
 
 ## DESCRIPTION
-Invoke function getOneDriveUsageAccountCounts
+Get the trend in the number of active OneDrive for Business sites.
+Any site on which users viewed, modified, uploaded, downloaded, shared, or synced files is considered an active site.
 
 ## PARAMETERS
 
@@ -182,6 +184,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusageaccountcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusageaccountcount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-1.0)
 
 
 

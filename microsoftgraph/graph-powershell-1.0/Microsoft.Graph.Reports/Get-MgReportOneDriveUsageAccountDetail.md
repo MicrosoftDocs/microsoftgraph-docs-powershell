@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportOneDriveUsageAccountDetail
 
 ## SYNOPSIS
-Invoke function getOneDriveUsageAccountDetail
+Get details about OneDrive usage by account.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageAccountDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageAccountDetail?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Get-MgReportOneDriveUsageAccountDetail -InputObject <IReportsIdentity> -OutFile 
 ```
 
 ## DESCRIPTION
-Invoke function getOneDriveUsageAccountDetail
+Get details about OneDrive usage by account.
 
 ## PARAMETERS
 
@@ -210,6 +210,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusageaccountdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusageaccountdetail)
+
+[https://learn.microsoft.com/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0)
 
 
 

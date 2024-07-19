@@ -62,8 +62,6 @@ Publish an app to the Microsoft Teams app catalog.Specifically, this API publish
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -537,10 +535,9 @@ Content type, such as image/png, image/jpg.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>]`: Dashboard cards specified in the Teams app manifest.
@@ -595,10 +592,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -688,7 +684,9 @@ Content type, such as image/png, image/jpg.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition)
 
-[https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)
+
+
 
 
 

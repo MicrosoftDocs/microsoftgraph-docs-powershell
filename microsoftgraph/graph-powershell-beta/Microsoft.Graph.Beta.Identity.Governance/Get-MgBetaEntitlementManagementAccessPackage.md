@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackage
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an accessPackage object.
+Retrieve an access package with a list of accessPackageResourceRoleScope objects.
+These objects represent the resource roles that an access package assigns to each subject.
+Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
@@ -65,7 +67,9 @@ Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an accessPackage object.
+Retrieve an access package with a list of accessPackageResourceRoleScope objects.
+These objects represent the resource roles that an access package assigns to each subject.
+Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
 
 ## EXAMPLES
 ### Example 1: Get a list of all access packages
@@ -537,9 +541,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackage)
 
-[https://learn.microsoft.com/graph/api/accesspackage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackage-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/accesspackage-list-accesspackageresourcerolescopes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-list-accesspackageresourcerolescopes?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackages?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackages?view=graph-rest-beta)
 
 
 

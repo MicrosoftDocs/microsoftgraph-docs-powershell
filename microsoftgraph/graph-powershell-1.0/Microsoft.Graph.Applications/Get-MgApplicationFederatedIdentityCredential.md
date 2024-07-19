@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgApplicationFederatedIdentityCredential
 
 ## SYNOPSIS
-Read the properties and relationships of a federatedIdentityCredential object.
+Federated identities for applications.
+Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
@@ -38,10 +39,8 @@ Get-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a federatedIdentityCredential object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-get-permissions.md)]
+Federated identities for applications.
+Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -331,6 +330,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -344,10 +344,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential)
-
-[https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/application-list-federatedidentitycredentials?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-list-federatedidentitycredentials?view=graph-rest-1.0)
 
 
 

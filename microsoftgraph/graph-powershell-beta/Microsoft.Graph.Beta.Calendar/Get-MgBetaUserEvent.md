@@ -8,8 +8,10 @@ schema: 2.0.0
 # Get-MgBetaUserEvent
 
 ## SYNOPSIS
-Get the properties and relationships of the specified event object.
-An app can get an event in another user's calendar if: Because the event resource supports extensions, you can also use the GET operation to get custom properties and extension data in an event instance.
+The user's events.
+The default is to show events under the Default Calendar.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEvent?view=graph-powershell-1.0)
@@ -19,8 +21,9 @@ An app can get an event in another user's calendar if: Because the event resourc
 ### List (Default)
 ```
 Get-MgBetaUserEvent -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
@@ -38,8 +41,10 @@ Get-MgBetaUserEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of the specified event object.
-An app can get an event in another user's calendar if: Because the event resource supports extensions, you can also use the GET operation to get custom properties and extension data in an event instance.
+The user's events.
+The default is to show events under the Default Calendar.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Get a specified event
@@ -260,6 +265,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -354,10 +374,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserevent)
-
-[https://learn.microsoft.com/graph/api/event-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/user-list-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-events?view=graph-rest-1.0)
 
 
 

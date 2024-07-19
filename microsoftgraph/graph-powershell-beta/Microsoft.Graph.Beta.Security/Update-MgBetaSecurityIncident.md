@@ -421,7 +421,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResolvingComment
-.
+User input that explains the resolution of the incident and the classification choice.
+This property contains free editable text.
 
 ```yaml
 Type: String
@@ -682,7 +683,8 @@ Free editable text.
     - `[KqlText <String>]`: The query string.
   - `[RedirectIncidentId <String>]`: Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
-  - `[ResolvingComment <String>]`: 
+  - `[ResolvingComment <String>]`: User input that explains the resolution of the incident and the classification choice.
+This property contains free editable text.
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
   - `[SystemTags <String- `[]`>]`: The collection of system tags that are associated with the incident.
@@ -745,6 +747,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -755,6 +758,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -784,7 +788,7 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident)
 
-[https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-beta)
 
 
 

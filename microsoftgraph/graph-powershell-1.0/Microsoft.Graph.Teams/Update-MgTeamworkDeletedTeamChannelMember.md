@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamworkDeletedTeamChannelMember
 
 ## SYNOPSIS
-Update the role of a conversationMember in a team or channel.
+Update the navigation property members in teamwork
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Update the role of a conversationMember in a team or channel.
+Update the navigation property members in teamwork
 
 ## PARAMETERS
 
@@ -352,8 +352,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannelmember)
-
-[https://learn.microsoft.com/graph/api/conversationmember-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-update?view=graph-rest-1.0)
 
 
 

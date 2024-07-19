@@ -8,7 +8,7 @@ schema: 2.0.0
 # Grant-MgBetaUserDriveItemPermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a \[permission\]\[\].
+Grant users access to a link represented by a permission.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Grant-MgUserDriveItemPermission](/powershell/module/Microsoft.Graph.Users.Actions/Grant-MgUserDriveItemPermission?view=graph-powershell-1.0)
@@ -48,37 +48,10 @@ Grant-MgBetaUserDriveItemPermission -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a \[permission\]\[\].
+Grant users access to a link represented by a permission.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Files
-
-$params = @{
-	Recipients = @(
-		@{
-			Email = "john@contoso.com"
-		}
-		@{
-			Email = "ryan@external.com"
-		}
-	)
-	Roles = @(
-		"read"
-	)
-}
-
-Grant-MgBetaSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
-```
-This example shows how to use the Grant-MgBetaUserDriveItemPermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -375,7 +348,9 @@ security groups).
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/grant-mgbetauserdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/grant-mgbetauserdriveitempermission)
 
-[https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
+
+
 
 
 

@@ -101,6 +101,12 @@ Locale: en-US
 ### [Remove-MgBetaServiceAnnouncementMessageAttachment](Remove-MgBetaServiceAnnouncementMessageAttachment.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaServiceAnnouncementMessageAttachmentArchive](Remove-MgBetaServiceAnnouncementMessageAttachmentArchive.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaServiceAnnouncementMessageAttachmentContent](Remove-MgBetaServiceAnnouncementMessageAttachmentContent.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaServiceAnnouncementMessageAttachmentArchive](Set-MgBetaServiceAnnouncementMessageAttachmentArchive.md)
 {{ Fill in the Description }}
 

@@ -41,20 +41,17 @@ Get-MgBetaDeviceManagementVirtualEndpointAuditEvent -InputObject <IDeviceManagem
 Read the properties and relationships of a cloudPcAuditEvent object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointAuditEvent Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointAuditEvent -CloudPcAuditEventId $cloudPcAuditEventId
-```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointAuditEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointAuditEvent Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 Get-MgBetaDeviceManagementVirtualEndpointAuditEvent
+
 ```
 This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointAuditEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -364,9 +361,9 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointauditevent)
 
-[https://learn.microsoft.com/graph/api/cloudpcauditevent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcauditevent-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpcauditevent-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcauditevent-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/virtualendpoint-list-auditevents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-auditevents?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-auditevents?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-auditevents?view=graph-rest-beta)
 
 
 

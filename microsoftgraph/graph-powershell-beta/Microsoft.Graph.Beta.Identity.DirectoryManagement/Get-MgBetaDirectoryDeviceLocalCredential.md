@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDirectoryDeviceLocalCredential
 
 ## SYNOPSIS
-Retrieve the properties of a deviceLocalCredentialInfo for a specified device object.
+The credentials of the device's local administrator account backed up to Microsoft Entra ID.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeviceLocalCredential?view=graph-powershell-1.0)
@@ -37,7 +37,7 @@ Get-MgBetaDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryManagem
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a deviceLocalCredentialInfo for a specified device object.
+The credentials of the device's local administrator account backed up to Microsoft Entra ID.
 
 ## PARAMETERS
 
@@ -306,10 +306,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydevicelocalcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydevicelocalcredential)
-
-[https://learn.microsoft.com/graph/api/devicelocalcredentialinfo-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicelocalcredentialinfo-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/directory-list-devicelocalcredentials?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-devicelocalcredentials?view=graph-rest-1.0)
 
 
 

@@ -395,6 +395,8 @@ This property is going to be deprecated with the option of using the new propert
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server
+    - `[DeploymentMode <MicrosoftTunnelDeploymentMode?>]`: The available deployment modes for a managed Tunnel server.
+The deployment mode is determined during the deployment depending on the Tunnel containers, namely standalone or as part of a pod, and whether the containers are running in rootful or rootless mode.
     - `[DisplayName <String>]`: The display name for the server.
 This property is required when a server is created and cannot be cleared during updates.
     - `[LastCheckinDateTime <DateTime?>]`: Indicates when the server last checked in
@@ -438,6 +440,8 @@ MICROSOFTTUNNELSERVERS <IMicrosoftGraphMicrosoftTunnelServer- `[]`>: A list of M
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server
+  - `[DeploymentMode <MicrosoftTunnelDeploymentMode?>]`: The available deployment modes for a managed Tunnel server.
+The deployment mode is determined during the deployment depending on the Tunnel containers, namely standalone or as part of a pod, and whether the containers are running in rootful or rootless mode.
   - `[DisplayName <String>]`: The display name for the server.
 This property is required when a server is created and cannot be cleared during updates.
   - `[LastCheckinDateTime <DateTime?>]`: Indicates when the server last checked in
@@ -447,6 +451,7 @@ This property is required when a server is created and cannot be cleared during 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelsite)
+
 
 
 

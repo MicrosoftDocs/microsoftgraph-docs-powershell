@@ -31,8 +31,6 @@ New-MgPrintService -BodyParameter <IMicrosoftGraphPrintService> [-ResponseHeader
 ## DESCRIPTION
 Create new navigation property to services for print
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -215,6 +213,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintservice](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintservice)
+
+
 
 
 

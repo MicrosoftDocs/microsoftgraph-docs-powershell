@@ -52,45 +52,50 @@ New-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <IMi
 Create a timeCard instance in a schedule.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaTeamScheduleTimeCard Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 $params = @{
-	OnBehalfOfUserId = "a3601044-a1b5-438e-b742-f78d01d68a67"
-	ClockInEvent = @{
-		DateTime = [System.DateTime]::Parse("2019-03-18T00:00:00.000Z")
-		AtApprovedLocation = $true
-		Notes = @{
-			Content = "Started late due to traffic in CA 237"
-			ContentType = "text"
+	onBehalfOfUserId = "a3601044-a1b5-438e-b742-f78d01d68a67"
+	clockInEvent = @{
+		dateTime = [System.DateTime]::Parse("2019-03-18T00:00:00.000Z")
+		atApprovedLocation = $true
+		notes = @{
+			content = "Started late due to traffic in CA 237"
+			contentType = "text"
 		}
 	}
-	Notes = @{
-		Content = "8 To 5 Inventory management"
-		ContentType = "text"
+	notes = @{
+		content = "8 To 5 Inventory management"
+		contentType = "text"
 	}
-	Breaks = @(
+	breaks = @(
 		@{
-			BreakId = "string"
-			Notes = @{
-				Content = "Lunch break"
-				ContentType = "text"
+			breakId = "string"
+			notes = @{
+				content = "Lunch break"
+				contentType = "text"
 			}
-			Start = @{
-				DateTime = [System.DateTime]::Parse("2019-03-18T02:00:00.000Z")
-				AtApprovedLocation = $true
-				Notes = @{
-					Content = "Reduced break to make up for lost time"
-					ContentType = "text"
+			start = @{
+				dateTime = [System.DateTime]::Parse("2019-03-18T02:00:00.000Z")
+				atApprovedLocation = $true
+				notes = @{
+					content = "Reduced break to make up for lost time"
+					contentType = "text"
 				}
 			}
 		}
 	)
 }
+
 New-MgBetaTeamScheduleTimeCard -TeamId $teamId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaTeamScheduleTimeCard Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -429,10 +434,9 @@ BODYPARAMETER `<IMicrosoftGraphTimeCard>`: timeCard
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -498,10 +502,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -553,10 +556,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -586,7 +588,7 @@ ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimecard)
 
-[https://learn.microsoft.com/graph/api/timecard-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-post?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/timecard-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/timecard-post?view=graph-rest-beta)
 
 
 

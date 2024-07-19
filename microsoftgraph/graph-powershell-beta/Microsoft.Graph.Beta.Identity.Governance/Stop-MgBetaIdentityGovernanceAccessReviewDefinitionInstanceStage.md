@@ -40,13 +40,17 @@ If there are subsequent stages that depend on the completed stage, the next stag
 The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
 ## EXAMPLES
-### Example 1: Using the Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId
+
 ```
 This example shows how to use the Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -323,7 +327,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceaccessreviewdefinitioninstancestage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceaccessreviewdefinitioninstancestage)
 
-[https://learn.microsoft.com/graph/api/accessreviewstage-stop?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewstage-stop?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/accessreviewstage-stop?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewstage-stop?view=graph-rest-beta)
 
 
 

@@ -10,9 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get recent activities for a given user.
 This OData function has some default behaviors included to make it operate like a 'most recently used' API.
-The service queries for the most recent historyItems, and then pull those related activities.
-Activities are sorted according to the most recent lastModified on the historyItem.
-This means that activities without historyItems won't be included in the response.
+The service queries for the most recent activityHistoryItems, and then pull those related activities.
+Activities are sorted according to the most recent lastModified on the activityHistoryItem.
+This means that activities without activityHistoryItems won't be included in the response.
 The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
@@ -41,9 +41,9 @@ Invoke-MgRecentUserActivity -InputObject <IUsersFunctionsIdentity> [-Count] [-Ex
 ## DESCRIPTION
 Get recent activities for a given user.
 This OData function has some default behaviors included to make it operate like a 'most recently used' API.
-The service queries for the most recent historyItems, and then pull those related activities.
-Activities are sorted according to the most recent lastModified on the historyItem.
-This means that activities without historyItems won't be included in the response.
+The service queries for the most recent activityHistoryItems, and then pull those related activities.
+Activities are sorted according to the most recent lastModified on the activityHistoryItem.
+This means that activities without activityHistoryItems won't be included in the response.
 The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
@@ -52,14 +52,18 @@ To get your application's activities, use the nextLink property to paginate.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-get-recent-activities-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgRecentUserActivity Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Users.Functions
+
 # A UPN can also be used as -UserId.
 Invoke-MgRecentUserActivity -UserId $userId
+
 ```
 This example shows how to use the Invoke-MgRecentUserActivity Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

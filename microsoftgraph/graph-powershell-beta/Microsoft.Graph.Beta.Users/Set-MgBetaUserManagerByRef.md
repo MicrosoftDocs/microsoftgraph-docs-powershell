@@ -302,7 +302,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref)
 
-[https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-beta)
 
 
 

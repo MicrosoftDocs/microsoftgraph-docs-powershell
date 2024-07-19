@@ -34,13 +34,17 @@ Calling this method disables the current user to receive email notifications for
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaGraphGroup Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 Invoke-MgBetaGraphGroup -GroupId $groupId
+
 ```
 This example shows how to use the Invoke-MgBetaGraphGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -234,7 +238,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetagraphgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetagraphgroup)
 
-[https://learn.microsoft.com/graph/api/group-unsubscribebymail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-unsubscribebymail?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-unsubscribebymail?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-unsubscribebymail?view=graph-rest-beta)
 
 
 

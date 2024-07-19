@@ -360,7 +360,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermailfolderchildfolderdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermailfolderchildfolderdelta)
 
-[https://learn.microsoft.com/graph/api/mailfolder-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-delta?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/mailfolder-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/mailfolder-delta?view=graph-rest-beta)
 
 
 

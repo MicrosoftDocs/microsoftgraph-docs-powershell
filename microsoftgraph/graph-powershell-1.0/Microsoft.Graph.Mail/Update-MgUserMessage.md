@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserMessage
 
 ## SYNOPSIS
-Update the properties of an eventMessage object.
+Update the navigation property messages in users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMessage?view=graph-powershell-beta)
@@ -70,7 +70,7 @@ Update-MgUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Update the properties of an eventMessage object.
+Update the navigation property messages in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1033,8 +1033,6 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermessage)
-
-[https://learn.microsoft.com/graph/api/eventmessage-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/eventmessage-update?view=graph-rest-1.0)
 
 
 

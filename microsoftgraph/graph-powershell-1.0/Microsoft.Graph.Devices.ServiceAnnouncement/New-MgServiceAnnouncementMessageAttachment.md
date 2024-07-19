@@ -48,8 +48,6 @@ New-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnounce
 ## DESCRIPTION
 Create new navigation property to attachments for admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -317,6 +315,8 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessageattachment)
+
+
 
 
 

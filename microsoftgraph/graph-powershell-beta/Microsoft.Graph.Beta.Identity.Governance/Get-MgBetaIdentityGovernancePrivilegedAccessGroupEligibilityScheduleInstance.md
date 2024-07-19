@@ -42,6 +42,19 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance
 ## DESCRIPTION
 Read the properties and relationships of a privilegedAccessGroupEligibilityScheduleInstance object.
 
+## EXAMPLES
+### Example 1: Get all eligibility schedule instances
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance -PrivilegedAccessGroupEligibilityScheduleInstanceId $privilegedAccessGroupEligibilityScheduleInstanceId
+
+```
+This example will get all eligibility schedule instances
+
+
 ## PARAMETERS
 
 ### -All
@@ -392,10 +405,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityscheduleinstance)
 
-[https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityscheduleinstance-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityscheduleinstance-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityscheduleinstance-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityscheduleinstance-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityscheduleinstances?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityscheduleinstances?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityscheduleinstances?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityscheduleinstances?view=graph-rest-beta)
 
 
 

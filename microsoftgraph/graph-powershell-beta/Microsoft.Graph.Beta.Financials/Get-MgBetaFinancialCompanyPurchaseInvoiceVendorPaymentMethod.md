@@ -29,8 +29,6 @@ Get-MgBetaFinancialCompanyPurchaseInvoiceVendorPaymentMethod -InputObject <IFina
 ## DESCRIPTION
 Get paymentMethod from financials
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -211,6 +209,8 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanypurchaseinvoicevendorpaymentmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanypurchaseinvoicevendorpaymentmethod)
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserOnlineMeeting
 
 ## SYNOPSIS
-Create an online meeting on behalf of a user.
+Create new navigation property to onlineMeetings for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
@@ -68,7 +68,7 @@ New-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create an online meeting on behalf of a user.
+Create new navigation property to onlineMeetings for users
 
 ## EXAMPLES
 ### Example 1: Create an online meeting with user token
@@ -257,7 +257,8 @@ Accept wildcard characters: False
 ```
 
 ### -AttendeeReportInputFile
-Input File for AttendeeReport (.)
+Input File for AttendeeReport (The content stream of the attendee report of a Microsoft Teams live event.
+Read-only.)
 
 ```yaml
 Type: String
@@ -430,7 +431,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsBroadcast
-.
+Indicates whether this meeting is a Teams live event.
 
 ```yaml
 Type: SwitchParameter
@@ -776,8 +777,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
     - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -792,9 +794,9 @@ AUDIOCONFERENCING `<IMicrosoftGraphAudioConferencing>`: audioConferencing
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConferenceId <String>]`: The conference id of the online meeting.
   - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-  - `[TollFreeNumber <String>]`: 
+  - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
   - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-  - `[TollNumber <String>]`: 
+  - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
   - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
 
 BODYPARAMETER `<IMicrosoftGraphOnlineMeeting>`: onlineMeeting
@@ -822,8 +824,9 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
       - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -837,9 +840,9 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ConferenceId <String>]`: The conference id of the online meeting.
     - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-    - `[TollFreeNumber <String>]`: 
+    - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
     - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
-    - `[TollNumber <String>]`: 
+    - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
     - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -879,7 +882,8 @@ Read-only.
     - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AttendeeReport <Byte- `[]`>]`: 
+  - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Microsoft Teams live event.
+Read-only.
   - `[BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]`: broadcastMeetingSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowedAudience <String>]`: broadcastMeetingAudience
@@ -901,10 +905,10 @@ Read-only.
   - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
 Required when you create an online meeting.
   - `[ExternalId <String>]`: 
-  - `[IsBroadcast <Boolean?>]`: 
+  - `[IsBroadcast <Boolean?>]`: Indicates whether this meeting is a Teams live event.
   - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Attendees <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+    - `[Attendees <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: Information about the meeting attendees.
       - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1011,15 +1015,16 @@ Optional.
 
 PARTICIPANTS `<IMicrosoftGraphMeetingParticipants>`: meetingParticipants
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Attendees <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+  - `[Attendees <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: Information about the meeting attendees.
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Role <String>]`: onlineMeetingRole
@@ -1044,8 +1049,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
@@ -1069,8 +1075,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[MetadataContent <Byte- `[]`>]`: The time-aligned metadata of the utterances in the transcript.
@@ -1086,8 +1093,6 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting)
-
-[https://learn.microsoft.com/graph/api/application-post-onlinemeetings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-onlinemeetings?view=graph-rest-1.0)
 
 
 

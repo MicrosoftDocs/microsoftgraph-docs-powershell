@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSitePage
 
 ## SYNOPSIS
-Get the metadata for a \[baseSitePage\]\[\] in the site pages \[list\]\[\] in a \[site\]\[\].
+Get the metadata for a baseSitePage in the site pages list in a site.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSitePage](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePage?view=graph-powershell-1.0)
@@ -38,23 +38,20 @@ Get-MgBetaSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get the metadata for a \[baseSitePage\]\[\] in the site pages \[list\]\[\] in a \[site\]\[\].
+Get the metadata for a baseSitePage in the site pages list in a site.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSitePage Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-Get-MgBetaSitePage -SiteId $siteId -SitePageId $sitePageId
-```
-This example shows how to use the Get-MgBetaSitePage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaSitePage Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Sites
+
 Get-MgBetaSitePage -SiteId $siteId
+
 ```
 This example shows how to use the Get-MgBetaSitePage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -374,9 +371,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepage)
 
-[https://learn.microsoft.com/graph/api/basesitepage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/basesitepage-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/basesitepage-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/basesitepage-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/basesitepage-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/basesitepage-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/basesitepage-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/basesitepage-list?view=graph-rest-beta)
 
 
 

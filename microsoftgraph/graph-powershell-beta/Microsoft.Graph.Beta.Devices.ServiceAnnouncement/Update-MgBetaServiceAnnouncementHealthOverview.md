@@ -48,8 +48,6 @@ Update-MgBetaServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnno
 ## DESCRIPTION
 Update the navigation property healthOverviews in admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -340,6 +338,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/update-mgbetaserviceannouncementhealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/update-mgbetaserviceannouncementhealthoverview)
+
+
 
 
 

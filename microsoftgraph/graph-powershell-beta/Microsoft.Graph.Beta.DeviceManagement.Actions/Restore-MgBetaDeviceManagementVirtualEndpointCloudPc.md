@@ -55,16 +55,21 @@ Use this API to trigger a remote action that restores a Cloud PC device to a pre
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-restore-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Restore-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
 $params = @{
-	CloudPcSnapshotId = "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8"
+	cloudPcSnapshotId = "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8"
 }
+
 Restore-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
+
 ```
 This example shows how to use the Restore-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -294,6 +299,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
   - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+  - `[HardwareConfigurationId <String>]`: The unique identifier of hardwareConfiguration
   - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
@@ -316,7 +322,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restore-mgbetadevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restore-mgbetadevicemanagementvirtualendpointcloudpc)
 
-[https://learn.microsoft.com/graph/api/cloudpc-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-restore?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpc-restore?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-restore?view=graph-rest-beta)
 
 
 

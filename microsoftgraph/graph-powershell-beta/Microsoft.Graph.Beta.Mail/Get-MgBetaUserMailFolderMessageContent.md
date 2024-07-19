@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaUserMailFolderMessageContent
 
 ## SYNOPSIS
-Get media content for the navigation property messages from users
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderMessageContent](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageContent?view=graph-powershell-1.0)
@@ -30,7 +31,8 @@ Get-MgBetaUserMailFolderMessageContent -InputObject <IMailIdentity> -OutFile <St
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property messages from users
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 
@@ -202,7 +204,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessagecontent)
 
-[https://learn.microsoft.com/graph/api/mailfolder-list-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-list-messages?view=graph-rest-1.0)
 
 
 

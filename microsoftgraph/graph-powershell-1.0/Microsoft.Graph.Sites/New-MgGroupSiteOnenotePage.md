@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgGroupSiteOnenotePage
 
 ## SYNOPSIS
-Create a new OneNote page in the default section of the default notebook.
-To create a page in a different section in the default notebook, you can use the sectionName query parameter.
-Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
-If you're targeting other notebooks, you can create pages in a specified section.
+Create new navigation property to pages for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenotePage?view=graph-powershell-beta)
@@ -55,10 +52,7 @@ New-MgGroupSiteOnenotePage -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create a new OneNote page in the default section of the default notebook.
-To create a page in a different section in the default notebook, you can use the sectionName query parameter.
-Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
-If you're targeting other notebooks, you can create pages in a specified section.
+Create new navigation property to pages for groups
 
 ## PARAMETERS
 
@@ -494,8 +488,9 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DisplayName <String>]`: The name of the notebook.
@@ -633,6 +628,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -651,8 +647,9 @@ PARENTNOTEBOOK `<IMicrosoftGraphNotebook>`: notebook
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DisplayName <String>]`: The name of the notebook.
@@ -784,8 +781,9 @@ PARENTSECTION `<IMicrosoftGraphOnenoteSection>`: onenoteSection
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DisplayName <String>]`: The name of the notebook.
@@ -913,8 +911,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotepage)
-
-[https://learn.microsoft.com/graph/api/onenote-post-pages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-post-pages?view=graph-rest-1.0)
 
 
 

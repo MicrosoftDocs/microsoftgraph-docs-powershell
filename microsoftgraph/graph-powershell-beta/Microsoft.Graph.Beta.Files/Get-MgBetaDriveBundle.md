@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaDriveBundle
 
 ## SYNOPSIS
-Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
+Collection of bundles (albums and multi-select-shared sets of items).
+Only in personal OneDrive.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveBundle](/powershell/module/Microsoft.Graph.Files/Get-MgDriveBundle?view=graph-powershell-1.0)
@@ -38,7 +39,8 @@ Get-MgBetaDriveBundle -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
+Collection of bundles (albums and multi-select-shared sets of items).
+Only in personal OneDrive.
 
 ## EXAMPLES
 ### Example 1: List all bundles in a drive
@@ -353,10 +355,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundle)
-
-[https://learn.microsoft.com/graph/api/bundle-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/bundle-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-list?view=graph-rest-1.0)
 
 
 

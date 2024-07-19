@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Optional.
-NavigationProperty/Containment; navigation property to the activity's historyItems.
+NavigationProperty/Containment; navigation property to the activity's activityHistoryItems.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserActivityHistoryItem](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserActivityHistoryItem?view=graph-powershell-1.0)
@@ -40,7 +40,7 @@ Get-MgBetaUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
 
 ## DESCRIPTION
 Optional.
-NavigationProperty/Containment; navigation property to the activity's historyItems.
+NavigationProperty/Containment; navigation property to the activity's activityHistoryItems.
 
 ## PARAMETERS
 
@@ -330,6 +330,9 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauseractivityhistoryitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauseractivityhistoryitem)
+
+
+
 
 
 

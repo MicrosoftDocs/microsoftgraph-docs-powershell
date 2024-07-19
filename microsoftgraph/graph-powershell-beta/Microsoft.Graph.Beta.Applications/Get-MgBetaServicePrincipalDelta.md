@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaServicePrincipalDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalDelta](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalDelta?view=graph-powershell-1.0)
@@ -23,9 +23,20 @@ Get-MgBetaServicePrincipalDelta [-ExpandProperty <String[]>] [-Filter <String>] 
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
 
 ## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+Get-MgBetaServicePrincipalDelta
+
+```
+This example shows how to use the Get-MgBetaServicePrincipalDelta Cmdlet.
+
 
 ## PARAMETERS
 
@@ -239,6 +250,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-delta?view=graph-rest-beta)
 
 
 

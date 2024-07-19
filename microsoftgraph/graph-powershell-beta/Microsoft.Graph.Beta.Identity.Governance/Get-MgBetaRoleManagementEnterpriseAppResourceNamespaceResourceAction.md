@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction
 
 ## SYNOPSIS
-Read the properties and relationships of an unifiedRbacResourceAction object.
+Operations that an authorized principal is allowed to perform.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction -InputObjec
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an unifiedRbacResourceAction object.
+Operations that an authorized principal is allowed to perform.
 
 ## PARAMETERS
 
@@ -418,10 +418,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseappresourcenamespaceresourceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseappresourcenamespaceresourceaction)
-
-[https://learn.microsoft.com/graph/api/unifiedrbacresourceaction-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedrbacresourceaction-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-list-resourceactions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-list-resourceactions?view=graph-rest-1.0)
 
 
 

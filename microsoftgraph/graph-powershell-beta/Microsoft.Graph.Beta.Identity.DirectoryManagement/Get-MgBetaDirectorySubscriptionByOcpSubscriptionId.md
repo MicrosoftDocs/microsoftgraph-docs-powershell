@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDirectorySubscriptionByOcpSubscriptionId
 
 ## SYNOPSIS
-Get a specific commercial subscription that an organization has acquired.
+List of commercial subscriptions that an organization has.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaDirectorySubscriptionByOcpSubscriptionId -InputObject <IIdentityDirect
 ```
 
 ## DESCRIPTION
-Get a specific commercial subscription that an organization has acquired.
+List of commercial subscriptions that an organization has.
 
 ## PARAMETERS
 
@@ -205,8 +205,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbyocpsubscriptionid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbyocpsubscriptionid)
-
-[https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-1.0)
 
 
 

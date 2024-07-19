@@ -61,6 +61,37 @@ This reset is a long-running operation and will return a Location header with a 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationmethod-resetpassword-permissions.md)]
 
+## EXAMPLES
+### Example 1: User-submitted password
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+$params = @{
+	newPassword = "Cuyo5459"
+}
+
+Reset-MgBetaUserAuthenticationMethodPassword -UserId $userId -AuthenticationMethodId $authenticationMethodId -BodyParameter $params
+
+```
+This example will user-submitted password
+
+### Example 2: System-generated password
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+$params = @{
+}
+
+Reset-MgBetaUserAuthenticationMethodPassword -UserId $userId -AuthenticationMethodId $authenticationMethodId -BodyParameter $params
+
+```
+This example will system-generated password
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -299,8 +330,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetauserauthenticationmethodpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetauserauthenticationmethodpassword)
 
-[https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-beta)
 
 
 

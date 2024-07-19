@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-Indicates collection of App Log Upload Request.
+The collection property of AppLogUploadRequest.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ```
 
 ## DESCRIPTION
-Indicates collection of App Log Upload Request.
+The collection property of AppLogUploadRequest.
 
 ## PARAMETERS
 
@@ -338,6 +338,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
   - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
   - `[IosVppAppAssignedLicenseId <String>]`: The unique identifier of iosVppAppAssignedLicense
+  - `[ManagedAppLogCollectionRequestId <String>]`: The unique identifier of managedAppLogCollectionRequest
   - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
   - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
   - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
@@ -388,6 +389,9 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermobileapptroubleshootingeventapplogcollectionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermobileapptroubleshootingeventapplogcollectionrequest)
+
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportM365AppUserCount
 
 ## SYNOPSIS
-Invoke function getM365AppUserCounts
+Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportM365AppUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppUserCount?view=graph-powershell-1.0)
@@ -29,9 +29,31 @@ Get-MgBetaReportM365AppUserCount -InputObject <IReportsIdentity> -OutFile <Strin
 ```
 
 ## DESCRIPTION
-Invoke function getM365AppUserCounts
+Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
 
 ## EXAMPLES
+### Example 1: CSV output
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportM365AppUserCount -Format "text/csv"  -Period $periodId 
+
+```
+This example will csv output
+
+### Example 2: JSON output
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportM365AppUserCount -Format "application/json"  -Period $periodId 
+
+```
+This example will json output
+
 
 ## PARAMETERS
 
@@ -158,7 +180,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -206,6 +227,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getm365appusercounts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-getm365appusercounts?view=graph-rest-beta)
 
 
 

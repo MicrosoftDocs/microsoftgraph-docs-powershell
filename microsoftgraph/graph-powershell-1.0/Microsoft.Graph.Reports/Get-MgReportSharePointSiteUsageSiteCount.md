@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportSharePointSiteUsageSiteCount
 
 ## SYNOPSIS
-Invoke function getSharePointSiteUsageSiteCounts
+Get the trend of total and active site count during the reporting period.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageSiteCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageSiteCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportSharePointSiteUsageSiteCount -InputObject <IReportsIdentity> -OutFil
 ```
 
 ## DESCRIPTION
-Invoke function getSharePointSiteUsageSiteCounts
+Get the trend of total and active site count during the reporting period.
 
 ## PARAMETERS
 
@@ -182,6 +182,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagesitecount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagesitecount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-1.0)
 
 
 

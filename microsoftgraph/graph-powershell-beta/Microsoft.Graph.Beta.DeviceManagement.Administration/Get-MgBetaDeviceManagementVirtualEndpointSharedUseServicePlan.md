@@ -38,6 +38,19 @@ Get-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcSharedUseServicePlan object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -346,10 +359,9 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointshareduseserviceplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointshareduseserviceplan)
 
-[https://learn.microsoft.com/graph/api/cloudpcshareduseserviceplan-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcshareduseserviceplan-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpcshareduseserviceplan-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcshareduseserviceplan-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/virtualendpoint-list-shareduseserviceplans?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-shareduseserviceplans?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-shareduseserviceplans?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-shareduseserviceplans?view=graph-rest-beta)
 
 
 

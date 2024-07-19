@@ -55,8 +55,6 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/section-copytosectiongroup-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -376,7 +374,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotesectiontosectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotesectiontosectiongroup)
 
-[https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-beta](https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-beta)
+
+
 
 
 

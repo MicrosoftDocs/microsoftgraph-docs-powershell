@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment
 
 ## SYNOPSIS
-Create a new mobileAppAssignment object.
+Create new navigation property to assignments for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment -InputObject <IDevices
 ```
 
 ## DESCRIPTION
-Create a new mobileAppAssignment object.
+Create new navigation property to assignments for deviceAppManagement
 
 ## PARAMETERS
 
@@ -316,8 +316,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappasmacoslobappassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappasmacoslobappassignment)
-
-[https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-create?view=graph-rest-1.0)
 
 
 

@@ -414,7 +414,7 @@ Supports $filter (eq).
   - `[Description <String>]`: A description for the resource role.
   - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
   - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
-For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+For a SharePoint Online site, the originId is the sequence number of the role in the site.
   - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
 
 ACCESSPACKAGERESOURCESCOPE `<IMicrosoftGraphAccessPackageResourceScope>`: accessPackageResourceScope
@@ -458,7 +458,7 @@ Read-only.
       - `[Description <String>]`: A description for the resource role.
       - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
       - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
-For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+For a SharePoint Online site, the originId is the sequence number of the role in the site.
       - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
     - `[AccessPackageResourceScopes <IMicrosoftGraphAccessPackageResourceScope- `[]`>]`: Read-only.
 Nullable.
@@ -580,7 +580,7 @@ Supports $filter (eq).
     - `[Description <String>]`: A description for the resource role.
     - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
     - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
-For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+For a SharePoint Online site, the originId is the sequence number of the role in the site.
     - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
   - `[AccessPackageResourceScope <IMicrosoftGraphAccessPackageResourceScope>]`: accessPackageResourceScope
   - `[CreatedBy <String>]`: 
@@ -694,6 +694,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageresourcerolescope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageresourcerolescope)
+
 
 
 

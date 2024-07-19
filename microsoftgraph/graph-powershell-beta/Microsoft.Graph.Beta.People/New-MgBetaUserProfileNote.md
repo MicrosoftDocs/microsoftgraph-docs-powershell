@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileNote
 
 ## SYNOPSIS
-Create a new personAnnotation object in a user's profile.
+Create new navigation property to notes for users
 
 ## SYNTAX
 
@@ -18,8 +18,9 @@ New-MgBetaUserProfileNote -UserId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-Detail <IMicrosoftGraphItemBody>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Source <IMicrosoftGraphPersonDataSources>] [-ThumbnailUrl <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Source <IMicrosoftGraphPersonDataSources>]
+ [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-ThumbnailUrl <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -35,8 +36,9 @@ New-MgBetaUserProfileNote -InputObject <IPeopleIdentity> [-ResponseHeadersVariab
  [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-Detail <IMicrosoftGraphItemBody>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Source <IMicrosoftGraphPersonDataSources>] [-ThumbnailUrl <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Source <IMicrosoftGraphPersonDataSources>]
+ [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-ThumbnailUrl <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -47,7 +49,7 @@ New-MgBetaUserProfileNote -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create a new personAnnotation object in a user's profile.
+Create new navigation property to notes for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -336,6 +338,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Sources
+Where the values within an entity originated if synced from another source.
+To construct, see NOTES section for SOURCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphProfileSourceAnnotation[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ThumbnailUrl
 .
 
@@ -438,6 +456,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Detail <IMicrosoftGraphItemBody>]`: itemBody
@@ -505,13 +527,16 @@ This property is read-only.
 
 SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String- `[]`>]`:
+  - `[Type <String- `[]`>]`: 
+
+SOURCES <IMicrosoftGraphProfileSourceAnnotation- `[]`>: Where the values within an entity originated if synced from another source.
+  - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+  - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+  - `[SourceId <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilenote)
-
-[https://learn.microsoft.com/graph/api/profile-post-notes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-notes?view=graph-rest-1.0)
 
 
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update property secrets value.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaServicePrincipalSynchronizationSecret](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronizationSecret?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -243,6 +240,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob

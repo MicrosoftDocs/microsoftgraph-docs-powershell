@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgSecurityAlert
 
 ## SYNOPSIS
-Sets a new value for the collection of alertComment.
+Create a comment for an existing alert based on the specified alert id property.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Set-MgBetaSecurityAlert?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Set-MgSecurityAlert -InputObject <ISecurityIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Sets a new value for the collection of alertComment.
+Create a comment for an existing alert based on the specified alert id property.
 
 ## PARAMETERS
 
@@ -218,6 +218,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -259,6 +260,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert)
+
+[https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-1.0)
 
 
 

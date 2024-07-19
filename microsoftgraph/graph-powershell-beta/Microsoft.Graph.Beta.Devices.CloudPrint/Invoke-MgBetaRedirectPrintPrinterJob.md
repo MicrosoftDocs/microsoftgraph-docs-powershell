@@ -54,6 +54,54 @@ Redirect a print job to a different printer.
 Redirecting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+$params = @{
+	destinationPrinterId = "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea"
+	configuration = @{
+		feedOrientation = "longEdgeFirst"
+		pageRanges = @(
+			@{
+				start = 1
+				end = 1
+			}
+		)
+		quality = "medium"
+		dpi = 600
+		orientation = "landscape"
+		copies = 1
+		duplexMode = "oneSided"
+		colorMode = "blackAndWhite"
+		inputBin = "by-pass-tray"
+		outputBin = "output-tray"
+		mediaSize = "A4"
+		margin = @{
+			top = 0
+			bottom = 0
+			left = 0
+			right = 0
+		}
+		mediaType = "stationery"
+		finishings = $null
+		pagesPerSheet = 1
+		multipageLayout = "clockwiseFromBottomLeft"
+		collate = $false
+		scaling = "shrinkToFit"
+		fitPdfToPage = $false
+	}
+}
+
+Invoke-MgBetaRedirectPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaRedirectPrintPrinterJob Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -355,8 +403,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaredirectprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaredirectprintprinterjob)
 
-[https://learn.microsoft.com/graph/api/printjob-redirect?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printjob-redirect?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/printjob-redirect?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printjob-redirect?view=graph-rest-beta)
 
 
 

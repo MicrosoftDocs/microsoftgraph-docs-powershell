@@ -21,6 +21,19 @@ Get-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -113,8 +126,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcrosscloudgovernmentorganizationmapping](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcrosscloudgovernmentorganizationmapping)
 
-[https://learn.microsoft.com/graph/api/cloudpccrosscloudgovernmentorganizationmapping-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpccrosscloudgovernmentorganizationmapping-get?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/cloudpccrosscloudgovernmentorganizationmapping-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpccrosscloudgovernmentorganizationmapping-get?view=graph-rest-beta)
 
 
 

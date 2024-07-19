@@ -33,6 +33,27 @@ Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-validatebulkresize-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+$params = @{
+	cloudPcIds = @(
+	"30d0e128-de93-41dc-89ec-33d84bb662a0"
+"7c82a3e3-9459-44e4-94d9-b92f93bf78dd"
+)
+targetServicePlanId = "662009bc-7732-4f6f-8726-25883518b33e"
+}
+
+Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize -BodyParameter $params
+
+```
+This example shows how to use the Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -197,8 +218,7 @@ BODYPARAMETER `<IPathsLvwgawDevicemanagementVirtualendpointCloudpcsMicrosoftGrap
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementvirtualendpointcloudpcbulkresize](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementvirtualendpointcloudpcbulkresize)
 
-[https://learn.microsoft.com/graph/api/cloudpc-validatebulkresize?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-validatebulkresize?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/cloudpc-validatebulkresize?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-validatebulkresize?view=graph-rest-beta)
 
 
 

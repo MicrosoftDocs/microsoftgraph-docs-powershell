@@ -8,7 +8,17 @@ schema: 2.0.0
 # Get-MgBetaSiteListItemDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection.
+Your app begins by calling delta without any parameters.The service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.Your app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
+After you received all the changes, you can apply them to your local state.To check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+The delta feed shows the latest state for each item, not each change.
+If an item was renamed twice, it only shows up once, with its latest name.The same item might appear more than once in a delta feed, for various reasons.
+You should use the last occurrence you see.
+Deleted items are returned with the deleted facet.
+Deleted indicates that the item is deleted and can't be restored.Items with this property should be removed from your local state.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemDelta](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,37 +55,49 @@ Get-MgBetaSiteListItemDelta -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection.
+Your app begins by calling delta without any parameters.The service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.Your app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
+After you received all the changes, you can apply them to your local state.To check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+The delta feed shows the latest state for each item, not each change.
+If an item was renamed twice, it only shows up once, with its latest name.The same item might appear more than once in a delta feed, for various reasons.
+You should use the last occurrence you see.
+Deleted items are returned with the deleted facet.
+Deleted indicates that the item is deleted and can't be restored.Items with this property should be removed from your local state.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSiteListItemDelta Cmdlet
+### Example 1: Initial request
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest" 
-```
-This example shows how to use the Get-MgBetaSiteListItemDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaSiteListItemDelta Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Sites
-Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"  -OutFile $outFileId
-```
-This example shows how to use the Get-MgBetaSiteListItemDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaSiteListItemDelta Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Sites
+
 Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId
+
 ```
-This example shows how to use the Get-MgBetaSiteListItemDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Get-MgBetaSiteListItemDelta Cmdlet
+This example will initial request
+
+### Example 2: Last page request
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
+
 Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka" 
+
 ```
-This example shows how to use the Get-MgBetaSiteListItemDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will last page request
+
+### Example 3: Delta link request
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest" 
+
+```
+This example will delta link request
+
 
 ## PARAMETERS
 
@@ -424,6 +446,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdelta)
+
+[https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-beta)
 
 
 

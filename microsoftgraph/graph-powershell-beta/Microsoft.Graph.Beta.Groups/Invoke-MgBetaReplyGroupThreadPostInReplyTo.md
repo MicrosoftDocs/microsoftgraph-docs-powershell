@@ -49,72 +49,6 @@ Invoke-MgBetaReplyGroupThreadPostInReplyTo -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action reply
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Groups
-
-$params = @{
-	Post = @{
-		Body = @{
-			ContentType = ""
-			Content = "content-value"
-		}
-		ReceivedDateTime = [System.DateTime]::Parse("datetime-value")
-		HasAttachments = $true
-		From = @{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
-			}
-		}
-		Sender = @{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
-			}
-		}
-		ConversationThreadId = "conversationThreadId-value"
-		NewParticipants = @(
-			@{
-				EmailAddress = @{
-					Name = "name-value"
-					Address = "address-value"
-				}
-			}
-		)
-		ConversationId = "conversationId-value"
-		CreatedDateTime = [System.DateTime]::Parse("datetime-value")
-		LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
-		ChangeKey = "changeKey-value"
-		Categories = @(
-			"categories-value"
-		)
-		Id = "id-value"
-		InReplyTo = @{
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.fileAttachment"
-				LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
-				Name = "name-value"
-				ContentType = "contentType-value"
-				Size = 99
-				IsInline = $true
-				Id = "id-value"
-			}
-		)
-	}
-}
-
-Invoke-MgBetaReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaReplyGroupThreadPostInReplyTo Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -337,8 +271,11 @@ BODYPARAMETER `<IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostId
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Post <IMicrosoftGraphPost>]`: post
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Categories <String- `[]`>]`: 
-    - `[ChangeKey <String>]`: 
+    - `[Categories <String- `[]`>]`: The categories associated with the item.
+    - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -471,8 +408,11 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 POST `<IMicrosoftGraphPost>`: post
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -558,6 +498,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupthreadpostinreplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupthreadpostinreplyto)
+
+
 
 
 

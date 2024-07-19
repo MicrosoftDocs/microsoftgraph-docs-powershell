@@ -360,9 +360,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleoffershiftrequest)
 
-[https://learn.microsoft.com/graph/api/offershiftrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/offershiftrequest-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/offershiftrequest-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/offershiftrequest-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/offershiftrequest-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/offershiftrequest-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/offershiftrequest-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/offershiftrequest-list?view=graph-rest-beta)
 
 
 

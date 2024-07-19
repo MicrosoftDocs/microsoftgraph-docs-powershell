@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgExternalConnectionItem
 
 ## SYNOPSIS
-Update the navigation property items in external
+Update the properties of an externalItem object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Set-MgBetaExternalConnectionItem?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Set-MgExternalConnectionItem -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property items in external
+Update the properties of an externalItem object.
 
 ## PARAMETERS
 
@@ -380,6 +380,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalitem-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-update?view=graph-rest-1.0)
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgGroupEventInstanceAttachment
 
 ## SYNOPSIS
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
+Create new navigation property to attachments for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEventInstanceAttachment?view=graph-powershell-beta)
@@ -47,8 +46,7 @@ New-MgGroupEventInstanceAttachment -InputObject <ICalendarIdentity> -BodyParamet
 ```
 
 ## DESCRIPTION
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
+Create new navigation property to attachments for groups
 
 ## PARAMETERS
 
@@ -357,7 +355,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventinstanceattachment)
 
-[https://learn.microsoft.com/graph/api/eventmessage-post-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/eventmessage-post-attachments?view=graph-rest-1.0)
 
 
 

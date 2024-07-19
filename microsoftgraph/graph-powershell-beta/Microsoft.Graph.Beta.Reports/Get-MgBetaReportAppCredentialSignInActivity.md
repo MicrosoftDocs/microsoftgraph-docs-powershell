@@ -37,6 +37,41 @@ Get-MgBetaReportAppCredentialSignInActivity -InputObject <IReportsIdentity> [-Ex
 ## DESCRIPTION
 Get an appCredentialSignInActivity object that contains recent activity of an application credential.
 
+## EXAMPLES
+### Example 1: List all appCredentialSignInActivities
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportAppCredentialSignInActivity
+
+```
+This example will list all appcredentialsigninactivities
+
+### Example 2:  Get an appCredentialSignInActivitiy for a credential by keyId
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportAppCredentialSignInActivity -Filter "keyId eq '83f45296-fb8f-4aaa-a399-ac51084e02b7'" 
+
+```
+This example will  get an appcredentialsigninactivitiy for a credential by keyid
+
+### Example 3:  Get an appCredentialSignInActivity for an application by appId
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportAppCredentialSignInActivity -Filter "appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'" 
+
+```
+This example will  get an appcredentialsigninactivity for an application by appid
+
+
 ## PARAMETERS
 
 ### -All
@@ -283,7 +318,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -332,10 +366,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportappcredentialsigninactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportappcredentialsigninactivity)
 
-[https://learn.microsoft.com/graph/api/appcredentialsigninactivity-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appcredentialsigninactivity-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/appcredentialsigninactivity-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/appcredentialsigninactivity-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/reportroot-list-appcredentialsigninactivities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-list-appcredentialsigninactivities?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/reportroot-list-appcredentialsigninactivities?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-list-appcredentialsigninactivities?view=graph-rest-beta)
 
 
 

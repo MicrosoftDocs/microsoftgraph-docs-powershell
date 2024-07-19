@@ -40,6 +40,19 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTask -InputObject <IIdentityGoverna
 ## DESCRIPTION
 The tasks in the workflow.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowTask -WorkflowId $workflowId
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTask Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -405,6 +418,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtask)
 
+[https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-task?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-task?view=graph-rest-beta)
 
 
 

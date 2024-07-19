@@ -276,7 +276,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintshareallowedgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintshareallowedgroupbyref)
 
-[https://learn.microsoft.com/graph/api/printershare-post-allowedgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-post-allowedgroups?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/printershare-post-allowedgroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)
 
 
 

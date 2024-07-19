@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaDriveRoot
 
 ## SYNOPSIS
-Retrieve the metadata for a driveItem in a drive by file system path or ID.
+The root folder of the drive.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRoot?view=graph-powershell-1.0)
@@ -30,7 +31,8 @@ Get-MgBetaDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a driveItem in a drive by file system path or ID.
+The root folder of the drive.
+Read-only.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -198,8 +200,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveroot)
-
-[https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef
 
 ## SYNOPSIS
-Get the list of groups that are included in a mobile app management policy.
+Get the list of groups that are included in a mobile device management policy.
 
 ## SYNTAX
 
@@ -20,7 +20,7 @@ Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManageme
 ```
 
 ## DESCRIPTION
-Get the list of groups that are included in a mobile app management policy.
+Get the list of groups that are included in a mobile device management policy.
 
 ## PARAMETERS
 
@@ -220,7 +220,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobiledevicemanagementpolicyincludedgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobiledevicemanagementpolicyincludedgroupbyref)
 
-[https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list-includedgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list-includedgroups?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/mobiledevicemanagementpolicies-list-includedgroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/mobiledevicemanagementpolicies-list-includedgroups?view=graph-rest-beta)
+
 
 
 

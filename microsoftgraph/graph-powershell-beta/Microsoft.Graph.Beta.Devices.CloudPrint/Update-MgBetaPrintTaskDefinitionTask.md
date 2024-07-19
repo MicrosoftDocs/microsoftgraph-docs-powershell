@@ -443,7 +443,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinitiontask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinitiontask)
 
-[https://learn.microsoft.com/graph/api/printtaskdefinition-update-task?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printtaskdefinition-update-task?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/printtaskdefinition-update-task?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printtaskdefinition-update-task?view=graph-rest-beta)
 
 
 

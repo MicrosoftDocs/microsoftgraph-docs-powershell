@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSitePageAsSitePageWebPart
 
 ## SYNOPSIS
-Get webParts from groups
+Collection of webparts on the SharePoint page.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageWebPart?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgGroupSitePageAsSitePageWebPart -InputObject <ISitesIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get webParts from groups
+Collection of webparts on the SharePoint page.
 
 ## PARAMETERS
 
@@ -373,6 +373,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

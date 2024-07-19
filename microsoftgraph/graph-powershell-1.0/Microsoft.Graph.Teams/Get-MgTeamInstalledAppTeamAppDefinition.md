@@ -32,8 +32,6 @@ Get-MgTeamInstalledAppTeamAppDefinition -InputObject <ITeamsIdentity> [-ExpandPr
 ## DESCRIPTION
 The details of this version of the app.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -211,6 +209,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteaminstalledappteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteaminstalledappteamappdefinition)
+
+
 
 
 

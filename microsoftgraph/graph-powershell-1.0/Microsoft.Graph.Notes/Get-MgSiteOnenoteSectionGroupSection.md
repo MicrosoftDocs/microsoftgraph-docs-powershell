@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgSiteOnenoteSectionGroupSection
 
 ## SYNOPSIS
-Retrieve a list of onenoteSection objects from the specified section group.
+The sections in the section group.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteSectionGroupSection?view=graph-powershell-beta)
@@ -23,12 +25,9 @@ Get-MgSiteOnenoteSectionGroupSection -SectionGroupId <String> -SiteId <String> [
 ```
 
 ## DESCRIPTION
-Retrieve a list of onenoteSection objects from the specified section group.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sectiongroup-list-sections-permissions.md)]
-
-## EXAMPLES
+The sections in the section group.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 
@@ -273,7 +272,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectiongroupsection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectiongroupsection)
 
-[https://learn.microsoft.com/graph/api/sectiongroup-list-sections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sectiongroup-list-sections?view=graph-rest-1.0)
+
 
 
 

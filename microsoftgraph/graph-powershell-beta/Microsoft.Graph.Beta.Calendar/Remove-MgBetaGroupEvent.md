@@ -36,13 +36,13 @@ Delete an event object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Remove-MgBetaGroupEvent -GroupId $groupId -EventId $eventId
+
 ```
 This example shows how to use the Remove-MgBetaGroupEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -234,7 +234,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupevent)
 
-[https://learn.microsoft.com/graph/api/group-delete-event?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-event?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-delete-event?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-delete-event?view=graph-rest-beta)
 
 
 

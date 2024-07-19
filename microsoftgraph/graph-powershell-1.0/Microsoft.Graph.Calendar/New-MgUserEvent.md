@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgUserEvent
 
 ## SYNOPSIS
-Create one or more single-value extended properties in a new or existing instance of a resource.
-The following user resources are supported: The following group resources: See Extended properties overview for more information about when to useopen extensions or extended properties, and how to specify extended properties.
+Create new navigation property to events for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEvent?view=graph-powershell-beta)
@@ -76,8 +75,7 @@ New-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Create one or more single-value extended properties in a new or existing instance of a resource.
-The following user resources are supported: The following group resources: See Extended properties overview for more information about when to useopen extensions or extended properties, and how to specify extended properties.
+Create new navigation property to events for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -2098,8 +2096,6 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserevent)
-
-[https://learn.microsoft.com/graph/api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties?view=graph-rest-1.0)
 
 
 

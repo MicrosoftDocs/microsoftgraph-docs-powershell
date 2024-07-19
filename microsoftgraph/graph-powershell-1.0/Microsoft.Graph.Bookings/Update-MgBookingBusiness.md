@@ -537,6 +537,10 @@ Nullable.
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
+  - `[CustomerEmailAddress <String>]`: 
+  - `[CustomerName <String>]`: 
+  - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
+  - `[CustomerPhone <String>]`: 
   - `[CustomerTimeZone <String>]`: The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase- `[]`>]`: A collection of customer properties for an appointment.
@@ -621,6 +625,10 @@ Nullable.
 Read-only.
     - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
     - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
+    - `[CustomerEmailAddress <String>]`: 
+    - `[CustomerName <String>]`: 
+    - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
+    - `[CustomerPhone <String>]`: 
     - `[CustomerTimeZone <String>]`: The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.
     - `[Customers <IMicrosoftGraphBookingCustomerInformationBase- `[]`>]`: A collection of customer properties for an appointment.
@@ -726,8 +734,8 @@ Nullable.
 Read-only.
     - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
     - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
-      - `[IsRequired <Boolean?>]`: The ID of the custom question.
-      - `[QuestionId <String>]`: Indicates whether it's mandatory to answer the custom question.
+      - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
+      - `[QuestionId <String>]`: The ID of the custom question.
     - `[DefaultDuration <TimeSpan?>]`: The default length of the service, represented in numbers of days, hours, minutes, and seconds.
 For example, P11D23H59M59.999999999999S.
     - `[DefaultLocation <IMicrosoftGraphLocation>]`: location
@@ -775,6 +783,10 @@ Nullable.
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
+  - `[CustomerEmailAddress <String>]`: 
+  - `[CustomerName <String>]`: 
+  - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
+  - `[CustomerPhone <String>]`: 
   - `[CustomerTimeZone <String>]`: The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase- `[]`>]`: A collection of customer properties for an appointment.
@@ -890,8 +902,8 @@ Nullable.
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
-    - `[IsRequired <Boolean?>]`: The ID of the custom question.
-    - `[QuestionId <String>]`: Indicates whether it's mandatory to answer the custom question.
+    - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
+    - `[QuestionId <String>]`: The ID of the custom question.
   - `[DefaultDuration <TimeSpan?>]`: The default length of the service, represented in numbers of days, hours, minutes, and seconds.
 For example, P11D23H59M59.999999999999S.
   - `[DefaultLocation <IMicrosoftGraphLocation>]`: location

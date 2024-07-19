@@ -32,8 +32,6 @@ New-MgContract -BodyParameter <IMicrosoftGraphContract> [-ResponseHeadersVariabl
 ## DESCRIPTION
 Add new entity to contracts
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -279,6 +277,8 @@ It is not automatically updated if the customer tenant's display name changes.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontract](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontract)
+
+
 
 
 

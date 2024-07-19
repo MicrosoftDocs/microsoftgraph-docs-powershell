@@ -262,7 +262,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatinstalledapp)
 
-[https://learn.microsoft.com/graph/api/chat-delete-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-delete-installedapps?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/chat-delete-installedapps?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-delete-installedapps?view=graph-rest-beta)
 
 
 

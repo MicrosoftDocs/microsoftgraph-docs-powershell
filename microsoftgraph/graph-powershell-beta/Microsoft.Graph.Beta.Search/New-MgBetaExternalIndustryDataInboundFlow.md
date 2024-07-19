@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Create a new inboundFileFlow object.
-The following prerequisite resources are required when you create an inboundFileFlow:
+Create a new inboundApiFlow object.
 
 ## SYNTAX
 
@@ -31,8 +30,30 @@ New-MgBetaExternalIndustryDataInboundFlow -BodyParameter <IMicrosoftGraphIndustr
 ```
 
 ## DESCRIPTION
-Create a new inboundFileFlow object.
-The following prerequisite resources are required when you create an inboundFileFlow:
+Create a new inboundApiFlow object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.industryData.inboundApiFlow"
+	"dataConnector@odata.bind" = "https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271"
+	dataDomain = "educationRostering"
+	displayName = "Inbound rostering flow"
+	effectiveDateTime = [System.DateTime]::Parse("2023-03-12T16:40:46.924769+05:30")
+	expirationDateTime = [System.DateTime]::Parse("2023-03-13T16:40:46.924769+05:30")
+	"year@odata.bind" = "https://graph.microsoft.com/beta/external/industryData/years/ebf18762-ab92-487e-21d1-08daddab28bb"
+}
+
+New-MgBetaExternalIndustryDataInboundFlow -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaExternalIndustryDataInboundFlow Cmdlet.
+
 
 ## PARAMETERS
 
@@ -315,9 +336,11 @@ Maximum supported length is 100 characters.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-            - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+            - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+            - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
             - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-            - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+            - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
         - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
         - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -374,9 +397,11 @@ Maximum supported length is 100 characters.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-          - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+          - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+          - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
           - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-          - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+          - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
       - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
       - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -409,16 +434,17 @@ Maximum supported length is 100 characters.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-      - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+      - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+      - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
       - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-      - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+      - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow)
 
-[https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-post?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-post?view=graph-rest-beta)
 
 
 

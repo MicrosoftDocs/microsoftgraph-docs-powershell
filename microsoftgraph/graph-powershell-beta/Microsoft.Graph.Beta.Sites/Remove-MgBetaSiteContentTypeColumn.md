@@ -288,7 +288,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontenttypecolumn)
 
-[https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-beta)
 
 
 

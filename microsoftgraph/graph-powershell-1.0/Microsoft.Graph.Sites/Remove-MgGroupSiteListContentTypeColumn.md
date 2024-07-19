@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupSiteListContentTypeColumn
 
 ## SYNOPSIS
-Remove a \[column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
+Delete navigation property columns for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListContentTypeColumn?view=graph-powershell-beta)
@@ -31,9 +31,7 @@ Remove-MgGroupSiteListContentTypeColumn -InputObject <ISitesIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Remove a \[column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
-
-## EXAMPLES
+Delete navigation property columns for groups
 
 ## PARAMETERS
 
@@ -292,6 +290,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -299,7 +298,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistcontenttypecolumn)
 
-[https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0)
+
 
 
 

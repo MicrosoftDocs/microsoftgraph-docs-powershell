@@ -8,7 +8,7 @@ schema: 2.0.0
 # Resize-MgBetaUserCloudPc
 
 ## SYNOPSIS
-Invoke action resize
+Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
 
 ## SYNTAX
 
@@ -43,7 +43,10 @@ Resize-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action resize
+Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-resize-permissions.md)]
 
 ## PARAMETERS
 
@@ -297,6 +300,9 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/resize-mgbetausercloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/resize-mgbetausercloudpc)
+
+[https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-beta)
+
 
 
 

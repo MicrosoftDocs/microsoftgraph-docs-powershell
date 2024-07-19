@@ -52,8 +52,6 @@ Update-MgBetaEducationUserAssignmentSubmissionSubmittedResource -InputObject <IE
 ## DESCRIPTION
 Update the navigation property submittedResources in education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -401,6 +399,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentsubmissionsubmittedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentsubmissionsubmittedresource)
+
+
 
 
 

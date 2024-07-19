@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupSiteOnenoteSectionPage
 
 ## SYNOPSIS
-Create a new page in the specified section.
+Create new navigation property to pages for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteSectionPage?view=graph-powershell-beta)
@@ -52,7 +52,7 @@ New-MgGroupSiteOnenoteSectionPage -InputObject <ISitesIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Create a new page in the specified section.
+Create new navigation property to pages for groups
 
 ## PARAMETERS
 
@@ -503,8 +503,9 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DisplayName <String>]`: The name of the notebook.
@@ -642,6 +643,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -660,8 +662,9 @@ PARENTNOTEBOOK `<IMicrosoftGraphNotebook>`: notebook
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DisplayName <String>]`: The name of the notebook.
@@ -793,8 +796,9 @@ PARENTSECTION `<IMicrosoftGraphOnenoteSection>`: onenoteSection
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DisplayName <String>]`: The name of the notebook.
@@ -922,8 +926,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotesectionpage)
-
-[https://learn.microsoft.com/graph/api/section-post-pages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/section-post-pages?view=graph-rest-1.0)
 
 
 

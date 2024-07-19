@@ -452,7 +452,7 @@ Weights must add up to 100.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmerubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmerubric)
 
-[https://learn.microsoft.com/graph/api/educationuser-post-rubrics?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-post-rubrics?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/educationuser-post-rubrics?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationuser-post-rubrics?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
 
 ## SYNOPSIS
-Read the properties and relationships of an authenticationCombinationConfiguration object.
+Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfig
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an authenticationCombinationConfiguration object.
+Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
 
 ## PARAMETERS
 
@@ -351,6 +351,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -370,6 +371,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -383,9 +385,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrengthpolicycombinationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrengthpolicycombinationconfiguration)
 
-[https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-list-combinationconfigurations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-list-combinationconfigurations?view=graph-rest-1.0)
+
 
 
 

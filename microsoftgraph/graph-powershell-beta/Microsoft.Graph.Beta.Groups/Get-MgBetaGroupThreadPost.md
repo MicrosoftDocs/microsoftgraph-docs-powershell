@@ -20,7 +20,7 @@ Since the post resource supports extensions, you can also use the GET operation 
 ### List (Default)
 ```
 Get-MgBetaGroupThreadPost -ConversationThreadId <String> -GroupId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
@@ -59,13 +59,17 @@ You can specify both the parentconversation and the thread, or, you can specify 
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaGroupThreadPost Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 Get-MgBetaGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId
+
 ```
 This example shows how to use the Get-MgBetaGroupThreadPost Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -266,6 +270,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -379,9 +398,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpost)
 
-[https://learn.microsoft.com/graph/api/post-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/post-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/post-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/post-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/conversationthread-list-posts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationthread-list-posts?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/conversationthread-list-posts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conversationthread-list-posts?view=graph-rest-beta)
 
 
 

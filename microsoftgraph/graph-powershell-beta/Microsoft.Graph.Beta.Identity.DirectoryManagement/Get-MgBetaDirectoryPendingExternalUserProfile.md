@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDirectoryPendingExternalUserProfile
 
 ## SYNOPSIS
-Retrieve the properties of a specific pendingExternalUserProfile.
+Collection of pending external user profiles representing collaborators in the directory that are unredeemed.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaDirectoryPendingExternalUserProfile -InputObject <IIdentityDirectoryMa
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a specific pendingExternalUserProfile.
+Collection of pending external user profiles representing collaborators in the directory that are unredeemed.
 
 ## PARAMETERS
 
@@ -334,10 +334,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorypendingexternaluserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorypendingexternaluserprofile)
-
-[https://learn.microsoft.com/graph/api/pendingexternaluserprofile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/pendingexternaluserprofile-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/directory-list-pendingexternaluserprofile?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-pendingexternaluserprofile?view=graph-rest-1.0)
 
 
 

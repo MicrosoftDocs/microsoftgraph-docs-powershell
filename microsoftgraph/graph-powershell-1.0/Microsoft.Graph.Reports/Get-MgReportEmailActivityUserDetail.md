@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportEmailActivityUserDetail
 
 ## SYNOPSIS
-Invoke function getEmailActivityUserDetail
+Get details about email activity users have performed.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportEmailActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailActivityUserDetail?view=graph-powershell-beta)
@@ -42,9 +42,7 @@ Get-MgReportEmailActivityUserDetail -InputObject <IReportsIdentity> -OutFile <St
 ```
 
 ## DESCRIPTION
-Invoke function getEmailActivityUserDetail
-
-## EXAMPLES
+Get details about email activity users have performed.
 
 ## PARAMETERS
 
@@ -212,6 +210,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityuserdetail)
+
+
 
 
 

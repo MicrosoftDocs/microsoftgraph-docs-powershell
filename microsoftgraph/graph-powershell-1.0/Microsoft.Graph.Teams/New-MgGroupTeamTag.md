@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupTeamTag
 
 ## SYNOPSIS
-Create a standard tag for members in a team.
+Create new navigation property to tags for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamTag?view=graph-powershell-beta)
@@ -46,9 +46,7 @@ New-MgGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Create a standard tag for members in a team.
-
-## EXAMPLES
+Create new navigation property to tags for groups
 
 ## PARAMETERS
 
@@ -378,7 +376,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamtag)
 
-[https://learn.microsoft.com/graph/api/teamworktag-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktag-post?view=graph-rest-1.0)
+
 
 
 

@@ -18,23 +18,38 @@ Read-only.
 
 ### Get (Default)
 ```
-Get-MgGroupCalendar -GroupId <String> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgGroupCalendar -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupCalendar -InputObject <ICalendarIdentity> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgGroupCalendar -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The group's calendar.
 Read-only.
 
-## EXAMPLES
-
 ## PARAMETERS
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -GroupId
 The unique identifier of group
@@ -159,6 +174,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendar)
+
+
 
 
 

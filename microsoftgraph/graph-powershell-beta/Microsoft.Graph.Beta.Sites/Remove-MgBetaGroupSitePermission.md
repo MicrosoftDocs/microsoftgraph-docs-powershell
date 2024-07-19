@@ -32,8 +32,6 @@ Remove-MgBetaGroupSitePermission -InputObject <ISitesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property permissions for groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId
@@ -276,6 +274,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitepermission)
+
+
 
 
 

@@ -8,11 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserAuthenticationPhoneMethod
 
 ## SYNOPSIS
-Delete a user's phone authentication method.
-Remember that a user may not have an alternateMobile number without a mobile number.
-If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
-If the phone number is the user's default Azure multifactor authentication (MFA) authentication method, it cannot be deleted.
-Have the user change their default authentication method, and then delete the number.
+Delete navigation property phoneMethods for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationPhoneMethod?view=graph-powershell-1.0)
@@ -34,11 +30,7 @@ Remove-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentit
 ```
 
 ## DESCRIPTION
-Delete a user's phone authentication method.
-Remember that a user may not have an alternateMobile number without a mobile number.
-If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
-If the phone number is the user's default Azure multifactor authentication (MFA) authentication method, it cannot be deleted.
-Have the user change their default authentication method, and then delete the number.
+Delete navigation property phoneMethods for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -275,6 +267,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -294,6 +287,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -306,8 +300,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationphonemethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationphonemethod)
-
-[https://learn.microsoft.com/graph/api/phoneauthenticationmethod-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-delete?view=graph-rest-1.0)
 
 
 

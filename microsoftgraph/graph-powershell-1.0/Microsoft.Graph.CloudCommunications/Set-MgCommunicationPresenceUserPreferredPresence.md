@@ -60,8 +60,6 @@ Otherwise, the user's presence shows as Offline.
 A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
 For more details, see presence sessions and time-out and expiration.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Activity
@@ -306,6 +304,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresenceuserpreferredpresence)
 
 [https://learn.microsoft.com/graph/api/presence-setuserpreferredpresence?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-setuserpreferredpresence?view=graph-rest-1.0)
+
+
 
 
 

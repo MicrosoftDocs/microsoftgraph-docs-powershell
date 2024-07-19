@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc
 
 ## SYNOPSIS
-Invoke function getProvisionedCloudPCs
+Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group.
 
 ## SYNTAX
 
@@ -30,7 +30,23 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc
 ```
 
 ## DESCRIPTION
-Invoke function getProvisionedCloudPCs
+Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getprovisionedcloudpcs-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+
+Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc Cmdlet.
+
 
 ## PARAMETERS
 
@@ -298,6 +314,7 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcprovisionedcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcprovisionedcloudpc)
 
+[https://learn.microsoft.com/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta)
 
 
 

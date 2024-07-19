@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgReportSecurityAttackSimulationUserCoverage
 
 ## SYNOPSIS
-Invoke function getAttackSimulationSimulationUserCoverage
+List training coverage for each tenant user in attack simulation and training campaigns.
+This function supports @odata.nextLink for pagination.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSecurityAttackSimulationUserCoverage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurityAttackSimulationUserCoverage?view=graph-powershell-beta)
@@ -22,7 +23,8 @@ Get-MgReportSecurityAttackSimulationUserCoverage [-Count] [-Filter <String>] [-S
 ```
 
 ## DESCRIPTION
-Invoke function getAttackSimulationSimulationUserCoverage
+List training coverage for each tenant user in attack simulation and training campaigns.
+This function supports @odata.nextLink for pagination.
 
 ## PARAMETERS
 
@@ -160,6 +162,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationusercoverage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationusercoverage)
+
+[https://learn.microsoft.com/graph/api/securityreportsroot-getattacksimulationsimulationusercoverage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securityreportsroot-getattacksimulationsimulationusercoverage?view=graph-rest-1.0)
 
 
 

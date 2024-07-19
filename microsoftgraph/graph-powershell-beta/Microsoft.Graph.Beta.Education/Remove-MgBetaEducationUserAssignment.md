@@ -32,8 +32,6 @@ Remove-MgBetaEducationUserAssignment -InputObject <IEducationIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property assignments for education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -227,6 +225,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignment)
+
+
 
 
 

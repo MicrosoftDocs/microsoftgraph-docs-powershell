@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupSiteTermStoreSet
 
 ## SYNOPSIS
-Create a new set object.
+Create new navigation property to sets for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
@@ -85,9 +85,7 @@ New-MgGroupSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Create a new set object.
-
-## EXAMPLES
+Create new navigation property to sets for groups
 
 ## PARAMETERS
 
@@ -563,6 +561,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -731,7 +730,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitetermstoreset)
 
-[https://learn.microsoft.com/graph/api/termstore-set-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-set-post?view=graph-rest-1.0)
+
 
 
 

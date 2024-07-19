@@ -47,8 +47,6 @@ New-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create new navigation property to errors for education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -346,6 +344,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationsynchronizationprofileerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationsynchronizationprofileerror)
+
+
 
 
 

@@ -311,9 +311,9 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertask)
 
-[https://learn.microsoft.com/graph/api/plannertask-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannertask-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/plannertask-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannertask-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/planner-list-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planner-list-tasks?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/planner-list-tasks?view=graph-rest-beta](https://learn.microsoft.com/graph/api/planner-list-tasks?view=graph-rest-beta)
 
 
 

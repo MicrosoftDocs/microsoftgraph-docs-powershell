@@ -400,8 +400,9 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
@@ -421,7 +422,7 @@ Read-only.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
+    - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
       - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
@@ -430,8 +431,8 @@ Read-only.
   - `[Citation <IMicrosoftGraphSecurityFilePlanCitation>]`: filePlanCitation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
-    - `[CitationJurisdiction <String>]`: 
-    - `[CitationUrl <String>]`: 
+    - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the filePlanCitation.
+    - `[CitationUrl <String>]`: Represents the URL to the published filePlanCitation.
   - `[CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>]`: citationTemplate
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -477,15 +478,16 @@ CATEGORYTEMPLATE `<IMicrosoftGraphSecurityCategoryTemplate>`: categoryTemplate
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
   - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
+  - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
@@ -495,8 +497,8 @@ Read-only.
 CITATION `<IMicrosoftGraphSecurityFilePlanCitation>`: filePlanCitation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
-  - `[CitationJurisdiction <String>]`: 
-  - `[CitationUrl <String>]`: 
+  - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the filePlanCitation.
+  - `[CitationUrl <String>]`: Represents the URL to the published filePlanCitation.
 
 CITATIONTEMPLATE `<IMicrosoftGraphSecurityCitationTemplate>`: citationTemplate
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -506,8 +508,9 @@ CITATIONTEMPLATE `<IMicrosoftGraphSecurityCitationTemplate>`: citationTemplate
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
@@ -541,6 +544,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host

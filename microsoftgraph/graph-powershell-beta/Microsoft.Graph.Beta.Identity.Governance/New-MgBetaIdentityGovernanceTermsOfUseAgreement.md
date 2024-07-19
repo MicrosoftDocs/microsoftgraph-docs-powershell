@@ -36,6 +36,34 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphA
 ## DESCRIPTION
 Create a new agreement object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	displayName = "Contoso ToU for guest users"
+	isViewingBeforeAcceptanceRequired = $true
+	files = @(
+		@{
+			fileName = "TOU.pdf"
+			language = "en"
+			isDefault = $true
+			fileData = @{
+				data = [System.Text.Encoding]::ASCII.GetBytes("SGVsbG8gd29ybGQ=//truncated-binary")
+			}
+		}
+	)
+}
+
+New-MgBetaIdentityGovernanceTermsOfUseAgreement -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaIdentityGovernanceTermsOfUseAgreement Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Acceptances
@@ -590,8 +618,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreement)
 
-[https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-beta](https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-beta)
 
 
 

@@ -38,8 +38,6 @@ New-MgSecuritySecureScoreControlProfile -BodyParameter <IMicrosoftGraphSecureSco
 ## DESCRIPTION
 Create new navigation property to secureScoreControlProfiles for security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ActionType
@@ -348,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -Threats
-List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage,
+List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, spoofing).
 
 ```yaml
 Type: String[]
@@ -363,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tier
-.
+Control tier (Core, Defense in Depth, Advanced.)
 
 ```yaml
 Type: String
@@ -378,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### -Title
-.
+Title of the control.
 
 ```yaml
 Type: String
@@ -393,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserImpact
-.
+User impact of implementing control (low, moderate, high).
 
 ```yaml
 Type: String
@@ -498,10 +496,10 @@ The Timestamp type represents date and time
   - `[Remediation <String>]`: Description of what the control will help remediate.
   - `[RemediationImpact <String>]`: Description of the impact on users of the remediation.
   - `[Service <String>]`: Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).
-  - `[Threats <String- `[]`>]`: List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage,
-  - `[Tier <String>]`: 
-  - `[Title <String>]`: 
-  - `[UserImpact <String>]`: 
+  - `[Threats <String- `[]`>]`: List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, spoofing).
+  - `[Tier <String>]`: Control tier (Core, Defense in Depth, Advanced.)
+  - `[Title <String>]`: Title of the control.
+  - `[UserImpact <String>]`: User impact of implementing control (low, moderate, high).
   - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
@@ -536,6 +534,8 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescorecontrolprofile)
+
+
 
 
 

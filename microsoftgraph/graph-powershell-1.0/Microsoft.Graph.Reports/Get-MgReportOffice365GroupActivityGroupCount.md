@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportOffice365GroupActivityGroupCount
 
 ## SYNOPSIS
-Invoke function getOffice365GroupsActivityGroupCounts
+Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365GroupActivityGroupCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityGroupCount?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgReportOffice365GroupActivityGroupCount -InputObject <IReportsIdentity> -Ou
 ```
 
 ## DESCRIPTION
-Invoke function getOffice365GroupsActivityGroupCounts
+Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.
 
 ## PARAMETERS
 
@@ -183,6 +183,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivitygroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivitygroupcount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-1.0)
 
 
 

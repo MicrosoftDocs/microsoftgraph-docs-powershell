@@ -18,9 +18,10 @@ Make sure you do not specify the same user or group in the accepted senders and 
 ## SYNTAX
 
 ```
-Get-MgBetaGroupAcceptedSender -GroupId <String> [-Filter <String>] [-Property <String[]>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaGroupAcceptedSender -GroupId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,6 +70,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: (All)
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -182,6 +198,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -242,7 +273,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsender)
 
-[https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-beta)
 
 
 

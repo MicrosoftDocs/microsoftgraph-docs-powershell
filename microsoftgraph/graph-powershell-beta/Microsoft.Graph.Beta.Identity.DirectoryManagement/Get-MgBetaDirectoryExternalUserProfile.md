@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDirectoryExternalUserProfile
 
 ## SYNOPSIS
-Retrieve the properties of a specific externalUserProfile.
+Collection of external user profiles that represent collaborators in the directory.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaDirectoryExternalUserProfile -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a specific externalUserProfile.
+Collection of external user profiles that represent collaborators in the directory.
 
 ## PARAMETERS
 
@@ -334,10 +334,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryexternaluserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryexternaluserprofile)
-
-[https://learn.microsoft.com/graph/api/externaluserprofile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externaluserprofile-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/directory-list-externaluserprofiles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-externaluserprofiles?view=graph-rest-1.0)
 
 
 

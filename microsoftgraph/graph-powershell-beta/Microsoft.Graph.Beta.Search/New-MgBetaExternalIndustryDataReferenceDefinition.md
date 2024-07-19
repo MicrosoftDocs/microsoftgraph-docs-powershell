@@ -8,16 +8,18 @@ schema: 2.0.0
 # New-MgBetaExternalIndustryDataReferenceDefinition
 
 ## SYNOPSIS
-Create new navigation property to referenceDefinitions for external
+Create a new referenceDefinition object.
+referenceDefinition objects associate incoming data with standardized reference types values for validation.
+You can extend the following reference types with other codes that better align with your source data.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaExternalIndustryDataReferenceDefinition [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Code <String>] [-Id <String>] [-IsDisabled] [-ReferenceType <String>]
- [-SortIndex <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Code <String>] [-DisplayName <String>] [-Id <String>] [-IsDisabled]
+ [-ReferenceType <String>] [-SortIndex <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -28,7 +30,31 @@ New-MgBetaExternalIndustryDataReferenceDefinition
 ```
 
 ## DESCRIPTION
-Create new navigation property to referenceDefinitions for external
+Create a new referenceDefinition object.
+referenceDefinition objects associate incoming data with standardized reference types values for validation.
+You can extend the following reference types with other codes that better align with your source data.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.industryData.referenceDefinition"
+	referenceType = "RefGradeLevel"
+	code = "TestGrade"
+	isDisabled = $false
+	sortIndex = 300
+	displayName = "New Test Grade Level"
+}
+
+New-MgBetaExternalIndustryDataReferenceDefinition -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaExternalIndustryDataReferenceDefinition Cmdlet.
+
 
 ## PARAMETERS
 
@@ -78,6 +104,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -DisplayName
+A human-readable representation of the reference code value for display in a user interface.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Headers
 Optional headers that will be added to the request.
 
@@ -110,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDisabled
-Indicates whether the definition has been disabled.
+Indicates whether the definition is disabled.
 
 ```yaml
 Type: SwitchParameter
@@ -170,7 +211,8 @@ Accept wildcard characters: False
 ```
 
 ### -SortIndex
-The ordering index to present the definitions within a type consistently in user interfaces.
+The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
 
 ```yaml
 Type: Int32
@@ -236,14 +278,17 @@ BODYPARAMETER `<IMicrosoftGraphIndustryDataReferenceDefinition>`: referenceDefin
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-  - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+  - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+  - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
   - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-  - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+  - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition)
 
+[https://learn.microsoft.com/graph/api/industrydata-referencedefinition-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-referencedefinition-post?view=graph-rest-beta)
 
 
 

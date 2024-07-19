@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserChatInstalledApp
 
 ## SYNOPSIS
-Install a teamsApp to the specified chat.
+Create new navigation property to installedApps for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
@@ -46,9 +46,7 @@ New-MgUserChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Install a teamsApp to the specified chat.
-
-## EXAMPLES
+Create new navigation property to installedApps for users
 
 ## PARAMETERS
 
@@ -448,7 +446,7 @@ For example, if a user changes their display name, the API might show the new va
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatinstalledapp)
 
-[https://learn.microsoft.com/graph/api/chat-post-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-installedapps?view=graph-rest-1.0)
+
 
 
 

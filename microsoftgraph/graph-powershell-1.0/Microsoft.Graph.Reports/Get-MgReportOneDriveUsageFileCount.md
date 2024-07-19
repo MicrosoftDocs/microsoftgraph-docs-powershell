@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgReportOneDriveUsageFileCount
 
 ## SYNOPSIS
-Invoke function getOneDriveUsageFileCounts
+Get the total number of files across all sites and how many are active files.
+A file is considered active if it has been saved, synced, modified, or shared within the specified time period.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageFileCount?view=graph-powershell-beta)
@@ -29,7 +30,8 @@ Get-MgReportOneDriveUsageFileCount -InputObject <IReportsIdentity> -OutFile <Str
 ```
 
 ## DESCRIPTION
-Invoke function getOneDriveUsageFileCounts
+Get the total number of files across all sites and how many are active files.
+A file is considered active if it has been saved, synced, modified, or shared within the specified time period.
 
 ## PARAMETERS
 
@@ -182,6 +184,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagefilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagefilecount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-1.0)
 
 
 

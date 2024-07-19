@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Create a new windowsUpdateForBusinessConfiguration object.
+Create a new windows81GeneralConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -36,7 +36,7 @@ New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceC
 ```
 
 ## DESCRIPTION
-Create a new windowsUpdateForBusinessConfiguration object.
+Create a new windows81GeneralConfiguration object.
 
 ## PARAMETERS
 
@@ -484,7 +484,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-windowsupdateforbusinessconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windowsupdateforbusinessconfiguration-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows81generalconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows81generalconfiguration-create?view=graph-rest-1.0)
 
 
 

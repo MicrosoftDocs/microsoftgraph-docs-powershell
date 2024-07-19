@@ -32,8 +32,6 @@ Remove-MgBetaExternalConnectionOperation -InputObject <ISearchIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property operations for external
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ConnectionOperationId
@@ -219,6 +217,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -228,6 +228,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionoperation)
+
+
 
 
 

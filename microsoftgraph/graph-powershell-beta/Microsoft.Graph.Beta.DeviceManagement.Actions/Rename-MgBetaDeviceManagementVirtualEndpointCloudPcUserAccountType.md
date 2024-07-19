@@ -52,16 +52,21 @@ Change the account type of the user on a specific Cloud PC.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-changeuseraccounttype-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
 $params = @{
-	UserAccountType = "administrator"
+	userAccountType = "administrator"
 }
+
 Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPCId $cloudPCId -BodyParameter $params
+
 ```
 This example shows how to use the Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -291,6 +296,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
   - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+  - `[HardwareConfigurationId <String>]`: The unique identifier of hardwareConfiguration
   - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
@@ -313,7 +319,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementvirtualendpointcloudpcuseraccounttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementvirtualendpointcloudpcuseraccounttype)
 
-[https://learn.microsoft.com/graph/api/cloudpc-changeuseraccounttype?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-changeuseraccounttype?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpc-changeuseraccounttype?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-changeuseraccounttype?view=graph-rest-beta)
 
 
 

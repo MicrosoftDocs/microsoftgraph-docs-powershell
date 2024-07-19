@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment
 
 ## SYNOPSIS
-Update the navigation property assignments in deviceAppManagement
+Update the properties of a targetedManagedAppPolicyAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment
 ```
 
 ## DESCRIPTION
-Update the navigation property assignments in deviceAppManagement
+Update the properties of a targetedManagedAppPolicyAssignment object.
 
 ## PARAMETERS
 
@@ -300,6 +300,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementiosmanagedappprotectionassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementiosmanagedappprotectionassignment)
+
+[https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedapppolicyassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedapppolicyassignment-update?view=graph-rest-1.0)
 
 
 

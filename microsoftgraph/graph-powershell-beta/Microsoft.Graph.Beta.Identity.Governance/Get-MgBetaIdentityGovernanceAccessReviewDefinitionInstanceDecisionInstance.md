@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance
 
 ## SYNOPSIS
-There is exactly one accessReviewInstance associated with each decision.
+There's exactly one accessReviewInstance associated with each decision.
 The instance is the parent of the decision item, representing the recurrence of the access review the decision is made on.
 
 ## SYNTAX
@@ -31,7 +31,7 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance
 ```
 
 ## DESCRIPTION
-There is exactly one accessReviewInstance associated with each decision.
+There's exactly one accessReviewInstance associated with each decision.
 The instance is the parent of the decision item, representing the recurrence of the access review the decision is made on.
 
 ## PARAMETERS
@@ -292,6 +292,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinitioninstancedecisioninstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinitioninstancedecisioninstance)
+
 
 
 

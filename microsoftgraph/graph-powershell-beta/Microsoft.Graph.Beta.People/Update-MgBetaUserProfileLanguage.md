@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserProfileLanguage
 
 ## SYNOPSIS
-Update the properties of a languageProficiency object in a user's profile.
+Update the navigation property languages in users
 
 ## SYNTAX
 
@@ -19,9 +19,9 @@ Update-MgBetaUserProfileLanguage -LanguageProficiencyId <String> -UserId <String
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Proficiency <String>] [-Reading <String>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-Spoken <String>] [-Tag <String>] [-ThumbnailUrl <String>]
- [-Written <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>]
+ [-Spoken <String>] [-Tag <String>] [-ThumbnailUrl <String>] [-Written <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -38,9 +38,9 @@ Update-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity> [-ResponseHeader
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Proficiency <String>] [-Reading <String>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-Spoken <String>] [-Tag <String>] [-ThumbnailUrl <String>]
- [-Written <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>]
+ [-Spoken <String>] [-Tag <String>] [-ThumbnailUrl <String>] [-Written <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -51,7 +51,7 @@ Update-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a languageProficiency object in a user's profile.
+Update the navigation property languages in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -365,6 +365,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Sources
+Where the values within an entity originated if synced from another source.
+To construct, see NOTES section for SOURCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphProfileSourceAnnotation[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Spoken
 languageProficiencyLevel
 
@@ -512,6 +528,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: Contains the long-form name for the language.
@@ -575,13 +595,16 @@ This property is read-only.
 
 SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String- `[]`>]`:
+  - `[Type <String- `[]`>]`: 
+
+SOURCES <IMicrosoftGraphProfileSourceAnnotation- `[]`>: Where the values within an entity originated if synced from another source.
+  - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+  - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+  - `[SourceId <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilelanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilelanguage)
-
-[https://learn.microsoft.com/graph/api/languageproficiency-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/languageproficiency-update?view=graph-rest-1.0)
 
 
 

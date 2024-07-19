@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamChannelMessage
 
 ## SYNOPSIS
-Send a new chatMessage in the specified channel.
+Create new navigation property to messages for teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelMessage?view=graph-powershell-beta)
@@ -60,7 +60,7 @@ New-MgTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Send a new chatMessage in the specified channel.
+Create new navigation property to messages for teams
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1329,8 +1329,6 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmessage)
-
-[https://learn.microsoft.com/graph/api/channel-post-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post-messages?view=graph-rest-1.0)
 
 
 

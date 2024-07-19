@@ -34,8 +34,6 @@ New-MgSecuritySecureScore -BodyParameter <IMicrosoftGraphSecureScore> [-Response
 ## DESCRIPTION
 Create new navigation property to secureScores for security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ActiveUserCount
@@ -382,6 +380,8 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore)
+
+
 
 
 

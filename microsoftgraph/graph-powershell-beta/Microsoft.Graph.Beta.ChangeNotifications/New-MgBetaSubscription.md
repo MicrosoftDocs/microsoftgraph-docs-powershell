@@ -551,7 +551,7 @@ See the possible resource path values for each supported resource.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription)
 
-[https://learn.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-beta)
 
 
 

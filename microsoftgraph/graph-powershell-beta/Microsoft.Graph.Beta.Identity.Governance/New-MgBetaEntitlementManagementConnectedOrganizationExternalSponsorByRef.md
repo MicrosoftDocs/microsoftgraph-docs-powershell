@@ -55,6 +55,7 @@ The external sponsors are a set of users who can approve requests on behalf of o
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
@@ -62,10 +63,9 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -366,7 +366,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganizationexternalsponsorbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganizationexternalsponsorbyref)
 
-[https://learn.microsoft.com/graph/api/connectedorganization-post-externalsponsors?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectedorganization-post-externalsponsors?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/connectedorganization-post-externalsponsors?view=graph-rest-beta](https://learn.microsoft.com/graph/api/connectedorganization-post-externalsponsors?view=graph-rest-beta)
 
 
 

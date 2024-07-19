@@ -41,6 +41,30 @@ Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ## DESCRIPTION
 Read the properties and relationships of the cloudPcOnPremisesConnection object.
 
+## EXAMPLES
+### Example 1: Get the default properties of an Azure network connection
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId
+
+```
+This example will get the default properties of an azure network connection
+
+### Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetails
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -Property "id,displayName,healthCheckStatus,healthCheckStatusDetail,healthCheckStatusDetails,inUse" 
+
+```
+This example will get the selected properties of an azure network connection, including healthcheckstatusdetails
+
+
 ## PARAMETERS
 
 ### -All
@@ -349,10 +373,9 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointonpremiseconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointonpremiseconnection)
 
-[https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta)
 
 
 

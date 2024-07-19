@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment
 
 ## SYNOPSIS
-The associated group assignments for IosLobAppProvisioningConfiguration.
+The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment
 ```
 
 ## DESCRIPTION
-The associated group assignments for IosLobAppProvisioningConfiguration.
+The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
 
 ## PARAMETERS
 
@@ -324,6 +324,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
   - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
   - `[IosVppAppAssignedLicenseId <String>]`: The unique identifier of iosVppAppAssignedLicense
+  - `[ManagedAppLogCollectionRequestId <String>]`: The unique identifier of managedAppLogCollectionRequest
   - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
   - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
   - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration

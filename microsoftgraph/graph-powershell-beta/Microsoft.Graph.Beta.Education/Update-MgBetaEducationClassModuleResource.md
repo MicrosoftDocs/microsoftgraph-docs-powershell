@@ -52,6 +52,25 @@ Update a resource in a module.
 Only teachers can perform this operation.
 The only one property that can be updated is displayName, for all resource types.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+$params = @{
+	resource = @{
+		displayName = "new pdf file patched.pdf"
+	}
+}
+
+Update-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaEducationClassModuleResource Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -329,8 +348,7 @@ This property is read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmoduleresource)
 
-[https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-beta)
 
 
 

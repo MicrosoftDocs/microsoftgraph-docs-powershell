@@ -56,6 +56,7 @@ Make sure you don't specify the same user or group in the accepted senders and r
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
@@ -63,10 +64,9 @@ $params = @{
 }
 
 New-MgBetaGroupAcceptedSenderByRef -GroupId $groupId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaGroupAcceptedSenderByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -314,7 +314,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupacceptedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupacceptedsenderbyref)
 
-[https://learn.microsoft.com/graph/api/group-post-acceptedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-acceptedsenders?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-post-acceptedsenders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-post-acceptedsenders?view=graph-rest-beta)
 
 
 

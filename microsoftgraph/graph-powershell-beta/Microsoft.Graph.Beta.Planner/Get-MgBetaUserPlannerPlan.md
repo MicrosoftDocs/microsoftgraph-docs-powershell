@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserPlannerPlan
 
 ## SYNOPSIS
-Retrieve a list of plannerplan objects shared with a user object.
+Get plans from users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerPlan?view=graph-powershell-1.0)
@@ -23,7 +23,7 @@ Get-MgBetaUserPlannerPlan -UserId <String> [-ExpandProperty <String[]>] [-Filter
 ```
 
 ## DESCRIPTION
-Retrieve a list of plannerplan objects shared with a user object.
+Get plans from users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -266,8 +266,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerplan)
-
-[https://learn.microsoft.com/graph/api/planneruser-list-plans?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planneruser-list-plans?view=graph-rest-1.0)
 
 
 

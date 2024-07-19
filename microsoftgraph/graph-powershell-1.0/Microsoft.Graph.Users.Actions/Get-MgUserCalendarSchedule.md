@@ -53,36 +53,6 @@ Get the free/busy availability information for a collection of users, distributi
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-getschedule-permissions.md)]
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	Schedules = @(
-		"adelev@contoso.onmicrosoft.com"
-		"meganb@contoso.onmicrosoft.com"
-	)
-	StartTime = @{
-		DateTime = "2019-03-15T09:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	EndTime = @{
-		DateTime = "2019-03-15T18:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	AvailabilityViewInterval = 60
-}
-
-# A UPN can also be used as -UserId.
-Get-MgUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Get-MgUserCalendarSchedule Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -377,6 +347,7 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusercalendarschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusercalendarschedule)
 
 [https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0)
+
 
 
 

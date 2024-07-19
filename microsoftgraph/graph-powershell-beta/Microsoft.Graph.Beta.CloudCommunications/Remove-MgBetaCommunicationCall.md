@@ -38,13 +38,13 @@ For group calls, this will only delete your call leg and the underlying group ca
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Remove-MgBetaCommunicationCall -CallId $callId
+
 ```
 This example shows how to use the Remove-MgBetaCommunicationCall Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -227,7 +227,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcall)
 
-[https://learn.microsoft.com/graph/api/call-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/call-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/call-delete?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupMemberOfAsGroup
 
 ## SYNOPSIS
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups that the group is a direct member of.
+This operation is not transitive.
+Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberOfAsGroup?view=graph-powershell-beta)
@@ -38,7 +40,9 @@ Get-MgGroupMemberOfAsGroup -InputObject <IGroupsIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups that the group is a direct member of.
+This operation is not transitive.
+Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
 
 ## PARAMETERS
 
@@ -362,6 +366,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberofasgroup)
+
+[https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-1.0)
 
 
 

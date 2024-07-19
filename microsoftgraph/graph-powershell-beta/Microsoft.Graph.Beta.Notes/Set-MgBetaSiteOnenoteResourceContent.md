@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaSiteOnenoteResourceContent
 
 ## SYNOPSIS
-Update content for the navigation property resources in sites
+The content of the resource.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Set-MgSiteOnenoteResourceContent?view=graph-powershell-1.0)
@@ -30,9 +30,7 @@ Set-MgBetaSiteOnenoteResourceContent -InputObject <INotesIdentity> [-Data <Strea
 ```
 
 ## DESCRIPTION
-Update content for the navigation property resources in sites
-
-## EXAMPLES
+The content of the resource.
 
 ## PARAMETERS
 
@@ -239,6 +237,8 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetasiteonenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetasiteonenoteresourcecontent)
+
+
 
 
 

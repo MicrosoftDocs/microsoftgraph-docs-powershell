@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamPrimaryChannelMessageHostedContent
 
 ## SYNOPSIS
-Retrieve the properties and relationships of chatMessageHostedContent object.
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelMessageHostedContent?view=graph-powershell-1.0)
@@ -52,9 +52,7 @@ Get-MgBetaTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> [
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of chatMessageHostedContent object.
-
-## EXAMPLES
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## PARAMETERS
 
@@ -409,9 +407,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelmessagehostedcontent)
 
-[https://learn.microsoft.com/graph/api/chatmessagehostedcontent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessagehostedcontent-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0)
+
+
 
 
 

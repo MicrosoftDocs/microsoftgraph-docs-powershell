@@ -32,8 +32,6 @@ Remove-MgSiteOnenoteSectionGroup -InputObject <INotesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property sectionGroups for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -220,6 +218,8 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mgsiteonenotesectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mgsiteonenotesectiongroup)
+
+
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgReportSharePointSiteUsageFileCount
 
 ## SYNOPSIS
-Invoke function getSharePointSiteUsageFileCounts
+Get the total number of files across all sites and the number of active files.
+A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageFileCount?view=graph-powershell-beta)
@@ -29,7 +30,8 @@ Get-MgReportSharePointSiteUsageFileCount -InputObject <IReportsIdentity> -OutFil
 ```
 
 ## DESCRIPTION
-Invoke function getSharePointSiteUsageFileCounts
+Get the total number of files across all sites and the number of active files.
+A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period.
 
 ## PARAMETERS
 
@@ -182,6 +184,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagefilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagefilecount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-1.0)
 
 
 

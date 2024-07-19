@@ -8,11 +8,7 @@ schema: 2.0.0
 # Get-MgBetaServicePrincipalOwnerByRef
 
 ## SYNOPSIS
-Directory objects that are owners of this servicePrincipal.
-The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
-Read-only.
-Nullable.
-Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+Retrieve a list of owners of the servicePrincipal.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnerByRef?view=graph-powershell-1.0)
@@ -27,13 +23,7 @@ Get-MgBetaServicePrincipalOwnerByRef -ServicePrincipalId <String> [-Filter <Stri
 ```
 
 ## DESCRIPTION
-Directory objects that are owners of this servicePrincipal.
-The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
-Read-only.
-Nullable.
-Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-
-## EXAMPLES
+Retrieve a list of owners of the servicePrincipal.
 
 ## PARAMETERS
 
@@ -249,7 +239,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownerbyref)
 
-[https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-beta)
+
+
 
 
 

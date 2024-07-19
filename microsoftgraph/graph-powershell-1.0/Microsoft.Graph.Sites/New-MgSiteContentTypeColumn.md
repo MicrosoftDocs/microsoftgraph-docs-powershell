@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteContentTypeColumn
 
 ## SYNOPSIS
-Add a column to a \[content type\]\[contentType\] in a site, or a list with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+Add a column to a content type in a site, or a list with a request that specifies a columnDefinition.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
@@ -66,7 +66,7 @@ New-MgSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Add a column to a \[content type\]\[contentType\] in a site, or a list with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+Add a column to a content type in a site, or a list with a request that specifies a columnDefinition.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -475,7 +475,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-The API-facing name of the column as it appears in the \[fields\]\[\] on a \[listItem\]\[\].
+The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
 
 ```yaml
@@ -830,7 +830,7 @@ Read-only.
     - `[ListId <String>]`: The unique identifier of the lookup source list.
     - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
-  - `[Name <String>]`: The API-facing name of the column as it appears in the - `[fields]`- `[]` on a - `[listItem]`- `[]`.
+  - `[Name <String>]`: The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
   - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1012,6 +1012,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -1102,7 +1103,7 @@ Read-only.
     - `[ListId <String>]`: The unique identifier of the lookup source list.
     - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
-  - `[Name <String>]`: The API-facing name of the column as it appears in the - `[fields]`- `[]` on a - `[listItem]`- `[]`.
+  - `[Name <String>]`: The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
   - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

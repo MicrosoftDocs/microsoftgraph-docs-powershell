@@ -33,13 +33,17 @@ Reprovision a Cloud PC with an Intune managed device ID.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-reprovisioncloudpc-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaReprovisionDeviceManagementManagedDeviceCloudPc Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
 Invoke-MgBetaReprovisionDeviceManagementManagedDeviceCloudPc -ManagedDeviceId $managedDeviceId
+
 ```
 This example shows how to use the Invoke-MgBetaReprovisionDeviceManagementManagedDeviceCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -218,6 +222,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
   - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+  - `[HardwareConfigurationId <String>]`: The unique identifier of hardwareConfiguration
   - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
@@ -240,7 +245,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareprovisiondevicemanagementmanageddevicecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareprovisiondevicemanagementmanageddevicecloudpc)
 
-[https://learn.microsoft.com/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta)
 
 
 

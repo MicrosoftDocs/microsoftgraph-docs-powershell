@@ -32,8 +32,6 @@ Remove-MgBookingCurrency -InputObject <IBookingsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property bookingCurrencies for solutions
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -BookingCurrencyId
@@ -209,6 +207,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingcurrency)
+
+
 
 
 

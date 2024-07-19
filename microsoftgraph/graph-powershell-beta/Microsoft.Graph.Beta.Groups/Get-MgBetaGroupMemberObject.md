@@ -48,23 +48,6 @@ Get-MgBetaGroupMemberObject -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action getMemberObjects
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.DirectoryObjects
-
-$params = @{
-	SecurityEnabledOnly = $true
-}
-
-Get-MgBetaDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaGroupMemberObject Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -292,6 +275,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberobject)
+
+
 
 
 

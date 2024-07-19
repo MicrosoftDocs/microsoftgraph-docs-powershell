@@ -268,7 +268,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmember)
 
-[https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-beta)
 
 
 

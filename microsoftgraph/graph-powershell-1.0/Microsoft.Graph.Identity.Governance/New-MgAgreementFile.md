@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgAgreementFile
 
 ## SYNOPSIS
-Create a new localized agreement file.
+Create new navigation property to files for agreements
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreementFile?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ New-MgAgreementFile -InputObject <IIdentityGovernanceIdentity>
 ```
 
 ## DESCRIPTION
-Create a new localized agreement file.
+Create new navigation property to files for agreements
 
 ## PARAMETERS
 
@@ -508,8 +508,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreementfile)
-
-[https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-1.0)
 
 
 

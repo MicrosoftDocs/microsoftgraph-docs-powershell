@@ -29,8 +29,6 @@ Get-MgBetaFinancialCompanyCustomerPaymentCustomerShipmentMethod -InputObject <IF
 ## DESCRIPTION
 Get shipmentMethod from financials
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -211,6 +209,8 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanycustomerpaymentcustomershipmentmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanycustomerpaymentcustomershipmentmethod)
+
+
 
 
 

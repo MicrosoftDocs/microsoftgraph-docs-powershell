@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfileWebsite
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a personWebsite object from a user's profile.
+Represents detailed information about websites associated with a user in various services.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a personWebsite object from a user's profile.
+Represents detailed information about websites associated with a user in various services.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilewebsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilewebsite)
-
-[https://learn.microsoft.com/graph/api/personwebsite-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personwebsite-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-websites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-websites?view=graph-rest-1.0)
 
 
 

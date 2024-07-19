@@ -17,9 +17,9 @@ Get entity from agreements by key
 
 ### List (Default)
 ```
-Get-MgAgreement [-Property <String[]>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgAgreement [-Property <String[]>] [-ExpandProperty <String[]>] [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
@@ -78,6 +78,36 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: List
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -192,6 +222,51 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Sort
+Order items by property values
+
+```yaml
+Type: String[]
+Parameter Sets: List
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
@@ -280,6 +355,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreement)
+
+
 
 
 

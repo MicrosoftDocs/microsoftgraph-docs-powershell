@@ -43,13 +43,17 @@ The direct and transitive members of a group.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaGroupTransitiveMember Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 Get-MgBetaGroupTransitiveMember -GroupId $groupId
+
 ```
 This example shows how to use the Get-MgBetaGroupTransitiveMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -379,7 +383,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivemember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivemember)
 
-[https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-beta)
 
 
 

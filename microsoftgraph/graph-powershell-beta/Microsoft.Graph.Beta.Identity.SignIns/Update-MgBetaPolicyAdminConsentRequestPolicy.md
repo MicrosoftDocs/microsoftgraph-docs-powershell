@@ -304,7 +304,7 @@ Examples include MicrosoftGraph and ARM.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyadminconsentrequestpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyadminconsentrequestpolicy)
 
-[https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-update?view=graph-rest-beta)
 
 
 

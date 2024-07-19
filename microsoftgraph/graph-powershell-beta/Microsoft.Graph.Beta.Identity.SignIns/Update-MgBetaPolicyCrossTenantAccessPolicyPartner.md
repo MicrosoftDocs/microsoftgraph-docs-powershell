@@ -70,6 +70,7 @@ Update the properties of a partner-specific configuration.
 ### Example 1: Configure inbound trust settings
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -81,14 +82,14 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicyPartner Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will configure inbound trust settings
 
 ### Example 2: Configure automaticUserConsent settings
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -99,14 +100,14 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicyPartner Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will configure automaticuserconsent settings
 
 ### Example 3: Configure tenant restrictions settings
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -133,10 +134,9 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicyPartner Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will configure tenant restrictions settings
 
 
 ## PARAMETERS
@@ -641,6 +641,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -660,6 +661,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -689,7 +691,7 @@ For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicypartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicypartner)
 
-[https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-update?view=graph-rest-beta)
 
 
 

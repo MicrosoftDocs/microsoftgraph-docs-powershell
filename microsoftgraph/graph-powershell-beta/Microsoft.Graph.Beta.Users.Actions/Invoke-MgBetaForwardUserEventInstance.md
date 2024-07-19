@@ -57,32 +57,6 @@ This convenience is not available when forwarding from an Outlook.com account.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-forward-permissions.md)]
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Users.Actions
-
-$params = @{
-	ToRecipients = @(
-		@{
-			EmailAddress = @{
-				Address = "danas@contoso.onmicrosoft.com"
-				Name = "Dana Swope"
-			}
-		}
-	)
-	Comment = "Dana, hope you can make this meeting."
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgBetaForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaForwardUserEventInstance Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -378,7 +352,9 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwardusereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwardusereventinstance)
 
-[https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-beta)
+
+
 
 
 

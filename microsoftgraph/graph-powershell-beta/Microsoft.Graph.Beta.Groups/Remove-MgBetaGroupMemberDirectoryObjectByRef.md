@@ -34,6 +34,19 @@ Remove-MgBetaGroupMemberDirectoryObjectByRef -InputObject <IGroupsIdentity> [-If
 Remove a member from a group via the members navigation property.
 You can't remove a member from groups with dynamic memberships.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Remove-MgBetaGroupMemberDirectoryObjectByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgBetaGroupMemberDirectoryObjectByRef Cmdlet.
+
+
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -256,8 +269,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupmemberdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupmemberdirectoryobjectbyref)
 
-[https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-beta)
 
 
 

@@ -155,6 +155,9 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc](Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcReviewStatus](Get-MgBetaDeviceManagementVirtualEndpointCloudPcReviewStatus.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState](Get-MgBetaDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState.md)
 {{ Fill in the Description }}
 

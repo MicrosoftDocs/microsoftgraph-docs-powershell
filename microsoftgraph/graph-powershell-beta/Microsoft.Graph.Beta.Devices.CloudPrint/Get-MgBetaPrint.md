@@ -23,8 +23,6 @@ Get-MgBetaPrint [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHe
 ## DESCRIPTION
 Get print
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -116,6 +114,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprint)
+
+
 
 
 

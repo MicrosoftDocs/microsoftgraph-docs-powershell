@@ -29,8 +29,6 @@ Remove-MgBetaUserDeviceExtension -InputObject <ICrossDeviceExperiencesIdentity> 
 ## DESCRIPTION
 Delete navigation property extensions for users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -229,6 +227,8 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceextension)
+
+
 
 
 

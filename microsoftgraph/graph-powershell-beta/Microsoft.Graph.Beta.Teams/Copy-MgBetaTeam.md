@@ -406,7 +406,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/copy-mgbetateam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/copy-mgbetateam)
 
-[https://learn.microsoft.com/graph/api/team-clone?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-clone?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/team-clone?view=graph-rest-beta](https://learn.microsoft.com/graph/api/team-clone?view=graph-rest-beta)
 
 
 

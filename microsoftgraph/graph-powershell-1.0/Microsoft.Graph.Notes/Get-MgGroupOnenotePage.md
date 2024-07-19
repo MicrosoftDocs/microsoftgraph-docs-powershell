@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgGroupOnenotePage
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a page object.
-Getting page information Access a page's metadata by page identifier: Getting page content You can use the page's content endpoint to get the HTML content of a page: The includeIDs=true query option is used to update pages.
+The pages in all OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenotePage?view=graph-powershell-beta)
@@ -39,13 +40,9 @@ Get-MgGroupOnenotePage -InputObject <INotesIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a page object.
-Getting page information Access a page's metadata by page identifier: Getting page content You can use the page's content endpoint to get the HTML content of a page: The includeIDs=true query option is used to update pages.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/page-get-permissions.md)]
-
-## EXAMPLES
+The pages in all OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 
@@ -324,9 +321,8 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotepage)
 
-[https://learn.microsoft.com/graph/api/page-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/page-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/onenote-list-pages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-list-pages?view=graph-rest-1.0)
+
 
 
 

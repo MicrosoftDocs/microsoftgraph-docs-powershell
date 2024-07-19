@@ -296,7 +296,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation)
 
-[https://learn.microsoft.com/graph/api/conditionalaccessroot-post-namedlocations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-namedlocations?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/conditionalaccessroot-post-namedlocations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-namedlocations?view=graph-rest-beta)
 
 
 

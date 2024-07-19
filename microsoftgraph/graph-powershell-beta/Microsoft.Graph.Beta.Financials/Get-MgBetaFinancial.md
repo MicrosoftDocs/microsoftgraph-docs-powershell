@@ -20,8 +20,6 @@ Get-MgBetaFinancial [-ExpandProperty <String[]>] [-Property <String[]>] [-Respon
 ## DESCRIPTION
 Get financials
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -113,6 +111,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancial](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancial)
+
+
 
 
 

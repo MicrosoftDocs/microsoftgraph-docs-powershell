@@ -46,13 +46,13 @@ To use a sharing URL with this API, your app needs to transform the URL into a s
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
+
 ```
 This example shows how to use the Get-MgBetaShareSharedDriveItemSharedDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -330,7 +330,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetashareshareddriveitemshareddriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetashareshareddriveitemshareddriveitem)
 
-[https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementManagedDeviceOverview
 
 ## SYNOPSIS
-Read properties and relationships of the managedDeviceOverview object.
+Device overview
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementManagedDeviceOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementManagedDeviceOverview?view=graph-powershell-beta)
@@ -22,7 +22,7 @@ Get-MgDeviceManagementManagedDeviceOverview [-ExpandProperty <String[]>] [-Prope
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the managedDeviceOverview object.
+Device overview
 
 ## PARAMETERS
 
@@ -116,7 +116,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddeviceoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddeviceoverview)
 
-[https://learn.microsoft.com/graph/api/intune-devices-manageddeviceoverview-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddeviceoverview-get?view=graph-rest-1.0)
 
 
 

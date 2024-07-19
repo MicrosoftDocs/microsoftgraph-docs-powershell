@@ -46,16 +46,21 @@ Remove-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
 Remove a password from a servicePrincipal object.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgServicePrincipalPassword Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
+
 $params = @{
-	KeyId = "f0b0b335-1d71-4883-8f98-567911bfdca6"
+	keyId = "f0b0b335-1d71-4883-8f98-567911bfdca6"
 }
+
 Remove-MgServicePrincipalPassword -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
 ```
 This example shows how to use the Remove-MgServicePrincipalPassword Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -263,6 +268,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob

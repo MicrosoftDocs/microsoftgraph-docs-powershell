@@ -32,19 +32,6 @@ Set-MgTeamChannelFileFolderContent -InputObject <ITeamsIdentity> [-Data <Stream>
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
-```
-This example shows how to use the Set-MgTeamChannelFileFolderContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -272,6 +259,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamchannelfilefoldercontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamchannelfilefoldercontent)
+
 
 
 

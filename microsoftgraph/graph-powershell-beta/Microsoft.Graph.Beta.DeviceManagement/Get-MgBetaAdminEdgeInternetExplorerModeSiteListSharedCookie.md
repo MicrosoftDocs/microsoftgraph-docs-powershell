@@ -44,6 +44,19 @@ Get a session cookie that can be shared between a Microsoft Edge process and an 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersharedcookie-get-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId
+
+```
+This example shows how to use the Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -451,10 +464,9 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
 
-[https://learn.microsoft.com/graph/api/browsersharedcookie-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersharedcookie-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/browsersharedcookie-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersharedcookie-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/browsersitelist-list-sharedcookies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-list-sharedcookies?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/browsersitelist-list-sharedcookies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersitelist-list-sharedcookies?view=graph-rest-beta)
 
 
 

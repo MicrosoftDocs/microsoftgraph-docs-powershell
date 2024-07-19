@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
-Mark a schedulingGroup as inactive by setting its isActive property.This method does not remove the schedulingGroup from the schedule.
-Existing shift instances assigned to the scheduling group remain part of the group.
+Delete navigation property schedulingGroups for teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
@@ -31,8 +30,7 @@ Remove-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Mark a schedulingGroup as inactive by setting its isActive property.This method does not remove the schedulingGroup from the schedule.
-Existing shift instances assigned to the scheduling group remain part of the group.
+Delete navigation property schedulingGroups for teams
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -255,8 +253,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleschedulinggroup)
-
-[https://learn.microsoft.com/graph/api/schedulinggroup-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedulinggroup-delete?view=graph-rest-1.0)
 
 
 

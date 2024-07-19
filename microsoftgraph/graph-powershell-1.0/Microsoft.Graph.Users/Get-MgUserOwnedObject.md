@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserOwnedObject
 
 ## SYNOPSIS
-Directory objects that are owned by the user.
+Directory objects the user owns.
 Read-only.
 Nullable.
 Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
@@ -41,7 +41,7 @@ Get-MgUserOwnedObject -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Directory objects that are owned by the user.
+Directory objects the user owns.
 Read-only.
 Nullable.
 Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
@@ -356,8 +356,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobject)
-
-[https://learn.microsoft.com/graph/api/user-list-ownedobjects?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-ownedobjects?view=graph-rest-1.0)
 
 
 

@@ -44,8 +44,6 @@ Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory -InputObject <IFinanci
 ## DESCRIPTION
 Get itemCategory from financials
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -241,6 +239,8 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanypurchaseinvoicelineitemcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanypurchaseinvoicelineitemcategory)
+
+
 
 
 

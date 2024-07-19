@@ -33,8 +33,6 @@ New-MgBetaDeviceManagementTelecomExpenseManagementPartner
 ## DESCRIPTION
 Create new navigation property to telecomExpenseManagementPartners for deviceManagement
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -266,6 +264,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementtelecomexpensemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementtelecomexpensemanagementpartner)
+
+
 
 
 

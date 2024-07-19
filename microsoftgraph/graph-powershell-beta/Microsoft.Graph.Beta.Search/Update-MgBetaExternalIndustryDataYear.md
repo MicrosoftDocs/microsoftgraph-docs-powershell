@@ -45,6 +45,24 @@ Update-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of a yearTimePeriodDefinition object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+$params = @{
+	displayName = "Fiscal Year 2022"
+	id = "ebf18762-ab92-487e-21d1-08daddab28bb"
+}
+
+Update-MgBetaExternalIndustryDataYear -YearTimePeriodDefinitionId $yearTimePeriodDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaExternalIndustryDataYear Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -295,9 +313,11 @@ Maximum supported length is 100 characters.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-      - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+      - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+      - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
       - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-      - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+      - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
 
 INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
@@ -314,6 +334,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -324,8 +346,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatayear](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatayear)
 
-[https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-update?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-update?view=graph-rest-beta)
 
 
 

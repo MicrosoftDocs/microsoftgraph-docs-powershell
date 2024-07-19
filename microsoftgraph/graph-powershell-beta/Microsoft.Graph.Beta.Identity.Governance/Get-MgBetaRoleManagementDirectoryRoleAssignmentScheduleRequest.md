@@ -40,6 +40,19 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -InputObject <IId
 ## DESCRIPTION
 In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest
+
+```
+This example shows how to use the Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -390,10 +403,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleassignmentschedulerequest)
 
-[https://learn.microsoft.com/graph/api/unifiedroleassignmentschedulerequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignmentschedulerequest-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/unifiedroleassignmentschedulerequest-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleassignmentschedulerequest-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignmentschedulerequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignmentschedulerequests?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignmentschedulerequests?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignmentschedulerequests?view=graph-rest-beta)
 
 
 

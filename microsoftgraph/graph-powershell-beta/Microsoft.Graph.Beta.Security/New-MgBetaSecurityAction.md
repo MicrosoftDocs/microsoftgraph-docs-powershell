@@ -141,7 +141,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientContext
-.
+Unique client context string.
+Can have a maximum of 256 characters.
 
 ```yaml
 Type: String
@@ -434,7 +435,8 @@ Read-only.
 The appId should be extracted from the auth token and not entered manually by the calling application.
   - `[AzureTenantId <String>]`: Azure tenant ID of the entity to determine which tenant the entity belongs to (multi-tenancy support).
 The azureTenantId should be extracted from the auth token and not entered manually by the calling application.
-  - `[ClientContext <String>]`: 
+  - `[ClientContext <String>]`: Unique client context string.
+Can have a maximum of 256 characters.
   - `[CompletedDateTime <DateTime?>]`: Timestamp when the action was completed.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -509,7 +511,7 @@ Required
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction)
 
-[https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-beta)
 
 
 

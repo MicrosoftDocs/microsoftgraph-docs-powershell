@@ -329,8 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduledActionsForRule
-The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
+The list of scheduled action for this rule
 To construct, see NOTES section for SCHEDULEDACTIONSFORRULE properties and create a hash table.
 
 ```yaml
@@ -505,8 +504,7 @@ Read-only.
   - `[DisplayName <String>]`: Admin provided name of the device configuration.
   - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
   - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
-  - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>]`: The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
+  - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>]`: The list of scheduled action for this rule
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
@@ -724,8 +722,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>: The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
+SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>: The list of scheduled action for this rule
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
@@ -765,6 +762,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicecompliancepolicy)
+
 
 
 

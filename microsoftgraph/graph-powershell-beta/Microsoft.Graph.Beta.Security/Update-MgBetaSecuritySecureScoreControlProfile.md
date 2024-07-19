@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -ControlStateUpdates
-Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
+Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
 To construct, see NOTES section for CONTROLSTATEUPDATES properties and create a hash table.
 
 ```yaml
@@ -280,7 +280,8 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+Time at which the control profile entity was last modified.
+The Timestamp type represents date and time
 
 ```yaml
 Type: DateTime
@@ -415,7 +416,7 @@ Accept wildcard characters: False
 ```
 
 ### -Threats
-List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).
+List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, spoofing).
 
 ```yaml
 Type: String[]
@@ -547,25 +548,26 @@ Read-only.
   - `[AzureTenantId <String>]`: GUID string for tenant ID.
   - `[ComplianceInformation <IMicrosoftGraphComplianceInformation- `[]`>]`: The collection of compliance information associated with secure score control
     - `[CertificationControls <IMicrosoftGraphCertificationControl- `[]`>]`: Collection of the certification controls associated with the certification.
-      - `[Name <String>]`: 
-      - `[Url <String>]`: 
+      - `[Name <String>]`: Certification control name.
+      - `[Url <String>]`: URL for the Microsoft Service Trust Portal.
     - `[CertificationName <String>]`: The name of the compliance certification, for example, ISO 27018:2014, GDPR, FedRAMP, and NIST 800-171.
   - `[ControlCategory <String>]`: Control action category (Account, Data, Device, Apps, Infrastructure).
-  - `[ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate- `[]`>]`: Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
-    - `[AssignedTo <String>]`: 
-    - `[Comment <String>]`: 
-    - `[State <String>]`: 
-    - `[UpdatedBy <String>]`: 
-    - `[UpdatedDateTime <DateTime?>]`: 
+  - `[ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate- `[]`>]`: Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
+    - `[AssignedTo <String>]`: Assign the control to the user who will take the action
+    - `[Comment <String>]`: Provides optional comment about the control
+    - `[State <String>]`: State of the control can be modified using PATCH command(Ex: ignored, thirdParty etc)
+    - `[UpdatedBy <String>]`: ID of the user who updated tenant state
+    - `[UpdatedDateTime <DateTime?>]`: Time at which control state was updated
   - `[Deprecated <Boolean?>]`: Flag to indicate if a control is depreciated.
   - `[ImplementationCost <String>]`: Resource cost of implemmentating control (low, moderate, high).
-  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Time at which the control profile entity was last modified.
+The Timestamp type represents date and time
   - `[MaxScore <Double?>]`: Current obtained max score on specified date.
   - `[Rank <Int32?>]`: Microsoft's stack ranking of control.
   - `[Remediation <String>]`: Description of what the control will help remediate.
   - `[RemediationImpact <String>]`: Description of the impact on users of the remediation.
   - `[Service <String>]`: Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).
-  - `[Threats <String- `[]`>]`: List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).
+  - `[Threats <String- `[]`>]`: List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, spoofing).
   - `[Tier <String>]`: Control tier (Core, Defense in Depth, Advanced.)
   - `[Title <String>]`: Title of the control.
   - `[UserImpact <String>]`: User impact of implementing control (low, moderate, high).
@@ -580,16 +582,16 @@ Required
 
 COMPLIANCEINFORMATION <IMicrosoftGraphComplianceInformation- `[]`>: The collection of compliance information associated with secure score control
   - `[CertificationControls <IMicrosoftGraphCertificationControl- `[]`>]`: Collection of the certification controls associated with the certification.
-    - `[Name <String>]`: 
-    - `[Url <String>]`: 
+    - `[Name <String>]`: Certification control name.
+    - `[Url <String>]`: URL for the Microsoft Service Trust Portal.
   - `[CertificationName <String>]`: The name of the compliance certification, for example, ISO 27018:2014, GDPR, FedRAMP, and NIST 800-171.
 
-CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate- `[]`>: Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
-  - `[AssignedTo <String>]`: 
-  - `[Comment <String>]`: 
-  - `[State <String>]`: 
-  - `[UpdatedBy <String>]`: 
-  - `[UpdatedDateTime <DateTime?>]`: 
+CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate- `[]`>: Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
+  - `[AssignedTo <String>]`: Assign the control to the user who will take the action
+  - `[Comment <String>]`: Provides optional comment about the control
+  - `[State <String>]`: State of the control can be modified using PATCH command(Ex: ignored, thirdParty etc)
+  - `[UpdatedBy <String>]`: ID of the user who updated tenant state
+  - `[UpdatedDateTime <DateTime?>]`: Time at which control state was updated
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
@@ -643,6 +645,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -653,6 +656,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -688,7 +692,7 @@ Required
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescorecontrolprofile)
 
-[https://learn.microsoft.com/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta)
 
 
 

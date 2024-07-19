@@ -8,37 +8,38 @@ schema: 2.0.0
 # Get-MgBetaUserOutlookTask
 
 ## SYNOPSIS
-Get the properties and relationships of an Outlook task in the user's mailbox.
-By default, this operation (and the POST, PATCH, and complete task operations) returns date-related properties in UTC.
-You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
+The user's Outlook tasks.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgBetaUserOutlookTask -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaUserOutlookTask -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgBetaUserOutlookTask -OutlookTaskId <String> -UserId <String> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaUserOutlookTask -OutlookTaskId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserOutlookTask -InputObject <IUsersIdentity> [-Property <String[]>]
+Get-MgBetaUserOutlookTask -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of an Outlook task in the user's mailbox.
-By default, this operation (and the POST, PATCH, and complete task operations) returns date-related properties in UTC.
-You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
+The user's Outlook tasks.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Get an Outlook task
@@ -91,6 +92,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -220,6 +236,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -327,10 +358,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktask)
-
-[https://learn.microsoft.com/graph/api/outlooktask-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktask-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/outlookuser-list-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookuser-list-tasks?view=graph-rest-1.0)
 
 
 

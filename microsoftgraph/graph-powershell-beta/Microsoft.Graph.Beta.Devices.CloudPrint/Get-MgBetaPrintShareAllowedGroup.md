@@ -266,7 +266,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshareallowedgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshareallowedgroup)
 
-[https://learn.microsoft.com/graph/api/printershare-list-allowedgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-list-allowedgroups?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/printershare-list-allowedgroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)
 
 
 

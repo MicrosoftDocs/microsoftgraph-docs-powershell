@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfileInterest
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a personInterest object in a user's profile.
+Provides detailed information about interests the user has associated with themselves in various services.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfileInterest -InputObject <IPeopleIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a personInterest object in a user's profile.
+Provides detailed information about interests the user has associated with themselves in various services.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileinterest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileinterest)
-
-[https://learn.microsoft.com/graph/api/personinterest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personinterest-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-interests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-interests?view=graph-rest-1.0)
 
 
 

@@ -20,8 +20,9 @@ Nullable.
 ### List (Default)
 ```
 Get-MgBetaUserCalendar -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
@@ -222,6 +223,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -316,8 +332,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendar)
-
-[https://learn.microsoft.com/graph/api/user-list-calendars?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-calendars?view=graph-rest-1.0)
 
 
 

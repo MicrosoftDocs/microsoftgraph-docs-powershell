@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Deletes a windows10MobileCompliancePolicy.
+Deletes a iosCompliancePolicy.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementI
 ```
 
 ## DESCRIPTION
-Deletes a windows10MobileCompliancePolicy.
+Deletes a iosCompliancePolicy.
 
 ## PARAMETERS
 
@@ -247,7 +247,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicy)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-ioscompliancepolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-ioscompliancepolicy-delete?view=graph-rest-1.0)
 
 
 

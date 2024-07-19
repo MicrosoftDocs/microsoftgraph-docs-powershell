@@ -64,26 +64,31 @@ Alternatively, create a draft to reply-all to a message, and send it later.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-replyall-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaReplyAllUserMessage Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	Message = @{
-		Attachments = @(
+	message = @{
+		attachments = @(
 			@{
 				"@odata.type" = "#microsoft.graph.fileAttachment"
-				Name = "guidelines.txt"
-				ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+				name = "guidelines.txt"
+				contentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 			}
 		)
 	}
-	Comment = "Please take a look at the attached guidelines before you decide on the name."
+	comment = "Please take a look at the attached guidelines before you decide on the name."
 }
+
 # A UPN can also be used as -UserId.
 Invoke-MgBetaReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaReplyAllUserMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -308,8 +313,11 @@ BODYPARAMETER `<IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPo
   - `[Comment <String>]`: 
   - `[Message <IMicrosoftGraphMessage>]`: message
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Categories <String- `[]`>]`: 
-    - `[ChangeKey <String>]`: 
+    - `[Categories <String- `[]`>]`: The categories associated with the item.
+    - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -479,8 +487,11 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 MESSAGE `<IMicrosoftGraphMessage>`: message
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -609,7 +620,7 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyallusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyallusermessage)
 
-[https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-beta)
 
 
 

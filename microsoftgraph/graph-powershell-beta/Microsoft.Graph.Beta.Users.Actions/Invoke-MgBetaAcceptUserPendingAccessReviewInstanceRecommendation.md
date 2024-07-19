@@ -37,14 +37,18 @@ If there isn't a recommendation on an accessReviewInstanceDecisionItem object no
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-acceptrecommendations-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 # A UPN can also be used as -UserId.
 Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation -UserId $userId -AccessReviewInstanceId $accessReviewInstanceId
+
 ```
 This example shows how to use the Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -248,7 +252,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptuserpendingaccessreviewinstancerecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptuserpendingaccessreviewinstancerecommendation)
 
-[https://learn.microsoft.com/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-beta)
 
 
 

@@ -734,7 +734,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Description <String>]`: Description of the attack simulation and training campaign payload.
     - `[Detail <IMicrosoftGraphPayloadDetail>]`: payloadDetail
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: Payload coachmark details.
+      - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: 
         - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Length <Int32?>]`: Length of coachmark.
@@ -974,7 +974,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Description <String>]`: Description of the attack simulation and training campaign payload.
   - `[Detail <IMicrosoftGraphPayloadDetail>]`: payloadDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: Payload coachmark details.
+    - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: 
       - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Length <Int32?>]`: Length of coachmark.
@@ -1071,7 +1071,7 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation)
 
-[https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-beta](https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-beta)
 
 
 

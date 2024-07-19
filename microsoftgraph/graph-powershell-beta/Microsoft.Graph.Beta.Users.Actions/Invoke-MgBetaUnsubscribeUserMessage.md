@@ -49,14 +49,18 @@ The actual exclusion of the user from future mail distribution is managed by the
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-unsubscribe-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaUnsubscribeUserMessage Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 # A UPN can also be used as -UserId.
 Invoke-MgBetaUnsubscribeUserMessage -UserId $userId -MessageId $messageId
+
 ```
 This example shows how to use the Invoke-MgBetaUnsubscribeUserMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -260,7 +264,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaunsubscribeusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaunsubscribeusermessage)
 
-[https://learn.microsoft.com/graph/api/message-unsubscribe?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-unsubscribe?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/message-unsubscribe?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-unsubscribe?view=graph-rest-beta)
 
 
 

@@ -54,6 +54,24 @@ Update-MgBetaIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovern
 ## DESCRIPTION
 Update the properties of an agreement object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	displayName = "All Contoso volunteers - Terms of use"
+	isViewingBeforeAcceptanceRequired = $true
+}
+
+Update-MgBetaIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityGovernanceTermsOfUseAgreement Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Acceptances
@@ -741,8 +759,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancetermsofuseagreement)
 
-[https://learn.microsoft.com/graph/api/agreement-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-update?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/agreement-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/agreement-update?view=graph-rest-beta)
 
 
 

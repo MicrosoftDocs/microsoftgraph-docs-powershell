@@ -537,7 +537,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Description <String>]`: Description of the attack simulation and training campaign payload.
   - `[Detail <IMicrosoftGraphPayloadDetail>]`: payloadDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: Payload coachmark details.
+    - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: 
       - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Length <Int32?>]`: Length of coachmark.
@@ -581,7 +581,7 @@ This property is read-only.
 
 DETAIL `<IMicrosoftGraphPayloadDetail>`: payloadDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: Payload coachmark details.
+  - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: 
     - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Length <Int32?>]`: Length of coachmark.

@@ -17,8 +17,9 @@ Represents deviceRegistrationPolicy quota restrictions, additional authenticatio
 ## SYNTAX
 
 ```
-Get-MgBetaPolicyDeviceRegistrationPolicy [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaPolicyDeviceRegistrationPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,6 +40,21 @@ This example shows how to use the Get-MgBetaPolicyDeviceRegistrationPolicy Cmdle
 
 
 ## PARAMETERS
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -115,7 +131,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeviceregistrationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeviceregistrationpolicy)
 
-[https://learn.microsoft.com/graph/api/deviceregistrationpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/deviceregistrationpolicy-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/deviceregistrationpolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/deviceregistrationpolicy-get?view=graph-rest-beta)
 
 
 

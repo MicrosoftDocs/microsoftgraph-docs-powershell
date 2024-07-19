@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgInformationProtectionThreatAssessmentRequest
 
 ## SYNOPSIS
-Create a new threat assessment request.
-A threat assessment request can be one of the following types:
+Create new navigation property to threatAssessmentRequests for informationProtection
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
@@ -34,8 +33,7 @@ New-MgInformationProtectionThreatAssessmentRequest -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create a new threat assessment request.
-A threat assessment request can be one of the following types:
+Create new navigation property to threatAssessmentRequests for informationProtection
 
 ## EXAMPLES
 ### Example 1: Create a mail assessment request
@@ -435,8 +433,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequest)
-
-[https://learn.microsoft.com/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-1.0)
 
 
 

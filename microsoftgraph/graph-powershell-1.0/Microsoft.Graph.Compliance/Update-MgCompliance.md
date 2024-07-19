@@ -30,8 +30,6 @@ Update-MgCompliance -BodyParameter <Hashtable> [-ResponseHeadersVariable <String
 ## DESCRIPTION
 Update compliance
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -155,6 +153,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgcompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgcompliance)
+
+
 
 
 

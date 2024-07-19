@@ -40,6 +40,30 @@ Get-MgBetaRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
+## EXAMPLES
+### Example 1: Get details of a role assignment
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
+
+```
+This example will### Example 1: get details of a role assignment
+
+### Example 2: Get details of a role assignment and expand the role definition
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId -ExpandProperty "roleDefinition" 
+
+```
+This example will get details of a role assignment and expand the role definition
+
+
 ## PARAMETERS
 
 ### -All
@@ -390,10 +414,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleassignment)
 
-[https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta)
 
 
 

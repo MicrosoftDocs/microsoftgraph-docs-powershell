@@ -34,8 +34,6 @@ Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [
 Entry-point to the Planner resource that might exist for a user.
 Read-only.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -170,6 +168,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplanner)
+
+
 
 
 

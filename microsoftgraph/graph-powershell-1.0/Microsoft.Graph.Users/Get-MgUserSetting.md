@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserSetting
 
 ## SYNOPSIS
-Read the user and organization userSettings object.To learn how to update the properties of the userSettings object, see update user settings.
+Get settings from users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSetting?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgUserSetting -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-P
 ```
 
 ## DESCRIPTION
-Read the user and organization userSettings object.To learn how to update the properties of the userSettings object, see update user settings.
+Get settings from users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -190,8 +190,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting)
-
-[https://learn.microsoft.com/graph/api/usersettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/usersettings-get?view=graph-rest-1.0)
 
 
 

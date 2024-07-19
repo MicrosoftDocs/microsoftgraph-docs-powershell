@@ -38,6 +38,19 @@ Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
 ## DESCRIPTION
 Read the properties and relationships of a permissionsRequestChange object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange -Filter "modificationDateTime gt {t}" 
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -388,10 +401,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionmanagementpermissionrequestchange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionmanagementpermissionrequestchange)
 
-[https://learn.microsoft.com/graph/api/permissionsrequestchange-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissionsrequestchange-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/permissionsrequestchange-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permissionsrequestchange-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/permissionsmanagement-list-permissionsrequestchanges?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissionsmanagement-list-permissionsrequestchanges?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/permissionsmanagement-list-permissionsrequestchanges?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permissionsmanagement-list-permissionsrequestchanges?view=graph-rest-beta)
 
 
 

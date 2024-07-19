@@ -566,8 +566,8 @@ BODYPARAMETER `<IMicrosoftGraphBookingService>`: Represents a particular service
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
-    - `[IsRequired <Boolean?>]`: The ID of the custom question.
-    - `[QuestionId <String>]`: Indicates whether it's mandatory to answer the custom question.
+    - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
+    - `[QuestionId <String>]`: The ID of the custom question.
   - `[DefaultDuration <TimeSpan?>]`: The default length of the service, represented in numbers of days, hours, minutes, and seconds.
 For example, P11D23H59M59.999999999999S.
   - `[DefaultLocation <IMicrosoftGraphLocation>]`: location
@@ -630,8 +630,8 @@ Default value is false.
   - `[StaffMemberIds <String- `[]`>]`: Represents those staff members who provide this service.
 
 CUSTOMQUESTIONS <IMicrosoftGraphBookingQuestionAssignment- `[]`>: Contains the set of custom questions associated with a particular service.
-  - `[IsRequired <Boolean?>]`: The ID of the custom question.
-  - `[QuestionId <String>]`: Indicates whether it's mandatory to answer the custom question.
+  - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
+  - `[QuestionId <String>]`: The ID of the custom question.
 
 DEFAULTLOCATION `<IMicrosoftGraphLocation>`: location
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -698,6 +698,7 @@ Use the email address specified in the email property of the bookingBusiness ent
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessservice)
 
 [https://learn.microsoft.com/graph/api/bookingservice-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingservice-update?view=graph-rest-1.0)
+
 
 
 

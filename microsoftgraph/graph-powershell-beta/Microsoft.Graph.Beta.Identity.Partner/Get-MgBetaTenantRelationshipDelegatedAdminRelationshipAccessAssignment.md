@@ -41,6 +41,19 @@ Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObj
 ## DESCRIPTION
 Read the properties of a delegatedAdminAccessAssignment object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Partner
+
+Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment -DelegatedAdminRelationshipId $delegatedAdminRelationshipId
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -313,10 +326,9 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment)
 
-[https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-accessassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-accessassignments?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-accessassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-accessassignments?view=graph-rest-beta)
 
 
 

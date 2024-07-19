@@ -54,7 +54,7 @@ Get-MgEntitlementManagementAssignmentRequest [-ExpandProperty <String[]>] [-Prop
 In Microsoft Entra entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
 
 ## EXAMPLES
-### Example scenarios for using query parameters
+### Example 1cenario1 for u1ing query parameter1
 
 ```powershell
 

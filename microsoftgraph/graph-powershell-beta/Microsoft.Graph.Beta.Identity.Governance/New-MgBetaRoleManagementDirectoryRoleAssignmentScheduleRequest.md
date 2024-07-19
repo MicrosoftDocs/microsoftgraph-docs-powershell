@@ -47,6 +47,63 @@ This operation allows both admins and users to add, remove, extend, or renew ass
 To run this request, the calling user must have multifactor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
 See Enable per-user Microsoft Entra multifactor authentication to secure sign-in events.
 
+## EXAMPLES
+### Example 1: Admin assigning a directory role to a principal
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	action = "AdminAssign"
+	justification = "Assign User Admin to IT Helpdesk (User) group"
+	roleDefinitionId = "fdd7a751-b60b-444a-984c-02652fe8fa1c"
+	directoryScopeId = "/"
+	principalId = "07706ff1-46c7-4847-ae33-3003830675a1"
+	scheduleInfo = @{
+		startDateTime = [System.DateTime]::Parse("2021-07-01T00:00:00Z")
+		expiration = @{
+			type = "NoExpiration"
+		}
+	}
+}
+
+New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -BodyParameter $params
+
+```
+This example will admin assigning a directory role to a principal
+
+### Example 2: User activating their eligible role
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	action = "SelfActivate"
+	principalId = "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f"
+	roleDefinitionId = "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+	directoryScopeId = "/"
+	justification = "Need to update app roles for selected apps."
+	scheduleInfo = @{
+		startDateTime = [System.DateTime]::Parse("2021-08-17T17:40:00.000Z")
+		expiration = @{
+			type = "AfterDuration"
+			duration = "PT5H"
+		}
+	}
+	ticketInfo = @{
+		ticketNumber = "CONTOSO:Normal-67890"
+		ticketSystem = "MS Project"
+	}
+}
+
+New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -BodyParameter $params
+
+```
+This example will user activating their eligible role
+
+
 ## PARAMETERS
 
 ### -Action
@@ -695,10 +752,9 @@ BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest>`: unifiedRo
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The request creation date time.
@@ -911,10 +967,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -1190,8 +1245,7 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedulerequest)
 
-[https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignmentschedulerequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignmentschedulerequests?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignmentschedulerequests?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignmentschedulerequests?view=graph-rest-beta)
 
 
 

@@ -36,19 +36,6 @@ New-MgBetaRiskDetection -BodyParameter <IMicrosoftGraphRiskDetection> [-Response
 ## DESCRIPTION
 Create new navigation property to riskDetections for identityProtection
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaRiskDetection
-```
-This example shows how to use the New-MgBetaBetaRiskDetection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -Activity
@@ -332,7 +319,7 @@ Accept wildcard characters: False
 
 ### -RiskEventType
 The type of risk event detected.
-The possible values are adminConfirmedUserCompromised, anomalousUserActivity, anonymizedIPAddress, generic, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, suspiciousAPITraffic, suspiciousIPAddress, unfamiliarFeatures, unlikelyTravel, userReportedSuspiciousActivity.
+The possible values are adminConfirmedUserCompromised, anomalousUserActivity, anonymizedIPAddress,attackerinTheMiddle,attemptedPRTAccess, generic, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel,mcasFinSuspiciousFileAccess, mcasSuspiciousInboxManipulationRules,nationStateIP, suspiciousAPITraffic, suspiciousIPAddress,suspiciousSendingPatterns, unfamiliarFeatures, unlikelyTravel, userReportedSuspiciousActivity.
 For more information about each value, see Risk types and detection.
 
 ```yaml
@@ -558,7 +545,7 @@ This is calculated using latitude/longitude information from the sign-in activit
 This property is null if the risk detection is not associated with a sign-in.
   - `[RiskDetail <String>]`: riskDetail
   - `[RiskEventType <String>]`: The type of risk event detected.
-The possible values are adminConfirmedUserCompromised, anomalousUserActivity, anonymizedIPAddress, generic, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, suspiciousAPITraffic, suspiciousIPAddress,   unfamiliarFeatures, unlikelyTravel, userReportedSuspiciousActivity. 
+The possible values are adminConfirmedUserCompromised, anomalousUserActivity, anonymizedIPAddress,attackerinTheMiddle,attemptedPRTAccess, generic, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel,mcasFinSuspiciousFileAccess, mcasSuspiciousInboxManipulationRules,nationStateIP, suspiciousAPITraffic, suspiciousIPAddress,suspiciousSendingPatterns,   unfamiliarFeatures, unlikelyTravel, userReportedSuspiciousActivity. 
 For more information about each value, see Risk types and detection.
   - `[RiskLevel <String>]`: riskLevel
   - `[RiskState <String>]`: riskState
@@ -595,6 +582,8 @@ This is calculated using latitude/longitude information from the sign-in activit
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskdetection)
+
+
 
 
 

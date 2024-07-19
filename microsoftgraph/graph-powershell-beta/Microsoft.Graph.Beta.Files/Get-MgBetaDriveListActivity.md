@@ -22,8 +22,6 @@ Get-MgBetaDriveListActivity -DriveId <String> [-ExpandProperty <String[]>] [-Fil
 ## DESCRIPTION
 The recent activities that took place within this list.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -251,6 +249,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistactivity)
+
+
 
 
 

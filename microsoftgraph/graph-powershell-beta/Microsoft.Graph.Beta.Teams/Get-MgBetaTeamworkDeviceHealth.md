@@ -32,13 +32,17 @@ Get the health details of a Microsoft Teams-enabled device.
 Device health is calculated based on the device configuration and other device parameters.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaTeamworkDeviceHealth Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaTeamworkDeviceHealth -TeamworkDeviceId $teamworkDeviceId
+
 ```
 This example shows how to use the Get-MgBetaTeamworkDeviceHealth Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -211,7 +215,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdevicehealth](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdevicehealth)
 
-[https://learn.microsoft.com/graph/api/teamworkdevicehealth-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworkdevicehealth-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/teamworkdevicehealth-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamworkdevicehealth-get?view=graph-rest-beta)
 
 
 

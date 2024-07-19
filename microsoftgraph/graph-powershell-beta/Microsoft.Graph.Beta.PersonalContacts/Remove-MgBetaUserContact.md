@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserContact
 
 ## SYNOPSIS
-Delete contact.
+Delete navigation property contacts for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContact?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaUserContact -InputObject <IPersonalContactsIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete contact.
+Delete navigation property contacts for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -226,8 +226,6 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontact)
-
-[https://learn.microsoft.com/graph/api/contact-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contact-delete?view=graph-rest-1.0)
 
 
 

@@ -36,13 +36,13 @@ Remove a conversationMember from a chat.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaChatMember -ChatId $chatId -ConversationMemberId $conversationMemberId
+
 ```
 This example shows how to use the Remove-MgBetaChatMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -262,7 +262,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatmember)
 
-[https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-beta)
 
 
 

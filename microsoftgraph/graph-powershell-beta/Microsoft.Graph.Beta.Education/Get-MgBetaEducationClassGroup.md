@@ -193,7 +193,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassgroup)
 
-[https://learn.microsoft.com/graph/api/educationclass-get-group?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-get-group?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/educationclass-get-group?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationclass-get-group?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamPrimaryChannelTab
 
 ## SYNOPSIS
-Update the properties of the specified tab.This API can be used to configure the content of the tab.
+Update the navigation property tabs in teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
@@ -46,9 +46,7 @@ Update-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Update the properties of the specified tab.This API can be used to configure the content of the tab.
-
-## EXAMPLES
+Update the navigation property tabs in teams
 
 ## PARAMETERS
 
@@ -440,7 +438,7 @@ For example, if a user changes their display name, the API might show the new va
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychanneltab)
 
-[https://learn.microsoft.com/graph/api/channel-patch-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-patch-tabs?view=graph-rest-1.0)
+
 
 
 

@@ -83,6 +83,7 @@ Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource typ
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
@@ -92,10 +93,9 @@ $params = @{
 }
 
 Update-MgBetaGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaGroupLifecyclePolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -397,7 +397,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouplifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouplifecyclepolicy)
 
-[https://learn.microsoft.com/graph/api/grouplifecyclepolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/grouplifecyclepolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-update?view=graph-rest-beta)
 
 
 

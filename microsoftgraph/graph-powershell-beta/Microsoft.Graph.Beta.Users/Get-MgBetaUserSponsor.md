@@ -44,6 +44,19 @@ The users and groups responsible for this guest user's privileges in the tenant 
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users
+
+Get-MgBetaUserSponsor -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserSponsor Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -336,8 +349,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsor)
 
-[https://learn.microsoft.com/graph/api/user-list-sponsors?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-sponsors?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/user-list-sponsors?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-list-sponsors?view=graph-rest-beta)
 
 
 

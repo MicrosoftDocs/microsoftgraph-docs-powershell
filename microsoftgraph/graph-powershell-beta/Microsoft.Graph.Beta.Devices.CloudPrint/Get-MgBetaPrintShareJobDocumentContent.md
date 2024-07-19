@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaPrintShareJobDocumentContent
 
 ## SYNOPSIS
-Get media content for the navigation property documents from print
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPrintShareJobDocumentContent](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareJobDocumentContent?view=graph-powershell-1.0)
@@ -30,7 +31,8 @@ Get-MgBetaPrintShareJobDocumentContent -InputObject <IDevicesCloudPrintIdentity>
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property documents from print
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 

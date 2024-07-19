@@ -39,6 +39,7 @@ Create a new custom authenticationStrengthPolicy object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -46,16 +47,15 @@ $params = @{
 	displayName = "Contoso authentication level"
 	description = "The only authentication level allowed to access our secret apps"
 	allowedCombinations = @(
-		"password, hardwareOath"
-		"password, sms"
-	)
+	"password, hardwareOath"
+"password, sms"
+)
 }
 
 New-MgBetaPolicyAuthenticationStrengthPolicy -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaPolicyAuthenticationStrengthPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -351,7 +351,7 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicy)
 
-[https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-beta)
 
 
 

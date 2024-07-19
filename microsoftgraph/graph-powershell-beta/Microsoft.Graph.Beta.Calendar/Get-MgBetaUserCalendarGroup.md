@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaUserCalendarGroup
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a calendar group object.
+The user's calendar groups.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarGroup?view=graph-powershell-1.0)
@@ -17,27 +19,30 @@ Retrieve the properties and relationships of a calendar group object.
 
 ### List (Default)
 ```
-Get-MgBetaUserCalendarGroup -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaUserCalendarGroup -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgBetaUserCalendarGroup -CalendarGroupId <String> -UserId <String> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaUserCalendarGroup -CalendarGroupId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserCalendarGroup -InputObject <ICalendarIdentity> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaUserCalendarGroup -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a calendar group object.
+The user's calendar groups.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -93,6 +98,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -207,6 +227,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -301,10 +336,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroup)
-
-[https://learn.microsoft.com/graph/api/calendargroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendargroup-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/user-list-calendargroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-calendargroups?view=graph-rest-1.0)
 
 
 

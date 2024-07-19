@@ -48,8 +48,6 @@ New-MgDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Create new navigation property to verificationDnsRecords for domains
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -146,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsOptional
-If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
+If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain.
 
 ```yaml
 Type: SwitchParameter
@@ -305,7 +303,7 @@ BODYPARAMETER `<IMicrosoftGraphDomainDnsRecord>`: domainDnsRecord
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[IsOptional <Boolean?>]`: If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
+  - `[IsOptional <Boolean?>]`: If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain.
   - `[Label <String>]`: Value used when configuring the name of the DNS record at the DNS host.
   - `[RecordType <String>]`: Indicates what type of DNS record this entity represents.
 The value can be CName, Mx, Srv, or Txt.
@@ -318,6 +316,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -343,6 +343,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainverificationdnsrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainverificationdnsrecord)
+
+
 
 
 

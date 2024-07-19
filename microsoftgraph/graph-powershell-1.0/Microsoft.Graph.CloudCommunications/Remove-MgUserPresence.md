@@ -32,8 +32,6 @@ Remove-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property presence for users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -208,6 +206,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguserpresence)
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementEntitlementManagementRoleAssignment
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a unifiedRoleAssignment object.
+Get roleAssignments from roleManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-1.0)
@@ -38,7 +38,20 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdent
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a unifiedRoleAssignment object.
+Get roleAssignments from roleManagement
+
+## EXAMPLES
+### Example 1: Request using $filter for role assignments on an access package catalog and expand principal
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementEntitlementManagementRoleAssignment -Filter "appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'" -ExpandProperty "principal" 
+
+```
+This example will request using $filter for role assignments on an access package catalog and expand principal
+
 
 ## PARAMETERS
 
@@ -390,10 +403,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignment)
 
-[https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgBetaIdentityB2XUserFlowLanguageOverridePageContent
 
 ## SYNOPSIS
-Update media content for the navigation property overridesPages in identity
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgIdentityB2XUserFlowLanguageOverridePageContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowLanguageOverridePageContent?view=graph-powershell-1.0)
@@ -32,20 +33,8 @@ Set-MgBetaIdentityB2XUserFlowLanguageOverridePageContent -InputObject <IIdentity
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property overridesPages in identity
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaIdentityB2XUserFlowLanguageOverridePage -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
-```
-This example shows how to use the Set-MgBetaBetaIdentityB2XUserFlowLanguageOverridePageContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 
@@ -317,6 +306,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -336,6 +326,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -348,6 +339,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowlanguageoverridepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowlanguageoverridepagecontent)
+
+
 
 
 

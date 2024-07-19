@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfileProject
 
 ## SYNOPSIS
-Delete a projectParticipation object from a user's profile.
+Delete navigation property projects for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfileProject -InputObject <IPeopleIdentity> [-IfMatch <String
 ```
 
 ## DESCRIPTION
-Delete a projectParticipation object from a user's profile.
+Delete navigation property projects for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -240,8 +240,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileproject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileproject)
-
-[https://learn.microsoft.com/graph/api/projectparticipation-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/projectparticipation-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Update the properties of a iosDeviceFeaturesConfiguration object.
+Update the properties of a windows10EndpointProtectionConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -56,7 +56,7 @@ Update-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Update the properties of a iosDeviceFeaturesConfiguration object.
+Update the properties of a windows10EndpointProtectionConfiguration object.
 
 ## PARAMETERS
 
@@ -592,7 +592,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-iosdevicefeaturesconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-iosdevicefeaturesconfiguration-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10endpointprotectionconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10endpointprotectionconfiguration-update?view=graph-rest-1.0)
 
 
 

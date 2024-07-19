@@ -40,8 +40,6 @@ Get-MgBetaDriveListColumn -InputObject <IFilesIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 The collection of field definitions for this list.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -332,7 +330,9 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcolumn)
 
-[https://learn.microsoft.com/graph/api/list-list-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list-columns?view=graph-rest-1.0)
+
+
+
 
 
 

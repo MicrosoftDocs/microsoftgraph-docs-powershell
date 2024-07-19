@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSiteTermStoreSet
 
 ## SYNOPSIS
-Delete a set object.
+Delete navigation property sets for sites
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreSet?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaSiteTermStoreSet -InputObject <ISitesIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete a set object.
+Delete navigation property sets for sites
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -272,8 +272,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoreset)
-
-[https://learn.microsoft.com/graph/api/termstore-set-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-set-delete?view=graph-rest-1.0)
 
 
 

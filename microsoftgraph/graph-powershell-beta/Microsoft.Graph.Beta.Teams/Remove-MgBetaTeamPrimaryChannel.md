@@ -32,19 +32,6 @@ Remove-MgBetaTeamPrimaryChannel -InputObject <ITeamsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property primaryChannel for teams
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaTeamPrimaryChannel -TeamId $teamId
-```
-This example shows how to use the Remove-MgBetaBetaTeamPrimaryChannel Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -Headers
@@ -246,6 +233,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannel)
+
+
 
 
 

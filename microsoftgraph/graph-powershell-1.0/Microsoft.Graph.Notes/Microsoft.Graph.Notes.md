@@ -254,6 +254,9 @@ Locale: en-US
 ### [Remove-MgGroupOnenotePage](Remove-MgGroupOnenotePage.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupOnenotePageContent](Remove-MgGroupOnenotePageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupOnenoteSection](Remove-MgGroupOnenoteSection.md)
 {{ Fill in the Description }}
 
@@ -279,6 +282,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgUserOnenotePage](Remove-MgUserOnenotePage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserOnenotePageContent](Remove-MgUserOnenotePageContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserOnenoteSection](Remove-MgUserOnenoteSection.md)

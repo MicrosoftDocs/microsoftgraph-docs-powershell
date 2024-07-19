@@ -253,7 +253,9 @@ Accept wildcard characters: False
 ```
 
 ### -TeamsAppId
-.
+App definition identifier of the tab.
+This value can't be changed after tab creation.
+Because this property is deprecated, we recommend expanding teamsApp to retrieve the application that is linked to the tab.
 
 ```yaml
 Type: String
@@ -398,10 +400,9 @@ Content type, such as image/png, image/jpg.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>]`: Dashboard cards specified in the Teams app manifest.
@@ -439,7 +440,9 @@ Required.
     - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
     - `[DistributionMethod <String>]`: teamsAppDistributionMethod
     - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
-  - `[TeamsAppId <String>]`: 
+  - `[TeamsAppId <String>]`: App definition identifier of the tab.
+This value can't be changed after tab creation.
+Because this property is deprecated, we recommend expanding teamsApp to retrieve the application that is linked to the tab.
   - `[WebUrl <String>]`: Deep link URL of the tab instance.
 Read only.
 
@@ -532,10 +535,9 @@ Content type, such as image/png, image/jpg.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>]`: Dashboard cards specified in the Teams app manifest.
@@ -577,6 +579,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychanneltab)
+
 
 
 

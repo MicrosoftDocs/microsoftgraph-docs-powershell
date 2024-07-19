@@ -8,11 +8,8 @@ schema: 2.0.0
 # Get-MgDeviceRegisteredUser
 
 ## SYNOPSIS
-Collection of registered users of the device.
+Retrieve a list of users that are registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredUser](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredUser?view=graph-powershell-beta)
@@ -27,11 +24,8 @@ Get-MgDeviceRegisteredUser -DeviceId <String> [-ExpandProperty <String[]>] [-Fil
 ```
 
 ## DESCRIPTION
-Collection of registered users of the device.
+Retrieve a list of users that are registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
 
 ## EXAMPLES
 ### Example 1: Code snippet

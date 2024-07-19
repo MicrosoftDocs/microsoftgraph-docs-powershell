@@ -204,7 +204,10 @@ Accept wildcard characters: False
 ```
 
 ### -Offer
-.
+The offer name of this gallery image that is passed to ARM to retrieve the image resource.
+Read-only.
+The offer property is deprecated and will stop returning data on January 31, 2024.
+Going forward, use the offerName property.
 
 ```yaml
 Type: String
@@ -219,7 +222,9 @@ Accept wildcard characters: False
 ```
 
 ### -OfferDisplayName
-.
+The official display offer name of this gallery image.
+For example, Windows 10 Enterprise + OS Optimizations.
+The offerDisplayName property is deprecated and will stop returning data on January 31, 2024.
 
 ```yaml
 Type: String
@@ -265,7 +270,10 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-.
+The publisher name of this gallery image that is passed to ARM to retrieve the image resource.
+Read-only.
+The publisher property is deprecated and will stop returning data on January 31, 2024.
+Going forward, use the publisherName property.
 
 ```yaml
 Type: String
@@ -296,7 +304,9 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendedSku
-.
+The recommended Cloud PC SKU for this gallery image.
+Read-only.
+The recommendedSku property is deprecated and will stop returning data on January 31, 2024.
 
 ```yaml
 Type: String
@@ -343,7 +353,10 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-.
+The SKU name of this image that is passed to ARM to retrieve the image resource.
+Read-only.
+The sku property is deprecated and will stop returning data on January 31, 2024.
+Going forward, use the skuName property.
 
 ```yaml
 Type: String
@@ -358,7 +371,10 @@ Accept wildcard characters: False
 ```
 
 ### -SkuDisplayName
-.
+The official display SKU name of this gallery image.
+For example, 2004.
+Read-only.
+The skuDisplayName property is deprecated and will stop returning data on January 31, 2024.
 
 ```yaml
 Type: String
@@ -484,19 +500,35 @@ Users are unable to provision new Cloud PCs if the current time is later than ex
 The value is usually endDate plus six months.
 For example, if the startDate is 2025-10-14, the expirationDate is usually 2026-04-14.
 Read-only.
-  - `[Offer <String>]`: 
-  - `[OfferDisplayName <String>]`: 
+  - `[Offer <String>]`: The offer name of this gallery image that is passed to ARM to retrieve the image resource.
+Read-only.
+The offer property is deprecated and will stop returning data on January 31, 2024.
+Going forward, use the offerName property.
+  - `[OfferDisplayName <String>]`: The official display offer name of this gallery image.
+For example, Windows 10 Enterprise + OS Optimizations.
+The offerDisplayName property is deprecated and will stop returning data on January 31, 2024.
   - `[OfferName <String>]`: The offer name of this gallery image that is passed to ARM to retrieve the image resource.
 Read-only.
-  - `[Publisher <String>]`: 
+  - `[Publisher <String>]`: The publisher name of this gallery image that is passed to ARM to retrieve the image resource.
+Read-only.
+The publisher property is deprecated and will stop returning data on January 31, 2024.
+Going forward, use the publisherName property.
   - `[PublisherName <String>]`: The publisher name of this gallery image that is passed to ARM to retrieve the image resource.
 Read-only.
-  - `[RecommendedSku <String>]`: 
+  - `[RecommendedSku <String>]`: The recommended Cloud PC SKU for this gallery image.
+Read-only.
+The recommendedSku property is deprecated and will stop returning data on January 31, 2024.
   - `[SizeInGb <Int32?>]`: Indicates the size of this image in gigabytes.
 For example, 64.
 Read-only.
-  - `[Sku <String>]`: 
-  - `[SkuDisplayName <String>]`: 
+  - `[Sku <String>]`: The SKU name of this image that is passed to ARM to retrieve the image resource.
+Read-only.
+The sku property is deprecated and will stop returning data on January 31, 2024.
+Going forward, use the skuName property.
+  - `[SkuDisplayName <String>]`: The official display SKU name of this gallery image.
+For example, 2004.
+Read-only.
+The skuDisplayName property is deprecated and will stop returning data on January 31, 2024.
   - `[SkuName <String>]`: The SKU name of this image that is passed to ARM to retrieve the image resource.
 Read-only.
   - `[StartDate <DateTime?>]`: The date when the Cloud PC image is available for provisioning new Cloud PCs.
@@ -566,6 +598,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointgalleryimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointgalleryimage)
+
 
 
 

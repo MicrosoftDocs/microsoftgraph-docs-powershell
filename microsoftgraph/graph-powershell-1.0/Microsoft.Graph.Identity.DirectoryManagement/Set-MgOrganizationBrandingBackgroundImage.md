@@ -10,10 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingBackgroundImage](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingBackgroundImage?view=graph-powershell-beta)
+A smaller image reduces bandwidth requirements and make the page load faster.
 
 ## SYNTAX
 
@@ -34,9 +31,7 @@ Set-MgOrganizationBrandingBackgroundImage -InputObject <IIdentityDirectoryManage
 ## DESCRIPTION
 Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.
-
-## EXAMPLES
+A smaller image reduces bandwidth requirements and make the page load faster.
 
 ## PARAMETERS
 
@@ -231,6 +226,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -256,6 +253,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandingbackgroundimage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandingbackgroundimage)
+
+
 
 
 

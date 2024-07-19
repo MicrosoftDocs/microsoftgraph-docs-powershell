@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserMessage
 
 ## SYNOPSIS
-Update the properties of a message object.
+Update the navigation property messages in users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMessage?view=graph-powershell-1.0)
@@ -74,7 +74,7 @@ Update-MgBetaUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Update the properties of a message object.
+Update the navigation property messages in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Categories
-.
+The categories associated with the item.
 
 ```yaml
 Type: String[]
@@ -229,7 +229,10 @@ Accept wildcard characters: False
 ```
 
 ### -ChangeKey
-.
+Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
 
 ```yaml
 Type: String
@@ -922,8 +925,11 @@ BODY `<IMicrosoftGraphItemBody>`: itemBody
 
 BODYPARAMETER `<IMicrosoftGraphMessage>`: message
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1169,8 +1175,6 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessage)
-
-[https://learn.microsoft.com/graph/api/message-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-update?view=graph-rest-1.0)
 
 
 

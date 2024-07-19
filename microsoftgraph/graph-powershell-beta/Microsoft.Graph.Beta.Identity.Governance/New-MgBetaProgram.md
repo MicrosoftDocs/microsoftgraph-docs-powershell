@@ -29,17 +29,22 @@ New-MgBetaProgram -BodyParameter <IMicrosoftGraphProgram> [-ResponseHeadersVaria
 In the Microsoft Entra access reviews feature, create a new program object.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaProgram Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 $params = @{
-	DisplayName = "testprogram3"
-	Description = "test description"
+	displayName = "testprogram3"
+	description = "test description"
 }
+
 New-MgBetaProgram -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaProgram Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -245,11 +250,10 @@ Required on create.
     - `[Owner <IMicrosoftGraphUserIdentity>]`: userIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
+      - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[Program <IMicrosoftGraphProgram>]`: program
     - `[ProgramId <String>]`: The programId of the program this control is a part of.
@@ -257,10 +261,9 @@ Required on create.
     - `[Resource <IMicrosoftGraphProgramResource>]`: programResource
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Type <String>]`: Type of the resource, indicating whether it is a group or an app.
     - `[Status <String>]`: The life cycle status of the control.
   - `[Description <String>]`: The description of the program.
@@ -279,11 +282,10 @@ Required on create.
   - `[Owner <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Program <IMicrosoftGraphProgram>]`: program
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -298,10 +300,9 @@ Required on create.
   - `[Resource <IMicrosoftGraphProgramResource>]`: programResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Type <String>]`: Type of the resource, indicating whether it is a group or an app.
   - `[Status <String>]`: The life cycle status of the control.
 
@@ -309,7 +310,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogram](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogram)
 
-[https://learn.microsoft.com/graph/api/program-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/program-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/program-create?view=graph-rest-beta](https://learn.microsoft.com/graph/api/program-create?view=graph-rest-beta)
 
 
 

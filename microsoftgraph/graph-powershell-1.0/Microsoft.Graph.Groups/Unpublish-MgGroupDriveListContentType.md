@@ -8,7 +8,7 @@ schema: 2.0.0
 # Unpublish-MgGroupDriveListContentType
 
 ## SYNOPSIS
-Unpublish a \[contentType\]\[\] from a content type hub site.
+Unpublish a contentType from a content type hub site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Unpublish-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Unpublish-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Unpublish-MgGroupDriveListContentType -InputObject <IGroupsIdentity> [-ResponseH
 ```
 
 ## DESCRIPTION
-Unpublish a \[contentType\]\[\] from a content type hub site.
+Unpublish a contentType from a content type hub site.
 
 ## PARAMETERS
 
@@ -250,6 +250,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupdrivelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
+
 
 
 

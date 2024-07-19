@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfilePosition
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a workPosition object in a user's profile.
+Represents detailed information about work positions associated with a user's profile.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a workPosition object in a user's profile.
+Represents detailed information about work positions associated with a user's profile.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileposition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileposition)
-
-[https://learn.microsoft.com/graph/api/workposition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workposition-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-positions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-positions?view=graph-rest-1.0)
 
 
 

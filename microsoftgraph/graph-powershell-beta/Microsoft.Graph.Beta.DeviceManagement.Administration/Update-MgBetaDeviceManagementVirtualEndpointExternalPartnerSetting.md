@@ -48,17 +48,22 @@ Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 Update the properties of a cloudPcExternalPartnerSetting object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcExternalPartnerSetting"
-	EnableConnection = $true
+	enableConnection = $true
 }
+
 Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -CloudPcExternalPartnerSettingId $cloudPcExternalPartnerSettingId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -391,7 +396,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointexternalpartnersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
 
-[https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-update?view=graph-rest-beta)
 
 
 

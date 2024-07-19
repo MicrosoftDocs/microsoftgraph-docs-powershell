@@ -232,7 +232,9 @@ Accept wildcard characters: False
 ```
 
 ### -MyDayTasks
-.
+Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
 To construct, see NOTES section for MYDAYTASKS properties and create a hash table.
 
 ```yaml
@@ -296,7 +298,7 @@ Accept wildcard characters: False
 ### -RecentPlans
 Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
 To construct, see NOTES section for RECENTPLANS properties and create a hash table.
 
 ```yaml
@@ -451,10 +453,9 @@ Read-only.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[StatusChangedDateTime <DateTime?>]`: 
@@ -490,7 +491,7 @@ Read-only.
           - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
         - `[AssigneePriority <String>]`: A hint that is used to order items of this type in a list view.
-For more information, see Using order hints in Planner.
+For more information, see Using order hints in planner.
         - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[BucketId <String>]`: Bucket ID to which the task belongs.
@@ -567,19 +568,18 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
           - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DueDateTime <DateTime?>]`: The date and time at which the task is due.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
         - `[IsArchived <Boolean?>]`: 
-        - `[IsOnMyDay <Boolean?>]`: A Boolean value that indicates whether to show this task in the MyDay view.
-true to show the task.
-Otherwise, false.
+        - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
+If true, it shows the task.
         - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
         - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
-For more information, see Using order hints in Plannern.
+For more information, see Using order hints in plannern.
         - `[PercentComplete <Int32?>]`: The percentage of task completion.
 When set to 100, the task is completed.
         - `[PlanId <String>]`: Plan ID to which the task belongs.
@@ -588,8 +588,8 @@ When set to 100, the task is completed.
 Valid values are between 0 and 10, inclusive.
 Larger values indicate lower priority.
 For example, 0 has the highest priority and 10 has the lowest priority.
-Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
-Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
+Currently, planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
+Currently, planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
         - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -698,7 +698,10 @@ Read-only.
       - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsArchived <Boolean?>]`: 
-    - `[Owner <String>]`: 
+    - `[Owner <String>]`: Use the container property instead.
+ID of the group that owns the plan.
+After it's set, this property can't be updated.
+This property doesn't return a valid group ID if the container of the plan isn't a group.
     - `[SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer- `[]`>]`: List of containers the plan is shared with.
       - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
 Optional.
@@ -711,13 +714,15 @@ Read-only.
 Nullable.
     - `[Title <String>]`: Required.
 Title of the plan.
-  - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: 
+  - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
   - `[Plans <IMicrosoftGraphPlannerPlan- `[]`>]`: 
   - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RecentPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
   - `[RosterPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
@@ -738,10 +743,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[StatusChangedDateTime <DateTime?>]`: 
@@ -777,7 +781,7 @@ Read-only.
         - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
       - `[AssigneePriority <String>]`: A hint that is used to order items of this type in a list view.
-For more information, see Using order hints in Planner.
+For more information, see Using order hints in planner.
       - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[BucketId <String>]`: Bucket ID to which the task belongs.
@@ -854,19 +858,18 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
         - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DueDateTime <DateTime?>]`: The date and time at which the task is due.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
       - `[IsArchived <Boolean?>]`: 
-      - `[IsOnMyDay <Boolean?>]`: A Boolean value that indicates whether to show this task in the MyDay view.
-true to show the task.
-Otherwise, false.
+      - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
+If true, it shows the task.
       - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
       - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
-For more information, see Using order hints in Plannern.
+For more information, see Using order hints in plannern.
       - `[PercentComplete <Int32?>]`: The percentage of task completion.
 When set to 100, the task is completed.
       - `[PlanId <String>]`: Plan ID to which the task belongs.
@@ -875,8 +878,8 @@ When set to 100, the task is completed.
 Valid values are between 0 and 10, inclusive.
 Larger values indicate lower priority.
 For example, 0 has the highest priority and 10 has the lowest priority.
-Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
-Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
+Currently, planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
+Currently, planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
       - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -985,7 +988,10 @@ Read-only.
     - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsArchived <Boolean?>]`: 
-  - `[Owner <String>]`: 
+  - `[Owner <String>]`: Use the container property instead.
+ID of the group that owns the plan.
+After it's set, this property can't be updated.
+This property doesn't return a valid group ID if the container of the plan isn't a group.
   - `[SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer- `[]`>]`: List of containers the plan is shared with.
     - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
 Optional.
@@ -1009,7 +1015,9 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 
-MYDAYTASKS <IMicrosoftGraphPlannerTask- `[]`>: .
+MYDAYTASKS <IMicrosoftGraphPlannerTask- `[]`>: Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActiveChecklistItemCount <Int32?>]`: The number of checklist items with value set to false, representing incomplete items.
@@ -1023,10 +1031,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[StatusChangedDateTime <DateTime?>]`: 
@@ -1039,7 +1046,7 @@ Read-only.
     - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
   - `[AssigneePriority <String>]`: A hint that is used to order items of this type in a list view.
-For more information, see Using order hints in Planner.
+For more information, see Using order hints in planner.
   - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BucketId <String>]`: Bucket ID to which the task belongs.
@@ -1116,19 +1123,18 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
     - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DueDateTime <DateTime?>]`: The date and time at which the task is due.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
   - `[IsArchived <Boolean?>]`: 
-  - `[IsOnMyDay <Boolean?>]`: A Boolean value that indicates whether to show this task in the MyDay view.
-true to show the task.
-Otherwise, false.
+  - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
+If true, it shows the task.
   - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
   - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
-For more information, see Using order hints in Plannern.
+For more information, see Using order hints in plannern.
   - `[PercentComplete <Int32?>]`: The percentage of task completion.
 When set to 100, the task is completed.
   - `[PlanId <String>]`: Plan ID to which the task belongs.
@@ -1137,8 +1143,8 @@ When set to 100, the task is completed.
 Valid values are between 0 and 10, inclusive.
 Larger values indicate lower priority.
 For example, 0 has the highest priority and 10 has the lowest priority.
-Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
-Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
+Currently, planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
+Currently, planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
   - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1206,10 +1212,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[StatusChangedDateTime <DateTime?>]`: 
@@ -1245,7 +1250,7 @@ Read-only.
         - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
       - `[AssigneePriority <String>]`: A hint that is used to order items of this type in a list view.
-For more information, see Using order hints in Planner.
+For more information, see Using order hints in planner.
       - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[BucketId <String>]`: Bucket ID to which the task belongs.
@@ -1322,19 +1327,18 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
         - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DueDateTime <DateTime?>]`: The date and time at which the task is due.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
       - `[IsArchived <Boolean?>]`: 
-      - `[IsOnMyDay <Boolean?>]`: A Boolean value that indicates whether to show this task in the MyDay view.
-true to show the task.
-Otherwise, false.
+      - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
+If true, it shows the task.
       - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
       - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
-For more information, see Using order hints in Plannern.
+For more information, see Using order hints in plannern.
       - `[PercentComplete <Int32?>]`: The percentage of task completion.
 When set to 100, the task is completed.
       - `[PlanId <String>]`: Plan ID to which the task belongs.
@@ -1343,8 +1347,8 @@ When set to 100, the task is completed.
 Valid values are between 0 and 10, inclusive.
 Larger values indicate lower priority.
 For example, 0 has the highest priority and 10 has the lowest priority.
-Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
-Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
+Currently, planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
+Currently, planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
       - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -1453,7 +1457,10 @@ Read-only.
     - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsArchived <Boolean?>]`: 
-  - `[Owner <String>]`: 
+  - `[Owner <String>]`: Use the container property instead.
+ID of the group that owns the plan.
+After it's set, this property can't be updated.
+This property doesn't return a valid group ID if the container of the plan isn't a group.
   - `[SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer- `[]`>]`: List of containers the plan is shared with.
     - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
 Optional.
@@ -1469,7 +1476,7 @@ Title of the plan.
 
 RECENTPLANS <IMicrosoftGraphPlannerPlan- `[]`>: Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
@@ -1480,10 +1487,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[StatusChangedDateTime <DateTime?>]`: 
@@ -1519,7 +1525,7 @@ Read-only.
         - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
       - `[AssigneePriority <String>]`: A hint that is used to order items of this type in a list view.
-For more information, see Using order hints in Planner.
+For more information, see Using order hints in planner.
       - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[BucketId <String>]`: Bucket ID to which the task belongs.
@@ -1596,19 +1602,18 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
         - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DueDateTime <DateTime?>]`: The date and time at which the task is due.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
       - `[IsArchived <Boolean?>]`: 
-      - `[IsOnMyDay <Boolean?>]`: A Boolean value that indicates whether to show this task in the MyDay view.
-true to show the task.
-Otherwise, false.
+      - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
+If true, it shows the task.
       - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
       - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
-For more information, see Using order hints in Plannern.
+For more information, see Using order hints in plannern.
       - `[PercentComplete <Int32?>]`: The percentage of task completion.
 When set to 100, the task is completed.
       - `[PlanId <String>]`: Plan ID to which the task belongs.
@@ -1617,8 +1622,8 @@ When set to 100, the task is completed.
 Valid values are between 0 and 10, inclusive.
 Larger values indicate lower priority.
 For example, 0 has the highest priority and 10 has the lowest priority.
-Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
-Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
+Currently, planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
+Currently, planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
       - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -1727,7 +1732,10 @@ Read-only.
     - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsArchived <Boolean?>]`: 
-  - `[Owner <String>]`: 
+  - `[Owner <String>]`: Use the container property instead.
+ID of the group that owns the plan.
+After it's set, this property can't be updated.
+This property doesn't return a valid group ID if the container of the plan isn't a group.
   - `[SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer- `[]`>]`: List of containers the plan is shared with.
     - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
 Optional.
@@ -1754,10 +1762,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[StatusChangedDateTime <DateTime?>]`: 
@@ -1793,7 +1800,7 @@ Read-only.
         - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
       - `[AssigneePriority <String>]`: A hint that is used to order items of this type in a list view.
-For more information, see Using order hints in Planner.
+For more information, see Using order hints in planner.
       - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[BucketId <String>]`: Bucket ID to which the task belongs.
@@ -1870,19 +1877,18 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
         - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DueDateTime <DateTime?>]`: The date and time at which the task is due.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
       - `[IsArchived <Boolean?>]`: 
-      - `[IsOnMyDay <Boolean?>]`: A Boolean value that indicates whether to show this task in the MyDay view.
-true to show the task.
-Otherwise, false.
+      - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
+If true, it shows the task.
       - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
       - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
-For more information, see Using order hints in Plannern.
+For more information, see Using order hints in plannern.
       - `[PercentComplete <Int32?>]`: The percentage of task completion.
 When set to 100, the task is completed.
       - `[PlanId <String>]`: Plan ID to which the task belongs.
@@ -1891,8 +1897,8 @@ When set to 100, the task is completed.
 Valid values are between 0 and 10, inclusive.
 Larger values indicate lower priority.
 For example, 0 has the highest priority and 10 has the lowest priority.
-Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
-Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
+Currently, planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
+Currently, planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
       - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -2001,7 +2007,10 @@ Read-only.
     - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsArchived <Boolean?>]`: 
-  - `[Owner <String>]`: 
+  - `[Owner <String>]`: Use the container property instead.
+ID of the group that owns the plan.
+After it's set, this property can't be updated.
+This property doesn't return a valid group ID if the container of the plan isn't a group.
   - `[SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer- `[]`>]`: List of containers the plan is shared with.
     - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
 Optional.
@@ -2031,10 +2040,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[StatusChangedDateTime <DateTime?>]`: 
@@ -2047,7 +2055,7 @@ Read-only.
     - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
   - `[AssigneePriority <String>]`: A hint that is used to order items of this type in a list view.
-For more information, see Using order hints in Planner.
+For more information, see Using order hints in planner.
   - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BucketId <String>]`: Bucket ID to which the task belongs.
@@ -2124,19 +2132,18 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
     - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DueDateTime <DateTime?>]`: The date and time at which the task is due.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
   - `[IsArchived <Boolean?>]`: 
-  - `[IsOnMyDay <Boolean?>]`: A Boolean value that indicates whether to show this task in the MyDay view.
-true to show the task.
-Otherwise, false.
+  - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
+If true, it shows the task.
   - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
   - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
-For more information, see Using order hints in Plannern.
+For more information, see Using order hints in plannern.
   - `[PercentComplete <Int32?>]`: The percentage of task completion.
 When set to 100, the task is completed.
   - `[PlanId <String>]`: Plan ID to which the task belongs.
@@ -2145,8 +2152,8 @@ When set to 100, the task is completed.
 Valid values are between 0 and 10, inclusive.
 Larger values indicate lower priority.
 For example, 0 has the highest priority and 10 has the lowest priority.
-Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
-Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
+Currently, planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
+Currently, planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
   - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -2206,8 +2213,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner)
-
-[https://learn.microsoft.com/graph/api/planneruser-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planneruser-update?view=graph-rest-1.0)
 
 
 

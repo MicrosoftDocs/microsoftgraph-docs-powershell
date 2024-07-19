@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgBetaUserOnlineMeetingRegistrationRegistrant
 
 ## SYNOPSIS
-Create new navigation property to registrants for users
+Enroll a meeting registrant in an online meeting that has meeting registration enabled on behalf of the registrant.
+This operation has two scenarios: In either scenario, the registrant will receive an email notification that contains their registration information.
 
 ## SYNTAX
 
@@ -41,7 +42,66 @@ New-MgBetaUserOnlineMeetingRegistrationRegistrant -InputObject <ICloudCommunicat
 ```
 
 ## DESCRIPTION
-Create new navigation property to registrants for users
+Enroll a meeting registrant in an online meeting that has meeting registration enabled on behalf of the registrant.
+This operation has two scenarios: In either scenario, the registrant will receive an email notification that contains their registration information.
+
+## EXAMPLES
+### Example 1: Enroll a signed-in registrant
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.meetingRegistrant"
+	firstName = "Frederick"
+	lastName = "Cormier"
+	email = "frederick.cormier@contoso.com"
+	customQuestionAnswers = @(
+		@{
+			questionId = "MSM5YjlmM2Q4ZS03ZmVkLTRmN3gwMDIw94MDAyMF9hX3gwMDIwX2RldmU="
+			value = "No"
+		}
+		@{
+			questionId = "MSM5M2E2OWQ1Ni1jZTc4LTQDAwMjBfZGlkX3gwMDIwX3lvdV94MDAyMF8="
+			value = "Internet"
+		}
+	)
+}
+
+New-MgBetaUserOnlineMeetingRegistrationRegistrant -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+
+```
+This example will enroll a signed-in registrant
+
+### Example 2: Enroll an anonymous registrant
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.meetingRegistrant"
+	firstName = "Lisa"
+	lastName = "Adkins"
+	email = "lisa.adkins@contoso.com"
+	customQuestionAnswers = @(
+		@{
+			questionId = "MSM5YjlmM2Q4ZS03ZmVkLTRmN3gwMDIw94MDAyMF9hX3gwMDIwX2RldmU="
+			value = "No"
+		}
+		@{
+			questionId = "MSM5M2E2OWQ1Ni1jZTc4LTQDAwMjBfZGlkX3gwMDIwX3lvdV94MDAyMF8="
+			value = "Internet"
+		}
+	)
+}
+
+New-MgBetaUserOnlineMeetingRegistrationRegistrant -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+
+```
+This example will enroll an anonymous registrant
+
 
 ## PARAMETERS
 
@@ -279,6 +339,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingregistrationregistrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingregistrationregistrant)
 
+[https://learn.microsoft.com/graph/api/meetingregistration-post-registrants?view=graph-rest-beta](https://learn.microsoft.com/graph/api/meetingregistration-post-registrants?view=graph-rest-beta)
 
 
 

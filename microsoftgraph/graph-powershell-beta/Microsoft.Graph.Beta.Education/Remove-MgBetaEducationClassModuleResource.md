@@ -35,6 +35,19 @@ Remove-MgBetaEducationClassModuleResource -InputObject <IEducationIdentity> [-If
 Delete a specific educationModuleResource attached to a module.
 Only teachers in the class can remove a resource.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Remove-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
+
+```
+This example shows how to use the Remove-MgBetaEducationClassModuleResource Cmdlet.
+
+
 ## PARAMETERS
 
 ### -EducationClassId
@@ -244,8 +257,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmoduleresource)
 
-[https://learn.microsoft.com/graph/api/educationmoduleresource-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmoduleresource-delete?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/educationmoduleresource-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationmoduleresource-delete?view=graph-rest-beta)
 
 
 

@@ -43,6 +43,19 @@ Get a browserSiteList that contains browserSite and browserSharedCookie resource
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-get-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Get-MgBetaAdminEdgeInternetExplorerModeSiteList
+
+```
+This example shows how to use the Get-MgBetaAdminEdgeInternetExplorerModeSiteList Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -435,10 +448,9 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelist)
 
-[https://learn.microsoft.com/graph/api/browsersitelist-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/browsersitelist-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersitelist-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/internetexplorermode-list-sitelists?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/internetexplorermode-list-sitelists?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/internetexplorermode-list-sitelists?view=graph-rest-beta](https://learn.microsoft.com/graph/api/internetexplorermode-list-sitelists?view=graph-rest-beta)
 
 
 

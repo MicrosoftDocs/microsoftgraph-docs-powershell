@@ -35,6 +35,39 @@ Get the remote action status reports, including data such as the Cloud PC ID, Cl
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getactionstatusreports-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+$params = @{
+	filter = "ActionState eq 'failed'"
+	select = @(
+	"Id"
+"CloudPcDeviceDisplayName"
+"BulkActionId"
+"BulkActionDisplayName"
+"CloudPcId"
+"InitiatedByUserPrincipalName"
+"DeviceOwnerUserPrincipalName"
+"Action"
+"ActionState"
+"RequestDateTime"
+"LastUpdatedDateTime"
+"ActionParameters"
+)
+skip = 0
+top = 50
+}
+
+Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -309,8 +342,7 @@ BODYPARAMETER `<IPathsXvswb4DevicemanagementVirtualendpointReportsMicrosoftGraph
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportactionstatusreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportactionstatusreport)
 
-[https://learn.microsoft.com/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-beta)
 
 
 

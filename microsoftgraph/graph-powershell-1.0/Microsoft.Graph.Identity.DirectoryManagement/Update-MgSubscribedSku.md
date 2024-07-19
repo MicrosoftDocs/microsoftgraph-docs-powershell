@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in subscribedSkus
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaSubscribedSku?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -51,8 +48,6 @@ Update-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity>
 
 ## DESCRIPTION
 Update entity in subscribedSkus
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -323,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionIds
-.
+A list of all subscription IDs associated with this SKU.
 
 ```yaml
 Type: String[]
@@ -417,12 +412,14 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
   - `[SkuId <String>]`: The unique identifier (GUID) for the service SKU.
   - `[SkuPartNumber <String>]`: The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'.
 To get a list of commercial subscriptions that an organization has acquired, see List subscribedSkus.
-  - `[SubscriptionIds <String- `[]`>]`: 
+  - `[SubscriptionIds <String- `[]`>]`: A list of all subscription IDs associated with this SKU.
 
 INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -466,6 +463,8 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgsubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgsubscribedsku)
+
+
 
 
 

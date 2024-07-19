@@ -38,8 +38,6 @@ Get-MgBetaAccessReviewInstanceDecision -InputObject <IIdentityGovernanceIdentity
 ## DESCRIPTION
 The collection of decisions for this access review.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AccessReviewDecisionId
@@ -420,7 +418,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewinstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewinstancedecision)
 
-[https://learn.microsoft.com/graph/api/accessreview-listdecisions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreview-listdecisions?view=graph-rest-1.0)
+
+
+
 
 
 

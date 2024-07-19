@@ -8,7 +8,10 @@ schema: 2.0.0
 # Set-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContent
 
 ## SYNOPSIS
-Update content for the navigation property driveItem in sites
+The content stream, if the item represents a file.
+The content property will have a potentially breaking change in behavior in the future.
+It will stream content directly instead of redirecting.
+To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgSiteAnalyticItemActivityStatActivityDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Set-MgSiteAnalyticItemActivityStatActivityDriveItemContent?view=graph-powershell-1.0)
@@ -31,7 +34,10 @@ Set-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContent -InputObject <ISi
 ```
 
 ## DESCRIPTION
-Update content for the navigation property driveItem in sites
+The content stream, if the item represents a file.
+The content property will have a potentially breaking change in behavior in the future.
+It will stream content directly instead of redirecting.
+To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
 ## PARAMETERS
 

@@ -37,6 +37,7 @@ Update an existing entitlementManagementSettings object to change one or more of
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
@@ -44,10 +45,9 @@ $params = @{
 }
 
 Update-MgEntitlementManagementSetting -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgEntitlementManagementSetting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

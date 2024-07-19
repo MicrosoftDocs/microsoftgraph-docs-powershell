@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod
 
 ## SYNOPSIS
-Retrieve a user's single Microsoft Authenticator Passwordless Phone Sign-in method object.
+Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod -InputObjec
 ```
 
 ## DESCRIPTION
-Retrieve a user's single Microsoft Authenticator Passwordless Phone Sign-in method object.
+Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod Cmdlet
@@ -367,6 +367,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -386,6 +387,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -398,10 +400,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationpasswordlessmicrosoftauthenticatormethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationpasswordlessmicrosoftauthenticatormethod)
-
-[https://learn.microsoft.com/graph/api/passwordlessmicrosoftauthenticatorauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/passwordlessmicrosoftauthenticatorauthenticationmethod-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/passwordlessmicrosoftauthenticatorauthenticationmethod-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/passwordlessmicrosoftauthenticatorauthenticationmethod-list?view=graph-rest-1.0)
 
 
 

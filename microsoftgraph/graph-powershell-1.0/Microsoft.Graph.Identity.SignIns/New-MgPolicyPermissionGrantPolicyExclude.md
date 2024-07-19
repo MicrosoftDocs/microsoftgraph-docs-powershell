@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgPolicyPermissionGrantPolicyExclude
 
 ## SYNOPSIS
-Add conditions under which a permission grant event is *excluded* in a permission grant policy.
-You do this by adding a permissionGrantConditionSet to the excludes collection of a  permissionGrantPolicy.
+Create new navigation property to excludes for policies
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
@@ -51,8 +50,7 @@ New-MgPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Add conditions under which a permission grant event is *excluded* in a permission grant policy.
-You do this by adding a permissionGrantConditionSet to the excludes collection of a  permissionGrantPolicy.
+Create new navigation property to excludes for policies
 
 ## EXAMPLES
 ### Example 1: Create a permission grant policy exclude
@@ -409,6 +407,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
+  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
@@ -420,6 +419,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
   - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
@@ -434,6 +434,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -464,8 +465,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicyexclude](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicyexclude)
-
-[https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-excludes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-excludes?view=graph-rest-1.0)
 
 
 

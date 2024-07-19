@@ -52,13 +52,40 @@ Update the properties of a schema for an externalConnection.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
 
-Get-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId
-```
-This example shows how to use the Update-MgBetaBetaExternalConnectionSchema Cmdlet.
+$params = @{
+	baseType = "microsoft.graph.externalItem"
+	properties = @(
+		@{
+			name = "ticketTitle"
+			type = "string"
+			isSearchable = "true"
+			isRetrievable = "true"
+			labels = @(
+			"title"
+		)
+	}
+	@{
+		name = "priority"
+		type = "string"
+		isQueryable = "true"
+		isRetrievable = "true"
+		isSearchable = "false"
+	}
+	@{
+		name = "assignee"
+		type = "string"
+		isRetrievable = "true"
+	}
+)
+}
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Update-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaExternalConnectionSchema Cmdlet.
 
 
 ## PARAMETERS
@@ -327,6 +354,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -376,7 +405,7 @@ Required.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema)
 
-[https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Create a new iosLobApp object.
+Create a new windowsAppX object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -34,7 +34,7 @@ New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp>
 ```
 
 ## DESCRIPTION
-Create a new iosLobApp object.
+Create a new windowsAppX object.
 
 ## PARAMETERS
 
@@ -435,7 +435,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-ioslobapp-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-ioslobapp-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-windowsappx-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-windowsappx-create?view=graph-rest-1.0)
 
 
 

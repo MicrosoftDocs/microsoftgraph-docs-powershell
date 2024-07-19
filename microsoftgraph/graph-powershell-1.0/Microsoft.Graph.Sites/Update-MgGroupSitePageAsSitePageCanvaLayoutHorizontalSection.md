@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Columns
-.
+The set of vertical columns in this section.
 To construct, see NOTES section for COLUMNS properties and create a hash table.
 
 ```yaml
@@ -318,23 +318,29 @@ BODYPARAMETER `<IMicrosoftGraphHorizontalSection>`: horizontalSection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Columns <IMicrosoftGraphHorizontalSectionColumn- `[]`>]`: 
+  - `[Columns <IMicrosoftGraphHorizontalSectionColumn- `[]`>]`: The set of vertical columns in this section.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: 
+    - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The collection of WebParts in this column.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Width <Int32?>]`: 
+    - `[Width <Int32?>]`: Width of the column.
+A horizontal section is divided into 12 grids.
+A column should have a value of 1-12 to represent its range spans.
+For example, there can be two columns both have a width of 6 in a section.
   - `[Emphasis <String>]`: sectionEmphasisType
   - `[Layout <String>]`: horizontalSectionLayoutType
 
-COLUMNS <IMicrosoftGraphHorizontalSectionColumn- `[]`>: .
+COLUMNS <IMicrosoftGraphHorizontalSectionColumn- `[]`>: The set of vertical columns in this section.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: 
+  - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The collection of WebParts in this column.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Width <Int32?>]`: 
+  - `[Width <Int32?>]`: Width of the column.
+A horizontal section is divided into 12 grids.
+A column should have a value of 1-12 to represent its range spans.
+For example, there can be two columns both have a width of 6 in a section.
 
 INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
@@ -378,6 +384,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

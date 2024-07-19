@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgBetaUserContactFolder
 
 ## SYNOPSIS
-Get a contact folder by using the contact folder ID.
-There are two scenarios where an app can get another user's contact folder:
+The user's contacts folders.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolder?view=graph-powershell-1.0)
@@ -19,9 +20,9 @@ There are two scenarios where an app can get another user's contact folder:
 ### List (Default)
 ```
 Get-MgBetaUserContactFolder -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
@@ -39,8 +40,9 @@ Get-MgBetaUserContactFolder -InputObject <IPersonalContactsIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Get a contact folder by using the contact folder ID.
-There are two scenarios where an app can get another user's contact folder:
+The user's contacts folders.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -225,6 +227,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -311,10 +328,6 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolder)
-
-[https://learn.microsoft.com/graph/api/contactfolder-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactfolder-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/user-list-contactfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-contactfolders?view=graph-rest-1.0)
 
 
 

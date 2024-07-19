@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgPrintShareJob
 
 ## SYNOPSIS
-Create new navigation property to jobs for print
+Create a new printJob for a printerShare.
+Also creates a new printDocument associated with the printJob.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareJob?view=graph-powershell-beta)
@@ -50,7 +51,8 @@ New-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Create new navigation property to jobs for print
+Create a new printJob for a printerShare.
+Also creates a new printDocument associated with the printJob.
 
 ## PARAMETERS
 
@@ -381,7 +383,7 @@ Read-only.
     - `[DuplexMode <String>]`: printDuplexMode
     - `[FeedOrientation <String>]`: printerFeedOrientation
     - `[Finishings <String- `[]`>]`: Finishing processes to use when printing.
-    - `[FitPdfToPage <Boolean?>]`: 
+    - `[FitPdfToPage <Boolean?>]`: True to fit each page of a PDF document to a physical sheet of media; false to let the printer decide how to lay out impressions.
     - `[InputBin <String>]`: The input bin (tray) to use when printing.
 See the printer's capabilities for a list of supported input bins.
     - `[Margin <IMicrosoftGraphPrintMargin>]`: printMargin
@@ -392,23 +394,27 @@ See the printer's capabilities for a list of supported input bins.
       - `[Top <Int32?>]`: The margin in microns from the top edge.
     - `[MediaSize <String>]`: The media size to use when printing.
 Supports standard size names for ISO and ANSI media sizes.
-    - `[MediaType <String>]`: 
+Valid values listed in the printerCapabilities topic.
+    - `[MediaType <String>]`: The default media (such as paper) type to print the document on.
     - `[MultipageLayout <String>]`: printMultipageLayout
     - `[Orientation <String>]`: printOrientation
-    - `[OutputBin <String>]`: 
-    - `[PageRanges <IMicrosoftGraphIntegerRange- `[]`>]`: 
+    - `[OutputBin <String>]`: The output bin to place completed prints into.
+See the printer's capabilities for a list of supported output bins.
+    - `[PageRanges <IMicrosoftGraphIntegerRange- `[]`>]`: The page ranges to print.
+Read-only.
       - `[End <Int64?>]`: The inclusive upper bound of the integer range.
       - `[Start <Int64?>]`: The inclusive lower bound of the integer range.
-    - `[PagesPerSheet <Int32?>]`: 
+    - `[PagesPerSheet <Int32?>]`: The number of document pages to print on each sheet.
     - `[Quality <String>]`: printQuality
     - `[Scaling <String>]`: printScaling
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
-    - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
 Read-only.
@@ -476,7 +482,7 @@ Read-only.
   - `[DuplexMode <String>]`: printDuplexMode
   - `[FeedOrientation <String>]`: printerFeedOrientation
   - `[Finishings <String- `[]`>]`: Finishing processes to use when printing.
-  - `[FitPdfToPage <Boolean?>]`: 
+  - `[FitPdfToPage <Boolean?>]`: True to fit each page of a PDF document to a physical sheet of media; false to let the printer decide how to lay out impressions.
   - `[InputBin <String>]`: The input bin (tray) to use when printing.
 See the printer's capabilities for a list of supported input bins.
   - `[Margin <IMicrosoftGraphPrintMargin>]`: printMargin
@@ -487,14 +493,17 @@ See the printer's capabilities for a list of supported input bins.
     - `[Top <Int32?>]`: The margin in microns from the top edge.
   - `[MediaSize <String>]`: The media size to use when printing.
 Supports standard size names for ISO and ANSI media sizes.
-  - `[MediaType <String>]`: 
+Valid values listed in the printerCapabilities topic.
+  - `[MediaType <String>]`: The default media (such as paper) type to print the document on.
   - `[MultipageLayout <String>]`: printMultipageLayout
   - `[Orientation <String>]`: printOrientation
-  - `[OutputBin <String>]`: 
-  - `[PageRanges <IMicrosoftGraphIntegerRange- `[]`>]`: 
+  - `[OutputBin <String>]`: The output bin to place completed prints into.
+See the printer's capabilities for a list of supported output bins.
+  - `[PageRanges <IMicrosoftGraphIntegerRange- `[]`>]`: The page ranges to print.
+Read-only.
     - `[End <Int64?>]`: The inclusive upper bound of the integer range.
     - `[Start <Int64?>]`: The inclusive lower bound of the integer range.
-  - `[PagesPerSheet <Int32?>]`: 
+  - `[PagesPerSheet <Int32?>]`: The number of document pages to print on each sheet.
   - `[Quality <String>]`: printQuality
   - `[Scaling <String>]`: printScaling
 
@@ -502,9 +511,10 @@ CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
-  - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+  - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 DOCUMENTS <IMicrosoftGraphPrintDocument- `[]`>: .
@@ -577,6 +587,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejob)
+
+[https://learn.microsoft.com/graph/api/printershare-post-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-post-jobs?view=graph-rest-1.0)
 
 
 

@@ -32,6 +32,19 @@ Set the status of the notification associated with the specified alertRecord on 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrecord-setportalnotificationassent-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+Set-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent -AlertRecordId $alertRecordId
+
+```
+This example shows how to use the Set-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AlertRecordId
@@ -209,6 +222,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
   - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+  - `[HardwareConfigurationId <String>]`: The unique identifier of hardwareConfiguration
   - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
@@ -231,8 +245,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent)
 
-[https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-setportalnotificationassent?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-setportalnotificationassent?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-setportalnotificationassent?view=graph-rest-beta](https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-setportalnotificationassent?view=graph-rest-beta)
 
 
 

@@ -479,9 +479,6 @@ Locale: en-US
 ### [New-MgBetaUserTodoListTaskExtension](New-MgBetaUserTodoListTaskExtension.md)
 {{ Fill in the Description }}
 
-### [New-MgBetaUserTodoListTaskLinkedResource](New-MgBetaUserTodoListTaskLinkedResource.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaUser](Remove-MgBetaUser.md)
 {{ Fill in the Description }}
 
@@ -542,6 +539,9 @@ Locale: en-US
 ### [Remove-MgBetaUserPhoto](Remove-MgBetaUserPhoto.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserPhotoContent](Remove-MgBetaUserPhotoContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserSetting](Remove-MgBetaUserSetting.md)
 {{ Fill in the Description }}
 
@@ -584,7 +584,13 @@ Locale: en-US
 ### [Remove-MgBetaUserTodoListTaskAttachment](Remove-MgBetaUserTodoListTaskAttachment.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserTodoListTaskAttachmentContent](Remove-MgBetaUserTodoListTaskAttachmentContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserTodoListTaskAttachmentSession](Remove-MgBetaUserTodoListTaskAttachmentSession.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserTodoListTaskAttachmentSessionContent](Remove-MgBetaUserTodoListTaskAttachmentSessionContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserTodoListTaskChecklistItem](Remove-MgBetaUserTodoListTaskChecklistItem.md)

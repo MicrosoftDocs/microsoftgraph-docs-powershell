@@ -58,6 +58,7 @@ Note: You can also start a new thread in an existing conversation.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
@@ -81,10 +82,9 @@ $params = @{
 }
 
 New-MgGroupThread -GroupId $groupId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgGroupThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

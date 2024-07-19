@@ -8,10 +8,10 @@ schema: 2.0.0
 # Remove-MgDirectoryDeletedItem
 
 ## SYNOPSIS
-Delete navigation property deletedItems for directory
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
+Permanently delete a recently deleted application, group, servicePrincipal, or user object from deleted items.
+After an item is permanently deleted, it cannot be restored.
+Administrative units cannot be permanently deleted by using the deletedItems API.
+Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 
 ## SYNTAX
 
@@ -30,9 +30,10 @@ Remove-MgDirectoryDeletedItem -InputObject <IIdentityDirectoryManagementIdentity
 ```
 
 ## DESCRIPTION
-Delete navigation property deletedItems for directory
-
-## EXAMPLES
+Permanently delete a recently deleted application, group, servicePrincipal, or user object from deleted items.
+After an item is permanently deleted, it cannot be restored.
+Administrative units cannot be permanently deleted by using the deletedItems API.
+Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 
 ## PARAMETERS
 
@@ -193,6 +194,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -220,6 +223,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorydeleteditem](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorydeleteditem)
 
 [https://learn.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-1.0)
+
 
 
 

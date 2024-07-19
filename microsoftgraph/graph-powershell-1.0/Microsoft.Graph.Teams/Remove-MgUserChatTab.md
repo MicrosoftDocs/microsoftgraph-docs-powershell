@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserChatTab
 
 ## SYNOPSIS
-Remove (unpin) a tab from the specified chat.
+Delete navigation property tabs for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatTab?view=graph-powershell-beta)
@@ -30,9 +30,7 @@ Remove-MgUserChatTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Respons
 ```
 
 ## DESCRIPTION
-Remove (unpin) a tab from the specified chat.
-
-## EXAMPLES
+Delete navigation property tabs for users
 
 ## PARAMETERS
 
@@ -258,7 +256,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchattab)
 
-[https://learn.microsoft.com/graph/api/chat-delete-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-delete-tabs?view=graph-rest-1.0)
+
 
 
 

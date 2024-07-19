@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaGroupMemberAsUser
 
 ## SYNOPSIS
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+Get a list of the group's direct members.
+A group can have users, contacts, devices, service principals, and other groups as members.
+This operation isn't transitive.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberAsUser](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberAsUser?view=graph-powershell-1.0)
@@ -38,7 +40,23 @@ Get-MgBetaGroupMemberAsUser -InputObject <IGroupsIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+Get a list of the group's direct members.
+A group can have users, contacts, devices, service principals, and other groups as members.
+This operation isn't transitive.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Get-MgBetaGroupMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Search '"displayName:Pr"' -Property "displayName,id"  -ConsistencyLevel eventual 
+
+
+```
+This example shows how to use the Get-MgBetaGroupMemberAsUser Cmdlet.
+
 
 ## PARAMETERS
 
@@ -368,6 +386,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberasuser)
 
+[https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-beta)
 
 
 

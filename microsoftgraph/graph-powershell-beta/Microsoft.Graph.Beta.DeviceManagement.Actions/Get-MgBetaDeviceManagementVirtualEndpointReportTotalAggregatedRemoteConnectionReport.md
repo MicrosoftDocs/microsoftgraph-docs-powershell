@@ -35,6 +35,34 @@ Get the total aggregated remote connection usage of a Cloud PC during a given ti
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-gettotalaggregatedremoteconnectionreports-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+$params = @{
+	top = 25
+	skip = 0
+	filter = "(TotalUsageInHour ge 40 and TotalUsageInHour le 80)"
+	select = @(
+	"CloudPcId"
+"ManagedDeviceName"
+"UserPrincipalName"
+"TotalUsageInHour"
+"LastActiveTime"
+"PcType"
+"CreatedDate"
+)
+}
+
+Get-MgBetaDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -309,8 +337,7 @@ BODYPARAMETER `<IPaths6MqafvDevicemanagementVirtualendpointReportsMicrosoftGraph
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreporttotalaggregatedremoteconnectionreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreporttotalaggregatedremoteconnectionreport)
 
-[https://learn.microsoft.com/graph/api/cloudpcreports-gettotalaggregatedremoteconnectionreports?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcreports-gettotalaggregatedremoteconnectionreports?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/cloudpcreports-gettotalaggregatedremoteconnectionreports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-gettotalaggregatedremoteconnectionreports?view=graph-rest-beta)
 
 
 

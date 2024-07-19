@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgBetaCommunicationOnlineMeetingRecording
 
 ## SYNOPSIS
-Delete navigation property recordings for communications
+The content stream of the recording of a Teams live event.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationOnlineMeetingRecording?view=graph-powershell-1.0)
@@ -17,7 +18,21 @@ Delete navigation property recordings for communications
 
 ### Delete (Default)
 ```
-Remove-MgBetaCommunicationOnlineMeetingRecording -CallRecordingId <String> -OnlineMeetingId <String>
+Remove-MgBetaCommunicationOnlineMeetingRecording -OnlineMeetingId <String> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete1
+```
+Remove-MgBetaCommunicationOnlineMeetingRecording -OnlineMeetingId <String> -CallRecordingId <String>
+ [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgBetaCommunicationOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,7 +45,8 @@ Remove-MgBetaCommunicationOnlineMeetingRecording -InputObject <ICloudCommunicati
 ```
 
 ## DESCRIPTION
-Delete navigation property recordings for communications
+The content stream of the recording of a Teams live event.
+Read-only.
 
 ## PARAMETERS
 
@@ -39,7 +55,7 @@ The unique identifier of callRecording
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -85,7 +101,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -100,7 +116,7 @@ The unique identifier of onlineMeeting
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True

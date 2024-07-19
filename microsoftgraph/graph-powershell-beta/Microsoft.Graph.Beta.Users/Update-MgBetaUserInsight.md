@@ -340,7 +340,8 @@ See the Type property values section, for supported types.
 TRENDING <IMicrosoftGraphTrending- `[]`>: Access this property from the derived type itemInsights.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Resource <IMicrosoftGraphEntity>]`: entity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDriveListItem
 
 ## SYNOPSIS
-Removes an item from a \[list\]\[\].
+Delete navigation property items for drives
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveListItem?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDriveListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-Respo
 ```
 
 ## DESCRIPTION
-Removes an item from a \[list\]\[\].
+Delete navigation property items for drives
 
 ## PARAMETERS
 
@@ -232,7 +232,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelistitem)
 
-[https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-1.0)
 
 
 

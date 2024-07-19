@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+In PIM for groups, retrieve the requests for membership or ownership eligibilities for the calling principal to groups that are governed by PIM.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestByCurrentUser?view=graph-powershell-1.0)
@@ -33,7 +33,20 @@ Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleReq
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+In PIM for groups, retrieve the requests for membership or ownership eligibilities for the calling principal to groups that are governed by PIM.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 
@@ -354,6 +367,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceprivilegedaccessgroupeligibilityschedulerequestbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceprivilegedaccessgroupeligibilityschedulerequestbycurrentuser)
 
+[https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedulerequest-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedulerequest-filterbycurrentuser?view=graph-rest-beta)
 
 
 

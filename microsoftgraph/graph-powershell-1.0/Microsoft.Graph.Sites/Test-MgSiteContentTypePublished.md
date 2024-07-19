@@ -8,7 +8,7 @@ schema: 2.0.0
 # Test-MgSiteContentTypePublished
 
 ## SYNOPSIS
-Invoke function isPublished
+Check the publishing status of a contentType in a content type hub site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaSiteContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Sites/Test-MgBetaSiteContentTypePublished?view=graph-powershell-beta)
@@ -28,16 +28,20 @@ Test-MgSiteContentTypePublished -InputObject <ISitesIdentity> [-ResponseHeadersV
 ```
 
 ## DESCRIPTION
-Invoke function isPublished
+Check the publishing status of a contentType in a content type hub site.
 
 ## EXAMPLES
-### Example 1: Using the Test-MgSiteContentTypePublished Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Sites
+
 Test-MgSiteContentTypePublished -SiteId $siteId -ContentTypeId $contentTypeId
+
 ```
 This example shows how to use the Test-MgSiteContentTypePublished Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -190,12 +194,15 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitecontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitecontenttypepublished)
+
+[https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
 
 
 

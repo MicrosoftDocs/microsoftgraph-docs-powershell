@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserMessageMention
 
 ## SYNOPSIS
-Delete a message in the specified user's mailbox, or delete a relationship of the message.
-For example, you can delete a specific @-mention of the specified user in the message.
+Delete navigation property mentions for users
 
 ## SYNTAX
 
@@ -28,8 +27,7 @@ Remove-MgBetaUserMessageMention -InputObject <IMailIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete a message in the specified user's mailbox, or delete a relationship of the message.
-For example, you can delete a specific @-mention of the specified user in the message.
+Delete navigation property mentions for users
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserMessageMention Cmdlet
@@ -241,8 +239,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagemention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagemention)
-
-[https://learn.microsoft.com/graph/api/message-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserSettingRegionalAndLanguageSetting
 
 ## SYNOPSIS
-Update some or all of the properties of a regionalAndLanguageSettings object.
+Update the navigation property regionalAndLanguageSettings in users
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update some or all of the properties of a regionalAndLanguageSettings object.
+Update the navigation property regionalAndLanguageSettings in users
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet
@@ -489,8 +489,6 @@ Read only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting)
-
-[https://learn.microsoft.com/graph/api/regionalandlanguagesettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/regionalandlanguagesettings-update?view=graph-rest-1.0)
 
 
 

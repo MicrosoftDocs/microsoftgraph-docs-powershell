@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataInboundFlowYear
 
 ## SYNOPSIS
-The year that the data brought in via this flow applies to.
+The year associated to the data that this flow brings in.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaExternalIndustryDataInboundFlowYear -InputObject <ISearchIdentity> [-E
 ```
 
 ## DESCRIPTION
-The year that the data brought in via this flow applies to.
+The year associated to the data that this flow brings in.
 
 ## PARAMETERS
 
@@ -168,6 +168,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup

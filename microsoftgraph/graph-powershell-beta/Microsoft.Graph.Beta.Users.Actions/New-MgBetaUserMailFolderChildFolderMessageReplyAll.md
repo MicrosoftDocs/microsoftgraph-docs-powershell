@@ -64,20 +64,6 @@ Alternatively, reply-all to a message in a single action.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-createreplyall-permissions.md)]
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Users.Actions
-
-# A UPN can also be used as -UserId.
-New-MgBetaUserMessageReplyAll -UserId $userId -MessageId $messageId
-```
-This example shows how to use the New-MgBetaUserMailFolderChildFolderMessageReplyAll Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -316,8 +302,11 @@ BODYPARAMETER `<IPathsKne03XUsersUserIdMailfoldersMailfolderIdChildfoldersMailfo
   - `[Comment <String>]`: 
   - `[Message <IMicrosoftGraphMessage>]`: message
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Categories <String- `[]`>]`: 
-    - `[ChangeKey <String>]`: 
+    - `[Categories <String- `[]`>]`: The categories associated with the item.
+    - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -487,8 +476,11 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 MESSAGE `<IMicrosoftGraphMessage>`: message
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -617,7 +609,9 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfolderchildfoldermessagereplyall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfolderchildfoldermessagereplyall)
 
-[https://learn.microsoft.com/graph/api/message-createreplyall?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-createreplyall?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/message-createreplyall?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-createreplyall?view=graph-rest-beta)
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListItem
 
 ## SYNOPSIS
-Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
+Returns the metadata for an item in a list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItem?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
+Returns the metadata for an item in a list.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -47,7 +47,7 @@ Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(select=Name,Color,Quantity)" 
+Get-MgSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(`$select=Name,Color,Quantity)" 
 
 ```
 This example shows how to use the Get-MgSiteListItem Cmdlet.
@@ -370,6 +370,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

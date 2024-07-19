@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgRecentDrive
 
 ## SYNOPSIS
-Invoke function recent
+List a set of items that have been recently used by the signed in user.This collection includes items that are in the user's drive and items they have access to from other drives.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRecentDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaRecentDrive?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Invoke-MgRecentDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Invoke function recent
+List a set of items that have been recently used by the signed in user.This collection includes items that are in the user's drive and items they have access to from other drives.
 
 ## PARAMETERS
 
@@ -277,6 +277,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgrecentdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgrecentdrive)
+
+[https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-1.0)
 
 
 

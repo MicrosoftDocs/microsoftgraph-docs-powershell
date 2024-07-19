@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Create a new windows10CompliancePolicy object.
+Create a new windows10MobileCompliancePolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter <IMicrosoftGraphDevi
 ```
 
 ## DESCRIPTION
-Create a new windows10CompliancePolicy object.
+Create a new windows10MobileCompliancePolicy object.
 
 ## PARAMETERS
 
@@ -537,7 +537,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10compliancepolicy-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10compliancepolicy-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-create?view=graph-rest-1.0)
 
 
 

@@ -589,7 +589,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Description <String>]`: Description of the attack simulation and training campaign payload.
   - `[Detail <IMicrosoftGraphPayloadDetail>]`: payloadDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: Payload coachmark details.
+    - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: 
       - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Length <Int32?>]`: Length of coachmark.
@@ -633,7 +633,7 @@ This property is read-only.
 
 DETAIL `<IMicrosoftGraphPayloadDetail>`: payloadDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: Payload coachmark details.
+  - `[Coachmarks <IMicrosoftGraphPayloadCoachmark- `[]`>]`: 
     - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Length <Int32?>]`: Length of coachmark.
@@ -699,6 +699,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -709,6 +710,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation

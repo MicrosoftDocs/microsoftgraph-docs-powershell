@@ -491,7 +491,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension)
 
-[https://learn.microsoft.com/graph/api/customaccesspackageworkflowextension-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customaccesspackageworkflowextension-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/customaccesspackageworkflowextension-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customaccesspackageworkflowextension-update?view=graph-rest-beta)
 
 
 

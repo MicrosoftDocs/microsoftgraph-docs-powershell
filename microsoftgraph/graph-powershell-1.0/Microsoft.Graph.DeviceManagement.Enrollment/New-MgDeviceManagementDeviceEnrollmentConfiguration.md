@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object.
+Create a new deviceEnrollmentPlatformRestrictionsConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ New-MgDeviceManagementDeviceEnrollmentConfiguration
 ```
 
 ## DESCRIPTION
-Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object.
+Create a new deviceEnrollmentPlatformRestrictionsConfiguration object.
 
 ## PARAMETERS
 
@@ -309,7 +309,7 @@ Users are subject only to the configuration with the lowest priority value.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create?view=graph-rest-1.0)
 
 
 

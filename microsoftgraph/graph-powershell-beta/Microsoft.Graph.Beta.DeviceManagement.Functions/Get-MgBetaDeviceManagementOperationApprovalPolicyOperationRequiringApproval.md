@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementOperationApprovalPolicyOperationRequiringApproval
 
 ## SYNOPSIS
-Invoke function getOperationsRequiringApproval
+Invoke function retrieveOperationsRequiringApproval
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgBetaDeviceManagementOperationApprovalPolicyOperationRequiringApproval [-Co
 ```
 
 ## DESCRIPTION
-Invoke function getOperationsRequiringApproval
+Invoke function retrieveOperationsRequiringApproval
 
 ## PARAMETERS
 

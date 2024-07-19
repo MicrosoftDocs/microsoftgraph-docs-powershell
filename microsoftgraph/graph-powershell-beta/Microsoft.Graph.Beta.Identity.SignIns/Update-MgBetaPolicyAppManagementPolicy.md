@@ -51,6 +51,23 @@ Update-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update an appManagementPolicy object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	isEnabled = $false
+}
+
+Update-MgBetaPolicyAppManagementPolicy -AppManagementPolicyId $appManagementPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyAppManagementPolicy Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -345,14 +362,20 @@ Always null when the object hasn't been deleted.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
       - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that point to the certificateBasedApplicationConfiguration that contains the collection of allowed root and intermediate certificate authorities.
-      - `[MaxLifetime <TimeSpan?>]`: 
+      - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
+Defined in ISO 8601 format for Durations.
+For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restrictionType is set to keyLifetime.
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications regardless of their creation date, this property would be null.
 Nullable.
       - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
     - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-      - `[MaxLifetime <TimeSpan?>]`: 
+      - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
+Defined in ISO 8601 format for Durations.
+For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restriction type is set to passwordLifetime.
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
 For existing applications, the enforcement date would be backdated.
 To apply to all applications, this date would be null.
@@ -409,6 +432,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -428,6 +452,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -441,14 +466,20 @@ RESTRICTIONS `<IMicrosoftGraphAppManagementConfiguration>`: appManagementConfigu
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
     - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that point to the certificateBasedApplicationConfiguration that contains the collection of allowed root and intermediate certificate authorities.
-    - `[MaxLifetime <TimeSpan?>]`: 
+    - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
+Defined in ISO 8601 format for Durations.
+For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restrictionType is set to keyLifetime.
     - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications regardless of their creation date, this property would be null.
 Nullable.
     - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
   - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-    - `[MaxLifetime <TimeSpan?>]`: 
+    - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
+Defined in ISO 8601 format for Durations.
+For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restriction type is set to passwordLifetime.
     - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
 For existing applications, the enforcement date would be backdated.
 To apply to all applications, this date would be null.
@@ -458,8 +489,7 @@ To apply to all applications, this date would be null.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyappmanagementpolicy)
 
-[https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-beta)
 
 
 

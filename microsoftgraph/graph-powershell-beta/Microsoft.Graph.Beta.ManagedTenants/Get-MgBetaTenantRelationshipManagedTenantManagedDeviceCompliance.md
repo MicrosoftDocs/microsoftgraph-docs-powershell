@@ -339,9 +339,9 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanageddevicecompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanageddevicecompliance)
 
-[https://learn.microsoft.com/graph/api/managedtenants-manageddevicecompliance-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-manageddevicecompliance-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/managedtenants-manageddevicecompliance-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-manageddevicecompliance-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-manageddevicecompliances?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-manageddevicecompliances?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-manageddevicecompliances?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-manageddevicecompliances?view=graph-rest-beta)
 
 
 

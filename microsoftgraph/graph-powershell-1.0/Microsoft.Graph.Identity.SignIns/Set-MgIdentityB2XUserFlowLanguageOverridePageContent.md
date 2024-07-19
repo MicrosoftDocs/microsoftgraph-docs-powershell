@@ -33,19 +33,6 @@ Set-MgIdentityB2XUserFlowLanguageOverridePageContent -InputObject <IIdentitySign
 ## DESCRIPTION
 Update media content for the navigation property overridesPages in identity
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-
-Get-MgIdentityB2XUserFlowLanguageOverridePage -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
-```
-This example shows how to use the Set-MgIdentityB2XUserFlowLanguageOverridePageContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -270,6 +257,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
+  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
@@ -281,6 +269,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
   - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
@@ -295,6 +284,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -325,6 +315,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgidentityb2xuserflowlanguageoverridepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgidentityb2xuserflowlanguageoverridepagecontent)
+
 
 
 

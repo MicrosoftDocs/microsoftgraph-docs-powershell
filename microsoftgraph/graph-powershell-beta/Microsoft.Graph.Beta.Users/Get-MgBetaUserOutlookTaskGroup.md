@@ -8,33 +8,38 @@ schema: 2.0.0
 # Get-MgBetaUserOutlookTaskGroup
 
 ## SYNOPSIS
-Get the properties and relationships of the specified Outlook task group.
+The user's Outlook task groups.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgBetaUserOutlookTaskGroup -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaUserOutlookTaskGroup -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgBetaUserOutlookTaskGroup -OutlookTaskGroupId <String> -UserId <String> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaUserOutlookTaskGroup -OutlookTaskGroupId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of the specified Outlook task group.
+The user's Outlook task groups.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOutlookTaskGroup Cmdlet
@@ -79,6 +84,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -208,6 +228,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -315,10 +350,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgroup)
-
-[https://learn.microsoft.com/graph/api/outlooktaskgroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktaskgroup-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/outlookuser-list-taskgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookuser-list-taskgroups?view=graph-rest-1.0)
 
 
 

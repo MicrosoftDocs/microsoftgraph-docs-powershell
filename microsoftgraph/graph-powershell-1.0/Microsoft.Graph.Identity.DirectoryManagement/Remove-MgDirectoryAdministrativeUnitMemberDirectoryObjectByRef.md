@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Use this API to remove a member (user, group, or device) from an administrative unit.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryAdministrativeUnitMemberDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitMemberDirectoryObjectByRef?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -207,6 +204,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device

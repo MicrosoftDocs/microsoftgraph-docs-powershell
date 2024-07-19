@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgBetaGroupTransitiveMemberAsUser
 
 ## SYNOPSIS
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+Get a list of the group's members.
+A group can have different object types as members.
+For more information about supported member types for different groups, see Group membership.
+This operation is transitive and returns a flat list of all nested members.
+An attempt to filter by an OData cast that represents an unsupported member type returns a 400 Bad Request error with the Request_UnsupportedQuery code.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupTransitiveMemberAsUser](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberAsUser?view=graph-powershell-1.0)
@@ -39,7 +43,37 @@ Get-MgBetaGroupTransitiveMemberAsUser -InputObject <IGroupsIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+Get a list of the group's members.
+A group can have different object types as members.
+For more information about supported member types for different groups, see Group membership.
+This operation is transitive and returns a flat list of all nested members.
+An attempt to filter by an OData cast that represents an unsupported member type returns a 400 Bad Request error with the Request_UnsupportedQuery code.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Get-MgBetaGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Search '"displayName:tier"' -Property "displayName,id"  -ConsistencyLevel eventual 
+
+
+```
+This example shows how to use the Get-MgBetaGroupTransitiveMemberAsUser Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Get-MgBetaGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'a')"  -ConsistencyLevel eventual 
+
+
+```
+This example shows how to use the Get-MgBetaGroupTransitiveMemberAsUser Cmdlet.
+
 
 ## PARAMETERS
 
@@ -369,6 +403,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberasuser)
 
+[https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-beta)
 
 
 

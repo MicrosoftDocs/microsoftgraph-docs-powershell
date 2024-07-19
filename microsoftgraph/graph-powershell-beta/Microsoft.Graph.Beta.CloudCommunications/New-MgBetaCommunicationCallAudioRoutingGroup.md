@@ -59,11 +59,11 @@ $params = @{
 	id = "oneToOne"
 	routingMode = "oneToOne"
 	sources = @(
-		"632899f8-2ea1-4604-8413-27bd2892079f"
-	)
-	receivers = @(
-		"550fae72-d251-43ec-868c-373732c2704f"
-	)
+	"632899f8-2ea1-4604-8413-27bd2892079f"
+)
+receivers = @(
+"550fae72-d251-43ec-868c-373732c2704f"
+)
 }
 
 New-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -BodyParameter $params
@@ -323,7 +323,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallaudioroutinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallaudioroutinggroup)
 
-[https://learn.microsoft.com/graph/api/call-post-audioroutinggroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-post-audioroutinggroups?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/call-post-audioroutinggroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/call-post-audioroutinggroups?view=graph-rest-beta)
 
 
 

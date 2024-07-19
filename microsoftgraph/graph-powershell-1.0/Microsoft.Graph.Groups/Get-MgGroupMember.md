@@ -8,11 +8,9 @@ schema: 2.0.0
 # Get-MgGroupMember
 
 ## SYNOPSIS
-The members of this group, who can be users, devices, other groups, or service principals.
-Supports the List members, Add member, and Remove member operations.
-Nullable.
-Supports $expand including nested $select.
-For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
+Get a list of the group's direct members.
+A group can have users, organizational contacts, devices, service principals and other groups as members.
+This operation is not transitive.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMember?view=graph-powershell-beta)
@@ -27,11 +25,9 @@ Get-MgGroupMember -GroupId <String> [-ExpandProperty <String[]>] [-Filter <Strin
 ```
 
 ## DESCRIPTION
-The members of this group, who can be users, devices, other groups, or service principals.
-Supports the List members, Add member, and Remove member operations.
-Nullable.
-Supports $expand including nested $select.
-For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
+Get a list of the group's direct members.
+A group can have users, organizational contacts, devices, service principals and other groups as members.
+This operation is not transitive.
 
 ## EXAMPLES
 ### Example 1: Get members of a group

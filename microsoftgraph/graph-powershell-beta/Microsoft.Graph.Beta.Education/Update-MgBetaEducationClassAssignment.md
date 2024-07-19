@@ -946,7 +946,7 @@ If the value is null, the student uploaded the resource.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignment)
 
-[https://learn.microsoft.com/graph/api/educationassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/educationassignment-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-update?view=graph-rest-beta)
 
 
 

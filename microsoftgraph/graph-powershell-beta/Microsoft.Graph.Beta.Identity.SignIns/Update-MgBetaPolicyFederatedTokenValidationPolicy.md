@@ -221,7 +221,8 @@ VALIDATINGDOMAINS `<IMicrosoftGraphValidatingDomains>`: validatingDomains
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy)
 
-[https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-beta)
+
 
 
 

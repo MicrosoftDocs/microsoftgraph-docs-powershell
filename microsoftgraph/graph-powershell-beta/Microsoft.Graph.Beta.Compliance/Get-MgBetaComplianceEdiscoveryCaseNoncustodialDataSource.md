@@ -333,9 +333,9 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasenoncustodialdatasource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasenoncustodialdatasource)
 
-[https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-noncustodialdatasource-list?view=graph-rest-beta)
 
 
 

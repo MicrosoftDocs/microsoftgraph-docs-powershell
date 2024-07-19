@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
 
 ## SYNOPSIS
-Get the instance of an active role assignment.
+Instances for active role assignments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
 ```
 
 ## DESCRIPTION
-Get the instance of an active role assignment.
+Instances for active role assignments.
 
 ## PARAMETERS
 
@@ -359,10 +359,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleassignmentscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleassignmentscheduleinstance)
-
-[https://learn.microsoft.com/graph/api/unifiedroleassignmentscheduleinstance-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignmentscheduleinstance-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignmentscheduleinstances?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignmentscheduleinstances?view=graph-rest-1.0)
 
 
 

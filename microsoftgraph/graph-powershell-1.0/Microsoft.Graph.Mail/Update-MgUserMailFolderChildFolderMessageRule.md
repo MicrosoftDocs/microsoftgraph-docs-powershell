@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserMailFolderChildFolderMessageRule
 
 ## SYNOPSIS
-Change writable properties on a messageRule object and save the changes.
+Update the navigation property messageRules in users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
@@ -52,7 +52,7 @@ Update-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 ```
 
 ## DESCRIPTION
-Change writable properties on a messageRule object and save the changes.
+Update the navigation property messageRules in users
 
 ## PARAMETERS
 
@@ -572,7 +572,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolderchildfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolderchildfoldermessagerule)
 
-[https://learn.microsoft.com/graph/api/messagerule-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/messagerule-update?view=graph-rest-1.0)
 
 
 

@@ -8,9 +8,8 @@ schema: 2.0.0
 # New-MgBetaGroupConversation
 
 ## SYNOPSIS
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Create a new conversation by including a thread and a post.
+Use reply thread or reply post to further post to that conversation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-1.0)
@@ -50,37 +49,32 @@ New-MgBetaGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Create a new conversation by including a thread and a post.
+Use reply thread or reply post to further post to that conversation.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
-	Topic = "Does anyone have a second?"
-	Threads = @(
+	topic = "New head count"
+	threads = @(
 		@{
-			Posts = @(
+			posts = @(
 				@{
-					Body = @{
-						ContentType = "HTML"
-						Content = "This is urgent!"
+					body = @{
+						contentType = "html"
+						content = "The confirmation will come by the end of the week."
 					}
-					Extensions = @(
+					newParticipants = @(
 						@{
-							"@odata.type" = "microsoft.graph.openTypeExtension"
-							extensionName = "Com.Contoso.Benefits"
-							companyName = "Contoso"
-							expirationDate = "2016-08-03T11:00:00.000Z"
-							topPicks = @(
-								"Employees only"
-								"Add spouse or guest"
-								"Add family"
-							)
+							emailAddress = @{
+								name = "Adele Vance"
+								address = "AdeleV@contoso.com"
+							}
 						}
 					)
 				}
@@ -90,10 +84,9 @@ $params = @{
 }
 
 New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaGroupConversation Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -397,8 +390,11 @@ Returned by default.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
     - `[Posts <IMicrosoftGraphPost- `[]`>]`: 
-      - `[Categories <String- `[]`>]`: 
-      - `[ChangeKey <String>]`: 
+      - `[Categories <String- `[]`>]`: The categories associated with the item.
+      - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -556,8 +552,11 @@ Returned by default.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
   - `[Posts <IMicrosoftGraphPost- `[]`>]`: 
-    - `[Categories <String- `[]`>]`: 
-    - `[ChangeKey <String>]`: 
+    - `[Categories <String- `[]`>]`: The categories associated with the item.
+    - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -648,7 +647,7 @@ Returned by default.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation)
 
-[https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider
 
 ## SYNOPSIS
-Get identityProviders from identity
+Get the identity providers that are defined for an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object type.
 
 ## SYNTAX
 
@@ -21,7 +21,20 @@ Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExtern
 ```
 
 ## DESCRIPTION
-Get identityProviders from identity
+Get the identity providers that are defined for an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object type.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider -AuthenticationEventsFlowId $authenticationEventsFlowId
+
+```
+This example shows how to use the Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider Cmdlet.
+
 
 ## PARAMETERS
 
@@ -251,6 +264,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityprovider)
 
+[https://learn.microsoft.com/graph/api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders?view=graph-rest-beta)
 
 
 

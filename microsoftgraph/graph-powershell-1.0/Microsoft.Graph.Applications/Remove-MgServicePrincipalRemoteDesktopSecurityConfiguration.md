@@ -8,11 +8,7 @@ schema: 2.0.0
 # Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration
 
 ## SYNOPSIS
-Delete a remoteDesktopSecurityConfiguration object on a servicePrincipal.
-Removing remoteDesktopSecurityConfiguration object on the servicePrincipal disables the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices, and removes any target device groups that you configured for SSO.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-beta)
+Delete navigation property remoteDesktopSecurityConfiguration for servicePrincipals
 
 ## SYNTAX
 
@@ -31,8 +27,7 @@ Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IAppli
 ```
 
 ## DESCRIPTION
-Delete a remoteDesktopSecurityConfiguration object on a servicePrincipal.
-Removing remoteDesktopSecurityConfiguration object on the servicePrincipal disables the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices, and removes any target device groups that you configured for SSO.
+Delete navigation property remoteDesktopSecurityConfiguration for servicePrincipals
 
 ## PARAMETERS
 
@@ -204,6 +199,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -217,8 +213,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalremotedesktopsecurityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalremotedesktopsecurityconfiguration)
-
-[https://learn.microsoft.com/graph/api/serviceprincipal-delete-remotedesktopsecurityconfiguration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-delete-remotedesktopsecurityconfiguration?view=graph-rest-1.0)
 
 
 

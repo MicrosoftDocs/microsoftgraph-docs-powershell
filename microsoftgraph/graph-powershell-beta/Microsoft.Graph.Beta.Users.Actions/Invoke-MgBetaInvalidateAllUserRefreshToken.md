@@ -41,6 +41,20 @@ If this happens, the application will need to acquire a new refresh token by mak
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-invalidateallrefreshtokens-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+# A UPN can also be used as -UserId.
+Invoke-MgBetaInvalidateAllUserRefreshToken -UserId $userId
+
+```
+This example shows how to use the Invoke-MgBetaInvalidateAllUserRefreshToken Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -213,8 +227,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainvalidatealluserrefreshtoken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainvalidatealluserrefreshtoken)
 
-[https://learn.microsoft.com/graph/api/user-invalidateallrefreshtokens?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-invalidateallrefreshtokens?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/user-invalidateallrefreshtokens?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-invalidateallrefreshtokens?view=graph-rest-beta)
 
 
 

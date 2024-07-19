@@ -38,20 +38,17 @@ Get-MgBetaTenantRelationshipManagedTenantManagementTemplate -InputObject <IManag
 Read the properties and relationships of a managementTemplate object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantManagementTemplate Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-Get-MgBetaTenantRelationshipManagedTenantManagementTemplate -ManagementTemplateId $managementTemplateId
-```
-This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagementTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaTenantRelationshipManagedTenantManagementTemplate Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 Get-MgBetaTenantRelationshipManagedTenantManagementTemplate
+
 ```
 This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagementTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -342,9 +339,9 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementtemplate)
 
-[https://learn.microsoft.com/graph/api/managedtenants-managementtemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managementtemplate-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/managedtenants-managementtemplate-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managementtemplate-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementtemplates?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementtemplates?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementtemplates?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementtemplates?view=graph-rest-beta)
 
 
 

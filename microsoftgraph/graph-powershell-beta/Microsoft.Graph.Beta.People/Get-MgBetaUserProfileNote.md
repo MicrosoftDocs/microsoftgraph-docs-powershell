@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfileNote
 
 ## SYNOPSIS
-Read the properties and relationships of a personAnnotation object from a user's profile.
+Represents notes that a user has added to their profile.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfileNote -InputObject <IPeopleIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a personAnnotation object from a user's profile.
+Represents notes that a user has added to their profile.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilenote)
-
-[https://learn.microsoft.com/graph/api/personannotation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personannotation-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-notes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-notes?view=graph-rest-1.0)
 
 
 

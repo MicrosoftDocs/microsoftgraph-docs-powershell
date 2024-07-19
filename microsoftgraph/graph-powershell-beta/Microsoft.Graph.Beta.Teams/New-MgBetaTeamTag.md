@@ -421,7 +421,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtag)
 
-[https://learn.microsoft.com/graph/api/teamworktag-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktag-post?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/teamworktag-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamworktag-post?view=graph-rest-beta)
 
 
 

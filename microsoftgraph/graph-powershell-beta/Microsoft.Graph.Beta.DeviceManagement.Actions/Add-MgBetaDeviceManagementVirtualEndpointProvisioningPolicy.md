@@ -52,6 +52,23 @@ Currently, the region is the only policy setting that you can apply.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-apply-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+$params = @{
+	policySettings = "region"
+}
+
+Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -280,6 +297,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
   - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+  - `[HardwareConfigurationId <String>]`: The unique identifier of hardwareConfiguration
   - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
@@ -302,8 +320,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/add-mgbetadevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/add-mgbetadevicemanagementvirtualendpointprovisioningpolicy)
 
-[https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta)
 
 
 

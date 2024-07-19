@@ -503,6 +503,9 @@ Locale: en-US
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScopeCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScopeCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowInsight](Get-MgBetaIdentityGovernanceLifecycleWorkflowInsight.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedBy](Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedBy.md)
 {{ Fill in the Description }}
 
@@ -2117,6 +2120,9 @@ Locale: en-US
 ### [Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequestByCurrentUser](Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequestByCurrentUser.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight](Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgBetaMyPrivilegedRoleAssignment](Invoke-MgBetaMyPrivilegedRoleAssignment.md)
 {{ Fill in the Description }}
 
@@ -2193,6 +2199,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowUserProcessingResult](Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowUserProcessingResult.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary](Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary](Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary](Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary.md)
 {{ Fill in the Description }}
 
 ### [Move-MgBetaEntitlementManagementAccessPackageToCatalog](Move-MgBetaEntitlementManagementAccessPackageToCatalog.md)
@@ -2759,13 +2774,7 @@ Locale: en-US
 ### [Remove-MgBetaEntitlementManagementConnectedOrganization](Remove-MgBetaEntitlementManagementConnectedOrganization.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef](Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef](Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef](Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef.md)
@@ -2868,6 +2877,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityGovernanceLifecycleWorkflowInsight](Remove-MgBetaIdentityGovernanceLifecycleWorkflowInsight.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityGovernanceLifecycleWorkflowTask](Remove-MgBetaIdentityGovernanceLifecycleWorkflowTask.md)
@@ -3588,6 +3600,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](Update-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaIdentityGovernanceLifecycleWorkflowInsight](Update-MgBetaIdentityGovernanceLifecycleWorkflowInsight.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByMailboxSetting.md)

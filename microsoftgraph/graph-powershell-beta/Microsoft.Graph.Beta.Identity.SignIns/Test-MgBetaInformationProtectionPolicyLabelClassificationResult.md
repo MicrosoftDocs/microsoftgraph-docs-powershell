@@ -38,30 +38,35 @@ To evaluate based on classification results, provide contentInfo, which includes
 The API returns an informationProtectionAction that contains one of more of the following:
 
 ## EXAMPLES
-### Example 1: Using the Test-MgBetaInformationProtectionPolicyLabelClassificationResult Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
-	ContentInfo = @{
+	contentInfo = @{
 		"@odata.type" = "#microsoft.graph.contentInfo"
-		"Format@odata.type" = "#microsoft.graph.contentFormat"
-		Format = "default"
-		Identifier = $null
-		"State@odata.type" = "#microsoft.graph.contentState"
-		State = "rest"
+		"format@odata.type" = "#microsoft.graph.contentFormat"
+		format = "default"
+		identifier = $null
+		"state@odata.type" = "#microsoft.graph.contentState"
+		state = "rest"
 	}
-	ClassificationResults = @(
+	classificationResults = @(
 		@{
-			SensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"
-			Count = 4
-			ConfidenceLevel = 75
+			sensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"
+			count = 4
+			confidenceLevel = 75
 		}
 	)
 }
+
 Test-MgBetaInformationProtectionPolicyLabelClassificationResult -BodyParameter $params
+
 ```
 This example shows how to use the Test-MgBetaInformationProtectionPolicyLabelClassificationResult Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -253,7 +258,7 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelclassificationresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelclassificationresult)
 
-[https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta)
 
 
 

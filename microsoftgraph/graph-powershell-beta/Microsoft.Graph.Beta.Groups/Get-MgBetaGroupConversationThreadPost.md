@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupConversationThreadPost
 
 ## SYNOPSIS
-Get the properties and relationships of a post in a specified thread.
-You can specify both the parentconversation and the thread, or, you can specify the thread without referencing the parent conversation.
-Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
+Get posts from groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPost?view=graph-powershell-1.0)
@@ -20,9 +18,9 @@ Since the post resource supports extensions, you can also use the GET operation 
 ### List (Default)
 ```
 Get-MgBetaGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String> -GroupId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get1
@@ -54,11 +52,7 @@ Get-MgBetaGroupConversationThreadPost -InputObject <IGroupsIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of a post in a specified thread.
-You can specify both the parentconversation and the thread, or, you can specify the thread without referencing the parent conversation.
-Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
-
-## EXAMPLES
+Get posts from groups
 
 ## PARAMETERS
 
@@ -274,6 +268,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -387,9 +396,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpost)
 
-[https://learn.microsoft.com/graph/api/post-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/post-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/conversationthread-list-posts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationthread-list-posts?view=graph-rest-1.0)
+
+
 
 
 

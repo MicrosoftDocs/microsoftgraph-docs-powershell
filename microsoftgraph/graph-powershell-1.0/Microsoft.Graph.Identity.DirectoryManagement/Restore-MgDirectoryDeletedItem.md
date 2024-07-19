@@ -16,9 +16,6 @@ You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Restore-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Restore (Default)
@@ -185,6 +182,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device

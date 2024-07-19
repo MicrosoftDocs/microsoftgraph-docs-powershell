@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupTeamPrimaryChannelMessageReply
 
 ## SYNOPSIS
-Retrieve a single message or a message reply in a channel or a chat.
+Replies for a specified message.
+Supports $expand for channel messages.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannelMessageReply?view=graph-powershell-beta)
@@ -38,9 +39,8 @@ Get-MgGroupTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Retrieve a single message or a message reply in a channel or a chat.
-
-## EXAMPLES
+Replies for a specified message.
+Supports $expand for channel messages.
 
 ## PARAMETERS
 
@@ -356,9 +356,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelmessagereply)
 
-[https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/chatmessage-list-replies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-list-replies?view=graph-rest-1.0)
+
 
 
 

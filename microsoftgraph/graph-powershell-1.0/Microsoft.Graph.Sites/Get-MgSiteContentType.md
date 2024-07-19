@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteContentType
 
 ## SYNOPSIS
-Retrieve the metadata for a \[content type\]\[contentType\] in a \[site\]\[\] or a \[list\]\[\].
+Retrieve the metadata for a content type in a site or a list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentType?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a \[content type\]\[contentType\] in a \[site\]\[\] or a \[list\]\[\].
+Retrieve the metadata for a content type in a site or a list.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -355,6 +355,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

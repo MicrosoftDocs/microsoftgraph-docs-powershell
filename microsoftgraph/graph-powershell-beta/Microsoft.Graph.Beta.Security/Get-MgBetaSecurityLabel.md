@@ -23,8 +23,6 @@ Get-MgBetaSecurityLabel [-ExpandProperty <String[]>] [-Property <String[]>] [-Re
 ## DESCRIPTION
 Get labels from security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -116,6 +114,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabel)
+
+
 
 
 

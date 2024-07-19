@@ -38,13 +38,17 @@ Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion -InputObject <IDeviceMa
 Cloud PC supported regions.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
 Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion
+
 ```
 This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -354,7 +358,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointsupportedregion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointsupportedregion)
 
-[https://learn.microsoft.com/graph/api/virtualendpoint-list-supportedregions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-supportedregions?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-supportedregions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-supportedregions?view=graph-rest-beta)
 
 
 

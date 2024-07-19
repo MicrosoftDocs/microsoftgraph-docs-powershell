@@ -367,7 +367,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResolvingComment
-.
+User input that explains the resolution of the incident and the classification choice.
+This property contains free editable text.
 
 ```yaml
 Type: String
@@ -512,7 +513,7 @@ Read-only.
   - `[AdditionalData <IMicrosoftGraphSecurityDictionary>]`: dictionary
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AlertPolicyId <String>]`: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
-  - `[AlertWebUrl <String>]`: 
+  - `[AlertWebUrl <String>]`: URL for the Microsoft 365 Defender portal alert page.
   - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
   - `[Category <String>]`: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
@@ -543,7 +544,7 @@ Values are free-form.
   - `[LastActivityDateTime <DateTime?>]`: The oldest activity associated with the alert.
   - `[LastUpdateDateTime <DateTime?>]`: Time when the alert was last updated at Microsoft 365 Defender.
   - `[MitreTechniques <String- `[]`>]`: The attack techniques, as aligned with the MITRE ATT&CK framework.
-  - `[ProductName <String>]`: 
+  - `[ProductName <String>]`: The name of the product which published this alert.
   - `[ProviderAlertId <String>]`: The ID of the alert as it appears in the security provider product that generated the alert.
   - `[RecommendedActions <String>]`: Recommended response and remediation actions to take in the event this alert was generated.
   - `[ResolvedDateTime <DateTime?>]`: Time when the alert was resolved.
@@ -568,7 +569,7 @@ Read-only.
     - `[AdditionalData <IMicrosoftGraphSecurityDictionary>]`: dictionary
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AlertPolicyId <String>]`: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
-    - `[AlertWebUrl <String>]`: 
+    - `[AlertWebUrl <String>]`: URL for the Microsoft 365 Defender portal alert page.
     - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
     - `[Category <String>]`: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
@@ -599,7 +600,7 @@ Values are free-form.
     - `[LastActivityDateTime <DateTime?>]`: The oldest activity associated with the alert.
     - `[LastUpdateDateTime <DateTime?>]`: Time when the alert was last updated at Microsoft 365 Defender.
     - `[MitreTechniques <String- `[]`>]`: The attack techniques, as aligned with the MITRE ATT&CK framework.
-    - `[ProductName <String>]`: 
+    - `[ProductName <String>]`: The name of the product which published this alert.
     - `[ProviderAlertId <String>]`: The ID of the alert as it appears in the security provider product that generated the alert.
     - `[RecommendedActions <String>]`: Recommended response and remediation actions to take in the event this alert was generated.
     - `[ResolvedDateTime <DateTime?>]`: Time when the alert was resolved.
@@ -625,7 +626,8 @@ Free editable text.
   - `[LastUpdateDateTime <DateTime?>]`: Time when the incident was last updated.
   - `[RedirectIncidentId <String>]`: Only populated in case an incident is grouped with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
-  - `[ResolvingComment <String>]`: 
+  - `[ResolvingComment <String>]`: User input that explains the resolution of the incident and the classification choice.
+This property contains free editable text.
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
   - `[SystemTags <String- `[]`>]`: The system tags associated with the incident.
@@ -660,6 +662,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host

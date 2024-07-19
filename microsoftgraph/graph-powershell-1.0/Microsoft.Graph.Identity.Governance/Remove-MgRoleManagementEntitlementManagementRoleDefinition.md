@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgRoleManagementEntitlementManagementRoleDefinition
 
 ## SYNOPSIS
-Delete a unifiedRoleDefinition object.
-You can't delete built-in roles.
-This feature requires a Microsoft Entra ID P1 or P2 license.
+Delete navigation property roleDefinitions for roleManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
@@ -32,9 +30,7 @@ Remove-MgRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdenti
 ```
 
 ## DESCRIPTION
-Delete a unifiedRoleDefinition object.
-You can't delete built-in roles.
-This feature requires a Microsoft Entra ID P1 or P2 license.
+Delete navigation property roleDefinitions for roleManagement
 
 ## PARAMETERS
 
@@ -263,8 +259,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagemententitlementmanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagemententitlementmanagementroledefinition)
-
-[https://learn.microsoft.com/graph/api/unifiedroledefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroledefinition-delete?view=graph-rest-1.0)
 
 
 

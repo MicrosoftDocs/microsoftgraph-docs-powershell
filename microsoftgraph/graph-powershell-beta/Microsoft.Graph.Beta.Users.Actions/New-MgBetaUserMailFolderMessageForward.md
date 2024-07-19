@@ -65,20 +65,6 @@ Alternatively, forward a message in a single operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-createforward-permissions.md)]
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Users.Actions
-
-# A UPN can also be used as -UserId.
-New-MgBetaUserMessageForward -UserId $userId -MessageId $messageId
-```
-This example shows how to use the New-MgBetaUserMailFolderMessageForward Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -318,8 +304,11 @@ BODYPARAMETER `<IPaths29L6IuUsersUserIdMailfoldersMailfolderIdMessagesMessageIdM
   - `[Comment <String>]`: 
   - `[Message <IMicrosoftGraphMessage>]`: message
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Categories <String- `[]`>]`: 
-    - `[ChangeKey <String>]`: 
+    - `[Categories <String- `[]`>]`: The categories associated with the item.
+    - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -490,8 +479,11 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 MESSAGE `<IMicrosoftGraphMessage>`: message
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -626,7 +618,9 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfoldermessageforward](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfoldermessageforward)
 
-[https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-beta)
+
+
 
 
 

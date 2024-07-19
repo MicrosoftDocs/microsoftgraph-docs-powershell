@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
-Create a new schedulingGroup.
+Create new navigation property to schedulingGroups for teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Create a new schedulingGroup.
+Create new navigation property to schedulingGroups for teams
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -359,8 +359,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleschedulinggroup)
-
-[https://learn.microsoft.com/graph/api/schedule-post-schedulinggroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-post-schedulinggroups?view=graph-rest-1.0)
 
 
 

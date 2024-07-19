@@ -33,6 +33,47 @@ New-MgBetaSecurityAuditLogQuery -BodyParameter <IMicrosoftGraphSecurityAuditLogQ
 ## DESCRIPTION
 Create a new auditLogQuery object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.auditLogQuery"
+	displayName = "String"
+	filterStartDateTime = [System.DateTime]::Parse("String (timestamp)")
+	filterEndDateTime = [System.DateTime]::Parse("String (timestamp)")
+	recordTypeFilters = @(
+	"String"
+)
+keywordFilter = "String"
+serviceFilter = "String"
+operationFilters = @(
+"String"
+)
+userPrincipalNameFilters = @(
+"String"
+)
+ipAddressFilters = @(
+"String"
+)
+objectIdFilters = @(
+"String"
+)
+administrativeUnitIdFilters = @(
+"String"
+)
+status = "String"
+}
+
+New-MgBetaSecurityAuditLogQuery -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityAuditLogQuery Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -442,8 +483,7 @@ It indicates that the 'user' who performed the activity was an application with 
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityauditlogquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityauditlogquery)
 
-[https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-beta)
 
 
 

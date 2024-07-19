@@ -242,6 +242,15 @@ Locale: en-US
 ### [Get-MgSecurityCaseEdiscoveryCaseTagParent](Get-MgSecurityCaseEdiscoveryCaseTagParent.md)
 {{ Fill in the Description }}
 
+### [Get-MgSecurityIdentity](Get-MgSecurityIdentity.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityIdentityHealthIssue](Get-MgSecurityIdentityHealthIssue.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityIdentityHealthIssueCount](Get-MgSecurityIdentityHealthIssueCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgSecurityIncident](Get-MgSecurityIncident.md)
 {{ Fill in the Description }}
 
@@ -722,6 +731,9 @@ Locale: en-US
 ### [New-MgSecurityCaseEdiscoveryCaseTag](New-MgSecurityCaseEdiscoveryCaseTag.md)
 {{ Fill in the Description }}
 
+### [New-MgSecurityIdentityHealthIssue](New-MgSecurityIdentityHealthIssue.md)
+{{ Fill in the Description }}
+
 ### [New-MgSecurityIncident](New-MgSecurityIncident.md)
 {{ Fill in the Description }}
 
@@ -912,6 +924,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgSecurityCaseEdiscoveryCaseTag](Remove-MgSecurityCaseEdiscoveryCaseTag.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityIdentity](Remove-MgSecurityIdentity.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityIdentityHealthIssue](Remove-MgSecurityIdentityHealthIssue.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgSecurityIncident](Remove-MgSecurityIncident.md)
@@ -1128,6 +1146,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgSecurityCaseEdiscoveryCaseTag](Update-MgSecurityCaseEdiscoveryCaseTag.md)
+{{ Fill in the Description }}
+
+### [Update-MgSecurityIdentity](Update-MgSecurityIdentity.md)
+{{ Fill in the Description }}
+
+### [Update-MgSecurityIdentityHealthIssue](Update-MgSecurityIdentityHealthIssue.md)
 {{ Fill in the Description }}
 
 ### [Update-MgSecurityIncident](Update-MgSecurityIncident.md)

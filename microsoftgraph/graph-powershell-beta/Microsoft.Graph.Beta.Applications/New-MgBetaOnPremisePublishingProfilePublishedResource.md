@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaOnPremisePublishingProfilePublishedResource
 
 ## SYNOPSIS
-Create a new publishedResource object.
+Create new navigation property to publishedResources for onPremisesPublishingProfiles
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplication
 ```
 
 ## DESCRIPTION
-Create a new publishedResource object.
+Create new navigation property to publishedResources for onPremisesPublishingProfiles
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet
@@ -314,7 +314,7 @@ Read-only
     - `[MachineName <String>]`: The name of the machine that the agent is running on.
 Read-only
     - `[Status <String>]`: agentStatus
-    - `[SupportedPublishingTypes <String- `[]`>]`: 
+    - `[SupportedPublishingTypes <String- `[]`>]`: Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, adAdministration.
   - `[DisplayName <String>]`: Display name of the onPremisesAgentGroup.
   - `[IsDefault <Boolean?>]`: Indicates if the onPremisesAgentGroup is the default agent group.
 Only a single agent group can be the default onPremisesAgentGroup and is set by the system.
@@ -353,7 +353,7 @@ Read-only
       - `[MachineName <String>]`: The name of the machine that the agent is running on.
 Read-only
       - `[Status <String>]`: agentStatus
-      - `[SupportedPublishingTypes <String- `[]`>]`: 
+      - `[SupportedPublishingTypes <String- `[]`>]`: Possible values are: applicationProxy, exchangeOnline, authentication, provisioning, adAdministration.
     - `[DisplayName <String>]`: Display name of the onPremisesAgentGroup.
     - `[IsDefault <Boolean?>]`: Indicates if the onPremisesAgentGroup is the default agent group.
 Only a single agent group can be the default onPremisesAgentGroup and is set by the system.
@@ -382,6 +382,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[IPApplicationSegmentId <String>]`: The unique identifier of ipApplicationSegment
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
@@ -389,6 +390,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -402,8 +404,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresource)
-
-[https://learn.microsoft.com/graph/api/publishedresource-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/publishedresource-post?view=graph-rest-1.0)
 
 
 

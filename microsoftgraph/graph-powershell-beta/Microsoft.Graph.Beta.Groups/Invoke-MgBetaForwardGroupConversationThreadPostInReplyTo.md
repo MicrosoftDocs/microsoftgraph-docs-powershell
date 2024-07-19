@@ -54,31 +54,6 @@ Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo -InputObject <IGroupsId
 Forward a post to a recipient.
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Groups
-
-$params = @{
-	Comment = "comment-value"
-	ToRecipients = @(
-		@{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
-			}
-		}
-	)
-}
-
-Invoke-MgBetaForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -394,7 +369,9 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupconversationthreadpostinreplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupconversationthreadpostinreplyto)
 
-[https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta)
+
+
 
 
 

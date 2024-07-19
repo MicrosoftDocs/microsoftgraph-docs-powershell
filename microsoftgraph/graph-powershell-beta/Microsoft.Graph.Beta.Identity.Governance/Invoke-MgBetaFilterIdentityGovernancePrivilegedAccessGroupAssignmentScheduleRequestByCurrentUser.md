@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+In PIM for groups, retrieve the requests for membership or ownership assignments for the calling principal to groups that are governed by PIM.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestByCurrentUser?view=graph-powershell-1.0)
@@ -33,7 +33,20 @@ Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequ
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+In PIM for groups, retrieve the requests for membership or ownership assignments for the calling principal to groups that are governed by PIM.
+
+## EXAMPLES
+### Example 1: Retrieve a principal's requests scoped to a specific group and that are pending approval
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestByCurrentUser -Filter "status eq 'PendingApproval' and groupId eq 'd5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc'"  -On $onId 
+
+```
+This example will retrieve a principal's requests scoped to a specific group and that are pending approval
+
 
 ## PARAMETERS
 
@@ -354,6 +367,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceprivilegedaccessgroupassignmentschedulerequestbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceprivilegedaccessgroupassignmentschedulerequestbycurrentuser)
 
+[https://learn.microsoft.com/graph/api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser?view=graph-rest-beta)
 
 
 

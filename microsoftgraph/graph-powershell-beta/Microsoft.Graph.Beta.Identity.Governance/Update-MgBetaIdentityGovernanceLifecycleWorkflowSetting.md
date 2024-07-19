@@ -38,6 +38,7 @@ Update the properties of a lifecycleManagementSettings object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
@@ -50,10 +51,9 @@ $params = @{
 }
 
 Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -263,7 +263,7 @@ This value can only be set to true if the organizationalBranding bannerLogo prop
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancelifecycleworkflowsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancelifecycleworkflowsetting)
 
-[https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-update?view=graph-rest-beta)
 
 
 

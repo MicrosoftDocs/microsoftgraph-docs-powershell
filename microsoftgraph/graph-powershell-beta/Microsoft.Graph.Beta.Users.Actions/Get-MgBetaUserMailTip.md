@@ -56,21 +56,26 @@ The requested MailTips are returned in a mailTips collection.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-getmailtips-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserMailTip Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
 	EmailAddresses = @(
-		"danas@contoso.onmicrosoft.com"
-		"fannyd@contoso.onmicrosoft.com"
-	)
-	MailTipsOptions = "automaticReplies, mailboxFullStatus"
+	"danas@contoso.com"
+"fannyd@contoso.com"
+)
+MailTipsOptions = "automaticReplies, mailboxFullStatus"
 }
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailTip -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the Get-MgBetaUserMailTip Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -311,7 +316,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermailtip](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermailtip)
 
-[https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-beta)
 
 
 

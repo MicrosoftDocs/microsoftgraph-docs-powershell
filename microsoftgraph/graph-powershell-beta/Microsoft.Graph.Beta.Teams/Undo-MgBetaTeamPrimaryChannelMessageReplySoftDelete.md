@@ -32,8 +32,6 @@ Undo-MgBetaTeamPrimaryChannelMessageReplySoftDelete -InputObject <ITeamsIdentity
 ## DESCRIPTION
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChatMessageId
@@ -251,7 +249,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetateamprimarychannelmessagereplysoftdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetateamprimarychannelmessagereplysoftdelete)
 
-[https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-beta)
+
+
 
 
 

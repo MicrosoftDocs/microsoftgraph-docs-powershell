@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyDefaultAppManagementPolicy
 
 ## SYNOPSIS
-Read the properties of a tenantAppManagementPolicy object.
+The tenant-wide policy that enforces app management restrictions for all applications and service principals.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
@@ -22,7 +22,7 @@ Get-MgPolicyDefaultAppManagementPolicy [-ExpandProperty <String[]>] [-Property <
 ```
 
 ## DESCRIPTION
-Read the properties of a tenantAppManagementPolicy object.
+The tenant-wide policy that enforces app management restrictions for all applications and service principals.
 
 ## PARAMETERS
 
@@ -115,8 +115,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydefaultappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydefaultappmanagementpolicy)
-
-[https://learn.microsoft.com/graph/api/tenantappmanagementpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tenantappmanagementpolicy-get?view=graph-rest-1.0)
 
 
 

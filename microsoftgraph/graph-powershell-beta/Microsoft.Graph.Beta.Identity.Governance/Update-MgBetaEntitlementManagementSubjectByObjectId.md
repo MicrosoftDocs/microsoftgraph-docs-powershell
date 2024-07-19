@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaEntitlementManagementSubjectByObjectId
 
 ## SYNOPSIS
-Update the navigation property subjects in identityGovernance
+Update an existing accessPackageSubject object to change the subject lifecycle.
 
 ## SYNTAX
 
@@ -49,7 +49,24 @@ Update-MgBetaEntitlementManagementSubjectByObjectId -InputObject <IIdentityGover
 ```
 
 ## DESCRIPTION
-Update the navigation property subjects in identityGovernance
+Update an existing accessPackageSubject object to change the subject lifecycle.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	subjectLifecycle = "governed"
+}
+
+Update-MgBetaEntitlementManagementSubjectByObjectId -BodyParameter $params -ObjectId $objectIdId 
+
+```
+This example shows how to use the Update-MgBetaEntitlementManagementSubjectByObjectId Cmdlet.
+
 
 ## PARAMETERS
 
@@ -268,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnPremisesSecurityIdentifier
-.
+A string representation of the principal's security identifier, if known, or null if the subject doesn't have a security identifier.
 
 ```yaml
 Type: String
@@ -447,7 +464,7 @@ Read-only.
   - `[ObjectId <String>]`: The object identifier of the subject.
 null if the subject isn't yet a user in the tenant.
 Alternate key.
-  - `[OnPremisesSecurityIdentifier <String>]`: 
+  - `[OnPremisesSecurityIdentifier <String>]`: A string representation of the principal's security identifier, if known, or null if the subject doesn't have a security identifier.
   - `[PrincipalName <String>]`: The principal name, if known, of the subject.
   - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
   - `[Type <String>]`: The resource type of the subject.
@@ -587,6 +604,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsubjectbyobjectid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsubjectbyobjectid)
 
+[https://learn.microsoft.com/graph/api/accesspackagesubject-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackagesubject-update?view=graph-rest-beta)
 
 
 

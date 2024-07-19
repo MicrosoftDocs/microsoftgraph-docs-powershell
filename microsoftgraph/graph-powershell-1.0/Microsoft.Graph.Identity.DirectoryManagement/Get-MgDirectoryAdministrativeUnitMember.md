@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgDirectoryAdministrativeUnitMember
 
 ## SYNOPSIS
-Users and groups that are members of this administrative unit.
-Supports $expand.
+Use this API to get the members list (users, groups, or devices) in an administrative unit.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnitMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitMember?view=graph-powershell-beta)
@@ -24,8 +23,7 @@ Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId <String> [-ExpandP
 ```
 
 ## DESCRIPTION
-Users and groups that are members of this administrative unit.
-Supports $expand.
+Use this API to get the members list (users, groups, or devices) in an administrative unit.
 
 ## EXAMPLES
 ### Example 1: List member objects

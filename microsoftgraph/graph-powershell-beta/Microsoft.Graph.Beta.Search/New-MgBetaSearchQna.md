@@ -534,7 +534,7 @@ When users select this answer variation from the search results, they're directe
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna)
 
-[https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-beta)
 
 
 

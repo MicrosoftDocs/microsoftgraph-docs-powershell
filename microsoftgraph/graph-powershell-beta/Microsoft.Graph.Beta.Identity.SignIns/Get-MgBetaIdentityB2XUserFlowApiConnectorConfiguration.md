@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration
 
 ## SYNOPSIS
-Configuration for enabling an API connector for use as part of the self-service sign-up user flow.
-You can only obtain the value of this object using Get userFlowApiConnectorConfiguration.
+Get the apiConnectorConfiguration property in a b2xIdentityUserFlow to detail the API connectors enabled for the user flow.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowApiConnectorConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowApiConnectorConfiguration?view=graph-powershell-1.0)
@@ -31,8 +30,20 @@ Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration -InputObject <IIdentitySi
 ```
 
 ## DESCRIPTION
-Configuration for enabling an API connector for use as part of the self-service sign-up user flow.
-You can only obtain the value of this object using Get userFlowApiConnectorConfiguration.
+Get the apiConnectorConfiguration property in a b2xIdentityUserFlow to detail the API connectors enabled for the user flow.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration -B2xIdentityUserFlowId $b2xIdentityUserFlowId -ExpandProperty "postFederationSignup,postAttributeCollection" 
+
+```
+This example shows how to use the Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -209,6 +220,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -228,6 +240,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -241,6 +254,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowapiconnectorconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowapiconnectorconfiguration)
 
+[https://learn.microsoft.com/graph/api/b2xidentityuserflow-get-apiconnectorconfiguration?view=graph-rest-beta](https://learn.microsoft.com/graph/api/b2xidentityuserflow-get-apiconnectorconfiguration?view=graph-rest-beta)
 
 
 

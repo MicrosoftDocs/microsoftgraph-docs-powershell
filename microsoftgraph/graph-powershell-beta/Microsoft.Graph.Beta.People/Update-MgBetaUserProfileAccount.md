@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserProfileAccount
 
 ## SYNOPSIS
-Update the properties of an userAccountInformation object in a user's profile.
+Update the navigation property account in users
 
 ## SYNTAX
 
@@ -20,8 +20,8 @@ Update-MgBetaUserProfileAccount -UserAccountInformationId <String> -UserId <Stri
  [-CreatedDateTime <DateTime>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-PreferredLanguageTag <IMicrosoftGraphLocaleInfo>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -38,8 +38,9 @@ Update-MgBetaUserProfileAccount -InputObject <IPeopleIdentity> [-ResponseHeaders
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-PreferredLanguageTag <IMicrosoftGraphLocaleInfo>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-UserPrincipalName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>]
+ [-UserPrincipalName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -50,7 +51,7 @@ Update-MgBetaUserProfileAccount -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an userAccountInformation object in a user's profile.
+Update the navigation property account in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -351,6 +352,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Sources
+Where the values within an entity originated if synced from another source.
+To construct, see NOTES section for SOURCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphProfileSourceAnnotation[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserAccountInformationId
 The unique identifier of userAccountInformation
 
@@ -468,6 +485,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AgeGroup <String>]`: Shows the age group of user.
@@ -541,13 +562,16 @@ The language component follows 2-letter codes as defined in ISO 639-1, and the c
 
 SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String- `[]`>]`:
+  - `[Type <String- `[]`>]`: 
+
+SOURCES <IMicrosoftGraphProfileSourceAnnotation- `[]`>: Where the values within an entity originated if synced from another source.
+  - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+  - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+  - `[SourceId <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaccount)
-
-[https://learn.microsoft.com/graph/api/useraccountinformation-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/useraccountinformation-update?view=graph-rest-1.0)
 
 
 

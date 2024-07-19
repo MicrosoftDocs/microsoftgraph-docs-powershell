@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Details of the app specific scope when the assignment scope is app specific.
 Containment entity.
+Supports $expand for the entitlement provider only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-1.0)
@@ -33,6 +34,7 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentAppScope -InputObject <IIdentityG
 ## DESCRIPTION
 Details of the app specific scope when the assignment scope is app specific.
 Containment entity.
+Supports $expand for the entitlement provider only.
 
 ## PARAMETERS
 

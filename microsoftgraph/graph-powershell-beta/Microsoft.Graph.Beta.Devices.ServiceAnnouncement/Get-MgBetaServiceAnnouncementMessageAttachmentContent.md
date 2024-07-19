@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaServiceAnnouncementMessageAttachmentContent
 
 ## SYNOPSIS
-The attachment content.
+Read the properties and relationships of a serviceAnnouncementAttachment object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentContent?view=graph-powershell-1.0)
@@ -30,9 +30,20 @@ Get-MgBetaServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServ
 ```
 
 ## DESCRIPTION
-The attachment content.
+Read the properties and relationships of a serviceAnnouncementAttachment object.
 
 ## EXAMPLES
+### Example 1: Return a file stream of an attachment content for a message
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+
+Get-MgBetaServiceAnnouncementMessageAttachmentContent -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
+
+```
+This example will return a file stream of an attachment content for a message
+
 
 ## PARAMETERS
 
@@ -183,7 +194,7 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachmentcontent)
 
-[https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-beta)
 
 
 

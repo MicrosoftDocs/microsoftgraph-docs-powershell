@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a servicePrincipal object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipal?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -36,13 +33,13 @@ Delete a servicePrincipal object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
 
 Remove-MgServicePrincipal -ServicePrincipalId $servicePrincipalId
+
 ```
 This example shows how to use the Remove-MgServicePrincipal Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -215,6 +212,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob

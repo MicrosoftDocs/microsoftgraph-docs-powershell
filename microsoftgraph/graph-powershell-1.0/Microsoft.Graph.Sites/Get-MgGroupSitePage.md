@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSitePage
 
 ## SYNOPSIS
-Get pages from groups
+The collection of pages in the baseSitePages list in this site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePage?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgGroupSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get pages from groups
+The collection of pages in the baseSitePages list in this site.
 
 ## PARAMETERS
 
@@ -357,6 +357,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserContactFolderChildFolderContact
 
 ## SYNOPSIS
-Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
+Create new navigation property to contacts for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderChildFolderContact?view=graph-powershell-1.0)
@@ -70,9 +70,7 @@ New-MgBetaUserContactFolderChildFolderContact -InputObject <IPersonalContactsIde
 ```
 
 ## DESCRIPTION
-Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-
-## EXAMPLES
+Create new navigation property to contacts for users
 
 ## PARAMETERS
 
@@ -140,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Categories
-.
+The categories associated with the item.
 
 ```yaml
 Type: String[]
@@ -155,7 +153,10 @@ Accept wildcard characters: False
 ```
 
 ### -ChangeKey
-.
+Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
 
 ```yaml
 Type: String
@@ -358,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### -Generation
-The contact's generation.
+The contact's suffix.
 
 ```yaml
 Type: String
@@ -915,8 +916,11 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphContact>`: contact
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -958,7 +962,7 @@ See below for possible values.
     - `[FlagStatus <String>]`: followupFlagStatus
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Gender <String>]`: The contact's gender.
-  - `[Generation <String>]`: The contact's generation.
+  - `[Generation <String>]`: The contact's suffix.
   - `[GivenName <String>]`: The contact's given name.
   - `[ImAddresses <String- `[]`>]`: The contact's instant messaging (IM) addresses.
   - `[Initials <String>]`: The contact's initials.
@@ -1093,7 +1097,7 @@ WEBSITES <IMicrosoftGraphWebsite- `[]`>: Web sites associated with the contact.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontact)
 
-[https://learn.microsoft.com/graph/api/contactfolder-post-contacts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactfolder-post-contacts?view=graph-rest-1.0)
+
 
 
 

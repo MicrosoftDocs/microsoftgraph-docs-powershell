@@ -25,8 +25,6 @@ Get-MgBetaServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId <String> [
 ## DESCRIPTION
 List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -225,7 +223,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimmappingpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimmappingpolicybyref)
 
-[https://learn.microsoft.com/graph/api/serviceprincipal-list-claimsmappingpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-list-claimsmappingpolicies?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/serviceprincipal-list-claimsmappingpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-list-claimsmappingpolicies?view=graph-rest-beta)
+
+
 
 
 

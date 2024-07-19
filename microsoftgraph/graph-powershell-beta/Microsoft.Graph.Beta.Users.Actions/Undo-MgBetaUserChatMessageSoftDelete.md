@@ -36,13 +36,17 @@ Undo soft deletion of a single chatMessage or a chat message reply in a channel 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-undosoftdelete-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Undo-MgBetaUserChatMessageSoftDelete Cmdlet
+### Example 1: Undo soft deletion of a message in a chat
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 Undo-MgBetaUserChatMessageSoftDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId
+
 ```
-This example shows how to use the Undo-MgBetaUserChatMessageSoftDelete Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will undo soft deletion of a message in a chat
+
 
 ## PARAMETERS
 
@@ -261,7 +265,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagesoftdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagesoftdelete)
 
-[https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-beta)
 
 
 

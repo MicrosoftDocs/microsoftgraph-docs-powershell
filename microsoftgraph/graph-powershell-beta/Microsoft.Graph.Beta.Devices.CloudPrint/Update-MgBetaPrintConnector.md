@@ -435,7 +435,7 @@ The elements should be in hierarchical order.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintconnector)
 
-[https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-beta)
 
 
 

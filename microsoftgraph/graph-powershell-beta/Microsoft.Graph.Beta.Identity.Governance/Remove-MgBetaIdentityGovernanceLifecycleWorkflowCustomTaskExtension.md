@@ -38,13 +38,13 @@ A custom task extension  can only be deleted if it is not referenced in any task
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Remove-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskExtensionId $customTaskExtensionId
+
 ```
 This example shows how to use the Remove-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -307,7 +307,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancelifecycleworkflowcustomtaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancelifecycleworkflowcustomtaskextension)
 
-[https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-delete?view=graph-rest-beta)
 
 
 

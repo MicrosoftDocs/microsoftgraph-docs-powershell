@@ -49,14 +49,18 @@ Reprovision a specific Cloud PC.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reprovision-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaReprovisionUserCloudPc Cmdlet
+### Example 1: Reprovision the cloudPC for the signed-in user
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 # A UPN can also be used as -UserId.
 Invoke-MgBetaReprovisionUserCloudPc -UserId $userId -CloudPCId $cloudPCId
+
 ```
-This example shows how to use the Invoke-MgBetaReprovisionUserCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will reprovision the cloudpc for the signed-in user
+
 
 ## PARAMETERS
 
@@ -327,7 +331,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareprovisionusercloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareprovisionusercloudpc)
 
-[https://learn.microsoft.com/graph/api/cloudpc-reprovision?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-reprovision?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpc-reprovision?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-reprovision?view=graph-rest-beta)
 
 
 

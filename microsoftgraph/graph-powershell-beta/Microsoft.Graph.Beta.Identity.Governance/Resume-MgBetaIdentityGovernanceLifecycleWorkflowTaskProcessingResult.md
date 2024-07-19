@@ -57,6 +57,27 @@ Resume a task processing result that's inProgress.
 In the default case an Azure Logic Apps system-assigned managed identity calls this API.
 For more information, see: Lifecycle Workflows extensibility approach.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	data = @{
+		operationStatus = "Completed"
+	}
+	source = "sample"
+	type = "lifecycleEvent"
+}
+
+Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult -WorkflowId $workflowId -TaskId $taskId -TaskProcessingResultId $taskProcessingResultId -BodyParameter $params
+
+```
+This example shows how to use the Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -422,8 +443,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaidentitygovernancelifecycleworkflowtaskprocessingresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaidentitygovernancelifecycleworkflowtaskprocessingresult)
 
-[https://learn.microsoft.com/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-beta)
 
 
 

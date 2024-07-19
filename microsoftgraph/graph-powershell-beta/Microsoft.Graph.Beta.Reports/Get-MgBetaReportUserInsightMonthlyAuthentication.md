@@ -37,6 +37,19 @@ Get-MgBetaReportUserInsightMonthlyAuthentication -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Insights for authentications on apps registered in the tenant for a specified period.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportUserInsightMonthlyAuthentication
+
+```
+This example shows how to use the Get-MgBetaReportUserInsightMonthlyAuthentication Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -283,7 +296,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -332,8 +344,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlyauthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlyauthentication)
 
-[https://learn.microsoft.com/graph/api/monthlyuserinsightmetricsroot-list-authentications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/monthlyuserinsightmetricsroot-list-authentications?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/monthlyuserinsightmetricsroot-list-authentications?view=graph-rest-beta](https://learn.microsoft.com/graph/api/monthlyuserinsightmetricsroot-list-authentications?view=graph-rest-beta)
 
 
 

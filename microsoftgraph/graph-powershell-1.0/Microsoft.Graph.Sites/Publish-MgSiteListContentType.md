@@ -8,7 +8,7 @@ schema: 2.0.0
 # Publish-MgSiteListContentType
 
 ## SYNOPSIS
-Publishes a \[contentType\]\[\] present in the content type hub site.
+Publishes a contentType present in the content type hub site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Publish-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Publish-MgBetaSiteListContentType?view=graph-powershell-beta)
@@ -30,9 +30,7 @@ Publish-MgSiteListContentType -InputObject <ISitesIdentity> [-ResponseHeadersVar
 ```
 
 ## DESCRIPTION
-Publishes a \[contentType\]\[\] present in the content type hub site.
-
-## EXAMPLES
+Publishes a contentType present in the content type hub site.
 
 ## PARAMETERS
 
@@ -246,6 +244,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -254,6 +253,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
+
+
 
 
 

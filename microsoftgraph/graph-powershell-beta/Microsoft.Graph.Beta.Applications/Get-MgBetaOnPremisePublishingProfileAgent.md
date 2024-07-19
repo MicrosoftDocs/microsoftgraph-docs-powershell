@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaOnPremisePublishingProfileAgent
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an onPremisesAgent object.
+List of existing onPremisesAgent objects.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -35,7 +37,9 @@ Get-MgBetaOnPremisePublishingProfileAgent -InputObject <IApplicationsIdentity> [
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an onPremisesAgent object.
+List of existing onPremisesAgent objects.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -327,6 +331,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[IPApplicationSegmentId <String>]`: The unique identifier of ipApplicationSegment
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
@@ -334,6 +339,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
   - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -347,10 +353,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagent)
-
-[https://learn.microsoft.com/graph/api/onpremisesagent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesagent-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/onpremisesagent-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesagent-list?view=graph-rest-1.0)
 
 
 

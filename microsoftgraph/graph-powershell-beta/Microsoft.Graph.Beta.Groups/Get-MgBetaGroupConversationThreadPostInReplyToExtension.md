@@ -8,9 +8,10 @@ schema: 2.0.0
 # Get-MgBetaGroupConversationThreadPostInReplyToExtension
 
 ## SYNOPSIS
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupConversationThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostInReplyToExtension?view=graph-powershell-1.0)
@@ -21,8 +22,9 @@ The following table lists the three scenarios where you can get an open extensio
 ```
 Get-MgBetaGroupConversationThreadPostInReplyToExtension -ConversationId <String> -ConversationThreadId <String>
  -GroupId <String> -PostId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
@@ -41,11 +43,10 @@ Get-MgBetaGroupConversationThreadPostInReplyToExtension -InputObject <IGroupsIde
 ```
 
 ## DESCRIPTION
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-
-## EXAMPLES
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## PARAMETERS
 
@@ -276,6 +277,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -390,7 +406,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostinreplytoextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostinreplytoextension)
 
-[https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0)
+
+
+
 
 
 

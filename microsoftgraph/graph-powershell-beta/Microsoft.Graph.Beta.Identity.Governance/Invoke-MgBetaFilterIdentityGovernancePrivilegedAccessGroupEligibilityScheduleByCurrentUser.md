@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Retrieve schedules of membership and ownership eligibility requests for the calling principal.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleByCurrentUser?view=graph-powershell-1.0)
@@ -33,7 +33,31 @@ Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleByC
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Retrieve schedules of membership and ownership eligibility requests for the calling principal.
+
+## EXAMPLES
+### Example 1: Retrieve eligibility schedules for the calling principal
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleByCurrentUser -On $onId 
+
+```
+This example will retrieve eligibility schedules for the calling principal
+
+### Example 2: Retrieve eligibility schedules for the principal and filter by a group and accessId
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleByCurrentUser -Filter "groupId eq 'd5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc' and accessId eq 'member'"  -On $onId 
+
+```
+This example will retrieve eligibility schedules for the principal and filter by a group and accessid
+
 
 ## PARAMETERS
 
@@ -354,6 +378,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceprivilegedaccessgroupeligibilityschedulebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceprivilegedaccessgroupeligibilityschedulebycurrentuser)
 
+[https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedule-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedule-filterbycurrentuser?view=graph-rest-beta)
 
 
 

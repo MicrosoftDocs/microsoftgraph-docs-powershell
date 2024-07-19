@@ -46,8 +46,6 @@ New-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsI
 ## DESCRIPTION
 Create new navigation property to contentSharingSessions for communications
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -239,6 +237,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallcontentsharingsession](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallcontentsharingsession)
+
+
 
 
 

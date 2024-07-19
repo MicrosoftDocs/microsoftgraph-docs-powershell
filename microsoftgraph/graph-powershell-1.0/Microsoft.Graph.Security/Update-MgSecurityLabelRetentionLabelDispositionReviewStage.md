@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -StageNumber
-The sequence number for each stage of the disposition review.
+The unique sequence number for each stage of the disposition review.
 
 ```yaml
 Type: String
@@ -288,7 +288,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityDispositionReviewStage>`: dispositionRevi
 Read-only.
   - `[Name <String>]`: Name representing each stage within a collection.
   - `[ReviewersEmailAddresses <String- `[]`>]`: A collection of reviewers at each stage.
-  - `[StageNumber <String>]`: The sequence number for each stage of the disposition review.
+  - `[StageNumber <String>]`: The unique sequence number for each stage of the disposition review.
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
@@ -314,6 +314,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host

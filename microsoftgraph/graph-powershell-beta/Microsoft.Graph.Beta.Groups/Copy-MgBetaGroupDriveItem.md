@@ -8,7 +8,7 @@ schema: 2.0.0
 # Copy-MgBetaGroupDriveItem
 
 ## SYNOPSIS
-Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
+Asynchronously create a copy of a driveItem (including any children) under a new parent item or with a new name.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupDriveItem?view=graph-powershell-1.0)
@@ -18,7 +18,7 @@ Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including an
 ### CopyExpanded (Default)
 ```
 Copy-MgBetaGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Name <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ChildrenOnly] [-Name <String>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -34,8 +34,9 @@ Copy-MgBetaGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <Stri
 ### CopyViaIdentityExpanded
 ```
 Copy-MgBetaGroupDriveItem -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ChildrenOnly] [-Name <String>]
+ [-ParentReference <IMicrosoftGraphItemReference>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
@@ -47,12 +48,10 @@ Copy-MgBetaGroupDriveItem -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
+Asynchronously create a copy of a driveItem (including any children) under a new parent item or with a new name.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-copy-permissions.md)]
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -84,6 +83,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ChildrenOnly
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -274,22 +288,23 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsZsqog0GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ChildrenOnly <Boolean?>]`: 
   - `[Name <String>]`: 
   - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
     - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive.
+See drive resource for values.
     - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
     - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-    - `[Path <String>]`: Path that can be used to navigate to the item.
+    - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
-    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
     - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -300,9 +315,9 @@ Read-only.
       - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
       - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
     - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
-It is an opaque string that consists of three identifiers of the site.
-For OneDrive, this property is not populated.
+The value is the same as the id property of that site resource.
+It's an opaque string that consists of three identifiers of the site.
+For OneDrive, this property isn't populated.
 
 INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -355,18 +370,18 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
   - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive.
+See drive resource for values.
   - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
   - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-  - `[Path <String>]`: Path that can be used to navigate to the item.
+  - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
-  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
   - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -377,15 +392,17 @@ Read-only.
     - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
     - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
-It is an opaque string that consists of three identifiers of the site.
-For OneDrive, this property is not populated.
+The value is the same as the id property of that site resource.
+It's an opaque string that consists of three identifiers of the site.
+For OneDrive, this property isn't populated.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagroupdriveitem)
 
-[https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
+
+
 
 
 

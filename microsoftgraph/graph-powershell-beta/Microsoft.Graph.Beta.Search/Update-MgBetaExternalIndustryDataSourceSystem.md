@@ -45,6 +45,23 @@ Update-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of a sourceSystemDefinition object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+$params = @{
+	vendor = "LMS Vendor"
+}
+
+Update-MgBetaExternalIndustryDataSourceSystem -SourceSystemDefinitionId $sourceSystemDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaExternalIndustryDataSourceSystem Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -281,9 +298,11 @@ Maximum supported length is 100 characters.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-        - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+        - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+        - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
         - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-        - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+        - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
     - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
     - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -315,6 +334,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -330,9 +351,11 @@ USERMATCHINGSETTINGS <IMicrosoftGraphIndustryDataUserMatchingSetting- `[]`>: A c
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-      - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+      - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+      - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
       - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-      - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+      - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
   - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
   - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -351,8 +374,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem)
 
-[https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-update?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-update?view=graph-rest-beta)
 
 
 

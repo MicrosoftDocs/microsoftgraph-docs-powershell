@@ -62,6 +62,32 @@ Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ## DESCRIPTION
 Update the properties of a cloudPcOnPremisesConnection object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.cloudPcOnPremisesConnection"
+	displayName = "Display Name value"
+	subscriptionId = "0ac520ee-14c0-480f-b6c9-0a90c585ffff"
+	subscriptionName = "Subscription Name value"
+	adDomainName = "Active Directory Domain Name value"
+	adDomainUsername = "Active Directory Domain User Name value"
+	organizationalUnit = "Organization Unit value"
+	resourceGroupId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG"
+	virtualNetworkId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet"
+	subnetId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"
+}
+
+Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -576,7 +602,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[HealthChecks <IMicrosoftGraphCloudPcOnPremisesConnectionHealthCheck- `[]`>]`: All checks that are done on the connection.
       - `[AdditionalDetail <String>]`: More details about the health check or the recommended action.
 Read-only.
-      - `[AdditionalDetails <String>]`: 
+      - `[AdditionalDetails <String>]`: More details about the health check or the recommended action.
+Read-only.
+The additionalDetails property is deprecated and stopped returning data on January 31, 2024.
+Goind forward, use the additionalDetail property.
       - `[CorrelationId <String>]`: The unique identifier of the health check item-related activities.
 This identifier can be useful in troubleshooting.
       - `[DisplayName <String>]`: The display name for this health check item.
@@ -631,7 +660,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[HealthChecks <IMicrosoftGraphCloudPcOnPremisesConnectionHealthCheck- `[]`>]`: All checks that are done on the connection.
     - `[AdditionalDetail <String>]`: More details about the health check or the recommended action.
 Read-only.
-    - `[AdditionalDetails <String>]`: 
+    - `[AdditionalDetails <String>]`: More details about the health check or the recommended action.
+Read-only.
+The additionalDetails property is deprecated and stopped returning data on January 31, 2024.
+Goind forward, use the additionalDetail property.
     - `[CorrelationId <String>]`: The unique identifier of the health check item-related activities.
 This identifier can be useful in troubleshooting.
     - `[DisplayName <String>]`: The display name for this health check item.
@@ -654,7 +686,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[HealthChecks <IMicrosoftGraphCloudPcOnPremisesConnectionHealthCheck- `[]`>]`: All checks that are done on the connection.
     - `[AdditionalDetail <String>]`: More details about the health check or the recommended action.
 Read-only.
-    - `[AdditionalDetails <String>]`: 
+    - `[AdditionalDetails <String>]`: More details about the health check or the recommended action.
+Read-only.
+The additionalDetails property is deprecated and stopped returning data on January 31, 2024.
+Goind forward, use the additionalDetail property.
     - `[CorrelationId <String>]`: The unique identifier of the health check item-related activities.
 This identifier can be useful in troubleshooting.
     - `[DisplayName <String>]`: The display name for this health check item.
@@ -732,8 +767,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointonpremiseconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointonpremiseconnection)
 
-[https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-update?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-update?view=graph-rest-beta)
 
 
 

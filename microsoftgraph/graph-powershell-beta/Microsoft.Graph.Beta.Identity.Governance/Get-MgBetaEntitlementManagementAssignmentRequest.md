@@ -40,6 +40,19 @@ Get-MgBetaEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernan
 ## DESCRIPTION
 Represents access package assignment requests created by or on behalf of a user.
 
+## EXAMPLES
+### Example 1cenario1 for u1ing query parameter1
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaEntitlementManagementAssignmentRequest
+
+```
+This example will### example scenarios for using query parameters
+
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentRequestId
@@ -390,8 +403,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementassignmentrequest)
 
-[https://learn.microsoft.com/graph/api/entitlementmanagement-list-assignmentrequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-list-assignmentrequests?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/entitlementmanagement-list-assignmentrequests?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagement-list-assignmentrequests?view=graph-rest-beta)
 
 
 

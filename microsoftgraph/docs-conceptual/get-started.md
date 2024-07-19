@@ -160,6 +160,5 @@ Disconnect-MgGraph
 
 ## Next steps
 
-- Work around the [Unverified publisher known issue](troubleshooting.md#unverified-publisher-known-issue).
 - [Learn how to navigate the SDK](navigating.md).
 - [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).

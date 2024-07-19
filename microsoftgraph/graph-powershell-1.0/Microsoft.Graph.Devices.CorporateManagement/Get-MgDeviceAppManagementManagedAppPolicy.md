@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementManagedAppPolicy
 
 ## SYNOPSIS
-Read properties and relationships of the managedAppProtection object.
+Read properties and relationships of the managedAppConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppPolicy?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporateManagem
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the managedAppProtection object.
+Read properties and relationships of the managedAppConfiguration object.
 
 ## PARAMETERS
 
@@ -326,7 +326,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedapppolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedapppolicy)
 
-[https://learn.microsoft.com/graph/api/intune-mam-managedappprotection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappprotection-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-mam-managedappconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappconfiguration-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappprotection-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappprotection-list?view=graph-rest-1.0)
 

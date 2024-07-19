@@ -32,8 +32,6 @@ Get-MgBetaDriveItemListItemVersionField -InputObject <IFilesIdentity> [-ExpandPr
 ## DESCRIPTION
 A collection of the fields and values for this version of the list item.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -DriveId
@@ -217,6 +215,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemlistitemversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemlistitemversionfield)
+
+
 
 
 

@@ -417,7 +417,7 @@ Optional when source is entityUrl; required when source is text.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetateamworkactivitynotificationtorecipient](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetateamworkactivitynotificationtorecipient)
 
-[https://learn.microsoft.com/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta)
 
 
 

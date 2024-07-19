@@ -56,6 +56,23 @@ Update-MgBetaSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the properties of a qna object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Search
+
+$params = @{
+	description = "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a weekend."
+}
+
+Update-MgBetaSearchQna -QnaId $qnaId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSearchQna Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -527,6 +544,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -562,8 +581,7 @@ When users select this answer variation from the search results, they're directe
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna)
 
-[https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-beta)
 
 
 

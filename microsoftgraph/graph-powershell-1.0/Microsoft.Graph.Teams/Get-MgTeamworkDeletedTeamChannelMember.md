@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamworkDeletedTeamChannelMember
 
 ## SYNOPSIS
-Get a conversationMember from a channel.
+A collection of membership records associated with the channel.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Get a conversationMember from a channel.
+A collection of membership records associated with the channel.
 
 ## PARAMETERS
 
@@ -354,10 +354,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmember)
-
-[https://learn.microsoft.com/graph/api/channel-get-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-get-members?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/channel-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-list-members?view=graph-rest-1.0)
 
 
 

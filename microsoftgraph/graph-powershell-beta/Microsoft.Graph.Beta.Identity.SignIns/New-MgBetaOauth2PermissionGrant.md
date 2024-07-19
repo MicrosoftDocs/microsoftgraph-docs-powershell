@@ -39,6 +39,7 @@ A delegated permission grant authorizes a client service principal (representing
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -51,10 +52,9 @@ $params = @{
 }
 
 New-MgBetaOauth2PermissionGrant -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaOauth2PermissionGrant Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -355,7 +355,7 @@ Required.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaoauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaoauth2permissiongrant)
 
-[https://learn.microsoft.com/graph/api/oauth2permissiongrant-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/oauth2permissiongrant-post?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/oauth2permissiongrant-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/oauth2permissiongrant-post?view=graph-rest-beta)
 
 
 

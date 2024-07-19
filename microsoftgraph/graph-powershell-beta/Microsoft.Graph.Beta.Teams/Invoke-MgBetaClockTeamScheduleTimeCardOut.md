@@ -47,20 +47,25 @@ Invoke-MgBetaClockTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
 Clock out to end an open timeCard.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaClockTeamScheduleTimeCardOut Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 $params = @{
-	AtAprovedLocation = $true
-	Notes = @{
-		ContentType = "text"
-		Content = "clock out smaple notes"
+	atAprovedLocation = $true
+	notes = @{
+		contentType = "text"
+		content = "clock out smaple notes"
 	}
 }
+
 Invoke-MgBetaClockTeamScheduleTimeCardOut -TeamId $teamId -TimeCardId $timeCardId -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaClockTeamScheduleTimeCardOut Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -325,7 +330,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardout](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardout)
 
-[https://learn.microsoft.com/graph/api/timecard-clockout?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-clockout?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/timecard-clockout?view=graph-rest-beta](https://learn.microsoft.com/graph/api/timecard-clockout?view=graph-rest-beta)
 
 
 

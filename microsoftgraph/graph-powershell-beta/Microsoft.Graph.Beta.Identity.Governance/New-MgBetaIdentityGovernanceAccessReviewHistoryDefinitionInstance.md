@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReviewHistoryPeriodEndDateTime
-Timestamp, reviews ending on or before this date are in the fetched history data.
+The date and time for which reviews ended before this date are included in the fetched history data.
 
 ```yaml
 Type: DateTime
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReviewHistoryPeriodStartDateTime
-Timestamp, reviews starting on or after this date are in the fetched history data.
+The date and time for which reviews started on or after this date are included in the fetched history data.
 
 ```yaml
 Type: DateTime
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunDateTime
-Timestamp when the instance's history data is scheduled to be generated.
+The date and time when the instance's history data is scheduled to be generated.
 
 ```yaml
 Type: DateTime
@@ -347,9 +347,9 @@ Required.
   - `[FulfilledDateTime <DateTime?>]`: Timestamp when all of the available data for this instance was collected.
 This will be set after this instance's status is set to done.
 Required.
-  - `[ReviewHistoryPeriodEndDateTime <DateTime?>]`: Timestamp, reviews ending on or before this date are in the fetched history data.
-  - `[ReviewHistoryPeriodStartDateTime <DateTime?>]`: Timestamp, reviews starting on or after this date are in the fetched history data.
-  - `[RunDateTime <DateTime?>]`: Timestamp when the instance's history data is scheduled to be generated.
+  - `[ReviewHistoryPeriodEndDateTime <DateTime?>]`: The date and time for which reviews ended before this date are included in the fetched history data.
+  - `[ReviewHistoryPeriodStartDateTime <DateTime?>]`: The date and time for which reviews started on or after this date are included in the fetched history data.
+  - `[RunDateTime <DateTime?>]`: The date and time when the instance's history data is scheduled to be generated.
   - `[Status <String>]`: accessReviewHistoryStatus
 
 INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
@@ -456,6 +456,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinitioninstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinitioninstance)
+
 
 
 

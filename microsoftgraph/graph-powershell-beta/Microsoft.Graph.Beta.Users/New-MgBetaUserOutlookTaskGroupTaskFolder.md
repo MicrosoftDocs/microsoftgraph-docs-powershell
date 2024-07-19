@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserOutlookTaskGroupTaskFolder
 
 ## SYNOPSIS
-Create an Outlook task folder under a specified outlookTaskGroup.
+Create new navigation property to taskFolders for users
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ New-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Create an Outlook task folder under a specified outlookTaskGroup.
+Create new navigation property to taskFolders for users
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserOutlookTaskGroupTaskFolder Cmdlet
@@ -389,8 +389,11 @@ Read-only.
   - `[Tasks <IMicrosoftGraphOutlookTask- `[]`>]`: The tasks in this task folder.
 Read-only.
 Nullable.
-    - `[Categories <String- `[]`>]`: 
-    - `[ChangeKey <String>]`: 
+    - `[Categories <String- `[]`>]`: The categories associated with the item.
+    - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -516,8 +519,11 @@ Read-only.
 TASKS <IMicrosoftGraphOutlookTask- `[]`>: The tasks in this task folder.
 Read-only.
 Nullable.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -607,8 +613,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgrouptaskfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgrouptaskfolder)
-
-[https://learn.microsoft.com/graph/api/outlooktaskgroup-post-taskfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktaskgroup-post-taskfolders?view=graph-rest-1.0)
 
 
 

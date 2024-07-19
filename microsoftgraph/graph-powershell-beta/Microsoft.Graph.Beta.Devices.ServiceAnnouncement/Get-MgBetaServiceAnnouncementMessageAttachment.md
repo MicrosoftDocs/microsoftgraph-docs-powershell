@@ -324,9 +324,9 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachment)
 
-[https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-beta)
 
 
 

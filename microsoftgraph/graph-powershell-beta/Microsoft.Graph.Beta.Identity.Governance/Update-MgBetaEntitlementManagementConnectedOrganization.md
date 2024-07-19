@@ -58,6 +58,7 @@ Update a connectedOrganization object to change one or more of its properties.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
@@ -67,10 +68,9 @@ $params = @{
 }
 
 Update-MgBetaEntitlementManagementConnectedOrganization -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaEntitlementManagementConnectedOrganization Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -556,7 +556,7 @@ Always null when the object hasn't been deleted.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementconnectedorganization)
 
-[https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-beta)
 
 
 

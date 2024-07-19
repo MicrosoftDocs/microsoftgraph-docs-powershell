@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription
 
 ## SYNOPSIS
-Invoke function getSubscriptions
+List all subscriptions cloudPcSubscription that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis.
 
 ## SYNTAX
 
@@ -19,16 +19,23 @@ Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription [-Count] [-Filter 
 ```
 
 ## DESCRIPTION
-Invoke function getSubscriptions
+List all subscriptions cloudPcSubscription that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcsnapshot-getsubscriptions-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+
 Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription
+
 ```
 This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -166,6 +173,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointsnapshotsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointsnapshotsubscription)
+
+[https://learn.microsoft.com/graph/api/cloudpcsnapshot-getsubscriptions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcsnapshot-getsubscriptions?view=graph-rest-beta)
 
 
 

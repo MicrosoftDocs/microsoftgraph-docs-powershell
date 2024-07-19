@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportYammerGroupActivityGroupCount
 
 ## SYNOPSIS
-Invoke function getYammerGroupsActivityGroupCounts
+Get the total number of groups that existed and how many included group conversation activities.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportYammerGroupActivityGroupCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerGroupActivityGroupCount?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgReportYammerGroupActivityGroupCount -InputObject <IReportsIdentity> -OutFi
 ```
 
 ## DESCRIPTION
-Invoke function getYammerGroupsActivityGroupCounts
+Get the total number of groups that existed and how many included group conversation activities.
 
 ## PARAMETERS
 
@@ -183,6 +183,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitygroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitygroupcount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-1.0)
 
 
 

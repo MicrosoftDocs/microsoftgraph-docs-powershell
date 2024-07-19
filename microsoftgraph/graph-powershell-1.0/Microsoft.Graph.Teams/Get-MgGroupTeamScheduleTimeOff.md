@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupTeamScheduleTimeOff
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a timeOff object by ID.
+The instances of times off in the schedule.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleTimeOff?view=graph-powershell-beta)
@@ -37,9 +37,7 @@ Get-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-Property <String[
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a timeOff object by ID.
-
-## EXAMPLES
+The instances of times off in the schedule.
 
 ## PARAMETERS
 
@@ -325,9 +323,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoff)
 
-[https://learn.microsoft.com/graph/api/timeoff-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoff-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/schedule-list-timesoff?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-list-timesoff?view=graph-rest-1.0)
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserChatMember
 
 ## SYNOPSIS
-Add a conversationMember to a chat.
+Create new navigation property to members for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMember?view=graph-powershell-beta)
@@ -46,9 +46,7 @@ New-MgUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Add a conversationMember to a chat.
-
-## EXAMPLES
+Create new navigation property to members for users
 
 ## PARAMETERS
 
@@ -340,7 +338,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmember)
 
-[https://learn.microsoft.com/graph/api/chat-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-members?view=graph-rest-1.0)
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaScheduleRoleManagementDirectoryRole
 
 ## SYNOPSIS
-Invoke function roleSchedules
+Retrieve both roleAssignmentSchedules and roleEligibilitySchedules.
 
 ## SYNTAX
 
@@ -21,7 +21,20 @@ Invoke-MgBetaScheduleRoleManagementDirectoryRole [-AppScopeId <String>] [-Count]
 ```
 
 ## DESCRIPTION
-Invoke function roleSchedules
+Retrieve both roleAssignmentSchedules and roleEligibilitySchedules.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaScheduleRoleManagementDirectoryRole
+
+```
+This example shows how to use the Invoke-MgBetaScheduleRoleManagementDirectoryRole Cmdlet.
+
 
 ## PARAMETERS
 
@@ -265,6 +278,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagementdirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagementdirectoryrole)
 
+[https://learn.microsoft.com/graph/api/rbacapplication-roleschedules?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-roleschedules?view=graph-rest-beta)
 
 
 

@@ -32,8 +32,6 @@ Remove-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> [-
 ## DESCRIPTION
 Delete navigation property assignedToTaskBoardFormat for planner
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -199,6 +197,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertaskassignedtotaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertaskassignedtotaskboardformat)
+
+
 
 
 

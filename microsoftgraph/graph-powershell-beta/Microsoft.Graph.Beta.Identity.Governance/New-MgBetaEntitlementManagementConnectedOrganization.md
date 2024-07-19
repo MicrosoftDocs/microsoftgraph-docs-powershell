@@ -47,6 +47,7 @@ Create a new connectedOrganization object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
@@ -63,10 +64,9 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementConnectedOrganization -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaEntitlementManagementConnectedOrganization Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -434,7 +434,7 @@ Always null when the object hasn't been deleted.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganization)
 
-[https://learn.microsoft.com/graph/api/entitlementmanagement-post-connectedorganizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-post-connectedorganizations?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/entitlementmanagement-post-connectedorganizations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagement-post-connectedorganizations?view=graph-rest-beta)
 
 
 

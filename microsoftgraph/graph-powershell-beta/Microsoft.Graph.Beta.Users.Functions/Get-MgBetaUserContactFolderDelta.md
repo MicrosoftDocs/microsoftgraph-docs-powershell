@@ -345,7 +345,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercontactfolderdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercontactfolderdelta)
 
-[https://learn.microsoft.com/graph/api/contactfolder-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactfolder-delta?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/contactfolder-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contactfolder-delta?view=graph-rest-beta)
 
 
 

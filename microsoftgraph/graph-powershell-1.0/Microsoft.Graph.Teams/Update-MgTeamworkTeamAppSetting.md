@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamworkTeamAppSetting
 
 ## SYNOPSIS
-Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
+Update the navigation property teamsAppSettings in teamwork
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkTeamAppSetting?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Update-MgTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSettings>
 ```
 
 ## DESCRIPTION
-Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
+Update the navigation property teamsAppSettings in teamwork
 
 ## EXAMPLES
 ### Example 1: Update the tenant-wide teamsAppSettings for all Teams apps in the tenant
@@ -231,8 +231,6 @@ False blocks the installation of any Teams app that requires resource-specific p
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting)
-
-[https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-1.0)
 
 
 

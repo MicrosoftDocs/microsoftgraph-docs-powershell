@@ -58,8 +58,6 @@ Update-MgBetaSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property retentionEvents in security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -155,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventPropagationResults
-.
+Represents the success status of a created event and additional information.
 To construct, see NOTES section for EVENTPROPAGATIONRESULTS properties and create a hash table.
 
 ```yaml
@@ -171,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventQueries
-.
+Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
 To construct, see NOTES section for EVENTQUERIES properties and create a hash table.
 
 ```yaml
@@ -436,12 +434,12 @@ This property is read-only.
   - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEvent was created.
   - `[Description <String>]`: Optional information about the event.
   - `[DisplayName <String>]`: Name of the event.
-  - `[EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult- `[]`>]`: 
+  - `[EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult- `[]`>]`: Represents the success status of a created event and additional information.
     - `[Location <String>]`: The name of the specific location in the workload associated with the event.
     - `[ServiceName <String>]`: The name of the workload associated with the event.
     - `[Status <String>]`: eventPropagationStatus
     - `[StatusInformation <String>]`: Additional information about the status of the event creation request.
-  - `[EventQueries <IMicrosoftGraphSecurityEventQuery- `[]`>]`: 
+  - `[EventQueries <IMicrosoftGraphSecurityEventQuery- `[]`>]`: Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
     - `[Query <String>]`: Represents unique identification for the  query.
 'Asset ID' for SharePoint Online and OneDrive for Business, 'keywords' for Exchange Online.
     - `[QueryType <String>]`: queryType
@@ -489,13 +487,13 @@ This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-EVENTPROPAGATIONRESULTS <IMicrosoftGraphSecurityEventPropagationResult- `[]`>: .
+EVENTPROPAGATIONRESULTS <IMicrosoftGraphSecurityEventPropagationResult- `[]`>: Represents the success status of a created event and additional information.
   - `[Location <String>]`: The name of the specific location in the workload associated with the event.
   - `[ServiceName <String>]`: The name of the workload associated with the event.
   - `[Status <String>]`: eventPropagationStatus
   - `[StatusInformation <String>]`: Additional information about the status of the event creation request.
 
-EVENTQUERIES <IMicrosoftGraphSecurityEventQuery- `[]`>: .
+EVENTQUERIES <IMicrosoftGraphSecurityEventQuery- `[]`>: Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
   - `[Query <String>]`: Represents unique identification for the  query.
 'Asset ID' for SharePoint Online and OneDrive for Business, 'keywords' for Exchange Online.
   - `[QueryType <String>]`: queryType
@@ -571,6 +569,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -581,6 +580,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -637,6 +637,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggerretentionevent)
+
+
 
 
 

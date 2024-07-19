@@ -46,6 +46,7 @@ Create a new partner configuration in a cross-tenant access policy.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
@@ -75,10 +76,9 @@ $params = @{
 }
 
 New-MgBetaPolicyCrossTenantAccessPolicyPartner -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaPolicyCrossTenantAccessPolicyPartner Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -520,7 +520,7 @@ For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartner)
 
-[https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-post-partners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-post-partners?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-post-partners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-post-partners?view=graph-rest-beta)
 
 
 

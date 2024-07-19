@@ -968,7 +968,8 @@ Accept wildcard characters: False
 ```
 
 ### -RequestedModalities
-.
+The list of requested modalities.
+Possible values are: unknown, audio, video, videoBasedScreenSharing, data.
 
 ```yaml
 Type: String[]
@@ -1014,7 +1015,8 @@ Accept wildcard characters: False
 ```
 
 ### -RingingTimeoutInSeconds
-.
+Ringing timeout in seconds for outgoing peer to peer calls.
+The max value for this attribute is 115 seconds.
 
 ```yaml
 Type: Int32
@@ -1029,7 +1031,8 @@ Accept wildcard characters: False
 ```
 
 ### -RoutingPolicies
-.
+This property is applicable for peer to peer calls only.
+Possible values are: none, noMissedCall, disableForwardingExceptPhone, disableForwarding, preferSkypeForBusiness, unknownFutureValue.
 
 ```yaml
 Type: String[]
@@ -1075,7 +1078,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subject
-.
+The subject of the conversation.
 
 ```yaml
 Type: String
@@ -1090,7 +1093,8 @@ Accept wildcard characters: False
 ```
 
 ### -Targets
-.
+The targets of the call.
+Required information for creating peer to peer call.
 To construct, see NOTES section for TARGETS properties and create a hash table.
 
 ```yaml
@@ -1106,7 +1110,8 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-.
+Read-only.
+tenantId in Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -1224,10 +1229,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LanguageId <String>]`: The language culture string.
@@ -1265,10 +1269,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[LanguageId <String>]`: The language culture string.
@@ -1319,7 +1322,7 @@ Read-only.
     - `[Transferor <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[MediaConfig <IMicrosoftGraphMediaConfig>]`: mediaConfig
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[RemoveFromDefaultAudioGroup <Boolean?>]`: 
+    - `[RemoveFromDefaultAudioGroup <Boolean?>]`: Remove media from the default audio group.
   - `[MediaState <IMicrosoftGraphCallMediaState>]`: callMediaState
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Audio <String>]`: mediaState
@@ -1371,14 +1374,18 @@ Read-only.
       - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
       - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
     - `[RosterSequenceNumber <Int64?>]`: Indicates the roster sequence number the participant was last updated in.
-  - `[RequestedModalities <String- `[]`>]`: 
+  - `[RequestedModalities <String- `[]`>]`: The list of requested modalities.
+Possible values are: unknown, audio, video, videoBasedScreenSharing, data.
   - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
-  - `[RingingTimeoutInSeconds <Int32?>]`: 
-  - `[RoutingPolicies <String- `[]`>]`: 
+  - `[RingingTimeoutInSeconds <Int32?>]`: Ringing timeout in seconds for outgoing peer to peer calls.
+The max value for this attribute is 115 seconds.
+  - `[RoutingPolicies <String- `[]`>]`: This property is applicable for peer to peer calls only.
+Possible values are: none, noMissedCall, disableForwardingExceptPhone, disableForwarding, preferSkypeForBusiness, unknownFutureValue.
   - `[Source <IMicrosoftGraphParticipantInfo>]`: participantInfo
   - `[State <String>]`: callState
-  - `[Subject <String>]`: 
-  - `[Targets <IMicrosoftGraphInvitationParticipantInfo- `[]`>]`: 
+  - `[Subject <String>]`: The subject of the conversation.
+  - `[Targets <IMicrosoftGraphInvitationParticipantInfo- `[]`>]`: The targets of the call.
+Required information for creating peer to peer call.
     - `[EndpointType <String>]`: endpointType
     - `[Hidden <Boolean?>]`: Optional.
 Whether to hide the participant from the roster.
@@ -1390,7 +1397,8 @@ Whether to remove them from the main mixer.
     - `[ReplacesCallId <String>]`: Optional.
 The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
-  - `[TenantId <String>]`: 
+  - `[TenantId <String>]`: Read-only.
+tenantId in Microsoft Entra ID.
   - `[TerminationReason <String>]`: 
   - `[ToneInfo <IMicrosoftGraphToneInfo>]`: toneInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1413,10 +1421,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Original <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1441,10 +1448,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[SourceParticipantId <String>]`: The id of the participant that triggered the incoming call.
@@ -1453,7 +1459,7 @@ Read-only.
 
 MEDIACONFIG `<IMicrosoftGraphMediaConfig>`: mediaConfig
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[RemoveFromDefaultAudioGroup <Boolean?>]`: 
+  - `[RemoveFromDefaultAudioGroup <Boolean?>]`: Remove media from the default audio group.
 
 MEDIASTATE `<IMicrosoftGraphCallMediaState>`: callMediaState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1494,10 +1500,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[LanguageId <String>]`: The language culture string.
@@ -1551,10 +1556,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LanguageId <String>]`: The language culture string.
@@ -1568,7 +1572,8 @@ Read-only.
 The region doesn't change based on the participant's current physical location, unlike countryCode.
 Read-only.
 
-TARGETS <IMicrosoftGraphInvitationParticipantInfo- `[]`>: .
+TARGETS <IMicrosoftGraphInvitationParticipantInfo- `[]`>: The targets of the call.
+Required information for creating peer to peer call.
   - `[EndpointType <String>]`: endpointType
   - `[Hidden <Boolean?>]`: Optional.
 Whether to hide the participant from the roster.
@@ -1577,10 +1582,9 @@ Whether to hide the participant from the roster.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[ParticipantId <String>]`: Optional.
@@ -1605,7 +1609,7 @@ TRANSCRIPTION `<IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall)
 
-[https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-beta)
 
 
 

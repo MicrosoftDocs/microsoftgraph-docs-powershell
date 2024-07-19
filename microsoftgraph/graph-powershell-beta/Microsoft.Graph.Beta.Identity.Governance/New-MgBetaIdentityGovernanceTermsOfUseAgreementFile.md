@@ -50,6 +50,30 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGover
 ## DESCRIPTION
 Create a new localized agreement file.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	fileName = "Contoso ToU for guest users (French)"
+	language = "fr-FR"
+	isDefault = $false
+	isMajorVersion = $false
+	displayName = "Contoso ToU for guest users (French)"
+	fileData = @{
+		data = [System.Text.Encoding]::ASCII.GetBytes("base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data")
+	}
+}
+
+New-MgBetaIdentityGovernanceTermsOfUseAgreementFile -AgreementId $agreementId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaIdentityGovernanceTermsOfUseAgreementFile Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -547,8 +571,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreementfile)
 
-[https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-beta](https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-beta)
 
 
 

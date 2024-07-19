@@ -48,8 +48,6 @@ Update-MgUserPresence -InputObject <ICloudCommunicationsIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property presence in users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Activity
@@ -324,6 +322,8 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence)
+
+
 
 
 

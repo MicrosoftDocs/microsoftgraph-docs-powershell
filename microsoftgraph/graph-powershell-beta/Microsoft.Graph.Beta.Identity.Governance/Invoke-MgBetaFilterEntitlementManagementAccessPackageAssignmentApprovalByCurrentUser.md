@@ -8,7 +8,10 @@ schema: 2.0.0
 # Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+In Microsoft Entra entitlement management, return a collection of access package assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
+In PIM for groups, return a collection of assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser?view=graph-powershell-1.0)
@@ -33,7 +36,23 @@ Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrent
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+In Microsoft Entra entitlement management, return a collection of access package assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
+In PIM for groups, return a collection of assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
+
+## EXAMPLES
+### Example 1: Retrieve the approval resources in entitlement management
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser -On $onId 
+
+```
+This example will retrieve the approval resources in entitlement management
+
 
 ## PARAMETERS
 
@@ -354,6 +373,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackageassignmentapprovalbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackageassignmentapprovalbycurrentuser)
 
+[https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-beta)
 
 
 

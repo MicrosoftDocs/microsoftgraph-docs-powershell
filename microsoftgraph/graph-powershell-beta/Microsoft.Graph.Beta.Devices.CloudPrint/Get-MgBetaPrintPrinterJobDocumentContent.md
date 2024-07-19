@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaPrintPrinterJobDocumentContent
 
 ## SYNOPSIS
-Get media content for the navigation property documents from print
+Download the binary file associated with a printDocument.
+Calling this method yields a redirect response with a preauthenticated URL that can be used to download the payload.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterJobDocumentContent](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterJobDocumentContent?view=graph-powershell-1.0)
@@ -30,7 +31,21 @@ Get-MgBetaPrintPrinterJobDocumentContent -InputObject <IDevicesCloudPrintIdentit
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property documents from print
+Download the binary file associated with a printDocument.
+Calling this method yields a redirect response with a preauthenticated URL that can be used to download the payload.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+Get-MgBetaPrintPrinterJobDocumentContent -PrinterId $printerId -PrintJobId $printJobId -PrintDocumentId $printDocumentId -OutFile $outFileId
+
+```
+This example shows how to use the Get-MgBetaPrintPrinterJobDocumentContent Cmdlet.
+
 
 ## PARAMETERS
 
@@ -205,6 +220,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterjobdocumentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterjobdocumentcontent)
 
+[https://learn.microsoft.com/graph/api/printdocument-get-file?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printdocument-get-file?view=graph-rest-beta)
 
 
 

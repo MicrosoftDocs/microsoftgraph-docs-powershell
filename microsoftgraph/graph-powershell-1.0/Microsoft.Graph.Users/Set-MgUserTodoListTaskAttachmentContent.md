@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgUserTodoListTaskAttachmentContent
 
 ## SYNOPSIS
-Update media content for the navigation property attachments in users
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserTodoListTaskAttachmentContent](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserTodoListTaskAttachmentContent?view=graph-powershell-beta)
@@ -31,7 +32,8 @@ Set-MgUserTodoListTaskAttachmentContent -InputObject <IUsersIdentity> [-Data <St
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property attachments in users
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 
@@ -287,6 +289,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusertodolisttaskattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusertodolisttaskattachmentcontent)
+
 
 
 

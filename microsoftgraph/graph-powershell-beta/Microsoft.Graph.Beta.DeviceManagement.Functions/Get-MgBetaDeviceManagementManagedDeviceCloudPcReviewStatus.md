@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus
 
 ## SYNOPSIS
-Invoke function getCloudPcReviewStatus
+Get the review status of a specific Cloud PC device.
 
 ## SYNTAX
 
@@ -27,16 +27,23 @@ Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus -InputObject <IDevice
 ```
 
 ## DESCRIPTION
-Invoke function getCloudPcReviewStatus
+Get the review status of a specific Cloud PC device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-getcloudpcreviewstatus-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+
 Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus -ManagedDeviceId $managedDeviceId
+
 ```
 This example shows how to use the Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -168,6 +175,8 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementmanageddevicecloudpcreviewstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementmanageddevicecloudpcreviewstatus)
+
+[https://learn.microsoft.com/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta)
 
 
 

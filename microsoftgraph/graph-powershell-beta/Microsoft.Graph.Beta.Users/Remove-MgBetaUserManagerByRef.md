@@ -36,13 +36,13 @@ Remove a user's manager.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
 
 Remove-MgBetaUserManagerByRef -UserId $userId
+
 ```
 This example shows how to use the Remove-MgBetaUserManagerByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -232,7 +232,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausermanagerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausermanagerbyref)
 
-[https://learn.microsoft.com/graph/api/user-delete-manager?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-delete-manager?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-delete-manager?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-delete-manager?view=graph-rest-beta)
 
 
 

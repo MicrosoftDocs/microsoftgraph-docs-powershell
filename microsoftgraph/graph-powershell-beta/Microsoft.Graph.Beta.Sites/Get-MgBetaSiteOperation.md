@@ -40,6 +40,19 @@ Get-MgBetaSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Read the properties of a richLongRunningOperation object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteOperation -SiteId $siteId
+
+```
+This example shows how to use the Get-MgBetaSiteOperation Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -358,10 +371,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteoperation)
 
-[https://learn.microsoft.com/graph/api/richlongrunningoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/richlongrunningoperation-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/richlongrunningoperation-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/richlongrunningoperation-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-beta)
 
 
 

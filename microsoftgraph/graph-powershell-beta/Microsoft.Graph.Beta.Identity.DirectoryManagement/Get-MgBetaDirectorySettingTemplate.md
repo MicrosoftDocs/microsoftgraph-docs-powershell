@@ -40,20 +40,17 @@ A directory setting template represents a template of settings from which settin
 This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDirectorySettingTemplate Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-Get-MgBetaDirectorySettingTemplate -DirectorySettingTemplateId $directorySettingTemplateId
-```
-This example shows how to use the Get-MgBetaDirectorySettingTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaDirectorySettingTemplate Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 Get-MgBetaDirectorySettingTemplate
+
 ```
 This example shows how to use the Get-MgBetaDirectorySettingTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -353,9 +350,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysettingtemplate)
 
-[https://learn.microsoft.com/graph/api/directorysettingtemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directorysettingtemplate-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/directorysettingtemplate-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directorysettingtemplate-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/directorysettingtemplate-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directorysettingtemplate-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/directorysettingtemplate-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directorysettingtemplate-list?view=graph-rest-beta)
 
 
 

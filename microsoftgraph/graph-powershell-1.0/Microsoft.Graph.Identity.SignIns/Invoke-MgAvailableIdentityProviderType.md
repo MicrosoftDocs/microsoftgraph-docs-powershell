@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgAvailableIdentityProviderType
 
 ## SYNOPSIS
-Invoke function availableProviderTypes
+Get all identity providers supported in a directory.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaAvailableIdentityProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaAvailableIdentityProviderType?view=graph-powershell-beta)
@@ -22,30 +22,31 @@ Invoke-MgAvailableIdentityProviderType [-Count] [-Filter <String>] [-Search <Str
 ```
 
 ## DESCRIPTION
-Invoke function availableProviderTypes
+Get all identity providers supported in a directory.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgAvailableIdentityProviderType Cmdlet
+### Example 1: List all identity providers available in a Microsoft Entra directory
+
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
+
 Invoke-MgAvailableIdentityProviderType
+
 ```
-This example shows how to use the Invoke-MgAvailableIdentityProviderType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Invoke-MgAvailableIdentityProviderType Cmdlet
+This example will list all identity providers available in a microsoft entra directory
+
+### Example 2: List all identity providers available in an Azure AD B2C directory
+
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
+
 Invoke-MgAvailableIdentityProviderType
+
 ```
-This example shows how to use the Invoke-MgAvailableIdentityProviderType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Invoke-MgAvailableIdentityProviderType Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Invoke-MgAvailableIdentityProviderType -OutFile $outFileId
-```
-This example shows how to use the Invoke-MgAvailableIdentityProviderType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will list all identity providers available in an azure ad b2c directory
+
 
 ## PARAMETERS
 
@@ -183,6 +184,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgavailableidentityprovidertype](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgavailableidentityprovidertype)
+
+[https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-1.0)
 
 
 

@@ -32,6 +32,19 @@ Carries out the appropriate procedures to remove a managed tenant from the multi
 No relationships, such as commerce and delegate administrative privileges, will be impacted.
 The only change made by invoking this action is the tenant will be deprovisioned from the multitenant management platform.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Invoke-MgBetaTenantRelationshipManagedTenantOffboard -TenantId $tenantId
+
+```
+This example shows how to use the Invoke-MgBetaTenantRelationshipManagedTenantOffboard Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -210,8 +223,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatenantrelationshipmanagedtenantoffboard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatenantrelationshipmanagedtenantoffboard)
 
-[https://learn.microsoft.com/graph/api/managedtenants-tenant-offboardtenant?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-tenant-offboardtenant?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/managedtenants-tenant-offboardtenant?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-tenant-offboardtenant?view=graph-rest-beta)
 
 
 

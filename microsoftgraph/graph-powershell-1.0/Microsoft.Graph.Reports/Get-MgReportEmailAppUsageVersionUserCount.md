@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportEmailAppUsageVersionUserCount
 
 ## SYNOPSIS
-Invoke function getEmailAppUsageVersionsUserCounts
+Get the count of unique users by Outlook desktop version.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportEmailAppUsageVersionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageVersionUserCount?view=graph-powershell-beta)
@@ -30,9 +30,7 @@ Get-MgReportEmailAppUsageVersionUserCount -InputObject <IReportsIdentity> -OutFi
 ```
 
 ## DESCRIPTION
-Invoke function getEmailAppUsageVersionsUserCounts
-
-## EXAMPLES
+Get the count of unique users by Outlook desktop version.
 
 ## PARAMETERS
 
@@ -185,6 +183,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageversionusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageversionusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-1.0)
+
 
 
 

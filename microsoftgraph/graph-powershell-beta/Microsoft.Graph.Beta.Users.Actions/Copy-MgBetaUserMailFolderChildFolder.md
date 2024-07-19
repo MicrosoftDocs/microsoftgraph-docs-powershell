@@ -51,24 +51,6 @@ Copy a mail folder and its contents to another mail folder.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-copy-permissions.md)]
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Users.Actions
-
-$params = @{
-	DestinationId = "destinationId-value"
-}
-
-# A UPN can also be used as -UserId.
-Copy-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
-```
-This example shows how to use the Copy-MgBetaUserMailFolderChildFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -322,7 +304,9 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermailfolderchildfolder)
 
-[https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-beta)
+
+
 
 
 

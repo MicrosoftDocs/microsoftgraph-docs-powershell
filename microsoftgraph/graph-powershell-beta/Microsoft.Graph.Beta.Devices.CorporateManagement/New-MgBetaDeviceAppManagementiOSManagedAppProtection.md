@@ -18,12 +18,14 @@ Create new navigation property to iosManagedAppProtections for deviceAppManageme
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceAppManagementiOSManagedAppProtection [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
+ [-AdditionalProperties <Hashtable>] [-AllowWidgetContentSync]
+ [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
  [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
  [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>] [-AllowedIosDeviceModels <String>]
  [-AllowedOutboundClipboardSharingExceptionLength <Int32>]
  [-AllowedOutboundClipboardSharingLevel <ManagedAppClipboardSharingLevel>]
  [-AllowedOutboundDataTransferDestinations <ManagedAppDataTransferLevel>]
+ [-AppActionIfAccountIsClockedOut <ManagedAppRemediationAction>]
  [-AppActionIfDeviceComplianceRequired <ManagedAppRemediationAction>]
  [-AppActionIfIosDeviceModelNotAllowed <ManagedAppRemediationAction>]
  [-AppActionIfMaximumPinRetriesExceeded <ManagedAppRemediationAction>]
@@ -184,6 +186,36 @@ Data can be transferred from/to these classes of apps
 
 ```yaml
 Type: ManagedAppDataTransferLevel
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowWidgetContentSync
+Indicates if content sync for widgets is allowed for iOS on App Protection Policies
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AppActionIfAccountIsClockedOut
+An admin initiated action to be applied on a managed app.
+
+```yaml
+Type: ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1466,7 +1498,9 @@ Default is anyApp.
   - `[Version <String>]`: Version of the entity.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[AllowWidgetContentSync <Boolean?>]`: Indicates  if content sync for widgets is allowed for iOS on App Protection Policies
   - `[AllowedIosDeviceModels <String>]`: Semicolon seperated list of device models allowed, as a string, for the managed app to work.
+  - `[AppActionIfAccountIsClockedOut <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfIosDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppDataEncryptionType <ManagedAppDataEncryptionType?>]`: Represents the level to which app data is encrypted for managed apps
   - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.

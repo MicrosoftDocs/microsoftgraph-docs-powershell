@@ -123,7 +123,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Add-AzureADMSApplicationOwner|[New-MgApplicationOwnerByRef](/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref)|
 |Add-AzureADMSServicePrincipalDelegatedPermissionClassification|[New-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/microsoft.graph.applications/new-mgserviceprincipaldelegatedpermissionclassification)|
 |Get-AzureADApplicationProxyConnectorGroupMember||
-|Get-AzureADCurrentSessionInfo|[Get-MgContext](authentication-commands.md#using-get-mgcontext)|
+|Get-AzureADCurrentSessionInfo|[Get-MgContext](authentication-commands.md#use-get-mgcontext)|
 |Get-AzureADMSApplication|[Get-MgApplication](/powershell/module/microsoft.graph.applications/get-mgapplication)|
 |Get-AzureADMSApplicationExtensionProperty|[Get-MgApplicationExtensionProperty](/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty)|
 |Get-AzureADMSApplicationOwner|[Get-MgApplicationOwner](/powershell/module/microsoft.graph.applications/get-mgapplicationowner)|
@@ -187,8 +187,8 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 |Azure AD cmdlet | Microsoft Graph PowerShell cmdlet|
 |------------|--------------|
-|Connect-AzureAD|[Connect-MgGraph](authentication-commands.md#using-connect-mggraph)|
-|Disconnect-AzureAD|[Disconnect-MgGraph](authentication-commands.md#using-disconnect-mggraph)|
+|Connect-AzureAD|[Connect-MgGraph](authentication-commands.md#use-connect-mggraph)|
+|Disconnect-AzureAD|[Disconnect-MgGraph](authentication-commands.md#use-disconnect-mggraph)|
 
 ### Contacts
 
@@ -402,7 +402,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Add-MsolScopedRoleMember|[New-MgDirectoryRoleScopedMember](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrolescopedmember)|
 |Confirm-MsolDomain|[Confirm-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdomain)|
 |Confirm-MsolEmailVerifiedDomain||
-|Connect-MsolService|[Connect-MgGraph](authentication-commands.md#using-connect-mggraph)|
+|Connect-MsolService|[Connect-MgGraph](authentication-commands.md#use-connect-mggraph)|
 |Convert-MsolDomainToFederated|[New-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainfederationconfiguration)|
 |Convert-MsolDomainToStandard|[Remove-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomainfederationconfiguration)|
 |Convert-MsolFederatedUser|[Reset-MgUserAuthenticationMethodPassword](/powershell/module/microsoft.graph.users.actions/reset-mguserauthenticationmethodpassword)|

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion
 
 ## SYNOPSIS
-Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
+Custom registration questions.
 
 ## SYNTAX
 
@@ -36,9 +36,7 @@ Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <ICl
 ```
 
 ## DESCRIPTION
-Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-
-## EXAMPLES
+Custom registration questions.
 
 ## PARAMETERS
 
@@ -325,9 +323,9 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistrationcustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistrationcustomquestion)
 
-[https://learn.microsoft.com/graph/api/meetingregistrationquestion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistrationquestion-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/meetingregistration-list-customquestions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistration-list-customquestions?view=graph-rest-1.0)
+
+
 
 
 

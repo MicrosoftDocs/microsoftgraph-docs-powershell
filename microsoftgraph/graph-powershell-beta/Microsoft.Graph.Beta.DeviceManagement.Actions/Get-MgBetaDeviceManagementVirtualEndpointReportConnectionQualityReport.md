@@ -37,6 +37,41 @@ Get also other real-time metrics such as last connection round trip time, last c
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getconnectionqualityreports-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+$params = @{
+	filter = "EventDateTime gt datetime'2023-04-16T07:40:41.694Z'"
+	search = ""
+	select = @(
+	"CloudPcId"
+"ManagedDeviceName"
+"AvgRoundTripTimeInMsP50"
+"LastConnectionRoundTripTimeInMs"
+"AvgAvailableBandwidthInMBpsP50"
+"LastConnectionAvailableBandWidthInMSps"
+"AvgRemoteSignInTimeInSecP50"
+"UDPConnectionPercentage"
+"LastConnectionGateway"
+"LastConnectionProtocol"
+"LastActiveTime"
+)
+skip = "0"
+top = "25"
+orderBy = @(
+)
+}
+
+Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -311,8 +346,7 @@ BODYPARAMETER `<IPaths1Rd0Fy0DevicemanagementVirtualendpointReportsMicrosoftGrap
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportconnectionqualityreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportconnectionqualityreport)
 
-[https://learn.microsoft.com/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-beta)
 
 
 

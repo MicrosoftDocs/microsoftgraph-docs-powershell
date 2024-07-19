@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaGroupPlannerPlanDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get newly created, updated, or deleted Planner plans in either a group or a Planner roster without having to perform a full read of the entire resource collection.
+For details, see Use delta query to track changes in Microsoft Graph data.
 
 ## SYNTAX
 
@@ -29,7 +30,21 @@ Get-MgBetaGroupPlannerPlanDelta -InputObject <IGroupsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted Planner plans in either a group or a Planner roster without having to perform a full read of the entire resource collection.
+For details, see Use delta query to track changes in Microsoft Graph data.
+
+## EXAMPLES
+### Example 1: Get delta on plans in a group
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Get-MgBetaGroupPlannerPlanDelta -GroupId $groupId
+
+```
+This example will get delta on plans in a group
+
 
 ## PARAMETERS
 
@@ -343,6 +358,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupplannerplandelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupplannerplandelta)
 
+[https://learn.microsoft.com/graph/api/plannerplan-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerplan-delta?view=graph-rest-beta)
 
 
 

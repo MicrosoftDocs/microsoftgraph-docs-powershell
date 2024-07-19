@@ -240,7 +240,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilepatent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilepatent)
 
-[https://learn.microsoft.com/graph/api/itempatent-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itempatent-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/itempatent-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/itempatent-delete?view=graph-rest-beta)
 
 
 

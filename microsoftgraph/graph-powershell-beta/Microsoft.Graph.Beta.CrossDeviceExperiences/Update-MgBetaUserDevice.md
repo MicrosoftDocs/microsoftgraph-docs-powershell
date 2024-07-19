@@ -73,15 +73,13 @@ Update-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> -BodyPara
 ## DESCRIPTION
 Update the navigation property devices in users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AccountEnabled
 true if the account is enabled; otherwise, false.
 Default is true.
 Supports $filter (eq, ne, not, in).
-Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
+Only callers with at least the Cloud Device Administrator role can set this property.
 
 ```yaml
 Type: SwitchParameter
@@ -537,7 +535,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsRooted
-true if the device is rooted; false if the device is jail-broken.
+true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
 
 ```yaml
@@ -1056,7 +1054,7 @@ Read-only.
   - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false.
 Default is true. 
 Supports $filter (eq, ne, not, in).
-Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
+Only callers with at least the Cloud Device Administrator role can set this property.
   - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId- `[]`>]`: For internal use only.
 Not nullable.
 Supports $filter (eq, not, ge, le).
@@ -1143,7 +1141,7 @@ The default value is false.
 Read-only. 
 To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
 For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
-  - `[IsRooted <Boolean?>]`: true if the device is rooted; false if the device is jail-broken.
+  - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
   - `[Kind <String>]`: Form factor of the device.
 Only returned if the user signs in with a Microsoft account as part of Project Rome.
@@ -1321,6 +1319,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdevice)
+
+
 
 
 

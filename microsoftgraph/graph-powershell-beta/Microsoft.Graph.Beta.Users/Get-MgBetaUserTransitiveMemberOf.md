@@ -43,13 +43,17 @@ The groups, including nested groups and directory roles that a user is a member 
 Nullable.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserTransitiveMemberOf Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
+
 Get-MgBetaUserTransitiveMemberOf -UserId $userId
+
 ```
 This example shows how to use the Get-MgBetaUserTransitiveMemberOf Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -359,7 +363,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivememberof)
 
-[https://learn.microsoft.com/graph/api/user-list-transitivememberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-transitivememberof?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-list-transitivememberof?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-list-transitivememberof?view=graph-rest-beta)
 
 
 

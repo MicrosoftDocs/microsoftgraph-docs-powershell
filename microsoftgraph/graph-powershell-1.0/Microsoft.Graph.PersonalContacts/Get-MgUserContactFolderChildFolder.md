@@ -331,8 +331,6 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfolder)
 
-[https://learn.microsoft.com/graph/api/contactfolder-list-childfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactfolder-list-childfolders?view=graph-rest-1.0)
-
 
 
 

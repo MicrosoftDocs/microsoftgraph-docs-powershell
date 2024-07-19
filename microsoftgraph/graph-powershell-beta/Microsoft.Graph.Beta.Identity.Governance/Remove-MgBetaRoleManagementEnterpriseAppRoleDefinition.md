@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaRoleManagementEnterpriseAppRoleDefinition
 
 ## SYNOPSIS
-Delete a unifiedRoleDefinition object for an RBAC provider.
-You cannot delete built-in roles.
-This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
+Delete navigation property roleDefinitions for roleManagement
 
 ## SYNTAX
 
@@ -31,10 +28,7 @@ Remove-MgBetaRoleManagementEnterpriseAppRoleDefinition -InputObject <IIdentityGo
 ```
 
 ## DESCRIPTION
-Delete a unifiedRoleDefinition object for an RBAC provider.
-You cannot delete built-in roles.
-This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
+Delete navigation property roleDefinitions for roleManagement
 
 ## PARAMETERS
 
@@ -310,8 +304,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagemententerpriseapproledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagemententerpriseapproledefinition)
-
-[https://learn.microsoft.com/graph/api/unifiedroledefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroledefinition-delete?view=graph-rest-1.0)
 
 
 

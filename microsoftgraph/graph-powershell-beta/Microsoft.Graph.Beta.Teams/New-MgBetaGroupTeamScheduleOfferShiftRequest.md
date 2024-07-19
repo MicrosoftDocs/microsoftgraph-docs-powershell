@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaGroupTeamScheduleOfferShiftRequest
 
 ## SYNOPSIS
-Create an instance of an offerShiftRequest.
+Create new navigation property to offerShiftRequests for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
@@ -50,9 +50,7 @@ New-MgBetaGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create an instance of an offerShiftRequest.
-
-## EXAMPLES
+Create new navigation property to offerShiftRequests for groups
 
 ## PARAMETERS
 
@@ -375,10 +373,9 @@ BODYPARAMETER `<IMicrosoftGraphOfferShiftRequest>`: offerShiftRequest
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -393,10 +390,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -448,10 +444,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -459,7 +454,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleoffershiftrequest)
 
-[https://learn.microsoft.com/graph/api/offershiftrequest-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/offershiftrequest-post?view=graph-rest-1.0)
+
 
 
 

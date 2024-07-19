@@ -333,8 +333,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/educationuser-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/educationuser-get-user?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-get-user?view=graph-rest-1.0)
-
 [https://learn.microsoft.com/graph/api/educationuser-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-list?view=graph-rest-1.0)
 
 

@@ -40,8 +40,6 @@ Get-MgEducationMeTaughtClass -InputObject <IEducationIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Classes for which the user is a teacher.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -306,7 +304,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmetaughtclass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmetaughtclass)
 
-[https://learn.microsoft.com/graph/api/educationuser-list-taughtclasses?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-list-taughtclasses?view=graph-rest-1.0)
+
+
 
 
 

@@ -16,9 +16,10 @@ Update the navigation property microsoftTunnelServers in deviceManagement
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -MicrosoftTunnelServerId <String>
  -MicrosoftTunnelSiteId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-AgentImageDigest <String>] [-DisplayName <String>] [-Id <String>] [-LastCheckinDateTime <DateTime>]
- [-ServerImageDigest <String>] [-TunnelServerHealthStatus <MicrosoftTunnelServerHealthStatus>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AgentImageDigest <String>] [-DeploymentMode <MicrosoftTunnelDeploymentMode>] [-DisplayName <String>]
+ [-Id <String>] [-LastCheckinDateTime <DateTime>] [-ServerImageDigest <String>]
+ [-TunnelServerHealthStatus <MicrosoftTunnelServerHealthStatus>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -33,7 +34,8 @@ Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -Microsoft
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AgentImageDigest <String>]
- [-DisplayName <String>] [-Id <String>] [-LastCheckinDateTime <DateTime>] [-ServerImageDigest <String>]
+ [-DeploymentMode <MicrosoftTunnelDeploymentMode>] [-DisplayName <String>] [-Id <String>]
+ [-LastCheckinDateTime <DateTime>] [-ServerImageDigest <String>]
  [-TunnelServerHealthStatus <MicrosoftTunnelServerHealthStatus>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -93,6 +95,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DeploymentMode
+The available deployment modes for a managed Tunnel server.
+The deployment mode is determined during the deployment depending on the Tunnel containers, namely standalone or as part of a pod, and whether the containers are running in rootful or rootless mode.
+
+```yaml
+Type: MicrosoftTunnelDeploymentMode
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -317,6 +335,8 @@ BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelServer>`: Entity that represents a
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server
+  - `[DeploymentMode <MicrosoftTunnelDeploymentMode?>]`: The available deployment modes for a managed Tunnel server.
+The deployment mode is determined during the deployment depending on the Tunnel containers, namely standalone or as part of a pod, and whether the containers are running in rootful or rootless mode.
   - `[DisplayName <String>]`: The display name for the server.
 This property is required when a server is created and cannot be cleared during updates.
   - `[LastCheckinDateTime <DateTime?>]`: Indicates when the server last checked in
@@ -469,6 +489,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmicrosofttunnelsitemicrosofttunnelserver](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmicrosofttunnelsitemicrosofttunnelserver)
+
 
 
 

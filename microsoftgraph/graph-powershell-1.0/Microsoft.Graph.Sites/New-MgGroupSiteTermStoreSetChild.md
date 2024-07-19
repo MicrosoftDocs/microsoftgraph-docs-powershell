@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupSiteTermStoreSetChild
 
 ## SYNOPSIS
-Create a new term object.
+Create new navigation property to children for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSetChild?view=graph-powershell-beta)
@@ -164,9 +164,7 @@ New-MgGroupSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Create a new term object.
-
-## EXAMPLES
+Create new navigation property to children for groups
 
 ## PARAMETERS
 
@@ -678,6 +676,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -797,7 +796,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitetermstoresetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitetermstoresetchild)
 
-[https://learn.microsoft.com/graph/api/termstore-term-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-post?view=graph-rest-1.0)
+
 
 
 

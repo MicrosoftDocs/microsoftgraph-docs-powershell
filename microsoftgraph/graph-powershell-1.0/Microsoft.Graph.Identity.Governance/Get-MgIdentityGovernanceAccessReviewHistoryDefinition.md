@@ -48,13 +48,13 @@ If the definition is 30 days or older, a 404 Not Found error is returned.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgIdentityGovernanceAccessReviewHistoryDefinition -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId
+Get-MgIdentityGovernanceAccessReviewHistoryDefinition
+
 ```
 This example shows how to use the Get-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

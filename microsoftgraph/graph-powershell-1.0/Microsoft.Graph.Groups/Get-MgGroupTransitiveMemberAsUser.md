@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgGroupTransitiveMemberAsUser
 
 ## SYNOPSIS
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+Get a list of the group's members.
+A group can have different object types as members.
+For more information about supported member types for different groups, see Group membership.
+This operation is transitive and returns a flat list of all nested members.
+An attempt to filter by an OData cast that represents an unsupported member type returns a 400 Bad Request error with the Request_UnsupportedQuery code.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTransitiveMemberAsUser](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberAsUser?view=graph-powershell-beta)
@@ -38,7 +42,11 @@ Get-MgGroupTransitiveMemberAsUser -InputObject <IGroupsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+Get a list of the group's members.
+A group can have different object types as members.
+For more information about supported member types for different groups, see Group membership.
+This operation is transitive and returns a flat list of all nested members.
+An attempt to filter by an OData cast that represents an unsupported member type returns a 400 Bad Request error with the Request_UnsupportedQuery code.
 
 ## PARAMETERS
 
@@ -362,6 +370,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberasuser)
+
+[https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-1.0)
 
 
 

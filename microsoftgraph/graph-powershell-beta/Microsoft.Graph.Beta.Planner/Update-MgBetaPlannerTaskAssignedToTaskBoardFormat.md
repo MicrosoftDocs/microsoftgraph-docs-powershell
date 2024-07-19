@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPlannerTaskAssignedToTaskBoardFormat
 
 ## SYNOPSIS
-Update the navigation property assignedToTaskBoardFormat in planner
+Update the properties of plannerAssignedToTaskBoardTaskFormat object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ Update-MgBetaPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity
 ```
 
 ## DESCRIPTION
-Update the navigation property assignedToTaskBoardFormat in planner
+Update the properties of plannerAssignedToTaskBoardTaskFormat object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -310,7 +310,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskassignedtotaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskassignedtotaskboardformat)
 
-[https://learn.microsoft.com/graph/api/plannerassignedtotaskboardtaskformat-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerassignedtotaskboardtaskformat-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/plannerassignedtotaskboardtaskformat-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerassignedtotaskboardtaskformat-update?view=graph-rest-beta)
 
 
 

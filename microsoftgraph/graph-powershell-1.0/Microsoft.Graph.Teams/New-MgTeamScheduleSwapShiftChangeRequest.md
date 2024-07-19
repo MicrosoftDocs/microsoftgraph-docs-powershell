@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamScheduleSwapShiftChangeRequest
 
 ## SYNOPSIS
-Create an instance of a swapShiftsChangeRequest object.
+Create new navigation property to swapShiftsChangeRequests for teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ New-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create an instance of a swapShiftsChangeRequest object.
+Create new navigation property to swapShiftsChangeRequests for teams
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -453,8 +453,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleswapshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleswapshiftchangerequest)
-
-[https://learn.microsoft.com/graph/api/swapshiftschangerequest-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/swapshiftschangerequest-post?view=graph-rest-1.0)
 
 
 

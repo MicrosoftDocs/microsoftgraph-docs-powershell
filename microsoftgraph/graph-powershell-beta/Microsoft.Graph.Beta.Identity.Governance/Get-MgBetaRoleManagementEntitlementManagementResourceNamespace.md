@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementEntitlementManagementResourceNamespace
 
 ## SYNOPSIS
-Read the properties and relationships of an unifiedRbacResourceNamespace object.
+Get resourceNamespaces from roleManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaRoleManagementEntitlementManagementResourceNamespace -InputObject <IId
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an unifiedRbacResourceNamespace object.
+Get resourceNamespaces from roleManagement
 
 ## PARAMETERS
 
@@ -389,10 +389,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementresourcenamespace)
-
-[https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/rbacapplicationmultiple-list-resourcenamespaces?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-list-resourcenamespaces?view=graph-rest-1.0)
 
 
 

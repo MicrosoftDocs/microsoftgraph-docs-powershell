@@ -32,6 +32,24 @@ New-MgBetaSecurityLabelFilePlanReference -BodyParameter <Hashtable> [-ResponseHe
 ## DESCRIPTION
 Create a new filePlanReferenceTemplate object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.filePlanReferenceTemplate"
+	displayName = "FIN 01-02-001"
+}
+
+New-MgBetaSecurityLabelFilePlanReference -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityLabelFilePlanReference Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -234,8 +252,7 @@ This property is read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelfileplanreference)
 
-[https://learn.microsoft.com/graph/api/security-labelsroot-post-fileplanreferences?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-fileplanreferences?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/security-labelsroot-post-fileplanreferences?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-labelsroot-post-fileplanreferences?view=graph-rest-beta)
 
 
 

@@ -59,16 +59,21 @@ Update-MgBetaSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicr
 Update the properties of a bookmark object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaSearchBookmark Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
+
 $params = @{
-	Description = "Book a fancy vacation in Tuscany or browse museums in Florence."
+	description = "Book a fancy vacation in Tuscany or browse museums in Florence."
 }
+
 Update-MgBetaSearchBookmark -BookmarkId $bookmarkId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaSearchBookmark Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -577,6 +582,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -612,7 +619,7 @@ When users select this answer variation from the search results, they're directe
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark)
 
-[https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-beta)
 
 
 

@@ -25,6 +25,19 @@ Read the properties and relationships of an azureADAuthentication object to find
 The Microsoft Entra service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in Microsoft Entra SLA performance.
 This object provides you with your tenant's actual performance against this commitment.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportSlaAzureAdAuthentication
+
+```
+This example shows how to use the Get-MgBetaReportSlaAzureAdAuthentication Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -117,8 +130,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication)
 
-[https://learn.microsoft.com/graph/api/azureadauthentication-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/azureadauthentication-get?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/azureadauthentication-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/azureadauthentication-get?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Grant-MgDriveItemPermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a \[permission\]\[\].
+Grant users access to a link represented by a permission.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Grant-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaDriveItemPermission?view=graph-powershell-beta)
@@ -47,7 +47,7 @@ Grant-MgDriveItemPermission -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a \[permission\]\[\].
+Grant users access to a link represented by a permission.
 
 ## PARAMETERS
 
@@ -313,6 +313,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgdriveitempermission)
 
 [https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
+
 
 
 

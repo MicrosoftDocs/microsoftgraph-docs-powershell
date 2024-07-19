@@ -49,8 +49,6 @@ Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISe
 ## DESCRIPTION
 Update the navigation property dispositionReviewStages in security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -222,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -StageNumber
-The sequence number for each stage of the disposition review.
+The unique sequence number for each stage of the disposition review.
 
 ```yaml
 Type: String
@@ -290,7 +288,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityDispositionReviewStage>`: dispositionRevi
 Read-only.
   - `[Name <String>]`: Name representing each stage within a collection.
   - `[ReviewersEmailAddresses <String- `[]`>]`: A collection of reviewers at each stage.
-  - `[StageNumber <String>]`: The sequence number for each stage of the disposition review.
+  - `[StageNumber <String>]`: The unique sequence number for each stage of the disposition review.
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
@@ -344,6 +342,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -354,6 +353,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -379,6 +379,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabeldispositionreviewstage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabeldispositionreviewstage)
+
+
 
 
 

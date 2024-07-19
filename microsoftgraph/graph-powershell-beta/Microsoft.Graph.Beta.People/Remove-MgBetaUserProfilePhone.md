@@ -240,7 +240,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilephone](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilephone)
 
-[https://learn.microsoft.com/graph/api/itemphone-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemphone-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/itemphone-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/itemphone-delete?view=graph-rest-beta)
 
 
 

@@ -419,9 +419,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequestuserconsentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequestuserconsentrequest)
 
-[https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-beta](https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-beta)
 
 
 

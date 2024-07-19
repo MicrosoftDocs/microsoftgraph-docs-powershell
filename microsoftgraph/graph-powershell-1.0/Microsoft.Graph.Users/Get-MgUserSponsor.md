@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserSponsor
 
 ## SYNOPSIS
-The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
 
@@ -40,7 +40,7 @@ Get-MgUserSponsor -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-P
 ```
 
 ## DESCRIPTION
-The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
 

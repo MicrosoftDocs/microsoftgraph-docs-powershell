@@ -44,24 +44,24 @@ When an invited participant is removed, any outstanding add participant request 
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Remove-MgBetaCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+
 ```
 This example shows how to use the Remove-MgBetaCommunicationCallParticipant Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 2: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Remove-MgBetaCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+
 ```
 This example shows how to use the Remove-MgBetaCommunicationCallParticipant Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -259,7 +259,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcallparticipant)
 
-[https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-beta)
 
 
 

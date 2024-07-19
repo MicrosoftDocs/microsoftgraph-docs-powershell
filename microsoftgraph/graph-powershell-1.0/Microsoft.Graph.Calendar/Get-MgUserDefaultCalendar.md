@@ -8,9 +8,8 @@ schema: 2.0.0
 # Get-MgUserDefaultCalendar
 
 ## SYNOPSIS
-Get the properties and relationships of a calendar object.
-The calendar can be one for a user,or the default calendar of a Microsoft 365 group.
-There are two scenarios where an app can get another user's calendar:
+The user's primary calendar.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserDefaultCalendar?view=graph-powershell-beta)
@@ -19,21 +18,21 @@ There are two scenarios where an app can get another user's calendar:
 
 ### Get (Default)
 ```
-Get-MgUserDefaultCalendar -UserId <String> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgUserDefaultCalendar -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserDefaultCalendar -InputObject <ICalendarIdentity> [-Property <String[]>]
+Get-MgUserDefaultCalendar -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of a calendar object.
-The calendar can be one for a user,or the default calendar of a Microsoft 365 group.
-There are two scenarios where an app can get another user's calendar:
+The user's primary calendar.
+Read-only.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -50,6 +49,21 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 
 ## PARAMETERS
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -174,8 +188,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar)
-
-[https://learn.microsoft.com/graph/api/calendar-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-get?view=graph-rest-1.0)
 
 
 

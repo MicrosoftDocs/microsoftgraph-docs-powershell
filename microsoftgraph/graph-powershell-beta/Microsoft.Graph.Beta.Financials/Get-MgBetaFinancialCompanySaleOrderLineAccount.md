@@ -43,8 +43,6 @@ Get-MgBetaFinancialCompanySaleOrderLineAccount -InputObject <IFinancialsIdentity
 ## DESCRIPTION
 Get account from financials
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -240,6 +238,8 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleorderlineaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleorderlineaccount)
+
+
 
 
 

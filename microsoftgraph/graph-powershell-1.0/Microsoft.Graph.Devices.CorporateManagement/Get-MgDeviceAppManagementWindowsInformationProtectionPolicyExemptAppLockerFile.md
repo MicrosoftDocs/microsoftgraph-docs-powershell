@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile
 
 ## SYNOPSIS
-Another way to input exempt apps through xml files
+Read properties and relationships of the windowsInformationProtectionAppLockerFile object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-beta)
@@ -41,7 +41,7 @@ Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile
 ```
 
 ## DESCRIPTION
-Another way to input exempt apps through xml files
+Read properties and relationships of the windowsInformationProtectionAppLockerFile object.
 
 ## PARAMETERS
 
@@ -343,6 +343,10 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile)
+
+[https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-list?view=graph-rest-1.0)
 
 
 

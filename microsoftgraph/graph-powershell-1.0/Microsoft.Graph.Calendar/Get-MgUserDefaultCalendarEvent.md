@@ -8,10 +8,9 @@ schema: 2.0.0
 # Get-MgUserDefaultCalendarEvent
 
 ## SYNOPSIS
-Retrieve a list of events in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, orget the instances of an event.
+The events in the calendar.
+Navigation property.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserDefaultCalendarEvent?view=graph-powershell-beta)
@@ -20,16 +19,15 @@ To get expanded event instances, you can get the calendar view, orget the instan
 
 ```
 Get-MgUserDefaultCalendarEvent -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
- [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieve a list of events in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, orget the instances of an event.
+The events in the calendar.
+Navigation property.
+Read-only.
 
 ## PARAMETERS
 
@@ -169,6 +167,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -243,8 +256,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendarevent)
-
-[https://learn.microsoft.com/graph/api/calendar-list-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-list-events?view=graph-rest-1.0)
 
 
 

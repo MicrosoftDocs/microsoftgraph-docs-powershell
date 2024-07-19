@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserOutlookMasterCategory
 
 ## SYNOPSIS
-Delete the specified outlookCategory object.
+Delete navigation property masterCategories for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete the specified outlookCategory object.
+Delete navigation property masterCategories for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -247,8 +247,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlookmastercategory)
-
-[https://learn.microsoft.com/graph/api/outlookcategory-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookcategory-delete?view=graph-rest-1.0)
 
 
 

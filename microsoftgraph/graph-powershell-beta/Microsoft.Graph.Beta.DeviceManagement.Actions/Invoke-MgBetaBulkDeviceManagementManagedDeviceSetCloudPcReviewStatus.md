@@ -35,24 +35,29 @@ Set the review status of multiple Cloud PC devices with a single request that in
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-bulksetcloudpcreviewstatus-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
 $params = @{
-	ManagedDeviceIds = @(
-		"30d0e128-de93-41dc-89ec-33d84bb662a0"
-		"7c82a3e3-9459-44e4-94d9-b92f93bf78dd"
-	)
-	ReviewStatus = @{
-		InReview = $true
-		UserAccessLevel = "restricted"
-		AzureStorageAccountId = "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview"
-	}
+	managedDeviceIds = @(
+	"30d0e128-de93-41dc-89ec-33d84bb662a0"
+"7c82a3e3-9459-44e4-94d9-b92f93bf78dd"
+)
+reviewStatus = @{
+inReview = $true
+userAccessLevel = "restricted"
+azureStorageAccountId = "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview"
 }
+}
+
 Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -249,7 +254,7 @@ For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkdevicemanagementmanageddevicesetcloudpcreviewstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkdevicemanagementmanageddevicesetcloudpcreviewstatus)
 
-[https://learn.microsoft.com/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta)
 
 
 

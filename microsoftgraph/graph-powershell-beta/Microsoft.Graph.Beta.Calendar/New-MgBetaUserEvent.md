@@ -8,18 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserEvent
 
 ## SYNOPSIS
-Create an event in the user's default calendar or specified calendar.
-By default, the allowNewTimeProposals property is set to true when an event is created, which means invitees can propose a different date/time for the event.
-See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
-You can specify the time zone for each of the start and end times of the event as part of their values, because thestart and end properties are of dateTimeTimeZone type.
-First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
-When an event is sent, the server sends invitations to all the attendees.
-Setting the location in an event An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipmentlike a projector.
-Users can then invite the resource as an attendee to a meeting.
-On behalf of the resource, the server accepts or rejectsthe meeting request based on the free/busy schedule of the resource.If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
-If the meeting is rescheduled,the server automatically updates the event in the resource's calendar.
-Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executivesor their delegates can book a private meeting room.
-If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
+Create new navigation property to events for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEvent?view=graph-powershell-1.0)
@@ -34,9 +23,10 @@ New-MgBetaUserEvent -UserId <String> [-ResponseHeadersVariable <String>] [-Addit
  [-CancelledOccurrences <String[]>] [-Categories <String[]>] [-ChangeKey <String>]
  [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
  [-ExceptionOccurrences <IMicrosoftGraphEvent[]>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
- [-HideAttendees] [-Id <String>] [-Importance <String>] [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay]
- [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer] [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
- [-Location <IMicrosoftGraphLocation>] [-Locations <IMicrosoftGraphLocation[]>]
+ [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
+ [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer]
+ [-IsReminderOn] [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
+ [-Locations <IMicrosoftGraphLocation[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-OccurrenceId <String>]
  [-OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>] [-OnlineMeetingProvider <String>]
  [-OnlineMeetingUrl <String>] [-Organizer <IMicrosoftGraphRecipient>] [-OriginalEndTimeZone <String>]
@@ -63,9 +53,10 @@ New-MgBetaUserEvent -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <
  [-Calendar <IMicrosoftGraphCalendar>] [-CancelledOccurrences <String[]>] [-Categories <String[]>]
  [-ChangeKey <String>] [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
  [-ExceptionOccurrences <IMicrosoftGraphEvent[]>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
- [-HideAttendees] [-Id <String>] [-Importance <String>] [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay]
- [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer] [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
- [-Location <IMicrosoftGraphLocation>] [-Locations <IMicrosoftGraphLocation[]>]
+ [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
+ [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer]
+ [-IsReminderOn] [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
+ [-Locations <IMicrosoftGraphLocation[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-OccurrenceId <String>]
  [-OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>] [-OnlineMeetingProvider <String>]
  [-OnlineMeetingUrl <String>] [-Organizer <IMicrosoftGraphRecipient>] [-OriginalEndTimeZone <String>]
@@ -86,18 +77,7 @@ New-MgBetaUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Create an event in the user's default calendar or specified calendar.
-By default, the allowNewTimeProposals property is set to true when an event is created, which means invitees can propose a different date/time for the event.
-See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
-You can specify the time zone for each of the start and end times of the event as part of their values, because thestart and end properties are of dateTimeTimeZone type.
-First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
-When an event is sent, the server sends invitations to all the attendees.
-Setting the location in an event An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipmentlike a projector.
-Users can then invite the resource as an attendee to a meeting.
-On behalf of the resource, the server accepts or rejectsthe meeting request based on the free/busy schedule of the resource.If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
-If the meeting is rescheduled,the server automatically updates the event in the resource's calendar.
-Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executivesor their delegates can book a private meeting room.
-If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
+Create new navigation property to events for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -441,7 +421,7 @@ Accept wildcard characters: False
 ```
 
 ### -Categories
-.
+The categories associated with the item.
 
 ```yaml
 Type: String[]
@@ -456,7 +436,10 @@ Accept wildcard characters: False
 ```
 
 ### -ChangeKey
-.
+Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
 
 ```yaml
 Type: String
@@ -577,6 +560,23 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ICalUId
+A unique identifier for an event across calendars.
+This ID is different for each occurrence in a recurring series.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -1304,8 +1304,11 @@ BODY `<IMicrosoftGraphItemBody>`: itemBody
 
 BODYPARAMETER `<IMicrosoftGraphEvent>`: event
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1435,6 +1438,9 @@ Read-only.
   - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
   - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
 Default is false.
+  - `[ICalUId <String>]`: A unique identifier for an event across calendars.
+This ID is different for each occurrence in a recurring series.
+Read-only.
   - `[Importance <String>]`: importance
   - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
 This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
@@ -1596,8 +1602,11 @@ You can't remove 'My organization' as a recipient to a calendar.
   - `[CalendarView <IMicrosoftGraphEvent- `[]`>]`: The calendar view for the calendar.
 Navigation property.
 Read-only.
-    - `[Categories <String- `[]`>]`: 
-    - `[ChangeKey <String>]`: 
+    - `[Categories <String- `[]`>]`: The categories associated with the item.
+    - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1656,6 +1665,9 @@ Read-only.
     - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
     - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
 Default is false.
+    - `[ICalUId <String>]`: A unique identifier for an event across calendars.
+This ID is different for each occurrence in a recurring series.
+Read-only.
     - `[Importance <String>]`: importance
     - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
 This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
@@ -1847,8 +1859,11 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 EXCEPTIONOCCURRENCES <IMicrosoftGraphEvent- `[]`>: .
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1978,6 +1993,9 @@ Read-only.
   - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
   - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
 Default is false.
+  - `[ICalUId <String>]`: A unique identifier for an event across calendars.
+This ID is different for each occurrence in a recurring series.
+Read-only.
   - `[Importance <String>]`: importance
   - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
 This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
@@ -2139,8 +2157,11 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -2270,6 +2291,9 @@ Read-only.
   - `[HasAttachments <Boolean?>]`: Set to true if the event has attachments.
   - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list.
 Default is false.
+  - `[ICalUId <String>]`: A unique identifier for an event across calendars.
+This ID is different for each occurrence in a recurring series.
+Read-only.
   - `[Importance <String>]`: importance
   - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
 This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
@@ -2544,8 +2568,6 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserevent)
-
-[https://learn.microsoft.com/graph/api/user-post-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-post-events?view=graph-rest-1.0)
 
 
 

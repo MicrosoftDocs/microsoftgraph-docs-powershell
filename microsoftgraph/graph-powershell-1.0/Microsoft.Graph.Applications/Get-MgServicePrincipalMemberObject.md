@@ -52,8 +52,6 @@ Return all IDs for the groups, administrative units, and directory roles that a 
 This function is transitive.
 Note: Only users and role-enabled groups can be members of directory roles.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -245,6 +243,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -260,6 +259,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberobject)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)
+
+
 
 
 

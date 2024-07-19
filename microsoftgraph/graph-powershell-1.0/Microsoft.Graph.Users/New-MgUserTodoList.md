@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserTodoList
 
 ## SYNOPSIS
-Create a new lists object.
+Create new navigation property to lists for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoList?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Create a new lists object.
+Create new navigation property to lists for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -581,8 +581,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolist)
-
-[https://learn.microsoft.com/graph/api/todo-post-lists?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todo-post-lists?view=graph-rest-1.0)
 
 
 

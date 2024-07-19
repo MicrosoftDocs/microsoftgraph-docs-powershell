@@ -33,6 +33,26 @@ New-MgBetaSecurityLabelCitation -BodyParameter <IMicrosoftGraphSecurityCitationT
 ## DESCRIPTION
 Create a new citationTemplate object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.citationTemplate"
+	displayName = "Contoso Company Policy"
+	citationUrl = "www.citationUrl.com"
+	citationJurisdiction = "Contoso"
+}
+
+New-MgBetaSecurityLabelCitation -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityLabelCitation Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -286,8 +306,7 @@ This property is read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcitation)
 
-[https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-beta)
 
 
 

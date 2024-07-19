@@ -49,13 +49,17 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaGroupMemberOf Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 Get-MgBetaGroupMemberOf -GroupId $groupId
+
 ```
 This example shows how to use the Get-MgBetaGroupMemberOf Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -385,7 +389,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberof)
 
-[https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-beta)
 
 
 

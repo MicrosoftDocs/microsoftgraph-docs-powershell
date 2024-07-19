@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgChatMessage
 
 ## SYNOPSIS
-Send a new chatMessage in the specified chat.
-This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
+Create new navigation property to messages for chats
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessage?view=graph-powershell-beta)
@@ -61,8 +60,7 @@ New-MgChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 ```
 
 ## DESCRIPTION
-Send a new chatMessage in the specified chat.
-This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
+Create new navigation property to messages for chats
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1043,8 +1041,6 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessage)
-
-[https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-1.0)
 
 
 

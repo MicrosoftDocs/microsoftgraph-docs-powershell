@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportOneDriveActivityUserCount
 
 ## SYNOPSIS
-Invoke function getOneDriveActivityUserCounts
+Get the trend in the number of active OneDrive users.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveActivityUserCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportOneDriveActivityUserCount -InputObject <IReportsIdentity> -OutFile <
 ```
 
 ## DESCRIPTION
-Invoke function getOneDriveActivityUserCounts
+Get the trend in the number of active OneDrive users.
 
 ## PARAMETERS
 
@@ -182,6 +182,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-1.0)
 
 
 

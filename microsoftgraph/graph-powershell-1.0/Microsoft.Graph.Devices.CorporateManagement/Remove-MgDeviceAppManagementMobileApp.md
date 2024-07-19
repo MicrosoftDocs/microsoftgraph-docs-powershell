@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Deletes a macOSOfficeSuiteApp.
+Deletes a iosLobApp.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
 ```
 
 ## DESCRIPTION
-Deletes a macOSOfficeSuiteApp.
+Deletes a iosLobApp.
 
 ## PARAMETERS
 
@@ -228,7 +228,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-macosofficesuiteapp-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-macosofficesuiteapp-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-ioslobapp-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-ioslobapp-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
-Update the properties of a cross-tenant access policy.
+Update the navigation property crossTenantAccessPolicy in policies
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicy?view=graph-powershell-beta)
@@ -20,8 +20,9 @@ Update the properties of a cross-tenant access policy.
 Update-MgPolicyCrossTenantAccessPolicy [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AllowedCloudEndpoints <String[]>] [-Default <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Partners <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Partners <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]>]
+ [-Templates <IMicrosoftGraphPolicyTemplate>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -32,7 +33,7 @@ Update-MgPolicyCrossTenantAccessPolicy -BodyParameter <IMicrosoftGraphCrossTenan
 ```
 
 ## DESCRIPTION
-Update the properties of a cross-tenant access policy.
+Update the navigation property crossTenantAccessPolicy in policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -244,6 +245,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Templates
+policyTemplate
+To construct, see NOTES section for TEMPLATES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPolicyTemplate
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -355,10 +372,32 @@ Read-only.
 false causes any current user synchronization from the source tenant to the target tenant to stop.
 This property has no impact on existing users who have already been synchronized.
     - `[InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>]`: crossTenantAccessPolicyInboundTrust
+    - `[IsInMultiTenantOrganization <Boolean?>]`: Identifies whether a tenant is a member of a multitenant organization.
     - `[IsServiceProvider <Boolean?>]`: Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization.
     - `[TenantId <String>]`: The tenant identifier for the partner Microsoft Entra organization.
 Read-only.
 Key.
+  - `[Templates <IMicrosoftGraphPolicyTemplate>]`: policyTemplate
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[MultiTenantOrganizationIdentitySynchronization <IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate>]`: multiTenantOrganizationIdentitySyncPolicyTemplate
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[TemplateApplicationLevel <String>]`: templateApplicationLevel
+      - `[UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>]`: crossTenantUserSyncInbound
+    - `[MultiTenantOrganizationPartnerConfiguration <IMicrosoftGraphMultiTenantOrganizationPartnerConfigurationTemplate>]`: multiTenantOrganizationPartnerConfigurationTemplate
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]`: inboundOutboundPolicyConfiguration
+      - `[B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
+      - `[B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
+      - `[B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
+      - `[B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
+      - `[InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>]`: crossTenantAccessPolicyInboundTrust
+      - `[TemplateApplicationLevel <String>]`: templateApplicationLevel
 
 DEFAULT `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>`: crossTenantAccessPolicyConfigurationDefault
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -427,16 +466,56 @@ This property has no impact on existing users who have already been synchronized
     - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Microsoft Entra organizations are trusted.
     - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted.
     - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Microsoft Entra organizations is trusted.
+  - `[IsInMultiTenantOrganization <Boolean?>]`: Identifies whether a tenant is a member of a multitenant organization.
   - `[IsServiceProvider <Boolean?>]`: Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization.
   - `[TenantId <String>]`: The tenant identifier for the partner Microsoft Entra organization.
 Read-only.
 Key.
 
+TEMPLATES `<IMicrosoftGraphPolicyTemplate>`: policyTemplate
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[MultiTenantOrganizationIdentitySynchronization <IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate>]`: multiTenantOrganizationIdentitySyncPolicyTemplate
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[TemplateApplicationLevel <String>]`: templateApplicationLevel
+    - `[UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>]`: crossTenantUserSyncInbound
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsSyncAllowed <Boolean?>]`: Defines whether user objects should be synchronized from the partner tenant.
+false causes any current user synchronization from the source tenant to the target tenant to stop.
+This property has no impact on existing users who have already been synchronized.
+  - `[MultiTenantOrganizationPartnerConfiguration <IMicrosoftGraphMultiTenantOrganizationPartnerConfigurationTemplate>]`: multiTenantOrganizationPartnerConfigurationTemplate
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]`: inboundOutboundPolicyConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[InboundAllowed <Boolean?>]`: Defines whether external users coming inbound are allowed.
+      - `[OutboundAllowed <Boolean?>]`: Defines whether internal users are allowed to go outbound.
+    - `[B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AccessType <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
+        - `[Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget- `[]`>]`: Specifies whether to target users, groups, or applications with this rule.
+          - `[Target <String>]`: The unique identifier of the user, group, or application; one of the following keywords: AllUsers and AllApplications; or for targets that are applications, you may use reserved values.
+          - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
+      - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+    - `[B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
+    - `[B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
+    - `[B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
+    - `[InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>]`: crossTenantAccessPolicyInboundTrust
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Microsoft Entra organizations are trusted.
+      - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted.
+      - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Microsoft Entra organizations is trusted.
+    - `[TemplateApplicationLevel <String>]`: templateApplicationLevel
+
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy)
-
-[https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-1.0)
 
 
 

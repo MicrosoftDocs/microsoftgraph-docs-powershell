@@ -50,16 +50,21 @@ The membership rule is returned along with other details that were used in the e
 You can complete this operation in the following ways:
 
 ## EXAMPLES
-### Example 1: Using the Test-MgBetaGroupDynamicMembership Cmdlet
+### Example 1: Evaluate if a user or device is a member of an existing group
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 $params = @{
-	MemberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33"
+	memberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33"
 }
+
 Test-MgBetaGroupDynamicMembership -GroupId $groupId -BodyParameter $params
+
 ```
-This example shows how to use the Test-MgBetaGroupDynamicMembership Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will evaluate if a user or device is a member of an existing group
+
 
 ## PARAMETERS
 
@@ -289,7 +294,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembership](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembership)
 
-[https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)
 
 
 

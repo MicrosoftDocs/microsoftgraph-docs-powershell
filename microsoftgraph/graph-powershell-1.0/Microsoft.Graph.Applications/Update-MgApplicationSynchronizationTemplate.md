@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgApplicationSynchronizationTemplate
 
 ## SYNOPSIS
-Update (override) the synchronization template associated with a given application.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
+Update the navigation property templates in applications
 
 ## SYNTAX
 
@@ -48,7 +45,7 @@ Update-MgApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Update (override) the synchronization template associated with a given application.
+Update the navigation property templates in applications
 
 ## PARAMETERS
 
@@ -526,6 +523,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -682,8 +680,6 @@ Must match one of the directory definitions in synchronizationSchema.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplate)
-
-[https://learn.microsoft.com/graph/api/synchronization-synchronizationtemplate-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationtemplate-update?view=graph-rest-1.0)
 
 
 

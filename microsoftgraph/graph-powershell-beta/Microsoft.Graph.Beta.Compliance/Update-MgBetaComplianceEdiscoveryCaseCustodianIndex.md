@@ -29,8 +29,6 @@ Update-MgBetaComplianceEdiscoveryCaseCustodianIndex -InputObject <IComplianceIde
 ## DESCRIPTION
 Invoke action updateIndex
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CaseId
@@ -208,6 +206,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasecustodianindex](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasecustodianindex)
+
+
 
 
 

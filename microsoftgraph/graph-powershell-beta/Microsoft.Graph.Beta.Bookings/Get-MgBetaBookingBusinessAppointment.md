@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgBetaBookingBusinessAppointment
 
 ## SYNOPSIS
-Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
-The start and end properties are always returned in UTC.
+All the appointments of this business.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessAppointment?view=graph-powershell-1.0)
@@ -61,8 +62,9 @@ Get-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
-The start and end properties are always returned in UTC.
+All the appointments of this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaBookingBusinessAppointment Cmdlet
@@ -351,11 +353,31 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
+  - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
+  - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
   - `[Email <String>]`: Alternate key of virtualEventRegistration
+  - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
+  - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
+  - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
+  - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
+  - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
+  - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[ProtectionUnitBaseId <String>]`: The unique identifier of protectionUnitBase
+  - `[RestorePointId <String>]`: The unique identifier of restorePoint
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
+  - `[SharePointProtectionPolicyId <String>]`: The unique identifier of sharePointProtectionPolicy
+  - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
+  - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
+  - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
+  - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
   - `[UniqueName <String>]`: Alternate key of businessScenario
   - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
@@ -369,9 +391,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessappointment)
 
-[https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/bookingbusiness-list-appointments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-list-appointments?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-beta)
 
 
 

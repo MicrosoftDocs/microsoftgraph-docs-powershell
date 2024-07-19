@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSiteListItemDriveItem
 
 ## SYNOPSIS
-For document libraries, the driveItem relationship exposes the listItem as a \[driveItem\]\[\]
+For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemDriveItem](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemDriveItem?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaSiteListItemDriveItem -InputObject <ISitesIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-For document libraries, the driveItem relationship exposes the listItem as a \[driveItem\]\[\]
+For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
 ## PARAMETERS
 
@@ -243,6 +243,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdriveitem)
+
 
 
 

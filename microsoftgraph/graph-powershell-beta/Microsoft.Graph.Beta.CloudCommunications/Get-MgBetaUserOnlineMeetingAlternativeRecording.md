@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaUserOnlineMeetingAlternativeRecording
 
 ## SYNOPSIS
-Get alternativeRecording for the navigation property onlineMeetings from users
+The content stream of the alternative recording of a Microsoft Teams live event.
+Read-only.
 
 ## SYNTAX
 
@@ -27,7 +28,8 @@ Get-MgBetaUserOnlineMeetingAlternativeRecording -InputObject <ICloudCommunicatio
 ```
 
 ## DESCRIPTION
-Get alternativeRecording for the navigation property onlineMeetings from users
+The content stream of the alternative recording of a Microsoft Teams live event.
+Read-only.
 
 ## PARAMETERS
 
@@ -193,7 +195,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingalternativerecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingalternativerecording)
 
-[https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0)
 
 
 

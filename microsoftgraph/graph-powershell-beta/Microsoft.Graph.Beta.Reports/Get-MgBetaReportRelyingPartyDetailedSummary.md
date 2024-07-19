@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportRelyingPartyDetailedSummary
 
 ## SYNOPSIS
-Invoke function getRelyingPartyDetailedSummary
+Get a summary of AD FS relying parties information.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportRelyingPartyDetailedSummary](/powershell/module/Microsoft.Graph.Reports/Get-MgReportRelyingPartyDetailedSummary?view=graph-powershell-1.0)
@@ -32,7 +32,20 @@ Get-MgBetaReportRelyingPartyDetailedSummary -InputObject <IReportsIdentity> [-Co
 ```
 
 ## DESCRIPTION
-Invoke function getRelyingPartyDetailedSummary
+Get a summary of AD FS relying parties information.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportRelyingPartyDetailedSummary -Period $periodId 
+
+```
+This example shows how to use the Get-MgBetaReportRelyingPartyDetailedSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -249,7 +262,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -298,6 +310,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportrelyingpartydetailedsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportrelyingpartydetailedsummary)
 
+[https://learn.microsoft.com/graph/api/reportroot-getrelyingpartydetailedsummary?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-getrelyingpartydetailedsummary?view=graph-rest-beta)
 
 
 

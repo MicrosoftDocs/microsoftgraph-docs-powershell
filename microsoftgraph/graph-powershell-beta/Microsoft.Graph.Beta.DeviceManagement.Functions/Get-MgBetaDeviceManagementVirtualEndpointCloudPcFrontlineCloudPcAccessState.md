@@ -8,7 +8,13 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointCloudPcFrontlineCloudPcAccessState
 
 ## SYNOPSIS
-Invoke function getFrontlineCloudPcAccessState
+Get the frontlineCloudPcAccessState of a frontline Cloud PC.
+This API only supports shared-use licenses.
+For more information, see cloudPcProvisioningPolicy.
+Shared-use licenses allow three users per license, with one user signed in at a time.
+Callers can get the latest frontline Cloud PC accessState and determine whether the frontline Cloud PC is accessible to a user.
+If a web client needs to connect to a frontline Cloud PC, the sharedCloudPcAccessState validates the bookmark scenario.
+If sharedCloudPcAccessState isn't active/activating/standbyMode, the web client shows a bad bookmark.
 
 ## SYNTAX
 
@@ -27,7 +33,29 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPcFrontlineCloudPcAccessState
 ```
 
 ## DESCRIPTION
-Invoke function getFrontlineCloudPcAccessState
+Get the frontlineCloudPcAccessState of a frontline Cloud PC.
+This API only supports shared-use licenses.
+For more information, see cloudPcProvisioningPolicy.
+Shared-use licenses allow three users per license, with one user signed in at a time.
+Callers can get the latest frontline Cloud PC accessState and determine whether the frontline Cloud PC is accessible to a user.
+If a web client needs to connect to a frontline Cloud PC, the sharedCloudPcAccessState validates the bookmark scenario.
+If sharedCloudPcAccessState isn't active/activating/standbyMode, the web client shows a bad bookmark.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getfrontlinecloudpcaccessstate-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get the frontline Cloud PC access state for the administrator
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+
+Get-MgBetaDeviceManagementVirtualEndpointCloudPcFrontlineCloudPcAccessState -CloudPCId $cloudPCId
+
+```
+This example will get the frontline cloud pc access state for the administrator
+
 
 ## PARAMETERS
 
@@ -160,6 +188,7 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcfrontlinecloudpcaccessstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcfrontlinecloudpcaccessstate)
 
+[https://learn.microsoft.com/graph/api/cloudpc-getfrontlinecloudpcaccessstate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-getfrontlinecloudpcaccessstate?view=graph-rest-beta)
 
 
 

@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-Device Configuration State for a given device.
+Support for this Entity is being deprecated starting May 2026 & will no longer be supported.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -374,7 +374,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationState>`: Device Configuration State for a given device.
+BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationState>`: Support for this Entity is being deprecated starting May 2026 & will no longer be supported.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -427,6 +427,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
   - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
   - `[IosVppAppAssignedLicenseId <String>]`: The unique identifier of iosVppAppAssignedLicense
+  - `[ManagedAppLogCollectionRequestId <String>]`: The unique identifier of managedAppLogCollectionRequest
   - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
   - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
   - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
@@ -495,6 +496,7 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermanageddeviceconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermanageddeviceconfigurationstate)
+
 
 
 

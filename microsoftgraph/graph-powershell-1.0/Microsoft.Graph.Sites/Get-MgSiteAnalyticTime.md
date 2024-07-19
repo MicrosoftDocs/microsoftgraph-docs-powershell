@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteAnalyticTime
 
 ## SYNOPSIS
-Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
+Get allTime from sites
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticTime?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgSiteAnalyticTime -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
+Get allTime from sites
 
 ## PARAMETERS
 
@@ -198,14 +198,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalytictime](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalytictime)
-
-[https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-1.0)
 
 
 

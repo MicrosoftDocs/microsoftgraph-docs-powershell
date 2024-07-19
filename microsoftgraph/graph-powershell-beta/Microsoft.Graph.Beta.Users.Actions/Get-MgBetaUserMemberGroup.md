@@ -57,17 +57,22 @@ If more than 11,000 results are available, it returns a 400 Bad Request error wi
 As a workaround, use the List group transitive memberOf API.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserMemberGroup Cmdlet
+### Example 1: Check group memberships for the signed-in user
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	SecurityEnabledOnly = $true
+	securityEnabledOnly = $true
 }
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
+
 ```
-This example shows how to use the Get-MgBetaUserMemberGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will check group memberships for the signed-in user
+
 
 ## PARAMETERS
 
@@ -292,7 +297,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermembergroup)
 
-[https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-beta)
 
 
 

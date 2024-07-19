@@ -18,30 +18,16 @@ Read-only.
 ## SYNTAX
 
 ```
-Get-MgBetaGroupCalendarView -GroupId <String> -EndDateTime <String> -StartDateTime <String> [-Filter <String>]
- [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaGroupCalendarView -GroupId <String> -EndDateTime <String> -StartDateTime <String>
+ [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The calendar view for the calendar.
 Navigation property.
 Read-only.
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Calendar
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserCalendarView -UserId $userId -Startdatetime "2017-01-01T19:00:00-08:00" -Enddatetime "2017-01-07T19:00:00-08:00"
-```
-This example shows how to use the Get-MgBetaGroupCalendarView Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -86,6 +72,21 @@ Parameter Sets: (All)
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -197,6 +198,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -273,7 +289,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarview)
 
-[https://learn.microsoft.com/graph/api/calendar-list-calendarview?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-list-calendarview?view=graph-rest-1.0)
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 
 ## SYNOPSIS
-Update the navigation property authenticationMethodConfigurations in policies
+Update the properties of an externalAuthenticationMethodConfiguration object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-1.0)
@@ -50,93 +50,32 @@ Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 ```
 
 ## DESCRIPTION
-Update the navigation property authenticationMethodConfigurations in policies
+Update the properties of an externalAuthenticationMethodConfiguration object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
-	"@odata.type" = "#microsoft.graph.emailAuthenticationMethodConfiguration"
-	AllowExternalIdToUseEmailOtp = "disabled"
-}
-Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-$params = @{
-	"@odata.type" = "#microsoft.graph.fido2AuthenticationMethodConfiguration"
-	State = "enabled"
-	IsAttestationEnforced = "true"
-}
-Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-$params = @{
-	"@odata.type" = "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration"
-	State = "enabled"
-}
-Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-$params = @{
-	"@odata.type" = "#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
-	State = "enabled"
-}
-Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 5: Using the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-$params = @{
-	"@odata.type" = "#microsoft.graph.smsAuthenticationMethodConfiguration"
-	Id = "Sms"
-	State = "enabled"
-}
-Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 6: Using the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-$params = @{
-	"@odata.type" = "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration"
-	IsUsableOnce = $true
-}
-Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 7: Using the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-$params = @{
-	"@odata.type" = "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration"
-	Id = "X509Certificate"
-	State = "enabled"
-	CertificateUserBindings = @(
+	"@odata.type" = "#microsoft.graph.externalAuthenticationMethodConfiguration"
+	includeTargets = @(
+		@{
+			targetType = "group"
+			id = "b183b746-e7db-4fa2-bafc-69ecf18850dd"
+			isRegistrationRequired = $false
+		}
 	)
-	IncludeTargets = @(
-	)
+	state = "enabled"
 }
+
 Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -406,6 +345,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -425,6 +365,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -437,6 +378,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration)
+
+[https://learn.microsoft.com/graph/api/externalauthenticationmethodconfiguration-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalauthenticationmethodconfiguration-update?view=graph-rest-beta)
 
 
 

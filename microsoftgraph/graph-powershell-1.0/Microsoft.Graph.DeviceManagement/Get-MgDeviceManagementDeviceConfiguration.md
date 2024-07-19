@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Read properties and relationships of the iosCustomConfiguration object.
+Read properties and relationships of the androidWorkProfileGeneralDeviceConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIdentit
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the iosCustomConfiguration object.
+Read properties and relationships of the androidWorkProfileGeneralDeviceConfiguration object.
 
 ## PARAMETERS
 
@@ -345,9 +345,9 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-ioscustomconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-ioscustomconfiguration-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-androidcustomconfiguration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-androidcustomconfiguration-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10endpointprotectionconfiguration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10endpointprotectionconfiguration-list?view=graph-rest-1.0)
 
 
 

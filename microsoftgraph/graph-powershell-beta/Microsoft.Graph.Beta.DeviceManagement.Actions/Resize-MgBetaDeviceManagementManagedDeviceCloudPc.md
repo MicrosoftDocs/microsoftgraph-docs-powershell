@@ -50,16 +50,21 @@ Upgrade or downgrade an existing Cloud PC to another configuration with a new vi
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-resizecloudpc-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Resize-MgBetaDeviceManagementManagedDeviceCloudPc Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
 $params = @{
-	TargetServicePlanId = "30d0e128-de93-41dc-89ec-33d84bb662a0"
+	targetServicePlanId = "30d0e128-de93-41dc-89ec-33d84bb662a0"
 }
+
 Resize-MgBetaDeviceManagementManagedDeviceCloudPc -ManagedDeviceId $managedDeviceId -BodyParameter $params
+
 ```
 This example shows how to use the Resize-MgBetaDeviceManagementManagedDeviceCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -289,6 +294,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
   - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+  - `[HardwareConfigurationId <String>]`: The unique identifier of hardwareConfiguration
   - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
@@ -311,7 +317,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/resize-mgbetadevicemanagementmanageddevicecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/resize-mgbetadevicemanagementmanageddevicecloudpc)
 
-[https://learn.microsoft.com/graph/api/manageddevice-resizecloudpc?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/manageddevice-resizecloudpc?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta)
 
 
 

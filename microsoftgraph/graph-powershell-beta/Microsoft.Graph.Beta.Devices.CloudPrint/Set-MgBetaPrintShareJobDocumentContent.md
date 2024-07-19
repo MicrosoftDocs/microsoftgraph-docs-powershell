@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgBetaPrintShareJobDocumentContent
 
 ## SYNOPSIS
-Update media content for the navigation property documents in print
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgPrintShareJobDocumentContent](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Set-MgPrintShareJobDocumentContent?view=graph-powershell-1.0)
@@ -31,7 +32,8 @@ Set-MgBetaPrintShareJobDocumentContent -InputObject <IDevicesCloudPrintIdentity>
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property documents in print
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 

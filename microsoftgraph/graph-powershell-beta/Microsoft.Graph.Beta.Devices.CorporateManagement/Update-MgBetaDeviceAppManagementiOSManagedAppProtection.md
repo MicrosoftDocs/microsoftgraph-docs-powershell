@@ -18,13 +18,14 @@ Update the navigation property iosManagedAppProtections in deviceAppManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtectionId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowWidgetContentSync]
  [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
  [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
  [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>] [-AllowedIosDeviceModels <String>]
  [-AllowedOutboundClipboardSharingExceptionLength <Int32>]
  [-AllowedOutboundClipboardSharingLevel <ManagedAppClipboardSharingLevel>]
  [-AllowedOutboundDataTransferDestinations <ManagedAppDataTransferLevel>]
+ [-AppActionIfAccountIsClockedOut <ManagedAppRemediationAction>]
  [-AppActionIfDeviceComplianceRequired <ManagedAppRemediationAction>]
  [-AppActionIfIosDeviceModelNotAllowed <ManagedAppRemediationAction>]
  [-AppActionIfMaximumPinRetriesExceeded <ManagedAppRemediationAction>]
@@ -71,13 +72,14 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtection
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceAppManagementiOSManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowWidgetContentSync]
  [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
  [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
  [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>] [-AllowedIosDeviceModels <String>]
  [-AllowedOutboundClipboardSharingExceptionLength <Int32>]
  [-AllowedOutboundClipboardSharingLevel <ManagedAppClipboardSharingLevel>]
  [-AllowedOutboundDataTransferDestinations <ManagedAppDataTransferLevel>]
+ [-AppActionIfAccountIsClockedOut <ManagedAppRemediationAction>]
  [-AppActionIfDeviceComplianceRequired <ManagedAppRemediationAction>]
  [-AppActionIfIosDeviceModelNotAllowed <ManagedAppRemediationAction>]
  [-AppActionIfMaximumPinRetriesExceeded <ManagedAppRemediationAction>]
@@ -238,6 +240,36 @@ Data can be transferred from/to these classes of apps
 
 ```yaml
 Type: ManagedAppDataTransferLevel
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowWidgetContentSync
+Indicates if content sync for widgets is allowed for iOS on App Protection Policies
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AppActionIfAccountIsClockedOut
+An admin initiated action to be applied on a managed app.
+
+```yaml
+Type: ManagedAppRemediationAction
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1552,7 +1584,9 @@ Default is anyApp.
   - `[Version <String>]`: Version of the entity.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[AllowWidgetContentSync <Boolean?>]`: Indicates  if content sync for widgets is allowed for iOS on App Protection Policies
   - `[AllowedIosDeviceModels <String>]`: Semicolon seperated list of device models allowed, as a string, for the managed app to work.
+  - `[AppActionIfAccountIsClockedOut <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfIosDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppDataEncryptionType <ManagedAppDataEncryptionType?>]`: Represents the level to which app data is encrypted for managed apps
   - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.
@@ -1635,6 +1669,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
   - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
   - `[IosVppAppAssignedLicenseId <String>]`: The unique identifier of iosVppAppAssignedLicense
+  - `[ManagedAppLogCollectionRequestId <String>]`: The unique identifier of managedAppLogCollectionRequest
   - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
   - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
   - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration

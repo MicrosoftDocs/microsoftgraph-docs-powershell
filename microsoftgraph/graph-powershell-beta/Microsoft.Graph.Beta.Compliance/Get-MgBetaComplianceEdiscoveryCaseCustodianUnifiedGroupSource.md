@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianunifiedgroupsource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource
@@ -353,9 +352,9 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianunifiedgroupsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianunifiedgroupsource)
 
-[https://learn.microsoft.com/graph/api/ediscovery-unifiedgroupsource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-unifiedgroupsource-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/ediscovery-unifiedgroupsource-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-unifiedgroupsource-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/ediscovery-custodian-list-unifiedgroupsources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-custodian-list-unifiedgroupsources?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/ediscovery-custodian-list-unifiedgroupsources?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-custodian-list-unifiedgroupsources?view=graph-rest-beta)
 
 
 

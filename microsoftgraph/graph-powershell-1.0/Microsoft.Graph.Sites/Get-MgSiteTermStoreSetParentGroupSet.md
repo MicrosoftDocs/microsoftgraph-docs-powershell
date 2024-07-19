@@ -62,8 +62,6 @@ Get-MgSiteTermStoreSetParentGroupSet -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 All sets under the group in a term \[store\].
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -396,6 +394,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -403,7 +402,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetparentgroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetparentgroupset)
 
-[https://learn.microsoft.com/graph/api/termstore-group-list-sets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-group-list-sets?view=graph-rest-1.0)
+
+
 
 
 

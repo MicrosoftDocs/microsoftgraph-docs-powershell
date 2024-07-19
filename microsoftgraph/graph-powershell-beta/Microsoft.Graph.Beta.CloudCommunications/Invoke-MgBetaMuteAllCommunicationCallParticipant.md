@@ -47,19 +47,24 @@ Invoke-MgBetaMuteAllCommunicationCallParticipant -InputObject <ICloudCommunicati
 Mute all participants in the call.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaMuteAllCommunicationCallParticipant Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	Participants = @(
-		""
-	)
-	ClientContext = "clientContext-value"
+	participants = @(
+	""
+)
+clientContext = "clientContext-value"
 }
+
 Invoke-MgBetaMuteAllCommunicationCallParticipant -CallId $callId -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaMuteAllCommunicationCallParticipant Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -278,7 +283,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamuteallcommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamuteallcommunicationcallparticipant)
 
-[https://learn.microsoft.com/graph/api/participant-muteall?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/participant-muteall?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/participant-muteall?view=graph-rest-beta](https://learn.microsoft.com/graph/api/participant-muteall?view=graph-rest-beta)
 
 
 

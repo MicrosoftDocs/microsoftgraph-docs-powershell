@@ -34,8 +34,6 @@ New-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy
 ## DESCRIPTION
 Create new navigation property to emailThreatSubmissionPolicies for security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -445,6 +443,8 @@ Optional for creation.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreatsubmissionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreatsubmissionpolicy)
+
+
 
 
 

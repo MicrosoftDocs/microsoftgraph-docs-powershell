@@ -464,7 +464,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 ACTIVITY `<IMicrosoftGraphRiskServicePrincipalActivity>`: riskServicePrincipalActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Detail <String>]`: riskDetail
-  - `[RiskEventTypes <String- `[]`>]`: 
+  - `[RiskEventTypes <String- `[]`>]`: The type of risk event detected.
+The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication.
 
 BODYPARAMETER `<IMicrosoftGraphRiskyServicePrincipalHistoryItem>`: riskyServicePrincipalHistoryItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -488,7 +489,8 @@ Read-only.
   - `[Activity <IMicrosoftGraphRiskServicePrincipalActivity>]`: riskServicePrincipalActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Detail <String>]`: riskDetail
-    - `[RiskEventTypes <String- `[]`>]`: 
+    - `[RiskEventTypes <String- `[]`>]`: The type of risk event detected.
+The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication.
   - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
   - `[ServicePrincipalId <String>]`: The identifier of the service principal.
 
@@ -513,7 +515,8 @@ Read-only.
   - `[Activity <IMicrosoftGraphRiskServicePrincipalActivity>]`: riskServicePrincipalActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Detail <String>]`: riskDetail
-    - `[RiskEventTypes <String- `[]`>]`: 
+    - `[RiskEventTypes <String- `[]`>]`: The type of risk event detected.
+The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication.
   - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
   - `[ServicePrincipalId <String>]`: The identifier of the service principal.
 
@@ -568,6 +571,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -587,6 +591,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -599,6 +604,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyserviceprincipalhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskyserviceprincipalhistory)
+
 
 
 

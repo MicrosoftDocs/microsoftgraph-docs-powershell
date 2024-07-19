@@ -23,6 +23,19 @@ Get-MgBetaTeamwork [-ExpandProperty <String[]>] [-Property <String[]>] [-Respons
 ## DESCRIPTION
 Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaTeamwork
+
+```
+This example shows how to use the Get-MgBetaTeamwork Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -115,8 +128,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamwork)
 
-[https://learn.microsoft.com/graph/api/teamwork-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamwork-get?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/teamwork-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamwork-get?view=graph-rest-beta)
 
 
 

@@ -1211,7 +1211,7 @@ Required.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator)
 
-[https://learn.microsoft.com/graph/api/tiindicators-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicators-post?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta)
 
 
 

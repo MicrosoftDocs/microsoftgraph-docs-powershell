@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserOnenoteResourceContent
 
 ## SYNOPSIS
-Get content for the navigation property resources from users
+The content of the resource.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteResourceContent?view=graph-powershell-1.0)
@@ -30,9 +30,7 @@ Get-MgBetaUserOnenoteResourceContent -InputObject <INotesIdentity> -OutFile <Str
 ```
 
 ## DESCRIPTION
-Get content for the navigation property resources from users
-
-## EXAMPLES
+The content of the resource.
 
 ## PARAMETERS
 
@@ -189,6 +187,8 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenoteresourcecontent)
+
+
 
 
 

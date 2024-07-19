@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaUserChatRetainedMessage
 
 ## SYNOPSIS
-Invoke function getAllRetainedMessages
+Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
 ## SYNTAX
 
@@ -29,7 +30,24 @@ Get-MgBetaUserChatRetainedMessage -InputObject <IUsersFunctionsIdentity> [-Count
 ```
 
 ## DESCRIPTION
-Invoke function getAllRetainedMessages
+Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-getallretainedmessages-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Functions
+
+Get-MgBetaUserChatRetainedMessage -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserChatRetainedMessage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -289,6 +307,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserchatretainedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserchatretainedmessage)
 
+[https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaUserMemberOfAsGroup
 
 ## SYNOPSIS
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups, directory roles, and administrative units that the user is a direct member of.
+This operation isn't transitive.
+To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the List user transitive memberOf API.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserMemberOfAsGroup](/powershell/module/Microsoft.Graph.Users/Get-MgUserMemberOfAsGroup?view=graph-powershell-1.0)
@@ -38,7 +40,22 @@ Get-MgBetaUserMemberOfAsGroup -InputObject <IUsersIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups, directory roles, and administrative units that the user is a direct member of.
+This operation isn't transitive.
+To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the List user transitive memberOf API.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users
+
+Get-MgBetaUserMemberOfAsGroup -UserId $userId -Filter "appRoleAssignments/`$count gt 0" -Property "id,displayName" 
+
+```
+This example shows how to use the Get-MgBetaUserMemberOfAsGroup Cmdlet.
+
 
 ## PARAMETERS
 
@@ -348,6 +365,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofasgroup)
 
+[https://learn.microsoft.com/graph/api/user-list-memberof?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-list-memberof?view=graph-rest-beta)
 
 
 

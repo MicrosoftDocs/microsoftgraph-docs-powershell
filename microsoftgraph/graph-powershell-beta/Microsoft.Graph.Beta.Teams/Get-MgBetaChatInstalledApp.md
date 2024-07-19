@@ -393,9 +393,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatinstalledapp)
 
-[https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-beta)
 
 
 

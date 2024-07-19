@@ -38,20 +38,17 @@ Get-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 Retrieve the properties and relationships of a specific endpoint object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaGroupEndpoint Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-Get-MgBetaGroupEndpoint -GroupId $groupId -EndpointId $endpointId
-```
-This example shows how to use the Get-MgBetaGroupEndpoint Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaGroupEndpoint Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Groups
+
 Get-MgBetaGroupEndpoint -GroupId $groupId
+
 ```
 This example shows how to use the Get-MgBetaGroupEndpoint Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -365,9 +362,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint)
 
-[https://learn.microsoft.com/graph/api/endpoint-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/endpoint-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/endpoint-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/endpoint-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/group-list-endpoints?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-endpoints?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-list-endpoints?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-endpoints?view=graph-rest-beta)
 
 
 

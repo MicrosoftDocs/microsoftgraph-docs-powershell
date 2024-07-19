@@ -52,6 +52,7 @@ Update the properties and relationships of a shiftPreferences object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Users
 
 $params = @{
@@ -63,27 +64,26 @@ $params = @{
 				pattern = @{
 					type = "Weekly"
 					daysOfWeek = @(
-						"Monday"
-						"Wednesday"
-						"Friday"
-					)
-					interval = 1
-				}
-				range = @{
-					type = "noEnd"
-				}
-			}
-			timeZone = "Pacific Standard Time"
-			timeSlots = $null
-		}
-	)
+					"Monday"
+				"Wednesday"
+			"Friday"
+		)
+		interval = 1
+	}
+	range = @{
+		type = "noEnd"
+	}
+}
+timeZone = "Pacific Standard Time"
+timeSlots = $null
+}
+)
 }
 
 Update-MgUserSettingShiftPreference -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgUserSettingShiftPreference Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -337,8 +337,9 @@ BODYPARAMETER `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Id <String>]`: The unique identifier for an entity.
@@ -404,8 +405,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 

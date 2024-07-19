@@ -51,8 +51,6 @@ New-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Create new navigation property to historyItems for users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ActiveDurationSeconds
@@ -137,7 +135,7 @@ Accept wildcard characters: False
 
 ### -ExpirationDateTime
 Optional.
-UTC DateTime when the historyItem will undergo hard-delete.
+UTC DateTime when the activityHistoryItem will undergo hard-delete.
 Can be set by the client.
 
 ```yaml
@@ -201,7 +199,7 @@ Accept wildcard characters: False
 
 ### -LastActiveDateTime
 Optional.
-UTC DateTime when the historyItem (activity session) was last understood as active or finished - if null, historyItem status should be Ongoing.
+UTC DateTime when the activityHistoryItem (activity session) was last understood as active or finished - if null, activityHistoryItem status should be Ongoing.
 
 ```yaml
 Type: DateTime
@@ -263,7 +261,7 @@ Accept wildcard characters: False
 
 ### -StartedDateTime
 Required.
-UTC DateTime when the historyItem (activity session) was started.
+UTC DateTime when the activityHistoryItem (activity session) was started.
 Required for timeline history.
 
 ```yaml
@@ -407,8 +405,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
   - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-  - `[ContentInfo <IMicrosoftGraphJson>]`: Json
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ContentInfo <IAny>]`: Optional.
+A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
   - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
   - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -428,14 +426,14 @@ if not supplied, this is calculated from the startedDateTime and lastActiveDateT
     - `[CreatedDateTime <DateTime?>]`: Set by the server.
 DateTime in UTC when the object was created on the server.
     - `[ExpirationDateTime <DateTime?>]`: Optional.
-UTC DateTime when the historyItem will undergo hard-delete.
+UTC DateTime when the activityHistoryItem will undergo hard-delete.
 Can be set by the client.
     - `[LastActiveDateTime <DateTime?>]`: Optional.
-UTC DateTime when the historyItem (activity session) was last understood as active or finished - if null, historyItem status should be Ongoing.
+UTC DateTime when the activityHistoryItem (activity session) was last understood as active or finished - if null, activityHistoryItem status should be Ongoing.
     - `[LastModifiedDateTime <DateTime?>]`: Set by the server.
 DateTime in UTC when the object was modified on the server.
     - `[StartedDateTime <DateTime?>]`: Required.
-UTC DateTime when the historyItem (activity session) was started.
+UTC DateTime when the activityHistoryItem (activity session) was started.
 Required for timeline history.
     - `[Status <String>]`: status
     - `[UserTimezone <String>]`: Optional.
@@ -458,7 +456,8 @@ For example - a high contrast image
     - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-    - `[Content <IMicrosoftGraphJson>]`: Json
+    - `[Content <IAny>]`: Optional.
+Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
     - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
     - `[DisplayText <String>]`: Required.
@@ -490,8 +489,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
     - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-    - `[ContentInfo <IMicrosoftGraphJson>]`: Json
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ContentInfo <IAny>]`: Optional.
+A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
     - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
     - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -519,7 +518,8 @@ For example - a high contrast image
       - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-      - `[Content <IMicrosoftGraphJson>]`: Json
+      - `[Content <IAny>]`: Optional.
+Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
       - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
       - `[DisplayText <String>]`: Required.
@@ -527,14 +527,14 @@ Short text description of the user's unique activity (for example, document name
   - `[CreatedDateTime <DateTime?>]`: Set by the server.
 DateTime in UTC when the object was created on the server.
   - `[ExpirationDateTime <DateTime?>]`: Optional.
-UTC DateTime when the historyItem will undergo hard-delete.
+UTC DateTime when the activityHistoryItem will undergo hard-delete.
 Can be set by the client.
   - `[LastActiveDateTime <DateTime?>]`: Optional.
-UTC DateTime when the historyItem (activity session) was last understood as active or finished - if null, historyItem status should be Ongoing.
+UTC DateTime when the activityHistoryItem (activity session) was last understood as active or finished - if null, activityHistoryItem status should be Ongoing.
   - `[LastModifiedDateTime <DateTime?>]`: Set by the server.
 DateTime in UTC when the object was modified on the server.
   - `[StartedDateTime <DateTime?>]`: Required.
-UTC DateTime when the historyItem (activity session) was started.
+UTC DateTime when the activityHistoryItem (activity session) was started.
 Required for timeline history.
   - `[Status <String>]`: status
   - `[UserTimezone <String>]`: Optional.
@@ -549,6 +549,8 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivityhistoryitem](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivityhistoryitem)
+
+
 
 
 

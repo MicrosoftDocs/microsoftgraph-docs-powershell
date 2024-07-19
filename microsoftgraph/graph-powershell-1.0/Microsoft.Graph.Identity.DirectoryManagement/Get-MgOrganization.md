@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgOrganization
 
 ## SYNOPSIS
-Read properties and relationships of the organization object.
+Get the properties and relationships of the currently authenticated organization.
+Since the organization resource supports extensions, you can also use the GET operation to get custom properties and extension data in an organization instance.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganization?view=graph-powershell-beta)
@@ -37,7 +38,8 @@ Get-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the organization object.
+Get the properties and relationships of the currently authenticated organization.
+Since the organization resource supports extensions, you can also use the GET operation to get custom properties and extension data in an organization instance.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -301,6 +303,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -327,9 +331,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-organization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-organization-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/organization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organization-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-organization-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-organization-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/organization-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organization-list?view=graph-rest-1.0)
 
 
 

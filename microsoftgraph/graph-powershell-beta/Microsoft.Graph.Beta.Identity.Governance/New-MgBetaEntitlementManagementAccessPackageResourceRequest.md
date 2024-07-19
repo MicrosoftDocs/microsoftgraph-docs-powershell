@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsValidationOnly
-If set, does not add the resource.
+If set, doesn't add the resource.
 
 ```yaml
 Type: SwitchParameter
@@ -394,7 +394,7 @@ Read-only.
     - `[Description <String>]`: A description for the resource role.
     - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
     - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
-For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+For a SharePoint Online site, the originId is the sequence number of the role in the site.
     - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
   - `[AccessPackageResourceScopes <IMicrosoftGraphAccessPackageResourceScope- `[]`>]`: Read-only.
 Nullable.
@@ -478,7 +478,7 @@ Read-only.
       - `[Description <String>]`: A description for the resource role.
       - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
       - `[OriginId <String>]`: The unique identifier of the resource role in the origin system.
-For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+For a SharePoint Online site, the originId is the sequence number of the role in the site.
       - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
     - `[AccessPackageResourceScopes <IMicrosoftGraphAccessPackageResourceScope- `[]`>]`: Read-only.
 Nullable.
@@ -524,9 +524,9 @@ Supports $filter (eq).
   - `[ExecuteImmediately <Boolean?>]`: 
   - `[ExpirationDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[IsValidationOnly <Boolean?>]`: If set, does not add the resource.
+  - `[IsValidationOnly <Boolean?>]`: If set, doesn't add the resource.
   - `[Justification <String>]`: The requestor's justification for adding or removing the resource.
-  - `[RequestState <String>]`: The outcome of whether the service was able to add the resource to the catalog. 
+  - `[RequestState <String>]`: The outcome of whether the service was able to add the resource to the catalog.
 The value is Delivered if the resource was added or removed.
 Read-Only.
   - `[RequestStatus <String>]`: 
@@ -573,7 +573,7 @@ Read-only.
     - `[ObjectId <String>]`: The object identifier of the subject.
 null if the subject isn't yet a user in the tenant.
 Alternate key.
-    - `[OnPremisesSecurityIdentifier <String>]`: 
+    - `[OnPremisesSecurityIdentifier <String>]`: A string representation of the principal's security identifier, if known, or null if the subject doesn't have a security identifier.
     - `[PrincipalName <String>]`: The principal name, if known, of the subject.
     - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
     - `[Type <String>]`: The resource type of the subject.
@@ -620,7 +620,7 @@ Read-only.
   - `[ObjectId <String>]`: The object identifier of the subject.
 null if the subject isn't yet a user in the tenant.
 Alternate key.
-  - `[OnPremisesSecurityIdentifier <String>]`: 
+  - `[OnPremisesSecurityIdentifier <String>]`: A string representation of the principal's security identifier, if known, or null if the subject doesn't have a security identifier.
   - `[PrincipalName <String>]`: The principal name, if known, of the subject.
   - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
   - `[Type <String>]`: The resource type of the subject.
@@ -629,7 +629,7 @@ Alternate key.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest)
 
-[https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta)
 
 
 

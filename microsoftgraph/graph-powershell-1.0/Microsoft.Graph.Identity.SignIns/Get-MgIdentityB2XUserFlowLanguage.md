@@ -8,9 +8,9 @@ schema: 2.0.0
 # Get-MgIdentityB2XUserFlowLanguage
 
 ## SYNOPSIS
-Read the properties and relationships of a userFlowLanguageConfiguration object.
-These objects represent a language available in a user flow.
-Note: Language customization is enabled by default in Microsoft Entra user flows.
+The languages supported for customization within the user flow.
+Language customization is enabled by default in self-service sign-up user flow.
+You can't create custom languages in self-service sign-up user flows.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
@@ -40,9 +40,9 @@ Get-MgIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a userFlowLanguageConfiguration object.
-These objects represent a language available in a user flow.
-Note: Language customization is enabled by default in Microsoft Entra user flows.
+The languages supported for customization within the user flow.
+Language customization is enabled by default in self-service sign-up user flow.
+You can't create custom languages in self-service sign-up user flows.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -322,6 +322,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
+  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
@@ -333,6 +334,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
   - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
@@ -347,6 +349,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -377,10 +380,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguage)
-
-[https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/b2xidentityuserflow-list-languages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2xidentityuserflow-list-languages?view=graph-rest-1.0)
 
 
 

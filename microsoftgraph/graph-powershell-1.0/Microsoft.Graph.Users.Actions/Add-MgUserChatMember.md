@@ -53,8 +53,6 @@ The response provides details about which memberships could and couldn't be crea
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationmembers-add-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -306,6 +304,8 @@ This property is settable only for members of a chat.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserchatmember)
 
 [https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0)
+
+
 
 
 

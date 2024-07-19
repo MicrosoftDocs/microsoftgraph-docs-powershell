@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEducationUserAssignmentRubricByRef
 
 ## SYNOPSIS
-Get the educationRubric object attached to an educationAssignment, if one exists.
-Only teachers, students, and applications with application permissions can perform this operation.
+When set, the grading rubric attached to this assignment.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentRubricByRef?view=graph-powershell-1.0)
@@ -31,10 +30,7 @@ Get-MgBetaEducationUserAssignmentRubricByRef -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Get the educationRubric object attached to an educationAssignment, if one exists.
-Only teachers, students, and applications with application permissions can perform this operation.
-
-## EXAMPLES
+When set, the grading rubric attached to this assignment.
 
 ## PARAMETERS
 
@@ -169,7 +165,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentrubricbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentrubricbyref)
 
-[https://learn.microsoft.com/graph/api/educationassignment-get-rubric?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-get-rubric?view=graph-rest-1.0)
+
 
 
 

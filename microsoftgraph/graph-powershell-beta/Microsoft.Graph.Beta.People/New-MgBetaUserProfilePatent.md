@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfilePatent
 
 ## SYNOPSIS
-Create a new itemPatent object within a user's profile.
+Create new navigation property to patents for users
 
 ## SYNTAX
 
@@ -19,7 +19,8 @@ New-MgBetaUserProfilePatent -UserId <String> [-ResponseHeadersVariable <String>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsPending] [-IsSearchable] [-IssuedDate <DateTime>]
  [-IssuingAuthority <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Number <String>] [-Source <IMicrosoftGraphPersonDataSources>] [-WebUrl <String>] [-Headers <IDictionary>]
+ [-Number <String>] [-Source <IMicrosoftGraphPersonDataSources>]
+ [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-WebUrl <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +38,8 @@ New-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> [-ResponseHeadersVari
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsPending] [-IsSearchable] [-IssuedDate <DateTime>]
  [-IssuingAuthority <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Number <String>] [-Source <IMicrosoftGraphPersonDataSources>] [-WebUrl <String>] [-Headers <IDictionary>]
+ [-Number <String>] [-Source <IMicrosoftGraphPersonDataSources>]
+ [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>] [-WebUrl <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,7 +51,7 @@ New-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Create a new itemPatent object within a user's profile.
+Create new navigation property to patents for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -397,6 +399,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Sources
+Where the values within an entity originated if synced from another source.
+To construct, see NOTES section for SOURCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphProfileSourceAnnotation[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -499,6 +517,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: Descpription of the patent or filing.
@@ -562,13 +584,16 @@ This property is read-only.
 
 SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String- `[]`>]`:
+  - `[Type <String- `[]`>]`: 
+
+SOURCES <IMicrosoftGraphProfileSourceAnnotation- `[]`>: Where the values within an entity originated if synced from another source.
+  - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+  - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+  - `[SourceId <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepatent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepatent)
-
-[https://learn.microsoft.com/graph/api/profile-post-patents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-patents?view=graph-rest-1.0)
 
 
 

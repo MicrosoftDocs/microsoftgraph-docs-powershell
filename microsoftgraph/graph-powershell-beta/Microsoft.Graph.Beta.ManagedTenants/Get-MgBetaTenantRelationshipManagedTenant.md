@@ -342,9 +342,9 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenant)
 
-[https://learn.microsoft.com/graph/api/managedtenants-tenant-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-tenant-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/managedtenants-tenant-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-tenant-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-tenants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-tenants?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-tenants?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-tenants?view=graph-rest-beta)
 
 
 

@@ -42,6 +42,19 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGover
 Retrieve the details of an agreement file, including the language and version information.
 The default file can have multiple versions, each with its own language, that can be retrieved by specifying the Accept-Language header.
 
+## EXAMPLES
+### Example 1: Get the default agreement file
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile -AgreementId $agreementId
+
+```
+This example will get the default agreement file
+
+
 ## PARAMETERS
 
 ### -AgreementId
@@ -393,8 +406,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreementfile)
 
-[https://learn.microsoft.com/graph/api/agreementfile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreementfile-get?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/agreementfile-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/agreementfile-get?view=graph-rest-beta)
 
 
 

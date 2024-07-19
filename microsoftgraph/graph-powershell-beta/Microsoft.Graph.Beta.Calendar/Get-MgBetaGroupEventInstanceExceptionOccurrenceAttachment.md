@@ -8,8 +8,10 @@ schema: 2.0.0
 # Get-MgBetaGroupEventInstanceExceptionOccurrenceAttachment
 
 ## SYNOPSIS
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -17,8 +19,9 @@ An attachment can be one of the following types: All these types of attachments 
 ```
 Get-MgBetaGroupEventInstanceExceptionOccurrenceAttachment -EventId <String> -EventId1 <String>
  -EventId2 <String> -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
@@ -37,8 +40,10 @@ Get-MgBetaGroupEventInstanceExceptionOccurrenceAttachment -InputObject <ICalenda
 ```
 
 ## DESCRIPTION
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 
@@ -269,6 +274,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -349,9 +369,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceexceptionoccurrenceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceexceptionoccurrenceattachment)
 
-[https://learn.microsoft.com/graph/api/attachment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attachment-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/event-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-list-attachments?view=graph-rest-1.0)
+
 
 
 

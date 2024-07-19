@@ -77,6 +77,10 @@ $params = @{
 	prompts = @(
 		@{
 			"@odata.type" = "#microsoft.graph.mediaPrompt"
+			mediaInfo = @{
+				uri = "https://cdn.contoso.com/beep.wav"
+				resourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E"
+			}
 		}
 	)
 	maxRecordDurationInSeconds = 10
@@ -84,10 +88,10 @@ $params = @{
 	maxSilenceTimeoutInSeconds = 2
 	playBeep = $true
 	stopTones = @(
-		"#"
-		"1"
-		"*"
-	)
+	"#"
+"1"
+"*"
+)
 }
 
 Invoke-MgBetaRecordCommunicationCallResponse -CallId $callId -BodyParameter $params
@@ -425,7 +429,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarecordcommunicationcallresponse](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarecordcommunicationcallresponse)
 
-[https://learn.microsoft.com/graph/api/call-record?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-record?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/call-record?view=graph-rest-beta](https://learn.microsoft.com/graph/api/call-record?view=graph-rest-beta)
 
 
 

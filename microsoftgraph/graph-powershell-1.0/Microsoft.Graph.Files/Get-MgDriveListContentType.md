@@ -40,8 +40,6 @@ Get-MgDriveListContentType -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 The collection of content types present in this list.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -332,7 +330,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttype)
 
-[https://learn.microsoft.com/graph/api/list-list-contenttypes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list-contenttypes?view=graph-rest-1.0)
+
+
 
 
 

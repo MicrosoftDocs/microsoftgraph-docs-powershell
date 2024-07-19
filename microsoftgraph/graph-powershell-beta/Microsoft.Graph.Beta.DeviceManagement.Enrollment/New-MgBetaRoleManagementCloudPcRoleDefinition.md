@@ -36,6 +36,31 @@ Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+$params = @{
+	description = "An example custom role"
+### Example 2
+	rolePermissions = @(
+		@{
+			allowedResourceActions = @(
+			"Microsoft.CloudPC/CloudPCs/Read"
+		)
+	}
+)
+condition = "null"
+}
+
+New-MgBetaRoleManagementCloudPcRoleDefinition -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -465,8 +490,7 @@ Not supported for custom roles.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroledefinition)
 
-[https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta)
 
 
 

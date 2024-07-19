@@ -40,6 +40,19 @@ Get-MgBetaPrivacySubjectRightsRequest -InputObject <IComplianceIdentity> [-Expan
 ## DESCRIPTION
 Read the properties and relationships of a subjectRightsRequest object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Compliance
+
+Get-MgBetaPrivacySubjectRightsRequest
+
+```
+This example shows how to use the Get-MgBetaPrivacySubjectRightsRequest Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -308,10 +321,9 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequest)
 
-[https://learn.microsoft.com/graph/api/subjectrightsrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/subjectrightsrequest-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/subjectrightsrequest-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/subjectrightsrequest-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-list?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/subjectrightsrequest-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/subjectrightsrequest-list?view=graph-rest-beta)
 
 
 

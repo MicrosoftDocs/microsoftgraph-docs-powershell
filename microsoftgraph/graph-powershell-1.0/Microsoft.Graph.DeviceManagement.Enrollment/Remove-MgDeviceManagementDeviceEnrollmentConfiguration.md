@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Deletes a deviceEnrollmentLimitConfiguration.
+Deletes a deviceEnrollmentWindowsHelloForBusinessConfiguration.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Deletes a deviceEnrollmentLimitConfiguration.
+Deletes a deviceEnrollmentWindowsHelloForBusinessConfiguration.
 
 ## PARAMETERS
 
@@ -197,7 +197,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/remove-mgdevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/remove-mgdevicemanagementdeviceenrollmentconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentlimitconfiguration-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentlimitconfiguration-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgReportSkypeForBusinessActivityUserCount
 
 ## SYNOPSIS
-Invoke function getSkypeForBusinessActivityUserCounts
+Get the trends on how many unique users organized and participated in conference sessions held in your organization through Skype for Business.
+The report also includes the number of peer-to-peer sessions.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessActivityUserCount?view=graph-powershell-beta)
@@ -30,7 +31,8 @@ Get-MgReportSkypeForBusinessActivityUserCount -InputObject <IReportsIdentity> -O
 ```
 
 ## DESCRIPTION
-Invoke function getSkypeForBusinessActivityUserCounts
+Get the trends on how many unique users organized and participated in conference sessions held in your organization through Skype for Business.
+The report also includes the number of peer-to-peer sessions.
 
 ## PARAMETERS
 
@@ -183,6 +185,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessactivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessactivityusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-1.0)
 
 
 

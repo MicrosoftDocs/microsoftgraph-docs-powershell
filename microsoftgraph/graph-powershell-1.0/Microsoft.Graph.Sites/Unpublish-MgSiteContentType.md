@@ -8,7 +8,7 @@ schema: 2.0.0
 # Unpublish-MgSiteContentType
 
 ## SYNOPSIS
-Unpublish a \[contentType\]\[\] from a content type hub site.
+Unpublish a contentType from a content type hub site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Unpublish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Unpublish-MgBetaSiteContentType?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Unpublish-MgSiteContentType -InputObject <ISitesIdentity> [-ResponseHeadersVaria
 ```
 
 ## DESCRIPTION
-Unpublish a \[contentType\]\[\] from a content type hub site.
+Unpublish a contentType from a content type hub site.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -242,6 +242,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

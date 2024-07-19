@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupTeamScheduleShift
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a shift object by ID.
+The shifts in the schedule.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleShift?view=graph-powershell-1.0)
@@ -17,29 +17,28 @@ Retrieve the properties and relationships of a shift object by ID.
 
 ### List (Default)
 ```
-Get-MgBetaGroupTeamScheduleShift -GroupId <String> [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaGroupTeamScheduleShift -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgBetaGroupTeamScheduleShift -GroupId <String> -ShiftId <String> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaGroupTeamScheduleShift -GroupId <String> -ShiftId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a shift object by ID.
-
-## EXAMPLES
+The shifts in the schedule.
 
 ## PARAMETERS
 
@@ -66,6 +65,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -333,9 +347,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduleshift)
 
-[https://learn.microsoft.com/graph/api/shift-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shift-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/schedule-list-shifts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-list-shifts?view=graph-rest-1.0)
+
+
 
 
 

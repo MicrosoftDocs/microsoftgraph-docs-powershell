@@ -50,6 +50,23 @@ Create a request to export the personal data for an inboundSharedUserProfile.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inboundshareduserprofile-exportpersonaldata-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	storageLocation = "MyStorageAccount"
+}
+
+Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InboundSharedUserProfileUserId $inboundSharedUserProfileUserId -BodyParameter $params
+
+```
+This example shows how to use the Export-MgBetaDirectoryInboundSharedUserProfilePersonalData Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -294,8 +311,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/export-mgbetadirectoryinboundshareduserprofilepersonaldata](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/export-mgbetadirectoryinboundshareduserprofilepersonaldata)
 
-[https://learn.microsoft.com/graph/api/inboundshareduserprofile-exportpersonaldata?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/inboundshareduserprofile-exportpersonaldata?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/inboundshareduserprofile-exportpersonaldata?view=graph-rest-beta](https://learn.microsoft.com/graph/api/inboundshareduserprofile-exportpersonaldata?view=graph-rest-beta)
 
 
 

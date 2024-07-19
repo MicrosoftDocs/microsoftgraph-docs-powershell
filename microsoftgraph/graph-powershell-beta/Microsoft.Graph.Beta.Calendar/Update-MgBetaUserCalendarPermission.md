@@ -84,6 +84,7 @@ Update the permissions assigned to an existing share recipient or delegate, thro
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
 
 $params = @{
@@ -91,10 +92,9 @@ $params = @{
 }
 
 Update-MgBetaUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaUserCalendarPermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -419,7 +419,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausercalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausercalendarpermission)
 
-[https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-beta)
 
 
 

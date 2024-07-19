@@ -683,6 +683,7 @@ Accept wildcard characters: False
 
 ### -CustomBrowserDisplayName
 Friendly name of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
 
 ```yaml
 Type: String
@@ -697,7 +698,8 @@ Accept wildcard characters: False
 ```
 
 ### -CustomBrowserPackageId
-Unique identifier of a custom browser to open weblink on Android.
+Unique identifier of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
 
 ```yaml
 Type: String
@@ -1997,7 +1999,9 @@ Read-only.
   - `[BlockAfterCompanyPortalUpdateDeferralInDays <Int32?>]`: Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.
   - `[ConnectToVpnOnLaunch <Boolean?>]`: Whether the app should connect to the configured VPN on launch.
   - `[CustomBrowserDisplayName <String>]`: Friendly name of the preferred custom browser to open weblink on Android.
-  - `[CustomBrowserPackageId <String>]`: Unique identifier of a custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+  - `[CustomBrowserPackageId <String>]`: Unique identifier of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
   - `[CustomDialerAppDisplayName <String>]`: Friendly name of a custom dialer app to click-to-open a phone number on Android.
   - `[CustomDialerAppPackageId <String>]`: PackageId of a custom dialer app to click-to-open a phone number on Android.
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
@@ -2079,6 +2083,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
   - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
   - `[IosVppAppAssignedLicenseId <String>]`: The unique identifier of iosVppAppAssignedLicense
+  - `[ManagedAppLogCollectionRequestId <String>]`: The unique identifier of managedAppLogCollectionRequest
   - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
   - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
   - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration

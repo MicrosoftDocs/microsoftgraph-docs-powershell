@@ -50,8 +50,6 @@ Update-MgBetaGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <St
 ## DESCRIPTION
 Update the navigation property details in groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -379,7 +377,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplannerplandetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplannerplandetail)
 
-[https://learn.microsoft.com/graph/api/plannerplandetails-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplandetails-update?view=graph-rest-1.0)
+
 
 
 

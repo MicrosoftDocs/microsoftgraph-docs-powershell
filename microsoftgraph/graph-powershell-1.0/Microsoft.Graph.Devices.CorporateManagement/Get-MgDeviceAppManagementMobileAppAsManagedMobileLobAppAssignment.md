@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment
 
 ## SYNOPSIS
-Read properties and relationships of the mobileAppAssignment object.
+The list of group assignments for this mobile app.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the mobileAppAssignment object.
+The list of group assignments for this mobile app.
 
 ## PARAMETERS
 
@@ -341,10 +341,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappasmanagedmobilelobappassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappasmanagedmobilelobappassignment)
-
-[https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-list?view=graph-rest-1.0)
 
 
 

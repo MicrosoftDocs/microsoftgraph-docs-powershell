@@ -12,9 +12,6 @@ A square version of your company logo that appears in Windows 10 out-of-box expe
 Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingLocalizationSquareLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationSquareLogo?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -37,8 +34,6 @@ Set-MgOrganizationBrandingLocalizationSquareLogo -InputObject <IIdentityDirector
 A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
 Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -248,6 +243,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -273,6 +270,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationsquarelogo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationsquarelogo)
+
+
 
 
 

@@ -37,6 +37,19 @@ Get-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManagementI
 ## DESCRIPTION
 Read the properties and relationships of an alertRecord object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Get-MgBetaDeviceManagementMonitoringAlertRecord
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementMonitoringAlertRecord Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AlertRecordId
@@ -429,10 +442,9 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmonitoringalertrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmonitoringalertrecord)
 
-[https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-list?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-list?view=graph-rest-beta)
 
 
 

@@ -78,6 +78,29 @@ New-MgBetaUserCalendarPermission -InputObject <ICalendarIdentity>
 ## DESCRIPTION
 Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	emailAddress = @{
+		name = "Samantha Booth"
+		address = "samanthab@contoso.com"
+	}
+	isInsideOrganization = $true
+	isRemovable = $true
+	role = "read"
+}
+
+New-MgBetaUserCalendarPermission -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserCalendarPermission Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -385,8 +408,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendarpermission)
 
-[https://learn.microsoft.com/graph/api/calendar-post-calendarpermissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-post-calendarpermissions?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/calendar-post-calendarpermissions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/calendar-post-calendarpermissions?view=graph-rest-beta)
 
 
 

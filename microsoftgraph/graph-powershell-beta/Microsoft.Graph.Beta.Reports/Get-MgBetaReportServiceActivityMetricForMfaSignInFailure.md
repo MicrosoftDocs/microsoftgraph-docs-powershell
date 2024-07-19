@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaReportServiceActivityMetricForMfaSignInFailure
 
 ## SYNOPSIS
-Invoke function getMetricsForMfaSignInFailure
+Get the number of times users fail to complete interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period.
+Sign-in failures happen, for example, when users abandon or cancel MFA requests, or refresh MFA sessions without doing interactive MFA.
 
 ## SYNTAX
 
@@ -29,7 +30,21 @@ Get-MgBetaReportServiceActivityMetricForMfaSignInFailure -InputObject <IReportsI
 ```
 
 ## DESCRIPTION
-Invoke function getMetricsForMfaSignInFailure
+Get the number of times users fail to complete interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period.
+Sign-in failures happen, for example, when users abandon or cancel MFA requests, or refresh MFA sessions without doing interactive MFA.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportServiceActivityMetricForMfaSignInFailure
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityMetricForMfaSignInFailure Cmdlet.
+
 
 ## PARAMETERS
 
@@ -231,7 +246,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -280,6 +294,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricformfasigninfailure](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricformfasigninfailure)
 
+[https://learn.microsoft.com/graph/api/serviceactivity-getmetricsformfasigninfailure?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceactivity-getmetricsformfasigninfailure?view=graph-rest-beta)
 
 
 

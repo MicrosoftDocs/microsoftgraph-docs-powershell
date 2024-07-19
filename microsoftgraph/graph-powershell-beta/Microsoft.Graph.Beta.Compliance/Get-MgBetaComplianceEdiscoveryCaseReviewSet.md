@@ -333,7 +333,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasereviewset)
 
-[https://learn.microsoft.com/graph/api/ediscovery-reviewset-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-reviewset-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/ediscovery-reviewset-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-reviewset-get?view=graph-rest-beta)
 
 
 

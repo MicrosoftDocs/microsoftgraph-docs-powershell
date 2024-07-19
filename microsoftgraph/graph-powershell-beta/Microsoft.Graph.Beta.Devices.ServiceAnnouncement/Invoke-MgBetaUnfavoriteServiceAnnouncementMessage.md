@@ -201,7 +201,7 @@ BODY `<IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostR
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunfavoriteserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunfavoriteserviceannouncementmessage)
 
-[https://learn.microsoft.com/graph/api/serviceupdatemessage-unfavorite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-unfavorite?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-unfavorite?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceupdatemessage-unfavorite?view=graph-rest-beta)
 
 
 

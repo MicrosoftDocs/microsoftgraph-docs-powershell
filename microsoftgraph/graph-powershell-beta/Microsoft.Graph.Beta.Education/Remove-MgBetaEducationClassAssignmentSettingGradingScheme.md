@@ -30,6 +30,19 @@ Remove-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducati
 ## DESCRIPTION
 Delete an educationGradingScheme object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Remove-MgBetaEducationClassAssignmentSettingGradingScheme -EducationClassId $educationClassId -EducationGradingSchemeId $educationGradingSchemeId
+
+```
+This example shows how to use the Remove-MgBetaEducationClassAssignmentSettingGradingScheme Cmdlet.
+
+
 ## PARAMETERS
 
 ### -EducationClassId
@@ -224,8 +237,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentsettinggradingscheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentsettinggradingscheme)
 
-[https://learn.microsoft.com/graph/api/educationgradingscheme-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationgradingscheme-delete?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/educationgradingscheme-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationgradingscheme-delete?view=graph-rest-beta)
 
 
 

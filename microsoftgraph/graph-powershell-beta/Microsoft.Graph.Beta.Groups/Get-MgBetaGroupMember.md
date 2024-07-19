@@ -8,11 +8,9 @@ schema: 2.0.0
 # Get-MgBetaGroupMember
 
 ## SYNOPSIS
-Direct group members, who can be users, devices, other groups, or service principals.
-Supports the List members, Add member, and Remove member operations.
-Nullable.
-Supports $expand including nested $select.
-For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
+Get a list of the group's direct members.
+A group can have users, contacts, devices, service principals, and other groups as members.
+This operation isn't transitive.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupMember](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMember?view=graph-powershell-1.0)
@@ -27,11 +25,9 @@ Get-MgBetaGroupMember -GroupId <String> [-ExpandProperty <String[]>] [-Filter <S
 ```
 
 ## DESCRIPTION
-Direct group members, who can be users, devices, other groups, or service principals.
-Supports the List members, Add member, and Remove member operations.
-Nullable.
-Supports $expand including nested $select.
-For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
+Get a list of the group's direct members.
+A group can have users, contacts, devices, service principals, and other groups as members.
+This operation isn't transitive.
 
 ## EXAMPLES
 ### Example 1: Get members of a group
@@ -293,7 +289,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmember)
 
-[https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-beta)
 
 
 

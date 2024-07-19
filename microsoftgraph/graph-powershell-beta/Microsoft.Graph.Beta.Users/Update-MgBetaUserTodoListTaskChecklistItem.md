@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserTodoListTaskChecklistItem
 
 ## SYNOPSIS
-Update the properties of a checklistItem object.
+Update the navigation property checklistItems in users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
@@ -48,7 +48,7 @@ Update-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a checklistItem object.
+Update the navigation property checklistItems in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -386,8 +386,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskchecklistitem)
-
-[https://learn.microsoft.com/graph/api/checklistitem-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/checklistitem-update?view=graph-rest-1.0)
 
 
 

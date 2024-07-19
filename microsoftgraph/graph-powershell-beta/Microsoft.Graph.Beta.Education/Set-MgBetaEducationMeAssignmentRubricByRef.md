@@ -8,8 +8,7 @@ schema: 2.0.0
 # Set-MgBetaEducationMeAssignmentRubricByRef
 
 ## SYNOPSIS
-Attach an existing educationRubric object to an educationAssignment.
-Only teachers can perform this operation.
+Update the ref of navigation property rubric in education
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgEducationMeAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Education/Set-MgEducationMeAssignmentRubricByRef?view=graph-powershell-1.0)
@@ -46,10 +45,7 @@ Set-MgBetaEducationMeAssignmentRubricByRef -InputObject <IEducationIdentity> -Bo
 ```
 
 ## DESCRIPTION
-Attach an existing educationRubric object to an educationAssignment.
-Only teachers can perform this operation.
-
-## EXAMPLES
+Update the ref of navigation property rubric in education
 
 ## PARAMETERS
 
@@ -284,7 +280,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationmeassignmentrubricbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationmeassignmentrubricbyref)
 
-[https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-1.0)
+
 
 
 

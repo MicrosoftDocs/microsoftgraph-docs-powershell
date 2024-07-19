@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamworkWorkforceIntegration
 
 ## SYNOPSIS
-Create a new workforceIntegration object.You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
+Create new navigation property to workforceIntegrations for teamwork
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ New-MgTeamworkWorkforceIntegration -BodyParameter <IMicrosoftGraphWorkforceInteg
 ```
 
 ## DESCRIPTION
-Create a new workforceIntegration object.You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
+Create new navigation property to workforceIntegrations for teamwork
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -352,8 +352,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration)
-
-[https://learn.microsoft.com/graph/api/workforceintegration-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workforceintegration-post?view=graph-rest-1.0)
 
 
 

@@ -8,18 +8,17 @@ schema: 2.0.0
 # Get-MgBetaUserEventExceptionOccurrenceExtension
 
 ## SYNOPSIS
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+The collection of open extensions defined for the event.
+Nullable.
 
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgBetaUserEventExceptionOccurrenceExtension -EventId <String> -EventId1 <String> -UserId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
@@ -37,9 +36,8 @@ Get-MgBetaUserEventExceptionOccurrenceExtension -InputObject <ICalendarIdentity>
 ```
 
 ## DESCRIPTION
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+The collection of open extensions defined for the event.
+Nullable.
 
 ## PARAMETERS
 
@@ -240,6 +238,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -336,7 +349,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventexceptionoccurrenceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventexceptionoccurrenceextension)
 
-[https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0)
+
+
 
 
 

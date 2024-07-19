@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaCommunicationOnlineMeetingRegistration
 
 ## SYNOPSIS
-Get the externalMeetingRegistration details associated with an onlineMeeting.
+The registration that is enabled for an online meeting.
+One online meeting can only have one registration enabled.
 
 ## SYNTAX
 
@@ -27,9 +28,8 @@ Get-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunicati
 ```
 
 ## DESCRIPTION
-Get the externalMeetingRegistration details associated with an onlineMeeting.
-
-## EXAMPLES
+The registration that is enabled for an online meeting.
+One online meeting can only have one registration enabled.
 
 ## PARAMETERS
 
@@ -180,7 +180,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistration)
 
-[https://learn.microsoft.com/graph/api/externalmeetingregistration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalmeetingregistration-get?view=graph-rest-1.0)
+
 
 
 

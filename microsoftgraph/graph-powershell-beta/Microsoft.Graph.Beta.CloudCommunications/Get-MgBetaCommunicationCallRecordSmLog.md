@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaCommunicationCallRecordSmLog
 
 ## SYNOPSIS
-Invoke function getSmsLog
+Get the log of a sent/received SMS as a collection of smsLogRow entries.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaCommunicationCallRecordSmLog -InputObject <ICloudCommunicationsIdentit
 ```
 
 ## DESCRIPTION
-Invoke function getSmsLog
+Get the log of a sent/received SMS as a collection of smsLogRow entries.
 
 ## PARAMETERS
 

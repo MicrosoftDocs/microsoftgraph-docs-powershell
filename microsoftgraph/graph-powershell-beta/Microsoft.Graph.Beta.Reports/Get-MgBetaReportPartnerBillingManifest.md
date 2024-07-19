@@ -40,6 +40,19 @@ Get-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a manifest object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportPartnerBillingManifest -ManifestId $manifestId
+
+```
+This example shows how to use the Get-MgBetaReportPartnerBillingManifest Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -286,7 +299,6 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ActiveUsersBreakdownMetricId <String>]`: The unique identifier of activeUsersBreakdownMetric
   - `[ActiveUsersMetricId <String>]`: The unique identifier of activeUsersMetric
   - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
@@ -335,8 +347,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingmanifest)
 
-[https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-beta)
 
 
 

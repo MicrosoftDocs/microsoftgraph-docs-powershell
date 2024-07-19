@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportSharePointActivityFileCount
 
 ## SYNOPSIS
-Invoke function getSharePointActivityFileCounts
+Get the number of unique, licensed users who interacted with files stored on SharePoint sites.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointActivityFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityFileCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportSharePointActivityFileCount -InputObject <IReportsIdentity> -OutFile
 ```
 
 ## DESCRIPTION
-Invoke function getSharePointActivityFileCounts
+Get the number of unique, licensed users who interacted with files stored on SharePoint sites.
 
 ## PARAMETERS
 
@@ -182,6 +182,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityfilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityfilecount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-1.0)
 
 
 

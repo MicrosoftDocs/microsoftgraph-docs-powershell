@@ -36,8 +36,6 @@ Only teachers, students, and applications with application permissions can perfo
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-get-rubric-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -167,6 +165,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentrubricbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentrubricbyref)
 
 [https://learn.microsoft.com/graph/api/educationassignment-get-rubric?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-get-rubric?view=graph-rest-1.0)
+
+
 
 
 

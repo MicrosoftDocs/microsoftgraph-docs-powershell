@@ -25,8 +25,6 @@ Get-MgBetaOnPremisePublishingProfileConnectorMemberOf -ConnectorId <String>
 The connectorGroup that the connector is a member of.
 Read-only.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -269,6 +267,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectormemberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectormemberof)
+
+
 
 
 

@@ -54,27 +54,32 @@ New-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowEx
 Create a new customAccessPackageWorkflowExtension object and add it to an existing accessPackageCatalog object.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 $params = @{
-	DisplayName = "test_action_0124"
-	Description = "this is for graph testing only"
-	EndpointConfiguration = @{
+	displayName = "test_action_0124"
+	description = "this is for graph testing only"
+	endpointConfiguration = @{
 		"@odata.type" = "#microsoft.graph.logicAppTriggerEndpointConfiguration"
-		SubscriptionId = "38ab2ccc-3747-4567-b36b-9478f5602f0d"
-		ResourceGroupName = "EMLogicApp"
-		LogicAppWorkflowName = "customextension_test"
+		subscriptionId = "38ab2ccc-3747-4567-b36b-9478f5602f0d"
+		resourceGroupName = "EMLogicApp"
+		logicAppWorkflowName = "customextension_test"
 	}
-	AuthenticationConfiguration = @{
+	authenticationConfiguration = @{
 		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
-		ResourceId = "f604bd15-f785-4309-ad7c-6fad18ddb6cb"
+		resourceId = "f604bd15-f785-4309-ad7c-6fad18ddb6cb"
 	}
 }
+
 New-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -498,7 +503,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension)
 
-[https://learn.microsoft.com/graph/api/accesspackagecatalog-post-customaccesspackageworkflowextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-post-customaccesspackageworkflowextensions?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/accesspackagecatalog-post-customaccesspackageworkflowextensions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackagecatalog-post-customaccesspackageworkflowextensions?view=graph-rest-beta)
 
 
 

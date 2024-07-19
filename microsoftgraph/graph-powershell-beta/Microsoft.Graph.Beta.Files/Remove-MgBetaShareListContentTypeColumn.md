@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaShareListContentTypeColumn
 
 ## SYNOPSIS
-Delete columnDefinition
+Delete navigation property columns for shares
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListContentTypeColumn?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaShareListContentTypeColumn -InputObject <IFilesIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Delete columnDefinition
+Delete navigation property columns for shares
 
 ## PARAMETERS
 
@@ -247,7 +247,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistcontenttypecolumn)
 
-[https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0)
 
 
 

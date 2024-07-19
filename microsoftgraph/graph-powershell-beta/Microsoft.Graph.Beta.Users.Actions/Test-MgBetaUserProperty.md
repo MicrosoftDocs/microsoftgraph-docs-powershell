@@ -53,26 +53,6 @@ However, you can validate both the mail nickname and the display name and receiv
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-validateproperties-permissions.md)]
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.DirectoryObjects
-
-$params = @{
-	EntityType = "Group"
-	DisplayName = "Myprefix_test_mysuffix"
-	MailNickname = "Myprefix_test_mysuffix"
-	OnBehalfOfUserId = "onBehalfOfUserId-value"
-}
-
-Test-MgBetaDirectoryObjectProperty -BodyParameter $params
-```
-This example shows how to use the Test-MgBetaUserProperty Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -284,7 +264,9 @@ BODYPARAMETER `<IPaths1Tz6Rb9UsersMicrosoftGraphValidatepropertiesPostRequestbod
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserproperty)
 
-[https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningError
 
 ## SYNOPSIS
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
+Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
 > [!NOTE]
@@ -25,7 +25,7 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvision
 ```
 
 ## DESCRIPTION
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
+Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
 ## PARAMETERS

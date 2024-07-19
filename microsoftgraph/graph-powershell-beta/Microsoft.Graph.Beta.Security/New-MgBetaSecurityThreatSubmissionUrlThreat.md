@@ -431,7 +431,7 @@ RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionurlthreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionurlthreat)
 
-[https://learn.microsoft.com/graph/api/security-urlthreatsubmission-post-urlthreats?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-post-urlthreats?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/security-urlthreatsubmission-post-urlthreats?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-post-urlthreats?view=graph-rest-beta)
 
 
 

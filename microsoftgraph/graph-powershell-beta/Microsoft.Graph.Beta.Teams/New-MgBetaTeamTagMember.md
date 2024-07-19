@@ -353,7 +353,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtagmember)
 
-[https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityLabelCategorySubcategory
 
 ## SYNOPSIS
-Create new navigation property to subcategories for security
+Create a new subcategoryTemplate object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCategorySubcategory?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> -BodyPar
 ```
 
 ## DESCRIPTION
-Create new navigation property to subcategories for security
+Create a new subcategoryTemplate object.
 
 ## PARAMETERS
 
@@ -272,8 +272,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -301,6 +302,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -342,6 +344,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategorysubcategory)
+
+[https://learn.microsoft.com/graph/api/security-categorytemplate-post-subcategories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-categorytemplate-post-subcategories?view=graph-rest-1.0)
 
 
 

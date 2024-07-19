@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest
 
 ## SYNOPSIS
-In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object: To call this API to update, renew, and extend assignments for yourself, you must have multifactor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
-See Enable per-user Microsoft Entra multifactor authentication to secure sign-in events.
+Create new navigation property to roleAssignmentScheduleRequests for roleManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-beta)
@@ -40,8 +39,7 @@ New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest
 ```
 
 ## DESCRIPTION
-In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object: To call this API to update, renew, and extend assignments for yourself, you must have multifactor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
-See Enable per-user Microsoft Entra multifactor authentication to secure sign-in events.
+Create new navigation property to roleAssignmentScheduleRequests for roleManagement
 
 ## PARAMETERS
 
@@ -684,8 +682,9 @@ BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest>`: unifiedRo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The request creation date time.
@@ -889,8 +888,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -1152,8 +1152,6 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleassignmentschedulerequest)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignmentschedulerequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignmentschedulerequests?view=graph-rest-1.0)
 
 
 

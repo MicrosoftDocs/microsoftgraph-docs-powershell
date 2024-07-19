@@ -34,8 +34,6 @@ Remove-MgEducationClassAssignmentRubric -InputObject <IEducationIdentity> [-IfMa
 Remove an educationRubric from an educationAssignment.
 This method doesn't delete the rubric itself and can only be performed by teachers.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -226,6 +224,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentrubric)
 
 [https://learn.microsoft.com/graph/api/educationassignment-delete-rubric?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-delete-rubric?view=graph-rest-1.0)
+
+
 
 
 

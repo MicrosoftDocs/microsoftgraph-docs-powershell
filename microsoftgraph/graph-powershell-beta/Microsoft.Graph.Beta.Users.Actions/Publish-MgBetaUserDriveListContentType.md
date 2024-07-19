@@ -35,19 +35,6 @@ Invoke action publish
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
 
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Sites
-
-Publish-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
-```
-This example shows how to use the Publish-MgBetaUserDriveListContentType Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -265,7 +252,9 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/publish-mgbetauserdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/publish-mgbetauserdrivelistcontenttype)
 
-[https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-beta)
+
+
 
 
 

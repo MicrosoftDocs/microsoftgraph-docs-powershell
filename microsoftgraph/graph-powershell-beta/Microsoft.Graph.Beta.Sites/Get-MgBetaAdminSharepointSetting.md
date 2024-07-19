@@ -27,6 +27,19 @@ Get the tenant-level settings for SharePoint and OneDrive.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointsettings-get-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaAdminSharepointSetting
+
+```
+This example shows how to use the Get-MgBetaAdminSharepointSetting Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -119,8 +132,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaadminsharepointsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaadminsharepointsetting)
 
-[https://learn.microsoft.com/graph/api/sharepointsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharepointsettings-get?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/sharepointsettings-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/sharepointsettings-get?view=graph-rest-beta)
 
 
 

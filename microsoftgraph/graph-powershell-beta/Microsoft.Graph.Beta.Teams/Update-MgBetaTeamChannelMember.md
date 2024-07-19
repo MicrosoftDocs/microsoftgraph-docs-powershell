@@ -60,8 +60,8 @@ Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 	roles = @(
-		"owner"
-	)
+	"owner"
+)
 }
 
 Update-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -ConversationMemberId $conversationMemberId -BodyParameter $params
@@ -383,7 +383,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelmember)
 
-[https://learn.microsoft.com/graph/api/channel-update-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-update-members?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/channel-update-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-update-members?view=graph-rest-beta)
 
 
 

@@ -373,8 +373,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupset)
 
-[https://learn.microsoft.com/graph/api/termstore-group-list-sets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-group-list-sets?view=graph-rest-1.0)
-
 
 
 

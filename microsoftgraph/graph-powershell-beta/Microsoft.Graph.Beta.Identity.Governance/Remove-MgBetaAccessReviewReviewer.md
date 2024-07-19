@@ -34,13 +34,17 @@ This operation is only permitted for an access review that isn't yet completed, 
 This operation isn't permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaAccessReviewReviewer Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Remove-MgBetaAccessReviewReviewer -AccessReviewId $accessReviewId -AccessReviewReviewerId $accessReviewReviewerId
+
 ```
 This example shows how to use the Remove-MgBetaAccessReviewReviewer Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -317,7 +321,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaaccessreviewreviewer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaaccessreviewreviewer)
 
-[https://learn.microsoft.com/graph/api/accessreview-removereviewer?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreview-removereviewer?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/accessreview-removereviewer?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreview-removereviewer?view=graph-rest-beta)
 
 
 

@@ -32,8 +32,6 @@ Remove-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 Delete navigation property sessions for communications
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CallRecordId
@@ -223,6 +221,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallrecordsession](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallrecordsession)
+
+
 
 
 

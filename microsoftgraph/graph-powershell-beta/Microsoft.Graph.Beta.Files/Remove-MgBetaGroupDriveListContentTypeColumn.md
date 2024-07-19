@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupDriveListContentTypeColumn
 
 ## SYNOPSIS
-Delete columnDefinition
+Delete navigation property columns for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Remove-MgBetaGroupDriveListContentTypeColumn -InputObject <IFilesIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Delete columnDefinition
+Delete navigation property columns for groups
 
 ## PARAMETERS
 
@@ -263,7 +263,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelistcontenttypecolumn)
 
-[https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0)
 
 
 

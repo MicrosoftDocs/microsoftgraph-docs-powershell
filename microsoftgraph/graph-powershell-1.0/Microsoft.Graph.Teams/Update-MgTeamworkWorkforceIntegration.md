@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamworkWorkforceIntegration
 
 ## SYNOPSIS
-Update the properties of a workforceIntegration object.
+Update the navigation property workforceIntegrations in teamwork
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Update-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a workforceIntegration object.
+Update the navigation property workforceIntegrations in teamwork
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -435,8 +435,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkworkforceintegration)
-
-[https://learn.microsoft.com/graph/api/workforceintegration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workforceintegration-update?view=graph-rest-1.0)
 
 
 

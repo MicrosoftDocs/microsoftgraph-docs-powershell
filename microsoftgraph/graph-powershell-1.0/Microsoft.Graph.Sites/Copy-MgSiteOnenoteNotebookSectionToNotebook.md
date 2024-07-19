@@ -377,6 +377,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -385,6 +386,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsiteonenotenotebooksectiontonotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsiteonenotenotebooksectiontonotebook)
 
 [https://learn.microsoft.com/graph/api/section-copytonotebook?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/section-copytonotebook?view=graph-rest-1.0)
+
 
 
 

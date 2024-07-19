@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,14 +18,14 @@ Update-MgOrganizationBrandingLocalization -OrganizationId <String>
  -OrganizationalBrandingLocalizationId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>] [-BackgroundImageInputFile <String>]
  [-BackgroundImageRelativeUrl <String>] [-BannerLogoInputFile <String>] [-BannerLogoRelativeUrl <String>]
- [-CdnList <String[]>] [-CustomAccountResetCredentialsUrl <String>]
- [-CustomCannotAccessYourAccountText <String>] [-CustomCannotAccessYourAccountUrl <String>]
- [-CustomCssInputFile <String>] [-CustomCssRelativeUrl <String>] [-CustomForgotMyPasswordText <String>]
- [-CustomPrivacyAndCookiesText <String>] [-CustomPrivacyAndCookiesUrl <String>]
- [-CustomResetItNowText <String>] [-CustomTermsOfUseText <String>] [-CustomTermsOfUseUrl <String>]
- [-FaviconInputFile <String>] [-FaviconRelativeUrl <String>] [-HeaderBackgroundColor <String>]
- [-HeaderLogoInputFile <String>] [-HeaderLogoRelativeUrl <String>] [-Id <String>]
- [-LoginPageLayoutConfiguration <IMicrosoftGraphLoginPageLayoutConfiguration>]
+ [-CdnList <String[]>] [-ContentCustomization <IMicrosoftGraphContentCustomization>]
+ [-CustomAccountResetCredentialsUrl <String>] [-CustomCannotAccessYourAccountText <String>]
+ [-CustomCannotAccessYourAccountUrl <String>] [-CustomCssInputFile <String>] [-CustomCssRelativeUrl <String>]
+ [-CustomForgotMyPasswordText <String>] [-CustomPrivacyAndCookiesText <String>]
+ [-CustomPrivacyAndCookiesUrl <String>] [-CustomResetItNowText <String>] [-CustomTermsOfUseText <String>]
+ [-CustomTermsOfUseUrl <String>] [-FaviconInputFile <String>] [-FaviconRelativeUrl <String>]
+ [-HeaderBackgroundColor <String>] [-HeaderLogoInputFile <String>] [-HeaderLogoRelativeUrl <String>]
+ [-Id <String>] [-LoginPageLayoutConfiguration <IMicrosoftGraphLoginPageLayoutConfiguration>]
  [-LoginPageTextVisibilitySettings <IMicrosoftGraphLoginPageTextVisibilitySettings>] [-SignInPageText <String>]
  [-SquareLogoDarkInputFile <String>] [-SquareLogoDarkRelativeUrl <String>] [-SquareLogoInputFile <String>]
  [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-Headers <IDictionary>]
@@ -47,7 +44,8 @@ Update-MgOrganizationBrandingLocalization -OrganizationId <String>
 Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>]
  [-BackgroundImageInputFile <String>] [-BackgroundImageRelativeUrl <String>] [-BannerLogoInputFile <String>]
- [-BannerLogoRelativeUrl <String>] [-CdnList <String[]>] [-CustomAccountResetCredentialsUrl <String>]
+ [-BannerLogoRelativeUrl <String>] [-CdnList <String[]>]
+ [-ContentCustomization <IMicrosoftGraphContentCustomization>] [-CustomAccountResetCredentialsUrl <String>]
  [-CustomCannotAccessYourAccountText <String>] [-CustomCannotAccessYourAccountUrl <String>]
  [-CustomCssInputFile <String>] [-CustomCssRelativeUrl <String>] [-CustomForgotMyPasswordText <String>]
  [-CustomPrivacyAndCookiesText <String>] [-CustomPrivacyAndCookiesUrl <String>]
@@ -142,7 +140,7 @@ Accept wildcard characters: False
 ### -BackgroundImageInputFile
 Input File for BackgroundImage (Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.)
+A smaller image reduces bandwidth requirements and make the page load faster.)
 
 ```yaml
 Type: String
@@ -227,6 +225,22 @@ Read-only.
 
 ```yaml
 Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ContentCustomization
+contentCustomization
+To construct, see NOTES section for CONTENTCUSTOMIZATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphContentCustomization
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -781,10 +795,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
+CONTENTCUSTOMIZATION `<IMicrosoftGraphContentCustomization>`: contentCustomization
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AttributeCollection <IMicrosoftGraphKeyValue- `[]`>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
+    - `[Key <String>]`: Key for the key-value pair.
+    - `[Value <String>]`: Value for the key-value pair.
+  - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
+  - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
+  - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
+
 INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device

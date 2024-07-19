@@ -261,9 +261,11 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-      - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+      - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+      - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
       - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-      - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+      - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
 
 INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
@@ -280,6 +282,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -293,9 +297,11 @@ ROLES <IMicrosoftGraphIndustryDataRoleReferenceValue- `[]`>: The set of roles in
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-    - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+    - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
+    - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
     - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-    - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+    - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+Must be unique within the referenceType.
 
 ## RELATED LINKS
 

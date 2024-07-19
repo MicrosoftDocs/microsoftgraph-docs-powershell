@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppLogCollectionRequests
-Indicates collection of App Log Upload Request.
+The collection property of AppLogUploadRequest.
 To construct, see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
 
 ```yaml
@@ -429,7 +429,7 @@ ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair- `[]`>: A set of string key a
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest- `[]`>: Indicates collection of App Log Upload Request.
+APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest- `[]`>: The collection property of AppLogUploadRequest.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -458,7 +458,7 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
       - `[Text <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
+  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -510,6 +510,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
   - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
   - `[IosVppAppAssignedLicenseId <String>]`: The unique identifier of iosVppAppAssignedLicense
+  - `[ManagedAppLogCollectionRequestId <String>]`: The unique identifier of managedAppLogCollectionRequest
   - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
   - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
   - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
@@ -571,6 +572,7 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileapptroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileapptroubleshootingevent)
+
 
 
 

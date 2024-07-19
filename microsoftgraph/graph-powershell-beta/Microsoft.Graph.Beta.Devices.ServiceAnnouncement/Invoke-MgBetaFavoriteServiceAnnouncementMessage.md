@@ -201,7 +201,7 @@ BODY `<IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRe
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetafavoriteserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetafavoriteserviceannouncementmessage)
 
-[https://learn.microsoft.com/graph/api/serviceupdatemessage-favorite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-favorite?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-favorite?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceupdatemessage-favorite?view=graph-rest-beta)
 
 
 

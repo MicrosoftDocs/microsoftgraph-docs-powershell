@@ -32,8 +32,6 @@ Get-MgBetaUserManagerByRef -InputObject <IUsersIdentity> [-ResponseHeadersVariab
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -160,7 +158,9 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermanagerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermanagerbyref)
 
-[https://learn.microsoft.com/graph/api/user-list-manager?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-manager?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-list-manager?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-list-manager?view=graph-rest-beta)
+
+
 
 
 

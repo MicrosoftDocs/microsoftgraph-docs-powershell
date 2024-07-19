@@ -8,13 +8,9 @@ schema: 2.0.0
 # Get-MgGroupOwner
 
 ## SYNOPSIS
-The owners of the group.
-Limited to 100 owners.
-Nullable.
-If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
-Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-Supports $expand including nested $select.
-For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+Retrieve a list of the group's owners.
+The owners are a set of users or service principals who are allowed to modify the group object.
+Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupOwner](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwner?view=graph-powershell-beta)
@@ -29,13 +25,9 @@ Get-MgGroupOwner -GroupId <String> [-ExpandProperty <String[]>] [-Filter <String
 ```
 
 ## DESCRIPTION
-The owners of the group.
-Limited to 100 owners.
-Nullable.
-If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
-Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-Supports $expand including nested $select.
-For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+Retrieve a list of the group's owners.
+The owners are a set of users or service principals who are allowed to modify the group object.
+Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
 
 ## EXAMPLES
 ### Example 1: Get an owner of a group

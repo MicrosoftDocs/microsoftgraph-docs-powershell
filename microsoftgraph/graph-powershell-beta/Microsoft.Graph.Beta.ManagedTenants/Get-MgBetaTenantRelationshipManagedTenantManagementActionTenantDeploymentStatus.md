@@ -39,6 +39,19 @@ Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
 ## DESCRIPTION
 Read the properties and relationships of a managementActionTenantDeploymentStatus object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.ManagedTenants
+
+Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -328,10 +341,9 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementactiontenantdeploymentstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementactiontenantdeploymentstatus)
 
-[https://learn.microsoft.com/graph/api/managedtenants-managementactiontenantdeploymentstatus-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managementactiontenantdeploymentstatus-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/managedtenants-managementactiontenantdeploymentstatus-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managementactiontenantdeploymentstatus-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementactiontenantdeploymentstatuses?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementactiontenantdeploymentstatuses?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementactiontenantdeploymentstatuses?view=graph-rest-beta](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementactiontenantdeploymentstatuses?view=graph-rest-beta)
 
 
 

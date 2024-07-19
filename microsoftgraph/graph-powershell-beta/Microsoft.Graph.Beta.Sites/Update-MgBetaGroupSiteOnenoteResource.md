@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentInputFile
-Input File for Content (.)
+Input File for Content (The content of the resource.)
 
 ```yaml
 Type: String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentUrl
-.
+The URL for the content stream.
 
 ```yaml
 Type: String
@@ -301,8 +301,8 @@ BODYPARAMETER `<IMicrosoftGraphOnenoteResource>`: onenoteResource
   - `[Self <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Content <Byte- `[]`>]`: 
-  - `[ContentUrl <String>]`: 
+  - `[Content <Byte- `[]`>]`: The content of the resource.
+  - `[ContentUrl <String>]`: The URL for the content stream.
 
 INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem

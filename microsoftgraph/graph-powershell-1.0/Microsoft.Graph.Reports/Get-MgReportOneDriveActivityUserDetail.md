@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportOneDriveActivityUserDetail
 
 ## SYNOPSIS
-Invoke function getOneDriveActivityUserDetail
+Get details about OneDrive activity by user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveActivityUserDetail?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Get-MgReportOneDriveActivityUserDetail -InputObject <IReportsIdentity> -OutFile 
 ```
 
 ## DESCRIPTION
-Invoke function getOneDriveActivityUserDetail
+Get details about OneDrive activity by user.
 
 ## PARAMETERS
 
@@ -210,6 +210,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityuserdetail)
+
+[https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-1.0)
 
 
 

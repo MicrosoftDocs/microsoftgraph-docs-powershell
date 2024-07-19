@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Read properties and relationships of the androidLobApp object.
+Read properties and relationships of the mobileLobApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIden
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the androidLobApp object.
+Read properties and relationships of the mobileLobApp object.
 
 ## PARAMETERS
 
@@ -326,9 +326,9 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-androidlobapp-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-androidlobapp-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-mobilelobapp-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobilelobapp-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-apps-mobileapp-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileapp-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-managedioslobapp-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-managedioslobapp-list?view=graph-rest-1.0)
 
 
 

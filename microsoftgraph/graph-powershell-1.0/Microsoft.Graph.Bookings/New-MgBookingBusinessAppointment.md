@@ -19,6 +19,7 @@ Create a new bookingAppointment for the specified bookingBusiness.
 ```
 New-MgBookingBusinessAppointment -BookingBusinessId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>]
+ [-CustomerEmailAddress <String>] [-CustomerName <String>] [-CustomerNotes <String>] [-CustomerPhone <String>]
  [-CustomerTimeZone <String>] [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]
  [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
  [-MaximumAttendeesCount <Int32>] [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
@@ -40,6 +41,7 @@ New-MgBookingBusinessAppointment -BookingBusinessId <String> -BodyParameter <IMi
 ```
 New-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>]
+ [-CustomerEmailAddress <String>] [-CustomerName <String>] [-CustomerNotes <String>] [-CustomerPhone <String>]
  [-CustomerTimeZone <String>] [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]
  [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
  [-MaximumAttendeesCount <Int32>] [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
@@ -132,6 +134,66 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomerEmailAddress
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomerName
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomerNotes
+Notes from the customer associated with this appointment.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomerPhone
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -586,6 +648,10 @@ BODYPARAMETER `<IMicrosoftGraphBookingAppointment>`: Represents a booked appoint
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
+  - `[CustomerEmailAddress <String>]`: 
+  - `[CustomerName <String>]`: 
+  - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
+  - `[CustomerPhone <String>]`: 
   - `[CustomerTimeZone <String>]`: The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase- `[]`>]`: A collection of customer properties for an appointment.
@@ -717,6 +783,7 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment)
 
 [https://learn.microsoft.com/graph/api/bookingbusiness-post-appointments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-appointments?view=graph-rest-1.0)
+
 
 
 

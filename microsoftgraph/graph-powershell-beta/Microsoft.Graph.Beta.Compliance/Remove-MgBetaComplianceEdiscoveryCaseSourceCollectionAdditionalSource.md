@@ -29,8 +29,6 @@ Remove-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObje
 ## DESCRIPTION
 Delete navigation property additionalSources for compliance
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CaseId
@@ -238,6 +236,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasesourcecollectionadditionalsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasesourcecollectionadditionalsource)
+
+
 
 
 

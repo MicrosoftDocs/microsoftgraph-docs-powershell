@@ -387,11 +387,11 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategory)
 
-[https://learn.microsoft.com/graph/api/educationcategory-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationcategory-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/educationcategory-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationcategory-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/educationclass-list-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-categories?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/educationclass-list-categories?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationclass-list-categories?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-beta)
 
 
 

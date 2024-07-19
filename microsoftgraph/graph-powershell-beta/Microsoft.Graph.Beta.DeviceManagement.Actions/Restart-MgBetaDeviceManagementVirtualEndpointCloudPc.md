@@ -36,13 +36,17 @@ Reboot a specific Cloud PC.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reboot-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Restart-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet
+### Example 1: Reboot the cloudPC for the administrator
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
 Restart-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId
+
 ```
-This example shows how to use the Restart-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will reboot the cloudpc for the administrator
+
 
 ## PARAMETERS
 
@@ -221,6 +225,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
   - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+  - `[HardwareConfigurationId <String>]`: The unique identifier of hardwareConfiguration
   - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
@@ -243,7 +248,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restart-mgbetadevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restart-mgbetadevicemanagementvirtualendpointcloudpc)
 
-[https://learn.microsoft.com/graph/api/cloudpc-reboot?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-reboot?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpc-reboot?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-reboot?view=graph-rest-beta)
 
 
 

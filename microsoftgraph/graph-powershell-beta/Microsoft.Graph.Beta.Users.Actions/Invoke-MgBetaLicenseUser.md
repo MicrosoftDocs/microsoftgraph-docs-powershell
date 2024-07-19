@@ -38,13 +38,17 @@ Also see Identify and resolve license assignment problems for a group in Microso
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-reprocesslicenseassignment-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaLicenseUser Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 Invoke-MgBetaLicenseUser -UserId $userId
+
 ```
 This example shows how to use the Invoke-MgBetaLicenseUser Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -218,7 +222,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalicenseuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalicenseuser)
 
-[https://learn.microsoft.com/graph/api/user-reprocesslicenseassignment?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-reprocesslicenseassignment?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-reprocesslicenseassignment?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-reprocesslicenseassignment?view=graph-rest-beta)
 
 
 

@@ -60,8 +60,6 @@ New-MgBetaBookingBusiness [-ResponseHeadersVariable <String>] [-AdditionalProper
 ## DESCRIPTION
 Add new entity to bookingBusinesses
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -812,7 +810,7 @@ Read-only.
     - `[CreatedDateTime <DateTime?>]`: The date, time and timezone when the Service was created.
     - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
       - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
-      - `[QuestionId <String>]`: If it's mandatory to answer the custom question.
+      - `[QuestionId <String>]`: The ID of the custom question.
     - `[DefaultDuration <TimeSpan?>]`: The default length of the service, represented in numbers of days, hours, minutes, and seconds.
 For example, P11D23H59M59.999999999999S.
     - `[DefaultLocation <IMicrosoftGraphLocation>]`: location
@@ -1063,7 +1061,7 @@ Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date, time and timezone when the Service was created.
   - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
     - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
-    - `[QuestionId <String>]`: If it's mandatory to answer the custom question.
+    - `[QuestionId <String>]`: The ID of the custom question.
   - `[DefaultDuration <TimeSpan?>]`: The default length of the service, represented in numbers of days, hours, minutes, and seconds.
 For example, P11D23H59M59.999999999999S.
   - `[DefaultLocation <IMicrosoftGraphLocation>]`: location
@@ -1181,6 +1179,8 @@ For example, 08:00:00.0000000.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusiness)
+
+
 
 
 

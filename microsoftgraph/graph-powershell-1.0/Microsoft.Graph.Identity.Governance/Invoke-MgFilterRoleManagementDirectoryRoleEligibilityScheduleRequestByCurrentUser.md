@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+In PIM, retrieve the requests for role eligibilities for a particular principal.
+The principal can be the creator or approver of the unifiedRoleEligibilityScheduleRequest object, or they can be the target of the role eligibility.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser?view=graph-powershell-beta)
@@ -33,7 +34,8 @@ Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUse
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+In PIM, retrieve the requests for role eligibilities for a particular principal.
+The principal can be the creator or approver of the unifiedRoleEligibilityScheduleRequest object, or they can be the target of the role eligibility.
 
 ## PARAMETERS
 
@@ -321,6 +323,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterrolemanagementdirectoryroleeligibilityschedulerequestbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterrolemanagementdirectoryroleeligibilityschedulerequestbycurrentuser)
+
+[https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedulerequest-filterbycurrentuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedulerequest-filterbycurrentuser?view=graph-rest-1.0)
 
 
 

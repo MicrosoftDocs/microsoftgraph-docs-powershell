@@ -15,8 +15,7 @@ Update the navigation property monthly in reports
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaReportUserInsightMonthly [-ResponseHeadersVariable <String>]
- [-ActiveUsers <IMicrosoftGraphActiveUsersMetric[]>]
- [-ActiveUsersBreakdown <IMicrosoftGraphActiveUsersBreakdownMetric[]>] [-AdditionalProperties <Hashtable>]
+ [-ActiveUsers <IMicrosoftGraphActiveUsersMetric[]>] [-AdditionalProperties <Hashtable>]
  [-Authentications <IMicrosoftGraphAuthenticationsMetric[]>] [-Id <String>]
  [-InactiveUsers <IMicrosoftGraphMonthlyInactiveUsersMetric[]>]
  [-InactiveUsersByApplication <IMicrosoftGraphMonthlyInactiveUsersByApplicationMetric[]>]
@@ -43,22 +42,6 @@ To construct, see NOTES section for ACTIVEUSERS properties and create a hash tab
 
 ```yaml
 Type: IMicrosoftGraphActiveUsersMetric[]
-Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ActiveUsersBreakdown
-.
-To construct, see NOTES section for ACTIVEUSERSBREAKDOWN properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphActiveUsersBreakdownMetric[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -331,16 +314,6 @@ Read-only.
   - `[Language <String>]`: 
   - `[OS <String>]`: 
 
-ACTIVEUSERSBREAKDOWN <IMicrosoftGraphActiveUsersBreakdownMetric- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-  - `[AppId <String>]`: The ID of the Microsoft Entra application.
-  - `[AppName <String>]`: Name of the application users authenticated to.
-  - `[Count <Int64?>]`: The total number of users who made at least one authentication request within the specified time period.
-  - `[FactDate <DateTime?>]`: The date of the insight.
-  - `[OS <String>]`: The platform for the device that the customers used.
-Supports $filter (eq).
-
 AUTHENTICATIONS <IMicrosoftGraphAuthenticationsMetric- `[]`>: Insights for authentications on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -372,15 +345,6 @@ Read-only.
     - `[FactDate <DateTime?>]`: Date of the insight.
     - `[Language <String>]`: 
     - `[OS <String>]`: 
-  - `[ActiveUsersBreakdown <IMicrosoftGraphActiveUsersBreakdownMetric- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-    - `[AppId <String>]`: The ID of the Microsoft Entra application.
-    - `[AppName <String>]`: Name of the application users authenticated to.
-    - `[Count <Int64?>]`: The total number of users who made at least one authentication request within the specified time period.
-    - `[FactDate <DateTime?>]`: The date of the insight.
-    - `[OS <String>]`: The platform for the device that the customers used.
-Supports $filter (eq).
   - `[Authentications <IMicrosoftGraphAuthenticationsMetric- `[]`>]`: Insights for authentications on apps registered in the tenant for a specified period.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

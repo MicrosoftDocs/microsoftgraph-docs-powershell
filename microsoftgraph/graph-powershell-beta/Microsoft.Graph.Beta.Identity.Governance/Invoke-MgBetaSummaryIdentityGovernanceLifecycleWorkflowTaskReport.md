@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowTaskReport
 
 ## SYNOPSIS
-Invoke function summary
+Get a taskReportSummary object.
+This API provides a summary of task processing results for a specified time period.
+Because the volume of task processing results and task reports returned by the List API calls can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport?view=graph-powershell-1.0)
@@ -30,7 +32,9 @@ Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowTaskReport -InputObject <
 ```
 
 ## DESCRIPTION
-Invoke function summary
+Get a taskReportSummary object.
+This API provides a summary of task processing results for a specified time period.
+Because the volume of task processing results and task reports returned by the List API calls can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
 
 ## PARAMETERS
 
@@ -260,6 +264,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetasummaryidentitygovernancelifecycleworkflowtaskreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetasummaryidentitygovernancelifecycleworkflowtaskreport)
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSiteContentTypeColumn
 
 ## SYNOPSIS
-Remove a \[column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
+Remove a column from a site, a list, or a content type.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgSiteContentTypeColumn -InputObject <ISitesIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Remove a \[column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
+Remove a column from a site, a list, or a content type.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -272,6 +272,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

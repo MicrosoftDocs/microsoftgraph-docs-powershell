@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserSettingWindowsInstance
 
 ## SYNOPSIS
-Read the properties and relationships of a windowsSettingInstance object by passing the Windows setting ID and Windows setting instance ID in the URL.
-This method gets a windowsSettingInstance for the signed-in user.
+A collection of setting values for a given windowsSetting.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserSettingWindowsInstance](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingWindowsInstance?view=graph-powershell-1.0)
@@ -40,8 +39,7 @@ Get-MgBetaUserSettingWindowsInstance -InputObject <IUsersIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a windowsSettingInstance object by passing the Windows setting ID and Windows setting instance ID in the URL.
-This method gets a windowsSettingInstance for the signed-in user.
+A collection of setting values for a given windowsSetting.
 
 ## PARAMETERS
 
@@ -349,10 +347,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingwindowsinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingwindowsinstance)
-
-[https://learn.microsoft.com/graph/api/windowssettinginstance-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/windowssettinginstance-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/windowssetting-list-instances?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/windowssetting-list-instances?view=graph-rest-1.0)
 
 
 

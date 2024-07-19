@@ -19,7 +19,7 @@ Create new navigation property to files for deviceAppManagement
 ```
 New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile -MobileAppContentId <String>
  -MobileAppId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>] [-SizeEncrypted <Int64>]
+ [-IsDependency] [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>] [-SizeEncrypted <Int64>]
  [-UploadState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -35,8 +35,8 @@ New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile -MobileAp
 ```
 New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-ManifestInputFile <String>] [-Name <String>]
- [-Size <Int64>] [-SizeEncrypted <Int64>] [-UploadState <String>] [-Headers <IDictionary>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsDependency] [-ManifestInputFile <String>]
+ [-Name <String>] [-Size <Int64>] [-SizeEncrypted <Int64>] [-UploadState <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -128,6 +128,23 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IsDependency
+Indicates whether this content file is a dependency for the main content file.
+TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file.
+Defaults to FALSE.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -318,6 +335,9 @@ BODYPARAMETER `<IMicrosoftGraphMobileAppContentFile>`: Contains properties for a
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[IsDependency <Boolean?>]`: Indicates whether this content file is a dependency for the main content file.
+TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file.
+Defaults to FALSE.
   - `[Manifest <Byte- `[]`>]`: The manifest information.
   - `[Name <String>]`: the file name.
   - `[Size <Int64?>]`: The size of the file prior to encryption.

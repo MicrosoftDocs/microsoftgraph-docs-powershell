@@ -43,6 +43,19 @@ Read the properties of a delegatedAdminCustomer object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadmincustomer-get-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Partner
+
+Get-MgBetaTenantRelationshipDelegatedAdminCustomer
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipDelegatedAdminCustomer Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -300,10 +313,9 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadmincustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadmincustomer)
 
-[https://learn.microsoft.com/graph/api/delegatedadmincustomer-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadmincustomer-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/delegatedadmincustomer-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/delegatedadmincustomer-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/tenantrelationship-list-delegatedadmincustomers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tenantrelationship-list-delegatedadmincustomers?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/tenantrelationship-list-delegatedadmincustomers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/tenantrelationship-list-delegatedadmincustomers?view=graph-rest-beta)
 
 
 

@@ -35,8 +35,6 @@ Get-MgBetaUserDriveListItemActivityByInterval -InputObject <IUsersFunctionsIdent
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Count
@@ -369,6 +367,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdrivelistitemactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdrivelistitemactivitybyinterval)
+
+
 
 
 

@@ -32,6 +32,19 @@ Remove-MgBetaEducationSchoolUserEducationUserByRef -InputObject <IEducationIdent
 ## DESCRIPTION
 Delete a user from a school.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Remove-MgBetaEducationSchoolUserEducationUserByRef -EducationSchoolId $educationSchoolId -EducationUserId $educationUserId
+
+```
+This example shows how to use the Remove-MgBetaEducationSchoolUserEducationUserByRef Cmdlet.
+
+
 ## PARAMETERS
 
 ### -EducationSchoolId
@@ -226,8 +239,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschoolusereducationuserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschoolusereducationuserbyref)
 
-[https://learn.microsoft.com/graph/api/educationschool-delete-users?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-delete-users?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/educationschool-delete-users?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationschool-delete-users?view=graph-rest-beta)
 
 
 

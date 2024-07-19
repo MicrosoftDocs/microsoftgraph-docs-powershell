@@ -21,9 +21,9 @@ If there is false positives admins can take move to inbox action.
 ```
 Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail [-ResponseHeadersVariable <String>] [-Action <String>]
  [-AdditionalProperties <Hashtable>] [-AnalyzedEmails <IMicrosoftGraphSecurityAnalyzedEmail[]>]
- [-ApproverUpn <String>] [-Description <String>] [-DisplayName <String>] [-RemediateSendersCopy]
- [-Severity <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Description <String>] [-DisplayName <String>] [-RemediateSendersCopy] [-Severity <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Remediate
@@ -41,6 +41,37 @@ This API can trigger email purge actions like move to junk, move to deleted item
 This API enables scenarios and use cases such as SOAR integration, playbooks, and automations.
 For more information read email remediation, trigger action and track actions.
 If there is false positives admins can take move to inbox action.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	displayName = "Clean up Phish email"
+	description = "Delete email"
+	severity = "medium"
+	action = "softDelete"
+	remediateSendersCopy = "false"
+	analyzedEmails = @(
+		@{
+			networkMessageId = "73ca4154-58d8-43d0-a890-08dc18c52e6d"
+			recipientEmailAddress = "hannah.jarvis@contoso.com"
+		}
+		@{
+			networkMessageId = "73ca4154-58d8-43d0-a890-08dc18c52e6d"
+			recipientEmailAddress = "preston.morales@contoso.com"
+		}
+	)
+}
+
+Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail Cmdlet.
+
 
 ## PARAMETERS
 
@@ -80,21 +111,6 @@ To construct, see NOTES section for ANALYZEDEMAILS properties and create a hash 
 
 ```yaml
 Type: IMicrosoftGraphSecurityAnalyzedEmail[]
-Parameter Sets: RemediateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ApproverUpn
-.
-
-```yaml
-Type: String
 Parameter Sets: RemediateExpanded
 Aliases:
 
@@ -346,7 +362,7 @@ The message ID is in the format specified by RFC2822.
   - `[PhishConfidenceLevel <String>]`: The phish confidence level associated with the email
   - `[Policy <String>]`: The action policy that took effect.
   - `[PolicyAction <String>]`: The action taken on the email based on the configured policy.
-  - `[RecipientEmailAddresses <String- `[]`>]`: Contains the email addresses of the recipients.
+  - `[RecipientEmailAddress <String>]`: Contains the email address of the recipient.
   - `[ReturnPath <String>]`: A field that indicates where and how bounced emails are processed.
   - `[SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>]`: analyzedEmailSenderDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -357,7 +373,8 @@ Also known as P2 sender.
   - `[SizeInBytes <Int32?>]`: Size of the email in bytes.
   - `[SpamConfidenceLevel <String>]`: Spam confidence of the email.
   - `[Subject <String>]`: Subject of the email.
-  - `[ThreatType <String>]`: threatType
+  - `[ThreatTypes <String- `[]`>]`: Indicates the threat types.
+The possible values are: unknown, spam, malware, phish, none, unknownFutureValue.
   - `[Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl- `[]`>]`: A collection of the URLs in the email.
     - `[DetectionMethod <String>]`: The method used to detect threats in the URL.
     - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
@@ -427,7 +444,7 @@ The message ID is in the format specified by RFC2822.
     - `[PhishConfidenceLevel <String>]`: The phish confidence level associated with the email
     - `[Policy <String>]`: The action policy that took effect.
     - `[PolicyAction <String>]`: The action taken on the email based on the configured policy.
-    - `[RecipientEmailAddresses <String- `[]`>]`: Contains the email addresses of the recipients.
+    - `[RecipientEmailAddress <String>]`: Contains the email address of the recipient.
     - `[ReturnPath <String>]`: A field that indicates where and how bounced emails are processed.
     - `[SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>]`: analyzedEmailSenderDetail
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -438,7 +455,8 @@ Also known as P2 sender.
     - `[SizeInBytes <Int32?>]`: Size of the email in bytes.
     - `[SpamConfidenceLevel <String>]`: Spam confidence of the email.
     - `[Subject <String>]`: Subject of the email.
-    - `[ThreatType <String>]`: threatType
+    - `[ThreatTypes <String- `[]`>]`: Indicates the threat types.
+The possible values are: unknown, spam, malware, phish, none, unknownFutureValue.
     - `[Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl- `[]`>]`: A collection of the URLs in the email.
       - `[DetectionMethod <String>]`: The method used to detect threats in the URL.
       - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
@@ -446,7 +464,6 @@ Also known as P2 sender.
       - `[Url <String>]`: The URL that is found in the email.
 This is full URL string, including query parameters.
     - `[UrlsCount <Int32?>]`: The number of URLs in the email.
-  - `[ApproverUpn <String>]`: 
   - `[Description <String>]`: 
   - `[DisplayName <String>]`: 
   - `[RemediateSendersCopy <Boolean?>]`: 
@@ -456,8 +473,7 @@ This is full URL string, including query parameters.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail)
 
-[https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-beta)
 
 
 

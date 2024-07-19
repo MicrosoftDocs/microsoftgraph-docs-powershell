@@ -18,13 +18,14 @@ Read-only.
 
 ### Get (Default)
 ```
-Get-MgBetaGroupCalendar -GroupId <String> [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaGroupCalendar -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaGroupCalendar -InputObject <ICalendarIdentity> [-Property <String[]>]
+Get-MgBetaGroupCalendar -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
@@ -33,9 +34,22 @@ Get-MgBetaGroupCalendar -InputObject <ICalendarIdentity> [-Property <String[]>]
 The group's calendar.
 Read-only.
 
-## EXAMPLES
-
 ## PARAMETERS
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -GroupId
 The unique identifier of group
@@ -162,6 +176,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendar)
+
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupOnenotePage
 
 ## SYNOPSIS
-Delete a OneNote page.
+Delete navigation property pages for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupOnenotePage](/powershell/module/Microsoft.Graph.Notes/Remove-MgGroupOnenotePage?view=graph-powershell-1.0)
@@ -30,9 +30,7 @@ Remove-MgBetaGroupOnenotePage -InputObject <INotesIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete a OneNote page.
-
-## EXAMPLES
+Delete navigation property pages for groups
 
 ## PARAMETERS
 
@@ -221,7 +219,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetagrouponenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetagrouponenotepage)
 
-[https://learn.microsoft.com/graph/api/page-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/page-delete?view=graph-rest-1.0)
+
 
 
 

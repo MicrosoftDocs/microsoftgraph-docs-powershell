@@ -8,11 +8,10 @@ schema: 2.0.0
 # Get-MgDirectoryRoleMember
 
 ## SYNOPSIS
-Users that are members of this directory role.
-HTTP Methods: GET, POST, DELETE.
-Read-only.
-Nullable.
-Supports $expand.
+Retrieve the list of principals that are assigned to the directory role.
+You can use both the object ID and template ID of the directoryRole with this API.
+The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
+For details, see Role template IDs.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleMember?view=graph-powershell-beta)
@@ -27,11 +26,10 @@ Get-MgDirectoryRoleMember -DirectoryRoleId <String> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Users that are members of this directory role.
-HTTP Methods: GET, POST, DELETE.
-Read-only.
-Nullable.
-Supports $expand.
+Retrieve the list of principals that are assigned to the directory role.
+You can use both the object ID and template ID of the directoryRole with this API.
+The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
+For details, see Role template IDs.
 
 ## EXAMPLES
 ### Example 1: Get member from directory roles

@@ -244,7 +244,7 @@ The message ID is in the format specified by RFC2822.
   - `[PhishConfidenceLevel <String>]`: The phish confidence level associated with the email
   - `[Policy <String>]`: The action policy that took effect.
   - `[PolicyAction <String>]`: The action taken on the email based on the configured policy.
-  - `[RecipientEmailAddresses <String- `[]`>]`: Contains the email addresses of the recipients.
+  - `[RecipientEmailAddress <String>]`: Contains the email address of the recipient.
   - `[ReturnPath <String>]`: A field that indicates where and how bounced emails are processed.
   - `[SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>]`: analyzedEmailSenderDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -255,7 +255,8 @@ Also known as P2 sender.
   - `[SizeInBytes <Int32?>]`: Size of the email in bytes.
   - `[SpamConfidenceLevel <String>]`: Spam confidence of the email.
   - `[Subject <String>]`: Subject of the email.
-  - `[ThreatType <String>]`: threatType
+  - `[ThreatTypes <String- `[]`>]`: Indicates the threat types.
+The possible values are: unknown, spam, malware, phish, none, unknownFutureValue.
   - `[Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl- `[]`>]`: A collection of the URLs in the email.
     - `[DetectionMethod <String>]`: The method used to detect threats in the URL.
     - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails
@@ -326,7 +327,7 @@ The message ID is in the format specified by RFC2822.
     - `[PhishConfidenceLevel <String>]`: The phish confidence level associated with the email
     - `[Policy <String>]`: The action policy that took effect.
     - `[PolicyAction <String>]`: The action taken on the email based on the configured policy.
-    - `[RecipientEmailAddresses <String- `[]`>]`: Contains the email addresses of the recipients.
+    - `[RecipientEmailAddress <String>]`: Contains the email address of the recipient.
     - `[ReturnPath <String>]`: A field that indicates where and how bounced emails are processed.
     - `[SenderDetail <IMicrosoftGraphSecurityAnalyzedEmailSenderDetail>]`: analyzedEmailSenderDetail
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -337,7 +338,8 @@ Also known as P2 sender.
     - `[SizeInBytes <Int32?>]`: Size of the email in bytes.
     - `[SpamConfidenceLevel <String>]`: Spam confidence of the email.
     - `[Subject <String>]`: Subject of the email.
-    - `[ThreatType <String>]`: threatType
+    - `[ThreatTypes <String- `[]`>]`: Indicates the threat types.
+The possible values are: unknown, spam, malware, phish, none, unknownFutureValue.
     - `[Urls <IMicrosoftGraphSecurityAnalyzedEmailUrl- `[]`>]`: A collection of the URLs in the email.
       - `[DetectionMethod <String>]`: The method used to detect threats in the URL.
       - `[DetonationDetails <IMicrosoftGraphSecurityDetonationDetails>]`: detonationDetails

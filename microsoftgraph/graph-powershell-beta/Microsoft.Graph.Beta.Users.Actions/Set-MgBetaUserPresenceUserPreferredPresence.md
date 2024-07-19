@@ -64,18 +64,23 @@ Read more about presence sessions and their time-out and expiration.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setuserpreferredpresence-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Set-MgBetaUserPresenceUserPreferredPresence Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	Availability = "DoNotDisturb"
-	Activity = "DoNotDisturb"
-	ExpirationDuration = "PT8H"
+	availability = "DoNotDisturb"
+	activity = "DoNotDisturb"
+	expirationDuration = "PT8H"
 }
+
 Set-MgBetaUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the Set-MgBetaUserPresenceUserPreferredPresence Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -347,7 +352,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresenceuserpreferredpresence)
 
-[https://learn.microsoft.com/graph/api/presence-setuserpreferredpresence?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-setuserpreferredpresence?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta](https://learn.microsoft.com/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta)
 
 
 

@@ -338,8 +338,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetail)
 
-[https://learn.microsoft.com/graph/api/user-list-licensedetails?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-licensedetails?view=graph-rest-1.0)
-
 
 
 

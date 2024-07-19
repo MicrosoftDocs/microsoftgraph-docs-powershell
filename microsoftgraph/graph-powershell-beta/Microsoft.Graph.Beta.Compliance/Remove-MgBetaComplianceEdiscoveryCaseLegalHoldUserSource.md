@@ -29,8 +29,6 @@ Remove-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource -InputObject <IComplian
 ## DESCRIPTION
 Delete navigation property userSources for compliance
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CaseId
@@ -238,6 +236,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycaselegalholdusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycaselegalholdusersource)
+
+
 
 
 

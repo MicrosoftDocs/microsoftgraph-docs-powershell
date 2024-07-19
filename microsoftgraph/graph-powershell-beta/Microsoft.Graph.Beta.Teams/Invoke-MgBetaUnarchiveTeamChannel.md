@@ -35,6 +35,30 @@ Unarchiving restores the ability for users to send messages and edit the channel
 Channels are archived via the archive API.
 Unarchiving is an asynchronous operation; a channel is unarchived when the asynchronous unarchive operation completes successfully, which might occur after this method responds.
 
+## EXAMPLES
+### Example 1: Unarchive a channel
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Invoke-MgBetaUnarchiveTeamChannel -TeamId $teamId -ChannelId $channelId
+
+```
+This example will unarchive a channel
+
+### Example 2: Unarchive a channel when the team is archived
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Invoke-MgBetaUnarchiveTeamChannel -TeamId $teamId -ChannelId $channelId
+
+```
+This example will unarchive a channel when the team is archived
+
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -237,8 +261,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteamchannel)
 
-[https://learn.microsoft.com/graph/api/channel-unarchive?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-unarchive?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/channel-unarchive?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-unarchive?view=graph-rest-beta)
 
 
 

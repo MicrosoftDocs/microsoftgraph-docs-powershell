@@ -23,6 +23,21 @@ Remove-MgBetaTeamPrimaryChannelMessageReplyHostedContent -ChatMessageHostedConte
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Delete1
+```
+Remove-MgBetaTeamPrimaryChannelMessageReplyHostedContent -ChatMessageHostedContentId <String>
+ -ChatMessageId <String> -ChatMessageId1 <String> -TeamId <String> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgBetaTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdentity> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### DeleteViaIdentity
 ```
 Remove-MgBetaTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdentity> [-IfMatch <String>]
@@ -40,7 +55,7 @@ The unique identifier of chatMessageHostedContent
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -55,7 +70,7 @@ The unique identifier of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -70,7 +85,7 @@ The unique identifier of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -116,7 +131,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -176,7 +191,7 @@ The unique identifier of team
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -279,6 +294,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelmessagereplyhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelmessagereplyhostedcontent)
+
 
 
 

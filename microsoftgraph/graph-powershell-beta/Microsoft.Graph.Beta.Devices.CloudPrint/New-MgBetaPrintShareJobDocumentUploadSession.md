@@ -57,6 +57,27 @@ As part of the response, this action returns an upload URL that can be used in s
 Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+$params = @{
+	properties = @{
+		documentName = "TestFile.pdf"
+		contentType = "application/pdf"
+		size = 4533322
+	}
+}
+
+New-MgBetaPrintShareJobDocumentUploadSession -PrinterShareId $printerShareId -PrintJobId $printJobId -PrintDocumentId $printDocumentId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrintShareJobDocumentUploadSession Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -293,8 +314,7 @@ PROPERTIES `<IMicrosoftGraphPrintDocumentUploadProperties>`: printDocumentUpload
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintsharejobdocumentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintsharejobdocumentuploadsession)
 
-[https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-beta)
 
 
 

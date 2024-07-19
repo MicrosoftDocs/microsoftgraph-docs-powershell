@@ -32,6 +32,19 @@ Invoke-MgBetaRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-Resp
 ## DESCRIPTION
 Retry the group service provisioning.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Invoke-MgBetaRetryGroupServiceProvisioning -GroupId $groupId
+
+```
+This example shows how to use the Invoke-MgBetaRetryGroupServiceProvisioning Cmdlet.
+
+
 ## PARAMETERS
 
 ### -GroupId
@@ -224,8 +237,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaretrygroupserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaretrygroupserviceprovisioning)
 
-[https://learn.microsoft.com/graph/api/group-retryserviceprovisioning?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-retryserviceprovisioning?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/group-retryserviceprovisioning?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-retryserviceprovisioning?view=graph-rest-beta)
 
 
 

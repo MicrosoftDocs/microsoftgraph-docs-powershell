@@ -326,6 +326,9 @@ Locale: en-US
 ### [Get-MgDriveListItemCreatedByUserServiceProvisioningErrorCount](Get-MgDriveListItemCreatedByUserServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgDriveListItemDelta](Get-MgDriveListItemDelta.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDriveListItemDocumentSetVersion](Get-MgDriveListItemDocumentSetVersion.md)
 {{ Fill in the Description }}
 
@@ -1137,6 +1140,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgShareListItemCreatedByUserServiceProvisioningErrorCount](Get-MgShareListItemCreatedByUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgShareListItemDelta](Get-MgShareListItemDelta.md)
 {{ Fill in the Description }}
 
 ### [Get-MgShareListItemDocumentSetVersion](Get-MgShareListItemDocumentSetVersion.md)
@@ -2051,6 +2057,12 @@ Locale: en-US
 ### [Remove-MgDrive](Remove-MgDrive.md)
 {{ Fill in the Description }}
 
+### [Remove-MgDriveBundleContent](Remove-MgDriveBundleContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDriveFollowingContent](Remove-MgDriveFollowingContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgDriveItem](Remove-MgDriveItem.md)
 {{ Fill in the Description }}
 
@@ -2060,6 +2072,12 @@ Locale: en-US
 ### [Remove-MgDriveItemAnalyticItemActivityStat](Remove-MgDriveItemAnalyticItemActivityStat.md)
 {{ Fill in the Description }}
 
+### [Remove-MgDriveItemChildContent](Remove-MgDriveItemChildContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDriveItemContent](Remove-MgDriveItemContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgDriveItemListItem](Remove-MgDriveItemListItem.md)
 {{ Fill in the Description }}
 
@@ -2067,6 +2085,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgDriveItemListItemDocumentSetVersionField](Remove-MgDriveItemListItemDocumentSetVersionField.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDriveItemListItemDriveItemContent](Remove-MgDriveItemListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgDriveItemListItemField](Remove-MgDriveItemListItemField.md)
@@ -2096,6 +2117,9 @@ Locale: en-US
 ### [Remove-MgDriveItemVersion](Remove-MgDriveItemVersion.md)
 {{ Fill in the Description }}
 
+### [Remove-MgDriveItemVersionContent](Remove-MgDriveItemVersionContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgDriveList](Remove-MgDriveList.md)
 {{ Fill in the Description }}
 
@@ -2118,6 +2142,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgDriveListItemDocumentSetVersionField](Remove-MgDriveListItemDocumentSetVersionField.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDriveListItemDriveItemContent](Remove-MgDriveListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgDriveListItemField](Remove-MgDriveListItemField.md)
@@ -2144,6 +2171,12 @@ Locale: en-US
 ### [Remove-MgDriveRootAnalyticItemActivityStat](Remove-MgDriveRootAnalyticItemActivityStat.md)
 {{ Fill in the Description }}
 
+### [Remove-MgDriveRootChildContent](Remove-MgDriveRootChildContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDriveRootContent](Remove-MgDriveRootContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgDriveRootListItem](Remove-MgDriveRootListItem.md)
 {{ Fill in the Description }}
 
@@ -2151,6 +2184,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgDriveRootListItemDocumentSetVersionField](Remove-MgDriveRootListItemDocumentSetVersionField.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDriveRootListItemDriveItemContent](Remove-MgDriveRootListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgDriveRootListItemField](Remove-MgDriveRootListItemField.md)
@@ -2180,7 +2216,19 @@ Locale: en-US
 ### [Remove-MgDriveRootVersion](Remove-MgDriveRootVersion.md)
 {{ Fill in the Description }}
 
+### [Remove-MgDriveRootVersionContent](Remove-MgDriveRootVersionContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDriveSpecialContent](Remove-MgDriveSpecialContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupDrive](Remove-MgGroupDrive.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupDriveBundleContent](Remove-MgGroupDriveBundleContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupDriveFollowingContent](Remove-MgGroupDriveFollowingContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveItem](Remove-MgGroupDriveItem.md)
@@ -2192,6 +2240,12 @@ Locale: en-US
 ### [Remove-MgGroupDriveItemAnalyticItemActivityStat](Remove-MgGroupDriveItemAnalyticItemActivityStat.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupDriveItemChildContent](Remove-MgGroupDriveItemChildContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupDriveItemContent](Remove-MgGroupDriveItemContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupDriveItemListItem](Remove-MgGroupDriveItemListItem.md)
 {{ Fill in the Description }}
 
@@ -2199,6 +2253,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveItemListItemDocumentSetVersionField](Remove-MgGroupDriveItemListItemDocumentSetVersionField.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupDriveItemListItemDriveItemContent](Remove-MgGroupDriveItemListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveItemListItemField](Remove-MgGroupDriveItemListItemField.md)
@@ -2225,6 +2282,9 @@ Locale: en-US
 ### [Remove-MgGroupDriveItemVersion](Remove-MgGroupDriveItemVersion.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupDriveItemVersionContent](Remove-MgGroupDriveItemVersionContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupDriveList](Remove-MgGroupDriveList.md)
 {{ Fill in the Description }}
 
@@ -2247,6 +2307,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveListItemDocumentSetVersionField](Remove-MgGroupDriveListItemDocumentSetVersionField.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupDriveListItemDriveItemContent](Remove-MgGroupDriveListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveListItemField](Remove-MgGroupDriveListItemField.md)
@@ -2273,6 +2336,12 @@ Locale: en-US
 ### [Remove-MgGroupDriveRootAnalyticItemActivityStat](Remove-MgGroupDriveRootAnalyticItemActivityStat.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupDriveRootChildContent](Remove-MgGroupDriveRootChildContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupDriveRootContent](Remove-MgGroupDriveRootContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupDriveRootListItem](Remove-MgGroupDriveRootListItem.md)
 {{ Fill in the Description }}
 
@@ -2280,6 +2349,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveRootListItemDocumentSetVersionField](Remove-MgGroupDriveRootListItemDocumentSetVersionField.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupDriveRootListItemDriveItemContent](Remove-MgGroupDriveRootListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupDriveRootListItemField](Remove-MgGroupDriveRootListItemField.md)
@@ -2306,6 +2378,18 @@ Locale: en-US
 ### [Remove-MgGroupDriveRootVersion](Remove-MgGroupDriveRootVersion.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupDriveRootVersionContent](Remove-MgGroupDriveRootVersionContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupDriveSpecialContent](Remove-MgGroupDriveSpecialContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgShareDriveItemContent](Remove-MgShareDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgShareItemContent](Remove-MgShareItemContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgShareList](Remove-MgShareList.md)
 {{ Fill in the Description }}
 
@@ -2330,6 +2414,9 @@ Locale: en-US
 ### [Remove-MgShareListItemDocumentSetVersionField](Remove-MgShareListItemDocumentSetVersionField.md)
 {{ Fill in the Description }}
 
+### [Remove-MgShareListItemDriveItemContent](Remove-MgShareListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgShareListItemField](Remove-MgShareListItemField.md)
 {{ Fill in the Description }}
 
@@ -2348,10 +2435,19 @@ Locale: en-US
 ### [Remove-MgSharePermission](Remove-MgSharePermission.md)
 {{ Fill in the Description }}
 
+### [Remove-MgShareRootContent](Remove-MgShareRootContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgShareSharedDriveItemSharedDriveItem](Remove-MgShareSharedDriveItemSharedDriveItem.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDrive](Remove-MgUserDrive.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserDriveBundleContent](Remove-MgUserDriveBundleContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserDriveFollowingContent](Remove-MgUserDriveFollowingContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDriveItem](Remove-MgUserDriveItem.md)
@@ -2363,6 +2459,12 @@ Locale: en-US
 ### [Remove-MgUserDriveItemAnalyticItemActivityStat](Remove-MgUserDriveItemAnalyticItemActivityStat.md)
 {{ Fill in the Description }}
 
+### [Remove-MgUserDriveItemChildContent](Remove-MgUserDriveItemChildContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserDriveItemContent](Remove-MgUserDriveItemContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgUserDriveItemListItem](Remove-MgUserDriveItemListItem.md)
 {{ Fill in the Description }}
 
@@ -2370,6 +2472,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDriveItemListItemDocumentSetVersionField](Remove-MgUserDriveItemListItemDocumentSetVersionField.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserDriveItemListItemDriveItemContent](Remove-MgUserDriveItemListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDriveItemListItemField](Remove-MgUserDriveItemListItemField.md)
@@ -2396,6 +2501,9 @@ Locale: en-US
 ### [Remove-MgUserDriveItemVersion](Remove-MgUserDriveItemVersion.md)
 {{ Fill in the Description }}
 
+### [Remove-MgUserDriveItemVersionContent](Remove-MgUserDriveItemVersionContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgUserDriveList](Remove-MgUserDriveList.md)
 {{ Fill in the Description }}
 
@@ -2418,6 +2526,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDriveListItemDocumentSetVersionField](Remove-MgUserDriveListItemDocumentSetVersionField.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserDriveListItemDriveItemContent](Remove-MgUserDriveListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDriveListItemField](Remove-MgUserDriveListItemField.md)
@@ -2444,6 +2555,12 @@ Locale: en-US
 ### [Remove-MgUserDriveRootAnalyticItemActivityStat](Remove-MgUserDriveRootAnalyticItemActivityStat.md)
 {{ Fill in the Description }}
 
+### [Remove-MgUserDriveRootChildContent](Remove-MgUserDriveRootChildContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserDriveRootContent](Remove-MgUserDriveRootContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgUserDriveRootListItem](Remove-MgUserDriveRootListItem.md)
 {{ Fill in the Description }}
 
@@ -2451,6 +2568,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDriveRootListItemDocumentSetVersionField](Remove-MgUserDriveRootListItemDocumentSetVersionField.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserDriveRootListItemDriveItemContent](Remove-MgUserDriveRootListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDriveRootListItemField](Remove-MgUserDriveRootListItemField.md)
@@ -2475,6 +2595,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDriveRootVersion](Remove-MgUserDriveRootVersion.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserDriveRootVersionContent](Remove-MgUserDriveRootVersionContent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserDriveSpecialContent](Remove-MgUserDriveSpecialContent.md)
 {{ Fill in the Description }}
 
 ### [Restore-MgDriveItem](Restore-MgDriveItem.md)

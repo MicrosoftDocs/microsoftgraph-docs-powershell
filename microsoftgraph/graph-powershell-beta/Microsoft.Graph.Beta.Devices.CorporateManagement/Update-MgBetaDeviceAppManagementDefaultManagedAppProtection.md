@@ -18,7 +18,7 @@ Update the navigation property defaultManagedAppProtections in deviceAppManageme
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceAppManagementDefaultManagedAppProtection -DefaultManagedAppProtectionId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowWidgetContentSync]
  [-AllowedAndroidDeviceManufacturers <String>] [-AllowedAndroidDeviceModels <String[]>]
  [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
  [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
@@ -93,7 +93,7 @@ Update-MgBetaDeviceAppManagementDefaultManagedAppProtection -DefaultManagedAppPr
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowWidgetContentSync]
  [-AllowedAndroidDeviceManufacturers <String>] [-AllowedAndroidDeviceModels <String[]>]
  [-AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]
  [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
@@ -321,6 +321,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowWidgetContentSync
+Indicates if content sync for widgets is allowed for iOS on App Protection Policies
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -2107,6 +2122,7 @@ Default is anyApp.
   - `[Version <String>]`: Version of the entity.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[AllowWidgetContentSync <Boolean?>]`: Indicates  if content sync for widgets is allowed for iOS on App Protection Policies
   - `[AllowedAndroidDeviceManufacturers <String>]`: Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work.
 (Android only)
   - `[AllowedAndroidDeviceModels <String- `[]`>]`: List of device models allowed, as a string, for the managed app to work.
@@ -2260,6 +2276,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
   - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
   - `[IosVppAppAssignedLicenseId <String>]`: The unique identifier of iosVppAppAssignedLicense
+  - `[ManagedAppLogCollectionRequestId <String>]`: The unique identifier of managedAppLogCollectionRequest
   - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
   - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
   - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration

@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgBetaUserLicenseDetailTeamLicensingDetail
 
 ## SYNOPSIS
-Invoke function getTeamsLicensingDetails
+Get the license status of a user in Microsoft Teams.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserLicenseDetailTeamLicensingDetail](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserLicenseDetailTeamLicensingDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,7 +29,23 @@ Get-MgBetaUserLicenseDetailTeamLicensingDetail -InputObject <IUsersFunctionsIden
 ```
 
 ## DESCRIPTION
-Invoke function getTeamsLicensingDetails
+Get the license status of a user in Microsoft Teams.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/licensedetails-getteamslicensingdetails-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Functions
+
+Get-MgBetaUserLicenseDetailTeamLicensingDetail -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserLicenseDetailTeamLicensingDetail Cmdlet.
+
 
 ## PARAMETERS
 
@@ -166,6 +185,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserlicensedetailteamlicensingdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserlicensedetailteamlicensingdetail)
 
+[https://learn.microsoft.com/graph/api/licensedetails-getteamslicensingdetails?view=graph-rest-beta](https://learn.microsoft.com/graph/api/licensedetails-getteamslicensingdetails?view=graph-rest-beta)
 
 
 

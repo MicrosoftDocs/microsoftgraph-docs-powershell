@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
 
 ## SYNOPSIS
-Update the properties of an accessPackageAssignmentWorkflowExtension object.
+Update the navigation property customWorkflowExtensions in identityGovernance
 
 ## SYNTAX
 
@@ -50,7 +50,7 @@ Update-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
 ```
 
 ## DESCRIPTION
-Update the properties of an accessPackageAssignmentWorkflowExtension object.
+Update the navigation property customWorkflowExtensions in identityGovernance
 
 ## PARAMETERS
 
@@ -324,6 +324,9 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>]`: customExtensionClientConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[MaximumRetries <Int32?>]`: The max number of retries that Microsoft Entra ID makes to the external API.
+Values of 0 or 1 are supported.
+If null, the default for the service applies.
     - `[TimeoutInMilliseconds <Int32?>]`: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
 The valid range is between 200 and 2000 milliseconds.
 Default duration is 1000.
@@ -334,6 +337,9 @@ Default duration is 1000.
 
 CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[MaximumRetries <Int32?>]`: The max number of retries that Microsoft Entra ID makes to the external API.
+Values of 0 or 1 are supported.
+If null, the default for the service applies.
   - `[TimeoutInMilliseconds <Int32?>]`: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
 The valid range is between 200 and 2000 milliseconds.
 Default duration is 1000.
@@ -410,8 +416,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerequestcatalogcustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerequestcatalogcustomworkflowextension)
-
-[https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-update?view=graph-rest-1.0)
 
 
 

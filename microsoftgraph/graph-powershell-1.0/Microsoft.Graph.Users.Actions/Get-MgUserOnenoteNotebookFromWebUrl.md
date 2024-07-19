@@ -54,17 +54,22 @@ The location can be user notebooks on Microsoft 365, group notebooks, or SharePo
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-getnotebookfromweburl-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Get-MgUserOnenoteNotebookFromWebUrl Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
+
 $params = @{
-	WebUrl = "webUrl value"
+	webUrl = "webUrl value"
 }
+
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the Get-MgUserOnenoteNotebookFromWebUrl Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

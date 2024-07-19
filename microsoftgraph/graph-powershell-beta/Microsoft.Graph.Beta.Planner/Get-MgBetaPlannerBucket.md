@@ -312,9 +312,9 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucket)
 
-[https://learn.microsoft.com/graph/api/plannerbucket-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerbucket-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/plannerbucket-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerbucket-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/planner-list-buckets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planner-list-buckets?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/planner-list-buckets?view=graph-rest-beta](https://learn.microsoft.com/graph/api/planner-list-buckets?view=graph-rest-beta)
 
 
 

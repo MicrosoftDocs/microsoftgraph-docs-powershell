@@ -29,8 +29,6 @@ Get-MgBetaFinancialCompanyInformationPicture -InputObject <IFinancialsIdentity> 
 ## DESCRIPTION
 Get picture for the navigation property companyInformation from financials
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -211,6 +209,8 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanyinformationpicture](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanyinformationpicture)
+
+
 
 
 

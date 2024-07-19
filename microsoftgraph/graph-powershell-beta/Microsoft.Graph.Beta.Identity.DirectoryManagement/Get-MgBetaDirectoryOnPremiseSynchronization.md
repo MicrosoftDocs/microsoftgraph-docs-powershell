@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDirectoryOnPremiseSynchronization
 
 ## SYNOPSIS
-Read the properties and relationships of an onPremisesDirectorySynchronization object.
+A container for on-premises directory synchronization functionalities that are available for the organization.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryOnPremiseSynchronization?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryMana
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an onPremisesDirectorySynchronization object.
+A container for on-premises directory synchronization functionalities that are available for the organization.
 
 ## PARAMETERS
 
@@ -337,8 +337,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryonpremisesynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryonpremisesynchronization)
-
-[https://learn.microsoft.com/graph/api/onpremisesdirectorysynchronization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesdirectorysynchronization-get?view=graph-rest-1.0)
 
 
 

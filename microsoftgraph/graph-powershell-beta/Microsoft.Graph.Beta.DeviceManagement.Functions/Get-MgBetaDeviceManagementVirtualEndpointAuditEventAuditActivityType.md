@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType
 
 ## SYNOPSIS
-Invoke function getAuditActivityTypes
+Get audit activity types by tenant ID.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType?view=graph-powershell-1.0)
@@ -22,16 +22,23 @@ Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType [-Count] [-
 ```
 
 ## DESCRIPTION
-Invoke function getAuditActivityTypes
+Get audit activity types by tenant ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcauditevent-getauditactivitytypes-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+
 Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType
+
 ```
 This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -169,6 +176,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointauditeventauditactivitytype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointauditeventauditactivitytype)
+
+[https://learn.microsoft.com/graph/api/cloudpcauditevent-getauditactivitytypes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcauditevent-getauditactivitytypes?view=graph-rest-beta)
 
 
 

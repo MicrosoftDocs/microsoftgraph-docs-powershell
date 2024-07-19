@@ -202,7 +202,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentdefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentdefault)
 
-[https://learn.microsoft.com/graph/api/educationassignmentdefaults-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignmentdefaults-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/educationassignmentdefaults-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignmentdefaults-get?view=graph-rest-beta)
 
 
 

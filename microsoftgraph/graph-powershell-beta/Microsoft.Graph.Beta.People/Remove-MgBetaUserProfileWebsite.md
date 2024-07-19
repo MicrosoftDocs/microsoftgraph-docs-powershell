@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfileWebsite
 
 ## SYNOPSIS
-Deletes a personWebsite object from a user's profile.
+Delete navigation property websites for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> [-IfMatch <String
 ```
 
 ## DESCRIPTION
-Deletes a personWebsite object from a user's profile.
+Delete navigation property websites for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -240,8 +240,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebsite)
-
-[https://learn.microsoft.com/graph/api/personwebsite-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personwebsite-delete?view=graph-rest-1.0)
 
 
 

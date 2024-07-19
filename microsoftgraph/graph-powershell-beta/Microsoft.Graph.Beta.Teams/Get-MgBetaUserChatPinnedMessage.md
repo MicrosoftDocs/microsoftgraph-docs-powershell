@@ -56,8 +56,6 @@ Get-MgBetaUserChatPinnedMessage -InputObject <ITeamsIdentity> [-ExpandProperty <
 A collection of all the pinned messages in the chat.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -381,7 +379,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatpinnedmessage)
 
-[https://learn.microsoft.com/graph/api/chat-list-pinnedmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list-pinnedmessages?view=graph-rest-1.0)
+
+
+
 
 
 

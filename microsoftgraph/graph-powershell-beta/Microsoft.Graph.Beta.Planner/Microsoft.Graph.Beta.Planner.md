@@ -188,6 +188,9 @@ Locale: en-US
 ### [Remove-MgBetaPlannerTaskProgressTaskBoardFormat](Remove-MgBetaPlannerTaskProgressTaskBoardFormat.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaPlannerRosterSensitivityLabel](Set-MgBetaPlannerRosterSensitivityLabel.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaGroupPlanner](Update-MgBetaGroupPlanner.md)
 {{ Fill in the Description }}
 

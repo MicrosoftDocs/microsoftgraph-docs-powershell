@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the cross-tenant access policy template with user synchronization settings for a multi-tenant organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -30,6 +33,26 @@ Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentit
 
 ## DESCRIPTION
 Update the cross-tenant access policy template with user synchronization settings for a multi-tenant organization.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	templateApplicationLevel = "newPartners,existingPartners"
+	userSyncInbound = @{
+		isSyncAllowed = $true
+	}
+}
+
+Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization Cmdlet.
+
 
 ## PARAMETERS
 
@@ -224,8 +247,7 @@ This property has no impact on existing users who have already been synchronized
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronization)
 
-[https://learn.microsoft.com/graph/api/multitenantorganizationidentitysyncpolicytemplate-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganizationidentitysyncpolicytemplate-update?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/multitenantorganizationidentitysyncpolicytemplate-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/multitenantorganizationidentitysyncpolicytemplate-update?view=graph-rest-beta)
 
 
 

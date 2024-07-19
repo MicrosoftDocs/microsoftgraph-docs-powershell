@@ -293,8 +293,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmember)
 
-[https://learn.microsoft.com/graph/api/administrativeunit-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-post-members?view=graph-rest-1.0)
-
 
 
 

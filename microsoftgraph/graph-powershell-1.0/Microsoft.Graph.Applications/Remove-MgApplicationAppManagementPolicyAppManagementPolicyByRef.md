@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef
 
 ## SYNOPSIS
-Remove an appManagementPolicy policy object from an application or service principal object.
-When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
+Delete ref of navigation property appManagementPolicies for applications
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef?view=graph-powershell-beta)
@@ -31,8 +30,7 @@ Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef -InputObject <IA
 ```
 
 ## DESCRIPTION
-Remove an appManagementPolicy policy object from an application or service principal object.
-When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
+Delete ref of navigation property appManagementPolicies for applications
 
 ## PARAMETERS
 
@@ -219,6 +217,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -232,8 +231,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationappmanagementpolicyappmanagementpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationappmanagementpolicyappmanagementpolicybyref)
-
-[https://learn.microsoft.com/graph/api/appmanagementpolicy-delete-appliesto?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-delete-appliesto?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportTeamUserActivityUserDetail
 
 ## SYNOPSIS
-Invoke function getTeamsUserActivityUserDetail
+Get details about Microsoft Teams user activity by user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportTeamUserActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamUserActivityUserDetail?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Get-MgReportTeamUserActivityUserDetail -InputObject <IReportsIdentity> -OutFile 
 ```
 
 ## DESCRIPTION
-Invoke function getTeamsUserActivityUserDetail
+Get details about Microsoft Teams user activity by user.
 
 ## PARAMETERS
 
@@ -210,6 +210,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivityuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivityuserdetail)
+
 
 
 

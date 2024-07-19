@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfileCertification
 
 ## SYNOPSIS
-Read the properties and relationships of a personCertification object in a user's profile.
+Represents the details of certifications associated with a person.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfileCertification -InputObject <IPeopleIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a personCertification object in a user's profile.
+Represents the details of certifications associated with a person.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilecertification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilecertification)
-
-[https://learn.microsoft.com/graph/api/personcertification-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personcertification-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-certifications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-certifications?view=graph-rest-1.0)
 
 
 

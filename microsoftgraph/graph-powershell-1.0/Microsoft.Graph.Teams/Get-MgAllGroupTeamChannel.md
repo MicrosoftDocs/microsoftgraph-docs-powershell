@@ -40,8 +40,6 @@ Get-MgAllGroupTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 List of channels either hosted in or shared with the team (incoming channels).
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -341,7 +339,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallgroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgallgroupteamchannel)
 
-[https://learn.microsoft.com/graph/api/team-list-allchannels?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-list-allchannels?view=graph-rest-1.0)
+
+
 
 
 

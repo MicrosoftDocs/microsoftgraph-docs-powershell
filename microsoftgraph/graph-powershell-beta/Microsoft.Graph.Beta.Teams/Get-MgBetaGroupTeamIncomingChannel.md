@@ -40,8 +40,6 @@ Get-MgBetaGroupTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandPropert
 ## DESCRIPTION
 List of channels shared with the team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -349,7 +347,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamincomingchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamincomingchannel)
 
-[https://learn.microsoft.com/graph/api/team-list-incomingchannels?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-list-incomingchannels?view=graph-rest-1.0)
+
+
+
 
 
 

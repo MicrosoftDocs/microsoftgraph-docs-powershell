@@ -54,6 +54,7 @@ The table in the Permissions section lists the resources that support open exten
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
 
 $params = @{
@@ -65,10 +66,9 @@ $params = @{
 }
 
 New-MgBetaGroupEventExtension -GroupId $groupId -EventId $eventId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaGroupEventExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -277,7 +277,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupeventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupeventextension)
 
-[https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta)
 
 
 

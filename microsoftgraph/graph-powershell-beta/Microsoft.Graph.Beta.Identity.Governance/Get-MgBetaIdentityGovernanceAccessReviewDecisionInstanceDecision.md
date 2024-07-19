@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision
 
 ## SYNOPSIS
-Read the properties and relationships of an accessReviewInstanceDecisionItem object.
+Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision -InputObject <I
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an accessReviewInstanceDecisionItem object.
+Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
 
 ## PARAMETERS
 
@@ -403,9 +403,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdecisioninstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdecisioninstancedecision)
 
-[https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/accessreviewinstance-list-decisions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-list-decisions?view=graph-rest-1.0)
+
 
 
 

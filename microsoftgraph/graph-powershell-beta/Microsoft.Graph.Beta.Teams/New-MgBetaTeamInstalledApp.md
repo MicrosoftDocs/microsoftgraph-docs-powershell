@@ -19,7 +19,8 @@ Install an app to the specified team.
 ```
 New-MgBetaTeamInstalledApp -TeamId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]
- [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]
+ [-Id <String>] [-ScopeInfo <IMicrosoftGraphTeamsAppInstallationScopeInfo>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +35,8 @@ New-MgBetaTeamInstalledApp -TeamId <String> -BodyParameter <IMicrosoftGraphTeams
 ```
 New-MgBetaTeamInstalledApp -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]
- [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]
+ [-Id <String>] [-ScopeInfo <IMicrosoftGraphTeamsAppInstallationScopeInfo>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -218,6 +220,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ScopeInfo
+teamsAppInstallationScopeInfo
+To construct, see NOTES section for SCOPEINFO properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTeamsAppInstallationScopeInfo
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TeamId
 The unique identifier of team
 
@@ -322,6 +340,9 @@ Read-only.
     - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission- `[]`>]`: A collection of resource-specific permissions.
       - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
       - `[PermissionValue <String>]`: The name of the resource-specific permission.
+  - `[ScopeInfo <IMicrosoftGraphTeamsAppInstallationScopeInfo>]`: teamsAppInstallationScopeInfo
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Scope <String>]`: teamsAppInstallationScopes
   - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -356,10 +377,9 @@ Content type, such as image/png, image/jpg.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>]`: Dashboard cards specified in the Teams app manifest.
@@ -448,6 +468,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
+SCOPEINFO `<IMicrosoftGraphTeamsAppInstallationScopeInfo>`: teamsAppInstallationScopeInfo
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Scope <String>]`: teamsAppInstallationScopes
+
 TEAMSAPP `<IMicrosoftGraphTeamsApp>`: teamsApp
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -486,10 +510,9 @@ Content type, such as image/png, image/jpg.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>]`: Dashboard cards specified in the Teams app manifest.
@@ -563,10 +586,9 @@ Content type, such as image/png, image/jpg.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>]`: Dashboard cards specified in the Teams app manifest.
@@ -606,7 +628,7 @@ Required.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateaminstalledapp)
 
-[https://learn.microsoft.com/graph/api/team-post-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-post-installedapps?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/team-post-installedapps?view=graph-rest-beta](https://learn.microsoft.com/graph/api/team-post-installedapps?view=graph-rest-beta)
 
 
 

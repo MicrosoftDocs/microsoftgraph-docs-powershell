@@ -8,11 +8,7 @@ schema: 2.0.0
 # Update-MgEducationUserRubric
 
 ## SYNOPSIS
-Update the properties of an educationRubric object.
-Only teachers can perform this operation.
-Updating a rubric attached to an assignment (PATCH /education/classes/{class-id}/assignments/{assignment-id}/rubric) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under /education/users/{id}/rubrics.
-After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.
-That rubric can be retrieved using GET /education/classes/{class-id}/assignments/{assignment-id}/rubric, but it cannot be updated.
+Update the navigation property rubrics in education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUserRubric?view=graph-powershell-beta)
@@ -54,13 +50,7 @@ Update-MgEducationUserRubric -InputObject <IEducationIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Update the properties of an educationRubric object.
-Only teachers can perform this operation.
-Updating a rubric attached to an assignment (PATCH /education/classes/{class-id}/assignments/{assignment-id}/rubric) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under /education/users/{id}/rubrics.
-After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.
-That rubric can be retrieved using GET /education/classes/{class-id}/assignments/{assignment-id}/rubric, but it cannot be updated.
-
-## EXAMPLES
+Update the navigation property rubrics in education
 
 ## PARAMETERS
 
@@ -370,8 +360,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
@@ -402,8 +393,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -433,8 +425,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -464,7 +457,7 @@ Weights must add up to 100.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserrubric)
 
-[https://learn.microsoft.com/graph/api/educationrubric-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationrubric-update?view=graph-rest-1.0)
+
 
 
 

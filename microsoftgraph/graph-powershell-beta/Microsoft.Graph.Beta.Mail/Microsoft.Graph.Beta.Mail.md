@@ -203,6 +203,9 @@ Locale: en-US
 ### [Remove-MgBetaUserMailFolderChildFolderMessageAttachment](Remove-MgBetaUserMailFolderChildFolderMessageAttachment.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserMailFolderChildFolderMessageContent](Remove-MgBetaUserMailFolderChildFolderMessageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserMailFolderChildFolderMessageExtension](Remove-MgBetaUserMailFolderChildFolderMessageExtension.md)
 {{ Fill in the Description }}
 
@@ -218,6 +221,9 @@ Locale: en-US
 ### [Remove-MgBetaUserMailFolderMessageAttachment](Remove-MgBetaUserMailFolderMessageAttachment.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserMailFolderMessageContent](Remove-MgBetaUserMailFolderMessageContent.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserMailFolderMessageExtension](Remove-MgBetaUserMailFolderMessageExtension.md)
 {{ Fill in the Description }}
 
@@ -231,6 +237,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserMessageAttachment](Remove-MgBetaUserMessageAttachment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserMessageContent](Remove-MgBetaUserMessageContent.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserMessageExtension](Remove-MgBetaUserMessageExtension.md)

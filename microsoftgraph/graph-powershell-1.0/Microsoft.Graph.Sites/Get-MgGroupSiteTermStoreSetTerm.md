@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteTermStoreSetTerm
 
 ## SYNOPSIS
-Read the properties and relationships of a term object.
+All the terms under the set.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetTerm?view=graph-powershell-beta)
@@ -60,9 +60,7 @@ Get-MgGroupSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a term object.
-
-## EXAMPLES
+All the terms under the set.
 
 ## PARAMETERS
 
@@ -411,6 +409,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -418,7 +417,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetterm)
 
-[https://learn.microsoft.com/graph/api/termstore-term-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-get?view=graph-rest-1.0)
+
+
 
 
 

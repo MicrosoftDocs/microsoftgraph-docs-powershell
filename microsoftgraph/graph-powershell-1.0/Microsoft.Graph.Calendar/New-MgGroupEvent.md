@@ -81,6 +81,7 @@ Use this API to create a new event.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Calendar
 
 $params = @{
@@ -103,7 +104,7 @@ $params = @{
 	attendees = @(
 		@{
 			emailAddress = @{
-				address = "adelev@contoso.onmicrosoft.com"
+				address = "adelev@contoso.com"
 				name = "Adele Vance"
 			}
 			type = "required"
@@ -112,10 +113,9 @@ $params = @{
 }
 
 New-MgGroupEvent -GroupId $groupId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgGroupEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

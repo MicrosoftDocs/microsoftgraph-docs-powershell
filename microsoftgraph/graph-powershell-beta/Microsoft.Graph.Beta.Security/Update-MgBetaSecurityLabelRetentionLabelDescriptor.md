@@ -423,7 +423,7 @@ Read-only.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
+    - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
 Read-only.
@@ -433,8 +433,8 @@ Read-only.
   - `[Citation <IMicrosoftGraphSecurityFilePlanCitation>]`: filePlanCitation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
-    - `[CitationJurisdiction <String>]`: 
-    - `[CitationUrl <String>]`: 
+    - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the filePlanCitation.
+    - `[CitationUrl <String>]`: Represents the URL to the published filePlanCitation.
   - `[CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>]`: citationTemplate
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -492,7 +492,7 @@ Read-only.
   - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
+  - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
 Read-only.
@@ -503,8 +503,8 @@ Read-only.
 CITATION `<IMicrosoftGraphSecurityFilePlanCitation>`: filePlanCitation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
-  - `[CitationJurisdiction <String>]`: 
-  - `[CitationUrl <String>]`: 
+  - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the filePlanCitation.
+  - `[CitationUrl <String>]`: Represents the URL to the published filePlanCitation.
 
 CITATIONTEMPLATE `<IMicrosoftGraphSecurityCitationTemplate>`: citationTemplate
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -578,6 +578,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -588,6 +589,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation

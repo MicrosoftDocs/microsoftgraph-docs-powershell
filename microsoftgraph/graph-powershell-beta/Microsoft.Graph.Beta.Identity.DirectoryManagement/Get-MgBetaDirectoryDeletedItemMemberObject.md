@@ -48,8 +48,6 @@ Get-MgBetaDirectoryDeletedItemMemberObject -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Invoke action getMemberObjects
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -278,6 +276,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydeleteditemmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydeleteditemmemberobject)
+
+
 
 
 

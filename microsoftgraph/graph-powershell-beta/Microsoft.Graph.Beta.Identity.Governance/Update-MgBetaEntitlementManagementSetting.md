@@ -37,6 +37,7 @@ Update an existing entitlementManagementSettings object to change one or more of
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
@@ -44,10 +45,9 @@ $params = @{
 }
 
 Update-MgBetaEntitlementManagementSetting -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaEntitlementManagementSetting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -232,7 +232,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsetting)
 
-[https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta)
 
 
 

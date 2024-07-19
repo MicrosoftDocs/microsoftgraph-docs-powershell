@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupSiteListItem
 
 ## SYNOPSIS
-Removes an item from a \[list\]\[\].
+Delete navigation property items for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListItem?view=graph-powershell-beta)
@@ -30,9 +30,7 @@ Remove-MgGroupSiteListItem -InputObject <ISitesIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Removes an item from a \[list\]\[\].
-
-## EXAMPLES
+Delete navigation property items for groups
 
 ## PARAMETERS
 
@@ -276,6 +274,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -283,7 +282,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitem)
 
-[https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-1.0)
+
 
 
 

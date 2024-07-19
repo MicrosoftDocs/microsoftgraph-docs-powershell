@@ -52,22 +52,27 @@ Translate identifiers of Outlook-related resources between formats.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-translateexchangeids-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaTranslateUserExchangeId Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
-	InputIds = @(
-		"{rest-formatted-id-1}"
-		"{rest-formatted-id-2}"
-	)
-	SourceIdType = "restId"
-	TargetIdType = "restImmutableEntryId"
+	inputIds = @(
+	'{rest-formatted-id-1}'
+'{rest-formatted-id-2}'
+)
+sourceIdType = "restId"
+targetIdType = "restImmutableEntryId"
 }
+
 # A UPN can also be used as -UserId.
 Invoke-MgBetaTranslateUserExchangeId -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaTranslateUserExchangeId Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -324,7 +329,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetatranslateuserexchangeid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetatranslateuserexchangeid)
 
-[https://learn.microsoft.com/graph/api/user-translateexchangeids?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-translateexchangeids?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-translateexchangeids?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-translateexchangeids?view=graph-rest-beta)
 
 
 

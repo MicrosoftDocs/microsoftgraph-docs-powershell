@@ -33,6 +33,19 @@ Initialize-MgBetaEducationClassAssignment -InputObject <IEducationIdentity> [-Re
 Activate an inactive educationAssignment to signal that the assignment has further action items for teachers or students.
 This action can only be performed by a teacher on currently inactive assignments.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Initialize-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+
+```
+This example shows how to use the Initialize-MgBetaEducationClassAssignment Cmdlet.
+
+
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -197,8 +210,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/initialize-mgbetaeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/initialize-mgbetaeducationclassassignment)
 
-[https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-beta)
 
 
 

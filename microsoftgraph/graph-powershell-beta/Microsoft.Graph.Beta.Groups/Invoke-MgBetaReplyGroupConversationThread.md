@@ -8,9 +8,8 @@ schema: 2.0.0
 # Invoke-MgBetaReplyGroupConversationThread
 
 ## SYNOPSIS
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReplyGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupConversationThread?view=graph-powershell-1.0)
@@ -50,98 +49,8 @@ Invoke-MgBetaReplyGroupConversationThread -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-
-## EXAMPLES
-### Example 1: Include a file attachment
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Groups
-
-$params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "Which quarter does that file cover? See my attachment."
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.fileAttachment"
-				Name = "Another file as attachment"
-				ContentBytes = "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
-			}
-		)
-	}
-}
-
-Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaReplyGroupConversationThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Include an item attachment
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Groups
-
-$params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "I attached an event."
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.itemAttachment"
-				Name = "Holiday event"
-				Item = @{
-					"@odata.type" = "microsoft.graph.event"
-					Subject = "Discuss gifts for children"
-				}
-			}
-		)
-	}
-}
-
-Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaReplyGroupConversationThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Include a reference attachment
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Groups
-
-$params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "I attached a reference to a file on OneDrive."
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.referenceAttachment"
-				Name = "Personal pictures"
-				SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
-				ProviderType = "oneDriveConsumer"
-				Permission = "Edit"
-				IsFolder = "True"
-			}
-		)
-	}
-}
-
-Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaReplyGroupConversationThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ## PARAMETERS
 
@@ -365,8 +274,11 @@ BODYPARAMETER `<IPathsQgkmepGroupsGroupIdConversationsConversationIdThreadsConve
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Post <IMicrosoftGraphPost>]`: post
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Categories <String- `[]`>]`: 
-    - `[ChangeKey <String>]`: 
+    - `[Categories <String- `[]`>]`: The categories associated with the item.
+    - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -499,8 +411,11 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 POST `<IMicrosoftGraphPost>`: post
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
+  - `[Categories <String- `[]`>]`: The categories associated with the item.
+  - `[ChangeKey <String>]`: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -587,7 +502,9 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread)
 
-[https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-beta](https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-beta)
+
+
 
 
 

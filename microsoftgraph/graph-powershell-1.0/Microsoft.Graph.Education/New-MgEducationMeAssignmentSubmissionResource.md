@@ -8,11 +8,7 @@ schema: 2.0.0
 # New-MgEducationMeAssignmentSubmissionResource
 
 ## SYNOPSIS
-Add an educationSubmissionResource to a submission resource list.
-Only teachers and students can perform this operation.
-The operation will not succeed if the allowStudentsToAddResources flag is not set to true.
-To create a new file-based resource, upload the file to the resources folder associated with the submission.
-If the file doesn't exist or is not in that folder, the POST request will fail.
+Create new navigation property to resources for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignmentSubmissionResource?view=graph-powershell-beta)
@@ -50,13 +46,7 @@ New-MgEducationMeAssignmentSubmissionResource -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Add an educationSubmissionResource to a submission resource list.
-Only teachers and students can perform this operation.
-The operation will not succeed if the allowStudentsToAddResources flag is not set to true.
-To create a new file-based resource, upload the file to the resources folder associated with the submission.
-If the file doesn't exist or is not in that folder, the POST request will fail.
-
-## EXAMPLES
+Create new navigation property to resources for education
 
 ## PARAMETERS
 
@@ -290,8 +280,9 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DisplayName <String>]`: Display name of resource.
@@ -320,8 +311,9 @@ RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DisplayName <String>]`: Display name of resource.
@@ -331,7 +323,7 @@ For example, if a user changes their display name, the API might show the new va
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmeassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmeassignmentsubmissionresource)
 
-[https://learn.microsoft.com/graph/api/educationsubmission-post-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-post-resources?view=graph-rest-1.0)
+
 
 
 

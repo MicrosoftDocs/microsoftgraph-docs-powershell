@@ -51,17 +51,22 @@ Reprovision a specific Cloud PC.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reprovision-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc Cmdlet
+### Example 1: Reprovision the cloudPC for the administrator
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
 $params = @{
-	UserAccountType = "administrator"
-	OsVersion = "windows10"
+	userAccountType = "administrator"
+	osVersion = "windows10"
 }
+
 Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
+
 ```
-This example shows how to use the Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will reprovision the cloudpc for the administrator
+
 
 ## PARAMETERS
 
@@ -307,6 +312,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
   - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+  - `[HardwareConfigurationId <String>]`: The unique identifier of hardwareConfiguration
   - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
@@ -329,7 +335,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareprovisiondevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareprovisiondevicemanagementvirtualendpointcloudpc)
 
-[https://learn.microsoft.com/graph/api/cloudpc-reprovision?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-reprovision?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpc-reprovision?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-reprovision?view=graph-rest-beta)
 
 
 

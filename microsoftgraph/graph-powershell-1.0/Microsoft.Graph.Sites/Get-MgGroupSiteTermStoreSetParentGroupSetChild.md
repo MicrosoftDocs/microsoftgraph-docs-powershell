@@ -113,8 +113,6 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChild -InputObject <ISitesIdentity> [-E
 ## DESCRIPTION
 Children terms of set in term \[store\].
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -492,6 +490,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -499,7 +498,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupsetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupsetchild)
 
-[https://learn.microsoft.com/graph/api/termstore-term-list-children?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-list-children?view=graph-rest-1.0)
+
+
 
 
 

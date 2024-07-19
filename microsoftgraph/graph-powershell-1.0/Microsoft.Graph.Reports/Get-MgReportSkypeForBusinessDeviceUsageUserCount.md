@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgReportSkypeForBusinessDeviceUsageUserCount
 
 ## SYNOPSIS
-Invoke function getSkypeForBusinessDeviceUsageUserCounts
+Get the usage trends on how many users in your organization have connected using the Skype for Business app.
+You'll also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessDeviceUsageUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessDeviceUsageUserCount?view=graph-powershell-beta)
@@ -30,7 +31,8 @@ Get-MgReportSkypeForBusinessDeviceUsageUserCount -InputObject <IReportsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke function getSkypeForBusinessDeviceUsageUserCounts
+Get the usage trends on how many users in your organization have connected using the Skype for Business app.
+You'll also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization.
 
 ## PARAMETERS
 
@@ -183,6 +185,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessdeviceusageusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessdeviceusageusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-1.0)
 
 
 

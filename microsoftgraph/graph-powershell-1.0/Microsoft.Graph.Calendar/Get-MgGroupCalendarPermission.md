@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupCalendarPermission
 
 ## SYNOPSIS
-Get the specified permissions object of a user or group calendar that has been shared.
+The permissions of the users with whom the calendar is shared.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarPermission?view=graph-powershell-beta)
@@ -17,29 +17,28 @@ Get the specified permissions object of a user or group calendar that has been s
 
 ### List (Default)
 ```
-Get-MgGroupCalendarPermission -GroupId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgGroupCalendarPermission -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgGroupCalendarPermission -CalendarPermissionId <String> -GroupId <String> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgGroupCalendarPermission -CalendarPermissionId <String> -GroupId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupCalendarPermission -InputObject <ICalendarIdentity> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgGroupCalendarPermission -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the specified permissions object of a user or group calendar that has been shared.
-
-## EXAMPLES
+The permissions of the users with whom the calendar is shared.
 
 ## PARAMETERS
 
@@ -81,6 +80,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -210,6 +224,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -288,9 +317,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarpermission)
 
-[https://learn.microsoft.com/graph/api/calendarpermission-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendarpermission-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/calendar-list-calendarpermissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-list-calendarpermissions?view=graph-rest-1.0)
+
 
 
 

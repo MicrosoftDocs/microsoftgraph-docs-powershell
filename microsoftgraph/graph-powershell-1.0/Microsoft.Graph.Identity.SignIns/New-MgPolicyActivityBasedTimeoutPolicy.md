@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPolicyActivityBasedTimeoutPolicy
 
 ## SYNOPSIS
-Create a new activityBasedTimeoutPolicy object.
+Create new navigation property to activityBasedTimeoutPolicies for policies
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyActivityBasedTimeoutPolicy?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ New-MgPolicyActivityBasedTimeoutPolicy -BodyParameter <Hashtable> [-ResponseHead
 ```
 
 ## DESCRIPTION
-Create a new activityBasedTimeoutPolicy object.
+Create new navigation property to activityBasedTimeoutPolicies for policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -300,8 +300,6 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyactivitybasedtimeoutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyactivitybasedtimeoutpolicy)
-
-[https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies?view=graph-rest-1.0)
 
 
 

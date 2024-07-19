@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The user (or application) that created the group.
-NOTE: This is not set if the user is an administrator.
+NOTE: This property isn't set if the user is an administrator.
 Read-only.
 
 > [!NOTE]
@@ -33,7 +33,7 @@ Get-MgGroupCreatedOnBehalfOf -InputObject <IGroupsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 The user (or application) that created the group.
-NOTE: This is not set if the user is an administrator.
+NOTE: This property isn't set if the user is an administrator.
 Read-only.
 
 ## PARAMETERS
@@ -206,6 +206,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcreatedonbehalfof](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcreatedonbehalfof)
+
 
 
 

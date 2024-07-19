@@ -350,7 +350,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalholdusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalholdusersource)
 
-[https://learn.microsoft.com/graph/api/ediscovery-legalhold-list-usersources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-legalhold-list-usersources?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/ediscovery-legalhold-list-usersources?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-legalhold-list-usersources?view=graph-rest-beta)
 
 
 

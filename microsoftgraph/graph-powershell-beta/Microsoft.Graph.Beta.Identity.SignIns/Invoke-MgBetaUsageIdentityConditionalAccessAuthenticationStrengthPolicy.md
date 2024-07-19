@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy
 
 ## SYNOPSIS
-Invoke function usage
+The usage function allows the caller to see which Conditional Access policies reference a specified authentication strength policy.
+The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim.
+Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy?view=graph-powershell-1.0)
@@ -44,7 +46,9 @@ Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy -InputOb
 ```
 
 ## DESCRIPTION
-Invoke function usage
+The usage function allows the caller to see which Conditional Access policies reference a specified authentication strength policy.
+The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim.
+Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 
 ## PARAMETERS
 
@@ -191,6 +195,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -210,6 +215,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -222,6 +228,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetausageidentityconditionalaccessauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetausageidentityconditionalaccessauthenticationstrengthpolicy)
+
+[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-usage?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-usage?view=graph-rest-beta)
+
 
 
 

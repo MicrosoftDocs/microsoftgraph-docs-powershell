@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgAppCatalogTeamAppDefinitionBot
 
 ## SYNOPSIS
-Get the bot associated with a specific definition of the  TeamsApp.
+The details of the bot specified in the Teams app manifest.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get the bot associated with a specific definition of the  TeamsApp.
+The details of the bot specified in the Teams app manifest.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -222,8 +222,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamappdefinitionbot](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamappdefinitionbot)
-
-[https://learn.microsoft.com/graph/api/teamworkbot-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworkbot-get?view=graph-rest-1.0)
 
 
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property templates for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyCrossTenantAccessPolicyTemplate](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyTemplate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

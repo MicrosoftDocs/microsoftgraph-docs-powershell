@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaTeamPrimaryChannelMember
 
 ## SYNOPSIS
-Add a conversationMember to a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
+Create new navigation property to members for teams
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelMember?view=graph-powershell-1.0)
@@ -47,10 +46,7 @@ New-MgBetaTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Add a conversationMember to a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
-
-## EXAMPLES
+Create new navigation property to members for teams
 
 ## PARAMETERS
 
@@ -335,7 +331,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelmember)
 
-[https://learn.microsoft.com/graph/api/channel-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post-members?view=graph-rest-1.0)
+
 
 
 

@@ -273,7 +273,7 @@ False blocks the installation of any Teams app that requires resource-specific p
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting)
 
-[https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-beta)
 
 
 

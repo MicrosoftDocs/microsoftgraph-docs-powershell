@@ -21,9 +21,9 @@ Nullable.
 ### List (Default)
 ```
 Get-MgUserEventInstanceAttachment -EventId <String> -EventId1 <String> -UserId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
@@ -245,6 +245,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -338,7 +353,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventinstanceattachment)
 
-[https://learn.microsoft.com/graph/api/event-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-list-attachments?view=graph-rest-1.0)
+
 
 
 

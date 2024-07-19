@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgEducationUserAssignmentSubmissionOutcome
 
 ## SYNOPSIS
-Create a new feedback resource for a submission.
-Only a teacher can perform this operation.
-To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
-If the file doesn't exist or isn't in that folder, the POST request will fail.
+Create new navigation property to outcomes for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentSubmissionOutcome?view=graph-powershell-beta)
@@ -49,12 +46,7 @@ New-MgEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create a new feedback resource for a submission.
-Only a teacher can perform this operation.
-To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
-If the file doesn't exist or isn't in that folder, the POST request will fail.
-
-## EXAMPLES
+Create new navigation property to outcomes for education
 
 ## PARAMETERS
 
@@ -302,8 +294,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: The moment in time when the resource was last modified.
@@ -331,8 +324,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
-For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -340,7 +334,7 @@ For example, if a user changes their display name, the API might show the new va
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentsubmissionoutcome)
 
-[https://learn.microsoft.com/graph/api/educationfeedbackresourceoutcome-post-outcomes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationfeedbackresourceoutcome-post-outcomes?view=graph-rest-1.0)
+
 
 
 

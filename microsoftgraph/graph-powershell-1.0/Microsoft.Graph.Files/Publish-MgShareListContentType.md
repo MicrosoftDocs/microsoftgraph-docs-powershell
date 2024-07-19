@@ -8,7 +8,7 @@ schema: 2.0.0
 # Publish-MgShareListContentType
 
 ## SYNOPSIS
-Publishes a \[contentType\]\[\] present in the content type hub site.
+Publishes a contentType present in the content type hub site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Publish-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Publish-MgBetaShareListContentType?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Publish-MgShareListContentType -InputObject <IFilesIdentity> [-ResponseHeadersVa
 ```
 
 ## DESCRIPTION
-Publishes a \[contentType\]\[\] present in the content type hub site.
+Publishes a contentType present in the content type hub site.
 
 ## PARAMETERS
 
@@ -218,6 +218,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgsharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgsharelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
+
 
 
 

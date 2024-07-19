@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDeviceMemberOfAsGroup
 
 ## SYNOPSIS
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups and administrative units that this device is a direct member of.
+This operation is not transitive.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceMemberOfAsGroup?view=graph-powershell-beta)
@@ -38,7 +39,8 @@ Get-MgDeviceMemberOfAsGroup -InputObject <IIdentityDirectoryManagementIdentity> 
 ```
 
 ## DESCRIPTION
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups and administrative units that this device is a direct member of.
+This operation is not transitive.
 
 ## PARAMETERS
 
@@ -320,6 +322,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -345,6 +349,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicememberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicememberofasgroup)
+
+[https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-1.0)
 
 
 

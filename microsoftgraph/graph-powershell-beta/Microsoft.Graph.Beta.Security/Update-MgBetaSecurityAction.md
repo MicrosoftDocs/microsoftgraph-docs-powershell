@@ -51,8 +51,6 @@ Update-MgBetaSecurityAction -InputObject <ISecurityIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property securityActions in security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ActionReason
@@ -134,7 +132,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientContext
-.
+Unique client context string.
+Can have a maximum of 256 characters.
 
 ```yaml
 Type: String
@@ -459,7 +458,8 @@ Read-only.
 The appId should be extracted from the auth token and not entered manually by the calling application.
   - `[AzureTenantId <String>]`: Azure tenant ID of the entity to determine which tenant the entity belongs to (multi-tenancy support).
 The azureTenantId should be extracted from the auth token and not entered manually by the calling application.
-  - `[ClientContext <String>]`: 
+  - `[ClientContext <String>]`: Unique client context string.
+Can have a maximum of 256 characters.
   - `[CompletedDateTime <DateTime?>]`: Timestamp when the action was completed.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -558,6 +558,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
   - `[LandingPageId <String>]`: The unique identifier of landingPage
   - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PartnerSecurityAlertId <String>]`: The unique identifier of partnerSecurityAlert
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -568,6 +569,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
@@ -617,6 +619,8 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityaction)
+
+
 
 
 

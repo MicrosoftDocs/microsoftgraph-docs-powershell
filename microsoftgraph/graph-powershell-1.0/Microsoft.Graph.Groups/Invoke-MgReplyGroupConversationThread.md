@@ -8,8 +8,9 @@ schema: 2.0.0
 # Invoke-MgReplyGroupConversationThread
 
 ## SYNOPSIS
-Reply to a post and add a new post to the specified thread in a group conversation.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+The table in the Permissions section lists the resources that support open extensions.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReplyGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupConversationThread?view=graph-powershell-beta)
@@ -48,97 +49,9 @@ Invoke-MgReplyGroupConversationThread -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Reply to a post and add a new post to the specified thread in a group conversation.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
-
-## EXAMPLES
-### Example 1: Include a file attachment
-
-```powershell
-Import-Module Microsoft.Graph.Groups
-
-$params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "Which quarter does that file cover? See my attachment."
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.fileAttachment"
-				Name = "Another file as attachment"
-				ContentBytes = "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
-			}
-		)
-	}
-}
-
-Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgReplyGroupConversationThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Include an item attachment
-
-```powershell
-Import-Module Microsoft.Graph.Groups
-
-$params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "I attached an event."
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.itemAttachment"
-				Name = "Holiday event"
-				Item = @{
-					"@odata.type" = "microsoft.graph.event"
-					Subject = "Discuss gifts for children"
-				}
-			}
-		)
-	}
-}
-
-Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgReplyGroupConversationThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Include a reference attachment
-
-```powershell
-Import-Module Microsoft.Graph.Groups
-
-$params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "I attached a reference to a file on OneDrive."
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.referenceAttachment"
-				Name = "Personal pictures"
-				SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
-				ProviderType = "oneDriveConsumer"
-				Permission = "Edit"
-				IsFolder = "True"
-			}
-		)
-	}
-}
-
-Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgReplyGroupConversationThread Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+The table in the Permissions section lists the resources that support open extensions.
 
 ## PARAMETERS
 
@@ -537,7 +450,8 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthread)
 
-[https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
+
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgReportSkypeForBusinessParticipantActivityCount
 
 ## SYNOPSIS
-Invoke function getSkypeForBusinessParticipantActivityCounts
+Get usage trends on the number and type of conference sessions that users from your organization participated in.
+Types of conference sessions include IM, audio/video, application sharing, web, and dial-in/out - third party.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessParticipantActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessParticipantActivityCount?view=graph-powershell-beta)
@@ -30,7 +31,8 @@ Get-MgReportSkypeForBusinessParticipantActivityCount -InputObject <IReportsIdent
 ```
 
 ## DESCRIPTION
-Invoke function getSkypeForBusinessParticipantActivityCounts
+Get usage trends on the number and type of conference sessions that users from your organization participated in.
+Types of conference sessions include IM, audio/video, application sharing, web, and dial-in/out - third party.
 
 ## PARAMETERS
 
@@ -183,6 +185,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessparticipantactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessparticipantactivitycount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-1.0)
 
 
 

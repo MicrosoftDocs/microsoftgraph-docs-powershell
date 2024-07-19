@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileWebAccount
 
 ## SYNOPSIS
-Create a new webAccount object in a user's profile.
+Create new navigation property to webAccounts for users
 
 ## SYNTAX
 
@@ -19,9 +19,9 @@ New-MgBetaUserProfileWebAccount -UserId <String> [-ResponseHeadersVariable <Stri
  [-CreatedDateTime <DateTime>] [-Description <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Service <IMicrosoftGraphServiceInformation>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-StatusMessage <String>] [-ThumbnailUrl <String>]
- [-UserId1 <String>] [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>]
+ [-StatusMessage <String>] [-ThumbnailUrl <String>] [-UserId1 <String>] [-WebUrl <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -31,9 +31,9 @@ New-MgBetaUserProfileWebAccount [-UserId <String>] -InputObject <IPeopleIdentity
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Service <IMicrosoftGraphServiceInformation>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-StatusMessage <String>] [-ThumbnailUrl <String>]
- [-WebUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Sources <IMicrosoftGraphProfileSourceAnnotation[]>]
+ [-StatusMessage <String>] [-ThumbnailUrl <String>] [-WebUrl <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -51,7 +51,7 @@ New-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Create a new webAccount object in a user's profile.
+Create new navigation property to webAccounts for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -341,6 +341,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Sources
+Where the values within an entity originated if synced from another source.
+To construct, see NOTES section for SOURCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphProfileSourceAnnotation[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StatusMessage
 Contains a status message from the cloud service if provided or synchronized.
 
@@ -500,6 +516,10 @@ This property is read-only.
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String- `[]`>]`: 
+  - `[Sources <IMicrosoftGraphProfileSourceAnnotation- `[]`>]`: Where the values within an entity originated if synced from another source.
+    - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+    - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+    - `[SourceId <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Description <String>]`: Contains the description the user has provided for the account on the service being referenced.
@@ -570,13 +590,16 @@ SERVICE `<IMicrosoftGraphServiceInformation>`: serviceInformation
 
 SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String- `[]`>]`:
+  - `[Type <String- `[]`>]`: 
+
+SOURCES <IMicrosoftGraphProfileSourceAnnotation- `[]`>: Where the values within an entity originated if synced from another source.
+  - `[IsDefaultSource <Boolean?>]`: Indicates whether the source is the default one.
+  - `[Properties <String- `[]`>]`: Names of properties that have data from this source.
+  - `[SourceId <String>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilewebaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilewebaccount)
-
-[https://learn.microsoft.com/graph/api/profile-post-webaccounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-webaccounts?view=graph-rest-1.0)
 
 
 

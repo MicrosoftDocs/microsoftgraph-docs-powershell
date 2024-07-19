@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule
 
 ## SYNOPSIS
-Read the properties and relationships of an unifiedRoleEligibilitySchedule object.
+Get roleEligibilitySchedules from roleManagement
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule -InputObject <IIden
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an unifiedRoleEligibilitySchedule object.
+Get roleEligibilitySchedules from roleManagement
 
 ## PARAMETERS
 
@@ -402,10 +402,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleeligibilityschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleeligibilityschedule)
-
-[https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedule-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-list-roleeligibilityschedules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleeligibilityschedules?view=graph-rest-1.0)
 
 
 

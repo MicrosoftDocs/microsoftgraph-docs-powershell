@@ -50,13 +50,13 @@ Delete calendarPermission.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Remove-MgBetaUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
+
 ```
 This example shows how to use the Remove-MgBetaUserCalendarPermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -263,7 +263,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausercalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausercalendarpermission)
 
-[https://learn.microsoft.com/graph/api/calendarpermission-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendarpermission-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/calendarpermission-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/calendarpermission-delete?view=graph-rest-beta)
 
 
 

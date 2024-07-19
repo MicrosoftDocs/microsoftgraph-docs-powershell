@@ -32,8 +32,6 @@ Disable-MgBetaDeviceManagementManagedDeviceLostMode -InputObject <IDeviceManagem
 ## DESCRIPTION
 Disable lost mode
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers
@@ -211,6 +209,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
   - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+  - `[HardwareConfigurationId <String>]`: The unique identifier of hardwareConfiguration
   - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
@@ -232,6 +231,8 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/disable-mgbetadevicemanagementmanageddevicelostmode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/disable-mgbetadevicemanagementmanageddevicelostmode)
+
+
 
 
 

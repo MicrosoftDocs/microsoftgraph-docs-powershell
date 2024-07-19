@@ -421,9 +421,11 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessage)
 
-[https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/channel-list-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-list-messages?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/channel-list-messages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-list-messages?view=graph-rest-beta)
 
 
 

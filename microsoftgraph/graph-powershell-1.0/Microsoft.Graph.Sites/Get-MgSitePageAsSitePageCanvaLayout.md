@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSitePageAsSitePageCanvaLayout
 
 ## SYNOPSIS
-Get canvasLayout from sites
+Indicates the layout of the content in a given SharePoint page, including horizontal sections and vertical sections.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageAsSitePageCanvaLayout?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Get canvasLayout from sites
+Indicates the layout of the content in a given SharePoint page, including horizontal sections and vertical sections.
 
 ## PARAMETERS
 
@@ -213,6 +213,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

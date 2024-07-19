@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDirectoryDeletedItemAsGroup
 
 ## SYNOPSIS
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Retrieve a list of recently deleted directory objects.
+Currently, deleted items functionality is only supported for the application, servicePrincipal, group, administrative unit, and user resources.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItemAsGroup?view=graph-powershell-beta)
@@ -38,7 +39,8 @@ Get-MgDirectoryDeletedItemAsGroup -InputObject <IIdentityDirectoryManagementIden
 ```
 
 ## DESCRIPTION
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Retrieve a list of recently deleted directory objects.
+Currently, deleted items functionality is only supported for the application, servicePrincipal, group, administrative unit, and user resources.
 
 ## PARAMETERS
 
@@ -289,6 +291,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -314,6 +318,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemasgroup)
+
+[https://learn.microsoft.com/graph/api/directory-deleteditems-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-deleteditems-list?view=graph-rest-1.0)
 
 
 

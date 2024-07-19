@@ -19,16 +19,16 @@ Read-only.
 
 ### Get (Default)
 ```
-Get-MgUserEventInstanceCalendar -EventId <String> -EventId1 <String> -UserId <String> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgUserEventInstanceCalendar -EventId <String> -EventId1 <String> -UserId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserEventInstanceCalendar -InputObject <ICalendarIdentity> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgUserEventInstanceCalendar -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -62,6 +62,21 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -191,6 +206,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventinstancecalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventinstancecalendar)
+
 
 
 

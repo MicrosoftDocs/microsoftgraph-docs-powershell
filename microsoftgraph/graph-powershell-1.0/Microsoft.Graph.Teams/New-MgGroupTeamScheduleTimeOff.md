@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupTeamScheduleTimeOff
 
 ## SYNOPSIS
-Create a new timeOff instance in a schedule.
+Create new navigation property to timesOff for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleTimeOff?view=graph-powershell-beta)
@@ -48,9 +48,7 @@ New-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Create a new timeOff instance in a schedule.
-
-## EXAMPLES
+Create new navigation property to timesOff for groups
 
 ## PARAMETERS
 
@@ -380,7 +378,7 @@ Required.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduletimeoff)
 
-[https://learn.microsoft.com/graph/api/schedule-post-timesoff?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-post-timesoff?view=graph-rest-1.0)
+
 
 
 

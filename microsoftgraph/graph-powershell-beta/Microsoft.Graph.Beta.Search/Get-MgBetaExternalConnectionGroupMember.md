@@ -42,8 +42,6 @@ Get-MgBetaExternalConnectionGroupMember -InputObject <ISearchIdentity> [-ExpandP
 A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or other externalGroups as members.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -334,6 +332,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -343,6 +343,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectiongroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectiongroupmember)
+
+
+
+
 
 
 

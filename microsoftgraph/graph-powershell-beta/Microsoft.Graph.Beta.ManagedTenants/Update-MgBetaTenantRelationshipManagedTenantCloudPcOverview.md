@@ -15,8 +15,8 @@ Update the navigation property cloudPcsOverview in tenantRelationships
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantCloudPcOverview -CloudPcOverviewTenantId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastRefreshedDateTime <DateTime>] [-NumberOfCloudPcConnectionStatusFailed <Int32>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-FrontlineLicensesCount <Int32>]
+ [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-NumberOfCloudPcConnectionStatusFailed <Int32>]
  [-NumberOfCloudPcConnectionStatusPassed <Int32>] [-NumberOfCloudPcConnectionStatusPending <Int32>]
  [-NumberOfCloudPcConnectionStatusRunning <Int32>] [-NumberOfCloudPcConnectionStatusUnkownFutureValue <Int32>]
  [-NumberOfCloudPcStatusDeprovisioning <Int32>] [-NumberOfCloudPcStatusFailed <Int32>]
@@ -38,8 +38,8 @@ Update-MgBetaTenantRelationshipManagedTenantCloudPcOverview -CloudPcOverviewTena
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTenantRelationshipManagedTenantCloudPcOverview -InputObject <IManagedTenantsIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastRefreshedDateTime <DateTime>] [-NumberOfCloudPcConnectionStatusFailed <Int32>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-FrontlineLicensesCount <Int32>]
+ [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-NumberOfCloudPcConnectionStatusFailed <Int32>]
  [-NumberOfCloudPcConnectionStatusPassed <Int32>] [-NumberOfCloudPcConnectionStatusPending <Int32>]
  [-NumberOfCloudPcConnectionStatusRunning <Int32>] [-NumberOfCloudPcConnectionStatusUnkownFutureValue <Int32>]
  [-NumberOfCloudPcStatusDeprovisioning <Int32>] [-NumberOfCloudPcStatusFailed <Int32>]
@@ -105,6 +105,23 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FrontlineLicensesCount
+The total number of cloud PC devices that have the Frontline SKU.
+Optional.
+Read-only.
+
+```yaml
+Type: Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -576,6 +593,9 @@ BODYPARAMETER `<IMicrosoftGraphManagedTenantsCloudPcOverview>`: cloudPcOverview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[FrontlineLicensesCount <Int32?>]`: The total number of cloud PC devices that have the Frontline SKU.
+Optional.
+Read-only.
   - `[LastRefreshedDateTime <DateTime?>]`: Date and time the entity was last updated in the multi-tenant management platform.
 Optional.
 Read-only.
@@ -678,6 +698,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcloudpcoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcloudpcoverview)
+
 
 
 

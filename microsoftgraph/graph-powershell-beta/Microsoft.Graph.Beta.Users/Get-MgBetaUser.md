@@ -456,9 +456,9 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauser)
 
-[https://learn.microsoft.com/graph/api/user-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/user-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-list?view=graph-rest-beta)
 
 
 

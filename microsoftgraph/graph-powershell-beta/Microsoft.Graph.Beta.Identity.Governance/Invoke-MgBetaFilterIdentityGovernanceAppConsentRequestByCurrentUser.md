@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Retrieve a collection of appConsentRequest objects for which the current user is the reviewer and the status of the userConsentRequest for accessing the specified app is InProgress.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFilterIdentityGovernanceAppConsentRequestByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterIdentityGovernanceAppConsentRequestByCurrentUser?view=graph-powershell-1.0)
@@ -32,7 +32,20 @@ Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestByCurrentUser -InputObject
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Retrieve a collection of appConsentRequest objects for which the current user is the reviewer and the status of the userConsentRequest for accessing the specified app is InProgress.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestByCurrentUser -Filter "userConsentRequests/any(u:u/status eq 'InProgress')"  -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 
@@ -353,6 +366,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceappconsentrequestbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceappconsentrequestbycurrentuser)
 
+[https://learn.microsoft.com/graph/api/appconsentrequest-filterByCurrentUser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/appconsentrequest-filterByCurrentUser?view=graph-rest-beta)
 
 
 

@@ -32,6 +32,30 @@ Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDe
 ## DESCRIPTION
 Delete a browserSharedCookie from a browserSiteList.
 
+## EXAMPLES
+### Example 1: Delete a shared cookie that was not previously published
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BrowserSharedCookieId $browserSharedCookieId
+
+```
+This example will delete a shared cookie that was not previously published
+
+### Example 2: Delete a shared cookie that was previously published
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BrowserSharedCookieId $browserSharedCookieId
+
+```
+This example will delete a shared cookie that was previously published
+
+
 ## PARAMETERS
 
 ### -BrowserSharedCookieId
@@ -349,8 +373,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
 
-[https://learn.microsoft.com/graph/api/browsersitelist-delete-sharedcookies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-delete-sharedcookies?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/browsersitelist-delete-sharedcookies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/browsersitelist-delete-sharedcookies?view=graph-rest-beta)
 
 
 

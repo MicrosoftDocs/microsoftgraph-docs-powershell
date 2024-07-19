@@ -8,11 +8,10 @@ schema: 2.0.0
 # Get-MgDeviceRegisteredOwner
 
 ## SYNOPSIS
-The user that cloud joined the device or registered their personal device.
+Retrieve a list of users that are registered owners of the device.
+A registered owner is the user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
+Currently, there can be only one owner.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredOwner](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwner?view=graph-powershell-beta)
@@ -27,11 +26,10 @@ Get-MgDeviceRegisteredOwner -DeviceId <String> [-ExpandProperty <String[]>] [-Fi
 ```
 
 ## DESCRIPTION
-The user that cloud joined the device or registered their personal device.
+Retrieve a list of users that are registered owners of the device.
+A registered owner is the user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
+Currently, there can be only one owner.
 
 ## EXAMPLES
 ### Example 1: Code snippet

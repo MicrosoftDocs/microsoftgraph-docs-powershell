@@ -30,8 +30,6 @@ Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemCategory -InputObj
 ## DESCRIPTION
 Get itemCategory from financials
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -227,6 +225,8 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalecreditmemosalecreditmemolineitemcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalecreditmemosalecreditmemolineitemcategory)
+
+
 
 
 

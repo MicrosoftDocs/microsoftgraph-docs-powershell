@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeIdentityUserFlowAttributeByRef
 
 ## SYNOPSIS
-Delete ref of navigation property attributes for identity
+Remove an attribute from an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
+You can add both custom and built-in attributes to a user flow.
+After this step, PATCH the user flow to remove the attribute from the attribute collection step.
 
 ## SYNTAX
 
@@ -29,7 +31,9 @@ Remove-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExtern
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property attributes for identity
+Remove an attribute from an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
+You can add both custom and built-in attributes to a user flow.
+After this step, PATCH the user flow to remove the attribute from the attribute collection step.
 
 ## PARAMETERS
 
@@ -252,6 +256,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -271,6 +276,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -283,6 +289,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributeidentityuserflowattributebyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributeidentityuserflowattributebyref)
+
+[https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-delete-attributes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-delete-attributes?view=graph-rest-beta)
+
 
 
 

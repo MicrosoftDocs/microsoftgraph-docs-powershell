@@ -37,8 +37,6 @@ Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting
 Create an onlineMeeting object with a custom specified external ID.
 If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -273,17 +271,16 @@ BODYPARAMETER `<IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorg
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[Role <String>]`: onlineMeetingRole
       - `[Upn <String>]`: User principal name of the participant.
-    - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+    - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
     - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-    - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+    - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
   - `[StartDateTime <DateTime?>]`: 
   - `[Subject <String>]`: 
 
@@ -301,23 +298,24 @@ PARTICIPANTS `<IMicrosoftGraphMeetingParticipants>`: meetingParticipants
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Role <String>]`: onlineMeetingRole
     - `[Upn <String>]`: User principal name of the participant.
-  - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: 
+  - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
   - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-  - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`:
+  - `[Producers <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetacreateorgetcommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetacreateorgetcommunicationonlinemeeting)
 
-[https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-beta)
+
+
 
 
 

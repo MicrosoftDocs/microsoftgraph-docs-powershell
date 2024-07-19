@@ -52,8 +52,6 @@ New-MgBetaEducationClassAssignmentSubmissionSubmittedResource -InputObject <IEdu
 ## DESCRIPTION
 Create new navigation property to submittedResources for education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -386,6 +384,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsubmissionsubmittedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsubmissionsubmittedresource)
+
+
 
 
 

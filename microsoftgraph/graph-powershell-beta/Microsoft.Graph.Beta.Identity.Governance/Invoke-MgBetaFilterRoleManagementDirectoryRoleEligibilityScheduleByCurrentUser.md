@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Get a list of the unifiedRoleEligibilitySchedule objects and their properties associated with a particular principal object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser?view=graph-powershell-1.0)
@@ -33,7 +33,20 @@ Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Get a list of the unifiedRoleEligibilitySchedule objects and their properties associated with a particular principal object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 
@@ -354,6 +367,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagementdirectoryroleeligibilityschedulebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagementdirectoryroleeligibilityschedulebycurrentuser)
 
+[https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedule-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedule-filterbycurrentuser?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgChatMember
 
 ## SYNOPSIS
-Retrieve a conversationMember from a chat or channel.
+A collection of all the members in the chat.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMember?view=graph-powershell-beta)
@@ -38,7 +39,8 @@ Get-MgChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Retrieve a conversationMember from a chat or channel.
+A collection of all the members in the chat.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -351,10 +353,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmember)
-
-[https://learn.microsoft.com/graph/api/conversationmember-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/conversationmember-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-list?view=graph-rest-1.0)
 
 
 

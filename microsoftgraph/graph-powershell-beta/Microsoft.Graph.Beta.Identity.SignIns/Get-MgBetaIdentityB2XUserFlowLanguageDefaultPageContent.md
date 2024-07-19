@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent
 
 ## SYNOPSIS
-Get media content for the navigation property defaultPages from identity
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-1.0)
@@ -31,9 +32,8 @@ Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent -InputObject <IIdentityS
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property defaultPages from identity
-
-## EXAMPLES
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 
@@ -240,6 +240,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PermissionGrantPreApprovalPolicyId <String>]`: The unique identifier of permissionGrantPreApprovalPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
@@ -259,6 +260,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkKeyV2Kid <String>]`: The unique identifier of trustFrameworkKey_v2
   - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
@@ -272,7 +274,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowlanguagedefaultpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowlanguagedefaultpagecontent)
 
-[https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-list-defaultpages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-list-defaultpages?view=graph-rest-1.0)
+
 
 
 
