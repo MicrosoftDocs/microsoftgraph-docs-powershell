@@ -48,18 +48,6 @@ Update-MgSecurityLabelAuthority -InputObject <ISecurityIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property authorities in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -356,6 +344,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelauthority)
+
 
 
 

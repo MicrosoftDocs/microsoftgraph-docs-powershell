@@ -29,18 +29,6 @@ Invoke-MgBetaDownloadDeviceManagementManagedDeviceLogCollectionRequestDeviceLog
 ## DESCRIPTION
 Invoke action downloadDeviceLogs
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceLogCollectionResponseId
@@ -240,6 +228,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadownloaddevicemanagementmanageddevicelogcollectionrequestdevicelog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadownloaddevicemanagementmanageddevicelogcollectionrequestdevicelog)
+
 
 
 
