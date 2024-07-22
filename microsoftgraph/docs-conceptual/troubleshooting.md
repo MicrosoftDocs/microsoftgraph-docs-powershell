@@ -3,7 +3,7 @@ title: "Error handling and troubleshooting cmdlets"
 description: "Learn how to diagnose common errors in Microsoft Graph PowerShell"
 
 ms.topic: troubleshooting
-ms.date: 08/08/2023
+ms.date: 07/12/2024
 ms.author: eunicewaweru
 manager: CelesteDG
 author: msewaweru
@@ -36,7 +36,7 @@ To find the permissions required for a specific cmdlet or API, use [Find-MgGraph
 
 When you run **Connect-MgGraph**, you grant consent to Microsoft Graph PowerShell permissions. Here, you specify the permissions that you require using the **-Scopes** parameter.
 
-For example, in the error below, the user lacks the permissions to run the New-MgServicePrincipal cmdlet.
+For example, in the following error, the user lacks the permissions to run the New-MgServicePrincipal cmdlet.
 
 :::image type="content" source="images/permissions-error.png" alt-text="Insufficient privileges error":::
 
@@ -54,7 +54,7 @@ Application.ReadWrite.All True    Read and write applications Allows the app to 
 
 Run `Connect-MgGraph -Scopes Application.ReadWrite.All` and retry to correct the error.
 
-For app-only access, pre-configure the application permissions your app needs when you register your app. Application permissions will require administrator consent, which can be consented to either using the [Azure portal](/graph/auth-v2-service) or using a sign-up experience in your app.
+For app-only access, preconfigure the application permissions your app needs when you register your app. Application permissions require administrator consent, which you consent to either using the [Azure portal](/graph/auth-v2-service) or using a sign-up experience in your app.
 
 Alternatively, use [New-MgServicePrincipalAppRoleAssignment](/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment) to assign app roles to your app.
 
@@ -64,18 +64,18 @@ For more info, see [App-only authentication](app-only.md).
 
 The **-Debug** parameter provides a powerful way to examine a script while it's running in order to identify and correct errors in the script. The following are the important parts of a **-Debug** output:
 
-1. **cmdletBeginProcessing** - this part allows you to confirm the cmdlet you're running and the parameter list provided to the cmdlet. For example, `DEBUG: [CmdletBeginProcessing]: - Get-MgUser begin processing with parameterSet 'List1'.` shows that we're running the `Get-MgUser` cmdlet and the parameter list is `List1`.
-1. **AuthType** - will either be `delegated` or `application`.
-1. **AuthProviderType** - the type of authentication that you've used. For example, interactive, device-code, and certificate.
-1. **Scopes** - shows all the scopes that you've authenticated to for the particular application, acquired by decoding the access token.
+1. **cmdletBeginProcessing** - this part allows you to confirm the cmdlet you're running and the parameter list provided to the cmdlet. For example, `DEBUG: [CmdletBeginProcessing]: - Get-MgUser begin processing with parameterSet 'List1'.` shows that you're running the `Get-MgUser` cmdlet and the parameter list is `List1`.
+1. **AuthType** - is either `delegated` or `application`.
+1. **AuthProviderType** - the type of authentication that you're using. For example, interactive, device-code, and certificate.
+1. **Scopes** - shows all the scopes that you authenticated to for the particular application, acquired by decoding the access token.
 1. **HTTP request** - comprises of:
     1. Method - could be GET, POST, PUSH, UPDATE
-    1. URI - URI will change based on the cloud you're connected to and the version of the SDK you're connected to.
+    1. URI - URI changes based on the cloud you connected to and the version of the SDK you're running.
     1. Body - shows the body of your request.
-1. **HTTP response** - will comprise of the following information:
+1. **HTTP response** - comprises of the following information:
     1. Status code - this part provides the error code returned.
-        1. When it shows `OK`, it means that the command run successfully.
-        1. When it shows `Bad request`, take the URI and call it via `Invoke-MgGraphRequest` to determine if it's a service or a client issue.
+        1. `OK`: the command run successfully.
+        1. `Bad request`: take the URI and call it via `Invoke-MgGraphRequest` to determine if it's a service or a client issue.
     1. Headers - The most important headers are the `request-id` and `date`. These headers [help the support team](/graph/best-practices-concept#reliability-and-support) to determine the cause of the failure. Use this ID and timestamp as you log any issues for the support team to troubleshoot.
     1. Body - shows what the service returns. The most important part of the body is the `@odata.nextLink`, which provides a link to fetch the next page when the result is in multiple pages. If the request fails, the body will contain the error code and the error message.
 

@@ -9,7 +9,7 @@ metadata:
   ms.topic: landing-page # Required
   author: msewaweru #Required; your GitHub user alias, with correct capitalization.
   ms.author: eunicewaweru #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/01/2023 #Required; mm/dd/yyyy format.
+  ms.date: 07/17/2024 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -42,7 +42,7 @@ landingContent:
           - text: Cmdlet map
             url: azuread-msoline-cmdlet-map.md
           - text: Migration FAQ
-            url:  https://docs.microsoft.com/en-us/powershell/azure/active-directory/migration-faq?view=azureadps-2.0 
+            url:  /powershell/azure/active-directory/migration-faq?view=azureadps-2.0 
 
   # Card (optional)
   - title: Common use cases
@@ -64,7 +64,11 @@ landingContent:
           - text: Assign Microsoft Entra roles in PIM
             url: tutorial-pim.md
           - text: Manage PIM policies  
-            url: how-to-manage-pim-policies.md  
+            url: how-to-manage-pim-policies.md 
+          - text: Grant and revoke delegated permissions
+            url: tutorial-grant-delegated-api-permissions.md 
+          - text: Grant and revoke app roles
+            url: tutorial-grant-app-only-api-permissions.md  
 
   
   # Card
@@ -73,9 +77,9 @@ landingContent:
       - linkListType: reference 
         links:
           - text: V1.0 cmdlet reference
-            url: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0
+            url: /powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0
           - text: Beta cmdlet reference
-            url: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.beta.applications/?view=graph-powershell-beta
+            url: /powershell/module/microsoft.graph.beta.applications/?view=graph-powershell-beta
 
 
 
@@ -87,10 +91,10 @@ landingContent:
           - text: Troubleshoot common errors in Microsoft Graph PowerShell
             url: troubleshooting.md
           - text: Permissions reference
-            url: https://docs.microsoft.com/en-us/graph/permissions-reference
+            url: /graph/permissions-reference
           - text: Advanced query capabilities
-            url: https://docs.microsoft.com/en-us/graph/aad-advanced-queries?tabs=http
+            url: /graph/aad-advanced-queries?tabs=http
           - text: API reference
-            url: https://docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0
+            url: /graph/api/overview?view=graph-rest-1.0
           - text: Microsoft Q&A
-            url: https://docs.microsoft.com/en-us/answers/index.html    
+            url: https://learn.microsoft.com/answers/questions/   
