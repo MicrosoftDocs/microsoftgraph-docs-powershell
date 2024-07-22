@@ -14,8 +14,6 @@ function Start-GenerateAliasedDocs {
     $Reports += $BreakingChangeReportBetaReport
     foreach ($BreakingChangeReport in $Reports) {
         Import-Csv $BreakingChangeReport | ForEach-Object {
-            $CommandTable = @{
-            }
             $Command = $_."NewCmdlet"
             $Alias = $_."OldCmdlet"
             Copy-Files -Command $Command -Alias $Alias
