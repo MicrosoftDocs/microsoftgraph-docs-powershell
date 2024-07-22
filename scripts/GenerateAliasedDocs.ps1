@@ -3,6 +3,7 @@
     The script will generate a markdown file for each Aliased Cmdlet.
     This is in response to Issue https://github.com/microsoftgraph/msgraph-sdk-powershell/issues/2691
     caused by backward compatibility measures introduced in PowerShell SDK version 2.19.0.
+    See related PR <https://github.com/microsoftgraph/msgraph-sdk-powershell/pull/2721> for more information.
 #>
 
 function Start-GenerateAliasedDocs {
