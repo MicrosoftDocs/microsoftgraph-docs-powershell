@@ -71,6 +71,12 @@
     },
     {
       "file": [
+        "msgraph-sdk-powershell\\src\\Users\\v1.0\\examples\\Set-MgUserPhotoContent.md"
+      ],
+      "_justification": "[Users] Examples contain random values recognized as secret"
+    },
+    {
+      "file": [
         "msgraph-sdk-powershell\\tools\\Tests\\loadEnv.md"
       ],
       "_justification": "[ToolsTest] Examples contain random values recognized as secret"
