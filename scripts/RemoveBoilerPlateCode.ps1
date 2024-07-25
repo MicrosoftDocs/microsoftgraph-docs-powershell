@@ -67,7 +67,7 @@ function Repair-Examples{
        $Path = "$ModulePrefix.Beta.$ModuleName"
     }
      $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
-     $CmdletHomePage = "$destination.md"
+     $CmdletHomePage = Join-Path $destination "$path.md"
      $NoDescriptionAvailable = "{{ Fill in the Description }}"
      $HomePageContent = Get-Content $CmdletHomePage
      $HomePageContent = $HomePageContent -replace $NoDescriptionAvailable, ""
