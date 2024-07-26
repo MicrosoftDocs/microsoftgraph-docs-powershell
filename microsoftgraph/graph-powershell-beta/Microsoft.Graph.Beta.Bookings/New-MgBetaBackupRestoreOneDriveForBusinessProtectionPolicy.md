@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoreonedriveforbusinessprotectionpolicy
@@ -330,166 +330,169 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphOneDriveForBusinessProtectionPolicy\>: oneDriveForBusinessProtectionPolicy
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+BODYPARAMETER `<IMicrosoftGraphOneDriveForBusinessProtectionPolicy>`: oneDriveForBusinessProtectionPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
+      - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[CreatedDateTime \<DateTime?\>\]: The time of creation of the policy.
-  \[DisplayName \<String\>\]: The name of the policy to be created.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[LastModifiedDateTime \<DateTime?\>\]: The timestamp of the last modification of the policy.
-  \[RetentionSettings \<IMicrosoftGraphRetentionSetting\[\]\>\]: Contains the retention setting details for the policy.
-    \[Interval \<String\>\]: The frequency of the backup.
-    \[Period \<TimeSpan?\>\]: The period of time to retain the protected data for a single Microsoft 365 service.
-  \[Status \<String\>\]: protectionPolicyStatus
-  \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time of creation of the policy.
+  - `[DisplayName <String>]`: The name of the policy to be created.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: The timestamp of the last modification of the policy.
+  - `[RetentionSettings <IMicrosoftGraphRetentionSetting- `[]`>]`: Contains the retention setting details for the policy.
+    - `[Interval <String>]`: The frequency of the backup.
+    - `[Period <TimeSpan?>]`: The period of time to retain the protected data for a single Microsoft 365 service.
+  - `[Status <String>]`: protectionPolicyStatus
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DriveInclusionRules \<IMicrosoftGraphDriveProtectionRule\[\]\>\]: Contains the details of the Onedrive for Business protection rule.
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[CreatedDateTime \<DateTime?\>\]: The time of creation of the rule.
-    \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Code \<String\>\]: Represents the error code.
-      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
-        \[Code \<String\>\]: The error code.
-        \[Message \<String\>\]: The error message.
-        \[Target \<String\>\]: The target of the error.
-      \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Code \<String\>\]: The error code.
-        \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
-        \[Message \<String\>\]: The error message.
-        \[Target \<String\>\]: The target of the error.
-      \[Message \<String\>\]: A non-localized message for the developer.
-      \[Target \<String\>\]: The target of the error.
-    \[IsAutoApplyEnabled \<Boolean?\>\]: Indicates whether the protection rule is static or dynamic.
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification made to the rule.
-    \[Status \<String\>\]: protectionRuleStatus
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[DriveInclusionRules <IMicrosoftGraphDriveProtectionRule- `[]`>]`: Contains the details of the Onedrive for Business protection rule.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time of creation of the rule.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: Represents the error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+        - `[Code <String>]`: The error code.
+        - `[Message <String>]`: The error message.
+        - `[Target <String>]`: The target of the error.
+      - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Code <String>]`: The error code.
+        - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+        - `[Message <String>]`: The error message.
+        - `[Target <String>]`: The target of the error.
+      - `[Message <String>]`: A non-localized message for the developer.
+      - `[Target <String>]`: The target of the error.
+    - `[IsAutoApplyEnabled <Boolean?>]`: Indicates whether the protection rule is static or dynamic.
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
+    - `[Status <String>]`: protectionRuleStatus
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DriveExpression \<String\>\]: Contains a drive expression.
+    - `[DriveExpression <String>]`: Contains a drive expression.
 For examples, see driveExpression examples.
-  \[DriveProtectionUnits \<IMicrosoftGraphDriveProtectionUnit\[\]\>\]: Contains the protection units associated with a  OneDrive for Business protection policy.
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[CreatedDateTime \<DateTime?\>\]: The time of creation of the protection unit.
-    \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification of this protection unit.
-    \[PolicyId \<String\>\]: The unique identifier of the protection policy based on which protection unit was created.
-    \[Status \<String\>\]: protectionUnitStatus
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[DriveProtectionUnits <IMicrosoftGraphDriveProtectionUnit- `[]`>]`: Contains the protection units associated with a  OneDrive for Business protection policy.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The time of creation of the protection unit.
+    - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+    - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
+    - `[Status <String>]`: protectionUnitStatus
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DirectoryObjectId \<String\>\]: ID of the directory object.
+    - `[DirectoryObjectId <String>]`: ID of the directory object.
 
-CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
+    - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DRIVEINCLUSIONRULES \<IMicrosoftGraphDriveProtectionRule\[\]\>: Contains the details of the Onedrive for Business protection rule.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+DRIVEINCLUSIONRULES <IMicrosoftGraphDriveProtectionRule- `[]`>: Contains the details of the Onedrive for Business protection rule.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
+      - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[CreatedDateTime \<DateTime?\>\]: The time of creation of the rule.
-  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Code \<String\>\]: Represents the error code.
-    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
-      \[Code \<String\>\]: The error code.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Code \<String\>\]: The error code.
-      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[Message \<String\>\]: A non-localized message for the developer.
-    \[Target \<String\>\]: The target of the error.
-  \[IsAutoApplyEnabled \<Boolean?\>\]: Indicates whether the protection rule is static or dynamic.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification made to the rule.
-  \[Status \<String\>\]: protectionRuleStatus
-  \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time of creation of the rule.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[IsAutoApplyEnabled <Boolean?>]`: Indicates whether the protection rule is static or dynamic.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification made to the rule.
+  - `[Status <String>]`: protectionRuleStatus
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DriveExpression \<String\>\]: Contains a drive expression.
+  - `[DriveExpression <String>]`: Contains a drive expression.
 For examples, see driveExpression examples.
 
-DRIVEPROTECTIONUNITS \<IMicrosoftGraphDriveProtectionUnit\[\]\>: Contains the protection units associated with a OneDrive for Business protection policy.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+DRIVEPROTECTIONUNITS <IMicrosoftGraphDriveProtectionUnit- `[]`>: Contains the protection units associated with a OneDrive for Business protection policy.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
+      - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[CreatedDateTime \<DateTime?\>\]: The time of creation of the protection unit.
-  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Code \<String\>\]: Represents the error code.
-    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
-      \[Code \<String\>\]: The error code.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Code \<String\>\]: The error code.
-      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
-      \[Message \<String\>\]: The error message.
-      \[Target \<String\>\]: The target of the error.
-    \[Message \<String\>\]: A non-localized message for the developer.
-    \[Target \<String\>\]: The target of the error.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of the last modification of this protection unit.
-  \[PolicyId \<String\>\]: The unique identifier of the protection policy based on which protection unit was created.
-  \[Status \<String\>\]: protectionUnitStatus
-  \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The time of creation of the protection unit.
+  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Code <String>]`: Represents the error code.
+    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
+      - `[Code <String>]`: The error code.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: The error code.
+      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
+      - `[Message <String>]`: The error message.
+      - `[Target <String>]`: The target of the error.
+    - `[Message <String>]`: A non-localized message for the developer.
+    - `[Target <String>]`: The target of the error.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of the last modification of this protection unit.
+  - `[PolicyId <String>]`: The unique identifier of the protection policy based on which protection unit was created.
+  - `[Status <String>]`: protectionUnitStatus
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DirectoryObjectId \<String\>\]: ID of the directory object.
+  - `[DirectoryObjectId <String>]`: ID of the directory object.
 
-LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
+    - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RETENTIONSETTINGS \<IMicrosoftGraphRetentionSetting\[\]\>: Contains the retention setting details for the policy.
-  \[Interval \<String\>\]: The frequency of the backup.
-  \[Period \<TimeSpan?\>\]: The period of time to retain the protected data for a single Microsoft 365 service.
+RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting- `[]`>: Contains the retention setting details for the policy.
+  - `[Interval <String>]`: The frequency of the backup.
+  - `[Period <TimeSpan?>]`: The period of time to retain the protected data for a single Microsoft 365 service.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoreonedriveforbusinessprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoreonedriveforbusinessprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies?view=graph-rest-beta)
+
+
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogram
@@ -228,81 +228,84 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphProgram\>: program
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphProgram>`: program
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Controls \<IMicrosoftGraphProgramControl\[\]\>\]: Controls associated with the program.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Controls <IMicrosoftGraphProgramControl- `[]`>]`: Controls associated with the program.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ControlId \<String\>\]: The controlId of the control, in particular the identifier of an access review.
+    - `[ControlId <String>]`: The controlId of the control, in particular the identifier of an access review.
 Required on create.
-    \[ControlTypeId \<String\>\]: The programControlType identifies the type of program control - for example, a control linking to guest access reviews.
+    - `[ControlTypeId <String>]`: The programControlType identifies the type of program control - for example, a control linking to guest access reviews.
 Required on create.
-    \[CreatedDateTime \<DateTime?\>\]: The creation date and time of the program control.
-    \[DisplayName \<String\>\]: The name of the control.
-    \[Owner \<IMicrosoftGraphUserIdentity\>\]: userIdentity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+    - `[CreatedDateTime <DateTime?>]`: The creation date and time of the program control.
+    - `[DisplayName <String>]`: The name of the control.
+    - `[Owner <IMicrosoftGraphUserIdentity>]`: userIdentity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
+      - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-      \[IPAddress \<String\>\]: Indicates the client IP address associated with the user performing the activity (audit log only).
-      \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
-    \[Program \<IMicrosoftGraphProgram\>\]: program
-    \[ProgramId \<String\>\]: The programId of the program this control is a part of.
+      - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
+      - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
+    - `[Program <IMicrosoftGraphProgram>]`: program
+    - `[ProgramId <String>]`: The programId of the program this control is a part of.
 Required on create.
-    \[Resource \<IMicrosoftGraphProgramResource\>\]: programResource
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+    - `[Resource <IMicrosoftGraphProgramResource>]`: programResource
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
+      - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-      \[Type \<String\>\]: Type of the resource, indicating whether it is a group or an app.
-    \[Status \<String\>\]: The life cycle status of the control.
-  \[Description \<String\>\]: The description of the program.
-  \[DisplayName \<String\>\]: The name of the program. 
+      - `[Type <String>]`: Type of the resource, indicating whether it is a group or an app.
+    - `[Status <String>]`: The life cycle status of the control.
+  - `[Description <String>]`: The description of the program.
+  - `[DisplayName <String>]`: The name of the program. 
 Required on create.
 
-CONTROLS \<IMicrosoftGraphProgramControl\[\]\>: Controls associated with the program.
-  \[Id \<String\>\]: The unique identifier for an entity.
+CONTROLS <IMicrosoftGraphProgramControl- `[]`>: Controls associated with the program.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ControlId \<String\>\]: The controlId of the control, in particular the identifier of an access review.
+  - `[ControlId <String>]`: The controlId of the control, in particular the identifier of an access review.
 Required on create.
-  \[ControlTypeId \<String\>\]: The programControlType identifies the type of program control - for example, a control linking to guest access reviews.
+  - `[ControlTypeId <String>]`: The programControlType identifies the type of program control - for example, a control linking to guest access reviews.
 Required on create.
-  \[CreatedDateTime \<DateTime?\>\]: The creation date and time of the program control.
-  \[DisplayName \<String\>\]: The name of the control.
-  \[Owner \<IMicrosoftGraphUserIdentity\>\]: userIdentity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+  - `[CreatedDateTime <DateTime?>]`: The creation date and time of the program control.
+  - `[DisplayName <String>]`: The name of the control.
+  - `[Owner <IMicrosoftGraphUserIdentity>]`: userIdentity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
+    - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    \[IPAddress \<String\>\]: Indicates the client IP address associated with the user performing the activity (audit log only).
-    \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
-  \[Program \<IMicrosoftGraphProgram\>\]: program
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
+    - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
+  - `[Program <IMicrosoftGraphProgram>]`: program
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Controls \<IMicrosoftGraphProgramControl\[\]\>\]: Controls associated with the program.
-    \[Description \<String\>\]: The description of the program.
-    \[DisplayName \<String\>\]: The name of the program. 
+    - `[Controls <IMicrosoftGraphProgramControl- `[]`>]`: Controls associated with the program.
+    - `[Description <String>]`: The description of the program.
+    - `[DisplayName <String>]`: The name of the program. 
 Required on create.
-  \[ProgramId \<String\>\]: The programId of the program this control is a part of.
+  - `[ProgramId <String>]`: The programId of the program this control is a part of.
 Required on create.
-  \[Resource \<IMicrosoftGraphProgramResource\>\]: programResource
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+  - `[Resource <IMicrosoftGraphProgramResource>]`: programResource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
+    - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    \[Type \<String\>\]: Type of the resource, indicating whether it is a group or an app.
-  \[Status \<String\>\]: The life cycle status of the control.
+    - `[Type <String>]`: Type of the resource, indicating whether it is a group or an app.
+  - `[Status <String>]`: The life cycle status of the control.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogram](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogram)
 
 [https://learn.microsoft.com/graph/api/program-create?view=graph-rest-beta](https://learn.microsoft.com/graph/api/program-create?view=graph-rest-beta)
+
+
+
 

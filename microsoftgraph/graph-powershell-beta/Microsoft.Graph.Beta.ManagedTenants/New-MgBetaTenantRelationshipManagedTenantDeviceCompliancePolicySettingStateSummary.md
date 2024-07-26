@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicecompliancepolicysettingstatesummary
@@ -412,51 +412,54 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsDeviceCompliancePolicySettingStateSummary\>: deviceCompliancePolicySettingStateSummary
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsDeviceCompliancePolicySettingStateSummary>`: deviceCompliancePolicySettingStateSummary
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ConflictDeviceCount \<Int32?\>\]: The number of devices in a conflict state.
+  - `[ConflictDeviceCount <Int32?>]`: The number of devices in a conflict state.
 Optional.
 Read-only.
-  \[ErrorDeviceCount \<Int32?\>\]: The number of devices in an error state.
+  - `[ErrorDeviceCount <Int32?>]`: The number of devices in an error state.
 Optional.
 Read-only.
-  \[FailedDeviceCount \<Int32?\>\]: The number of devices in a failed state.
+  - `[FailedDeviceCount <Int32?>]`: The number of devices in a failed state.
 Optional.
 Read-only.
-  \[IntuneAccountId \<String\>\]: The identifer for the Microsoft Intune account.
+  - `[IntuneAccountId <String>]`: The identifer for the Microsoft Intune account.
 Required.
 Read-only.
-  \[IntuneSettingId \<String\>\]: The identifier for the Intune setting.
+  - `[IntuneSettingId <String>]`: The identifier for the Intune setting.
 Optional.
 Read-only.
-  \[LastRefreshedDateTime \<DateTime?\>\]: Date and time the entity was last updated in the multi-tenant management platform.
+  - `[LastRefreshedDateTime <DateTime?>]`: Date and time the entity was last updated in the multi-tenant management platform.
 Optional.
 Read-only.
-  \[NotApplicableDeviceCount \<Int32?\>\]: The number of devices in a not applicable state.
+  - `[NotApplicableDeviceCount <Int32?>]`: The number of devices in a not applicable state.
 Optional.
 Read-only.
-  \[PendingDeviceCount \<Int32?\>\]: The number of devices in a pending state.
+  - `[PendingDeviceCount <Int32?>]`: The number of devices in a pending state.
 Optional.
 Read-only.
-  \[PolicyType \<String\>\]: The type for the device compliance policy.
+  - `[PolicyType <String>]`: The type for the device compliance policy.
 Optional.
 Read-only.
-  \[SettingName \<String\>\]: The name for the setting within the device compliance policy.
+  - `[SettingName <String>]`: The name for the setting within the device compliance policy.
 Optional.
 Read-only.
-  \[SucceededDeviceCount \<Int32?\>\]: The number of devices in a succeeded state.
+  - `[SucceededDeviceCount <Int32?>]`: The number of devices in a succeeded state.
 Optional.
 Read-only.
-  \[TenantDisplayName \<String\>\]: The display name for the managed tenant.
+  - `[TenantDisplayName <String>]`: The display name for the managed tenant.
 Required.
 Read-only.
-  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
+  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Required.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicecompliancepolicysettingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicecompliancepolicysettingstatesummary)
+
+
+
 
