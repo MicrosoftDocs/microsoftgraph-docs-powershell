@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Gets app restrictions for a given user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedAppPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

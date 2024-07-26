@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The policy configuration of the self-service sign-up experience of external users.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

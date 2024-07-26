@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of pages in the baseSitePages list on this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteGetByPathPage](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetByPathPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)

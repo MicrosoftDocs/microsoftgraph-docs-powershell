@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The set of web parts in this section.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

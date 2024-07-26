@@ -12,6 +12,9 @@ ms.subservice: entra-applications
 Get newly created, updated, or deleted applications without performing a full read of the entire resource collection.
 For details, see Using delta query.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The recovery keys associated with the bitlocker entity.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlockerRecoveryKey?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

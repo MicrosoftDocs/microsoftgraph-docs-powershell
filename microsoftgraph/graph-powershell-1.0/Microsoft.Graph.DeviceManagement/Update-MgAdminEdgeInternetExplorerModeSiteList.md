@@ -11,6 +11,9 @@ ms.subservice: edge-browser-management
 ## SYNOPSIS
 Update the properties of a browserSiteList object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

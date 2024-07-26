@@ -12,6 +12,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Read properties and relationships of the deviceAndAppManagementRoleAssignment object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

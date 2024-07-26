@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The set of reasons for a time off in the schedule.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

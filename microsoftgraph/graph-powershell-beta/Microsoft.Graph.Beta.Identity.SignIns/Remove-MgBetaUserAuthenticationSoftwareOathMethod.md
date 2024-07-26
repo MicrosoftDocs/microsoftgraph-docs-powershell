@@ -11,6 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Delete a user's Software OATH token authentication method object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationSoftwareOathMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationSoftwareOathMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

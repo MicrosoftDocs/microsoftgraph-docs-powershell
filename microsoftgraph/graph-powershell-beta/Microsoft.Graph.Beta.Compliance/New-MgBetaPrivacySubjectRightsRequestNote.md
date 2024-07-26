@@ -11,6 +11,9 @@ ms.subservice: compliance
 ## SYNOPSIS
 Create a new authoredNote object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/New-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -12,6 +12,9 @@ ms.subservice: teams
 Soft-delete a chat.
 When invoked with delegated permissions, this operation only works for tenant admins and Teams service admins.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

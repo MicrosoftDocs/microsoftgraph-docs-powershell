@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Get the trend on the amount of storage you're using in OneDrive for Business.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageStorage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

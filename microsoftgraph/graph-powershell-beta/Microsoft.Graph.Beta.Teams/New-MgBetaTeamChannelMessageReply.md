@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Send a new reply to a chatMessage in a specified channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMessageReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

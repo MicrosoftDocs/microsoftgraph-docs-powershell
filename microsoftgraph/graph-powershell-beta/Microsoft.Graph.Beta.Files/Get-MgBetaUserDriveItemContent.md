@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get content for the navigation property items from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemContent](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

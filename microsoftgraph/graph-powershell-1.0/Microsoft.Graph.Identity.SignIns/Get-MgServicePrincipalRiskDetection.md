@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents information about detected at-risk service principals in a Microsoft Entra tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

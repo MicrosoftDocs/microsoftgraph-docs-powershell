@@ -12,6 +12,9 @@ ms.subservice: ediscovery
 Initiate an export from a reviewSet.
 For details, see Export documents from a review set in eDiscovery (Premium).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)

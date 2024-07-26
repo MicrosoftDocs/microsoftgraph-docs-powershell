@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property tenants for tenantRelationships
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTenantRelationshipMultiTenantOrganizationTenant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaTenantRelationshipMultiTenantOrganizationTenant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

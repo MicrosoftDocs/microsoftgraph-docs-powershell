@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Get the trends on the number of unique users who posted, read, and liked Yammer messages.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerActivityUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

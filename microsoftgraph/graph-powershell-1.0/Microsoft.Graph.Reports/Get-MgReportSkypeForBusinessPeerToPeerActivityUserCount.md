@@ -12,6 +12,9 @@ ms.subservice: reports
 Get usage trends on the number of unique users and type of peer-to-peer sessions held in your organization.
 Types of sessions include IM, audio, video, application sharing, and file transfers in peer-to-peer sessions.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessPeerToPeerActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessPeerToPeerActivityUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

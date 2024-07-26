@@ -12,6 +12,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Read properties and relationships of the deviceComplianceDeviceStatus object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

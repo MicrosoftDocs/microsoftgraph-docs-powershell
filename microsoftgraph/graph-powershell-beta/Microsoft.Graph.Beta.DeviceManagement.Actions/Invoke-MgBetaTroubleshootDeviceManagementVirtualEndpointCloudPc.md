@@ -12,6 +12,9 @@ ms.subservice: cloud-pc
 Troubleshoot a specific Cloud PC.
 Use this API to check the health status of the Cloud PC and the session host.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Troubleshoot (Default)

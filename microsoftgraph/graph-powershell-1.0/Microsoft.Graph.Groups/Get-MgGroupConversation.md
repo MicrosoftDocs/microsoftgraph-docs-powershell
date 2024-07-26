@@ -12,6 +12,9 @@ ms.subservice: entra-groups
 ## SYNOPSIS
 The group's conversations.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

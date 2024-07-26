@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Asynchronously create a copy of a driveItem (including any children) under a new parent item or with a new name.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Read the properties and relationships of a hostPort object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPort](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPort?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

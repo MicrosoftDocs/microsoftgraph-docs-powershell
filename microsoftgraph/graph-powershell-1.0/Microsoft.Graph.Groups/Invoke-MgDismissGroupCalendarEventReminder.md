@@ -11,6 +11,9 @@ ms.subservice: outlook
 ## SYNOPSIS
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDismissGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaDismissGroupCalendarEventReminder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Dismiss (Default)

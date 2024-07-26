@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamwork](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamwork?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

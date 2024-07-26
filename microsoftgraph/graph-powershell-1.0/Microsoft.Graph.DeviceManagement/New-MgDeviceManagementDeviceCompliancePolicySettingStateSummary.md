@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Create a new deviceCompliancePolicySettingStateSummary object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
