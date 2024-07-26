@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamchannel
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgHaveTeamChannel
@@ -31,6 +32,22 @@ Invoke-MgHaveTeamChannel -InputObject <ITeamsIdentity> [-TenantId <String>] [-Us
 
 ## DESCRIPTION
 Determine whether a user has access to a shared channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-doesuserhaveaccess-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Invoke-MgHaveTeamChannel -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Invoke-MgHaveTeamChannel Cmdlet.
+
 
 ## PARAMETERS
 
@@ -226,7 +243,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamchannel)
 
 [https://learn.microsoft.com/graph/api/channel-doesuserhaveaccess?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-doesuserhaveaccess?view=graph-rest-1.0)
-
 
 
 

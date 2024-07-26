@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupOwnerByRef
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Remove-MgGroupOwnerByRef
@@ -33,6 +34,22 @@ Remove-MgGroupOwnerByRef -InputObject <IGroupsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
 Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-owners-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+Remove-MgGroupOwnerByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgGroupOwnerByRef Cmdlet.
+
 
 ## PARAMETERS
 
@@ -252,7 +269,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupOwnerByRef)
 
 [https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-1.0)
-
 
 
 

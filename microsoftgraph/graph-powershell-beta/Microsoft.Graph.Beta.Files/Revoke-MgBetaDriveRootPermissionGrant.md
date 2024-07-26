@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetadriverootpermissiongrant
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Revoke-MgBetaDriveRootPermissionGrant
@@ -45,6 +46,9 @@ Revoke-MgBetaDriveRootPermissionGrant -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Revoke access to a listItem or driveItem granted via a sharing link by removing the specified recipient from the link.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-revokegrants-permissions.md)]
 
 ## PARAMETERS
 
@@ -279,7 +283,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetadriverootpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetadriverootpermissiongrant)
 
 [https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
-
 
 
 

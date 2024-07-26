@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowversiontask
 schema: 2.0.0
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgIdentityGovernanceLifecycleWorkflowVersionTask
@@ -40,6 +42,25 @@ Get-MgIdentityGovernanceLifecycleWorkflowVersionTask -InputObject <IIdentityGove
 
 ## DESCRIPTION
 Get a specific task from a workflow or workflowVersion.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-task-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflowversion-list-tasks-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get a task from a workflow version
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowVersionTask -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber -TaskId $taskId
+
+```
+This example will get a task from a workflow version
+
 
 ## PARAMETERS
 
@@ -392,7 +413,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/identitygovernance-task-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-task-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-workflowversion-list-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflowversion-list-tasks?view=graph-rest-1.0)
-
 
 
 

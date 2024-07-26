@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessdeviceusageuserdetail
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportSkypeForBusinessDeviceUsageUserDetail
@@ -45,6 +46,9 @@ Get-MgReportSkypeForBusinessDeviceUsageUserDetail -InputObject <IReportsIdentity
 
 ## DESCRIPTION
 Get details about Skype for Business device usage by user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessdeviceusageuserdetail-permissions.md)]
 
 ## PARAMETERS
 

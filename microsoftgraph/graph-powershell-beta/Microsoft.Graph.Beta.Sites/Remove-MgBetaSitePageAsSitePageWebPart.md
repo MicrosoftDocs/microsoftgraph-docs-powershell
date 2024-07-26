@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepageassitepagewebpart
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Remove-MgBetaSitePageAsSitePageWebPart
@@ -31,6 +32,9 @@ Remove-MgBetaSitePageAsSitePageWebPart -InputObject <ISitesIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete a webPart object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/webpart-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

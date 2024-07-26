@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationtraining
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgSecurityAttackSimulationTraining
@@ -39,6 +40,22 @@ Get-MgSecurityAttackSimulationTraining -InputObject <ISecurityIdentity> [-Expand
 
 ## DESCRIPTION
 Represents details about attack simulation trainings.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-trainings-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityAttackSimulationTraining
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulationTraining Cmdlet.
+
 
 ## PARAMETERS
 
@@ -353,7 +370,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationtraining](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationtraining)
 
 [https://learn.microsoft.com/graph/api/attacksimulationroot-list-trainings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-list-trainings?view=graph-rest-1.0)
-
 
 
 

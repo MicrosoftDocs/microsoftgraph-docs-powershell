@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotenotebook
 schema: 2.0.0
+ms.subservice: onenote
 ---
 
 # Copy-MgGroupOnenoteNotebook
@@ -368,7 +369,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotenotebook)
 
 [https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-1.0)
-
 
 
 

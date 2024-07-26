@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchacronym
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # Remove-MgSearchAcronym
@@ -31,6 +32,22 @@ Remove-MgSearchAcronym -InputObject <ISearchIdentity> [-IfMatch <String>] [-Resp
 
 ## DESCRIPTION
 Delete an acronym object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-acronym-delete-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Search
+
+Remove-MgSearchAcronym -AcronymId $acronymId
+
+```
+This example shows how to use the Remove-MgSearchAcronym Cmdlet.
+
 
 ## PARAMETERS
 
@@ -203,7 +220,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchacronym)
 
 [https://learn.microsoft.com/graph/api/search-acronym-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-acronym-delete?view=graph-rest-1.0)
-
 
 
 

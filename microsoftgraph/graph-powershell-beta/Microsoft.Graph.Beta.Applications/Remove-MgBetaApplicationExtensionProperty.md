@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationextensionproperty
 schema: 2.0.0
+ms.subservice: extensions
 ---
 
 # Remove-MgBetaApplicationExtensionProperty
@@ -33,6 +34,9 @@ Remove-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 Delete a directory extension definition represented by an extensionProperty object.
 You can delete only directory extensions that aren't synced from on-premises active directory (AD).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/extensionproperty-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

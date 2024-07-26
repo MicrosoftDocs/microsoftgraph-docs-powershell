@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/initialize-mgidentitygovernancelifecycleworkflow
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Initialize-MgIdentityGovernanceLifecycleWorkflow
@@ -54,6 +55,33 @@ Run a workflow object on-demand.
 You can run any workflow on-demand, including scheduled workflows.
 Workflows created from the 'Real-time employee termination' template are run on-demand only.
 When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-activate-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	subjects = @(
+		@{
+			id = "8cdf25a8-c9d2-423e-a03d-3f39f03c3e97"
+		}
+		@{
+			id = "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
+		}
+	)
+}
+
+Initialize-MgIdentityGovernanceLifecycleWorkflow -WorkflowId $workflowId -BodyParameter $params
+
+```
+This example shows how to use the Initialize-MgIdentityGovernanceLifecycleWorkflow Cmdlet.
+
 
 ## PARAMETERS
 
@@ -9803,7 +9831,6 @@ NOTE: For more information about the permissions for members and guests, see Wha
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/initialize-mgidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/initialize-mgidentitygovernancelifecycleworkflow)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-workflow-activate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activate?view=graph-rest-1.0)
-
 
 
 

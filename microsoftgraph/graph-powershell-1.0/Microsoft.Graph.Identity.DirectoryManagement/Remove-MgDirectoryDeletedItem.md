@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorydeleteditem
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Remove-MgDirectoryDeletedItem
@@ -34,6 +35,19 @@ Permanently delete a recently deleted application, group, servicePrincipal, or u
 After an item is permanently deleted, it cannot be restored.
 Administrative units cannot be permanently deleted by using the deletedItems API.
 Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Remove-MgDirectoryDeletedItem -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgDirectoryDeletedItem Cmdlet.
+
 
 ## PARAMETERS
 
@@ -223,7 +237,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorydeleteditem](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorydeleteditem)
 
 [https://learn.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-1.0)
-
 
 
 

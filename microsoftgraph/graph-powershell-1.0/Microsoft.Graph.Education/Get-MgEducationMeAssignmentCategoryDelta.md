@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcategorydelta
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Get-MgEducationMeAssignmentCategoryDelta
@@ -33,6 +34,9 @@ Get-MgEducationMeAssignmentCategoryDelta -InputObject <IEducationIdentity> [-Exp
 
 ## DESCRIPTION
 Get a list of newly created or updated educationCategory objects without having to perform a full read of the collection.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationcategory-delta-permissions.md)]
 
 ## PARAMETERS
 
@@ -314,7 +318,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcategorydelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcategorydelta)
 
 [https://learn.microsoft.com/graph/api/educationcategory-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationcategory-delta?view=graph-rest-1.0)
-
 
 
 

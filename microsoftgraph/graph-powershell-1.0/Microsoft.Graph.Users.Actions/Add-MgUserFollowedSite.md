@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserfollowedsite
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgUserFollowedSite
@@ -50,6 +51,30 @@ Follow a user's site or multiple sites.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-follow-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Users.Actions
+
+$params = @{
+	value = @(
+		@{
+			id = "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740"
+		}
+		@{
+			id = "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851"
+		}
+	)
+}
+
+Add-MgUserFollowedSite -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgUserFollowedSite Cmdlet.
+
 
 ## PARAMETERS
 
@@ -9749,7 +9774,6 @@ This relationship can only be used to load a specific term set.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserfollowedsite](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserfollowedsite)
 
 [https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0)
-
 
 
 

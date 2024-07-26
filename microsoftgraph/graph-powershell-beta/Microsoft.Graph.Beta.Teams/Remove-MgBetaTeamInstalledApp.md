@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateaminstalledapp
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgBetaTeamInstalledApp
@@ -31,6 +32,9 @@ Remove-MgBetaTeamInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Uninstalls an app from the specified team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-delete-installedapps-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

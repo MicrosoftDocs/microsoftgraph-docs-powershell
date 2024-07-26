@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoreexchangeprotectionpolicy
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # New-MgBetaBackupRestoreExchangeProtectionPolicy
@@ -36,6 +37,37 @@ New-MgBetaBackupRestoreExchangeProtectionPolicy -BodyParameter <IMicrosoftGraphE
 Create a protection policy for the Exchange service in a Microsoft 365 tenant.
 The policy is set to inactive when it is created.
 Users can also provide a list of protection units under the policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-exchangeprotectionpolicies-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	displayName = "Exchange Protection Policy"
+	mailboxProtectionUnits = @(
+		@{
+			userId = "cdd3a849-dcaf-4a85-af82-7e39fc14019a"
+		}
+		@{
+			userId = "9bc069da-b746-41a4-89ab-26125c6373c7"
+		}
+		@{
+			userId = "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7"
+		}
+	)
+}
+
+New-MgBetaBackupRestoreExchangeProtectionPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaBackupRestoreExchangeProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -480,8 +512,6 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting- `[]`>: Contains the retentio
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoreexchangeprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoreexchangeprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-post-exchangeprotectionpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-post-exchangeprotectionpolicies?view=graph-rest-beta)
-
-
 
 
 

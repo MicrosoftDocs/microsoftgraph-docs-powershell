@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolememberdirectoryobjectbyref
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Remove-MgDirectoryRoleMemberDirectoryObjectByRef
@@ -34,6 +35,22 @@ Remove a member from a directoryRole.
 You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
 For details, see Role template IDs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryrole-delete-member-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Remove-MgDirectoryRoleMemberDirectoryObjectByRef -DirectoryRoleId $directoryRoleId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgDirectoryRoleMemberDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 
@@ -238,7 +255,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolememberdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolememberdirectoryobjectbyref)
 
 [https://learn.microsoft.com/graph/api/directoryrole-delete-member?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryrole-delete-member?view=graph-rest-1.0)
-
 
 
 

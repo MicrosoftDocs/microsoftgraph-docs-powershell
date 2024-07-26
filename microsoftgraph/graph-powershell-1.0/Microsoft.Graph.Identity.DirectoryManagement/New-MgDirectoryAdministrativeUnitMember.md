@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitmember
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgDirectoryAdministrativeUnitMember
@@ -48,6 +49,34 @@ New-MgDirectoryAdministrativeUnitMember -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Use this API to add a member (user, group, or device) to an administrative unit.
 Currently it's only possible to add one member at a time to an administrative unit.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-post-members-permissions.md)]
+
+## EXAMPLES
+### Example 1: Create a new group
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.group"
+	description = "Self help community for golf"
+	displayName = "Golf Assist"
+	groupTypes = @(
+	"Unified"
+)
+mailEnabled = $true
+mailNickname = "golfassist"
+securityEnabled = $false
+}
+
+New-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
+
+```
+This example will create a new group
+
 
 ## PARAMETERS
 
@@ -278,7 +307,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitmember](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitmember)
 
 [https://learn.microsoft.com/graph/api/administrativeunit-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-post-members?view=graph-rest-1.0)
-
 
 
 

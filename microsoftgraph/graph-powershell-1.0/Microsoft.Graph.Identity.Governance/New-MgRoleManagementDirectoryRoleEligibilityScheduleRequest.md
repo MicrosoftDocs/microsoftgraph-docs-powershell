@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleeligibilityschedulerequest
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest
@@ -41,6 +42,55 @@ New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest
 ## DESCRIPTION
 In PIM, request for a role eligibility for a principal through the unifiedRoleEligibilityScheduleRequest object.
 This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-post-roleeligibilityschedulerequests-permissions.md)]
+
+## EXAMPLES
+### Example 1: Admin to assign a role eligibility schedule request
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	action = "adminAssign"
+	justification = "Assign Attribute Assignment Admin eligibility to restricted user"
+	roleDefinitionId = "8424c6f0-a189-499e-bbd0-26c1753c96d4"
+	directoryScopeId = "/"
+	principalId = "071cc716-8147-4397-a5ba-b2105951cc0b"
+	scheduleInfo = @{
+		startDateTime = [System.DateTime]::Parse("2022-04-10T00:00:00Z")
+		expiration = @{
+			type = "afterDateTime"
+			endDateTime = [System.DateTime]::Parse("2024-04-10T00:00:00Z")
+		}
+	}
+}
+
+New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -BodyParameter $params
+
+```
+This example will admin to assign a role eligibility schedule request
+
+### Example 2: Admin to remove an existing role eligibility schedule request
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	action = "adminRemove"
+	roleDefinitionId = "8424c6f0-a189-499e-bbd0-26c1753c96d4"
+	directoryScopeId = "/"
+	principalId = "071cc716-8147-4397-a5ba-b2105951cc0b"
+}
+
+New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -BodyParameter $params
+
+```
+This example will admin to remove an existing role eligibility schedule request
+
 
 ## PARAMETERS
 
@@ -954,7 +1004,6 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleeligibilityschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleeligibilityschedulerequest)
 
 [https://learn.microsoft.com/graph/api/rbacapplication-post-roleeligibilityschedulerequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roleeligibilityschedulerequests?view=graph-rest-1.0)
-
 
 
 

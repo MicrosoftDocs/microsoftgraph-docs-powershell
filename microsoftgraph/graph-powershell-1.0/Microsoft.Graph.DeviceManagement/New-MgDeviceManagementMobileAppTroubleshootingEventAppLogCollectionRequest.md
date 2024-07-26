@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingeventapplogcollectionrequest
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
@@ -51,6 +52,29 @@ New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## DESCRIPTION
 Create a new appLogCollectionRequest object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.appLogCollectionRequest"
+	status = "completed"
+	errorMessage = "Error Message value"
+	customLogFolders = @(
+	"Custom Log Folders value"
+)
+completedDateTime = [System.DateTime]::Parse("2016-12-31T23:58:52.3534526-08:00")
+}
+
+New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest -MobileAppTroubleshootingEventId $mobileAppTroubleshootingEventId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest Cmdlet.
+
 
 ## PARAMETERS
 
@@ -355,7 +379,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingeventapplogcollectionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingeventapplogcollectionrequest)
 
 [https://learn.microsoft.com/graph/api/intune-devices-applogcollectionrequest-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-applogcollectionrequest-create?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetausercloudpc
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Restore-MgBetaUserCloudPc
@@ -304,7 +305,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetausercloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetausercloudpc)
 
 [https://learn.microsoft.com/graph/api/cloudpc-restore?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-restore?view=graph-rest-beta)
-
 
 
 

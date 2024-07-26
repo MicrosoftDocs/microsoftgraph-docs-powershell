@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicesettingstatesummary
 schema: 2.0.0
+ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary
@@ -40,6 +42,19 @@ Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary -InputObject 
 
 ## DESCRIPTION
 Read properties and relationships of the settingStateDeviceSummary object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary -DeviceConfigurationId $deviceConfigurationId
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -364,7 +379,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-settingstatedevicesummary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-settingstatedevicesummary-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-settingstatedevicesummary-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-settingstatedevicesummary-list?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusertodolisttaskattachmentuploadsession
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # New-MgUserTodoListTaskAttachmentUploadSession
@@ -60,6 +61,28 @@ The following are the steps to attach a file to a Microsoft To Do task using an 
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/taskfileattachment-createuploadsession-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Users.Actions
+
+$params = @{
+	attachmentInfo = @{
+		attachmentType = "file"
+		name = "flower"
+		size = 3483322
+	}
+}
+
+# A UPN can also be used as -UserId.
+New-MgUserTodoListTaskAttachmentUploadSession -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
+
+```
+This example shows how to use the New-MgUserTodoListTaskAttachmentUploadSession Cmdlet.
+
 
 ## PARAMETERS
 
@@ -325,7 +348,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusertodolisttaskattachmentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusertodolisttaskattachmentuploadsession)
 
 [https://learn.microsoft.com/graph/api/taskfileattachment-createuploadsession?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/taskfileattachment-createuploadsession?view=graph-rest-1.0)
-
 
 
 

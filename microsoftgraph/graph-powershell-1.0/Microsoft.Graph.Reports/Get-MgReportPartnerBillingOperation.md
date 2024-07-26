@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingoperation
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportPartnerBillingOperation
@@ -39,6 +40,44 @@ Get-MgReportPartnerBillingOperation -InputObject <IReportsIdentity> [-ExpandProp
 
 ## DESCRIPTION
 Read the properties and relationships of an operation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-operation-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get operation succeeded
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportPartnerBillingOperation -OperationId $operationId
+
+```
+This example will get operation succeeded
+
+### Example 2: Get operation failed
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportPartnerBillingOperation -OperationId $operationId
+
+```
+This example will get operation failed
+
+### Example 3: Get operation is still running
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportPartnerBillingOperation -OperationId $operationId
+
+```
+This example will get operation is still running
+
 
 ## PARAMETERS
 
@@ -314,7 +353,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingoperation)
 
 [https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-1.0)
-
 
 
 

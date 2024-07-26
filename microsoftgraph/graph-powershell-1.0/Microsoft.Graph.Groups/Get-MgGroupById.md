@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyid
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgGroupById
@@ -205,7 +206,6 @@ BODYPARAMETER `<IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentA
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyid)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
-
 
 
 

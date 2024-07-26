@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyid
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgApplicationById
@@ -205,7 +206,6 @@ BODYPARAMETER `<IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyCo
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyid)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
-
 
 
 

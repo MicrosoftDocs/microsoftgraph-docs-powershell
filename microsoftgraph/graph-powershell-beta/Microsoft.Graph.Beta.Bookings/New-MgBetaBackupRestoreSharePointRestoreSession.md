@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoresharepointrestoresession
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # New-MgBetaBackupRestoreSharePointRestoreSession
@@ -31,6 +32,39 @@ New-MgBetaBackupRestoreSharePointRestoreSession -BodyParameter <IMicrosoftGraphS
 
 ## DESCRIPTION
 Create a new sharePointRestoreSession object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-sharepointrestoresessions-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	siteRestoreArtifacts = @(
+		@{
+			restorePoint = @{
+				"@odata.id" = "1f1fccc3-a642-4f61-bf49-f37b9a888279"
+			}
+			destinationType = "inPlace"
+		}
+		@{
+			restorePoint = @{
+				"@odata.id" = "1f1fccc3-a642-4f61-bf49-f37b9a888280"
+			}
+			destinationType = "inPlace"
+		}
+	)
+}
+
+New-MgBetaBackupRestoreSharePointRestoreSession -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaBackupRestoreSharePointRestoreSession Cmdlet.
+
 
 ## PARAMETERS
 
@@ -453,8 +487,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoresharepointrestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoresharepointrestoresession)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta)
-
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmoduleresource
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Remove-MgEducationClassModuleResource
@@ -34,6 +35,22 @@ Remove-MgEducationClassModuleResource -InputObject <IEducationIdentity> [-IfMatc
 ## DESCRIPTION
 Delete a specific educationModuleResource attached to a module.
 Only teachers in the class can remove a resource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmoduleresource-delete-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Remove-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
+
+```
+This example shows how to use the Remove-MgEducationClassModuleResource Cmdlet.
+
 
 ## PARAMETERS
 
@@ -240,7 +257,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmoduleresource)
 
 [https://learn.microsoft.com/graph/api/educationmoduleresource-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmoduleresource-delete?view=graph-rest-1.0)
-
 
 
 

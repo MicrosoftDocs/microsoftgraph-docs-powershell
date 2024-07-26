@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagesitecount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportSharePointSiteUsageSiteCount
@@ -30,6 +31,22 @@ Get-MgReportSharePointSiteUsageSiteCount -InputObject <IReportsIdentity> -OutFil
 
 ## DESCRIPTION
 Get the trend of total and active site count during the reporting period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointsiteusagesitecounts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportSharePointSiteUsageSiteCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSharePointSiteUsageSiteCount Cmdlet.
+
 
 ## PARAMETERS
 
@@ -184,7 +201,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagesitecount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagesitecount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-1.0)
-
 
 
 

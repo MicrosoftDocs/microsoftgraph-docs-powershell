@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentrubric
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Update-MgBetaEducationClassAssignmentRubric
@@ -53,6 +54,9 @@ Update-MgBetaEducationClassAssignmentRubric -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-put-rubric-permissions.md)]
 
 ## PARAMETERS
 
@@ -462,7 +466,6 @@ Weights must add up to 100.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentrubric)
 
 [https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-beta)
-
 
 
 

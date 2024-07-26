@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupfromlifecyclepolicy
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Remove-MgGroupFromLifecyclePolicy
@@ -47,6 +48,26 @@ Remove-MgGroupFromLifecyclePolicy -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Removes a group from a lifecycle policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/grouplifecyclepolicy-removegroup-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+$params = @{
+	groupId = "ffffffff-ffff-ffff-ffff-ffffffffffff"
+}
+
+Remove-MgGroupFromLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgGroupFromLifecyclePolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -272,7 +293,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupfromlifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupfromlifecyclepolicy)
 
 [https://learn.microsoft.com/graph/api/grouplifecyclepolicy-removegroup?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-removegroup?view=graph-rest-1.0)
-
 
 
 

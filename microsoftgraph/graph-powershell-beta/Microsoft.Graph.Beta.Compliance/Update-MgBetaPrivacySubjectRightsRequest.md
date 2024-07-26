@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetaprivacysubjectrightsrequest
 schema: 2.0.0
+ms.subservice: compliance
 ---
 
 # Update-MgBetaPrivacySubjectRightsRequest
@@ -67,6 +68,9 @@ Update-MgBetaPrivacySubjectRightsRequest -InputObject <IComplianceIdentity>
 
 ## DESCRIPTION
 Update the properties of a subjectRightsRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoresharepointprotectionpolicysiteprotectionunit
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnit
@@ -37,6 +38,22 @@ Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnit -InputObject
 
 ## DESCRIPTION
 The protection units (sites) that are protected under the site protection policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-siteprotectionunits-permissions.md)]
+
+## EXAMPLES
+### Example 1: List the siteProtectionUnits associated with a SharePoint protection policy
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnit -SharePointProtectionPolicyId $sharePointProtectionPolicyId
+
+```
+This example will list the siteprotectionunits associated with a sharepoint protection policy
+
 
 ## PARAMETERS
 
@@ -348,10 +365,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoresharepointprotectionpolicysiteprotectionunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoresharepointprotectionpolicysiteprotectionunit)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-list-siteprotectionunits?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-list-siteprotectionunits?view=graph-rest-beta)
-
-
-
-
 
 
 

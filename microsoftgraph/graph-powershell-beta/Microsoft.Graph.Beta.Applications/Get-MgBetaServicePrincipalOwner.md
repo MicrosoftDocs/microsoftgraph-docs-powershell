@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalowner
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaServicePrincipalOwner
@@ -24,6 +25,9 @@ Get-MgBetaServicePrincipalOwner -ServicePrincipalId <String> [-ExpandProperty <S
 
 ## DESCRIPTION
 Retrieve a list of owners of the servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-owners-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List the owners of a service principal

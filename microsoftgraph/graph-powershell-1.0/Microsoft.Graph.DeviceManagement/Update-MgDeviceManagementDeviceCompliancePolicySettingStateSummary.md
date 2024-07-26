@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicysettingstatesummary
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
@@ -56,6 +57,33 @@ Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary -InputObject 
 
 ## DESCRIPTION
 Update the properties of a deviceCompliancePolicySettingStateSummary object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceCompliancePolicySettingStateSummary"
+	setting = "Setting value"
+	settingName = "Setting Name value"
+	platformType = "iOS"
+	unknownDeviceCount = 2
+	notApplicableDeviceCount = 8
+	compliantDeviceCount = 4
+	remediatedDeviceCount = 5
+	nonCompliantDeviceCount = 7
+	errorDeviceCount = 0
+	conflictDeviceCount = 3
+}
+
+Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary -DeviceCompliancePolicySettingStateSummaryId $deviceCompliancePolicySettingStateSummaryId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -501,7 +529,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicysettingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicysettingstatesummary)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-update?view=graph-rest-1.0)
-
 
 
 

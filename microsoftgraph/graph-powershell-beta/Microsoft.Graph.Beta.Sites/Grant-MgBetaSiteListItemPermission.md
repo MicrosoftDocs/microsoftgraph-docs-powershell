@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitelistitempermission
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Grant-MgBetaSiteListItemPermission
@@ -46,6 +47,9 @@ Grant-MgBetaSiteListItemPermission -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Grant users access to a link represented by a permission.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
 
 ## PARAMETERS
 
@@ -354,7 +358,6 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitelistitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitelistitempermission)
 
 [https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
-
 
 
 

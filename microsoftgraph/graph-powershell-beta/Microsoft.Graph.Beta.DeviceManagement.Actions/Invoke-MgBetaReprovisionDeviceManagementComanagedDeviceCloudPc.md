@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareprovisiondevicemanagementcomanageddevicecloudpc
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Invoke-MgBetaReprovisionDeviceManagementComanagedDeviceCloudPc
@@ -233,7 +234,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareprovisiondevicemanagementcomanageddevicecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareprovisiondevicemanagementcomanageddevicecloudpc)
 
 [https://learn.microsoft.com/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta)
-
 
 
 

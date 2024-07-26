@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgchatmember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Add-MgChatMember
@@ -292,7 +293,6 @@ This property is settable only for members of a chat.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgchatmember)
 
 [https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0)
-
 
 
 

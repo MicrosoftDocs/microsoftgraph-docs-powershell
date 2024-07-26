@@ -107,7 +107,7 @@ extends:
           inputs:
             targetType: 'filePath'
             pwsh: true
-            filePath: scripts/MsProdUpdate.ps1
+            filePath: scripts/MsSubserviceUpdate.ps1
         - task: PowerShell@2
           displayName: 'Update Links'
           continueOnError: false

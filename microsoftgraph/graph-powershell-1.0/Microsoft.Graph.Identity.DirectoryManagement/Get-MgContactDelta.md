@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgContactDelta
@@ -28,6 +29,41 @@ See change tracking for details.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/orgcontact-delta-permissions.md)]
+
+## EXAMPLES
+### Example 1: Default properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgContactDelta
+
+```
+This example will default properties
+
+### Example 2: Selecting three properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgContactDelta -Property "displayName,jobTitle,mail" 
+
+```
+This example shows selecting three properties
+
+### Example 3: Alternative minimal response behavior
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgContactDelta -Property "displayName,jobTitle,mail" 
+
+```
+This example will alternative minimal response behavior
+
 
 ## PARAMETERS
 
@@ -243,7 +279,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta)
 
 [https://learn.microsoft.com/graph/api/orgcontact-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/orgcontact-delta?view=graph-rest-1.0)
-
 
 
 

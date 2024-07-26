@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsite
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgSite
@@ -9669,7 +9670,6 @@ This relationship can only be used to load a specific term set.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsite)
 
 [https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0)
-
 
 
 

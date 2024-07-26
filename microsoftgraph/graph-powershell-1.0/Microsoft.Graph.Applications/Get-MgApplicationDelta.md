@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgApplicationDelta
@@ -29,6 +30,19 @@ For details, see Using delta query.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delta-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+Get-MgApplicationDelta
+
+```
+This example shows how to use the Get-MgApplicationDelta Cmdlet.
+
 
 ## PARAMETERS
 
@@ -244,7 +258,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta)
 
 [https://learn.microsoft.com/graph/api/application-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delta?view=graph-rest-1.0)
-
 
 
 

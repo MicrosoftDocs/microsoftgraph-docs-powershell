@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaaccessreview
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Remove-MgBetaAccessReview
@@ -28,6 +29,9 @@ Remove-MgBetaAccessReview -InputObject <IIdentityGovernanceIdentity> [-IfMatch <
 
 ## DESCRIPTION
 In the Microsoft Entra access reviews feature, delete an accessReview object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

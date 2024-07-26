@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsoftteamchannelmessagereplydelete
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgSoftTeamChannelMessageReplyDelete
@@ -31,6 +32,22 @@ Invoke-MgSoftTeamChannelMessageReplyDelete -InputObject <ITeamsIdentity> [-Respo
 
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-softdelete-permissions.md)]
+
+## EXAMPLES
+### Example 1: Soft-delete message of a reply
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Invoke-MgSoftTeamChannelMessageReplyDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
+
+```
+This example will soft-delete message of a reply
+
 
 ## PARAMETERS
 
@@ -257,7 +274,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsoftteamchannelmessagereplydelete](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsoftteamchannelmessagereplydelete)
 
 [https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-1.0)
-
 
 
 

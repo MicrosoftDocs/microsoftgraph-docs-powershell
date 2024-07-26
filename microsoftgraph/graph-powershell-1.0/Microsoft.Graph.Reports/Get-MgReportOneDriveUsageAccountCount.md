@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusageaccountcount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportOneDriveUsageAccountCount
@@ -32,6 +33,22 @@ Get-MgReportOneDriveUsageAccountCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get the trend in the number of active OneDrive for Business sites.
 Any site on which users viewed, modified, uploaded, downloaded, shared, or synced files is considered an active site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getonedriveusageaccountcounts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportOneDriveUsageAccountCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOneDriveUsageAccountCount Cmdlet.
+
 
 ## PARAMETERS
 
@@ -186,7 +203,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusageaccountcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusageaccountcount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-1.0)
-
 
 
 

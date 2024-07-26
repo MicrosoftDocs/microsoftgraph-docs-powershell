@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationship
 schema: 2.0.0
+ms.subservice: partner-customer-administration
 ---
 
 # New-MgBetaTenantRelationshipDelegatedAdminRelationship
@@ -37,6 +38,9 @@ New-MgBetaTenantRelationshipDelegatedAdminRelationship
 
 ## DESCRIPTION
 Create a new delegatedAdminRelationship object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tenantrelationship-post-delegatedadminrelationships-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

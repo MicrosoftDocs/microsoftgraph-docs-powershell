@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequota
 schema: 2.0.0
+ms.subservice: onedrive
 ---
 
 # Get-MgBetaUserSettingStorageQuota
@@ -28,6 +29,9 @@ Get-MgBetaUserSettingStorageQuota -InputObject <IUsersIdentity> [-ExpandProperty
 
 ## DESCRIPTION
 Read the properties and relationships of a unifiedStorageQuota object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedstoragequota-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get the unified quota information for the current user

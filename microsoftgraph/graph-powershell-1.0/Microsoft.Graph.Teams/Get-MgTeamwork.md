@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamwork
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgTeamwork
@@ -22,6 +23,22 @@ Get-MgTeamwork [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHea
 
 ## DESCRIPTION
 Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamwork-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamwork
+
+```
+This example shows how to use the Get-MgTeamwork Cmdlet.
+
 
 ## PARAMETERS
 
@@ -116,7 +133,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamwork)
 
 [https://learn.microsoft.com/graph/api/teamwork-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamwork-get?view=graph-rest-1.0)
-
 
 
 

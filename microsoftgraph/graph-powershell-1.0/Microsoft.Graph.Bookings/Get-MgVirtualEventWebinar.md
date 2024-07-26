@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinar
 schema: 2.0.0
+ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgVirtualEventWebinar
@@ -39,6 +41,25 @@ Get-MgVirtualEventWebinar -InputObject <IBookingsIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventWebinar object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventwebinar-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventsroot-list-webinars-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+Get-MgVirtualEventWebinar -VirtualEventWebinarId $virtualEventWebinarId
+
+```
+This example shows how to use the Get-MgVirtualEventWebinar Cmdlet.
+
 
 ## PARAMETERS
 
@@ -309,7 +330,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/virtualeventwebinar-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventwebinar-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0)
-
 
 
 

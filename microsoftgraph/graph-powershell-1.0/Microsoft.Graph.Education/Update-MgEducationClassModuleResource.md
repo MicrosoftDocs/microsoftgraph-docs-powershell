@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmoduleresource
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Update-MgEducationClassModuleResource
@@ -51,6 +52,28 @@ Update-MgEducationClassModuleResource -InputObject <IEducationIdentity>
 Update a resource in a module.
 Only teachers can perform this operation.
 The only one property that can be updated is displayName, for all resource types.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmoduleresource-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+$params = @{
+	resource = @{
+		displayName = "New pptx file patched.pptx"
+	}
+}
+
+Update-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgEducationClassModuleResource Cmdlet.
+
 
 ## PARAMETERS
 
@@ -327,7 +350,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmoduleresource)
 
 [https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcolumn
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # New-MgSiteListColumn
@@ -67,6 +68,9 @@ New-MgSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create a column for a list with a request that specifies a columnDefinition.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-post-columns-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

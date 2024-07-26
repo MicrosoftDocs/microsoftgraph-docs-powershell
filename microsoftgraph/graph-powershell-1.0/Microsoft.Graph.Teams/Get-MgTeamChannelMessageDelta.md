@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagedelta
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgTeamChannelMessageDelta
@@ -51,6 +52,55 @@ To proceed with a round of change tracking, copy and apply the @odata.nextLink o
 A @odata.deltaLink returned in a response signifies that the current round of change tracking is complete.
 You can save and use the @odata.deltaLink URL when you begin to retrieve more changes (messages changed or posted after acquiring @odata.deltaLink).
 For more information, see the delta query documentation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-delta-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Top 2 
+
+```
+This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Skiptoken "-FG3FPHv7HuyuazNLuy3eXlzQGbEjYLUsW9-pYkmXgn5KGsaOwrCoor2W23dGNNM1KtAX4AyvpFQNVsBgsEwUOX9lw8x9zDumgJy-C-UbjZLlZDQACyC9FyrVelZus9n.--rshdLwy_WBFJd8anPXJPbSUtUD7r3V4neB5tcrG58" 
+
+```
+This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Skiptoken "8UusBixEHS9UUau6uGcryrA6FpnWwMJbuTYILM1PArHxnZzDVcsHQrijNzCyIVeEauMQsKUfMhNjLWFs1o4sBS_LofJ7xMftZUfec_pijuT6cAk5ugcWCca9RCjK7iVj.DKZ9w4bX9vCR7Sj9P0_qxjLAAPiEZgxlOxxmCLMzHJ4" 
+
+```
+This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Deltatoken "aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4" 
+
+```
+This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
+
 
 ## PARAMETERS
 
@@ -367,7 +417,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagedelta)
 
 [https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0)
-
 
 
 

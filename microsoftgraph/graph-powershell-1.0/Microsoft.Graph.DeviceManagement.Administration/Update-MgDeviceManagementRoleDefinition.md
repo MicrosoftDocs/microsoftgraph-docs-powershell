@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementRoleDefinition
@@ -49,6 +50,42 @@ Update-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministr
 
 ## DESCRIPTION
 Update the properties of a deviceAndAppManagementRoleDefinition object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceAndAppManagementRoleDefinition"
+	displayName = "Display Name value"
+	description = "Description value"
+	rolePermissions = @(
+		@{
+			"@odata.type" = "microsoft.graph.rolePermission"
+			resourceActions = @(
+				@{
+					"@odata.type" = "microsoft.graph.resourceAction"
+					allowedResourceActions = @(
+					"Allowed Resource Actions value"
+				)
+				notAllowedResourceActions = @(
+				"Not Allowed Resource Actions value"
+			)
+		}
+	)
+}
+)
+isBuiltIn = $true
+}
+
+Update-MgDeviceManagementRoleDefinition -RoleDefinitionId $roleDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 
@@ -408,7 +445,6 @@ These must match the actionName that is defined as part of the rolePermission.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition)
 
 [https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-update?view=graph-rest-1.0)
-
 
 
 

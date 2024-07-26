@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/start-mgprintsharejob
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # Start-MgPrintShareJob
@@ -31,6 +32,22 @@ Start-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeader
 ## DESCRIPTION
 Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending jobs are completed, aborted, or canceled.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-start-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+Start-MgPrintShareJob -PrinterShareId $printerShareId -PrintJobId $printJobId
+
+```
+This example shows how to use the Start-MgPrintShareJob Cmdlet.
+
 
 ## PARAMETERS
 
@@ -192,7 +209,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/start-mgprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/start-mgprintsharejob)
 
 [https://learn.microsoft.com/graph/api/printjob-start?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printjob-start?view=graph-rest-1.0)
-
 
 
 

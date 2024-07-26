@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # New-MgSearchBookmark
@@ -35,6 +36,51 @@ New-MgSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-ResponseHe
 
 ## DESCRIPTION
 Create a new bookmark object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-searchentity-post-bookmarks-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Search
+
+$params = @{
+	displayName = "Contoso Install Site"
+	webUrl = "http://www.contoso.com/"
+	description = "Try or buy Contoso for Home or Business and view product information"
+	keywords = @{
+		keywords = @(
+		"Contoso"
+	"install"
+)
+reservedKeywords = @(
+"Unique keyword"
+)
+matchSimilarKeywords = $true
+}
+availabilityStartDateTime = $null
+availabilityEndDateTime = $null
+platforms = @(
+"windows"
+)
+targetedVariations = @(
+@{
+languageTag = "es-es"
+displayName = "Sitio de instalación Contoso"
+description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
+}
+)
+state = "published"
+}
+
+New-MgSearchBookmark -BodyParameter $params
+
+```
+This example shows how to use the New-MgSearchBookmark Cmdlet.
+
 
 ## PARAMETERS
 
@@ -526,7 +572,6 @@ When users select this answer variation from the search results, they're directe
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark)
 
 [https://learn.microsoft.com/graph/api/search-searchentity-post-bookmarks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-post-bookmarks?view=graph-rest-1.0)
-
 
 
 

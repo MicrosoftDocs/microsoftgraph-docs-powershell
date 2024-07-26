@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # Remove-MgSearchBookmark
@@ -31,6 +32,22 @@ Remove-MgSearchBookmark -InputObject <ISearchIdentity> [-IfMatch <String>] [-Res
 
 ## DESCRIPTION
 Delete a bookmark object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-bookmark-delete-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Search
+
+Remove-MgSearchBookmark -BookmarkId $bookmarkId
+
+```
+This example shows how to use the Remove-MgSearchBookmark Cmdlet.
+
 
 ## PARAMETERS
 
@@ -203,7 +220,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark)
 
 [https://learn.microsoft.com/graph/api/search-bookmark-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-delete?view=graph-rest-1.0)
-
 
 
 

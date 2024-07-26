@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchbookmark
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # Remove-MgBetaSearchBookmark
@@ -31,6 +32,9 @@ Remove-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete a bookmark object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

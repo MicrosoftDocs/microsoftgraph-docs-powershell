@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyuniquename
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Get-MgGroupByUniqueName
@@ -213,7 +214,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyuniquename)
 
 [https://learn.microsoft.com/graph/api/group-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-get?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinitionroleassignment
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementRoleDefinitionRoleAssignment
@@ -49,6 +50,28 @@ New-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManageme
 
 ## DESCRIPTION
 Create a new roleAssignment object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.roleAssignment"
+	displayName = "Display Name value"
+	description = "Description value"
+	resourceScopes = @(
+	"Resource Scopes value"
+)
+}
+
+New-MgDeviceManagementRoleDefinitionRoleAssignment -RoleDefinitionId $roleDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementRoleDefinitionRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -392,7 +415,6 @@ These must match the actionName that is defined as part of the rolePermission.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinitionroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinitionroleassignment)
 
 [https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-create?view=graph-rest-1.0)
-
 
 
 

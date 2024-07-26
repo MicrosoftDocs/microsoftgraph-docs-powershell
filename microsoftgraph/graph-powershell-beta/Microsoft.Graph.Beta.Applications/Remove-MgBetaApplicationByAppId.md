@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationbyappid
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgBetaApplicationByAppId
@@ -35,6 +36,9 @@ Remove-MgBetaApplicationByAppId -InputObject <IApplicationsIdentity> [-IfMatch <
 Deletes an application.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -232,7 +236,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationbyappid)
 
 [https://learn.microsoft.com/graph/api/application-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-delete?view=graph-rest-beta)
-
 
 
 

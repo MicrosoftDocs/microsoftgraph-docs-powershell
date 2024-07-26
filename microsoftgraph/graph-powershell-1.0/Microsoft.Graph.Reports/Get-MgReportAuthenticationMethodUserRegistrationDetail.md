@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportauthenticationmethoduserregistrationdetail
 schema: 2.0.0
+ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgReportAuthenticationMethodUserRegistrationDetail
@@ -39,6 +41,19 @@ Get-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReportsIde
 
 ## DESCRIPTION
 Read the properties and relationships of a userRegistrationDetails object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportAuthenticationMethodUserRegistrationDetail
+
+```
+This example shows how to use the Get-MgReportAuthenticationMethodUserRegistrationDetail Cmdlet.
+
 
 ## PARAMETERS
 
@@ -316,7 +331,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/userregistrationdetails-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userregistrationdetails-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userregistrationdetails?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userregistrationdetails?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # New-MgSearchAcronym
@@ -32,6 +33,30 @@ New-MgSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-ResponseHead
 
 ## DESCRIPTION
 Create a new acronym object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-searchentity-post-acronyms-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Search
+
+$params = @{
+	displayName = "DNN"
+	standsFor = "Deep Neural Network"
+	description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers."
+	webUrl = "http://microsoft.com/deep-neural-network"
+	state = "draft"
+}
+
+New-MgSearchAcronym -BodyParameter $params
+
+```
+This example shows how to use the New-MgSearchAcronym Cmdlet.
+
 
 ## PARAMETERS
 
@@ -321,7 +346,6 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym)
 
 [https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-1.0)
-
 
 
 

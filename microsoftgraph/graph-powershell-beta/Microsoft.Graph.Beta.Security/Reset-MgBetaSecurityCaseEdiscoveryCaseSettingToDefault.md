@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/reset-mgbetasecuritycaseediscoverycasesettingtodefault
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault
@@ -31,6 +32,9 @@ Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault -InputObject <ISecurityId
 
 ## DESCRIPTION
 Reset a caseSettings object to the default values.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycasesettings-resettodefault-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

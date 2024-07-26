@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mginvitegroupdriveroot
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgInviteGroupDriveRoot
@@ -51,6 +52,9 @@ Invoke-MgInviteGroupDriveRoot -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-invite-permissions.md)]
 
 ## PARAMETERS
 
@@ -414,7 +418,6 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mginvitegroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mginvitegroupdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0)
-
 
 
 

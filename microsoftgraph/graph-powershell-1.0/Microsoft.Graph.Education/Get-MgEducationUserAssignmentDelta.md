@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentdelta
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Get-MgEducationUserAssignmentDelta
@@ -37,6 +38,9 @@ Get-MgEducationUserAssignmentDelta -InputObject <IEducationIdentity> [-ExpandPro
 Get a list of newly-created or updated assignments without reading the whole collection.
 A teacher or an application running with application permissions can see all assignment objects for the class.
 Students can only see assignments that are assigned to them.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-delta-permissions.md)]
 
 ## PARAMETERS
 
@@ -318,7 +322,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentdelta)
 
 [https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0)
-
 
 
 

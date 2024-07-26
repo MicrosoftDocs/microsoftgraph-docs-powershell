@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeclass
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationMeClass
@@ -41,6 +42,9 @@ Get-MgBetaEducationMeClass -InputObject <IEducationIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Classes to which the user belongs.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-list-classes-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

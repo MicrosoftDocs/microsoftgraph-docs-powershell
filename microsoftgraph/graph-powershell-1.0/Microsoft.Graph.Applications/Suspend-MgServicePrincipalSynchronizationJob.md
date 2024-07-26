@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/suspend-mgserviceprincipalsynchronizationjob
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Suspend-MgServicePrincipalSynchronizationJob
@@ -30,6 +31,22 @@ Suspend-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 ## DESCRIPTION
 Temporarily stop a running synchronization job.
 All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-pause-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+Suspend-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+
+```
+This example shows how to use the Suspend-MgServicePrincipalSynchronizationJob Cmdlet.
+
 
 ## PARAMETERS
 
@@ -217,7 +234,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/suspend-mgserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/suspend-mgserviceprincipalsynchronizationjob)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-1.0)
-
 
 
 

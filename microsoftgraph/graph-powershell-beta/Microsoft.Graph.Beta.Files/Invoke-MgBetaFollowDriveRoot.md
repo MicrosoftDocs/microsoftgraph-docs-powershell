@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveroot
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgBetaFollowDriveRoot
@@ -29,6 +30,9 @@ Invoke-MgBetaFollowDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVari
 
 ## DESCRIPTION
 Follow a driveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-follow-permissions.md)]
 
 ## PARAMETERS
 
@@ -186,7 +190,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-beta)
-
 
 
 

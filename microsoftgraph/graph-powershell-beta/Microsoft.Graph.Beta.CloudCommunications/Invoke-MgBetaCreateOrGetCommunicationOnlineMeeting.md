@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetacreateorgetcommunicationonlinemeeting
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting
@@ -314,7 +315,6 @@ This property is read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetacreateorgetcommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetacreateorgetcommunicationonlinemeeting)
 
 [https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-beta)
-
 
 
 

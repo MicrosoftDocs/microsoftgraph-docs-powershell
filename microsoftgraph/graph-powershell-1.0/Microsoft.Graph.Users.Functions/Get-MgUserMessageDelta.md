@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermessagedelta
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Get-MgUserMessageDelta
@@ -350,7 +351,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermessagedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermessagedelta)
 
 [https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0)
-
 
 
 

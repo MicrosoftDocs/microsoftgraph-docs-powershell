@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # New-MgBetaPlannerRoster
@@ -28,6 +29,9 @@ New-MgBetaPlannerRoster -BodyParameter <IMicrosoftGraphPlannerRoster> [-Response
 
 ## DESCRIPTION
 Create a new plannerRoster object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planner-post-rosters-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

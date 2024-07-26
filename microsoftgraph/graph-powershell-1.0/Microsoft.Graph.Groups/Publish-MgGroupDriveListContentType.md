@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/publish-mggroupdrivelistcontenttype
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Publish-MgGroupDriveListContentType
@@ -31,6 +32,9 @@ Publish-MgGroupDriveListContentType -InputObject <IGroupsIdentity> [-ResponseHea
 
 ## DESCRIPTION
 Publishes a contentType present in the content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-publish-permissions.md)]
 
 ## PARAMETERS
 
@@ -250,7 +254,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/publish-mggroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/publish-mggroupdrivelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
-
 
 
 

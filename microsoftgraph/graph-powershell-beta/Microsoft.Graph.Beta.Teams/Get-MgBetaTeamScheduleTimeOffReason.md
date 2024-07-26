@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduletimeoffreason
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamScheduleTimeOffReason
@@ -39,6 +41,12 @@ Get-MgBetaTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a timeOffReason object by ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timeoffreason-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schedule-list-timeoffreasons-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

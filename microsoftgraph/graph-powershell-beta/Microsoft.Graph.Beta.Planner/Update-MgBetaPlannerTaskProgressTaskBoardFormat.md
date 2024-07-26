@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskprogresstaskboardformat
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Update-MgBetaPlannerTaskProgressTaskBoardFormat
@@ -45,6 +46,9 @@ Update-MgBetaPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> 
 
 ## DESCRIPTION
 Update the properties of plannerProgressTaskBoardTaskFormat object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerprogresstaskboardtaskformat-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

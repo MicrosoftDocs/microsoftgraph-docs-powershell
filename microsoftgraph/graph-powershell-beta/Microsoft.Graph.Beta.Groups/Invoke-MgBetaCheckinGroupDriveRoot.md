@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckingroupdriveroot
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgBetaCheckinGroupDriveRoot
@@ -47,6 +48,9 @@ Invoke-MgBetaCheckinGroupDriveRoot -InputObject <IGroupsIdentity> [-ResponseHead
 
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-checkin-permissions.md)]
 
 ## PARAMETERS
 
@@ -344,7 +348,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckingroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckingroupdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-beta)
-
 
 
 

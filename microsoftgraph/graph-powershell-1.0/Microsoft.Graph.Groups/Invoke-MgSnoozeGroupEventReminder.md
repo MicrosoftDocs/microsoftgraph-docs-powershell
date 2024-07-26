@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsnoozegroupeventreminder
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Invoke-MgSnoozeGroupEventReminder
@@ -47,6 +48,9 @@ Invoke-MgSnoozeGroupEventReminder -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-snoozereminder-permissions.md)]
 
 ## PARAMETERS
 

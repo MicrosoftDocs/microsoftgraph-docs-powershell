@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleassignment
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgRoleManagementEntitlementManagementRoleAssignment
@@ -34,6 +35,28 @@ New-MgRoleManagementEntitlementManagementRoleAssignment -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create a new unifiedRoleAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-post-roleassignments-permissions.md)]
+
+## EXAMPLES
+### Example 1: Create a role assignment with access package catalog scope
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	principalId = "679a9213-c497-48a4-830a-8d3d25d94ddc"
+	roleDefinitionId = "ae79f266-94d4-4dab-b730-feca7e132178"
+	appScopeId = "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
+}
+
+New-MgRoleManagementEntitlementManagementRoleAssignment -BodyParameter $params
+
+```
+This example will create a role assignment with access package catalog scope
+
 
 ## PARAMETERS
 
@@ -473,7 +496,6 @@ Read-only when isBuiltIn is true.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleassignment)
 
 [https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-1.0)
-
 
 
 

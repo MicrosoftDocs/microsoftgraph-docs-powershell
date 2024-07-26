@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryattributeset
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryAttributeSet
@@ -39,6 +41,47 @@ Get-MgDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdentity> 
 
 ## DESCRIPTION
 Read the properties and relationships of an attributeSet object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attributeset-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-list-attributesets-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get all attribute sets
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDirectoryAttributeSet
+
+```
+This example will get all attribute sets
+
+### Example 2: Get top attribute sets
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDirectoryAttributeSet -Top 10 
+
+```
+This example will get top attribute sets
+
+### Example 3: Get attribute sets in order
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDirectoryAttributeSet -Sort "id" 
+
+```
+This example will get attribute sets in order
+
 
 ## PARAMETERS
 
@@ -320,7 +363,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/attributeset-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attributeset-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/directory-list-attributesets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-attributesets?view=graph-rest-1.0)
-
 
 
 

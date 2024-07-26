@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoreserviceapp
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Initialize-MgBetaBackupRestoreServiceApp
@@ -44,6 +45,26 @@ Initialize-MgBetaBackupRestoreServiceApp -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Activate a serviceApp.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceapp-activate-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	effectiveDateTime = [System.DateTime]::Parse("2024-04-19T12-01-03.45Z")
+}
+
+Initialize-MgBetaBackupRestoreServiceApp -ServiceAppId $serviceAppId -BodyParameter $params
+
+```
+This example shows how to use the Initialize-MgBetaBackupRestoreServiceApp Cmdlet.
+
 
 ## PARAMETERS
 
@@ -271,8 +292,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoreserviceapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoreserviceapp)
 
 [https://learn.microsoft.com/graph/api/serviceapp-activate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceapp-activate?view=graph-rest-beta)
-
-
 
 
 

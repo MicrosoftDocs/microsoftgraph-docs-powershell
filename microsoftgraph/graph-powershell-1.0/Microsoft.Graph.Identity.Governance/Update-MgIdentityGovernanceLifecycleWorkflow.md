@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Update-MgIdentityGovernanceLifecycleWorkflow
@@ -67,6 +68,29 @@ Update-MgIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceId
 Update the properties of a workflow object.
 Only the properties listed in the request body table can be updated.
 To update any other workflow properties, see workflow: createNewVersion.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	description = "Configure new hire tasks for onboarding employees on their first day"
+	displayName = "Australia Onboard new hire employee"
+	isEnabled = $true
+	isSchedulingEnabled = $false
+}
+
+Update-MgIdentityGovernanceLifecycleWorkflow -WorkflowId $workflowId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgIdentityGovernanceLifecycleWorkflow Cmdlet.
+
 
 ## PARAMETERS
 
@@ -43733,7 +43757,6 @@ Value is null if task execution has not yet started.Supports $filter(lt, le, gt,
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-workflow-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-update?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationOwnerByRef
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgBetaApplicationOwnerByRef
@@ -33,6 +34,9 @@ Remove-MgBetaApplicationOwnerByRef -InputObject <IApplicationsIdentity> [-IfMatc
 ## DESCRIPTION
 Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-owners-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

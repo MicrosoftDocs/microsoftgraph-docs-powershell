@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroleassignment
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementRoleAssignment
@@ -49,6 +50,31 @@ Update-MgDeviceManagementRoleAssignment -InputObject <IDeviceManagementAdministr
 
 ## DESCRIPTION
 Update the properties of a deviceAndAppManagementRoleAssignment object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceAndAppManagementRoleAssignment"
+	displayName = "Display Name value"
+	description = "Description value"
+	resourceScopes = @(
+	"Resource Scopes value"
+)
+members = @(
+"Members value"
+)
+}
+
+Update-MgDeviceManagementRoleAssignment -DeviceAndAppManagementRoleAssignmentId $deviceAndAppManagementRoleAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -423,7 +449,6 @@ These must match the actionName that is defined as part of the rolePermission.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroleassignment)
 
 [https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroleassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroleassignment-update?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolderchildfolder
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Move-MgBetaUserMailFolderChildFolder
@@ -305,7 +306,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolderchildfolder)
 
 [https://learn.microsoft.com/graph/api/mailfolder-move?view=graph-rest-beta](https://learn.microsoft.com/graph/api/mailfolder-move?view=graph-rest-beta)
-
 
 
 

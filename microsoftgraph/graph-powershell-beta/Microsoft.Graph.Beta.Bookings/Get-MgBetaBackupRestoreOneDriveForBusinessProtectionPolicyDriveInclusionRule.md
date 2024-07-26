@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoreonedriveforbusinessprotectionpolicydriveinclusionrule
 schema: 2.0.0
+ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule
@@ -46,6 +48,25 @@ You can use this operation to get mailbox, drive, and site protection rules.
 An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria.
 The initial status of a protection rule upon creation is active.
 After the rule is applied, the state is either completed or completedWithErrors.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionrulebase-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onedriveforbusinessprotectionpolicy-list-driveinclusionrules-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get a driveInclusionRule associated with an OneDriveForBusiness protection policy
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule -OneDriveForBusinessProtectionPolicyId $oneDriveForBusinessProtectionPolicyId -DriveProtectionRuleId $driveProtectionRuleId
+
+```
+This example will get a driveinclusionrule associated with an onedriveforbusiness protection policy
+
 
 ## PARAMETERS
 
@@ -359,10 +380,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules?view=graph-rest-beta)
-
-
-
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationuserassignmentupresourcefolder
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Set-MgBetaEducationUserAssignmentUpResourceFolder
@@ -35,6 +36,9 @@ Set-MgBetaEducationUserAssignmentUpResourceFolder -InputObject <IEducationIdenti
 Create a SharePoint folder to upload files for a given educationAssignment.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-setupresourcesfolder-permissions.md)]
 
 ## PARAMETERS
 
@@ -201,7 +205,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationuserassignmentupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationuserassignmentupresourcefolder)
 
 [https://learn.microsoft.com/graph/api/educationassignment-setupresourcesfolder?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-setupresourcesfolder?view=graph-rest-beta)
-
 
 
 

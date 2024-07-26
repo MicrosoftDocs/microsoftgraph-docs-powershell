@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyserviceprincipalcompromised
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Confirm-MgRiskyServicePrincipalCompromised
@@ -37,6 +38,25 @@ This action sets the targeted service principal account's risk level to high.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyserviceprincipal-confirmcompromised-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	servicePrincipalIds = @(
+	"9089a539-a539-9089-39a5-899039a58990"
+)
+}
+
+Confirm-MgRiskyServicePrincipalCompromised -BodyParameter $params
+
+```
+This example shows how to use the Confirm-MgRiskyServicePrincipalCompromised Cmdlet.
+
 
 ## PARAMETERS
 
@@ -202,7 +222,6 @@ BODYPARAMETER `<IPaths1858Gl0IdentityprotectionRiskyserviceprincipalsMicrosoftGr
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyserviceprincipalcompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyserviceprincipalcompromised)
 
 [https://learn.microsoft.com/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-1.0)
-
 
 
 

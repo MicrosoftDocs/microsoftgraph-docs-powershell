@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedebookuserstatesummary
 schema: 2.0.0
+ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgDeviceAppManagementManagedEBookUserStateSummary
@@ -40,6 +42,19 @@ Get-MgDeviceAppManagementManagedEBookUserStateSummary -InputObject <IDevicesCorp
 
 ## DESCRIPTION
 Read properties and relationships of the userInstallStateSummary object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementManagedEBookUserStateSummary -ManagedEBookId $managedEBookId
+
+```
+This example shows how to use the Get-MgDeviceAppManagementManagedEBookUserStateSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -345,7 +360,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-list?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage
@@ -51,6 +52,27 @@ Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage
 
 ## DESCRIPTION
 Update the properties of a localizedNotificationMessage object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.localizedNotificationMessage"
+	locale = "Locale value"
+	subject = "Subject value"
+	messageTemplate = "Message Template value"
+	isDefault = $true
+}
+
+Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage -NotificationMessageTemplateId $notificationMessageTemplateId -LocalizedNotificationMessageId $localizedNotificationMessageId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -390,7 +412,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage)
 
 [https://learn.microsoft.com/graph/api/intune-notification-localizednotificationmessage-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-notification-localizednotificationmessage-update?view=graph-rest-1.0)
-
 
 
 

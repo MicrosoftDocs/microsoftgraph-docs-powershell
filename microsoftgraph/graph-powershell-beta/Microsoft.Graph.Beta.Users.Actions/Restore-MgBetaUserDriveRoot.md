@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveroot
 schema: 2.0.0
+ms.subservice: onedrive
 ---
 
 # Restore-MgBetaUserDriveRoot
@@ -363,7 +364,6 @@ For OneDrive, this property isn't populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-beta)
-
 
 
 

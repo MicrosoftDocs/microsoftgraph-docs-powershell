@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # New-MgSecurityLabelCitation
@@ -32,6 +33,29 @@ New-MgSecurityLabelCitation -BodyParameter <IMicrosoftGraphSecurityCitationTempl
 
 ## DESCRIPTION
 Create a new citationTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-post-citations-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.citationTemplate"
+	displayName = "Contoso Company Policy"
+	citationUrl = "www.citationUrl.com"
+	citationJurisdiction = "Contoso"
+}
+
+New-MgSecurityLabelCitation -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityLabelCitation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -287,7 +311,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-1.0)
-
 
 
 

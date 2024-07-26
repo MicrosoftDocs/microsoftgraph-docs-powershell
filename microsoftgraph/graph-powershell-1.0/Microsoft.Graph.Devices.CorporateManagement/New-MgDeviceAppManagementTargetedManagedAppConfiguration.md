@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementtargetedmanagedappconfiguration
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceAppManagementTargetedManagedAppConfiguration
@@ -35,6 +36,35 @@ New-MgDeviceAppManagementTargetedManagedAppConfiguration
 
 ## DESCRIPTION
 Create a new targetedManagedAppConfiguration object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.targetedManagedAppConfiguration"
+	displayName = "Display Name value"
+	description = "Description value"
+	version = "Version value"
+	customSettings = @(
+		@{
+			"@odata.type" = "microsoft.graph.keyValuePair"
+			name = "Name value"
+			value = "Value value"
+		}
+	)
+	deployedAppCount = 0
+	isAssigned = $true
+}
+
+New-MgDeviceAppManagementTargetedManagedAppConfiguration -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementTargetedManagedAppConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -418,7 +448,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementtargetedmanagedappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementtargetedmanagedappconfiguration)
 
 [https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-create?view=graph-rest-1.0)
-
 
 
 

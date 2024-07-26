@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgDirectoryAttributeSet
@@ -30,6 +31,28 @@ New-MgDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet> [-Respo
 
 ## DESCRIPTION
 Create a new attributeSet object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-post-attributesets-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = @{
+	id = "Engineering"
+	description = "Attributes for engineering team"
+	maxAttributesPerSet = 25
+}
+
+New-MgDirectoryAttributeSet -BodyParameter $params
+
+```
+This example shows how to use the New-MgDirectoryAttributeSet Cmdlet.
+
 
 ## PARAMETERS
 
@@ -224,7 +247,6 @@ Can be changed later.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset)
 
 [https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-1.0)
-
 
 
 

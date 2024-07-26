@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdriveroot
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Copy-MgUserDriveRoot
@@ -352,7 +353,6 @@ For OneDrive, this property is not populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-1.0)
-
 
 
 

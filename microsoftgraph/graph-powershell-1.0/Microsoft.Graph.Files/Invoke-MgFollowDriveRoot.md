@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowdriveroot
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgFollowDriveRoot
@@ -29,6 +30,9 @@ Invoke-MgFollowDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariable
 
 ## DESCRIPTION
 Follow a driveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-follow-permissions.md)]
 
 ## PARAMETERS
 
@@ -186,7 +190,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-1.0)
-
 
 
 

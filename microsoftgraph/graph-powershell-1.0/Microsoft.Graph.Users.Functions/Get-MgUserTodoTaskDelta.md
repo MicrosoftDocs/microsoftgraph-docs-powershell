@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusertodotaskdelta
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Get-MgUserTodoTaskDelta
@@ -40,6 +41,20 @@ This allows you to maintain and synchronize a local store of a user's todoTask r
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-delta-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Users.Functions
+
+# A UPN can also be used as -UserId.
+Get-MgUserTodoTaskDelta -UserId $userId -TodoTaskListId $todoTaskListId -Deltatoken "w0vf2jHg2mBXU-I2AK0FSWl0dopNtG8u5YoM" 
+
+```
+This example shows how to use the Get-MgUserTodoTaskDelta Cmdlet.
+
 
 ## PARAMETERS
 
@@ -349,7 +364,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusertodotaskdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusertodotaskdelta)
 
 [https://learn.microsoft.com/graph/api/todotask-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-delta?view=graph-rest-1.0)
-
 
 
 

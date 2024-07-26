@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupplannerplanbuckettaskdelta
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Get-MgBetaGroupPlannerPlanBucketTaskDelta
@@ -32,6 +33,9 @@ Get-MgBetaGroupPlannerPlanBucketTaskDelta -InputObject <IGroupsIdentity> [-Expan
 ## DESCRIPTION
 Get newly created, updated, or deleted tasks in either a Planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection.
 For details, see Use delta query to track changes in Microsoft Graph data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-delta-permissions.md)]
 
 ## PARAMETERS
 
@@ -376,7 +380,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupplannerplanbuckettaskdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupplannerplanbuckettaskdelta)
 
 [https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta)
-
 
 
 

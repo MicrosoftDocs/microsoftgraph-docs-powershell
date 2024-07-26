@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowversion
 schema: 2.0.0
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgIdentityGovernanceLifecycleWorkflowVersion
@@ -39,6 +41,36 @@ Get-MgIdentityGovernanceLifecycleWorkflowVersion -InputObject <IIdentityGovernan
 
 ## DESCRIPTION
 Read the properties and relationships of a workflowVersion object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflowversion-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-list-versions-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get a workflow version
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber
+
+```
+This example will get a workflow version
+
+### Example 2: Get specific properties of a version of a workflow
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber -Property "category,displayName,versionNumber,executionConditions" -ExpandProperty "tasks" 
+
+```
+This example will get specific properties of a version of a workflow
+
 
 ## PARAMETERS
 
@@ -376,7 +408,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/identitygovernance-workflowversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflowversion-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-versions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-versions?view=graph-rest-1.0)
-
 
 
 

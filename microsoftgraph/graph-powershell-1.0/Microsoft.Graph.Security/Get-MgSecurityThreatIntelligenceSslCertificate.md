@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesslcertificate
 schema: 2.0.0
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceSslCertificate
@@ -39,6 +41,25 @@ Get-MgSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdentity> 
 
 ## DESCRIPTION
 Get the properties and relationships of an sslCertificate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-sslcertificate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-threatintelligence-list-sslcertificates-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceSslCertificate -Search '"subject/commonName:microsoft.com"' -CountVariable CountVar -Top 1 
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceSslCertificate Cmdlet.
+
 
 ## PARAMETERS
 
@@ -355,7 +376,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-sslcertificate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-sslcertificate-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-threatintelligence-list-sslcertificates?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-threatintelligence-list-sslcertificates?view=graph-rest-1.0)
-
 
 
 

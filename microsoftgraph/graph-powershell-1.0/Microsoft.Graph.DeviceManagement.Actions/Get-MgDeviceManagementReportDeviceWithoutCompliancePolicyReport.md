@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicewithoutcompliancepolicyreport
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport
@@ -34,6 +35,37 @@ Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport -OutFile <String
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	name = "Name value"
+	select = @(
+	"Select value"
+)
+search = "Search value"
+groupBy = @(
+"Group By value"
+)
+orderBy = @(
+"Order By value"
+)
+skip = 4
+top = 3
+sessionId = "Session Id value"
+filter = "Filter value"
+}
+
+Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport Cmdlet.
+
 
 ## PARAMETERS
 
@@ -342,7 +374,6 @@ BODYPARAMETER `<IPaths1RxowymDevicemanagementReportsMicrosoftGraphGetdeviceswith
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicewithoutcompliancepolicyreport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicewithoutcompliancepolicyreport)
 
 [https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getdeviceswithoutcompliancepolicyreport?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getdeviceswithoutcompliancepolicyreport?view=graph-rest-1.0)
-
 
 
 

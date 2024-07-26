@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitygroupcount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportYammerGroupActivityGroupCount
@@ -31,6 +32,22 @@ Get-MgReportYammerGroupActivityGroupCount -InputObject <IReportsIdentity> -OutFi
 
 ## DESCRIPTION
 Get the total number of groups that existed and how many included group conversation activities.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammergroupsactivitygroupcounts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportYammerGroupActivityGroupCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportYammerGroupActivityGroupCount Cmdlet.
+
 
 ## PARAMETERS
 
@@ -185,7 +202,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitygroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitygroupcount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-1.0)
-
 
 
 

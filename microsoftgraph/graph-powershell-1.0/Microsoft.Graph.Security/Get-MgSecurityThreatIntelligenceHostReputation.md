@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostreputation
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceHostReputation
@@ -31,6 +32,22 @@ Get-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity> 
 
 ## DESCRIPTION
 Get the properties and relationships of a hostReputation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-host-get-reputation-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceHostReputation -HostId $hostId
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceHostReputation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -224,7 +241,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostreputation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostreputation)
 
 [https://learn.microsoft.com/graph/api/security-host-get-reputation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-get-reputation?view=graph-rest-1.0)
-
 
 
 

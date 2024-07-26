@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauser
 schema: 2.0.0
+ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Get-MgBetaUser
@@ -52,6 +54,9 @@ Customers through Microsoft Entra ID for customers can also use this API operati
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get the list of all the users

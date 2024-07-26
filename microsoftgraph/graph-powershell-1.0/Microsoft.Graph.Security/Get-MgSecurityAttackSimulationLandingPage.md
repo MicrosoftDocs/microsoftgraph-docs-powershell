@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationlandingpage
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgSecurityAttackSimulationLandingPage
@@ -53,6 +54,22 @@ Get-MgSecurityAttackSimulationLandingPage -InputObject <ISecurityIdentity> [-Exp
 
 ## DESCRIPTION
 Represents an attack simulation training landing page.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-landingpage-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityAttackSimulationLandingPage -Filter "source eq 'tenant'" 
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulationLandingPage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -382,7 +399,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationlandingpage](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationlandingpage)
 
 [https://learn.microsoft.com/graph/api/attacksimulationroot-list-landingpage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-list-landingpage?view=graph-rest-1.0)
-
 
 
 

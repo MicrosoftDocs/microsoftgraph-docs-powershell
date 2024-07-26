@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcitation
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Remove-MgSecurityLabelCitation
@@ -31,6 +32,22 @@ Remove-MgSecurityLabelCitation -InputObject <ISecurityIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete a citationTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-citations-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Remove-MgSecurityLabelCitation -CitationTemplateId $citationTemplateId
+
+```
+This example shows how to use the Remove-MgSecurityLabelCitation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -255,7 +272,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcitation)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-delete-citations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-delete-citations?view=graph-rest-1.0)
-
 
 
 

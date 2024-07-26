@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguseronlinemeetingvirtualappointmentremindersm
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Send-MgUserOnlineMeetingVirtualAppointmentReminderSm
@@ -56,6 +57,34 @@ This feature requires Teams premium and attendees must have a valid United State
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualappointment-sendvirtualappointmentremindersms-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Users.Actions
+
+$params = @{
+	attendees = @(
+		@{
+			phoneNumber = "+13129224122"
+			timeZone = "Pacific Standard Time"
+		}
+		@{
+			phoneNumber = "+1242421412"
+			timeZone = "Eastern Standard Time"
+		}
+	)
+	remindBeforeTimeInMinutesType = "mins15"
+}
+
+# A UPN can also be used as -UserId.
+Send-MgUserOnlineMeetingVirtualAppointmentReminderSm -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+
+```
+This example shows how to use the Send-MgUserOnlineMeetingVirtualAppointmentReminderSm Cmdlet.
+
 
 ## PARAMETERS
 
@@ -329,7 +358,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguseronlinemeetingvirtualappointmentremindersm](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguseronlinemeetingvirtualappointmentremindersm)
 
 [https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-1.0)
-
 
 
 

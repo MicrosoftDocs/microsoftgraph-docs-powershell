@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/remove-mgdevicemanagementwindowsautopilotdeviceidentity
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity
@@ -31,6 +32,19 @@ Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity -InputObject <IDeviceMan
 
 ## DESCRIPTION
 Deletes a windowsAutopilotDeviceIdentity.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
+
+Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity -WindowsAutopilotDeviceIdentityId $windowsAutopilotDeviceIdentityId
+
+```
+This example shows how to use the Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity Cmdlet.
+
 
 ## PARAMETERS
 
@@ -198,7 +212,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/remove-mgdevicemanagementwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/remove-mgdevicemanagementwindowsautopilotdeviceidentity)
 
 [https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeviceidentity-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeviceidentity-delete?view=graph-rest-1.0)
-
 
 
 

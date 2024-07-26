@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgBetaTeamChannelMember
@@ -49,6 +50,9 @@ New-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Add a conversationMember to a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-post-members-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Add a member to a private channel

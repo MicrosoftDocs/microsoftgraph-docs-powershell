@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausereventinstance
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Stop-MgBetaUserEventInstance
@@ -329,7 +330,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausereventinstance)
 
 [https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-beta)
-
 
 
 

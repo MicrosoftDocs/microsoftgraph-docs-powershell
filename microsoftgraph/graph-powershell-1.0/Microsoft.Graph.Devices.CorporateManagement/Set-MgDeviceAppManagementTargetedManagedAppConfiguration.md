@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementtargetedmanagedappconfiguration
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Set-MgDeviceAppManagementTargetedManagedAppConfiguration
@@ -49,6 +50,32 @@ Set-MgDeviceAppManagementTargetedManagedAppConfiguration -InputObject <IDevicesC
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	assignments = @(
+		@{
+			"@odata.type" = "#microsoft.graph.targetedManagedAppPolicyAssignment"
+			id = "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b"
+			target = @{
+				"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+				collectionId = "Collection Id value"
+			}
+		}
+	)
+}
+
+Set-MgDeviceAppManagementTargetedManagedAppConfiguration -TargetedManagedAppConfigurationId $targetedManagedAppConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgDeviceAppManagementTargetedManagedAppConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -294,7 +321,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementtargetedmanagedappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementtargetedmanagedappconfiguration)
 
 [https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-assign?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-assign?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageassignmentrequest
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest
@@ -32,6 +33,9 @@ Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest -InputObject <I
 Delete an accessPackageAssignmentRequest object.
 This request can be made to remove a denied or completed request.
 You can't delete an access package assignment request if it has any accessPackageAssignment objects.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentrequest-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

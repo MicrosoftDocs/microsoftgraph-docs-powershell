@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetarolemanagementdirectoryroleassignmentschedulerequest
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Stop-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest
@@ -33,6 +34,9 @@ Stop-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -InputObject <II
 ## DESCRIPTION
 Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a Granted status, and have the system automatically delete the canceled request after 30 days.
 After calling this action, the status of the canceled unifiedRoleAssignmentScheduleRequest changes to Canceled.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentschedulerequest-cancel-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

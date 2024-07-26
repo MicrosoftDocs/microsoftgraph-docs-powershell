@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertask
 schema: 2.0.0
+ms.subservice: business-scenarios
 ---
 
 # Update-MgBetaBusinessScenarioPlannerTask
@@ -73,6 +74,9 @@ Update-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a businessScenarioTask object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenariotask-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -81,7 +85,6 @@ Update the properties of a businessScenarioTask object.
 Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.businessScenarioTask"
 	title = "Customer order #12010"
 	percentComplete = 20
 	priority = 1

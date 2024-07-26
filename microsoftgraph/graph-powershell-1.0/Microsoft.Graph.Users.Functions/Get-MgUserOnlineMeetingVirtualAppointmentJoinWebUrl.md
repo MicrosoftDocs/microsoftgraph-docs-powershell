@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronlinemeetingvirtualappointmentjoinweburl
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl
@@ -38,6 +39,20 @@ With Teams Premium, you can configure a custom lobby room experience for attende
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualappointment-getvirtualappointmentjoinweburl-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Users.Functions
+
+# A UPN can also be used as -UserId.
+Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl -UserId $userId -OnlineMeetingId $onlineMeetingId
+
+```
+This example shows how to use the Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl Cmdlet.
+
 
 ## PARAMETERS
 
@@ -181,7 +196,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronlinemeetingvirtualappointmentjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguseronlinemeetingvirtualappointmentjoinweburl)
 
 [https://learn.microsoft.com/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-1.0)
-
 
 
 

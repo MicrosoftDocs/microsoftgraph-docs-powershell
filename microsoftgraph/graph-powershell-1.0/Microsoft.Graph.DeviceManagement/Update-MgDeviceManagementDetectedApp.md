@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdetectedapp
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementDetectedApp
@@ -49,6 +50,29 @@ Update-MgDeviceManagementDetectedApp -InputObject <IDeviceManagementIdentity>
 
 ## DESCRIPTION
 Update the properties of a detectedApp object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.detectedApp"
+	displayName = "Display Name value"
+	version = "Version value"
+	sizeInByte = 10
+	deviceCount = 11
+	publisher = "Publisher value"
+	platform = "windows"
+}
+
+Update-MgDeviceManagementDetectedApp -DetectedAppId $detectedAppId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDetectedApp Cmdlet.
+
 
 ## PARAMETERS
 
@@ -9900,7 +9924,6 @@ Defaults to setting on client device.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdetectedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdetectedapp)
 
 [https://learn.microsoft.com/graph/api/intune-devices-detectedapp-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-detectedapp-update?view=graph-rest-1.0)
-
 
 
 

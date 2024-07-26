@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgBetaTeamChannelMessage
@@ -63,6 +64,9 @@ New-MgBetaTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Send a new chatMessage in the specified channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-post-messages-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Send a Hello World message in a channel

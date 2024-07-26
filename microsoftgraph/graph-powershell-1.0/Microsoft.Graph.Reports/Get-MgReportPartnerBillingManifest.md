@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingmanifest
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportPartnerBillingManifest
@@ -39,6 +40,22 @@ Get-MgReportPartnerBillingManifest -InputObject <IReportsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Read the properties and relationships of a manifest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-manifest-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportPartnerBillingManifest -ManifestId $manifestId
+
+```
+This example shows how to use the Get-MgReportPartnerBillingManifest Cmdlet.
+
 
 ## PARAMETERS
 
@@ -314,7 +331,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingmanifest)
 
 [https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkrestoredevicemanagementcomanageddevicecloudpc
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Invoke-MgBetaBulkRestoreDeviceManagementComanagedDeviceCloudPc
@@ -215,7 +216,6 @@ BODYPARAMETER `<IPaths1Rxaz9ODevicemanagementComanageddevicesMicrosoftGraphBulkr
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkrestoredevicemanagementcomanageddevicecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkrestoredevicemanagementcomanageddevicecloudpc)
 
 [https://learn.microsoft.com/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta)
-
 
 
 

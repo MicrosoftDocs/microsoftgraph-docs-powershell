@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedappdiagnosticstatus
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgUserManagedAppDiagnosticStatus
@@ -31,6 +32,19 @@ Get-MgUserManagedAppDiagnosticStatus -InputObject <IUsersFunctionsIdentity> [-Co
 
 ## DESCRIPTION
 Gets diagnostics validation status for a given user.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Users.Functions
+
+Get-MgUserManagedAppDiagnosticStatus -UserId $userId
+
+```
+This example shows how to use the Get-MgUserManagedAppDiagnosticStatus Cmdlet.
+
 
 ## PARAMETERS
 
@@ -234,7 +248,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedappdiagnosticstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedappdiagnosticstatus)
 
 [https://learn.microsoft.com/graph/api/intune-mam-user-getmanagedappdiagnosticstatuses?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-user-getmanagedappdiagnosticstatuses?view=graph-rest-1.0)
-
 
 
 

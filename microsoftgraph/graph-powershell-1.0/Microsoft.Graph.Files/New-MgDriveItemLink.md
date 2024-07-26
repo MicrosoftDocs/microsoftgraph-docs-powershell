@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemlink
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # New-MgDriveItemLink
@@ -55,6 +56,60 @@ New-MgDriveItemLink -InputObject <IFilesIdentity>
 You can use createLink action to share a DriveItem via a sharing link.
 The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-createlink-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Files
+
+$params = @{
+	type = "view"
+	password = "ThisIsMyPrivatePassword"
+	scope = "anonymous"
+	retainInheritedPermissions = $false
+}
+
+New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDriveItemLink Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Files
+
+$params = @{
+	type = "edit"
+	scope = "organization"
+}
+
+New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDriveItemLink Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Files
+
+$params = @{
+	type = "embed"
+}
+
+New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDriveItemLink Cmdlet.
+
 
 ## PARAMETERS
 
@@ -401,7 +456,6 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemlink)
 
 [https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0)
-
 
 
 

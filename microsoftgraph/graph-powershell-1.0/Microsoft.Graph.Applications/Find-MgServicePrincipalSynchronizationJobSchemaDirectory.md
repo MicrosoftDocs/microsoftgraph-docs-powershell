@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgserviceprincipalsynchronizationjobschemadirectory
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Find-MgServicePrincipalSynchronizationJobSchemaDirectory
@@ -34,6 +35,19 @@ Discover the latest schema definition for provisioning to an application.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-directorydefinition-discover-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+Find-MgServicePrincipalSynchronizationJobSchemaDirectory -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -DirectoryDefinitionId $directoryDefinitionId
+
+```
+This example shows how to use the Find-MgServicePrincipalSynchronizationJobSchemaDirectory Cmdlet.
+
 
 ## PARAMETERS
 
@@ -221,7 +235,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgserviceprincipalsynchronizationjobschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgserviceprincipalsynchronizationjobschemadirectory)
 
 [https://learn.microsoft.com/graph/api/synchronization-directorydefinition-discover?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-directorydefinition-discover?view=graph-rest-1.0)
-
 
 
 

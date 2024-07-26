@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mginvitecommunicationcallparticipant
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Invoke-MgInviteCommunicationCallParticipant
@@ -51,6 +52,9 @@ Invoke-MgInviteCommunicationCallParticipant -InputObject <ICloudCommunicationsId
 ## DESCRIPTION
 Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-invite-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Invite one participant to an existing call

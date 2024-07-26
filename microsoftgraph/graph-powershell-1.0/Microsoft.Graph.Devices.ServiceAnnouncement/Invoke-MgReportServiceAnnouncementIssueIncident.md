@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementissueincident
 schema: 2.0.0
+ms.subservice: service-communications
 ---
 
 # Invoke-MgReportServiceAnnouncementIssueIncident
@@ -35,6 +36,22 @@ Invoke-MgReportServiceAnnouncementIssueIncident -InputObject <IDevicesServiceAnn
 Provide the Post-Incident Review (PIR) document of a specified service issue for tenant.
 An issue only with status of PostIncidentReviewPublished indicates that the PIR document exists for the issue.
 The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/servicehealthissue-incidentreport-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+
+Invoke-MgReportServiceAnnouncementIssueIncident -ServiceHealthIssueId $serviceHealthIssueId
+
+```
+This example shows how to use the Invoke-MgReportServiceAnnouncementIssueIncident Cmdlet.
+
 
 ## PARAMETERS
 
@@ -171,7 +188,6 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementissueincident](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementissueincident)
 
 [https://learn.microsoft.com/graph/api/servicehealthissue-incidentreport?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/servicehealthissue-incidentreport?view=graph-rest-1.0)
-
 
 
 

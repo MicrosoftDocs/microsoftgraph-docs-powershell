@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriveroot
 schema: 2.0.0
+ms.subservice: onedrive
 ---
 
 # Restore-MgBetaGroupDriveRoot
@@ -47,6 +48,9 @@ Restore-MgBetaGroupDriveRoot -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-restore-permissions.md)]
 
 ## PARAMETERS
 
@@ -365,7 +369,6 @@ For OneDrive, this property isn't populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-beta)
-
 
 
 

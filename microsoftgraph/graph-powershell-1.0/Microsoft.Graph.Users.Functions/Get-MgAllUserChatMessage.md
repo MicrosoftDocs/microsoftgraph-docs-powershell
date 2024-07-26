@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluserchatmessage
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgAllUserChatMessage
@@ -36,6 +37,19 @@ Get all messages from all chats that a user is a participant in, including one-o
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chats-getallmessages-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Users.Functions
+
+Get-MgAllUserChatMessage -UserId $userId -Top 2 
+
+```
+This example shows how to use the Get-MgAllUserChatMessage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -299,7 +313,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluserchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluserchatmessage)
 
 [https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-1.0)
-
 
 
 

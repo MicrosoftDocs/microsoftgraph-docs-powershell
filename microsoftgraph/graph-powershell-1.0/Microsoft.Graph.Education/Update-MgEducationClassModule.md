@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmodule
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Update-MgEducationClassModule
@@ -56,6 +57,27 @@ Update an educationModule object in a class.
 Only teachers in the class can perform this operation.
 You can't use a PATCH request to change the status of a module.
 Use the publish action to change the module status.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+$params = @{
+	displayName = "New_Module5 updated"
+	description = "updated for description"
+}
+
+Update-MgEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 
@@ -451,7 +473,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmodule)
 
 [https://learn.microsoft.com/graph/api/educationmodule-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-update?view=graph-rest-1.0)
-
 
 
 

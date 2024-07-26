@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventextension
 schema: 2.0.0
+ms.subservice: extensions
 ---
 
 # New-MgGroupEventExtension
@@ -49,6 +50,27 @@ New-MgGroupEventExtension -InputObject <ICalendarIdentity> -BodyParameter <Hasht
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
+
+## EXAMPLES
+### Example 1: Create an extension in the specified group event
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.openTypeExtension"
+	extensionName = "Com.Contoso.Deal"
+	companyName = "Alpine Skis"
+	dealValue = 
+	expirationDate = "2015-07-03T13:04:00.000Z"
+}
+
+New-MgGroupEventExtension -GroupId $groupId -EventId $eventId -BodyParameter $params
+
+```
+This example will create an extension in the specified group event
+
 
 ## PARAMETERS
 
@@ -255,7 +277,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupeventextension)
 
 [https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
-
 
 
 

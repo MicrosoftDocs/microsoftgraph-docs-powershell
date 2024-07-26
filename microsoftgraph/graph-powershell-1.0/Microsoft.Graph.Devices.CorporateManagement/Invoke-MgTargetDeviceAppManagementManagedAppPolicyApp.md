@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmanagementmanagedapppolicyapp
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp
@@ -49,6 +50,33 @@ Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp -InputObject <IDevicesCorp
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	apps = @(
+		@{
+			"@odata.type" = "#microsoft.graph.managedMobileApp"
+			mobileAppIdentifier = @{
+				"@odata.type" = "microsoft.graph.androidMobileAppIdentifier"
+				packageId = "Package Id value"
+			}
+			id = "0a129715-9715-0a12-1597-120a1597120a"
+			version = "Version value"
+		}
+	)
+}
+
+Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp -ManagedAppPolicyId $managedAppPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgTargetDeviceAppManagementManagedAppPolicyApp Cmdlet.
+
 
 ## PARAMETERS
 
@@ -296,7 +324,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmanagementmanagedapppolicyapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmanagementmanagedapppolicyapp)
 
 [https://learn.microsoft.com/graph/api/intune-mam-managedappprotection-targetapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappprotection-targetapps?view=graph-rest-1.0)
-
 
 
 

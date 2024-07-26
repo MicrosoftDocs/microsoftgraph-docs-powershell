@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasereviewset
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Export-MgSecurityCaseEdiscoveryCaseReviewSet
@@ -54,6 +55,26 @@ For details, see Export documents from a review set in eDiscovery (Premium).
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoveryreviewset-export-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	outputName = "Export via API"
+	description = "Export for the Contoso investigation"
+	exportOptions = "originalFiles,tags"
+	exportStructure = "directory"
+}
+
+Export-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
+
+```
+This example shows how to use the Export-MgSecurityCaseEdiscoveryCaseReviewSet Cmdlet.
+
 
 ## PARAMETERS
 
@@ -377,7 +398,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasereviewset)
 
 [https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-export?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-export?view=graph-rest-1.0)
-
 
 
 

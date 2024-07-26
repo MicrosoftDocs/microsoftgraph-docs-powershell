@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootlink
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # New-MgBetaUserDriveRootLink
@@ -419,7 +420,6 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootlink)
 
 [https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-beta)
-
 
 
 

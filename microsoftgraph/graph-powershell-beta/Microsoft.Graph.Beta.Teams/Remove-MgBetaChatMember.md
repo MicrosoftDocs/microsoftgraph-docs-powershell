@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatmember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgBetaChatMember
@@ -31,6 +32,9 @@ Remove-MgBetaChatMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Resp
 
 ## DESCRIPTION
 Remove a conversationMember from a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-delete-members-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementDeviceCompliancePolicy
@@ -39,6 +40,42 @@ New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter <IMicrosoftGraphDevi
 
 ## DESCRIPTION
 Create a new windows10MobileCompliancePolicy object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.windows10MobileCompliancePolicy"
+	description = "Description value"
+	displayName = "Display Name value"
+	version = 7
+	passwordRequired = $true
+	passwordBlockSimple = $true
+	passwordMinimumLength = 
+	passwordMinimumCharacterSetCount = 
+	passwordRequiredType = "alphanumeric"
+	passwordPreviousPasswordBlockCount = 
+	passwordExpirationDays = 
+	passwordMinutesOfInactivityBeforeLock = 
+	passwordRequireToUnlockFromIdle = $true
+	osMinimumVersion = "Os Minimum Version value"
+	osMaximumVersion = "Os Maximum Version value"
+	earlyLaunchAntiMalwareDriverEnabled = $true
+	bitLockerEnabled = $true
+	secureBootEnabled = $true
+	codeIntegrityEnabled = $true
+	storageRequireEncryption = $true
+}
+
+New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCompliancePolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -538,7 +575,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-create?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgAllGroupSite
@@ -303,7 +304,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite)
 
 [https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0)
-
 
 
 

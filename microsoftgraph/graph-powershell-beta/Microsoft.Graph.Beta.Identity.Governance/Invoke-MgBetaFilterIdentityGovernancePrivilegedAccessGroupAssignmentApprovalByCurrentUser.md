@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceprivilegedaccessgroupassignmentapprovalbycurrentuser
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser
@@ -40,6 +41,9 @@ In Microsoft Entra entitlement management, return a collection of access package
 The objects returned are those that are in scope for approval by the calling user.
 In PIM for groups, return a collection of assignment approvals.
 The objects returned are those that are in scope for approval by the calling user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approval-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Retrieve the approval resources in PIM for groups

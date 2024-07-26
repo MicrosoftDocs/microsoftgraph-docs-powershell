@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupRejectedSenderByRef
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Remove-MgGroupRejectedSenderByRef
@@ -31,6 +32,9 @@ Remove-MgGroupRejectedSenderByRef -InputObject <IGroupsIdentity> [-IfMatch <Stri
 
 ## DESCRIPTION
 Remove rejectedSender
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-rejectedsenders-permissions.md)]
 
 ## PARAMETERS
 
@@ -250,7 +254,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupRejectedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupRejectedSenderByRef)
 
 [https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-1.0)
-
 
 
 

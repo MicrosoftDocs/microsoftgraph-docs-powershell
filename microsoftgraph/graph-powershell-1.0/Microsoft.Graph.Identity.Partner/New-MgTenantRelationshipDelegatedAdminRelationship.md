@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationship
 schema: 2.0.0
+ms.subservice: partner-customer-administration
 ---
 
 # New-MgTenantRelationshipDelegatedAdminRelationship
@@ -37,6 +38,42 @@ New-MgTenantRelationshipDelegatedAdminRelationship -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create a new delegatedAdminRelationship object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tenantrelationship-post-delegatedadminrelationships-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Partner
+
+$params = @{
+	displayName = "Contoso admin relationship"
+	duration = "P730D"
+	customer = @{
+		tenantId = "4b827261-d21f-4aa9-b7db-7fa1f56fb163"
+		displayName = "Contoso subsidiary Inc"
+	}
+	accessDetails = @{
+		unifiedRoles = @(
+			@{
+				roleDefinitionId = "29232cdf-9323-42fd-ade2-1d097af3e4de"
+			}
+			@{
+				roleDefinitionId = "3a2c62db-5318-420d-8d74-23affee5d9d5"
+			}
+		)
+	}
+	autoExtendDuration = "P180D"
+}
+
+New-MgTenantRelationshipDelegatedAdminRelationship -BodyParameter $params
+
+```
+This example shows how to use the New-MgTenantRelationshipDelegatedAdminRelationship Cmdlet.
+
 
 ## PARAMETERS
 
@@ -518,7 +555,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationship)
 
 [https://learn.microsoft.com/graph/api/tenantrelationship-post-delegatedadminrelationships?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tenantrelationship-post-delegatedadminrelationships?view=graph-rest-1.0)
-
 
 
 

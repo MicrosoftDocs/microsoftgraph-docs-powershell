@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupevent
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Invoke-MgAcceptGroupEvent
@@ -47,6 +48,9 @@ Invoke-MgAcceptGroupEvent -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Accept the specified event in a user calendar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-accept-permissions.md)]
 
 ## PARAMETERS
 

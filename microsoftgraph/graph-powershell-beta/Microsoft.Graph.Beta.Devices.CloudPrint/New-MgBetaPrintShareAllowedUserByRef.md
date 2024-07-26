@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintsharealloweduserbyref
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # New-MgBetaPrintShareAllowedUserByRef
@@ -46,6 +47,9 @@ New-MgBetaPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity>
 
 ## DESCRIPTION
 Grant the specified user access to submit print jobs to the associated printerShare.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-post-allowedusers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointauditevent
 schema: 2.0.0
+ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgDeviceManagementVirtualEndpointAuditEvent
@@ -42,6 +44,22 @@ Read the properties and relationships of a cloudPcAuditEvent object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcauditevent-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-list-auditevents-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointAuditEvent
+
+```
+This example shows how to use the Get-MgDeviceManagementVirtualEndpointAuditEvent Cmdlet.
+
 
 ## PARAMETERS
 
@@ -322,7 +340,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/cloudpcauditevent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcauditevent-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/virtualendpoint-list-auditevents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-auditevents?view=graph-rest-1.0)
-
 
 
 

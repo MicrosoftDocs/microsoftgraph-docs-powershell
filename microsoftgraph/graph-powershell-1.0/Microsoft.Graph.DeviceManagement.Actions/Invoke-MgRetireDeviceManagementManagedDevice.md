@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgretiredevicemanagementmanageddevice
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Invoke-MgRetireDeviceManagementManagedDevice
@@ -31,6 +32,19 @@ Invoke-MgRetireDeviceManagementManagedDevice -InputObject <IDeviceManagementActi
 
 ## DESCRIPTION
 Retire a device
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+Invoke-MgRetireDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId
+
+```
+This example shows how to use the Invoke-MgRetireDeviceManagementManagedDevice Cmdlet.
+
 
 ## PARAMETERS
 
@@ -195,7 +209,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgretiredevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgretiredevicemanagementmanageddevice)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-retire?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-retire?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementmanageddevicewindowsdefenderupdatesignature
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementManagedDeviceWindowsDefenderUpdateSignature
@@ -31,6 +32,19 @@ New-MgDeviceManagementManagedDeviceWindowsDefenderUpdateSignature
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+New-MgDeviceManagementManagedDeviceWindowsDefenderUpdateSignature -ManagedDeviceId $managedDeviceId
+
+```
+This example shows how to use the New-MgDeviceManagementManagedDeviceWindowsDefenderUpdateSignature Cmdlet.
+
 
 ## PARAMETERS
 
@@ -195,7 +209,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementmanageddevicewindowsdefenderupdatesignature](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementmanageddevicewindowsdefenderupdatesignature)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-windowsdefenderupdatesignatures?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-windowsdefenderupdatesignatures?view=graph-rest-1.0)
-
 
 
 

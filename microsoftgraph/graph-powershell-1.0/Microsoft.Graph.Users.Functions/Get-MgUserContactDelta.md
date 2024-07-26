@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercontactdelta
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Get-MgUserContactDelta
@@ -334,7 +335,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercontactdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercontactdelta)
 
 [https://learn.microsoft.com/graph/api/contact-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contact-delta?view=graph-rest-1.0)
-
 
 
 

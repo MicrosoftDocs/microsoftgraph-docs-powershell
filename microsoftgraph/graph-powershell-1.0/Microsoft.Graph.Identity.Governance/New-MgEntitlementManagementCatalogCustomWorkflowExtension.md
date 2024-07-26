@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogcustomworkflowextension
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgEntitlementManagementCatalogCustomWorkflowExtension
@@ -50,6 +51,69 @@ New-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentit
 ## DESCRIPTION
 Create a new accessPackageAssignmentRequestWorkflowExtension or accessPackageAssignmentWorkflowExtension object and add it to an existing accessPackageCatalog object.
 You must explicitly provide an @odata.type property that indicates whether the object is an  accessPackageAssignmentRequestWorkflowExtension or an accessPackageAssignmentWorkflowExtension.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-post-accesspackagecustomworkflowextensions-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension"
+	displayName = "test_action_0124_email"
+	description = "this is for graph testing only"
+	endpointConfiguration = @{
+		"@odata.type" = "#microsoft.graph.logicAppTriggerEndpointConfiguration"
+		subscriptionId = "38ab2ccc-3747-4567-b36b-9478f5602f0d"
+		resourceGroupName = "test"
+		logicAppWorkflowName = "elm-extension-email"
+	}
+	authenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.azureAdPopTokenAuthentication"
+	}
+	callbackConfiguration = @{
+		"@odata.type" = "microsoft.graph.customExtensionCallbackConfiguration"
+		durationBeforeTimeout = "PT1H"
+	}
+}
+
+New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
+
+```
+This example shows how to use the New-MgEntitlementManagementCatalogCustomWorkflowExtension Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	value = @{
+		"@odata.type" = "#microsoft.graph.accessPackageAssignmentWorkflowExtension"
+		displayName = "test_action_0127_email"
+		description = "this is for graph testing only"
+		endpointConfiguration = @{
+			"@odata.type" = "#microsoft.graph.logicAppTriggerEndpointConfiguration"
+			subscriptionId = "38ab2ccc-3747-4567-b36b-9478f5602f0d"
+			resourceGroupName = "test"
+			logicAppWorkflowName = "elm-extension-email"
+		}
+		authenticationConfiguration = @{
+			"@odata.type" = "#microsoft.graph.azureAdPopTokenAuthentication"
+		}
+	}
+}
+
+New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
+
+```
+This example shows how to use the New-MgEntitlementManagementCatalogCustomWorkflowExtension Cmdlet.
+
 
 ## PARAMETERS
 
@@ -402,7 +466,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogcustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogcustomworkflowextension)
 
 [https://learn.microsoft.com/graph/api/accesspackagecatalog-post-accesspackagecustomworkflowextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-post-accesspackagecustomworkflowextensions?view=graph-rest-1.0)
-
 
 
 

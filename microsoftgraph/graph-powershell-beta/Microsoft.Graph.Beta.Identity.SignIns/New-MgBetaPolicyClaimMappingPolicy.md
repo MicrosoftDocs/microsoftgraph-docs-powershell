@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyclaimmappingpolicy
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaPolicyClaimMappingPolicy
@@ -31,6 +32,9 @@ New-MgBetaPolicyClaimMappingPolicy -BodyParameter <Hashtable> [-ResponseHeadersV
 
 ## DESCRIPTION
 Create a new claimsMappingPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/claimsmappingpolicy-post-claimsmappingpolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

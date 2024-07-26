@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/search-mgbetauserdriveitem
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Search-MgBetaUserDriveItem
@@ -341,7 +342,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/search-mgbetauserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/search-mgbetauserdriveitem)
 
 [https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta)
-
 
 
 

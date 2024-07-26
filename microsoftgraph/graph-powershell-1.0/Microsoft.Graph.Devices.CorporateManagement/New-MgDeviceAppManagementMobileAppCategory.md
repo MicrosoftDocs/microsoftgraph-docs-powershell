@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceAppManagementMobileAppCategory
@@ -31,6 +32,24 @@ New-MgDeviceAppManagementMobileAppCategory -BodyParameter <IMicrosoftGraphMobile
 
 ## DESCRIPTION
 Create a new mobileAppCategory object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.mobileAppCategory"
+	displayName = "Display Name value"
+}
+
+New-MgDeviceAppManagementMobileAppCategory -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementMobileAppCategory Cmdlet.
+
 
 ## PARAMETERS
 
@@ -199,7 +218,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory)
 
 [https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappcategory-create?view=graph-rest-1.0)
-
 
 
 

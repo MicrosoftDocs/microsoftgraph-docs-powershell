@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementwindowsautopilotdeviceidentitydeviceproperty
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
@@ -53,6 +54,26 @@ Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
 
 ## DESCRIPTION
 Updates properties on Autopilot devices.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	userPrincipalName = "User Principal Name value"
+	addressableUserName = "Addressable User Name value"
+	groupTag = "Group Tag value"
+	displayName = "Display Name value"
+}
+
+Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty -WindowsAutopilotDeviceIdentityId $windowsAutopilotDeviceIdentityId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty Cmdlet.
+
 
 ## PARAMETERS
 
@@ -316,7 +337,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementwindowsautopilotdeviceidentitydeviceproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementwindowsautopilotdeviceidentitydeviceproperty)
 
 [https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties?view=graph-rest-1.0)
-
 
 
 

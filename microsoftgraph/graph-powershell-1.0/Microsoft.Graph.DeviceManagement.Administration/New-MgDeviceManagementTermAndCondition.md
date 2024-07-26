@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandcondition
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementTermAndCondition
@@ -34,6 +35,29 @@ New-MgDeviceManagementTermAndCondition -BodyParameter <IMicrosoftGraphTermsAndCo
 
 ## DESCRIPTION
 Create a new termsAndConditions object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.termsAndConditions"
+	displayName = "Display Name value"
+	description = "Description value"
+	title = "Title value"
+	bodyText = "Body Text value"
+	acceptanceStatement = "Acceptance Statement value"
+	version = 7
+}
+
+New-MgDeviceManagementTermAndCondition -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementTermAndCondition Cmdlet.
+
 
 ## PARAMETERS
 
@@ -411,7 +435,6 @@ Incremented when an administrator makes a change to the terms and wishes to requ
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandcondition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandcondition)
 
 [https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditions-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditions-create?view=graph-rest-1.0)
-
 
 
 

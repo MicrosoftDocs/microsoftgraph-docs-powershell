@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionapplearningsummary
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
@@ -33,6 +34,26 @@ New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 
 ## DESCRIPTION
 Create a new windowsInformationProtectionAppLearningSummary object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.windowsInformationProtectionAppLearningSummary"
+	applicationName = "Application Name value"
+	applicationType = "desktop"
+	deviceCount = 11
+}
+
+New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -233,7 +254,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionapplearningsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionapplearningsummary)
 
 [https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionapplearningsummary-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionapplearningsummary-create?view=graph-rest-1.0)
-
 
 
 

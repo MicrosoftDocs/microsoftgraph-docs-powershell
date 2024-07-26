@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalertv2
 schema: 2.0.0
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityAlertV2
@@ -41,6 +43,22 @@ Get the properties and relationships of an alert object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-alert-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-list-alerts_v2-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityAlertV2
+
+```
+This example shows how to use the Get-MgSecurityAlertV2 Cmdlet.
+
 
 ## PARAMETERS
 
@@ -357,7 +375,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-alert-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-alert-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-list-alerts_v2?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-list-alerts_v2?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecategory
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementDeviceCategory
@@ -31,6 +32,25 @@ New-MgDeviceManagementDeviceCategory -BodyParameter <IMicrosoftGraphDeviceCatego
 
 ## DESCRIPTION
 Create a new deviceCategory object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceCategory"
+	displayName = "Display Name value"
+	description = "Description value"
+}
+
+New-MgDeviceManagementDeviceCategory -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCategory Cmdlet.
+
 
 ## PARAMETERS
 
@@ -220,7 +240,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecategory)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-create?view=graph-rest-1.0)
-
 
 
 

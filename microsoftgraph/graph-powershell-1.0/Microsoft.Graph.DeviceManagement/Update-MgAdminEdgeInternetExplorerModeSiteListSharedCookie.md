@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsharedcookie
 schema: 2.0.0
+ms.subservice: edge-browser-management
 ---
 
 # Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie
@@ -54,6 +55,31 @@ Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevice
 
 ## DESCRIPTION
 Update the properties of a browserSharedCookie object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersharedcookie-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	hostOrDomain = "www.microsoft.com"
+	sourceEnvironment = "microsoftEdge"
+	displayName = "Microsoft Cookie"
+	path = "/"
+	hostOnly = $true
+	comment = "Updating source environment."
+}
+
+Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BrowserSharedCookieId $browserSharedCookieId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie Cmdlet.
+
 
 ## PARAMETERS
 
@@ -553,7 +579,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsharedcookie)
 
 [https://learn.microsoft.com/graph/api/browsersharedcookie-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersharedcookie-update?view=graph-rest-1.0)
-
 
 
 

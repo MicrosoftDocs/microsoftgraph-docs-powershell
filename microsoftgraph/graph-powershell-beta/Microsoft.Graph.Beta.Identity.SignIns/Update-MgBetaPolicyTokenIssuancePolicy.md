@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenissuancepolicy
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaPolicyTokenIssuancePolicy
@@ -49,6 +50,9 @@ Update-MgBetaPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> -
 
 ## DESCRIPTION
 Update the properties of a tokenIssuancePolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenissuancepolicy-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfilterserviceprincipalsynchronizationtemplateschemaoperator
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Invoke-MgFilterServicePrincipalSynchronizationTemplateSchemaOperator
@@ -34,6 +35,9 @@ Invoke-MgFilterServicePrincipalSynchronizationTemplateSchemaOperator -InputObjec
 
 ## DESCRIPTION
 List all operators supported in the scoping filters.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-filteroperators-permissions.md)]
 
 ## PARAMETERS
 
@@ -295,7 +299,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfilterserviceprincipalsynchronizationtemplateschemaoperator](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfilterserviceprincipalsynchronizationtemplateschemaoperator)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-filteroperators?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-filteroperators?view=graph-rest-1.0)
-
 
 
 

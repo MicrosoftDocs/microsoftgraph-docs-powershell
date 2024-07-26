@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermailfoldermessage
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Send-MgBetaUserMailFolderMessage
@@ -259,7 +260,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermailfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-send?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-send?view=graph-rest-beta)
-
 
 
 

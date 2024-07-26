@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticleindicator
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceArticleIndicator
@@ -61,6 +62,22 @@ Get-MgSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIdentity
 
 ## DESCRIPTION
 Read the properties and relationships of an articleIndicator object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-articleindicator-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceArticleIndicator -ArticleIndicatorId $articleIndicatorId
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceArticleIndicator Cmdlet.
+
 
 ## PARAMETERS
 
@@ -392,7 +409,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-articleindicator-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-articleindicator-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-article-list-indicators?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-article-list-indicators?view=graph-rest-1.0)
-
 
 
 

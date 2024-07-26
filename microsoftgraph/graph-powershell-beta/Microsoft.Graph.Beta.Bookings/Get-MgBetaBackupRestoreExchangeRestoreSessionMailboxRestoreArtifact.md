@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoreexchangerestoresessionmailboxrestoreartifact
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact
@@ -37,6 +38,22 @@ Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact -InputObject
 
 ## DESCRIPTION
 A collection of restore points and destination details that can be used to restore Exchange mailboxes.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/exchangerestoresession-list-mailboxrestoreartifacts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact -ExchangeRestoreSessionId $exchangeRestoreSessionId
+
+```
+This example shows how to use the Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact Cmdlet.
+
 
 ## PARAMETERS
 
@@ -348,10 +365,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoreexchangerestoresessionmailboxrestoreartifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoreexchangerestoresessionmailboxrestoreartifact)
 
 [https://learn.microsoft.com/graph/api/exchangerestoresession-list-mailboxrestoreartifacts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/exchangerestoresession-list-mailboxrestoreartifacts?view=graph-rest-beta)
-
-
-
-
 
 
 

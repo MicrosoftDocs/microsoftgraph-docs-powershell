@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementresourceoperation
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementResourceOperation
@@ -47,6 +48,26 @@ Update-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdmini
 
 ## DESCRIPTION
 Update the properties of a resourceOperation object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.resourceOperation"
+	resourceName = "Resource Name value"
+	actionName = "Action Name value"
+	description = "Description value"
+}
+
+Update-MgDeviceManagementResourceOperation -ResourceOperationId $resourceOperationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementResourceOperation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -310,7 +331,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementresourceoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementresourceoperation)
 
 [https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-update?view=graph-rest-1.0)
-
 
 
 

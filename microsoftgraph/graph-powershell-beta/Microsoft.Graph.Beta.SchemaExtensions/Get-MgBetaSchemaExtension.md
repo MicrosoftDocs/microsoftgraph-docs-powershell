@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension
 schema: 2.0.0
+ms.subservice: extensions
+ms.subservice: extensions
 ---
 
 # Get-MgBetaSchemaExtension
@@ -42,6 +44,9 @@ Get the properties of the specified schemaExtension definition.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schemaextension-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schemaextension-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

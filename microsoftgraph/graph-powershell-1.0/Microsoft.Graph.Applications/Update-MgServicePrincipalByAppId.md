@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Update-MgServicePrincipalByAppId
@@ -99,6 +100,41 @@ Update-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-upsert-permissions.md)]
+
+## EXAMPLES
+### Example 1: Create a new servicePrincipal if it doesn't exist
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	displayName = "My app instance"
+}
+
+Update-MgServicePrincipalByAppId -BodyParameter $params
+
+```
+This example will create a new serviceprincipal if it doesn't exist
+
+### Example 2: Update an existing servicePrincipal
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	displayName = "My app instance"
+}
+
+Update-MgServicePrincipalByAppId -BodyParameter $params
+
+```
+This example will update an existing serviceprincipal
+
 
 ## PARAMETERS
 
@@ -2578,7 +2614,6 @@ VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0)
-
 
 
 

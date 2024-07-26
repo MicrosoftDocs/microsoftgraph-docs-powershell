@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotesectiongroupsectiontonotebook
 schema: 2.0.0
+ms.subservice: onenote
 ---
 
 # Copy-MgBetaSiteOnenoteSectionGroupSectionToNotebook
@@ -397,7 +398,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotesectiongroupsectiontonotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotesectiongroupsectiontonotebook)
 
 [https://learn.microsoft.com/graph/api/section-copytonotebook?view=graph-rest-beta](https://learn.microsoft.com/graph/api/section-copytonotebook?view=graph-rest-beta)
-
 
 
 

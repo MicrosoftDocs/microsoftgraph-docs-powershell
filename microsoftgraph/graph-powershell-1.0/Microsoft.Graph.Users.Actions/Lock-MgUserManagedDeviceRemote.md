@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/lock-mgusermanageddeviceremote
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Lock-MgUserManagedDeviceRemote
@@ -224,7 +225,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/lock-mgusermanageddeviceremote](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/lock-mgusermanageddeviceremote)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-remotelock?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-remotelock?view=graph-rest-1.0)
-
 
 
 

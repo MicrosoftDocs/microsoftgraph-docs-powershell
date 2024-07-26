@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyallusermailfolderchildfoldermessage
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Invoke-MgBetaReplyAllUserMailFolderChildFolderMessage
@@ -625,7 +626,6 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyallusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyallusermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-beta)
-
 
 
 

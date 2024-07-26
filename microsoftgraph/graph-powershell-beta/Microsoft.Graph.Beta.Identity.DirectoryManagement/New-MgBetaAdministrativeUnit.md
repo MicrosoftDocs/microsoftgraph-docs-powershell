@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunit
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaAdministrativeUnit
@@ -32,6 +33,9 @@ New-MgBetaAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeUnit>
 
 ## DESCRIPTION
 Use this API to create a new administrativeUnit.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-administrativeunits-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create an administrative unit

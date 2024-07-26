@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/test-mgbetasharelistcontenttypepublished
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Test-MgBetaShareListContentTypePublished
@@ -30,6 +31,9 @@ Test-MgBetaShareListContentTypePublished -InputObject <IFilesIdentity> [-Respons
 
 ## DESCRIPTION
 Invoke function isPublished
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-ispublished-permissions.md)]
 
 ## PARAMETERS
 
@@ -171,7 +175,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/test-mgbetasharelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/test-mgbetasharelistcontenttypepublished)
 
 [https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta)
-
 
 
 

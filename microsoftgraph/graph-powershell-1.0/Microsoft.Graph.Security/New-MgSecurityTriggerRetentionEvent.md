@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent
 schema: 2.0.0
+ms.subservice: security 
 ---
 
 # New-MgSecurityTriggerRetentionEvent
@@ -36,6 +37,35 @@ New-MgSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityReten
 
 ## DESCRIPTION
 Create a new retentionEvent object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionevent-post-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.retentionEvent"
+	displayName = "String"
+	description = "String"
+	eventQuery = @(
+		@{
+			"@odata.type" = "microsoft.graph.security.eventQuery"
+		}
+	)
+	eventTriggerDateTime = [System.DateTime]::Parse("String (timestamp)")
+	"retentionEventType@odata.bind" = "https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventType/9eecef97-fb3c-4c68-825b-4dd74530863a"
+}
+
+New-MgSecurityTriggerRetentionEvent -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityTriggerRetentionEvent Cmdlet.
+
 
 ## PARAMETERS
 
@@ -504,7 +534,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent)
 
 [https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0)
-
 
 
 

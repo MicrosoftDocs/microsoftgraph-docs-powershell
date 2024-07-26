@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycase
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # New-MgSecurityCaseEdiscoveryCase
@@ -40,6 +41,9 @@ New-MgSecurityCaseEdiscoveryCase -BodyParameter <IMicrosoftGraphSecurityEdiscove
 
 ## DESCRIPTION
 Create a new ediscoveryCase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-casesroot-post-ediscoverycases-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

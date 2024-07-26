@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelsharedwithteamallowedmember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamChannelSharedWithTeamAllowedMember
@@ -40,6 +41,9 @@ Get-MgBetaTeamChannelSharedWithTeamAllowedMember -InputObject <ITeamsIdentity> [
 
 ## DESCRIPTION
 A collection of team members who have access to the shared channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharedwithchannelteaminfo-list-allowedmembers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

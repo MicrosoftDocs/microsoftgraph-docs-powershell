@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggerretentionevent
 schema: 2.0.0
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityTriggerRetentionEvent
@@ -39,6 +41,25 @@ Get-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Read the properties and relationships of a retentionEvent object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionevent-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionevent-list-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityTriggerRetentionEvent
+
+```
+This example shows how to use the Get-MgSecurityTriggerRetentionEvent Cmdlet.
+
 
 ## PARAMETERS
 
@@ -355,7 +376,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-retentionevent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionevent-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-retentionevent-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionevent-list?view=graph-rest-1.0)
-
 
 
 

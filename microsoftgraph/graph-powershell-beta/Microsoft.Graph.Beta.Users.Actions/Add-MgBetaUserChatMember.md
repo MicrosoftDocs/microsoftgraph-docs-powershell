@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserchatmember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Add-MgBetaUserChatMember
@@ -315,7 +316,6 @@ This property is settable only for members of a chat.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserchatmember)
 
 [https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta)
-
 
 
 

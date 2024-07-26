@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingregistrationregistrant
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Remove-MgBetaUserOnlineMeetingRegistrationRegistrant
@@ -33,6 +34,9 @@ Remove-MgBetaUserOnlineMeetingRegistrationRegistrant -InputObject <ICloudCommuni
 Cancel an onlineMeeting registration for a meetingRegistrant on behalf of the registrant.
 Only use this method when the allowedRegistrant property of the meetingRegistration object has a value of organization and the registrant's delegated permission was used to enroll.
 When the allowedRegistrant value is everyone, registrants can only use the link in the email they receive to cancel their registration.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistrant-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

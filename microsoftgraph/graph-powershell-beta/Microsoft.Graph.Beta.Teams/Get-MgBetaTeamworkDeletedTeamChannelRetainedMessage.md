@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelretainedmessage
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamworkDeletedTeamChannelRetainedMessage
@@ -32,6 +33,9 @@ Get-MgBetaTeamworkDeletedTeamChannelRetainedMessage -InputObject <ITeamsIdentity
 ## DESCRIPTION
 Get retained messages across all channels in a team.
 To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-getallretainedmessages-permissions.md)]
 
 ## PARAMETERS
 
@@ -295,7 +299,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelretainedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelretainedmessage)
 
 [https://learn.microsoft.com/graph/api/channel-getallretainedmessages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-getallretainedmessages?view=graph-rest-beta)
-
 
 
 

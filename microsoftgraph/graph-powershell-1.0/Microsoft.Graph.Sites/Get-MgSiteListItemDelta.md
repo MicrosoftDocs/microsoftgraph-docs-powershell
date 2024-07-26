@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemdelta
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgSiteListItemDelta
@@ -61,6 +62,44 @@ The delta feed shows the latest state for each item, not each change.
 If an item was renamed twice, it only shows up once, with its latest name.The same item might appear more than once in a delta feed, for various reasons.
 You should use the last occurrence you see.
 Items with this property should be removed from your local state.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-delta-permissions.md)]
+
+## EXAMPLES
+### Example 1: Initial request
+
+```powershell
+
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId
+
+```
+This example will initial request
+
+### Example 2: Last page request
+
+```powershell
+
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka" 
+
+```
+This example will last page request
+
+### Example 3: Delta link request
+
+```powershell
+
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest" 
+
+```
+This example will delta link request
+
 
 ## PARAMETERS
 
@@ -403,7 +442,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemdelta)
 
 [https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0)
-
 
 
 

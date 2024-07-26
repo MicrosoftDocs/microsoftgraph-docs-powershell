@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandcondition
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementTermAndCondition
@@ -52,6 +53,29 @@ Update-MgDeviceManagementTermAndCondition -InputObject <IDeviceManagementAdminis
 
 ## DESCRIPTION
 Update the properties of a termsAndConditions object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.termsAndConditions"
+	displayName = "Display Name value"
+	description = "Description value"
+	title = "Title value"
+	bodyText = "Body Text value"
+	acceptanceStatement = "Acceptance Statement value"
+	version = 7
+}
+
+Update-MgDeviceManagementTermAndCondition -TermsAndConditionsId $termsAndConditionsId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementTermAndCondition Cmdlet.
+
 
 ## PARAMETERS
 
@@ -488,7 +512,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandcondition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandcondition)
 
 [https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditions-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditions-update?view=graph-rest-1.0)
-
 
 
 

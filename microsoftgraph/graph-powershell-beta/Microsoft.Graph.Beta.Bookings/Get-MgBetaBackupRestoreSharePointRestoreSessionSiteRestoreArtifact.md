@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoresharepointrestoresessionsiterestoreartifact
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact
@@ -37,6 +38,22 @@ Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact -InputObject 
 
 ## DESCRIPTION
 A collection of restore points and destination details that can be used to restore SharePoint sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointrestoresession-list-siterestoreartifacts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact -SharePointRestoreSessionId $sharePointRestoreSessionId
+
+```
+This example shows how to use the Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact Cmdlet.
+
 
 ## PARAMETERS
 
@@ -348,10 +365,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoresharepointrestoresessionsiterestoreartifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoresharepointrestoresessionsiterestoreartifact)
 
 [https://learn.microsoft.com/graph/api/sharepointrestoresession-list-siterestoreartifacts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/sharepointrestoresession-list-siterestoreartifacts?view=graph-rest-beta)
-
-
-
-
 
 
 

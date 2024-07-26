@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryattributeset
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Update-MgDirectoryAttributeSet
@@ -43,6 +44,27 @@ Update-MgDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdentit
 
 ## DESCRIPTION
 Update the properties of an attributeSet object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attributeset-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = @{
+	description = "Attributes for engineering team"
+	maxAttributesPerSet = 20
+}
+
+Update-MgDirectoryAttributeSet -AttributeSetId $attributeSetId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDirectoryAttributeSet Cmdlet.
+
 
 ## PARAMETERS
 
@@ -297,7 +319,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryattributeset](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryattributeset)
 
 [https://learn.microsoft.com/graph/api/attributeset-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attributeset-update?view=graph-rest-1.0)
-
 
 
 

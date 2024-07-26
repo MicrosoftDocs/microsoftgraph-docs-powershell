@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobschema
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaServicePrincipalSynchronizationJobSchema
@@ -31,6 +32,9 @@ Get-MgBetaServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsId
 
 ## DESCRIPTION
 Retrieve the schema for a given synchronization job or template.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationschema-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

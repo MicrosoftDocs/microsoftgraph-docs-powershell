@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemlink
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # New-MgGroupDriveItemLink
@@ -55,6 +56,9 @@ New-MgGroupDriveItemLink -InputObject <IGroupsIdentity>
 You can use createLink action to share a DriveItem via a sharing link.
 The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-createlink-permissions.md)]
 
 ## PARAMETERS
 
@@ -433,7 +437,6 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemlink)
 
 [https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0)
-
 
 
 

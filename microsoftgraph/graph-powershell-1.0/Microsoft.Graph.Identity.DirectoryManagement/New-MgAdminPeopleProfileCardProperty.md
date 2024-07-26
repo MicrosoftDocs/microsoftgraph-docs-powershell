@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty
 schema: 2.0.0
+ms.subservice: people
 ---
 
 # New-MgAdminPeopleProfileCardProperty
@@ -35,6 +36,37 @@ New-MgAdminPeopleProfileCardProperty -BodyParameter <IMicrosoftGraphProfileCardP
 Create a new profileCardProperty for an organization.
 The new property is identified by its directoryPropertyName property.
 For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/peopleadminsettings-post-profilecardproperties-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = @{
+	directoryPropertyName = "CustomAttribute1"
+	annotations = @(
+		@{
+			displayName = "Cost Center"
+			localizations = @(
+				@{
+					languageTag = "ru"
+					displayName = "центр затрат"
+				}
+			)
+		}
+	)
+}
+
+New-MgAdminPeopleProfileCardProperty -BodyParameter $params
+
+```
+This example shows how to use the New-MgAdminPeopleProfileCardProperty Cmdlet.
+
 
 ## PARAMETERS
 
@@ -238,7 +270,6 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty)
 
 [https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamworkdeletedteamchannelmember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Add-MgBetaTeamworkDeletedTeamChannelMember
@@ -316,7 +317,6 @@ This property is settable only for members of a chat.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamworkdeletedteamchannelmember)
 
 [https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta)
-
 
 
 

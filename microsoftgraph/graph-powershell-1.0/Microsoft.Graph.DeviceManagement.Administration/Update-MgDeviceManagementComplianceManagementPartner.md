@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementComplianceManagementPartner
@@ -57,6 +58,56 @@ Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManage
 
 ## DESCRIPTION
 Update the properties of a complianceManagementPartner object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.complianceManagementPartner"
+	lastHeartbeatDateTime = [System.DateTime]::Parse("2016-12-31T23:59:37.9174975-08:00")
+	partnerState = "unavailable"
+	displayName = "Display Name value"
+	macOsOnboarded = $true
+	androidOnboarded = $true
+	iosOnboarded = $true
+	macOsEnrollmentAssignments = @(
+		@{
+			"@odata.type" = "microsoft.graph.complianceManagementPartnerAssignment"
+			target = @{
+				"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+				collectionId = "Collection Id value"
+			}
+		}
+	)
+	androidEnrollmentAssignments = @(
+		@{
+			"@odata.type" = "microsoft.graph.complianceManagementPartnerAssignment"
+			target = @{
+				"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+				collectionId = "Collection Id value"
+			}
+		}
+	)
+	iosEnrollmentAssignments = @(
+		@{
+			"@odata.type" = "microsoft.graph.complianceManagementPartnerAssignment"
+			target = @{
+				"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+				collectionId = "Collection Id value"
+			}
+		}
+	)
+}
+
+Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartnerId $complianceManagementPartnerId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementComplianceManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 
@@ -429,7 +480,6 @@ MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-update?view=graph-rest-1.0)
-
 
 
 

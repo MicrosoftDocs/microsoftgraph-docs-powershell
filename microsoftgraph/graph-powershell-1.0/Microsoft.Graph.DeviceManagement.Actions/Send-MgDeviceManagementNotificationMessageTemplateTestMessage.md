@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/send-mgdevicemanagementnotificationmessagetemplatetestmessage
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Send-MgDeviceManagementNotificationMessageTemplateTestMessage
@@ -31,6 +32,19 @@ Send-MgDeviceManagementNotificationMessageTemplateTestMessage -InputObject <IDev
 
 ## DESCRIPTION
 Sends test message using the specified notificationMessageTemplate in the default locale
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+Send-MgDeviceManagementNotificationMessageTemplateTestMessage -NotificationMessageTemplateId $notificationMessageTemplateId
+
+```
+This example shows how to use the Send-MgDeviceManagementNotificationMessageTemplateTestMessage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -195,7 +209,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/send-mgdevicemanagementnotificationmessagetemplatetestmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/send-mgdevicemanagementnotificationmessagetemplatetestmessage)
 
 [https://learn.microsoft.com/graph/api/intune-notification-notificationmessagetemplate-sendtestmessage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-notification-notificationmessagetemplate-sendtestmessage?view=graph-rest-1.0)
-
 
 
 

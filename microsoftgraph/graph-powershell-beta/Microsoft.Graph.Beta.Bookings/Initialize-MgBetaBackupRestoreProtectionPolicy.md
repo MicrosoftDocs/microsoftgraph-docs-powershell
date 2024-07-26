@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoreprotectionpolicy
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Initialize-MgBetaBackupRestoreProtectionPolicy
@@ -28,6 +29,33 @@ Initialize-MgBetaBackupRestoreProtectionPolicy -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Activate a protectionPolicyBase.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionpolicybase-activate-permissions.md)]
+
+## EXAMPLES
+### Example 1 : Activate an inactive protection policy
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Initialize-MgBetaBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
+
+```
+This example will### example 1 : activate an inactive protection policy
+
+### Example 2 : Activate an active protection policy
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Initialize-MgBetaBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
+
+```
+This example will### example 2 : activate an active protection policy
+
 
 ## PARAMETERS
 
@@ -204,8 +232,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoreprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoreprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/protectionpolicybase-activate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/protectionpolicybase-activate?view=graph-rest-beta)
-
-
 
 
 

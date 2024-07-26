@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementComplianceManagementPartner
@@ -37,6 +38,56 @@ New-MgDeviceManagementComplianceManagementPartner -BodyParameter <IMicrosoftGrap
 
 ## DESCRIPTION
 Create a new complianceManagementPartner object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.complianceManagementPartner"
+	lastHeartbeatDateTime = [System.DateTime]::Parse("2016-12-31T23:59:37.9174975-08:00")
+	partnerState = "unavailable"
+	displayName = "Display Name value"
+	macOsOnboarded = $true
+	androidOnboarded = $true
+	iosOnboarded = $true
+	macOsEnrollmentAssignments = @(
+		@{
+			"@odata.type" = "microsoft.graph.complianceManagementPartnerAssignment"
+			target = @{
+				"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+				collectionId = "Collection Id value"
+			}
+		}
+	)
+	androidEnrollmentAssignments = @(
+		@{
+			"@odata.type" = "microsoft.graph.complianceManagementPartnerAssignment"
+			target = @{
+				"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+				collectionId = "Collection Id value"
+			}
+		}
+	)
+	iosEnrollmentAssignments = @(
+		@{
+			"@odata.type" = "microsoft.graph.complianceManagementPartnerAssignment"
+			target = @{
+				"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+				collectionId = "Collection Id value"
+			}
+		}
+	)
+}
+
+New-MgDeviceManagementComplianceManagementPartner -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementComplianceManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 
@@ -350,7 +401,6 @@ MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-create?view=graph-rest-1.0)
-
 
 
 

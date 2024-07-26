@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabackuprestoresession
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Remove-MgBetaBackupRestoreSession
@@ -28,6 +29,22 @@ Remove-MgBetaBackupRestoreSession -InputObject <IBookingsIdentity> [-IfMatch <St
 
 ## DESCRIPTION
 Delete a draft restoreSessionBase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/restoresessionbase-delete-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Remove-MgBetaBackupRestoreSession -RestoreSessionBaseId $restoreSessionBaseId
+
+```
+This example shows how to use the Remove-MgBetaBackupRestoreSession Cmdlet.
+
 
 ## PARAMETERS
 
@@ -234,8 +251,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabackuprestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabackuprestoresession)
 
 [https://learn.microsoft.com/graph/api/restoresessionbase-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/restoresessionbase-delete?view=graph-rest-beta)
-
-
 
 
 

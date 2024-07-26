@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetaalluseronlinemeetingrecording
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaAllUserOnlineMeetingRecording
@@ -53,6 +54,19 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-getallrecordings-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get all recordings
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Functions
+
+Get-MgBetaAllUserOnlineMeetingRecording -UserId $userId
+
+```
+This example will get all recordings
+
 
 ## PARAMETERS
 
@@ -358,8 +372,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetaalluseronlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetaalluseronlinemeetingrecording)
 
 [https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta)
-
-
 
 
 

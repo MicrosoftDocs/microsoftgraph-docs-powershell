@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivitycount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportYammerActivityCount
@@ -30,6 +31,22 @@ Get-MgReportYammerActivityCount -InputObject <IReportsIdentity> -OutFile <String
 
 ## DESCRIPTION
 Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammeractivitycounts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportYammerActivityCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportYammerActivityCount Cmdlet.
+
 
 ## PARAMETERS
 
@@ -184,7 +201,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivitycount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-1.0)
-
 
 
 

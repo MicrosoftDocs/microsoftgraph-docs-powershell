@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
@@ -35,6 +36,22 @@ Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
 ## DESCRIPTION
 Remove a user or a group from the connected organization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/connectedorganization-delete-internalsponsors-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef Cmdlet.
+
 
 ## PARAMETERS
 
@@ -280,7 +297,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef)
 
 [https://learn.microsoft.com/graph/api/connectedorganization-delete-internalsponsors?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectedorganization-delete-internalsponsors?view=graph-rest-1.0)
-
 
 
 

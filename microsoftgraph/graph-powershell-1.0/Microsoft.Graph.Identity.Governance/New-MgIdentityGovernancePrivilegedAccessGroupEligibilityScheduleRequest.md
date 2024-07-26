@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
@@ -38,6 +39,63 @@ New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 
 ## DESCRIPTION
 Create a new privilegedAccessGroupEligibilityScheduleRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroup-post-eligibilityschedulerequests-permissions.md)]
+
+## EXAMPLES
+### Example 1: An admin creates an eligible group ownership request for a principal
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	accessId = "member"
+	principalId = "3cce9d87-3986-4f19-8335-7ed075408ca2"
+	groupId = "2b5ed229-4072-478d-9504-a047ebd4b07d"
+	action = "AdminAssign"
+	scheduleInfo = @{
+		startDateTime = [System.DateTime]::Parse("2023-02-06T19:25:00.000Z")
+		expiration = @{
+			type = "AfterDateTime"
+			endDateTime = [System.DateTime]::Parse("2023-02-07T19:56:00.000Z")
+		}
+	}
+	justification = "Assign eligible request."
+}
+
+New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest -BodyParameter $params
+
+```
+This example will an admin creates an eligible group ownership request for a principal
+
+### Example 2: An admin extends an eligible group membership for a principal
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	accessId = "member"
+	principalId = "3cce9d87-3986-4f19-8335-7ed075408ca2"
+	groupId = "2b5ed229-4072-478d-9504-a047ebd4b07d"
+	action = "AdminExtend"
+	scheduleInfo = @{
+		startDateTime = [System.DateTime]::Parse("2023-02-06T19:25:00.000Z")
+		expiration = @{
+			type = "AfterDateTime"
+			endDateTime = [System.DateTime]::Parse("2023-02-07T20:56:00.000Z")
+		}
+	}
+	justification = "Extend eligible request."
+}
+
+New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest -BodyParameter $params
+
+```
+This example will an admin extends an eligible group membership for a principal
+
 
 ## PARAMETERS
 
@@ -14868,7 +14926,6 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest)
 
 [https://learn.microsoft.com/graph/api/privilegedaccessgroup-post-eligibilityschedulerequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroup-post-eligibilityschedulerequests?view=graph-rest-1.0)
-
 
 
 

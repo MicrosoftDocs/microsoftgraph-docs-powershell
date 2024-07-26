@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectiongroup
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # Remove-MgExternalConnectionGroup
@@ -31,6 +32,9 @@ Remove-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete an externalGroup object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalgroup-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

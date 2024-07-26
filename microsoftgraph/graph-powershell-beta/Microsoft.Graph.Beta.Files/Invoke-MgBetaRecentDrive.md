@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetarecentdrive
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgBetaRecentDrive
@@ -33,6 +34,9 @@ Invoke-MgBetaRecentDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProperty
 
 ## DESCRIPTION
 List a set of items recently used by the signed-in user.This collection includes items that are in the user's drive and items they have access to from other drives.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-recent-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

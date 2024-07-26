@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecategory
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementDeviceCategory
@@ -46,6 +47,25 @@ Update-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity>
 
 ## DESCRIPTION
 Update the properties of a deviceCategory object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceCategory"
+	displayName = "Display Name value"
+	description = "Description value"
+}
+
+Update-MgDeviceManagementDeviceCategory -DeviceCategoryId $deviceCategoryId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCategory Cmdlet.
+
 
 ## PARAMETERS
 
@@ -323,7 +343,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecategory)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-update?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplan
 schema: 2.0.0
+ms.subservice: planner
+ms.subservice: planner
 ---
 
 # Get-MgPlannerPlan
@@ -38,6 +40,12 @@ Get-MgPlannerPlan -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a plannerplan object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-list-plans-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

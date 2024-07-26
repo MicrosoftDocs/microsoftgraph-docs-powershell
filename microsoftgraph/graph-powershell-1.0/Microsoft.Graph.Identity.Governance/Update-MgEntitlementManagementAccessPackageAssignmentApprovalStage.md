@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapprovalstage
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage
@@ -46,6 +47,27 @@ Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject 
 
 ## DESCRIPTION
 Approve or deny an approvalStage object in an approval.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approvalstage-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	reviewResult = "Approve"
+	justification = "OK"
+}
+
+Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId $approvalId -ApprovalStageId $approvalStageId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -457,7 +479,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapprovalstage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapprovalstage)
 
 [https://learn.microsoft.com/graph/api/approvalstage-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approvalstage-update?view=graph-rest-1.0)
-
 
 
 

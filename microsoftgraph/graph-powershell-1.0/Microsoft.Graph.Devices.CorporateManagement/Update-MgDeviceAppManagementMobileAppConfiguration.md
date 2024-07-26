@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfiguration
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceAppManagementMobileAppConfiguration
@@ -59,6 +60,38 @@ Update-MgDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorpora
 
 ## DESCRIPTION
 Update the properties of a iosMobileAppConfiguration object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.iosMobileAppConfiguration"
+	targetedMobileApps = @(
+	"Targeted Mobile Apps value"
+)
+description = "Description value"
+displayName = "Display Name value"
+version = 7
+encodedSettingXml = "ZW5jb2RlZFNldHRpbmdYbWw="
+settings = @(
+	@{
+		"@odata.type" = "microsoft.graph.appConfigurationSettingItem"
+		appConfigKey = "App Config Key value"
+		appConfigKeyType = "integerType"
+		appConfigKeyValue = "App Config Key Value value"
+	}
+)
+}
+
+Update-MgDeviceAppManagementMobileAppConfiguration -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementMobileAppConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -551,7 +584,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfiguration)
 
 [https://learn.microsoft.com/graph/api/intune-apps-iosmobileappconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-iosmobileappconfiguration-update?view=graph-rest-1.0)
-
 
 
 

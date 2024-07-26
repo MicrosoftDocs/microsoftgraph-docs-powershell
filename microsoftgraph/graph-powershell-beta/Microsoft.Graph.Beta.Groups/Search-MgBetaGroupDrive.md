@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/search-mgbetagroupdrive
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Search-MgBetaGroupDrive
@@ -33,6 +34,9 @@ Search-MgBetaGroupDrive -InputObject <IGroupsIdentity> [-Count] [-ExpandProperty
 
 ## DESCRIPTION
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-search-permissions.md)]
 
 ## PARAMETERS
 
@@ -331,7 +335,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/search-mgbetagroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/search-mgbetagroupdrive)
 
 [https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta)
-
 
 
 

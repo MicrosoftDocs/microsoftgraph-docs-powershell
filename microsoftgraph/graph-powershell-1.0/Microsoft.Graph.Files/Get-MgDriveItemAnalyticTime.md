@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalytictime
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgDriveItemAnalyticTime
@@ -31,6 +32,22 @@ Get-MgDriveItemAnalyticTime -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Get itemAnalytics about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/itemanalytics-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Files
+
+Get-MgDriveItemAnalyticTime -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Get-MgDriveItemAnalyticTime Cmdlet.
+
 
 ## PARAMETERS
 
@@ -202,7 +219,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalytictime](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalytictime)
 
 [https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-1.0)
-
 
 
 

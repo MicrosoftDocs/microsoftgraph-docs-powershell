@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementioupdatestatus
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementIoUpdateStatus
@@ -33,6 +34,34 @@ New-MgDeviceManagementIoUpdateStatus -BodyParameter <IMicrosoftGraphIosUpdateDev
 
 ## DESCRIPTION
 Create a new iosUpdateDeviceStatus object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.iosUpdateDeviceStatus"
+	installStatus = "available"
+	osVersion = "Os Version value"
+	deviceId = "Device Id value"
+	userId = "User Id value"
+	deviceDisplayName = "Device Display Name value"
+	userName = "User Name value"
+	deviceModel = "Device Model value"
+	complianceGracePeriodExpirationDateTime = [System.DateTime]::Parse("2016-12-31T23:56:44.951111-08:00")
+	status = "notApplicable"
+	lastReportedDateTime = [System.DateTime]::Parse("2017-01-01T00:00:17.7769392-08:00")
+	userPrincipalName = "User Principal Name value"
+}
+
+New-MgDeviceManagementIoUpdateStatus -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementIoUpdateStatus Cmdlet.
+
 
 ## PARAMETERS
 
@@ -361,7 +390,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementioupdatestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementioupdatestatus)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-iosupdatedevicestatus-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-iosupdatedevicestatus-create?view=graph-rest-1.0)
-
 
 
 

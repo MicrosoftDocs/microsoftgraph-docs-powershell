@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingshiftpreference
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaUserSettingShiftPreference
@@ -31,6 +32,9 @@ Get-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a shiftPreferences object by ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/shiftpreferences-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

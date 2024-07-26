@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicy
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # New-MgDeviceManagementVirtualEndpointProvisioningPolicy
@@ -37,6 +38,47 @@ New-MgDeviceManagementVirtualEndpointProvisioningPolicy
 
 ## DESCRIPTION
 Create a new cloudPcProvisioningPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-post-provisioningpolicies-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.cloudPcProvisioningPolicy"
+	description = "Description value"
+	displayName = "Display Name value"
+	domainJoinConfigurations = @(
+		@{
+			onPremisesConnectionId = "16ee6c71-fc10-438b-88ac-daa1ccafffff"
+			domainJoinType = "hybridAzureADJoin"
+		}
+		@{
+			onPremisesConnectionId = "26e16c71-f210-438b-88ac-d481ccafffff"
+			domainJoinType = "hybridAzureADJoin"
+		}
+	)
+	id = "1d164206-bf41-4fd2-8424-a3192d39ffff"
+	enableSingleSignOn = $true
+	imageDisplayName = "Windows-10 19h1-evd"
+	imageId = "MicrosoftWindowsDesktop_Windows-10_19h1-evd"
+	imageType = "gallery"
+	windowsSetting = @{
+		locale = "en-US"
+	}
+	provisioningType = "dedicated"
+}
+
+New-MgDeviceManagementVirtualEndpointProvisioningPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -10031,7 +10073,6 @@ The default value is en-US, which corresponds to English (United States).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicy)
 
 [https://learn.microsoft.com/graph/api/virtualendpoint-post-provisioningpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-post-provisioningpolicies?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachat
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgBetaChat
@@ -38,6 +39,9 @@ New-MgBetaChat -BodyParameter <IMicrosoftGraphChat> [-ResponseHeadersVariable <S
 
 ## DESCRIPTION
 Create a new chat object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create a one-on-one chat

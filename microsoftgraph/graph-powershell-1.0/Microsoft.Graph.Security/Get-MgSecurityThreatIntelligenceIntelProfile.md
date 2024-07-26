@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligenceintelprofile
 schema: 2.0.0
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceIntelProfile
@@ -39,6 +41,25 @@ Get-MgSecurityThreatIntelligenceIntelProfile -InputObject <ISecurityIdentity> [-
 
 ## DESCRIPTION
 Read the properties and relationships of a intelligenceProfile object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-intelligenceprofile-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-threatintelligence-list-intelprofiles-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceIntelProfile
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceIntelProfile Cmdlet.
+
 
 ## PARAMETERS
 
@@ -355,7 +376,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-intelligenceprofile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-intelligenceprofile-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-threatintelligence-list-intelprofiles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-threatintelligence-list-intelprofiles?view=graph-rest-1.0)
-
 
 
 

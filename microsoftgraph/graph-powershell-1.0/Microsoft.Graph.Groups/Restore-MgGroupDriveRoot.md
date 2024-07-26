@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdriveroot
 schema: 2.0.0
+ms.subservice: onedrive
 ---
 
 # Restore-MgGroupDriveRoot
@@ -49,6 +50,9 @@ Restore-MgGroupDriveRoot -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 NOTE: This functionality is currently only available for OneDrive Personal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-restore-permissions.md)]
 
 ## PARAMETERS
 
@@ -362,7 +366,6 @@ For OneDrive, this property is not populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0)
-
 
 
 

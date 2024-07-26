@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreementfile
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgIdentityGovernanceTermsOfUseAgreementFile
@@ -49,6 +50,33 @@ New-MgIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGovernanc
 
 ## DESCRIPTION
 Create a new localized agreement file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-post-files-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	fileName = "Contoso ToU for guest users (French)"
+	language = "fr-FR"
+	isDefault = $false
+	isMajorVersion = $false
+	displayName = "Contoso ToU for guest users (French)"
+	fileData = @{
+		data = [System.Text.Encoding]::ASCII.GetBytes("base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data")
+	}
+}
+
+New-MgIdentityGovernanceTermsOfUseAgreementFile -AgreementId $agreementId -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityGovernanceTermsOfUseAgreementFile Cmdlet.
+
 
 ## PARAMETERS
 
@@ -510,7 +538,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreementfile)
 
 [https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-1.0)
-
 
 
 

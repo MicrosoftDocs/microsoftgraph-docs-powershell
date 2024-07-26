@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetadeactivateeducationuserassignment
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Invoke-MgBetaDeactivateEducationUserAssignment
@@ -33,6 +34,9 @@ Invoke-MgBetaDeactivateEducationUserAssignment -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Mark an assigned educationAssignment as inactive to signal that the assignment has no further action items for teachers and students.
 This action can only be performed by a teacher on assigned assignments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-deactivate-permissions.md)]
 
 ## PARAMETERS
 
@@ -199,7 +203,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetadeactivateeducationuserassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetadeactivateeducationuserassignment)
 
 [https://learn.microsoft.com/graph/api/educationassignment-deactivate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-deactivate?view=graph-rest-beta)
-
 
 
 

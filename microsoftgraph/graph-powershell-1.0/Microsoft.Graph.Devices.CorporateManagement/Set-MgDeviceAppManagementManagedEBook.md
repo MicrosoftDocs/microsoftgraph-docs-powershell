@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmanagedebook
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Set-MgDeviceAppManagementManagedEBook
@@ -49,6 +50,32 @@ Set-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementI
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	managedEBookAssignments = @(
+		@{
+			"@odata.type" = "#microsoft.graph.managedEBookAssignment"
+			id = "ae8b0d27-0d27-ae8b-270d-8bae270d8bae"
+			target = @{
+				"@odata.type" = "microsoft.graph.allLicensedUsersAssignmentTarget"
+			}
+			installIntent = "required"
+		}
+	)
+}
+
+Set-MgDeviceAppManagementManagedEBook -ManagedEBookId $managedEBookId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgDeviceAppManagementManagedEBook Cmdlet.
+
 
 ## PARAMETERS
 
@@ -296,7 +323,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmanagedebook](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmanagedebook)
 
 [https://learn.microsoft.com/graph/api/intune-books-managedebook-assign?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebook-assign?view=graph-rest-1.0)
-
 
 
 

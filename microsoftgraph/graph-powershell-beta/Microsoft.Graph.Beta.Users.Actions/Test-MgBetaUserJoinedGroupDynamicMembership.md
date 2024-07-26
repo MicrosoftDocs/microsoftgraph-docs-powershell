@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserjoinedgroupdynamicmembership
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Test-MgBetaUserJoinedGroupDynamicMembership
@@ -286,7 +287,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserjoinedgroupdynamicmembership](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserjoinedgroupdynamicmembership)
 
 [https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)
-
 
 
 

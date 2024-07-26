@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsetting
 schema: 2.0.0
+ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgGroupSetting
@@ -62,6 +64,25 @@ Get-MgGroupSetting -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Retrieve the properties of a specific group setting object.
 The setting can be a tenant-level or group-specific setting.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/groupsetting-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-settings-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+Get-MgGroupSetting -GroupId $groupId
+
+```
+This example shows how to use the Get-MgGroupSetting Cmdlet.
+
 
 ## PARAMETERS
 
@@ -373,7 +394,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/groupsetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/groupsetting-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0)
-
 
 
 

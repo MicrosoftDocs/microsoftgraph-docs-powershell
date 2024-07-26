@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyappid
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgApplicationByAppId
@@ -34,6 +35,19 @@ Get the properties and relationships of an application object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Retrieve an application by its appId and only specific properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+Get-MgApplicationByAppId -Property "id,appId,displayName,requiredResourceAccess" 
+
+```
+This example will retrieve an application by its appid and only specific properties
+
 
 ## PARAMETERS
 
@@ -190,7 +204,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyappid)
 
 [https://learn.microsoft.com/graph/api/application-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-get?view=graph-rest-1.0)
-
 
 
 

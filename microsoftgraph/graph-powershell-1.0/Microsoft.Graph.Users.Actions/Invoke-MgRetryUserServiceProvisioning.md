@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretryuserserviceprovisioning
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Invoke-MgRetryUserServiceProvisioning
@@ -34,6 +35,19 @@ Retry the user service provisioning.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-retryserviceprovisioning-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Users.Actions
+
+Invoke-MgRetryUserServiceProvisioning -UserId $userId
+
+```
+This example shows how to use the Invoke-MgRetryUserServiceProvisioning Cmdlet.
+
 
 ## PARAMETERS
 
@@ -212,7 +226,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretryuserserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretryuserserviceprovisioning)
 
 [https://learn.microsoft.com/graph/api/user-retryserviceprovisioning?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-retryserviceprovisioning?view=graph-rest-1.0)
-
 
 
 

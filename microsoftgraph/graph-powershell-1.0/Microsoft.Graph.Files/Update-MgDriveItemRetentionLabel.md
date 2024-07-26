@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemretentionlabel
 schema: 2.0.0
+ms.subservice: onedrive
 ---
 
 # Update-MgDriveItemRetentionLabel
@@ -53,6 +54,25 @@ Update-MgDriveItemRetentionLabel -InputObject <IFilesIdentity>
 Lock or unlock a retention label on a driveItem that classifies content as records.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Files
+
+$params = @{
+	retentionSettings = @{
+		isRecordLocked = $true
+	}
+}
+
+Update-MgDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDriveItemRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 
@@ -420,7 +440,6 @@ Read-write.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemretentionlabel)
 
 [https://learn.microsoft.com/graph/api/driveitem-lockorunlockrecord?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-lockorunlockrecord?view=graph-rest-1.0)
-
 
 
 

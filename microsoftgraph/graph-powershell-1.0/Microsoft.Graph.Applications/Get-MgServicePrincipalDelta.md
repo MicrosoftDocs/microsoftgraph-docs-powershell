@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelta
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgServicePrincipalDelta
@@ -24,6 +25,22 @@ Get-MgServicePrincipalDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pr
 
 ## DESCRIPTION
 Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delta-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+Get-MgServicePrincipalDelta
+
+```
+This example shows how to use the Get-MgServicePrincipalDelta Cmdlet.
+
 
 ## PARAMETERS
 
@@ -239,7 +256,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelta](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelta)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-delta?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveroot
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Copy-MgBetaDriveRoot
@@ -331,7 +332,6 @@ For OneDrive, this property is not populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
-
 
 
 

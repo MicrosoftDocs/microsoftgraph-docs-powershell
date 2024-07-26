@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinter
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # Update-MgPrintPrinter
@@ -57,6 +58,9 @@ Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Update the properties of a printer object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -10254,7 +10258,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinter)
 
 [https://learn.microsoft.com/graph/api/printer-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-update?view=graph-rest-1.0)
-
 
 
 

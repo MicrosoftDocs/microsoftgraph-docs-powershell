@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # Update-MgSearchAcronym
@@ -49,6 +50,26 @@ Update-MgSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Update the properties of an acronym object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-acronym-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Search
+
+$params = @{
+	description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers."
+}
+
+Update-MgSearchAcronym -AcronymId $acronymId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSearchAcronym Cmdlet.
+
 
 ## PARAMETERS
 
@@ -381,7 +402,6 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym)
 
 [https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-1.0)
-
 
 
 

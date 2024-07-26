@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancetermsofuseagreement
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Remove-MgIdentityGovernanceTermsOfUseAgreement
@@ -31,6 +32,22 @@ Remove-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernance
 
 ## DESCRIPTION
 Delete an agreement object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-delete-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Remove-MgIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId
+
+```
+This example shows how to use the Remove-MgIdentityGovernanceTermsOfUseAgreement Cmdlet.
+
 
 ## PARAMETERS
 
@@ -261,7 +278,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancetermsofuseagreement)
 
 [https://learn.microsoft.com/graph/api/agreement-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-delete?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelist
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # New-MgBetaSiteList
@@ -62,6 +63,9 @@ New-MgBetaSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Create a new list in a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-create-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

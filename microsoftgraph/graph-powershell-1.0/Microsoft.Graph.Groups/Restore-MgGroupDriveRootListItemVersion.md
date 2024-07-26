@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdriverootlistitemversion
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Restore-MgGroupDriveRootListItemVersion
@@ -33,6 +34,9 @@ Restore-MgGroupDriveRootListItemVersion -InputObject <IGroupsIdentity> [-Respons
 ## DESCRIPTION
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-restore-permissions.md)]
 
 ## PARAMETERS
 
@@ -252,7 +256,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdriverootlistitemversion)
 
 [https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0)
-
 
 
 

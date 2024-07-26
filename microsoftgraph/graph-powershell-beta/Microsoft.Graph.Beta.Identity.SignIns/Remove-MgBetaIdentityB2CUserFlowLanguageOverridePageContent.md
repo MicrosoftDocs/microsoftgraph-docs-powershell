@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowlanguageoverridepagecontent
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgBetaIdentityB2CUserFlowLanguageOverridePageContent
@@ -31,6 +32,22 @@ Remove-MgBetaIdentityB2CUserFlowLanguageOverridePageContent -InputObject <IIdent
 ## DESCRIPTION
 Deletes the values in an userFlowLanguagePage object.
 You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguagepage-delete-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Remove-MgBetaIdentityB2CUserFlowLanguageOverridePageContent -B2cIdentityUserFlowId $b2cIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId -UserFlowLanguagePageId $userFlowLanguagePageId
+
+```
+This example shows how to use the Remove-MgBetaIdentityB2CUserFlowLanguageOverridePageContent Cmdlet.
+
 
 ## PARAMETERS
 
@@ -303,8 +320,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowlanguageoverridepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowlanguageoverridepagecontent)
 
 [https://learn.microsoft.com/graph/api/userflowlanguagepage-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/userflowlanguagepage-delete?view=graph-rest-beta)
-
-
 
 
 

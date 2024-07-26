@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemlink
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # New-MgBetaDriveRootListItemLink
@@ -55,6 +56,9 @@ New-MgBetaDriveRootListItemLink -InputObject <IFilesIdentity>
 Create a sharing link for a listItem.
 The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-createlink-permissions.md)]
 
 ## PARAMETERS
 
@@ -386,7 +390,6 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemlink)
 
 [https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-beta](https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-beta)
-
 
 
 

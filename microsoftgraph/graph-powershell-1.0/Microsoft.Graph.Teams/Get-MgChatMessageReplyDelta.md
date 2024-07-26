@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagereplydelta
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgChatMessageReplyDelta
@@ -51,6 +52,9 @@ To proceed with a round of change tracking, copy and apply the @odata.nextLink o
 A @odata.deltaLink returned in a response signifies that the current round of change tracking is complete.
 You can save and use the @odata.deltaLink URL when you begin to retrieve more changes (messages changed or posted after acquiring @odata.deltaLink).
 For more information, see the delta query documentation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-delta-permissions.md)]
 
 ## PARAMETERS
 
@@ -367,7 +371,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagereplydelta](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagereplydelta)
 
 [https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0)
-
 
 
 

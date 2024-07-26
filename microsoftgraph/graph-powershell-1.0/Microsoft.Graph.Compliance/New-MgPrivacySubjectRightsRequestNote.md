@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequestnote
 schema: 2.0.0
+ms.subservice: compliance
 ---
 
 # New-MgPrivacySubjectRightsRequestNote
@@ -47,6 +48,29 @@ New-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity>
 
 ## DESCRIPTION
 Create a new authoredNote object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-post-notes-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Compliance
+
+$params = @{
+	content = @{
+		content = "Please take a look at the files tagged with follow up"
+		contentType = "text"
+	}
+}
+
+New-MgPrivacySubjectRightsRequestNote -SubjectRightsRequestId $subjectRightsRequestId -BodyParameter $params
+
+```
+This example shows how to use the New-MgPrivacySubjectRightsRequestNote Cmdlet.
+
 
 ## PARAMETERS
 
@@ -312,7 +336,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequestnote)
 
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0)
-
 
 
 

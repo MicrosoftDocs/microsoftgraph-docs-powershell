@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdrivelistcontenttypepublished
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Test-MgDriveListContentTypePublished
@@ -30,6 +31,9 @@ Test-MgDriveListContentTypePublished -InputObject <IFilesIdentity> [-ResponseHea
 
 ## DESCRIPTION
 Check the publishing status of a contentType in a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-ispublished-permissions.md)]
 
 ## PARAMETERS
 
@@ -171,7 +175,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdrivelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdrivelistcontenttypepublished)
 
 [https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
-
 
 
 

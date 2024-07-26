@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappassignment
 schema: 2.0.0
+ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgDeviceAppManagementMobileAppAssignment
@@ -39,6 +41,19 @@ Get-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateMana
 
 ## DESCRIPTION
 Read properties and relationships of the mobileAppAssignment object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementMobileAppAssignment -MobileAppId $mobileAppId
+
+```
+This example shows how to use the Get-MgDeviceAppManagementMobileAppAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -344,7 +359,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-list?view=graph-rest-1.0)
-
 
 
 

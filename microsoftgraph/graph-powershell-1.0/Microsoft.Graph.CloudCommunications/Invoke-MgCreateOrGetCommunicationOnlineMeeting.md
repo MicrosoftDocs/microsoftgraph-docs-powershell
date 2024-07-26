@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgcreateorgetcommunicationonlinemeeting
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Invoke-MgCreateOrGetCommunicationOnlineMeeting
@@ -312,7 +313,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgcreateorgetcommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgcreateorgetcommunicationonlinemeeting)
 
 [https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-1.0)
-
 
 
 
