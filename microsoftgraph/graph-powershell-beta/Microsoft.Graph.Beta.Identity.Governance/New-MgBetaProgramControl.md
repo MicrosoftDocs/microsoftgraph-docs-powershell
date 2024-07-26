@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogramcontrol
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaProgramControl
@@ -100,6 +101,9 @@ New-MgBetaProgramControl -BodyParameter <IMicrosoftGraphProgramControl> [-Respon
 In the Microsoft Entra access reviews feature, create a new programControl object.
 This links an access review to a program.
 Prior to making this request, the caller must have previously
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/programcontrol-create-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

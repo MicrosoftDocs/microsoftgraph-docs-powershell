@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetagraphidentitygovernancelifecycleworkflowinsight
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight
@@ -30,6 +31,22 @@ Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight -InputObject <IIden
 ## DESCRIPTION
 Provide a summary of workflows processed, by category, in a tenant.
 This allows you to quickly get category information, by numerical value, bypassing other information found in the WorkflowsProcessedSummary call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-insights-workflowsprocessedbycategory-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight
+
+```
+This example shows how to use the Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight Cmdlet.
+
 
 ## PARAMETERS
 
@@ -246,8 +263,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetagraphidentitygovernancelifecycleworkflowinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetagraphidentitygovernancelifecycleworkflowinsight)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-insights-workflowsprocessedbycategory?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-insights-workflowsprocessedbycategory?view=graph-rest-beta)
-
-
 
 
 

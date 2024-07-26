@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementvirtualendpointauditeventauditactivitytype
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType
@@ -26,6 +27,19 @@ Get audit activity types by tenant ID.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcauditevent-getauditactivitytypes-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Functions
+
+Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType
+
+```
+This example shows how to use the Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType Cmdlet.
+
 
 ## PARAMETERS
 
@@ -165,7 +179,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementvirtualendpointauditeventauditactivitytype](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementvirtualendpointauditeventauditactivitytype)
 
 [https://learn.microsoft.com/graph/api/cloudpcauditevent-getauditactivitytypes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcauditevent-getauditactivitytypes?view=graph-rest-1.0)
-
 
 
 

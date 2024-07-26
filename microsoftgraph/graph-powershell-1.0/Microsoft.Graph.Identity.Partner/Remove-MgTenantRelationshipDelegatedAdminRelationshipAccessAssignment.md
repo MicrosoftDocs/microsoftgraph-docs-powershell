@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationshipaccessassignment
 schema: 2.0.0
+ms.subservice: partner-customer-administration
 ---
 
 # Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
@@ -32,6 +33,23 @@ Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObje
 
 ## DESCRIPTION
 Delete a delegatedAdminAccessAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminaccessassignment-delete-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Partner
+
+Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -DelegatedAdminAccessAssignmentId $delegatedAdminAccessAssignmentId -IfMatch W/'"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="' 
+
+
+```
+This example shows how to use the Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -216,7 +234,6 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationshipaccessassignment)
 
 [https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-delete?view=graph-rest-1.0)
-
 
 
 

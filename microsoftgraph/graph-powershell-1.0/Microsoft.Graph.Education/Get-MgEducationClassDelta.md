@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassdelta
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Get-MgEducationClassDelta
@@ -26,6 +27,22 @@ Get-MgEducationClassDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Prop
 ## DESCRIPTION
 Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection.
 See Use delta query for details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-delta-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationClassDelta
+
+```
+This example shows how to use the Get-MgEducationClassDelta Cmdlet.
+
 
 ## PARAMETERS
 
@@ -241,7 +258,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassdelta)
 
 [https://learn.microsoft.com/graph/api/educationclass-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-delta?view=graph-rest-1.0)
-
 
 
 

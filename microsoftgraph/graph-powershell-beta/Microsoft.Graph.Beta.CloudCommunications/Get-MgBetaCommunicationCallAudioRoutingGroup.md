@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallaudioroutinggroup
 schema: 2.0.0
+ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaCommunicationCallAudioRoutingGroup
@@ -42,6 +44,9 @@ Retrieve the properties and relationships of an audioRoutingGroup object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/audioroutinggroup-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-list-audioroutinggroups-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

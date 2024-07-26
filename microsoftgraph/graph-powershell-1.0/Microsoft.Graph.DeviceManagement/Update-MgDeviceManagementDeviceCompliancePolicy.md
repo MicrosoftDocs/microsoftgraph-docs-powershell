@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicy
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementDeviceCompliancePolicy
@@ -61,6 +62,42 @@ Update-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementI
 
 ## DESCRIPTION
 Update the properties of a windows10MobileCompliancePolicy object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.windows10MobileCompliancePolicy"
+	description = "Description value"
+	displayName = "Display Name value"
+	version = 7
+	passwordRequired = $true
+	passwordBlockSimple = $true
+	passwordMinimumLength = 
+	passwordMinimumCharacterSetCount = 
+	passwordRequiredType = "alphanumeric"
+	passwordPreviousPasswordBlockCount = 
+	passwordExpirationDays = 
+	passwordMinutesOfInactivityBeforeLock = 
+	passwordRequireToUnlockFromIdle = $true
+	osMinimumVersion = "Os Minimum Version value"
+	osMaximumVersion = "Os Maximum Version value"
+	earlyLaunchAntiMalwareDriverEnabled = $true
+	bitLockerEnabled = $true
+	secureBootEnabled = $true
+	codeIntegrityEnabled = $true
+	storageRequireEncryption = $true
+}
+
+Update-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -648,7 +685,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicy)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-update?view=graph-rest-1.0)
-
 
 
 

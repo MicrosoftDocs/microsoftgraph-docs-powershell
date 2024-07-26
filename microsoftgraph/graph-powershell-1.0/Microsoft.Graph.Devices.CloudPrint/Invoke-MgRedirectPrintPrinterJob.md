@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgredirectprintprinterjob
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # Invoke-MgRedirectPrintPrinterJob
@@ -53,6 +54,57 @@ Invoke-MgRedirectPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity>
 Redirect a print job to a different printer.
 Redirecting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-redirect-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+$params = @{
+	destinationPrinterId = "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea"
+	configuration = @{
+		feedOrientation = "longEdgeFirst"
+		pageRanges = @(
+			@{
+				start = 1
+				end = 1
+			}
+		)
+		quality = "medium"
+		dpi = 600
+		orientation = "landscape"
+		copies = 1
+		duplexMode = "oneSided"
+		colorMode = "blackAndWhite"
+		inputBin = "by-pass-tray"
+		outputBin = "output-tray"
+		mediaSize = "A4"
+		margin = @{
+			top = 0
+			bottom = 0
+			left = 0
+			right = 0
+		}
+		mediaType = "stationery"
+		finishings = $null
+		pagesPerSheet = 1
+		multipageLayout = "clockwiseFromBottomLeft"
+		collate = $false
+		scaling = "shrinkToFit"
+		fitPdfToPage = $false
+	}
+}
+
+Invoke-MgRedirectPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgRedirectPrintPrinterJob Cmdlet.
+
 
 ## PARAMETERS
 
@@ -352,7 +404,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgredirectprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgredirectprintprinterjob)
 
 [https://learn.microsoft.com/graph/api/printjob-redirect?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printjob-redirect?view=graph-rest-1.0)
-
 
 
 

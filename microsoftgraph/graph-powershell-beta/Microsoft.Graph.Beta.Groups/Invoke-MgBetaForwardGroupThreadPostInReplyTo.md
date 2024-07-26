@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpostinreplyto
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Invoke-MgBetaForwardGroupThreadPostInReplyTo
@@ -51,6 +52,9 @@ Invoke-MgBetaForwardGroupThreadPostInReplyTo -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Forward a post to a recipient.
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-forward-permissions.md)]
 
 ## PARAMETERS
 
@@ -353,7 +357,6 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpostinreplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpostinreplyto)
 
 [https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyscheduledactionforrule
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule
@@ -47,6 +48,24 @@ New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule -InputObject 
 
 ## DESCRIPTION
 Create a new deviceComplianceScheduledActionForRule object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceComplianceScheduledActionForRule"
+	ruleName = "Rule Name value"
+}
+
+New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule Cmdlet.
+
 
 ## PARAMETERS
 
@@ -341,7 +360,6 @@ Valid values 0 to 8760
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyscheduledactionforrule](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyscheduledactionforrule)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancescheduledactionforrule-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancescheduledactionforrule-create?view=graph-rest-1.0)
-
 
 
 

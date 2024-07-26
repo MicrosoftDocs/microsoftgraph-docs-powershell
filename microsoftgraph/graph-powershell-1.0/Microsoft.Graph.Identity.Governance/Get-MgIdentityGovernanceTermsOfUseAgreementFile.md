@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreementfile
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgIdentityGovernanceTermsOfUseAgreementFile
@@ -41,6 +42,22 @@ Get-MgIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Retrieve the details of an agreement file, including the language and version information.
 The default file can have multiple versions, each with its own language, that can be retrieved by specifying the Accept-Language header.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreementfile-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get the default agreement file
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceTermsOfUseAgreementFile -AgreementId $agreementId
+
+```
+This example will get the default agreement file
+
 
 ## PARAMETERS
 
@@ -362,7 +379,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreementfile)
 
 [https://learn.microsoft.com/graph/api/agreementfile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreementfile-get?view=graph-rest-1.0)
-
 
 
 

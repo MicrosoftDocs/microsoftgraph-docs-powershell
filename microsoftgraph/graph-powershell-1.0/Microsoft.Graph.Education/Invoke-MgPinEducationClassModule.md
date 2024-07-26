@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgpineducationclassmodule
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Invoke-MgPinEducationClassModule
@@ -34,6 +35,22 @@ Invoke-MgPinEducationClassModule -InputObject <IEducationIdentity> [-ResponseHea
 Pin an educationModule in the class work list.
 This action sets the isPinned property to true for an educationModule.
 Only teachers can perform this action and only one module at a time can be pinned in the class work list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-pin-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Invoke-MgPinEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
+
+```
+This example shows how to use the Invoke-MgPinEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 
@@ -195,7 +212,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgpineducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgpineducationclassmodule)
 
 [https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-1.0)
-
 
 
 

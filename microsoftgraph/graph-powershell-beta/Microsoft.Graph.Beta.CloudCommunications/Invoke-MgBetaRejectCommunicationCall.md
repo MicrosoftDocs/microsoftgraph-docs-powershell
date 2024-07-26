@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarejectcommunicationcall
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Invoke-MgBetaRejectCommunicationCall
@@ -60,6 +61,9 @@ The bot is expected to answer or reject the call before the call times out.
 The current timeout value is 15 seconds.
 This API doesn't end existing calls that have already been answered.
 Use delete call to end a call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-reject-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Reject an incoming call with 'Busy' reason

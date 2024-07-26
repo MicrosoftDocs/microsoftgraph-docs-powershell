@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreement
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgIdentityGovernanceTermsOfUseAgreement
@@ -35,6 +36,37 @@ New-MgIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphAgree
 
 ## DESCRIPTION
 Create a new agreement object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termsofusecontainer-post-agreements-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	displayName = "Contoso ToU for guest users"
+	isViewingBeforeAcceptanceRequired = $true
+	files = @(
+		@{
+			fileName = "TOU.pdf"
+			language = "en"
+			isDefault = $true
+			fileData = @{
+				data = [System.Text.Encoding]::ASCII.GetBytes("SGVsbG8gd29ybGQ=//truncated-binary")
+			}
+		}
+	)
+}
+
+New-MgIdentityGovernanceTermsOfUseAgreement -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityGovernanceTermsOfUseAgreement Cmdlet.
+
 
 ## PARAMETERS
 
@@ -588,7 +620,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreement)
 
 [https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-1.0)
-
 
 
 

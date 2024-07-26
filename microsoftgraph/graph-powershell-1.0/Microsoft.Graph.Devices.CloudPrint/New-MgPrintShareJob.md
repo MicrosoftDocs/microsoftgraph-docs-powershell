@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejob
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # New-MgPrintShareJob
@@ -53,6 +54,56 @@ New-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create a new printJob for a printerShare.
 Also creates a new printDocument associated with the printJob.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-post-jobs-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+$params = @{
+	configuration = @{
+		feedOrientation = "longEdgeFirst"
+		pageRanges = @(
+			@{
+				start = 1
+				end = 1
+			}
+		)
+		quality = "medium"
+		dpi = 600
+		orientation = "landscape"
+		copies = 1
+		duplexMode = "oneSided"
+		colorMode = "blackAndWhite"
+		inputBin = "by-pass-tray"
+		outputBin = "output-tray"
+		mediaSize = "A4"
+		margin = @{
+			top = 0
+			bottom = 0
+			left = 0
+			right = 0
+		}
+		mediaType = "stationery"
+		finishings = $null
+		pagesPerSheet = 1
+		multipageLayout = "clockwiseFromBottomLeft"
+		collate = $false
+		scaling = "shrinkToFit"
+		fitPdfToPage = $false
+	}
+}
+
+New-MgPrintShareJob -PrinterShareId $printerShareId -BodyParameter $params
+
+```
+This example shows how to use the New-MgPrintShareJob Cmdlet.
+
 
 ## PARAMETERS
 
@@ -589,7 +640,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejob)
 
 [https://learn.microsoft.com/graph/api/printershare-post-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-post-jobs?view=graph-rest-1.0)
-
 
 
 

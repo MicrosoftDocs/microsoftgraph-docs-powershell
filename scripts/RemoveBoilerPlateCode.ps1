@@ -67,6 +67,13 @@ function Repair-Examples{
        $Path = "$ModulePrefix.Beta.$ModuleName"
     }
      $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
+     $CmdletHomePage = Join-Path $destination "$path.md"
+     $NoDescriptionAvailable = "{{ Fill in the Description }}"
+     if(Test-Path $CmdletHomePage){
+        $HomePageContent = Get-Content $CmdletHomePage
+        $HomePageContent = $HomePageContent -replace $NoDescriptionAvailable, ""
+        $HomePageContent | Out-File $CmdletHomePage -Encoding UTF8
+     }
 
      foreach ($File in Get-ChildItem $destination) {
         $NoCodeAvailable = "Add code here"

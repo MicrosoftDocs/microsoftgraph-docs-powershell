@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammerdeviceusageusercount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportYammerDeviceUsageUserCount
@@ -30,6 +31,22 @@ Get-MgReportYammerDeviceUsageUserCount -InputObject <IReportsIdentity> -OutFile 
 
 ## DESCRIPTION
 Get the number of daily users by device type.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammerdeviceusageusercounts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportYammerDeviceUsageUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportYammerDeviceUsageUserCount Cmdlet.
+
 
 ## PARAMETERS
 
@@ -184,7 +201,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammerdeviceusageusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammerdeviceusageusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-1.0)
-
 
 
 

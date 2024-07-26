@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleeligibilityschedulerequest
 schema: 2.0.0
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest
@@ -39,6 +41,25 @@ Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -InputObject <IIdent
 
 ## DESCRIPTION
 In PIM, read the details of a request for for a role eligibility request made through the unifiedRoleEligibilityScheduleRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityschedulerequest-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roleeligibilityschedulerequests-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest
+
+```
+This example shows how to use the Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 
@@ -361,7 +382,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedulerequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedulerequest-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/rbacapplication-list-roleeligibilityschedulerequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleeligibilityschedulerequests?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoutboundprovisioningflowset
 schema: 2.0.0
+ms.subservice: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSet
@@ -36,6 +37,9 @@ Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSet -InputObject <ISearchI
 
 ## DESCRIPTION
 Get outboundProvisioningFlowSets from external
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataroot-list-outboundprovisioningflowsets-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

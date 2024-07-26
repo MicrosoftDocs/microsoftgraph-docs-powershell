@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # New-MgBetaVirtualEventTownhall
@@ -900,7 +901,6 @@ See below for possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall)
 
 [https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta)
-
 
 
 

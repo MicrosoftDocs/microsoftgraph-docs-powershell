@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizedriverootsubscription
 schema: 2.0.0
+ms.subservice: change-notifications
 ---
 
 # Invoke-MgBetaReauthorizeDriveRootSubscription
@@ -218,7 +219,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizedriverootsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizedriverootsubscription)
 
 [https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-beta](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-beta)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberof
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupMemberOf
@@ -47,6 +48,9 @@ HTTP Methods: GET (supported for all groups).
 Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-memberof-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

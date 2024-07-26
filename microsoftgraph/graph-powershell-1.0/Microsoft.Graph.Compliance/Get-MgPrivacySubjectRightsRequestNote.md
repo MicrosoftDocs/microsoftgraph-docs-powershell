@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestnote
 schema: 2.0.0
+ms.subservice: compliance
 ---
 
 # Get-MgPrivacySubjectRightsRequestNote
@@ -39,6 +40,22 @@ Get-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-Expan
 
 ## DESCRIPTION
 List of notes associated with the request.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-list-notes-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Compliance
+
+Get-MgPrivacySubjectRightsRequestNote -SubjectRightsRequestId $subjectRightsRequestId
+
+```
+This example shows how to use the Get-MgPrivacySubjectRightsRequestNote Cmdlet.
+
 
 ## PARAMETERS
 
@@ -310,7 +327,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestnote)
 
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-list-notes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-list-notes?view=graph-rest-1.0)
-
 
 
 

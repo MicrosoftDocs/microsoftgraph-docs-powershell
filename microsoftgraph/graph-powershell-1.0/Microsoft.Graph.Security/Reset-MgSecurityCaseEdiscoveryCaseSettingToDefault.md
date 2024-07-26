@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/reset-mgsecuritycaseediscoverycasesettingtodefault
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault
@@ -31,6 +32,9 @@ Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -InputObject <ISecurityIdenti
 
 ## DESCRIPTION
 Reset a caseSettings object to the default values.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycasesettings-resettodefault-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

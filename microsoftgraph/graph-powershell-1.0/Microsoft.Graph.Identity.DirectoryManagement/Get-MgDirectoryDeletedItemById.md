@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditembyid
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryDeletedItemById
@@ -36,6 +37,9 @@ Get-MgDirectoryDeletedItemById
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getbyids-permissions.md)]
 
 ## PARAMETERS
 
@@ -202,7 +206,6 @@ BODYPARAMETER `<IPaths1I5T24RDirectoryDeleteditemsMicrosoftGraphGetbyidsPostRequ
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditembyid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditembyid)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
-
 
 
 

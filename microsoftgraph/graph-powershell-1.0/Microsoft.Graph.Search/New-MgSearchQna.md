@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # New-MgSearchQna
@@ -35,6 +36,54 @@ New-MgSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-ResponseHeadersVaria
 
 ## DESCRIPTION
 Create a new qna object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-searchentity-post-qnas-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Search
+
+$params = @{
+	displayName = "Global Country Holidays"
+	webUrl = "http://www.contoso.com/"
+	description = "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a weekend.    <table>    <thead>    <tr>    <td><strong>2021 Dates</strong></td>    <td><strong>Holiday</strong></td>    </tr>    </thead>    <tbody>    <tr>        <td>January 1, 2021</td>        <td>New Year's Day</td>    </tr>        <tr>        <td>January 18, 2021</td>        <td>Martin Luther King Day</td>    </tr>        <tr>        <td>February 15, 2021</td>        <td>Presidents Day</td>    </tr>        <tr>        <td>May 31, 2021</td>        <td>Memorial Day</td>    </tr>        <tr>        <td>July 5, 2021</td>        <td>Independence Day</td>    </tr>        <tr>        <td>September 6, 2021</td>        <td>Labor Day</td>    </tr>        <tr>        <td>November 25, 2021 - November 26, 2021</td>        <td>Thanksgiving Day and Day after Thanksgiving</td>    </tr>    <tr>        <td>December 23, 2021 - December 24, 2021</td>        <td>Christmas Eve and Christmas Day</td>    </tr>    </tbody>    </table>"
+	keywords = @{
+		keywords = @(
+		"new years day"
+	"martin luther king day"
+"presidents day"
+"memorial day"
+"independence day"
+"labor day"
+"thanksgiving"
+"christmas"
+)
+reservedKeywords = @(
+"holidays"
+"paid days off"
+)
+matchSimilarKeywords = $true
+}
+availabilityStartDateTime = [System.DateTime]::Parse("2020-09-21T20:01:37Z")
+availabilityEndDateTime = [System.DateTime]::Parse("2021-12-31T20:01:37Z")
+languageTags = @(
+"en-us"
+)
+platforms = @(
+"ios"
+)
+state = "published"
+}
+
+New-MgSearchQna -BodyParameter $params
+
+```
+This example shows how to use the New-MgSearchQna Cmdlet.
+
 
 ## PARAMETERS
 
@@ -490,7 +539,6 @@ When users select this answer variation from the search results, they're directe
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna)
 
 [https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0)
-
 
 
 

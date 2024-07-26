@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicypartneridentitysynchronization
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
@@ -32,6 +33,9 @@ Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObje
 
 ## DESCRIPTION
 Get the user synchronization policy of a partner-specific configuration.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantidentitysyncpolicypartner-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupevent
 schema: 2.0.0
+ms.subservice: outlook
+ms.subservice: entra-groups
 ---
 
 # Get-MgGroupEvent
@@ -39,6 +41,12 @@ Get-MgGroupEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Get an event object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-event-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-events-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

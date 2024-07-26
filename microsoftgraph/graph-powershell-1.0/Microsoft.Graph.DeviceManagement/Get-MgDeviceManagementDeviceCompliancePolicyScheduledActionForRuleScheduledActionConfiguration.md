@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicyscheduledactionforrulescheduledactionconfiguration
 schema: 2.0.0
+ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
@@ -43,6 +45,19 @@ Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActio
 
 ## DESCRIPTION
 Read properties and relationships of the deviceComplianceActionItem object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceComplianceScheduledActionForRuleId $deviceComplianceScheduledActionForRuleId
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -382,7 +397,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceactionitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceactionitem-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceactionitem-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceactionitem-list?view=graph-rest-1.0)
-
 
 
 

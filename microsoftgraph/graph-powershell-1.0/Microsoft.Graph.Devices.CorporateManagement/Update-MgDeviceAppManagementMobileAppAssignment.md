@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappassignment
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceAppManagementMobileAppAssignment
@@ -47,6 +48,31 @@ Update-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateM
 
 ## DESCRIPTION
 Update the properties of a mobileAppAssignment object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.mobileAppAssignment"
+	intent = "required"
+	target = @{
+		"@odata.type" = "microsoft.graph.allLicensedUsersAssignmentTarget"
+	}
+	settings = @{
+		"@odata.type" = "microsoft.graph.windowsUniversalAppXAppAssignmentSettings"
+		useDeviceContext = $true
+	}
+}
+
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppId $mobileAppId -MobileAppAssignmentId $mobileAppAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementMobileAppAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -333,7 +359,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappassignment)
 
 [https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-update?view=graph-rest-1.0)
-
 
 
 

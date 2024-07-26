@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicysettingstatesummarydevicecompliancesettingstate
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState
@@ -33,6 +34,19 @@ Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplian
 
 ## DESCRIPTION
 Deletes a deviceComplianceSettingState.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState -DeviceCompliancePolicySettingStateSummaryId $deviceCompliancePolicySettingStateSummaryId -DeviceComplianceSettingStateId $deviceComplianceSettingStateId
+
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState Cmdlet.
+
 
 ## PARAMETERS
 
@@ -265,7 +279,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicysettingstatesummarydevicecompliancesettingstate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicysettingstatesummarydevicecompliancesettingstate)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancesettingstate-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancesettingstate-delete?view=graph-rest-1.0)
-
 
 
 

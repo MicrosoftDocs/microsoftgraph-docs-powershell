@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentresource
 schema: 2.0.0
+ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationClassAssignmentResource
@@ -45,6 +47,9 @@ Only teachers, students, and applications with application permissions can perfo
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentresource-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-resources-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get an educationWordResource

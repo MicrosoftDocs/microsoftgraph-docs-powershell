@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitecontenttypecolumn
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Update-MgBetaSiteContentTypeColumn
@@ -67,6 +68,9 @@ Update-MgBetaSiteContentTypeColumn -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Update columnDefinition
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

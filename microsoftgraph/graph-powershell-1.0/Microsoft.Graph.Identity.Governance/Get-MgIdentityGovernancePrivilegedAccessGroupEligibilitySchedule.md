@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupeligibilityschedule
 schema: 2.0.0
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
@@ -40,6 +42,36 @@ Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule -InputObject <I
 
 ## DESCRIPTION
 Read the properties and relationships of a privilegedAccessGroupEligibilitySchedule object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroupeligibilityschedule-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroup-list-eligibilityschedules-permissions.md)]
+
+## EXAMPLES
+### Example 1: Retrieve all eligibility schedules scoped to a group and a principal
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule -Filter "groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'" 
+
+```
+This example will retrieve all eligibility schedules scoped to a group and a principal
+
+### Example 2: Retrieve specific properties of all eligibility schedules scoped to a group and a principal
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule -Filter "groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'" -Property "accessId,principalId,groupId" 
+
+```
+This example will retrieve specific properties of all eligibility schedules scoped to a group and a principal
+
 
 ## PARAMETERS
 
@@ -362,7 +394,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedule-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityschedules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityschedules?view=graph-rest-1.0)
-
 
 
 

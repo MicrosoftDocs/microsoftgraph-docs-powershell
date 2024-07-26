@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfigurationuserstatus
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceAppManagementMobileAppConfigurationUserStatus
@@ -52,6 +53,28 @@ Update-MgDeviceAppManagementMobileAppConfigurationUserStatus -InputObject <IDevi
 
 ## DESCRIPTION
 Update the properties of a managedDeviceMobileAppConfigurationUserStatus object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.managedDeviceMobileAppConfigurationUserStatus"
+	userDisplayName = "User Display Name value"
+	devicesCount = 12
+	status = "notApplicable"
+	lastReportedDateTime = [System.DateTime]::Parse("2017-01-01T00:00:17.7769392-08:00")
+	userPrincipalName = "User Principal Name value"
+}
+
+Update-MgDeviceAppManagementMobileAppConfigurationUserStatus -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -ManagedDeviceMobileAppConfigurationUserStatusId $managedDeviceMobileAppConfigurationUserStatusId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementMobileAppConfigurationUserStatus Cmdlet.
+
 
 ## PARAMETERS
 
@@ -368,7 +391,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfigurationuserstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfigurationuserstatus)
 
 [https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationuserstatus-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationuserstatus-update?view=graph-rest-1.0)
-
 
 
 

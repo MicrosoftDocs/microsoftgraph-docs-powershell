@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Update-MgUserSettingShiftPreference
@@ -47,6 +48,9 @@ Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the properties and relationships of a shiftPreferences object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shiftpreferences-put-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

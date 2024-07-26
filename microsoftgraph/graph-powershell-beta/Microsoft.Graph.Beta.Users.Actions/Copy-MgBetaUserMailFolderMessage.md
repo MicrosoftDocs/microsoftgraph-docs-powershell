@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermailfoldermessage
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Copy-MgBetaUserMailFolderMessage
@@ -305,7 +306,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermailfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-beta)
-
 
 
 

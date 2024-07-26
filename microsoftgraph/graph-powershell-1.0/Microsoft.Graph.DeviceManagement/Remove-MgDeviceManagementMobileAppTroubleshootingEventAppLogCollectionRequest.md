@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmobileapptroubleshootingeventapplogcollectionrequest
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
@@ -33,6 +34,19 @@ Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## DESCRIPTION
 Deletes a appLogCollectionRequest.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest -MobileAppTroubleshootingEventId $mobileAppTroubleshootingEventId -AppLogCollectionRequestId $appLogCollectionRequestId
+
+```
+This example shows how to use the Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest Cmdlet.
+
 
 ## PARAMETERS
 
@@ -265,7 +279,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmobileapptroubleshootingeventapplogcollectionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmobileapptroubleshootingeventapplogcollectionrequest)
 
 [https://learn.microsoft.com/graph/api/intune-devices-applogcollectionrequest-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-applogcollectionrequest-delete?view=graph-rest-1.0)
-
 
 
 

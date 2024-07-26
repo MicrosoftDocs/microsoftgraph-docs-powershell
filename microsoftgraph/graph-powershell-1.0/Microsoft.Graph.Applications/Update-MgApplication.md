@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplication
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Update-MgApplication
@@ -90,6 +91,9 @@ Update-MgApplication -InputObject <IApplicationsIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-upsert-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update an application

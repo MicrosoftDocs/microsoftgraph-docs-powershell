@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetadriverootpermission
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Grant-MgBetaDriveRootPermission
@@ -47,6 +48,9 @@ Grant-MgBetaDriveRootPermission -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Grant users access to a link represented by a permission.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
 
 ## PARAMETERS
 
@@ -297,7 +301,6 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetadriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetadriverootpermission)
 
 [https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/publish-mgbetauserdrivelistcontenttype
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Publish-MgBetaUserDriveListContentType
@@ -253,7 +254,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/publish-mgbetauserdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/publish-mgbetauserdrivelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-beta)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/unpublish-mgbetagroupsitecontenttype
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Unpublish-MgBetaGroupSiteContentType
@@ -31,6 +32,9 @@ Unpublish-MgBetaGroupSiteContentType -InputObject <IGroupsIdentity> [-ResponseHe
 
 ## DESCRIPTION
 Invoke action unpublish
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## PARAMETERS
 
@@ -255,7 +259,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/unpublish-mgbetagroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/unpublish-mgbetagroupsitecontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-beta)
-
 
 
 

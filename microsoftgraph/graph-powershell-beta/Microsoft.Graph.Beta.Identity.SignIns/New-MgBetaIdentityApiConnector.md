@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaIdentityApiConnector
@@ -31,6 +32,9 @@ New-MgBetaIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnect
 
 ## DESCRIPTION
 Create a new identityApiConnector object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-create-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create an API connector with basic authentication

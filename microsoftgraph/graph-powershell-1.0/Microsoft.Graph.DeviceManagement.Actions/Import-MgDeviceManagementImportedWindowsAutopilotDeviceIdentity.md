@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementimportedwindowsautopilotdeviceidentity
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
@@ -33,6 +34,41 @@ Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	importedWindowsAutopilotDeviceIdentities = @(
+		@{
+			"@odata.type" = "#microsoft.graph.importedWindowsAutopilotDeviceIdentity"
+			id = "985b4f49-4f49-985b-494f-5b98494f5b98"
+			groupTag = "Group Tag value"
+			serialNumber = "Serial Number value"
+			productKey = "Product Key value"
+			importId = "Import Id value"
+			hardwareIdentifier = [System.Text.Encoding]::ASCII.GetBytes("aGFyZHdhcmVJZGVudGlmaWVy")
+			state = @{
+				"@odata.type" = "microsoft.graph.importedWindowsAutopilotDeviceIdentityState"
+				deviceImportStatus = "pending"
+				deviceRegistrationId = "Device Registration Id value"
+				deviceErrorCode = 15
+				deviceErrorName = "Device Error Name value"
+			}
+			assignedUserPrincipalName = "Assigned User Principal Name value"
+		}
+	)
+}
+
+Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity -BodyParameter $params
+
+```
+This example shows how to use the Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity Cmdlet.
+
 
 ## PARAMETERS
 
@@ -214,7 +250,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementimportedwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementimportedwindowsautopilotdeviceidentity)
 
 [https://learn.microsoft.com/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentity-import?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentity-import?view=graph-rest-1.0)
-
 
 
 

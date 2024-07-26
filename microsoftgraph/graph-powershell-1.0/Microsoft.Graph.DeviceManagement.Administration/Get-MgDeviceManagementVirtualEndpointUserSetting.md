@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointusersetting
 schema: 2.0.0
+ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgDeviceManagementVirtualEndpointUserSetting
@@ -39,6 +41,36 @@ Get-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagement
 
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcUserSetting object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-list-usersettings-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get the properties of the specified user setting
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId
+
+```
+This example will get the properties of the specified user setting
+
+### Example 2: Get the properties of the specified user setting and expand on the assignments
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -ExpandProperty "assignments" 
+
+```
+This example will get the properties of the specified user setting and expand on the assignments
+
 
 ## PARAMETERS
 
@@ -319,7 +351,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/cloudpcusersetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcusersetting-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/virtualendpoint-list-usersettings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-usersettings?view=graph-rest-1.0)
-
 
 
 

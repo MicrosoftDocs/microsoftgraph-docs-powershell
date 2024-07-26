@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyuniquename
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaApplicationByUniqueName
@@ -200,7 +201,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyuniquename)
 
 [https://learn.microsoft.com/graph/api/application-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-get?view=graph-rest-beta)
-
 
 
 

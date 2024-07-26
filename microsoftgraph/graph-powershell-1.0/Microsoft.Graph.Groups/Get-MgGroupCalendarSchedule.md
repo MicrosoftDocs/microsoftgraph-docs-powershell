@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendarschedule
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Get-MgGroupCalendarSchedule
@@ -343,7 +344,6 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendarschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendarschedule)
 
 [https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0)
-
 
 
 

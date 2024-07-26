@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschooluserbyref
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # New-MgEducationSchoolUserByRef
@@ -45,6 +46,9 @@ New-MgEducationSchoolUserByRef -InputObject <IEducationIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Add a user to a school.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-post-users-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

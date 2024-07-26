@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintservice
 schema: 2.0.0
+ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgBetaPrintService
@@ -39,6 +41,12 @@ Get-MgBetaPrintService -InputObject <IDevicesCloudPrintIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a print service.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printservice-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-list-services-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

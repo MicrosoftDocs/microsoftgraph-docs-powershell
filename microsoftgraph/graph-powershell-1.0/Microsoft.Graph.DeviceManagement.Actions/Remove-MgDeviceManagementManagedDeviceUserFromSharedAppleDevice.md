@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/remove-mgdevicemanagementmanageddeviceuserfromsharedappledevice
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice
@@ -49,6 +50,23 @@ Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice -InputObject <ID
 
 ## DESCRIPTION
 Delete user from shared Apple device
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	userPrincipalName = "User Principal Name value"
+}
+
+Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice -ManagedDeviceId $managedDeviceId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice Cmdlet.
+
 
 ## PARAMETERS
 
@@ -264,7 +282,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/remove-mgdevicemanagementmanageddeviceuserfromsharedappledevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/remove-mgdevicemanagementmanageddeviceuserfromsharedappledevice)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-deleteuserfromsharedappledevice?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-deleteuserfromsharedappledevice?view=graph-rest-1.0)
-
 
 
 

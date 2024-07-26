@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgretrygroupserviceprovisioning
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Invoke-MgRetryGroupServiceProvisioning
@@ -31,6 +32,22 @@ Invoke-MgRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-Response
 
 ## DESCRIPTION
 Retry the group service provisioning.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-retryserviceprovisioning-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+Invoke-MgRetryGroupServiceProvisioning -GroupId $groupId
+
+```
+This example shows how to use the Invoke-MgRetryGroupServiceProvisioning Cmdlet.
+
 
 ## PARAMETERS
 
@@ -220,7 +237,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgretrygroupserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgretrygroupserviceprovisioning)
 
 [https://learn.microsoft.com/graph/api/group-retryserviceprovisioning?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-retryserviceprovisioning?view=graph-rest-1.0)
-
 
 
 

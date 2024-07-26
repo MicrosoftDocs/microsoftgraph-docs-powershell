@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyrolemanagementpolicyrule
 schema: 2.0.0
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaPolicyRoleManagementPolicyRule
@@ -42,6 +44,12 @@ Get-MgBetaPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Retrieve a rule defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrolemanagementpolicyrule-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrolemanagementpolicy-list-rules-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Retrieve a rule defined for a policy in PIM for Azure AD roles

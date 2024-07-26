@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredowner
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDeviceRegisteredOwner
@@ -30,6 +31,9 @@ Retrieve a list of users that are registered owners of the device.
 A registered owner is the user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
 Currently, there can be only one owner.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-list-registeredowners-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

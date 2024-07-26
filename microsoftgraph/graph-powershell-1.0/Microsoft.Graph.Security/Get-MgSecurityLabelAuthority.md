@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelauthority
 schema: 2.0.0
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityLabelAuthority
@@ -39,6 +41,25 @@ Get-MgSecurityLabelAuthority -InputObject <ISecurityIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Read the properties and relationships of a authorityTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-authoritytemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-list-authorities-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityLabelAuthority
+
+```
+This example shows how to use the Get-MgSecurityLabelAuthority Cmdlet.
+
 
 ## PARAMETERS
 
@@ -355,7 +376,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-1.0)
-
 
 
 

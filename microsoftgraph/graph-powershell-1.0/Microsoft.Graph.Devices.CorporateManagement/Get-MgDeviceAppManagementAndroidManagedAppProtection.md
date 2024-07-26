@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementandroidmanagedappprotection
 schema: 2.0.0
+ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgDeviceAppManagementAndroidManagedAppProtection
@@ -39,6 +41,19 @@ Get-MgDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevicesCorpo
 
 ## DESCRIPTION
 Read properties and relationships of the androidManagedAppProtection object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementAndroidManagedAppProtection
+
+```
+This example shows how to use the Get-MgDeviceAppManagementAndroidManagedAppProtection Cmdlet.
+
 
 ## PARAMETERS
 
@@ -329,7 +344,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-list?view=graph-rest-1.0)
-
 
 
 

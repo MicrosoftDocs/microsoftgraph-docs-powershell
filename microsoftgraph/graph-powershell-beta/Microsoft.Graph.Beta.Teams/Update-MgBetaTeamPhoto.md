@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamphoto
 schema: 2.0.0
+ms.subservice: people
 ---
 
 # Update-MgBetaTeamPhoto
@@ -312,7 +313,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamphoto)
 
 [https://learn.microsoft.com/graph/api/profilephoto-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/profilephoto-update?view=graph-rest-beta)
-
 
 
 

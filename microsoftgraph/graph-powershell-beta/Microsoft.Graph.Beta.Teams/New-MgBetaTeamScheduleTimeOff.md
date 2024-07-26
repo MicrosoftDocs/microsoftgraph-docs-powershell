@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoff
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgBetaTeamScheduleTimeOff
@@ -51,6 +52,9 @@ New-MgBetaTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Create a new timeOff instance in a schedule.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schedule-post-timesoff-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

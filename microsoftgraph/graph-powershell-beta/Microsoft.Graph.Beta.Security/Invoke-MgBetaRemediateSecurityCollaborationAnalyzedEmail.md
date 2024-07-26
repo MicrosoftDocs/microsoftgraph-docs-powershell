@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail
@@ -41,6 +42,9 @@ This API can trigger email purge actions like move to junk, move to deleted item
 This API enables scenarios and use cases such as SOAR integration, playbooks, and automations.
 For more information read email remediation, trigger action and track actions.
 If there is false positives admins can take move to inbox action.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-analyzedemail-remediate-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

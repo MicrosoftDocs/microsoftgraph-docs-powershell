@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackage
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Update-MgBetaEntitlementManagementAccessPackage
@@ -60,6 +61,9 @@ Update-MgBetaEntitlementManagementAccessPackage -InputObject <IIdentityGovernanc
 
 ## DESCRIPTION
 Update an existing accessPackage object to change one or more of its properties, such as the display name or description.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

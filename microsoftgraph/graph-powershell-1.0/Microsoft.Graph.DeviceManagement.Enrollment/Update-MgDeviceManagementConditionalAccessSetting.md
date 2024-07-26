@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementconditionalaccesssetting
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementConditionalAccessSetting
@@ -32,6 +33,31 @@ Update-MgDeviceManagementConditionalAccessSetting
 
 ## DESCRIPTION
 Update the properties of a onPremisesConditionalAccessSettings object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onPremisesConditionalAccessSettings"
+	enabled = $true
+	includedGroups = @(
+	"77c9d466-d466-77c9-66d4-c97766d4c977"
+)
+excludedGroups = @(
+"2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
+)
+overrideDefaultRule = $true
+}
+
+Update-MgDeviceManagementConditionalAccessSetting -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementConditionalAccessSetting Cmdlet.
+
 
 ## PARAMETERS
 
@@ -252,7 +278,6 @@ All users in these groups will be required to have mobile device managed and com
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementconditionalaccesssetting](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementconditionalaccesssetting)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-onpremisesconditionalaccesssettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-onpremisesconditionalaccesssettings-update?view=graph-rest-1.0)
-
 
 
 

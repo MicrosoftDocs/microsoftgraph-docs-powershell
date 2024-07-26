@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgidentitygovernanceaccessreviewdefinition
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Set-MgIdentityGovernanceAccessReviewDefinition
@@ -61,6 +62,61 @@ Set-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovernance
 
 ## DESCRIPTION
 Update an existing accessReviewScheduleDefinition object to change one or more of its properties.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewscheduledefinition-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	id = "60860cdd-fb4d-4054-91ba-f75e04444aa6"
+	displayName = "Test world UPDATED NAME!"
+	descriptionForAdmins = "Test world"
+	descriptionForReviewers = "Test world"
+	scope = @{
+		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+		query = "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers"
+		queryType = "MicrosoftGraph"
+	}
+	instanceEnumerationScope = @{
+		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+		query = "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f"
+		queryType = "MicrosoftGraph"
+	}
+	reviewers = @(
+	)
+	settings = @{
+		mailNotificationsEnabled = $true
+		reminderNotificationsEnabled = $true
+		justificationRequiredOnApproval = $true
+		defaultDecisionEnabled = $false
+		defaultDecision = "None"
+		instanceDurationInDays = 3
+		autoApplyDecisionsEnabled = $false
+		recommendationsEnabled = $true
+		recurrence = @{
+			pattern = @{
+				type = "weekly"
+				interval = 1
+			}
+			range = @{
+				type = "noEnd"
+				startDate = "2020-09-15"
+			}
+		}
+	}
+}
+
+Set-MgIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
+
 
 ## PARAMETERS
 
@@ -1131,7 +1187,6 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgidentitygovernanceaccessreviewdefinition)
 
 [https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-update?view=graph-rest-1.0)
-
 
 
 

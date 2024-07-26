@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingrecording
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgUserOnlineMeetingRecording
@@ -45,6 +46,22 @@ Get a callRecording object associated with a scheduled onlineMeeting.
 This API doesn't support getting call recordings from channel meetings.
 For a recording, this API returns the metadata of the single recording associated with the online meeting.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/callrecording-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get a callRecording
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgUserOnlineMeetingRecording -UserId $userId -OnlineMeetingId $onlineMeetingId -CallRecordingId $callRecordingId
+
+```
+This example will get a callrecording
+
 
 ## PARAMETERS
 
@@ -342,7 +359,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingrecording)
 
 [https://learn.microsoft.com/graph/api/callrecording-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/callrecording-get?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinesscalendarview
 schema: 2.0.0
+ms.subservice: microsoft-bookings
 ---
 
 # Stop-MgBetaBookingBusinessCalendarView
@@ -48,6 +49,9 @@ Stop-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Cancel the specified bookingAppointment in the specified bookingBusiness, and send a message to the involved customer and staff members.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-cancel-permissions.md)]
 
 ## PARAMETERS
 
@@ -305,7 +309,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinesscalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinesscalendarview)
 
 [https://learn.microsoft.com/graph/api/bookingappointment-cancel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/bookingappointment-cancel?view=graph-rest-beta)
-
 
 
 

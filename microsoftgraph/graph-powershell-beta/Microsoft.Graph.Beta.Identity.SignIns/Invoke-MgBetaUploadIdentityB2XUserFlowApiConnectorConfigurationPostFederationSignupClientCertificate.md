@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityb2xuserflowapiconnectorconfigurationpostfederationsignupclientcertificate
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostFederationSignupClientCertificate
@@ -55,6 +56,9 @@ Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostFederationSig
 Upload a PKCS 12 format key (.pfx) to an API connector's authentication configuration.
 The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-uploadclientcertificate-permissions.md)]
 
 ## PARAMETERS
 
@@ -334,7 +338,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityb2xuserflowapiconnectorconfigurationpostfederationsignupclientcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityb2xuserflowapiconnectorconfigurationpostfederationsignupclientcertificate)
 
 [https://learn.microsoft.com/graph/api/identityapiconnector-uploadclientcertificate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityapiconnector-uploadclientcertificate?view=graph-rest-beta)
-
 
 
 

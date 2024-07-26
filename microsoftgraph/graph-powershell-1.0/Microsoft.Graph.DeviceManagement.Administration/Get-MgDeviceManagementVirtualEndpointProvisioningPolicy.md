@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointprovisioningpolicy
 schema: 2.0.0
+ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgDeviceManagementVirtualEndpointProvisioningPolicy
@@ -42,6 +44,44 @@ Read the properties and relationships of a cloudPcProvisioningPolicy object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-list-provisioningpolicies-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get the properties of the specified provisioning policy
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId
+
+```
+This example will get the properties of the specified provisioning policy
+
+### Example 2: Get the properties of the specified provisioning policy and expand on the assignments
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId -ExpandProperty "assignments" 
+
+```
+This example will get the properties of the specified provisioning policy and expand on the assignments
+
+### Example 3: Get the selected properties of the specified provisioning policy
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId -Property "id,description,displayName,domainJoinConfigurations,imageDisplayName,imageId,imageType,windowsSetting,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl" 
+
+```
+This example will get the selected properties of the specified provisioning policy
+
 
 ## PARAMETERS
 
@@ -322,7 +362,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/virtualendpoint-list-provisioningpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-provisioningpolicies?view=graph-rest-1.0)
-
 
 
 

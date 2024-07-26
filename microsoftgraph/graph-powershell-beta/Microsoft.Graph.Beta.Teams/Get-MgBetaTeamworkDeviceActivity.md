@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeviceactivity
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamworkDeviceActivity
@@ -28,6 +29,9 @@ Get-MgBetaTeamworkDeviceActivity -InputObject <ITeamsIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Get the activity status of a Microsoft Teams-enabled device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkdeviceactivity-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

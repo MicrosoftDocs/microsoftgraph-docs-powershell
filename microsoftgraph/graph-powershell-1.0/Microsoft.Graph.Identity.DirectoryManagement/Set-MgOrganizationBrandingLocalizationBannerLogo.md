@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationbannerlogo
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Set-MgOrganizationBrandingLocalizationBannerLogo
@@ -30,6 +31,24 @@ Set-MgOrganizationBrandingLocalizationBannerLogo -InputObject <IIdentityDirector
 
 ## DESCRIPTION
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbrandinglocalization-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Setting **bannerLogo** for the fr-FR localization using PUT
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = Binary data for the image
+
+Set-MgOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
+
+```
+This example shows setting **bannerlogo** for the fr-fr localization using put
+
 
 ## PARAMETERS
 
@@ -268,7 +287,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationbannerlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationbannerlogo)
 
 [https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-1.0)
-
 
 
 

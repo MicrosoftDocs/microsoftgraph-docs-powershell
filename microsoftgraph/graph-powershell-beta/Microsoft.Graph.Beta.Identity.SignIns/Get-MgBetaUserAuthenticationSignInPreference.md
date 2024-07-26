@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationsigninpreference
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaUserAuthenticationSignInPreference
@@ -30,6 +31,9 @@ Get-MgBetaUserAuthenticationSignInPreference -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Read the properties of a user's authentication states.
 Use this API to retrieve the following information:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authentication-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

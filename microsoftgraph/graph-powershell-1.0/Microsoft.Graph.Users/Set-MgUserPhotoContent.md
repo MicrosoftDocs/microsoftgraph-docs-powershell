@@ -48,6 +48,16 @@ Set-MgUserPhotoContent -InputObject <IUsersIdentity> [-Data <Stream>] [-Response
 The user's profile photo.
 Read-only.
 
+## EXAMPLES
+### Example 1: Set a user's photo properties
+
+```powershell
+Set-MgUserPhotoContent -UserId f38d9efd-2743-42c9-b1a8-3623c5aba666 -InFile "C:\Pictures\MyProfile.png"
+
+```
+
+This example sets the profile photo properties for the specified user.
+
 ## PARAMETERS
 
 ### -ContentType
@@ -272,8 +282,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mguserphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mguserphotocontent)
-
-
 
 
 

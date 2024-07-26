@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mginstantiateapplicationtemplate
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Invoke-MgInstantiateApplicationTemplate
@@ -49,6 +50,9 @@ Invoke-MgInstantiateApplicationTemplate -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Add an instance of an application from the Microsoft Entra application gallery into your directory.
 The application template with ID 8adf8e6e-67b2-4cf2-a259-e3dc5476c621 can be used to add a non-gallery app that you can configure different single-sign on (SSO) modes like SAML SSO and password-based SSO.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/applicationtemplate-instantiate-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

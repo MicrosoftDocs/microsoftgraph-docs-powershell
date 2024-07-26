@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementaccesspackagebycurrentuser
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser
@@ -33,6 +34,22 @@ Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser -InputObject <IId
 
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, retrieve a list of accessPackage objects filtered on the signed-in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-filterbycurrentuser-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 
@@ -322,7 +339,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementaccesspackagebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementaccesspackagebycurrentuser)
 
 [https://learn.microsoft.com/graph/api/accesspackage-filterbycurrentuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackage-filterbycurrentuser?view=graph-rest-1.0)
-
 
 
 

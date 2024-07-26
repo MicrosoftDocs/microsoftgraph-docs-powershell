@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicyassignment
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementDeviceCompliancePolicyAssignment
@@ -47,6 +48,27 @@ Update-MgDeviceManagementDeviceCompliancePolicyAssignment -InputObject <IDeviceM
 
 ## DESCRIPTION
 Update the properties of a deviceCompliancePolicyAssignment object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceCompliancePolicyAssignment"
+	target = @{
+		"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+		collectionId = "Collection Id value"
+	}
+}
+
+Update-MgDeviceManagementDeviceCompliancePolicyAssignment -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceCompliancePolicyAssignmentId $deviceCompliancePolicyAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicyAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -319,7 +341,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicyassignment)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-update?view=graph-rest-1.0)
-
 
 
 

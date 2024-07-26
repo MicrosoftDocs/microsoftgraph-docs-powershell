@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsitelistcontenttypetodefaultcontentlocation
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Copy-MgSiteListContentTypeToDefaultContentLocation
@@ -400,7 +401,6 @@ For OneDrive, this property is not populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsitelistcontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsitelistcontenttypetodefaultcontentlocation)
 
 [https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0)
-
 
 
 

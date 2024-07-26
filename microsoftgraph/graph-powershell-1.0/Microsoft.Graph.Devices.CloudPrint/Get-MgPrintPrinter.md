@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinter
 schema: 2.0.0
+ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgPrintPrinter
@@ -41,6 +43,9 @@ Retrieve the properties and relationships of a printer object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-list-printers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a printer

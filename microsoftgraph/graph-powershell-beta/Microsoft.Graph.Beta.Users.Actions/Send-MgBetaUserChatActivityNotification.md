@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Send-MgBetaUserChatActivityNotification
@@ -443,7 +444,6 @@ Optional when source is entityUrl; required when source is text.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification)
 
 [https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-beta)
-
 
 
 

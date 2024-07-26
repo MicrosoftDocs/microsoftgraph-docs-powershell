@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategorysubcategory
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # New-MgSecurityLabelCategorySubcategory
@@ -47,6 +48,27 @@ New-MgSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> -BodyPar
 
 ## DESCRIPTION
 Create a new subcategoryTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-categorytemplate-post-subcategories-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.subcategoryTemplate"
+	displayName = "Vendor Invoice"
+}
+
+New-MgSecurityLabelCategorySubcategory -CategoryTemplateId $categoryTemplateId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityLabelCategorySubcategory Cmdlet.
+
 
 ## PARAMETERS
 
@@ -346,7 +368,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategorysubcategory)
 
 [https://learn.microsoft.com/graph/api/security-categorytemplate-post-subcategories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-categorytemplate-post-subcategories?view=graph-rest-1.0)
-
 
 
 

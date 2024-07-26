@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/confirm-mgbetaapplicationmembergroup
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Confirm-MgBetaApplicationMemberGroup
@@ -276,7 +277,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/confirm-mgbetaapplicationmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/confirm-mgbetaapplicationmembergroup)
 
 [https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta)
-
 
 
 

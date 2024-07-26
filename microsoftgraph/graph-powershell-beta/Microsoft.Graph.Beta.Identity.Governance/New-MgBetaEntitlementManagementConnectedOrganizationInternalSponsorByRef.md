@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganizationinternalsponsorbyref
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef
@@ -50,6 +51,9 @@ New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef
 ## DESCRIPTION
 Add a user or a group to the connected organization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-post-internalsponsors-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

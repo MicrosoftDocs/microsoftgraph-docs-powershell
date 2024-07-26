@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionserviceprincipalsynchronizationjobschema
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Invoke-MgFunctionServicePrincipalSynchronizationJobSchema
@@ -33,6 +34,22 @@ Invoke-MgFunctionServicePrincipalSynchronizationJobSchema -InputObject <IApplica
 
 ## DESCRIPTION
 List all the functions currently supported in the attributeMappingSource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-functions-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+Invoke-MgFunctionServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+
+```
+This example shows how to use the Invoke-MgFunctionServicePrincipalSynchronizationJobSchema Cmdlet.
+
 
 ## PARAMETERS
 
@@ -294,7 +311,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionserviceprincipalsynchronizationjobschema)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-1.0)
-
 
 
 

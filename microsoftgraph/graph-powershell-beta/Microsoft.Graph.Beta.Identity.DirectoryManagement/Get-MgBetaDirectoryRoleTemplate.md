@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplate
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryRoleTemplate
@@ -39,6 +41,12 @@ Get-MgBetaDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIdenti
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a directoryroletemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryroletemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryroletemplate-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

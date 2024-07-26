@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecord
 schema: 2.0.0
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceWhoisRecord
@@ -43,6 +45,25 @@ Get-MgSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity> [-E
 Get the specified whoisRecord resource.
 Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
 - Specify an id value to get the corresponding whoisRecord.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-whoisrecord-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-threatintelligence-list-whoisrecords-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get the whoisRecord resource using its id property
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceWhoisRecord -WhoisRecordId $whoisRecordId
+
+```
+This example will get the whoisrecord resource using its id property
+
 
 ## PARAMETERS
 
@@ -359,7 +380,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-threatintelligence-list-whoisrecords?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-threatintelligence-list-whoisrecords?view=graph-rest-1.0)
-
 
 
 

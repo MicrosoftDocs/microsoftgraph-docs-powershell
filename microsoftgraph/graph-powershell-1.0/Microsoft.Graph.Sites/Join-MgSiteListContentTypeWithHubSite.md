@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/join-mgsitelistcontenttypewithhubsite
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Join-MgSiteListContentTypeWithHubSite
@@ -49,6 +50,9 @@ Join-MgSiteListContentTypeWithHubSite -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Associate a published content type present in a content type hub with a list of hub sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
 ## PARAMETERS
 
@@ -338,7 +342,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/join-mgsitelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/join-mgsitelistcontenttypewithhubsite)
 
 [https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)
-
 
 
 

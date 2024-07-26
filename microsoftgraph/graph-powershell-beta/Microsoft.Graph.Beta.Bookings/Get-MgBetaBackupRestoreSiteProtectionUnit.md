@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoresiteprotectionunit
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaBackupRestoreSiteProtectionUnit
@@ -36,6 +37,22 @@ Get-MgBetaBackupRestoreSiteProtectionUnit -InputObject <IBookingsIdentity> [-Exp
 
 ## DESCRIPTION
 The list of site protection units in the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-siteprotectionunits-permissions.md)]
+
+## EXAMPLES
+### Example 1: List all the siteProtectionUnits in a tenant
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBackupRestoreSiteProtectionUnit
+
+```
+This example will list all the siteprotectionunits in a tenant
+
 
 ## PARAMETERS
 
@@ -332,10 +349,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoresiteprotectionunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoresiteprotectionunit)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-list-siteprotectionunits?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-list-siteprotectionunits?view=graph-rest-beta)
-
-
-
-
 
 
 

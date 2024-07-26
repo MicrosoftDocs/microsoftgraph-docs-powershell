@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdeviceconfigurationuseractivity
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgReportDeviceConfigurationUserActivity
@@ -22,6 +23,19 @@ Get-MgReportDeviceConfigurationUserActivity -OutFile <String> [-ResponseHeadersV
 
 ## DESCRIPTION
 Metadata for the device configuration user activity report
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportDeviceConfigurationUserActivity
+
+```
+This example shows how to use the Get-MgReportDeviceConfigurationUserActivity Cmdlet.
+
 
 ## PARAMETERS
 
@@ -116,7 +130,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdeviceconfigurationuseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdeviceconfigurationuseractivity)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity?view=graph-rest-1.0)
-
 
 
 

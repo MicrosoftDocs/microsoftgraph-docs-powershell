@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgdrivelistcontenttypecopyfromcontenttypehub
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgDriveListContentTypeCopyFromContentTypeHub
@@ -264,7 +265,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgdrivelistcontenttypecopyfromcontenttypehub](https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgdrivelistcontenttypecopyfromcontenttypehub)
 
 [https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-1.0)
-
 
 
 

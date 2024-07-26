@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendarpermission
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Remove-MgUserCalendarPermission
@@ -45,6 +46,9 @@ Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <Stri
 
 ## DESCRIPTION
 Delete calendarPermission.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendarpermission-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

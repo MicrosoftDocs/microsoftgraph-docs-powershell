@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfiguration
 schema: 2.0.0
+ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementDeviceConfiguration
@@ -39,6 +41,19 @@ Get-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIdentit
 
 ## DESCRIPTION
 Read properties and relationships of the androidWorkProfileGeneralDeviceConfiguration object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgDeviceManagementDeviceConfiguration
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -348,7 +363,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10endpointprotectionconfiguration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10endpointprotectionconfiguration-list?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilecardproperty
 schema: 2.0.0
+ms.subservice: people
 ---
 
 # Update-MgAdminPeopleProfileCardProperty
@@ -44,6 +45,36 @@ Update-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManageme
 
 ## DESCRIPTION
 Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/profilecardproperty-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = @{
+	annotations = @(
+		@{
+			displayName = "Cost Center"
+			localizations = @(
+				@{
+					languageTag = "no"
+					displayName = "Kostnadssenter"
+				}
+			)
+		}
+	)
+}
+
+Update-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgAdminPeopleProfileCardProperty Cmdlet.
+
 
 ## PARAMETERS
 
@@ -307,7 +338,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilecardproperty)
 
 [https://learn.microsoft.com/graph/api/profilecardproperty-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profilecardproperty-update?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreement
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Update-MgIdentityGovernanceTermsOfUseAgreement
@@ -53,6 +54,27 @@ Update-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernance
 
 ## DESCRIPTION
 Update the properties of an agreement object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	displayName = "All Contoso volunteers - Terms of use"
+	isViewingBeforeAcceptanceRequired = $true
+}
+
+Update-MgIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgIdentityGovernanceTermsOfUseAgreement Cmdlet.
+
 
 ## PARAMETERS
 
@@ -707,7 +729,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreement)
 
 [https://learn.microsoft.com/graph/api/agreement-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-update?view=graph-rest-1.0)
-
 
 
 

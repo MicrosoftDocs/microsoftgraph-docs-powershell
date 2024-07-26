@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdriveitem
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Copy-MgGroupDriveItem
@@ -379,7 +380,6 @@ For OneDrive, this property is not populated.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdriveitem)
 
 [https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-1.0)
-
 
 
 

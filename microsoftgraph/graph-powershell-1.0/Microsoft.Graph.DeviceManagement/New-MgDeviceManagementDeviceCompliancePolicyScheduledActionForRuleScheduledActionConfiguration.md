@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyscheduledactionforrulescheduledactionconfiguration
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
@@ -52,6 +53,29 @@ New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActio
 
 ## DESCRIPTION
 Create a new deviceComplianceActionItem object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceComplianceActionItem"
+	gracePeriodHours = 0
+	actionType = "notification"
+	notificationTemplateId = "Notification Template Id value"
+	notificationMessageCCList = @(
+	"Notification Message CCList value"
+)
+}
+
+New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceComplianceScheduledActionForRuleId $deviceComplianceScheduledActionForRuleId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -373,7 +397,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyscheduledactionforrulescheduledactionconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyscheduledactionforrulescheduledactionconfiguration)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceactionitem-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceactionitem-create?view=graph-rest-1.0)
-
 
 
 

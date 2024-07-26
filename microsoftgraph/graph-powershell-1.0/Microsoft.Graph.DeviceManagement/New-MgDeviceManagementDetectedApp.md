@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdetectedapp
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementDetectedApp
@@ -33,6 +34,29 @@ New-MgDeviceManagementDetectedApp -BodyParameter <IMicrosoftGraphDetectedApp>
 
 ## DESCRIPTION
 Create a new detectedApp object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.detectedApp"
+	displayName = "Display Name value"
+	version = "Version value"
+	sizeInByte = 10
+	deviceCount = 11
+	publisher = "Publisher value"
+	platform = "windows"
+}
+
+New-MgDeviceManagementDetectedApp -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDetectedApp Cmdlet.
+
 
 ## PARAMETERS
 
@@ -9796,7 +9820,6 @@ Defaults to setting on client device.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdetectedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdetectedapp)
 
 [https://learn.microsoft.com/graph/api/intune-devices-detectedapp-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-detectedapp-create?view=graph-rest-1.0)
-
 
 
 

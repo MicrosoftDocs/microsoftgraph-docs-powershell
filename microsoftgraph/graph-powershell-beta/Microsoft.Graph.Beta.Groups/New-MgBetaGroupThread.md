@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthread
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # New-MgBetaGroupThread
@@ -55,6 +56,9 @@ Start a new group conversation by first creating a thread.
 A new conversation, conversation thread, and post are created in the group.
 Use reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-threads-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

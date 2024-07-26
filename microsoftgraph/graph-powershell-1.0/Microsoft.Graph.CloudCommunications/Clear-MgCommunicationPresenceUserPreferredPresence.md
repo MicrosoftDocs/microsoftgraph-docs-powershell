@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mgcommunicationpresenceuserpreferredpresence
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Clear-MgCommunicationPresenceUserPreferredPresence
@@ -196,7 +197,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mgcommunicationpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mgcommunicationpresenceuserpreferredpresence)
 
 [https://learn.microsoft.com/graph/api/presence-clearuserpreferredpresence?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-clearuserpreferredpresence?view=graph-rest-1.0)
-
 
 
 

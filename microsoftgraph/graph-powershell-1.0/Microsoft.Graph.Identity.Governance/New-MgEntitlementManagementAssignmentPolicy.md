@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentpolicy
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgEntitlementManagementAssignmentPolicy
@@ -40,6 +41,9 @@ New-MgEntitlementManagementAssignmentPolicy -BodyParameter <IMicrosoftGraphAcces
 ## DESCRIPTION
 In Microsoft Entra entitlement management, create a new accessPackageAssignmentPolicy object.
 The request will include a reference to the accessPackage that will contain this policy, which must already exist.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-assignmentpolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -339,6 +343,59 @@ $params = @{
 	accessPackage = @{
 		id = "977c7ff4-ef8f-4910-9d31-49048ddf3120"
 	}
+}
+
+New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
+
+### Example 5: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	displayName = "customExtensionStageSettings policy"
+	description = "policy with specified stages for custom extension assignment"
+	allowedTargetScope = "notSpecified"
+	specificAllowedTargets = @(
+	)
+	expiration = @{
+		endDateTime = $null
+		duration = $null
+		type = "noExpiration"
+	}
+	requestorSettings = @{
+		enableTargetsToSelfAddAccess = $false
+		enableTargetsToSelfUpdateAccess = $false
+		enableTargetsToSelfRemoveAccess = $false
+		allowCustomAssignmentSchedule = $true
+		enableOnBehalfRequestorsToAddAccess = $false
+		enableOnBehalfRequestorsToUpdateAccess = $false
+		enableOnBehalfRequestorsToRemoveAccess = $false
+		onBehalfRequestors = @(
+		)
+	}
+	requestApprovalSettings = @{
+		isApprovalRequiredForAdd = $false
+		isApprovalRequiredForUpdate = $false
+		stages = @(
+		)
+	}
+	accessPackage = @{
+		id = "5ad1eb64-15f7-4614-b419-05d11ee266bf"
+	}
+	customExtensionStageSettings = @(
+		@{
+			stage = "assignmentRequestCreated"
+			customExtension = @{
+				"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension"
+				id = "bebe7873-1f0d-4db9-b6c3-01f7ebfe8476"
+			}
+		}
+	)
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/move-mgbetagroupplannerplantocontainer
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Move-MgBetaGroupPlannerPlanToContainer
@@ -47,6 +48,9 @@ Move-MgBetaGroupPlannerPlanToContainer -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Move a planner plan object from one planner plan container to another.
 Planner plans can only be moved from a user container to a group container.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-movetocontainer-permissions.md)]
 
 ## PARAMETERS
 
@@ -307,7 +311,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/move-mgbetagroupplannerplantocontainer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/move-mgbetagroupplannerplantocontainer)
 
 [https://learn.microsoft.com/graph/api/plannerplan-movetocontainer?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerplan-movetocontainer?view=graph-rest-beta)
-
 
 
 

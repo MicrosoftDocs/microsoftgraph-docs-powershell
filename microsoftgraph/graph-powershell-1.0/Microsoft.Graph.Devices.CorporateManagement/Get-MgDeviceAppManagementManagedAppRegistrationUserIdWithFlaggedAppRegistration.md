@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistrationuseridwithflaggedappregistration
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration
@@ -23,6 +24,19 @@ Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration 
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration
+
+```
+This example shows how to use the Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -162,7 +176,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistrationuseridwithflaggedappregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistrationuseridwithflaggedappregistration)
 
 [https://learn.microsoft.com/graph/api/intune-mam-managedappregistration-getuseridswithflaggedappregistration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappregistration-getuseridswithflaggedappregistration?view=graph-rest-1.0)
-
 
 
 

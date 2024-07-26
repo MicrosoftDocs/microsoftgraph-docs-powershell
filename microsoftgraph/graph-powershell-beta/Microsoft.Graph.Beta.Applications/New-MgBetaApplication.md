@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplication
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgBetaApplication
@@ -56,6 +57,9 @@ New-MgBetaApplication -BodyParameter <IMicrosoftGraphApplication> [-ResponseHead
 
 ## DESCRIPTION
 Create a new application object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-applications-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create a new application

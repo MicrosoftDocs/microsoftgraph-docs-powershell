@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupmemberdirectoryobjectbyref
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Remove-MgGroupMemberDirectoryObjectByRef
@@ -33,6 +34,22 @@ Remove-MgGroupMemberDirectoryObjectByRef -InputObject <IGroupsIdentity> [-IfMatc
 ## DESCRIPTION
 Remove a member from a group via the members navigation property.
 You can't remove a member from groups with dynamic memberships.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-members-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+Remove-MgGroupMemberDirectoryObjectByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgGroupMemberDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 
@@ -252,7 +269,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupmemberdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupmemberdirectoryobjectbyref)
 
 [https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-1.0)
-
 
 
 

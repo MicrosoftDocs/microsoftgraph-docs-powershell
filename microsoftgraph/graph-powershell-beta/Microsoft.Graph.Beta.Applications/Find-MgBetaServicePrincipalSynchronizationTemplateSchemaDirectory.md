@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaserviceprincipalsynchronizationtemplateschemadirectory
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Find-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory
@@ -231,7 +232,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaserviceprincipalsynchronizationtemplateschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaserviceprincipalsynchronizationtemplateschemadirectory)
 
 [https://learn.microsoft.com/graph/api/synchronization-directorydefinition-discover?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-directorydefinition-discover?view=graph-rest-beta)
-
 
 
 

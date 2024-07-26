@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookuserstatesummary
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceAppManagementManagedEBookUserStateSummary
@@ -32,6 +33,19 @@ Remove-MgDeviceAppManagementManagedEBookUserStateSummary -InputObject <IDevicesC
 
 ## DESCRIPTION
 Deletes a userInstallStateSummary.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Remove-MgDeviceAppManagementManagedEBookUserStateSummary -ManagedEBookId $managedEBookId -UserInstallStateSummaryId $userInstallStateSummaryId
+
+```
+This example shows how to use the Remove-MgDeviceAppManagementManagedEBookUserStateSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -245,7 +259,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookuserstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookuserstatesummary)
 
 [https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-delete?view=graph-rest-1.0)
-
 
 
 

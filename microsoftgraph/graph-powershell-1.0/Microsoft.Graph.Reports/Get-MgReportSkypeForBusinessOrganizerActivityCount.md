@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessorganizeractivitycount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportSkypeForBusinessOrganizerActivityCount
@@ -33,6 +34,22 @@ Get-MgReportSkypeForBusinessOrganizerActivityCount -InputObject <IReportsIdentit
 ## DESCRIPTION
 Get usage trends on the number and type of conference sessions held and organized by users in your organization.
 Types of conference sessions include IM, audio/video, application sharing, web, dial-in/out - third party, and Dial-in/out Microsoft.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessorganizeractivitycounts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportSkypeForBusinessOrganizerActivityCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessOrganizerActivityCount Cmdlet.
+
 
 ## PARAMETERS
 
@@ -187,7 +204,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessorganizeractivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessorganizeractivitycount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-1.0)
-
 
 
 

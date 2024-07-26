@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorycustomsecurityattributedefinition
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryCustomSecurityAttributeDefinition
@@ -39,6 +41,47 @@ Get-MgDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDirector
 
 ## DESCRIPTION
 Read the properties and relationships of a customSecurityAttributeDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customsecurityattributedefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-list-customsecurityattributedefinitions-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get all custom security attributes
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDirectoryCustomSecurityAttributeDefinition
+
+```
+This example will get all custom security attributes
+
+### Example 2: Filter custom security attributes based on name
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDirectoryCustomSecurityAttributeDefinition -Filter "name eq 'Project' and status eq 'Available'" 
+
+```
+This example will filter custom security attributes based on name
+
+### Example 3: Filter custom security attributes based on attribute set
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDirectoryCustomSecurityAttributeDefinition -Filter "attributeSet eq 'Engineering' and status eq 'Available' and type eq 'String'" 
+
+```
+This example will filter custom security attributes based on attribute set
+
 
 ## PARAMETERS
 
@@ -320,7 +363,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/customsecurityattributedefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/directory-list-customsecurityattributedefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-customsecurityattributedefinitions?view=graph-rest-1.0)
-
 
 
 

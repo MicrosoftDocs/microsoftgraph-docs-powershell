@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # Update-MgSearchBookmark
@@ -57,6 +58,26 @@ Update-MgSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Update the properties of a bookmark object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-bookmark-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Search
+
+$params = @{
+	description = "Book a fancy vacation in Tuscany or browse museums in Florence."
+}
+
+Update-MgSearchBookmark -BookmarkId $bookmarkId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSearchBookmark Cmdlet.
+
 
 ## PARAMETERS
 
@@ -591,7 +612,6 @@ When users select this answer variation from the search results, they're directe
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark)
 
 [https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-1.0)
-
 
 
 

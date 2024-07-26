@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitelistcontenttype
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Publish-MgSiteListContentType
@@ -31,6 +32,9 @@ Publish-MgSiteListContentType -InputObject <ISitesIdentity> [-ResponseHeadersVar
 
 ## DESCRIPTION
 Publishes a contentType present in the content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-publish-permissions.md)]
 
 ## PARAMETERS
 
@@ -253,7 +257,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
-
 
 
 

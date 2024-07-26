@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasite
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgBetaSite
@@ -15927,7 +15928,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasite)
 
 [https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-beta)
-
 
 
 

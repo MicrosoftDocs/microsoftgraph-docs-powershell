@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicydevicestatusoverview
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview
@@ -49,6 +50,30 @@ Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview -InputObject
 
 ## DESCRIPTION
 Update the properties of a deviceComplianceDeviceOverview object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceComplianceDeviceOverview"
+	pendingCount = 12
+	notApplicableCount = 2
+	successCount = 12
+	errorCount = 10
+	failedCount = 11
+	lastUpdateDateTime = [System.DateTime]::Parse("2016-12-31T23:58:21.6459442-08:00")
+	configurationVersion = 4
+}
+
+Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview Cmdlet.
+
 
 ## PARAMETERS
 
@@ -401,7 +426,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicydevicestatusoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicydevicestatusoverview)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancedeviceoverview-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancedeviceoverview-update?view=graph-rest-1.0)
-
 
 
 

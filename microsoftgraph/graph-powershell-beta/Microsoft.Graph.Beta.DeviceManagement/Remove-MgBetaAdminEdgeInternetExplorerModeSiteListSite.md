@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsite
 schema: 2.0.0
+ms.subservice: edge-browser-management
 ---
 
 # Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite
@@ -31,6 +32,9 @@ Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceMana
 
 ## DESCRIPTION
 Delete a browserSite from a browserSiteList.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-delete-sites-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Delete a site that was not previously published

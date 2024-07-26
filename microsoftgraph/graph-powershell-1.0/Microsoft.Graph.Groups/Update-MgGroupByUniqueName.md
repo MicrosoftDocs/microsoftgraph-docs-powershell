@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupbyuniquename
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Update-MgGroupByUniqueName
@@ -103,6 +104,61 @@ Update-MgGroupByUniqueName -InputObject <IGroupsIdentity> -BodyParameter <IMicro
 Create a new group object if it doesn't exist, or update the properties of an existing group object.You can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
 For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-upsert-permissions.md)]
+
+## EXAMPLES
+### Example 1: Create a Microsoft 365 group if it doesn't exist
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+$params = @{
+	description = "Self help community for golf"
+	displayName = "Golf Assist"
+	groupTypes = @(
+	"Unified"
+)
+mailEnabled = $true
+mailNickname = "golfassist"
+securityEnabled = $false
+}
+
+Update-MgGroupByUniqueName -BodyParameter $params -UniqueName $uniqueNameId 
+
+```
+This example will create a microsoft 365 group if it doesn't exist
+
+### Example 2: Create a security group with an owner and members if it doesn't exist
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+$params = @{
+	description = "Group with designated owner and members"
+	displayName = "Operations group"
+	groupTypes = @(
+	)
+	mailEnabled = $false
+	mailNickname = "operations2019"
+	securityEnabled = $true
+	"owners@odata.bind" = @(
+	"https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
+)
+"members@odata.bind" = @(
+"https://graph.microsoft.com/v1.0/users/ff7cb387-6688-423c-8188-3da9532a73cc"
+"https://graph.microsoft.com/v1.0/users/69456242-0067-49d3-ba96-9de6f2728e14"
+)
+}
+
+Update-MgGroupByUniqueName -BodyParameter $params -UniqueName $uniqueNameId 
+
+```
+This example will create a security group with an owner and members if it doesn't exist
+
 
 ## PARAMETERS
 
@@ -26737,7 +26793,6 @@ Always null when the object hasn't been deleted.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupbyuniquename)
 
 [https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-1.0)
-
 
 
 

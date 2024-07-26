@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinterjob
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # New-MgBetaPrintPrinterJob
@@ -53,6 +54,9 @@ New-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> -BodyParamet
 
 ## DESCRIPTION
 Create a new printJob for a printer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-post-jobs-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

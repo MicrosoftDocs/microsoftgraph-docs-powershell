@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/initialize-mgsecuritycaseediscoverycasecustodian
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Initialize-MgSecurityCaseEdiscoveryCaseCustodian
@@ -33,6 +34,9 @@ Initialize-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Activate a custodian that has been released from a case to make them part of the case again.
 For details, see Manage custodians in an eDiscovery (Premium) case.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-activate-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

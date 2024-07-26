@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupMemberByRef
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Remove-MgBetaGroupMemberByRef
@@ -33,6 +34,9 @@ Remove-MgBetaGroupMemberByRef -InputObject <IGroupsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Remove a member from a group via the members navigation property.
 You can't remove a member from groups with dynamic memberships.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-members-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

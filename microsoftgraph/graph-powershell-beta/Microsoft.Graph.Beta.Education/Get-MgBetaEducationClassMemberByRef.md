@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmemberbyref
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationClassMemberByRef
@@ -25,6 +26,9 @@ Get-MgBetaEducationClassMemberByRef -EducationClassId <String> [-Filter <String>
 ## DESCRIPTION
 Retrieve the teachers and students for a class.
 Note that if the delegated token is used, members can only be seen by other members of the class.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-members-permissions.md)]
 
 ## PARAMETERS
 
@@ -225,7 +229,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmemberbyref)
 
 [https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-beta)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivemember
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Get-MgGroupTransitiveMember
@@ -41,6 +42,9 @@ Get-MgGroupTransitiveMember -InputObject <IGroupsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The direct and transitive members of a group.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-transitivemembers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistrationoperation
 schema: 2.0.0
+ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgDeviceAppManagementManagedAppRegistrationOperation
@@ -40,6 +42,19 @@ Get-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevicesC
 
 ## DESCRIPTION
 Read properties and relationships of the managedAppOperation object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementManagedAppRegistrationOperation -ManagedAppRegistrationId $managedAppRegistrationId
+
+```
+This example shows how to use the Get-MgDeviceAppManagementManagedAppRegistrationOperation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -345,7 +360,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-list?view=graph-rest-1.0)
-
 
 
 

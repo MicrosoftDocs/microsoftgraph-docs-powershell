@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsetting
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Update-MgGroupSetting
@@ -77,6 +78,31 @@ Update-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Update the properties of a groupSetting object for tenant-wide group settings or a specific group setting.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/groupsetting-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+$params = @{
+	values = @(
+		@{
+			name = "AllowToAddGuests"
+			value = "true"
+		}
+	)
+}
+
+Update-MgGroupSetting -GroupId $groupId -GroupSettingId $groupSettingId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgGroupSetting Cmdlet.
+
 
 ## PARAMETERS
 
@@ -376,7 +402,6 @@ VALUES <IMicrosoftGraphSettingValue- `[]`>: Collection of name-value pairs corre
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsetting)
 
 [https://learn.microsoft.com/graph/api/groupsetting-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/groupsetting-update?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialbyname
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaApplicationFederatedIdentityCredentialByName
@@ -215,7 +216,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialbyname](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialbyname)
 
 [https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-beta)
-
 
 
 

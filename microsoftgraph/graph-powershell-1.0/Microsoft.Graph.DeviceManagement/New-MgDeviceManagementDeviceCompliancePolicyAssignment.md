@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyassignment
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementDeviceCompliancePolicyAssignment
@@ -45,6 +46,27 @@ New-MgDeviceManagementDeviceCompliancePolicyAssignment -InputObject <IDeviceMana
 
 ## DESCRIPTION
 Create a new deviceCompliancePolicyAssignment object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceCompliancePolicyAssignment"
+	target = @{
+		"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+		collectionId = "Collection Id value"
+	}
+}
+
+New-MgDeviceManagementDeviceCompliancePolicyAssignment -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCompliancePolicyAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -302,7 +324,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyassignment)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-create?view=graph-rest-1.0)
-
 
 
 

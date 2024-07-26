@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/request-mgdevicemanagementmanageddeviceremoteassistance
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Request-MgDeviceManagementManagedDeviceRemoteAssistance
@@ -31,6 +32,19 @@ Request-MgDeviceManagementManagedDeviceRemoteAssistance -InputObject <IDeviceMan
 
 ## DESCRIPTION
 Request remote assistance
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+Request-MgDeviceManagementManagedDeviceRemoteAssistance -ManagedDeviceId $managedDeviceId
+
+```
+This example shows how to use the Request-MgDeviceManagementManagedDeviceRemoteAssistance Cmdlet.
+
 
 ## PARAMETERS
 
@@ -195,7 +209,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/request-mgdevicemanagementmanageddeviceremoteassistance](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/request-mgdevicemanagementmanageddeviceremoteassistance)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0)
-
 
 
 

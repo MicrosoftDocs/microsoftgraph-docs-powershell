@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchqna
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # Update-MgSearchQna
@@ -55,6 +56,26 @@ Update-MgSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoftGrap
 
 ## DESCRIPTION
 Update the properties of a qna object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-qna-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Search
+
+$params = @{
+	description = "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a wee​kend."
+}
+
+Update-MgSearchQna -QnaId $qnaId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSearchQna Cmdlet.
+
 
 ## PARAMETERS
 
@@ -553,7 +574,6 @@ When users select this answer variation from the search results, they're directe
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchqna)
 
 [https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-1.0)
-
 
 
 

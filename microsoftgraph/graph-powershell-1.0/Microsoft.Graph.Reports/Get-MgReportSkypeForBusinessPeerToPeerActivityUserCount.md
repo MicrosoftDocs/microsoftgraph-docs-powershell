@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinesspeertopeeractivityusercount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount
@@ -33,6 +34,22 @@ Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount -InputObject <IReportsId
 ## DESCRIPTION
 Get usage trends on the number of unique users and type of peer-to-peer sessions held in your organization.
 Types of sessions include IM, audio, video, application sharing, and file transfers in peer-to-peer sessions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinesspeertopeeractivityusercounts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount Cmdlet.
+
 
 ## PARAMETERS
 
@@ -187,7 +204,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinesspeertopeeractivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinesspeertopeeractivityusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleschedulinggroup
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamScheduleSchedulingGroup
@@ -39,6 +41,12 @@ Get-MgBetaTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-ExpandProp
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a schedulingGroup by ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schedulinggroup-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schedule-list-schedulinggroups-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

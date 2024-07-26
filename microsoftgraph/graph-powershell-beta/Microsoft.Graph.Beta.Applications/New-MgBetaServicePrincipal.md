@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipal
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgBetaServicePrincipal
@@ -62,6 +63,9 @@ New-MgBetaServicePrincipal -BodyParameter <IMicrosoftGraphServicePrincipal> [-Re
 
 ## DESCRIPTION
 Create a new servicePrincipal object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-post-serviceprincipals-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create a new service principal object

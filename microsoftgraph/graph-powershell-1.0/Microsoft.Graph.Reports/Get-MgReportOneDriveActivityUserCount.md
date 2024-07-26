@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityusercount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportOneDriveActivityUserCount
@@ -30,6 +31,22 @@ Get-MgReportOneDriveActivityUserCount -InputObject <IReportsIdentity> -OutFile <
 
 ## DESCRIPTION
 Get the trend in the number of active OneDrive users.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getonedriveactivityusercounts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportOneDriveActivityUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOneDriveActivityUserCount Cmdlet.
+
 
 ## PARAMETERS
 
@@ -184,7 +201,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-1.0)
-
 
 
 

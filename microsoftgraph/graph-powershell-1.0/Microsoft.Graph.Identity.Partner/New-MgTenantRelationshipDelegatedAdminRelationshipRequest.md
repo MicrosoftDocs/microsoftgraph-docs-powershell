@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshiprequest
 schema: 2.0.0
+ms.subservice: partner-customer-administration
 ---
 
 # New-MgTenantRelationshipDelegatedAdminRelationshipRequest
@@ -47,6 +48,26 @@ New-MgTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <IIdentit
 
 ## DESCRIPTION
 Create a new delegatedAdminRelationshipRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationship-post-requests-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Partner
+
+$params = @{
+	action = "lockForApproval"
+}
+
+New-MgTenantRelationshipDelegatedAdminRelationshipRequest -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTenantRelationshipDelegatedAdminRelationshipRequest Cmdlet.
+
 
 ## PARAMETERS
 
@@ -307,7 +328,6 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshiprequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshiprequest)
 
 [https://learn.microsoft.com/graph/api/delegatedadminrelationship-post-requests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationship-post-requests?view=graph-rest-1.0)
-
 
 
 

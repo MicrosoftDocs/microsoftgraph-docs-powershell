@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignment
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaRoleManagementEntitlementManagementRoleAssignment
@@ -39,6 +40,9 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdent
 
 ## DESCRIPTION
 Get roleAssignments from roleManagement
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Request using $filter for role assignments on an access package catalog and expand principal

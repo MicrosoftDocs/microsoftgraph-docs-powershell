@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorybyref
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Get-MgEducationClassAssignmentCategoryByRef
@@ -244,7 +245,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorybyref)
 
 [https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0)
-
 
 
 

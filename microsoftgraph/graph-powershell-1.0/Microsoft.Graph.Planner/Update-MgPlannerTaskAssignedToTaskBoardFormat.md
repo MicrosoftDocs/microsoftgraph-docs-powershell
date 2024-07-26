@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskassignedtotaskboardformat
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Update-MgPlannerTaskAssignedToTaskBoardFormat
@@ -47,6 +48,9 @@ Update-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> -I
 
 ## DESCRIPTION
 Update the properties of plannerAssignedToTaskBoardTaskFormat object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerassignedtotaskboardtaskformat-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatagtenantrelationshipmanagedtenanttagunassign
 schema: 2.0.0
+ms.subservice: m365-lighthouse
 ---
 
 # Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign
@@ -44,6 +45,9 @@ Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -InputObject <IIdenti
 
 ## DESCRIPTION
 Un-assigns the tenant tag from the specified managed tenants.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-unassigntag-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

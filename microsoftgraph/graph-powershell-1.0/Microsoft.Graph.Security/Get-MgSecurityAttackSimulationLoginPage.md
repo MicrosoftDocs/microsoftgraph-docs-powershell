@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpage
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgSecurityAttackSimulationLoginPage
@@ -53,6 +54,22 @@ Get-MgSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity> [-Expan
 
 ## DESCRIPTION
 Represents an attack simulation training login page.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-loginpage-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityAttackSimulationLoginPage -Filter "source eq 'tenant'" 
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulationLoginPage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -382,7 +399,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpage](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpage)
 
 [https://learn.microsoft.com/graph/api/attacksimulationroot-list-loginpage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-list-loginpage?view=graph-rest-1.0)
-
 
 
 

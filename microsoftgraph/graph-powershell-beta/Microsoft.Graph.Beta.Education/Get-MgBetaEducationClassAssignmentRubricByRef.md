@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentrubricbyref
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationClassAssignmentRubricByRef
@@ -33,6 +34,9 @@ Get-MgBetaEducationClassAssignmentRubricByRef -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Get the educationRubric object attached to an educationAssignment, if one exists.
 Only teachers, students, and applications with application permissions can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-get-rubric-permissions.md)]
 
 ## PARAMETERS
 
@@ -168,7 +172,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentrubricbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentrubricbyref)
 
 [https://learn.microsoft.com/graph/api/educationassignment-get-rubric?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-get-rubric?view=graph-rest-beta)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdriverootactivitybyinterval
 schema: 2.0.0
+ms.subservice: onedrive
 ---
 
 # Get-MgBetaUserDriveRootActivityByInterval
@@ -359,7 +360,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdriverootactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdriverootactivitybyinterval)
 
 [https://learn.microsoft.com/graph/api/itemactivity-getbyinterval?view=graph-rest-beta](https://learn.microsoft.com/graph/api/itemactivity-getbyinterval?view=graph-rest-beta)
-
 
 
 

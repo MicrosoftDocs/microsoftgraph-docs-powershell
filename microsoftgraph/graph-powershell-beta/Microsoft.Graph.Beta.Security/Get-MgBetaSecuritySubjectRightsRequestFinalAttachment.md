@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalattachment
 schema: 2.0.0
+ms.subservice: compliance
 ---
 
 # Get-MgBetaSecuritySubjectRightsRequestFinalAttachment
@@ -33,6 +34,9 @@ Get-MgBetaSecuritySubjectRightsRequestFinalAttachment -InputObject <ISecurityIde
 ## DESCRIPTION
 Get the final attachment for a subject rights request.
 The attachment is a zip file that contains all the files that were included by the privacy administrator.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-getfinalattachment-permissions.md)]
 
 ## PARAMETERS
 
@@ -249,7 +253,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalattachment)
 
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalattachment?view=graph-rest-beta](https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalattachment?view=graph-rest-beta)
-
 
 
 

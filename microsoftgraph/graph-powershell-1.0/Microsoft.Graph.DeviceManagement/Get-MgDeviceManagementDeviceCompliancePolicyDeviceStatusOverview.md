@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicydevicestatusoverview
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview
@@ -31,6 +32,19 @@ Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview -InputObject <I
 
 ## DESCRIPTION
 Read properties and relationships of the deviceComplianceDeviceOverview object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview -DeviceCompliancePolicyId $deviceCompliancePolicyId
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview Cmdlet.
+
 
 ## PARAMETERS
 
@@ -217,7 +231,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicydevicestatusoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicydevicestatusoverview)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancedeviceoverview-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancedeviceoverview-get?view=graph-rest-1.0)
-
 
 
 

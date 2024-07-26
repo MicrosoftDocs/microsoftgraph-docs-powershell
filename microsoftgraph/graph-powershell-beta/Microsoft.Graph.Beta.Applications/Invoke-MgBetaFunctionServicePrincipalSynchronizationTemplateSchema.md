@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationtemplateschema
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Invoke-MgBetaFunctionServicePrincipalSynchronizationTemplateSchema
@@ -34,6 +35,9 @@ Invoke-MgBetaFunctionServicePrincipalSynchronizationTemplateSchema -InputObject 
 
 ## DESCRIPTION
 List all the functions currently supported in the attributeMappingSource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationschema-functions-permissions.md)]
 
 ## PARAMETERS
 
@@ -305,7 +309,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationtemplateschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationtemplateschema)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-beta)
-
 
 
 

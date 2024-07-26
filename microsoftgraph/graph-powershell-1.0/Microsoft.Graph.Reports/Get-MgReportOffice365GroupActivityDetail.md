@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivitydetail
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportOffice365GroupActivityDetail
@@ -43,6 +44,9 @@ Get-MgReportOffice365GroupActivityDetail -InputObject <IReportsIdentity> -OutFil
 
 ## DESCRIPTION
 Get details about Microsoft 365 groups activity by group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365groupsactivitydetail-permissions.md)]
 
 ## PARAMETERS
 

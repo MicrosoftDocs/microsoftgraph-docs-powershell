@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Set-MgSecurityAlert
@@ -31,6 +32,27 @@ Set-MgSecurityAlert -InputObject <ISecurityIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Create a comment for an existing alert based on the specified alert id property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-alert-post-comments-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	"@odata.type" = "microsoft.graph.security.alertComment"
+	comment = "Demo for docs"
+}
+
+Set-MgSecurityAlert -AlertId $alertId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgSecurityAlert Cmdlet.
+
 
 ## PARAMETERS
 
@@ -262,7 +284,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert)
 
 [https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-1.0)
-
 
 
 

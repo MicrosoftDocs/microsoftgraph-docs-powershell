@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterrolemanagemententitlementmanagementroleassignmentschedulebycurrentuser
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurrentUser
@@ -34,6 +35,9 @@ Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurren
 
 ## DESCRIPTION
 Retrieve the schedules for active role assignment operations for which the signed-in user is the principal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignmentschedule-filterbycurrentuser-permissions.md)]
 
 ## PARAMETERS
 
@@ -323,7 +327,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterrolemanagemententitlementmanagementroleassignmentschedulebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterrolemanagemententitlementmanagementroleassignmentschedulebycurrentuser)
 
 [https://learn.microsoft.com/graph/api/unifiedroleassignmentschedule-filterbycurrentuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignmentschedule-filterbycurrentuser?view=graph-rest-1.0)
-
 
 
 

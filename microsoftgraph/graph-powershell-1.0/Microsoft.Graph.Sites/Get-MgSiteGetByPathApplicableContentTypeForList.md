@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathapplicablecontenttypeforlist
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgSiteGetByPathApplicableContentTypeForList
@@ -33,6 +34,9 @@ Get-MgSiteGetByPathApplicableContentTypeForList -InputObject <ISitesIdentity> [-
 
 ## DESCRIPTION
 Get site contentTypes that can be added to a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-getapplicablecontenttypesforlist-permissions.md)]
 
 ## PARAMETERS
 
@@ -329,7 +333,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathapplicablecontenttypeforlist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathapplicablecontenttypeforlist)
 
 [https://learn.microsoft.com/graph/api/site-getapplicablecontenttypesforlist?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-getapplicablecontenttypesforlist?view=graph-rest-1.0)
-
 
 
 

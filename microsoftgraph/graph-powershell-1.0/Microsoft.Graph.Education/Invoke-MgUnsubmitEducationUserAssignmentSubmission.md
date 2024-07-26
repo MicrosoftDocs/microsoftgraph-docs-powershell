@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunsubmiteducationuserassignmentsubmission
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Invoke-MgUnsubmitEducationUserAssignmentSubmission
@@ -41,6 +42,9 @@ This method changes the status of the submission from submitted to working.
 During the submit process, all the resources are copied from submittedResources to  workingResources.
 The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-unsubmit-permissions.md)]
 
 ## PARAMETERS
 
@@ -217,7 +221,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunsubmiteducationuserassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunsubmiteducationuserassignmentsubmission)
 
 [https://learn.microsoft.com/graph/api/educationsubmission-unsubmit?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-unsubmit?view=graph-rest-1.0)
-
 
 
 

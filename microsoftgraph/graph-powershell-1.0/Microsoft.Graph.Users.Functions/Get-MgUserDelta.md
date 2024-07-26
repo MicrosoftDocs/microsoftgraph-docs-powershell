@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Get-MgUserDelta
@@ -28,6 +29,41 @@ See change tracking for details.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delta-permissions.md)]
+
+## EXAMPLES
+### Example 1: Default properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Users.Functions
+
+Get-MgUserDelta
+
+```
+This example will default properties
+
+### Example 2: Selecting three properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Users.Functions
+
+Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone" 
+
+```
+This example shows selecting three properties
+
+### Example 3: Alternative minimal response behavior
+
+```powershell
+
+Import-Module Microsoft.Graph.Users.Functions
+
+Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone" 
+
+```
+This example will alternative minimal response behavior
+
 
 ## PARAMETERS
 
@@ -243,7 +279,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta)
 
 [https://learn.microsoft.com/graph/api/user-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-delta?view=graph-rest-1.0)
-
 
 
 

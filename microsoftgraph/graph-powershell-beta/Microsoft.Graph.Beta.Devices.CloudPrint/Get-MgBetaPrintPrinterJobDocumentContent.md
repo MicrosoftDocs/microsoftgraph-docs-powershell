@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterjobdocumentcontent
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # Get-MgBetaPrintPrinterJobDocumentContent
@@ -33,6 +34,9 @@ Get-MgBetaPrintPrinterJobDocumentContent -InputObject <IDevicesCloudPrintIdentit
 ## DESCRIPTION
 Download the binary file associated with a printDocument.
 Calling this method yields a redirect response with a preauthenticated URL that can be used to download the payload.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printdocument-get-file-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserapprovalbycurrentuser
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaFilterUserApprovalByCurrentUser
@@ -314,7 +315,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserapprovalbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserapprovalbycurrentuser)
 
 [https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-beta)
-
 
 
 

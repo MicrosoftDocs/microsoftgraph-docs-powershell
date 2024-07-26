@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregistereduserbyref
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDeviceRegisteredUserByRef
@@ -26,6 +27,9 @@ Get-MgDeviceRegisteredUserByRef -DeviceId <String> [-Filter <String>] [-Search <
 ## DESCRIPTION
 Retrieve a list of users that are registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-list-registeredusers-permissions.md)]
 
 ## PARAMETERS
 
@@ -242,7 +246,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregistereduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregistereduserbyref)
 
 [https://learn.microsoft.com/graph/api/device-list-registeredusers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-list-registeredusers?view=graph-rest-1.0)
-
 
 
 

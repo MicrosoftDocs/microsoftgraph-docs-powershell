@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/sync-mgdevicemanagementmanageddevice
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Sync-MgDeviceManagementManagedDevice
@@ -31,6 +32,19 @@ Sync-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdent
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+Sync-MgDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId
+
+```
+This example shows how to use the Sync-MgDeviceManagementManagedDevice Cmdlet.
+
 
 ## PARAMETERS
 
@@ -195,7 +209,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/sync-mgdevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/sync-mgdevicemanagementmanageddevice)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-syncdevice?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-syncdevice?view=graph-rest-1.0)
-
 
 
 

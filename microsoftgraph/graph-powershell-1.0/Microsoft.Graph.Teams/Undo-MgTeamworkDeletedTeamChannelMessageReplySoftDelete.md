@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamworkdeletedteamchannelmessagereplysoftdelete
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Undo-MgTeamworkDeletedTeamChannelMessageReplySoftDelete
@@ -31,6 +32,9 @@ Undo-MgTeamworkDeletedTeamChannelMessageReplySoftDelete -InputObject <ITeamsIden
 
 ## DESCRIPTION
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-undosoftdelete-permissions.md)]
 
 ## PARAMETERS
 
@@ -257,7 +261,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamworkdeletedteamchannelmessagereplysoftdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamworkdeletedteamchannelmessagereplysoftdelete)
 
 [https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-1.0)
-
 
 
 

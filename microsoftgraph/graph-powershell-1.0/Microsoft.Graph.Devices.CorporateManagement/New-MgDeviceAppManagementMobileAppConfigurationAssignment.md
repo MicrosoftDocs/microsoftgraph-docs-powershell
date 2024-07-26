@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappconfigurationassignment
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceAppManagementMobileAppConfigurationAssignment
@@ -47,6 +48,26 @@ New-MgDeviceAppManagementMobileAppConfigurationAssignment -InputObject <IDevices
 
 ## DESCRIPTION
 Create a new managedDeviceMobileAppConfigurationAssignment object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment"
+	target = @{
+		"@odata.type" = "microsoft.graph.allLicensedUsersAssignmentTarget"
+	}
+}
+
+New-MgDeviceAppManagementMobileAppConfigurationAssignment -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementMobileAppConfigurationAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -285,7 +306,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappconfigurationassignment)
 
 [https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationassignment-create?view=graph-rest-1.0)
-
 
 
 

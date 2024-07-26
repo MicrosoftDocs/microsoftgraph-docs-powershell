@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelistitemdocumentsetversion
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Remove-MgBetaSiteListItemDocumentSetVersion
@@ -32,6 +33,9 @@ Remove-MgBetaSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-IfMa
 
 ## DESCRIPTION
 Delete a version of a document set in a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

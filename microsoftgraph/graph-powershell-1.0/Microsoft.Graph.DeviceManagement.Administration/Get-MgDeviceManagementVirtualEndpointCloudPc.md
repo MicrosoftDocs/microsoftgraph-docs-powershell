@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
+ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgDeviceManagementVirtualEndpointCloudPc
@@ -42,6 +44,33 @@ Read the properties and relationships of a specific cloudPC object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-list-cloudpcs-permissions.md)]
+
+## EXAMPLES
+### Example 1: List all cloudPC devices in a tenant
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointCloudPc
+
+```
+This example will list all cloudpc devices in a tenant
+
+### Example 2: Get the top two cloudPC devices in a tenant
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointCloudPc -Top 2 
+
+```
+This example will get the top two cloudpc devices in a tenant
+
 
 ## PARAMETERS
 
@@ -322,7 +351,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-1.0)
-
 
 
 

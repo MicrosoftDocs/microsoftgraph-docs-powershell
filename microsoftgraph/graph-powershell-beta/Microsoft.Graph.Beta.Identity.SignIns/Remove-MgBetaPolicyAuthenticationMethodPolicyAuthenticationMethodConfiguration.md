@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
@@ -33,6 +34,9 @@ Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 
 ## DESCRIPTION
 Delete an externalAuthenticationMethodConfiguration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalauthenticationmethodconfiguration-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

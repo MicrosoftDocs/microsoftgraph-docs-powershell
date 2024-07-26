@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdrivelistcontenttypecompatiblehubcontenttype
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaUserDriveListContentTypeCompatibleHubContentType
@@ -317,7 +318,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdrivelistcontenttypecompatiblehubcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdrivelistcontenttypecompatiblehubcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-beta)
-
 
 
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincident
 schema: 2.0.0
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityIncident
@@ -43,6 +45,36 @@ Get-MgSecurityIncident -InputObject <ISecurityIdentity> [-ExpandProperty <String
 Retrieve the properties and relationships of an incident object.
 Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple alert objects.
 Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an incident.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-incident-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-list-incidents-permissions.md)]
+
+## EXAMPLES
+### Example 1: List all incidents
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityIncident
+
+```
+This example will list all incidents
+
+### Example 2: List all incidents with their alerts
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityIncident -ExpandProperty "alerts" 
+
+```
+This example will list all incidents with their alerts
+
 
 ## PARAMETERS
 
@@ -359,7 +391,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-incident-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-incident-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-list-incidents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-list-incidents?view=graph-rest-1.0)
-
 
 
 

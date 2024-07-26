@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaentitlementmanagementassignmentrequest
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Stop-MgBetaEntitlementManagementAssignmentRequest
@@ -31,6 +32,9 @@ Stop-MgBetaEntitlementManagementAssignmentRequest -InputObject <IIdentityGoverna
 
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancelable state: accepted, pendingApproval, pendingNotBefore, pendingApprovalEscalated.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentrequest-cancel-permissions.md)]
 
 ## PARAMETERS
 
@@ -278,7 +282,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaentitlementmanagementassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaentitlementmanagementassignmentrequest)
 
 [https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-cancel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-cancel?view=graph-rest-beta)
-
 
 
 

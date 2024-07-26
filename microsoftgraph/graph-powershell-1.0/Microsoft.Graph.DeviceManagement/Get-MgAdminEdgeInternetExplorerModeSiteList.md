@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedgeinternetexplorermodesitelist
 schema: 2.0.0
+ms.subservice: edge-browser-management
+ms.subservice: edge-browser-management
 ---
 
 # Get-MgAdminEdgeInternetExplorerModeSiteList
@@ -42,6 +44,22 @@ Get a browserSiteList that contains browserSite and browserSharedCookie resource
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/internetexplorermode-list-sitelists-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgAdminEdgeInternetExplorerModeSiteList
+
+```
+This example shows how to use the Get-MgAdminEdgeInternetExplorerModeSiteList Cmdlet.
+
 
 ## PARAMETERS
 
@@ -351,7 +369,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/browsersitelist-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/internetexplorermode-list-sitelists?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/internetexplorermode-list-sitelists?view=graph-rest-1.0)
-
 
 
 

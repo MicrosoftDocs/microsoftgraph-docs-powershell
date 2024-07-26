@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtask
 schema: 2.0.0
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgIdentityGovernanceLifecycleWorkflowTask
@@ -39,6 +41,25 @@ Get-MgIdentityGovernanceLifecycleWorkflowTask -InputObject <IIdentityGovernanceI
 
 ## DESCRIPTION
 Get a specific task from a workflow or workflowVersion.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-task-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-list-task-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get a task from a workflow
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowTask -WorkflowId $workflowId -TaskId $taskId
+
+```
+This example will get a task from a workflow
+
 
 ## PARAMETERS
 
@@ -376,7 +397,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/identitygovernance-task-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-task-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-task?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-task?view=graph-rest-1.0)
-
 
 
 

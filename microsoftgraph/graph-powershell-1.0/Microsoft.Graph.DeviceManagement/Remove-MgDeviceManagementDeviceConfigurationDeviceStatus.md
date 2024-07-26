@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicestatus
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceManagementDeviceConfigurationDeviceStatus
@@ -32,6 +33,19 @@ Remove-MgDeviceManagementDeviceConfigurationDeviceStatus -InputObject <IDeviceMa
 
 ## DESCRIPTION
 Deletes a deviceConfigurationDeviceStatus.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Remove-MgDeviceManagementDeviceConfigurationDeviceStatus -DeviceConfigurationId $deviceConfigurationId -DeviceConfigurationDeviceStatusId $deviceConfigurationDeviceStatusId
+
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceConfigurationDeviceStatus Cmdlet.
+
 
 ## PARAMETERS
 
@@ -264,7 +278,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicestatus)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatus-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatus-delete?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Hide-MgBetaUserChatForUser
@@ -338,7 +339,6 @@ This property is read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser)
 
 [https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-beta)
-
 
 
 

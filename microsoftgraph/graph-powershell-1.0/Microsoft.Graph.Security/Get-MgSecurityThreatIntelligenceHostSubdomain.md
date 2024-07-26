@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostsubdomain
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceHostSubdomain
@@ -39,6 +40,22 @@ Get-MgSecurityThreatIntelligenceHostSubdomain -InputObject <ISecurityIdentity> [
 
 ## DESCRIPTION
 The subdomains that are associated with this host.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-host-list-subdomains-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceHostSubdomain -HostId $hostId
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceHostSubdomain Cmdlet.
+
 
 ## PARAMETERS
 
@@ -368,7 +385,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostsubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostsubdomain)
 
 [https://learn.microsoft.com/graph/api/security-host-list-subdomains?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-subdomains?view=graph-rest-1.0)
-
 
 
 

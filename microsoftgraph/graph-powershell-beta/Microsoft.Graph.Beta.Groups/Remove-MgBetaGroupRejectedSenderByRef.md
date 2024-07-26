@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupRejectedSenderByRef
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Remove-MgBetaGroupRejectedSenderByRef
@@ -31,6 +32,9 @@ Remove-MgBetaGroupRejectedSenderByRef -InputObject <IGroupsIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Remove a user or group from the rejected-senders list of the specified group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-rejectedsenders-permissions.md)]
 
 ## PARAMETERS
 
@@ -255,7 +259,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupRejectedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupRejectedSenderByRef)
 
 [https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-beta)
-
 
 
 

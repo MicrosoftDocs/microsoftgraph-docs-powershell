@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementiosmanagedappprotectionassignment
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment
@@ -49,6 +50,27 @@ Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment
 
 ## DESCRIPTION
 Update the properties of a targetedManagedAppPolicyAssignment object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.targetedManagedAppPolicyAssignment"
+	target = @{
+		"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+		collectionId = "Collection Id value"
+	}
+}
+
+Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment -IosManagedAppProtectionId $iosManagedAppProtectionId -TargetedManagedAppPolicyAssignmentId $targetedManagedAppPolicyAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -302,7 +324,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementiosmanagedappprotectionassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementiosmanagedappprotectionassignment)
 
 [https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedapppolicyassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedapppolicyassignment-update?view=graph-rest-1.0)
-
 
 
 

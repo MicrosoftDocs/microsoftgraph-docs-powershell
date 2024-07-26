@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignment
 schema: 2.0.0
+ms.subservice: education
+ms.subservice: education
 ---
 
 # Get-MgEducationClassAssignment
@@ -48,6 +50,9 @@ You can use the Prefer header in your request to get the inactive status in case
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-assignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get assignments

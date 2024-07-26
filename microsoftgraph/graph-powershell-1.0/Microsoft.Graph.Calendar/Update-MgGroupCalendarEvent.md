@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Update-MgGroupCalendarEvent
@@ -77,6 +78,28 @@ Update-MgGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update an event object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-update-event-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	location = @{
+		displayName = "Conf Room 2"
+	}
+}
+
+Update-MgGroupCalendarEvent -GroupId $groupId -EventId $eventId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgGroupCalendarEvent Cmdlet.
+
 
 ## PARAMETERS
 
@@ -1972,7 +1995,6 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent)
 
 [https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0)
-
 
 
 

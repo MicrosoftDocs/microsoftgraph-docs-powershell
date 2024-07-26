@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment
 schema: 2.0.0
+ms.subservice: microsoft-bookings
 ---
 
 # Update-MgBookingBusinessAppointment
@@ -62,6 +63,9 @@ Update-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingappointment-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -799,7 +803,6 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment)
 
 [https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0)
-
 
 
 

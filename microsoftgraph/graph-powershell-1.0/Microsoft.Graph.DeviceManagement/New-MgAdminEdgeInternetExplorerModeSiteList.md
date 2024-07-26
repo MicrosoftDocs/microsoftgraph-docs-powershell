@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist
 schema: 2.0.0
+ms.subservice: edge-browser-management
 ---
 
 # New-MgAdminEdgeInternetExplorerModeSiteList
@@ -35,6 +36,27 @@ New-MgAdminEdgeInternetExplorerModeSiteList -BodyParameter <IMicrosoftGraphBrows
 
 ## DESCRIPTION
 Create a new browserSiteList object to support Internet Explorer mode.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/internetexplorermode-post-sitelists-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	displayName = "Production Site List A"
+	description = "Production site list for team A"
+}
+
+New-MgAdminEdgeInternetExplorerModeSiteList -BodyParameter $params
+
+```
+This example shows how to use the New-MgAdminEdgeInternetExplorerModeSiteList Cmdlet.
+
 
 ## PARAMETERS
 
@@ -499,7 +521,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist)
 
 [https://learn.microsoft.com/graph/api/internetexplorermode-post-sitelists?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/internetexplorermode-post-sitelists?view=graph-rest-1.0)
-
 
 
 

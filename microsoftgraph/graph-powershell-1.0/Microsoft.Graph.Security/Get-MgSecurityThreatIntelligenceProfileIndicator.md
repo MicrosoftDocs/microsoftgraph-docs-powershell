@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligenceprofileindicator
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceProfileIndicator
@@ -39,6 +40,22 @@ Get-MgSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdentity
 
 ## DESCRIPTION
 Read the properties and relationships of a intelligenceProfileIndicator object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-intelligenceprofileindicator-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceProfileIndicator -IntelligenceProfileIndicatorId $intelligenceProfileIndicatorId
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceProfileIndicator Cmdlet.
+
 
 ## PARAMETERS
 
@@ -353,7 +370,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligenceprofileindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligenceprofileindicator)
 
 [https://learn.microsoft.com/graph/api/security-intelligenceprofileindicator-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-intelligenceprofileindicator-get?view=graph-rest-1.0)
-
 
 
 

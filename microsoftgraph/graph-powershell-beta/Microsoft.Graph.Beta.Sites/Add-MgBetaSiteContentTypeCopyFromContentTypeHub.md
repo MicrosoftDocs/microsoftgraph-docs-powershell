@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontenttypecopyfromcontenttypehub
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgBetaSiteContentTypeCopyFromContentTypeHub
@@ -292,7 +293,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontenttypecopyfromcontenttypehub](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontenttypecopyfromcontenttypehub)
 
 [https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-beta)
-
 
 
 

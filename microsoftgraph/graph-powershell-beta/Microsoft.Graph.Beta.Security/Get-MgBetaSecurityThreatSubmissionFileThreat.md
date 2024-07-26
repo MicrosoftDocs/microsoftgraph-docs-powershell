@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionfilethreat
 schema: 2.0.0
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityThreatSubmissionFileThreat
@@ -36,6 +38,12 @@ Get-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity> [-
 
 ## DESCRIPTION
 Read the properties and relationships of a fileThreatSubmission object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-filethreatsubmission-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-filethreatsubmission-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

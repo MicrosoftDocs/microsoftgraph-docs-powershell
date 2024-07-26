@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccesscompliantdevicesigninsuccess
 schema: 2.0.0
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSuccess
@@ -33,6 +34,9 @@ Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSu
 ## DESCRIPTION
 Get the number of user authentication requests, during a specified time period, that satisfy a Conditional Access policy that requires device compliance.
 Microsoft Intune manages compliant devices, including mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseapplicationsynchronizationtemplateschemaexpression
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression
@@ -54,6 +55,9 @@ Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression -InputObject <I
 ## DESCRIPTION
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-parseexpression-permissions.md)]
 
 ## PARAMETERS
 
@@ -433,7 +437,6 @@ Not nullable.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseapplicationsynchronizationtemplateschemaexpression](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseapplicationsynchronizationtemplateschemaexpression)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-1.0)
-
 
 
 

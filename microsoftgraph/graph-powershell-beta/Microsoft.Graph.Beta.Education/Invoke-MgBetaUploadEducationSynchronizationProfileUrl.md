@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetauploadeducationsynchronizationprofileurl
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Invoke-MgBetaUploadEducationSynchronizationProfileUrl
@@ -32,6 +33,9 @@ Invoke-MgBetaUploadEducationSynchronizationProfileUrl -InputObject <IEducationId
 Retrieve a shared access signature (SAS) for uploading source files to Azure blob storage for a specific school data synchronization profile in the tenant.
 The SAS token has a validity of one hour.
 The upload URL is provided only for the CSV data provider.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-uploadurl-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

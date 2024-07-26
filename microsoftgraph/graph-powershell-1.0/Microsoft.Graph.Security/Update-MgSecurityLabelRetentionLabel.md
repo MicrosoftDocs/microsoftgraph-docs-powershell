@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabel
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Update-MgSecurityLabelRetentionLabel
@@ -61,6 +62,9 @@ Update-MgSecurityLabelRetentionLabel -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the properties of a retentionLabel object.
 To update a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionlabel-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -810,7 +814,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabel)
 
 [https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-1.0)
-
 
 
 

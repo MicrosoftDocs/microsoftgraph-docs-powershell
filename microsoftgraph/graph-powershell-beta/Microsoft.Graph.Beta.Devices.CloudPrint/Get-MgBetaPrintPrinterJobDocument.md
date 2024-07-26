@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterjobdocument
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # Get-MgBetaPrintPrinterJobDocument
@@ -39,6 +40,9 @@ Get-MgBetaPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity> [-Ex
 
 ## DESCRIPTION
 Get documents from print
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printdocument-get-file-permissions.md)]
 
 ## PARAMETERS
 
@@ -335,8 +339,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterjobdocument](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterjobdocument)
 
 [https://learn.microsoft.com/graph/api/printdocument-get-file?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printdocument-get-file?view=graph-rest-beta)
-
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresourcerole
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgEntitlementManagementCatalogResourceRole
@@ -85,6 +86,33 @@ Get-MgEntitlementManagementCatalogResourceRole -InputObject <IIdentityGovernance
 
 ## DESCRIPTION
 Get resourceRoles from identityGovernance
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-list-resourceroles-permissions.md)]
+
+## EXAMPLES
+### Example 1: Retrieving the roles of a resource for a group
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgEntitlementManagementCatalogResourceRole -AccessPackageCatalogId $accessPackageCatalogId -Filter "(originSystem eq 'AadGroup' and resource/id eq 'a35bef72-a8aa-4ca3-af30-f6b2ece7208f')" -ExpandProperty "resource" 
+
+```
+This example shows retrieving the roles of a resource for a group
+
+### Example 2: Retrieving the roles of a resource for a SharePoint Online site collection
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgEntitlementManagementCatalogResourceRole -AccessPackageCatalogId $accessPackageCatalogId -Filter "(originSystem eq 'SharePointOnline' and resource/id eq 'dcc3f966-a73c-48e2-8c1d-bcac775488c3')" -ExpandProperty "resource" 
+
+```
+This example shows retrieving the roles of a resource for a sharepoint online site collection
+
 
 ## PARAMETERS
 
@@ -450,7 +478,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresourcerole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresourcerole)
 
 [https://learn.microsoft.com/graph/api/accesspackagecatalog-list-resourceroles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-resourceroles?view=graph-rest-1.0)
-
 
 
 

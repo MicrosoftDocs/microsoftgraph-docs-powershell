@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplate
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementNotificationMessageTemplate
@@ -51,6 +52,29 @@ Update-MgDeviceManagementNotificationMessageTemplate -InputObject <IDeviceManage
 
 ## DESCRIPTION
 Update the properties of a notificationMessageTemplate object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.notificationMessageTemplate"
+	displayName = "Display Name value"
+	defaultLocale = "Default Locale value"
+	brandingOptions = "includeCompanyLogo"
+	roleScopeTagIds = @(
+	"Role Scope Tag Ids value"
+)
+}
+
+Update-MgDeviceManagementNotificationMessageTemplate -NotificationMessageTemplateId $notificationMessageTemplateId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementNotificationMessageTemplate Cmdlet.
+
 
 ## PARAMETERS
 
@@ -414,7 +438,6 @@ To unset, set this property to true on another Localized Notification Message.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplate)
 
 [https://learn.microsoft.com/graph/api/intune-notification-notificationmessagetemplate-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-notification-notificationmessagetemplate-update?view=graph-rest-1.0)
-
 
 
 

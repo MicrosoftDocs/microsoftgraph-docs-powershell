@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachattab
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgBetaChatTab
@@ -50,6 +51,9 @@ New-MgBetaChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphT
 ## DESCRIPTION
 Add (pin) a tab to the specified chat.
 The corresponding app must already be installed in the chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-post-tabs-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

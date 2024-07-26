@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryonpremisesynchronization
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Update-MgDirectoryOnPremiseSynchronization
@@ -46,6 +47,34 @@ Update-MgDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryManag
 
 ## DESCRIPTION
 Update the properties of an onPremisesDirectorySynchronization object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onpremisesdirectorysynchronization-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = @{
+	configuration = @{
+		accidentalDeletionPrevention = @{
+			synchronizationPreventionType = "enabledForCount"
+			alertThreshold = 500
+		}
+	}
+	features = @{
+		groupWriteBackEnabled = $true
+	}
+}
+
+Update-MgDirectoryOnPremiseSynchronization -OnPremisesDirectorySynchronizationId $onPremisesDirectorySynchronizationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDirectoryOnPremiseSynchronization Cmdlet.
+
 
 ## PARAMETERS
 
@@ -352,7 +381,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryonpremisesynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryonpremisesynchronization)
 
 [https://learn.microsoft.com/graph/api/onpremisesdirectorysynchronization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesdirectorysynchronization-update?view=graph-rest-1.0)
-
 
 
 

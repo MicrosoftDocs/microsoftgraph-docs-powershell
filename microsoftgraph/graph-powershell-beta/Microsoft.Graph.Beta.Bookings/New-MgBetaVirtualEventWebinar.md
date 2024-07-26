@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinar
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # New-MgBetaVirtualEventWebinar
@@ -1069,7 +1070,6 @@ See below for possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinar)
 
 [https://learn.microsoft.com/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # New-MgSecurityLabelAuthority
@@ -30,6 +31,27 @@ New-MgSecurityLabelAuthority -BodyParameter <Hashtable> [-ResponseHeadersVariabl
 
 ## DESCRIPTION
 Create a new authorityTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-post-authorities-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.authorityTemplate"
+	displayName = "Business"
+}
+
+New-MgSecurityLabelAuthority -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityLabelAuthority Cmdlet.
+
 
 ## PARAMETERS
 
@@ -234,7 +256,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-post-authorities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-authorities?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementtermandconditionacceptancestatus
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceManagementTermAndConditionAcceptanceStatus
@@ -33,6 +34,19 @@ Remove-MgDeviceManagementTermAndConditionAcceptanceStatus
 
 ## DESCRIPTION
 Deletes a termsAndConditionsAcceptanceStatus.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Remove-MgDeviceManagementTermAndConditionAcceptanceStatus -TermsAndConditionsId $termsAndConditionsId -TermsAndConditionsAcceptanceStatusId $termsAndConditionsAcceptanceStatusId
+
+```
+This example shows how to use the Remove-MgDeviceManagementTermAndConditionAcceptanceStatus Cmdlet.
+
 
 ## PARAMETERS
 
@@ -236,7 +250,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementtermandconditionacceptancestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementtermandconditionacceptancestatus)
 
 [https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsacceptancestatus-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsacceptancestatus-delete?view=graph-rest-1.0)
-
 
 
 

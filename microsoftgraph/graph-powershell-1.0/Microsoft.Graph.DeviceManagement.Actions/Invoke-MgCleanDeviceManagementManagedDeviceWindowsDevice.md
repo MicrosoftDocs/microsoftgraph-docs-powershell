@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgcleandevicemanagementmanageddevicewindowsdevice
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice
@@ -49,6 +50,23 @@ Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice -InputObject <IDeviceMa
 
 ## DESCRIPTION
 Clean Windows device
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	keepUserData = $true
+}
+
+Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice -ManagedDeviceId $managedDeviceId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice Cmdlet.
+
 
 ## PARAMETERS
 
@@ -264,7 +282,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgcleandevicemanagementmanageddevicewindowsdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgcleandevicemanagementmanageddevicewindowsdevice)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-cleanwindowsdevice?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-cleanwindowsdevice?view=graph-rest-1.0)
-
 
 
 

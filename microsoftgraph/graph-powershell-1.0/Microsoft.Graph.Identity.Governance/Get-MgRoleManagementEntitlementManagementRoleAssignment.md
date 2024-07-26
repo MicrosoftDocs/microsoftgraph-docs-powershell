@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleassignment
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgRoleManagementEntitlementManagementRoleAssignment
@@ -39,6 +40,22 @@ Get-MgRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdentityG
 
 ## DESCRIPTION
 Resource to grant access to users or groups.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roleassignments-permissions.md)]
+
+## EXAMPLES
+### Example 1: Request using $filter for role assignments on an access package catalog and expand the principal object
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementEntitlementManagementRoleAssignment -Filter "appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'" -ExpandProperty "principal" 
+
+```
+This example will request using $filter for role assignments on an access package catalog and expand the principal object
+
 
 ## PARAMETERS
 
@@ -359,7 +376,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleassignment)
 
 [https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-1.0)
-
 
 
 

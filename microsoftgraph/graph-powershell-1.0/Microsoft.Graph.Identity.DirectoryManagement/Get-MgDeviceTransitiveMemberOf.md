@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberof
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDeviceTransitiveMemberOf
@@ -43,6 +44,9 @@ Get-MgDeviceTransitiveMemberOf -InputObject <IIdentityDirectoryManagementIdentit
 Groups and administrative units that the device is a member of.
 This operation is transitive.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-list-transitivememberof-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

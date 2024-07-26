@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebookdevicestate
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceAppManagementManagedEBookDeviceState
@@ -49,6 +50,31 @@ Update-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorpor
 
 ## DESCRIPTION
 Update the properties of a deviceInstallState object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceInstallState"
+	deviceName = "Device Name value"
+	deviceId = "Device Id value"
+	lastSyncDateTime = [System.DateTime]::Parse("2017-01-01T00:02:49.3205976-08:00")
+	installState = "installed"
+	errorCode = "Error Code value"
+	osVersion = "Os Version value"
+	osDescription = "Os Description value"
+	userName = "User Name value"
+}
+
+Update-MgDeviceAppManagementManagedEBookDeviceState -ManagedEBookId $managedEBookId -DeviceInstallStateId $deviceInstallStateId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementManagedEBookDeviceState Cmdlet.
+
 
 ## PARAMETERS
 
@@ -413,7 +439,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebookdevicestate](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebookdevicestate)
 
 [https://learn.microsoft.com/graph/api/intune-books-deviceinstallstate-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-deviceinstallstate-update?view=graph-rest-1.0)
-
 
 
 

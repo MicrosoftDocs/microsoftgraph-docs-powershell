@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventflowincludeapplication
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaIdentityAuthenticationEventFlowIncludeApplication
@@ -46,6 +47,9 @@ New-MgBetaIdentityAuthenticationEventFlowIncludeApplication -InputObject <IIdent
 Add or link an application to an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 This enables the authentication experience that's defined by the user flow to be enabled for the application.
 An application can only be linked to one user flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationconditionsapplications-post-includeapplications-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

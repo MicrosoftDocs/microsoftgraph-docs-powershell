@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restart-mgdevicemanagementmanageddevicenow
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Restart-MgDeviceManagementManagedDeviceNow
@@ -31,6 +32,19 @@ Restart-MgDeviceManagementManagedDeviceNow -InputObject <IDeviceManagementAction
 
 ## DESCRIPTION
 Reboot device
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+Restart-MgDeviceManagementManagedDeviceNow -ManagedDeviceId $managedDeviceId
+
+```
+This example shows how to use the Restart-MgDeviceManagementManagedDeviceNow Cmdlet.
+
 
 ## PARAMETERS
 
@@ -195,7 +209,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restart-mgdevicemanagementmanageddevicenow](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restart-mgdevicemanagementmanageddevicenow)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-rebootnow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-rebootnow?view=graph-rest-1.0)
-
 
 
 

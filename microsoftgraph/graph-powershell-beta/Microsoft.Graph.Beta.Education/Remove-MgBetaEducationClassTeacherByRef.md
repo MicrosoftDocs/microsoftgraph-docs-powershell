@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/Remove-MgBetaEducationClassTeacherByRef
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Remove-MgBetaEducationClassTeacherByRef
@@ -31,6 +32,9 @@ Remove-MgBetaEducationClassTeacherByRef -InputObject <IEducationIdentity> [-IfMa
 
 ## DESCRIPTION
 Remove a teacher from an educationClass.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-delete-teachers-permissions.md)]
 
 ## PARAMETERS
 
@@ -227,7 +231,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/Remove-MgBetaEducationClassTeacherByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/Remove-MgBetaEducationClassTeacherByRef)
 
 [https://learn.microsoft.com/graph/api/educationclass-delete-teachers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationclass-delete-teachers?view=graph-rest-beta)
-
 
 
 

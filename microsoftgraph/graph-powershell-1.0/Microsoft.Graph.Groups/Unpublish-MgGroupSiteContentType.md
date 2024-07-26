@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupsitecontenttype
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Unpublish-MgGroupSiteContentType
@@ -31,6 +32,9 @@ Unpublish-MgGroupSiteContentType -InputObject <IGroupsIdentity> [-ResponseHeader
 
 ## DESCRIPTION
 Unpublish a contentType from a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## PARAMETERS
 
@@ -250,7 +254,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupsitecontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
-
 
 
 

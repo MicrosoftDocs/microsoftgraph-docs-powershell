@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite
 schema: 2.0.0
+ms.subservice: edge-browser-management
 ---
 
 # New-MgAdminEdgeInternetExplorerModeSiteListSite
@@ -55,6 +56,32 @@ New-MgAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagementI
 
 ## DESCRIPTION
 Create a new browserSite object in a browserSiteList.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-post-sites-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.browserSite"
+	webUrl = "www.microsoft.com"
+	targetEnvironment = "InternetExplorer11"
+	comment = "A site that opens in InternetExplorer11"
+	mergeType = "default"
+	compatibilityMode = "default"
+	allowRedirect = $true
+}
+
+New-MgAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BodyParameter $params
+
+```
+This example shows how to use the New-MgAdminEdgeInternetExplorerModeSiteListSite Cmdlet.
+
 
 ## PARAMETERS
 
@@ -541,7 +568,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite)
 
 [https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-1.0)
-
 
 
 

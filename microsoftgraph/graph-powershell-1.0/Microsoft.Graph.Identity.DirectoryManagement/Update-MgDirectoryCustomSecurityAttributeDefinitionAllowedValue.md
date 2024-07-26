@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinitionallowedvalue
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
@@ -46,6 +47,26 @@ Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## DESCRIPTION
 Update the properties of an allowedValue object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/allowedvalue-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = @{
+	isActive = "false"
+}
+
+Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId -AllowedValueId $allowedValueId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue Cmdlet.
+
 
 ## PARAMETERS
 
@@ -291,7 +312,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinitionallowedvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinitionallowedvalue)
 
 [https://learn.microsoft.com/graph/api/allowedvalue-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/allowedvalue-update?view=graph-rest-1.0)
-
 
 
 

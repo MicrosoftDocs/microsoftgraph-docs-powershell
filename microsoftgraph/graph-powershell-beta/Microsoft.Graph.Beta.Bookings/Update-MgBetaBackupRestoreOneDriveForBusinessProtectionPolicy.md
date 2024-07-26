@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoreonedriveforbusinessprotectionpolicy
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Update-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy
@@ -54,6 +55,46 @@ Update-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy -InputObject <IBoo
 ## DESCRIPTION
 Update the protection policy for the OneDrive service in Microsoft 365.
 This method adds a driveProtectionUnit to or removes it from a oneDriveForBusinessProtectionPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onedriveforbusinessprotectionpolicy-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	displayName = "One Drive  Policy - Inadvertent data loss"
+	"driveProtectionUnits@delta" = @(
+		@{
+			userId = "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
+		}
+		@{
+			userId = "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
+		}
+		@{
+			"@removed" = @{
+				reason = "changed"
+			}
+			id = "4267e382-71a9-4c07-bef7-bda97e09c0d2"
+		}
+		@{
+			"@removed" = @{
+				reason = "changed"
+			}
+			id = "3667e382-71a9-4c07-bef7-bda97e09c0d2"
+		}
+	)
+}
+
+Update-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy -OneDriveForBusinessProtectionPolicyId $oneDriveForBusinessProtectionPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -575,8 +616,6 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting- `[]`>: Contains the retentio
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoreonedriveforbusinessprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoreonedriveforbusinessprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-update?view=graph-rest-beta)
-
-
 
 
 

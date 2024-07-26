@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef
@@ -35,6 +36,9 @@ Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef
 ## DESCRIPTION
 Remove a user or a group from the connected organization's external sponsors.
 The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-delete-externalsponsors-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

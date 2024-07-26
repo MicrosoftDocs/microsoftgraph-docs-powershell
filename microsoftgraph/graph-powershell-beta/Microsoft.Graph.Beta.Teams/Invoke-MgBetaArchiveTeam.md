@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchiveteam
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgBetaArchiveTeam
@@ -61,6 +62,9 @@ Archiving is an async operation.
 A team is archived once the async operation completes successfully, which can occur subsequent to a response from this API.
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-archive-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

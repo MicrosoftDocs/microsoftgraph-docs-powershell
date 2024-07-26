@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationshipaccessassignment
 schema: 2.0.0
+ms.subservice: partner-customer-administration
 ---
 
 # Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
@@ -51,6 +52,38 @@ Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObje
 
 ## DESCRIPTION
 Update the properties of a delegatedAdminAccessAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminaccessassignment-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Partner
+
+$params = @{
+	accessDetails = @{
+		unifiedRoles = @(
+			@{
+				roleDefinitionId = "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+			}
+			@{
+				roleDefinitionId = "44367163-eba1-44c3-98af-f5787879f96a"
+			}
+			@{
+				roleDefinitionId = "729827e3-9c14-49f7-bb1b-9608f156bbb8"
+			}
+		)
+	}
+}
+
+Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -DelegatedAdminAccessAssignmentId $delegatedAdminAccessAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -364,7 +397,6 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationshipaccessassignment)
 
 [https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-update?view=graph-rest-1.0)
-
 
 
 

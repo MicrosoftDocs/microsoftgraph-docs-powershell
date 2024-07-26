@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroledefinition
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaRoleManagementCloudPcRoleDefinition
@@ -36,6 +37,9 @@ Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-post-roledefinitions-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -45,7 +49,6 @@ Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 $params = @{
 	description = "An example custom role"
-### Example 2
 	rolePermissions = @(
 		@{
 			allowedResourceActions = @(
@@ -60,6 +63,7 @@ New-MgBetaRoleManagementCloudPcRoleDefinition -BodyParameter $params
 
 ```
 This example shows how to use the New-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

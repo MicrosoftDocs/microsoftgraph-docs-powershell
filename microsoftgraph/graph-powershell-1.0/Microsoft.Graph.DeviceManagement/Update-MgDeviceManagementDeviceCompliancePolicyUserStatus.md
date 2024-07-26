@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicyuserstatus
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementDeviceCompliancePolicyUserStatus
@@ -50,6 +51,28 @@ Update-MgDeviceManagementDeviceCompliancePolicyUserStatus -InputObject <IDeviceM
 
 ## DESCRIPTION
 Update the properties of a deviceComplianceUserStatus object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceComplianceUserStatus"
+	userDisplayName = "User Display Name value"
+	devicesCount = 12
+	status = "notApplicable"
+	lastReportedDateTime = [System.DateTime]::Parse("2017-01-01T00:00:17.7769392-08:00")
+	userPrincipalName = "User Principal Name value"
+}
+
+Update-MgDeviceManagementDeviceCompliancePolicyUserStatus -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceComplianceUserStatusId $deviceComplianceUserStatusId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicyUserStatus Cmdlet.
+
 
 ## PARAMETERS
 
@@ -385,7 +408,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicyuserstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicyuserstatus)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceuserstatus-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceuserstatus-update?view=graph-rest-1.0)
-
 
 
 

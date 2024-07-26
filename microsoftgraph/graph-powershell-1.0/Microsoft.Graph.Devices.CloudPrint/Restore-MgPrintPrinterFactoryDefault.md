@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/restore-mgprintprinterfactorydefault
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # Restore-MgPrintPrinterFactoryDefault
@@ -31,6 +32,9 @@ Restore-MgPrintPrinterFactoryDefault -InputObject <IDevicesCloudPrintIdentity>
 
 ## DESCRIPTION
 Restore a printer's default settings to the values specified by the manufacturer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-restorefactorydefaults-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

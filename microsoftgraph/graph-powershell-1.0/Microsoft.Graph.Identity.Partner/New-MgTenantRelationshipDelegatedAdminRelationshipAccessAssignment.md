@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshipaccessassignment
 schema: 2.0.0
+ms.subservice: partner-customer-administration
 ---
 
 # New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
@@ -49,6 +50,45 @@ New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObject 
 
 ## DESCRIPTION
 Create a new delegatedAdminAccessAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationship-post-accessassignments-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Partner
+
+$params = @{
+	accessContainer = @{
+		accessContainerId = "869713c9-0b28-4d08-8949-ae07ae1bf528"
+		accessContainerType = "securityGroup"
+	}
+	accessDetails = @{
+		unifiedRoles = @(
+			@{
+				roleDefinitionId = "29232cdf-9323-42fd-ade2-1d097af3e4de"
+			}
+			@{
+				roleDefinitionId = "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
+			}
+			@{
+				roleDefinitionId = "729827e3-9c14-49f7-bb1b-9608f156bbb8"
+			}
+			@{
+				roleDefinitionId = "3a2c62db-5318-420d-8d74-23affee5d9d5"
+			}
+		)
+	}
+}
+
+New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -347,7 +387,6 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshipaccessassignment)
 
 [https://learn.microsoft.com/graph/api/delegatedadminrelationship-post-accessassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationship-post-accessassignments?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappconfigurationuserstatussummary
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary
@@ -33,6 +34,19 @@ Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary
 
 ## DESCRIPTION
 Read properties and relationships of the managedDeviceMobileAppConfigurationUserSummary object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId
+
+```
+This example shows how to use the Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -200,7 +214,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappconfigurationuserstatussummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappconfigurationuserstatussummary)
 
 [https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationusersummary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationusersummary-get?view=graph-rest-1.0)
-
 
 
 

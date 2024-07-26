@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsitelistcontenttypecopyfromcontenttypehub
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgGroupSiteListContentTypeCopyFromContentTypeHub
@@ -311,7 +312,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsitelistcontenttypecopyfromcontenttypehub](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsitelistcontenttypecopyfromcontenttypehub)
 
 [https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-1.0)
-
 
 
 

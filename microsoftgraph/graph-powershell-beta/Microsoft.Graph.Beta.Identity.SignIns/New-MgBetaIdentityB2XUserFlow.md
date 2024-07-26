@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflow
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaIdentityB2XUserFlow
@@ -36,6 +37,9 @@ New-MgBetaIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow
 
 ## DESCRIPTION
 Create a new b2xIdentityUserFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-b2xuserflows-permissions.md)]
 
 ## PARAMETERS
 

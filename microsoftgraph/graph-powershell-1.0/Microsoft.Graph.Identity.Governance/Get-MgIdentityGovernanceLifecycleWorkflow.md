@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflow
 schema: 2.0.0
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgIdentityGovernanceLifecycleWorkflow
@@ -39,6 +41,36 @@ Get-MgIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceIdent
 
 ## DESCRIPTION
 Read the properties and relationships of a workflow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-lifecycleworkflowscontainer-list-workflows-permissions.md)]
+
+## EXAMPLES
+### Example 1: Retrieve all workflows created in the tenant
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflow
+
+```
+This example will retrieve all workflows created in the tenant
+
+### Example 2: Retrieve only specific properties of "leaver" workflows
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflow -Filter "category eq 'leaver'" -Property "id,category,displayName,isEnabled,isSchedulingEnabled" 
+
+```
+This example will retrieve only specific properties of "leaver" workflows
+
 
 ## PARAMETERS
 
@@ -361,7 +393,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/identitygovernance-workflow-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-workflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-workflows?view=graph-rest-1.0)
-
 
 
 

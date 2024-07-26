@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationbannerlogo
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgOrganizationBrandingLocalizationBannerLogo
@@ -39,6 +40,22 @@ If no default organizational branding object exists, this method returns a 404 N
 If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
 This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
 To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
+
+```
+This example shows how to use the Get-MgOrganizationBrandingLocalizationBannerLogo Cmdlet.
+
 
 ## PARAMETERS
 
@@ -212,7 +229,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationbannerlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationbannerlogo)
 
 [https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0)
-
 
 
 

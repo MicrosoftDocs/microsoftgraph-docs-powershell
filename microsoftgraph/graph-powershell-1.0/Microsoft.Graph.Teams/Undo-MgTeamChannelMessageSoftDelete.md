@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamchannelmessagesoftdelete
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Undo-MgTeamChannelMessageSoftDelete
@@ -31,6 +32,33 @@ Undo-MgTeamChannelMessageSoftDelete -InputObject <ITeamsIdentity> [-ResponseHead
 
 ## DESCRIPTION
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-undosoftdelete-permissions.md)]
+
+## EXAMPLES
+### Example 1: Undo soft deletion of a message in a channel
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Undo-MgTeamChannelMessageSoftDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
+
+```
+This example will undo soft deletion of a message in a channel
+
+### Example 2: Undo soft deletion of a message of a reply in a channel
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Undo-MgTeamChannelMessageSoftDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
+
+```
+This example will undo soft deletion of a message of a reply in a channel
+
 
 ## PARAMETERS
 
@@ -242,7 +270,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamchannelmessagesoftdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamchannelmessagesoftdelete)
 
 [https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-1.0)
-
 
 
 

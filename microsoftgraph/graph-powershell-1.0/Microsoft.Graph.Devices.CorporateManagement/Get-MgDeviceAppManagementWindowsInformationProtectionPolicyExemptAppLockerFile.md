@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile
 schema: 2.0.0
+ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile
@@ -42,6 +44,19 @@ Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile
 
 ## DESCRIPTION
 Read properties and relationships of the windowsInformationProtectionAppLockerFile object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile -WindowsInformationProtectionPolicyId $windowsInformationProtectionPolicyId
+
+```
+This example shows how to use the Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile Cmdlet.
+
 
 ## PARAMETERS
 
@@ -347,7 +362,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-list?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroledefinition
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgRoleManagementDirectoryRoleDefinition
@@ -36,6 +37,35 @@ New-MgRoleManagementDirectoryRoleDefinition -BodyParameter <IMicrosoftGraphUnifi
 ## DESCRIPTION
 Create a new custom unifiedRoleDefinition object.
 This feature requires a Microsoft Entra ID P1 or P2 license.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-post-roledefinitions-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	description = "Update basic properties of application registrations"
+	displayName = "Application Registration Support Administrator"
+	rolePermissions = @(
+		@{
+			allowedResourceActions = @(
+			"microsoft.directory/applications/basic/read"
+		)
+	}
+)
+isEnabled = $true
+}
+
+New-MgRoleManagementDirectoryRoleDefinition -BodyParameter $params
+
+```
+This example shows how to use the New-MgRoleManagementDirectoryRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 
@@ -428,7 +458,6 @@ Not yet supported.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroledefinition)
 
 [https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-1.0)
-
 
 
 

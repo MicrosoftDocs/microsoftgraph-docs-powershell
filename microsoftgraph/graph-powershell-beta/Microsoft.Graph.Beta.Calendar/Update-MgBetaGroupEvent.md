@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupevent
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Update-MgBetaGroupEvent
@@ -79,6 +80,9 @@ Update-MgBetaGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Update an event object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-update-event-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

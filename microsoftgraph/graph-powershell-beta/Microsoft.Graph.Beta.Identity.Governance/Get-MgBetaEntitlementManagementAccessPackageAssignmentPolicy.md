@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentpolicy
 schema: 2.0.0
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
@@ -59,6 +61,12 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy [-ExpandProperty <S
 
 ## DESCRIPTION
 In Microsoft Entra entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentpolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-accesspackageassignmentpolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get all access package policy assignment policies

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityusercount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportEmailActivityUserCount
@@ -30,6 +31,22 @@ Get-MgReportEmailActivityUserCount -InputObject <IReportsIdentity> -OutFile <Str
 
 ## DESCRIPTION
 Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getemailactivityusercounts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportEmailActivityUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportEmailActivityUserCount Cmdlet.
+
 
 ## PARAMETERS
 
@@ -184,7 +201,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-1.0)
-
 
 
 

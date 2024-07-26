@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationmemberobject
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgApplicationMemberObject
@@ -51,6 +52,9 @@ Get-MgApplicationMemberObject -InputObject <IApplicationsIdentity>
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
 Note: Only users and role-enabled groups can be members of directory roles.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getmemberobjects-permissions.md)]
 
 ## PARAMETERS
 
@@ -259,7 +263,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationmemberobject)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)
-
 
 
 

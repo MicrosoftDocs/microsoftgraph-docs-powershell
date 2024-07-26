@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoremailboxprotectionunit
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaBackupRestoreMailboxProtectionUnit
@@ -36,6 +37,22 @@ Get-MgBetaBackupRestoreMailboxProtectionUnit -InputObject <IBookingsIdentity> [-
 
 ## DESCRIPTION
 The list of mailbox protection units in the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-mailboxprotectionunits-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBackupRestoreMailboxProtectionUnit
+
+```
+This example shows how to use the Get-MgBetaBackupRestoreMailboxProtectionUnit Cmdlet.
+
 
 ## PARAMETERS
 
@@ -332,10 +349,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoremailboxprotectionunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoremailboxprotectionunit)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-list-mailboxprotectionunits?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-list-mailboxprotectionunits?view=graph-rest-beta)
-
-
-
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementMobileAppTroubleshootingEvent
@@ -32,6 +33,23 @@ New-MgDeviceManagementMobileAppTroubleshootingEvent
 
 ## DESCRIPTION
 Create a new mobileAppTroubleshootingEvent object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.mobileAppTroubleshootingEvent"
+}
+
+New-MgDeviceManagementMobileAppTroubleshootingEvent -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementMobileAppTroubleshootingEvent Cmdlet.
+
 
 ## PARAMETERS
 
@@ -215,7 +233,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent)
 
 [https://learn.microsoft.com/graph/api/intune-devices-mobileapptroubleshootingevent-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-mobileapptroubleshootingevent-create?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmanagementtargetedmanagedappconfigurationapp
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp
@@ -53,6 +54,34 @@ Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	apps = @(
+		@{
+			"@odata.type" = "#microsoft.graph.managedMobileApp"
+			mobileAppIdentifier = @{
+				"@odata.type" = "microsoft.graph.androidMobileAppIdentifier"
+				packageId = "Package Id value"
+			}
+			id = "0a129715-9715-0a12-1597-120a1597120a"
+			version = "Version value"
+		}
+	)
+	appGroupType = "allCoreMicrosoftApps"
+}
+
+Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp -TargetedManagedAppConfigurationId $targetedManagedAppConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp Cmdlet.
+
 
 ## PARAMETERS
 
@@ -316,7 +345,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmanagementtargetedmanagedappconfigurationapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmanagementtargetedmanagedappconfigurationapp)
 
 [https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-targetapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-targetapps?view=graph-rest-1.0)
-
 
 
 

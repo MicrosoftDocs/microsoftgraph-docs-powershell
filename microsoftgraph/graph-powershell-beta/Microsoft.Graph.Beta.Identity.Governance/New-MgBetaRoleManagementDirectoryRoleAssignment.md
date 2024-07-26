@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignment
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaRoleManagementDirectoryRoleAssignment
@@ -35,6 +36,9 @@ New-MgBetaRoleManagementDirectoryRoleAssignment -BodyParameter <IMicrosoftGraphU
 
 ## DESCRIPTION
 Create a new unifiedRoleAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-post-roleassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create a role assignment with tenant scope

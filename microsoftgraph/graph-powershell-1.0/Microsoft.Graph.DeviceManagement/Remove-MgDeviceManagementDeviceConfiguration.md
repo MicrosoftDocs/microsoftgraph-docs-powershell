@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfiguration
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceManagementDeviceConfiguration
@@ -31,6 +32,19 @@ Remove-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIden
 
 ## DESCRIPTION
 Deletes a windows10TeamGeneralConfiguration.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Remove-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId $deviceConfigurationId
+
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -248,7 +262,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfiguration)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10teamgeneralconfiguration-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10teamgeneralconfiguration-delete?view=graph-rest-1.0)
-
 
 
 

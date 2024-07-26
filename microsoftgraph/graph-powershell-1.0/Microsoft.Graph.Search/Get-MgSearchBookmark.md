@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchbookmark
 schema: 2.0.0
+ms.subservice: search
+ms.subservice: search
 ---
 
 # Get-MgSearchBookmark
@@ -38,6 +40,25 @@ Get-MgSearchBookmark -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
 
 ## DESCRIPTION
 Read the properties and relationships of a bookmark object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-bookmark-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-searchentity-list-bookmarks-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Search
+
+Get-MgSearchBookmark
+
+```
+This example shows how to use the Get-MgSearchBookmark Cmdlet.
+
 
 ## PARAMETERS
 
@@ -302,7 +323,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/search-bookmark-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/search-searchentity-list-bookmarks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-bookmarks?view=graph-rest-1.0)
-
 
 
 

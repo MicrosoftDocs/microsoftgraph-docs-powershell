@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaextractsecurityinformationprotectionsensitivitylabelcontentlabel
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Invoke-MgBetaExtractSecurityInformationProtectionSensitivityLabelContentLabel
@@ -32,6 +33,9 @@ Invoke-MgBetaExtractSecurityInformationProtectionSensitivityLabelContentLabel
 ## DESCRIPTION
 Use the metadata that exists on an already-labeled piece of information to resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensitivitylabel-extractcontentlabel-permissions.md)]
 
 ## PARAMETERS
 
@@ -201,7 +205,6 @@ Possible values are: file, email.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaextractsecurityinformationprotectionsensitivitylabelcontentlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaextractsecurityinformationprotectionsensitivitylabelcontentlabel)
 
 [https://learn.microsoft.com/graph/api/security-sensitivitylabel-extractcontentlabel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-sensitivitylabel-extractcontentlabel?view=graph-rest-beta)
-
 
 
 

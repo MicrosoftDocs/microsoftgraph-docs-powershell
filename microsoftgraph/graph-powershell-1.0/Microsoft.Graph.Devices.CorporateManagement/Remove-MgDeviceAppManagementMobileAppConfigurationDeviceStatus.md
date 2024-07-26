@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappconfigurationdevicestatus
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatus
@@ -33,6 +34,19 @@ Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatus
 
 ## DESCRIPTION
 Deletes a managedDeviceMobileAppConfigurationDeviceStatus.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatus -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -ManagedDeviceMobileAppConfigurationDeviceStatusId $managedDeviceMobileAppConfigurationDeviceStatusId
+
+```
+This example shows how to use the Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatus Cmdlet.
+
 
 ## PARAMETERS
 
@@ -246,7 +260,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappconfigurationdevicestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappconfigurationdevicestatus)
 
 [https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationdevicestatus-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationdevicestatus-delete?view=graph-rest-1.0)
-
 
 
 

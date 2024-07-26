@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile
@@ -51,6 +52,27 @@ New-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile
 
 ## DESCRIPTION
 Create a new windowsInformationProtectionAppLockerFile object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.windowsInformationProtectionAppLockerFile"
+	displayName = "Display Name value"
+	fileHash = "File Hash value"
+	file = [System.Text.Encoding]::ASCII.GetBytes("ZmlsZQ==")
+	version = "Version value"
+}
+
+New-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile -WindowsInformationProtectionPolicyId $windowsInformationProtectionPolicyId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile Cmdlet.
+
 
 ## PARAMETERS
 
@@ -336,7 +358,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile)
 
 [https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-create?view=graph-rest-1.0)
-
 
 
 

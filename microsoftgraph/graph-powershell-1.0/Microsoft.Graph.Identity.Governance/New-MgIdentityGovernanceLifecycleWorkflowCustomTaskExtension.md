@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowcustomtaskextension
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension
@@ -36,6 +37,46 @@ New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension
 
 ## DESCRIPTION
 Create a new customTaskExtension object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	displayName = "Grant manager access to mailbox and OneDrive"
+	description = "Grant manager access to mailbox and OneDrive"
+	endpointConfiguration = @{
+		"@odata.type" = "#microsoft.graph.logicAppTriggerEndpointConfiguration"
+		subscriptionId = "c500b67c-e9b7-4ad2-a90d-77d41385ae55"
+		resourceGroupName = "RG-LCM"
+		logicAppWorkflowName = "ManagerAccess"
+	}
+	authenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
+		resourceId = "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
+	}
+	clientConfiguration = @{
+		"@odata.type" = "#microsoft.graph.customExtensionClientConfiguration"
+		maximumRetries = 1
+		timeoutInMilliseconds = 1000
+	}
+	callbackConfiguration = @{
+		"@odata.type" = "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration"
+		timeoutDuration = "PT5M"
+	}
+}
+
+New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
+
 
 ## PARAMETERS
 
@@ -14609,7 +14650,6 @@ NOTE: For more information about the permissions for members and guests, see Wha
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowcustomtaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowcustomtaskextension)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceprivilegedaccessgroupassignmentschedulerequestbycurrentuser
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestByCurrentUser
@@ -34,6 +35,22 @@ Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestB
 
 ## DESCRIPTION
 In PIM for groups, retrieve the requests for membership or ownership assignments for the calling principal to groups that are governed by PIM.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser-permissions.md)]
+
+## EXAMPLES
+### Example 1: Retrieve a principal's requests scoped to a specific group and that are pending approval
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestByCurrentUser -Filter "status eq 'PendingApproval' and groupId eq 'd5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc'"  -On $onId 
+
+```
+This example will retrieve a principal's requests scoped to a specific group and that are pending approval
+
 
 ## PARAMETERS
 
@@ -323,7 +340,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceprivilegedaccessgroupassignmentschedulerequestbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceprivilegedaccessgroupassignmentschedulerequestbycurrentuser)
 
 [https://learn.microsoft.com/graph/api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointonpremiseconnection
 schema: 2.0.0
+ms.subservice: cloud-pc
+ms.subservice: cloud-pc
 ---
 
 # Get-MgDeviceManagementVirtualEndpointOnPremiseConnection
@@ -42,6 +44,33 @@ Read the properties and relationships of the cloudPcOnPremisesConnection object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpconpremisesconnection-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-list-onpremisesconnections-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get the default properties of an Azure network connection
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId
+
+```
+This example will get the default properties of an azure network connection
+
+### Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetail
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -Property "id,displayName,healthCheckStatus,healthCheckStatusDetail,inUse" 
+
+```
+This example will get the selected properties of an azure network connection, including healthcheckstatusdetail
+
 
 ## PARAMETERS
 
@@ -322,7 +351,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-1.0)
-
 
 
 

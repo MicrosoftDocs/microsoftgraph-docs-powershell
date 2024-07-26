@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolusereducationuserbyref
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Remove-MgEducationSchoolUserEducationUserByRef
@@ -31,6 +32,22 @@ Remove-MgEducationSchoolUserEducationUserByRef -InputObject <IEducationIdentity>
 
 ## DESCRIPTION
 Delete a user from a school.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-delete-users-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Remove-MgEducationSchoolUserEducationUserByRef -EducationSchoolId $educationSchoolId -EducationUserId $educationUserId
+
+```
+This example shows how to use the Remove-MgEducationSchoolUserEducationUserByRef Cmdlet.
+
 
 ## PARAMETERS
 
@@ -222,7 +239,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolusereducationuserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolusereducationuserbyref)
 
 [https://learn.microsoft.com/graph/api/educationschool-delete-users?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-delete-users?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagemententitlementmanagementrole
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaScheduleRoleManagementEntitlementManagementRole
@@ -22,6 +23,9 @@ Invoke-MgBetaScheduleRoleManagementEntitlementManagementRole [-AppScopeId <Strin
 
 ## DESCRIPTION
 Retrieve both roleAssignmentSchedules and roleEligibilitySchedules.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-roleschedules-permissions.md)]
 
 ## PARAMETERS
 
@@ -266,7 +270,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagemententitlementmanagementrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagemententitlementmanagementrole)
 
 [https://learn.microsoft.com/graph/api/rbacapplication-roleschedules?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-roleschedules?view=graph-rest-beta)
-
 
 
 

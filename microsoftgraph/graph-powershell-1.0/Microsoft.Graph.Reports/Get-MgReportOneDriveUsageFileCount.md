@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagefilecount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportOneDriveUsageFileCount
@@ -32,6 +33,22 @@ Get-MgReportOneDriveUsageFileCount -InputObject <IReportsIdentity> -OutFile <Str
 ## DESCRIPTION
 Get the total number of files across all sites and how many are active files.
 A file is considered active if it has been saved, synced, modified, or shared within the specified time period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getonedriveusagefilecounts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportOneDriveUsageFileCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOneDriveUsageFileCount Cmdlet.
+
 
 ## PARAMETERS
 
@@ -186,7 +203,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagefilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagefilecount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-1.0)
-
 
 
 

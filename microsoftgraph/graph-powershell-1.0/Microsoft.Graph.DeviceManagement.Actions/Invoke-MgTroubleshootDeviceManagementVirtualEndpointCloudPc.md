@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgtroubleshootdevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc
@@ -36,6 +37,19 @@ Use this API to check the health status of the Cloud PC and the session host.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-troubleshoot-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId
+
+```
+This example shows how to use the Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc Cmdlet.
+
 
 ## PARAMETERS
 
@@ -200,7 +214,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgtroubleshootdevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgtroubleshootdevicemanagementvirtualendpointcloudpc)
 
 [https://learn.microsoft.com/graph/api/cloudpc-troubleshoot?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-troubleshoot?view=graph-rest-1.0)
-
 
 
 

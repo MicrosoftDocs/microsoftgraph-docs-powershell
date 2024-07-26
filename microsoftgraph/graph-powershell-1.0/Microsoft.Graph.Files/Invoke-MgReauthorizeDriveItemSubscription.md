@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedriveitemsubscription
 schema: 2.0.0
+ms.subservice: change-notifications
 ---
 
 # Invoke-MgReauthorizeDriveItemSubscription
@@ -233,7 +234,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedriveitemsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedriveitemsubscription)
 
 [https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0)
-
 
 
 

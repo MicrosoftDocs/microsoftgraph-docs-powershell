@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusageunbilled
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Export-MgReportPartnerBillingUsageUnbilled
@@ -36,6 +37,25 @@ Export unbilled Azure usage data for a specific billing period and currency.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-unbilledusage-export-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+$params = @{
+	currencyCode = "USD"
+	attributeSet = "full"
+	billingPeriod = "current"
+}
+
+Export-MgReportPartnerBillingUsageUnbilled -BodyParameter $params
+
+```
+This example shows how to use the Export-MgReportPartnerBillingUsageUnbilled Cmdlet.
+
 
 ## PARAMETERS
 
@@ -218,7 +238,6 @@ BODYPARAMETER `<IPaths1Ajo9DhReportsPartnersBillingUsageUnbilledMicrosoftGraphPa
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusageunbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusageunbilled)
 
 [https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-1.0)
-
 
 
 

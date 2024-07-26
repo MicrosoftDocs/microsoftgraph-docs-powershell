@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledapp
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaUserTeamworkInstalledApp
@@ -39,6 +41,12 @@ Get-MgBetaUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Retrieve the app installed in the personal scope of the specified user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userteamwork-get-installedapps-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userteamwork-list-installedapps-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List apps installed for the specified user

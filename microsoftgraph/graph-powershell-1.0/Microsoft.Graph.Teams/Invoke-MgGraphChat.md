@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphchat
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgGraphChat
@@ -47,6 +48,29 @@ Invoke-MgGraphChat -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <Stri
 
 ## DESCRIPTION
 Unhide a chat for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-unhideforuser-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+$params = @{
+	user = @{
+		id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
+		tenantId = "2a690434-97d9-4eed-83a6-f5f13600199a"
+	}
+}
+
+Invoke-MgGraphChat -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgGraphChat Cmdlet.
+
 
 ## PARAMETERS
 
@@ -320,7 +344,6 @@ For example, if a user changes their display name, the API might show the new va
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphchat)
 
 [https://learn.microsoft.com/graph/api/chat-unhideforuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-unhideforuser?view=graph-rest-1.0)
-
 
 
 

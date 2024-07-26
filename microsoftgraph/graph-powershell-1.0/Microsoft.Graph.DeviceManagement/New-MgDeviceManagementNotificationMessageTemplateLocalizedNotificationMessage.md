@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage
@@ -51,6 +52,27 @@ New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage
 
 ## DESCRIPTION
 Create a new localizedNotificationMessage object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.localizedNotificationMessage"
+	locale = "Locale value"
+	subject = "Subject value"
+	messageTemplate = "Message Template value"
+	isDefault = $true
+}
+
+New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage -NotificationMessageTemplateId $notificationMessageTemplateId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -375,7 +397,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage)
 
 [https://learn.microsoft.com/graph/api/intune-notification-localizednotificationmessage-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-notification-localizednotificationmessage-create?view=graph-rest-1.0)
-
 
 
 

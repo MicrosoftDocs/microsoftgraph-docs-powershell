@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowsetting
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Update-MgIdentityGovernanceLifecycleWorkflowSetting
@@ -33,6 +34,31 @@ Update-MgIdentityGovernanceLifecycleWorkflowSetting
 
 ## DESCRIPTION
 Update the properties of a lifecycleManagementSettings object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-lifecyclemanagementsettings-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	"@odata.context" = "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity"
+	workflowScheduleIntervalInHours = 3
+	emailSettings = @{
+		senderDomain = "ContosoIndustries.net"
+		useCompanyBranding = $true
+	}
+}
+
+Update-MgIdentityGovernanceLifecycleWorkflowSetting -BodyParameter $params
+
+```
+This example shows how to use the Update-MgIdentityGovernanceLifecycleWorkflowSetting Cmdlet.
+
 
 ## PARAMETERS
 
@@ -242,7 +268,6 @@ This value can only be set to true if the organizationalBranding bannerLogo prop
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowsetting)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-update?view=graph-rest-1.0)
-
 
 
 

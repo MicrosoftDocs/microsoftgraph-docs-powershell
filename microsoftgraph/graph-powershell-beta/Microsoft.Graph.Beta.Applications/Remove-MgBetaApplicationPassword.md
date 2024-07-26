@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationpassword
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgBetaApplicationPassword
@@ -47,6 +48,9 @@ Remove-MgBetaApplicationPassword -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Removes a password from an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-removepassword-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

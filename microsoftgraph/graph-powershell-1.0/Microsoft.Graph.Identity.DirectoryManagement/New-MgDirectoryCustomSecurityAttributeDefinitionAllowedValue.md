@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinitionallowedvalue
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
@@ -47,6 +48,27 @@ New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## DESCRIPTION
 Create a new allowedValue object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customsecurityattributedefinition-post-allowedvalues-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = @{
+	id = "Alpine"
+	isActive = "true"
+}
+
+New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue Cmdlet.
+
 
 ## PARAMETERS
 
@@ -277,7 +299,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinitionallowedvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinitionallowedvalue)
 
 [https://learn.microsoft.com/graph/api/customsecurityattributedefinition-post-allowedvalues?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-post-allowedvalues?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenanttag
 schema: 2.0.0
+ms.subservice: m365-lighthouse
 ---
 
 # Remove-MgBetaTenantRelationshipManagedTenantTag
@@ -28,6 +29,9 @@ Remove-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIde
 
 ## DESCRIPTION
 Delete a tenantTag object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

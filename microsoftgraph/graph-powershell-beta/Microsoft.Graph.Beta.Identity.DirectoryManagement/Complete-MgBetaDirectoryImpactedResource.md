@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryimpactedresource
 schema: 2.0.0
+ms.subservice: entra-monitoring-health
 ---
 
 # Complete-MgBetaDirectoryImpactedResource
@@ -210,7 +211,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryimpactedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryimpactedresource)
 
 [https://learn.microsoft.com/graph/api/impactedresource-complete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/impactedresource-complete?view=graph-rest-beta)
-
 
 
 

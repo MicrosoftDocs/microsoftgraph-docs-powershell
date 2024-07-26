@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitecontenttypecopyfromcontenttypehub
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgSiteContentTypeCopyFromContentTypeHub
@@ -284,7 +285,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitecontenttypecopyfromcontenttypehub](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitecontenttypecopyfromcontenttypehub)
 
 [https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-1.0)
-
 
 
 

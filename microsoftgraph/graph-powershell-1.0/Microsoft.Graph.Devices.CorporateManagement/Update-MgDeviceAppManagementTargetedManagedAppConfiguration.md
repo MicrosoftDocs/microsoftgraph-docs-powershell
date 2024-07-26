@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementtargetedmanagedappconfiguration
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceAppManagementTargetedManagedAppConfiguration
@@ -55,6 +56,35 @@ Update-MgDeviceAppManagementTargetedManagedAppConfiguration -InputObject <IDevic
 
 ## DESCRIPTION
 Update the properties of a targetedManagedAppConfiguration object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.targetedManagedAppConfiguration"
+	displayName = "Display Name value"
+	description = "Description value"
+	version = "Version value"
+	customSettings = @(
+		@{
+			"@odata.type" = "microsoft.graph.keyValuePair"
+			name = "Name value"
+			value = "Value value"
+		}
+	)
+	deployedAppCount = 0
+	isAssigned = $true
+}
+
+Update-MgDeviceAppManagementTargetedManagedAppConfiguration -TargetedManagedAppConfigurationId $targetedManagedAppConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementTargetedManagedAppConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -507,7 +537,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementtargetedmanagedappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementtargetedmanagedappconfiguration)
 
 [https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-update?view=graph-rest-1.0)
-
 
 
 

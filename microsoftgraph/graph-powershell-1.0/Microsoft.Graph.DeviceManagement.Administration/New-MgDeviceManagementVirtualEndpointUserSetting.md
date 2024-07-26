@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersetting
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # New-MgDeviceManagementVirtualEndpointUserSetting
@@ -33,6 +34,32 @@ New-MgDeviceManagementVirtualEndpointUserSetting -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Create a new cloudPcUserSetting object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-post-usersettings-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.cloudPcUserSetting"
+	displayName = "Example"
+	localAdminEnabled = $true
+	restorePointSetting = @{
+		frequencyType = "sixteenHours"
+		userRestoreEnabled = $true
+	}
+}
+
+New-MgDeviceManagementVirtualEndpointUserSetting -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementVirtualEndpointUserSetting Cmdlet.
+
 
 ## PARAMETERS
 
@@ -351,7 +378,6 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersetting)
 
 [https://learn.microsoft.com/graph/api/virtualendpoint-post-usersettings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-post-usersettings?view=graph-rest-1.0)
-
 
 
 

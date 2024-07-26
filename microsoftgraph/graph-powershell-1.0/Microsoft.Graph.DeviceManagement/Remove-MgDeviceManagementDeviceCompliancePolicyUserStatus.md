@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicyuserstatus
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceManagementDeviceCompliancePolicyUserStatus
@@ -32,6 +33,19 @@ Remove-MgDeviceManagementDeviceCompliancePolicyUserStatus -InputObject <IDeviceM
 
 ## DESCRIPTION
 Deletes a deviceComplianceUserStatus.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Remove-MgDeviceManagementDeviceCompliancePolicyUserStatus -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceComplianceUserStatusId $deviceComplianceUserStatusId
+
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceCompliancePolicyUserStatus Cmdlet.
+
 
 ## PARAMETERS
 
@@ -264,7 +278,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicyuserstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicyuserstatus)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceuserstatus-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceuserstatus-delete?view=graph-rest-1.0)
-
 
 
 

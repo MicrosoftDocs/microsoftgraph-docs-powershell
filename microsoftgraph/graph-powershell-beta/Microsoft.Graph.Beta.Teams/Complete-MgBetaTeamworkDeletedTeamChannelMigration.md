@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamworkdeletedteamchannelmigration
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Complete-MgBetaTeamworkDeletedTeamChannelMigration
@@ -244,7 +245,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamworkdeletedteamchannelmigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamworkdeletedteamchannelmigration)
 
 [https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-beta)
-
 
 
 

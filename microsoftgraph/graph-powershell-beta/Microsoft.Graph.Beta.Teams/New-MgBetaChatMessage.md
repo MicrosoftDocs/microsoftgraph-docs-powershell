@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatmessage
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgBetaChatMessage
@@ -63,6 +64,9 @@ New-MgBetaChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Send a new chatMessage in the specified channel or a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Send inline images along with the message

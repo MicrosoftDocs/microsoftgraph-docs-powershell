@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetacommunicationpresenceuserpreferredpresence
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Clear-MgBetaCommunicationPresenceUserPreferredPresence
@@ -201,7 +202,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetacommunicationpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetacommunicationpresenceuserpreferredpresence)
 
 [https://learn.microsoft.com/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta](https://learn.microsoft.com/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta)
-
 
 
 

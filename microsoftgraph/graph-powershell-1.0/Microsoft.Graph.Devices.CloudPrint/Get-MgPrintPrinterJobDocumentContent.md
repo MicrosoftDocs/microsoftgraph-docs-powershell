@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjobdocumentcontent
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # Get-MgPrintPrinterJobDocumentContent
@@ -33,6 +34,22 @@ Get-MgPrintPrinterJobDocumentContent -InputObject <IDevicesCloudPrintIdentity> -
 ## DESCRIPTION
 Download the binary file associated with a printDocument.
 Calling this method yields a redirect response with a preauthenticated URL that can be used to download the payload.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printdocument-get-file-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+Get-MgPrintPrinterJobDocumentContent -PrinterId $printerId -PrintJobId $printJobId -PrintDocumentId $printDocumentId -OutFile $outFileId
+
+```
+This example shows how to use the Get-MgPrintPrinterJobDocumentContent Cmdlet.
+
 
 ## PARAMETERS
 
@@ -208,7 +225,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjobdocumentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjobdocumentcontent)
 
 [https://learn.microsoft.com/graph/api/printdocument-get-file?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printdocument-get-file?view=graph-rest-1.0)
-
 
 
 

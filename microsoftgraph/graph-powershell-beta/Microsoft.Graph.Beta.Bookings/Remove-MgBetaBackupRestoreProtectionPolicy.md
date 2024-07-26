@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabackuprestoreprotectionpolicy
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Remove-MgBetaBackupRestoreProtectionPolicy
@@ -30,6 +31,22 @@ Remove-MgBetaBackupRestoreProtectionPolicy -InputObject <IBookingsIdentity> [-If
 ## DESCRIPTION
 Delete a protection policy.
 Read the properties and relationships of a protectionPolicyBase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionpolicybase-delete-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Remove-MgBetaBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
+
+```
+This example shows how to use the Remove-MgBetaBackupRestoreProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -236,8 +253,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabackuprestoreprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabackuprestoreprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/protectionpolicybase-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/protectionpolicybase-delete?view=graph-rest-beta)
-
-
 
 
 

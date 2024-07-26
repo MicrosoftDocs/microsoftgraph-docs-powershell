@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationonlinemeetingvirtualappointmentsm
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Send-MgCommunicationOnlineMeetingVirtualAppointmentSm
@@ -53,6 +54,9 @@ Send-MgCommunicationOnlineMeetingVirtualAppointmentSm -InputObject <ICloudCommun
 Send an SMS notification to external attendees when a Teams virtual appointment is confirmed, rescheduled, or canceled.
 This feature requires Teams premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualappointment-sendvirtualappointmentsms-permissions.md)]
 
 ## PARAMETERS
 
@@ -295,7 +299,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationonlinemeetingvirtualappointmentsm](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationonlinemeetingvirtualappointmentsm)
 
 [https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactbyid
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgContactById
@@ -205,7 +206,6 @@ BODYPARAMETER `<IPaths12Azg33ContactsMicrosoftGraphGetbyidsPostRequestbodyConten
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactbyid)
 
 [https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowuserprocessingresulttaskprocessingresult
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult
@@ -42,6 +43,33 @@ Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResul
 
 ## DESCRIPTION
 The associated individual task execution.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-userprocessingresult-list-taskprocessingresults-permissions.md)]
+
+## EXAMPLES
+### Example 1: List the results of the tasks processed for a user in a workflow
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult -WorkflowId $workflowId -UserProcessingResultId $userProcessingResultId
+
+```
+This example will list the results of the tasks processed for a user in a workflow
+
+### Example 2: List the results of the tasks processed for a user in a workflow and select specific properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult -WorkflowId $workflowId -UserProcessingResultId $userProcessingResultId -Property "id,processingStatus,failureReason,subject,task" 
+
+```
+This example will list the results of the tasks processed for a user in a workflow and select specific properties
+
 
 ## PARAMETERS
 
@@ -392,7 +420,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowuserprocessingresulttaskprocessingresult](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowuserprocessingresulttaskprocessingresult)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-userprocessingresult-list-taskprocessingresults?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-userprocessingresult-list-taskprocessingresults?view=graph-rest-1.0)
-
 
 
 

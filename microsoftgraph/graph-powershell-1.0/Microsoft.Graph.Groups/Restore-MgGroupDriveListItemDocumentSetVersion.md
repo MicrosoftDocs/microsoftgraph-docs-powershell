@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdrivelistitemdocumentsetversion
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Restore-MgGroupDriveListItemDocumentSetVersion
@@ -31,6 +32,9 @@ Restore-MgGroupDriveListItemDocumentSetVersion -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Restore a document set version.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-restore-permissions.md)]
 
 ## PARAMETERS
 
@@ -265,7 +269,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdrivelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdrivelistitemdocumentsetversion)
 
 [https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0)
-
 
 
 

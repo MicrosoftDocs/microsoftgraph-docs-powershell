@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfigurationassignment
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
@@ -47,6 +48,27 @@ New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
 
 ## DESCRIPTION
 Create a new enrollmentConfigurationAssignment object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.enrollmentConfigurationAssignment"
+	target = @{
+		"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+		collectionId = "Collection Id value"
+	}
+}
+
+New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment -DeviceEnrollmentConfigurationId $deviceEnrollmentConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -254,7 +276,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfigurationassignment)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-enrollmentconfigurationassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-enrollmentconfigurationassignment-create?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganization
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaTenantRelationshipMultiTenantOrganization
@@ -23,6 +24,9 @@ Get-MgBetaTenantRelationshipMultiTenantOrganization [-ExpandProperty <String[]>]
 
 ## DESCRIPTION
 Get properties of the multitenant organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganization-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

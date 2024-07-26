@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserdrivelistcontenttypecopyfromcontenttypehub
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub
@@ -296,7 +297,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserdrivelistcontenttypecopyfromcontenttypehub](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserdrivelistcontenttypecopyfromcontenttypehub)
 
 [https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-beta)
-
 
 
 

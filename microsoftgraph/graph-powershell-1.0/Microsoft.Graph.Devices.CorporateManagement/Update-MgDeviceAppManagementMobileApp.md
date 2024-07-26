@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceAppManagementMobileApp
@@ -54,6 +55,56 @@ Update-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
 
 ## DESCRIPTION
 Update the properties of a iosStoreApp object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.iosStoreApp"
+	displayName = "Display Name value"
+	description = "Description value"
+	publisher = "Publisher value"
+	largeIcon = @{
+		"@odata.type" = "microsoft.graph.mimeContent"
+		type = "Type value"
+		value = [System.Text.Encoding]::ASCII.GetBytes("dmFsdWU=")
+	}
+	isFeatured = $true
+	privacyInformationUrl = "https://example.com/privacyInformationUrl/"
+	informationUrl = "https://example.com/informationUrl/"
+	owner = "Owner value"
+	developer = "Developer value"
+	notes = "Notes value"
+	publishingState = "processing"
+	bundleId = "Bundle Id value"
+	appStoreUrl = "https://example.com/appStoreUrl/"
+	applicableDeviceType = @{
+		"@odata.type" = "microsoft.graph.iosDeviceType"
+		iPad = $true
+		iPhoneAndIPod = $true
+	}
+	minimumSupportedOperatingSystem = @{
+		"@odata.type" = "microsoft.graph.iosMinimumOperatingSystem"
+		v8_0 = $true
+		v9_0 = $true
+		v10_0 = $true
+		v11_0 = $true
+		v12_0 = $true
+		v13_0 = $true
+		v14_0 = $true
+		v15_0 = $true
+	}
+}
+
+Update-MgDeviceAppManagementMobileApp -MobileAppId $mobileAppId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementMobileApp Cmdlet.
+
 
 ## PARAMETERS
 
@@ -524,7 +575,6 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp)
 
 [https://learn.microsoft.com/graph/api/intune-apps-iosstoreapp-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-iosstoreapp-update?view=graph-rest-1.0)
-
 
 
 

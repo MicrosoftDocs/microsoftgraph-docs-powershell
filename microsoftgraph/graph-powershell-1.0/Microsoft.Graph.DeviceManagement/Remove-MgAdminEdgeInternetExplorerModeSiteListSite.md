@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgadminedgeinternetexplorermodesitelistsite
 schema: 2.0.0
+ms.subservice: edge-browser-management
 ---
 
 # Remove-MgAdminEdgeInternetExplorerModeSiteListSite
@@ -31,6 +32,33 @@ Remove-MgAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManageme
 
 ## DESCRIPTION
 Delete a browserSite from a browserSiteList.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-delete-sites-permissions.md)]
+
+## EXAMPLES
+### Example 1: Delete a site that was not previously published
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Remove-MgAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BrowserSiteId $browserSiteId
+
+```
+This example will delete a site that was not previously published
+
+### Example 2: Delete a site that was previously published
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Remove-MgAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BrowserSiteId $browserSiteId
+
+```
+This example will delete a site that was previously published
+
 
 ## PARAMETERS
 
@@ -263,7 +291,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgadminedgeinternetexplorermodesitelistsite)
 
 [https://learn.microsoft.com/graph/api/browsersitelist-delete-sites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-delete-sites?view=graph-rest-1.0)
-
 
 
 

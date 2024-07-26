@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignment
 schema: 2.0.0
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgEntitlementManagementAssignment
@@ -48,6 +50,12 @@ Get-MgEntitlementManagementAssignment [-ExpandProperty <String[]>] [-Property <S
 
 ## DESCRIPTION
 In Microsoft Entra entitlement management, retrieve the properties and relationships of an accessPackageAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-list-assignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1cenario1 for u1ing query parameter1

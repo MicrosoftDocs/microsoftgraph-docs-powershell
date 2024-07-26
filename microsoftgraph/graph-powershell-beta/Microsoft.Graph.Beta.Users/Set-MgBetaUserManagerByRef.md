@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Set-MgBetaUserManagerByRef
@@ -45,6 +46,9 @@ Set-MgBetaUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <IRefere
 
 ## DESCRIPTION
 Assign a user's manager.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-manager-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update a user's manager

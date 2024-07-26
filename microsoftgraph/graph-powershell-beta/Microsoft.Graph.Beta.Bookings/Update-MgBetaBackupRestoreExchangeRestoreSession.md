@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoreexchangerestoresession
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Update-MgBetaBackupRestoreExchangeRestoreSession
@@ -48,6 +49,69 @@ Update-MgBetaBackupRestoreExchangeRestoreSession -InputObject <IBookingsIdentity
 
 ## DESCRIPTION
 Update the properties of an exchangeRestoreSession.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/exchangerestoresession-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	"mailboxRestoreArtifacts@delta" = @(
+		@{
+			restorePoint = @{
+				"@odata.id" = "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
+			}
+			destinationType = "inPlace"
+		}
+		@{
+			restorePoint = @{
+				"@odata.id" = "2b014d8c-71fe-4d00-a01a-31850bc5b32"
+			}
+			destinationType = "inPlace"
+		}
+		@{
+			restorePoint = @{
+				"@odata.id" = "3b014d8c-71fe-4d00-a01a-31850bc5b32c"
+			}
+			destinationType = "inPlace"
+		}
+		@{
+			restorePoint = @{
+				"@odata.id" = "4b014d8c-71fe-4d00-a01a-31850bc5b32c"
+			}
+			destinationType = "inPlace"
+		}
+		@{
+			"@removed" = @{
+				reason = "changed"
+			}
+			id = "99954f18-c8ec-4b62-85bf-cdf3b70b140e"
+		}
+		@{
+			"@removed" = @{
+				reason = "changed"
+			}
+			id = "4267e382-71a9-4c07-bef7-bda97e09c0d2"
+		}
+		@{
+			"@removed" = @{
+				reason = "changed"
+			}
+			id = "3667e382-71a9-4c07-bef7-bda97e09c0d2"
+		}
+	)
+}
+
+Update-MgBetaBackupRestoreExchangeRestoreSession -ExchangeRestoreSessionId $exchangeRestoreSessionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaBackupRestoreExchangeRestoreSession Cmdlet.
+
 
 ## PARAMETERS
 
@@ -547,8 +611,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoreexchangerestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoreexchangerestoresession)
 
 [https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-beta)
-
-
 
 
 

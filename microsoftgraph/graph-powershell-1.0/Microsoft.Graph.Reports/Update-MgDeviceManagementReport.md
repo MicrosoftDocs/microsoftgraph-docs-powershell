@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementReport
@@ -31,6 +32,23 @@ Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementR
 
 ## DESCRIPTION
 Update the properties of a deviceManagementReports object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceManagementReports"
+}
+
+Update-MgDeviceManagementReport -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementReport Cmdlet.
+
 
 ## PARAMETERS
 
@@ -232,7 +250,6 @@ Filter, Select, and OrderBy cannot be specified together with a CachedReportConf
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport)
 
 [https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-update?view=graph-rest-1.0)
-
 
 
 

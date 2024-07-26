@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementauditevent
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceManagementAuditEvent
@@ -31,6 +32,19 @@ Remove-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministratio
 
 ## DESCRIPTION
 Deletes a auditEvent.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Remove-MgDeviceManagementAuditEvent -AuditEventId $auditEventId
+
+```
+This example shows how to use the Remove-MgDeviceManagementAuditEvent Cmdlet.
+
 
 ## PARAMETERS
 
@@ -219,7 +233,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementauditevent)
 
 [https://learn.microsoft.com/graph/api/intune-auditing-auditevent-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-delete?view=graph-rest-1.0)
-
 
 
 

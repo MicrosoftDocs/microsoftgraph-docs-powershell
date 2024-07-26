@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementroledefinitionroleassignment
 schema: 2.0.0
+ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementRoleDefinitionRoleAssignment
@@ -39,6 +41,19 @@ Get-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManageme
 
 ## DESCRIPTION
 Read properties and relationships of the roleAssignment object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementRoleDefinitionRoleAssignment -RoleDefinitionId $roleDefinitionId
+
+```
+This example shows how to use the Get-MgDeviceManagementRoleDefinitionRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -334,7 +349,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-list?view=graph-rest-1.0)
-
 
 
 

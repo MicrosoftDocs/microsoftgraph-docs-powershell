@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Update-MgEntitlementManagementAssignment
@@ -68,6 +69,22 @@ Update-MgEntitlementManagementAssignment -InputObject <IIdentityGovernanceIdenti
 In Microsoft Entra entitlement management, callers can automatically reevaluate and enforce an accessPackageAssignment object of a user's assignments for a specific access package.
 The state of the access package assignment must be Delivered for the administrator to reprocess the user's assignment.
 Only admins with the Access Package Assignment Manager role, or higher, in Microsoft Entra entitlement management can perform this action.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignment-reprocess-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Update-MgEntitlementManagementAssignment -AccessPackageAssignmentId $accessPackageAssignmentId
+
+```
+This example shows how to use the Update-MgEntitlementManagementAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -15484,7 +15501,6 @@ null if the subject isn't yet a user in the tenant.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment)
 
 [https://learn.microsoft.com/graph/api/accesspackageassignment-reprocess?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignment-reprocess?view=graph-rest-1.0)
-
 
 
 

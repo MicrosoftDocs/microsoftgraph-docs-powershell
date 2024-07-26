@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelmember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgBetaTeamChannelMember
@@ -33,6 +34,9 @@ Remove-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a conversationMember from a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-delete-members-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

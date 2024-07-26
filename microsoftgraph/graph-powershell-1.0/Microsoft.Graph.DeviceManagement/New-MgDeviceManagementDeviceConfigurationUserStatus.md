@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationuserstatus
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementDeviceConfigurationUserStatus
@@ -49,6 +50,28 @@ New-MgDeviceManagementDeviceConfigurationUserStatus -InputObject <IDeviceManagem
 
 ## DESCRIPTION
 Create a new deviceConfigurationUserStatus object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceConfigurationUserStatus"
+	userDisplayName = "User Display Name value"
+	devicesCount = 12
+	status = "notApplicable"
+	lastReportedDateTime = [System.DateTime]::Parse("2017-01-01T00:00:17.7769392-08:00")
+	userPrincipalName = "User Principal Name value"
+}
+
+New-MgDeviceManagementDeviceConfigurationUserStatus -DeviceConfigurationId $deviceConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceConfigurationUserStatus Cmdlet.
+
 
 ## PARAMETERS
 
@@ -369,7 +392,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationuserstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationuserstatus)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationuserstatus-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationuserstatus-create?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckindriveitem
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgCheckinDriveItem
@@ -47,6 +48,9 @@ Invoke-MgCheckinDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariabl
 
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-checkin-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

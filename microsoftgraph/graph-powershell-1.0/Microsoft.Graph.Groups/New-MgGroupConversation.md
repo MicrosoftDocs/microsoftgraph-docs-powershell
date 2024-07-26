@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # New-MgGroupConversation
@@ -49,6 +50,46 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Use reply thread or reply post to further post to that conversation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-conversations-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+$params = @{
+	topic = "Take your wellness days and rest"
+	threads = @(
+		@{
+			posts = @(
+				@{
+					body = @{
+						contentType = "html"
+						content = "Contoso cares about you: Rest and Recharge"
+					}
+					newParticipants = @(
+						@{
+							emailAddress = @{
+								name = "Adele Vance"
+								address = "AdeleV@contoso.com"
+							}
+						}
+					)
+				}
+			)
+		}
+	)
+}
+
+New-MgGroupConversation -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgGroupConversation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -554,7 +595,6 @@ Returned by default.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation)
 
 [https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-1.0)
-
 
 
 

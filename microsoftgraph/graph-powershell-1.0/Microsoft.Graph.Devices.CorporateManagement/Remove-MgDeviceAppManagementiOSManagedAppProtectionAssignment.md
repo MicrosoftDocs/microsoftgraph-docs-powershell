@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementiosmanagedappprotectionassignment
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceAppManagementiOSManagedAppProtectionAssignment
@@ -33,6 +34,19 @@ Remove-MgDeviceAppManagementiOSManagedAppProtectionAssignment
 
 ## DESCRIPTION
 Deletes a targetedManagedAppPolicyAssignment.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+Remove-MgDeviceAppManagementiOSManagedAppProtectionAssignment -IosManagedAppProtectionId $iosManagedAppProtectionId -TargetedManagedAppPolicyAssignmentId $targetedManagedAppPolicyAssignmentId
+
+```
+This example shows how to use the Remove-MgDeviceAppManagementiOSManagedAppProtectionAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -246,7 +260,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementiosmanagedappprotectionassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementiosmanagedappprotectionassignment)
 
 [https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedapppolicyassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedapppolicyassignment-delete?view=graph-rest-1.0)
-
 
 
 

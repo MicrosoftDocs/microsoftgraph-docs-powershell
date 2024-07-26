@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsite
 schema: 2.0.0
+ms.subservice: edge-browser-management
 ---
 
 # Update-MgAdminEdgeInternetExplorerModeSiteListSite
@@ -55,6 +56,31 @@ Update-MgAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManageme
 
 ## DESCRIPTION
 Update the properties of a browserSite object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersite-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	webUrl = "www.microsoft.com"
+	targetEnvironment = "microsoftEdge"
+	mergeType = "default"
+	compatibilityMode = "default"
+	allowRedirect = $false
+	comment = "Updating to Edge."
+}
+
+Update-MgAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BrowserSiteId $browserSiteId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgAdminEdgeInternetExplorerModeSiteListSite Cmdlet.
+
 
 ## PARAMETERS
 
@@ -556,7 +582,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsite)
 
 [https://learn.microsoft.com/graph/api/browsersite-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersite-update?view=graph-rest-1.0)
-
 
 
 

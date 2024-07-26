@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoresession
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Initialize-MgBetaBackupRestoreSession
@@ -26,6 +27,22 @@ Initialize-MgBetaBackupRestoreSession -InputObject <IBookingsIdentity> [-Respons
 
 ## DESCRIPTION
 Activate a draft restoreSessionBase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/restoresessionbase-activate-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Initialize-MgBetaBackupRestoreSession -RestoreSessionBaseId $restoreSessionBaseId
+
+```
+This example shows how to use the Initialize-MgBetaBackupRestoreSession Cmdlet.
+
 
 ## PARAMETERS
 
@@ -202,8 +219,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/initialize-mgbetabackuprestoresession)
 
 [https://learn.microsoft.com/graph/api/restoresessionbase-activate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/restoresessionbase-activate?view=graph-rest-beta)
-
-
 
 
 

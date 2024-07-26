@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberofasgroup
 schema: 2.0.0
+ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgGroupMemberOfAsGroup
@@ -43,6 +45,26 @@ Get-MgGroupMemberOfAsGroup -InputObject <IGroupsIdentity> [-ExpandProperty <Stri
 Get groups that the group is a direct member of.
 This operation is not transitive.
 Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-memberof-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-memberof-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+Get-MgGroupMemberOfAsGroup -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'A')"  -ConsistencyLevel eventual 
+
+
+```
+This example shows how to use the Get-MgGroupMemberOfAsGroup Cmdlet.
+
 
 ## PARAMETERS
 
@@ -368,7 +390,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberofasgroup)
 
 [https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-1.0)
-
 
 
 

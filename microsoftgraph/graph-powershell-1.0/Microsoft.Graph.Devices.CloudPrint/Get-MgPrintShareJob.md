@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharejob
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # Get-MgPrintShareJob
@@ -39,6 +40,22 @@ Get-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 The list of jobs that are queued for printing by the printer/printerShare.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-list-jobs-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+Get-MgPrintShareJob -PrinterShareId $printerShareId
+
+```
+This example shows how to use the Get-MgPrintShareJob Cmdlet.
+
 
 ## PARAMETERS
 
@@ -320,7 +337,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharejob)
 
 [https://learn.microsoft.com/graph/api/printershare-list-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-list-jobs?view=graph-rest-1.0)
-
 
 
 

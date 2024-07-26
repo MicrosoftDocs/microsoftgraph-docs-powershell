@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowuserattributeassignmentorder
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder
@@ -31,6 +32,22 @@ Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentitySig
 
 ## DESCRIPTION
 Get the order of identityUserFlowAttributeAssignments being collected within a user flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityuserflowattributeassignment-getorder-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -B2xIdentityUserFlowId $b2xIdentityUserFlowId
+
+```
+This example shows how to use the Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder Cmdlet.
+
 
 ## PARAMETERS
 
@@ -191,7 +208,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowuserattributeassignmentorder](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowuserattributeassignmentorder)
 
 [https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-getorder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-getorder?view=graph-rest-1.0)
-
 
 
 

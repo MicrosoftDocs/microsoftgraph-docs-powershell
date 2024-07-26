@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftchatmessagereplydelete
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgBetaSoftChatMessageReplyDelete
@@ -31,6 +32,9 @@ Invoke-MgBetaSoftChatMessageReplyDelete -InputObject <ITeamsIdentity> [-Response
 
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-softdelete-permissions.md)]
 
 ## PARAMETERS
 
@@ -250,7 +254,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftchatmessagereplydelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftchatmessagereplydelete)
 
 [https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-beta)
-
 
 
 

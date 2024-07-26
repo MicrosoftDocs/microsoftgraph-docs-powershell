@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # New-MgSecurityAttackSimulation
@@ -40,6 +41,9 @@ New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-Resp
 
 ## DESCRIPTION
 Create an attack simulation campaign for a tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-post-simulation-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

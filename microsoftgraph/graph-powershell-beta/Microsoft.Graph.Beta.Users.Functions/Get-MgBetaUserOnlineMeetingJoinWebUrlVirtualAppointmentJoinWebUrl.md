@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronlinemeetingjoinweburlvirtualappointmentjoinweburl
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentJoinWebUrl
@@ -190,7 +191,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronlinemeetingjoinweburlvirtualappointmentjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronlinemeetingjoinweburlvirtualappointmentjoinweburl)
 
 [https://learn.microsoft.com/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-beta)
-
 
 
 

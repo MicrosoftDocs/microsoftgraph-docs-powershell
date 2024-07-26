@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjobondemand
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgApplicationSynchronizationJobOnDemand
@@ -51,6 +52,9 @@ New-MgApplicationSynchronizationJobOnDemand -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-provisionondemand-permissions.md)]
 
 ## PARAMETERS
 
@@ -303,7 +307,6 @@ Worker for synchronization a user between Workday and either Active Directory or
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjobondemand](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjobondemand)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-provisionondemand?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-provisionondemand?view=graph-rest-1.0)
-
 
 
 

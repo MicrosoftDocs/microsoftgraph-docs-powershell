@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatus
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementTermAndConditionAcceptanceStatus
@@ -53,6 +54,27 @@ Update-MgDeviceManagementTermAndConditionAcceptanceStatus
 
 ## DESCRIPTION
 Update the properties of a termsAndConditionsAcceptanceStatus object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.termsAndConditionsAcceptanceStatus"
+	userDisplayName = "User Display Name value"
+	acceptedVersion = 15
+	acceptedDateTime = [System.DateTime]::Parse("2016-12-31T23:57:43.6165506-08:00")
+	userPrincipalName = "User Principal Name value"
+}
+
+Update-MgDeviceManagementTermAndConditionAcceptanceStatus -TermsAndConditionsId $termsAndConditionsId -TermsAndConditionsAcceptanceStatusId $termsAndConditionsAcceptanceStatusId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementTermAndConditionAcceptanceStatus Cmdlet.
+
 
 ## PARAMETERS
 
@@ -421,7 +443,6 @@ Incremented when an administrator makes a change to the terms and wishes to requ
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatus)
 
 [https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsacceptancestatus-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsacceptancestatus-update?view=graph-rest-1.0)
-
 
 
 

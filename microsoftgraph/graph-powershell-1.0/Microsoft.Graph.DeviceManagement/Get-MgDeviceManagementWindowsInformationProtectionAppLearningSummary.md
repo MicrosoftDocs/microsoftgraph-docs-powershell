@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementwindowsinformationprotectionapplearningsummary
 schema: 2.0.0
+ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
@@ -40,6 +42,19 @@ Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary -InputObjec
 
 ## DESCRIPTION
 Read properties and relationships of the windowsInformationProtectionAppLearningSummary object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
+
+```
+This example shows how to use the Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -349,7 +364,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionapplearningsummary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionapplearningsummary-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionapplearningsummary-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionapplearningsummary-list?view=graph-rest-1.0)
-
 
 
 

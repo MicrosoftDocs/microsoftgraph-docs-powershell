@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemasgroup
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryDeletedItemAsGroup
@@ -41,6 +43,30 @@ Get-MgDirectoryDeletedItemAsGroup -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Retrieve a list of recently deleted directory objects.
 Currently, deleted items functionality is only supported for the application, servicePrincipal, group, administrative unit, and user resources.
+
+## EXAMPLES
+### Example 1: Retrieve deleted groups
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDirectoryDeletedItemAsGroup
+
+```
+This example will retrieve deleted groups
+
+### Example 2: Retrieve the count of deleted user objects and order the results by the deletedDateTime property
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDirectoryDeletedItemAsGroup -CountVariable CountVar -Sort "deletedDateTime asc" -Property "id,DisplayName,deletedDateTime" 
+
+```
+This example will retrieve the count of deleted user objects and order the results by the deleteddatetime property
+
 
 ## PARAMETERS
 
@@ -320,7 +346,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemasgroup)
 
 [https://learn.microsoft.com/graph/api/directory-deleteditems-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-deleteditems-list?view=graph-rest-1.0)
-
 
 
 

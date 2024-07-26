@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserplannerplanbuckettaskdelta
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Get-MgBetaUserPlannerPlanBucketTaskDelta
@@ -371,7 +372,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserplannerplanbuckettaskdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserplannerplanbuckettaskdelta)
 
 [https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta)
-
 
 
 

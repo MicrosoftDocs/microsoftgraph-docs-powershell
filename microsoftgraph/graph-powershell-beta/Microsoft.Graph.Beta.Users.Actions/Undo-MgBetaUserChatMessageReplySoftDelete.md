@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagereplysoftdelete
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Undo-MgBetaUserChatMessageReplySoftDelete
@@ -268,7 +269,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagereplysoftdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagereplysoftdelete)
 
 [https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-beta)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementroleassignment
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceManagementRoleAssignment
@@ -31,6 +32,19 @@ Remove-MgDeviceManagementRoleAssignment -InputObject <IDeviceManagementAdministr
 
 ## DESCRIPTION
 Deletes a deviceAndAppManagementRoleAssignment.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Remove-MgDeviceManagementRoleAssignment -DeviceAndAppManagementRoleAssignmentId $deviceAndAppManagementRoleAssignmentId
+
+```
+This example shows how to use the Remove-MgDeviceManagementRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -219,7 +233,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementroleassignment)
 
 [https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroleassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroleassignment-delete?view=graph-rest-1.0)
-
 
 
 

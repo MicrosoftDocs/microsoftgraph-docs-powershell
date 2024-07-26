@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertaskbuckettaskboardformat
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Get-MgPlannerTaskBucketTaskBoardFormat
@@ -31,6 +32,9 @@ Get-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> [-ExpandP
 
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerbuckettaskboardtaskformat-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

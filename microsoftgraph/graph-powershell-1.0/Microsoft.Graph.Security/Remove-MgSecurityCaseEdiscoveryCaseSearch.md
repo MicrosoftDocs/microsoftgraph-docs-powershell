@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearch
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Remove-MgSecurityCaseEdiscoveryCaseSearch
@@ -31,6 +32,9 @@ Remove-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity> [-IfM
 
 ## DESCRIPTION
 Delete an ediscoverySearch object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-delete-searches-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

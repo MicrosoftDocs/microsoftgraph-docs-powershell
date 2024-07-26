@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatesummary
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary
@@ -33,6 +34,30 @@ Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary
 
 ## DESCRIPTION
 Update the properties of a deviceConfigurationDeviceStateSummary object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceConfigurationDeviceStateSummary"
+	unknownDeviceCount = 2
+	notApplicableDeviceCount = 8
+	compliantDeviceCount = 4
+	remediatedDeviceCount = 5
+	nonCompliantDeviceCount = 7
+	errorDeviceCount = 0
+	conflictDeviceCount = 3
+}
+
+Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -297,7 +322,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatesummary)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatesummary-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatesummary-update?view=graph-rest-1.0)
-
 
 
 

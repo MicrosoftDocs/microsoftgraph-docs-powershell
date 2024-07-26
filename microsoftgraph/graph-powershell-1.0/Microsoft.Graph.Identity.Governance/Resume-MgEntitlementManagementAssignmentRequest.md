@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/resume-mgentitlementmanagementassignmentrequest
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Resume-MgEntitlementManagementAssignmentRequest
@@ -51,6 +52,33 @@ Resume-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 In Microsoft Entra entitlement management, when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action.
 It is performed on an accessPackageAssignmentRequest object whose requestStatus is in a WaitingForCallback state.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentrequest-resume-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	source = "Contoso.SodCheckProcess"
+	type = "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated"
+	data = @{
+		"@odata.type" = "microsoft.graph.accessPackageAssignmentRequestCallbackData"
+		stage = "assignmentRequestCreated"
+		customExtensionStageInstanceId = "957d0c50-466b-4840-bb5b-c92cea7141ff"
+		customExtensionStageInstanceDetail = "This user is all verified"
+	}
+}
+
+Resume-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId -BodyParameter $params
+
+```
+This example shows how to use the Resume-MgEntitlementManagementAssignmentRequest Cmdlet.
+
 
 ## PARAMETERS
 
@@ -350,7 +378,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/resume-mgentitlementmanagementassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/resume-mgentitlementmanagementassignmentrequest)
 
 [https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-resume?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-resume?view=graph-rest-1.0)
-
 
 
 

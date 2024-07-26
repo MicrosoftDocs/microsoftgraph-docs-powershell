@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveitem
 schema: 2.0.0
+ms.subservice: onedrive
 ---
 
 # Restore-MgBetaDriveItem
@@ -47,6 +48,9 @@ Restore-MgBetaDriveItem -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-restore-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

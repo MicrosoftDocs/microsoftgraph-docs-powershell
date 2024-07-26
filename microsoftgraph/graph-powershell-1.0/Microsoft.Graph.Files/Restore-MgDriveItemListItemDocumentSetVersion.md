@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitemlistitemdocumentsetversion
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Restore-MgDriveItemListItemDocumentSetVersion
@@ -31,6 +32,9 @@ Restore-MgDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Re
 
 ## DESCRIPTION
 Restore a document set version.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-restore-permissions.md)]
 
 ## PARAMETERS
 
@@ -233,7 +237,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitemlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitemlistitemdocumentsetversion)
 
 [https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0)
-
 
 
 

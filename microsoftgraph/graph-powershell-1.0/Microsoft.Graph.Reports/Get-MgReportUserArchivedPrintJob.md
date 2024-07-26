@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportuserarchivedprintjob
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # Get-MgReportUserArchivedPrintJob
@@ -31,6 +32,22 @@ Get-MgReportUserArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-Filt
 
 ## DESCRIPTION
 Get a list of archived print jobs for a particular user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reports-getuserarchivedprintjobs-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportUserArchivedPrintJob
+
+```
+This example shows how to use the Get-MgReportUserArchivedPrintJob Cmdlet.
+
 
 ## PARAMETERS
 
@@ -260,7 +277,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportuserarchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportuserarchivedprintjob)
 
 [https://learn.microsoft.com/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-1.0)
-
 
 
 

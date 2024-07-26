@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintconnector
 schema: 2.0.0
+ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgBetaPrintConnector
@@ -42,6 +44,9 @@ Retrieve the properties and relationships of a printConnector object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printconnector-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-list-connectors-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

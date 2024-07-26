@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemdelta
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgShareListItemDelta
@@ -61,6 +62,9 @@ The delta feed shows the latest state for each item, not each change.
 If an item was renamed twice, it only shows up once, with its latest name.The same item might appear more than once in a delta feed, for various reasons.
 You should use the last occurrence you see.
 Items with this property should be removed from your local state.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-delta-permissions.md)]
 
 ## PARAMETERS
 
@@ -368,7 +372,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemdelta)
 
 [https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimpolicy
 schema: 2.0.0
+ms.subservice: entra-id
 ---
 
 # Get-MgBetaServicePrincipalClaimPolicy
@@ -28,6 +29,22 @@ Get-MgBetaServicePrincipalClaimPolicy -InputObject <IApplicationsIdentity> [-Exp
 
 ## DESCRIPTION
 Get the properties and relationships of a customClaimsPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customclaimspolicy-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+Get-MgBetaServicePrincipalClaimPolicy -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgBetaServicePrincipalClaimPolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -194,8 +211,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimpolicy)
 
 [https://learn.microsoft.com/graph/api/customclaimspolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customclaimspolicy-get?view=graph-rest-beta)
-
-
 
 
 

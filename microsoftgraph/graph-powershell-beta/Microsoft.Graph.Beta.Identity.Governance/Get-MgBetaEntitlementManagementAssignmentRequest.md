@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementassignmentrequest
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaEntitlementManagementAssignmentRequest
@@ -39,6 +40,9 @@ Get-MgBetaEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernan
 
 ## DESCRIPTION
 Represents access package assignment requests created by or on behalf of a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-assignmentrequests-permissions.md)]
 
 ## EXAMPLES
 ### Example 1cenario1 for u1ing query parameter1

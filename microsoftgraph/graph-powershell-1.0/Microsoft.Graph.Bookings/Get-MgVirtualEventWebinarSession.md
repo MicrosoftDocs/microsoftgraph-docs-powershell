@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsession
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Get-MgVirtualEventWebinarSession
@@ -39,6 +40,22 @@ Get-MgVirtualEventWebinarSession -InputObject <IBookingsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventSession object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventsession-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+Get-MgVirtualEventWebinarSession -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventSessionId $virtualEventSessionId
+
+```
+This example shows how to use the Get-MgVirtualEventWebinarSession Cmdlet.
+
 
 ## PARAMETERS
 
@@ -322,7 +339,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsession)
 
 [https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-1.0)
-
 
 
 

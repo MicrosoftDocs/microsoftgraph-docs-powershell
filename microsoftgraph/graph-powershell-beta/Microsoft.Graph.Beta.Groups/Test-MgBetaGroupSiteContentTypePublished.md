@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupsitecontenttypepublished
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Test-MgBetaGroupSiteContentTypePublished
@@ -30,6 +31,9 @@ Test-MgBetaGroupSiteContentTypePublished -InputObject <IGroupsIdentity> [-Respon
 
 ## DESCRIPTION
 Invoke function isPublished
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-ispublished-permissions.md)]
 
 ## PARAMETERS
 
@@ -208,7 +212,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupsitecontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupsitecontenttypepublished)
 
 [https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta)
-
 
 
 

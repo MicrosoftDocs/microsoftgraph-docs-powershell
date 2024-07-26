@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasereviewset
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # New-MgSecurityCaseEdiscoveryCaseReviewSet
@@ -47,6 +48,9 @@ New-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Create a new ediscoveryReviewSet object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-post-reviewsets-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

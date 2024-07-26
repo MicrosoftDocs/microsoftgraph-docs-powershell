@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageassignmentpolicy
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
@@ -40,6 +41,9 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 
 ## DESCRIPTION
 In Microsoft Entra entitlement management, create a new accessPackageAssignmentPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-post-accesspackageassignmentpolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create a direct assignment policy

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofasgroup
 schema: 2.0.0
+ms.subservice: entra-users
+ms.subservice: entra-users
 ---
 
 # Get-MgUserMemberOfAsGroup
@@ -43,6 +45,25 @@ Get-MgUserMemberOfAsGroup -InputObject <IUsersIdentity> [-ExpandProperty <String
 Get groups, directory roles, and administrative units that the user is a direct member of.
 This operation isn't transitive.
 To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the List user transitive memberOf API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-memberof-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-memberof-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Users
+
+Get-MgUserMemberOfAsGroup -UserId $userId -Filter "appRoleAssignments/`$count gt 0" -Property "id,displayName" 
+
+```
+This example shows how to use the Get-MgUserMemberOfAsGroup Cmdlet.
+
 
 ## PARAMETERS
 
@@ -342,7 +363,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofasgroup)
 
 [https://learn.microsoft.com/graph/api/user-list-memberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-memberof?view=graph-rest-1.0)
-
 
 
 

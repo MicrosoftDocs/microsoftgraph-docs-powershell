@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyactivitybasedtimeoutpolicy
 schema: 2.0.0
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaPolicyActivityBasedTimeoutPolicy
@@ -39,6 +41,12 @@ Get-MgBetaPolicyActivityBasedTimeoutPolicy -InputObject <IIdentitySignInsIdentit
 
 ## DESCRIPTION
 Get the properties of an activityBasedTimeoutPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/activitybasedtimeoutpolicy-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/activitybasedtimeoutpolicy-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

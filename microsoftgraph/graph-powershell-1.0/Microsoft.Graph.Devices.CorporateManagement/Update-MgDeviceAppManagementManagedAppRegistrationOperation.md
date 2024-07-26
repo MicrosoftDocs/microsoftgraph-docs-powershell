@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedappregistrationoperation
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceAppManagementManagedAppRegistrationOperation
@@ -49,6 +50,26 @@ Update-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevic
 
 ## DESCRIPTION
 Update the properties of a managedAppOperation object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.managedAppOperation"
+	displayName = "Display Name value"
+	state = "State value"
+	version = "Version value"
+}
+
+Update-MgDeviceAppManagementManagedAppRegistrationOperation -ManagedAppRegistrationId $managedAppRegistrationId -ManagedAppOperationId $managedAppOperationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementManagedAppRegistrationOperation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -349,7 +370,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedappregistrationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedappregistrationoperation)
 
 [https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-update?view=graph-rest-1.0)
-
 
 
 

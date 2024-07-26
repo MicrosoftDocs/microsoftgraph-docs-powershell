@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriverootversion
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Restore-MgDriveRootVersion
@@ -33,6 +34,9 @@ Restore-MgDriveRootVersion -InputObject <IFilesIdentity> [-ResponseHeadersVariab
 ## DESCRIPTION
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitemversion-restore-permissions.md)]
 
 ## PARAMETERS
 
@@ -220,7 +224,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriverootversion)
 
 [https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0)
-
 
 
 

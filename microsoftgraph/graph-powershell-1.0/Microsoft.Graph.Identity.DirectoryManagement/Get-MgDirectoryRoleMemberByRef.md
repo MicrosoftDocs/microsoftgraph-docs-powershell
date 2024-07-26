@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolememberbyref
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDirectoryRoleMemberByRef
@@ -30,6 +31,9 @@ Retrieve the list of principals that are assigned to the directory role.
 You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
 For details, see Role template IDs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryrole-list-members-permissions.md)]
 
 ## PARAMETERS
 
@@ -246,7 +250,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolememberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolememberbyref)
 
 [https://learn.microsoft.com/graph/api/directoryrole-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryrole-list-members?view=graph-rest-1.0)
-
 
 
 

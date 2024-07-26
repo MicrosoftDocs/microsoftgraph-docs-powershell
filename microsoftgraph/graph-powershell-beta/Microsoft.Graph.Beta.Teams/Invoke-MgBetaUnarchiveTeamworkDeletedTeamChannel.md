@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteamworkdeletedteamchannel
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannel
@@ -34,6 +35,9 @@ Restore an archived channel.
 Unarchiving restores the ability for users to send messages and edit the channel.
 Channels are archived via the archive API.
 Unarchiving is an asynchronous operation; a channel is unarchived when the asynchronous unarchive operation completes successfully, which might occur after this method responds.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-unarchive-permissions.md)]
 
 ## PARAMETERS
 
@@ -238,7 +242,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteamworkdeletedteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteamworkdeletedteamchannel)
 
 [https://learn.microsoft.com/graph/api/channel-unarchive?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-unarchive?view=graph-rest-beta)
-
 
 
 

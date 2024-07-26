@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationoperation
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgSecurityAttackSimulationOperation
@@ -39,6 +40,22 @@ Get-MgSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> [-Expan
 
 ## DESCRIPTION
 Get an attack simulation operation to track a long-running operation request for a tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationoperation-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityAttackSimulationOperation -AttackSimulationOperationId $attackSimulationOperationId
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulationOperation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -353,7 +370,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationoperation)
 
 [https://learn.microsoft.com/graph/api/attacksimulationoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationoperation-get?view=graph-rest-1.0)
-
 
 
 

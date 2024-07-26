@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition
 schema: 2.0.0
+ms.subservice: industry-data-etl
 ---
 
 # New-MgBetaExternalIndustryDataReferenceDefinition
@@ -33,6 +34,9 @@ New-MgBetaExternalIndustryDataReferenceDefinition
 Create a new referenceDefinition object.
 referenceDefinition objects associate incoming data with standardized reference types values for validation.
 You can extend the following reference types with other codes that better align with your source data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-referencedefinition-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

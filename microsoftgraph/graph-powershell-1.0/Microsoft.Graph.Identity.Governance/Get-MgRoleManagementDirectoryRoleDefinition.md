@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroledefinition
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgRoleManagementDirectoryRoleDefinition
@@ -41,6 +43,36 @@ Get-MgRoleManagementDirectoryRoleDefinition -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Read the properties and relationships of a unifiedRoleDefinition object.
 The following role-based access control (RBAC) providers are currently supported:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroledefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roledefinitions-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get the definition of a custom role
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example will get the definition of a custom role
+
+### Example 2: Get the definition of a built-in role
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example will get the definition of a built-in role
+
 
 ## PARAMETERS
 
@@ -363,7 +395,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/unifiedroledefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroledefinition-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-1.0)
-
 
 
 

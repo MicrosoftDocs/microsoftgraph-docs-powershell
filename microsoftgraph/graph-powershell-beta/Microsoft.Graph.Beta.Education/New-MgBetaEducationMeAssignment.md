@@ -830,4 +830,3 @@ If the value is null, the student uploaded the resource.
 
 
 
-

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinterjob
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # Update-MgPrintPrinterJob
@@ -57,6 +58,56 @@ Update a print job.
 Only the configuration property can be updated.
 Updating a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+$params = @{
+	configuration = @{
+		feedOrientation = "longEdgeFirst"
+		pageRanges = @(
+			@{
+				start = 1
+				end = 1
+			}
+		)
+		quality = "medium"
+		dpi = 600
+		orientation = "landscape"
+		copies = 1
+		duplexMode = "oneSided"
+		colorMode = "blackAndWhite"
+		inputBin = "by-pass-tray"
+		outputBin = "output-tray"
+		mediaSize = "A4"
+		margin = @{
+			top = 0
+			bottom = 0
+			left = 0
+			right = 0
+		}
+		mediaType = "stationery"
+		finishings = $null
+		pagesPerSheet = 1
+		multipageLayout = "clockwiseFromBottomLeft"
+		collate = $false
+		scaling = "shrinkToFit"
+		fitPdfToPage = $false
+	}
+}
+
+Update-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPrintPrinterJob Cmdlet.
+
 
 ## PARAMETERS
 
@@ -608,7 +659,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinterjob)
 
 [https://learn.microsoft.com/graph/api/printjob-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printjob-update?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalreport
 schema: 2.0.0
+ms.subservice: compliance
 ---
 
 # Get-MgBetaSecuritySubjectRightsRequestFinalReport
@@ -33,6 +34,9 @@ Get-MgBetaSecuritySubjectRightsRequestFinalReport -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Get the final report for a subject rights request.
 The report is a text file that contains information about the files that were included by the privacy administrator.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-getfinalreport-permissions.md)]
 
 ## PARAMETERS
 
@@ -249,7 +253,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalreport)
 
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalreport?view=graph-rest-beta](https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalreport?view=graph-rest-beta)
-
 
 
 

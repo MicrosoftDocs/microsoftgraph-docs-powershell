@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordparticipantv2
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaCommunicationCallRecordParticipantV2
@@ -39,6 +40,9 @@ Get-MgBetaCommunicationCallRecordParticipantV2 -InputObject <ICloudCommunication
 
 ## DESCRIPTION
 List of distinct participants in the call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/callrecords-callrecord-list-participants_v2-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

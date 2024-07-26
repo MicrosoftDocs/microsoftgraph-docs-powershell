@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwardusermailfolderchildfoldermessage
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Invoke-MgBetaForwardUserMailFolderChildFolderMessage
@@ -651,7 +652,6 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwardusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwardusermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-beta)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgmarkchatreadforuser
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgMarkChatReadForUser
@@ -47,6 +48,29 @@ Invoke-MgMarkChatReadForUser -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Mark a chat as read for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-markchatreadforuser-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+$params = @{
+	user = @{
+		id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
+		tenantId = "2a690434-97d9-4eed-83a6-f5f13600199a"
+	}
+}
+
+Invoke-MgMarkChatReadForUser -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgMarkChatReadForUser Cmdlet.
+
 
 ## PARAMETERS
 
@@ -294,7 +318,6 @@ For example, if a user changes their display name, the API might show the new va
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgmarkchatreadforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgmarkchatreadforuser)
 
 [https://learn.microsoft.com/graph/api/chat-markchatreadforuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-markchatreadforuser?view=graph-rest-1.0)
-
 
 
 

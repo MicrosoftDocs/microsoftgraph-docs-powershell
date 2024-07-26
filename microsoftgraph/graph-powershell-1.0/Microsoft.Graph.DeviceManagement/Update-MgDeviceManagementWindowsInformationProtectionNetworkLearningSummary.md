@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementwindowsinformationprotectionnetworklearningsummary
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary
@@ -51,6 +52,25 @@ Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary
 
 ## DESCRIPTION
 Update the properties of a windowsInformationProtectionNetworkLearningSummary object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.windowsInformationProtectionNetworkLearningSummary"
+	url = "Url value"
+	deviceCount = 11
+}
+
+Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary -WindowsInformationProtectionNetworkLearningSummaryId $windowsInformationProtectionNetworkLearningSummaryId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -323,7 +343,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementwindowsinformationprotectionnetworklearningsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementwindowsinformationprotectionnetworklearningsummary)
 
 [https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionnetworklearningsummary-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionnetworklearningsummary-update?view=graph-rest-1.0)
-
 
 
 

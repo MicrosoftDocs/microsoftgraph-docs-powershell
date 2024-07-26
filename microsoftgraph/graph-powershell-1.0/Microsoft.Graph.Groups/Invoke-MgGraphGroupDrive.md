@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroupdrive
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgGraphGroupDrive
@@ -35,6 +36,9 @@ Invoke-MgGraphGroupDrive -InputObject <IGroupsIdentity> [-Count] [-ExpandPropert
 ## DESCRIPTION
 Get a list of driveItem objects shared with the owner of a drive.
 The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they are items from a different drive.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-sharedwithme-permissions.md)]
 
 ## PARAMETERS
 
@@ -313,7 +317,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroupdrive)
 
 [https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-1.0)
-
 
 
 

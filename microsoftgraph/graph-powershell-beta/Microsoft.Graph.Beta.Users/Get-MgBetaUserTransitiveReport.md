@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivereport
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Get-MgBetaUserTransitiveReport
@@ -38,6 +39,9 @@ Get-MgBetaUserTransitiveReport -InputObject <IUsersIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The transitive reports for a user.
 Read-only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-get-transitivereports-permissions.md)]
 
 ## PARAMETERS
 
@@ -348,8 +352,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivereport)
 
 [https://learn.microsoft.com/graph/api/user-get-transitivereports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-get-transitivereports?view=graph-rest-beta)
-
-
 
 
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityalert
 schema: 2.0.0
+ms.subservice: partner-customer-administration
+ms.subservice: partner-customer-administration
 ---
 
 # Get-MgBetaSecurityPartnerSecurityAlert
@@ -36,6 +38,25 @@ Get-MgBetaSecurityPartnerSecurityAlert -InputObject <ISecurityIdentity> [-Expand
 
 ## DESCRIPTION
 Read the properties and relationships of a partnerSecurityAlert object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityalert-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityalert-list-securityalerts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityPartnerSecurityAlert
+
+```
+This example shows how to use the Get-MgBetaSecurityPartnerSecurityAlert Cmdlet.
+
 
 ## PARAMETERS
 
@@ -375,10 +396,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-list-securityalerts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-list-securityalerts?view=graph-rest-beta)
-
-
-
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementmobilethreatdefenseconnector
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Remove-MgDeviceManagementMobileThreatDefenseConnector
@@ -31,6 +32,19 @@ Remove-MgDeviceManagementMobileThreatDefenseConnector -InputObject <IDeviceManag
 
 ## DESCRIPTION
 Deletes a mobileThreatDefenseConnector.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Remove-MgDeviceManagementMobileThreatDefenseConnector -MobileThreatDefenseConnectorId $mobileThreatDefenseConnectorId
+
+```
+This example shows how to use the Remove-MgDeviceManagementMobileThreatDefenseConnector Cmdlet.
+
 
 ## PARAMETERS
 
@@ -219,7 +233,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementmobilethreatdefenseconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementmobilethreatdefenseconnector)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-mobilethreatdefenseconnector-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-mobilethreatdefenseconnector-delete?view=graph-rest-1.0)
-
 
 
 

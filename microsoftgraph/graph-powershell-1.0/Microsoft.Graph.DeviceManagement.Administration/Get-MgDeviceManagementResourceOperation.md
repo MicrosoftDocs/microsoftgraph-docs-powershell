@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementresourceoperation
 schema: 2.0.0
+ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementResourceOperation
@@ -39,6 +41,19 @@ Get-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdministr
 
 ## DESCRIPTION
 Read properties and relationships of the resourceOperation object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementResourceOperation
+
+```
+This example shows how to use the Get-MgDeviceManagementResourceOperation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -319,7 +334,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-list?view=graph-rest-1.0)
-
 
 
 

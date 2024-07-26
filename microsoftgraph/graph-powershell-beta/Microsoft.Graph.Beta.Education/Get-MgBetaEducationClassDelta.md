@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassdelta
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationClassDelta
@@ -26,6 +27,9 @@ Get-MgBetaEducationClassDelta [-ExpandProperty <String[]>] [-Filter <String>] [-
 ## DESCRIPTION
 Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection.
 See Use delta query for details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-delta-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

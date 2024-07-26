@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementdeviceenrollmentconfiguration
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementDeviceEnrollmentConfiguration
@@ -51,6 +52,28 @@ Update-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceMana
 
 ## DESCRIPTION
 Update the properties of a deviceEnrollmentLimitConfiguration object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceEnrollmentLimitConfiguration"
+	displayName = "Display Name value"
+	description = "Description value"
+	priority = 8
+	version = 7
+	limit = 
+}
+
+Update-MgDeviceManagementDeviceEnrollmentConfiguration -DeviceEnrollmentConfigurationId $deviceEnrollmentConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceEnrollmentConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -366,7 +389,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementdeviceenrollmentconfiguration)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentlimitconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentlimitconfiguration-update?view=graph-rest-1.0)
-
 
 
 

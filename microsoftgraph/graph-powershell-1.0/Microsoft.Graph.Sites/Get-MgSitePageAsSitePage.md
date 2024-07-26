@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepage
 schema: 2.0.0
+ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgSitePageAsSitePage
@@ -39,6 +41,36 @@ Get-MgSitePageAsSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Returns the metadata for a sitePage in the site pages list in a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sitepage-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sitepage-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSitePageAsSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId
+
+```
+This example shows how to use the Get-MgSitePageAsSitePage Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSitePageAsSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId -Property "id,name" 
+
+```
+This example shows how to use the Get-MgSitePageAsSitePage Cmdlet.
+
 
 ## PARAMETERS
 
@@ -351,7 +383,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepage)
 
 [https://learn.microsoft.com/graph/api/sitepage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sitepage-get?view=graph-rest-1.0)
-
 
 
 

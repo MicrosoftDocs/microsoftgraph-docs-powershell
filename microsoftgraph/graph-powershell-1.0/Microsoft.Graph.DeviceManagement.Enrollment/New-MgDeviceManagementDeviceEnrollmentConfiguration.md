@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfiguration
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementDeviceEnrollmentConfiguration
@@ -33,6 +34,62 @@ New-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## DESCRIPTION
 Create a new deviceEnrollmentPlatformRestrictionsConfiguration object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration"
+	displayName = "Display Name value"
+	description = "Description value"
+	priority = 8
+	version = 7
+	iosRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	windowsRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	windowsMobileRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	androidRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	macOSRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+}
+
+New-MgDeviceManagementDeviceEnrollmentConfiguration -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceEnrollmentConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -310,7 +367,6 @@ Users are subject only to the configuration with the lowest priority value.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfiguration)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create?view=graph-rest-1.0)
-
 
 
 

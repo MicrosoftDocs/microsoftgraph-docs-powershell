@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotenotebook
 schema: 2.0.0
+ms.subservice: onenote
 ---
 
 # Copy-MgBetaGroupOnenoteNotebook
@@ -377,7 +378,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotenotebook)
 
 [https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-beta](https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-beta)
-
 
 
 

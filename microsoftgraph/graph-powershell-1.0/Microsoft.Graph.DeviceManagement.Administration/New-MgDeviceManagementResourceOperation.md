@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementresourceoperation
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementResourceOperation
@@ -31,6 +32,26 @@ New-MgDeviceManagementResourceOperation -BodyParameter <IMicrosoftGraphResourceO
 
 ## DESCRIPTION
 Create a new resourceOperation object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.resourceOperation"
+	resourceName = "Resource Name value"
+	actionName = "Action Name value"
+	description = "Description value"
+}
+
+New-MgDeviceManagementResourceOperation -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementResourceOperation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -235,7 +256,6 @@ The description is used in mouse-over text for the operation when shown in the A
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementresourceoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementresourceoperation)
 
 [https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-create?view=graph-rest-1.0)
-
 
 
 

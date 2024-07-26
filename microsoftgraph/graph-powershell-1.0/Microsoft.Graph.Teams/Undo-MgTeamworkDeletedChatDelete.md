@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamworkdeletedchatdelete
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Undo-MgTeamworkDeletedChatDelete
@@ -31,6 +32,22 @@ Undo-MgTeamworkDeletedChatDelete -InputObject <ITeamsIdentity> [-ResponseHeaders
 
 ## DESCRIPTION
 Restore a  deletedChat to an active chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/deletedchat-undodelete-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Undo-MgTeamworkDeletedChatDelete -DeletedChatId $deletedChatId
+
+```
+This example shows how to use the Undo-MgTeamworkDeletedChatDelete Cmdlet.
+
 
 ## PARAMETERS
 
@@ -212,7 +229,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamworkdeletedchatdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamworkdeletedchatdelete)
 
 [https://learn.microsoft.com/graph/api/deletedchat-undodelete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/deletedchat-undodelete?view=graph-rest-1.0)
-
 
 
 

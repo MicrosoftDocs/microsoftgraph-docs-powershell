@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgprivacysubjectrightsrequest
 schema: 2.0.0
+ms.subservice: compliance
 ---
 
 # Update-MgPrivacySubjectRightsRequest
@@ -67,6 +68,27 @@ Update-MgPrivacySubjectRightsRequest -InputObject <IComplianceIdentity>
 
 ## DESCRIPTION
 Update the properties of a subjectRightsRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Compliance
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.subjectRightsRequest"
+	internalDueDateTime = [System.DateTime]::Parse("2021-08-30T00:00:00Z")
+}
+
+Update-MgPrivacySubjectRightsRequest -SubjectRightsRequestId $subjectRightsRequestId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPrivacySubjectRightsRequest Cmdlet.
+
 
 ## PARAMETERS
 
@@ -19858,7 +19880,6 @@ This URL should be treated as an opaque blob, and not parsed.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgprivacysubjectrightsrequest)
 
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-update?view=graph-rest-1.0)
-
 
 
 

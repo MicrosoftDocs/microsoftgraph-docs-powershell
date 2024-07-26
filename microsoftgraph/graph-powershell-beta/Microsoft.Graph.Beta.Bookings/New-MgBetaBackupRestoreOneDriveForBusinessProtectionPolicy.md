@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoreonedriveforbusinessprotectionpolicy
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # New-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy
@@ -36,6 +37,37 @@ New-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy
 Create a protection policy for the OneDrive service in Microsoft 365.
 When the policy is created, its state is set to inactive.
 Users can also provide a list of protection units under the policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-onedriveforbusinessprotectionpolicies-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	displayName = "OneDrive For Business Protection Policy"
+	driveProtectionUnits = @(
+		@{
+			userId = "cdd3a849-dcaf-4a85-af82-7e39fc14019"
+		}
+		@{
+			userId = "9bc069da-b746-41a4-89ab-26125c6373c7"
+		}
+		@{
+			userId = "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7"
+		}
+	)
+}
+
+New-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -480,8 +512,6 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting- `[]`>: Contains the retentio
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoreonedriveforbusinessprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoreonedriveforbusinessprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies?view=graph-rest-beta)
-
-
 
 
 

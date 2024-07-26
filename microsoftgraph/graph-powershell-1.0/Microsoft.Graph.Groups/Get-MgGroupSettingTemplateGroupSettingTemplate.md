@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplategroupsettingtemplate
 schema: 2.0.0
+ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgGroupSettingTemplateGroupSettingTemplate
@@ -38,6 +40,25 @@ Get-MgGroupSettingTemplateGroupSettingTemplate -InputObject <IGroupsIdentity> [-
 ## DESCRIPTION
 A group setting template represents a template of settings from which settings may be created within a tenant.
 This operation allows retrieval of the properties of the groupSettingTemplate object, including the available settings and their defaults.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/groupsettingtemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/groupsettingtemplate-list-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+Get-MgGroupSettingTemplateGroupSettingTemplate
+
+```
+This example shows how to use the Get-MgGroupSettingTemplateGroupSettingTemplate Cmdlet.
+
 
 ## PARAMETERS
 
@@ -334,7 +355,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/groupsettingtemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/groupsettingtemplate-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/groupsettingtemplate-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/groupsettingtemplate-list?view=graph-rest-1.0)
-
 
 
 

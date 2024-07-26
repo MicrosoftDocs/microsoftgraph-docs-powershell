@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/publish-mgsecuritycaseediscoverycasecustodian
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Publish-MgSecurityCaseEdiscoveryCaseCustodian
@@ -33,6 +34,9 @@ Publish-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Release a custodian from a case.
 For details, see Release a custodian from a case.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-release-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

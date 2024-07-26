@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsite
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Add-MgGroupSite
@@ -9760,7 +9761,6 @@ This relationship can only be used to load a specific term set.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsite)
 
 [https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0)
-
 
 
 

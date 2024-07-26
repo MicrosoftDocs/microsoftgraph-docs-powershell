@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # New-MgPrintPrinter
@@ -38,6 +39,35 @@ New-MgPrintPrinter
 Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
 For help creating the required Certificate Signing Request (CSR) for creating printer, see the CSR generation code sample.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-create-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+$params = @{
+	displayName = "Test Printer"
+	manufacturer = "Test Printer Manufacturer"
+	model = "Test Printer Model"
+	physicalDeviceId = $null
+	hasPhysicalDevice = $false
+	certificateSigningRequest = @{
+		content = '{content}'
+		transportKey = '{sampleTransportKey}'
+	}
+	connectorId = $null
+}
+
+New-MgPrintPrinter -BodyParameter $params
+
+```
+This example shows how to use the New-MgPrintPrinter Cmdlet.
+
 
 ## PARAMETERS
 
@@ -312,7 +342,6 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter)
 
 [https://learn.microsoft.com/graph/api/printer-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-create?view=graph-rest-1.0)
-
 
 
 

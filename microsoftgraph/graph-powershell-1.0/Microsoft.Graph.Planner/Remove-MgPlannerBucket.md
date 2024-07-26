@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerbucket
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Remove-MgPlannerBucket
@@ -31,6 +32,9 @@ Remove-MgPlannerBucket -InputObject <IPlannerIdentity> [-IfMatch <String>] [-Res
 
 ## DESCRIPTION
 Delete plannerBucket.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerbucket-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

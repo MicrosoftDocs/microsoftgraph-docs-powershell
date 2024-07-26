@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # Update-MgPrintConnector
@@ -49,6 +50,9 @@ Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity>
 
 ## DESCRIPTION
 Update the properties of a printConnector object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printconnector-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -391,7 +395,6 @@ The elements should be in hierarchical order.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector)
 
 [https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresource
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgEntitlementManagementCatalogResource
@@ -36,6 +37,44 @@ Get-MgEntitlementManagementCatalogResource -InputObject <IIdentityGovernanceIden
 
 ## DESCRIPTION
 Access package resources in this catalog.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-list-resources-permissions.md)]
+
+## EXAMPLES
+### Example 1: List all resources in a catalog
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgEntitlementManagementCatalogResource -AccessPackageCatalogId $accessPackageCatalogId -ExpandProperty "scopes" 
+
+```
+This example will list all resources in a catalog
+
+### Example 2: Retrieve the roles and scopes of a single resource in a catalog
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgEntitlementManagementCatalogResource -AccessPackageCatalogId $accessPackageCatalogId -ExpandProperty "roles,scopes" -Filter "id eq '{resourceId}'" 
+
+```
+This example will retrieve the roles and scopes of a single resource in a catalog
+
+### Example 3: Retrieve the roles and scopes of a single resource in a catalog by origin ID
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgEntitlementManagementCatalogResource -AccessPackageCatalogId $accessPackageCatalogId -ExpandProperty "roles,scopes" -Filter "originId eq '0282e19d-bf41-435d-92a4-99bab93af305'" 
+
+```
+This example will retrieve the roles and scopes of a single resource in a catalog by origin id
+
 
 ## PARAMETERS
 
@@ -371,7 +410,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresource)
 
 [https://learn.microsoft.com/graph/api/accesspackagecatalog-list-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-resources?view=graph-rest-1.0)
-
 
 
 

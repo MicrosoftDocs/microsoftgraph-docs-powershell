@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamincomingchannel
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamIncomingChannel
@@ -39,6 +40,9 @@ Get-MgBetaTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 List of channels shared with the team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-list-incomingchannels-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

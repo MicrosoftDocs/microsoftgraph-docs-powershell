@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarbyuseridandrole
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventWebinarByUserIdAndRole
@@ -33,6 +34,9 @@ Get-MgBetaVirtualEventWebinarByUserIdAndRole -InputObject <IBookingsIdentity> [-
 
 ## DESCRIPTION
 Get a list of virtualEventWebinar objects where the specified user is either the organizer or a coorganizer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventwebinar-getbyuseridandrole-permissions.md)]
 
 ## PARAMETERS
 
@@ -313,7 +317,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarbyuseridandrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarbyuseridandrole)
 
 [https://learn.microsoft.com/graph/api/virtualeventwebinar-getbyuseridandrole?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventwebinar-getbyuseridandrole?view=graph-rest-beta)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile
@@ -51,6 +52,27 @@ Update-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFil
 
 ## DESCRIPTION
 Update the properties of a windowsInformationProtectionAppLockerFile object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.windowsInformationProtectionAppLockerFile"
+	displayName = "Display Name value"
+	fileHash = "File Hash value"
+	file = [System.Text.Encoding]::ASCII.GetBytes("ZmlsZQ==")
+	version = "Version value"
+}
+
+Update-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile -WindowsInformationProtectionPolicyId $windowsInformationProtectionPolicyId -WindowsInformationProtectionAppLockerFileId $windowsInformationProtectionAppLockerFileId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile Cmdlet.
+
 
 ## PARAMETERS
 
@@ -351,7 +373,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementwindowsinformationprotectionpolicyexemptapplockerfile)
 
 [https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionapplockerfile-update?view=graph-rest-1.0)
-
 
 
 

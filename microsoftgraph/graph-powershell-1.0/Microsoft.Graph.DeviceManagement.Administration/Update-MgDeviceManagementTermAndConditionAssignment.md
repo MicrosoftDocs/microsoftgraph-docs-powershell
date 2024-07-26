@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionassignment
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementTermAndConditionAssignment
@@ -47,6 +48,27 @@ Update-MgDeviceManagementTermAndConditionAssignment -InputObject <IDeviceManagem
 
 ## DESCRIPTION
 Update the properties of a termsAndConditionsAssignment object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.termsAndConditionsAssignment"
+	target = @{
+		"@odata.type" = "microsoft.graph.configurationManagerCollectionAssignmentTarget"
+		collectionId = "Collection Id value"
+	}
+}
+
+Update-MgDeviceManagementTermAndConditionAssignment -TermsAndConditionsId $termsAndConditionsId -TermsAndConditionsAssignmentId $termsAndConditionsAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementTermAndConditionAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -292,7 +314,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionassignment)
 
 [https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsassignment-update?view=graph-rest-1.0)
-
 
 
 

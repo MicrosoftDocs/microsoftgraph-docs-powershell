@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementtermandconditionassignment
 schema: 2.0.0
+ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementTermAndConditionAssignment
@@ -40,6 +42,19 @@ Get-MgDeviceManagementTermAndConditionAssignment -InputObject <IDeviceManagement
 
 ## DESCRIPTION
 Read properties and relationships of the termsAndConditionsAssignment object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementTermAndConditionAssignment -TermsAndConditionsId $termsAndConditionsId
+
+```
+This example shows how to use the Get-MgDeviceManagementTermAndConditionAssignment Cmdlet.
+
 
 ## PARAMETERS
 
@@ -335,7 +350,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsassignment-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsassignment-list?view=graph-rest-1.0)
-
 
 
 

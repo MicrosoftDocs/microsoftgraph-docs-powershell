@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannel
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Update-MgBetaTeamChannel
@@ -57,6 +58,9 @@ Update-MgBetaTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Update the properties of the specified channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-patch-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedapppolicy
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Get-MgUserManagedAppPolicy
@@ -33,6 +34,19 @@ Get-MgUserManagedAppPolicy -InputObject <IUsersFunctionsIdentity> [-Count] [-Exp
 
 ## DESCRIPTION
 Gets app restrictions for a given user.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Users.Functions
+
+Get-MgUserManagedAppPolicy -UserId $userId
+
+```
+This example shows how to use the Get-MgUserManagedAppPolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -281,7 +295,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedapppolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedapppolicy)
 
 [https://learn.microsoft.com/graph/api/intune-mam-user-getmanagedapppolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-user-getmanagedapppolicies?view=graph-rest-1.0)
-
 
 
 

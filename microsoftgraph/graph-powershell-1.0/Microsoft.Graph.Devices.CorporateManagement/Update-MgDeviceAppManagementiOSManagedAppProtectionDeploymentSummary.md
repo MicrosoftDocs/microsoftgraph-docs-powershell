@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementiosmanagedappprotectiondeploymentsummary
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Update-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
@@ -52,6 +53,37 @@ Update-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 
 ## DESCRIPTION
 Update the properties of a managedAppPolicyDeploymentSummary object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.managedAppPolicyDeploymentSummary"
+	displayName = "Display Name value"
+	configurationDeployedUserCount = 14
+	lastRefreshTime = [System.DateTime]::Parse("2017-01-01T00:01:30.1240368-08:00")
+	configurationDeploymentSummaryPerApp = @(
+		@{
+			"@odata.type" = "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp"
+			mobileAppIdentifier = @{
+				"@odata.type" = "microsoft.graph.androidMobileAppIdentifier"
+				packageId = "Package Id value"
+			}
+			configurationAppliedUserCount = 13
+		}
+	)
+	version = "Version value"
+}
+
+Update-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary -IosManagedAppProtectionId $iosManagedAppProtectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -362,7 +394,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementiosmanagedappprotectiondeploymentsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementiosmanagedappprotectiondeploymentsummary)
 
 [https://learn.microsoft.com/graph/api/intune-mam-managedapppolicydeploymentsummary-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedapppolicydeploymentsummary-update?view=graph-rest-1.0)
-
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgdownloaddevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
@@ -23,6 +24,19 @@ Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotifi
 
 ## DESCRIPTION
 Download Apple push notification certificate signing request
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Functions
+
+Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
+
+```
+This example shows how to use the Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest Cmdlet.
+
 
 ## PARAMETERS
 
@@ -87,7 +101,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgdownloaddevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgdownloaddevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest)
 
 [https://learn.microsoft.com/graph/api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest?view=graph-rest-1.0)
-
 
 
 

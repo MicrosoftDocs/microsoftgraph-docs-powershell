@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostpair
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceHostPair
@@ -61,6 +62,22 @@ Get-MgSecurityThreatIntelligenceHostPair -InputObject <ISecurityIdentity> [-Expa
 
 ## DESCRIPTION
 Read the properties and relationships of a hostPair object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-hostpair-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceHostPair -HostPairId $hostPairId
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceHostPair Cmdlet.
+
 
 ## PARAMETERS
 
@@ -392,7 +409,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-hostpair-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-hostpair-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-host-list-hostpairs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-hostpairs?view=graph-rest-1.0)
-
 
 
 

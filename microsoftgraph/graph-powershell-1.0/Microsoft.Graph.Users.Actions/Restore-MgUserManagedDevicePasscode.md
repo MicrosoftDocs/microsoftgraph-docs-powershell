@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mgusermanageddevicepasscode
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # Restore-MgUserManagedDevicePasscode
@@ -224,7 +225,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mgusermanageddevicepasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mgusermanageddevicepasscode)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-recoverpasscode?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-recoverpasscode?view=graph-rest-1.0)
-
 
 
 

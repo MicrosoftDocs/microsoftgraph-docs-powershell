@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotectionapp
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceAppManagementiOSManagedAppProtectionApp
@@ -47,6 +48,28 @@ New-MgDeviceAppManagementiOSManagedAppProtectionApp -InputObject <IDevicesCorpor
 
 ## DESCRIPTION
 Create a new managedMobileApp object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.managedMobileApp"
+	mobileAppIdentifier = @{
+		"@odata.type" = "microsoft.graph.androidMobileAppIdentifier"
+		packageId = "Package Id value"
+	}
+	version = "Version value"
+}
+
+New-MgDeviceAppManagementiOSManagedAppProtectionApp -IosManagedAppProtectionId $iosManagedAppProtectionId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementiOSManagedAppProtectionApp Cmdlet.
+
 
 ## PARAMETERS
 
@@ -301,7 +324,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotectionapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotectionapp)
 
 [https://learn.microsoft.com/graph/api/intune-mam-managedmobileapp-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedmobileapp-create?view=graph-rest-1.0)
-
 
 
 

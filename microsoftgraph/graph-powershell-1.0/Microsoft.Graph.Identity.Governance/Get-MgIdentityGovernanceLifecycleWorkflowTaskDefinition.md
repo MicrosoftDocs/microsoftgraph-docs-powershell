@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtaskdefinition
 schema: 2.0.0
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition
@@ -39,6 +41,36 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition -InputObject <IIdentityG
 
 ## DESCRIPTION
 Read the details of a built-in workflow task.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-taskdefinition-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions-permissions.md)]
+
+## EXAMPLES
+### Example 1: Retrieve all built-in task definitions
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition
+
+```
+This example will retrieve all built-in task definitions
+
+### Example 2: Retrieve all built-in tasks supported for "joiner" workflows
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition -Filter "category has 'joiner'" 
+
+```
+This example will retrieve all built-in tasks supported for "joiner" workflows
+
 
 ## PARAMETERS
 
@@ -361,7 +393,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/identitygovernance-taskdefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-taskdefinition-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions?view=graph-rest-1.0)
-
 
 
 

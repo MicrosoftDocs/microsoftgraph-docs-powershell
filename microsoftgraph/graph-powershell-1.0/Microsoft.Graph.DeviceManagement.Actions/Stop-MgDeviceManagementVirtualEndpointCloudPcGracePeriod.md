@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/stop-mgdevicemanagementvirtualendpointcloudpcgraceperiod
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod
@@ -40,6 +41,19 @@ Ending the grace period immediately deprovisions the Cloud PC without waiting th
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-endgraceperiod-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod -CloudPCId $cloudPCId
+
+```
+This example shows how to use the Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod Cmdlet.
+
 
 ## PARAMETERS
 
@@ -204,7 +218,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/stop-mgdevicemanagementvirtualendpointcloudpcgraceperiod](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/stop-mgdevicemanagementvirtualendpointcloudpcgraceperiod)
 
 [https://learn.microsoft.com/graph/api/cloudpc-endgraceperiod?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-endgraceperiod?view=graph-rest-1.0)
-
 
 
 

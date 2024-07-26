@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedappregistrationoperation
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceAppManagementManagedAppRegistrationOperation
@@ -47,6 +48,26 @@ New-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevicesC
 
 ## DESCRIPTION
 Create a new managedAppOperation object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.CorporateManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.managedAppOperation"
+	displayName = "Display Name value"
+	state = "State value"
+	version = "Version value"
+}
+
+New-MgDeviceAppManagementManagedAppRegistrationOperation -ManagedAppRegistrationId $managedAppRegistrationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementManagedAppRegistrationOperation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -332,7 +353,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedappregistrationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedappregistrationoperation)
 
 [https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-create?view=graph-rest-1.0)
-
 
 
 

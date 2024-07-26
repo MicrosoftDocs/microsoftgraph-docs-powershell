@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementhealthoverview
 schema: 2.0.0
+ms.subservice: service-communications
+ms.subservice: service-communications
 ---
 
 # Get-MgServiceAnnouncementHealthOverview
@@ -44,6 +46,9 @@ This operation provides the health information of a specified service for a tena
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/servicehealth-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceannouncement-list-healthoverviews-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get serviceHealth resources

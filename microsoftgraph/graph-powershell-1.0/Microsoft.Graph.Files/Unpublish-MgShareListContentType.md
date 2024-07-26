@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/unpublish-mgsharelistcontenttype
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Unpublish-MgShareListContentType
@@ -31,6 +32,9 @@ Unpublish-MgShareListContentType -InputObject <IFilesIdentity> [-ResponseHeaders
 
 ## DESCRIPTION
 Unpublish a contentType from a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## PARAMETERS
 
@@ -218,7 +222,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/unpublish-mgsharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/unpublish-mgsharelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
-
 
 
 

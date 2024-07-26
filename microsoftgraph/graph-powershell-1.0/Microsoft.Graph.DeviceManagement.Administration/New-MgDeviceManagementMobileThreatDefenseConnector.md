@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector
 schema: 2.0.0
+ms.subservice: intune
 ---
 
 # New-MgDeviceManagementMobileThreatDefenseConnector
@@ -37,6 +38,38 @@ New-MgDeviceManagementMobileThreatDefenseConnector -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create a new mobileThreatDefenseConnector object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.mobileThreatDefenseConnector"
+	lastHeartbeatDateTime = [System.DateTime]::Parse("2016-12-31T23:59:37.9174975-08:00")
+	partnerState = "available"
+	androidMobileApplicationManagementEnabled = $true
+	iosMobileApplicationManagementEnabled = $true
+	androidEnabled = $true
+	iosEnabled = $true
+	windowsEnabled = $true
+	androidDeviceBlockedOnMissingPartnerData = $true
+	iosDeviceBlockedOnMissingPartnerData = $true
+	windowsDeviceBlockedOnMissingPartnerData = $true
+	partnerUnsupportedOsVersionBlocked = $true
+	partnerUnresponsivenessThresholdInDays = 6
+	allowPartnerToCollectIOSApplicationMetadata = $true
+	allowPartnerToCollectIOSPersonalApplicationMetadata = $true
+	microsoftDefenderForEndpointAttachEnabled = $true
+}
+
+New-MgDeviceManagementMobileThreatDefenseConnector -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementMobileThreatDefenseConnector Cmdlet.
+
 
 ## PARAMETERS
 
@@ -461,7 +494,6 @@ Default value is FALSE.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-mobilethreatdefenseconnector-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-mobilethreatdefenseconnector-create?view=graph-rest-1.0)
-
 
 
 

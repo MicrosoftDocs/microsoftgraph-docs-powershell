@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucketdelta
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Get-MgBetaPlannerBucketDelta
@@ -23,6 +24,9 @@ Get-MgBetaPlannerBucketDelta [-ExpandProperty <String[]>] [-Filter <String>] [-P
 ## DESCRIPTION
 Get newly created, updated, or deleted buckets in a Planner plan without having to perform a full read of the entire resource collection.
 For details, see Use delta query to track changes in Microsoft Graph data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbucket-delta-permissions.md)]
 
 ## PARAMETERS
 
@@ -238,7 +242,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucketdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucketdelta)
 
 [https://learn.microsoft.com/graph/api/plannerbucket-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerbucket-delta?view=graph-rest-beta)
-
 
 
 

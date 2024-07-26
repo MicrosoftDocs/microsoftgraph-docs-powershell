@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetatopidentitygovernancelifecycleworkflowinsightworkflowprocessedsummary
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary
@@ -34,6 +35,22 @@ Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSumma
 Provide a summary of the workflows processed the most, known as top workflows, for a specified period in a tenant.
 Workflow basic details are given, along with run information.
 For information about tasks processed, see insights: topTasksProcessedSummary.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-insights-topworkflowsprocessedsummary-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary
+
+```
+This example shows how to use the Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary Cmdlet.
+
 
 ## PARAMETERS
 
@@ -325,8 +342,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetatopidentitygovernancelifecycleworkflowinsightworkflowprocessedsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetatopidentitygovernancelifecycleworkflowinsightworkflowprocessedsummary)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-insights-topworkflowsprocessedsummary?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-insights-topworkflowsprocessedsummary?view=graph-rest-beta)
-
-
 
 
 

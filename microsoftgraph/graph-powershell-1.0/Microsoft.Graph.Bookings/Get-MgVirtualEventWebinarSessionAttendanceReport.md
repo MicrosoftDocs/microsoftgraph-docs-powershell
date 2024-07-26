@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsessionattendancereport
 schema: 2.0.0
+ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgVirtualEventWebinarSessionAttendanceReport
@@ -43,6 +45,25 @@ Get-MgVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIdentity
 ## DESCRIPTION
 Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
 Each time an online meeting ends, an attendance report is generated for that session.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/meetingattendancereport-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/meetingattendancereport-list-permissions.md)]
+
+## EXAMPLES
+### Example 1: Get the attendance report for a webinar session by ID
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+Get-MgVirtualEventWebinarSessionAttendanceReport -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventSessionId $virtualEventSessionId -MeetingAttendanceReportId $meetingAttendanceReportId
+
+```
+This example will get the attendance report for a webinar session by id
+
 
 ## PARAMETERS
 
@@ -343,7 +364,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/meetingattendancereport-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingattendancereport-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/meetingattendancereport-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingattendancereport-list?view=graph-rest-1.0)
-
 
 
 

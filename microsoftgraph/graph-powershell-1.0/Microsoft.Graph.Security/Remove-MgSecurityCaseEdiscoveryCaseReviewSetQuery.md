@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasereviewsetquery
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery
@@ -32,6 +33,9 @@ Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentit
 
 ## DESCRIPTION
 Delete an ediscoveryReviewSetQuery object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoveryreviewset-delete-queries-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

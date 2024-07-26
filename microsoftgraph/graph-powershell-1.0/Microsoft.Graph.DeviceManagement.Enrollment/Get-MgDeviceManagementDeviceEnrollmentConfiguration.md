@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementdeviceenrollmentconfiguration
 schema: 2.0.0
+ms.subservice: intune
+ms.subservice: intune
 ---
 
 # Get-MgDeviceManagementDeviceEnrollmentConfiguration
@@ -39,6 +41,19 @@ Get-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceManagem
 
 ## DESCRIPTION
 Read properties and relationships of the deviceEnrollmentConfiguration object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Enrollment
+
+Get-MgDeviceManagementDeviceEnrollmentConfiguration
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceEnrollmentConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -298,7 +313,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentconfiguration-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentconfiguration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentconfiguration-list?view=graph-rest-1.0)
-
 
 
 

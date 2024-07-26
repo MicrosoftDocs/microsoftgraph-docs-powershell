@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationmerubric
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Remove-MgEducationMeRubric
@@ -33,6 +34,9 @@ Remove-MgEducationMeRubric -InputObject <IEducationIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete an educationRubric object.
 Only teachers can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationrubric-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
