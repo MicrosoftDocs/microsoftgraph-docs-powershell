@@ -34,18 +34,6 @@ New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfigurat
 ## DESCRIPTION
 Create new navigation property to combinationConfigurations for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -292,6 +280,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessauthenticationstrengthpolicycombinationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessauthenticationstrengthpolicycombinationconfiguration)
+
 
 
 

@@ -29,18 +29,6 @@ Get-MgBetaIdentityAuthenticationEventFlowCondition -InputObject <IIdentitySignIn
 ## DESCRIPTION
 The conditions representing the context of the authentication request that's used to decide whether the events policy is invoked.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId
@@ -249,6 +237,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowcondition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowcondition)
+
 
 
 

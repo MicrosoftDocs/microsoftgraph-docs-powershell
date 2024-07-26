@@ -29,18 +29,6 @@ Stop-MgBetaVirtualEventWebinarRegistrationEmail -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Invoke action cancel
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Email
@@ -244,6 +232,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualeventwebinarregistrationemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualeventwebinarregistrationemail)
+
 
 
 

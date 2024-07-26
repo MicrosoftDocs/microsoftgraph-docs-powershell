@@ -36,18 +36,6 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedulePrincipal
 References the principal that's in the scope of this membership or ownership assignment request to the group that's governed through PIM.
 Supports $expand and $select nested in $expand for id only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -244,6 +232,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentscheduleprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentscheduleprincipal)
+
 
 
 

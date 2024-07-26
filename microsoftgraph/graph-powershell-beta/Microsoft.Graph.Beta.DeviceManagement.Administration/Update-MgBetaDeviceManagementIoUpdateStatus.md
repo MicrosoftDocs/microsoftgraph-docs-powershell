@@ -54,18 +54,6 @@ Update-MgBetaDeviceManagementIoUpdateStatus -InputObject <IDeviceManagementAdmin
 ## DESCRIPTION
 Update the navigation property iosUpdateStatuses in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -498,6 +486,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementioupdatestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementioupdatestatus)
+
 
 
 

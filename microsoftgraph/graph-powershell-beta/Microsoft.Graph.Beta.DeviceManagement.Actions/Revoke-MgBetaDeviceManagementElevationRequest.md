@@ -45,18 +45,6 @@ Revoke-MgBetaDeviceManagementElevationRequest -InputObject <IDeviceManagementAct
 ## DESCRIPTION
 Invoke action revoke
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -292,6 +280,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/revoke-mgbetadevicemanagementelevationrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/revoke-mgbetadevicemanagementelevationrequest)
+
 
 
 
