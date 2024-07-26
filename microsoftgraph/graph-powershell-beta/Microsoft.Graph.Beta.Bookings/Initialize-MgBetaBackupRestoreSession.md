@@ -32,16 +32,17 @@ Activate a draft restoreSessionBase object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/restoresessionbase-activate-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Initialize-MgBetaBackupRestoreSession -RestoreSessionBaseId $restoreSessionBaseId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Initialize-MgBetaBackupRestoreSession Cmdlet.
+
 
 ## PARAMETERS
 

@@ -35,20 +35,23 @@ Update the properties of a b2cAuthenticationMethodsPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cauthenticationmethodspolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	isEmailPasswordAuthenticationEnabled = $false
+	isUserNameAuthenticationEnabled = $true
+	isPhoneOneTimePasswordAuthenticationEnabled = $true
+}
 
-{{ Add output here }}
+Update-MgBetaPolicyB2CAuthenticationMethodPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyB2CAuthenticationMethodPolicy Cmdlet.
+
 
 ## PARAMETERS
 

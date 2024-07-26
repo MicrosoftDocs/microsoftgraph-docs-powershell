@@ -47,13 +47,17 @@ Read the properties and relationships of an ediscoveryFile object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewset-list-files-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
-Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -Top 5
+Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -Top 5 
+
+```
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile Cmdlet.
+
 
 ## PARAMETERS
 

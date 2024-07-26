@@ -34,16 +34,17 @@ Delete a permissionGrantPreApprovalPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpreapprovalpolicy-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Remove-MgBetaPolicyPermissionGrantPreApprovalPolicy -PermissionGrantPreApprovalPolicyId $permissionGrantPreApprovalPolicyId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaPolicyPermissionGrantPreApprovalPolicy Cmdlet.
+
 
 ## PARAMETERS
 

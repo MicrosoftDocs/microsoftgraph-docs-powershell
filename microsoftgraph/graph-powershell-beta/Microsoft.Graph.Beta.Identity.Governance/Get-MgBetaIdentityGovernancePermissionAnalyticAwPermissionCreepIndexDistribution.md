@@ -46,16 +46,17 @@ PCI distribution chart shows the classification of human and nonhuman identities
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissionsanalytics-list-permissionscreepindexdistributions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution Cmdlet.
+
 
 ## PARAMETERS
 

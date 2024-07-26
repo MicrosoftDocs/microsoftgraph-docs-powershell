@@ -36,15 +36,6 @@ Invoke action unpublish
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Sites
-```
-
-Unpublish-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -263,6 +254,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/unpublish-mgbetauserdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/unpublish-mgbetauserdrivelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-beta)
+
 
 
 

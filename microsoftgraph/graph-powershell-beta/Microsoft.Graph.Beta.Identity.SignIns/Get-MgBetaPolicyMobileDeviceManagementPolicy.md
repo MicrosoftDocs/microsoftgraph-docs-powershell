@@ -46,30 +46,17 @@ Read the properties and relationships of a mobilityManagementPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobiledevicemanagementpolicies-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaPolicyMobileDeviceManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaPolicyMobileDeviceManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId
-```
 
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyMobileDeviceManagementPolicy
-```
 
-### EXAMPLE 4
 ```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaPolicyMobileDeviceManagementPolicy -OutFile $outFileId
-```
+This example shows how to use the Get-MgBetaPolicyMobileDeviceManagementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

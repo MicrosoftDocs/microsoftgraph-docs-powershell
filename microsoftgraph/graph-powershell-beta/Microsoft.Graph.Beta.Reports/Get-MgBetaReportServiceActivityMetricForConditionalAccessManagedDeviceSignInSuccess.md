@@ -39,16 +39,17 @@ Managed devices are computers joined to and managed by your on-premises director
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess Cmdlet.
+
 
 ## PARAMETERS
 

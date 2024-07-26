@@ -55,16 +55,17 @@ After the rule is applied, the state is either completed or completedWithErrors.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointprotectionpolicy-list-siteinclusionrules-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get siteInclusionRule associated with a SharePoint protection policy
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBackupRestoreSharePointProtectionPolicySiteInclusionRule -SharePointProtectionPolicyId $sharePointProtectionPolicyId -SiteProtectionRuleId $siteProtectionRuleId
+
 ```
-{{ Add code here }}
-```
+This example will get siteinclusionrule associated with a sharepoint protection policy
+
 
 ## PARAMETERS
 

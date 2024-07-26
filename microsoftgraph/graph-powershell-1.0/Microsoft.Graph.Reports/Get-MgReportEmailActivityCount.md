@@ -36,16 +36,17 @@ Enables you to understand the trends of email activity (like how many were sent,
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getemailactivitycounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportEmailActivityCount -Period $periodId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgReportEmailActivityCount Cmdlet.
+
 
 ## PARAMETERS
 

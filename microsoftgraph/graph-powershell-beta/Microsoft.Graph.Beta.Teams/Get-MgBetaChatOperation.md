@@ -46,18 +46,17 @@ Get the specified Teams async operation that ran or is running on a specific res
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-list-operations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaChatOperation -ChatId $chatId -TeamsAsyncOperationId $teamsAsyncOperationId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaChatOperation -ChatId $chatId
+
 ```
+This example shows how to use the Get-MgBetaChatOperation Cmdlet.
+
 
 ## PARAMETERS
 

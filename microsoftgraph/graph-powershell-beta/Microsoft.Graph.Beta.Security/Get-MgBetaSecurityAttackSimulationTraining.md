@@ -45,16 +45,17 @@ Represents details about attack simulation trainings.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-list-trainings-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityAttackSimulationTraining
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityAttackSimulationTraining Cmdlet.
+
 
 ## PARAMETERS
 

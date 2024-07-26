@@ -52,16 +52,17 @@ An API to check validity of the endpoint and and authentication configuration fo
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customauthenticationextension-validateauthenticationconfiguration-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration -CustomAuthenticationExtensionId $customAuthenticationExtensionId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

@@ -32,22 +32,6 @@ Get-MgBetaDeviceManagementReportAppInstallSummaryReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getAppsInstallSummaryReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -353,6 +337,7 @@ BODYPARAMETER `<IPathsBcvqvrDevicemanagementReportsMicrosoftGraphGetappsinstalls
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportappinstallsummaryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportappinstallsummaryreport)
+
 
 
 

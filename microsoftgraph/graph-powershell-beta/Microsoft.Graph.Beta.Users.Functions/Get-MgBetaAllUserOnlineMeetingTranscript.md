@@ -56,16 +56,17 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-getalltranscripts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get all transcripts
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Users.Functions
+
+Get-MgBetaAllUserOnlineMeetingTranscript -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example will get all transcripts
+
 
 ## PARAMETERS
 

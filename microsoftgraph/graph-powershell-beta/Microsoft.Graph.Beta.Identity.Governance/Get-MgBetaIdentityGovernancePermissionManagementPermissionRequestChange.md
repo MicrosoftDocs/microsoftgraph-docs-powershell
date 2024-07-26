@@ -47,16 +47,17 @@ Read the properties and relationships of a permissionsRequestChange object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissionsmanagement-list-permissionsrequestchanges-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange -Filter "modificationDateTime gt {t}" 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange Cmdlet.
+
 
 ## PARAMETERS
 

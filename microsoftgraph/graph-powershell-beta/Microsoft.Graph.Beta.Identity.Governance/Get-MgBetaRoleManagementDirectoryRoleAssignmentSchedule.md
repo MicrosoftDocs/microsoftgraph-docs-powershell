@@ -49,16 +49,17 @@ Retrieve the schedule for an active role assignment operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleassignmentschedules-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule Cmdlet.
+
 
 ## PARAMETERS
 

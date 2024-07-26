@@ -50,16 +50,17 @@ Read the properties and relationships of a privilegedAccessGroupAssignmentSchedu
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroup-list-assignmentschedules-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Retrieve an assignment schedule
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule -PrivilegedAccessGroupAssignmentScheduleId $privilegedAccessGroupAssignmentScheduleId
+
 ```
-{{ Add code here }}
-```
+This example will retrieve an assignment schedule
+
 
 ## PARAMETERS
 

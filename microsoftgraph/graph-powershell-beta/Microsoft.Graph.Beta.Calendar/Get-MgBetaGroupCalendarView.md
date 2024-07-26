@@ -29,16 +29,6 @@ The calendar view for the calendar.
 Navigation property.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Calendar
-```
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserCalendarView -UserId $userId -Startdatetime "2017-01-01T19:00:00-08:00" -Enddatetime "2017-01-07T19:00:00-08:00"
-
 ## PARAMETERS
 
 ### -All
@@ -298,6 +288,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarview)
+
 
 
 

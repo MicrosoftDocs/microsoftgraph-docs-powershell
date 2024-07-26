@@ -65,16 +65,6 @@ Alternatively, reply-all to a message in a single action.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-createreplyall-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Actions
-```
-
-# A UPN can also be used as -UserId.
-New-MgBetaUserMessageReplyAll -UserId $userId -MessageId $messageId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -621,6 +611,7 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfolderchildfoldermessagereplyall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfolderchildfoldermessagereplyall)
 
 [https://learn.microsoft.com/graph/api/message-createreplyall?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-createreplyall?view=graph-rest-beta)
+
 
 
 

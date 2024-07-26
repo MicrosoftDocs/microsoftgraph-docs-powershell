@@ -29,12 +29,17 @@ Reset any changes made to the default configuration in a cross-tenant access pol
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault
+
 ```
+This example shows how to use the Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault Cmdlet.
+
 
 ## PARAMETERS
 

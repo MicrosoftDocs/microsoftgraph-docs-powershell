@@ -53,15 +53,21 @@ Change the account type of the user on a specific Cloud PC.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-changeuseraccounttype-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
 $params = @{
-	UserAccountType = "administrator"
+	userAccountType = "administrator"
 }
+
 Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPCId $cloudPCId -BodyParameter $params
+
 ```
+This example shows how to use the Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType Cmdlet.
+
 
 ## PARAMETERS
 

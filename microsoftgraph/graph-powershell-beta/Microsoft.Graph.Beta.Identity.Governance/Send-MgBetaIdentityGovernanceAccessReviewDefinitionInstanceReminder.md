@@ -37,12 +37,17 @@ Send a reminder to the reviewers of a currently active accessReviewInstance.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-sendreminder-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
+
 ```
+This example shows how to use the Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder Cmdlet.
+
 
 ## PARAMETERS
 

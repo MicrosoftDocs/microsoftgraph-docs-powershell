@@ -42,16 +42,30 @@ This is a long-running operation and as such, it returns a printerCreateOperatio
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-create-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+$params = @{
+	displayName = "Test Printer"
+	manufacturer = "Test Printer Manufacturer"
+	model = "Test Printer Model"
+	physicalDeviceId = $null
+	hasPhysicalDevice = $false
+	certificateSigningRequest = @{
+		content = '{content}'
+		transportKey = '{sampleTransportKey}'
+	}
+	connectorId = $null
+}
+
+New-MgBetaPrintPrinter -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaPrintPrinter Cmdlet.
+
 
 ## PARAMETERS
 

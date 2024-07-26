@@ -34,24 +34,28 @@ Retrieve a Teams app icon associated with a specific definition of an app.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamsappicon-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get outline icon of a *custom* Teams app
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
-```
 
-### EXAMPLE 2
 ```
+This example will get outline icon of a *custom* teams app
+
+### Example 2: Get outline icon of a *store* Teams app
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
-```
 
-### EXAMPLE 3
 ```
-Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId -OutFile $outFileId
-```
+This example will get outline icon of a *store* teams app
+
 
 ## PARAMETERS
 

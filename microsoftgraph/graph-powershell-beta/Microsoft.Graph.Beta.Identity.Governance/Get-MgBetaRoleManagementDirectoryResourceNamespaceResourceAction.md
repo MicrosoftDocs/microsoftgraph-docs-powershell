@@ -50,16 +50,39 @@ Read the properties and relationships of an unifiedRbacResourceAction object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourcenamespace-list-resourceactions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: List microsoft.directory actions
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId
+
 ```
-{{ Add code here }}
+This example will list microsoft.directory actions
+
+### Example 2: List microsoft.insights actions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId
+
 ```
+This example will list microsoft.insights actions
+
+### Example 3: List privileged actions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId $unifiedRbacResourceNamespaceId -Filter "isPrivileged eq true" 
+
+```
+This example will list privileged actions
+
 
 ## PARAMETERS
 

@@ -61,16 +61,25 @@ Update the properties of an incident object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-incident-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	classification = "TruePositive"
+	determination = "MultiStagedAttack"
+	customTags = @(
+	"Demo"
+)
+}
+
+Update-MgSecurityIncident -IncidentId $incidentId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgSecurityIncident Cmdlet.
+
 
 ## PARAMETERS
 

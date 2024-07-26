@@ -46,18 +46,17 @@ Read the properties and relationships of a managementIntent object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-managementintents-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.ManagedTenants
-Get-MgBetaTenantRelationshipManagedTenantManagementIntent -ManagementIntentId $managementIntentId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 Get-MgBetaTenantRelationshipManagedTenantManagementIntent
+
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagementIntent Cmdlet.
+
 
 ## PARAMETERS
 

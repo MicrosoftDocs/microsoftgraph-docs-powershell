@@ -51,18 +51,24 @@ Mute all participants in the call.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-muteall-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	Participants = @(
-		""
-	)
-	ClientContext = "clientContext-value"
+	participants = @(
+	""
+)
+clientContext = "clientContext-value"
 }
+
 Invoke-MgBetaMuteAllCommunicationCallParticipant -CallId $callId -BodyParameter $params
+
 ```
+This example shows how to use the Invoke-MgBetaMuteAllCommunicationCallParticipant Cmdlet.
+
 
 ## PARAMETERS
 

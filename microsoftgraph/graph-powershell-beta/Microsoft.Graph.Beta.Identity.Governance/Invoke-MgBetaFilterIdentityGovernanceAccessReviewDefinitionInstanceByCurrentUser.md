@@ -41,20 +41,17 @@ Returns all accessReviewInstance objects on a given accessReviewScheduleDefiniti
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -On $onId 
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

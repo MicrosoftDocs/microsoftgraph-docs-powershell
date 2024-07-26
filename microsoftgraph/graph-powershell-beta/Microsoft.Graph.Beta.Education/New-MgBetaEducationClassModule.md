@@ -59,16 +59,22 @@ Modules start in the draft state, which means that students won't see the module
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-module-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Education
+
+$params = @{
+	displayName = "Module 2"
+	description = "Description for Module 2"
+}
+
+New-MgBetaEducationClassModule -EducationClassId $educationClassId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

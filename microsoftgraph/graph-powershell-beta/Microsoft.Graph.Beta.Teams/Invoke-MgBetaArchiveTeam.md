@@ -67,13 +67,20 @@ To restore a team from its archived state, use the API to unarchive.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-archive-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
-Invoke-MgBetaArchiveTeam -TeamId $teamId
+$params = @{
+}
+
+Invoke-MgBetaArchiveTeam -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaArchiveTeam Cmdlet.
+
 
 ## PARAMETERS
 

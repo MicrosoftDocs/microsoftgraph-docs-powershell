@@ -50,16 +50,17 @@ Get the instance of an active role assignment.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleassignmentscheduleinstances-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance Cmdlet.
+
 
 ## PARAMETERS
 

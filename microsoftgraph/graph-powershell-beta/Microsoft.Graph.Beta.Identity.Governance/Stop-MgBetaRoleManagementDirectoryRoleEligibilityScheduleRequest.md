@@ -39,16 +39,17 @@ After calling this action, the status of the cancelled unifiedRoleEligibilitySch
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleeligibilityschedulerequest-cancel-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Stop-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest -UnifiedRoleEligibilityScheduleRequestId $unifiedRoleEligibilityScheduleRequestId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Stop-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 

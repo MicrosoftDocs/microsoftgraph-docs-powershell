@@ -50,22 +50,6 @@ Update-MgUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property operations in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -410,6 +394,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationoperation)
+
 
 
 

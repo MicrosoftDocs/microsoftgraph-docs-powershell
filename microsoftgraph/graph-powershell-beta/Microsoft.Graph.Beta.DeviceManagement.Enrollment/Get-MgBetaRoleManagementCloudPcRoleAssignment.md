@@ -44,16 +44,17 @@ The following RBAC providers are currently supported:- Cloud PC - device managem
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentmultiple-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a roleAssignmentMultiple in a Cloud PC provider
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+Get-MgBetaRoleManagementCloudPcRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId
+
 ```
-{{ Add code here }}
-```
+This example will get a roleassignmentmultiple in a cloud pc provider
+
 
 ## PARAMETERS
 

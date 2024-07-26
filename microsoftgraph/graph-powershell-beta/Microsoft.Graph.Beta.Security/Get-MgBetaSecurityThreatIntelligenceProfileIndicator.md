@@ -45,16 +45,17 @@ Read the properties and relationships of a intelligenceProfileIndicator object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-intelligenceprofileindicator-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceProfileIndicator -IntelligenceProfileIndicatorId $intelligenceProfileIndicatorId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceProfileIndicator Cmdlet.
+
 
 ## PARAMETERS
 

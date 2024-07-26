@@ -56,15 +56,6 @@ Update-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property primaryChannel in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Teams
-```
-
-Get-MgTeamPrimaryChannel -TeamId $teamId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14802,6 +14793,7 @@ Read only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannel)
+
 
 
 

@@ -35,22 +35,6 @@ Unfollow a driveItem.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-unfollow-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -222,6 +206,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-1.0)
+
 
 
 

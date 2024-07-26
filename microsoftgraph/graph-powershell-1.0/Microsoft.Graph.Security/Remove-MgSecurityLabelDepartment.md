@@ -37,16 +37,17 @@ Delete a departmentTemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-departments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Remove-MgSecurityLabelDepartment -DepartmentTemplateId $departmentTemplateId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgSecurityLabelDepartment Cmdlet.
+
 
 ## PARAMETERS
 

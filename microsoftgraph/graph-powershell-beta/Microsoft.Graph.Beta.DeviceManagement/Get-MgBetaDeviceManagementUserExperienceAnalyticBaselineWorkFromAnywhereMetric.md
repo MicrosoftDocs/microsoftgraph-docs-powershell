@@ -34,22 +34,6 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric
 ## DESCRIPTION
 The scores and insights for the work from anywhere metrics.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -320,6 +304,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementuserexperienceanalyticbaselineworkfromanywheremetric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementuserexperienceanalyticbaselineworkfromanywheremetric)
+
 
 
 

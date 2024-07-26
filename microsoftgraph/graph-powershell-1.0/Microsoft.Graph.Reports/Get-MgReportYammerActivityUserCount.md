@@ -36,20 +36,17 @@ Get the trends on the number of unique users who posted, read, and liked Yammer 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getyammeractivityusercounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportYammerActivityUserCount -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportYammerActivityUserCount Cmdlet.
+
 
 ## PARAMETERS
 

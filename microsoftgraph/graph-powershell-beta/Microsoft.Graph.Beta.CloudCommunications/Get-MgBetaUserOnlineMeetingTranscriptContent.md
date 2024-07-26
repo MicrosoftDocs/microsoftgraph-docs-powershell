@@ -43,30 +43,28 @@ Retrieving the content of the transcript returns the stream of text associated w
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calltranscript-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a callTranscript content
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
-```
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt"
-```
+This example will get a calltranscript content
 
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt"
-```
+### Example 2: Get a callTranscript content specifying $format query param
 
-### EXAMPLE 4
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
+
+Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt" 
+
 ```
+This example will get a calltranscript content specifying $format query param
+
 
 ## PARAMETERS
 

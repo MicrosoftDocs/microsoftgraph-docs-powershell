@@ -53,16 +53,17 @@ Students can only see published modules; teachers and applications with applicat
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-modules-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationClassModule -EducationClassId $educationClassId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

@@ -49,18 +49,17 @@ Get the metadata for a baseSitePage in the site pages list in a site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/basesitepage-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Sites
-Get-MgBetaSitePage -SiteId $siteId -SitePageId $sitePageId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Sites
+
 Get-MgBetaSitePage -SiteId $siteId
+
 ```
+This example shows how to use the Get-MgBetaSitePage Cmdlet.
+
 
 ## PARAMETERS
 

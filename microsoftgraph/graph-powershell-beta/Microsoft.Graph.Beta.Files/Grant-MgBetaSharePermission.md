@@ -53,25 +53,31 @@ Grant users access to a link represented by a permission.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
+
 $params = @{
-	Recipients = @(
+	recipients = @(
 		@{
-			Email = "john@contoso.com"
+			email = "john@contoso.com"
 		}
 		@{
-			Email = "ryan@external.com"
+			email = "ryan@external.com"
 		}
 	)
-	Roles = @(
-		"read"
-	)
+	roles = @(
+	"read"
+)
 }
+
 Grant-MgBetaSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
+
 ```
+This example shows how to use the Grant-MgBetaSharePermission Cmdlet.
+
 
 ## PARAMETERS
 

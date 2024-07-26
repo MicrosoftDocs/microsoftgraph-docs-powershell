@@ -53,16 +53,18 @@ This operation isn't transitive.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-members-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Groups
+
+Get-MgBetaGroupMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Search '"displayName:Pr"' -Property "displayName,id"  -ConsistencyLevel eventual 
+
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaGroupMemberAsUser Cmdlet.
+
 
 ## PARAMETERS
 

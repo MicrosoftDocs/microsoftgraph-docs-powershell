@@ -45,16 +45,17 @@ Get roleAssignments from roleManagement
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleassignments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Request using $filter for role assignments on an access package catalog and expand principal
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementEntitlementManagementRoleAssignment -Filter "appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'" -ExpandProperty "principal" 
+
 ```
-{{ Add code here }}
-```
+This example will request using $filter for role assignments on an access package catalog and expand principal
+
 
 ## PARAMETERS
 

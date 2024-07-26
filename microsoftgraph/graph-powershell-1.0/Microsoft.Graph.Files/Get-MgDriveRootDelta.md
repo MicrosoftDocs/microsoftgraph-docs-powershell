@@ -60,22 +60,6 @@ Deleted items are returned with the deleted facet.Items with this property set s
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-delta-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -382,6 +366,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootdelta)
 
 [https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-1.0)
+
 
 
 

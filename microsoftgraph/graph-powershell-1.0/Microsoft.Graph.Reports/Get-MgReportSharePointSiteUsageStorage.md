@@ -36,20 +36,17 @@ Get the trend of storage allocated and consumed during the reporting period.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointsiteusagestorage-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportSharePointSiteUsageStorage -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportSharePointSiteUsageStorage Cmdlet.
+
 
 ## PARAMETERS
 

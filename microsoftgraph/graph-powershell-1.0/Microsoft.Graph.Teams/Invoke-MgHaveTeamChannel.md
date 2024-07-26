@@ -37,20 +37,17 @@ Determine whether a user has access to a shared channel.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-doesuserhaveaccess-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Teams
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgHaveTeamChannel -TeamId $teamId -ChannelId $channelId
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgHaveTeamChannel Cmdlet.
+
 
 ## PARAMETERS
 

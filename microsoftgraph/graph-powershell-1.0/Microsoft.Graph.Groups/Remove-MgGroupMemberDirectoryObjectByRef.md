@@ -39,16 +39,17 @@ You can't remove a member from groups with dynamic memberships.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-members-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Groups
+
+Remove-MgGroupMemberDirectoryObjectByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgGroupMemberDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 

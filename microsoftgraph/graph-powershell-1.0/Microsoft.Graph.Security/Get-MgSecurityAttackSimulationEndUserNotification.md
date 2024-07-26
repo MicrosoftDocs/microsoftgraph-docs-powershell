@@ -45,16 +45,17 @@ Represents an end user's notification for an attack simulation training.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-endusernotifications-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityAttackSimulationEndUserNotification -Filter "source eq 'global'" 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgSecurityAttackSimulationEndUserNotification Cmdlet.
+
 
 ## PARAMETERS
 

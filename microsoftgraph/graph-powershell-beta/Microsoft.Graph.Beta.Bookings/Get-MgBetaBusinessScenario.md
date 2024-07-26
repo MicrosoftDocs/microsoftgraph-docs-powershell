@@ -46,16 +46,17 @@ Read the properties and relationships of a businessScenario object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/solutionsroot-list-businessscenarios-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBusinessScenario
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaBusinessScenario Cmdlet.
+
 
 ## PARAMETERS
 

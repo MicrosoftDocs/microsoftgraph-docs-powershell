@@ -34,22 +34,6 @@ New-MgIdentityGovernanceAppConsentRequest -BodyParameter <IMicrosoftGraphAppCons
 ## DESCRIPTION
 Create new navigation property to appConsentRequests for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Identity.Governance
-```
-
-Get-MgIdentityGovernanceAppConsentRequest
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Identity.Governance
-```
-
-Get-MgIdentityGovernanceAppConsentRequest -Filter "userConsentRequests/any (u:u/status eq 'InProgress')"
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -377,6 +361,7 @@ Supports $filter (eq only) and $orderby.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequest)
+
 
 
 

@@ -61,16 +61,6 @@ New-MgUserDrive -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDri
 ## DESCRIPTION
 Create new navigation property to drives for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Files
-```
-
-# A UPN can also be used as -UserId.
-Get-MgUserDrive -UserId $userId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -43414,6 +43404,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrive)
+
 
 
 

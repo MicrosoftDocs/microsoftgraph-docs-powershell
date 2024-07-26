@@ -49,16 +49,17 @@ Retrieve the schedule for an active role assignment operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roleassignmentschedules-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleAssignmentSchedule
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgRoleManagementDirectoryRoleAssignmentSchedule Cmdlet.
+
 
 ## PARAMETERS
 

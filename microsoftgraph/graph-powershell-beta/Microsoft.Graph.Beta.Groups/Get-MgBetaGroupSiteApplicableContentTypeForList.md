@@ -38,22 +38,6 @@ Get site contentTypes that can be added to a list.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-getapplicablecontenttypesforlist-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -351,6 +335,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsiteapplicablecontenttypeforlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsiteapplicablecontenttypeforlist)
 
 [https://learn.microsoft.com/graph/api/site-getapplicablecontenttypesforlist?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-getapplicablecontenttypesforlist?view=graph-rest-beta)
+
 
 
 

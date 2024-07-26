@@ -53,16 +53,18 @@ This operation is not transitive.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-members-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Use $searchand OData cast to get user membership in groups with display names that contain the letters 'Pr' including a count of returned objects
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Groups
+
+Get-MgGroupMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Search '"displayName:Pr"' -Property "displayName,id"  -ConsistencyLevel eventual 
+
+
 ```
-{{ Add code here }}
-```
+This example will use $searchand odata cast to get user membership in groups with display names that contain the letters 'pr' including a count of returned objects
+
 
 ## PARAMETERS
 

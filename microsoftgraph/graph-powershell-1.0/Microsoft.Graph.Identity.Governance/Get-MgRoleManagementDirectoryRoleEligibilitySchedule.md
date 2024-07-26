@@ -49,16 +49,17 @@ Retrieve the schedule for a role eligibility operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roleeligibilityschedules-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleEligibilitySchedule
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgRoleManagementDirectoryRoleEligibilitySchedule Cmdlet.
+
 
 ## PARAMETERS
 

@@ -62,16 +62,25 @@ For more information, see: Lifecycle Workflows extensibility approach.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-taskprocessingresult-resume-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	data = @{
+		operationStatus = "Completed"
+	}
+	source = "sample"
+	type = "lifecycleEvent"
+}
+
+Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult -WorkflowId $workflowId -TaskId $taskId -TaskProcessingResultId $taskProcessingResultId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult Cmdlet.
+
 
 ## PARAMETERS
 

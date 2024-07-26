@@ -50,16 +50,22 @@ Assign a sensitivity label to a plannerRoster object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-assignsensitivitylabel-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Planner
+
+$params = @{
+	assignmentMethod = "standard"
+	sensitivityLabelId = "7a4d7cc1-f72b-46a3-9831-02680eaf56f9"
+}
+
+Set-MgBetaPlannerRosterSensitivityLabel -PlannerRosterId $plannerRosterId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Set-MgBetaPlannerRosterSensitivityLabel Cmdlet.
+
 
 ## PARAMETERS
 

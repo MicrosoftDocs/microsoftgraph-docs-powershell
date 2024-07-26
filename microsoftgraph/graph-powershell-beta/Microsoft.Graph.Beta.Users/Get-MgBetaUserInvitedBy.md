@@ -34,16 +34,17 @@ Get the user or servicePrincipal that invited the specified user into the tenant
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-invitedby-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Users
+
+Get-MgBetaUserInvitedBy -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaUserInvitedBy Cmdlet.
+
 
 ## PARAMETERS
 

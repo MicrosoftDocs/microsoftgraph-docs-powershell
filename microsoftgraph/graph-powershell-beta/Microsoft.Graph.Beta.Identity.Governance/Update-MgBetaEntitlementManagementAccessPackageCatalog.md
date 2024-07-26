@@ -66,15 +66,21 @@ Update an existing accessPackageCatalog object to change one or more of its prop
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 $params = @{
-	DisplayName = "Catalog One"
+	displayName = "Catalog One"
 }
+
 Update-MgBetaEntitlementManagementAccessPackageCatalog -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaEntitlementManagementAccessPackageCatalog Cmdlet.
+
 
 ## PARAMETERS
 

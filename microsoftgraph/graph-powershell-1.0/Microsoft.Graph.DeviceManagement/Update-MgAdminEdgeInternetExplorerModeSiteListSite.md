@@ -61,16 +61,26 @@ Update the properties of a browserSite object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersite-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.DeviceManagement
+
+$params = @{
+	webUrl = "www.microsoft.com"
+	targetEnvironment = "microsoftEdge"
+	mergeType = "default"
+	compatibilityMode = "default"
+	allowRedirect = $false
+	comment = "Updating to Edge."
+}
+
+Update-MgAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BrowserSiteId $browserSiteId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgAdminEdgeInternetExplorerModeSiteListSite Cmdlet.
+
 
 ## PARAMETERS
 

@@ -45,16 +45,17 @@ Represents access package assignment requests created by or on behalf of a user.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-assignmentrequests-permissions.md)]
 
 ## EXAMPLES
+### Example 1cenario1 for u1ing query parameter1
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaEntitlementManagementAssignmentRequest
+
 ```
-{{ Add code here }}
-```
+This example will### example scenarios for using query parameters
+
 
 ## PARAMETERS
 

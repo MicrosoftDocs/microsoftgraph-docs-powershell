@@ -42,16 +42,17 @@ Read the properties and relationships of a trustFrameworkKeyv2 object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkey_v2-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaTrustFrameworkKeySetKeyV2 -TrustFrameworkKeySetId $trustFrameworkKeySetId -TrustFrameworkKey_v2Kid $trustFrameworkKey_v2Kid
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaTrustFrameworkKeySetKeyV2 Cmdlet.
+
 
 ## PARAMETERS
 

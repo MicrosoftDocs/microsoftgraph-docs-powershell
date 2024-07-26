@@ -53,29 +53,6 @@ Grant users access to a link represented by a permission.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-grant-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Files
-```
-
-$params = @{
-	Recipients = @(
-		@{
-			Email = "john@contoso.com"
-		}
-		@{
-			Email = "ryan@external.com"
-		}
-	)
-	Roles = @(
-		"read"
-	)
-}
-
-Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -357,6 +334,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupdriverootpermission)
 
 [https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
+
 
 
 

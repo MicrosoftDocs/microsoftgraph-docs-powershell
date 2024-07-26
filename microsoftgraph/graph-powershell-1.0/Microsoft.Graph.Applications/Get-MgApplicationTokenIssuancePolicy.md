@@ -26,13 +26,17 @@ Get-MgApplicationTokenIssuancePolicy -ApplicationId <String> [-ExpandProperty <S
 Get tokenIssuancePolicies from applications
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgApplicationTokenIssuancePolicy -ApplicationId $applicationId
+
+```
+This example shows how to use the Get-MgApplicationTokenIssuancePolicy Cmdlet.
+
 
 ## PARAMETERS
 

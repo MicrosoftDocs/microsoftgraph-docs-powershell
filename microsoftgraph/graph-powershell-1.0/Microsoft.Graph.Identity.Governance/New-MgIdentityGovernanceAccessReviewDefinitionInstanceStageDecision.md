@@ -58,15 +58,6 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -InputObject
 ## DESCRIPTION
 Create new navigation property to decisions for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Identity.Governance
-```
-
-Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId
-
 ## PARAMETERS
 
 ### -AccessReviewId
@@ -685,6 +676,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinitioninstancestagedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinitioninstancestagedecision)
+
 
 
 

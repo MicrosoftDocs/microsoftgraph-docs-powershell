@@ -45,16 +45,17 @@ List of notes associated with the request.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-list-notes-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Compliance
+
+Get-MgBetaPrivacySubjectRightsRequestNote -SubjectRightsRequestId $subjectRightsRequestId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaPrivacySubjectRightsRequestNote Cmdlet.
+
 
 ## PARAMETERS
 

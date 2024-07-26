@@ -56,18 +56,6 @@ Update-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property custodians in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcknowledgedDateTime
@@ -14830,6 +14818,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasecustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasecustodian)
+
 
 
 

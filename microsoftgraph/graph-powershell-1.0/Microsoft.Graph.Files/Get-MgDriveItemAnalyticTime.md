@@ -37,16 +37,17 @@ Get itemAnalytics about the views that took place under this resource.The itemAn
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/itemanalytics-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Files
+
+Get-MgDriveItemAnalyticTime -DriveId $driveId -DriveItemId $driveItemId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgDriveItemAnalyticTime Cmdlet.
+
 
 ## PARAMETERS
 

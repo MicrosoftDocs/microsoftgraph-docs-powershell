@@ -49,18 +49,17 @@ Retrieve the existing synchronization job and its properties.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronization-list-jobs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
+
 Get-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId
-```
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Applications
-Get-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
-```
+This example shows how to use the Get-MgBetaServicePrincipalSynchronizationJob Cmdlet.
+
 
 ## PARAMETERS
 

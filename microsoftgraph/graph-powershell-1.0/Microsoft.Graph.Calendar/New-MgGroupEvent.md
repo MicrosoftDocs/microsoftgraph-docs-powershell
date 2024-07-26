@@ -82,11 +82,11 @@ Use this API to create a new event.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-events-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -108,7 +108,7 @@ $params = @{
 	attendees = @(
 		@{
 			emailAddress = @{
-				address = "adelev@contoso.onmicrosoft.com"
+				address = "adelev@contoso.com"
 				name = "Adele Vance"
 			}
 			type = "required"
@@ -117,6 +117,10 @@ $params = @{
 }
 
 New-MgGroupEvent -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgGroupEvent Cmdlet.
+
 
 ## PARAMETERS
 

@@ -36,16 +36,22 @@ Create a new departmentTemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-departments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.departmentTemplate"
+	displayName = "Finance"
+}
+
+New-MgBetaSecurityLabelDepartment -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaSecurityLabelDepartment Cmdlet.
+
 
 ## PARAMETERS
 

@@ -36,16 +36,17 @@ All the progress, including job state, is persisted, and the job will continue f
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-pause-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Applications
+
+Suspend-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Suspend-MgServicePrincipalSynchronizationJob Cmdlet.
+
 
 ## PARAMETERS
 

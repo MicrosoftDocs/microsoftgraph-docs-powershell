@@ -46,16 +46,17 @@ Read the properties and relationships of a roleGroup object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-rolegroup-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Search
+
+Get-MgBetaExternalIndustryDataRoleGroup
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaExternalIndustryDataRoleGroup Cmdlet.
+
 
 ## PARAMETERS
 

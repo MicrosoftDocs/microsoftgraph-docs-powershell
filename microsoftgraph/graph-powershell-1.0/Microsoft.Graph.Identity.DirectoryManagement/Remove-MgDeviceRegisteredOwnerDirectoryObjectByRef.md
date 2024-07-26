@@ -34,16 +34,17 @@ Remove a user as a registered owner of the device.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-delete-registeredowners-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 

@@ -58,22 +58,6 @@ DriveItem resources inherit sharing permissions from their ancestors.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-createlink-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -404,6 +388,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlink)
 
 [https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-beta)
+
 
 
 

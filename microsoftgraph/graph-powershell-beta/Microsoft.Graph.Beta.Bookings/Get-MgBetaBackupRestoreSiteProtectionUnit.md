@@ -42,16 +42,17 @@ The list of site protection units in the tenant.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-siteprotectionunits-permissions.md)]
 
 ## EXAMPLES
+### Example 1: List all the siteProtectionUnits in a tenant
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBackupRestoreSiteProtectionUnit
+
 ```
-{{ Add code here }}
-```
+This example will list all the siteprotectionunits in a tenant
+
 
 ## PARAMETERS
 

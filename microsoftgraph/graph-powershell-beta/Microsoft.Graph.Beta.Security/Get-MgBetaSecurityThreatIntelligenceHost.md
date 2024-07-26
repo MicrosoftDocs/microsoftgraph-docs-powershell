@@ -49,16 +49,17 @@ A host can be of one of the following types:
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceHost -HostId $hostId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHost Cmdlet.
+
 
 ## PARAMETERS
 

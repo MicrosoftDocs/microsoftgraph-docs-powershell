@@ -46,16 +46,17 @@ Read the properties and relationships of a partnerSecurityAlert object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityalert-list-securityalerts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityPartnerSecurityAlert
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityPartnerSecurityAlert Cmdlet.
+
 
 ## PARAMETERS
 

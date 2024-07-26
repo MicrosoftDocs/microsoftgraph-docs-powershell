@@ -42,16 +42,17 @@ Read the properties and relationships of a protectionUnitBase object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionunitbase-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBackupRestoreProtectionUnit -ProtectionUnitBaseId $protectionUnitBaseId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaBackupRestoreProtectionUnit Cmdlet.
+
 
 ## PARAMETERS
 

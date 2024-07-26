@@ -41,16 +41,29 @@ The following RBAC providers are currently supported:- Cloud PC- device manageme
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-post-roledefinitions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+$params = @{
+	description = "An example custom role"
+	rolePermissions = @(
+		@{
+			allowedResourceActions = @(
+			"Microsoft.CloudPC/CloudPCs/Read"
+		)
+	}
+)
+condition = "null"
+}
+
+New-MgBetaRoleManagementCloudPcRoleDefinition -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

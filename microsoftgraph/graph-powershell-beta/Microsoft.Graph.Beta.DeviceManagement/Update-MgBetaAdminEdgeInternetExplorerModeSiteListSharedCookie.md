@@ -60,16 +60,26 @@ Update the properties of a browserSharedCookie object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersharedcookie-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+$params = @{
+	hostOrDomain = "www.microsoft.com"
+	sourceEnvironment = "microsoftEdge"
+	displayName = "Microsoft Cookie"
+	path = "/"
+	hostOnly = $true
+	comment = "Updating source environment."
+}
+
+Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BrowserSharedCookieId $browserSharedCookieId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie Cmdlet.
+
 
 ## PARAMETERS
 

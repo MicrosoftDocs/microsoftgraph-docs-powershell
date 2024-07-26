@@ -28,20 +28,17 @@ Get the properties and relationships of a teamwork object, such as the region of
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamwork-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Teams
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgBetaTeamwork
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgBetaTeamwork Cmdlet.
+
 
 ## PARAMETERS
 

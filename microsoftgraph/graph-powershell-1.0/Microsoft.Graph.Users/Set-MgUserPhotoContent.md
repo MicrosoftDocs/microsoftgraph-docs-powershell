@@ -49,20 +49,14 @@ The user's profile photo.
 Read-only.
 
 ## EXAMPLES
+### Example 1: Set a user's photo properties
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
+Set-MgUserPhotoContent -UserId f38d9efd-2743-42c9-b1a8-3623c5aba666 -InFile "C:\Pictures\MyProfile.png"
 
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
 ```
 
-{{ Add output here }}
+This example sets the profile photo properties for the specified user.
 
 ## PARAMETERS
 

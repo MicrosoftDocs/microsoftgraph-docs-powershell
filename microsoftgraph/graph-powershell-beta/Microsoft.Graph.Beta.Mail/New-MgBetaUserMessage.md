@@ -77,11 +77,10 @@ New-MgBetaUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGra
 Create new navigation property to messages for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 $params = @{
 	subject = "Annual review"
@@ -109,22 +108,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessage -UserId $userId -BodyParameter $params
-
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Mail
-```
+This example shows how to use the New-MgBetaUserMessage Cmdlet.
 
-$params = @{
-	"@odata.type" = "microsoft.graph.openTypeExtension"
-	extensionName = "Com.Contoso.Referral"
-	companyName = "Wingtip Toys"
-	dealValue = 
-	expirationDate = "2015-12-03T10:00:00.000Z"
-}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-# A UPN can also be used as -UserId.
-New-MgBetaUserMessageExtension -UserId $userId -MessageId $messageId -BodyParameter $params
 
 ## PARAMETERS
 

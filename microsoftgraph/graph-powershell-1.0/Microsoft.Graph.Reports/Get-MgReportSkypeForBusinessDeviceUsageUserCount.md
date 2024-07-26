@@ -39,20 +39,17 @@ You'll also get a breakdown by the type of device (Windows, Windows phone, Andro
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessdeviceusageusercounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportSkypeForBusinessDeviceUsageUserCount -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportSkypeForBusinessDeviceUsageUserCount Cmdlet.
+
 
 ## PARAMETERS
 

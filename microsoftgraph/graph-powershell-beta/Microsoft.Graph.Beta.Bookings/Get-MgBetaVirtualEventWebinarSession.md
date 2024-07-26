@@ -48,16 +48,17 @@ Currently, the following virtual event types are supported: virtualEventTownhall
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventsession-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaVirtualEventWebinarSession -VirtualEventWebinarId $virtualEventWebinarId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaVirtualEventWebinarSession Cmdlet.
+
 
 ## PARAMETERS
 

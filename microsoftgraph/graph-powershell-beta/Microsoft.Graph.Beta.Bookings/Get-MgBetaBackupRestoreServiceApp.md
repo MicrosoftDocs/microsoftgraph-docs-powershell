@@ -46,16 +46,17 @@ Read the properties and relationships of a serviceApp object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-serviceapps-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBackupRestoreServiceApp
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaBackupRestoreServiceApp Cmdlet.
+
 
 ## PARAMETERS
 

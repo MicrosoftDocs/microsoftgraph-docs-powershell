@@ -57,16 +57,23 @@ The only one property that can be updated is displayName, for all resource types
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmoduleresource-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Education
+
+$params = @{
+	resource = @{
+		displayName = "New pptx file patched.pptx"
+	}
+}
+
+Update-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgEducationClassModuleResource Cmdlet.
+
 
 ## PARAMETERS
 

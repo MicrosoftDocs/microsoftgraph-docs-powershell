@@ -105,16 +105,36 @@ Create a new servicePrincipal object if it doesn't exist, or update the properti
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-upsert-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create a new servicePrincipal if it doesn't exist
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	displayName = "My app instance"
+}
+
+Update-MgServicePrincipalByAppId -BodyParameter $params
+
 ```
-{{ Add code here }}
+This example will create a new serviceprincipal if it doesn't exist
+
+### Example 2: Update an existing servicePrincipal
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	displayName = "My app instance"
+}
+
+Update-MgServicePrincipalByAppId -BodyParameter $params
+
 ```
+This example will update an existing serviceprincipal
+
 
 ## PARAMETERS
 

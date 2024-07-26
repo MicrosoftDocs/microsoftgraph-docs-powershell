@@ -38,20 +38,17 @@ Get a list of archived print jobs that were queued for particular printer.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reports-getprinterarchivedprintjobs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgBetaReportPrinterArchivedPrintJob
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgBetaReportPrinterArchivedPrintJob Cmdlet.
+
 
 ## PARAMETERS
 

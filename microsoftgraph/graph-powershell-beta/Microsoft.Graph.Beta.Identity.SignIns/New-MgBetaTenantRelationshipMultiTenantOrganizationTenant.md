@@ -46,16 +46,22 @@ A tenant can be part of only one multitenant organization.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganization-post-tenants-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	tenantId = "4a12efe6-aa14-4d03-8dff-88fc89e2e2ad"
+	displayName = "Fabrikam"
+}
+
+New-MgBetaTenantRelationshipMultiTenantOrganizationTenant -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaTenantRelationshipMultiTenantOrganizationTenant Cmdlet.
+
 
 ## PARAMETERS
 

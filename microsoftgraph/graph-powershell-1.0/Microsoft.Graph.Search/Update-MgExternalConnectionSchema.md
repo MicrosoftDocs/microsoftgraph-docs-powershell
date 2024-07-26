@@ -53,13 +53,44 @@ Create a new or update an existing schema for a Microsoft Search connection.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-patch-schema-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
-Get-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId
+$params = @{
+	baseType = "microsoft.graph.externalItem"
+	properties = @(
+		@{
+			name = "ticketTitle"
+			type = "String"
+			isSearchable = "true"
+			isRetrievable = "true"
+			labels = @(
+			"title"
+		)
+	}
+	@{
+		name = "priority"
+		type = "String"
+		isQueryable = "true"
+		isRetrievable = "true"
+		isSearchable = "false"
+	}
+	@{
+		name = "assignee"
+		type = "String"
+		isRetrievable = "true"
+	}
+)
+}
+
+Update-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgExternalConnectionSchema Cmdlet.
+
 
 ## PARAMETERS
 

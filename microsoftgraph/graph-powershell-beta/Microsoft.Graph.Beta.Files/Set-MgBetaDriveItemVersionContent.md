@@ -32,22 +32,6 @@ Set-MgBetaDriveItemVersionContent -InputObject <IFilesIdentity> [-Data <Stream>]
 ## DESCRIPTION
 Update content for the navigation property versions in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -281,6 +265,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetadriveitemversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetadriveitemversioncontent)
+
 
 
 

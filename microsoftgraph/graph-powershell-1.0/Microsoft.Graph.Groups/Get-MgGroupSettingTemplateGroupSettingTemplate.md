@@ -48,16 +48,17 @@ This operation allows retrieval of the properties of the groupSettingTemplate ob
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/groupsettingtemplate-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Groups
+
+Get-MgGroupSettingTemplateGroupSettingTemplate
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgGroupSettingTemplateGroupSettingTemplate Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,15 +33,6 @@ Owners are currently not available in Microsoft Graph for groups that were creat
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-owners-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Groups
-```
-
-Get-MgBetaGroupOwner -GroupId $groupId
-
 ## PARAMETERS
 
 ### -All
@@ -257,6 +248,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerbyref)
 
 [https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-beta)
+
 
 
 

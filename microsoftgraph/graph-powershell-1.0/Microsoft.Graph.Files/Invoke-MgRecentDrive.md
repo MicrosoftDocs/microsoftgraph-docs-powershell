@@ -39,20 +39,17 @@ List a set of items that have been recently used by the signed in user.This coll
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-recent-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Files
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgRecentDrive -DriveId $driveId
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgRecentDrive Cmdlet.
+
 
 ## PARAMETERS
 

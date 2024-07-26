@@ -53,16 +53,40 @@ Update the properties of a plannerPlanConfigurationLocalization object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfigurationlocalization-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.plannerPlanConfigurationLocalization"
+	planTitle = "Order Tracking"
+	buckets = @(
+		@{
+			externalBucketId = "deliveryBucket"
+			name = "Deliveries"
+		}
+		@{
+			externalBucketId = "storePickupBucket"
+			name = "Pickup"
+		}
+		@{
+			externalBucketId = "specialOrdersBucket"
+			name = "Special Orders"
+		}
+		@{
+			externalBucketId = "returnProcessingBucket"
+			name = "Customer Returns"
+		}
+	)
+}
+
+Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId -PlannerPlanConfigurationLocalizationId $plannerPlanConfigurationLocalizationId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization Cmdlet.
+
 
 ## PARAMETERS
 

@@ -38,16 +38,17 @@ Deletes a windowsHelloForBusinessAuthenticationMethod object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowshelloforbusinessauthenticationmethod-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Remove-MgBetaUserAuthenticationWindowsHelloForBusinessMethod -UserId $userId -WindowsHelloForBusinessAuthenticationMethodId $windowsHelloForBusinessAuthenticationMethodId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaUserAuthenticationWindowsHelloForBusinessMethod Cmdlet.
+
 
 ## PARAMETERS
 

@@ -42,16 +42,17 @@ The list of mailbox protection units in the tenant.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-mailboxprotectionunits-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBackupRestoreMailboxProtectionUnit
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaBackupRestoreMailboxProtectionUnit Cmdlet.
+
 
 ## PARAMETERS
 

@@ -39,16 +39,17 @@ Only teachers within a class can delete modules.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Education
+
+Remove-MgBetaEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

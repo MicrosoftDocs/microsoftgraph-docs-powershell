@@ -32,15 +32,6 @@ Make sure you don't specify the same user or group in the rejected senders and a
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-rejectedsenders-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Groups
-```
-
-Get-MgBetaGroupRejectedSender -GroupId $groupId
-
 ## PARAMETERS
 
 ### -All
@@ -240,6 +231,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouprejectedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouprejectedsenderbyref)
 
 [https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-beta)
+
 
 
 

@@ -37,16 +37,17 @@ You may only delete the values in an overridesPage, which is used to customize t
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguagepage-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Remove-MgBetaIdentityB2CUserFlowLanguageOverridePageContent -B2cIdentityUserFlowId $b2cIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId -UserFlowLanguagePageId $userFlowLanguagePageId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaIdentityB2CUserFlowLanguageOverridePageContent Cmdlet.
+
 
 ## PARAMETERS
 

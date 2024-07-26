@@ -42,16 +42,17 @@ Represents the alert entity.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rolemanagementalert-list-alerts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceRoleManagementAlert -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'" -ExpandProperty "alertDefinition,alertConfiguration,alertIncidents" 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaIdentityGovernanceRoleManagementAlert Cmdlet.
+
 
 ## PARAMETERS
 

@@ -55,16 +55,25 @@ Acquire an OAuth access token to authorize the Microsoft Entra provisioning serv
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-acquireaccesstoken-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	credentials = @(
+		@{
+			"@odata.type" = "microsoft.graph.synchronizationSecretKeyStringValuePair"
+		}
+	)
+}
+
+Get-MgApplicationSynchronizationAccessToken -ApplicationId $applicationId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgApplicationSynchronizationAccessToken Cmdlet.
+
 
 ## PARAMETERS
 

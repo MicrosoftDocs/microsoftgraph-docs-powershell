@@ -39,20 +39,17 @@ Types of conference sessions include audio/video, and dial-in and dial-out - Mic
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinessorganizeractivityminutecounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount Cmdlet.
+
 
 ## PARAMETERS
 

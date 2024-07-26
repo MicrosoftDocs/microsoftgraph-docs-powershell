@@ -49,16 +49,17 @@ Read the properties and relationships of an unifiedRoleEligibilitySchedule objec
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleeligibilityschedules-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedule
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedule Cmdlet.
+
 
 ## PARAMETERS
 

@@ -61,20 +61,21 @@ Update the properties of a qna object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Search
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	description = "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a weekend."
+}
 
-{{ Add output here }}
+Update-MgBetaSearchQna -QnaId $qnaId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSearchQna Cmdlet.
+
 
 ## PARAMETERS
 

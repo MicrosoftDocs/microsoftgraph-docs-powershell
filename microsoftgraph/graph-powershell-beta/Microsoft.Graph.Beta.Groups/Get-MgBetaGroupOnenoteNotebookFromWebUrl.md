@@ -54,20 +54,6 @@ The location can be user notebooks on Microsoft 365, group notebooks, or SharePo
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-getnotebookfromweburl-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Actions
-```
-
-$params = @{
-	WebUrl = "webUrl value"
-}
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -297,6 +283,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponenotenotebookfromweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponenotenotebookfromweburl)
 
 [https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-beta](https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-beta)
+
 
 
 

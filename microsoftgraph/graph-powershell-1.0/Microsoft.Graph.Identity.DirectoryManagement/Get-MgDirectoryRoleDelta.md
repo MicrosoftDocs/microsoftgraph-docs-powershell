@@ -32,12 +32,17 @@ See Using Delta Query for details.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryrole-delta-permissions.md)]
 
 ## EXAMPLES
+### Example
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
 Get-MgDirectoryRoleDelta
+
 ```
+This example will### example
+
 
 ## PARAMETERS
 

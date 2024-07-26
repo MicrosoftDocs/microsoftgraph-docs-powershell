@@ -37,12 +37,17 @@ Delete a qna object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
+
 Remove-MgBetaSearchQna -QnaId $qnaId
+
 ```
+This example shows how to use the Remove-MgBetaSearchQna Cmdlet.
+
 
 ## PARAMETERS
 

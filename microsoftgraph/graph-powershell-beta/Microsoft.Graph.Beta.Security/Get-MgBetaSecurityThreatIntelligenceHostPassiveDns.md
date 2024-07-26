@@ -45,16 +45,17 @@ Passive DNS retrieval about this host.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-list-passivedns-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceHostPassiveDns -HostId $hostId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostPassiveDns Cmdlet.
+
 
 ## PARAMETERS
 

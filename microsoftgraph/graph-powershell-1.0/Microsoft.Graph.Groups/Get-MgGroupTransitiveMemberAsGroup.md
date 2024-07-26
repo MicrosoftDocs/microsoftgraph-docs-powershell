@@ -57,16 +57,18 @@ An attempt to filter by an OData cast that represents an unsupported member type
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-transitivemembers-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Groups
+
+Get-MgGroupTransitiveMemberAsGroup -GroupId $groupId -CountVariable CountVar  -ConsistencyLevel eventual 
+
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgGroupTransitiveMemberAsGroup Cmdlet.
+
 
 ## PARAMETERS
 

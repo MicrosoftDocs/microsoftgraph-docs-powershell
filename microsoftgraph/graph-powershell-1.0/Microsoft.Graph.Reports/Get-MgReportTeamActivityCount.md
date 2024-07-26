@@ -38,16 +38,17 @@ The activity types are related to meetings and messages.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsteamactivitycounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportTeamActivityCount -Period $periodId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgReportTeamActivityCount Cmdlet.
+
 
 ## PARAMETERS
 

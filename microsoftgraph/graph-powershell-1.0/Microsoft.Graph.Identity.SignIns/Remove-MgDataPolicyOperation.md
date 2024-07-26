@@ -32,15 +32,6 @@ Remove-MgDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete entity from dataPolicyOperations
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Identity.SignIns
-```
-
-Get-MgDataPolicyOperation -DataPolicyOperationId $dataPolicyOperationId
-
 ## PARAMETERS
 
 ### -DataPolicyOperationId
@@ -259,6 +250,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgdatapolicyoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgdatapolicyoperation)
+
 
 
 

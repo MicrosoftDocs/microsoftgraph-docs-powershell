@@ -41,20 +41,17 @@ Retrieve a collection of userConsentRequest objects for accessing a specified ap
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userconsentrequest-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser -AppConsentRequestId $appConsentRequestId -Filter " (status eq 'Completed')"  -On $onId 
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

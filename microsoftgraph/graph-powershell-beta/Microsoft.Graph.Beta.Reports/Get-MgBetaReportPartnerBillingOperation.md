@@ -45,16 +45,39 @@ Read the properties and relationships of an operation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-operation-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get operation succeeded
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportPartnerBillingOperation -OperationId $operationId
+
 ```
-{{ Add code here }}
+This example will get operation succeeded
+
+### Example 2: Get operation failed
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportPartnerBillingOperation -OperationId $operationId
+
 ```
+This example will get operation failed
+
+### Example 3: Get operation is still running
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportPartnerBillingOperation -OperationId $operationId
+
+```
+This example will get operation is still running
+
 
 ## PARAMETERS
 

@@ -50,20 +50,21 @@ Dismiss a recommendation object that you consider to be inapplicable to your ten
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-dismiss-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	dismissReason = "Recommendations is not relevant for my organization because..."
+}
 
-{{ Add output here }}
+Invoke-MgBetaDismissDirectoryRecommendation -RecommendationId $recommendationId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaDismissDirectoryRecommendation Cmdlet.
+
 
 ## PARAMETERS
 

@@ -56,84 +56,6 @@ You can specify both the parent conversation and thread in the request, or, you 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-reply-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Groups
-```
-
-$params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "Which quarter does that file cover?
-See my attachment."
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.fileAttachment"
-				Name = "Another file as attachment"
-				ContentBytes = "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
-			}
-		)
-	}
-}
-
-Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.Groups
-```
-
-$params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "I attached an event."
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.itemAttachment"
-				Name = "Holiday event"
-				Item = @{
-					"@odata.type" = "microsoft.graph.event"
-					Subject = "Discuss gifts for children"
-				}
-			}
-		)
-	}
-}
-
-Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Groups
-```
-
-$params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "I attached a reference to a file on OneDrive."
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.referenceAttachment"
-				Name = "Personal pictures"
-				SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
-				ProviderType = "oneDriveConsumer"
-				Permission = "Edit"
-				IsFolder = "True"
-			}
-		)
-	}
-}
-
-Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -585,6 +507,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread)
 
 [https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-beta](https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-beta)
+
 
 
 

@@ -37,20 +37,39 @@ Any resources marked as deleted should be removed from your local state.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-delta-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Initial request
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Sites
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgBetaSiteDelta
 
-{{ Add output here }}
+```
+This example will initial request
+
+### Example 2: Last page request
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteDelta -Token "1230919asd190410jlka" 
+
+```
+This example will last page request
+
+### Example 3: Delta link request
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteDelta -Token "latest" 
+
+```
+This example will delta link request
+
 
 ## PARAMETERS
 

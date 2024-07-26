@@ -47,12 +47,17 @@ Nullable.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-transitivememberof-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 Get-MgBetaGroupTransitiveMemberOf -GroupId $groupId
+
 ```
+This example shows how to use the Get-MgBetaGroupTransitiveMemberOf Cmdlet.
+
 
 ## PARAMETERS
 

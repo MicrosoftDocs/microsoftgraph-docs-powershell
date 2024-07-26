@@ -61,16 +61,25 @@ This allows transfer to be resumed, in case the network connection is dropped du
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printdocument-createuploadsession-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+$params = @{
+	properties = @{
+		documentName = "TestFile.pdf"
+		contentType = "application/pdf"
+		size = 4533322
+	}
+}
+
+New-MgPrintPrinterJobDocumentUploadSession -PrinterId $printerId -PrintJobId $printJobId -PrintDocumentId $printDocumentId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgPrintPrinterJobDocumentUploadSession Cmdlet.
+
 
 ## PARAMETERS
 

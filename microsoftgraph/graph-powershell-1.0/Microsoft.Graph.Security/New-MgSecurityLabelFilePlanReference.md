@@ -36,16 +36,22 @@ Create a new filePlanReferenceTemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-post-fileplanreferences-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.filePlanReferenceTemplate"
+	displayName = "FIN 01-02-001"
+}
+
+New-MgSecurityLabelFilePlanReference -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgSecurityLabelFilePlanReference Cmdlet.
+
 
 ## PARAMETERS
 

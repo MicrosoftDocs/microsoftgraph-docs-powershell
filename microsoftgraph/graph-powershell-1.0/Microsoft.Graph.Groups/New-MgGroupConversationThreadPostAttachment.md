@@ -50,15 +50,6 @@ New-MgGroupConversationThreadPostAttachment -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Create new navigation property to attachments for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Groups
-```
-
-Get-MgGroupThreadPostAttachment -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -410,6 +401,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostattachment)
+
 
 
 

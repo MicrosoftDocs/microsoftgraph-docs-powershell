@@ -36,16 +36,17 @@ The settings exposed by this API should be used in applications to populate the 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-informationprotectionpolicysetting-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaUserSecurityInformationProtectionLabelPolicySetting -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaUserSecurityInformationProtectionLabelPolicySetting Cmdlet.
+
 
 ## PARAMETERS
 

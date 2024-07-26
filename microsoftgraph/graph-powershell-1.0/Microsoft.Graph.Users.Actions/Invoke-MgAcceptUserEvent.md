@@ -53,17 +53,23 @@ Accept the specified event in a user calendar.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-accept-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
+
 $params = @{
-	Comment = "comment-value"
-	SendResponse = $true
+	comment = "comment-value"
+	sendResponse = $true
 }
+
 # A UPN can also be used as -UserId.
 Invoke-MgAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+
 ```
+This example shows how to use the Invoke-MgAcceptUserEvent Cmdlet.
+
 
 ## PARAMETERS
 

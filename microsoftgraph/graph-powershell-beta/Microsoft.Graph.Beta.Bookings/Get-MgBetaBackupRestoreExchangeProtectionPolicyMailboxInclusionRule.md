@@ -55,16 +55,17 @@ After the rule is applied, the state is either completed or completedWithErrors.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/exchangeprotectionpolicy-list-mailboxinclusionrules-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a mailboxInclusionRule associated with an Exchange protection policy
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRule -ExchangeProtectionPolicyId $exchangeProtectionPolicyId -MailboxProtectionRuleId $mailboxProtectionRuleId
+
 ```
-{{ Add code here }}
-```
+This example will get a mailboxinclusionrule associated with an exchange protection policy
+
 
 ## PARAMETERS
 

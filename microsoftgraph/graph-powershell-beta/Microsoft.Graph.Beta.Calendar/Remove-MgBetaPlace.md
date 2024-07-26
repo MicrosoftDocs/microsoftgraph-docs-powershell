@@ -32,24 +32,6 @@ Remove-MgBetaPlace -InputObject <ICalendarIdentity> [-IfMatch <String>] [-Respon
 ## DESCRIPTION
 Delete entity from places
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Calendar
-```
-
-$params = @{
-	"@odata.type" = "microsoft.graph.room"
-	nickname = "Conf Room"
-	building = "1"
-	label = "100"
-	capacity = 
-	isWheelChairAccessible = $false
-}
-
-Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -Headers
@@ -223,6 +205,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplace)
+
 
 
 

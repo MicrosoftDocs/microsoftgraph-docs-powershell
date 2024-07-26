@@ -37,16 +37,17 @@ Remove an educationUser from an educationClass.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-delete-members-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Education
+
+Remove-MgEducationClassMemberEducationUserByRef -EducationClassId $educationClassId -EducationUserId $educationUserId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgEducationClassMemberEducationUserByRef Cmdlet.
+
 
 ## PARAMETERS
 

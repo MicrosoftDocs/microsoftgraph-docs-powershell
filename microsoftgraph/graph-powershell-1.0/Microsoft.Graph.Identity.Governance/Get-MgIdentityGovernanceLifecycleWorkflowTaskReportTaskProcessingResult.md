@@ -47,16 +47,28 @@ The related lifecycle workflow taskProcessingResults.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-taskreport-list-taskprocessingresults-permissions.md)]
 
 ## EXAMPLES
+### Example 1: List the task processing results that are included in a task report for a workflow
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult -WorkflowId $workflowId -TaskReportId $taskReportId
+
 ```
-{{ Add code here }}
+This example will list the task processing results that are included in a task report for a workflow
+
+### Example 2: List the task processing results that are included in a task report for a workflow, and retrieve specific properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult -WorkflowId $workflowId -TaskReportId $taskReportId -Property "id,failureReason,processingStatus,subject,task" 
+
 ```
+This example will list the task processing results that are included in a task report for a workflow, and retrieve specific properties
+
 
 ## PARAMETERS
 

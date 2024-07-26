@@ -56,17 +56,23 @@ Any user can update their password without belonging to any administrator role.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-changepassword-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
+
 $params = @{
-	CurrentPassword = "xWwvJ]6NMw+bWH-d"
-	NewPassword = "0eM85N54wFxWwvJ]"
+	currentPassword = "xWwvJ]6NMw+bWH-d"
+	newPassword = "0eM85N54wFxWwvJ]"
 }
+
 # A UPN can also be used as -UserId.
 Update-MgUserPassword -UserId $userId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgUserPassword Cmdlet.
+
 
 ## PARAMETERS
 

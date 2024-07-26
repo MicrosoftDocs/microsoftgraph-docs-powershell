@@ -38,17 +38,17 @@ When invoked with delegated permissions, this operation only works for tenant ad
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
+
+Remove-MgChat -ChatId $chatId
+
 ```
+This example shows how to use the Remove-MgChat Cmdlet.
 
-$params = @{
-	topic = "Group chat title update"
-}
-
-Update-MgChat -ChatId $chatId -BodyParameter $params
 
 ## PARAMETERS
 

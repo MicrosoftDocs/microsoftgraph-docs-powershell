@@ -83,20 +83,17 @@ For requests completed more than 14 days, you will need to ask the users to canc
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentrequest-reprocess-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId
 
-{{ Add output here }}
+```
+This example shows how to use the Update-MgEntitlementManagementAssignmentRequest Cmdlet.
+
 
 ## PARAMETERS
 

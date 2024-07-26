@@ -48,16 +48,30 @@ Update one or more tenant-level settings for SharePoint and OneDrive.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointsettings-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Sites
+
+$params = @{
+	deletedUserPersonalSiteRetentionPeriodInDays = 365
+	excludedFileExtensionsForSyncApp = @(
+	".mp3"
+)
+imageTaggingOption = "enhanced"
+isLegacyAuthProtocolsEnabled = $true
+isSitesStorageLimitAutomatic = $false
+isSyncButtonHiddenOnPersonalSite = $false
+isUnmanagedSyncAppForTenantRestricted = $false
+personalSiteDefaultStorageLimitInMB = 120000
+}
+
+Update-MgBetaAdminSharepointSetting -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaAdminSharepointSetting Cmdlet.
+
 
 ## PARAMETERS
 

@@ -39,20 +39,17 @@ Types of sessions include IM, audio, video, application sharing, and file transf
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinesspeertopeeractivityusercounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount Cmdlet.
+
 
 ## PARAMETERS
 

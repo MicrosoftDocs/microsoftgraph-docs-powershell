@@ -45,16 +45,17 @@ The subdomains that are associated with this host.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-list-subdomains-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceHostSubdomain -HostId $hostId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostSubdomain Cmdlet.
+
 
 ## PARAMETERS
 

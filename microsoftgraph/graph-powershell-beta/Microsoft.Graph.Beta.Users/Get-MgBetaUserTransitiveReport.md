@@ -43,22 +43,6 @@ Read-only.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-get-transitivereports-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -368,6 +352,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivereport)
 
 [https://learn.microsoft.com/graph/api/user-get-transitivereports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-get-transitivereports?view=graph-rest-beta)
+
+
 
 
 

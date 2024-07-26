@@ -39,16 +39,17 @@ Get a list of virtualEventWebinar objects where the signed-in user is either the
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventwebinar-getbyuserrole-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaVirtualEventWebinarByUserRole -Role $roleId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaVirtualEventWebinarByUserRole Cmdlet.
+
 
 ## PARAMETERS
 

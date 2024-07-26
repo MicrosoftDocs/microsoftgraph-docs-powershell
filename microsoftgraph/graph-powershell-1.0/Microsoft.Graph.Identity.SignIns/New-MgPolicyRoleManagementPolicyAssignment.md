@@ -33,22 +33,6 @@ New-MgPolicyRoleManagementPolicyAssignment
 ## DESCRIPTION
 Create new navigation property to roleManagementPolicyAssignments for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Identity.SignIns
-```
-
-Get-MgPolicyRoleManagementPolicyAssignment -Filter "scopeId eq '/' and scopeType eq 'Directory'"
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Identity.SignIns
-```
-
-Get-MgPolicyRoleManagementPolicyAssignment -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole' and roleDefinitionId eq '62e90394-69f5-4237-9190-012177145e10'" -ExpandProperty "policy(\`$expand=rules)"
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -385,6 +369,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyrolemanagementpolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyrolemanagementpolicyassignment)
+
 
 
 

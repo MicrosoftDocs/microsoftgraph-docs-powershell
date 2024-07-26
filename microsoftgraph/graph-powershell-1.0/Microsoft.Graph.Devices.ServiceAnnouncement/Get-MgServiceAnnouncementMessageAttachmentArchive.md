@@ -37,16 +37,17 @@ Get the list of attachments associated with a service message.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-list-attachments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a zip file of all attachments in stream for a message
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+
+Get-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId $serviceUpdateMessageId
+
 ```
-{{ Add code here }}
-```
+This example will get a zip file of all attachments in stream for a message
+
 
 ## PARAMETERS
 

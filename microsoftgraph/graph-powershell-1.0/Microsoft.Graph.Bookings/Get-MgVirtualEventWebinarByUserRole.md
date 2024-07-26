@@ -39,16 +39,17 @@ Get a virtualEventWebinar collection where the signed-in user is either the orga
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventwebinar-getbyuserrole-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Bookings
+
+Get-MgVirtualEventWebinarByUserRole -Role $roleId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgVirtualEventWebinarByUserRole Cmdlet.
+
 
 ## PARAMETERS
 

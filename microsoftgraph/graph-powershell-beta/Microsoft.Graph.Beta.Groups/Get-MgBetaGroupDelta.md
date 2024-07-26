@@ -31,18 +31,39 @@ See Using Delta Query for details.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delta-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 Get-MgBetaGroupDelta
-```
 
-### EXAMPLE 2
 ```
+This example shows how to use the Get-MgBetaGroupDelta Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-Get-MgBetaGroupDelta -Property "displayName,description,mailNickname"
+
+Get-MgBetaGroupDelta -Property "displayName,description,mailNickname" 
+
 ```
+This example shows how to use the Get-MgBetaGroupDelta Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Get-MgBetaGroupDelta -Property "displayName,description,mailNickname" 
+
+```
+This example shows how to use the Get-MgBetaGroupDelta Cmdlet.
+
 
 ## PARAMETERS
 

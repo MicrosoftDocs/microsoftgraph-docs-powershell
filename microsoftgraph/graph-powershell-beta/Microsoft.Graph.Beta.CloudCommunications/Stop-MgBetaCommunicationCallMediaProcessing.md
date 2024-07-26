@@ -61,15 +61,21 @@ However, it will not cancel a ubscribeToTone operation because it operates indep
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-cancelmediaprocessing-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	ClientContext = "clientContext-value"
+	clientContext = "clientContext-value"
 }
+
 Stop-MgBetaCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params
+
 ```
+This example shows how to use the Stop-MgBetaCommunicationCallMediaProcessing Cmdlet.
+
 
 ## PARAMETERS
 

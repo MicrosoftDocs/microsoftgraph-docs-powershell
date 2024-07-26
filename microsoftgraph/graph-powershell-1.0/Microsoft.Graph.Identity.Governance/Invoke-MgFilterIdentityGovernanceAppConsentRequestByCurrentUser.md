@@ -39,20 +39,17 @@ Retrieve a collection of appConsentRequest objects for which the current user is
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appconsentrequest-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Identity.Governance
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgFilterIdentityGovernanceAppConsentRequestByCurrentUser -Filter "userConsentRequests/any(u:u/status eq 'InProgress')"  -On $onId 
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgFilterIdentityGovernanceAppConsentRequestByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

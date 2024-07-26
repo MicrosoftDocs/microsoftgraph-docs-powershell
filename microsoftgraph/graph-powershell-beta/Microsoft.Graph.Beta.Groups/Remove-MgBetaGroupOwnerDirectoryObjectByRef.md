@@ -39,16 +39,17 @@ When owners are assigned to a group, the last owner (a user object) of the group
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-owners-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Groups
+
+Remove-MgBetaGroupOwnerDirectoryObjectByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaGroupOwnerDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 

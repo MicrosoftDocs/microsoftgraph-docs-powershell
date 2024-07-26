@@ -45,16 +45,17 @@ Read the properties and relationships of a passiveDnsRecord object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-passivednsrecord-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligencePassiveDnsRecord -PassiveDnsRecordId $passiveDnsRecordId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgSecurityThreatIntelligencePassiveDnsRecord Cmdlet.
+
 
 ## PARAMETERS
 

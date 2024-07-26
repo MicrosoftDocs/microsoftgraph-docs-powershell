@@ -38,16 +38,17 @@ The upload URL is provided only for the CSV data provider.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-uploadurl-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Education
+
+Invoke-MgBetaUploadEducationSynchronizationProfileUrl -EducationSynchronizationProfileId $educationSynchronizationProfileId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgBetaUploadEducationSynchronizationProfileUrl Cmdlet.
+
 
 ## PARAMETERS
 

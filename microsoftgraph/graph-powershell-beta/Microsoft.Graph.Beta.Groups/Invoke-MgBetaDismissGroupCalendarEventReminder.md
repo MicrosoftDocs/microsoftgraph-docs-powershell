@@ -36,16 +36,6 @@ Dismiss a reminder that has been triggered for an event in a user calendar.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-dismissreminder-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Actions
-```
-
-# A UPN can also be used as -UserId.
-Invoke-MgBetaDismissUserEventReminder -UserId $userId -EventId $eventId
-
 ## PARAMETERS
 
 ### -EventId
@@ -254,6 +244,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupcalendareventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupcalendareventreminder)
 
 [https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-beta)
+
 
 
 

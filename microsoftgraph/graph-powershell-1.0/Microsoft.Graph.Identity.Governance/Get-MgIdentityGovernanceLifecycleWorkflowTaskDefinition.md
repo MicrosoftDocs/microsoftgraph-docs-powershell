@@ -49,16 +49,28 @@ Read the details of a built-in workflow task.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Retrieve all built-in task definitions
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition
+
 ```
-{{ Add code here }}
+This example will retrieve all built-in task definitions
+
+### Example 2: Retrieve all built-in tasks supported for "joiner" workflows
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition -Filter "category has 'joiner'" 
+
 ```
+This example will retrieve all built-in tasks supported for "joiner" workflows
+
 
 ## PARAMETERS
 

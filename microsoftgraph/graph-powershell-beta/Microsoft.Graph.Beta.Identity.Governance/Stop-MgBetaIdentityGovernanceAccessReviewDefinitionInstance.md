@@ -43,12 +43,17 @@ To prevent a recurring access review from starting future instances, update the 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-stop-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
+
 ```
+This example shows how to use the Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
+
 
 ## PARAMETERS
 

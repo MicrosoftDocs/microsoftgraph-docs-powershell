@@ -42,16 +42,17 @@ Insights for all user requests on apps registered in the tenant for a specified 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/monthlyuserinsightmetricsroot-list-requests-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportUserInsightMonthlyRequest
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaReportUserInsightMonthlyRequest Cmdlet.
+
 
 ## PARAMETERS
 

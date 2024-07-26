@@ -26,20 +26,17 @@ Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotifi
 Download Apple push notification certificate signing request
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.DeviceManagement.Functions
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest Cmdlet.
+
 
 ## PARAMETERS
 

@@ -69,16 +69,24 @@ Update the properties of an alert object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-alert-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	assignedTo = "secAdmin@contoso.com"
+	classification = "truePositive"
+	determination = "malware"
+	status = "inProgress"
+}
+
+Update-MgBetaSecurityAlertV2 -AlertId $alertId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaSecurityAlertV2 Cmdlet.
+
 
 ## PARAMETERS
 

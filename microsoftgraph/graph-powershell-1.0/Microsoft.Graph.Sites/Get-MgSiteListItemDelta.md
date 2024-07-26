@@ -67,16 +67,39 @@ Items with this property should be removed from your local state.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-delta-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Initial request
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId
+
 ```
-{{ Add code here }}
+This example will initial request
+
+### Example 2: Last page request
+
+```powershell
+
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka" 
+
 ```
+This example will last page request
+
+### Example 3: Delta link request
+
+```powershell
+
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest" 
+
+```
+This example will delta link request
+
 
 ## PARAMETERS
 

@@ -67,12 +67,17 @@ Since the post resource supports extensions, you can also use the GET operation 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversationthread-list-posts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 Get-MgBetaGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId
+
 ```
+This example shows how to use the Get-MgBetaGroupThreadPost Cmdlet.
+
 
 ## PARAMETERS
 

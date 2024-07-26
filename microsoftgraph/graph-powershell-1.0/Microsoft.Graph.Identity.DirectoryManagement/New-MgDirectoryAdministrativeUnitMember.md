@@ -54,16 +54,29 @@ Currently it's only possible to add one member at a time to an administrative un
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-post-members-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create a new group
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.group"
+	description = "Self help community for golf"
+	displayName = "Golf Assist"
+	groupTypes = @(
+	"Unified"
+)
+mailEnabled = $true
+mailNickname = "golfassist"
+securityEnabled = $false
+}
+
+New-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example will create a new group
+
 
 ## PARAMETERS
 

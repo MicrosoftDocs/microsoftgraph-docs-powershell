@@ -34,16 +34,17 @@ Get the order of identityUserFlowAttributeAssignments being collected within a u
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-getorder-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder -B2cIdentityUserFlowId $b2cIdentityUserFlowId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder Cmdlet.
+
 
 ## PARAMETERS
 

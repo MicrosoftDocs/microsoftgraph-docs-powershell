@@ -46,16 +46,17 @@ Contains the management details of a service in the customer tenant that's manag
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadmincustomer-list-servicemanagementdetails-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Partner
+
+Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail -DelegatedAdminCustomerId $delegatedAdminCustomerId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail Cmdlet.
+
 
 ## PARAMETERS
 

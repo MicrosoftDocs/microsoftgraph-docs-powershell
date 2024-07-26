@@ -56,20 +56,6 @@ This creates a new copy of the message in the destination folder and removes the
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-move-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Actions
-```
-
-$params = @{
-	DestinationId = "deleteditems"
-}
-
-# A UPN can also be used as -UserId.
-Move-MgBetaUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,6 +325,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/message-move?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-move?view=graph-rest-beta)
+
 
 
 

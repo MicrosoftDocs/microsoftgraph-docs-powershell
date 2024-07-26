@@ -42,16 +42,17 @@ Insights for authentications on apps registered in the tenant for a specified pe
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/dailyuserinsightmetricsroot-list-authentications-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportUserInsightDailyAuthentication
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaReportUserInsightDailyAuthentication Cmdlet.
+
 
 ## PARAMETERS
 

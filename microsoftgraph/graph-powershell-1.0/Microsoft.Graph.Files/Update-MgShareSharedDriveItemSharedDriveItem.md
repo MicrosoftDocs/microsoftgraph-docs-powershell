@@ -60,29 +60,6 @@ Update-MgShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update entity in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -43465,6 +43442,7 @@ This relationship can only be used to load a specific term set.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgshareshareddriveitemshareddriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgshareshareddriveitemshareddriveitem)
+
 
 
 

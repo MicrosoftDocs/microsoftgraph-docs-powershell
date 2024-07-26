@@ -37,20 +37,17 @@ Get the number of Microsoft Teams unique users by device type over the selected 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsdeviceusagedistributionusercounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportTeamDeviceUsageDistributionUserCount -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportTeamDeviceUsageDistributionUserCount Cmdlet.
+
 
 ## PARAMETERS
 

@@ -49,16 +49,17 @@ Get a tenant and its properties in the multi-tenant organization.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganization-list-tenants-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant Cmdlet.
+
 
 ## PARAMETERS
 

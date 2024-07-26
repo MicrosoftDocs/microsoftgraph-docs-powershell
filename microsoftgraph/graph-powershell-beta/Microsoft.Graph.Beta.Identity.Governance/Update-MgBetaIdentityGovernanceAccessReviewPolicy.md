@@ -35,15 +35,21 @@ Update the properties of an accessReviewPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewpolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 $params = @{
-	IsGroupOwnerManagementEnabled = $true
+	isGroupOwnerManagementEnabled = $true
 }
+
 Update-MgBetaIdentityGovernanceAccessReviewPolicy -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaIdentityGovernanceAccessReviewPolicy Cmdlet.
+
 
 ## PARAMETERS
 

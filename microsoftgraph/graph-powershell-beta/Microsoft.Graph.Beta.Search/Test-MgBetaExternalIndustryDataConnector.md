@@ -34,16 +34,17 @@ Perform validations applicable for the specific instance of the data connector.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-validate-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Search
+
+Test-MgBetaExternalIndustryDataConnector -IndustryDataConnectorId $industryDataConnectorId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Test-MgBetaExternalIndustryDataConnector Cmdlet.
+
 
 ## PARAMETERS
 

@@ -32,29 +32,6 @@ Remove-MgBetaTeam -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHe
 ## DESCRIPTION
 Delete entity from teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Teams
-```
-
-$params = @{
-	memberSettings = @{
-		allowCreateUpdateChannels = $true
-	}
-	messagingSettings = @{
-		allowUserEditMessages = $true
-		allowUserDeleteMessages = $true
-	}
-	funSettings = @{
-		allowGiphy = $true
-		giphyContentRating = "strict"
-	}
-}
-
-Update-MgBetaTeam -TeamId $teamId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -Headers
@@ -256,6 +233,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateam)
+
 
 
 

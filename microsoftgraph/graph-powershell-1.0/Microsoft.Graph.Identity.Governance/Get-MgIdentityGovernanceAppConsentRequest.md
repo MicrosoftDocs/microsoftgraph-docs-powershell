@@ -49,13 +49,28 @@ Read the properties and relationships of an appConsentRequest object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appconsentapprovalroute-list-appconsentrequests-permissions.md)]
 
 ## EXAMPLES
+### Example 1:  List all appConsentRequests
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
-Get-MgIdentityGovernanceAppConsentRequest -AppConsentRequestId $appConsentRequestId
+Get-MgIdentityGovernanceAppConsentRequest
+
+```
+This example will  list all appconsentrequests
+
+### Example 2: List all appConsentRequests with at least one userConsentRequest whose status is InProgress
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceAppConsentRequest -Filter "userConsentRequests/any (u:u/status eq 'InProgress')" 
+
+```
+This example will list all appconsentrequests with at least one userconsentrequest whose status is inprogress
+
 
 ## PARAMETERS
 

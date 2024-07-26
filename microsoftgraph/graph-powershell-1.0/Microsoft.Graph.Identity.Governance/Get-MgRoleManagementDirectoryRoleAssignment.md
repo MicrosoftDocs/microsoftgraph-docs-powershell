@@ -49,16 +49,28 @@ Retrieve the properties and relationships of a unifiedRoleAssignment object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roleassignments-permissions.md)]
 
 ## EXAMPLES
+### Example 1 : Get the details of a role assignment
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
+
 ```
-{{ Add code here }}
+This example will### example 1 : get the details of a role assignment
+
+### Example 2: Get the details of a role assignment and expand the relationships
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId -ExpandProperty "roleDefinition" 
+
 ```
+This example will get the details of a role assignment and expand the relationships
+
 
 ## PARAMETERS
 

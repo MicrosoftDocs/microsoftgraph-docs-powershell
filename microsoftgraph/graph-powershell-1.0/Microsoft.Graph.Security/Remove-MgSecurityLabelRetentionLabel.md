@@ -37,16 +37,17 @@ Delete a retentionLabel object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionlabel-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Remove-MgSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgSecurityLabelRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 

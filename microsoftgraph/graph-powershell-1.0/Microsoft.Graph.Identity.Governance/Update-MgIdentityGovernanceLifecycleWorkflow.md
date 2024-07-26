@@ -73,16 +73,24 @@ To update any other workflow properties, see workflow: createNewVersion.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+$params = @{
+	description = "Configure new hire tasks for onboarding employees on their first day"
+	displayName = "Australia Onboard new hire employee"
+	isEnabled = $true
+	isSchedulingEnabled = $false
+}
+
+Update-MgIdentityGovernanceLifecycleWorkflow -WorkflowId $workflowId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgIdentityGovernanceLifecycleWorkflow Cmdlet.
+
 
 ## PARAMETERS
 

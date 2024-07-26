@@ -37,20 +37,17 @@ Get the daily total number of groups and how many of them were active based on e
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365groupsactivitygroupcounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportOffice365GroupActivityGroupCount -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportOffice365GroupActivityGroupCount Cmdlet.
+
 
 ## PARAMETERS
 

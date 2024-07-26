@@ -47,16 +47,17 @@ The default file can have multiple versions, each with its own language, that ca
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreementfile-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the default agreement file
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile -AgreementId $agreementId
+
 ```
-{{ Add code here }}
-```
+This example will get the default agreement file
+
 
 ## PARAMETERS
 

@@ -31,12 +31,17 @@ This function supports @odata.nextLink for pagination.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityreportsroot-getattacksimulationsimulationusercoverage-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
+
 Get-MgBetaReportSecurityAttackSimulationUserCoverage
+
 ```
+This example shows how to use the Get-MgBetaReportSecurityAttackSimulationUserCoverage Cmdlet.
+
 
 ## PARAMETERS
 

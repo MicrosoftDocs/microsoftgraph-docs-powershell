@@ -37,16 +37,28 @@ Delete a browserSharedCookie from a browserSiteList.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-delete-sharedcookies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Delete a shared cookie that was not previously published
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BrowserSharedCookieId $browserSharedCookieId
+
 ```
-{{ Add code here }}
+This example will delete a shared cookie that was not previously published
+
+### Example 2: Delete a shared cookie that was previously published
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement
+
+Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BrowserSharedCookieId $browserSharedCookieId
+
 ```
+This example will delete a shared cookie that was previously published
+
 
 ## PARAMETERS
 

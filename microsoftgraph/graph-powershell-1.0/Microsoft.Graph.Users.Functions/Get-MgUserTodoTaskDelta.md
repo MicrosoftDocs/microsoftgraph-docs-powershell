@@ -43,16 +43,18 @@ This allows you to maintain and synchronize a local store of a user's todoTask r
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-delta-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Users.Functions
+
+# A UPN can also be used as -UserId.
+Get-MgUserTodoTaskDelta -UserId $userId -TodoTaskListId $todoTaskListId -Deltatoken "w0vf2jHg2mBXU-I2AK0FSWl0dopNtG8u5YoM" 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgUserTodoTaskDelta Cmdlet.
+
 
 ## PARAMETERS
 

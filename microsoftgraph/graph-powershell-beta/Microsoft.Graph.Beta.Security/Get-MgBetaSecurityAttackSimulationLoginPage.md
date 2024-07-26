@@ -59,16 +59,17 @@ Represents an attack simulation training login page.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-list-loginpage-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityAttackSimulationLoginPage -Filter "source eq 'tenant'" 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityAttackSimulationLoginPage Cmdlet.
+
 
 ## PARAMETERS
 

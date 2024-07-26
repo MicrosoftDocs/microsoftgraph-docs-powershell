@@ -55,20 +55,24 @@ NOTE: This functionality is currently only available for OneDrive Personal.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-restore-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Files
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	parentReference = @{
+		id = "String"
+	}
+	name = "String"
+}
 
-{{ Add output here }}
+Restore-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Restore-MgDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

@@ -81,16 +81,17 @@ Get the properties and relationships of a hostSslCertificate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-hostsslcertificate-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostSslCertificateId $hostSslCertificateId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostSslCertificate Cmdlet.
+
 
 ## PARAMETERS
 

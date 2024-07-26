@@ -42,16 +42,17 @@ Read the Microsoft Purview Information Protection labels for the user or organiz
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-informationprotection-list-sensitivitylabels-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaUserSecurityInformationProtectionSensitivityLabel -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaUserSecurityInformationProtectionSensitivityLabel Cmdlet.
+
 
 ## PARAMETERS
 

@@ -61,20 +61,55 @@ DriveItem resources inherit sharing permissions from their ancestors.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-createlink-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Files
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	type = "view"
+	password = "ThisIsMyPrivatePassword"
+	scope = "anonymous"
+	retainInheritedPermissions = $false
+}
 
-{{ Add output here }}
+New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDriveItemLink Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Files
+
+$params = @{
+	type = "edit"
+	scope = "organization"
+}
+
+New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDriveItemLink Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Files
+
+$params = @{
+	type = "embed"
+}
+
+New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDriveItemLink Cmdlet.
+
 
 ## PARAMETERS
 

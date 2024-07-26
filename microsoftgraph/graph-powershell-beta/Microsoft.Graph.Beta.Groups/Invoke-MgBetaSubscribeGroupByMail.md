@@ -39,12 +39,17 @@ Supported for Microsoft 365 groups only.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-subscribebymail-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 Invoke-MgBetaSubscribeGroupByMail -GroupId $groupId
+
 ```
+This example shows how to use the Invoke-MgBetaSubscribeGroupByMail Cmdlet.
+
 
 ## PARAMETERS
 

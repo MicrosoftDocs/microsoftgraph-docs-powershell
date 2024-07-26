@@ -34,16 +34,17 @@ Delete a sourceSystemDefinition object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Search
+
+Remove-MgBetaExternalIndustryDataSourceSystem -SourceSystemDefinitionId $sourceSystemDefinitionId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaExternalIndustryDataSourceSystem Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,16 +46,17 @@ The objects returned are those that are in scope for approval by the calling use
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approval-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Retrieve the approval resources in PIM for groups
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser -On $onId 
+
 ```
-{{ Add code here }}
-```
+This example will retrieve the approval resources in pim for groups
+
 
 ## PARAMETERS
 

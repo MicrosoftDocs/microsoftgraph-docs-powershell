@@ -65,16 +65,29 @@ The following RBAC providers are currently supported:- Cloud PC- device manageme
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroledefinition-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	description = "Update basic properties of application registrations"
+	displayName = "Application Registration Support Administrator"
+	rolePermissions = @(
+		@{
+			allowedResourceActions = @(
+			"microsoft.directory/applications/basic/read"
+		)
+	}
+)
+}
+
+Update-MgBetaRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaRoleManagementDirectoryRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

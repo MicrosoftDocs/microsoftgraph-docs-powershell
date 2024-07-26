@@ -36,16 +36,27 @@ Create a new cloudPcBulkAction object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-bulkactions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.cloudPcBulkAction"
+	displayName = "Bulk Power Off by Andy"
+	cloudPcIds = @(
+	"d6e0b8ee-8836-4b8d-b038-6130a97a3a9d"
+"85994912-197b-4927-b569-447bd81350ec"
+)
+scheduledDuringMaintenanceWindow = $true
+}
+
+New-MgBetaDeviceManagementVirtualEndpointBulkAction -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointBulkAction Cmdlet.
+
 
 ## PARAMETERS
 

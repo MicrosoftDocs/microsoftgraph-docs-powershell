@@ -38,22 +38,6 @@ This will create a new version with the contents of the previous version, but pr
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitemversion-restore-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -240,6 +224,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriverootversion)
 
 [https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0)
+
 
 
 

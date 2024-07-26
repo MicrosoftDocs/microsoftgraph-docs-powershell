@@ -72,16 +72,17 @@ The setting can be a tenant-level or group-specific setting.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-settings-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Groups
+
+Get-MgGroupSetting -GroupId $groupId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgGroupSetting Cmdlet.
+
 
 ## PARAMETERS
 

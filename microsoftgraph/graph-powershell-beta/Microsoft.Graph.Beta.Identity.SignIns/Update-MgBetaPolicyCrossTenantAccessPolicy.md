@@ -41,20 +41,24 @@ Update the properties of a cross-tenant access policy.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	allowedCloudEndpoints = @(
-		"microsoftonline.us"
-		"partner.microsoftonline.cn"
-	)
+	"microsoftonline.us"
+"partner.microsoftonline.cn"
+)
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicy Cmdlet.
+
 
 ## PARAMETERS
 

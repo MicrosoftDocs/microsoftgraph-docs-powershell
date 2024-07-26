@@ -27,13 +27,17 @@ Get-MgBetaServicePrincipalClaimMappingPolicy -ServicePrincipalId <String> [-Expa
 List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Get-MgBetaServicePrincipalClaimMappingPolicy -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgBetaServicePrincipalClaimMappingPolicy Cmdlet.
+
 
 ## PARAMETERS
 

@@ -42,12 +42,17 @@ Get policies from trustFramework
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframework-list-trustframeworkpolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 Get-MgBetaTrustFrameworkPolicy
+
 ```
+This example shows how to use the Get-MgBetaTrustFrameworkPolicy Cmdlet.
+
 
 ## PARAMETERS
 

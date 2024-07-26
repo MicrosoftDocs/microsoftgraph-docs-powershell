@@ -36,16 +36,17 @@ Retrieve applicationSigninSummary objects within either the last seven or 30 day
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getazureadapplicationsigninsummary-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportAzureAdApplicationSignInSummary -Period $periodId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaReportAzureAdApplicationSignInSummary Cmdlet.
+
 
 ## PARAMETERS
 

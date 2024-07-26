@@ -51,16 +51,17 @@ This includes the default file and all localized files.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termsofusecontainer-list-agreements-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceTermsOfUseAgreement
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaIdentityGovernanceTermsOfUseAgreement Cmdlet.
+
 
 ## PARAMETERS
 

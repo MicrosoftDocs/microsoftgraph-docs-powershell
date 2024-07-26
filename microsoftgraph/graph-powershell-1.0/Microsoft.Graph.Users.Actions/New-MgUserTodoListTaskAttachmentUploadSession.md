@@ -63,20 +63,26 @@ The following are the steps to attach a file to a Microsoft To Do task using an 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/taskfileattachment-createuploadsession-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Actions
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+$params = @{
+	attachmentInfo = @{
+		attachmentType = "file"
+		name = "flower"
+		size = 3483322
+	}
+}
 
-{{ Add output here }}
+# A UPN can also be used as -UserId.
+New-MgUserTodoListTaskAttachmentUploadSession -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
+
+```
+This example shows how to use the New-MgUserTodoListTaskAttachmentUploadSession Cmdlet.
+
 
 ## PARAMETERS
 

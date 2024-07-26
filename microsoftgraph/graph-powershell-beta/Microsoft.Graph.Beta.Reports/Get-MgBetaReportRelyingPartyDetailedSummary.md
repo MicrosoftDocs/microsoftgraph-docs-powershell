@@ -39,20 +39,17 @@ Get a summary of AD FS relying parties information.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getrelyingpartydetailedsummary-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgBetaReportRelyingPartyDetailedSummary -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgBetaReportRelyingPartyDetailedSummary Cmdlet.
+
 
 ## PARAMETERS
 

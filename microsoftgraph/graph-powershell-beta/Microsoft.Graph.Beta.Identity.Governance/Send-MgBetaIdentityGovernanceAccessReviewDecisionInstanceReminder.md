@@ -33,22 +33,6 @@ Send a reminder to the reviewers of a currently active accessReviewInstance.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-sendreminder-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -295,6 +279,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaidentitygovernanceaccessreviewdecisioninstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaidentitygovernanceaccessreviewdecisioninstancereminder)
 
 [https://learn.microsoft.com/graph/api/accessreviewinstance-sendreminder?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstance-sendreminder?view=graph-rest-beta)
+
 
 
 

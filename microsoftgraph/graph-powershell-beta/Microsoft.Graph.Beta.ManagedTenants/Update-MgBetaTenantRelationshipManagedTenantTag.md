@@ -54,16 +54,22 @@ Update the properties of a tenantTag object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 $params = @{
-	DisplayName = "Onboarding"
-	Description = "Tenants that we are currently onboarding"
+	displayName = "Onboarding"
+	description = "Tenants that we are currently onboarding"
 }
+
 Update-MgBetaTenantRelationshipManagedTenantTag -TenantTagId $tenantTagId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
+
 
 ## PARAMETERS
 

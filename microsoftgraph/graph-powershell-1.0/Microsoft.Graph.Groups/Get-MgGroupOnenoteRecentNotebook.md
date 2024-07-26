@@ -36,22 +36,6 @@ Get a list of recentNotebook instances that have been accessed by the signed-in 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-getrecentnotebooks-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -284,6 +268,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouponenoterecentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouponenoterecentnotebook)
 
 [https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-1.0)
+
 
 
 

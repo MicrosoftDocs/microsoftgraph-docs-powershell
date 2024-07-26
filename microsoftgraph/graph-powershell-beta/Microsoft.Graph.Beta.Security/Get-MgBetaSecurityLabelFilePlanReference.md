@@ -49,16 +49,17 @@ Read the properties and relationships of a filePlanReferenceTemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-list-fileplanreferences-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityLabelFilePlanReference
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityLabelFilePlanReference Cmdlet.
+
 
 ## PARAMETERS
 

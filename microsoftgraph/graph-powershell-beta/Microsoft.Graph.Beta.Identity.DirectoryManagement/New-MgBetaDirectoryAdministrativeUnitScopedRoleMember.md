@@ -50,11 +50,10 @@ New-MgBetaDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDir
 Create new navigation property to scopedRoleMembers for directory
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	roleId = "roleId-value"
@@ -64,6 +63,11 @@ $params = @{
 }
 
 New-MgBetaDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaDirectoryAdministrativeUnitScopedRoleMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -38,16 +38,24 @@ Create a new citationTemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-post-citations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.citationTemplate"
+	displayName = "Contoso Company Policy"
+	citationUrl = "www.citationUrl.com"
+	citationJurisdiction = "Contoso"
+}
+
+New-MgSecurityLabelCitation -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgSecurityLabelCitation Cmdlet.
+
 
 ## PARAMETERS
 

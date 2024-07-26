@@ -30,16 +30,17 @@ These are the attributes that are collected from the user during the authenticat
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onattributecollectionexternalusersselfservicesignup-list-attributes-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute -AuthenticationEventsFlowId $authenticationEventsFlowId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute Cmdlet.
+
 
 ## PARAMETERS
 

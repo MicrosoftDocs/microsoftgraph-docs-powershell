@@ -42,16 +42,17 @@ The principal can be the creator or approver of the unifiedRoleEligibilitySchedu
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityschedulerequest-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser -On $onId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

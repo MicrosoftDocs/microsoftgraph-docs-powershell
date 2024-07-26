@@ -40,16 +40,17 @@ Only teachers in the class can remove a resource.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmoduleresource-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Education
+
+Remove-MgEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgEducationClassModuleResource Cmdlet.
+
 
 ## PARAMETERS
 

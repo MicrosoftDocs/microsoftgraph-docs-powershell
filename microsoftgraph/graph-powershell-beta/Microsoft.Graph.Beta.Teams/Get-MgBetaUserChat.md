@@ -50,20 +50,17 @@ To access a chat, at least one chat member must belong to the tenant the request
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a user's one on one chat
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
-Get-MgBetaUserChat -UserId $userId
+Get-MgBetaUserChat -UserId $userId -ChatId $chatId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Teams
-```
+This example will get a user's one on one chat
 
-Get-MgBetaUserChat -UserId $userId -ExpandProperty "members" -Filter "members/any(o: o/displayname eq 'Peter Parker')"
 
 ## PARAMETERS
 

@@ -47,34 +47,17 @@ Nullable.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-transitivemembers-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupTransitiveMember -GroupId $groupId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Groups
-```
+This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
 
-Get-MgGroupTransitiveMemberAsGroup -GroupId $groupId -CountVariable CountVar -ConsistencyLevel eventual
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Groups
-```
-
-Get-MgGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Search '"displayName:tier"' -Property "displayName,id" -ConsistencyLevel eventual
-
-### EXAMPLE 4
-```
-Import-Module Microsoft.Graph.Groups
-```
-
-Get-MgGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'a')" -ConsistencyLevel eventual
 
 ## PARAMETERS
 

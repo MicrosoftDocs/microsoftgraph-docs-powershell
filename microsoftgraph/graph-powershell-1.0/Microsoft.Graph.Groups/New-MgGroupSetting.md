@@ -71,16 +71,27 @@ The template named Group.Unified can be used to configure tenant-wide Microsoft 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-settings-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Groups
+
+$params = @{
+	templateId = "08d542b9-071f-4e16-94b0-74abb372e3d9"
+	values = @(
+		@{
+			name = "AllowToAddGuests"
+			value = "false"
+		}
+	)
+}
+
+New-MgGroupSetting -GroupId $groupId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgGroupSetting Cmdlet.
+
 
 ## PARAMETERS
 

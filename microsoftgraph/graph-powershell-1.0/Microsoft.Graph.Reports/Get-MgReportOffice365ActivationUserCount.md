@@ -28,20 +28,17 @@ Get the count of users that are enabled and those that have activated the Office
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365activationsusercounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportOffice365ActivationUserCount
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportOffice365ActivationUserCount Cmdlet.
+
 
 ## PARAMETERS
 

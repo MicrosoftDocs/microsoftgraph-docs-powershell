@@ -51,16 +51,17 @@ The following RBAC providers are currently supported:- Cloud PC - device managem
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roledefinitions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the definition of a built-in role for the entitlement management provider
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaRoleManagementEntitlementManagementRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
 ```
-{{ Add code here }}
-```
+This example will get the definition of a built-in role for the entitlement management provider
+
 
 ## PARAMETERS
 

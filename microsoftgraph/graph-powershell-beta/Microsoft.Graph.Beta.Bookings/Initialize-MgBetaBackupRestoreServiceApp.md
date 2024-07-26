@@ -50,16 +50,21 @@ Activate a serviceApp.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceapp-activate-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	effectiveDateTime = [System.DateTime]::Parse("2024-04-19T12-01-03.45Z")
+}
+
+Initialize-MgBetaBackupRestoreServiceApp -ServiceAppId $serviceAppId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Initialize-MgBetaBackupRestoreServiceApp Cmdlet.
+
 
 ## PARAMETERS
 

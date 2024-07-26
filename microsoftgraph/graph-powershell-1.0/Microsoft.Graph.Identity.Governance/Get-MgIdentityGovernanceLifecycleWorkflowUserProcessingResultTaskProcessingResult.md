@@ -48,16 +48,28 @@ The associated individual task execution.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-userprocessingresult-list-taskprocessingresults-permissions.md)]
 
 ## EXAMPLES
+### Example 1: List the results of the tasks processed for a user in a workflow
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult -WorkflowId $workflowId -UserProcessingResultId $userProcessingResultId
+
 ```
-{{ Add code here }}
+This example will list the results of the tasks processed for a user in a workflow
+
+### Example 2: List the results of the tasks processed for a user in a workflow and select specific properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult -WorkflowId $workflowId -UserProcessingResultId $userProcessingResultId -Property "id,processingStatus,failureReason,subject,task" 
+
 ```
+This example will list the results of the tasks processed for a user in a workflow and select specific properties
+
 
 ## PARAMETERS
 

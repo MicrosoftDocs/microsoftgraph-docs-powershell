@@ -36,16 +36,17 @@ Get the count of unique users per email app.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getemailappusageappsusercounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportEmailAppUsageAppUserCount -Period $periodId 
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgReportEmailAppUsageAppUserCount Cmdlet.
+
 
 ## PARAMETERS
 

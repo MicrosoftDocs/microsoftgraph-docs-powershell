@@ -42,16 +42,17 @@ Total sign-ups on apps registered in the tenant for a specified period.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/dailyuserinsightmetricsroot-list-signups-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportUserInsightDailySignUp
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaReportUserInsightDailySignUp Cmdlet.
+
 
 ## PARAMETERS
 

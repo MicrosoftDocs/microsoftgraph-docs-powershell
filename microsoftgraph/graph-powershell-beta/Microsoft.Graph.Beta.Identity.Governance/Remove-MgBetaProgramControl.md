@@ -64,12 +64,17 @@ This unlinks an access review from a program.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/programcontrol-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Remove-MgBetaProgramControl -ProgramControlId $programControlId
+
 ```
+This example shows how to use the Remove-MgBetaProgramControl Cmdlet.
+
 
 ## PARAMETERS
 

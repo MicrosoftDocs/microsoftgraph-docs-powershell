@@ -54,16 +54,23 @@ Optionally clears existing the synchronization state and previous errors.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-restart-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	criteria = @{
+		resetScope = "Watermark, Escrows, QuarantineState"
+	}
+}
+
+Restart-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Restart-MgServicePrincipalSynchronizationJob Cmdlet.
+
 
 ## PARAMETERS
 

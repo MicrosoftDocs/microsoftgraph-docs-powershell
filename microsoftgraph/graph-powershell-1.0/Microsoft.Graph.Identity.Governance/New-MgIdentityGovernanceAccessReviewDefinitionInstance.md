@@ -56,15 +56,6 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIdentityGo
 ## DESCRIPTION
 Create new navigation property to instances for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Identity.Governance
-```
-
-Get-MgIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId
-
 ## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId
@@ -778,6 +769,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinitioninstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinitioninstance)
+
 
 
 

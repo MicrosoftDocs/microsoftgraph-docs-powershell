@@ -55,23 +55,29 @@ Assign a cloudPcUserSetting to user groups.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcusersetting-assign-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
 $params = @{
-	Assignments = @(
+	assignments = @(
 		@{
-			Id = "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
-			Target = @{
+			id = "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
+			target = @{
 				"@odata.type" = "microsoft.graph.cloudPcManagementGroupAssignmentTarget"
-				GroupId = "64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
+				groupId = "64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
 			}
 		}
 	)
 }
+
 Set-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params
+
 ```
+This example shows how to use the Set-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
+
 
 ## PARAMETERS
 

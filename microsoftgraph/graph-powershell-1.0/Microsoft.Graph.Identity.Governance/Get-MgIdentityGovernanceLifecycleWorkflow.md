@@ -49,16 +49,28 @@ Read the properties and relationships of a workflow object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-lifecycleworkflowscontainer-list-workflows-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Retrieve all workflows created in the tenant
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflow
+
 ```
-{{ Add code here }}
+This example will retrieve all workflows created in the tenant
+
+### Example 2: Retrieve only specific properties of "leaver" workflows
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceLifecycleWorkflow -Filter "category eq 'leaver'" -Property "id,category,displayName,isEnabled,isSchedulingEnabled" 
+
 ```
+This example will retrieve only specific properties of "leaver" workflows
+
 
 ## PARAMETERS
 

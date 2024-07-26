@@ -45,16 +45,17 @@ Get jobs from print
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-list-jobs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+Get-MgBetaPrintShareJob -PrinterShareId $printerShareId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaPrintShareJob Cmdlet.
+
 
 ## PARAMETERS
 

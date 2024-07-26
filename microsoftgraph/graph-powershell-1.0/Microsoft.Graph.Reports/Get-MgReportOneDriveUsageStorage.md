@@ -36,20 +36,17 @@ Get the trend on the amount of storage you're using in OneDrive for Business.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getonedriveusagestorage-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Reports
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgReportOneDriveUsageStorage -Period $periodId 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgReportOneDriveUsageStorage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -45,16 +45,17 @@ The hostPairs that are resources associated with a host, where that host is the 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-host-list-childhostpairs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceHostChildHostPair -HostId $hostId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgSecurityThreatIntelligenceHostChildHostPair Cmdlet.
+
 
 ## PARAMETERS
 

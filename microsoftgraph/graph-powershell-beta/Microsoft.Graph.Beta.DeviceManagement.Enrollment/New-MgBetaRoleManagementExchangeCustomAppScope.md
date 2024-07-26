@@ -37,16 +37,26 @@ Currently only the Exchange Online RBAC provider is supported.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacapplication-post-customappscope-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
+
+$params = @{
+	type = "RecipientScope"
+	displayName = "Protected Exec Users"
+	customAttributes = @{
+		Exclusive = $false
+		RecipientFilter = "Title -like 'VP*'"
+	}
+}
+
+New-MgBetaRoleManagementExchangeCustomAppScope -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaRoleManagementExchangeCustomAppScope Cmdlet.
+
 
 ## PARAMETERS
 

@@ -51,16 +51,28 @@ The following role-based access control (RBAC) providers are currently supported
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roledefinitions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the definition of a custom role
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
 ```
-{{ Add code here }}
+This example will get the definition of a custom role
+
+### Example 2: Get the definition of a built-in role
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
 ```
+This example will get the definition of a built-in role
+
 
 ## PARAMETERS
 

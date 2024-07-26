@@ -69,30 +69,39 @@ Deleted indicates that the item is deleted and can't be restored.Items with this
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-delta-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Initial request
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Sites
-Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Sites
-Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"  -OutFile $outFileId
-```
 
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId
-```
 
-### EXAMPLE 4
 ```
+This example will initial request
+
+### Example 2: Last page request
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka"
+
+Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka" 
+
 ```
+This example will last page request
+
+### Example 3: Delta link request
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest" 
+
+```
+This example will delta link request
+
 
 ## PARAMETERS
 

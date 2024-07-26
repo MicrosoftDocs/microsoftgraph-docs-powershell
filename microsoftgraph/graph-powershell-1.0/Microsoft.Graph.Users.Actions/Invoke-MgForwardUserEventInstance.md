@@ -58,28 +58,6 @@ This convenience is not available when forwarding from an Outlook.com account.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-forward-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Users.Actions
-```
-
-$params = @{
-	ToRecipients = @(
-		@{
-			EmailAddress = @{
-				Address = "danas@contoso.onmicrosoft.com"
-				Name = "Dana Swope"
-			}
-		}
-	)
-	Comment = "Dana, hope you can make this meeting."
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -365,6 +343,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusereventinstance)
 
 [https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0)
+
 
 
 

@@ -43,16 +43,17 @@ The decision items are represented by accessReviewInstanceDecisionItem objects o
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstancedecisionitem-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Retrieve all decisions on an accessReviewStage of a multi-stage access review for which the calling user is the reviewer
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.Governance
+
+Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -Property "accessReviewId,reviewedDateTime,decision,justification,recommendation,reviewedBy,target"  -On $onId 
+
 ```
-{{ Add code here }}
-```
+This example will retrieve all decisions on an accessreviewstage of a multi-stage access review for which the calling user is the reviewer
+
 
 ## PARAMETERS
 

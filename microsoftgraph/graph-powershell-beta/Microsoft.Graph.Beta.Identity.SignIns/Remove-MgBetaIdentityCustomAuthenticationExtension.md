@@ -37,20 +37,17 @@ Delete a customAuthenticationExtension object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customauthenticationextension-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Remove-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId
 
-{{ Add output here }}
+```
+This example shows how to use the Remove-MgBetaIdentityCustomAuthenticationExtension Cmdlet.
+
 
 ## PARAMETERS
 

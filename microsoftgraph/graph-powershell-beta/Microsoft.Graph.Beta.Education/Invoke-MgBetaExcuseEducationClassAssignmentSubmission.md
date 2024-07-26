@@ -49,16 +49,28 @@ For more information about how to use this header, see the Examples section.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-excuse-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Request with optional Prefer header
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Education
+
+Invoke-MgBetaExcuseEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+
 ```
-{{ Add code here }}
+This example will request with optional prefer header
+
+### Example 2: Request without the Prefer request header
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Invoke-MgBetaExcuseEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+
 ```
+This example will request without the prefer request header
+
 
 ## PARAMETERS
 

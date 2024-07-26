@@ -56,16 +56,36 @@ Update the properties of a plannerPlanConfiguration object for a businessScenari
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.plannerPlanConfiguration"
+	defaultLanguage = "en-us"
+	buckets = @(
+		@{
+			externalBucketId = "deliveryBucket"
+		}
+		@{
+			externalBucketId = "storePickupBucket"
+		}
+		@{
+			externalBucketId = "specialOrdersBucket"
+		}
+		@{
+			externalBucketId = "returnProcessingBucket"
+		}
+	)
+}
+
+Update-MgBetaBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgBetaBusinessScenarioPlannerPlanConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

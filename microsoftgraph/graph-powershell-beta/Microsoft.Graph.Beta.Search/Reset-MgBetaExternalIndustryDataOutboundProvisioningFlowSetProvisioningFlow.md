@@ -37,16 +37,17 @@ This action reprovisions all current data as if it were the initial run, and cle
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-provisioningflow-reset-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Search
+
+Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow -OutboundProvisioningFlowSetId $outboundProvisioningFlowSetId -ProvisioningFlowId $provisioningFlowId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow Cmdlet.
+
 
 ## PARAMETERS
 

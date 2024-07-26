@@ -33,16 +33,22 @@ In the Microsoft Entra access reviews feature, create a new program object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/program-create-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 $params = @{
-	DisplayName = "testprogram3"
-	Description = "test description"
+	displayName = "testprogram3"
+	description = "test description"
 }
+
 New-MgBetaProgram -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaProgram Cmdlet.
+
 
 ## PARAMETERS
 

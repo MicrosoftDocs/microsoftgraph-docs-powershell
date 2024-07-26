@@ -32,15 +32,6 @@ Remove-MgAgreementFile -InputObject <IIdentityGovernanceIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property file for agreements
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Identity.Governance
-```
-
-Get-MgIdentityGovernanceTermOfUseAgreementFile -AgreementId $agreementId
-
 ## PARAMETERS
 
 ### -AgreementId
@@ -268,6 +259,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgagreementfile)
+
 
 
 

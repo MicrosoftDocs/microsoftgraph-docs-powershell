@@ -34,16 +34,17 @@ Get-MgUserManagedAppDiagnosticStatus -InputObject <IUsersFunctionsIdentity> [-Co
 Gets diagnostics validation status for a given user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Users.Functions
+
+Get-MgUserManagedAppDiagnosticStatus -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgUserManagedAppDiagnosticStatus Cmdlet.
+
 
 ## PARAMETERS
 

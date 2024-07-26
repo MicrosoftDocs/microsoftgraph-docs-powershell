@@ -41,20 +41,17 @@ Policies in the former category are restricted in what kinds of changes may be m
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthpolicy-usage-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId
 
-{{ Add output here }}
+```
+This example shows how to use the Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy Cmdlet.
+
 
 ## PARAMETERS
 

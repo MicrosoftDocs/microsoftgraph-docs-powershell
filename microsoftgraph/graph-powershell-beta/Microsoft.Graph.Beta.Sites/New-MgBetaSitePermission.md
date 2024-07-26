@@ -61,27 +61,31 @@ Create a new permission object on a site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-permissions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	roles = @(
-		"write"
-	)
-	grantedToIdentities = @(
-		@{
-			application = @{
-				id = "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
-				displayName = "Contoso Time Manager App"
-			}
+	"write"
+)
+grantedToIdentities = @(
+	@{
+		application = @{
+			id = "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
+			displayName = "Contoso Time Manager App"
 		}
-	)
+	}
+)
 }
 
 New-MgBetaSitePermission -SiteId $siteId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSitePermission Cmdlet.
+
 
 ## PARAMETERS
 

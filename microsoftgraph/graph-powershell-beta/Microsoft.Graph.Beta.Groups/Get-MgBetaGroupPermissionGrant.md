@@ -47,12 +47,17 @@ Supports $expand.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-permissiongrants-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
+
 Get-MgBetaGroupPermissionGrant -GroupId $groupId
+
 ```
+This example shows how to use the Get-MgBetaGroupPermissionGrant Cmdlet.
+
 
 ## PARAMETERS
 

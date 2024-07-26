@@ -37,16 +37,17 @@ Get a list of archived print jobs for a particular group.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reports-getgrouparchivedprintjobs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportGroupArchivedPrintJob
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgReportGroupArchivedPrintJob Cmdlet.
+
 
 ## PARAMETERS
 

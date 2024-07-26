@@ -46,18 +46,17 @@ Retrieve the properties and associations for a Trustframeworkkeyset.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframework-list-keysets-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 Get-MgBetaTrustFrameworkKeySet
-```
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId $trustFrameworkKeySetId
-```
+This example shows how to use the Get-MgBetaTrustFrameworkKeySet Cmdlet.
+
 
 ## PARAMETERS
 
