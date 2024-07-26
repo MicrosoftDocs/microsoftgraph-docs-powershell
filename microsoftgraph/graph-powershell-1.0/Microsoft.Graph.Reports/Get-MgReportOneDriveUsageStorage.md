@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagestorage
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportOneDriveUsageStorage
@@ -27,6 +28,9 @@ Get-MgReportOneDriveUsageStorage -InputObject <IReportsIdentity> -OutFile <Strin
 
 ## DESCRIPTION
 Get the trend on the amount of storage you're using in OneDrive for Business.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getonedriveusagestorage-permissions.md)]
 
 ## EXAMPLES
 

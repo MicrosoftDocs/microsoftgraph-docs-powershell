@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermessagedelta
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Get-MgUserMessageDelta
@@ -34,6 +35,9 @@ Get-MgUserMessageDelta -InputObject <IUsersFunctionsIdentity> [-ChangeType <Stri
 Get a set of messages that have been added, deleted, or updated in a specified folder.
 A delta function call for messages in a folder is similar to a GET request, except that by appropriatelyapplying state tokens in one or more of these calls, you can \[query for incremental changes in the messages inthat folder\](/graph/delta-query-messages).
 This allows you to maintain and synchronize a local store of a user's messages withouthaving to fetch the entire set of messages from the server every time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-delta-permissions.md)]
 
 ## EXAMPLES
 

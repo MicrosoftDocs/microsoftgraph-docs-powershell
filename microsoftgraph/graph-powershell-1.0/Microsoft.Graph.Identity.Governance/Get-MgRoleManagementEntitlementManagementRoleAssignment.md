@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleassignment
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgRoleManagementEntitlementManagementRoleAssignment
@@ -36,6 +37,9 @@ Get-MgRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdentityG
 
 ## DESCRIPTION
 Resource to grant access to users or groups.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roleassignments-permissions.md)]
 
 ## EXAMPLES
 

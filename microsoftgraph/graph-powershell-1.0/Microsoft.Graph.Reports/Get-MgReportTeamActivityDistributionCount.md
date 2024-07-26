@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydistributioncount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportTeamActivityDistributionCount
@@ -28,6 +29,9 @@ Get-MgReportTeamActivityDistributionCount -InputObject <IReportsIdentity> -OutFi
 
 ## DESCRIPTION
 Get the number of team activities across Microsoft Teams over a selected period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsteamactivitydistributioncounts-permissions.md)]
 
 ## EXAMPLES
 

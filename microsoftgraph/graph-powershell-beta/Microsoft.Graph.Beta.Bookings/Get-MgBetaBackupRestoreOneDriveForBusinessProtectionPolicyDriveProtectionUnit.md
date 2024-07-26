@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoreonedriveforbusinessprotectionpolicydriveprotectionunit
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit
@@ -38,6 +39,9 @@ Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit -I
 
 ## DESCRIPTION
 Contains the protection units associated with a  OneDrive for Business protection policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-driveprotectionunits-permissions.md)]
 
 ## EXAMPLES
 

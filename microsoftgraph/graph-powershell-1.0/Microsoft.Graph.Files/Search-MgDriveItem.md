@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveitem
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Search-MgDriveItem
@@ -30,6 +31,9 @@ Search-MgDriveItem -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-search-permissions.md)]
 
 ## EXAMPLES
 

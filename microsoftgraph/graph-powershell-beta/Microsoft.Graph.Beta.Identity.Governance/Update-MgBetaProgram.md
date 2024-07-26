@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogram
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Update-MgBetaProgram
@@ -44,6 +45,9 @@ Update-MgBetaProgram -InputObject <IIdentityGovernanceIdentity> -BodyParameter <
 
 ## DESCRIPTION
 In the Microsoft Entra access reviews feature, update an existing program object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/program-update-permissions.md)]
 
 ## EXAMPLES
 

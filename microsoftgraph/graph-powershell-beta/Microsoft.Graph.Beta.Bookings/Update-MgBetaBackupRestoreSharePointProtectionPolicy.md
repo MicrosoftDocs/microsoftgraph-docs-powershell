@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoresharepointprotectionpolicy
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Update-MgBetaBackupRestoreSharePointProtectionPolicy
@@ -54,6 +55,9 @@ Update-MgBetaBackupRestoreSharePointProtectionPolicy -InputObject <IBookingsIden
 ## DESCRIPTION
 Update a SharePoint protection policy.
 This method adds a sharepointprotectionunit to or removes it from the protection policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointprotectionpolicy-update-permissions.md)]
 
 ## EXAMPLES
 

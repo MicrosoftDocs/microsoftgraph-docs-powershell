@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcategorysubcategory
 schema: 2.0.0
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityLabelCategorySubcategory
@@ -36,6 +38,12 @@ Get-MgSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> [-Expand
 
 ## DESCRIPTION
 Read the properties and relationships of a subcategoryTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-subcategorytemplate-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-categorytemplate-list-subcategories-permissions.md)]
 
 ## EXAMPLES
 

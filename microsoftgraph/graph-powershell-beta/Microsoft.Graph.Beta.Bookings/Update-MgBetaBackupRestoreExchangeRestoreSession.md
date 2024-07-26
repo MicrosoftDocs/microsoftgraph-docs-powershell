@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabackuprestoreexchangerestoresession
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Update-MgBetaBackupRestoreExchangeRestoreSession
@@ -48,6 +49,9 @@ Update-MgBetaBackupRestoreExchangeRestoreSession -InputObject <IBookingsIdentity
 
 ## DESCRIPTION
 Update the properties of an exchangeRestoreSession.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/exchangerestoresession-update-permissions.md)]
 
 ## EXAMPLES
 

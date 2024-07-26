@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecordingcontent
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaUserOnlineMeetingRecordingContent
@@ -34,6 +35,9 @@ Get a callRecording object associated with a scheduled onlineMeeting.
 This API doesn't support getting call recordings from channel meetings.
 For a recording, this API returns the metadata of the single recording associated with the online meeting.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/callrecording-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoreprotectionunit
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaBackupRestoreProtectionUnit
@@ -36,6 +37,9 @@ Get-MgBetaBackupRestoreProtectionUnit -InputObject <IBookingsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Read the properties and relationships of a protectionUnitBase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionunitbase-get-permissions.md)]
 
 ## EXAMPLES
 

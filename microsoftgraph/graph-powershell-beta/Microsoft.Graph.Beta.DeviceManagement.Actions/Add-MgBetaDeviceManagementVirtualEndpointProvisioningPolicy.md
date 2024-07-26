@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/add-mgbetadevicemanagementvirtualendpointprovisioningpolicy
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
@@ -48,6 +49,9 @@ Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDevic
 ## DESCRIPTION
 Apply the current provisioning policy configuration to all Cloud PC devices under a specified policy.
 Currently, the region is the only policy setting that you can apply.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-apply-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinterjob
 schema: 2.0.0
+ms.subservice: universal-print
 ---
 
 # New-MgPrintPrinterJob
@@ -50,6 +51,9 @@ New-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <
 ## DESCRIPTION
 Create a new printJob for a printer.
 Also creates a new printDocument associated with the printJob.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-post-jobs-permissions.md)]
 
 ## EXAMPLES
 

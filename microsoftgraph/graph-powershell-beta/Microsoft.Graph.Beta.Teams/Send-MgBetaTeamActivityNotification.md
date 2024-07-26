@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetateamactivitynotification
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Send-MgBetaTeamActivityNotification
@@ -52,6 +53,9 @@ Send-MgBetaTeamActivityNotification -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Send an activity feed notification in the scope of a team.
 For more information, see sending Teams activity notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-sendactivitynotification-permissions.md)]
 
 ## EXAMPLES
 

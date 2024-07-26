@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagequotastatusmailboxcount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportMailboxUsageQuotaStatusMailboxCount
@@ -28,6 +29,9 @@ Get-MgReportMailboxUsageQuotaStatusMailboxCount -InputObject <IReportsIdentity> 
 
 ## DESCRIPTION
 Get the count of user mailboxes in each quota category.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getmailboxusagequotastatusmailboxcounts-permissions.md)]
 
 ## EXAMPLES
 

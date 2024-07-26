@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationbannerlogo
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Set-MgOrganizationBrandingLocalizationBannerLogo
@@ -30,6 +31,9 @@ Set-MgOrganizationBrandingLocalizationBannerLogo -InputObject <IIdentityDirector
 
 ## DESCRIPTION
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbrandinglocalization-update-permissions.md)]
 
 ## EXAMPLES
 

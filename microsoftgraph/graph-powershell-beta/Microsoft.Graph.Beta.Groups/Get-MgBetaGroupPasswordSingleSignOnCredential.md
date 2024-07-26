@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppasswordsinglesignoncredential
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupPasswordSingleSignOnCredential
@@ -29,6 +30,9 @@ Get-MgBetaGroupPasswordSingleSignOnCredential -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Get the list of password-based single sign-on credentials for a group.
 This API returns the encrypted passwords as null.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-getpasswordsinglesignoncredentials-permissions.md)]
 
 ## EXAMPLES
 

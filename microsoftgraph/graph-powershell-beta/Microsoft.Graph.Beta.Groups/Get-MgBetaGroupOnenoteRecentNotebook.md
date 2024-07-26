@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponenoterecentnotebook
 schema: 2.0.0
+ms.subservice: onenote
 ---
 
 # Get-MgBetaGroupOnenoteRecentNotebook
@@ -28,6 +29,9 @@ Get-MgBetaGroupOnenoteRecentNotebook -InputObject <IGroupsIdentity> [-Count] [-F
 
 ## DESCRIPTION
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-getrecentnotebooks-permissions.md)]
 
 ## EXAMPLES
 

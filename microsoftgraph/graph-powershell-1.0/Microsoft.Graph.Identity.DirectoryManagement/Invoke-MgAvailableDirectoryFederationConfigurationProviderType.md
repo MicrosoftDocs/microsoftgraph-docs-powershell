@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgavailabledirectoryfederationconfigurationprovidertype
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Invoke-MgAvailableDirectoryFederationConfigurationProviderType
@@ -20,6 +21,9 @@ Invoke-MgAvailableDirectoryFederationConfigurationProviderType [-Count] [-Filter
 
 ## DESCRIPTION
 Get all identity providers supported in a directory.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityproviderbase-availableprovidertypes-permissions.md)]
 
 ## EXAMPLES
 

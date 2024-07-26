@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserdelta
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationUserDelta
@@ -23,6 +24,9 @@ Get-MgBetaEducationUserDelta [-ExpandProperty <String[]>] [-Filter <String>] [-P
 ## DESCRIPTION
 Get newly created or updated educationUser without having to perform a full read of the entire collection.
 See Use delta query for details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-delta-permissions.md)]
 
 ## EXAMPLES
 

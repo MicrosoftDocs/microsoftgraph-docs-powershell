@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdelta
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupDelta
@@ -22,6 +23,9 @@ Get-MgBetaGroupDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property 
 ## DESCRIPTION
 Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection.
 See Using Delta Query for details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delta-permissions.md)]
 
 ## EXAMPLES
 
