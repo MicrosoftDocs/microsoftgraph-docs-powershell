@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationownerbyref
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve a list of owners for an application that are directoryObject objects.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwnerByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,6 +21,18 @@ Get-MgBetaApplicationOwnerByRef -ApplicationId <String> [-Filter <String>] [-Sea
 
 ## DESCRIPTION
 Retrieve a list of owners for an application that are directoryObject objects.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -240,9 +249,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationownerbyref)
 
 [https://learn.microsoft.com/graph/api/application-list-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-list-owners?view=graph-rest-beta)
-
-
-
-
-
 

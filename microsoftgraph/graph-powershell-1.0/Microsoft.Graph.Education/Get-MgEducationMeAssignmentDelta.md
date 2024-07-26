@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentdelta
@@ -11,9 +11,6 @@ schema: 2.0.0
 Get a list of newly-created or updated assignments without reading the whole collection.
 A teacher or an application running with application permissions can see all assignment objects for the class.
 Students can only see assignments that are assigned to them.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +25,18 @@ Get-MgEducationMeAssignmentDelta [-ExpandProperty <String[]>] [-Filter <String>]
 Get a list of newly-created or updated assignments without reading the whole collection.
 A teacher or an application running with application permissions can see all assignment objects for the class.
 Students can only see assignments that are assigned to them.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -243,9 +252,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentdelta)
 
 [https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0)
-
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2cauthenticationmethodpolicy
@@ -31,23 +31,20 @@ Update-MgBetaPolicyB2CAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraph
 Update the properties of a b2cAuthenticationMethodsPolicy object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-$params = @{
-	isEmailPasswordAuthenticationEnabled = $false
-	isUserNameAuthenticationEnabled = $true
-	isPhoneOneTimePasswordAuthenticationEnabled = $true
-}
-
-Update-MgBetaPolicyB2CAuthenticationMethodPolicy -BodyParameter $params
-
+### EXAMPLE 1
 ```
-This example shows how to use the Update-MgBetaPolicyB2CAuthenticationMethodPolicy Cmdlet.
+{{ Add code here }}
+```
 
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -235,20 +232,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphB2CAuthenticationMethodsPolicy>`: b2cAuthenticationMethodsPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphB2CAuthenticationMethodsPolicy\>: b2cAuthenticationMethodsPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsEmailPasswordAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using email if the email and password authentication method is enabled.
-  - `[IsPhoneOneTimePasswordAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using phone number if the phone number and one-time password authentication method is enabled.
-  - `[IsUserNameAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using username if the username and password authentication method is enabled.
+  \[IsEmailPasswordAuthenticationEnabled \<Boolean?\>\]: The tenant admin can configure local accounts using email if the email and password authentication method is enabled.
+  \[IsPhoneOneTimePasswordAuthenticationEnabled \<Boolean?\>\]: The tenant admin can configure local accounts using phone number if the phone number and one-time password authentication method is enabled.
+  \[IsUserNameAuthenticationEnabled \<Boolean?\>\]: The tenant admin can configure local accounts using username if the username and password authentication method is enabled.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2cauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2cauthenticationmethodpolicy)
 
 [https://learn.microsoft.com/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta)
-
-
-
 

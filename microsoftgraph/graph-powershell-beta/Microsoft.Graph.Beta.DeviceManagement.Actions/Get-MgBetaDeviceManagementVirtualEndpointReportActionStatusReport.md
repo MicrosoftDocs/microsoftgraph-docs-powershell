@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportactionstatusreport
@@ -32,41 +32,17 @@ Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport -OutFile <Stri
 ## DESCRIPTION
 Get the remote action status reports, including data such as the Cloud PC ID, Cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getactionstatusreports-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-
-$params = @{
-	filter = "ActionState eq 'failed'"
-	select = @(
-	"Id"
-"CloudPcDeviceDisplayName"
-"BulkActionId"
-"BulkActionDisplayName"
-"CloudPcId"
-"InitiatedByUserPrincipalName"
-"DeviceOwnerUserPrincipalName"
-"Action"
-"ActionState"
-"RequestDateTime"
-"LastUpdatedDateTime"
-"ActionParameters"
-)
-skip = 0
-top = 50
-}
-
-Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport -BodyParameter $params
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportActionStatusReport Cmdlet.
+{{ Add code here }}
+```
 
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -328,22 +304,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsXvswb4DevicemanagementVirtualendpointReportsMicrosoftGraphGetactionstatusreportsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Filter <String>]`: 
-  - `[GroupBy <String- `[]`>]`: 
-  - `[OrderBy <String- `[]`>]`: 
-  - `[Search <String>]`: 
-  - `[Select <String- `[]`>]`: 
-  - `[Skip <Int32?>]`: 
-  - `[Top <Int32?>]`:
+BODYPARAMETER \<IPathsXvswb4DevicemanagementVirtualendpointReportsMicrosoftGraphGetactionstatusreportsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Filter \<String\>\]: 
+  \[GroupBy \<String\[\]\>\]: 
+  \[OrderBy \<String\[\]\>\]: 
+  \[Search \<String\>\]: 
+  \[Select \<String\[\]\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportactionstatusreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportactionstatusreport)
 
 [https://learn.microsoft.com/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-beta)
-
-
-
 

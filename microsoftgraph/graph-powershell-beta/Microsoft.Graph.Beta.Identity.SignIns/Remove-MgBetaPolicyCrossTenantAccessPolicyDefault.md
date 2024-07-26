@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicydefault
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property default for policies
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,38 @@ Remove-MgBetaPolicyCrossTenantAccessPolicyDefault [-IfMatch <String>] [-Response
 
 ## DESCRIPTION
 Delete navigation property default for policies
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
+
+$params = @{
+	b2bCollaborationOutbound = @{
+		usersAndGroups = @{
+			accessType = "blocked"
+			targets = @(
+				@{
+					target = "0be493dc-cb56-4a53-936f-9cf64410b8b0"
+					targetType = "group"
+				}
+			)
+		}
+		applications = @{
+			accessType = "blocked"
+			targets = @(
+				@{
+					target = "AllApplications"
+					targetType = "application"
+				}
+			)
+		}
+	}
+}
+
+Update-MgBetaPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
 
 ## PARAMETERS
 
@@ -146,9 +175,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicydefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicydefault)
-
-
-
-
-
 

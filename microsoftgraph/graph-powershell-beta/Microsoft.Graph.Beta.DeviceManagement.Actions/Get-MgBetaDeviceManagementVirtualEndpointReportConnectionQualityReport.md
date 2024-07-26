@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportconnectionqualityreport
@@ -34,43 +34,17 @@ Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport -OutFile 
 Get the overall connection quality reports for all devices within a current tenant during a given time period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage.
 Get also other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getconnectionqualityreports-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-
-$params = @{
-	filter = "EventDateTime gt datetime'2023-04-16T07:40:41.694Z'"
-	search = ""
-	select = @(
-	"CloudPcId"
-"ManagedDeviceName"
-"AvgRoundTripTimeInMsP50"
-"LastConnectionRoundTripTimeInMs"
-"AvgAvailableBandwidthInMBpsP50"
-"LastConnectionAvailableBandWidthInMSps"
-"AvgRemoteSignInTimeInSecP50"
-"UDPConnectionPercentage"
-"LastConnectionGateway"
-"LastConnectionProtocol"
-"LastActiveTime"
-)
-skip = "0"
-top = "25"
-orderBy = @(
-)
-}
-
-Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport -BodyParameter $params
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport Cmdlet.
+{{ Add code here }}
+```
 
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -332,22 +306,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Rd0Fy0DevicemanagementVirtualendpointReportsMicrosoftGraphGetconnectionqualityreportsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Filter <String>]`: 
-  - `[GroupBy <String- `[]`>]`: 
-  - `[OrderBy <String- `[]`>]`: 
-  - `[Search <String>]`: 
-  - `[Select <String- `[]`>]`: 
-  - `[Skip <Int32?>]`: 
-  - `[Top <Int32?>]`:
+BODYPARAMETER \<IPaths1Rd0Fy0DevicemanagementVirtualendpointReportsMicrosoftGraphGetconnectionqualityreportsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Filter \<String\>\]: 
+  \[GroupBy \<String\[\]\>\]: 
+  \[OrderBy \<String\[\]\>\]: 
+  \[Search \<String\>\]: 
+  \[Select \<String\[\]\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportconnectionqualityreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportconnectionqualityreport)
 
 [https://learn.microsoft.com/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-beta)
-
-
-
 

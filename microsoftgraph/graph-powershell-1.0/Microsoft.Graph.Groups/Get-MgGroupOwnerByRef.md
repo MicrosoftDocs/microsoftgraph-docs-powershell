@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerbyref
@@ -11,9 +11,6 @@ schema: 2.0.0
 Retrieve a list of the group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
 Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +25,15 @@ Get-MgGroupOwnerByRef -GroupId <String> [-Filter <String>] [-Search <String>] [-
 Retrieve a list of the group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
 Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.Groups
+```
+
+Get-MgGroupOwner -GroupId $groupId
 
 ## PARAMETERS
 
@@ -244,8 +250,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerbyref)
 
 [https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-1.0)
-
-
-
-
 

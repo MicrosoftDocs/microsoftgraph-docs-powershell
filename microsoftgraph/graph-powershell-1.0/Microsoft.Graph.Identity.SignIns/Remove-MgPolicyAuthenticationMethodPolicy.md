@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationmethodpolicy
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property authenticationMethodsPolicy for policies
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,33 @@ Remove-MgPolicyAuthenticationMethodPolicy [-IfMatch <String>] [-ResponseHeadersV
 
 ## DESCRIPTION
 Delete navigation property authenticationMethodsPolicy for policies
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.Identity.SignIns
+```
+
+$params = @{
+	registrationEnforcement = @{
+		authenticationMethodsRegistrationCampaign = @{
+			snoozeDurationInDays = 1
+			state = "enabled"
+			excludeTargets = @(
+			)
+			includeTargets = @(
+				@{
+					id = "3ee3a9de-0a86-4e12-a287-9769accf1ba2"
+					targetType = "group"
+					targetedAuthenticationMethod = "microsoftAuthenticator"
+				}
+			)
+		}
+	}
+}
+
+Update-MgPolicyAuthenticationMethodPolicy -BodyParameter $params
 
 ## PARAMETERS
 
@@ -146,8 +170,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationmethodpolicy)
-
-
-
-
 

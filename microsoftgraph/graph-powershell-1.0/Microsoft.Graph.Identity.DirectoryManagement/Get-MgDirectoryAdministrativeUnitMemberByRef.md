@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmemberbyref
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Use this API to get the members list (users, groups, or devices) in an administrative unit.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,17 +23,13 @@ Get-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId <String> [-Fi
 Use this API to get the members list (users, groups, or devices) in an administrative unit.
 
 ## EXAMPLES
-### Example 1: List member references
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId
-
-```
-This example will list member references
-
 
 ## PARAMETERS
 
@@ -253,7 +246,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmemberbyref)
 
 [https://learn.microsoft.com/graph/api/administrativeunit-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-list-members?view=graph-rest-1.0)
-
-
-
 

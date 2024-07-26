@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarevent
@@ -11,9 +11,6 @@ schema: 2.0.0
 The events in the calendar.
 Navigation property.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +25,83 @@ Get-MgBetaUserCalendarEvent -CalendarId <String> -UserId <String> [-ExpandProper
 The events in the calendar.
 Navigation property.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.Beta.Calendar
+```
+
+$params = @{
+	Subject = "Let's go for lunch"
+	Body = @{
+		ContentType = "HTML"
+		Content = "Does mid month work for you?"
+	}
+	Start = @{
+		DateTime = "2019-03-15T12:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	End = @{
+		DateTime = "2019-03-15T14:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	Location = @{
+		DisplayName = "Harry's Bar"
+	}
+	Attendees = @(
+		@{
+			EmailAddress = @{
+				Address = "adelev@contoso.onmicrosoft.com"
+				Name = "Adele Vance"
+			}
+			Type = "required"
+		}
+	)
+	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
+
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.Beta.Calendar
+```
+
+$params = @{
+	Subject = "Let's go for lunch"
+	Body = @{
+		ContentType = "HTML"
+		Content = "Does next month work for you?"
+	}
+	Start = @{
+		DateTime = "2019-03-10T12:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	End = @{
+		DateTime = "2019-03-10T14:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	Location = @{
+		DisplayName = "Harry's Bar"
+	}
+	Attendees = @(
+		@{
+			EmailAddress = @{
+				Address = "adelev@contoso.onmicrosoft.com"
+				Name = "Adele Vance"
+			}
+			Type = "required"
+		}
+	)
+	IsOnlineMeeting = $true
+	OnlineMeetingProvider = "teamsForBusiness"
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -271,9 +345,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarevent)
-
-
-
-
-
 

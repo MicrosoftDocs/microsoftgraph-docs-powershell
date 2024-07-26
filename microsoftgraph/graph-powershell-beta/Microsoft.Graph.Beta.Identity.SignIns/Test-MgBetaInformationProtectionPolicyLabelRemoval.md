@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelremoval
@@ -34,70 +34,64 @@ Indicate to the consuming application what actions it should take to remove the 
 Given contentInfo as an input, which includes existing content metadata key/value pairs, the API returns an informationProtectionAction that contains some combination of one of more of the following:
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
 $params = @{
-	contentInfo = @{
+	ContentInfo = @{
 		"@odata.type" = "#microsoft.graph.contentInfo"
-		"format@odata.type" = "#microsoft.graph.contentFormat"
-		format = "default"
-		identifier = $null
-		"state@odata.type" = "#microsoft.graph.contentState"
-		state = "rest"
-		"metadata@odata.type" = "#Collection(microsoft.graph.keyValuePair)"
-		metadata = @(
+		"Format@odata.type" = "#microsoft.graph.contentFormat"
+		Format = "default"
+		Identifier = $null
+		"State@odata.type" = "#microsoft.graph.contentState"
+		State = "rest"
+		"Metadata@odata.type" = "#Collection(microsoft.graph.keyValuePair)"
+		Metadata = @(
 			@{
 				"@odata.type" = "#microsoft.graph.keyValuePair"
-				name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled"
-				value = "True"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled"
+				Value = "True"
 			}
 			@{
 				"@odata.type" = "#microsoft.graph.keyValuePair"
-				name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method"
-				value = "Standard"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method"
+				Value = "Standard"
 			}
 			@{
 				"@odata.type" = "#microsoft.graph.keyValuePair"
-				name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate"
-				value = "1/1/0001 12:00:00 AM"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate"
+				Value = "1/1/0001 12:00:00 AM"
 			}
 			@{
 				"@odata.type" = "#microsoft.graph.keyValuePair"
-				name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId"
-				value = "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId"
+				Value = "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
 			}
 			@{
 				"@odata.type" = "#microsoft.graph.keyValuePair"
-				name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name"
-				value = "General"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name"
+				Value = "General"
 			}
 			@{
 				"@odata.type" = "#microsoft.graph.keyValuePair"
-				name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits"
-				value = "0"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits"
+				Value = "0"
 			}
 			@{
 				"@odata.type" = "#microsoft.graph.keyValuePair"
-				name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId"
-				value = "00000000-0000-0000-0000-000000000000"
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId"
+				Value = "00000000-0000-0000-0000-000000000000"
 			}
 		)
 	}
-	downgradeJustification = @{
-		justificationMessage = "The information has been declassified."
-		isDowngradeJustified = $true
+	DowngradeJustification = @{
+		JustificationMessage = "The information has been declassified."
+		IsDowngradeJustified = $true
 	}
 }
-
 Test-MgBetaInformationProtectionPolicyLabelRemoval -BodyParameter $params
-
 ```
-This example shows how to use the Test-MgBetaInformationProtectionPolicyLabelRemoval Cmdlet.
-
 
 ## PARAMETERS
 
@@ -256,35 +250,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsZ22GcjInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentInfo <IMicrosoftGraphContentInfo>]`: contentInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Format <String>]`: contentFormat
-    - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-    - `[Metadata <IMicrosoftGraphKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
-      - `[Name <String>]`: Name for this key-value pair
-      - `[Value <String>]`: Value for this key-value pair
-    - `[State <String>]`: contentState
-  - `[DowngradeJustification <IMicrosoftGraphDowngradeJustification>]`: downgradeJustification
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or isn't justified.
-    - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified.
+BODYPARAMETER \<IPathsZ22GcjInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ContentInfo \<IMicrosoftGraphContentInfo\>\]: contentInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Format \<String\>\]: contentFormat
+    \[Identifier \<String\>\]: Identifier used for Azure Information Protection Analytics.
+    \[Metadata \<IMicrosoftGraphKeyValuePair\[\]\>\]: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
+      \[Name \<String\>\]: Name for this key-value pair
+      \[Value \<String\>\]: Value for this key-value pair
+    \[State \<String\>\]: contentState
+  \[DowngradeJustification \<IMicrosoftGraphDowngradeJustification\>\]: downgradeJustification
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[IsDowngradeJustified \<Boolean?\>\]: Indicates whether the downgrade is or isn't justified.
+    \[JustificationMessage \<String\>\]: Message that indicates why a downgrade is justified.
 The message appears in administrative logs.
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Format <String>]`: contentFormat
-  - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-  - `[Metadata <IMicrosoftGraphKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[State <String>]`: contentState
+CONTENTINFO \<IMicrosoftGraphContentInfo\>: contentInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Format \<String\>\]: contentFormat
+  \[Identifier \<String\>\]: Identifier used for Azure Information Protection Analytics.
+  \[Metadata \<IMicrosoftGraphKeyValuePair\[\]\>\]: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
+    \[Name \<String\>\]: Name for this key-value pair
+    \[Value \<String\>\]: Value for this key-value pair
+  \[State \<String\>\]: contentState
 
-DOWNGRADEJUSTIFICATION `<IMicrosoftGraphDowngradeJustification>`: downgradeJustification
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or isn't justified.
-  - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified.
+DOWNGRADEJUSTIFICATION \<IMicrosoftGraphDowngradeJustification\>: downgradeJustification
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IsDowngradeJustified \<Boolean?\>\]: Indicates whether the downgrade is or isn't justified.
+  \[JustificationMessage \<String\>\]: Message that indicates why a downgrade is justified.
 The message appears in administrative logs.
 
 ## RELATED LINKS
@@ -292,7 +286,4 @@ The message appears in administrative logs.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelremoval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelremoval)
 
 [https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta)
-
-
-
 

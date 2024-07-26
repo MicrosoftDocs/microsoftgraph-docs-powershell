@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyuser
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaDismissRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaDismissRiskyUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,24 +33,18 @@ Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-$params = @{
-	userIds = @(
-	"04487ee0-f4f6-4e7f-8999-facc5a30e232"
-"13387ee0-f4f6-4e7f-8999-facc5120e345"
-)
-}
-
-Invoke-MgDismissRiskyUser -BodyParameter $params
-
+### EXAMPLE 1
 ```
-This example shows how to use the Invoke-MgDismissRiskyUser Cmdlet.
-
+Import-Module Microsoft.Graph.Identity.SignIns
+$params = @{
+	UserIds = @(
+		"04487ee0-f4f6-4e7f-8999-facc5a30e232"
+		"13387ee0-f4f6-4e7f-8999-facc5120e345"
+	)
+}
+Invoke-MgDismissRiskyUser -BodyParameter $params
+```
 
 ## PARAMETERS
 
@@ -210,16 +201,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsZip9X6IdentityprotectionRiskyusersMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[UserIds <String- `[]`>]`:
+BODYPARAMETER \<IPathsZip9X6IdentityprotectionRiskyusersMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[UserIds \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyuser)
 
 [https://learn.microsoft.com/graph/api/riskyuser-dismiss?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyuser-dismiss?view=graph-rest-1.0)
-
-
-
 

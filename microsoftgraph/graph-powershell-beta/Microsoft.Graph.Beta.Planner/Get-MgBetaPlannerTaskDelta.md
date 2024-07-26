@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskdelta
@@ -25,17 +25,16 @@ Get newly created, updated, or deleted tasks in either a Planner plan or assigne
 For details, see Use delta query to track changes in Microsoft Graph data.
 
 ## EXAMPLES
-### Example 1: Get delta on tasks in a plannerPlan
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Planner
-
-Get-MgBetaPlannerTaskDelta
-
+### EXAMPLE 1
 ```
-This example will get delta on tasks in a plannerplan
+{{ Add code here }}
+```
 
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -251,7 +250,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskdelta)
 
 [https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta)
-
-
-
 

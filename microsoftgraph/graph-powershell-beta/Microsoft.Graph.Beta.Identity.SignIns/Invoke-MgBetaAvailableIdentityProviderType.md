@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaavailableidentityprovidertype
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get all identity providers supported in a directory.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAvailableIdentityProviderType](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgAvailableIdentityProviderType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,28 +22,24 @@ Invoke-MgBetaAvailableIdentityProviderType [-Count] [-Filter <String>] [-Search 
 Get all identity providers supported in a directory.
 
 ## EXAMPLES
-### Example 1: List all **identityProvider** available in a Microsoft Entra directory
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Invoke-MgBetaAvailableIdentityProviderType
-
+### EXAMPLE 1
 ```
-This example will list all **identityprovider** available in a microsoft entra directory
-
-### Example 2: List all **identityProvider** available in an Azure AD B2C directory
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
 Invoke-MgBetaAvailableIdentityProviderType
-
 ```
-This example will list all **identityprovider** available in an azure ad b2c directory
 
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Invoke-MgBetaAvailableIdentityProviderType
+```
+
+### EXAMPLE 3
+```
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Invoke-MgBetaAvailableIdentityProviderType -OutFile $outFileId
+```
 
 ## PARAMETERS
 
@@ -186,7 +179,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaavailableidentityprovidertype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaavailableidentityprovidertype)
 
 [https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-beta)
-
-
-
 

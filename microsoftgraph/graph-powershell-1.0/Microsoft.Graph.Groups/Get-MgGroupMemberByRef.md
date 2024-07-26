@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref
@@ -11,9 +11,6 @@ schema: 2.0.0
 Get a list of the group's direct members.
 A group can have users, organizational contacts, devices, service principals and other groups as members.
 This operation is not transitive.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +25,22 @@ Get-MgGroupMemberByRef -GroupId <String> [-Filter <String>] [-Search <String>] [
 Get a list of the group's direct members.
 A group can have users, organizational contacts, devices, service principals and other groups as members.
 This operation is not transitive.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.Groups
+```
+
+Get-MgGroupMember -GroupId $groupId
+
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.Groups
+```
+
+Get-MgGroupMember -GroupId $groupId -CountVariable CountVar -Filter "startswith(displayName, 'a')" -ConsistencyLevel eventual
 
 ## PARAMETERS
 
@@ -244,8 +257,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref)
 
 [https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0)
-
-
-
-
 

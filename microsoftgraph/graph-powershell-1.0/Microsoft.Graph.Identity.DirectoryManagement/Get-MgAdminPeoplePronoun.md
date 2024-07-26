@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeoplepronoun
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties of the pronounsSettings resource for an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminPeoplePronoun](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeoplePronoun?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,8 +23,17 @@ Get-MgAdminPeoplePronoun [-ExpandProperty <String[]>] [-Property <String[]>]
 Get the properties of the pronounsSettings resource for an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/peopleadminsettings-list-pronouns-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -122,8 +128,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeoplepronoun](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeoplepronoun)
 
 [https://learn.microsoft.com/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-1.0)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewpolicy
@@ -22,17 +22,12 @@ Get-MgBetaIdentityGovernanceAccessReviewPolicy [-ExpandProperty <String[]>] [-Pr
 Read the properties and relationships of an accessReviewPolicy object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-Get-MgBetaIdentityGovernanceAccessReviewPolicy
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewPolicy Cmdlet.
-
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+Get-MgBetaIdentityGovernanceAccessReviewPolicy
+```
 
 ## PARAMETERS
 
@@ -127,7 +122,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewpolicy)
 
 [https://learn.microsoft.com/graph/api/accessreviewpolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewpolicy-get?view=graph-rest-beta)
-
-
-
 

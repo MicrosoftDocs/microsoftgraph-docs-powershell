@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 Module Guid: f1430cdd-e7c8-4cb3-af1c-4267717fc906
 Download Help Link: {{ Update Download Link }}
@@ -739,5 +739,4 @@ Locale: en-US
 
 ### [Update-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope](Update-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope.md)
 {{ Fill in the Description }}
-
 
