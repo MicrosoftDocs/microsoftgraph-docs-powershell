@@ -135,7 +135,7 @@ Searches for commands using URI wildcard.
 ## PARAMETERS
 
 ### -ApiVersion
-{{ Fill ApiVersion Description }}
+The service API version.
 
 ```yaml
 Type: String
@@ -150,7 +150,8 @@ Accept wildcard characters: False
 ```
 
 ### -Command
-{{ Fill Command Description }}
+The name of a command.
+e.g., Get-MgUser.}
 
 ```yaml
 Type: String[]
@@ -165,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-{{ Fill InputObject Description }}
+Pipeline input object
 
 ```yaml
 Type: Object[]
@@ -180,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Method
-{{ Fill Method Description }}
+The HTTP method a command makes.
 
 ```yaml
 Type: String
@@ -195,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProgressAction
-{{ Fill ProgressAction Description }}
+Treat this as a common parameter.
 
 ```yaml
 Type: ActionPreference
@@ -210,7 +211,8 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-{{ Fill Uri Description }}
+The API path a command calls.
+e.g., /users.
 
 ```yaml
 Type: String[]
