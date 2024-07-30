@@ -44,19 +44,19 @@ Using the **Install-Module** cmdlet is the preferred installation method for the
 To install the v1 module of the SDK in PowerShell Core or Windows PowerShell, run the following command.
 
 ```powershell
-Install-Module Microsoft.Graph -Scope CurrentUser
+Install-Module Microsoft.Graph -Scope CurrentUser -Repository PSGallery -Force
 ```
 
 Optionally, you can change the scope of the installation using the `-Scope` parameter. This requires admin permissions.
 
 ```powershell
-Install-Module Microsoft.Graph -Scope AllUsers
+Install-Module Microsoft.Graph -Scope AllUsers -Repository PSGallery -Force
 ```
 
 To install the beta module, run the following command.
 
 ```powershell
-Install-Module Microsoft.Graph.Beta
+Install-Module Microsoft.Graph.Beta -Repository PSGallery -Force
 ```
 
 > [!IMPORTANT]
