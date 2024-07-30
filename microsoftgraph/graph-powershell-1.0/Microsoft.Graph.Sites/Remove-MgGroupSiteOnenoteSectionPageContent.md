@@ -33,18 +33,6 @@ Remove-MgGroupSiteOnenoteSectionPageContent -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -294,6 +282,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteonenotesectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteonenotesectionpagecontent)
+
 
 
 

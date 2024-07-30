@@ -32,18 +32,6 @@ Stop-MgBetaVirtualEventWebinarRegistrationEmail -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Cancel a registrant's registration record for a webinar.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Email
@@ -247,6 +235,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualeventwebinarregistrationemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualeventwebinarregistrationemail)
+
 
 
 

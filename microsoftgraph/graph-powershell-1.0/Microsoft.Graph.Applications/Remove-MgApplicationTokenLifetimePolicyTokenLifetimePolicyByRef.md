@@ -33,18 +33,6 @@ Remove-MgApplicationTokenLifetimePolicyTokenLifetimePolicyByRef -InputObject <IA
 ## DESCRIPTION
 Delete ref of navigation property tokenLifetimePolicies for applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -244,6 +232,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenlifetimepolicytokenlifetimepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenlifetimepolicytokenlifetimepolicybyref)
+
 
 
 
