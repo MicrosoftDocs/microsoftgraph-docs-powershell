@@ -35,13 +35,17 @@ Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 Read properties and relationships of the managedAppPolicyDeploymentSummary object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary -IosManagedAppProtectionId $iosManagedAppProtectionId
+
+```
+This example shows how to use the Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary Cmdlet.
+
 
 ## PARAMETERS
 

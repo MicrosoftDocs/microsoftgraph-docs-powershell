@@ -42,18 +42,6 @@ Get-MgBetaGroupSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -371,6 +359,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsite)
+
+
 
 
 

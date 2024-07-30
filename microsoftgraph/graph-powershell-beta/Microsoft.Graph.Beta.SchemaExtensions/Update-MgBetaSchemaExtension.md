@@ -66,11 +66,11 @@ This criteria for the owner property allows a signed-in user to make updates thr
 When using Graph Explorer to update a schemaExtension resource, include the owner property in the PATCH request body.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
-```
 
 $params = @{
 	owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa"
@@ -95,6 +95,10 @@ $params = @{
 }
 
 Update-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSchemaExtension Cmdlet.
+
 
 ## PARAMETERS
 

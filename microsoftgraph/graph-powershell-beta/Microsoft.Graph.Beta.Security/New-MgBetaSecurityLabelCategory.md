@@ -38,11 +38,11 @@ Create a new categoryTemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-categories-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.categoryTemplate"
@@ -50,6 +50,10 @@ $params = @{
 }
 
 New-MgBetaSecurityLabelCategory -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityLabelCategory Cmdlet.
+
 
 ## PARAMETERS
 

@@ -34,13 +34,17 @@ Delete an industryDataConnector object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Remove-MgBetaExternalIndustryDataConnector -IndustryDataConnectorId $industryDataConnectorId
+
+```
+This example shows how to use the Remove-MgBetaExternalIndustryDataConnector Cmdlet.
+
 
 ## PARAMETERS
 

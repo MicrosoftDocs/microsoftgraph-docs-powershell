@@ -34,11 +34,11 @@ New-MgDeviceManagementDeviceCategory -BodyParameter <IMicrosoftGraphDeviceCatego
 Create a new deviceCategory object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceCategory"
@@ -47,6 +47,10 @@ $params = @{
 }
 
 New-MgDeviceManagementDeviceCategory -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCategory Cmdlet.
+
 
 ## PARAMETERS
 

@@ -60,11 +60,11 @@ This method adds a sharepointprotectionunit to or removes it from the protection
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointprotectionpolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	displayName = "SharePoint Policy - Inadvertent data loss"
@@ -103,6 +103,10 @@ $params = @{
 }
 
 Update-MgBetaBackupRestoreSharePointProtectionPolicy -SharePointProtectionPolicyId $sharePointProtectionPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaBackupRestoreSharePointProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 

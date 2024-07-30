@@ -71,18 +71,6 @@ Only certain properties of a device can be updated through approved Mobile Devic
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -1077,6 +1065,7 @@ Always null when the object hasn't been deleted.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevicebydeviceid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevicebydeviceid)
 
 [https://learn.microsoft.com/graph/api/device-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-update?view=graph-rest-1.0)
+
 
 
 

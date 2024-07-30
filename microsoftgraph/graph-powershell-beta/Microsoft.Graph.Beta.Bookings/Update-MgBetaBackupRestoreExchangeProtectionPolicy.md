@@ -60,11 +60,11 @@ This method adds a mailboxprotectionunit to or removes it from the protection po
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/exchangeprotectionpolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	displayName = "Exchange Policy - Inadvertent data loss"
@@ -91,6 +91,10 @@ $params = @{
 }
 
 Update-MgBetaBackupRestoreExchangeProtectionPolicy -ExchangeProtectionPolicyId $exchangeProtectionPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaBackupRestoreExchangeProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 

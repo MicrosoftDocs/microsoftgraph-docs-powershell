@@ -44,13 +44,17 @@ A collection of restore points and destination details that can be used to resto
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onedriveforbusinessrestoresession-list-driverestoreartifacts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact -OneDriveForBusinessRestoreSessionId $oneDriveForBusinessRestoreSessionId
+
+```
+This example shows how to use the Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact Cmdlet.
+
 
 ## PARAMETERS
 

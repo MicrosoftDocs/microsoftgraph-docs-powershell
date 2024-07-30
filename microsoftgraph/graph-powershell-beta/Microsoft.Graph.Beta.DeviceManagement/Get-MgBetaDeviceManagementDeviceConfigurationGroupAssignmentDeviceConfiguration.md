@@ -31,18 +31,6 @@ Get-MgBetaDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration
 ## DESCRIPTION
 The navigation link to the Device Configuration being targeted.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceConfigurationGroupAssignmentId
@@ -328,6 +316,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdeviceconfigurationgroupassignmentdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdeviceconfigurationgroupassignmentdeviceconfiguration)
+
 
 
 

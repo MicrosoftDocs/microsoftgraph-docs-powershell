@@ -29,18 +29,6 @@ Remove-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSetting -InputObject <IIdent
 ## DESCRIPTION
 Delete navigation property settings for privilegedRoleAssignmentRequests
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -300,6 +288,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprivilegedroleassignmentrequestroleinfosetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprivilegedroleassignmentrequestroleinfosetting)
+
 
 
 

@@ -37,11 +37,11 @@ Create a new sharePointRestoreSession object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-sharepointrestoresessions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	siteRestoreArtifacts = @(
@@ -61,6 +61,10 @@ $params = @{
 }
 
 New-MgBetaBackupRestoreSharePointRestoreSession -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaBackupRestoreSharePointRestoreSession Cmdlet.
+
 
 ## PARAMETERS
 

@@ -60,11 +60,11 @@ This method adds a driveProtectionUnit to or removes it from a oneDriveForBusine
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onedriveforbusinessprotectionpolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	displayName = "One Drive  Policy - Inadvertent data loss"
@@ -91,6 +91,10 @@ $params = @{
 }
 
 Update-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy -OneDriveForBusinessProtectionPolicyId $oneDriveForBusinessProtectionPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 

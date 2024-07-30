@@ -43,14 +43,18 @@ Represents the password that's registered to a user for authentication.
 For security, the password itself will never be returned in the object, but action can be taken to reset a password.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserAuthenticationPasswordMethod -UserId $userId -PasswordAuthenticationMethodId $passwordAuthenticationMethodId
+```
+This example shows how to use the Get-MgUserAuthenticationPasswordMethod Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

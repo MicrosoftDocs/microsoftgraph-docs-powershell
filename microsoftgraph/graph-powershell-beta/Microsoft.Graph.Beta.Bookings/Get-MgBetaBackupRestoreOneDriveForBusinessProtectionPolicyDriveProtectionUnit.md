@@ -44,13 +44,17 @@ Contains the protection units associated with a  OneDrive for Business protectio
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-driveprotectionunits-permissions.md)]
 
 ## EXAMPLES
+### Example 1: List the driveProtectionUnits associated with a OneDrive for Business protection policy
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit -OneDriveForBusinessProtectionPolicyId $oneDriveForBusinessProtectionPolicyId
+
+```
+This example will list the driveprotectionunits associated with a onedrive for business protection policy
+
 
 ## PARAMETERS
 

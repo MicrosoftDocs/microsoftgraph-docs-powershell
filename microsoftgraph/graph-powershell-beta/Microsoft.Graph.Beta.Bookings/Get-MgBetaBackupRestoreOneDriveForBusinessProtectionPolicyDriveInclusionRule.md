@@ -56,13 +56,17 @@ After the rule is applied, the state is either completed or completedWithErrors.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onedriveforbusinessprotectionpolicy-list-driveinclusionrules-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a driveInclusionRule associated with an OneDriveForBusiness protection policy
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule -OneDriveForBusinessProtectionPolicyId $oneDriveForBusinessProtectionPolicyId -DriveProtectionRuleId $driveProtectionRuleId
+
+```
+This example will get a driveinclusionrule associated with an onedriveforbusiness protection policy
+
 
 ## PARAMETERS
 

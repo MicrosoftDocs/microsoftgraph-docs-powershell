@@ -61,11 +61,11 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-checkmembergroups-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Check group memberships for a directory object
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
-```
 
 $params = @{
 	groupIds = @(
@@ -78,6 +78,10 @@ $params = @{
 }
 
 Confirm-MgBetaDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example will check group memberships for a directory object
+
 
 ## PARAMETERS
 

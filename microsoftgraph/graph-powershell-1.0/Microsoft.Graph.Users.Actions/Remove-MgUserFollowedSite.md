@@ -53,11 +53,11 @@ Unfollow a user's site or multiple sites.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-unfollow-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	value = @(
@@ -71,6 +71,10 @@ $params = @{
 }
 
 Remove-MgUserFollowedSite -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgUserFollowedSite Cmdlet.
+
 
 ## PARAMETERS
 

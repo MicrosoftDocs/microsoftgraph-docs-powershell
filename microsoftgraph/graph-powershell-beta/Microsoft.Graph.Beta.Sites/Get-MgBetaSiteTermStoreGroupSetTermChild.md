@@ -40,18 +40,6 @@ Get-MgBetaSiteTermStoreGroupSetTermChild -InputObject <ISitesIdentity> [-ExpandP
 ## DESCRIPTION
 Children of current term.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -414,6 +402,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsettermchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsettermchild)
+
+
 
 
 

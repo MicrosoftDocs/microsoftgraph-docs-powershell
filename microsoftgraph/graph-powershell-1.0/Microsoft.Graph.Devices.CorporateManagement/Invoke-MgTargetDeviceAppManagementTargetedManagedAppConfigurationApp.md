@@ -56,11 +56,11 @@ Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp
 Not yet documented
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	apps = @(
@@ -78,6 +78,10 @@ $params = @{
 }
 
 Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp -TargetedManagedAppConfigurationId $targetedManagedAppConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp Cmdlet.
+
 
 ## PARAMETERS
 

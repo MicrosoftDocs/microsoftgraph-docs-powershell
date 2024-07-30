@@ -36,13 +36,17 @@ Get the trend of total and active site count during the reporting period.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointsiteusagesitecounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportSharePointSiteUsageSiteCount -Period $periodId
+Get-MgReportSharePointSiteUsageSiteCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSharePointSiteUsageSiteCount Cmdlet.
+
 
 ## PARAMETERS
 

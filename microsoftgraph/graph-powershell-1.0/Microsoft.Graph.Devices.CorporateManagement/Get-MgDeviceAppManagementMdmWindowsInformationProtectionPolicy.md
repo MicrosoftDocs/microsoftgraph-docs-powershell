@@ -45,13 +45,17 @@ Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
 Read properties and relationships of the mdmWindowsInformationProtectionPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
+
+```
+This example shows how to use the Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 

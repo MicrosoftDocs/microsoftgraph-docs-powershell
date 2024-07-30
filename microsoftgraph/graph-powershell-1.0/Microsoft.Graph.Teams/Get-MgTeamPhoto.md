@@ -33,13 +33,17 @@ Get-MgTeamPhoto -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Pro
 The profile photo for the team.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamPhoto -TeamId $teamId
+
+```
+This example shows how to use the Get-MgTeamPhoto Cmdlet.
+
 
 ## PARAMETERS
 

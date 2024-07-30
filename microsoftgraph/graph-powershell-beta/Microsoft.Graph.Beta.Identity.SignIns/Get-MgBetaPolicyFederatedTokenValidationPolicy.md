@@ -26,13 +26,17 @@ Get a list of the federatedTokenValidationPolicy objects and their properties.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedtokenvalidationpolicy-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyFederatedTokenValidationPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyFederatedTokenValidationPolicy Cmdlet.
+
 
 ## PARAMETERS
 

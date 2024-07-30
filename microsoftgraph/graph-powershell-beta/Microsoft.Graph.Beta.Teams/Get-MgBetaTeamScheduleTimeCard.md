@@ -46,13 +46,17 @@ Get the properties and relationships of a timeCard object by ID.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
-Get-MgBetaTeamScheduleTimeCard -TeamId $teamId -Top 2 -Filter "state eq 'clockedOut'"
+Get-MgBetaTeamScheduleTimeCard -TeamId $teamId -Top 2 -Filter "state eq 'clockedOut'" 
+
+```
+This example shows how to use the Get-MgBetaTeamScheduleTimeCard Cmdlet.
+
 
 ## PARAMETERS
 

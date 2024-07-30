@@ -43,13 +43,17 @@ The protection units (sites) that are protected under the site protection policy
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-siteprotectionunits-permissions.md)]
 
 ## EXAMPLES
+### Example 1: List the siteProtectionUnits associated with a SharePoint protection policy
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnit -SharePointProtectionPolicyId $sharePointProtectionPolicyId
+
+```
+This example will list the siteprotectionunits associated with a sharepoint protection policy
+
 
 ## PARAMETERS
 

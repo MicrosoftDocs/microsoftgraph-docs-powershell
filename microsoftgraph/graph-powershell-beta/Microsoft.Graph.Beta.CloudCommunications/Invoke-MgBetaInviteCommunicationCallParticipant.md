@@ -57,11 +57,11 @@ For more information about how to handle operations, see commsOperation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	participants = @(
@@ -82,6 +82,10 @@ $params = @{
 }
 
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
+
 
 ## PARAMETERS
 

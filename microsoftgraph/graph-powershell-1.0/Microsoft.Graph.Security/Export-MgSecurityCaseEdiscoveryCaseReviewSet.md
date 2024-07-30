@@ -57,11 +57,11 @@ For details, see Export documents from a review set in eDiscovery (Premium).
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoveryreviewset-export-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	outputName = "Export via API"
@@ -71,6 +71,10 @@ $params = @{
 }
 
 Export-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
+
+```
+This example shows how to use the Export-MgSecurityCaseEdiscoveryCaseReviewSet Cmdlet.
+
 
 ## PARAMETERS
 

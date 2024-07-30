@@ -42,18 +42,6 @@ Get-MgGroupSiteItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 Used to address any item contained in this site.
 This collection can't be enumerated.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -378,6 +366,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteitem)
+
+
 
 
 

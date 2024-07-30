@@ -37,13 +37,17 @@ Get all provisioned Cloud PCs of a specific service plan for users under a Micro
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getprovisionedcloudpcs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
-```
 
 Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc Cmdlet.
+
 
 ## PARAMETERS
 

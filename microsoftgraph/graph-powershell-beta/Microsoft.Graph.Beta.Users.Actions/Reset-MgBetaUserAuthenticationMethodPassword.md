@@ -63,11 +63,11 @@ This reset is a long-running operation and will return a Location header with a 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationmethod-resetpassword-permissions.md)]
 
 ## EXAMPLES
+### Example 1: User-submitted password
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	newPassword = "Cuyo5459"
@@ -75,15 +75,23 @@ $params = @{
 
 Reset-MgBetaUserAuthenticationMethodPassword -UserId $userId -AuthenticationMethodId $authenticationMethodId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will user-submitted password
+
+### Example 2: System-generated password
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 }
 
 Reset-MgBetaUserAuthenticationMethodPassword -UserId $userId -AuthenticationMethodId $authenticationMethodId -BodyParameter $params
+
+```
+This example will system-generated password
+
 
 ## PARAMETERS
 

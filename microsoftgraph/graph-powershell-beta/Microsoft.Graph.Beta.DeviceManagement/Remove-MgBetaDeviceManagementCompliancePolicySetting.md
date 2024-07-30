@@ -30,18 +30,6 @@ Remove-MgBetaDeviceManagementCompliancePolicySetting -InputObject <IDeviceManage
 ## DESCRIPTION
 Delete navigation property settings for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementCompliancePolicyId
@@ -358,6 +346,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementcompliancepolicysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementcompliancepolicysetting)
+
 
 
 

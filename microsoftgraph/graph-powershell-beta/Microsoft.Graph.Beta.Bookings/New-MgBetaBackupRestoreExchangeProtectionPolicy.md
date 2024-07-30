@@ -42,11 +42,11 @@ Users can also provide a list of protection units under the policy.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-exchangeprotectionpolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	displayName = "Exchange Protection Policy"
@@ -64,6 +64,10 @@ $params = @{
 }
 
 New-MgBetaBackupRestoreExchangeProtectionPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaBackupRestoreExchangeProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 

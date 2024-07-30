@@ -34,11 +34,10 @@ Update-MgPolicyAuthenticationFlowPolicy -BodyParameter <IMicrosoftGraphAuthentic
 Update the navigation property authenticationFlowsPolicy in policies
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	selfServiceSignUp = @{
@@ -47,6 +46,11 @@ $params = @{
 }
 
 Update-MgPolicyAuthenticationFlowPolicy -BodyParameter $params
+```
+This example shows how to use the Update-MgPolicyAuthenticationFlowPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
