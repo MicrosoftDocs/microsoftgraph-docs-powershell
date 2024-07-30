@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -RelatedHosts
-The hosts related with this sslCertificate.
+The host resources related with this sslCertificate.
 To construct, see NOTES section for RELATEDHOSTS properties and create a hash table.
 
 ```yaml
@@ -374,7 +374,7 @@ It's a free-format string value, for example, 'United States'.
   - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+  - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair- `[]`>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
@@ -633,7 +633,7 @@ It's a free-format string value, for example, 'United States'.
   - `[SerialNumber <String>]`: A serial number assigned to the entity; usually only available if the entity is the issuer.
   - `[Surname <String>]`: If the entity is a person, this is the person's surname (last name).
 
-RELATEDHOSTS <IMicrosoftGraphSecurityHost- `[]`>: The hosts related with this sslCertificate.
+RELATEDHOSTS <IMicrosoftGraphSecurityHost- `[]`>: The host resources related with this sslCertificate.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair- `[]`>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
@@ -759,7 +759,7 @@ It's a free-format string value, for example, 'United States'.
       - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+      - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
       - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
       - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.

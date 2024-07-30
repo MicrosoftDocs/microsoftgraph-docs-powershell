@@ -26,6 +26,9 @@ Locale: en-US
 ### [Get-MgUserChatMessageReplyDelta](Get-MgUserChatMessageReplyDelta.md)
 
 
+### [Get-MgUserChatRetainedMessage](Get-MgUserChatRetainedMessage.md)
+
+
 ### [Get-MgUserContactDelta](Get-MgUserContactDelta.md)
 
 

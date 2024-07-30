@@ -38,6 +38,9 @@ Locale: en-US
 ### [Clear-MgBetaDeviceManagementComanagedDevice](Clear-MgBetaDeviceManagementComanagedDevice.md)
 
 
+### [Clear-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget](Clear-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget.md)
+
+
 ### [Clear-MgBetaDeviceManagementManagedDevice](Clear-MgBetaDeviceManagementManagedDevice.md)
 
 
@@ -119,7 +122,7 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries](Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries.md)
 
 
-### [Get-MgBetaDeviceManagementConfigurationPolicyJust](Get-MgBetaDeviceManagementConfigurationPolicyJust.md)
+### [Get-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget](Get-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget.md)
 
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyNoncompliantDeviceToRetire](Get-MgBetaDeviceManagementDeviceCompliancePolicyNoncompliantDeviceToRetire.md)
@@ -153,6 +156,9 @@ Locale: en-US
 
 
 ### [Get-MgBetaDeviceManagementReportAppStatusOverviewReport](Get-MgBetaDeviceManagementReportAppStatusOverviewReport.md)
+
+
+### [Get-MgBetaDeviceManagementReportAssignedApplicationReport](Get-MgBetaDeviceManagementReportAssignedApplicationReport.md)
 
 
 ### [Get-MgBetaDeviceManagementReportCachedReport](Get-MgBetaDeviceManagementReportCachedReport.md)
@@ -347,9 +353,6 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport](Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport.md)
 
 
-### [Get-MgBetaDeviceManagementReusablePolicySettingReferencingConfigurationPolicyJust](Get-MgBetaDeviceManagementReusablePolicySettingReferencingConfigurationPolicyJust.md)
-
-
 ### [Get-MgBetaDeviceManagementRoleScopeTagRoleScopeTagById](Get-MgBetaDeviceManagementRoleScopeTagRoleScopeTagById.md)
 
 
@@ -473,13 +476,7 @@ Locale: en-US
 ### [Invoke-MgBetaDownloadDeviceManagementComanagedDeviceAppDiagnostic](Invoke-MgBetaDownloadDeviceManagementComanagedDeviceAppDiagnostic.md)
 
 
-### [Invoke-MgBetaDownloadDeviceManagementComanagedDeviceLogCollectionRequestDeviceLog](Invoke-MgBetaDownloadDeviceManagementComanagedDeviceLogCollectionRequestDeviceLog.md)
-
-
 ### [Invoke-MgBetaDownloadDeviceManagementManagedDeviceAppDiagnostic](Invoke-MgBetaDownloadDeviceManagementManagedDeviceAppDiagnostic.md)
-
-
-### [Invoke-MgBetaDownloadDeviceManagementManagedDeviceLogCollectionRequestDeviceLog](Invoke-MgBetaDownloadDeviceManagementManagedDeviceLogCollectionRequestDeviceLog.md)
 
 
 ### [Invoke-MgBetaEnrollDeviceManagementComanagedDeviceNowAction](Invoke-MgBetaEnrollDeviceManagementComanagedDeviceNowAction.md)
@@ -851,9 +848,6 @@ Locale: en-US
 ### [Set-MgBetaDeviceManagementConfigurationPolicy](Set-MgBetaDeviceManagementConfigurationPolicy.md)
 
 
-### [Set-MgBetaDeviceManagementConfigurationPolicyJust](Set-MgBetaDeviceManagementConfigurationPolicyJust.md)
-
-
 ### [Set-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile](Set-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile.md)
 
 
@@ -917,6 +911,9 @@ Locale: en-US
 ### [Set-MgBetaDeviceManagementScript](Set-MgBetaDeviceManagementScript.md)
 
 
+### [Set-MgBetaDeviceManagementVirtualEndpointCloudPcReviewStatus](Set-MgBetaDeviceManagementVirtualEndpointCloudPcReviewStatus.md)
+
+
 ### [Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy.md)
 
 
@@ -939,6 +936,9 @@ Locale: en-US
 
 
 ### [Set-MgBetaDeviceManagementWindowsFeatureUpdateProfile](Set-MgBetaDeviceManagementWindowsFeatureUpdateProfile.md)
+
+
+### [Set-MgBetaDeviceManagementWindowsQualityUpdatePolicy](Set-MgBetaDeviceManagementWindowsQualityUpdatePolicy.md)
 
 
 ### [Set-MgBetaDeviceManagementWindowsQualityUpdateProfile](Set-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)

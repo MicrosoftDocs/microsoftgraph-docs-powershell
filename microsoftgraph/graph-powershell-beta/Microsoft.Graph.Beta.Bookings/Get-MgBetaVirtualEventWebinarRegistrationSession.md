@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get sessions from solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarRegistrationSession](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarRegistrationSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -362,6 +365,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistrationsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistrationsession)
+
+[https://learn.microsoft.com/graph/api/virtualeventregistration-list-sessions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventregistration-list-sessions?view=graph-rest-beta)
 
 
 

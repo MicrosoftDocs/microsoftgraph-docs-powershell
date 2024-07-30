@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaGroupSiteListPermission
 
 ## SYNOPSIS
-Get permissions from groups
+The set of permissions for the item.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -35,7 +37,9 @@ Get-MgBetaGroupSiteListPermission -InputObject <ISitesIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Get permissions from groups
+The set of permissions for the item.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 

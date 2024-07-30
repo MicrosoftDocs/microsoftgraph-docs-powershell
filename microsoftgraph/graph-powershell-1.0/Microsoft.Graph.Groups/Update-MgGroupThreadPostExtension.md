@@ -9,7 +9,8 @@ ms.subservice: extensions
 # Update-MgGroupThreadPostExtension
 
 ## SYNOPSIS
-Update an open extension (openTypeExtension object) with the properties in the request body: The data in an extension can be primitive types, or arrays of primitive types.
+Update an open extension (openTypeExtension object) on a supported resource type.- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.- Otherwise, that property and its data are added to the extension.
+The data in an extension can be primitive types or arrays of primitive types.
 See the table in the Permissions section for the list of resources that support open extensions.
 
 > [!NOTE]
@@ -46,7 +47,8 @@ Update-MgGroupThreadPostExtension -InputObject <IGroupsIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Update an open extension (openTypeExtension object) with the properties in the request body: The data in an extension can be primitive types, or arrays of primitive types.
+Update an open extension (openTypeExtension object) on a supported resource type.- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.- Otherwise, that property and its data are added to the extension.
+The data in an extension can be primitive types or arrays of primitive types.
 See the table in the Permissions section for the list of resources that support open extensions.
 
 ## EXAMPLES

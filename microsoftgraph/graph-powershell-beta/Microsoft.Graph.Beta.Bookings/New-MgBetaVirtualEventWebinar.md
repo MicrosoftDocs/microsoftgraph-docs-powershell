@@ -516,19 +516,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Email <String>]`: Email address of the registrant.
         - `[FirstName <String>]`: First name of the registrant.
         - `[LastName <String>]`: Last name of the registrant.
-        - `[PreferredLanguage <String>]`: 
-        - `[PreferredTimezone <String>]`: 
+        - `[PreferredLanguage <String>]`: The registrant's preferred language.
+        - `[PreferredTimezone <String>]`: The registrant's time zone details.
         - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
-          - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion.
+          - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is boolean.
           - `[DisplayName <String>]`: Display name of the registration question.
-          - `[MultiChoiceValues <String- `[]`>]`: Collection of text answer of the virtualEventRegistrationQuestion.
+          - `[MultiChoiceValues <String- `[]`>]`: A collection of text answers to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is multiChoice.
-          - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
-          - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion.
+          - `[QuestionId <String>]`: The identifier of either a virtualEventRegistrationCustomQuestion or a virtualEventRegistrationPredefinedQuestion.
+          - `[Value <String>]`: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
 Appears when answerInputType is text, multilineText or singleChoice.
         - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
         - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
@@ -553,8 +553,9 @@ This property is read-only.
     - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: Registration questions.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[DisplayName <String>]`: 
-      - `[IsRequired <Boolean?>]`: 
+      - `[DisplayName <String>]`: Display name of the registration question.
+      - `[IsRequired <Boolean?>]`: Indicates whether an answer to the question is required.
+The default value is false.
     - `[RegistrationWebUrl <String>]`: Registration URL of the virtual event.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -728,19 +729,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Email <String>]`: Email address of the registrant.
       - `[FirstName <String>]`: First name of the registrant.
       - `[LastName <String>]`: Last name of the registrant.
-      - `[PreferredLanguage <String>]`: 
-      - `[PreferredTimezone <String>]`: 
+      - `[PreferredLanguage <String>]`: The registrant's preferred language.
+      - `[PreferredTimezone <String>]`: The registrant's time zone details.
       - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
-        - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion.
+        - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is boolean.
         - `[DisplayName <String>]`: Display name of the registration question.
-        - `[MultiChoiceValues <String- `[]`>]`: Collection of text answer of the virtualEventRegistrationQuestion.
+        - `[MultiChoiceValues <String- `[]`>]`: A collection of text answers to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is multiChoice.
-        - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
-        - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion.
+        - `[QuestionId <String>]`: The identifier of either a virtualEventRegistrationCustomQuestion or a virtualEventRegistrationPredefinedQuestion.
+        - `[Value <String>]`: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
 Appears when answerInputType is text, multilineText or singleChoice.
       - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
       - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
@@ -754,8 +755,9 @@ REGISTRATIONCONFIGURATION `<IMicrosoftGraphVirtualEventWebinarRegistrationConfig
   - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: Registration questions.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[DisplayName <String>]`: 
-    - `[IsRequired <Boolean?>]`: 
+    - `[DisplayName <String>]`: Display name of the registration question.
+    - `[IsRequired <Boolean?>]`: Indicates whether an answer to the question is required.
+The default value is false.
   - `[RegistrationWebUrl <String>]`: Registration URL of the virtual event.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -772,19 +774,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Email <String>]`: Email address of the registrant.
   - `[FirstName <String>]`: First name of the registrant.
   - `[LastName <String>]`: Last name of the registrant.
-  - `[PreferredLanguage <String>]`: 
-  - `[PreferredTimezone <String>]`: 
+  - `[PreferredLanguage <String>]`: The registrant's preferred language.
+  - `[PreferredTimezone <String>]`: The registrant's time zone details.
   - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
-    - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion.
+    - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is boolean.
     - `[DisplayName <String>]`: Display name of the registration question.
-    - `[MultiChoiceValues <String- `[]`>]`: Collection of text answer of the virtualEventRegistrationQuestion.
+    - `[MultiChoiceValues <String- `[]`>]`: A collection of text answers to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is multiChoice.
-    - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
-    - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion.
+    - `[QuestionId <String>]`: The identifier of either a virtualEventRegistrationCustomQuestion or a virtualEventRegistrationPredefinedQuestion.
+    - `[Value <String>]`: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
 Appears when answerInputType is text, multilineText or singleChoice.
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
@@ -1038,19 +1040,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Email <String>]`: Email address of the registrant.
     - `[FirstName <String>]`: First name of the registrant.
     - `[LastName <String>]`: Last name of the registrant.
-    - `[PreferredLanguage <String>]`: 
-    - `[PreferredTimezone <String>]`: 
+    - `[PreferredLanguage <String>]`: The registrant's preferred language.
+    - `[PreferredTimezone <String>]`: The registrant's time zone details.
     - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
-      - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion.
+      - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is boolean.
       - `[DisplayName <String>]`: Display name of the registration question.
-      - `[MultiChoiceValues <String- `[]`>]`: Collection of text answer of the virtualEventRegistrationQuestion.
+      - `[MultiChoiceValues <String- `[]`>]`: A collection of text answers to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is multiChoice.
-      - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
-      - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion.
+      - `[QuestionId <String>]`: The identifier of either a virtualEventRegistrationCustomQuestion or a virtualEventRegistrationPredefinedQuestion.
+      - `[Value <String>]`: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
 Appears when answerInputType is text, multilineText or singleChoice.
     - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[Status <String>]`: virtualEventAttendeeRegistrationStatus

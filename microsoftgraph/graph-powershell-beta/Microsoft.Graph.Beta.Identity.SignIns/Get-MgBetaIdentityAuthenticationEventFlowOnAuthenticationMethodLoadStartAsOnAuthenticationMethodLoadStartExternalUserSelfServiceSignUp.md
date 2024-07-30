@@ -8,14 +8,14 @@ schema: 2.0.0
 # Get-MgBetaIdentityAuthenticationEventFlowOnAuthenticationMethodLoadStartAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUp
 
 ## SYNOPSIS
-Get the items of type microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp in the microsoft.graph.onAuthenticationMethodLoadStartHandler collection
+Get the item of type microsoft.graph.onAuthenticationMethodLoadStartHandler as microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp
 
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgBetaIdentityAuthenticationEventFlowOnAuthenticationMethodLoadStartAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUp
- -AuthenticationEventsFlowId <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ -AuthenticationEventsFlowId <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
@@ -23,11 +23,11 @@ Get-MgBetaIdentityAuthenticationEventFlowOnAuthenticationMethodLoadStartAsOnAuth
 ```
 Get-MgBetaIdentityAuthenticationEventFlowOnAuthenticationMethodLoadStartAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUp
  -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the items of type microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp in the microsoft.graph.onAuthenticationMethodLoadStartHandler collection
+Get the item of type microsoft.graph.onAuthenticationMethodLoadStartHandler as microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp
 
 ## PARAMETERS
 
@@ -77,21 +77,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -131,7 +116,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.IDictionary
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -177,7 +162,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
-  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

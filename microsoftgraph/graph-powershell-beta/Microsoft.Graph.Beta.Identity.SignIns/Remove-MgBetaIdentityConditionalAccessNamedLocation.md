@@ -9,7 +9,7 @@ ms.subservice: entra-sign-in
 # Remove-MgBetaIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Delete a countryNamedLocation object.
+Delete an ipNamedLocation object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Remove-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignI
 ```
 
 ## DESCRIPTION
-Delete a countryNamedLocation object.
+Delete an ipNamedLocation object.
 
 ## EXAMPLES
 ### Example 1: Remove a named location
@@ -238,7 +238,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
-  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -284,7 +283,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccessnamedlocation)
 
-[https://learn.microsoft.com/graph/api/countrynamedlocation-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/countrynamedlocation-delete?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/ipnamedlocation-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ipnamedlocation-delete?view=graph-rest-beta)
 
 
 

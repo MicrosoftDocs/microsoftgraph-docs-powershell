@@ -323,7 +323,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmanagementmanagedapppolicyapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmanagementmanagedapppolicyapp)
 
-[https://learn.microsoft.com/graph/api/intune-mam-managedappprotection-targetapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappprotection-targetapps?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-mam-managedapppolicy-targetapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedapppolicy-targetapps?view=graph-rest-1.0)
 
 
 

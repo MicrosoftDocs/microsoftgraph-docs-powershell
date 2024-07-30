@@ -233,6 +233,7 @@ Accept wildcard characters: False
 
 ### -EnrollmentTokenUsageCount
 Total number of AOSP devices that have enrolled using the current token.
+Valid values 0 to 20000
 
 ```yaml
 Type: Int32
@@ -569,6 +570,7 @@ Returned by default.
   - `[EnrollmentMode <AndroidDeviceOwnerEnrollmentMode?>]`: The enrollment mode for an enrollment profile.
   - `[EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType?>]`: The enrollment token type for an enrollment profile.
   - `[EnrollmentTokenUsageCount <Int32?>]`: Total number of AOSP devices that have enrolled using the current token.
+Valid values 0 to 20000
   - `[IsTeamsDeviceProfile <Boolean?>]`: Boolean indicating if this profile is an Android AOSP for Teams device profile.
   - `[LastModifiedDateTime <DateTime?>]`: Date time the enrollment profile was last modified.
   - `[QrCodeContent <String>]`: String used to generate a QR code for the token.

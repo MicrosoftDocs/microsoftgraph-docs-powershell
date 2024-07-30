@@ -429,9 +429,11 @@ Accepted values are allow and block.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Justification <String>]`: 
+        - `[Justification <String>]`: Read-only.
+Reason why the entity was archived or unarchived.
         - `[StatusChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[StatusChangedDateTime <DateTime?>]`: 
+        - `[StatusChangedDateTime <DateTime?>]`: Read-only.
+Date and time at which the entity's archive status changed.
       - `[AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]`: plannerAssignedToTaskBoardTaskFormat
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -523,7 +525,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
-      - `[IsArchived <Boolean?>]`: 
+      - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the task is archived.
+An archived task is read-only.
       - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
 If true, it shows the task.
       - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
@@ -733,9 +737,11 @@ Accepted values are allow and block.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Justification <String>]`: 
+      - `[Justification <String>]`: Read-only.
+Reason why the entity was archived or unarchived.
       - `[StatusChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[StatusChangedDateTime <DateTime?>]`: 
+      - `[StatusChangedDateTime <DateTime?>]`: Read-only.
+Date and time at which the entity's archive status changed.
     - `[AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]`: plannerAssignedToTaskBoardTaskFormat
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -827,7 +833,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
-    - `[IsArchived <Boolean?>]`: 
+    - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the task is archived.
+An archived task is read-only.
     - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
 If true, it shows the task.
     - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.

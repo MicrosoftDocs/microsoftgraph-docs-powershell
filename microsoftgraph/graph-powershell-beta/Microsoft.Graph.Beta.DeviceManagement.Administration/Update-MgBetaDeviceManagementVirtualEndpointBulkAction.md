@@ -236,9 +236,9 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduledDuringMaintenanceWindow
-Indicates whether the bulk actions can be initiated during maintenance window.
-When true, bulk action will use maintenance window to schedule action, When false means bulk action will not use the maintenance window.
-Default value is false.
+Indicates whether the bulk action is scheduled according to the maintenance window.
+When true, the bulk action uses the maintenance window to schedule the action; false means that the bulk action doesn't use the maintenance window.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -324,9 +324,9 @@ Read-only.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[DisplayName <String>]`: Name of the bulk action.
-  - `[ScheduledDuringMaintenanceWindow <Boolean?>]`: Indicates whether the bulk actions can be initiated during maintenance window.
-When true, bulk action will use maintenance window to schedule action, When false means bulk action will not use the maintenance window.
-Default value is false.
+  - `[ScheduledDuringMaintenanceWindow <Boolean?>]`: Indicates whether the bulk action is scheduled according to the maintenance window.
+When true, the bulk action uses the maintenance window to schedule the action; false means that the bulk action doesn't use the maintenance window.
+The default value is false.
 
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent

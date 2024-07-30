@@ -649,11 +649,10 @@ BODYPARAMETER `<IMicrosoftGraphList>`: list
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -973,7 +972,7 @@ For more details, see Introduction to device management in Microsoft Entra ID.
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-      - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation.
+      - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation, such as a password reset operation.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
@@ -1446,11 +1445,10 @@ For example, a user's display name, a team name.
             - `[User <IMicrosoftGraphIdentity>]`: identity
             - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+              - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
               - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
         - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
           - `[Actions <String>]`: chatMessageActions
@@ -1496,11 +1494,10 @@ Link to the message in Microsoft Teams.
         - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
         - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+          - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
           - `[UserIdentityType <String>]`: teamworkUserIdentityType
       - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: A collection of permissions granted to apps for the chat.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -2005,11 +2002,10 @@ Read-only.
             - `[Group <IMicrosoftGraphIdentity>]`: identity
             - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+              - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
               - `[LoginName <String>]`: The sign in name of the SharePoint identity.
             - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
           - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -2085,7 +2081,8 @@ Read-only.
           - `[Shared <IMicrosoftGraphShared>]`: shared
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Owner <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[Scope <String>]`: Indicates the scope of how the item is shared: anonymous, organization, or users.
+            - `[Scope <String>]`: Indicates the scope of how the item is shared.
+The possible values are: anonymous, organization, or users.
 Read-only.
             - `[SharedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[SharedDateTime <DateTime?>]`: The UTC date and time when the item was shared.
@@ -3209,12 +3206,10 @@ Nullable.
 Read-only.
         - `[ClassifyAs <String>]`: inferenceClassificationType
         - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[Insights <IMicrosoftGraphOfficeGraphInsights>]`: officeGraphInsights
+    - `[Insights <IMicrosoftGraphItemInsights>]`: itemInsights
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-      - `[Shared <IMicrosoftGraphSharedInsight- `[]`>]`: Calculated relationship identifying documents shared with or by the user.
-This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings.
+      - `[Shared <IMicrosoftGraphSharedInsight- `[]`>]`: Calculated relationship that identifies documents shared with or by the user.
+This includes URLs, file attachments, and reference attachments to OneDrive for work or school and SharePoint files found in Outlook messages and meetings.
 This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -3261,8 +3256,8 @@ Not all Media Mime Types are supported.
 Can be used for filtering for a specific file based on a specific type.
 See the section Type property values for supported types.
         - `[SharingHistory <IMicrosoftGraphSharingDetail- `[]`>]`: 
-      - `[Trending <IMicrosoftGraphTrending- `[]`>]`: Calculated relationship identifying documents trending around a user.
-Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
+      - `[Trending <IMicrosoftGraphTrending- `[]`>]`: Calculated relationship that identifies documents trending around a user.
+Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for work or school and SharePoint.
 Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -3274,7 +3269,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[Weight <Double?>]`: Value indicating how much the document is currently trending.
 The larger the number, the more the document is currently trending around the user (the more relevant it is).
 Returned documents are sorted by this value.
-      - `[Used <IMicrosoftGraphUsedInsight- `[]`>]`: Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
+      - `[Used <IMicrosoftGraphUsedInsight- `[]`>]`: Calculated relationship that identifies the latest documents viewed or modified by a user, including OneDrive for work or school and SharePoint documents, ranked by recency of use.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
@@ -3290,6 +3285,8 @@ Read-only.
         - `[Resource <IMicrosoftGraphEntity>]`: entity
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
     - `[Interests <String- `[]`>]`: A list for the user to describe their interests.
 Returned only on $select.
     - `[IsResourceAccount <Boolean?>]`: Don't use - reserved for future use.
@@ -3311,6 +3308,8 @@ The maximum length is 50 characters.
         - `[Email <String>]`: The email address for sending messages to the channel.
 Read-only.
         - `[FilesFolder <IMicrosoftGraphDriveItem>]`: driveItem
+        - `[IsArchived <Boolean?>]`: Indicates whether the channel is archived.
+Read-only.
         - `[IsFavoriteByDefault <Boolean?>]`: Indicates whether the channel should be marked as recommended for all members of the team to show in their channel list.
 Note: All recommended channels automatically show in the channels list for education and frontline worker users.
 The property can only be set programmatically via the Create team method.
@@ -3599,7 +3598,6 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
-Read-only.
         - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -4712,7 +4710,6 @@ Read-only.
         - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
-Required when you create an online meeting.
       - `[Transcripts <IMicrosoftGraphCallTranscript- `[]`>]`: The transcripts of an online meeting.
 Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -4720,7 +4717,7 @@ Read-only.
         - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
         - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
-The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
         - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
@@ -4964,11 +4961,10 @@ Read-only.
             - `[Scaling <String>]`: printScaling
           - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+            - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
             - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
           - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
@@ -5155,6 +5151,11 @@ This setting is read-only and can only be changed by administrators in the Share
 When set to true, documents in the user's Office Delve are disabled.
 When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
 Users can control this setting in Office Delve.
+      - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[IsEnabled <Boolean?>]`: 
       - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -5166,6 +5167,26 @@ Read-only.
             - `[EndTime <String>]`: End time for the time range.
             - `[StartTime <String>]`: Start time for the time range.
           - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+      - `[Storage <IMicrosoftGraphUserStorage>]`: userStorage
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Quota <IMicrosoftGraphUnifiedStorageQuota>]`: unifiedStorageQuota
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Deleted <Int64?>]`: 
+          - `[ManageWebUrl <String>]`: 
+          - `[Remaining <Int64?>]`: 
+          - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: 
+            - `[DisplayName <String>]`: 
+            - `[ManageWebUrl <String>]`: 
+            - `[Used <Int64?>]`: 
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[State <String>]`: 
+          - `[Total <Int64?>]`: 
+          - `[Used <Int64?>]`: 
       - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -5248,8 +5269,14 @@ Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Chat <IMicrosoftGraphChat>]`: chat
-      - `[Locale <String>]`: The chosen locale of a user in Microsoft Teams.
-      - `[Region <String>]`: The region of the user in Microsoft Teams.
+      - `[Locale <String>]`: Represents the location that a user selected in Microsoft Teams and doesn't follow the Office's locale setting.
+A user's locale is represented by their preferred language and country or region.
+For example, en-us.
+The language component follows two-letter codes as defined in ISO 639-1, and the country component follows two-letter codes as defined in ISO 3166-1 alpha-2.
+      - `[Region <String>]`: Represents the region of the organization or the user.
+For users with multigeo licenses, the property contains the user's region (if available).
+For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
     - `[Todo <IMicrosoftGraphTodo>]`: todo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -5783,11 +5810,10 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -6108,7 +6134,7 @@ For more details, see Introduction to device management in Microsoft Entra ID.
       - `[DeviceTag <String>]`: Tags containing app metadata.
       - `[DisplayName <String>]`: The name of the device on which this app is registered.
       - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-    - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation.
+    - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation, such as a password reset operation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
@@ -6479,11 +6505,10 @@ Read-only.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Application <IMicrosoftGraphIdentity>]`: identity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+              - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[Device <IMicrosoftGraphIdentity>]`: identity
             - `[User <IMicrosoftGraphIdentity>]`: identity
           - `[Description <String>]`: Verbose description of the application.
@@ -6591,11 +6616,10 @@ For example, a user's display name, a team name.
           - `[User <IMicrosoftGraphIdentity>]`: identity
           - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+            - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
       - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
         - `[Actions <String>]`: chatMessageActions
@@ -6641,11 +6665,10 @@ Link to the message in Microsoft Teams.
       - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
       - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+        - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         - `[UserIdentityType <String>]`: teamworkUserIdentityType
     - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: A collection of permissions granted to apps for the chat.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -7150,11 +7173,10 @@ Read-only.
           - `[Group <IMicrosoftGraphIdentity>]`: identity
           - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+            - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[LoginName <String>]`: The sign in name of the SharePoint identity.
           - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
         - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -7230,7 +7252,8 @@ Read-only.
         - `[Shared <IMicrosoftGraphShared>]`: shared
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Owner <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[Scope <String>]`: Indicates the scope of how the item is shared: anonymous, organization, or users.
+          - `[Scope <String>]`: Indicates the scope of how the item is shared.
+The possible values are: anonymous, organization, or users.
 Read-only.
           - `[SharedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[SharedDateTime <DateTime?>]`: The UTC date and time when the item was shared.
@@ -8389,12 +8412,10 @@ Nullable.
 Read-only.
       - `[ClassifyAs <String>]`: inferenceClassificationType
       - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-  - `[Insights <IMicrosoftGraphOfficeGraphInsights>]`: officeGraphInsights
+  - `[Insights <IMicrosoftGraphItemInsights>]`: itemInsights
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-    - `[Shared <IMicrosoftGraphSharedInsight- `[]`>]`: Calculated relationship identifying documents shared with or by the user.
-This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings.
+    - `[Shared <IMicrosoftGraphSharedInsight- `[]`>]`: Calculated relationship that identifies documents shared with or by the user.
+This includes URLs, file attachments, and reference attachments to OneDrive for work or school and SharePoint files found in Outlook messages and meetings.
 This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -8441,8 +8462,8 @@ Not all Media Mime Types are supported.
 Can be used for filtering for a specific file based on a specific type.
 See the section Type property values for supported types.
       - `[SharingHistory <IMicrosoftGraphSharingDetail- `[]`>]`: 
-    - `[Trending <IMicrosoftGraphTrending- `[]`>]`: Calculated relationship identifying documents trending around a user.
-Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
+    - `[Trending <IMicrosoftGraphTrending- `[]`>]`: Calculated relationship that identifies documents trending around a user.
+Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for work or school and SharePoint.
 Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -8454,7 +8475,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Weight <Double?>]`: Value indicating how much the document is currently trending.
 The larger the number, the more the document is currently trending around the user (the more relevant it is).
 Returned documents are sorted by this value.
-    - `[Used <IMicrosoftGraphUsedInsight- `[]`>]`: Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
+    - `[Used <IMicrosoftGraphUsedInsight- `[]`>]`: Calculated relationship that identifies the latest documents viewed or modified by a user, including OneDrive for work or school and SharePoint documents, ranked by recency of use.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
@@ -8470,6 +8491,8 @@ Read-only.
       - `[Resource <IMicrosoftGraphEntity>]`: entity
       - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
       - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
   - `[Interests <String- `[]`>]`: A list for the user to describe their interests.
 Returned only on $select.
   - `[IsResourceAccount <Boolean?>]`: Don't use - reserved for future use.
@@ -8491,6 +8514,8 @@ The maximum length is 50 characters.
       - `[Email <String>]`: The email address for sending messages to the channel.
 Read-only.
       - `[FilesFolder <IMicrosoftGraphDriveItem>]`: driveItem
+      - `[IsArchived <Boolean?>]`: Indicates whether the channel is archived.
+Read-only.
       - `[IsFavoriteByDefault <Boolean?>]`: Indicates whether the channel should be marked as recommended for all members of the team to show in their channel list.
 Note: All recommended channels automatically show in the channels list for education and frontline worker users.
 The property can only be set programmatically via the Create team method.
@@ -8779,7 +8804,6 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
-Read-only.
       - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -9892,7 +9916,6 @@ Read-only.
       - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
     - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
-Required when you create an online meeting.
     - `[Transcripts <IMicrosoftGraphCallTranscript- `[]`>]`: The transcripts of an online meeting.
 Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -9900,7 +9923,7 @@ Read-only.
       - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
       - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
-The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
       - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
@@ -10144,11 +10167,10 @@ Read-only.
           - `[Scaling <String>]`: printScaling
         - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+          - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
           - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
           - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
         - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
@@ -10335,6 +10357,11 @@ This setting is read-only and can only be changed by administrators in the Share
 When set to true, documents in the user's Office Delve are disabled.
 When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
 Users can control this setting in Office Delve.
+    - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[IsEnabled <Boolean?>]`: 
     - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -10346,6 +10373,26 @@ Read-only.
           - `[EndTime <String>]`: End time for the time range.
           - `[StartTime <String>]`: Start time for the time range.
         - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+    - `[Storage <IMicrosoftGraphUserStorage>]`: userStorage
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Quota <IMicrosoftGraphUnifiedStorageQuota>]`: unifiedStorageQuota
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Deleted <Int64?>]`: 
+        - `[ManageWebUrl <String>]`: 
+        - `[Remaining <Int64?>]`: 
+        - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: 
+          - `[DisplayName <String>]`: 
+          - `[ManageWebUrl <String>]`: 
+          - `[Used <Int64?>]`: 
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[State <String>]`: 
+        - `[Total <Int64?>]`: 
+        - `[Used <Int64?>]`: 
     - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -10428,8 +10475,14 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Chat <IMicrosoftGraphChat>]`: chat
-    - `[Locale <String>]`: The chosen locale of a user in Microsoft Teams.
-    - `[Region <String>]`: The region of the user in Microsoft Teams.
+    - `[Locale <String>]`: Represents the location that a user selected in Microsoft Teams and doesn't follow the Office's locale setting.
+A user's locale is represented by their preferred language and country or region.
+For example, en-us.
+The language component follows two-letter codes as defined in ISO 639-1, and the country component follows two-letter codes as defined in ISO 3166-1 alpha-2.
+    - `[Region <String>]`: Represents the region of the organization or the user.
+For users with multigeo licenses, the property contains the user's region (if available).
+For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
   - `[Todo <IMicrosoftGraphTodo>]`: todo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -10540,11 +10593,10 @@ DRIVE `<IMicrosoftGraphDrive>`: drive
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -10864,7 +10916,7 @@ For more details, see Introduction to device management in Microsoft Entra ID.
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-      - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation.
+      - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation, such as a password reset operation.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
@@ -11337,11 +11389,10 @@ For example, a user's display name, a team name.
             - `[User <IMicrosoftGraphIdentity>]`: identity
             - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+              - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
               - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
         - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
           - `[Actions <String>]`: chatMessageActions
@@ -11387,11 +11438,10 @@ Link to the message in Microsoft Teams.
         - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
         - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+          - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
           - `[UserIdentityType <String>]`: teamworkUserIdentityType
       - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: A collection of permissions granted to apps for the chat.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -11946,11 +11996,10 @@ Read-only.
                   - `[Group <IMicrosoftGraphIdentity>]`: identity
                   - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                    - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-                    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+                    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
                     - `[LoginName <String>]`: The sign in name of the SharePoint identity.
                   - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                 - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -12026,7 +12075,8 @@ Read-only.
                 - `[Shared <IMicrosoftGraphShared>]`: shared
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Owner <IMicrosoftGraphIdentitySet>]`: identitySet
-                  - `[Scope <String>]`: Indicates the scope of how the item is shared: anonymous, organization, or users.
+                  - `[Scope <String>]`: Indicates the scope of how the item is shared.
+The possible values are: anonymous, organization, or users.
 Read-only.
                   - `[SharedBy <IMicrosoftGraphIdentitySet>]`: identitySet
                   - `[SharedDateTime <DateTime?>]`: The UTC date and time when the item was shared.
@@ -13079,12 +13129,10 @@ Nullable.
 Read-only.
         - `[ClassifyAs <String>]`: inferenceClassificationType
         - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[Insights <IMicrosoftGraphOfficeGraphInsights>]`: officeGraphInsights
+    - `[Insights <IMicrosoftGraphItemInsights>]`: itemInsights
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-      - `[Shared <IMicrosoftGraphSharedInsight- `[]`>]`: Calculated relationship identifying documents shared with or by the user.
-This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings.
+      - `[Shared <IMicrosoftGraphSharedInsight- `[]`>]`: Calculated relationship that identifies documents shared with or by the user.
+This includes URLs, file attachments, and reference attachments to OneDrive for work or school and SharePoint files found in Outlook messages and meetings.
 This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -13131,8 +13179,8 @@ Not all Media Mime Types are supported.
 Can be used for filtering for a specific file based on a specific type.
 See the section Type property values for supported types.
         - `[SharingHistory <IMicrosoftGraphSharingDetail- `[]`>]`: 
-      - `[Trending <IMicrosoftGraphTrending- `[]`>]`: Calculated relationship identifying documents trending around a user.
-Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
+      - `[Trending <IMicrosoftGraphTrending- `[]`>]`: Calculated relationship that identifies documents trending around a user.
+Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for work or school and SharePoint.
 Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -13144,7 +13192,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[Weight <Double?>]`: Value indicating how much the document is currently trending.
 The larger the number, the more the document is currently trending around the user (the more relevant it is).
 Returned documents are sorted by this value.
-      - `[Used <IMicrosoftGraphUsedInsight- `[]`>]`: Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
+      - `[Used <IMicrosoftGraphUsedInsight- `[]`>]`: Calculated relationship that identifies the latest documents viewed or modified by a user, including OneDrive for work or school and SharePoint documents, ranked by recency of use.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
@@ -13160,6 +13208,8 @@ Read-only.
         - `[Resource <IMicrosoftGraphEntity>]`: entity
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
     - `[Interests <String- `[]`>]`: A list for the user to describe their interests.
 Returned only on $select.
     - `[IsResourceAccount <Boolean?>]`: Don't use - reserved for future use.
@@ -13181,6 +13231,8 @@ The maximum length is 50 characters.
         - `[Email <String>]`: The email address for sending messages to the channel.
 Read-only.
         - `[FilesFolder <IMicrosoftGraphDriveItem>]`: driveItem
+        - `[IsArchived <Boolean?>]`: Indicates whether the channel is archived.
+Read-only.
         - `[IsFavoriteByDefault <Boolean?>]`: Indicates whether the channel should be marked as recommended for all members of the team to show in their channel list.
 Note: All recommended channels automatically show in the channels list for education and frontline worker users.
 The property can only be set programmatically via the Create team method.
@@ -13469,7 +13521,6 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
-Read-only.
         - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -14582,7 +14633,6 @@ Read-only.
         - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
-Required when you create an online meeting.
       - `[Transcripts <IMicrosoftGraphCallTranscript- `[]`>]`: The transcripts of an online meeting.
 Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -14590,7 +14640,7 @@ Read-only.
         - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
         - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
-The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
         - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
@@ -14834,11 +14884,10 @@ Read-only.
             - `[Scaling <String>]`: printScaling
           - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+            - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
             - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
           - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
@@ -15025,6 +15074,11 @@ This setting is read-only and can only be changed by administrators in the Share
 When set to true, documents in the user's Office Delve are disabled.
 When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
 Users can control this setting in Office Delve.
+      - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[IsEnabled <Boolean?>]`: 
       - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -15036,6 +15090,26 @@ Read-only.
             - `[EndTime <String>]`: End time for the time range.
             - `[StartTime <String>]`: Start time for the time range.
           - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+      - `[Storage <IMicrosoftGraphUserStorage>]`: userStorage
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Quota <IMicrosoftGraphUnifiedStorageQuota>]`: unifiedStorageQuota
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Deleted <Int64?>]`: 
+          - `[ManageWebUrl <String>]`: 
+          - `[Remaining <Int64?>]`: 
+          - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: 
+            - `[DisplayName <String>]`: 
+            - `[ManageWebUrl <String>]`: 
+            - `[Used <Int64?>]`: 
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[State <String>]`: 
+          - `[Total <Int64?>]`: 
+          - `[Used <Int64?>]`: 
       - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -15118,8 +15192,14 @@ Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Chat <IMicrosoftGraphChat>]`: chat
-      - `[Locale <String>]`: The chosen locale of a user in Microsoft Teams.
-      - `[Region <String>]`: The region of the user in Microsoft Teams.
+      - `[Locale <String>]`: Represents the location that a user selected in Microsoft Teams and doesn't follow the Office's locale setting.
+A user's locale is represented by their preferred language and country or region.
+For example, en-us.
+The language component follows two-letter codes as defined in ISO 639-1, and the country component follows two-letter codes as defined in ISO 3166-1 alpha-2.
+      - `[Region <String>]`: Represents the region of the organization or the user.
+For users with multigeo licenses, the property contains the user's region (if available).
+For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
     - `[Todo <IMicrosoftGraphTodo>]`: todo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -15328,11 +15408,10 @@ ITEMS <IMicrosoftGraphListItem- `[]`>: All items contained in the list.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -15652,7 +15731,7 @@ For more details, see Introduction to device management in Microsoft Entra ID.
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-      - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation.
+      - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation, such as a password reset operation.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
@@ -16125,11 +16204,10 @@ For example, a user's display name, a team name.
             - `[User <IMicrosoftGraphIdentity>]`: identity
             - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+              - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
               - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
         - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
           - `[Actions <String>]`: chatMessageActions
@@ -16175,11 +16253,10 @@ Link to the message in Microsoft Teams.
         - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
         - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+          - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
           - `[UserIdentityType <String>]`: teamworkUserIdentityType
       - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: A collection of permissions granted to apps for the chat.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -16621,11 +16698,10 @@ Read-only.
             - `[Group <IMicrosoftGraphIdentity>]`: identity
             - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+              - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
               - `[LoginName <String>]`: The sign in name of the SharePoint identity.
             - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
           - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -16708,7 +16784,8 @@ Read-only.
           - `[Shared <IMicrosoftGraphShared>]`: shared
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Owner <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[Scope <String>]`: Indicates the scope of how the item is shared: anonymous, organization, or users.
+            - `[Scope <String>]`: Indicates the scope of how the item is shared.
+The possible values are: anonymous, organization, or users.
 Read-only.
             - `[SharedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[SharedDateTime <DateTime?>]`: The UTC date and time when the item was shared.
@@ -17870,12 +17947,10 @@ Nullable.
 Read-only.
         - `[ClassifyAs <String>]`: inferenceClassificationType
         - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[Insights <IMicrosoftGraphOfficeGraphInsights>]`: officeGraphInsights
+    - `[Insights <IMicrosoftGraphItemInsights>]`: itemInsights
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-      - `[Shared <IMicrosoftGraphSharedInsight- `[]`>]`: Calculated relationship identifying documents shared with or by the user.
-This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings.
+      - `[Shared <IMicrosoftGraphSharedInsight- `[]`>]`: Calculated relationship that identifies documents shared with or by the user.
+This includes URLs, file attachments, and reference attachments to OneDrive for work or school and SharePoint files found in Outlook messages and meetings.
 This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -17922,8 +17997,8 @@ Not all Media Mime Types are supported.
 Can be used for filtering for a specific file based on a specific type.
 See the section Type property values for supported types.
         - `[SharingHistory <IMicrosoftGraphSharingDetail- `[]`>]`: 
-      - `[Trending <IMicrosoftGraphTrending- `[]`>]`: Calculated relationship identifying documents trending around a user.
-Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
+      - `[Trending <IMicrosoftGraphTrending- `[]`>]`: Calculated relationship that identifies documents trending around a user.
+Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for work or school and SharePoint.
 Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -17935,7 +18010,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[Weight <Double?>]`: Value indicating how much the document is currently trending.
 The larger the number, the more the document is currently trending around the user (the more relevant it is).
 Returned documents are sorted by this value.
-      - `[Used <IMicrosoftGraphUsedInsight- `[]`>]`: Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
+      - `[Used <IMicrosoftGraphUsedInsight- `[]`>]`: Calculated relationship that identifies the latest documents viewed or modified by a user, including OneDrive for work or school and SharePoint documents, ranked by recency of use.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
@@ -17951,6 +18026,8 @@ Read-only.
         - `[Resource <IMicrosoftGraphEntity>]`: entity
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
     - `[Interests <String- `[]`>]`: A list for the user to describe their interests.
 Returned only on $select.
     - `[IsResourceAccount <Boolean?>]`: Don't use - reserved for future use.
@@ -17972,6 +18049,8 @@ The maximum length is 50 characters.
         - `[Email <String>]`: The email address for sending messages to the channel.
 Read-only.
         - `[FilesFolder <IMicrosoftGraphDriveItem>]`: driveItem
+        - `[IsArchived <Boolean?>]`: Indicates whether the channel is archived.
+Read-only.
         - `[IsFavoriteByDefault <Boolean?>]`: Indicates whether the channel should be marked as recommended for all members of the team to show in their channel list.
 Note: All recommended channels automatically show in the channels list for education and frontline worker users.
 The property can only be set programmatically via the Create team method.
@@ -18260,7 +18339,6 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
-Read-only.
         - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -19373,7 +19451,6 @@ Read-only.
         - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
-Required when you create an online meeting.
       - `[Transcripts <IMicrosoftGraphCallTranscript- `[]`>]`: The transcripts of an online meeting.
 Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -19381,7 +19458,7 @@ Read-only.
         - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
         - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
-The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
         - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
@@ -19625,11 +19702,10 @@ Read-only.
             - `[Scaling <String>]`: printScaling
           - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+            - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
             - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
           - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
@@ -19816,6 +19892,11 @@ This setting is read-only and can only be changed by administrators in the Share
 When set to true, documents in the user's Office Delve are disabled.
 When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
 Users can control this setting in Office Delve.
+      - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[IsEnabled <Boolean?>]`: 
       - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -19827,6 +19908,26 @@ Read-only.
             - `[EndTime <String>]`: End time for the time range.
             - `[StartTime <String>]`: Start time for the time range.
           - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+      - `[Storage <IMicrosoftGraphUserStorage>]`: userStorage
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Quota <IMicrosoftGraphUnifiedStorageQuota>]`: unifiedStorageQuota
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Deleted <Int64?>]`: 
+          - `[ManageWebUrl <String>]`: 
+          - `[Remaining <Int64?>]`: 
+          - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: 
+            - `[DisplayName <String>]`: 
+            - `[ManageWebUrl <String>]`: 
+            - `[Used <Int64?>]`: 
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[State <String>]`: 
+          - `[Total <Int64?>]`: 
+          - `[Used <Int64?>]`: 
       - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -19909,8 +20010,14 @@ Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Chat <IMicrosoftGraphChat>]`: chat
-      - `[Locale <String>]`: The chosen locale of a user in Microsoft Teams.
-      - `[Region <String>]`: The region of the user in Microsoft Teams.
+      - `[Locale <String>]`: Represents the location that a user selected in Microsoft Teams and doesn't follow the Office's locale setting.
+A user's locale is represented by their preferred language and country or region.
+For example, en-us.
+The language component follows two-letter codes as defined in ISO 639-1, and the country component follows two-letter codes as defined in ISO 3166-1 alpha-2.
+      - `[Region <String>]`: Represents the region of the organization or the user.
+For users with multigeo licenses, the property contains the user's region (if available).
+For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
     - `[Todo <IMicrosoftGraphTodo>]`: todo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -20069,11 +20176,10 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -20394,7 +20500,7 @@ For more details, see Introduction to device management in Microsoft Entra ID.
       - `[DeviceTag <String>]`: Tags containing app metadata.
       - `[DisplayName <String>]`: The name of the device on which this app is registered.
       - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-    - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation.
+    - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation, such as a password reset operation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
@@ -20765,11 +20871,10 @@ Read-only.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Application <IMicrosoftGraphIdentity>]`: identity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+              - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[Device <IMicrosoftGraphIdentity>]`: identity
             - `[User <IMicrosoftGraphIdentity>]`: identity
           - `[Description <String>]`: Verbose description of the application.
@@ -20877,11 +20982,10 @@ For example, a user's display name, a team name.
           - `[User <IMicrosoftGraphIdentity>]`: identity
           - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+            - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
       - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
         - `[Actions <String>]`: chatMessageActions
@@ -20927,11 +21031,10 @@ Link to the message in Microsoft Teams.
       - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
       - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+        - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         - `[UserIdentityType <String>]`: teamworkUserIdentityType
     - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: A collection of permissions granted to apps for the chat.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -21436,11 +21539,10 @@ Read-only.
           - `[Group <IMicrosoftGraphIdentity>]`: identity
           - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+            - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[LoginName <String>]`: The sign in name of the SharePoint identity.
           - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
         - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -21516,7 +21618,8 @@ Read-only.
         - `[Shared <IMicrosoftGraphShared>]`: shared
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Owner <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[Scope <String>]`: Indicates the scope of how the item is shared: anonymous, organization, or users.
+          - `[Scope <String>]`: Indicates the scope of how the item is shared.
+The possible values are: anonymous, organization, or users.
 Read-only.
           - `[SharedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[SharedDateTime <DateTime?>]`: The UTC date and time when the item was shared.
@@ -22675,12 +22778,10 @@ Nullable.
 Read-only.
       - `[ClassifyAs <String>]`: inferenceClassificationType
       - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-  - `[Insights <IMicrosoftGraphOfficeGraphInsights>]`: officeGraphInsights
+  - `[Insights <IMicrosoftGraphItemInsights>]`: itemInsights
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-    - `[Shared <IMicrosoftGraphSharedInsight- `[]`>]`: Calculated relationship identifying documents shared with or by the user.
-This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings.
+    - `[Shared <IMicrosoftGraphSharedInsight- `[]`>]`: Calculated relationship that identifies documents shared with or by the user.
+This includes URLs, file attachments, and reference attachments to OneDrive for work or school and SharePoint files found in Outlook messages and meetings.
 This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -22727,8 +22828,8 @@ Not all Media Mime Types are supported.
 Can be used for filtering for a specific file based on a specific type.
 See the section Type property values for supported types.
       - `[SharingHistory <IMicrosoftGraphSharingDetail- `[]`>]`: 
-    - `[Trending <IMicrosoftGraphTrending- `[]`>]`: Calculated relationship identifying documents trending around a user.
-Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
+    - `[Trending <IMicrosoftGraphTrending- `[]`>]`: Calculated relationship that identifies documents trending around a user.
+Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for work or school and SharePoint.
 Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -22740,7 +22841,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Weight <Double?>]`: Value indicating how much the document is currently trending.
 The larger the number, the more the document is currently trending around the user (the more relevant it is).
 Returned documents are sorted by this value.
-    - `[Used <IMicrosoftGraphUsedInsight- `[]`>]`: Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
+    - `[Used <IMicrosoftGraphUsedInsight- `[]`>]`: Calculated relationship that identifies the latest documents viewed or modified by a user, including OneDrive for work or school and SharePoint documents, ranked by recency of use.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
@@ -22756,6 +22857,8 @@ Read-only.
       - `[Resource <IMicrosoftGraphEntity>]`: entity
       - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
       - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
   - `[Interests <String- `[]`>]`: A list for the user to describe their interests.
 Returned only on $select.
   - `[IsResourceAccount <Boolean?>]`: Don't use - reserved for future use.
@@ -22777,6 +22880,8 @@ The maximum length is 50 characters.
       - `[Email <String>]`: The email address for sending messages to the channel.
 Read-only.
       - `[FilesFolder <IMicrosoftGraphDriveItem>]`: driveItem
+      - `[IsArchived <Boolean?>]`: Indicates whether the channel is archived.
+Read-only.
       - `[IsFavoriteByDefault <Boolean?>]`: Indicates whether the channel should be marked as recommended for all members of the team to show in their channel list.
 Note: All recommended channels automatically show in the channels list for education and frontline worker users.
 The property can only be set programmatically via the Create team method.
@@ -23065,7 +23170,6 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
-Read-only.
       - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -24178,7 +24282,6 @@ Read-only.
       - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
     - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
-Required when you create an online meeting.
     - `[Transcripts <IMicrosoftGraphCallTranscript- `[]`>]`: The transcripts of an online meeting.
 Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -24186,7 +24289,7 @@ Read-only.
       - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
       - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
-The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
       - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
@@ -24430,11 +24533,10 @@ Read-only.
           - `[Scaling <String>]`: printScaling
         - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+          - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
           - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
           - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
         - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
@@ -24621,6 +24723,11 @@ This setting is read-only and can only be changed by administrators in the Share
 When set to true, documents in the user's Office Delve are disabled.
 When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
 Users can control this setting in Office Delve.
+    - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[IsEnabled <Boolean?>]`: 
     - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -24632,6 +24739,26 @@ Read-only.
           - `[EndTime <String>]`: End time for the time range.
           - `[StartTime <String>]`: Start time for the time range.
         - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+    - `[Storage <IMicrosoftGraphUserStorage>]`: userStorage
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Quota <IMicrosoftGraphUnifiedStorageQuota>]`: unifiedStorageQuota
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[Deleted <Int64?>]`: 
+        - `[ManageWebUrl <String>]`: 
+        - `[Remaining <Int64?>]`: 
+        - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: 
+          - `[DisplayName <String>]`: 
+          - `[ManageWebUrl <String>]`: 
+          - `[Used <Int64?>]`: 
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[State <String>]`: 
+        - `[Total <Int64?>]`: 
+        - `[Used <Int64?>]`: 
     - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -24714,8 +24841,14 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Chat <IMicrosoftGraphChat>]`: chat
-    - `[Locale <String>]`: The chosen locale of a user in Microsoft Teams.
-    - `[Region <String>]`: The region of the user in Microsoft Teams.
+    - `[Locale <String>]`: Represents the location that a user selected in Microsoft Teams and doesn't follow the Office's locale setting.
+A user's locale is represented by their preferred language and country or region.
+For example, en-us.
+The language component follows two-letter codes as defined in ISO 639-1, and the country component follows two-letter codes as defined in ISO 3166-1 alpha-2.
+    - `[Region <String>]`: Represents the region of the organization or the user.
+For users with multigeo licenses, the property contains the user's region (if available).
+For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
   - `[Todo <IMicrosoftGraphTodo>]`: todo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.

@@ -9,7 +9,7 @@ ms.subservice: industry-data-etl
 # Update-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Update the properties of an inboundFileFlow object.
+Update the properties of an inboundApiFlow object.
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an inboundFileFlow object.
+Update the properties of an inboundApiFlow object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-update-permissions.md)]
@@ -515,7 +515,7 @@ Must be unique within the referenceType.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow)
 
-[https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-update?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-update?view=graph-rest-beta)
 
 
 

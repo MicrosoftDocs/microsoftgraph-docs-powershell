@@ -68,6 +68,12 @@ Locale: en-US
 ### [Get-MgVirtualEventCount](Get-MgVirtualEventCount.md)
 
 
+### [Get-MgVirtualEventPresenter](Get-MgVirtualEventPresenter.md)
+
+
+### [Get-MgVirtualEventPresenterCount](Get-MgVirtualEventPresenterCount.md)
+
+
 ### [Get-MgVirtualEventSession](Get-MgVirtualEventSession.md)
 
 
@@ -86,6 +92,36 @@ Locale: en-US
 ### [Get-MgVirtualEventSessionCount](Get-MgVirtualEventSessionCount.md)
 
 
+### [Get-MgVirtualEventTownhall](Get-MgVirtualEventTownhall.md)
+
+
+### [Get-MgVirtualEventTownhallCount](Get-MgVirtualEventTownhallCount.md)
+
+
+### [Get-MgVirtualEventTownhallPresenter](Get-MgVirtualEventTownhallPresenter.md)
+
+
+### [Get-MgVirtualEventTownhallPresenterCount](Get-MgVirtualEventTownhallPresenterCount.md)
+
+
+### [Get-MgVirtualEventTownhallSession](Get-MgVirtualEventTownhallSession.md)
+
+
+### [Get-MgVirtualEventTownhallSessionAttendanceReport](Get-MgVirtualEventTownhallSessionAttendanceReport.md)
+
+
+### [Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord](Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
+
+
+### [Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecordCount](Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecordCount.md)
+
+
+### [Get-MgVirtualEventTownhallSessionAttendanceReportCount](Get-MgVirtualEventTownhallSessionAttendanceReportCount.md)
+
+
+### [Get-MgVirtualEventTownhallSessionCount](Get-MgVirtualEventTownhallSessionCount.md)
+
+
 ### [Get-MgVirtualEventWebinar](Get-MgVirtualEventWebinar.md)
 
 
@@ -98,10 +134,37 @@ Locale: en-US
 ### [Get-MgVirtualEventWebinarCount](Get-MgVirtualEventWebinarCount.md)
 
 
+### [Get-MgVirtualEventWebinarPresenter](Get-MgVirtualEventWebinarPresenter.md)
+
+
+### [Get-MgVirtualEventWebinarPresenterCount](Get-MgVirtualEventWebinarPresenterCount.md)
+
+
 ### [Get-MgVirtualEventWebinarRegistration](Get-MgVirtualEventWebinarRegistration.md)
 
 
+### [Get-MgVirtualEventWebinarRegistrationByEmail](Get-MgVirtualEventWebinarRegistrationByEmail.md)
+
+
+### [Get-MgVirtualEventWebinarRegistrationByUserId](Get-MgVirtualEventWebinarRegistrationByUserId.md)
+
+
+### [Get-MgVirtualEventWebinarRegistrationConfiguration](Get-MgVirtualEventWebinarRegistrationConfiguration.md)
+
+
+### [Get-MgVirtualEventWebinarRegistrationConfigurationQuestion](Get-MgVirtualEventWebinarRegistrationConfigurationQuestion.md)
+
+
+### [Get-MgVirtualEventWebinarRegistrationConfigurationQuestionCount](Get-MgVirtualEventWebinarRegistrationConfigurationQuestionCount.md)
+
+
 ### [Get-MgVirtualEventWebinarRegistrationCount](Get-MgVirtualEventWebinarRegistrationCount.md)
+
+
+### [Get-MgVirtualEventWebinarRegistrationSession](Get-MgVirtualEventWebinarRegistrationSession.md)
+
+
+### [Get-MgVirtualEventWebinarRegistrationSessionCount](Get-MgVirtualEventWebinarRegistrationSessionCount.md)
 
 
 ### [Get-MgVirtualEventWebinarSession](Get-MgVirtualEventWebinarSession.md)
@@ -149,6 +212,9 @@ Locale: en-US
 ### [New-MgVirtualEvent](New-MgVirtualEvent.md)
 
 
+### [New-MgVirtualEventPresenter](New-MgVirtualEventPresenter.md)
+
+
 ### [New-MgVirtualEventSession](New-MgVirtualEventSession.md)
 
 
@@ -158,10 +224,31 @@ Locale: en-US
 ### [New-MgVirtualEventSessionAttendanceReportAttendanceRecord](New-MgVirtualEventSessionAttendanceReportAttendanceRecord.md)
 
 
+### [New-MgVirtualEventTownhall](New-MgVirtualEventTownhall.md)
+
+
+### [New-MgVirtualEventTownhallPresenter](New-MgVirtualEventTownhallPresenter.md)
+
+
+### [New-MgVirtualEventTownhallSession](New-MgVirtualEventTownhallSession.md)
+
+
+### [New-MgVirtualEventTownhallSessionAttendanceReport](New-MgVirtualEventTownhallSessionAttendanceReport.md)
+
+
+### [New-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord](New-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
+
+
 ### [New-MgVirtualEventWebinar](New-MgVirtualEventWebinar.md)
 
 
+### [New-MgVirtualEventWebinarPresenter](New-MgVirtualEventWebinarPresenter.md)
+
+
 ### [New-MgVirtualEventWebinarRegistration](New-MgVirtualEventWebinarRegistration.md)
+
+
+### [New-MgVirtualEventWebinarRegistrationConfigurationQuestion](New-MgVirtualEventWebinarRegistrationConfigurationQuestion.md)
 
 
 ### [New-MgVirtualEventWebinarSession](New-MgVirtualEventWebinarSession.md)
@@ -174,6 +261,9 @@ Locale: en-US
 
 
 ### [Publish-MgBookingBusiness](Publish-MgBookingBusiness.md)
+
+
+### [Publish-MgVirtualEvent](Publish-MgVirtualEvent.md)
 
 
 ### [Remove-MgBookingBusiness](Remove-MgBookingBusiness.md)
@@ -203,6 +293,9 @@ Locale: en-US
 ### [Remove-MgVirtualEvent](Remove-MgVirtualEvent.md)
 
 
+### [Remove-MgVirtualEventPresenter](Remove-MgVirtualEventPresenter.md)
+
+
 ### [Remove-MgVirtualEventSession](Remove-MgVirtualEventSession.md)
 
 
@@ -212,10 +305,40 @@ Locale: en-US
 ### [Remove-MgVirtualEventSessionAttendanceReportAttendanceRecord](Remove-MgVirtualEventSessionAttendanceReportAttendanceRecord.md)
 
 
+### [Remove-MgVirtualEventTownhall](Remove-MgVirtualEventTownhall.md)
+
+
+### [Remove-MgVirtualEventTownhallPresenter](Remove-MgVirtualEventTownhallPresenter.md)
+
+
+### [Remove-MgVirtualEventTownhallSession](Remove-MgVirtualEventTownhallSession.md)
+
+
+### [Remove-MgVirtualEventTownhallSessionAttendanceReport](Remove-MgVirtualEventTownhallSessionAttendanceReport.md)
+
+
+### [Remove-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord](Remove-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
+
+
 ### [Remove-MgVirtualEventWebinar](Remove-MgVirtualEventWebinar.md)
 
 
+### [Remove-MgVirtualEventWebinarPresenter](Remove-MgVirtualEventWebinarPresenter.md)
+
+
 ### [Remove-MgVirtualEventWebinarRegistration](Remove-MgVirtualEventWebinarRegistration.md)
+
+
+### [Remove-MgVirtualEventWebinarRegistrationByEmail](Remove-MgVirtualEventWebinarRegistrationByEmail.md)
+
+
+### [Remove-MgVirtualEventWebinarRegistrationByUserId](Remove-MgVirtualEventWebinarRegistrationByUserId.md)
+
+
+### [Remove-MgVirtualEventWebinarRegistrationConfiguration](Remove-MgVirtualEventWebinarRegistrationConfiguration.md)
+
+
+### [Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion](Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion.md)
 
 
 ### [Remove-MgVirtualEventWebinarSession](Remove-MgVirtualEventWebinarSession.md)
@@ -231,6 +354,18 @@ Locale: en-US
 
 
 ### [Stop-MgBookingBusinessCalendarView](Stop-MgBookingBusinessCalendarView.md)
+
+
+### [Stop-MgVirtualEvent](Stop-MgVirtualEvent.md)
+
+
+### [Stop-MgVirtualEventWebinarRegistration](Stop-MgVirtualEventWebinarRegistration.md)
+
+
+### [Stop-MgVirtualEventWebinarRegistrationEmail](Stop-MgVirtualEventWebinarRegistrationEmail.md)
+
+
+### [Stop-MgVirtualEventWebinarRegistrationUserId](Stop-MgVirtualEventWebinarRegistrationUserId.md)
 
 
 ### [Unpublish-MgBookingBusiness](Unpublish-MgBookingBusiness.md)
@@ -263,6 +398,9 @@ Locale: en-US
 ### [Update-MgVirtualEvent](Update-MgVirtualEvent.md)
 
 
+### [Update-MgVirtualEventPresenter](Update-MgVirtualEventPresenter.md)
+
+
 ### [Update-MgVirtualEventSession](Update-MgVirtualEventSession.md)
 
 
@@ -272,10 +410,40 @@ Locale: en-US
 ### [Update-MgVirtualEventSessionAttendanceReportAttendanceRecord](Update-MgVirtualEventSessionAttendanceReportAttendanceRecord.md)
 
 
+### [Update-MgVirtualEventTownhall](Update-MgVirtualEventTownhall.md)
+
+
+### [Update-MgVirtualEventTownhallPresenter](Update-MgVirtualEventTownhallPresenter.md)
+
+
+### [Update-MgVirtualEventTownhallSession](Update-MgVirtualEventTownhallSession.md)
+
+
+### [Update-MgVirtualEventTownhallSessionAttendanceReport](Update-MgVirtualEventTownhallSessionAttendanceReport.md)
+
+
+### [Update-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord](Update-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
+
+
 ### [Update-MgVirtualEventWebinar](Update-MgVirtualEventWebinar.md)
 
 
+### [Update-MgVirtualEventWebinarPresenter](Update-MgVirtualEventWebinarPresenter.md)
+
+
 ### [Update-MgVirtualEventWebinarRegistration](Update-MgVirtualEventWebinarRegistration.md)
+
+
+### [Update-MgVirtualEventWebinarRegistrationByEmail](Update-MgVirtualEventWebinarRegistrationByEmail.md)
+
+
+### [Update-MgVirtualEventWebinarRegistrationByUserId](Update-MgVirtualEventWebinarRegistrationByUserId.md)
+
+
+### [Update-MgVirtualEventWebinarRegistrationConfiguration](Update-MgVirtualEventWebinarRegistrationConfiguration.md)
+
+
+### [Update-MgVirtualEventWebinarRegistrationConfigurationQuestion](Update-MgVirtualEventWebinarRegistrationConfigurationQuestion.md)
 
 
 ### [Update-MgVirtualEventWebinarSession](Update-MgVirtualEventWebinarSession.md)

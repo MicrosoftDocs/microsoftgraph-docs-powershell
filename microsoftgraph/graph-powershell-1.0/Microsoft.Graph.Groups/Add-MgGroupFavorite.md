@@ -10,6 +10,7 @@ ms.subservice: entra-groups
 
 ## SYNOPSIS
 Add the group to the list of the current user's favorite groups.
+The group shows up in Outlook and Teams favorites.
 Supported for Microsoft 365 groups only.
 
 > [!NOTE]
@@ -31,6 +32,7 @@ Add-MgGroupFavorite -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <St
 
 ## DESCRIPTION
 Add the group to the list of the current user's favorite groups.
+The group shows up in Outlook and Teams favorites.
 Supported for Microsoft 365 groups only.
 
 **Permissions**

@@ -82,7 +82,7 @@ Accept wildcard characters: False
 
 ### -AppScopeIds
 Ids of the app specific scopes when the assignment scopes are app specific.
-The scopes of an assignment determines the set of resources for which the principal has been granted access.
+The scopes of an assignment determine the set of resources for which the principal has access.
 Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
 Use / for tenant-wide scope.
 App scopes are scopes that are defined and understood by this application only.
@@ -406,7 +406,7 @@ BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentMultiple>`: unifiedRoleAssig
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppScopeIds <String- `[]`>]`: Ids of the app specific scopes when the assignment scopes are app specific.
-The scopes of an assignment determines the set of resources for which the principal has been granted access.
+The scopes of an assignment determine the set of resources for which the principal has access.
 Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
 Use / for tenant-wide scope.
 App scopes are scopes that are defined and understood by this application only.
@@ -428,7 +428,7 @@ Directory scopes are shared scopes stored in the directory that are understood b
 App scopes are scopes that are defined and understood by this application only.
   - `[DirectoryScopes <IMicrosoftGraphDirectoryObject- `[]`>]`: Read-only collection that references the directory objects that are scope of the assignment.
 Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
-Read-only. 
+Read-only.
 Supports $expand.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -436,11 +436,11 @@ Read-only.
 Always null when the object hasn't been deleted.
   - `[DisplayName <String>]`: Name of the role assignment.
 Required.
-  - `[PrincipalIds <String- `[]`>]`: Identifiers of the principals to which the assignment is granted. 
+  - `[PrincipalIds <String- `[]`>]`: Identifiers of the principals to which the assignment is granted.
 Supports $filter (any operator only).
   - `[Principals <IMicrosoftGraphDirectoryObject- `[]`>]`: Read-only collection that references the assigned principals.
 Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
-Read-only. 
+Read-only.
 Supports $expand.
   - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

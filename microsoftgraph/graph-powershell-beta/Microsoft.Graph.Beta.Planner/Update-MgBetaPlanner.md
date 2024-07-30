@@ -256,7 +256,8 @@ Returns a collection of the specified buckets
 Read-only.
     - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Justification <String>]`: 
+      - `[Justification <String>]`: Read-only.
+Reason why the entity was archived or unarchived.
       - `[StatusChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -267,11 +268,14 @@ This property is read-only.
 This property is read-only.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[StatusChangedDateTime <DateTime?>]`: 
+      - `[StatusChangedDateTime <DateTime?>]`: Read-only.
+Date and time at which the entity's archive status changed.
     - `[CreationSource <IMicrosoftGraphPlannerBucketCreation>]`: plannerBucketCreation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreationSourceKind <String>]`: plannerCreationSourceKind
-    - `[IsArchived <Boolean?>]`: 
+    - `[IsArchived <Boolean?>]`: Read-only.
+If set totrue, the bucket is archived.
+An archived bucket is read-only.
     - `[Name <String>]`: Name of the bucket.
     - `[OrderHint <String>]`: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -376,7 +380,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
-      - `[IsArchived <Boolean?>]`: 
+      - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the task is archived.
+An archived task is read-only.
       - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
 If true, it shows the task.
       - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
@@ -509,7 +515,9 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsArchived <Boolean?>]`: 
+    - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the plan is archived.
+An archived plan is read-only.
     - `[Owner <String>]`: Use the container property instead.
 ID of the group that owns the plan.
 After it's set, this property can't be updated.
@@ -556,7 +564,8 @@ Returns a collection of the specified buckets
 Read-only.
   - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Justification <String>]`: 
+    - `[Justification <String>]`: Read-only.
+Reason why the entity was archived or unarchived.
     - `[StatusChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -567,11 +576,14 @@ This property is read-only.
 This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[StatusChangedDateTime <DateTime?>]`: 
+    - `[StatusChangedDateTime <DateTime?>]`: Read-only.
+Date and time at which the entity's archive status changed.
   - `[CreationSource <IMicrosoftGraphPlannerBucketCreation>]`: plannerBucketCreation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreationSourceKind <String>]`: plannerCreationSourceKind
-  - `[IsArchived <Boolean?>]`: 
+  - `[IsArchived <Boolean?>]`: Read-only.
+If set totrue, the bucket is archived.
+An archived bucket is read-only.
   - `[Name <String>]`: Name of the bucket.
   - `[OrderHint <String>]`: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -676,7 +688,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
-    - `[IsArchived <Boolean?>]`: 
+    - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the task is archived.
+An archived task is read-only.
     - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
 If true, it shows the task.
     - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
@@ -756,7 +770,8 @@ Returns a collection of the specified plans
 Read-only.
   - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Justification <String>]`: 
+    - `[Justification <String>]`: Read-only.
+Reason why the entity was archived or unarchived.
     - `[StatusChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -767,7 +782,8 @@ This property is read-only.
 This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[StatusChangedDateTime <DateTime?>]`: 
+    - `[StatusChangedDateTime <DateTime?>]`: Read-only.
+Date and time at which the entity's archive status changed.
   - `[Buckets <IMicrosoftGraphPlannerBucket- `[]`>]`: Collection of buckets in the plan.
 Read-only.
 Nullable.
@@ -777,7 +793,9 @@ Read-only.
     - `[CreationSource <IMicrosoftGraphPlannerBucketCreation>]`: plannerBucketCreation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreationSourceKind <String>]`: plannerCreationSourceKind
-    - `[IsArchived <Boolean?>]`: 
+    - `[IsArchived <Boolean?>]`: Read-only.
+If set totrue, the bucket is archived.
+An archived bucket is read-only.
     - `[Name <String>]`: Name of the bucket.
     - `[OrderHint <String>]`: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -882,7 +900,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
-      - `[IsArchived <Boolean?>]`: 
+      - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the task is archived.
+An archived task is read-only.
       - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
 If true, it shows the task.
       - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
@@ -1006,7 +1026,9 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsArchived <Boolean?>]`: 
+  - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the plan is archived.
+An archived plan is read-only.
   - `[Owner <String>]`: Use the container property instead.
 ID of the group that owns the plan.
 After it's set, this property can't be updated.
@@ -1047,7 +1069,8 @@ Currently only the users from the same tenant can be added to a plannerRoster.
 Read-only.
     - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Justification <String>]`: 
+      - `[Justification <String>]`: Read-only.
+Reason why the entity was archived or unarchived.
       - `[StatusChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1058,7 +1081,8 @@ This property is read-only.
 This property is read-only.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[StatusChangedDateTime <DateTime?>]`: 
+      - `[StatusChangedDateTime <DateTime?>]`: Read-only.
+Date and time at which the entity's archive status changed.
     - `[Buckets <IMicrosoftGraphPlannerBucket- `[]`>]`: Collection of buckets in the plan.
 Read-only.
 Nullable.
@@ -1068,7 +1092,9 @@ Read-only.
       - `[CreationSource <IMicrosoftGraphPlannerBucketCreation>]`: plannerBucketCreation
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreationSourceKind <String>]`: plannerCreationSourceKind
-      - `[IsArchived <Boolean?>]`: 
+      - `[IsArchived <Boolean?>]`: Read-only.
+If set totrue, the bucket is archived.
+An archived bucket is read-only.
       - `[Name <String>]`: Name of the bucket.
       - `[OrderHint <String>]`: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -1173,7 +1199,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
-        - `[IsArchived <Boolean?>]`: 
+        - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the task is archived.
+An archived task is read-only.
         - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
 If true, it shows the task.
         - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
@@ -1297,7 +1325,9 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsArchived <Boolean?>]`: 
+    - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the plan is archived.
+An archived plan is read-only.
     - `[Owner <String>]`: Use the container property instead.
 ID of the group that owns the plan.
 After it's set, this property can't be updated.
@@ -1325,7 +1355,8 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Justification <String>]`: 
+    - `[Justification <String>]`: Read-only.
+Reason why the entity was archived or unarchived.
     - `[StatusChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1336,7 +1367,8 @@ This property is read-only.
 This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[StatusChangedDateTime <DateTime?>]`: 
+    - `[StatusChangedDateTime <DateTime?>]`: Read-only.
+Date and time at which the entity's archive status changed.
   - `[AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]`: plannerAssignedToTaskBoardTaskFormat
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1428,7 +1460,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
-  - `[IsArchived <Boolean?>]`: 
+  - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the task is archived.
+An archived task is read-only.
   - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
 If true, it shows the task.
   - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.

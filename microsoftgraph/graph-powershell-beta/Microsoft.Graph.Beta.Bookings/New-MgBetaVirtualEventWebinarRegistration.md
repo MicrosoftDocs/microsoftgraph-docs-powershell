@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgBetaVirtualEventWebinarRegistration
 
 ## SYNOPSIS
-Create new navigation property to registrations for solutions
+Create a registration record for a registrant of a webinar.
+This method registers the person for the webinar.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarRegistration?view=graph-powershell-1.0)
@@ -52,7 +53,8 @@ New-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to registrations for solutions
+Create a registration record for a registrant of a webinar.
+This method registers the person for the webinar.
 
 ## PARAMETERS
 
@@ -198,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredLanguage
-.
+The registrant's preferred language.
 
 ```yaml
 Type: String
@@ -213,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredTimezone
-.
+The registrant's time zone details.
 
 ```yaml
 Type: String
@@ -411,19 +413,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Email <String>]`: Email address of the registrant.
   - `[FirstName <String>]`: First name of the registrant.
   - `[LastName <String>]`: Last name of the registrant.
-  - `[PreferredLanguage <String>]`: 
-  - `[PreferredTimezone <String>]`: 
+  - `[PreferredLanguage <String>]`: The registrant's preferred language.
+  - `[PreferredTimezone <String>]`: The registrant's time zone details.
   - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
-    - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion.
+    - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is boolean.
     - `[DisplayName <String>]`: Display name of the registration question.
-    - `[MultiChoiceValues <String- `[]`>]`: Collection of text answer of the virtualEventRegistrationQuestion.
+    - `[MultiChoiceValues <String- `[]`>]`: A collection of text answers to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is multiChoice.
-    - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
-    - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion.
+    - `[QuestionId <String>]`: The identifier of either a virtualEventRegistrationCustomQuestion or a virtualEventRegistrationPredefinedQuestion.
+    - `[Value <String>]`: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
 Appears when answerInputType is text, multilineText or singleChoice.
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
@@ -595,13 +597,13 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 REGISTRATIONQUESTIONANSWERS <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>: The registrant's answer to the registration questions.
-  - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion.
+  - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is boolean.
   - `[DisplayName <String>]`: Display name of the registration question.
-  - `[MultiChoiceValues <String- `[]`>]`: Collection of text answer of the virtualEventRegistrationQuestion.
+  - `[MultiChoiceValues <String- `[]`>]`: A collection of text answers to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is multiChoice.
-  - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
-  - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion.
+  - `[QuestionId <String>]`: The identifier of either a virtualEventRegistrationCustomQuestion or a virtualEventRegistrationPredefinedQuestion.
+  - `[Value <String>]`: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
 Appears when answerInputType is text, multilineText or singleChoice.
 
 SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: .
@@ -732,19 +734,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Email <String>]`: Email address of the registrant.
     - `[FirstName <String>]`: First name of the registrant.
     - `[LastName <String>]`: Last name of the registrant.
-    - `[PreferredLanguage <String>]`: 
-    - `[PreferredTimezone <String>]`: 
+    - `[PreferredLanguage <String>]`: The registrant's preferred language.
+    - `[PreferredTimezone <String>]`: The registrant's time zone details.
     - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
-      - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion.
+      - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is boolean.
       - `[DisplayName <String>]`: Display name of the registration question.
-      - `[MultiChoiceValues <String- `[]`>]`: Collection of text answer of the virtualEventRegistrationQuestion.
+      - `[MultiChoiceValues <String- `[]`>]`: A collection of text answers to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is multiChoice.
-      - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
-      - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion.
+      - `[QuestionId <String>]`: The identifier of either a virtualEventRegistrationCustomQuestion or a virtualEventRegistrationPredefinedQuestion.
+      - `[Value <String>]`: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
 Appears when answerInputType is text, multilineText or singleChoice.
     - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
@@ -755,6 +757,8 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration)
+
+[https://learn.microsoft.com/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-beta)
 
 
 

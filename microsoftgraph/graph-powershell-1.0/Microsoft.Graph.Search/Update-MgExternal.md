@@ -306,7 +306,7 @@ Optional.
           - `[Property <String>]`: The property from the externalItem schema.
 Required.
           - `[Values <String- `[]`>]`: A collection with one or many strings.
-The specified string(s) will be matched with the specified property using the specified operation.
+One or more specified strings are matched with the specified property using the specified operation.
 Required.
           - `[ValuesJoinedBy <String>]`: binaryOperator
     - `[State <String>]`: connectionState
@@ -442,7 +442,7 @@ Optional.
         - `[Property <String>]`: The property from the externalItem schema.
 Required.
         - `[Values <String- `[]`>]`: A collection with one or many strings.
-The specified string(s) will be matched with the specified property using the specified operation.
+One or more specified strings are matched with the specified property using the specified operation.
 Required.
         - `[ValuesJoinedBy <String>]`: binaryOperator
   - `[State <String>]`: connectionState

@@ -9,7 +9,7 @@ ms.subservice: intune
 # Remove-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Deletes a iosCompliancePolicy.
+Deletes a androidWorkProfileCompliancePolicy.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementI
 ```
 
 ## DESCRIPTION
-Deletes a iosCompliancePolicy.
+Deletes a androidWorkProfileCompliancePolicy.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -261,7 +261,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicy)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-ioscompliancepolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-ioscompliancepolicy-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-androidworkprofilecompliancepolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-androidworkprofilecompliancepolicy-delete?view=graph-rest-1.0)
 
 
 

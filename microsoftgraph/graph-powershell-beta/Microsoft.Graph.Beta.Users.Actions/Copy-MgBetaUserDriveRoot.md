@@ -10,6 +10,9 @@ ms.subservice: sharepoint
 
 ## SYNOPSIS
 Asynchronously create a copy of a driveItem (including any children) under a new parent item or with a new name.
+After the request is acknowledged, it enters a queue.
+The actual copying, including any subitems, occurs at an undetermined time.
+Progress is reported until the operation is completed by monitoring the progress.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserDriveRoot?view=graph-powershell-1.0)
@@ -50,6 +53,9 @@ Copy-MgBetaUserDriveRoot -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Asynchronously create a copy of a driveItem (including any children) under a new parent item or with a new name.
+After the request is acknowledged, it enters a queue.
+The actual copying, including any subitems, occurs at an undetermined time.
+Progress is reported until the operation is completed by monitoring the progress.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-copy-permissions.md)]

@@ -20,8 +20,9 @@ Update the properties of a bookingCustomQuestion object.
 ```
 Update-MgBookingBusinessCustomQuestion -BookingBusinessId <String> -BookingCustomQuestionId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>]
- [-AnswerOptions <String[]>] [-DisplayName <String>] [-Id <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AnswerOptions <String[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
+ [-LastUpdatedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -35,8 +36,8 @@ Update-MgBookingBusinessCustomQuestion -BookingBusinessId <String> -BookingCusto
 ```
 Update-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>] [-AnswerOptions <String[]>]
- [-DisplayName <String>] [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -166,6 +167,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -CreatedDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DisplayName
 The question.
 
@@ -225,6 +241,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -LastUpdatedDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -312,7 +343,9 @@ BODYPARAMETER `<IMicrosoftGraphBookingCustomQuestion>`: Represents a custom ques
 Read-only.
   - `[AnswerInputType <String>]`: answerInputType
   - `[AnswerOptions <String- `[]`>]`: List of possible answer values.
+  - `[CreatedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: The question.
+  - `[LastUpdatedDateTime <DateTime?>]`: 
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
@@ -323,12 +356,16 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
+  - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
   - `[Role <String>]`: Usage: role='{role}'
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
+  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
   - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
+  - `[VirtualEventRegistrationQuestionBaseId <String>]`: The unique identifier of virtualEventRegistrationQuestionBase
   - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
+  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS

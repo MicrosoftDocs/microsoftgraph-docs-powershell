@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-The date when the entity is created.
+When the report was created.
 
 ```yaml
 Type: DateTime
@@ -400,7 +400,7 @@ The possible values are: AllTenants, TotalSeats, IndustryTypes.
     - `[ControlName <String>]`: Control unique name.
     - `[Description <String>]`: Description of the control.
     - `[Score <Double?>]`: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
-  - `[CreatedDateTime <DateTime?>]`: The date when the entity is created.
+  - `[CreatedDateTime <DateTime?>]`: When the report was created.
   - `[CurrentScore <Double?>]`: Tenant current attained score on specified date.
   - `[EnabledServices <String- `[]`>]`: Microsoft-provided services for the tenant (for example, Exchange online, Skype, Sharepoint).
   - `[LicensedUserCount <Int32?>]`: Licensed user count of the given tenant.

@@ -235,8 +235,8 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AccessType <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
         - `[Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget- `[]`>]`: Specifies whether to target users, groups, or applications with this rule.
-          - `[Target <String>]`: Can be one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
-Office365 - Includes the applications mentioned as part of the Office365 suite.
+          - `[Target <String>]`: Defines the target for cross-tenant access policy settings and can have one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
+Office365 - Includes the applications mentioned as part of the Office 365 suite.
           - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
       - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
     - `[B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
@@ -274,8 +274,8 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AccessType <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
       - `[Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget- `[]`>]`: Specifies whether to target users, groups, or applications with this rule.
-        - `[Target <String>]`: Can be one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
-Office365 - Includes the applications mentioned as part of the Office365 suite.
+        - `[Target <String>]`: Defines the target for cross-tenant access policy settings and can have one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
+Office365 - Includes the applications mentioned as part of the Office 365 suite.
         - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
     - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
   - `[B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting

@@ -433,7 +433,7 @@ This property is required when a server is created.
     - `[DnsServers <String- `[]`>]`: The DNS servers that will be used by the clients
     - `[LastUpdateDateTime <DateTime?>]`: When the configuration was last updated
     - `[ListenPort <Int32?>]`: The port that both TCP and UPD will listen over on the server
-    - `[Network <String>]`: The subnet that will be used to allocate virtual address for the clients
+    - `[Network <String>]`: The IPv4 subnet that will be used to allocate virtual address for the clients
     - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance
     - `[RouteExcludes <String- `[]`>]`: Subsets of the routes that will not be routed by the server
     - `[RouteIncludes <String- `[]`>]`: The routes that will be routed by the server
@@ -445,13 +445,26 @@ This property is going to be deprecated with the option of using the new propert
   - `[MicrosoftTunnelServers <IMicrosoftGraphMicrosoftTunnelServer- `[]`>]`: A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server
+    - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported.
+Read-only.
     - `[DeploymentMode <MicrosoftTunnelDeploymentMode?>]`: The available deployment modes for a managed Tunnel server.
 The deployment mode is determined during the deployment depending on the Tunnel containers, namely standalone or as part of a pod, and whether the containers are running in rootful or rootless mode.
-    - `[DisplayName <String>]`: The display name for the server.
-This property is required when a server is created and cannot be cleared during updates.
-    - `[LastCheckinDateTime <DateTime?>]`: Indicates when the server last checked in
-    - `[ServerImageDigest <String>]`: The digest of the current server image running on this server
+    - `[DisplayName <String>]`: The display name of the server.
+It is the same as the host name during registration and can be changed later.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported.
+Max allowed length is 200 chars.
+    - `[LastCheckinDateTime <DateTime?>]`: Indicates when the server last checked in.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported Read-only.
+    - `[ServerImageDigest <String>]`: The digest of the current server image running on this server.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported.
+Read-only.
     - `[TunnelServerHealthStatus <MicrosoftTunnelServerHealthStatus?>]`: Enum of possible MicrosoftTunnelServer health status types
   - `[PublicAddress <String>]`: The site's public domain name or IP address
   - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance
@@ -620,7 +633,7 @@ This property is required when a server is created.
   - `[DnsServers <String- `[]`>]`: The DNS servers that will be used by the clients
   - `[LastUpdateDateTime <DateTime?>]`: When the configuration was last updated
   - `[ListenPort <Int32?>]`: The port that both TCP and UPD will listen over on the server
-  - `[Network <String>]`: The subnet that will be used to allocate virtual address for the clients
+  - `[Network <String>]`: The IPv4 subnet that will be used to allocate virtual address for the clients
   - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance
   - `[RouteExcludes <String- `[]`>]`: Subsets of the routes that will not be routed by the server
   - `[RouteIncludes <String- `[]`>]`: The routes that will be routed by the server
@@ -633,13 +646,26 @@ This property is going to be deprecated with the option of using the new propert
 MICROSOFTTUNNELSERVERS <IMicrosoftGraphMicrosoftTunnelServer- `[]`>: A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server
+  - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported.
+Read-only.
   - `[DeploymentMode <MicrosoftTunnelDeploymentMode?>]`: The available deployment modes for a managed Tunnel server.
 The deployment mode is determined during the deployment depending on the Tunnel containers, namely standalone or as part of a pod, and whether the containers are running in rootful or rootless mode.
-  - `[DisplayName <String>]`: The display name for the server.
-This property is required when a server is created and cannot be cleared during updates.
-  - `[LastCheckinDateTime <DateTime?>]`: Indicates when the server last checked in
-  - `[ServerImageDigest <String>]`: The digest of the current server image running on this server
+  - `[DisplayName <String>]`: The display name of the server.
+It is the same as the host name during registration and can be changed later.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported.
+Max allowed length is 200 chars.
+  - `[LastCheckinDateTime <DateTime?>]`: Indicates when the server last checked in.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported Read-only.
+  - `[ServerImageDigest <String>]`: The digest of the current server image running on this server.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported.
+Read-only.
   - `[TunnelServerHealthStatus <MicrosoftTunnelServerHealthStatus?>]`: Enum of possible MicrosoftTunnelServer health status types
 
 ## RELATED LINKS

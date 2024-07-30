@@ -20,10 +20,11 @@ Update the properties of a bookingAppointment object in the specified bookingBus
 ```
 Update-MgBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>]
- [-AnonymousJoinWebUrl <String>] [-CustomerEmailAddress <String>] [-CustomerName <String>]
- [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
- [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
- [-Id <String>] [-IsLocationOnline] [-JoinWebUrl <String>] [-MaximumAttendeesCount <Int32>]
+ [-AnonymousJoinWebUrl <String>] [-AppointmentLabel <String>] [-CreatedDateTime <DateTime>]
+ [-CustomerEmailAddress <String>] [-CustomerName <String>] [-CustomerNotes <String>] [-CustomerPhone <String>]
+ [-CustomerTimeZone <String>] [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]
+ [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>] [-IsCustomerAllowedToManageBooking]
+ [-IsLocationOnline] [-JoinWebUrl <String>] [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>]
  [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>]
  [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
  [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
@@ -43,15 +44,16 @@ Update-MgBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusin
 ```
 Update-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>]
- [-CustomerEmailAddress <String>] [-CustomerName <String>] [-CustomerNotes <String>] [-CustomerPhone <String>]
- [-CustomerTimeZone <String>] [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]
- [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
- [-MaximumAttendeesCount <Int32>] [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
- [-Price <Double>] [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
- [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
- [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AppointmentLabel <String>] [-CreatedDateTime <DateTime>] [-CustomerEmailAddress <String>]
+ [-CustomerName <String>] [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
+ [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
+ [-Id <String>] [-IsCustomerAllowedToManageBooking] [-IsLocationOnline] [-JoinWebUrl <String>]
+ [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-OptOutOfCustomerEmail]
+ [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>] [-PriceType <BookingPriceType>]
+ [-Reminders <IMicrosoftGraphBookingReminder[]>] [-SelfServiceAppointmentId <String>] [-ServiceId <String>]
+ [-ServiceLocation <IMicrosoftGraphLocation>] [-ServiceName <String>] [-ServiceNotes <String>]
+ [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -114,6 +116,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AppointmentLabel
+Custom label that can be stamped on this appointment by users.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -BodyParameter
 Represents a booked appointment of a service by a customer in a business.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
@@ -154,6 +171,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CreatedDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -316,6 +348,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -IsCustomerAllowedToManageBooking
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -IsLocationOnline
 If true, indicates that the appointment will be held online.
 Default value is false.
@@ -337,6 +384,21 @@ The URL of the online meeting for the appointment.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LastUpdatedDateTime
+.
+
+```yaml
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -668,6 +730,8 @@ BODYPARAMETER `<IMicrosoftGraphBookingAppointment>`: Represents a booked appoint
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
+  - `[AppointmentLabel <String>]`: Custom label that can be stamped on this appointment by users.
+  - `[CreatedDateTime <DateTime?>]`: 
   - `[CustomerEmailAddress <String>]`: 
   - `[CustomerName <String>]`: 
   - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
@@ -682,9 +746,11 @@ Optional.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
+  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
   - `[IsLocationOnline <Boolean?>]`: If true, indicates that the appointment will be held online.
 Default value is false.
   - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
+  - `[LastUpdatedDateTime <DateTime?>]`: 
   - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in an appointment.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
 To create a customer, use the Create bookingCustomer operation.
@@ -752,12 +818,16 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
+  - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
   - `[Role <String>]`: Usage: role='{role}'
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
+  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
   - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
+  - `[VirtualEventRegistrationQuestionBaseId <String>]`: The unique identifier of virtualEventRegistrationQuestionBase
   - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
+  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 REMINDERS <IMicrosoftGraphBookingReminder- `[]`>: The collection of customer reminders sent for this appointment.

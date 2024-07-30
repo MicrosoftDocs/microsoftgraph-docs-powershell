@@ -9,7 +9,7 @@ ms.subservice: industry-data-etl
 # New-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Create a new oneRosterApiDataConnector object.
+Create a new azureDataLakeConnector object.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
 ```
 
 ## DESCRIPTION
-Create a new oneRosterApiDataConnector object.
+Create a new azureDataLakeConnector object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-onerosterapidataconnector-post-permissions.md)]
@@ -321,7 +321,7 @@ Maximum supported length is 100 characters.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector)
 
-[https://learn.microsoft.com/graph/api/industrydata-onerosterapidataconnector-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-onerosterapidataconnector-post?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/industrydata-azuredatalakeconnector-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-azuredatalakeconnector-post?view=graph-rest-beta)
 
 
 

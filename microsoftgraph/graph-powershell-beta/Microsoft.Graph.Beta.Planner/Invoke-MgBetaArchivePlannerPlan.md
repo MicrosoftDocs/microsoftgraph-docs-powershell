@@ -8,7 +8,13 @@ schema: 2.0.0
 # Invoke-MgBetaArchivePlannerPlan
 
 ## SYNOPSIS
-Invoke action archive
+Archive a plannerPlan object.
+Archiving a plan, also archives the plannerTasks and plannerBuckets in the plan.
+An archived entity is read-only.
+Archived entities cannot be updated.
+An archived plan can be unarchived.
+All archived entities can be deleted.
+Archived tasks are not included in the response for list of tasks assigned to a user.
 
 ## SYNTAX
 
@@ -43,7 +49,13 @@ Invoke-MgBetaArchivePlannerPlan -InputObject <IPlannerIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action archive
+Archive a plannerPlan object.
+Archiving a plan, also archives the plannerTasks and plannerBuckets in the plan.
+An archived entity is read-only.
+Archived entities cannot be updated.
+An archived plan can be unarchived.
+All archived entities can be deleted.
+Archived tasks are not included in the response for list of tasks assigned to a user.
 
 ## PARAMETERS
 
@@ -249,6 +261,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/invoke-mgbetaarchiveplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/invoke-mgbetaarchiveplannerplan)
+
+[https://learn.microsoft.com/graph/api/plannerplan-archive?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerplan-archive?view=graph-rest-beta)
 
 
 

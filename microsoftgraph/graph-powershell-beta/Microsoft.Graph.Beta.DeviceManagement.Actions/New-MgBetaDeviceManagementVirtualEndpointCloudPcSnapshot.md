@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaDeviceManagementVirtualEndpointCloudPcSnapshot
 
 ## SYNOPSIS
-Invoke action createSnapshot
+Create a snapshot for a specific Cloud PC device.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgBetaDeviceManagementVirtualEndpointCloudPcSnapshot -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Invoke action createSnapshot
+Create a snapshot for a specific Cloud PC device.
 
 ## PARAMETERS
 
@@ -222,12 +222,15 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
   - `[WindowsDriverUpdateProfileId <String>]`: The unique identifier of windowsDriverUpdateProfile
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
+  - `[WindowsQualityUpdatePolicyId <String>]`: The unique identifier of windowsQualityUpdatePolicy
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementvirtualendpointcloudpcsnapshot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementvirtualendpointcloudpcsnapshot)
+
+[https://learn.microsoft.com/graph/api/cloudpc-createsnapshot?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-createsnapshot?view=graph-rest-beta)
 
 
 

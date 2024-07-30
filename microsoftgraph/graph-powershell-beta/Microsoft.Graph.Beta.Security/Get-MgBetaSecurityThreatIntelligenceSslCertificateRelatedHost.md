@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost
 
 ## SYNOPSIS
-The hosts related with this sslCertificate.
+The host resources related with this sslCertificate.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost -InputObject <ISec
 ```
 
 ## DESCRIPTION
-The hosts related with this sslCertificate.
+The host resources related with this sslCertificate.
 
 ## PARAMETERS
 
@@ -389,6 +389,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesslcertificaterelatedhost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesslcertificaterelatedhost)
+
+[https://learn.microsoft.com/graph/api/security-sslcertificate-list-relatedhosts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-sslcertificate-list-relatedhosts?view=graph-rest-beta)
 
 
 

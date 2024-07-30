@@ -10,7 +10,7 @@ ms.subservice: entra-global-secure-access
 # Get-MgBetaIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Read the properties and relationships of a compliantNetworkNamedLocation object.
+Retrieve the properties and relationships of a namedLocation object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
@@ -40,7 +40,7 @@ Get-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsI
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a compliantNetworkNamedLocation object.
+Retrieve the properties and relationships of a namedLocation object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/compliantnetworknamedlocation-get-permissions.md)]
@@ -361,7 +361,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
-  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -407,7 +406,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessnamedlocation)
 
-[https://learn.microsoft.com/graph/api/compliantnetworknamedlocation-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/compliantnetworknamedlocation-get?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/namedlocation-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/namedlocation-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/conditionalaccessroot-list-namedlocations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-namedlocations?view=graph-rest-beta)
 

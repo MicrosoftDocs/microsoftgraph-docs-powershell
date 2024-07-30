@@ -21,6 +21,8 @@ New-MgVirtualEventWebinar [-ResponseHeadersVariable <String>] [-AdditionalProper
  [-Audience <String>] [-CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]
  [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>] [-Description <IMicrosoftGraphItemBody>]
  [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>]
+ [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
+ [-RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]
  [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
  [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
@@ -195,6 +197,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Presenters
+.
+To construct, see NOTES section for PRESENTERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphVirtualEventPresenter[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -202,6 +220,22 @@ Accept wildcard characters: False
 Type: ActionPreference
 Parameter Sets: (All)
 Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RegistrationConfiguration
+virtualEventWebinarRegistrationConfiguration
+To construct, see NOTES section for REGISTRATIONCONFIGURATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration
+Parameter Sets: CreateExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -341,11 +375,10 @@ BODYPARAMETER `<IMicrosoftGraphVirtualEventWebinar>`: virtualEventWebinar
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[ApplicationInstance <IMicrosoftGraphIdentity>]`: identity
@@ -366,6 +399,20 @@ When the unique identifier is unavailable, the displayName property is provided 
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
+  - `[Presenters <IMicrosoftGraphVirtualEventPresenter- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Email <String>]`: 
+    - `[Identity <IMicrosoftGraphIdentity>]`: identity
+    - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
+      - `[Company <String>]`: 
+      - `[JobTitle <String>]`: 
+      - `[LinkedInProfileWebUrl <String>]`: 
+      - `[PersonalSiteWebUrl <String>]`: 
+      - `[Photo <Byte- `[]`>]`: 
+      - `[TwitterProfileWebUrl <String>]`: 
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: Sessions for the virtual event.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
@@ -447,12 +494,24 @@ Read-only.
 Read-only.
   - `[Audience <String>]`: meetingAudience
   - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
-    - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[TenantId <String>]`: The user's tenant ID.
+  - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Capacity <Int32?>]`: 
+    - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[DisplayName <String>]`: 
+      - `[IsRequired <Boolean?>]`: 
+    - `[RegistrationWebUrl <String>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[IsManualApprovalEnabled <Boolean?>]`: 
+    - `[IsWaitlistEnabled <Boolean?>]`: 
   - `[Registrations <IMicrosoftGraphVirtualEventRegistration- `[]`>]`: Registration records of the webinar.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -463,6 +522,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Email <String>]`: Email address of the registrant.
     - `[FirstName <String>]`: First name of the registrant.
     - `[LastName <String>]`: Last name of the registrant.
+    - `[PreferredLanguage <String>]`: 
+    - `[PreferredTimezone <String>]`: 
     - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -475,27 +536,26 @@ Only appears when answerInputType is multiChoice.
       - `[QuestionId <String>]`: id of the virtual event registration question.
       - `[Value <String>]`: Text answer of the virtual event registration question.
 Appears when answerInputType is text, multilineText or singleChoice.
+    - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
     - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
 
 COORGANIZERS <IMicrosoftGraphCommunicationsUserIdentity- `[]`>: Identity information of coorganizers of the webinar.
-  - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+  - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[TenantId <String>]`: The user's tenant ID.
 
 CREATEDBY `<IMicrosoftGraphCommunicationsIdentitySet>`: communicationsIdentitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[ApplicationInstance <IMicrosoftGraphIdentity>]`: identity
@@ -518,6 +578,43 @@ ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
+PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[Email <String>]`: 
+  - `[Identity <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+  - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Content <String>]`: The content of the item.
+      - `[ContentType <String>]`: bodyType
+    - `[Company <String>]`: 
+    - `[JobTitle <String>]`: 
+    - `[LinkedInProfileWebUrl <String>]`: 
+    - `[PersonalSiteWebUrl <String>]`: 
+    - `[Photo <Byte- `[]`>]`: 
+    - `[TwitterProfileWebUrl <String>]`: 
+
+REGISTRATIONCONFIGURATION `<IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>`: virtualEventWebinarRegistrationConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Capacity <Int32?>]`: 
+  - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DisplayName <String>]`: 
+    - `[IsRequired <Boolean?>]`: 
+  - `[RegistrationWebUrl <String>]`: 
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[IsManualApprovalEnabled <Boolean?>]`: 
+  - `[IsWaitlistEnabled <Boolean?>]`: 
+
 REGISTRATIONS <IMicrosoftGraphVirtualEventRegistration- `[]`>: Registration records of the webinar.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -528,6 +625,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Email <String>]`: Email address of the registrant.
   - `[FirstName <String>]`: First name of the registrant.
   - `[LastName <String>]`: Last name of the registrant.
+  - `[PreferredLanguage <String>]`: 
+  - `[PreferredTimezone <String>]`: 
   - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -540,6 +639,93 @@ Only appears when answerInputType is multiChoice.
     - `[QuestionId <String>]`: id of the virtual event registration question.
     - `[Value <String>]`: Text answer of the virtual event registration question.
 Appears when answerInputType is text, multilineText or singleChoice.
+  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
+    - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
+    - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+    - `[AllowMeetingChat <String>]`: meetingChatMode
+    - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
+    - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
+    - `[AllowedPresenters <String>]`: onlineMeetingPresenters
+    - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport- `[]`>]`: The attendance reports of an online meeting.
+Read-only.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord- `[]`>]`: List of attendance records of an attendance report.
+Read-only.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval- `[]`>]`: List of time periods between joining and leaving a meeting.
+          - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+          - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
+          - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
+        - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
+        - `[Identity <IMicrosoftGraphIdentity>]`: identity
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+        - `[Role <String>]`: Role of the attendee.
+Possible values are: None, Attendee, Presenter, and Organizer.
+        - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+      - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended.
+Read-only.
+      - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started.
+Read-only.
+      - `[TotalParticipantCount <Int32?>]`: Total number of participants.
+Read-only.
+    - `[AudioConferencing <IMicrosoftGraphAudioConferencing>]`: audioConferencing
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ConferenceId <String>]`: The conference id of the online meeting.
+      - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
+      - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
+      - `[TollFreeNumbers <String- `[]`>]`: List of toll-free numbers that are displayed in the meeting invite.
+      - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
+      - `[TollNumbers <String- `[]`>]`: List of toll numbers that are displayed in the meeting invite.
+    - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
+      - `[ReplyChainMessageId <String>]`: The ID of the reply message.
+      - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+    - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
+    - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Content <String>]`: The content of the item.
+      - `[ContentType <String>]`: bodyType
+    - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsPasscodeRequired <Boolean?>]`: Indicates whether a passcode is required to join a meeting when using joinMeetingId.
+Optional.
+      - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting.
+Optional.
+Read-only.
+      - `[Passcode <String>]`: The passcode to join a meeting. 
+Optional.
+Read-only.
+    - `[JoinWebUrl <String>]`: The join URL of the online meeting.
+Read-only.
+    - `[LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]`: lobbyBypassSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsDialInBypassEnabled <Boolean?>]`: Specifies whether or not to always let dial-in callers bypass the lobby.
+Optional.
+      - `[Scope <String>]`: lobbyBypassScope
+    - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
+    - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
+    - `[Subject <String>]`: The subject of the online meeting.
+    - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID.
+Read-only.
+    - `[WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]`: watermarkProtectionValues
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsEnabledForContentSharing <Boolean?>]`: Indicates whether to apply a watermark to any shared content.
+      - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
+See below for more possible values.
+    - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
   - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
@@ -566,11 +752,10 @@ Read-only.
       - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
       - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+        - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
       - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.

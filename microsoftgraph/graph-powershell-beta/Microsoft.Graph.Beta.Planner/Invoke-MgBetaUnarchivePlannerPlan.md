@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgBetaUnarchivePlannerPlan
 
 ## SYNOPSIS
-Invoke action unarchive
+Unarchive a plannerPlan object.
+Unarchiving a plan, also unarchives the plannerTasks and plannerBuckets in the plan.
+Only a plan that is archived can be unarchived.
 
 ## SYNTAX
 
@@ -43,7 +45,9 @@ Invoke-MgBetaUnarchivePlannerPlan -InputObject <IPlannerIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action unarchive
+Unarchive a plannerPlan object.
+Unarchiving a plan, also unarchives the plannerTasks and plannerBuckets in the plan.
+Only a plan that is archived can be unarchived.
 
 ## PARAMETERS
 
@@ -249,6 +253,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/invoke-mgbetaunarchiveplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/invoke-mgbetaunarchiveplannerplan)
+
+[https://learn.microsoft.com/graph/api/plannerplan-unarchive?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerplan-unarchive?view=graph-rest-beta)
 
 
 

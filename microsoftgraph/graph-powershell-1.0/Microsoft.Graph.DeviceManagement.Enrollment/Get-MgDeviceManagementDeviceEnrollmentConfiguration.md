@@ -10,7 +10,7 @@ ms.subservice: intune
 # Get-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Read properties and relationships of the deviceEnrollmentConfiguration object.
+Read properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the deviceEnrollmentConfiguration object.
+Read properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -310,7 +310,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementdeviceenrollmentconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentconfiguration-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentconfiguration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentconfiguration-list?view=graph-rest-1.0)
 

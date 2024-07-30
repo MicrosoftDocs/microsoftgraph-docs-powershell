@@ -24,8 +24,8 @@ Update-MgSecurityIncident -IncidentId <String> [-ResponseHeadersVariable <String
  [-CustomTags <String[]>] [-Description <String>] [-Determination <String>] [-DisplayName <String>]
  [-Id <String>] [-IncidentWebUrl <String>] [-LastModifiedBy <String>] [-LastUpdateDateTime <DateTime>]
  [-RedirectIncidentId <String>] [-ResolvingComment <String>] [-Severity <String>] [-Status <String>]
- [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Summary <String>] [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -43,8 +43,8 @@ Update-MgSecurityIncident -InputObject <ISecurityIdentity> [-ResponseHeadersVari
  [-CustomTags <String[]>] [-Description <String>] [-Determination <String>] [-DisplayName <String>]
  [-Id <String>] [-IncidentWebUrl <String>] [-LastModifiedBy <String>] [-LastUpdateDateTime <DateTime>]
  [-RedirectIncidentId <String>] [-ResolvingComment <String>] [-Severity <String>] [-Status <String>]
- [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Summary <String>] [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -452,6 +452,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Summary
+The overview of an attack.
+When applicable, the summary contains details of what occurred, impacted assets, and the type of attack.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SystemTags
 The system tags associated with the incident.
 
@@ -655,6 +671,8 @@ In such a case, the status property is redirected.
 This property contains free editable text.
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
+  - `[Summary <String>]`: The overview of an attack.
+When applicable, the summary contains details of what occurred, impacted assets, and the type of attack.
   - `[SystemTags <String- `[]`>]`: The system tags associated with the incident.
   - `[TenantId <String>]`: The Microsoft Entra tenant in which the alert was created.
 

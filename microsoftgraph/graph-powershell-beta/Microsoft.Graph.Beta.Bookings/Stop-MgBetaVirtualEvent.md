@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action cancel
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgVirtualEvent](/powershell/module/Microsoft.Graph.Bookings/Stop-MgVirtualEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Cancel (Default)

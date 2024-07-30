@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ### -AppliesTo
 The target class for this SKU.
 Only SKUs with target class User are assignable.
-Possible values are: 'User', 'Company'.
+Possible values are: User, Company.
 
 ```yaml
 Type: String
@@ -287,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuPartNumber
-The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'.
+The SKU part number; for example: AAD_PREMIUM or RMSBASIC.
 To get a list of commercial subscriptions that an organization has acquired, see List subscribedSkus.
 
 ```yaml
@@ -388,7 +388,7 @@ Read-only.
   - `[AccountName <String>]`: The name of the account this SKU belongs to.
   - `[AppliesTo <String>]`: The target class for this SKU.
 Only SKUs with target class User are assignable.
-Possible values are: 'User', 'Company'.
+Possible values are: User, Company.
   - `[CapabilityStatus <String>]`: Enabled indicates that the prepaidUnits property has at least one unit that is enabled.
 LockedOut indicates that the customer canceled their subscription.
 Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
@@ -410,7 +410,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
     - `[ServicePlanId <String>]`: The unique identifier of the service plan.
     - `[ServicePlanName <String>]`: The name of the service plan.
   - `[SkuId <String>]`: The unique identifier (GUID) for the service SKU.
-  - `[SkuPartNumber <String>]`: The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'.
+  - `[SkuPartNumber <String>]`: The SKU part number; for example: AAD_PREMIUM or RMSBASIC.
 To get a list of commercial subscriptions that an organization has acquired, see List subscribedSkus.
   - `[SubscriptionIds <String- `[]`>]`: A list of all subscription IDs associated with this SKU.
 
