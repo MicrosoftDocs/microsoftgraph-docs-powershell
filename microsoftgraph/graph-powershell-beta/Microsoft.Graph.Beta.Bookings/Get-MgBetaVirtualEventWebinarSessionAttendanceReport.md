@@ -11,7 +11,7 @@ ms.subservice: cloud-communications
 
 ## SYNOPSIS
 Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
-Each time an online meeting ends, an attendance report is generated for that session.
+When an online meeting ends, an attendance report is generated for that session.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarSessionAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionAttendanceReport?view=graph-powershell-1.0)
@@ -44,7 +44,7 @@ Get-MgBetaVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIden
 
 ## DESCRIPTION
 Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
-Each time an online meeting ends, an attendance report is generated for that session.
+When an online meeting ends, an attendance report is generated for that session.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingattendancereport-get-permissions.md)]

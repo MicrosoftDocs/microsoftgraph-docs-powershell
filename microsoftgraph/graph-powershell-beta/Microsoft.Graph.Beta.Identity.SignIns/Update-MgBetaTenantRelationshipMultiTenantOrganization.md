@@ -9,7 +9,10 @@ ms.subservice: entra-sign-in
 # Update-MgBetaTenantRelationshipMultiTenantOrganization
 
 ## SYNOPSIS
-Update the properties of a multi-tenant organization.
+Create a new multi-tenant organization.
+By default, the creator tenant becomes an owner tenant upon successful creation.
+Only owner tenants can manage a multi-tenant organization.
+To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
 
 ## SYNTAX
 
@@ -31,7 +34,10 @@ Update-MgBetaTenantRelationshipMultiTenantOrganization -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Update the properties of a multi-tenant organization.
+Create a new multi-tenant organization.
+By default, the creator tenant becomes an owner tenant upon successful creation.
+Only owner tenants can manage a multi-tenant organization.
+To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganization-update-permissions.md)]
@@ -382,7 +388,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization)
 
-[https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/tenantrelationship-put-multitenantorganization?view=graph-rest-beta](https://learn.microsoft.com/graph/api/tenantrelationship-put-multitenantorganization?view=graph-rest-beta)
 
 
 

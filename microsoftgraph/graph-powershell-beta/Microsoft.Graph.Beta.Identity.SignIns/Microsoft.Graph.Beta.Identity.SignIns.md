@@ -1343,9 +1343,6 @@ Locale: en-US
 ### [Remove-MgBetaInformationProtectionThreatAssessmentRequestResult](Remove-MgBetaInformationProtectionThreatAssessmentRequestResult.md)
 
 
-### [Remove-MgBetaInvitation](Remove-MgBetaInvitation.md)
-
-
 ### [Remove-MgBetaOauth2PermissionGrant](Remove-MgBetaOauth2PermissionGrant.md)
 
 
@@ -1746,9 +1743,6 @@ Locale: en-US
 
 
 ### [Update-MgBetaInformationProtectionThreatAssessmentRequestResult](Update-MgBetaInformationProtectionThreatAssessmentRequestResult.md)
-
-
-### [Update-MgBetaInvitation](Update-MgBetaInvitation.md)
 
 
 ### [Update-MgBetaInvitationInvitedUserMailboxSetting](Update-MgBetaInvitationInvitedUserMailboxSetting.md)

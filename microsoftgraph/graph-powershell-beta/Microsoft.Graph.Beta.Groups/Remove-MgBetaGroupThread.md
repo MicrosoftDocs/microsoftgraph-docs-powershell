@@ -9,7 +9,7 @@ ms.subservice: entra-groups
 # Remove-MgBetaGroupThread
 
 ## SYNOPSIS
-Delete conversationThread.
+Delete a thread object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThread?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Remove-MgBetaGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Re
 ```
 
 ## DESCRIPTION
-Delete conversationThread.
+Delete a thread object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversationthread-delete-permissions.md)]
@@ -271,7 +271,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread)
 
-[https://learn.microsoft.com/graph/api/conversationthread-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conversationthread-delete?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/group-delete-thread?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-delete-thread?view=graph-rest-beta)
 
 
 

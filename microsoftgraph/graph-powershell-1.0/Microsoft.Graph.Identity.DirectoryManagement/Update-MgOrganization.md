@@ -9,9 +9,7 @@ ms.subservice: entra-directory-management
 # Update-MgOrganization
 
 ## SYNOPSIS
-Update the properties of the currently authenticated organization.
-In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
-The ID is also known as the tenantId of the organization.
+Update the properties of a organization object.
 
 ## SYNTAX
 
@@ -66,9 +64,7 @@ Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of the currently authenticated organization.
-In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
-The ID is also known as the tenantId of the organization.
+Update the properties of a organization object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organization-update-permissions.md)]
@@ -1227,7 +1223,7 @@ Not nullable.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization)
 
-[https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-onboarding-organization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-organization-update?view=graph-rest-1.0)
 
 
 

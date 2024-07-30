@@ -9,7 +9,7 @@ ms.subservice: cloud-pc
 # Invoke-MgBetaBulkDeviceManagementVirtualEndpointCloudPcResize
 
 ## SYNOPSIS
-Perform a bulk resize action to resize a group of cloudPCs that have successfully passed validation.
+Perform a bulk resize action to resize a group of cloudPCs that successfully pass validation.
 If any devices can't be resized, those devices indicate 'resize failed'.
 The remaining devices are provisioned for the resize process.
 
@@ -31,7 +31,7 @@ Invoke-MgBetaBulkDeviceManagementVirtualEndpointCloudPcResize
 ```
 
 ## DESCRIPTION
-Perform a bulk resize action to resize a group of cloudPCs that have successfully passed validation.
+Perform a bulk resize action to resize a group of cloudPCs that successfully pass validation.
 If any devices can't be resized, those devices indicate 'resize failed'.
 The remaining devices are provisioned for the resize process.
 

@@ -23,8 +23,8 @@ New-MgSecurityIncident [-ResponseHeadersVariable <String>] [-AdditionalPropertie
  [-Description <String>] [-Determination <String>] [-DisplayName <String>] [-Id <String>]
  [-IncidentWebUrl <String>] [-LastModifiedBy <String>] [-LastUpdateDateTime <DateTime>]
  [-RedirectIncidentId <String>] [-ResolvingComment <String>] [-Severity <String>] [-Status <String>]
- [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Summary <String>] [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -376,6 +376,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Summary
+The overview of an attack.
+When applicable, the summary contains details of what occurred, impacted assets, and the type of attack.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SystemTags
 The system tags associated with the incident.
 
@@ -578,6 +594,8 @@ In such a case, the status property is redirected.
 This property contains free editable text.
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
+  - `[Summary <String>]`: The overview of an attack.
+When applicable, the summary contains details of what occurred, impacted assets, and the type of attack.
   - `[SystemTags <String- `[]`>]`: The system tags associated with the incident.
   - `[TenantId <String>]`: The Microsoft Entra tenant in which the alert was created.
 

@@ -17,22 +17,37 @@ Get the number of the resource
 
 ### Get (Default)
 ```
-Get-MgBetaShareCreatedByUserServiceProvisioningErrorCount -SharedDriveItemId <String> [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaShareCreatedByUserServiceProvisioningErrorCount -SharedDriveItemId <String> [-Filter <String>]
+ [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaShareCreatedByUserServiceProvisioningErrorCount -InputObject <IFilesIdentity> [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaShareCreatedByUserServiceProvisioningErrorCount -InputObject <IFilesIdentity> [-Filter <String>]
+ [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
 
 ## PARAMETERS
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -Headers
 Optional headers that will be added to the request.

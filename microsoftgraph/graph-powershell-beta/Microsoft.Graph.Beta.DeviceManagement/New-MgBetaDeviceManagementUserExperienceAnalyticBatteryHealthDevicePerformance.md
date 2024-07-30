@@ -262,6 +262,7 @@ Accept wildcard characters: False
 
 ### -Manufacturer
 The manufacturer name of the device.
+Deprecated in favor of DeviceManufacturerName.
 
 ```yaml
 Type: String
@@ -294,6 +295,7 @@ Accept wildcard characters: False
 
 ### -Model
 The model name of the device.
+Deprecated in favor of DeviceModelName.
 
 ```yaml
 Type: String
@@ -415,10 +417,12 @@ Valid values 0 to 2147483647
 Valid values 0 to 2147483647
   - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
   - `[Manufacturer <String>]`: The manufacturer name of the device.
+Deprecated in favor of DeviceManufacturerName.
   - `[MaxCapacityPercentage <Int32?>]`: Ratio of current capacity and design capacity of the battery with the lowest capacity.
 Unit in percentage and values range from 0-100.
 Valid values 0 to 2147483647
   - `[Model <String>]`: The model name of the device.
+Deprecated in favor of DeviceModelName.
 
 DEVICEBATTERIESDETAILS <IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail- `[]`>: Properties (maxCapacity and cycleCount) related to all batteries of the device.
   - `[BatteryId <String>]`: Uniquely identifies the batteries in a single device.

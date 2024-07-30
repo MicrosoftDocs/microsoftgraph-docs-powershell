@@ -310,9 +310,8 @@ Accept wildcard characters: False
 
 ### -CustomerNotes
 Notes from the customer associated with this appointment.
-You can get the value only when reading this bookingAppointment by its ID.
-You can set this property only when initially creating an appointment with a new customer.
-After that point, the value is computed from the customer represented by customerId.
+You can get the value only when you read this bookingAppointment by its ID.
+You can set this property only when you initially create an appointment with a new customer.
 
 ```yaml
 Type: String
@@ -944,9 +943,8 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     - `[UniqueIdType <String>]`: locationUniqueIdType
   - `[CustomerName <String>]`: The customer's name.
   - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
-You can get the value only when reading this bookingAppointment by its ID. 
-You can set this property only when initially creating an appointment with a new customer.
-After that point, the value is computed from the customer represented by customerId.
+You can get the value only when you read this bookingAppointment by its ID.
+You can set this property only when you initially create an appointment with a new customer.
   - `[CustomerPhone <String>]`: The customer's phone number.
   - `[CustomerTimeZone <String>]`: The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.

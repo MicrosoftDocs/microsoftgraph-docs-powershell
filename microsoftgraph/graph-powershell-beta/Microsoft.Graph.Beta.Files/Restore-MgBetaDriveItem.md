@@ -284,13 +284,13 @@ BODYPARAMETER `<IPaths17Wfo8EDrivesDriveIdItemsDriveitemIdMicrosoftGraphRestoreP
 Only returned if the item is located in a drive.
 Read-only.
     - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a drive. 
+Only returned if the item is located in a drive.
 See drive resource for values.
     - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
     - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-    - `[Path <String>]`: Path that can be used to navigate to the item.
+    - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
     - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
     - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -304,8 +304,8 @@ Read-only.
       - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
     - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
 The value is the same as the id property of that site resource.
-It is an opaque string that consists of three identifiers of the site.
-For OneDrive, this property is not populated.
+It's an opaque string that consists of three identifiers of the site.
+For OneDrive, this property isn't populated.
 
 INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -339,13 +339,13 @@ PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
 Only returned if the item is located in a drive.
 Read-only.
   - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a drive. 
+Only returned if the item is located in a drive.
 See drive resource for values.
   - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
   - `[Name <String>]`: The name of the item being referenced.
 Read-only.
-  - `[Path <String>]`: Path that can be used to navigate to the item.
+  - `[Path <String>]`: Percent-encoded path that can be used to navigate to the item.
 Read-only.
   - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
   - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -359,8 +359,8 @@ Read-only.
     - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
 The value is the same as the id property of that site resource.
-It is an opaque string that consists of three identifiers of the site.
-For OneDrive, this property is not populated.
+It's an opaque string that consists of three identifiers of the site.
+For OneDrive, this property isn't populated.
 
 ## RELATED LINKS
 

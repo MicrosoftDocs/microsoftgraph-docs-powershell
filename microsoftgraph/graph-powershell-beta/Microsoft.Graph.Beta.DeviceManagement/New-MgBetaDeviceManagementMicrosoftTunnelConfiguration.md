@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -Network
-The subnet that will be used to allocate virtual address for the clients
+The IPv4 subnet that will be used to allocate virtual address for the clients
 
 ```yaml
 Type: String
@@ -422,7 +422,7 @@ This property is required when a server is created.
   - `[DnsServers <String- `[]`>]`: The DNS servers that will be used by the clients
   - `[LastUpdateDateTime <DateTime?>]`: When the configuration was last updated
   - `[ListenPort <Int32?>]`: The port that both TCP and UPD will listen over on the server
-  - `[Network <String>]`: The subnet that will be used to allocate virtual address for the clients
+  - `[Network <String>]`: The IPv4 subnet that will be used to allocate virtual address for the clients
   - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance
   - `[RouteExcludes <String- `[]`>]`: Subsets of the routes that will not be routed by the server
   - `[RouteIncludes <String- `[]`>]`: The routes that will be routed by the server

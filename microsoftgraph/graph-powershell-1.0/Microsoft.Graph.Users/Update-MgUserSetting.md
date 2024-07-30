@@ -19,7 +19,8 @@ Update the navigation property settings in users
 ```
 Update-MgUserSetting -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
- [-Id <String>] [-ShiftPreferences <IMicrosoftGraphShiftPreferences>]
+ [-Id <String>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
+ [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Storage <IMicrosoftGraphUserStorage>]
  [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -35,7 +36,8 @@ Update-MgUserSetting -UserId <String> -BodyParameter <IMicrosoftGraphUserSetting
 ```
 Update-MgUserSetting -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ContributionToContentDiscoveryAsOrganizationDisabled]
- [-ContributionToContentDiscoveryDisabled] [-Id <String>] [-ShiftPreferences <IMicrosoftGraphShiftPreferences>]
+ [-ContributionToContentDiscoveryDisabled] [-Id <String>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
+ [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Storage <IMicrosoftGraphUserStorage>]
  [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -184,6 +186,22 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ItemInsights
+userInsightsSettings
+To construct, see NOTES section for ITEMINSIGHTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUserInsightsSettings
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -220,6 +238,22 @@ To construct, see NOTES section for SHIFTPREFERENCES properties and create a has
 
 ```yaml
 Type: IMicrosoftGraphShiftPreferences
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Storage
+userStorage
+To construct, see NOTES section for STORAGE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUserStorage
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -321,17 +355,21 @@ This setting is read-only and can only be changed by administrators in the Share
 When set to true, documents in the user's Office Delve are disabled.
 When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
 Users can control this setting in Office Delve.
+  - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[IsEnabled <Boolean?>]`: 
   - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+        - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Id <String>]`: The unique identifier for an entity.
@@ -373,6 +411,26 @@ Required.
         - `[EndTime <String>]`: End time for the time range.
         - `[StartTime <String>]`: Start time for the time range.
       - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+  - `[Storage <IMicrosoftGraphUserStorage>]`: userStorage
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Quota <IMicrosoftGraphUnifiedStorageQuota>]`: unifiedStorageQuota
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Deleted <Int64?>]`: 
+      - `[ManageWebUrl <String>]`: 
+      - `[Remaining <Int64?>]`: 
+      - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: 
+        - `[DisplayName <String>]`: 
+        - `[ManageWebUrl <String>]`: 
+        - `[Used <Int64?>]`: 
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[State <String>]`: 
+      - `[Total <Int64?>]`: 
+      - `[Used <Int64?>]`: 
   - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -401,11 +459,21 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[ServiceStorageQuotaBreakdownId <String>]`: The unique identifier of serviceStorageQuotaBreakdown
+  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[TrendingId <String>]`: The unique identifier of trending
+  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
+
+ITEMINSIGHTS `<IMicrosoftGraphUserInsightsSettings>`: userInsightsSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[IsEnabled <Boolean?>]`: 
 
 SHIFTPREFERENCES `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -413,11 +481,10 @@ SHIFTPREFERENCES `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+      - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Id <String>]`: The unique identifier for an entity.
@@ -459,6 +526,27 @@ Required.
       - `[EndTime <String>]`: End time for the time range.
       - `[StartTime <String>]`: Start time for the time range.
     - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+
+STORAGE `<IMicrosoftGraphUserStorage>`: userStorage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[Quota <IMicrosoftGraphUnifiedStorageQuota>]`: unifiedStorageQuota
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Deleted <Int64?>]`: 
+    - `[ManageWebUrl <String>]`: 
+    - `[Remaining <Int64?>]`: 
+    - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: 
+      - `[DisplayName <String>]`: 
+      - `[ManageWebUrl <String>]`: 
+      - `[Used <Int64?>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[State <String>]`: 
+    - `[Total <Int64?>]`: 
+    - `[Used <Int64?>]`: 
 
 WINDOWS <IMicrosoftGraphWindowsSetting- `[]`>: .
   - `[Id <String>]`: The unique identifier for an entity.

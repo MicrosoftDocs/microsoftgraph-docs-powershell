@@ -59,6 +59,9 @@ Locale: en-US
 ### [Get-MgAdminPeople](Get-MgAdminPeople.md)
 
 
+### [Get-MgAdminPeopleItemInsight](Get-MgAdminPeopleItemInsight.md)
+
+
 ### [Get-MgAdminPeopleProfileCardProperty](Get-MgAdminPeopleProfileCardProperty.md)
 
 
@@ -767,6 +770,9 @@ Locale: en-US
 ### [New-MgUserScopedRoleMemberOf](New-MgUserScopedRoleMemberOf.md)
 
 
+### [Remove-MgAdminPeopleItemInsight](Remove-MgAdminPeopleItemInsight.md)
+
+
 ### [Remove-MgAdminPeopleProfileCardProperty](Remove-MgAdminPeopleProfileCardProperty.md)
 
 
@@ -984,6 +990,9 @@ Locale: en-US
 
 
 ### [Test-MgOrganizationProperty](Test-MgOrganizationProperty.md)
+
+
+### [Update-MgAdminPeopleItemInsight](Update-MgAdminPeopleItemInsight.md)
 
 
 ### [Update-MgAdminPeopleProfileCardProperty](Update-MgAdminPeopleProfileCardProperty.md)

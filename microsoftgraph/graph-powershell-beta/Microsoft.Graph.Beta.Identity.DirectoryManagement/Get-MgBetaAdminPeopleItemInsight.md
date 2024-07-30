@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents administrator settings that manage the support for item insights in an organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminPeopleItemInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdminPeopleItemInsight?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

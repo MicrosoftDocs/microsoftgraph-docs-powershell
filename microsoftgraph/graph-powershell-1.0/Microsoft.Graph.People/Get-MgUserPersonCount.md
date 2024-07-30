@@ -158,9 +158,6 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[PersonId <String>]`: The unique identifier of person
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

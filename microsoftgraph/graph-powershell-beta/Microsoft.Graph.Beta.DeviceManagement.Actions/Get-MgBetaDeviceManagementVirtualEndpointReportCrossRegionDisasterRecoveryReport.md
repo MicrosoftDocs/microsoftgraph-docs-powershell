@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointReportCrossRegionDisasterRecoveryReport
 
 ## SYNOPSIS
-Invoke action retrieveCrossRegionDisasterRecoveryReport
+Retrieve the Windows 365 cross-region disaster recovery report, including CloudPcId, UserId, DeviceId, CloudPCDeviceDisplayName, UserPrincipalName, IsCrossRegionEnabled, CrossRegionHealthStatus, LicenseType, DisasterRecoveryStatus, CurrentRestorePointDateTime, and ActivationExpirationDateTime.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Get-MgBetaDeviceManagementVirtualEndpointReportCrossRegionDisasterRecoveryReport
 ```
 
 ## DESCRIPTION
-Invoke action retrieveCrossRegionDisasterRecoveryReport
+Retrieve the Windows 365 cross-region disaster recovery report, including CloudPcId, UserId, DeviceId, CloudPCDeviceDisplayName, UserPrincipalName, IsCrossRegionEnabled, CrossRegionHealthStatus, LicenseType, DisasterRecoveryStatus, CurrentRestorePointDateTime, and ActivationExpirationDateTime.
 
 ## PARAMETERS
 
@@ -305,6 +305,8 @@ BODY `<IPaths1Km25K2DevicemanagementVirtualendpointReportsMicrosoftGraphRetrieve
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcrossregiondisasterrecoveryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcrossregiondisasterrecoveryreport)
+
+[https://learn.microsoft.com/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta)
 
 
 

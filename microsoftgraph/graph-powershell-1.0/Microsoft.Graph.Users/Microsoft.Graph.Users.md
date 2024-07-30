@@ -53,6 +53,39 @@ Locale: en-US
 ### [Get-MgUserExtensionCount](Get-MgUserExtensionCount.md)
 
 
+### [Get-MgUserInsight](Get-MgUserInsight.md)
+
+
+### [Get-MgUserInsightShared](Get-MgUserInsightShared.md)
+
+
+### [Get-MgUserInsightSharedCount](Get-MgUserInsightSharedCount.md)
+
+
+### [Get-MgUserInsightSharedLastSharedMethod](Get-MgUserInsightSharedLastSharedMethod.md)
+
+
+### [Get-MgUserInsightSharedResource](Get-MgUserInsightSharedResource.md)
+
+
+### [Get-MgUserInsightTrending](Get-MgUserInsightTrending.md)
+
+
+### [Get-MgUserInsightTrendingCount](Get-MgUserInsightTrendingCount.md)
+
+
+### [Get-MgUserInsightTrendingResource](Get-MgUserInsightTrendingResource.md)
+
+
+### [Get-MgUserInsightUsed](Get-MgUserInsightUsed.md)
+
+
+### [Get-MgUserInsightUsedCount](Get-MgUserInsightUsedCount.md)
+
+
+### [Get-MgUserInsightUsedResource](Get-MgUserInsightUsedResource.md)
+
+
 ### [Get-MgUserLicenseDetail](Get-MgUserLicenseDetail.md)
 
 
@@ -185,7 +218,22 @@ Locale: en-US
 ### [Get-MgUserSetting](Get-MgUserSetting.md)
 
 
+### [Get-MgUserSettingItemInsight](Get-MgUserSettingItemInsight.md)
+
+
 ### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
+
+
+### [Get-MgUserSettingStorage](Get-MgUserSettingStorage.md)
+
+
+### [Get-MgUserSettingStorageQuota](Get-MgUserSettingStorageQuota.md)
+
+
+### [Get-MgUserSettingStorageQuotaService](Get-MgUserSettingStorageQuotaService.md)
+
+
+### [Get-MgUserSettingStorageQuotaServiceCount](Get-MgUserSettingStorageQuotaServiceCount.md)
 
 
 ### [Get-MgUserSettingWindows](Get-MgUserSettingWindows.md)
@@ -290,7 +338,19 @@ Locale: en-US
 ### [New-MgUserExtension](New-MgUserExtension.md)
 
 
+### [New-MgUserInsightShared](New-MgUserInsightShared.md)
+
+
+### [New-MgUserInsightTrending](New-MgUserInsightTrending.md)
+
+
+### [New-MgUserInsightUsed](New-MgUserInsightUsed.md)
+
+
 ### [New-MgUserOutlookMasterCategory](New-MgUserOutlookMasterCategory.md)
+
+
+### [New-MgUserSettingStorageQuotaService](New-MgUserSettingStorageQuotaService.md)
 
 
 ### [New-MgUserSettingWindows](New-MgUserSettingWindows.md)
@@ -326,6 +386,18 @@ Locale: en-US
 ### [Remove-MgUserExtension](Remove-MgUserExtension.md)
 
 
+### [Remove-MgUserInsight](Remove-MgUserInsight.md)
+
+
+### [Remove-MgUserInsightShared](Remove-MgUserInsightShared.md)
+
+
+### [Remove-MgUserInsightTrending](Remove-MgUserInsightTrending.md)
+
+
+### [Remove-MgUserInsightUsed](Remove-MgUserInsightUsed.md)
+
+
 ### [Remove-MgUserLicenseDetail](Remove-MgUserLicenseDetail.md)
 
 
@@ -344,7 +416,19 @@ Locale: en-US
 ### [Remove-MgUserSetting](Remove-MgUserSetting.md)
 
 
+### [Remove-MgUserSettingItemInsight](Remove-MgUserSettingItemInsight.md)
+
+
 ### [Remove-MgUserSettingShiftPreference](Remove-MgUserSettingShiftPreference.md)
+
+
+### [Remove-MgUserSettingStorage](Remove-MgUserSettingStorage.md)
+
+
+### [Remove-MgUserSettingStorageQuota](Remove-MgUserSettingStorageQuota.md)
+
+
+### [Remove-MgUserSettingStorageQuotaService](Remove-MgUserSettingStorageQuotaService.md)
 
 
 ### [Remove-MgUserSettingWindows](Remove-MgUserSettingWindows.md)
@@ -401,6 +485,18 @@ Locale: en-US
 ### [Update-MgUserExtension](Update-MgUserExtension.md)
 
 
+### [Update-MgUserInsight](Update-MgUserInsight.md)
+
+
+### [Update-MgUserInsightShared](Update-MgUserInsightShared.md)
+
+
+### [Update-MgUserInsightTrending](Update-MgUserInsightTrending.md)
+
+
+### [Update-MgUserInsightUsed](Update-MgUserInsightUsed.md)
+
+
 ### [Update-MgUserLicenseDetail](Update-MgUserLicenseDetail.md)
 
 
@@ -413,7 +509,19 @@ Locale: en-US
 ### [Update-MgUserSetting](Update-MgUserSetting.md)
 
 
+### [Update-MgUserSettingItemInsight](Update-MgUserSettingItemInsight.md)
+
+
 ### [Update-MgUserSettingShiftPreference](Update-MgUserSettingShiftPreference.md)
+
+
+### [Update-MgUserSettingStorage](Update-MgUserSettingStorage.md)
+
+
+### [Update-MgUserSettingStorageQuota](Update-MgUserSettingStorageQuota.md)
+
+
+### [Update-MgUserSettingStorageQuotaService](Update-MgUserSettingStorageQuotaService.md)
 
 
 ### [Update-MgUserSettingWindows](Update-MgUserSettingWindows.md)

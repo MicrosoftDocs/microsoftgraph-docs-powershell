@@ -11,40 +11,10 @@ Locale: en-US
 
 
 ## Microsoft.Graph.People Cmdlets
-### [Get-MgUserLastSharedMethodInsight](Get-MgUserLastSharedMethodInsight.md)
-
-
 ### [Get-MgUserPerson](Get-MgUserPerson.md)
 
 
 ### [Get-MgUserPersonCount](Get-MgUserPersonCount.md)
-
-
-### [Get-MgUserSharedCountInsight](Get-MgUserSharedCountInsight.md)
-
-
-### [Get-MgUserSharedInsight](Get-MgUserSharedInsight.md)
-
-
-### [Get-MgUserSharedResourceInsight](Get-MgUserSharedResourceInsight.md)
-
-
-### [Get-MgUserTrendingCountInsight](Get-MgUserTrendingCountInsight.md)
-
-
-### [Get-MgUserTrendingInsight](Get-MgUserTrendingInsight.md)
-
-
-### [Get-MgUserTrendingResourceInsight](Get-MgUserTrendingResourceInsight.md)
-
-
-### [Get-MgUserUsedCountInsight](Get-MgUserUsedCountInsight.md)
-
-
-### [Get-MgUserUsedInsight](Get-MgUserUsedInsight.md)
-
-
-### [Get-MgUserUsedResourceInsight](Get-MgUserUsedResourceInsight.md)
 
 
 

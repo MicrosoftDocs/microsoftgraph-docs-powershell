@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgBetaGroupDriveItemListItemDriveItemContent
 
 ## SYNOPSIS
-Get content for the navigation property driveItem from groups
+The content stream, if the item represents a file.
+The content property will have a potentially breaking change in behavior in the future.
+It will stream content directly instead of redirecting.
+To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItemListItemDriveItemContent](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemListItemDriveItemContent?view=graph-powershell-1.0)
@@ -30,7 +33,10 @@ Get-MgBetaGroupDriveItemListItemDriveItemContent -InputObject <IFilesIdentity> [
 ```
 
 ## DESCRIPTION
-Get content for the navigation property driveItem from groups
+The content stream, if the item represents a file.
+The content property will have a potentially breaking change in behavior in the future.
+It will stream content directly instead of redirecting.
+To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
 ## PARAMETERS
 

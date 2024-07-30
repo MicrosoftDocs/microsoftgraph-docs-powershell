@@ -378,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendedActions
-A rich text string that represents the actions that are reccomnded to take in order to resolve the incident
+A rich text string that represents the actions that are reccomnded to take in order to resolve the incident.
 
 ```yaml
 Type: String
@@ -393,7 +393,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendedHuntingQueries
-List of hunting Kusto Query Language (KQL) queries related to the incident
+List of hunting Kusto Query Language (KQL) queries related to the incident.
 To construct, see NOTES section for RECOMMENDEDHUNTINGQUERIES properties and create a hash table.
 
 ```yaml
@@ -682,8 +682,8 @@ Free editable text.
   - `[IncidentWebUrl <String>]`: The URL for the incident page in the Microsoft 365 Defender portal.
   - `[LastModifiedBy <String>]`: The identity that last modified the incident.
   - `[LastUpdateDateTime <DateTime?>]`: Time when the incident was last updated.
-  - `[RecommendedActions <String>]`: A rich text string that represents the actions that are reccomnded to take in order to resolve the incident
-  - `[RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>]`: List of hunting Kusto Query Language (KQL) queries related to the incident
+  - `[RecommendedActions <String>]`: A rich text string that represents the actions that are reccomnded to take in order to resolve the incident.
+  - `[RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>]`: List of hunting Kusto Query Language (KQL) queries related to the incident.
     - `[KqlText <String>]`: The query string.
   - `[RedirectIncidentId <String>]`: Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
@@ -785,7 +785,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>: List of hunting Kusto Query Language (KQL) queries related to the incident
+RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>: List of hunting Kusto Query Language (KQL) queries related to the incident.
   - `[KqlText <String>]`: The query string.
 
 ## RELATED LINKS

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Resize-MgBetaDeviceManagementVirtualEndpointCloudPc
 
 ## SYNOPSIS
-Invoke action resize
+Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Resize-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Invoke action resize
+Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
 
 ## PARAMETERS
 
@@ -290,12 +290,15 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
   - `[WindowsDriverUpdateProfileId <String>]`: The unique identifier of windowsDriverUpdateProfile
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
+  - `[WindowsQualityUpdatePolicyId <String>]`: The unique identifier of windowsQualityUpdatePolicy
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/resize-mgbetadevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/resize-mgbetadevicemanagementvirtualendpointcloudpc)
+
+[https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-beta)
 
 
 

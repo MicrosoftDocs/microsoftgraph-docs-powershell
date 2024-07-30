@@ -1667,7 +1667,7 @@ The largest number you can configure must be less than the number configured in 
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement)
 
-[https://learn.microsoft.com/graph/api/intune-books-deviceappmanagement-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-deviceappmanagement-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-onboarding-deviceappmanagement-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceappmanagement-update?view=graph-rest-1.0)
 
 
 

@@ -681,24 +681,19 @@ Always null when the object hasn't been deleted.
         - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-            - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that point to the certificateBasedApplicationConfiguration that contains the collection of allowed root and intermediate certificate authorities.
-            - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
-Defined in ISO 8601 format for Durations.
-For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+            - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+            - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
-            - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
-For existing applications, the enforcement date would be back dated.
-To apply to all applications regardless of their creation date, this property would be null.
-Nullable.
+            - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
           - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-            - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
-Defined in ISO 8601 format for Durations.
-For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
-This property is required when restriction type is set to passwordLifetime.
-            - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
-For existing applications, the enforcement date would be backdated.
-To apply to all applications, this date would be null.
+            - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
+This property is required when restrictionType is set to passwordLifetime.
+            - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appCredentialRestrictionType
       - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
@@ -2350,7 +2345,7 @@ Read-only.
       - `[ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]`: cloudPcConnectivityResult
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem- `[]`>]`: A list of failed health check items.
-If the status property is available, this property will be empty.
+If the status property is available, this property is empty.
           - `[AdditionalDetails <String>]`: Additional message for this health check.
           - `[DisplayName <String>]`: The connectivity health check item name.
           - `[LastHealthCheckDateTime <DateTime?>]`: Timestamp when the last check occurs.
@@ -2359,13 +2354,14 @@ For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
           - `[Result <String>]`: cloudPcConnectivityEventResult
         - `[Status <String>]`: cloudPcConnectivityStatus
         - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated.
-The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
-For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+This property is deprecated and will no longer be supported effective August 31, 2024.
+Use lastModifiedDateTime instead.
+Read-Only.
       - `[DisasterRecoveryCapability <IMicrosoftGraphCloudPcDisasterRecoveryCapability>]`: cloudPcDisasterRecoveryCapability
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CapabilityType <String>]`: cloudPcDisasterRecoveryCapabilityType
-        - `[PrimaryRegion <String>]`: 
-        - `[SecondaryRegion <String>]`: 
+        - `[PrimaryRegion <String>]`: The primary and mainly used region where the Cloud PC is located.
+        - `[SecondaryRegion <String>]`: The secondary region to which the Cloud PC can be failed over during a regional outage.
       - `[DiskEncryptionState <String>]`: cloudPcDiskEncryptionState
       - `[DisplayName <String>]`: The display name of the Cloud PC.
       - `[GracePeriodEndDateTime <DateTime?>]`: The date and time when the grace period ends and reprovisioning or deprovisioning happens.
@@ -2899,7 +2895,9 @@ Read-only.
 The default value is false.
             - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
             - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
-            - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: 
+            - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: The set of permissions for the item.
+Read-only.
+Nullable.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[ExpirationDateTime <DateTime?>]`: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -3039,7 +3037,8 @@ Read-only.
             - `[Shared <IMicrosoftGraphShared>]`: shared
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Owner <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[Scope <String>]`: Indicates the scope of how the item is shared: anonymous, organization, or users.
+              - `[Scope <String>]`: Indicates the scope of how the item is shared.
+The possible values are: anonymous, organization, or users.
 Read-only.
               - `[SharedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[SharedDateTime <DateTime?>]`: The UTC date and time when the item was shared.
@@ -3947,7 +3946,9 @@ Read-only.
           - `[PercentageComplete <Int32?>]`: A value between 0 and 100 that indicates the progress of the operation.
           - `[ResourceId <String>]`: A unique identifier for the result.
           - `[Type <String>]`: Type of the operation.
-        - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: 
+        - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: The set of permissions for the item.
+Read-only.
+Nullable.
         - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
         - `[Subscriptions <IMicrosoftGraphSubscription- `[]`>]`: The set of subscriptions on the list.
         - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
@@ -4799,7 +4800,6 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
-Read-only.
       - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -4828,9 +4828,11 @@ Returns the plannerPlans owned by the group.
 Read-only.
           - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Justification <String>]`: 
+            - `[Justification <String>]`: Read-only.
+Reason why the entity was archived or unarchived.
             - `[StatusChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[StatusChangedDateTime <DateTime?>]`: 
+            - `[StatusChangedDateTime <DateTime?>]`: Read-only.
+Date and time at which the entity's archive status changed.
           - `[Buckets <IMicrosoftGraphPlannerBucket- `[]`>]`: Collection of buckets in the plan.
 Read-only.
 Nullable.
@@ -4840,7 +4842,9 @@ Read-only.
             - `[CreationSource <IMicrosoftGraphPlannerBucketCreation>]`: plannerBucketCreation
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CreationSourceKind <String>]`: plannerCreationSourceKind
-            - `[IsArchived <Boolean?>]`: 
+            - `[IsArchived <Boolean?>]`: Read-only.
+If set totrue, the bucket is archived.
+An archived bucket is read-only.
             - `[Name <String>]`: Name of the bucket.
             - `[OrderHint <String>]`: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -4942,7 +4946,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
-              - `[IsArchived <Boolean?>]`: 
+              - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the task is archived.
+An archived task is read-only.
               - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
 If true, it shows the task.
               - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
@@ -5052,7 +5058,9 @@ Read-only.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[IsArchived <Boolean?>]`: 
+          - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the plan is archived.
+An archived plan is read-only.
           - `[Owner <String>]`: Use the container property instead.
 ID of the group that owns the plan.
 After it's set, this property can't be updated.
@@ -6299,7 +6307,7 @@ It is an Optional field
       - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -8207,19 +8215,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[Email <String>]`: Email address of the registrant.
               - `[FirstName <String>]`: First name of the registrant.
               - `[LastName <String>]`: Last name of the registrant.
-              - `[PreferredLanguage <String>]`: 
-              - `[PreferredTimezone <String>]`: 
+              - `[PreferredLanguage <String>]`: The registrant's preferred language.
+              - `[PreferredTimezone <String>]`: The registrant's time zone details.
               - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
-                - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion.
+                - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is boolean.
                 - `[DisplayName <String>]`: Display name of the registration question.
-                - `[MultiChoiceValues <String- `[]`>]`: Collection of text answer of the virtualEventRegistrationQuestion.
+                - `[MultiChoiceValues <String- `[]`>]`: A collection of text answers to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is multiChoice.
-                - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
-                - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion.
+                - `[QuestionId <String>]`: The identifier of either a virtualEventRegistrationCustomQuestion or a virtualEventRegistrationPredefinedQuestion.
+                - `[Value <String>]`: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
 Appears when answerInputType is text, multilineText or singleChoice.
               - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
               - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
@@ -8244,8 +8252,9 @@ This property is read-only.
           - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: Registration questions.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[DisplayName <String>]`: 
-            - `[IsRequired <Boolean?>]`: 
+            - `[DisplayName <String>]`: Display name of the registration question.
+            - `[IsRequired <Boolean?>]`: Indicates whether an answer to the question is required.
+The default value is false.
           - `[RegistrationWebUrl <String>]`: Registration URL of the virtual event.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -8561,24 +8570,19 @@ Always null when the object hasn't been deleted.
       - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-          - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that point to the certificateBasedApplicationConfiguration that contains the collection of allowed root and intermediate certificate authorities.
-          - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
-Defined in ISO 8601 format for Durations.
-For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+          - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+          - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
-          - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
-For existing applications, the enforcement date would be back dated.
-To apply to all applications regardless of their creation date, this property would be null.
-Nullable.
+          - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
         - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-          - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
-Defined in ISO 8601 format for Durations.
-For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
-This property is required when restriction type is set to passwordLifetime.
-          - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
-For existing applications, the enforcement date would be backdated.
-To apply to all applications, this date would be null.
+          - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
+This property is required when restrictionType is set to passwordLifetime.
+          - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appCredentialRestrictionType
     - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
@@ -10230,7 +10234,7 @@ Read-only.
     - `[ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]`: cloudPcConnectivityResult
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem- `[]`>]`: A list of failed health check items.
-If the status property is available, this property will be empty.
+If the status property is available, this property is empty.
         - `[AdditionalDetails <String>]`: Additional message for this health check.
         - `[DisplayName <String>]`: The connectivity health check item name.
         - `[LastHealthCheckDateTime <DateTime?>]`: Timestamp when the last check occurs.
@@ -10239,13 +10243,14 @@ For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
         - `[Result <String>]`: cloudPcConnectivityEventResult
       - `[Status <String>]`: cloudPcConnectivityStatus
       - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated.
-The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
-For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+This property is deprecated and will no longer be supported effective August 31, 2024.
+Use lastModifiedDateTime instead.
+Read-Only.
     - `[DisasterRecoveryCapability <IMicrosoftGraphCloudPcDisasterRecoveryCapability>]`: cloudPcDisasterRecoveryCapability
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CapabilityType <String>]`: cloudPcDisasterRecoveryCapabilityType
-      - `[PrimaryRegion <String>]`: 
-      - `[SecondaryRegion <String>]`: 
+      - `[PrimaryRegion <String>]`: The primary and mainly used region where the Cloud PC is located.
+      - `[SecondaryRegion <String>]`: The secondary region to which the Cloud PC can be failed over during a regional outage.
     - `[DiskEncryptionState <String>]`: cloudPcDiskEncryptionState
     - `[DisplayName <String>]`: The display name of the Cloud PC.
     - `[GracePeriodEndDateTime <DateTime?>]`: The date and time when the grace period ends and reprovisioning or deprovisioning happens.
@@ -10779,7 +10784,9 @@ Read-only.
 The default value is false.
           - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
           - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
-          - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: 
+          - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: The set of permissions for the item.
+Read-only.
+Nullable.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[ExpirationDateTime <DateTime?>]`: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -10919,7 +10926,8 @@ Read-only.
           - `[Shared <IMicrosoftGraphShared>]`: shared
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Owner <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[Scope <String>]`: Indicates the scope of how the item is shared: anonymous, organization, or users.
+            - `[Scope <String>]`: Indicates the scope of how the item is shared.
+The possible values are: anonymous, organization, or users.
 Read-only.
             - `[SharedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[SharedDateTime <DateTime?>]`: The UTC date and time when the item was shared.
@@ -11827,7 +11835,9 @@ Read-only.
         - `[PercentageComplete <Int32?>]`: A value between 0 and 100 that indicates the progress of the operation.
         - `[ResourceId <String>]`: A unique identifier for the result.
         - `[Type <String>]`: Type of the operation.
-      - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: 
+      - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: The set of permissions for the item.
+Read-only.
+Nullable.
       - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
       - `[Subscriptions <IMicrosoftGraphSubscription- `[]`>]`: The set of subscriptions on the list.
       - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
@@ -12722,7 +12732,6 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
-Read-only.
     - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -12751,9 +12760,11 @@ Returns the plannerPlans owned by the group.
 Read-only.
         - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Justification <String>]`: 
+          - `[Justification <String>]`: Read-only.
+Reason why the entity was archived or unarchived.
           - `[StatusChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[StatusChangedDateTime <DateTime?>]`: 
+          - `[StatusChangedDateTime <DateTime?>]`: Read-only.
+Date and time at which the entity's archive status changed.
         - `[Buckets <IMicrosoftGraphPlannerBucket- `[]`>]`: Collection of buckets in the plan.
 Read-only.
 Nullable.
@@ -12763,7 +12774,9 @@ Read-only.
           - `[CreationSource <IMicrosoftGraphPlannerBucketCreation>]`: plannerBucketCreation
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[CreationSourceKind <String>]`: plannerCreationSourceKind
-          - `[IsArchived <Boolean?>]`: 
+          - `[IsArchived <Boolean?>]`: Read-only.
+If set totrue, the bucket is archived.
+An archived bucket is read-only.
           - `[Name <String>]`: Name of the bucket.
           - `[OrderHint <String>]`: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -12865,7 +12878,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
-            - `[IsArchived <Boolean?>]`: 
+            - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the task is archived.
+An archived task is read-only.
             - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
 If true, it shows the task.
             - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
@@ -12975,7 +12990,9 @@ Read-only.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[IsArchived <Boolean?>]`: 
+        - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the plan is archived.
+An archived plan is read-only.
         - `[Owner <String>]`: Use the container property instead.
 ID of the group that owns the plan.
 After it's set, this property can't be updated.
@@ -14222,7 +14239,7 @@ It is an Optional field
     - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -16130,19 +16147,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[Email <String>]`: Email address of the registrant.
             - `[FirstName <String>]`: First name of the registrant.
             - `[LastName <String>]`: Last name of the registrant.
-            - `[PreferredLanguage <String>]`: 
-            - `[PreferredTimezone <String>]`: 
+            - `[PreferredLanguage <String>]`: The registrant's preferred language.
+            - `[PreferredTimezone <String>]`: The registrant's time zone details.
             - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
-              - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion.
+              - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is boolean.
               - `[DisplayName <String>]`: Display name of the registration question.
-              - `[MultiChoiceValues <String- `[]`>]`: Collection of text answer of the virtualEventRegistrationQuestion.
+              - `[MultiChoiceValues <String- `[]`>]`: A collection of text answers to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is multiChoice.
-              - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
-              - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion.
+              - `[QuestionId <String>]`: The identifier of either a virtualEventRegistrationCustomQuestion or a virtualEventRegistrationPredefinedQuestion.
+              - `[Value <String>]`: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
 Appears when answerInputType is text, multilineText or singleChoice.
             - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
             - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
@@ -16167,8 +16184,9 @@ This property is read-only.
         - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: Registration questions.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[DisplayName <String>]`: 
-          - `[IsRequired <Boolean?>]`: 
+          - `[DisplayName <String>]`: Display name of the registration question.
+          - `[IsRequired <Boolean?>]`: Indicates whether an answer to the question is required.
+The default value is false.
         - `[RegistrationWebUrl <String>]`: Registration URL of the virtual event.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -16489,24 +16507,19 @@ Always null when the object hasn't been deleted.
         - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-            - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that point to the certificateBasedApplicationConfiguration that contains the collection of allowed root and intermediate certificate authorities.
-            - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
-Defined in ISO 8601 format for Durations.
-For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+            - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+            - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
-            - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
-For existing applications, the enforcement date would be back dated.
-To apply to all applications regardless of their creation date, this property would be null.
-Nullable.
+            - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
           - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-            - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
-Defined in ISO 8601 format for Durations.
-For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
-This property is required when restriction type is set to passwordLifetime.
-            - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
-For existing applications, the enforcement date would be backdated.
-To apply to all applications, this date would be null.
+            - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
+This property is required when restrictionType is set to passwordLifetime.
+            - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appCredentialRestrictionType
       - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
@@ -18158,7 +18171,7 @@ Read-only.
       - `[ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]`: cloudPcConnectivityResult
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem- `[]`>]`: A list of failed health check items.
-If the status property is available, this property will be empty.
+If the status property is available, this property is empty.
           - `[AdditionalDetails <String>]`: Additional message for this health check.
           - `[DisplayName <String>]`: The connectivity health check item name.
           - `[LastHealthCheckDateTime <DateTime?>]`: Timestamp when the last check occurs.
@@ -18167,13 +18180,14 @@ For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
           - `[Result <String>]`: cloudPcConnectivityEventResult
         - `[Status <String>]`: cloudPcConnectivityStatus
         - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated.
-The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
-For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+This property is deprecated and will no longer be supported effective August 31, 2024.
+Use lastModifiedDateTime instead.
+Read-Only.
       - `[DisasterRecoveryCapability <IMicrosoftGraphCloudPcDisasterRecoveryCapability>]`: cloudPcDisasterRecoveryCapability
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CapabilityType <String>]`: cloudPcDisasterRecoveryCapabilityType
-        - `[PrimaryRegion <String>]`: 
-        - `[SecondaryRegion <String>]`: 
+        - `[PrimaryRegion <String>]`: The primary and mainly used region where the Cloud PC is located.
+        - `[SecondaryRegion <String>]`: The secondary region to which the Cloud PC can be failed over during a regional outage.
       - `[DiskEncryptionState <String>]`: cloudPcDiskEncryptionState
       - `[DisplayName <String>]`: The display name of the Cloud PC.
       - `[GracePeriodEndDateTime <DateTime?>]`: The date and time when the grace period ends and reprovisioning or deprovisioning happens.
@@ -18707,7 +18721,9 @@ Read-only.
 The default value is false.
             - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
             - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
-            - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: 
+            - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: The set of permissions for the item.
+Read-only.
+Nullable.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[ExpirationDateTime <DateTime?>]`: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -18847,7 +18863,8 @@ Read-only.
             - `[Shared <IMicrosoftGraphShared>]`: shared
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Owner <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[Scope <String>]`: Indicates the scope of how the item is shared: anonymous, organization, or users.
+              - `[Scope <String>]`: Indicates the scope of how the item is shared.
+The possible values are: anonymous, organization, or users.
 Read-only.
               - `[SharedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[SharedDateTime <DateTime?>]`: The UTC date and time when the item was shared.
@@ -19755,7 +19772,9 @@ Read-only.
           - `[PercentageComplete <Int32?>]`: A value between 0 and 100 that indicates the progress of the operation.
           - `[ResourceId <String>]`: A unique identifier for the result.
           - `[Type <String>]`: Type of the operation.
-        - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: 
+        - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: The set of permissions for the item.
+Read-only.
+Nullable.
         - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
         - `[Subscriptions <IMicrosoftGraphSubscription- `[]`>]`: The set of subscriptions on the list.
         - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
@@ -20627,7 +20646,6 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
-Read-only.
       - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -20656,9 +20674,11 @@ Returns the plannerPlans owned by the group.
 Read-only.
           - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Justification <String>]`: 
+            - `[Justification <String>]`: Read-only.
+Reason why the entity was archived or unarchived.
             - `[StatusChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[StatusChangedDateTime <DateTime?>]`: 
+            - `[StatusChangedDateTime <DateTime?>]`: Read-only.
+Date and time at which the entity's archive status changed.
           - `[Buckets <IMicrosoftGraphPlannerBucket- `[]`>]`: Collection of buckets in the plan.
 Read-only.
 Nullable.
@@ -20668,7 +20688,9 @@ Read-only.
             - `[CreationSource <IMicrosoftGraphPlannerBucketCreation>]`: plannerBucketCreation
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CreationSourceKind <String>]`: plannerCreationSourceKind
-            - `[IsArchived <Boolean?>]`: 
+            - `[IsArchived <Boolean?>]`: Read-only.
+If set totrue, the bucket is archived.
+An archived bucket is read-only.
             - `[Name <String>]`: Name of the bucket.
             - `[OrderHint <String>]`: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -20770,7 +20792,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
-              - `[IsArchived <Boolean?>]`: 
+              - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the task is archived.
+An archived task is read-only.
               - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
 If true, it shows the task.
               - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
@@ -20880,7 +20904,9 @@ Read-only.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[IsArchived <Boolean?>]`: 
+          - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the plan is archived.
+An archived plan is read-only.
           - `[Owner <String>]`: Use the container property instead.
 ID of the group that owns the plan.
 After it's set, this property can't be updated.
@@ -22127,7 +22153,7 @@ It is an Optional field
       - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -24035,19 +24061,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[Email <String>]`: Email address of the registrant.
               - `[FirstName <String>]`: First name of the registrant.
               - `[LastName <String>]`: Last name of the registrant.
-              - `[PreferredLanguage <String>]`: 
-              - `[PreferredTimezone <String>]`: 
+              - `[PreferredLanguage <String>]`: The registrant's preferred language.
+              - `[PreferredTimezone <String>]`: The registrant's time zone details.
               - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
-                - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion.
+                - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is boolean.
                 - `[DisplayName <String>]`: Display name of the registration question.
-                - `[MultiChoiceValues <String- `[]`>]`: Collection of text answer of the virtualEventRegistrationQuestion.
+                - `[MultiChoiceValues <String- `[]`>]`: A collection of text answers to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is multiChoice.
-                - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
-                - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion.
+                - `[QuestionId <String>]`: The identifier of either a virtualEventRegistrationCustomQuestion or a virtualEventRegistrationPredefinedQuestion.
+                - `[Value <String>]`: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
 Appears when answerInputType is text, multilineText or singleChoice.
               - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
               - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
@@ -24072,8 +24098,9 @@ This property is read-only.
           - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: Registration questions.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[DisplayName <String>]`: 
-            - `[IsRequired <Boolean?>]`: 
+            - `[DisplayName <String>]`: Display name of the registration question.
+            - `[IsRequired <Boolean?>]`: Indicates whether an answer to the question is required.
+The default value is false.
           - `[RegistrationWebUrl <String>]`: Registration URL of the virtual event.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -24370,24 +24397,19 @@ Always null when the object hasn't been deleted.
       - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-          - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that point to the certificateBasedApplicationConfiguration that contains the collection of allowed root and intermediate certificate authorities.
-          - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
-Defined in ISO 8601 format for Durations.
-For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+          - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
+          - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
 This property is required when restrictionType is set to keyLifetime.
-          - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
-For existing applications, the enforcement date would be back dated.
-To apply to all applications regardless of their creation date, this property would be null.
-Nullable.
+          - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
         - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-          - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
-Defined in ISO 8601 format for Durations.
-For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
-This property is required when restriction type is set to passwordLifetime.
-          - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
-For existing applications, the enforcement date would be backdated.
-To apply to all applications, this date would be null.
+          - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
+For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
+This property is required when restrictionType is set to passwordLifetime.
+          - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
+For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appCredentialRestrictionType
     - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
@@ -26039,7 +26061,7 @@ Read-only.
     - `[ConnectivityResult <IMicrosoftGraphCloudPcConnectivityResult>]`: cloudPcConnectivityResult
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[FailedHealthCheckItems <IMicrosoftGraphCloudPcHealthCheckItem- `[]`>]`: A list of failed health check items.
-If the status property is available, this property will be empty.
+If the status property is available, this property is empty.
         - `[AdditionalDetails <String>]`: Additional message for this health check.
         - `[DisplayName <String>]`: The connectivity health check item name.
         - `[LastHealthCheckDateTime <DateTime?>]`: Timestamp when the last check occurs.
@@ -26048,13 +26070,14 @@ For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
         - `[Result <String>]`: cloudPcConnectivityEventResult
       - `[Status <String>]`: cloudPcConnectivityStatus
       - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated.
-The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
-For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
+This property is deprecated and will no longer be supported effective August 31, 2024.
+Use lastModifiedDateTime instead.
+Read-Only.
     - `[DisasterRecoveryCapability <IMicrosoftGraphCloudPcDisasterRecoveryCapability>]`: cloudPcDisasterRecoveryCapability
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CapabilityType <String>]`: cloudPcDisasterRecoveryCapabilityType
-      - `[PrimaryRegion <String>]`: 
-      - `[SecondaryRegion <String>]`: 
+      - `[PrimaryRegion <String>]`: The primary and mainly used region where the Cloud PC is located.
+      - `[SecondaryRegion <String>]`: The secondary region to which the Cloud PC can be failed over during a regional outage.
     - `[DiskEncryptionState <String>]`: cloudPcDiskEncryptionState
     - `[DisplayName <String>]`: The display name of the Cloud PC.
     - `[GracePeriodEndDateTime <DateTime?>]`: The date and time when the grace period ends and reprovisioning or deprovisioning happens.
@@ -26588,7 +26611,9 @@ Read-only.
 The default value is false.
           - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
           - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
-          - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: 
+          - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: The set of permissions for the item.
+Read-only.
+Nullable.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[ExpirationDateTime <DateTime?>]`: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -26728,7 +26753,8 @@ Read-only.
           - `[Shared <IMicrosoftGraphShared>]`: shared
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Owner <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[Scope <String>]`: Indicates the scope of how the item is shared: anonymous, organization, or users.
+            - `[Scope <String>]`: Indicates the scope of how the item is shared.
+The possible values are: anonymous, organization, or users.
 Read-only.
             - `[SharedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[SharedDateTime <DateTime?>]`: The UTC date and time when the item was shared.
@@ -27636,7 +27662,9 @@ Read-only.
         - `[PercentageComplete <Int32?>]`: A value between 0 and 100 that indicates the progress of the operation.
         - `[ResourceId <String>]`: A unique identifier for the result.
         - `[Type <String>]`: Type of the operation.
-      - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: 
+      - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: The set of permissions for the item.
+Read-only.
+Nullable.
       - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
       - `[Subscriptions <IMicrosoftGraphSubscription- `[]`>]`: The set of subscriptions on the list.
       - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
@@ -28531,7 +28559,6 @@ Read-only.
 Read-only.
 Returned by default.
 Supports $filter (eq including on null values).
-Read-only.
     - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Returned by default.
 Read-only.
@@ -28560,9 +28587,11 @@ Returns the plannerPlans owned by the group.
 Read-only.
         - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Justification <String>]`: 
+          - `[Justification <String>]`: Read-only.
+Reason why the entity was archived or unarchived.
           - `[StatusChangedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[StatusChangedDateTime <DateTime?>]`: 
+          - `[StatusChangedDateTime <DateTime?>]`: Read-only.
+Date and time at which the entity's archive status changed.
         - `[Buckets <IMicrosoftGraphPlannerBucket- `[]`>]`: Collection of buckets in the plan.
 Read-only.
 Nullable.
@@ -28572,7 +28601,9 @@ Read-only.
           - `[CreationSource <IMicrosoftGraphPlannerBucketCreation>]`: plannerBucketCreation
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[CreationSourceKind <String>]`: plannerCreationSourceKind
-          - `[IsArchived <Boolean?>]`: 
+          - `[IsArchived <Boolean?>]`: Read-only.
+If set totrue, the bucket is archived.
+An archived bucket is read-only.
           - `[Name <String>]`: Name of the bucket.
           - `[OrderHint <String>]`: Hint used to order items of this type in a list view.
 For details about the supported format, see Using order hints in Planner.
@@ -28674,7 +28705,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[HasDescription <Boolean?>]`: Read-only.
 This value is true if the details object of the task has a nonempty description.
 Otherwise,false.
-            - `[IsArchived <Boolean?>]`: 
+            - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the task is archived.
+An archived task is read-only.
             - `[IsOnMyDay <Boolean?>]`: Indicates whether to show this task in the MyDay view.
 If true, it shows the task.
             - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
@@ -28784,7 +28817,9 @@ Read-only.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[IsArchived <Boolean?>]`: 
+        - `[IsArchived <Boolean?>]`: Read-only.
+If set to true, the plan is archived.
+An archived plan is read-only.
         - `[Owner <String>]`: Use the container property instead.
 ID of the group that owns the plan.
 After it's set, this property can't be updated.
@@ -30031,7 +30066,7 @@ It is an Optional field
     - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -31939,19 +31974,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[Email <String>]`: Email address of the registrant.
             - `[FirstName <String>]`: First name of the registrant.
             - `[LastName <String>]`: Last name of the registrant.
-            - `[PreferredLanguage <String>]`: 
-            - `[PreferredTimezone <String>]`: 
+            - `[PreferredLanguage <String>]`: The registrant's preferred language.
+            - `[PreferredTimezone <String>]`: The registrant's time zone details.
             - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
-              - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion.
+              - `[BooleanValue <Boolean?>]`: Boolean answer to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is boolean.
               - `[DisplayName <String>]`: Display name of the registration question.
-              - `[MultiChoiceValues <String- `[]`>]`: Collection of text answer of the virtualEventRegistrationQuestion.
+              - `[MultiChoiceValues <String- `[]`>]`: A collection of text answers to the virtualEventRegistrationCustomQuestion.
 Only appears when answerInputType is multiChoice.
-              - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
-              - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion.
+              - `[QuestionId <String>]`: The identifier of either a virtualEventRegistrationCustomQuestion or a virtualEventRegistrationPredefinedQuestion.
+              - `[Value <String>]`: Text answer to the virtualEventRegistrationCustomQuestion or the virtualEventRegistrationPredefinedQuestion.
 Appears when answerInputType is text, multilineText or singleChoice.
             - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
             - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
@@ -31976,8 +32011,9 @@ This property is read-only.
         - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: Registration questions.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[DisplayName <String>]`: 
-          - `[IsRequired <Boolean?>]`: 
+          - `[DisplayName <String>]`: Display name of the registration question.
+          - `[IsRequired <Boolean?>]`: Indicates whether an answer to the question is required.
+The default value is false.
         - `[RegistrationWebUrl <String>]`: Registration URL of the virtual event.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

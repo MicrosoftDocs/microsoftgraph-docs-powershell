@@ -8,7 +8,10 @@ schema: 2.0.0
 # Stop-MgBetaVirtualEventWebinarRegistrationEmail
 
 ## SYNOPSIS
-Invoke action cancel
+Cancel a registrant's registration record for a webinar.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgVirtualEventWebinarRegistrationEmail](/powershell/module/Microsoft.Graph.Bookings/Stop-MgVirtualEventWebinarRegistrationEmail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Stop-MgBetaVirtualEventWebinarRegistrationEmail -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action cancel
+Cancel a registrant's registration record for a webinar.
 
 ## PARAMETERS
 

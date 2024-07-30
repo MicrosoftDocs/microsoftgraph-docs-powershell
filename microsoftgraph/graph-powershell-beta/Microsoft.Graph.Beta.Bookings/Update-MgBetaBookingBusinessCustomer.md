@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-The date, time and timezone when the customer was created.
+The date, time, and timezone when the customer was created.
 
 ```yaml
 Type: DateTime
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedDateTime
-The date, time and timezone when the customer was last updated.
+The date, time, and timezone when the customer was last updated.
 
 ```yaml
 Type: DateTime
@@ -400,8 +400,8 @@ It's a free-format string value, for example, 'United States'.
     - `[State <String>]`: The state.
     - `[Street <String>]`: The street.
     - `[Type <String>]`: physicalAddressType
-  - `[CreatedDateTime <DateTime?>]`: The date, time and timezone when the customer was created.
-  - `[LastUpdatedDateTime <DateTime?>]`: The date, time and timezone when the customer was last updated.
+  - `[CreatedDateTime <DateTime?>]`: The date, time, and timezone when the customer was created.
+  - `[LastUpdatedDateTime <DateTime?>]`: The date, time, and timezone when the customer was last updated.
   - `[Phones <IMicrosoftGraphPhone- `[]`>]`: Phone numbers associated with the customer, including home, business and mobile numbers.
     - `[Number <String>]`: The phone number.
     - `[Type <String>]`: phoneType

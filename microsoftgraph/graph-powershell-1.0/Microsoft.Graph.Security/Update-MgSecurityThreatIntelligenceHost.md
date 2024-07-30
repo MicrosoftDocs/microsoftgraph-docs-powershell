@@ -606,7 +606,7 @@ It's a free-format string value, for example, 'United States'.
       - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+      - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
       - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
       - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.
@@ -874,7 +874,7 @@ It's a free-format string value, for example, 'United States'.
         - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
         - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
         - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.
@@ -1152,7 +1152,7 @@ It's a free-format string value, for example, 'United States'.
         - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
         - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
         - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.
@@ -1430,7 +1430,7 @@ It's a free-format string value, for example, 'United States'.
         - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
         - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
         - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.
@@ -1702,7 +1702,7 @@ It's a free-format string value, for example, 'United States'.
         - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
         - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
         - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.
@@ -2041,7 +2041,7 @@ It's a free-format string value, for example, 'United States'.
         - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
         - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
         - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.
@@ -2324,7 +2324,7 @@ It's a free-format string value, for example, 'United States'.
         - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
         - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
         - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.
@@ -2600,7 +2600,7 @@ It's a free-format string value, for example, 'United States'.
         - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
         - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
         - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.
@@ -2901,7 +2901,7 @@ It's a free-format string value, for example, 'United States'.
         - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
         - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
         - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.
@@ -3172,7 +3172,7 @@ It's a free-format string value, for example, 'United States'.
         - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
         - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
         - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.
@@ -3448,7 +3448,7 @@ It's a free-format string value, for example, 'United States'.
         - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
         - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
         - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.
@@ -3724,7 +3724,7 @@ It's a free-format string value, for example, 'United States'.
         - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
         - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
         - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.
@@ -4015,7 +4015,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this sslCertificate was observed.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The hosts related with this sslCertificate.
+        - `[RelatedHosts <IMicrosoftGraphSecurityHost- `[]`>]`: The host resources related with this sslCertificate.
         - `[SerialNumber <String>]`: The serial number associated with an SSL certificate.
         - `[Sha1 <String>]`: A SHA-1 hash of the certificate.
 Note: This is not the signature.

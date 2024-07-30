@@ -388,7 +388,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescore)
 
-[https://learn.microsoft.com/graph/api/securescores-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/securescores-list?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/security-list-securescores?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-list-securescores?view=graph-rest-beta)
 
 
 

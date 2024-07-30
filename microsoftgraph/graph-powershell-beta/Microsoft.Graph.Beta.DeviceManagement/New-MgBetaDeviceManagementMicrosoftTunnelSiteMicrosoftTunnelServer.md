@@ -67,7 +67,10 @@ Accept wildcard characters: False
 ```
 
 ### -AgentImageDigest
-The digest of the current agent image running on this server
+The digest of the current agent image running on this server.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported.
+Read-only.
 
 ```yaml
 Type: String
@@ -114,8 +117,11 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name for the server.
-This property is required when a server is created and cannot be cleared during updates.
+The display name of the server.
+It is the same as the host name during registration and can be changed later.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported.
+Max allowed length is 200 chars.
 
 ```yaml
 Type: String
@@ -177,7 +183,11 @@ Accept wildcard characters: False
 ```
 
 ### -LastCheckinDateTime
-Indicates when the server last checked in
+Indicates when the server last checked in.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported Read-only.
 
 ```yaml
 Type: DateTime
@@ -237,7 +247,10 @@ Accept wildcard characters: False
 ```
 
 ### -ServerImageDigest
-The digest of the current server image running on this server
+The digest of the current server image running on this server.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported.
+Read-only.
 
 ```yaml
 Type: String
@@ -318,13 +331,26 @@ BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelServer>`: Entity that represents a
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server
+  - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported.
+Read-only.
   - `[DeploymentMode <MicrosoftTunnelDeploymentMode?>]`: The available deployment modes for a managed Tunnel server.
 The deployment mode is determined during the deployment depending on the Tunnel containers, namely standalone or as part of a pod, and whether the containers are running in rootful or rootless mode.
-  - `[DisplayName <String>]`: The display name for the server.
-This property is required when a server is created and cannot be cleared during updates.
-  - `[LastCheckinDateTime <DateTime?>]`: Indicates when the server last checked in
-  - `[ServerImageDigest <String>]`: The digest of the current server image running on this server
+  - `[DisplayName <String>]`: The display name of the server.
+It is the same as the host name during registration and can be changed later.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported.
+Max allowed length is 200 chars.
+  - `[LastCheckinDateTime <DateTime?>]`: Indicates when the server last checked in.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported Read-only.
+  - `[ServerImageDigest <String>]`: The digest of the current server image running on this server.
+Supports: $filter, $select, $top, $skip, $orderby.
+$search is not supported.
+Read-only.
   - `[TunnelServerHealthStatus <MicrosoftTunnelServerHealthStatus?>]`: Enum of possible MicrosoftTunnelServer health status types
 
 INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter

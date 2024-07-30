@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaShareDriveItem
 
 ## SYNOPSIS
-Used to access the underlying driveItem
+Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
+To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgShareDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgShareDriveItem?view=graph-powershell-1.0)
@@ -30,7 +31,8 @@ Get-MgBetaShareDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Used to access the underlying driveItem
+Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
+To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -209,6 +211,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharedriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharedriveitem)
+
+[https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-beta)
 
 
 

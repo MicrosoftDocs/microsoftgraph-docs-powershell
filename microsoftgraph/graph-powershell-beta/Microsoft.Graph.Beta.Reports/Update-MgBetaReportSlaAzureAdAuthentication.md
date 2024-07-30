@@ -48,7 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -Attainments
-A list of monthly serviceLevelAgreementAttainment objects.
+SLA data for a Microsoft Entra tenant for a calendar month.
 To construct, see NOTES section for ATTAINMENTS properties and create a hash table.
 
 ```yaml
@@ -187,7 +187,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTAINMENTS <IMicrosoftGraphServiceLevelAgreementAttainment- `[]`>: A list of monthly serviceLevelAgreementAttainment objects.
+ATTAINMENTS <IMicrosoftGraphServiceLevelAgreementAttainment- `[]`>: SLA data for a Microsoft Entra tenant for a calendar month.
   - `[EndDate <DateTime?>]`: The end date for the calendar month for which SLA attainment is measured.
   - `[Score <Double?>]`: The level of SLA attainment achieved by the tenant for the calendar month identified, as described in Microsoft Entra SLA performance.
 Values are truncated, not rounded, so the actual value is always equal to or higher than the displayed value.
@@ -198,7 +198,7 @@ BODYPARAMETER `<IMicrosoftGraphAzureAdAuthentication>`: azureADAuthentication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Attainments <IMicrosoftGraphServiceLevelAgreementAttainment- `[]`>]`: A list of monthly serviceLevelAgreementAttainment objects.
+  - `[Attainments <IMicrosoftGraphServiceLevelAgreementAttainment- `[]`>]`: SLA data for a Microsoft Entra tenant for a calendar month.
     - `[EndDate <DateTime?>]`: The end date for the calendar month for which SLA attainment is measured.
     - `[Score <Double?>]`: The level of SLA attainment achieved by the tenant for the calendar month identified, as described in Microsoft Entra SLA performance.
 Values are truncated, not rounded, so the actual value is always equal to or higher than the displayed value.

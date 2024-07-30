@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDirectorySubscriptionByCommerceSubscriptionId
 
 ## SYNOPSIS
-Get subscriptions from directory
+Get a specific commercial subscription that an organization acquired.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgDirectorySubscriptionByCommerceSubscriptionId -InputObject <IIdentityDirec
 ```
 
 ## DESCRIPTION
-Get subscriptions from directory
+Get a specific commercial subscription that an organization acquired.
 
 ## PARAMETERS
 
@@ -187,6 +187,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorysubscriptionbycommercesubscriptionid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorysubscriptionbycommercesubscriptionid)
+
+[https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-1.0)
 
 
 

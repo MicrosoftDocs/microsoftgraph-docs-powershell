@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedDateTime
-The date and time (UTC) when the record was last updated.
+The date and time (UTC) when the report was last updated.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
@@ -447,7 +447,7 @@ Supports $filter (eq).
   - `[IsSystemPreferredAuthenticationMethodEnabled <Boolean?>]`: Indicates whether system preferred authentication method is enabled.
 If enabled, the system dynamically determines the most secure authentication method among the methods registered by the user.
 Supports $filter (eq).
-  - `[LastUpdatedDateTime <DateTime?>]`: The date and time (UTC) when the record was last updated.
+  - `[LastUpdatedDateTime <DateTime?>]`: The date and time (UTC) when the report was last updated.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[MethodsRegistered <String- `[]`>]`: Collection of authentication methods registered, such as mobilePhone, email, passKeyDeviceBound.

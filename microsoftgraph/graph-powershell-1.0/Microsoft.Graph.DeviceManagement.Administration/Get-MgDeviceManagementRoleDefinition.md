@@ -333,7 +333,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-list?view=graph-rest-1.0)
 
 
 

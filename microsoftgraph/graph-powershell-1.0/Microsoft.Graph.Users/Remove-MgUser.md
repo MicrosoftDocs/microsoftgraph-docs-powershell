@@ -9,10 +9,7 @@ ms.subservice: entra-users
 # Remove-MgUser
 
 ## SYNOPSIS
-Delete user.
- When deleted, user resources are moved to a temporary container and can be restored within 30 days.
-After that time, they are permanently deleted.
-To learn more, see deletedItems.
+Deletes a user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUser?view=graph-powershell-beta)
@@ -33,10 +30,7 @@ Remove-MgUser -InputObject <IUsersIdentity> [-IfMatch <String>] [-ResponseHeader
 ```
 
 ## DESCRIPTION
-Delete user.
- When deleted, user resources are moved to a temporary container and can be restored within 30 days.
-After that time, they are permanently deleted.
-To learn more, see deletedItems.
+Deletes a user.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delete-permissions.md)]
@@ -224,8 +218,12 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[ServiceStorageQuotaBreakdownId <String>]`: The unique identifier of serviceStorageQuotaBreakdown
+  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[TrendingId <String>]`: The unique identifier of trending
+  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
@@ -234,7 +232,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser)
 
-[https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-mam-user-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-user-delete?view=graph-rest-1.0)
 
 
 
