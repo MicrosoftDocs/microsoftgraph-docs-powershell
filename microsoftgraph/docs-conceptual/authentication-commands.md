@@ -107,8 +107,8 @@ $SecureClientSecret = ConvertTo-SecureString -String $ApplicationClientSecret -A
 
 # Create a PSCredential Object Using the Client ID and Secure Client Secret
 $ClientSecretCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $ApplicationClientId, $SecureClientSecret
-# Enter client_secret in the password prompt.
-Connect-MgGraph -TenantId "Tenant_Id" -ClientSecretCredential $ClientSecretCredential
+# Connect to Microsoft Graph Using the Tenant ID and Client Secret Credential
+Connect-MgGraph -TenantId $TenantId -ClientSecretCredential $ClientSecretCredential
 ```
 
 >[!NOTE]
