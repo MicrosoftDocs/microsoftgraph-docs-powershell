@@ -11,6 +11,9 @@ schema: 2.0.0
 The content of the transcript.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserOnlineMeetingTranscriptContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

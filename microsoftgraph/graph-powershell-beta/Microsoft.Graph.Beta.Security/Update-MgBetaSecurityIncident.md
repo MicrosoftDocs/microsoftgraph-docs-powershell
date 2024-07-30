@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Update the properties of an incident object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIncident?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

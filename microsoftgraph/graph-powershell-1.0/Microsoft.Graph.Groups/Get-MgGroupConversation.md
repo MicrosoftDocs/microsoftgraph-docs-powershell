@@ -12,6 +12,9 @@ ms.subservice: entra-groups
 ## SYNOPSIS
 Retrieve the properties and relationships of conversation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

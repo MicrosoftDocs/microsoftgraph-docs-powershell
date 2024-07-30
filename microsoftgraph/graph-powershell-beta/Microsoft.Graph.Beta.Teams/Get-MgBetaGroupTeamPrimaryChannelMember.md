@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of membership records associated with the channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ ms.subservice: edge-browser-management
 ## SYNOPSIS
 Delete a browserSharedCookie from a browserSiteList.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

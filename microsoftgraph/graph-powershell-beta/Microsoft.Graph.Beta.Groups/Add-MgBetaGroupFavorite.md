@@ -12,6 +12,9 @@ ms.subservice: entra-groups
 Add the group to the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgGroupFavorite](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupFavorite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Add (Default)

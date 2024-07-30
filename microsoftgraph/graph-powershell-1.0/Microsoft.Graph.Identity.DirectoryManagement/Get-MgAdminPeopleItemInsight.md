@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the properties of an insightsSettings object to display or return item insights in an organization.
 To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy in Microsoft Graph.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminPeopleItemInsight](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeopleItemInsight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

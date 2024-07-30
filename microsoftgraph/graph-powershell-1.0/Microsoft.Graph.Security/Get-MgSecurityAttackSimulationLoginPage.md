@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Represents an attack simulation training login page.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationLoginPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

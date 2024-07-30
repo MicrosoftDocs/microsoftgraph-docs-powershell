@@ -11,6 +11,9 @@ ms.subservice: education
 ## SYNOPSIS
 Retrieve the directory administrativeUnit that corresponds to this educationSchool.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolAdministrativeUnit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

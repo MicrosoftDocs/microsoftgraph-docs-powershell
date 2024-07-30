@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get lastModifiedByUser from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetGraphBPrePathLastModifiedByUser](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetGraphBPrePathLastModifiedByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
