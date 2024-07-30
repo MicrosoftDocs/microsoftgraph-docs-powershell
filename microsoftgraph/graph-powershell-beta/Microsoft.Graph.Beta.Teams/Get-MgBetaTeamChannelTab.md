@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchanneltab
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamChannelTab
@@ -38,6 +39,9 @@ Get-MgBetaTeamChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 A collection of all the tabs in the channel.
 A navigation property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-list-tabs-permissions.md)]
 
 ## EXAMPLES
 

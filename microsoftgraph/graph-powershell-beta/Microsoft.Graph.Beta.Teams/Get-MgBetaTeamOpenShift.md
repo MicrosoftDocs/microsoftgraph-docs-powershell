@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamopenshift
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamOpenShift
@@ -20,6 +21,9 @@ Get-MgBetaTeamOpenShift [-Count] [-ExpandProperty <String[]>] [-Filter <String>]
 
 ## DESCRIPTION
 Get all openShift objects across all teams a user is a direct member of.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-getopenshifts-permissions.md)]
 
 ## EXAMPLES
 
