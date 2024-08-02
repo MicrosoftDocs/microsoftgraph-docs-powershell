@@ -29,18 +29,6 @@ New-MgBetaDeviceManagementVirtualEndpointCloudPcSnapshot -InputObject <IDeviceMa
 ## DESCRIPTION
 Create a snapshot for a specific Cloud PC device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -243,6 +231,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementvirtualendpointcloudpcsnapshot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementvirtualendpointcloudpcsnapshot)
 
 [https://learn.microsoft.com/graph/api/cloudpc-createsnapshot?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-createsnapshot?view=graph-rest-beta)
+
 
 
 

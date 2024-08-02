@@ -46,18 +46,6 @@ Remove-MgGroupSetting -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property settings for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -276,6 +264,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupsetting)
 
 [https://learn.microsoft.com/graph/api/groupsetting-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/groupsetting-delete?view=graph-rest-1.0)
+
 
 
 

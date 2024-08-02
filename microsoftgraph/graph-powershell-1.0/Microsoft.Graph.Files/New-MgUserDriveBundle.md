@@ -82,18 +82,6 @@ New-MgUserDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to bundles for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -30580,6 +30568,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivebundle)
+
 
 
 

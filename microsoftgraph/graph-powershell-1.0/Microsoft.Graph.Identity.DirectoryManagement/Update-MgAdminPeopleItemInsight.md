@@ -33,18 +33,6 @@ Update privacy settings to display or return the specified type of insights in a
 Currently, itemInsights is the only supported type of settings.
 To learn more about customizing insights privacy for your organization, see Customize item insights privacy in Microsoft Graph.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -236,6 +224,7 @@ Optional.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleiteminsight)
 
 [https://learn.microsoft.com/graph/api/insightssettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/insightssettings-update?view=graph-rest-1.0)
+
 
 
 

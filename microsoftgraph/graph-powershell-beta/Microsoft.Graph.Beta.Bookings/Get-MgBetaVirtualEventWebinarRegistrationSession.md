@@ -42,18 +42,6 @@ Get-MgBetaVirtualEventWebinarRegistrationSession -InputObject <IBookingsIdentity
 ## DESCRIPTION
 Get sessions from solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -379,6 +367,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistrationsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistrationsession)
 
 [https://learn.microsoft.com/graph/api/virtualeventregistration-list-sessions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventregistration-list-sessions?view=graph-rest-beta)
+
 
 
 

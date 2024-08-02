@@ -56,18 +56,6 @@ New-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity>
 Create a registration record for a registrant of a webinar.
 This method registers the person for the webinar.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -771,6 +759,7 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration)
 
 [https://learn.microsoft.com/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-beta)
+
 
 
 

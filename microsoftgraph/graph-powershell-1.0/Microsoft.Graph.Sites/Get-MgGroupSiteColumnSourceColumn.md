@@ -32,18 +32,6 @@ Get-MgGroupSiteColumnSourceColumn -InputObject <ISitesIdentity> [-ExpandProperty
 ## DESCRIPTION
 The source column for the content type column.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -247,6 +235,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecolumnsourcecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecolumnsourcecolumn)
+
 
 
 
