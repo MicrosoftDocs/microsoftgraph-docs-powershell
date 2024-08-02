@@ -36,11 +36,11 @@ New-MgDeviceManagementDeviceEnrollmentConfiguration
 Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration"
@@ -86,6 +86,10 @@ $params = @{
 }
 
 New-MgDeviceManagementDeviceEnrollmentConfiguration -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceEnrollmentConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

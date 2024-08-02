@@ -54,11 +54,11 @@ Update the properties of an exchangeRestoreSession.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/exchangerestoresession-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	"mailboxRestoreArtifacts@delta" = @(
@@ -108,6 +108,10 @@ $params = @{
 }
 
 Update-MgBetaBackupRestoreExchangeRestoreSession -ExchangeRestoreSessionId $exchangeRestoreSessionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaBackupRestoreExchangeRestoreSession Cmdlet.
+
 
 ## PARAMETERS
 

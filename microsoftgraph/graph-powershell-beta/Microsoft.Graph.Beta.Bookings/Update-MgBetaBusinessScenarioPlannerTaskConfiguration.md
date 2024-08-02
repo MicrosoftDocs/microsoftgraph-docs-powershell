@@ -50,11 +50,11 @@ Update the properties of a plannerTaskConfiguration object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertaskconfiguration-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerTaskConfiguration"
@@ -173,6 +173,10 @@ overrides = @(
 }
 
 Update-MgBetaBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaBusinessScenarioPlannerTaskConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

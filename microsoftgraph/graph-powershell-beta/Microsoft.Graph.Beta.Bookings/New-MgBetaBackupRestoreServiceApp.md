@@ -36,16 +36,20 @@ Create a new serviceApp.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-serviceapps-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 }
 
 New-MgBetaBackupRestoreServiceApp -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaBackupRestoreServiceApp Cmdlet.
+
 
 ## PARAMETERS
 

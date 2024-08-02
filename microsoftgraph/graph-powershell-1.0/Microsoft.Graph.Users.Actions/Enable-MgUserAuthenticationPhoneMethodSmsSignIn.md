@@ -36,14 +36,18 @@ To be successfully enabled:
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/phoneauthenticationmethod-enablesmssignin-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 # A UPN can also be used as -UserId.
 Enable-MgUserAuthenticationPhoneMethodSmsSignIn -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId
+
+```
+This example shows how to use the Enable-MgUserAuthenticationPhoneMethodSmsSignIn Cmdlet.
+
 
 ## PARAMETERS
 

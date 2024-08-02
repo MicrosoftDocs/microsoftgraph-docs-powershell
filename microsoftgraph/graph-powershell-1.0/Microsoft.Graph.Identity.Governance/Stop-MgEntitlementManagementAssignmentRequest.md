@@ -37,13 +37,17 @@ In Microsoft Entra Entitlement Management, cancel accessPackageAssignmentRequest
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentrequest-cancel-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Stop-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId
+
+```
+This example shows how to use the Stop-MgEntitlementManagementAssignmentRequest Cmdlet.
+
 
 ## PARAMETERS
 

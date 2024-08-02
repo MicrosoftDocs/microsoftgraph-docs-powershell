@@ -25,13 +25,17 @@ Get the serviceStatus of the Microsoft 365 Backup Storage service in a tenant.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Get-MgBetaBackupRestore
+
+```
+This example shows how to use the Get-MgBetaBackupRestore Cmdlet.
+
 
 ## PARAMETERS
 

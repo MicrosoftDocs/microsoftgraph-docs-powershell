@@ -52,11 +52,11 @@ Update the properties of an onPremisesDirectorySynchronization object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onpremisesdirectorysynchronization-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	configuration = @{
@@ -71,6 +71,10 @@ $params = @{
 }
 
 Update-MgDirectoryOnPremiseSynchronization -OnPremisesDirectorySynchronizationId $onPremisesDirectorySynchronizationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDirectoryOnPremiseSynchronization Cmdlet.
+
 
 ## PARAMETERS
 

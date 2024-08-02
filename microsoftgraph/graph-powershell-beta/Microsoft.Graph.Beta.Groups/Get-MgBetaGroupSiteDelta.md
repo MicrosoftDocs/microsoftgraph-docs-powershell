@@ -46,18 +46,6 @@ Any resources marked as deleted should be removed from your local state.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-delta-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -371,6 +359,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitedelta)
 
 [https://learn.microsoft.com/graph/api/site-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-delta?view=graph-rest-beta)
+
 
 
 

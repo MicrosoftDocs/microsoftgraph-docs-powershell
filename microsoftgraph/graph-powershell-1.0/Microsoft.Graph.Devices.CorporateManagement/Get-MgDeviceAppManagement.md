@@ -26,13 +26,17 @@ Get-MgDeviceAppManagement [-ExpandProperty <String[]>] [-Property <String[]>]
 Read properties and relationships of the deviceAppManagement object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Get-MgDeviceAppManagement
+
+```
+This example shows how to use the Get-MgDeviceAppManagement Cmdlet.
+
 
 ## PARAMETERS
 

@@ -36,15 +36,19 @@ Update the properties of an organizationalBrandingLocalization object for a spec
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbrandinglocalization-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Setting **bannerLogo** for the fr-FR localization using PUT
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = Binary data for the image
 
 Set-MgOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
+
+```
+This example shows setting **bannerlogo** for the fr-fr localization using put
+
 
 ## PARAMETERS
 

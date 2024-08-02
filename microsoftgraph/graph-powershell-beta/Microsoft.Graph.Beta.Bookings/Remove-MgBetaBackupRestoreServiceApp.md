@@ -34,13 +34,17 @@ Delete a serviceApp.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-delete-serviceapps-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Remove-MgBetaBackupRestoreServiceApp -ServiceAppId $serviceAppId
+
+```
+This example shows how to use the Remove-MgBetaBackupRestoreServiceApp Cmdlet.
+
 
 ## PARAMETERS
 

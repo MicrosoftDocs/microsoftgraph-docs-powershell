@@ -44,18 +44,6 @@ Get-MgIdentityB2XUserFlowLanguageDefaultPage -InputObject <IIdentitySignInsIdent
 Collection of pages with the default content to display in a user flow for a specified language.
 This collection doesn't allow any kind of modification.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -395,6 +383,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguagedefaultpage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguagedefaultpage)
+
+
 
 
 

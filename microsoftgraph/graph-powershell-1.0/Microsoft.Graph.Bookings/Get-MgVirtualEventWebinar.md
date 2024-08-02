@@ -49,13 +49,17 @@ Read the properties and relationships of a virtualEventWebinar object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventsroot-list-webinars-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Get-MgVirtualEventWebinar -VirtualEventWebinarId $virtualEventWebinarId
+
+```
+This example shows how to use the Get-MgVirtualEventWebinar Cmdlet.
+
 
 ## PARAMETERS
 

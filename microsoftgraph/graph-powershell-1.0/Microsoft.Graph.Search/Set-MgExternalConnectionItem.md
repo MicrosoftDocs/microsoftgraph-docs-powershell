@@ -55,11 +55,11 @@ Create a new externalItem object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalitem-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	acl = @(
@@ -72,6 +72,10 @@ $params = @{
 }
 
 Set-MgExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgExternalConnectionItem Cmdlet.
+
 
 ## PARAMETERS
 

@@ -54,11 +54,11 @@ Update the properties of an inboundApiFlow object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.industryData.inboundFileFlow"
@@ -66,6 +66,10 @@ $params = @{
 }
 
 Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId $inboundFlowId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaExternalIndustryDataInboundFlow Cmdlet.
+
 
 ## PARAMETERS
 

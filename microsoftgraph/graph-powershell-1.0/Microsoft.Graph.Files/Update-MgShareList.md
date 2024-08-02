@@ -62,18 +62,6 @@ Update-MgShareList -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property list in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -25015,6 +25003,7 @@ See the possible resource path values for each supported resource.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelist](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelist)
+
 
 
 

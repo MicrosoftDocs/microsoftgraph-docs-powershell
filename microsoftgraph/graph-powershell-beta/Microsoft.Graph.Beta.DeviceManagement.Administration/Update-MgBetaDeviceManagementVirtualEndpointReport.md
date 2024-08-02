@@ -29,18 +29,6 @@ Update-MgBetaDeviceManagementVirtualEndpointReport -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Update the navigation property reports in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -231,6 +219,7 @@ It can be used to download the file.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointreport)
+
 
 
 

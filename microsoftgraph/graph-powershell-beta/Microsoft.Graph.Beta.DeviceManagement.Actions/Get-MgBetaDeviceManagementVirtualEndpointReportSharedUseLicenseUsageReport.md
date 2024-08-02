@@ -37,11 +37,11 @@ Get a usage report on shared-use licenses, such as servicePlanId, licenseCount, 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getshareduselicenseusagereport-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	reportName = "SharedUseLicenseUsageReport"
@@ -57,6 +57,10 @@ top = 100
 }
 
 Get-MgBetaDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport Cmdlet.
+
 
 ## PARAMETERS
 

@@ -52,18 +52,6 @@ Update-MgBetaDeviceManagementNotificationMessageTemplate -InputObject <IDeviceMa
 ## DESCRIPTION
 Update the navigation property notificationMessageTemplates in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -527,6 +515,7 @@ To unset, set this property to true on another Localized Notification Message.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementnotificationmessagetemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementnotificationmessagetemplate)
+
 
 
 

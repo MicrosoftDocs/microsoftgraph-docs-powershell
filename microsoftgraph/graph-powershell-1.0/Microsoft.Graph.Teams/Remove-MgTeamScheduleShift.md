@@ -33,13 +33,17 @@ Remove-MgTeamScheduleShift -InputObject <ITeamsIdentity> [-IfMatch <String>]
 Delete navigation property shifts for teams
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgTeamScheduleShift -TeamId $teamId -ShiftId $shiftId
+
+```
+This example shows how to use the Remove-MgTeamScheduleShift Cmdlet.
+
 
 ## PARAMETERS
 

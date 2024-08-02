@@ -43,13 +43,17 @@ A collection of restore points and destination details that can be used to resto
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointrestoresession-list-siterestoreartifacts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact -SharePointRestoreSessionId $sharePointRestoreSessionId
+
+```
+This example shows how to use the Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact Cmdlet.
+
 
 ## PARAMETERS
 

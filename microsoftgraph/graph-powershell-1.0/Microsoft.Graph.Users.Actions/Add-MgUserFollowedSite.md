@@ -53,11 +53,11 @@ Follow a user's site or multiple sites.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-follow-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	value = @(
@@ -71,6 +71,10 @@ $params = @{
 }
 
 Add-MgUserFollowedSite -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgUserFollowedSite Cmdlet.
+
 
 ## PARAMETERS
 

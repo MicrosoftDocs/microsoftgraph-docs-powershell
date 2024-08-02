@@ -39,18 +39,6 @@ Get-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvanced
 ## DESCRIPTION
 Get advancedThreatProtectionOnboardingDeviceSettingStates from deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdvancedThreatProtectionOnboardingDeviceSettingStateId
@@ -442,6 +430,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummaryadvancedthreatprotectiononboardingdevicesettingstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummaryadvancedthreatprotectiononboardingdevicesettingstate)
+
+
 
 
 

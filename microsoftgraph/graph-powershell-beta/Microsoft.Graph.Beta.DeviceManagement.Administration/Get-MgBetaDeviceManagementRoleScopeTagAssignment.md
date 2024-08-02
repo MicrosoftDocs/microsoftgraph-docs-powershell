@@ -38,18 +38,6 @@ Get-MgBetaDeviceManagementRoleScopeTagAssignment -InputObject <IDeviceManagement
 ## DESCRIPTION
 The list of assignments for this Role Scope Tag.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -372,6 +360,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementrolescopetagassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementrolescopetagassignment)
+
+
 
 
 

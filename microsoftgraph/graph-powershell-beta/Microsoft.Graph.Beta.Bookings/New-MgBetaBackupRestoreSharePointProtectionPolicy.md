@@ -42,11 +42,11 @@ User can also provide a list of protection units under the policy.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-sharepointprotectionpolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	displayName = "SharePoint Protection Policy"
@@ -64,6 +64,10 @@ $params = @{
 }
 
 New-MgBetaBackupRestoreSharePointProtectionPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaBackupRestoreSharePointProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 

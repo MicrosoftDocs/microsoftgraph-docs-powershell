@@ -55,17 +55,21 @@ The application template with ID 8adf8e6e-67b2-4cf2-a259-e3dc5476c621 can be use
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationtemplate-instantiate-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	displayName = "testProperties"
 }
 
 Invoke-MgBetaInstantiateApplicationTemplate -ApplicationTemplateId $applicationTemplateId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaInstantiateApplicationTemplate Cmdlet.
+
 
 ## PARAMETERS
 

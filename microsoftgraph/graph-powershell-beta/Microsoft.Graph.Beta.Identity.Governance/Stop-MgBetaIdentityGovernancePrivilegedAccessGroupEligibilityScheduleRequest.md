@@ -38,13 +38,17 @@ Cancel an eligibility assignment request to a group whose membership and ownersh
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroupeligibilityschedulerequest-cancel-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Stop-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest -PrivilegedAccessGroupEligibilityScheduleRequestId $privilegedAccessGroupEligibilityScheduleRequestId
+
+```
+This example shows how to use the Stop-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 

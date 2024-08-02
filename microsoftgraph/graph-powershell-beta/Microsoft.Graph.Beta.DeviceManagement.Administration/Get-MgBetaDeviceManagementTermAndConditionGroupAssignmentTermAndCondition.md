@@ -31,18 +31,6 @@ Get-MgBetaDeviceManagementTermAndConditionGroupAssignmentTermAndCondition
 ## DESCRIPTION
 Navigation link to the terms and conditions that are assigned.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -244,6 +232,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementtermandconditiongroupassignmenttermandcondition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementtermandconditiongroupassignmenttermandcondition)
+
 
 
 

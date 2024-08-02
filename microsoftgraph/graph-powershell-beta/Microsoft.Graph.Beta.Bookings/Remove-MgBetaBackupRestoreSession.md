@@ -34,13 +34,17 @@ Delete a draft restoreSessionBase object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/restoresessionbase-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Remove-MgBetaBackupRestoreSession -RestoreSessionBaseId $restoreSessionBaseId
+
+```
+This example shows how to use the Remove-MgBetaBackupRestoreSession Cmdlet.
+
 
 ## PARAMETERS
 

@@ -64,18 +64,6 @@ Update-MgBetaSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property items in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activities
@@ -48185,6 +48173,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitem)
+
 
 
 

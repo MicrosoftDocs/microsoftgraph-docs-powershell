@@ -60,18 +60,6 @@ Update-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinition
 ## DESCRIPTION
 Update the navigation property nextVersionDefinition in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -924,6 +912,7 @@ The default value is empty.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicydefinitionnextversiondefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicydefinitionnextversiondefinition)
+
 
 
 

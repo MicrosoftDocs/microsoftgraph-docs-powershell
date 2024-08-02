@@ -41,13 +41,17 @@ Get-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-ExpandProper
 The offer requests for shifts in the schedule.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamScheduleOfferShiftRequest -TeamId $teamId
+
+```
+This example shows how to use the Get-MgTeamScheduleOfferShiftRequest Cmdlet.
+
 
 ## PARAMETERS
 

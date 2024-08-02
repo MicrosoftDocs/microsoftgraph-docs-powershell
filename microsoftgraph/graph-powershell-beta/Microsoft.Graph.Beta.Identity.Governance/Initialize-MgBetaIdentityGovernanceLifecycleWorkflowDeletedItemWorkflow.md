@@ -61,18 +61,6 @@ When you run a workflow on demand, the tasks are executed regardless of whether 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-activate-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -16129,6 +16117,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflow)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-workflow-activate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activate?view=graph-rest-beta)
+
 
 
 

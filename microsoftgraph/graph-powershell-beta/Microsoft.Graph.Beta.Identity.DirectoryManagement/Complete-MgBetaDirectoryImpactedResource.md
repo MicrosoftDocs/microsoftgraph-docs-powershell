@@ -32,18 +32,6 @@ Complete an impactedResource object and update its status to completedByUser.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/impactedresource-complete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -223,6 +211,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryimpactedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryimpactedresource)
 
 [https://learn.microsoft.com/graph/api/impactedresource-complete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/impactedresource-complete?view=graph-rest-beta)
+
 
 
 

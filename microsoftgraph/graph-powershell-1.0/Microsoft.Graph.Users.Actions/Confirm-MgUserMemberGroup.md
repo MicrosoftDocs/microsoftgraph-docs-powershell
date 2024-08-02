@@ -58,11 +58,11 @@ This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ## EXAMPLES
+### Example 1: Check group memberships for the signed-in user
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	groupIds = @(
@@ -73,6 +73,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Confirm-MgUserMemberGroup -UserId $userId -BodyParameter $params
+
+```
+This example will check group memberships for the signed-in user
+
 
 ## PARAMETERS
 
