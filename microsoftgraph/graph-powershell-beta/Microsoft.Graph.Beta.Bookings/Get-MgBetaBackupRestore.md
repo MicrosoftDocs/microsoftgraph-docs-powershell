@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestore
 schema: 2.0.0
-ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaBackupRestore
@@ -21,21 +20,14 @@ Get-MgBetaBackupRestore [-ExpandProperty <String[]>] [-Property <String[]>] [-Re
 ## DESCRIPTION
 Get the serviceStatus of the Microsoft 365 Backup Storage service in a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
+```
 
 Get-MgBetaBackupRestore
-
-```
-This example shows how to use the Get-MgBetaBackupRestore Cmdlet.
-
 
 ## PARAMETERS
 
@@ -130,7 +122,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestore)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-get?view=graph-rest-beta)
-
-
-
 
