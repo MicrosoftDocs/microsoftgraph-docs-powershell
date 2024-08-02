@@ -48,6 +48,9 @@ New-MgBetaApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 Assign a tokenIssuancePolicy to an application.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-tokenissuancepolicies-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

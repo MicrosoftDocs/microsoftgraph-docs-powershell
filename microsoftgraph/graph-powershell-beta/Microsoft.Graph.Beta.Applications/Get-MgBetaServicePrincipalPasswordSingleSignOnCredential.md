@@ -46,6 +46,9 @@ Get-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicat
 ## DESCRIPTION
 Get a list of single sign-on credentials using a password for a user or group.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-getpasswordsinglesignoncredentials-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

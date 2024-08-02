@@ -34,6 +34,9 @@ Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef -InputObject
 ## DESCRIPTION
 Remove a tokenIssuancePolicy from an application.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-tokenissuancepolicies-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

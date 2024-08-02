@@ -40,6 +40,12 @@ Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage -InputO
 ## DESCRIPTION
 Read the properties and relationships of a conditionalAccessPolicyCoverage object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-conditionalaccesspolicycoverage-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-conditionalaccesspolicycoverages-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

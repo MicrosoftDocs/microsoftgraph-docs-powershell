@@ -41,6 +41,9 @@ Get-MgBetaAuditLogProvisioning -InputObject <IReportsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Represents an action performed by the Microsoft Entra provisioning service and its associated properties.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/provisioningobjectsummary-list-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Successful request
 

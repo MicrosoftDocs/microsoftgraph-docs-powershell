@@ -42,6 +42,12 @@ Get-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReportsIde
 ## DESCRIPTION
 Read the properties and relationships of a userRegistrationDetails object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userregistrationdetails-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationmethodsroot-list-userregistrationdetails-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

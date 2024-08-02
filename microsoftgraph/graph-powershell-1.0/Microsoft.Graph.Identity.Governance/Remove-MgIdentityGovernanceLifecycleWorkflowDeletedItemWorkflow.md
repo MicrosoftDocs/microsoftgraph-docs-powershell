@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancelifecycleworkflowdeleteditemworkflow
 schema: 2.0.0
-ms.subservice: entra-id-governance
 ---
 
 # Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow
@@ -32,9 +31,6 @@ Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -InputObject <II
 
 ## DESCRIPTION
 Delete a workflow object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-deletedItemcontainer-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

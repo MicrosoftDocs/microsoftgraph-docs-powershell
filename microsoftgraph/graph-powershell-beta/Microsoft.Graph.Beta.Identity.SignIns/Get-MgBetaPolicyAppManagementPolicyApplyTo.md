@@ -41,6 +41,9 @@ Get-MgBetaPolicyAppManagementPolicyApplyTo -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Collection of application and service principals to which a policy is applied.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appmanagementpolicy-list-appliesto-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Get applications and service principal objects applied to an app management policy
 

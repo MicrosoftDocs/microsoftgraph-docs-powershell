@@ -41,6 +41,9 @@ The app that creates a schema extension is the owner app.
 Depending on the state of the extension, the owner app, and only the owner app, may update or delete the extension.
 See examples of how to define a schema extension that describes a training course, use the schema extension definition to create a new group with training course data, and add training course data to an existing group.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schemaextension-post-schemaextensions-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Creating a schema extension using a verified domain
 
