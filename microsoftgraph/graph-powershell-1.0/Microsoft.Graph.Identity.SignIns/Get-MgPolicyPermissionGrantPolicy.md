@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The policy that specifies the conditions under which consent can be granted.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

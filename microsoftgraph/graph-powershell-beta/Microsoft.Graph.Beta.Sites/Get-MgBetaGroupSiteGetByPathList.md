@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of lists under this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathList](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

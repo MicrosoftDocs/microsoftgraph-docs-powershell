@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Defines tenants added to a multitenant organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

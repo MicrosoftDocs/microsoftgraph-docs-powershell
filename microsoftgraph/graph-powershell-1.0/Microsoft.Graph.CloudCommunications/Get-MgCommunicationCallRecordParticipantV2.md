@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 List of distinct participants in the call.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallRecordParticipantV2](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallRecordParticipantV2?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

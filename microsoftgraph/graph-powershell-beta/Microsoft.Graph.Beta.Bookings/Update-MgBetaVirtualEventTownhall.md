@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Update the properties of a vvirtualEventTownhall object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventTownhall](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventTownhall?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
