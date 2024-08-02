@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcsupportedcloudpcremoteaction
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointCloudPcSupportedCloudPcRemoteAction
@@ -29,6 +30,9 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPcSupportedCloudPcRemoteAction
 
 ## DESCRIPTION
 Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getsupportedcloudpcremoteactions-permissions.md)]
 
 ## EXAMPLES
 

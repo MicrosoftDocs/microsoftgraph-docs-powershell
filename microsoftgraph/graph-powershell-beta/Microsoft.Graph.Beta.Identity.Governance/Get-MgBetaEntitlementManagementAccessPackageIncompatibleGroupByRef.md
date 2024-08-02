@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatiblegroupbyref
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef
@@ -21,6 +22,9 @@ Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackag
 
 ## DESCRIPTION
 Retrieve a list of the group objects marked as incompatible on an accessPackage.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-list-incompatiblegroups-permissions.md)]
 
 ## EXAMPLES
 

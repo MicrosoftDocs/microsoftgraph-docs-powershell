@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoresession
 schema: 2.0.0
+ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaBackupRestoreSession
@@ -36,6 +38,12 @@ Get-MgBetaBackupRestoreSession -InputObject <IBookingsIdentity> [-ExpandProperty
 
 ## DESCRIPTION
 Get the properties of a restoreSession object by ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/restoresessionbase-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-restoresessions-permissions.md)]
 
 ## EXAMPLES
 

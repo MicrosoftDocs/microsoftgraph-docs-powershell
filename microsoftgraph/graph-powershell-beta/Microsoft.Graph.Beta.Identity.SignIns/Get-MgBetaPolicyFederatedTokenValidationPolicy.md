@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfederatedtokenvalidationpolicy
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaPolicyFederatedTokenValidationPolicy
@@ -20,6 +21,9 @@ Get-MgBetaPolicyFederatedTokenValidationPolicy [-ExpandProperty <String[]>] [-Pr
 
 ## DESCRIPTION
 Get a list of the federatedTokenValidationPolicy objects and their properties.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedtokenvalidationpolicy-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepage
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Remove-MgSitePage
@@ -28,6 +29,9 @@ Remove-MgSitePage -InputObject <ISitesIdentity> [-IfMatch <String>] [-ResponseHe
 
 ## DESCRIPTION
 Delete a baseSitePage from the site pages list in a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/basesitepage-delete-permissions.md)]
 
 ## EXAMPLES
 

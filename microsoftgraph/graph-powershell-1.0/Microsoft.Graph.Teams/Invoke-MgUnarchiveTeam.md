@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteam
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgUnarchiveTeam
@@ -35,6 +36,9 @@ This API restores users' ability to send messages and edit the team, abiding by 
 A Team is archived using the archive API.
 Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which might occur subsequent to a response from this API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-unarchive-permissions.md)]
 
 ## EXAMPLES
 

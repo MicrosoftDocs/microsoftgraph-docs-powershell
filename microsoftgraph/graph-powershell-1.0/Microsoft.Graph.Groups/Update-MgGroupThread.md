@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Update-MgGroupThread
@@ -46,6 +47,9 @@ Update-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Update conversation thread
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-update-thread-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgTeam
@@ -35,6 +37,12 @@ Get-MgTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property
 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teams-list-permissions.md)]
 
 ## EXAMPLES
 

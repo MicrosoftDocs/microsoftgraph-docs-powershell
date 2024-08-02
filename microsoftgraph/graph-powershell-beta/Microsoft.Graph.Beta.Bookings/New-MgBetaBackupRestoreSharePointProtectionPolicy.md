@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoresharepointprotectionpolicy
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # New-MgBetaBackupRestoreSharePointProtectionPolicy
@@ -36,6 +37,9 @@ New-MgBetaBackupRestoreSharePointProtectionPolicy -BodyParameter <IMicrosoftGrap
 Create a protection policy for a M365 service SharePoint.
 Policy will be created in inactive state.
 User can also provide a list of protection units under the policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-sharepointprotectionpolicies-permissions.md)]
 
 ## EXAMPLES
 

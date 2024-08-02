@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabackuprestoreserviceapp
 schema: 2.0.0
+ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaBackupRestoreServiceApp
@@ -36,6 +38,12 @@ Get-MgBetaBackupRestoreServiceApp -InputObject <IBookingsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Read the properties and relationships of a serviceApp object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceapp-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-list-serviceapps-permissions.md)]
 
 ## EXAMPLES
 
