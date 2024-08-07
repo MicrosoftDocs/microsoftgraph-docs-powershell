@@ -62,6 +62,9 @@ This reset is a long-running operation and returns a Location header with a link
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationmethod-resetpassword-permissions.md)]
 
+> [!NOTE]
+> When executing the PowerShell command Reset-MgUserAuthenticationMethodPassword, it is required to include the -AuthenticationMethodId parameter with ID 28c10230-6103-485e-b985-444c60001490. This ID represents the password authentication method.
+
 ## EXAMPLES
 ### Example 1: User-submitted password
 
@@ -76,7 +79,7 @@ $params = @{
 Reset-MgUserAuthenticationMethodPassword -UserId $userId -AuthenticationMethodId $authenticationMethodId -BodyParameter $params
 
 ```
-This example will user-submitted password
+This example will set the submitted password.
 
 ### Example 2: System-generated password
 
@@ -87,11 +90,12 @@ Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 }
 
+$authenticationMethodId = "28c10230-6103-485e-b985-444c60001490"
+
 Reset-MgUserAuthenticationMethodPassword -UserId $userId -AuthenticationMethodId $authenticationMethodId -BodyParameter $params
 
 ```
-This example will system-generated password
-
+This example will generate a password for a cloud only user.
 
 ## PARAMETERS
 
@@ -281,11 +285,11 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1KjcdupUsersUserIdAuthenticationMethodsAuthenticationmethodIdMicrosoftGraphResetpasswordPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+- `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[NewPassword <String>]`: 
 
 INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
+- `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[ChatId <String>]`: The unique identifier of chat
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
