@@ -40,18 +40,6 @@ Get-MgDirectorySubscription -InputObject <IIdentityDirectoryManagementIdentity> 
 ## DESCRIPTION
 Get a specific commercial subscription that an organization acquired.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -332,6 +320,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/directory-list-subscriptions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-subscriptions?view=graph-rest-1.0)
+
 
 
 

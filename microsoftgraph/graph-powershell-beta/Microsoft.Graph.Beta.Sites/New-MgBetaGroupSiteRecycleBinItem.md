@@ -53,18 +53,6 @@ New-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to items for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24227,6 +24215,7 @@ For OneDrive, this property isn't populated.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiterecyclebinitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiterecyclebinitem)
+
 
 
 
