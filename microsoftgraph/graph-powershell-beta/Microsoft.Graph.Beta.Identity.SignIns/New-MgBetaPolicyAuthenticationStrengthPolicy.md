@@ -40,11 +40,11 @@ Create a new custom authenticationStrengthPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthroot-post-policies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.authenticationStrengthPolicy"
@@ -57,6 +57,10 @@ $params = @{
 }
 
 New-MgBetaPolicyAuthenticationStrengthPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPolicyAuthenticationStrengthPolicy Cmdlet.
+
 
 ## PARAMETERS
 

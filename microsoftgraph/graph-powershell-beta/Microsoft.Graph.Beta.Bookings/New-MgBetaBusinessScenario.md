@@ -35,11 +35,11 @@ Create a new businessScenario object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/solutionsroot-post-businessscenarios-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.businessScenario"
@@ -48,6 +48,10 @@ $params = @{
 }
 
 New-MgBetaBusinessScenario -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaBusinessScenario Cmdlet.
+
 
 ## PARAMETERS
 

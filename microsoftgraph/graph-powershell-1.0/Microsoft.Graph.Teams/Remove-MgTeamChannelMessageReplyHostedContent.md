@@ -33,18 +33,6 @@ Remove-MgTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity> [-If
 ## DESCRIPTION
 Delete navigation property hostedContents for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -298,6 +286,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelmessagereplyhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelmessagereplyhostedcontent)
+
 
 
 

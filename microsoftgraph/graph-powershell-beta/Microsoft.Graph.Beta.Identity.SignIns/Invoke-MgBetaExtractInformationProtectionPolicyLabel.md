@@ -37,11 +37,11 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-extractlabel-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	contentInfo = @{
@@ -93,6 +93,10 @@ $params = @{
 }
 
 Invoke-MgBetaExtractInformationProtectionPolicyLabel -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaExtractInformationProtectionPolicyLabel Cmdlet.
+
 
 ## PARAMETERS
 

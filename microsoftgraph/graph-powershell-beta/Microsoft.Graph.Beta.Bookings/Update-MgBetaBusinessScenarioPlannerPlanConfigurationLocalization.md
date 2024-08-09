@@ -49,11 +49,11 @@ Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <
 Update the properties of a plannerPlanConfigurationLocalization object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerPlanConfigurationLocalization"
@@ -79,6 +79,10 @@ $params = @{
 }
 
 Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId $businessScenarioId -PlannerPlanConfigurationLocalizationId $plannerPlanConfigurationLocalizationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization Cmdlet.
+
 
 ## PARAMETERS
 

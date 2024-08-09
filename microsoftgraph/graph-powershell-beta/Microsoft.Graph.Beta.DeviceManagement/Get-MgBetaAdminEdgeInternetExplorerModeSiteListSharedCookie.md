@@ -50,13 +50,17 @@ Get a session cookie that can be shared between a Microsoft Edge process and an 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-list-sharedcookies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement
-```
 
 Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId
+
+```
+This example shows how to use the Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie Cmdlet.
+
 
 ## PARAMETERS
 

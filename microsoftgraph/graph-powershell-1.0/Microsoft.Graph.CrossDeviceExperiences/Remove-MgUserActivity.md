@@ -33,14 +33,18 @@ Remove-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <
 Delete navigation property activities for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CrossDeviceExperiences
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserActivity -UserId $userId -UserActivityId $userActivityId
+
+```
+This example shows how to use the Remove-MgUserActivity Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,11 +46,11 @@ Create a new privilegedAccessGroupAssignmentScheduleRequest object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroup-post-assignmentschedulerequests-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create an assignment schedule request
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	accessId = "member"
@@ -58,7 +58,7 @@ $params = @{
 	groupId = "68e55cce-cf7e-4a2d-9046-3e4e75c4bfa7"
 	action = "adminAssign"
 	scheduleInfo = @{
-		startDateTime = \[System.DateTime\]::Parse("2022-12-08T07:43:00.000Z")
+		startDateTime = [System.DateTime]::Parse("2022-12-08T07:43:00.000Z")
 		expiration = @{
 			type = "afterDuration"
 			duration = "PT2H"
@@ -69,10 +69,14 @@ $params = @{
 
 New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create an assignment schedule request
+
+### Example 2: User activates their eligible assignment for PIM for Groups
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	accessId = "member"
@@ -80,7 +84,7 @@ $params = @{
 	groupId = "2b5ed229-4072-478d-9504-a047ebd4b07d"
 	action = "selfActivate"
 	scheduleInfo = @{
-		startDateTime = \[System.DateTime\]::Parse("2023-02-08T07:43:00.000Z")
+		startDateTime = [System.DateTime]::Parse("2023-02-08T07:43:00.000Z")
 		expiration = @{
 			type = "afterDuration"
 			duration = "PT2H"
@@ -90,6 +94,10 @@ $params = @{
 }
 
 New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest -BodyParameter $params
+
+```
+This example will user activates their eligible assignment for pim for groups
+
 
 ## PARAMETERS
 

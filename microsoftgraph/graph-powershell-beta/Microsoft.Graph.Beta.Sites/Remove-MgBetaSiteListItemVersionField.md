@@ -32,18 +32,6 @@ Remove-MgBetaSiteListItemVersionField -InputObject <ISitesIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property fields for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -301,6 +289,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelistitemversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelistitemversionfield)
+
 
 
 

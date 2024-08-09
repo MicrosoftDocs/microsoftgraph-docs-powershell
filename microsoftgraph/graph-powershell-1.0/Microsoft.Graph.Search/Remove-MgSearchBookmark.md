@@ -37,13 +37,17 @@ Delete a bookmark object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-bookmark-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 Remove-MgSearchBookmark -BookmarkId $bookmarkId
+
+```
+This example shows how to use the Remove-MgSearchBookmark Cmdlet.
+
 
 ## PARAMETERS
 

@@ -78,11 +78,11 @@ Update the properties of a businessScenarioTask object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenariotask-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	title = "Customer order #12010"
@@ -94,6 +94,10 @@ $params = @{
 }
 
 Update-MgBetaBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -BusinessScenarioTaskId $businessScenarioTaskId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaBusinessScenarioPlannerTask Cmdlet.
+
 
 ## PARAMETERS
 

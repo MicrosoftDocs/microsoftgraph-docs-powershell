@@ -29,18 +29,6 @@ New-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey
 ## DESCRIPTION
 Generate a public key to use to encrypt the Apple device enrollment program token
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
@@ -226,6 +214,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementdeponboardingsettingencryptionpublickey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementdeponboardingsettingencryptionpublickey)
+
 
 
 

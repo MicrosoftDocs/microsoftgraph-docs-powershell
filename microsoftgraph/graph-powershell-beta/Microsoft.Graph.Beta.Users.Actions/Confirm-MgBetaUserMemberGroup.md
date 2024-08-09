@@ -61,11 +61,11 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-checkmembergroups-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Check group memberships for the signed-in user
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	groupIds = @(
@@ -76,6 +76,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Confirm-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
+
+```
+This example will check group memberships for the signed-in user
+
 
 ## PARAMETERS
 

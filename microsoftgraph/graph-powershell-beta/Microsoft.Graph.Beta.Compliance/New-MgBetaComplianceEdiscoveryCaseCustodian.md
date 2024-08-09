@@ -60,11 +60,11 @@ After the custodian object is created, you will need to create the custodian's u
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-post-custodians-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 $params = @{
 	email = "AdeleV@contoso.com"
@@ -72,6 +72,10 @@ $params = @{
 }
 
 New-MgBetaComplianceEdiscoveryCaseCustodian -CaseId $caseId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet.
+
 
 ## PARAMETERS
 

@@ -55,17 +55,21 @@ Make sure you don't specify the same user or group in the rejected senders and a
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-rejectedsenders-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 
 New-MgGroupRejectedSenderByRef -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgGroupRejectedSenderByRef Cmdlet.
+
 
 ## PARAMETERS
 

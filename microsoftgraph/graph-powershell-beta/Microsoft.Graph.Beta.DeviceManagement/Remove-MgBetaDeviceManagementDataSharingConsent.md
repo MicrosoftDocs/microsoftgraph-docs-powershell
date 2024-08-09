@@ -29,18 +29,6 @@ Remove-MgBetaDeviceManagementDataSharingConsent -InputObject <IDeviceManagementI
 ## DESCRIPTION
 Delete navigation property dataSharingConsents for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DataSharingConsentId
@@ -342,6 +330,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementdatasharingconsent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementdatasharingconsent)
+
 
 
 

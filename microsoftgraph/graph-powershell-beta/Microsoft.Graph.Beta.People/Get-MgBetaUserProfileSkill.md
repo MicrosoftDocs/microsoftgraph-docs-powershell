@@ -38,14 +38,18 @@ Get-MgBetaUserProfileSkill -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 Represents detailed information about skills associated with a user in various services.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileSkill -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileSkill Cmdlet.
+
 
 ## PARAMETERS
 

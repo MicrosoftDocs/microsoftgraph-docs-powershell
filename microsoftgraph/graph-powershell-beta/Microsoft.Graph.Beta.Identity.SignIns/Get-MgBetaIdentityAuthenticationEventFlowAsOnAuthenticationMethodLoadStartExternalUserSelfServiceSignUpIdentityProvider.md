@@ -28,13 +28,17 @@ Get the identity providers that are defined for an external identities self-serv
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider -AuthenticationEventsFlowId $authenticationEventsFlowId
+
+```
+This example shows how to use the Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider Cmdlet.
+
 
 ## PARAMETERS
 

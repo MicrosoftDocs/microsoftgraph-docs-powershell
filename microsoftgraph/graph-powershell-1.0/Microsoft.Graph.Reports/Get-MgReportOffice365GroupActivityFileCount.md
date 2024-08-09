@@ -37,13 +37,17 @@ Get the total number of files and how many of them were active across all group 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365groupsactivityfilecounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportOffice365GroupActivityFileCount -Period $periodId
+Get-MgReportOffice365GroupActivityFileCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOffice365GroupActivityFileCount Cmdlet.
+
 
 ## PARAMETERS
 

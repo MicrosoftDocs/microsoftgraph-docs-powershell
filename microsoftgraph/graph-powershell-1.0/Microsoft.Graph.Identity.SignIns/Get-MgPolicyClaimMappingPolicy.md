@@ -41,13 +41,17 @@ Get-MgPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> [-ExpandP
 The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyClaimMappingPolicy
+
+```
+This example shows how to use the Get-MgPolicyClaimMappingPolicy Cmdlet.
+
 
 ## PARAMETERS
 

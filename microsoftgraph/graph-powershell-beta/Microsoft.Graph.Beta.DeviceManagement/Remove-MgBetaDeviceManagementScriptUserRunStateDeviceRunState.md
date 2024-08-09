@@ -30,18 +30,6 @@ Remove-MgBetaDeviceManagementScriptUserRunStateDeviceRunState -InputObject <IDev
 ## DESCRIPTION
 Delete navigation property deviceRunStates for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementScriptDeviceStateId
@@ -373,6 +361,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementscriptuserrunstatedevicerunstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementscriptuserrunstatedevicerunstate)
+
 
 
 

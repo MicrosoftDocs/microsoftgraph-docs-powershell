@@ -67,13 +67,17 @@ Indicates which terms have been pinned or reused directly under the set.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-list-relations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteTermStoreSetRelation -SiteId $siteId -SetId $setId
+
+```
+This example shows how to use the Get-MgSiteTermStoreSetRelation Cmdlet.
+
 
 ## PARAMETERS
 

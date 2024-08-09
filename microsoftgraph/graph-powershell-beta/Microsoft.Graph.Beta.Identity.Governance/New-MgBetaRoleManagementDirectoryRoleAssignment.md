@@ -41,11 +41,11 @@ Create a new unifiedRoleAssignment object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-post-roleassignments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create a role assignment with tenant scope
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleAssignment"
@@ -56,10 +56,14 @@ $params = @{
 
 New-MgBetaRoleManagementDirectoryRoleAssignment -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a role assignment with tenant scope
+
+### Example 2: Create a role assignment with administrative unit scope
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleAssignment"
@@ -70,10 +74,14 @@ $params = @{
 
 New-MgBetaRoleManagementDirectoryRoleAssignment -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will### Example 2: create a role assignment with administrative unit scope
+
+### Example 3: Create a role assignment with attribute set scope
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.unifiedRoleAssignment"
@@ -83,6 +91,10 @@ $params = @{
 }
 
 New-MgBetaRoleManagementDirectoryRoleAssignment -BodyParameter $params
+
+```
+This example will### Example 3: create a role assignment with attribute set scope
+
 
 ## PARAMETERS
 

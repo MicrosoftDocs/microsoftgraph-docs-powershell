@@ -37,18 +37,6 @@ Get-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema -InputObject <IDe
 ## DESCRIPTION
 Android for Work app configuration schema entities.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -440,6 +428,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementandroidforworkappconfigurationschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementandroidforworkappconfigurationschema)
+
+
 
 
 

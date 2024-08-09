@@ -57,11 +57,11 @@ Use reply thread or reply post to further post to that conversation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-conversations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	topic = "New head count"
@@ -88,6 +88,10 @@ $params = @{
 }
 
 New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaGroupConversation Cmdlet.
+
 
 ## PARAMETERS
 

@@ -56,11 +56,11 @@ Update the properties of a plannerPlanConfiguration object for a businessScenari
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerPlanConfiguration"
@@ -82,6 +82,10 @@ $params = @{
 }
 
 Update-MgBetaBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId $businessScenarioId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaBusinessScenarioPlannerPlanConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

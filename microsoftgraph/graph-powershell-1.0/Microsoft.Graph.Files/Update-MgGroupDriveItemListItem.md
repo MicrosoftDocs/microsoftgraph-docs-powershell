@@ -61,18 +61,6 @@ Update-MgGroupDriveItemListItem -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property listItem in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24573,6 +24561,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitemlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitemlistitem)
+
 
 
 

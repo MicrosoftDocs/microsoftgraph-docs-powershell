@@ -60,11 +60,11 @@ Update-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIden
 Update the properties of a macOSGeneralDeviceConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windows10EndpointProtectionConfiguration"
@@ -163,6 +163,10 @@ blockCrossOrganizationWriteAccess = $true
 }
 
 Update-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId $deviceConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

@@ -30,14 +30,18 @@ Remove-MgBetaUserProfile -InputObject <IPeopleIdentity> [-IfMatch <String>] [-Re
 Delete navigation property profile for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfile -UserId $userId
+
+```
+This example shows how to use the Remove-MgBetaUserProfile Cmdlet.
+
 
 ## PARAMETERS
 

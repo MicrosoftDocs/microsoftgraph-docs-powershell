@@ -46,13 +46,17 @@ Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile
 Read properties and relationships of the windowsInformationProtectionAppLockerFile object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile -WindowsInformationProtectionPolicyId $windowsInformationProtectionPolicyId
+
+```
+This example shows how to use the Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile Cmdlet.
+
 
 ## PARAMETERS
 

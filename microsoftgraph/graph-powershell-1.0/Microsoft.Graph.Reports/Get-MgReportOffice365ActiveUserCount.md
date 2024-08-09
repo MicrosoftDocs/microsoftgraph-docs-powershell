@@ -36,13 +36,17 @@ Get the count of daily active users in the reporting period by product.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getoffice365activeusercounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportOffice365ActiveUserCount -Period $periodId
+Get-MgReportOffice365ActiveUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOffice365ActiveUserCount Cmdlet.
+
 
 ## PARAMETERS
 
