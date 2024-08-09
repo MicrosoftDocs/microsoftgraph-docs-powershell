@@ -47,9 +47,6 @@ Read-only.
 Nullable.
 Supports $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-memberof-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

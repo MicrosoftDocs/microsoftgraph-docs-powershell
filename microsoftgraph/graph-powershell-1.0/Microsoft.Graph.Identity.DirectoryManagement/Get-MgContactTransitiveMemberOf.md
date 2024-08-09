@@ -46,6 +46,9 @@ Groups that this contact is a member of, including groups that the contact is ne
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/orgcontact-list-transitivememberof-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

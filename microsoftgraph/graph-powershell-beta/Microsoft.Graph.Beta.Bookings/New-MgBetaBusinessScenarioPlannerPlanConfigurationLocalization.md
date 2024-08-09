@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannerplanconfigurationlocalization
 schema: 2.0.0
-ms.subservice: business-scenarios
 ---
 
 # New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization
@@ -47,9 +46,6 @@ New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBo
 
 ## DESCRIPTION
 Create a new plannerPlanConfigurationLocalization object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-post-localizations-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

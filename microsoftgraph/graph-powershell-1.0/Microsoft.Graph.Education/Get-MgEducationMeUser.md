@@ -24,6 +24,9 @@ Get-MgEducationMeUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Resp
 ## DESCRIPTION
 Retrieve the simple directory user that corresponds to this educationUser.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-get-user-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

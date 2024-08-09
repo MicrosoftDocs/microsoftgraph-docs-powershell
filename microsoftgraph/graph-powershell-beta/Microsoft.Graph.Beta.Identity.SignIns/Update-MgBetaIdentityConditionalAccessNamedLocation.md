@@ -49,6 +49,9 @@ Update-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignI
 ## DESCRIPTION
 Update the properties of an ipNamedLocation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/countrynamedlocation-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Update a country named location by adding to the list of countries
 

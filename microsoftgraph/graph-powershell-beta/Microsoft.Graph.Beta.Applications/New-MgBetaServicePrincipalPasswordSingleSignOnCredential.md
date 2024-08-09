@@ -48,6 +48,9 @@ New-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicat
 ## DESCRIPTION
 Create single sign-on credentials using a password for a user or group.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-createpasswordsinglesignoncredentials-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

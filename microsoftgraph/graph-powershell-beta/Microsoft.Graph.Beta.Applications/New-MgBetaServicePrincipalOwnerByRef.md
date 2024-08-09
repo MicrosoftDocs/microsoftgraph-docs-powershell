@@ -49,6 +49,9 @@ New-MgBetaServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> -BodyP
 Add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-post-owners-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Add an owner for a service principal
 

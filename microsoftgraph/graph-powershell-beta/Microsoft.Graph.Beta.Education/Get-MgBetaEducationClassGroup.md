@@ -33,6 +33,9 @@ Get-MgBetaEducationClassGroup -InputObject <IEducationIdentity> [-ExpandProperty
 ## DESCRIPTION
 Retrieve the Microsoft 365 group that corresponds to this educationClass.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-get-group-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

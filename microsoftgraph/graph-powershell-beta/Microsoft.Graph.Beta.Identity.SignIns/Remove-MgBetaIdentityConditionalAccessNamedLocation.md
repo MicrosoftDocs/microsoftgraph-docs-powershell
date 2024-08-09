@@ -33,6 +33,9 @@ Remove-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignI
 ## DESCRIPTION
 Delete an ipNamedLocation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/countrynamedlocation-delete-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Remove a named location
 

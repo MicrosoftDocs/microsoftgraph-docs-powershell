@@ -43,9 +43,6 @@ Get-MgBetaUserTransitiveMemberOf -InputObject <IUsersIdentity> [-ExpandProperty 
 The groups, including nested groups and directory roles that a user is a member of.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-transitivememberof-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
