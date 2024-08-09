@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicybygroup
 schema: 2.0.0
-ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupLifecyclePolicyByGroup
 
 ## SYNOPSIS
 Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupLifecyclePolicyByGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupLifecyclePolicyByGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,21 +22,14 @@ Get-MgBetaGroupLifecyclePolicyByGroup -GroupId <String> [-ExpandProperty <String
 ## DESCRIPTION
 Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-grouplifecyclepolicies-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 Get-MgBetaGroupLifecyclePolicyByGroup -GroupId $groupId
-
-```
-This example shows how to use the Get-MgBetaGroupLifecyclePolicyByGroup Cmdlet.
-
 
 ## PARAMETERS
 
@@ -271,7 +260,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicybygroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicybygroup)
 
 [https://learn.microsoft.com/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-beta)
-
-
-
 

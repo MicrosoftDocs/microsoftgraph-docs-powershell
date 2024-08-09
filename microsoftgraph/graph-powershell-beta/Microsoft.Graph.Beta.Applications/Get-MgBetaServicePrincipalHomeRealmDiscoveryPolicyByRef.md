@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalhomerealmdiscoverypolicybyref
 schema: 2.0.0
-ms.subservice: entra-applications
 ---
 
 # Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef
 
 ## SYNOPSIS
 List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,6 +21,18 @@ Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId <Str
 
 ## DESCRIPTION
 List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -225,8 +233,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalhomerealmdiscoverypolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalhomerealmdiscoverypolicybyref)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-list-homerealmdiscoverypolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-list-homerealmdiscoverypolicies?view=graph-rest-beta)
-
-
-
-
 

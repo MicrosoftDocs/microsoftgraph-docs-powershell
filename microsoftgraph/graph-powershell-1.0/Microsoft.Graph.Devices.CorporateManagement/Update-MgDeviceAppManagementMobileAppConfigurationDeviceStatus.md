@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfigurationdevicestatus
 schema: 2.0.0
-ms.subservice: intune
 ---
 
 # Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatus
 
 ## SYNOPSIS
 Update the properties of a managedDeviceMobileAppConfigurationDeviceStatus object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,28 +55,24 @@ Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatus
 Update the properties of a managedDeviceMobileAppConfigurationDeviceStatus object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.CorporateManagement
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus"
 	deviceDisplayName = "Device Display Name value"
 	userName = "User Name value"
 	deviceModel = "Device Model value"
-	complianceGracePeriodExpirationDateTime = [System.DateTime]::Parse("2016-12-31T23:56:44.951111-08:00")
+	complianceGracePeriodExpirationDateTime = \[System.DateTime\]::Parse("2016-12-31T23:56:44.951111-08:00")
 	status = "notApplicable"
-	lastReportedDateTime = [System.DateTime]::Parse("2017-01-01T00:00:17.7769392-08:00")
+	lastReportedDateTime = \[System.DateTime\]::Parse("2017-01-01T00:00:17.7769392-08:00")
 	userPrincipalName = "User Principal Name value"
 }
 
 Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatus -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -ManagedDeviceMobileAppConfigurationDeviceStatusId $managedDeviceMobileAppConfigurationDeviceStatusId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatus Cmdlet.
-
 
 ## PARAMETERS
 
@@ -375,61 +367,58 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus>`: Contains properties, inherited properties and actions for an MDM mobile app configuration status for a device.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus\>: Contains properties, inherited properties and actions for an MDM mobile app configuration status for a device.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-  - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
-  - `[DeviceModel <String>]`: The device model that is being reported
-  - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
-  - `[Status <String>]`: complianceStatus
-  - `[UserName <String>]`: The User Name that is being reported
-  - `[UserPrincipalName <String>]`: UserPrincipalName.
+  \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
+  \[DeviceDisplayName \<String\>\]: Device name of the DevicePolicyStatus.
+  \[DeviceModel \<String\>\]: The device model that is being reported
+  \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
+  \[Status \<String\>\]: complianceStatus
+  \[UserName \<String\>\]: The User Name that is being reported
+  \[UserPrincipalName \<String\>\]: UserPrincipalName.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
-  - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
-  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
-  - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
-  - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
-  - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
-  - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
-  - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
-  - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
-  - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
-  - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent
-  - `[MobileAppId <String>]`: The unique identifier of mobileApp
-  - `[MobileContainedAppId <String>]`: The unique identifier of mobileContainedApp
-  - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
-  - `[VppTokenId <String>]`: The unique identifier of vppToken
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
-  - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
+INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
+  \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
+  \[DefaultManagedAppProtectionId \<String\>\]: The unique identifier of defaultManagedAppProtection
+  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
+  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
+  \[DeviceInstallStateId \<String\>\]: The unique identifier of deviceInstallState
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
+  \[IosManagedAppProtectionId \<String\>\]: The unique identifier of iosManagedAppProtection
+  \[ManagedAppOperationId \<String\>\]: The unique identifier of managedAppOperation
+  \[ManagedAppPolicyId \<String\>\]: The unique identifier of managedAppPolicy
+  \[ManagedAppRegistrationId \<String\>\]: The unique identifier of managedAppRegistration
+  \[ManagedAppStatusId \<String\>\]: The unique identifier of managedAppStatus
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[ManagedDeviceMobileAppConfigurationAssignmentId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+  \[ManagedDeviceMobileAppConfigurationDeviceStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+  \[ManagedDeviceMobileAppConfigurationId \<String\>\]: The unique identifier of managedDeviceMobileAppConfiguration
+  \[ManagedDeviceMobileAppConfigurationUserStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+  \[ManagedEBookAssignmentId \<String\>\]: The unique identifier of managedEBookAssignment
+  \[ManagedEBookId \<String\>\]: The unique identifier of managedEBook
+  \[ManagedMobileAppId \<String\>\]: The unique identifier of managedMobileApp
+  \[MdmWindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of mdmWindowsInformationProtectionPolicy
+  \[MobileAppAssignmentId \<String\>\]: The unique identifier of mobileAppAssignment
+  \[MobileAppCategoryId \<String\>\]: The unique identifier of mobileAppCategory
+  \[MobileAppContentFileId \<String\>\]: The unique identifier of mobileAppContentFile
+  \[MobileAppContentId \<String\>\]: The unique identifier of mobileAppContent
+  \[MobileAppId \<String\>\]: The unique identifier of mobileApp
+  \[MobileContainedAppId \<String\>\]: The unique identifier of mobileContainedApp
+  \[TargetedManagedAppConfigurationId \<String\>\]: The unique identifier of targetedManagedAppConfiguration
+  \[TargetedManagedAppPolicyAssignmentId \<String\>\]: The unique identifier of targetedManagedAppPolicyAssignment
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserInstallStateSummaryId \<String\>\]: The unique identifier of userInstallStateSummary
+  \[VppTokenId \<String\>\]: The unique identifier of vppToken
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsInformationProtectionAppLockerFileId \<String\>\]: The unique identifier of windowsInformationProtectionAppLockerFile
+  \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfigurationdevicestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfigurationdevicestatus)
 
 [https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationdevicestatus-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationdevicestatus-update?view=graph-rest-1.0)
-
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagement
 schema: 2.0.0
-ms.subservice: intune
 ---
 
 # Get-MgDeviceAppManagement
 
 ## SYNOPSIS
 Read properties and relationships of the deviceAppManagement object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,17 +22,13 @@ Get-MgDeviceAppManagement [-ExpandProperty <String[]>] [-Property <String[]>]
 Read properties and relationships of the deviceAppManagement object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.CorporateManagement
+```
 
 Get-MgDeviceAppManagement
-
-```
-This example shows how to use the Get-MgDeviceAppManagement Cmdlet.
-
 
 ## PARAMETERS
 
@@ -131,7 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagement)
 
 [https://learn.microsoft.com/graph/api/intune-policyset-deviceappmanagement-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-policyset-deviceappmanagement-get?view=graph-rest-1.0)
-
-
-
 
