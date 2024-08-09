@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Reports
 Module Guid: 51fa7a02-1099-4183-b155-e14ffb788a3c
 Download Help Link: {{ Update Download Link }}
@@ -748,4 +748,5 @@ Locale: en-US
 
 ### [Update-MgBetaReportUserInsightMonthly](Update-MgBetaReportUserInsightMonthly.md)
 {{ Fill in the Description }}
+
 

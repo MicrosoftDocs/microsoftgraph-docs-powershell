@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupacceptedsenderbyref
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupAcceptedSenderByRef
 
 ## SYNOPSIS
-Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\nMake sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
+Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgGroupAcceptedSenderByRef -GroupId <String> [-Filter <String>] [-Search <St
 ```
 
 ## DESCRIPTION
-Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\nMake sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
+Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 ## EXAMPLES
 
@@ -232,4 +232,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupacceptedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupacceptedsenderbyref)
 
 [https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-1.0)
+
+
+
 
