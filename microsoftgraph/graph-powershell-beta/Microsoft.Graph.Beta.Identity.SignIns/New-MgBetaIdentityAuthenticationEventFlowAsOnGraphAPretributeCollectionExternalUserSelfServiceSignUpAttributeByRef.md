@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributebyref
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef
@@ -50,6 +51,9 @@ New-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalU
 Add an attribute to an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 You can add both custom and built-in attributes to a user flow.
 Prior to this step, PATCH the user flow to add the attribute to the attribute collection step (to determine how it will be displayed).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onattributecollectionexternalusersselfservicesignup-post-attributes-permissions.md)]
 
 ## EXAMPLES
 

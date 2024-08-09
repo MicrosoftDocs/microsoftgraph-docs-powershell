@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenant
 schema: 2.0.0
+ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenant
@@ -36,6 +38,12 @@ Get-MgBetaTenantRelationshipManagedTenant -InputObject <IManagedTenantsIdentity>
 
 ## DESCRIPTION
 Read the properties and relationships of a tenant object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenant-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-tenants-permissions.md)]
 
 ## EXAMPLES
 

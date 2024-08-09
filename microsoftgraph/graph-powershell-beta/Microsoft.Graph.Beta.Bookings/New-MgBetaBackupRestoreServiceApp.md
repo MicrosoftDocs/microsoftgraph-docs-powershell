@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabackuprestoreserviceapp
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # New-MgBetaBackupRestoreServiceApp
@@ -30,6 +31,9 @@ New-MgBetaBackupRestoreServiceApp -BodyParameter <IMicrosoftGraphServiceApp>
 
 ## DESCRIPTION
 Create a new serviceApp.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-post-serviceapps-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgDomain
@@ -35,6 +37,12 @@ Get-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Retrieve the properties and relationships of domain object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-list-permissions.md)]
 
 ## EXAMPLES
 

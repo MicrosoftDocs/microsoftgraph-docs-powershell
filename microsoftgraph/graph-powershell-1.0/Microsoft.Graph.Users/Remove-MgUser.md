@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Remove-MgUser
@@ -27,6 +28,9 @@ Remove-MgUser -InputObject <IUsersIdentity> [-IfMatch <String>] [-ResponseHeader
 
 ## DESCRIPTION
 Deletes a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delete-permissions.md)]
 
 ## EXAMPLES
 

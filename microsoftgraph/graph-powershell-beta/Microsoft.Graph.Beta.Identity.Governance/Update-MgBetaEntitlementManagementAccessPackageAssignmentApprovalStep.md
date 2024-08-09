@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageassignmentapprovalstep
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Update-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStep
@@ -48,6 +49,9 @@ Update-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStep
 
 ## DESCRIPTION
 Apply approve or deny decision on an approvalStep object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approvalstep-update-permissions.md)]
 
 ## EXAMPLES
 
