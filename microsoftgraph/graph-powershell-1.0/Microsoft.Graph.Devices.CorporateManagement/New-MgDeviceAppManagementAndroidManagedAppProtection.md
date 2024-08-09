@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Create a new androidManagedAppProtection object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

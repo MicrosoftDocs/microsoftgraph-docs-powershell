@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Update the properties of a managedMobileApp object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementiOSManagedAppProtectionApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

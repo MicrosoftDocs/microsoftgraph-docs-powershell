@@ -11,6 +11,9 @@ ms.subservice: entra-groups
 ## SYNOPSIS
 Use this API to create a new event.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

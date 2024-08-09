@@ -12,6 +12,9 @@ ms.subservice: cloud-communications
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -11,6 +11,9 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 Create a new version of the workflow object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceLifecycleWorkflowNewVersion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowNewVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

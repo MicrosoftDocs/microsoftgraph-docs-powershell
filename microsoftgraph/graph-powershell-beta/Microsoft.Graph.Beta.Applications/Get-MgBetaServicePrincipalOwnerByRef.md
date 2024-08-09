@@ -11,6 +11,9 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Retrieve a list of owners of the servicePrincipal.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnerByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

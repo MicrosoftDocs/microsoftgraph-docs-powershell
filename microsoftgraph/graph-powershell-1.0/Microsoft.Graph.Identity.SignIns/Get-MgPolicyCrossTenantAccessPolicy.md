@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The custom rules that define an access scenario when interacting with external Microsoft Entra tenants.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action cancel
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaVirtualEventWebinarRegistrationUserId](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaVirtualEventWebinarRegistrationUserId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Cancel (Default)

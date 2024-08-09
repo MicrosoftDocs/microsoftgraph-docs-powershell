@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property items for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

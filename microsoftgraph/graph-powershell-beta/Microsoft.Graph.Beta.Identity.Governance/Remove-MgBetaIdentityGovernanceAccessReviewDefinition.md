@@ -11,6 +11,9 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 Delete an accessReviewScheduleDefinition object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

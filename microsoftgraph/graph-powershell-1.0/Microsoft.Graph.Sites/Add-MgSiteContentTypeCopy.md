@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Add a copy of a content type from a site to a list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSiteContentTypeCopy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

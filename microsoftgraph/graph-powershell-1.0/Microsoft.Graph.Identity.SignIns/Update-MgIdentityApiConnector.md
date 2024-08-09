@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property apiConnectors in identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityApiConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

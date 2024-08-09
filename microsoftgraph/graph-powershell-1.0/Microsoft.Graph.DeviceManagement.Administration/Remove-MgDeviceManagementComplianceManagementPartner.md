@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Deletes a complianceManagementPartner.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
