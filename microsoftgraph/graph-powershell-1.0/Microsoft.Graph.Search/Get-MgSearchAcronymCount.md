@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronymcount
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSearchAcronymCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchAcronymCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,18 @@ Get-MgSearchAcronymCount [-Filter <String>] [-Search <String>] [-ResponseHeaders
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -114,8 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronymcount](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronymcount)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyidentitysecuritydefaultenforcementpolicy
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ## SYNOPSIS
-The policy that represents the security defaults that protect against common attacks.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-beta)
+Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 ## SYNTAX
 
@@ -22,20 +19,16 @@ Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-The policy that represents the security defaults that protect against common attacks.
+Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy
-```
-This example shows how to use the Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -129,6 +122,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyidentitysecuritydefaultenforcementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyidentitysecuritydefaultenforcementpolicy)
 
-
-
+[https://learn.microsoft.com/graph/api/identitysecuritydefaultsenforcementpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitysecuritydefaultsenforcementpolicy-get?view=graph-rest-1.0)
 

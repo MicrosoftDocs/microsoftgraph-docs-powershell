@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment
 schema: 2.0.0
-ms.subservice: security
 ---
 
 # New-MgBetaSecurityLabelDepartment
 
 ## SYNOPSIS
 Create a new departmentTemplate object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelDepartment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,15 +28,12 @@ New-MgBetaSecurityLabelDepartment -BodyParameter <Hashtable> [-ResponseHeadersVa
 ## DESCRIPTION
 Create a new departmentTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-departments-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.departmentTemplate"
@@ -48,10 +41,6 @@ $params = @{
 }
 
 New-MgBetaSecurityLabelDepartment -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityLabelDepartment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -240,23 +229,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-beta)
-
-
-
 

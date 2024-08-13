@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamshift
 schema: 2.0.0
-ms.subservice: teams
 ---
 
 # Get-MgBetaTeamShift
@@ -22,8 +21,17 @@ Get-MgBetaTeamShift [-Count] [-ExpandProperty <String[]>] [-Filter <String>] [-P
 ## DESCRIPTION
 Get all shift objects across all teams to which a user is a direct member.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/team-getshifts-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -208,8 +216,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamshift)
 
 [https://learn.microsoft.com/graph/api/team-getshifts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/team-getshifts?view=graph-rest-beta)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregisteredowner
@@ -8,14 +8,10 @@ schema: 2.0.0
 # Get-MgBetaDeviceRegisteredOwner
 
 ## SYNOPSIS
-The user that cloud joined the device or registered their personal device.
+Retrieve a list of users that are registered owners of the device.
+A registered owner is the user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceRegisteredOwner](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceRegisteredOwner?view=graph-powershell-1.0)
+Currently, there can be only one owner.
 
 ## SYNTAX
 
@@ -27,24 +23,19 @@ Get-MgBetaDeviceRegisteredOwner -DeviceId <String> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-The user that cloud joined the device or registered their personal device.
+Retrieve a list of users that are registered owners of the device.
+A registered owner is the user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
+Currently, there can be only one owner.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaDeviceRegisteredOwner -DeviceId $deviceId
-
-```
-This example shows how to use the Get-MgBetaDeviceRegisteredOwner Cmdlet.
-
 
 ## PARAMETERS
 
@@ -290,6 +281,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregisteredowner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregisteredowner)
 
-
-
+[https://learn.microsoft.com/graph/api/device-list-registeredowners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/device-list-registeredowners?view=graph-rest-beta)
 

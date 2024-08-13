@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduserbyref
@@ -8,14 +8,8 @@ schema: 2.0.0
 # Get-MgBetaDeviceRegisteredUserByRef
 
 ## SYNOPSIS
-Collection of registered users of the device.
+Retrieve a list of users that are registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceRegisteredUserByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,11 +21,20 @@ Get-MgBetaDeviceRegisteredUserByRef -DeviceId <String> [-Filter <String>] [-Sear
 ```
 
 ## DESCRIPTION
-Collection of registered users of the device.
+Retrieve a list of users that are registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -247,7 +250,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduserbyref)
 
-
-
-
+[https://learn.microsoft.com/graph/api/device-list-registeredusers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/device-list-registeredusers?view=graph-rest-beta)
 

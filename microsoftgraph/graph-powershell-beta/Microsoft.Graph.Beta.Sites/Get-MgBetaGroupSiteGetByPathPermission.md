@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathpermission
@@ -11,22 +11,10 @@ schema: 2.0.0
 The permissions associated with the site.
 Nullable.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathPermission?view=graph-powershell-1.0)
-
 ## SYNTAX
 
-### List1 (Default)
 ```
 Get-MgBetaGroupSiteGetByPathPermission -GroupId <String> -Path <String> -SiteId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### List
-```
-Get-MgBetaGroupSiteGetByPathPermission -GroupId <String> -Path <String> -SiteId <String> -Path1 <String>
  [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
@@ -35,6 +23,18 @@ Get-MgBetaGroupSiteGetByPathPermission -GroupId <String> -Path <String> -SiteId 
 ## DESCRIPTION
 The permissions associated with the site.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -150,21 +150,6 @@ Usage: path='{path}'
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Path1
-Usage: path='{path1}'
-
-```yaml
-Type: String
-Parameter Sets: List
 Aliases:
 
 Required: True
@@ -308,8 +293,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathpermission)
-
-
-
-
 

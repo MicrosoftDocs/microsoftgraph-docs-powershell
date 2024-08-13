@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfoldercontactextension
@@ -12,17 +12,15 @@ The collection of open extensions defined for the contact.
 Read-only.
 Nullable.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderChildFolderContactExtension](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderChildFolderContactExtension?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgUserContactFolderChildFolderContactExtension -ContactFolderId <String> -ContactFolderId1 <String>
  -ContactId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
@@ -44,6 +42,18 @@ Get-MgUserContactFolderChildFolderContactExtension -InputObject <IPersonalContac
 The collection of open extensions defined for the contact.
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -259,6 +269,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -336,19 +361,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
-  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
-  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
-  - `[ContactId <String>]`: The unique identifier of contact
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
+  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
+  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
+  \[ContactId \<String\>\]: The unique identifier of contact
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfoldercontactextension](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfoldercontactextension)
-
-
-
-
-
 

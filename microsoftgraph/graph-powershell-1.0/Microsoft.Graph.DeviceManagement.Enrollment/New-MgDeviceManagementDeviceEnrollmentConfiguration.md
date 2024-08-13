@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfiguration
 schema: 2.0.0
-ms.subservice: intune
 ---
 
 # New-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
 Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,60 +32,33 @@ New-MgDeviceManagementDeviceEnrollmentConfiguration
 Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
+```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration"
+	"@odata.type" = "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration"
 	displayName = "Display Name value"
 	description = "Description value"
 	priority = 8
 	version = 7
-	iosRestriction = @{
-		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
-		platformBlocked = $true
-		personalDeviceEnrollmentBlocked = $true
-		osMinimumVersion = "Os Minimum Version value"
-		osMaximumVersion = "Os Maximum Version value"
-	}
-	windowsRestriction = @{
-		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
-		platformBlocked = $true
-		personalDeviceEnrollmentBlocked = $true
-		osMinimumVersion = "Os Minimum Version value"
-		osMaximumVersion = "Os Maximum Version value"
-	}
-	windowsMobileRestriction = @{
-		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
-		platformBlocked = $true
-		personalDeviceEnrollmentBlocked = $true
-		osMinimumVersion = "Os Minimum Version value"
-		osMaximumVersion = "Os Maximum Version value"
-	}
-	androidRestriction = @{
-		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
-		platformBlocked = $true
-		personalDeviceEnrollmentBlocked = $true
-		osMinimumVersion = "Os Minimum Version value"
-		osMaximumVersion = "Os Maximum Version value"
-	}
-	macOSRestriction = @{
-		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
-		platformBlocked = $true
-		personalDeviceEnrollmentBlocked = $true
-		osMinimumVersion = "Os Minimum Version value"
-		osMaximumVersion = "Os Maximum Version value"
-	}
+	pinMinimumLength = 
+	pinMaximumLength = 
+	pinUppercaseCharactersUsage = "required"
+	pinLowercaseCharactersUsage = "required"
+	pinSpecialCharactersUsage = "required"
+	state = "enabled"
+	securityDeviceRequired = $true
+	unlockWithBiometricsEnabled = $true
+	remotePassportEnabled = $true
+	pinPreviousBlockCount = 
+	pinExpirationInDays = 
+	enhancedBiometricsState = "enabled"
 }
 
 New-MgDeviceManagementDeviceEnrollmentConfiguration -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementDeviceEnrollmentConfiguration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -339,35 +308,32 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>: The list of group assignments for the device configuration profile
-  - `[Id <String>]`: The unique identifier for an entity.
+ASSIGNMENTS \<IMicrosoftGraphEnrollmentConfigurationAssignment\[\]\>: The list of group assignments for the device configuration profile
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceEnrollmentConfiguration>`: The Base Class of Device Enrollment Configuration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceEnrollmentConfiguration\>: The Base Class of Device Enrollment Configuration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment- `[]`>]`: The list of group assignments for the device configuration profile
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Assignments \<IMicrosoftGraphEnrollmentConfigurationAssignment\[\]\>\]: The list of group assignments for the device configuration profile
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: Created date time in UTC of the device enrollment configuration
-  - `[Description <String>]`: The description of the device enrollment configuration
-  - `[DisplayName <String>]`: The display name of the device enrollment configuration
-  - `[LastModifiedDateTime <DateTime?>]`: Last modified date time in UTC of the device enrollment configuration
-  - `[Priority <Int32?>]`: Priority is used when a user exists in multiple groups that are assigned enrollment configuration.
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedDateTime \<DateTime?\>\]: Created date time in UTC of the device enrollment configuration
+  \[Description \<String\>\]: The description of the device enrollment configuration
+  \[DisplayName \<String\>\]: The display name of the device enrollment configuration
+  \[LastModifiedDateTime \<DateTime?\>\]: Last modified date time in UTC of the device enrollment configuration
+  \[Priority \<Int32?\>\]: Priority is used when a user exists in multiple groups that are assigned enrollment configuration.
 Users are subject only to the configuration with the lowest priority value.
-  - `[Version <Int32?>]`: The version of the device enrollment configuration
+  \[Version \<Int32?\>\]: The version of the device enrollment configuration
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfiguration)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create?view=graph-rest-1.0)
-
-
-
 
