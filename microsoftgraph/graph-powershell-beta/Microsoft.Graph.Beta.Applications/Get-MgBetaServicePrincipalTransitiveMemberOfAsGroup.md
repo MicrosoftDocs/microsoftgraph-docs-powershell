@@ -42,18 +42,6 @@ Get-MgBetaServicePrincipalTransitiveMemberOfAsGroup -InputObject <IApplicationsI
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -369,6 +357,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberofasgroup)
+
 
 
 

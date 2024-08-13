@@ -32,18 +32,6 @@ Get-MgEducationUserRubricCount -InputObject <IEducationIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationUserId
@@ -186,6 +174,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserrubriccount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserrubriccount)
+
 
 
 

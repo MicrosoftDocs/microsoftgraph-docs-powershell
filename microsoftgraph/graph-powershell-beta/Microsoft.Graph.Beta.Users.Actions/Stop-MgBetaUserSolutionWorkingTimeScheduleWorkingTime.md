@@ -29,18 +29,6 @@ Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime -InputObject <IUsersAction
 ## DESCRIPTION
 Triggers the policies associated with the end of working hours.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -227,6 +215,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausersolutionworkingtimescheduleworkingtime](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausersolutionworkingtimescheduleworkingtime)
+
 
 
 

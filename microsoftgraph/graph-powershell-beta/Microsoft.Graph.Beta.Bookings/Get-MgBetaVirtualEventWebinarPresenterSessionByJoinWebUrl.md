@@ -30,18 +30,6 @@ Get-MgBetaVirtualEventWebinarPresenterSessionByJoinWebUrl -InputObject <IBooking
 ## DESCRIPTION
 Get sessions from solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -225,6 +213,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarpresentersessionbyjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarpresentersessionbyjoinweburl)
+
 
 
 

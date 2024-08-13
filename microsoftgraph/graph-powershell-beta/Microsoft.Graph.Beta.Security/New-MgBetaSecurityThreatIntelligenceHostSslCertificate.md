@@ -34,18 +34,6 @@ New-MgBetaSecurityThreatIntelligenceHostSslCertificate
 ## DESCRIPTION
 Create new navigation property to hostSslCertificates for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1115,6 +1103,7 @@ Note: This is not the signature.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehostsslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehostsslcertificate)
+
 
 
 

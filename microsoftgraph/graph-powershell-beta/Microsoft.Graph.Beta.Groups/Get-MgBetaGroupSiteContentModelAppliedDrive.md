@@ -34,18 +34,6 @@ List all the contentModelUsage information related to a contentModel applied to 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-getapplieddrives-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentModelId
@@ -299,6 +287,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitecontentmodelapplieddrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitecontentmodelapplieddrive)
 
 [https://learn.microsoft.com/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta)
+
 
 
 

@@ -45,18 +45,6 @@ Retrieve the properties of a specific externalUserProfile.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-externaluserprofiles-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -358,6 +346,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/externaluserprofile-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externaluserprofile-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/directory-list-externaluserprofiles?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-list-externaluserprofiles?view=graph-rest-beta)
+
 
 
 

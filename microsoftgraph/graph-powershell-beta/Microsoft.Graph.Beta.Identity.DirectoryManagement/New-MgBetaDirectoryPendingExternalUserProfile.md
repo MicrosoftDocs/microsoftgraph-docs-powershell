@@ -32,18 +32,6 @@ New-MgBetaDirectoryPendingExternalUserProfile -BodyParameter <Hashtable> [-Respo
 ## DESCRIPTION
 Create a new pendingExternalUserProfile object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -390,6 +378,7 @@ It's a free-format string value, for example, 'United States'.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypendingexternaluserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypendingexternaluserprofile)
 
 [https://learn.microsoft.com/graph/api/directory-post-pendingexternaluserprofile?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-post-pendingexternaluserprofile?view=graph-rest-beta)
+
 
 
 

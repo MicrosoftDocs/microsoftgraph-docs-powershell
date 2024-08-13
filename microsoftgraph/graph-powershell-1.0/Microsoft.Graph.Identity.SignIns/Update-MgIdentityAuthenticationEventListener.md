@@ -54,18 +54,6 @@ You must specify the @odata.type property and the value of the authenticationEve
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationeventlistener-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -357,6 +345,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventlistener)
 
 [https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-1.0)
+
 
 
 

@@ -32,18 +32,6 @@ Remove-MgBetaEntitlementManagementAssignmentRequest -InputObject <IIdentityGover
 ## DESCRIPTION
 Delete navigation property assignmentRequests for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentRequestId
@@ -303,6 +291,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementassignmentrequest)
+
 
 
 

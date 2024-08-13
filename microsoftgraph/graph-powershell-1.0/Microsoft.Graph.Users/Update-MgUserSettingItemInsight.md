@@ -46,18 +46,6 @@ Update-MgUserSettingItemInsight -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the navigation property itemInsights in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -276,6 +264,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingiteminsight)
+
 
 
 

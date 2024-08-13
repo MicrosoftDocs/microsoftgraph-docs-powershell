@@ -40,18 +40,6 @@ Get-MgUserOwnedDeviceAsEndpoint -InputObject <IUsersIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -352,6 +340,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddeviceasendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddeviceasendpoint)
+
 
 
 
