@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to presenters for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

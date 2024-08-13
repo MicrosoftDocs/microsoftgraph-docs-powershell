@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Install an app to the specified team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
