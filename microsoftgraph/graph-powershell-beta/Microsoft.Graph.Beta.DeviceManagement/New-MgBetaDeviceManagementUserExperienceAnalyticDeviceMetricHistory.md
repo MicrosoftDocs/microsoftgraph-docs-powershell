@@ -30,18 +30,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsDeviceMetricHistory for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -247,6 +235,7 @@ Returned by default.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicemetrichistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicemetrichistory)
+
 
 
 

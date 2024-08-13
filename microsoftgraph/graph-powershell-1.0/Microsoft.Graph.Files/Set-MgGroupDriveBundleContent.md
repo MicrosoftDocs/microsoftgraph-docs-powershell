@@ -32,18 +32,6 @@ Set-MgGroupDriveBundleContent -InputObject <IFilesIdentity> [-Data <Stream>]
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentType
@@ -277,6 +265,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdrivebundlecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdrivebundlecontent)
+
 
 
 

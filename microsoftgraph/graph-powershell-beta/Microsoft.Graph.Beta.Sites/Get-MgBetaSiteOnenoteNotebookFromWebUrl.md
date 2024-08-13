@@ -54,18 +54,6 @@ The location can be user notebooks on Microsoft 365, group notebooks, or SharePo
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-getnotebookfromweburl-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -303,6 +291,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteonenotenotebookfromweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteonenotenotebookfromweburl)
 
 [https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-beta](https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-beta)
+
 
 
 

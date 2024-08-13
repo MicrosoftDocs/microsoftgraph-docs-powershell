@@ -48,18 +48,6 @@ New-MgBetaSecurityAlert -BodyParameter <IMicrosoftGraphAlert> [-ResponseHeadersV
 ## DESCRIPTION
 Create new navigation property to alerts for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivityGroupName
@@ -1222,6 +1210,7 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState- `[]`>: Threat intelligen
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalert)
+
 
 
 

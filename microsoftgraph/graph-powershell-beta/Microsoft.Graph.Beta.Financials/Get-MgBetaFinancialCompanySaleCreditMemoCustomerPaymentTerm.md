@@ -29,18 +29,6 @@ Get-MgBetaFinancialCompanySaleCreditMemoCustomerPaymentTerm -InputObject <IFinan
 ## DESCRIPTION
 Get paymentTerm from financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -221,6 +209,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalecreditmemocustomerpaymentterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalecreditmemocustomerpaymentterm)
+
 
 
 

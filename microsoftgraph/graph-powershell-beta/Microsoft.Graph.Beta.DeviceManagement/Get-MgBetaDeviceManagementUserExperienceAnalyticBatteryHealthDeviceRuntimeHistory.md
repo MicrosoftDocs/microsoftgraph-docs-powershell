@@ -39,18 +39,6 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistor
 ## DESCRIPTION
 User Experience Analytics Battery Health Device Runtime History
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -443,6 +431,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceruntimehistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceruntimehistory)
+
+
 
 
 

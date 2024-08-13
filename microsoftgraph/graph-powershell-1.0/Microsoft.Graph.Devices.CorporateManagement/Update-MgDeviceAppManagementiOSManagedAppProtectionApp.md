@@ -50,11 +50,11 @@ Update-MgDeviceAppManagementiOSManagedAppProtectionApp -InputObject <IDevicesCor
 Update the properties of a managedMobileApp object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.managedMobileApp"
@@ -66,6 +66,10 @@ $params = @{
 }
 
 Update-MgDeviceAppManagementiOSManagedAppProtectionApp -IosManagedAppProtectionId $iosManagedAppProtectionId -ManagedMobileAppId $managedMobileAppId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementiOSManagedAppProtectionApp Cmdlet.
+
 
 ## PARAMETERS
 

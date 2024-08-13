@@ -39,18 +39,6 @@ New-MgShareSharedDriveItemSharedDriveItem -BodyParameter <IMicrosoftGraphSharedD
 ## DESCRIPTION
 Add new entity to shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -43712,6 +43700,7 @@ This relationship can only be used to load a specific term set.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgshareshareddriveitemshareddriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgshareshareddriveitemshareddriveitem)
+
 
 
 

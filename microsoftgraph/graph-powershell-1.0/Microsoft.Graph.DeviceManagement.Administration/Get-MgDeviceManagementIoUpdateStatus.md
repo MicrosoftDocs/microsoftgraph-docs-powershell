@@ -43,13 +43,17 @@ Get-MgDeviceManagementIoUpdateStatus -InputObject <IDeviceManagementAdministrati
 Read properties and relationships of the iosUpdateDeviceStatus object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Get-MgDeviceManagementIoUpdateStatus
+
+```
+This example shows how to use the Get-MgDeviceManagementIoUpdateStatus Cmdlet.
+
 
 ## PARAMETERS
 

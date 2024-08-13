@@ -34,13 +34,17 @@ Get-MgUserManagedDeviceWithAppFailure -InputObject <IUsersFunctionsIdentity> [-C
 Retrieves the list of devices with failed apps
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Functions
-```
 
 Get-MgUserManagedDeviceWithAppFailure -UserId $userId
+
+```
+This example shows how to use the Get-MgUserManagedDeviceWithAppFailure Cmdlet.
+
 
 ## PARAMETERS
 
