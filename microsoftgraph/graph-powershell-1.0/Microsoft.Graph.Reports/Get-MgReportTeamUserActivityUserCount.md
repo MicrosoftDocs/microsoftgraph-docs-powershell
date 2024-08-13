@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivityusercount
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportTeamUserActivityUserCount
@@ -29,6 +30,9 @@ Get-MgReportTeamUserActivityUserCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Get the number of Microsoft Teams users by activity type.
 The activity types are number of teams chat messages, private chat messages, calls, or meetings.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getteamsuseractivityusercounts-permissions.md)]
 
 ## EXAMPLES
 

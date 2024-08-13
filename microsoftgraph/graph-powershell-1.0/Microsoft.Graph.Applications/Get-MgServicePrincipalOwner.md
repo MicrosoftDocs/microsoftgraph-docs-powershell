@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalowner
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgServicePrincipalOwner
@@ -21,6 +22,9 @@ Get-MgServicePrincipalOwner -ServicePrincipalId <String> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Retrieve a list of owners of the servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-owners-permissions.md)]
 
 ## EXAMPLES
 

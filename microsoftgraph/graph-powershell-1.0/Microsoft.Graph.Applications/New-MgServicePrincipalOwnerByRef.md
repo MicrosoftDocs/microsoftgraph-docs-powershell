@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgServicePrincipalOwnerByRef
@@ -44,6 +45,9 @@ New-MgServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> -BodyParam
 ## DESCRIPTION
 Use this API to add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-owners-permissions.md)]
 
 ## EXAMPLES
 
