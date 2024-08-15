@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplication
 schema: 2.0.0
 ms.subservice: entra-applications
-ms.subservice: entra-applications
 ---
 
 # Get-MgBetaApplication
