@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementremoteactionaudit
@@ -15,8 +15,8 @@ Create new navigation property to remoteActionAudits for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementRemoteActionAudit [-ResponseHeadersVariable <String>] [-Action <RemoteAction>]
- [-ActionState <String>] [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>]
- [-DeviceImei <String>] [-DeviceOwnerUserPrincipalName <String>] [-Id <String>]
+ [-ActionState <String>] [-AdditionalProperties <Hashtable>] [-BulkDeviceActionId <String>]
+ [-DeviceDisplayName <String>] [-DeviceImei <String>] [-DeviceOwnerUserPrincipalName <String>] [-Id <String>]
  [-InitiatedByUserPrincipalName <String>] [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>]
  [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -31,6 +31,18 @@ New-MgBetaDeviceManagementRemoteActionAudit -BodyParameter <IMicrosoftGraphRemot
 
 ## DESCRIPTION
 Create new navigation property to remoteActionAudits for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -92,6 +104,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BulkDeviceActionId
+BulkAction ID
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -308,25 +335,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRemoteActionAudit>`: Report of remote actions initiated on the devices belonging to a certain tenant.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphRemoteActionAudit\>: Report of remote actions initiated on the devices belonging to a certain tenant.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Action <RemoteAction?>]`: Remote actions Intune supports.
-  - `[ActionState <String>]`: actionState
-  - `[DeviceDisplayName <String>]`: Intune device name.
-  - `[DeviceImei <String>]`: IMEI of the device.
-  - `[DeviceOwnerUserPrincipalName <String>]`: Upn of the device owner.
-  - `[InitiatedByUserPrincipalName <String>]`: User who initiated the device action, format is UPN.
-  - `[ManagedDeviceId <String>]`: Action target.
-  - `[RequestDateTime <DateTime?>]`: Time when the action was issued, given in UTC.
-  - `[UserName <String>]`: - `[deprecated]` Please use InitiatedByUserPrincipalName instead.
+  \[Action \<RemoteAction?\>\]: Remote actions Intune supports.
+  \[ActionState \<String\>\]: actionState
+  \[BulkDeviceActionId \<String\>\]: BulkAction ID
+  \[DeviceDisplayName \<String\>\]: Intune device name.
+  \[DeviceImei \<String\>\]: IMEI of the device.
+  \[DeviceOwnerUserPrincipalName \<String\>\]: Upn of the device owner.
+  \[InitiatedByUserPrincipalName \<String\>\]: User who initiated the device action, format is UPN.
+  \[ManagedDeviceId \<String\>\]: Action target.
+  \[RequestDateTime \<DateTime?\>\]: Time when the action was issued, given in UTC.
+  \[UserName \<String\>\]: \[deprecated\] Please use InitiatedByUserPrincipalName instead.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementremoteactionaudit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementremoteactionaudit)
-
-
-
-
 

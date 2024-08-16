@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Bookings
 Module Guid: 6590187a-86e9-40ce-9e6c-7ed5e88a7979
 Download Help Link: {{ Update Download Link }}
@@ -8,1036 +8,591 @@ Locale: en-US
 
 # Microsoft.Graph.Beta.Bookings Module
 ## Description
-
+{{ Fill in the Description }}
 
 ## Microsoft.Graph.Beta.Bookings Cmdlets
 ### [Enable-MgBetaBackupRestore](Enable-MgBetaBackupRestore.md)
-
-
-### [Get-MgBetaBackupRestore](Get-MgBetaBackupRestore.md)
-
-
-### [Get-MgBetaBackupRestoreDriveInclusionRule](Get-MgBetaBackupRestoreDriveInclusionRule.md)
-
-
-### [Get-MgBetaBackupRestoreDriveInclusionRuleCount](Get-MgBetaBackupRestoreDriveInclusionRuleCount.md)
-
-
-### [Get-MgBetaBackupRestoreDriveProtectionUnit](Get-MgBetaBackupRestoreDriveProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreDriveProtectionUnitCount](Get-MgBetaBackupRestoreDriveProtectionUnitCount.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeProtectionPolicy](Get-MgBetaBackupRestoreExchangeProtectionPolicy.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeProtectionPolicyCount](Get-MgBetaBackupRestoreExchangeProtectionPolicyCount.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRule](Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRule.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRuleCount](Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRuleCount.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit](Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitCount](Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitCount.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeRestoreSession](Get-MgBetaBackupRestoreExchangeRestoreSession.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeRestoreSessionCount](Get-MgBetaBackupRestoreExchangeRestoreSessionCount.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactCount](Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactCount.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactRestorePoint](Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactRestorePoint.md)
-
-
-### [Get-MgBetaBackupRestoreMailboxInclusionRule](Get-MgBetaBackupRestoreMailboxInclusionRule.md)
-
-
-### [Get-MgBetaBackupRestoreMailboxInclusionRuleCount](Get-MgBetaBackupRestoreMailboxInclusionRuleCount.md)
-
-
-### [Get-MgBetaBackupRestoreMailboxProtectionUnit](Get-MgBetaBackupRestoreMailboxProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreMailboxProtectionUnitCount](Get-MgBetaBackupRestoreMailboxProtectionUnitCount.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyCount](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyCount.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRuleCount](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRuleCount.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitCount](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitCount.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSession](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSession.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionCount](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionCount.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactCount](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactCount.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactRestorePoint](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactRestorePoint.md)
-
-
-### [Get-MgBetaBackupRestorePoint](Get-MgBetaBackupRestorePoint.md)
-
-
-### [Get-MgBetaBackupRestorePointCount](Get-MgBetaBackupRestorePointCount.md)
-
-
-### [Get-MgBetaBackupRestorePointProtectionUnit](Get-MgBetaBackupRestorePointProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreProtectionPolicy](Get-MgBetaBackupRestoreProtectionPolicy.md)
-
-
-### [Get-MgBetaBackupRestoreProtectionPolicyCount](Get-MgBetaBackupRestoreProtectionPolicyCount.md)
-
-
-### [Get-MgBetaBackupRestoreProtectionUnit](Get-MgBetaBackupRestoreProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreProtectionUnitCount](Get-MgBetaBackupRestoreProtectionUnitCount.md)
-
-
-### [Get-MgBetaBackupRestoreServiceApp](Get-MgBetaBackupRestoreServiceApp.md)
-
-
-### [Get-MgBetaBackupRestoreServiceAppCount](Get-MgBetaBackupRestoreServiceAppCount.md)
-
-
-### [Get-MgBetaBackupRestoreSession](Get-MgBetaBackupRestoreSession.md)
-
-
-### [Get-MgBetaBackupRestoreSessionCount](Get-MgBetaBackupRestoreSessionCount.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointProtectionPolicy](Get-MgBetaBackupRestoreSharePointProtectionPolicy.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointProtectionPolicyCount](Get-MgBetaBackupRestoreSharePointProtectionPolicyCount.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointProtectionPolicySiteInclusionRule](Get-MgBetaBackupRestoreSharePointProtectionPolicySiteInclusionRule.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointProtectionPolicySiteInclusionRuleCount](Get-MgBetaBackupRestoreSharePointProtectionPolicySiteInclusionRuleCount.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnit](Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnitCount](Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnitCount.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointRestoreSession](Get-MgBetaBackupRestoreSharePointRestoreSession.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointRestoreSessionCount](Get-MgBetaBackupRestoreSharePointRestoreSessionCount.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifactCount](Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifactCount.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint](Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint.md)
-
-
-### [Get-MgBetaBackupRestoreSiteInclusionRule](Get-MgBetaBackupRestoreSiteInclusionRule.md)
-
-
-### [Get-MgBetaBackupRestoreSiteInclusionRuleCount](Get-MgBetaBackupRestoreSiteInclusionRuleCount.md)
-
-
-### [Get-MgBetaBackupRestoreSiteProtectionUnit](Get-MgBetaBackupRestoreSiteProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreSiteProtectionUnitCount](Get-MgBetaBackupRestoreSiteProtectionUnitCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusiness](Get-MgBetaBookingBusiness.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessAppointment](Get-MgBetaBookingBusinessAppointment.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessAppointmentCount](Get-MgBetaBookingBusinessAppointmentCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessCalendarView](Get-MgBetaBookingBusinessCalendarView.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessCalendarViewCount](Get-MgBetaBookingBusinessCalendarViewCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessCount](Get-MgBetaBookingBusinessCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessCustomer](Get-MgBetaBookingBusinessCustomer.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessCustomerCount](Get-MgBetaBookingBusinessCustomerCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessCustomQuestion](Get-MgBetaBookingBusinessCustomQuestion.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessCustomQuestionCount](Get-MgBetaBookingBusinessCustomQuestionCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessService](Get-MgBetaBookingBusinessService.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessServiceCount](Get-MgBetaBookingBusinessServiceCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessStaffAvailability](Get-MgBetaBookingBusinessStaffAvailability.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessStaffMember](Get-MgBetaBookingBusinessStaffMember.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingBusinessStaffMemberCount](Get-MgBetaBookingBusinessStaffMemberCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingCurrency](Get-MgBetaBookingCurrency.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBookingCurrencyCount](Get-MgBetaBookingCurrencyCount.md)
-
-
-### [Get-MgBetaBusinessScenario](Get-MgBetaBusinessScenario.md)
-
-
-### [Get-MgBetaBusinessScenarioByUniqueName](Get-MgBetaBusinessScenarioByUniqueName.md)
-
-
-### [Get-MgBetaBusinessScenarioCount](Get-MgBetaBusinessScenarioCount.md)
-
-
-### [Get-MgBetaBusinessScenarioPlanner](Get-MgBetaBusinessScenarioPlanner.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaBusinessScenarioPlannerPlan](Get-MgBetaBusinessScenarioPlannerPlan.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerPlanConfiguration](Get-MgBetaBusinessScenarioPlannerPlanConfiguration.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization](Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalizationCount](Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalizationCount.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTask](Get-MgBetaBusinessScenarioPlannerTask.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat](Get-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat](Get-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTaskConfiguration](Get-MgBetaBusinessScenarioPlannerTaskConfiguration.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTaskCount](Get-MgBetaBusinessScenarioPlannerTaskCount.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTaskDetail](Get-MgBetaBusinessScenarioPlannerTaskDetail.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat](Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEvent](Get-MgBetaVirtualEvent.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventCount](Get-MgBetaVirtualEventCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventPresenter](Get-MgBetaVirtualEventPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventPresenterCount](Get-MgBetaVirtualEventPresenterCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventPresenterSession](Get-MgBetaVirtualEventPresenterSession.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventPresenterSessionByJoinWebUrl](Get-MgBetaVirtualEventPresenterSessionByJoinWebUrl.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventPresenterSessionCount](Get-MgBetaVirtualEventPresenterSessionCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSession](Get-MgBetaVirtualEventSession.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionAttendanceReport](Get-MgBetaVirtualEventSessionAttendanceReport.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord](Get-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionAttendanceReportAttendanceRecordCount](Get-MgBetaVirtualEventSessionAttendanceReportAttendanceRecordCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionAttendanceReportCount](Get-MgBetaVirtualEventSessionAttendanceReportCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionByJoinWebUrl](Get-MgBetaVirtualEventSessionByJoinWebUrl.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionCount](Get-MgBetaVirtualEventSessionCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionPresenter](Get-MgBetaVirtualEventSessionPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionPresenterCount](Get-MgBetaVirtualEventSessionPresenterCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionRegistration](Get-MgBetaVirtualEventSessionRegistration.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionRegistrationByEmail](Get-MgBetaVirtualEventSessionRegistrationByEmail.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionRegistrationByUserId](Get-MgBetaVirtualEventSessionRegistrationByUserId.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventSessionRegistrationCount](Get-MgBetaVirtualEventSessionRegistrationCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhall](Get-MgBetaVirtualEventTownhall.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallByUserIdAndRole](Get-MgBetaVirtualEventTownhallByUserIdAndRole.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallByUserRole](Get-MgBetaVirtualEventTownhallByUserRole.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallCount](Get-MgBetaVirtualEventTownhallCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallPresenter](Get-MgBetaVirtualEventTownhallPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallPresenterCount](Get-MgBetaVirtualEventTownhallPresenterCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallPresenterSession](Get-MgBetaVirtualEventTownhallPresenterSession.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallPresenterSessionByJoinWebUrl](Get-MgBetaVirtualEventTownhallPresenterSessionByJoinWebUrl.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallPresenterSessionCount](Get-MgBetaVirtualEventTownhallPresenterSessionCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSession](Get-MgBetaVirtualEventTownhallSession.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionAttendanceReport](Get-MgBetaVirtualEventTownhallSessionAttendanceReport.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord](Get-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecordCount](Get-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecordCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionAttendanceReportCount](Get-MgBetaVirtualEventTownhallSessionAttendanceReportCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionByJoinWebUrl](Get-MgBetaVirtualEventTownhallSessionByJoinWebUrl.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionCount](Get-MgBetaVirtualEventTownhallSessionCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionPresenter](Get-MgBetaVirtualEventTownhallSessionPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionPresenterCount](Get-MgBetaVirtualEventTownhallSessionPresenterCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionRegistration](Get-MgBetaVirtualEventTownhallSessionRegistration.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionRegistrationByEmail](Get-MgBetaVirtualEventTownhallSessionRegistrationByEmail.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionRegistrationByUserId](Get-MgBetaVirtualEventTownhallSessionRegistrationByUserId.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallSessionRegistrationCount](Get-MgBetaVirtualEventTownhallSessionRegistrationCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinar](Get-MgBetaVirtualEventWebinar.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarByUserIdAndRole](Get-MgBetaVirtualEventWebinarByUserIdAndRole.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarByUserRole](Get-MgBetaVirtualEventWebinarByUserRole.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarCount](Get-MgBetaVirtualEventWebinarCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarPresenter](Get-MgBetaVirtualEventWebinarPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarPresenterCount](Get-MgBetaVirtualEventWebinarPresenterCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarPresenterSession](Get-MgBetaVirtualEventWebinarPresenterSession.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarPresenterSessionByJoinWebUrl](Get-MgBetaVirtualEventWebinarPresenterSessionByJoinWebUrl.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarPresenterSessionCount](Get-MgBetaVirtualEventWebinarPresenterSessionCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarRegistration](Get-MgBetaVirtualEventWebinarRegistration.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarRegistrationByEmail](Get-MgBetaVirtualEventWebinarRegistrationByEmail.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarRegistrationByUserId](Get-MgBetaVirtualEventWebinarRegistrationByUserId.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarRegistrationConfiguration](Get-MgBetaVirtualEventWebinarRegistrationConfiguration.md)
+{{ Fill in the Description }}
 
+### [Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestionCount](Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestionCount.md)
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarRegistrationCount](Get-MgBetaVirtualEventWebinarRegistrationCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarRegistrationSession](Get-MgBetaVirtualEventWebinarRegistrationSession.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarRegistrationSessionByJoinWebUrl](Get-MgBetaVirtualEventWebinarRegistrationSessionByJoinWebUrl.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarRegistrationSessionCount](Get-MgBetaVirtualEventWebinarRegistrationSessionCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSession](Get-MgBetaVirtualEventWebinarSession.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionAttendanceReport](Get-MgBetaVirtualEventWebinarSessionAttendanceReport.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount](Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionAttendanceReportCount](Get-MgBetaVirtualEventWebinarSessionAttendanceReportCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionByJoinWebUrl](Get-MgBetaVirtualEventWebinarSessionByJoinWebUrl.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionCount](Get-MgBetaVirtualEventWebinarSessionCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionPresenter](Get-MgBetaVirtualEventWebinarSessionPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionPresenterCount](Get-MgBetaVirtualEventWebinarSessionPresenterCount.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionRegistration](Get-MgBetaVirtualEventWebinarSessionRegistration.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionRegistrationByEmail](Get-MgBetaVirtualEventWebinarSessionRegistrationByEmail.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionRegistrationByUserId](Get-MgBetaVirtualEventWebinarSessionRegistrationByUserId.md)
-
+{{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionRegistrationCount](Get-MgBetaVirtualEventWebinarSessionRegistrationCount.md)
-
+{{ Fill in the Description }}
 
 ### [Initialize-MgBetaBackupRestoreProtectionPolicy](Initialize-MgBetaBackupRestoreProtectionPolicy.md)
-
+{{ Fill in the Description }}
 
 ### [Initialize-MgBetaBackupRestoreServiceApp](Initialize-MgBetaBackupRestoreServiceApp.md)
-
+{{ Fill in the Description }}
 
 ### [Initialize-MgBetaBackupRestoreSession](Initialize-MgBetaBackupRestoreSession.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy](Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy.md)
-
+{{ Fill in the Description }}
 
 ### [Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp](Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp.md)
-
-
-### [New-MgBetaBackupRestoreDriveInclusionRule](New-MgBetaBackupRestoreDriveInclusionRule.md)
-
-
-### [New-MgBetaBackupRestoreDriveProtectionUnit](New-MgBetaBackupRestoreDriveProtectionUnit.md)
-
-
-### [New-MgBetaBackupRestoreExchangeProtectionPolicy](New-MgBetaBackupRestoreExchangeProtectionPolicy.md)
-
-
-### [New-MgBetaBackupRestoreExchangeRestoreSession](New-MgBetaBackupRestoreExchangeRestoreSession.md)
-
-
-### [New-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](New-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
-
-
-### [New-MgBetaBackupRestoreMailboxInclusionRule](New-MgBetaBackupRestoreMailboxInclusionRule.md)
-
-
-### [New-MgBetaBackupRestoreMailboxProtectionUnit](New-MgBetaBackupRestoreMailboxProtectionUnit.md)
-
-
-### [New-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy](New-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy.md)
-
-
-### [New-MgBetaBackupRestoreOneDriveForBusinessRestoreSession](New-MgBetaBackupRestoreOneDriveForBusinessRestoreSession.md)
-
-
-### [New-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](New-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
-
-
-### [New-MgBetaBackupRestorePoint](New-MgBetaBackupRestorePoint.md)
-
-
-### [New-MgBetaBackupRestoreProtectionPolicy](New-MgBetaBackupRestoreProtectionPolicy.md)
-
-
-### [New-MgBetaBackupRestoreServiceApp](New-MgBetaBackupRestoreServiceApp.md)
-
-
-### [New-MgBetaBackupRestoreSession](New-MgBetaBackupRestoreSession.md)
-
-
-### [New-MgBetaBackupRestoreSharePointProtectionPolicy](New-MgBetaBackupRestoreSharePointProtectionPolicy.md)
-
-
-### [New-MgBetaBackupRestoreSharePointRestoreSession](New-MgBetaBackupRestoreSharePointRestoreSession.md)
-
-
-### [New-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](New-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
-
-
-### [New-MgBetaBackupRestoreSiteInclusionRule](New-MgBetaBackupRestoreSiteInclusionRule.md)
-
-
-### [New-MgBetaBackupRestoreSiteProtectionUnit](New-MgBetaBackupRestoreSiteProtectionUnit.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaBookingBusiness](New-MgBetaBookingBusiness.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaBookingBusinessAppointment](New-MgBetaBookingBusinessAppointment.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaBookingBusinessCalendarView](New-MgBetaBookingBusinessCalendarView.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaBookingBusinessCustomer](New-MgBetaBookingBusinessCustomer.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaBookingBusinessCustomQuestion](New-MgBetaBookingBusinessCustomQuestion.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaBookingBusinessService](New-MgBetaBookingBusinessService.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaBookingBusinessStaffMember](New-MgBetaBookingBusinessStaffMember.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaBookingCurrency](New-MgBetaBookingCurrency.md)
-
-
-### [New-MgBetaBusinessScenario](New-MgBetaBusinessScenario.md)
-
-
-### [New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization](New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization.md)
-
-
-### [New-MgBetaBusinessScenarioPlannerTask](New-MgBetaBusinessScenarioPlannerTask.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEvent](New-MgBetaVirtualEvent.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventPresenter](New-MgBetaVirtualEventPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventSession](New-MgBetaVirtualEventSession.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventSessionAttendanceReport](New-MgBetaVirtualEventSessionAttendanceReport.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord](New-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventTownhall](New-MgBetaVirtualEventTownhall.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventTownhallPresenter](New-MgBetaVirtualEventTownhallPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventTownhallSession](New-MgBetaVirtualEventTownhallSession.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventTownhallSessionAttendanceReport](New-MgBetaVirtualEventTownhallSessionAttendanceReport.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord](New-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventWebinar](New-MgBetaVirtualEventWebinar.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventWebinarPresenter](New-MgBetaVirtualEventWebinarPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventWebinarRegistration](New-MgBetaVirtualEventWebinarRegistration.md)
+{{ Fill in the Description }}
 
+### [New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion.md)
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventWebinarSession](New-MgBetaVirtualEventWebinarSession.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventWebinarSessionAttendanceReport](New-MgBetaVirtualEventWebinarSessionAttendanceReport.md)
-
+{{ Fill in the Description }}
 
 ### [New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
-
+{{ Fill in the Description }}
 
 ### [Publish-MgBetaBookingBusiness](Publish-MgBetaBookingBusiness.md)
-
+{{ Fill in the Description }}
 
 ### [Publish-MgBetaVirtualEvent](Publish-MgBetaVirtualEvent.md)
-
-
-### [Remove-MgBetaBackupRestore](Remove-MgBetaBackupRestore.md)
-
-
-### [Remove-MgBetaBackupRestoreDriveInclusionRule](Remove-MgBetaBackupRestoreDriveInclusionRule.md)
-
-
-### [Remove-MgBetaBackupRestoreDriveProtectionUnit](Remove-MgBetaBackupRestoreDriveProtectionUnit.md)
-
-
-### [Remove-MgBetaBackupRestoreExchangeProtectionPolicy](Remove-MgBetaBackupRestoreExchangeProtectionPolicy.md)
-
-
-### [Remove-MgBetaBackupRestoreExchangeRestoreSession](Remove-MgBetaBackupRestoreExchangeRestoreSession.md)
-
-
-### [Remove-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](Remove-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
-
-
-### [Remove-MgBetaBackupRestoreMailboxInclusionRule](Remove-MgBetaBackupRestoreMailboxInclusionRule.md)
-
-
-### [Remove-MgBetaBackupRestoreMailboxProtectionUnit](Remove-MgBetaBackupRestoreMailboxProtectionUnit.md)
-
-
-### [Remove-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy](Remove-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy.md)
-
-
-### [Remove-MgBetaBackupRestoreOneDriveForBusinessRestoreSession](Remove-MgBetaBackupRestoreOneDriveForBusinessRestoreSession.md)
-
-
-### [Remove-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](Remove-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
-
-
-### [Remove-MgBetaBackupRestorePoint](Remove-MgBetaBackupRestorePoint.md)
-
-
-### [Remove-MgBetaBackupRestoreProtectionPolicy](Remove-MgBetaBackupRestoreProtectionPolicy.md)
-
-
-### [Remove-MgBetaBackupRestoreServiceApp](Remove-MgBetaBackupRestoreServiceApp.md)
-
-
-### [Remove-MgBetaBackupRestoreSession](Remove-MgBetaBackupRestoreSession.md)
-
-
-### [Remove-MgBetaBackupRestoreSharePointProtectionPolicy](Remove-MgBetaBackupRestoreSharePointProtectionPolicy.md)
-
-
-### [Remove-MgBetaBackupRestoreSharePointRestoreSession](Remove-MgBetaBackupRestoreSharePointRestoreSession.md)
-
-
-### [Remove-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](Remove-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
-
-
-### [Remove-MgBetaBackupRestoreSiteInclusionRule](Remove-MgBetaBackupRestoreSiteInclusionRule.md)
-
-
-### [Remove-MgBetaBackupRestoreSiteProtectionUnit](Remove-MgBetaBackupRestoreSiteProtectionUnit.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaBookingBusiness](Remove-MgBetaBookingBusiness.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaBookingBusinessAppointment](Remove-MgBetaBookingBusinessAppointment.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaBookingBusinessCalendarView](Remove-MgBetaBookingBusinessCalendarView.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaBookingBusinessCustomer](Remove-MgBetaBookingBusinessCustomer.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaBookingBusinessCustomQuestion](Remove-MgBetaBookingBusinessCustomQuestion.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaBookingBusinessService](Remove-MgBetaBookingBusinessService.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaBookingBusinessStaffMember](Remove-MgBetaBookingBusinessStaffMember.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaBookingCurrency](Remove-MgBetaBookingCurrency.md)
-
-
-### [Remove-MgBetaBusinessScenario](Remove-MgBetaBusinessScenario.md)
-
-
-### [Remove-MgBetaBusinessScenarioByUniqueName](Remove-MgBetaBusinessScenarioByUniqueName.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlanner](Remove-MgBetaBusinessScenarioPlanner.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerPlanConfiguration](Remove-MgBetaBusinessScenarioPlannerPlanConfiguration.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization](Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerTask](Remove-MgBetaBusinessScenarioPlannerTask.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat](Remove-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat](Remove-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerTaskConfiguration](Remove-MgBetaBusinessScenarioPlannerTaskConfiguration.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerTaskDetail](Remove-MgBetaBusinessScenarioPlannerTaskDetail.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat](Remove-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEvent](Remove-MgBetaVirtualEvent.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventPresenter](Remove-MgBetaVirtualEventPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventSession](Remove-MgBetaVirtualEventSession.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventSessionAttendanceReport](Remove-MgBetaVirtualEventSessionAttendanceReport.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord](Remove-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventSessionByJoinWebUrl](Remove-MgBetaVirtualEventSessionByJoinWebUrl.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventTownhall](Remove-MgBetaVirtualEventTownhall.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventTownhallPresenter](Remove-MgBetaVirtualEventTownhallPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventTownhallSession](Remove-MgBetaVirtualEventTownhallSession.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventTownhallSessionAttendanceReport](Remove-MgBetaVirtualEventTownhallSessionAttendanceReport.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord](Remove-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventTownhallSessionByJoinWebUrl](Remove-MgBetaVirtualEventTownhallSessionByJoinWebUrl.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventWebinar](Remove-MgBetaVirtualEventWebinar.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventWebinarPresenter](Remove-MgBetaVirtualEventWebinarPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventWebinarRegistration](Remove-MgBetaVirtualEventWebinarRegistration.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventWebinarRegistrationByEmail](Remove-MgBetaVirtualEventWebinarRegistrationByEmail.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventWebinarRegistrationByUserId](Remove-MgBetaVirtualEventWebinarRegistrationByUserId.md)
+{{ Fill in the Description }}
 
+### [Remove-MgBetaVirtualEventWebinarRegistrationConfiguration](Remove-MgBetaVirtualEventWebinarRegistrationConfiguration.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion.md)
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventWebinarSession](Remove-MgBetaVirtualEventWebinarSession.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventWebinarSessionAttendanceReport](Remove-MgBetaVirtualEventWebinarSessionAttendanceReport.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](Remove-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
-
+{{ Fill in the Description }}
 
 ### [Remove-MgBetaVirtualEventWebinarSessionByJoinWebUrl](Remove-MgBetaVirtualEventWebinarSessionByJoinWebUrl.md)
-
+{{ Fill in the Description }}
 
 ### [Search-MgBetaBackupRestorePoint](Search-MgBetaBackupRestorePoint.md)
-
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaBookingBusinessAppointment](Stop-MgBetaBookingBusinessAppointment.md)
-
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaBookingBusinessCalendarView](Stop-MgBetaBookingBusinessCalendarView.md)
-
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaVirtualEvent](Stop-MgBetaVirtualEvent.md)
-
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaVirtualEventWebinarRegistration](Stop-MgBetaVirtualEventWebinarRegistration.md)
-
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaVirtualEventWebinarRegistrationEmail](Stop-MgBetaVirtualEventWebinarRegistrationEmail.md)
-
+{{ Fill in the Description }}
 
 ### [Stop-MgBetaVirtualEventWebinarRegistrationUserId](Stop-MgBetaVirtualEventWebinarRegistrationUserId.md)
-
+{{ Fill in the Description }}
 
 ### [Unpublish-MgBetaBookingBusiness](Unpublish-MgBetaBookingBusiness.md)
-
-
-### [Update-MgBetaBackupRestore](Update-MgBetaBackupRestore.md)
-
-
-### [Update-MgBetaBackupRestoreDriveInclusionRule](Update-MgBetaBackupRestoreDriveInclusionRule.md)
-
-
-### [Update-MgBetaBackupRestoreDriveProtectionUnit](Update-MgBetaBackupRestoreDriveProtectionUnit.md)
-
-
-### [Update-MgBetaBackupRestoreExchangeProtectionPolicy](Update-MgBetaBackupRestoreExchangeProtectionPolicy.md)
-
-
-### [Update-MgBetaBackupRestoreExchangeRestoreSession](Update-MgBetaBackupRestoreExchangeRestoreSession.md)
-
-
-### [Update-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](Update-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
-
-
-### [Update-MgBetaBackupRestoreMailboxInclusionRule](Update-MgBetaBackupRestoreMailboxInclusionRule.md)
-
-
-### [Update-MgBetaBackupRestoreMailboxProtectionUnit](Update-MgBetaBackupRestoreMailboxProtectionUnit.md)
-
-
-### [Update-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy](Update-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy.md)
-
-
-### [Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSession](Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSession.md)
-
-
-### [Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
-
-
-### [Update-MgBetaBackupRestorePoint](Update-MgBetaBackupRestorePoint.md)
-
-
-### [Update-MgBetaBackupRestoreProtectionPolicy](Update-MgBetaBackupRestoreProtectionPolicy.md)
-
-
-### [Update-MgBetaBackupRestoreServiceApp](Update-MgBetaBackupRestoreServiceApp.md)
-
-
-### [Update-MgBetaBackupRestoreSession](Update-MgBetaBackupRestoreSession.md)
-
-
-### [Update-MgBetaBackupRestoreSharePointProtectionPolicy](Update-MgBetaBackupRestoreSharePointProtectionPolicy.md)
-
-
-### [Update-MgBetaBackupRestoreSharePointRestoreSession](Update-MgBetaBackupRestoreSharePointRestoreSession.md)
-
-
-### [Update-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](Update-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
-
-
-### [Update-MgBetaBackupRestoreSiteInclusionRule](Update-MgBetaBackupRestoreSiteInclusionRule.md)
-
-
-### [Update-MgBetaBackupRestoreSiteProtectionUnit](Update-MgBetaBackupRestoreSiteProtectionUnit.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaBookingBusiness](Update-MgBetaBookingBusiness.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaBookingBusinessAppointment](Update-MgBetaBookingBusinessAppointment.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaBookingBusinessCalendarView](Update-MgBetaBookingBusinessCalendarView.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaBookingBusinessCustomer](Update-MgBetaBookingBusinessCustomer.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaBookingBusinessCustomQuestion](Update-MgBetaBookingBusinessCustomQuestion.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaBookingBusinessService](Update-MgBetaBookingBusinessService.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaBookingBusinessStaffMember](Update-MgBetaBookingBusinessStaffMember.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaBookingCurrency](Update-MgBetaBookingCurrency.md)
-
-
-### [Update-MgBetaBusinessScenario](Update-MgBetaBusinessScenario.md)
-
-
-### [Update-MgBetaBusinessScenarioByUniqueName](Update-MgBetaBusinessScenarioByUniqueName.md)
-
-
-### [Update-MgBetaBusinessScenarioPlanner](Update-MgBetaBusinessScenarioPlanner.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerPlanConfiguration](Update-MgBetaBusinessScenarioPlannerPlanConfiguration.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization](Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerTask](Update-MgBetaBusinessScenarioPlannerTask.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat](Update-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat](Update-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerTaskConfiguration](Update-MgBetaBusinessScenarioPlannerTaskConfiguration.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerTaskDetail](Update-MgBetaBusinessScenarioPlannerTaskDetail.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat](Update-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEvent](Update-MgBetaVirtualEvent.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventPresenter](Update-MgBetaVirtualEventPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventSession](Update-MgBetaVirtualEventSession.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventSessionAttendanceReport](Update-MgBetaVirtualEventSessionAttendanceReport.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord](Update-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventSessionByJoinWebUrl](Update-MgBetaVirtualEventSessionByJoinWebUrl.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventTownhall](Update-MgBetaVirtualEventTownhall.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventTownhallPresenter](Update-MgBetaVirtualEventTownhallPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventTownhallSession](Update-MgBetaVirtualEventTownhallSession.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventTownhallSessionAttendanceReport](Update-MgBetaVirtualEventTownhallSessionAttendanceReport.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord](Update-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventTownhallSessionByJoinWebUrl](Update-MgBetaVirtualEventTownhallSessionByJoinWebUrl.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinar](Update-MgBetaVirtualEventWebinar.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinarPresenter](Update-MgBetaVirtualEventWebinarPresenter.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinarRegistration](Update-MgBetaVirtualEventWebinarRegistration.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinarRegistrationByEmail](Update-MgBetaVirtualEventWebinarRegistrationByEmail.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinarRegistrationByUserId](Update-MgBetaVirtualEventWebinarRegistrationByUserId.md)
+{{ Fill in the Description }}
 
+### [Update-MgBetaVirtualEventWebinarRegistrationConfiguration](Update-MgBetaVirtualEventWebinarRegistrationConfiguration.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](Update-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion.md)
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinarSession](Update-MgBetaVirtualEventWebinarSession.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinarSessionAttendanceReport](Update-MgBetaVirtualEventWebinarSessionAttendanceReport.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](Update-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
-
+{{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl](Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl.md)
-
-
+{{ Fill in the Description }}
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolememberbyref
@@ -8,14 +8,11 @@ schema: 2.0.0
 # Get-MgBetaDirectoryRoleMemberByRef
 
 ## SYNOPSIS
-Users that are members of this directory role.
-HTTP Methods: GET, POST, DELETE.
-Read-only.
-Nullable.
-Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleMemberByRef?view=graph-powershell-1.0)
+Retrieve a list of the users that are assigned to the directory role.
+Only users can be assigned to a directory role.
+You can use both the object ID and template ID of the directoryRole with this API.
+The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
+For details, see Role template IDs.
 
 ## SYNTAX
 
@@ -27,11 +24,23 @@ Get-MgBetaDirectoryRoleMemberByRef -DirectoryRoleId <String> [-Filter <String>] 
 ```
 
 ## DESCRIPTION
-Users that are members of this directory role.
-HTTP Methods: GET, POST, DELETE.
-Read-only.
-Nullable.
-Supports $expand.
+Retrieve a list of the users that are assigned to the directory role.
+Only users can be assigned to a directory role.
+You can use both the object ID and template ID of the directoryRole with this API.
+The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
+For details, see Role template IDs.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -247,7 +256,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolememberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolememberbyref)
 
-
-
-
+[https://learn.microsoft.com/graph/api/directoryrole-list-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryrole-list-members?view=graph-rest-beta)
 

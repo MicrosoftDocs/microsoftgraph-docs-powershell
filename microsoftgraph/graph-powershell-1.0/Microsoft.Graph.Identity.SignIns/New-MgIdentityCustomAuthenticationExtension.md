@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension
@@ -8,10 +8,8 @@ schema: 2.0.0
 # New-MgIdentityCustomAuthenticationExtension
 
 ## SYNOPSIS
-Create new navigation property to customAuthenticationExtensions for identity
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityCustomAuthenticationExtension?view=graph-powershell-beta)
+Create a new customAuthenticationExtension object.
+The following derived types are currently supported.
 
 ## SYNTAX
 
@@ -31,7 +29,20 @@ New-MgIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-Respons
 ```
 
 ## DESCRIPTION
-Create new navigation property to customAuthenticationExtensions for identity
+Create a new customAuthenticationExtension object.
+The following derived types are currently supported.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -249,12 +260,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MaximumRetries <Int32?>]`: The max number of retries that Microsoft Entra ID makes to the external API.
+CLIENTCONFIGURATION \<IMicrosoftGraphCustomExtensionClientConfiguration\>: customExtensionClientConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[MaximumRetries \<Int32?\>\]: The max number of retries that Microsoft Entra ID makes to the external API.
 Values of 0 or 1 are supported.
 If null, the default for the service applies.
-  - `[TimeoutInMilliseconds <Int32?>]`: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
+  \[TimeoutInMilliseconds \<Int32?\>\]: The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection.
 The valid range is between 200 and 2000 milliseconds.
 Default duration is 1000.
 
@@ -262,7 +273,5 @@ Default duration is 1000.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension)
 
-
-
-
+[https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0)
 

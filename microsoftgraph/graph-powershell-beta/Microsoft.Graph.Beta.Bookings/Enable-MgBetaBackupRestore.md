@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/enable-mgbetabackuprestore
 schema: 2.0.0
-ms.subservice: m365-backup-storage
 ---
 
 # Enable-MgBetaBackupRestore
@@ -31,25 +30,18 @@ Enable-MgBetaBackupRestore
 ## DESCRIPTION
 Enable the Microsoft 365 Backup Storage service for a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-enable-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
+```
 
 $params = @{
 	appOwnerTenantId = "23014d8c-71fe-4d00-a01a-31850bc5b42a"
 }
 
 Enable-MgBetaBackupRestore -BodyParameter $params
-
-```
-This example shows how to use the Enable-MgBetaBackupRestore Cmdlet.
-
 
 ## PARAMETERS
 
@@ -191,16 +183,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsI0X7PjSolutionsBackuprestoreMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AppOwnerTenantId <String>]`:
+BODYPARAMETER \<IPathsI0X7PjSolutionsBackuprestoreMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AppOwnerTenantId \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/enable-mgbetabackuprestore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/enable-mgbetabackuprestore)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-beta](https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-beta)
-
-
-
 
