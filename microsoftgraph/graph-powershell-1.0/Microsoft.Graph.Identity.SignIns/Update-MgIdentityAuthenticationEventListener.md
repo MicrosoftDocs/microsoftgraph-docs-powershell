@@ -50,18 +50,6 @@ Update-MgIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIdent
 Update the properties of an authenticationEventListener object.
 You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -353,6 +341,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventlistener)
 
 [https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-1.0)
+
 
 
 

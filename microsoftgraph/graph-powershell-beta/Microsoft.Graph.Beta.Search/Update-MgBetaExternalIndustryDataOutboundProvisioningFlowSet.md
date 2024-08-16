@@ -45,18 +45,6 @@ Update-MgBetaExternalIndustryDataOutboundProvisioningFlowSet -InputObject <ISear
 ## DESCRIPTION
 Update the navigation property outboundProvisioningFlowSets in external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -319,6 +307,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataoutboundprovisioningflowset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataoutboundprovisioningflowset)
+
 
 
 

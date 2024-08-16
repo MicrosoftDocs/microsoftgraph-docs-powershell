@@ -8,22 +8,22 @@ Locale: en-US
 
 # Microsoft.Graph.Beta.SchemaExtensions Module
 ## Description
-{{ Fill in the Description }}
+
 
 ## Microsoft.Graph.Beta.SchemaExtensions Cmdlets
 ### [Get-MgBetaSchemaExtension](Get-MgBetaSchemaExtension.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgBetaSchemaExtensionCount](Get-MgBetaSchemaExtensionCount.md)
-{{ Fill in the Description }}
+
 
 ### [New-MgBetaSchemaExtension](New-MgBetaSchemaExtension.md)
-{{ Fill in the Description }}
+
 
 ### [Remove-MgBetaSchemaExtension](Remove-MgBetaSchemaExtension.md)
-{{ Fill in the Description }}
+
 
 ### [Update-MgBetaSchemaExtension](Update-MgBetaSchemaExtension.md)
-{{ Fill in the Description }}
+
 
 

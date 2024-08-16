@@ -52,18 +52,6 @@ Update-MgIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsIde
 ## DESCRIPTION
 Update the properties of a customAuthenticationExtension object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -387,6 +375,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentitycustomauthenticationextension)
 
 [https://learn.microsoft.com/graph/api/customauthenticationextension-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customauthenticationextension-update?view=graph-rest-1.0)
+
 
 
 

@@ -42,18 +42,6 @@ Get-MgIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdentity> [-
 Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
 The @odata.type property in the response object indicates the type of the object, which can be one of the following derived subtypes:- externalUsersSelfServiceSignupEventsFlow
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -367,6 +355,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/authenticationeventsflow-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventsflow-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-1.0)
+
 
 
 

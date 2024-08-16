@@ -54,18 +54,6 @@ Update the properties of an authenticationEventsFlow object by ID.
 You must specify the @odata.type property and the value of the authenticationEventsFlow object type to update.
 The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -373,6 +361,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventflow)
 
 [https://learn.microsoft.com/graph/api/authenticationeventsflow-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventsflow-update?view=graph-rest-1.0)
+
 
 
 

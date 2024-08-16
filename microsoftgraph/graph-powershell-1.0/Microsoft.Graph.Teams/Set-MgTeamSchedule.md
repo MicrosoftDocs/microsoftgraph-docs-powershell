@@ -69,18 +69,6 @@ During schedule provisioning, clients can use the GET method to get the schedule
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -959,6 +947,7 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule)
 
 [https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-1.0)
+
 
 
 

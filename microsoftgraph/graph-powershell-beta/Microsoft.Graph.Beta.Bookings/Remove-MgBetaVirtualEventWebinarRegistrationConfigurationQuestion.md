@@ -35,18 +35,6 @@ Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <
 Delete a registration question from a webinar.
 The question can either be a predefined registration question or a custom registration question.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -248,6 +236,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarregistrationconfigurationquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarregistrationconfigurationquestion)
 
 [https://learn.microsoft.com/graph/api/virtualeventregistrationquestionbase-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventregistrationquestionbase-delete?view=graph-rest-beta)
+
 
 
 

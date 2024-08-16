@@ -32,18 +32,6 @@ Get-MgDirectorySubscriptionByCommerceSubscriptionId -InputObject <IIdentityDirec
 ## DESCRIPTION
 Get a specific commercial subscription that an organization acquired.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CommerceSubscriptionId
@@ -201,6 +189,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorysubscriptionbycommercesubscriptionid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorysubscriptionbycommercesubscriptionid)
 
 [https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-1.0)
+
 
 
 

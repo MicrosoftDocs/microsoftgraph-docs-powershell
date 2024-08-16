@@ -29,18 +29,6 @@ Get-MgBetaDomainRootDomain -InputObject <IIdentityDirectoryManagementIdentity> [
 ## DESCRIPTION
 Get the root domain of a subdomain.The API returns a single object which is the root domain of the specified subdomain.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DomainId
@@ -219,6 +207,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainrootdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainrootdomain)
 
 [https://learn.microsoft.com/graph/api/domain-list-rootdomain?view=graph-rest-beta](https://learn.microsoft.com/graph/api/domain-list-rootdomain?view=graph-rest-beta)
+
 
 
 

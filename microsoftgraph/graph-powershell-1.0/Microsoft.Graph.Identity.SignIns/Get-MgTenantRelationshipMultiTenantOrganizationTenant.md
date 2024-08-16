@@ -40,18 +40,6 @@ Get-MgTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentitySig
 ## DESCRIPTION
 Get a tenant and its properties in the multitenant organization.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -365,6 +353,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/multitenantorganizationmember-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganizationmember-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/multitenantorganization-list-tenants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganization-list-tenants?view=graph-rest-1.0)
+
 
 
 

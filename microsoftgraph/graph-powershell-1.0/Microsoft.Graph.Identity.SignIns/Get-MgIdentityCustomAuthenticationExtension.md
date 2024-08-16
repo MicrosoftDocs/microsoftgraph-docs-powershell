@@ -40,18 +40,6 @@ Get-MgIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsIdenti
 ## DESCRIPTION
 Read the properties and relationships of a customAuthenticationExtension object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -365,6 +353,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/customauthenticationextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customauthenticationextension-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-list-customauthenticationextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-list-customauthenticationextensions?view=graph-rest-1.0)
+
 
 
 

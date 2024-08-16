@@ -50,18 +50,6 @@ Update-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update an appManagementPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -439,6 +427,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyappmanagementpolicy)
 
 [https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-1.0)
+
 
 
 

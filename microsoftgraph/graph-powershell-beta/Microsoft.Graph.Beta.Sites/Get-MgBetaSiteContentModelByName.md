@@ -29,18 +29,6 @@ Get-MgBetaSiteContentModelByName -InputObject <ISitesIdentity> [-ResponseHeaders
 Read the properties and relationships of a contentModel object by its model name.
 The name should be the full model filename, including the file extension; for example, exampleModel.classifier.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -211,6 +199,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontentmodelbyname](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontentmodelbyname)
 
 [https://learn.microsoft.com/graph/api/contentmodel-getbyname?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contentmodel-getbyname?view=graph-rest-beta)
+
 
 
 

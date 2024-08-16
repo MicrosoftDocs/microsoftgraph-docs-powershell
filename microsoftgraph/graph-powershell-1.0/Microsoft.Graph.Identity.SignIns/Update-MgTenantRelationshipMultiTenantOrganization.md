@@ -35,18 +35,6 @@ Update-MgTenantRelationshipMultiTenantOrganization -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Update the properties of a multitenant organization.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -376,6 +364,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganization)
 
 [https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-1.0)
+
 
 
 

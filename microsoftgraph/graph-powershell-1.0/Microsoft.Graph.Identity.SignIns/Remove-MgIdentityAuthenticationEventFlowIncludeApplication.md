@@ -35,18 +35,6 @@ Remove-MgIdentityAuthenticationEventFlowIncludeApplication -InputObject <IIdenti
 Remove or unlink an application from an authenticationEventsFlow object.
 This disables the customized authentication experience defined for the application.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationConditionApplicationAppId
@@ -283,6 +271,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflowincludeapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflowincludeapplication)
 
 [https://learn.microsoft.com/graph/api/authenticationconditionapplication-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationconditionapplication-delete?view=graph-rest-1.0)
+
 
 
 

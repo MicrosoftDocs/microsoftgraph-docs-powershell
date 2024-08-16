@@ -40,18 +40,6 @@ Get-MgTeamPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 A collection of permissions granted to apps to access the team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -352,6 +340,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteampermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteampermissiongrant)
 
 [https://learn.microsoft.com/graph/api/team-list-permissiongrants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-list-permissiongrants?view=graph-rest-1.0)
+
 
 
 

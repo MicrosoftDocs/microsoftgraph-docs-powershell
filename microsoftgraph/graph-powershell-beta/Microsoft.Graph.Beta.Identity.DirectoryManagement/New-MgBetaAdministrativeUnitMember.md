@@ -48,18 +48,6 @@ Use this API to add a member (user, group, or device) to an administrative unit 
 All group types can be created within an administrative unit.
 Note: Currently, it's only possible to add one member at a time to an administrative unit.\`
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -310,6 +298,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmember)
 
 [https://learn.microsoft.com/graph/api/administrativeunit-post-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/administrativeunit-post-members?view=graph-rest-beta)
+
 
 
 

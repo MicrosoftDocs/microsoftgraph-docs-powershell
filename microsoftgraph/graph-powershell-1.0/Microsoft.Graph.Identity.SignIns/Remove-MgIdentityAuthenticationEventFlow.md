@@ -36,18 +36,6 @@ Delete a specific authenticationEventsFlow resource by ID.
 This operation also removes or unlinks all applications from the flow, which disables the customized authentication experience defined for the application.
 The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId
@@ -269,6 +257,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflow)
 
 [https://learn.microsoft.com/graph/api/authenticationeventsflow-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventsflow-delete?view=graph-rest-1.0)
+
 
 
 

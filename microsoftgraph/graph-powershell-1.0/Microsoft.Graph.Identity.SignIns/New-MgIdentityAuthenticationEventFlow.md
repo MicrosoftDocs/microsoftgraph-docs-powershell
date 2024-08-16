@@ -35,18 +35,6 @@ New-MgIdentityAuthenticationEventFlow -BodyParameter <IMicrosoftGraphAuthenticat
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
 The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow object type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -261,6 +249,7 @@ CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-1.0)
+
 
 
 
