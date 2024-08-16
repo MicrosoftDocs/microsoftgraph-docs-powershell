@@ -57,11 +57,11 @@ It is performed on an accessPackageAssignmentRequest object whose requestStatus 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentrequest-resume-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	source = "Contoso.SodCheckProcess"
@@ -75,6 +75,10 @@ $params = @{
 }
 
 Resume-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId -BodyParameter $params
+
+```
+This example shows how to use the Resume-MgEntitlementManagementAssignmentRequest Cmdlet.
+
 
 ## PARAMETERS
 

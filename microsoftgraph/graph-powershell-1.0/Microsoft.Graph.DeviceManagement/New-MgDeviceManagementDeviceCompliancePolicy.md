@@ -42,41 +42,40 @@ New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter <IMicrosoftGraphDevi
 Create a new iosCompliancePolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.androidWorkProfileCompliancePolicy"
+	"@odata.type" = "#microsoft.graph.windows10MobileCompliancePolicy"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
 	passwordRequired = $true
+	passwordBlockSimple = $true
 	passwordMinimumLength = 
-	passwordRequiredType = "alphabetic"
-	passwordMinutesOfInactivityBeforeLock = 
-	passwordExpirationDays = 
+	passwordMinimumCharacterSetCount = 
+	passwordRequiredType = "alphanumeric"
 	passwordPreviousPasswordBlockCount = 
-	securityPreventInstallAppsFromUnknownSources = $true
-	securityDisableUsbDebugging = $true
-	securityRequireVerifyApps = $true
-	deviceThreatProtectionEnabled = $true
-	deviceThreatProtectionRequiredSecurityLevel = "secured"
-	securityBlockJailbrokenDevices = $true
+	passwordExpirationDays = 
+	passwordMinutesOfInactivityBeforeLock = 
+	passwordRequireToUnlockFromIdle = $true
 	osMinimumVersion = "Os Minimum Version value"
 	osMaximumVersion = "Os Maximum Version value"
-	minAndroidSecurityPatchLevel = "Min Android Security Patch Level value"
+	earlyLaunchAntiMalwareDriverEnabled = $true
+	bitLockerEnabled = $true
+	secureBootEnabled = $true
+	codeIntegrityEnabled = $true
 	storageRequireEncryption = $true
-	securityRequireSafetyNetAttestationBasicIntegrity = $true
-	securityRequireSafetyNetAttestationCertifiedDevice = $true
-	securityRequireGooglePlayServices = $true
-	securityRequireUpToDateSecurityProviders = $true
-	securityRequireCompanyPortalAppIntegrity = $true
 }
 
 New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCompliancePolicy Cmdlet.
+
 
 ## PARAMETERS
 

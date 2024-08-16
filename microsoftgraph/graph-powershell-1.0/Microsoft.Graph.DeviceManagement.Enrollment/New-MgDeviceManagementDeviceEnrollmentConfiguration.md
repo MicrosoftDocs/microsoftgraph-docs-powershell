@@ -36,33 +36,60 @@ New-MgDeviceManagementDeviceEnrollmentConfiguration
 Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
-```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration"
+	"@odata.type" = "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration"
 	displayName = "Display Name value"
 	description = "Description value"
 	priority = 8
 	version = 7
-	pinMinimumLength = 
-	pinMaximumLength = 
-	pinUppercaseCharactersUsage = "required"
-	pinLowercaseCharactersUsage = "required"
-	pinSpecialCharactersUsage = "required"
-	state = "enabled"
-	securityDeviceRequired = $true
-	unlockWithBiometricsEnabled = $true
-	remotePassportEnabled = $true
-	pinPreviousBlockCount = 
-	pinExpirationInDays = 
-	enhancedBiometricsState = "enabled"
+	iosRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	windowsRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	windowsMobileRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	androidRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	macOSRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
 }
 
 New-MgDeviceManagementDeviceEnrollmentConfiguration -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceEnrollmentConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

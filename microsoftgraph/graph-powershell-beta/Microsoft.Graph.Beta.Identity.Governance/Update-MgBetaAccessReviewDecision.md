@@ -49,18 +49,6 @@ Update-MgBetaAccessReviewDecision -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update the navigation property decisions in accessReviews
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessRecommendation
@@ -541,6 +529,7 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaaccessreviewdecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaaccessreviewdecision)
+
 
 
 

@@ -59,42 +59,41 @@ The table in the Permissions section lists the resources that support open exten
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-conversations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
-	Topic = "Does anyone have a second?"
-	Threads = @(
+	topic = "Take your wellness days and rest"
+	threads = @(
 		@{
-			Posts = @(
+			posts = @(
 				@{
-					Body = @{
-						ContentType = "HTML"
-						Content = "This is urgent!"
+					body = @{
+						contentType = "html"
+						content = "Contoso cares about you: Rest and Recharge"
 					}
-					Extensions = @(
+					newParticipants = @(
 						@{
-							"@odata.type" = "microsoft.graph.openTypeExtension"
-							extensionName = "Com.Contoso.Benefits"
-							companyName = "Contoso"
-							expirationDate = "2016-08-03T11:00:00.000Z"
-							topPicks = @(
-							"Employees only"
-						"Add spouse or guest"
-					"Add family"
-				)
-			}
-		)
-	}
-)
-}
-)
+							emailAddress = @{
+								name = "Adele Vance"
+								address = "AdeleV@contoso.com"
+							}
+						}
+					)
+				}
+			)
+		}
+	)
 }
 
 New-MgGroupConversation -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgGroupConversation Cmdlet.
+
 
 ## PARAMETERS
 

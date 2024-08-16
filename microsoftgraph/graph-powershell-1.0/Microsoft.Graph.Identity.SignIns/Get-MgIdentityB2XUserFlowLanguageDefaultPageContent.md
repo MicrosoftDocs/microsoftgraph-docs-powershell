@@ -35,18 +35,6 @@ Get-MgIdentityB2XUserFlowLanguageDefaultPageContent -InputObject <IIdentitySignI
 Read the values in a userFlowLanguagePage object for a language in a user flow.
 These values are shown to a user during a user journey defined by a user flow.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -267,6 +255,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguagedefaultpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguagedefaultpagecontent)
 
 [https://learn.microsoft.com/graph/api/userflowlanguagepage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userflowlanguagepage-get?view=graph-rest-1.0)
+
 
 
 

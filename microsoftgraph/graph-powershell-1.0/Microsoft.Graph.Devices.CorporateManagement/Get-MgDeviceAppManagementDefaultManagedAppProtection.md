@@ -43,13 +43,17 @@ Get-MgDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevicesCorpo
 Read properties and relationships of the defaultManagedAppProtection object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Get-MgDeviceAppManagementDefaultManagedAppProtection
+
+```
+This example shows how to use the Get-MgDeviceAppManagementDefaultManagedAppProtection Cmdlet.
+
 
 ## PARAMETERS
 

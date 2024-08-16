@@ -39,18 +39,6 @@ To prevent a recurring access review from starting future instances, update the 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-stop-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -254,6 +242,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetauserpendingaccessreviewinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetauserpendingaccessreviewinstance)
 
 [https://learn.microsoft.com/graph/api/accessreviewinstance-stop?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstance-stop?view=graph-rest-beta)
+
 
 
 

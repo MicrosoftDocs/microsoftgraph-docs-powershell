@@ -64,31 +64,28 @@ Update-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementI
 Update the properties of a windows10CompliancePolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windows10CompliancePolicy"
+	"@odata.type" = "#microsoft.graph.windows10MobileCompliancePolicy"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
 	passwordRequired = $true
 	passwordBlockSimple = $true
-	passwordRequiredToUnlockFromIdle = $true
-	passwordMinutesOfInactivityBeforeLock = 
-	passwordExpirationDays = 
 	passwordMinimumLength = 
 	passwordMinimumCharacterSetCount = 
 	passwordRequiredType = "alphanumeric"
 	passwordPreviousPasswordBlockCount = 
-	requireHealthyDeviceReport = $true
+	passwordExpirationDays = 
+	passwordMinutesOfInactivityBeforeLock = 
+	passwordRequireToUnlockFromIdle = $true
 	osMinimumVersion = "Os Minimum Version value"
 	osMaximumVersion = "Os Maximum Version value"
-	mobileOsMinimumVersion = "Mobile Os Minimum Version value"
-	mobileOsMaximumVersion = "Mobile Os Maximum Version value"
 	earlyLaunchAntiMalwareDriverEnabled = $true
 	bitLockerEnabled = $true
 	secureBootEnabled = $true
@@ -97,6 +94,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicy Cmdlet.
+
 
 ## PARAMETERS
 

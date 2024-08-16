@@ -46,13 +46,17 @@ Read the properties and relationships of a permissionGrantPreApprovalPolicy obje
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/policyroot-list-permissiongrantpreapprovalpolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyPermissionGrantPreApprovalPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyPermissionGrantPreApprovalPolicy Cmdlet.
+
 
 ## PARAMETERS
 

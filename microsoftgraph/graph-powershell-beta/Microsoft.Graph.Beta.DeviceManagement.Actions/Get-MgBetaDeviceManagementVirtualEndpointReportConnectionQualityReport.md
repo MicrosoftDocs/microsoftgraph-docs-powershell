@@ -39,11 +39,11 @@ Get also other real-time metrics such as last connection round trip time, last c
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getconnectionqualityreports-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	filter = "EventDateTime gt datetime'2023-04-16T07:40:41.694Z'"
@@ -68,6 +68,10 @@ orderBy = @(
 }
 
 Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport Cmdlet.
+
 
 ## PARAMETERS
 

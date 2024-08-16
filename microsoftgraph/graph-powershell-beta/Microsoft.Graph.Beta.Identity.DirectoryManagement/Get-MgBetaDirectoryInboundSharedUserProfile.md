@@ -37,18 +37,6 @@ Get-MgBetaDirectoryInboundSharedUserProfile -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Read the properties of an inboundSharedUserProfile.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -350,6 +338,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/inboundshareduserprofile-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/inboundshareduserprofile-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/directory-list-inboundshareduserprofiles?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-list-inboundshareduserprofiles?view=graph-rest-beta)
+
+
 
 
 

@@ -56,11 +56,11 @@ New-MgBetaUserProfileCertification -InputObject <IPeopleIdentity>
 Create new navigation property to certifications for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	certificationId = "KB-1235466333663322"
@@ -72,6 +72,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileCertification -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileCertification Cmdlet.
+
 
 ## PARAMETERS
 

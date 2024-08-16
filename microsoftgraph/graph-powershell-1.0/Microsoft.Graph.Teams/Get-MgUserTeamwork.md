@@ -32,18 +32,6 @@ Get-MgUserTeamwork -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 Get the userTeamwork settings for a specified user, which includes the Microsoft Teams region and the locale chosen by the user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -208,6 +196,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamwork)
 
 [https://learn.microsoft.com/graph/api/userteamwork-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userteamwork-get?view=graph-rest-1.0)
+
 
 
 

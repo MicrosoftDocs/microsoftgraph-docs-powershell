@@ -35,24 +35,17 @@ Validate the ownership of a domain.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-verify-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Confirm-MgBetaDomain -DomainId $domainId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
+This example shows how to use the Confirm-MgBetaDomain Cmdlet.
 
-$params = @{
-	forceTakeover = $true
-}
-
-Confirm-MgBetaDomain -DomainId $domainId -BodyParameter $params
 
 ## PARAMETERS
 

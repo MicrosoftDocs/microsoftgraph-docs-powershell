@@ -33,13 +33,17 @@ Remove-MgTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
 Delete a conversationMember from a channel.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -ConversationMemberId $conversationMemberId
+
+```
+This example shows how to use the Remove-MgTeamChannelMember Cmdlet.
+
 
 ## PARAMETERS
 

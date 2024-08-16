@@ -66,11 +66,11 @@ To learn more about configuring naming policies, see Configure naming policy.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-validateproperties-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	displayName = "Myprefix_test_mysuffix"
@@ -79,6 +79,10 @@ $params = @{
 }
 
 Test-MgGroupProperty -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the Test-MgGroupProperty Cmdlet.
+
 
 ## PARAMETERS
 

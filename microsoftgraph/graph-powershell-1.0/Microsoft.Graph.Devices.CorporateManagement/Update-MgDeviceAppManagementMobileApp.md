@@ -57,21 +57,21 @@ Update-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
 Update the properties of a windowsMicrosoftEdgeApp object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windowsWebApp"
+	"@odata.type" = "#microsoft.graph.iosStoreApp"
 	displayName = "Display Name value"
 	description = "Description value"
 	publisher = "Publisher value"
 	largeIcon = @{
 		"@odata.type" = "microsoft.graph.mimeContent"
 		type = "Type value"
-		value = \[System.Text.Encoding\]::ASCII.GetBytes("dmFsdWU=")
+		value = [System.Text.Encoding]::ASCII.GetBytes("dmFsdWU=")
 	}
 	isFeatured = $true
 	privacyInformationUrl = "https://example.com/privacyInformationUrl/"
@@ -80,10 +80,31 @@ $params = @{
 	developer = "Developer value"
 	notes = "Notes value"
 	publishingState = "processing"
-	appUrl = "https://example.com/appUrl/"
+	bundleId = "Bundle Id value"
+	appStoreUrl = "https://example.com/appStoreUrl/"
+	applicableDeviceType = @{
+		"@odata.type" = "microsoft.graph.iosDeviceType"
+		iPad = $true
+		iPhoneAndIPod = $true
+	}
+	minimumSupportedOperatingSystem = @{
+		"@odata.type" = "microsoft.graph.iosMinimumOperatingSystem"
+		v8_0 = $true
+		v9_0 = $true
+		v10_0 = $true
+		v11_0 = $true
+		v12_0 = $true
+		v13_0 = $true
+		v14_0 = $true
+		v15_0 = $true
+	}
 }
 
 Update-MgDeviceAppManagementMobileApp -MobileAppId $mobileAppId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementMobileApp Cmdlet.
+
 
 ## PARAMETERS
 

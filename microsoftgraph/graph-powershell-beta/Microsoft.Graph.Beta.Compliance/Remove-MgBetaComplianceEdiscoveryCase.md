@@ -34,13 +34,17 @@ Delete a case object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Remove-MgBetaComplianceEdiscoveryCase -CaseId $caseId
+
+```
+This example shows how to use the Remove-MgBetaComplianceEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

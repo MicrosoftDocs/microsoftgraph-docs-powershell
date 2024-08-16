@@ -34,13 +34,17 @@ Remove-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity>
 Deletes a deviceCategory.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Remove-MgDeviceManagementDeviceCategory -DeviceCategoryId $deviceCategoryId
+
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceCategory Cmdlet.
+
 
 ## PARAMETERS
 

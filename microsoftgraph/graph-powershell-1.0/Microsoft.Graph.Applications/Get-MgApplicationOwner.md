@@ -26,13 +26,17 @@ Get-MgApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] [-Fi
 Retrieve a list of owners for an application that are directoryObject objects.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgApplicationOwner -ApplicationId $applicationId
+
+```
+This example shows how to use the Get-MgApplicationOwner Cmdlet.
+
 
 ## PARAMETERS
 

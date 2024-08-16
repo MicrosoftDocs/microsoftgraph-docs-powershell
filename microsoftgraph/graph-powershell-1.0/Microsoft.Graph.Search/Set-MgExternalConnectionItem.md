@@ -55,37 +55,27 @@ Create a new externalItem object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalitem-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	acl = @(
 		@{
-			type = "user"
-			value = "e811976d-83df-4cbd-8b9b-5215b18aa874"
+			type = "everyone"
+			value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d"
 			accessType = "grant"
 		}
-		@{
-			type = "externalGroup"
-			value = "14m1b9c38qe647f6a"
-			accessType = "deny"
-		}
 	)
-	properties = @{
-		title = "Error in the payment gateway"
-		priority = 
-		assignee = "john@contoso.com"
-	}
-	content = @{
-		value = "Error in payment gateway..."
-		type = "text"
-	}
 }
 
 Set-MgExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgExternalConnectionItem Cmdlet.
+
 
 ## PARAMETERS
 

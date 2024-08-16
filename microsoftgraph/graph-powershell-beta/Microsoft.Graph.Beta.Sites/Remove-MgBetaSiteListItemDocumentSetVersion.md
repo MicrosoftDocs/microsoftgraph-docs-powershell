@@ -38,13 +38,17 @@ Delete a version of a document set in a list.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Remove-MgBetaSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
+
+```
+This example shows how to use the Remove-MgBetaSiteListItemDocumentSetVersion Cmdlet.
+
 
 ## PARAMETERS
 

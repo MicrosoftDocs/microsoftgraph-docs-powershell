@@ -34,13 +34,17 @@ Remove-MgDeviceManagementExchangeConnector -InputObject <IDeviceManagementAdmini
 Deletes a deviceManagementExchangeConnector.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Remove-MgDeviceManagementExchangeConnector -DeviceManagementExchangeConnectorId $deviceManagementExchangeConnectorId
+
+```
+This example shows how to use the Remove-MgDeviceManagementExchangeConnector Cmdlet.
+
 
 ## PARAMETERS
 

@@ -45,13 +45,17 @@ This API allows you to retrieve the details and status of the following long-run
 The possible states of the long-running operation are notStarted, running, succeeded, failed, unknownFutureValue where succeeded and failed are terminal states.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaUserAuthenticationOperation -UserId $userId -LongRunningOperationId $longRunningOperationId
+
+```
+This example shows how to use the Get-MgBetaUserAuthenticationOperation Cmdlet.
+
 
 ## PARAMETERS
 

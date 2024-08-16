@@ -52,11 +52,11 @@ Update-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevic
 Update the properties of a managedAppOperation object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.managedAppOperation"
@@ -66,6 +66,10 @@ $params = @{
 }
 
 Update-MgDeviceAppManagementManagedAppRegistrationOperation -ManagedAppRegistrationId $managedAppRegistrationId -ManagedAppOperationId $managedAppOperationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementManagedAppRegistrationOperation Cmdlet.
+
 
 ## PARAMETERS
 

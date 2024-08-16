@@ -43,13 +43,17 @@ Get-MgDeviceAppManagementManagedAppStatus -InputObject <IDevicesCorporateManagem
 Read properties and relationships of the managedAppStatus object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Get-MgDeviceAppManagementManagedAppStatus
+
+```
+This example shows how to use the Get-MgDeviceAppManagementManagedAppStatus Cmdlet.
+
 
 ## PARAMETERS
 
