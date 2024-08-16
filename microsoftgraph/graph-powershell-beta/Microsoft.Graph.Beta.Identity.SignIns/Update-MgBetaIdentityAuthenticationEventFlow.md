@@ -12,6 +12,9 @@ ms.subservice: entra-sign-in
 Update the properties of an authenticationEventsFlow object.
 Only the externalUsersSelfServiceSignupEventsFlow object type is supported.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityAuthenticationEventFlow?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

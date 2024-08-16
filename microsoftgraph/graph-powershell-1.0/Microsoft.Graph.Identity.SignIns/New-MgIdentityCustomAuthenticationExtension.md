@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityCustomAuthenticationExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

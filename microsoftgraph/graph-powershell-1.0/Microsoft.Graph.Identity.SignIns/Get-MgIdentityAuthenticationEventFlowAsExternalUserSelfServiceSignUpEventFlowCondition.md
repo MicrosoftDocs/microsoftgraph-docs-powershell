@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The conditions representing the context of the authentication request that's used to decide whether the events policy is invoked.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowCondition](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowCondition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

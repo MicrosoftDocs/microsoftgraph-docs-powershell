@@ -11,6 +11,9 @@ schema: 2.0.0
 Get groups and administrative units that the device is a direct member of.
 This operation is not transitive.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceMemberOfAsGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceMemberOfAsGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

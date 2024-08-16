@@ -11,6 +11,9 @@ schema: 2.0.0
 Read the values in a userFlowLanguagePage object for a language in a user flow.
 These values are shown to a user during a user journey defined by a user flow.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

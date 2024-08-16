@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The conditions representing the context of the authentication request that's used to decide whether the events policy is invoked.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityAuthenticationEventFlowCondition](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityAuthenticationEventFlowCondition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

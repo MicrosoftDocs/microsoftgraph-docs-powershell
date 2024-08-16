@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a specific commercial subscription that an organization acquired.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

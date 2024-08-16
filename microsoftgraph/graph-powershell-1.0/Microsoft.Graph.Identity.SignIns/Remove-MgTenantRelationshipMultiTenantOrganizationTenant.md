@@ -11,6 +11,9 @@ schema: 2.0.0
 Remove a tenant from a multitenant organization.
 A tenant can be removed in the following scenarios:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTenantRelationshipMultiTenantOrganizationTenant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaTenantRelationshipMultiTenantOrganizationTenant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

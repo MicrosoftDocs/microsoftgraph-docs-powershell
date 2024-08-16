@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a cross-tenant user synchronization policy for a partner-specific configuration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
