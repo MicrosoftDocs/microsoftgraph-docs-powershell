@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-The date and time when the Temporary Access Pass was created.
+.
 
 ```yaml
 Type: DateTime
@@ -329,9 +329,9 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphTemporaryAccessPassAuthenticationMethod>`: temporaryAccessPassAuthenticationMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CreatedDateTime <DateTime?>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the Temporary Access Pass was created.
   - `[IsUsableOnce <Boolean?>]`: Determines whether the pass is limited to a one-time use.
 If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
   - `[LifetimeInMinutes <Int32?>]`: The lifetime of the Temporary Access Pass in minutes starting at startDateTime.

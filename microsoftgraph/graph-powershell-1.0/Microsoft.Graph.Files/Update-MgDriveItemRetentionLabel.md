@@ -67,9 +67,7 @@ For information about retention labels from an administrator's perspective, see 
 Import-Module Microsoft.Graph.Files
 
 $params = @{
-	retentionSettings = @{
-		isRecordLocked = $true
-	}
+	name = "Retention label for Contracts"
 }
 
 Update-MgDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params

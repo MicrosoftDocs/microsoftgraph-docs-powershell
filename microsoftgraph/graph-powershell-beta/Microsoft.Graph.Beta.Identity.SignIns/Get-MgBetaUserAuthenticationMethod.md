@@ -308,7 +308,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethod
-### System.String
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 

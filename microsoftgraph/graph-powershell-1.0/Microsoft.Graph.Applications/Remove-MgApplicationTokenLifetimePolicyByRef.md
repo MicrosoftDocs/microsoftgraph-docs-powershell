@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationTokenLifetimePolicyByRef
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgApplicationTokenLifetimePolicyByRef
 
 ## SYNOPSIS
-Delete ref of navigation property tokenLifetimePolicies for applications
+Remove a tokenLifetimePolicy from an application.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef?view=graph-powershell-beta)
@@ -31,7 +32,10 @@ Remove-MgApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentity
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property tokenLifetimePolicies for applications
+Remove a tokenLifetimePolicy from an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-tokenlifetimepolicies-permissions.md)]
 
 ## PARAMETERS
 
@@ -232,6 +236,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationTokenLifetimePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationTokenLifetimePolicyByRef)
+
+[https://learn.microsoft.com/graph/api/application-delete-tokenlifetimepolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delete-tokenlifetimepolicies?view=graph-rest-1.0)
 
 
 

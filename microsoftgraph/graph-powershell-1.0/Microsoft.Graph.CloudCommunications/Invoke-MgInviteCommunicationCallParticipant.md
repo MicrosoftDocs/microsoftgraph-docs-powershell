@@ -9,11 +9,8 @@ ms.subservice: cloud-communications
 # Invoke-MgInviteCommunicationCallParticipant
 
 ## SYNOPSIS
-Delete a specific participant in a call.
-In some situations, it is appropriate for an application to remove a participant from an active call.
-This action can be done before or after the participant answers the call.
-When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
-When an invited participant is removed, any outstanding add participant request is canceled.
+Invite participants to the active call.
+For more information about how to handle operations, see commsOperation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaInviteCommunicationCallParticipant?view=graph-powershell-beta)
@@ -53,11 +50,8 @@ Invoke-MgInviteCommunicationCallParticipant -InputObject <ICloudCommunicationsId
 ```
 
 ## DESCRIPTION
-Delete a specific participant in a call.
-In some situations, it is appropriate for an application to remove a participant from an active call.
-This action can be done before or after the participant answers the call.
-When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
-When an invited participant is removed, any outstanding add participant request is canceled.
+Invite participants to the active call.
+For more information about how to handle operations, see commsOperation.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-invite-permissions.md)]
@@ -473,7 +467,7 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mginvitecommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mginvitecommunicationcallparticipant)
 
-[https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/participant-invite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/participant-invite?view=graph-rest-1.0)
 
 
 

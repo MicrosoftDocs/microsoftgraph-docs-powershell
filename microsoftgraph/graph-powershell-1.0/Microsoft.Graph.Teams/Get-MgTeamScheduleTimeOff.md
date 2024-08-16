@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoff
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgTeamScheduleTimeOff
 
 ## SYNOPSIS
-The instances of times off in the schedule.
+Retrieve the properties and relationships of a timeOff object by ID.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
@@ -17,27 +19,34 @@ The instances of times off in the schedule.
 
 ### List (Default)
 ```
-Get-MgTeamScheduleTimeOff -TeamId <String> [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgTeamScheduleTimeOff -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgTeamScheduleTimeOff -TeamId <String> -TimeOffId <String> [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgTeamScheduleTimeOff -TeamId <String> -TimeOffId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-Property <String[]>]
+Get-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The instances of times off in the schedule.
+Retrieve the properties and relationships of a timeOff object by ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoff-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-list-timesoff-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -77,6 +86,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -335,6 +359,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoff)
+
+[https://learn.microsoft.com/graph/api/timeoff-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoff-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/schedule-list-timesoff?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-list-timesoff?view=graph-rest-1.0)
 
 
 

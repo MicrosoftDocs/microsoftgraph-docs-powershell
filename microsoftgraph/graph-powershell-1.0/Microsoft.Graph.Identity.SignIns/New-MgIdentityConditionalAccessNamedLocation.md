@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessnamedlocation
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Create new navigation property to namedLocations for identity
+Create a new namedLocation object.
+Named locations can be either ipNamedLocation or countryNamedLocation objects.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
@@ -31,7 +33,11 @@ New-MgIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraphName
 ```
 
 ## DESCRIPTION
-Create new navigation property to namedLocations for identity
+Create a new namedLocation object.
+Named locations can be either ipNamedLocation or countryNamedLocation objects.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conditionalaccessroot-post-namedlocations-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create a country named location
@@ -293,6 +299,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessnamedlocation)
+
+[https://learn.microsoft.com/graph/api/conditionalaccessroot-post-namedlocations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-namedlocations?view=graph-rest-1.0)
 
 
 

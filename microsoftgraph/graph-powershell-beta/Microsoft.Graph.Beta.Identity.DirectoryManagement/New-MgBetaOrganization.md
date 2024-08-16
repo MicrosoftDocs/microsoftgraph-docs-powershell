@@ -762,7 +762,7 @@ We recommend that you use the primary color of your banner logo or your organiza
 Specify this in hexadecimal format, for example, white is #FFFFFF.
     - `[BackgroundImage <Byte- `[]`>]`: Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.
+A smaller image reduces bandwidth requirements and make the page load faster.
     - `[BackgroundImageRelativeUrl <String>]`: A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
     - `[BannerLogo <Byte- `[]`>]`: A banner version of your company logo that appears on the sign-in page.
@@ -779,6 +779,8 @@ Read-only.
         - `[Key <String>]`: Contains the name of the field that a value is associated with.
         - `[Value <String>]`: Contains the corresponding value for the specified key.
       - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
+      - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
+      - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
     - `[CustomAccountResetCredentialsUrl <String>]`: A custom URL for resetting account credentials.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters.
     - `[CustomCannotAccessYourAccountText <String>]`: A string to replace the default 'Can't access your account?' self-service password reset (SSPR) hyperlink text on the sign-in page.
@@ -849,7 +851,7 @@ We recommend that you use the primary color of your banner logo or your organiza
 Specify this in hexadecimal format, for example, white is #FFFFFF.
       - `[BackgroundImage <Byte- `[]`>]`: Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.
+A smaller image reduces bandwidth requirements and make the page load faster.
       - `[BackgroundImageRelativeUrl <String>]`: A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
       - `[BannerLogo <Byte- `[]`>]`: A banner version of your company logo that appears on the sign-in page.
@@ -1005,10 +1007,10 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DisabledForGroup <String>]`: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
-Default is empty.
+The default value is null.
 Optional.
       - `[IsEnabledInOrganization <Boolean?>]`: true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
-Default is true.
+The default value is true.
 Optional.
     - `[ItemInsights <IMicrosoftGraphInsightsSettings>]`: insightsSettings
     - `[MicrosoftApplicationDataAccess <IMicrosoftGraphMicrosoftApplicationDataAccessSettings>]`: microsoftApplicationDataAccessSettings
@@ -1035,7 +1037,7 @@ Not nullable.
     - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
     - `[IsDefault <Boolean?>]`: true if this is the default domain associated with the tenant; otherwise, false.
     - `[IsInitial <Boolean?>]`: true if this is the initial domain associated with the tenant; otherwise, false.
-    - `[Name <String>]`: The domain name; for example, contoso.com\`.
+    - `[Name <String>]`: The domain name; for example, contoso.com.
     - `[Type <String>]`: For example, Managed.
 
 BRANDING `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
@@ -1045,7 +1047,7 @@ We recommend that you use the primary color of your banner logo or your organiza
 Specify this in hexadecimal format, for example, white is #FFFFFF.
   - `[BackgroundImage <Byte- `[]`>]`: Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.
+A smaller image reduces bandwidth requirements and make the page load faster.
   - `[BackgroundImageRelativeUrl <String>]`: A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
   - `[BannerLogo <Byte- `[]`>]`: A banner version of your company logo that appears on the sign-in page.
@@ -1062,6 +1064,8 @@ Read-only.
       - `[Key <String>]`: Contains the name of the field that a value is associated with.
       - `[Value <String>]`: Contains the corresponding value for the specified key.
     - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
+    - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
+    - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
   - `[CustomAccountResetCredentialsUrl <String>]`: A custom URL for resetting account credentials.
 This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters.
   - `[CustomCannotAccessYourAccountText <String>]`: A string to replace the default 'Can't access your account?' self-service password reset (SSPR) hyperlink text on the sign-in page.
@@ -1132,7 +1136,7 @@ We recommend that you use the primary color of your banner logo or your organiza
 Specify this in hexadecimal format, for example, white is #FFFFFF.
     - `[BackgroundImage <Byte- `[]`>]`: Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.
+A smaller image reduces bandwidth requirements and make the page load faster.
     - `[BackgroundImageRelativeUrl <String>]`: A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
     - `[BannerLogo <Byte- `[]`>]`: A banner version of your company logo that appears on the sign-in page.
@@ -1267,10 +1271,10 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisabledForGroup <String>]`: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
-Default is empty.
+The default value is null.
 Optional.
     - `[IsEnabledInOrganization <Boolean?>]`: true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
-Default is true.
+The default value is true.
 Optional.
   - `[ItemInsights <IMicrosoftGraphInsightsSettings>]`: insightsSettings
   - `[MicrosoftApplicationDataAccess <IMicrosoftGraphMicrosoftApplicationDataAccessSettings>]`: microsoftApplicationDataAccessSettings
@@ -1291,7 +1295,7 @@ Not nullable.
   - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
   - `[IsDefault <Boolean?>]`: true if this is the default domain associated with the tenant; otherwise, false.
   - `[IsInitial <Boolean?>]`: true if this is the initial domain associated with the tenant; otherwise, false.
-  - `[Name <String>]`: The domain name; for example, contoso.com\`.
+  - `[Name <String>]`: The domain name; for example, contoso.com.
   - `[Type <String>]`: For example, Managed.
 
 ## RELATED LINKS

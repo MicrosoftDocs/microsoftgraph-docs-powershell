@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingmicrosoftapplicationdataaccess
 schema: 2.0.0
+ms.subservice: insights
 ---
 
 # Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
 
 ## SYNOPSIS
-Get microsoftApplicationDataAccess from organization
+Get the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
 
 ## SYNTAX
 
@@ -27,7 +28,10 @@ Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -InputObject <IIdent
 ```
 
 ## DESCRIPTION
-Get microsoftApplicationDataAccess from organization
+Get the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-microsoftapplicationdataaccess-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet
@@ -214,6 +218,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingmicrosoftapplicationdataaccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingmicrosoftapplicationdataaccess)
+
+[https://learn.microsoft.com/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-beta](https://learn.microsoft.com/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-beta)
 
 
 

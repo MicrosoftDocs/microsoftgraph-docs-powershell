@@ -29,6 +29,66 @@ Locale: en-US
 ### [Get-MgIdentityApiConnectorCount](Get-MgIdentityApiConnectorCount.md)
 
 
+### [Get-MgIdentityAuthenticationEventFlow](Get-MgIdentityAuthenticationEventFlow.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow](Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowCondition](Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowCondition.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplicationCount](Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplicationCount.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAttributeCollection](Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAttributeCollection.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart](Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute](Get-MgIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttributeCount](Get-MgIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttributeCount.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider](Get-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef](Get-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderCount](Get-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderCount.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](Get-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowCondition](Get-MgIdentityAuthenticationEventFlowCondition.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowCount](Get-MgIdentityAuthenticationEventFlowCount.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowCountAsExternalUserSelfServiceSignUpEventFlow](Get-MgIdentityAuthenticationEventFlowCountAsExternalUserSelfServiceSignUpEventFlow.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowIncludeApplication](Get-MgIdentityAuthenticationEventFlowIncludeApplication.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowIncludeApplicationCount](Get-MgIdentityAuthenticationEventFlowIncludeApplicationCount.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowOnAttributeCollectionAsOnAttributeCollectionExternalUserSelfServiceSignUp](Get-MgIdentityAuthenticationEventFlowOnAttributeCollectionAsOnAttributeCollectionExternalUserSelfServiceSignUp.md)
+
+
+### [Get-MgIdentityAuthenticationEventFlowOnAuthenticationMethodLoadStartAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUp](Get-MgIdentityAuthenticationEventFlowOnAuthenticationMethodLoadStartAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUp.md)
+
+
 ### [Get-MgIdentityAuthenticationEventListener](Get-MgIdentityAuthenticationEventListener.md)
 
 
@@ -545,6 +605,21 @@ Locale: en-US
 ### [New-MgIdentityApiConnector](New-MgIdentityApiConnector.md)
 
 
+### [New-MgIdentityAuthenticationEventFlow](New-MgIdentityAuthenticationEventFlow.md)
+
+
+### [New-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](New-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
+
+
+### [New-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef](New-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef.md)
+
+
+### [New-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](New-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef.md)
+
+
+### [New-MgIdentityAuthenticationEventFlowIncludeApplication](New-MgIdentityAuthenticationEventFlowIncludeApplication.md)
+
+
 ### [New-MgIdentityAuthenticationEventListener](New-MgIdentityAuthenticationEventListener.md)
 
 
@@ -704,6 +779,27 @@ Locale: en-US
 ### [Remove-MgIdentityApiConnector](Remove-MgIdentityApiConnector.md)
 
 
+### [Remove-MgIdentityAuthenticationEventFlow](Remove-MgIdentityAuthenticationEventFlow.md)
+
+
+### [Remove-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](Remove-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
+
+
+### [Remove-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef](Remove-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef.md)
+
+
+### [Remove-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef](Remove-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef.md)
+
+
+### [Remove-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](Remove-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef.md)
+
+
+### [Remove-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeIdentityUserFlowAttributeByRef](Remove-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeIdentityUserFlowAttributeByRef.md)
+
+
+### [Remove-MgIdentityAuthenticationEventFlowIncludeApplication](Remove-MgIdentityAuthenticationEventFlowIncludeApplication.md)
+
+
 ### [Remove-MgIdentityAuthenticationEventListener](Remove-MgIdentityAuthenticationEventListener.md)
 
 
@@ -719,7 +815,13 @@ Locale: en-US
 ### [Remove-MgIdentityB2XUserFlowLanguageDefaultPage](Remove-MgIdentityB2XUserFlowLanguageDefaultPage.md)
 
 
+### [Remove-MgIdentityB2XUserFlowLanguageDefaultPageContent](Remove-MgIdentityB2XUserFlowLanguageDefaultPageContent.md)
+
+
 ### [Remove-MgIdentityB2XUserFlowLanguageOverridePage](Remove-MgIdentityB2XUserFlowLanguageOverridePage.md)
+
+
+### [Remove-MgIdentityB2XUserFlowLanguageOverridePageContent](Remove-MgIdentityB2XUserFlowLanguageOverridePageContent.md)
 
 
 ### [Remove-MgIdentityB2XUserFlowPostAttributeCollection](Remove-MgIdentityB2XUserFlowPostAttributeCollection.md)
@@ -759,9 +861,6 @@ Locale: en-US
 
 
 ### [Remove-MgInformationProtectionThreatAssessmentRequestResult](Remove-MgInformationProtectionThreatAssessmentRequestResult.md)
-
-
-### [Remove-MgInvitation](Remove-MgInvitation.md)
 
 
 ### [Remove-MgOauth2PermissionGrant](Remove-MgOauth2PermissionGrant.md)
@@ -929,9 +1028,6 @@ Locale: en-US
 ### [Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
 
 
-### [Set-MgTenantRelationshipMultiTenantOrganization](Set-MgTenantRelationshipMultiTenantOrganization.md)
-
-
 ### [Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration](Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration.md)
 
 
@@ -939,6 +1035,15 @@ Locale: en-US
 
 
 ### [Update-MgIdentityApiConnector](Update-MgIdentityApiConnector.md)
+
+
+### [Update-MgIdentityAuthenticationEventFlow](Update-MgIdentityAuthenticationEventFlow.md)
+
+
+### [Update-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](Update-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
+
+
+### [Update-MgIdentityAuthenticationEventFlowIncludeApplication](Update-MgIdentityAuthenticationEventFlowIncludeApplication.md)
 
 
 ### [Update-MgIdentityAuthenticationEventListener](Update-MgIdentityAuthenticationEventListener.md)
@@ -990,9 +1095,6 @@ Locale: en-US
 
 
 ### [Update-MgInformationProtectionThreatAssessmentRequestResult](Update-MgInformationProtectionThreatAssessmentRequestResult.md)
-
-
-### [Update-MgInvitation](Update-MgInvitation.md)
 
 
 ### [Update-MgInvitationInvitedUserMailboxSetting](Update-MgInvitationInvitedUserMailboxSetting.md)
@@ -1107,6 +1209,9 @@ Locale: en-US
 
 
 ### [Update-MgServicePrincipalRiskDetection](Update-MgServicePrincipalRiskDetection.md)
+
+
+### [Update-MgTenantRelationshipMultiTenantOrganization](Update-MgTenantRelationshipMultiTenantOrganization.md)
 
 
 ### [Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest](Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest.md)

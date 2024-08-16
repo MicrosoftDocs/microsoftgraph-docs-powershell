@@ -3,8 +3,6 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappstatus
 schema: 2.0.0
-ms.subservice: intune
-ms.subservice: intune
 ---
 
 # Get-MgDeviceAppManagementManagedAppStatus
@@ -343,7 +341,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/intune-mam-managedappstatus-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappstatus-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-mam-managedappstatusraw-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappstatusraw-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-mam-managedappstatus-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappstatus-list?view=graph-rest-1.0)
 
 
 

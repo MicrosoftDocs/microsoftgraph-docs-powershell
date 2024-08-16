@@ -31,6 +31,9 @@ Update-MgBetaIdentityContinuouAccessEvaluationPolicy
 ## DESCRIPTION
 Update the properties of a continuousAccessEvaluationPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/continuousaccessevaluationpolicy-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

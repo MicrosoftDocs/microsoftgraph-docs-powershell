@@ -298,6 +298,7 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Id <String>]`: Usage: id='{id}'
   - `[Ids <String- `[]`>]`: Usage: ids={ids}
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+  - `[ManagedDeviceWindowsOperatingSystemImageId <String>]`: The unique identifier of managedDeviceWindowsOperatingSystemImage
   - `[Platform <DevicePlatformType?>]`: Usage: platform='{platform}'
   - `[PolicyId <String>]`: Usage: policyId='{policyId}'
   - `[Resource <String>]`: Usage: resource='{resource}'

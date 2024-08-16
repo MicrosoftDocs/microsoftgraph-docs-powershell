@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaDomainFederationConfiguration
 
 ## SYNOPSIS
-Create new navigation property to federationConfiguration for domains
+Create a new internalDomainFederation object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomainFederationConfiguration?view=graph-powershell-1.0)
@@ -54,7 +55,10 @@ New-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManageme
 ```
 
 ## DESCRIPTION
-Create new navigation property to federationConfiguration for domains
+Create a new internalDomainFederation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-post-federationconfiguration-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Configure federation settings for a federated domain
@@ -554,6 +558,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration)
+
+[https://learn.microsoft.com/graph/api/domain-post-federationconfiguration?view=graph-rest-beta](https://learn.microsoft.com/graph/api/domain-post-federationconfiguration?view=graph-rest-beta)
 
 
 

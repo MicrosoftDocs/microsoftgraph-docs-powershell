@@ -54,7 +54,18 @@ Retrieve properties and relationships for a site resource.A site resource repres
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSite -Search '"{query}"' 
+Get-MgBetaSite -Property "siteCollection,webUrl" -Filter "siteCollection/root ne null" 
+
+```
+This example shows how to use the Get-MgBetaSite Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSite
 
 ```
 This example shows how to use the Get-MgBetaSite Cmdlet.
@@ -311,9 +322,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+  - `[ContentModelId <String>]`: The unique identifier of contentModel
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ContentTypeId1 <String>]`: The unique identifier of contentType
   - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
+  - `[DocumentProcessingJobId <String>]`: The unique identifier of documentProcessingJob
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
@@ -330,13 +343,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[ListId <String>]`: The unique identifier of list
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[ModelName <String>]`: Usage: modelName='{modelName}'
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
-  - `[Path1 <String>]`: Usage: path='{path1}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem
   - `[RelationId <String>]`: The unique identifier of relation
@@ -365,7 +378,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/site-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/site-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-list?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/site-search?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-search?view=graph-rest-beta)
 
 
 

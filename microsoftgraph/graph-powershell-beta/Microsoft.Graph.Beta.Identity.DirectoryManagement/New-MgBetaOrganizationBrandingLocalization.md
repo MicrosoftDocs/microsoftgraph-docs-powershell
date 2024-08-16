@@ -3,12 +3,17 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandinglocalization
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaOrganizationBrandingLocalization
 
 ## SYNOPSIS
-Create new navigation property to localizations for organization
+Create a new organizationalBrandingLocalization object.
+This creates a localized branding and at the same time, the default branding if it doesn't exist.
+The default branding is created only once.
+It's loaded when a localized branding isn't configured for the user's browser language.
+To retrieve the default branding, see Get branding.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgOrganizationBrandingLocalization?view=graph-powershell-1.0)
@@ -69,7 +74,14 @@ New-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManag
 ```
 
 ## DESCRIPTION
-Create new navigation property to localizations for organization
+Create a new organizationalBrandingLocalization object.
+This creates a localized branding and at the same time, the default branding if it doesn't exist.
+The default branding is created only once.
+It's loaded when a localized branding isn't configured for the user's browser language.
+To retrieve the default branding, see Get branding.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbranding-post-localizations-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -127,7 +139,7 @@ Accept wildcard characters: False
 ### -BackgroundImageInputFile
 Input File for BackgroundImage (Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.)
+A smaller image reduces bandwidth requirements and make the page load faster.)
 
 ```yaml
 Type: String
@@ -773,6 +785,8 @@ CONTENTCUSTOMIZATION `<IMicrosoftGraphContentCustomization>`: contentCustomizati
     - `[Key <String>]`: Contains the name of the field that a value is associated with.
     - `[Value <String>]`: Contains the corresponding value for the specified key.
   - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
+  - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
+  - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.
 
 INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
@@ -841,6 +855,8 @@ LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandinglocalization)
+
+[https://learn.microsoft.com/graph/api/organizationalbranding-post-localizations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/organizationalbranding-post-localizations?view=graph-rest-beta)
 
 
 

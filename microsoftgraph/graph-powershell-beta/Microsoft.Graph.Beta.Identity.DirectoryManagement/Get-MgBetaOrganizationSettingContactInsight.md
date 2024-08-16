@@ -3,13 +3,13 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingcontactinsight
 schema: 2.0.0
+ms.subservice: insights
 ---
 
 # Get-MgBetaOrganizationSettingContactInsight
 
 ## SYNOPSIS
-Contains the properties that are configured by an administrator as a tenant-level privacy control whether to identify duplicate contacts among a user's contacts list and suggest the user to merge those contacts to have a cleaner contacts list.
-List contactInsights returns the settings to display or return contact insights in an organization.
+Get the properties of an insightsSettings object for displaying or returning contact insights in an organization.
 
 ## SYNTAX
 
@@ -28,8 +28,10 @@ Get-MgBetaOrganizationSettingContactInsight -InputObject <IIdentityDirectoryMana
 ```
 
 ## DESCRIPTION
-Contains the properties that are configured by an administrator as a tenant-level privacy control whether to identify duplicate contacts among a user's contacts list and suggest the user to merge those contacts to have a cleaner contacts list.
-List contactInsights returns the settings to display or return contact insights in an organization.
+Get the properties of an insightsSettings object for displaying or returning contact insights in an organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-contactinsights-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOrganizationSettingContactInsight Cmdlet
@@ -216,6 +218,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingcontactinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingcontactinsight)
+
+[https://learn.microsoft.com/graph/api/organizationsettings-list-contactinsights?view=graph-rest-beta](https://learn.microsoft.com/graph/api/organizationsettings-list-contactinsights?view=graph-rest-beta)
 
 
 

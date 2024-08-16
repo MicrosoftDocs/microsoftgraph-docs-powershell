@@ -50,6 +50,9 @@ New-MgBetaApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentit
 Assign a tokenLifetimePolicy to an application or servicePrincipal.
 You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-tokenlifetimepolicies-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

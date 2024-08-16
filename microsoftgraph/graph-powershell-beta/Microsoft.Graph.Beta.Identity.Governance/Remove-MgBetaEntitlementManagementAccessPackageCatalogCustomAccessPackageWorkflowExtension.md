@@ -9,7 +9,7 @@ ms.subservice: entra-id-governance
 # Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension
 
 ## SYNOPSIS
-Delete an accessPackageAssignmentWorkflowExtension object.
+Delete an accessPackageAssignmentRequestWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
 Follow these steps to remove the custom workflow extension from any associated policies:1.
 First retrieve the accessPackageCatalogId by calling the Get accessPackageAssignmentPolicies operation and appending ?$expand=accessPackage($expand=accessPackageCatalog) to the query.
@@ -37,7 +37,7 @@ Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflo
 ```
 
 ## DESCRIPTION
-Delete an accessPackageAssignmentWorkflowExtension object.
+Delete an accessPackageAssignmentRequestWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
 Follow these steps to remove the custom workflow extension from any associated policies:1.
 First retrieve the accessPackageCatalogId by calling the Get accessPackageAssignmentPolicies operation and appending ?$expand=accessPackage($expand=accessPackageCatalog) to the query.
@@ -47,7 +47,7 @@ Call the Update accessPackageAssignmentPolicy operation to remove the custom wor
 For an example, see Example 3: Remove the customExtensionStageSettings from a policy.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentworkflowextension-delete-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentrequestworkflowextension-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -337,7 +337,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension)
 
-[https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-delete?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-delete?view=graph-rest-beta)
 
 
 

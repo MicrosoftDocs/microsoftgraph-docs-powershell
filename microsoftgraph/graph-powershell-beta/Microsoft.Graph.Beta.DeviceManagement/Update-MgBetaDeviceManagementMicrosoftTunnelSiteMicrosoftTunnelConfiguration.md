@@ -18,9 +18,9 @@ Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration -Mi
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-AdvancedSettings <IMicrosoftGraphKeyValuePair[]>] [-DefaultDomainSuffix <String>] [-Description <String>]
  [-DisableUdpConnections] [-DisplayName <String>] [-DnsServers <String[]>] [-Id <String>]
- [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>] [-Network <String>] [-RoleScopeTagIds <String[]>]
- [-RouteExcludes <String[]>] [-RouteIncludes <String[]>] [-RoutesExclude <String[]>]
- [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-Headers <IDictionary>]
+ [-Ipv6Network <String>] [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>] [-Network <String>]
+ [-RoleScopeTagIds <String[]>] [-RouteExcludes <String[]>] [-RouteIncludes <String[]>]
+ [-RoutesExclude <String[]>] [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,10 +37,10 @@ Update-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration
  -InputObject <IDeviceManagementIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]
  [-DefaultDomainSuffix <String>] [-Description <String>] [-DisableUdpConnections] [-DisplayName <String>]
- [-DnsServers <String[]>] [-Id <String>] [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>]
- [-Network <String>] [-RoleScopeTagIds <String[]>] [-RouteExcludes <String[]>] [-RouteIncludes <String[]>]
- [-RoutesExclude <String[]>] [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DnsServers <String[]>] [-Id <String>] [-Ipv6Network <String>] [-LastUpdateDateTime <DateTime>]
+ [-ListenPort <Int32>] [-Network <String>] [-RoleScopeTagIds <String[]>] [-RouteExcludes <String[]>]
+ [-RouteIncludes <String[]>] [-RoutesExclude <String[]>] [-RoutesInclude <String[]>] [-SplitDns <String[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -223,6 +223,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Ipv6Network
+The IPv6 subnet that will be used to allocate virtual address for the clients
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -473,6 +488,7 @@ Read-only.
   - `[DisplayName <String>]`: The display name for the server configuration.
 This property is required when a server is created.
   - `[DnsServers <String- `[]`>]`: The DNS servers that will be used by the clients
+  - `[Ipv6Network <String>]`: The IPv6 subnet that will be used to allocate virtual address for the clients
   - `[LastUpdateDateTime <DateTime?>]`: When the configuration was last updated
   - `[ListenPort <Int32?>]`: The port that both TCP and UPD will listen over on the server
   - `[Network <String>]`: The IPv4 subnet that will be used to allocate virtual address for the clients
@@ -570,6 +586,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[ManagedDeviceEncryptionStateId <String>]`: The unique identifier of managedDeviceEncryptionState
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationState
+  - `[ManagedDeviceWindowsOperatingSystemImageId <String>]`: The unique identifier of managedDeviceWindowsOperatingSystemImage
   - `[MicrosoftTunnelConfigurationId <String>]`: The unique identifier of microsoftTunnelConfiguration
   - `[MicrosoftTunnelHealthThresholdId <String>]`: The unique identifier of microsoftTunnelHealthThreshold
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer

@@ -262,6 +262,7 @@ Accept wildcard characters: False
 ### -RegistrantId
 Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
 
 ```yaml
 Type: String
@@ -406,6 +407,7 @@ This property is read-only.
 This property is read-only.
   - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
   - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
   - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.

@@ -11,6 +11,7 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Reset a user's password, represented by a password authentication method object.
 This can only be done by an administrator with appropriate permissions and can't be performed on a user's own account.
+To reset a user's password in Azure AD B2C, use the Update user API operation and update the passwordProfile \> forceChangePasswordNextSignIn object.
 This flow writes the new password to Microsoft Entra ID and pushes it to on-premises Active Directory if configured using password writeback.
 The admin can either provide a new password or have the system generate one.
 The user is prompted to change their password on their next sign in.
@@ -54,6 +55,7 @@ Reset-MgUserAuthenticationMethodPassword -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Reset a user's password, represented by a password authentication method object.
 This can only be done by an administrator with appropriate permissions and can't be performed on a user's own account.
+To reset a user's password in Azure AD B2C, use the Update user API operation and update the passwordProfile \> forceChangePasswordNextSignIn object.
 This flow writes the new password to Microsoft Entra ID and pushes it to on-premises Active Directory if configured using password writeback.
 The admin can either provide a new password or have the system generate one.
 The user is prompted to change their password on their next sign in.
@@ -73,10 +75,12 @@ $params = @{
 	newPassword = "Cuyo5459"
 }
 
+$authenticationMethodId = "28c10230-6103-485e-b985-444c60001490"
+
 Reset-MgUserAuthenticationMethodPassword -UserId $userId -AuthenticationMethodId $authenticationMethodId -BodyParameter $params
 
 ```
-This example will user-submitted password
+This example will set the submitted password.
 
 ### Example 2: System-generated password
 
@@ -87,11 +91,12 @@ Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 }
 
+$authenticationMethodId = "28c10230-6103-485e-b985-444c60001490"
+
 Reset-MgUserAuthenticationMethodPassword -UserId $userId -AuthenticationMethodId $authenticationMethodId -BodyParameter $params
 
 ```
-This example will system-generated password
-
+This example will generate a password for a cloud only user.
 
 ## PARAMETERS
 

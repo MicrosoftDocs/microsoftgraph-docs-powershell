@@ -12,6 +12,9 @@ ms.subservice: entra-sign-in
 Remove or unlink an application from an external identities self-service sign-up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 This disables the authentication experience that's defined by the user flow for the application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityAuthenticationEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityAuthenticationEventFlowIncludeApplication?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -3,14 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycustomsecurityattributedefinitionallowedvalue
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## SYNOPSIS
-Values that are predefined for this custom security attribute.
-This navigation property is not returned by default and must be specified in an $expand query.
-For example, /directory/customSecurityAttributeDefinitions?$expand=allowedValues.
+Read the properties and relationships of an allowedValue object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-1.0)
@@ -42,9 +42,13 @@ Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ```
 
 ## DESCRIPTION
-Values that are predefined for this custom security attribute.
-This navigation property is not returned by default and must be specified in an $expand query.
-For example, /directory/customSecurityAttributeDefinitions?$expand=allowedValues.
+Read the properties and relationships of an allowedValue object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/allowedvalue-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customsecurityattributedefinition-list-allowedvalues-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -371,6 +375,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycustomsecurityattributedefinitionallowedvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycustomsecurityattributedefinitionallowedvalue)
+
+[https://learn.microsoft.com/graph/api/allowedvalue-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/allowedvalue-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/customsecurityattributedefinition-list-allowedvalues?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-list-allowedvalues?view=graph-rest-beta)
 
 
 

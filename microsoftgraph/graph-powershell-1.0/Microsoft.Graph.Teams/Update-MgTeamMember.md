@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteammember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Update-MgTeamMember
 
 ## SYNOPSIS
-Update the navigation property members in teams
+Update the role of a conversationMember in a team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamMember?view=graph-powershell-beta)
@@ -46,7 +47,10 @@ Update-MgTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Update the navigation property members in teams
+Update the role of a conversationMember in a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-update-members-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -357,6 +361,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteammember)
+
+[https://learn.microsoft.com/graph/api/team-update-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-update-members?view=graph-rest-1.0)
 
 
 

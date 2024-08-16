@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicy
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgPolicyAuthenticationStrengthPolicy
 
 ## SYNOPSIS
-Update the navigation property authenticationStrengthPolicies in policies
+Update the properties of an authenticationStrengthPolicy object.
+You cannot update the allowed auth method combinations using this request.
+To do so, use the Update allowed combinations action.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
@@ -50,7 +53,12 @@ Update-MgPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdenti
 ```
 
 ## DESCRIPTION
-Update the navigation property authenticationStrengthPolicies in policies
+Update the properties of an authenticationStrengthPolicy object.
+You cannot update the allowed auth method combinations using this request.
+To do so, use the Update allowed combinations action.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthpolicy-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -356,7 +364,7 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AppliesToCombinations <String- `[]`>]`: Which authentication method combinations this configuration applies to.
-Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy.
+Must be an allowedCombinations object, part of the authenticationStrengthPolicy.
 The only possible value for fido2combinationConfigurations is 'fido2'.
   - `[CreatedDateTime <DateTime?>]`: The datetime when this policy was created.
   - `[Description <String>]`: The human-readable description of this policy.
@@ -370,15 +378,17 @@ COMBINATIONCONFIGURATIONS <IMicrosoftGraphAuthenticationCombinationConfiguration
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppliesToCombinations <String- `[]`>]`: Which authentication method combinations this configuration applies to.
-Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy.
+Must be an allowedCombinations object, part of the authenticationStrengthPolicy.
 The only possible value for fido2combinationConfigurations is 'fido2'.
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
+  - `[AuthenticationConditionApplicationAppId <String>]`: The unique identifier of authenticationConditionApplication
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
   - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
+  - `[AuthenticationEventsFlowId <String>]`: The unique identifier of authenticationEventsFlow
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
@@ -402,7 +412,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityProviderId <String>]`: The unique identifier of identityProvider
   - `[IdentityUserFlowAttributeAssignmentId <String>]`: The unique identifier of identityUserFlowAttributeAssignment
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
-  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
@@ -436,6 +445,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicy)
+
+[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-update?view=graph-rest-1.0)
 
 
 

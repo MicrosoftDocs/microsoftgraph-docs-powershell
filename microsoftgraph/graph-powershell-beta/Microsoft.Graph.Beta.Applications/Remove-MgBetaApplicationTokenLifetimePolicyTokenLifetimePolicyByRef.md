@@ -34,6 +34,9 @@ Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef -InputObject
 ## DESCRIPTION
 Remove a tokenLifetimePolicy from an application or servicePrincipal.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-tokenlifetimepolicies-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

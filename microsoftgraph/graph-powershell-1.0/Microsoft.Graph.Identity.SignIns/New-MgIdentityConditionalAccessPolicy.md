@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
-Create new navigation property to policies for identity
+Create a new conditionalAccessPolicy.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
@@ -33,7 +34,10 @@ New-MgIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditional
 ```
 
 ## DESCRIPTION
-Create new navigation property to policies for identity
+Create a new conditionalAccessPolicy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conditionalaccessroot-post-policies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Require MFA to access Exchange Online outside of trusted locations
@@ -584,6 +588,7 @@ The easUnsupported enumeration member will be deprecated in favor of exchangeAct
     - `[Devices <IMicrosoftGraphConditionalAccessDevices>]`: conditionalAccessDevices
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceFilter <IMicrosoftGraphConditionalAccessFilter>]`: conditionalAccessFilter
+    - `[InsiderRiskLevels <String>]`: conditionalAccessInsiderRiskLevels
     - `[Locations <IMicrosoftGraphConditionalAccessLocations>]`: conditionalAccessLocations
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ExcludeLocations <String- `[]`>]`: Location IDs excluded from scope of policy.
@@ -631,7 +636,7 @@ Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[AppliesToCombinations <String- `[]`>]`: Which authentication method combinations this configuration applies to.
-Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy.
+Must be an allowedCombinations object, part of the authenticationStrengthPolicy.
 The only possible value for fido2combinationConfigurations is 'fido2'.
       - `[CreatedDateTime <DateTime?>]`: The datetime when this policy was created.
       - `[Description <String>]`: The human-readable description of this policy.
@@ -701,6 +706,7 @@ The easUnsupported enumeration member will be deprecated in favor of exchangeAct
   - `[Devices <IMicrosoftGraphConditionalAccessDevices>]`: conditionalAccessDevices
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceFilter <IMicrosoftGraphConditionalAccessFilter>]`: conditionalAccessFilter
+  - `[InsiderRiskLevels <String>]`: conditionalAccessInsiderRiskLevels
   - `[Locations <IMicrosoftGraphConditionalAccessLocations>]`: conditionalAccessLocations
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ExcludeLocations <String- `[]`>]`: Location IDs excluded from scope of policy.
@@ -744,7 +750,7 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[AppliesToCombinations <String- `[]`>]`: Which authentication method combinations this configuration applies to.
-Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy.
+Must be an allowedCombinations object, part of the authenticationStrengthPolicy.
 The only possible value for fido2combinationConfigurations is 'fido2'.
     - `[CreatedDateTime <DateTime?>]`: The datetime when this policy was created.
     - `[Description <String>]`: The human-readable description of this policy.
@@ -786,6 +792,8 @@ SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditional
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy)
+
+[https://learn.microsoft.com/graph/api/conditionalaccessroot-post-policies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-policies?view=graph-rest-1.0)
 
 
 

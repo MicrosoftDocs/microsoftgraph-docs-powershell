@@ -1260,7 +1260,7 @@ Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
-  - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
+  - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
       - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
@@ -1270,6 +1270,7 @@ This property is required when restrictionType is set to keyLifetime.
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
       - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+      - `[State <String>]`: appManagementRestrictionState
     - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
       - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -1277,6 +1278,7 @@ This property is required when restrictionType is set to passwordLifetime.
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
       - `[RestrictionType <String>]`: appCredentialRestrictionType
+      - `[State <String>]`: appManagementRestrictionState
 
 APPROLEASSIGNEDTO <IMicrosoftGraphAppRoleAssignment- `[]`>: App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1396,7 +1398,7 @@ Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
     - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
-    - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
+    - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
         - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
@@ -1406,6 +1408,7 @@ This property is required when restrictionType is set to keyLifetime.
         - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
         - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+        - `[State <String>]`: appManagementRestrictionState
       - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
         - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -1413,6 +1416,7 @@ This property is required when restrictionType is set to passwordLifetime.
         - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
         - `[RestrictionType <String>]`: appCredentialRestrictionType
+        - `[State <String>]`: appManagementRestrictionState
   - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -1840,8 +1844,8 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
-The value is represented in ISO 8601 format for durations.
-For example, PT1M represents a period of 1 month.
+The value is represented in ISO 8601  format for durations.
+For example, P1M represents a period of one month and PT1M represents a period of one minute.
         - `[State <String>]`: synchronizationScheduleState
       - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2480,8 +2484,8 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
-The value is represented in ISO 8601 format for durations.
-For example, PT1M represents a period of 1 month.
+The value is represented in ISO 8601  format for durations.
+For example, P1M represents a period of one month and PT1M represents a period of one minute.
       - `[State <String>]`: synchronizationScheduleState
     - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

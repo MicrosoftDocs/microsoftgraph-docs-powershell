@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaldelegatedpermissionclassification
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgServicePrincipalDelegatedPermissionClassification
 
 ## SYNOPSIS
-Delete navigation property delegatedPermissionClassifications for servicePrincipals
+Deletes a delegatedPermissionClassification which had previously been set for a delegated permission.
 
 ## SYNTAX
 
@@ -27,7 +28,10 @@ Remove-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplic
 ```
 
 ## DESCRIPTION
-Delete navigation property delegatedPermissionClassifications for servicePrincipals
+Deletes a delegatedPermissionClassification which had previously been set for a delegated permission.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-delegatedpermissionclassifications-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -241,6 +245,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaldelegatedpermissionclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaldelegatedpermissionclassification)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-delete-delegatedpermissionclassifications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-delete-delegatedpermissionclassifications?view=graph-rest-1.0)
 
 
 

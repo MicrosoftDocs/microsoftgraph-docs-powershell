@@ -9,9 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
 Read-only.
-Supports $expand.
+Supports $expand for the directory provider.
 
 ## SYNTAX
 
@@ -32,9 +31,8 @@ Get-MgBetaRoleManagementExchangeTransitiveRoleAssignmentDirectoryScope
 
 ## DESCRIPTION
 The directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
 Read-only.
-Supports $expand.
+Supports $expand for the directory provider.
 
 ## PARAMETERS
 

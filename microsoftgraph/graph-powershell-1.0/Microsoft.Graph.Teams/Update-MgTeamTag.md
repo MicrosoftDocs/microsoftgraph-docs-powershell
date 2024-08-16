@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamtag
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Update-MgTeamTag
 
 ## SYNOPSIS
-Update the navigation property tags in teams
+Update the properties of a tag object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamTag?view=graph-powershell-beta)
@@ -46,7 +47,10 @@ Update-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTe
 ```
 
 ## DESCRIPTION
-Update the navigation property tags in teams
+Update the properties of a tag object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktag-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -419,6 +423,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamtag)
+
+[https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-1.0)
 
 
 

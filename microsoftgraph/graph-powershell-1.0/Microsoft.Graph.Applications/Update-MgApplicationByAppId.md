@@ -27,8 +27,9 @@ Update-MgApplicationByAppId -AppId <String> [-ResponseHeadersVariable <String>]
  [-GroupMembershipClaims <String>] [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>]
  [-Id <String>] [-IdentifierUris <String[]>] [-Info <IMicrosoftGraphInformationalUrl>]
  [-IsDeviceOnlyAuthSupported] [-IsFallbackPublicClient] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
- [-LogoInputFile <String>] [-Notes <String>] [-Oauth2RequirePostResponse]
- [-OptionalClaims <IMicrosoftGraphOptionalClaims>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
+ [-LogoInputFile <String>] [-NativeAuthenticationApisEnabled <String>] [-Notes <String>]
+ [-Oauth2RequirePostResponse] [-OptionalClaims <IMicrosoftGraphOptionalClaims>]
+ [-Owners <IMicrosoftGraphDirectoryObject[]>]
  [-ParentalControlSettings <IMicrosoftGraphParentalControlSettings>]
  [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>]
  [-PublicClient <IMicrosoftGraphPublicClientApplication>] [-PublisherDomain <String>]
@@ -58,8 +59,9 @@ Update-MgApplicationByAppId [-AppId <String>] -InputObject <IApplicationsIdentit
  [-GroupMembershipClaims <String>] [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>]
  [-Id <String>] [-IdentifierUris <String[]>] [-Info <IMicrosoftGraphInformationalUrl>]
  [-IsDeviceOnlyAuthSupported] [-IsFallbackPublicClient] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
- [-LogoInputFile <String>] [-Notes <String>] [-Oauth2RequirePostResponse]
- [-OptionalClaims <IMicrosoftGraphOptionalClaims>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
+ [-LogoInputFile <String>] [-NativeAuthenticationApisEnabled <String>] [-Notes <String>]
+ [-Oauth2RequirePostResponse] [-OptionalClaims <IMicrosoftGraphOptionalClaims>]
+ [-Owners <IMicrosoftGraphDirectoryObject[]>]
  [-ParentalControlSettings <IMicrosoftGraphParentalControlSettings>]
  [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>]
  [-PublicClient <IMicrosoftGraphPublicClientApplication>] [-PublisherDomain <String>]
@@ -611,6 +613,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -NativeAuthenticationApisEnabled
+nativeAuthenticationApisEnabled
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Notes
 Notes relevant for the management of the application.
 
@@ -1081,11 +1098,13 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 ADDINS <IMicrosoftGraphAddIn- `[]`>: Defines custom behavior that a consuming service can use to call an app in specific contexts.
 For example, applications that can render file streams can set the addIns property for its 'FileHandler' functionality.
 This lets services like Microsoft 365 call the application in the context of a document the user is working on.
-  - `[Id <String>]`: 
-  - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: 
+  - `[Id <String>]`: The unique identifier for the addIn object.
+  - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
+You must specify this property when performing a POST or a PATCH operation on the addIns collection.
+Required.
     - `[Key <String>]`: Key for the key-value pair.
     - `[Value <String>]`: Value for the key-value pair.
-  - `[Type <String>]`: 
+  - `[Type <String>]`: The unique name for the functionality exposed by the app.
 
 API `<IMicrosoftGraphApiApplication>`: apiApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1149,17 +1168,23 @@ Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
   - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
-  - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
+  - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-      - `[MaxLifetime <TimeSpan?>]`: 
+      - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
+Defined in ISO 8601 format for Durations.
+For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restrictionType is set to keyLifetime.
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications regardless of their creation date, this property would be null.
 Nullable.
       - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
     - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-      - `[MaxLifetime <TimeSpan?>]`: 
+      - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
+Defined in ISO 8601 format for Durations.
+For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restriction type is set to passwordLifetime.
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications, enforcement datetime would be null.
@@ -1200,11 +1225,13 @@ Read-only.
   - `[AddIns <IMicrosoftGraphAddIn- `[]`>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts.
 For example, applications that can render file streams can set the addIns property for its 'FileHandler' functionality.
 This lets services like Microsoft 365 call the application in the context of a document the user is working on.
-    - `[Id <String>]`: 
-    - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for the addIn object.
+    - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
+You must specify this property when performing a POST or a PATCH operation on the addIns collection.
+Required.
       - `[Key <String>]`: Key for the key-value pair.
       - `[Value <String>]`: Value for the key-value pair.
-    - `[Type <String>]`: 
+    - `[Type <String>]`: The unique name for the functionality exposed by the app.
   - `[Api <IMicrosoftGraphApiApplication>]`: apiApplication
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AcceptMappedClaims <Boolean?>]`: When true, allows an application to use claims mapping without specifying a custom signing key.
@@ -1271,17 +1298,23 @@ Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
     - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
-    - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
+    - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-        - `[MaxLifetime <TimeSpan?>]`: 
+        - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. 
+Defined in ISO 8601 format for Durations.
+For example, P4DT12H30M5S represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restrictionType is set to keyLifetime.
         - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications regardless of their creation date, this property would be null.
 Nullable.
         - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
       - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
-        - `[MaxLifetime <TimeSpan?>]`: 
+        - `[MaxLifetime <TimeSpan?>]`: Value that can be used as the maximum number for setting password expiration time in days, hours, minutes or seconds.
+Defined in ISO 8601 format for Durations.
+For example, 'P4DT12H30M5S' represents a duration of four days, twelve hours, thirty minutes, and five seconds.
+This property is required when restriction type is set to passwordLifetime.
         - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date.
 For existing applications, the enforcement date would be back dated.
 To apply to all applications, enforcement datetime would be null.
@@ -1455,6 +1488,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, Verify.
   - `[Logo <Byte- `[]`>]`: The main logo for the application.
 Not nullable.
+  - `[NativeAuthenticationApisEnabled <String>]`: nativeAuthenticationApisEnabled
   - `[Notes <String>]`: Notes relevant for the management of the application.
   - `[Oauth2RequirePostResponse <Boolean?>]`: 
   - `[OptionalClaims <IMicrosoftGraphOptionalClaims>]`: optionalClaims
@@ -1505,6 +1539,8 @@ Optional.
   - `[PublicClient <IMicrosoftGraphPublicClientApplication>]`: publicClientApplication
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[RedirectUris <String- `[]`>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
+For iOS and macOS apps, specify the value following the syntax msauth.{BUNDLEID}://auth, replacing '{BUNDLEID}'.
+For example, if the bundle ID is com.microsoft.identitysample.MSALiOS, the URI is msauth.com.microsoft.identitysample.MSALiOS://auth.
   - `[PublisherDomain <String>]`: The verified publisher domain for the application.
 Read-only.
 For more information, see How to: Configure an application's publisher domain.
@@ -1572,8 +1608,8 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
-The value is represented in ISO 8601 format for durations.
-For example, PT1M represents a period of one month.
+The value is represented in ISO 8601  format for durations.
+For example, P1M represents a period of one month and PT1M represents a period of one minute.
         - `[State <String>]`: synchronizationScheduleState
       - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1599,7 +1635,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
                 - `[Value <String>]`: Value.
               - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-              - `[DefaultValue <String>]`: 
+              - `[DefaultValue <String>]`: The default value of the attribute.
               - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
               - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
                 - `[Key <String>]`: attributeDefinitionMetadata
@@ -2067,6 +2103,8 @@ Optional.
 PUBLICCLIENT `<IMicrosoftGraphPublicClientApplication>`: publicClientApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RedirectUris <String- `[]`>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
+For iOS and macOS apps, specify the value following the syntax msauth.{BUNDLEID}://auth, replacing '{BUNDLEID}'.
+For example, if the bundle ID is com.microsoft.identitysample.MSALiOS, the URI is msauth.com.microsoft.identitysample.MSALiOS://auth.
 
 REQUESTSIGNATUREVERIFICATION `<IMicrosoftGraphRequestSignatureVerification>`: requestSignatureVerification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2122,8 +2160,8 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
-The value is represented in ISO 8601 format for durations.
-For example, PT1M represents a period of one month.
+The value is represented in ISO 8601  format for durations.
+For example, P1M represents a period of one month and PT1M represents a period of one minute.
       - `[State <String>]`: synchronizationScheduleState
     - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2149,7 +2187,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
               - `[Value <String>]`: Value.
             - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-            - `[DefaultValue <String>]`: 
+            - `[DefaultValue <String>]`: The default value of the attribute.
             - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
             - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
               - `[Key <String>]`: attributeDefinitionMetadata

@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleprofilecardproperty
 schema: 2.0.0
+ms.subservice: people
+ms.subservice: people
 ---
 
 # Get-MgBetaAdminPeopleProfileCardProperty
 
 ## SYNOPSIS
-Contains a collection of the properties an administrator defined as visible on the Microsoft 365 profile card.
+Retrieve the properties of a profileCardProperty entity.
+The profileCardProperty is identified by its directoryPropertyName property.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
@@ -38,7 +41,14 @@ Get-MgBetaAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManagem
 ```
 
 ## DESCRIPTION
-Contains a collection of the properties an administrator defined as visible on the Microsoft 365 profile card.
+Retrieve the properties of a profileCardProperty entity.
+The profileCardProperty is identified by its directoryPropertyName property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profilecardproperty-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-list-profilecardproperties-permissions.md)]
 
 ## PARAMETERS
 
@@ -337,6 +347,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleprofilecardproperty)
+
+[https://learn.microsoft.com/graph/api/profilecardproperty-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/profilecardproperty-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-beta](https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-beta)
 
 
 

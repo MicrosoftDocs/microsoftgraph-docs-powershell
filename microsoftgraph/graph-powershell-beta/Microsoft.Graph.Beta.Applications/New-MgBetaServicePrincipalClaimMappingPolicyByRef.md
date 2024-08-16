@@ -49,6 +49,9 @@ New-MgBetaServicePrincipalClaimMappingPolicyByRef -InputObject <IApplicationsIde
 ## DESCRIPTION
 Assign a claimsMappingPolicy to a servicePrincipal.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-post-claimsmappingpolicies-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalclaimmappingpolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgServicePrincipalClaimMappingPolicyByRef
 
 ## SYNOPSIS
-Create new navigation property ref to claimsMappingPolicies for servicePrincipals
+Assign a claimsMappingPolicy to a servicePrincipal.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-beta)
@@ -45,7 +46,10 @@ New-MgServicePrincipalClaimMappingPolicyByRef -InputObject <IApplicationsIdentit
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to claimsMappingPolicies for servicePrincipals
+Assign a claimsMappingPolicy to a servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-claimsmappingpolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -286,6 +290,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalclaimmappingpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalclaimmappingpolicybyref)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-post-claimsmappingpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-post-claimsmappingpolicies?view=graph-rest-1.0)
 
 
 

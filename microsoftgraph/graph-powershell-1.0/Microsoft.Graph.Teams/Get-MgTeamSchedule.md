@@ -3,12 +3,17 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamschedule
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgTeamSchedule
 
 ## SYNOPSIS
-The schedule of shifts for this team.
+Retrieve the properties and relationships of a schedule object.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).When clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
+If the provisioning failed, clients can get additional information from the provisionStatusCode property.
+Clients can also inspect the configuration of the schedule.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamSchedule?view=graph-powershell-beta)
@@ -30,7 +35,14 @@ Get-MgTeamSchedule -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-The schedule of shifts for this team.
+Retrieve the properties and relationships of a schedule object.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).When clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
+If the provisioning failed, clients can get additional information from the provisionStatusCode property.
+Clients can also inspect the configuration of the schedule.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -207,6 +219,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamschedule)
+
+[https://learn.microsoft.com/graph/api/schedule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-get?view=graph-rest-1.0)
 
 
 

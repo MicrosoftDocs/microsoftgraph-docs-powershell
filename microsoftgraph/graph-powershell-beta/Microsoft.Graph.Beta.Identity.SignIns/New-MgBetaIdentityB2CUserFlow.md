@@ -410,12 +410,12 @@ This field is RFC 5646 compliant.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider.
-This is a required field. 
+This is a required field.
 Required.
 Not nullable.
     - `[ClientSecret <String>]`: The client secret for the application obtained when registering the application with the identity provider.
 This is write-only.
-A read operation will return .
+A read operation returns .
 This is a required field.
 Required.
 Not nullable.
@@ -473,12 +473,12 @@ IDENTITYPROVIDERS <IMicrosoftGraphIdentityProvider- `[]`>: The identity provider
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider.
-This is a required field. 
+This is a required field.
 Required.
 Not nullable.
   - `[ClientSecret <String>]`: The client secret for the application obtained when registering the application with the identity provider.
 This is write-only.
-A read operation will return .
+A read operation returns .
 This is a required field.
 Required.
 Not nullable.

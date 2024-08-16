@@ -9,7 +9,7 @@ ms.subservice: intune
 # New-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Create a new androidWorkProfileCompliancePolicy object.
+Create a new iosCompliancePolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter <IMicrosoftGraphDevi
 ```
 
 ## DESCRIPTION
-Create a new androidWorkProfileCompliancePolicy object.
+Create a new iosCompliancePolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -49,26 +49,31 @@ Create a new androidWorkProfileCompliancePolicy object.
 Import-Module Microsoft.Graph.DeviceManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windows10MobileCompliancePolicy"
+	"@odata.type" = "#microsoft.graph.androidWorkProfileCompliancePolicy"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
 	passwordRequired = $true
-	passwordBlockSimple = $true
 	passwordMinimumLength = 
-	passwordMinimumCharacterSetCount = 
-	passwordRequiredType = "alphanumeric"
-	passwordPreviousPasswordBlockCount = 
-	passwordExpirationDays = 
+	passwordRequiredType = "alphabetic"
 	passwordMinutesOfInactivityBeforeLock = 
-	passwordRequireToUnlockFromIdle = $true
+	passwordExpirationDays = 
+	passwordPreviousPasswordBlockCount = 
+	securityPreventInstallAppsFromUnknownSources = $true
+	securityDisableUsbDebugging = $true
+	securityRequireVerifyApps = $true
+	deviceThreatProtectionEnabled = $true
+	deviceThreatProtectionRequiredSecurityLevel = "secured"
+	securityBlockJailbrokenDevices = $true
 	osMinimumVersion = "Os Minimum Version value"
 	osMaximumVersion = "Os Maximum Version value"
-	earlyLaunchAntiMalwareDriverEnabled = $true
-	bitLockerEnabled = $true
-	secureBootEnabled = $true
-	codeIntegrityEnabled = $true
+	minAndroidSecurityPatchLevel = "Min Android Security Patch Level value"
 	storageRequireEncryption = $true
+	securityRequireSafetyNetAttestationBasicIntegrity = $true
+	securityRequireSafetyNetAttestationCertifiedDevice = $true
+	securityRequireGooglePlayServices = $true
+	securityRequireUpToDateSecurityProviders = $true
+	securityRequireCompanyPortalAppIntegrity = $true
 }
 
 New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter $params
@@ -574,7 +579,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-androidworkprofilecompliancepolicy-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-androidworkprofilecompliancepolicy-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-ioscompliancepolicy-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-ioscompliancepolicy-create?view=graph-rest-1.0)
 
 
 

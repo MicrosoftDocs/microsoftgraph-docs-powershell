@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarregistration
 schema: 2.0.0
 ms.subservice: cloud-communications
-ms.subservice: cloud-communications
 ---
 
 # Get-MgVirtualEventWebinarRegistration
@@ -52,7 +51,7 @@ Get the properties and relationships of a virtualEventRegistration object.
 
 Import-Module Microsoft.Graph.Bookings
 
-Get-MgVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId
+Get-MgVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventRegistrationId $virtualEventRegistrationId
 
 ```
 This example shows how to use the Get-MgVirtualEventWebinarRegistration Cmdlet.

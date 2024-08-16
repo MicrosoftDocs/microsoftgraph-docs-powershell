@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation
 schema: 2.0.0
-ms.subservice: entra-groups
+ms.subservice: extensions
 ---
 
 # New-MgGroupConversation
@@ -55,44 +55,46 @@ Create an open extension (openTypeExtension object) and add custom properties in
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-conversations-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Create an extension in a new group post using POST operation
 
 ```powershell
 
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	topic = "Take your wellness days and rest"
-	threads = @(
+	Topic = "Does anyone have a second?"
+	Threads = @(
 		@{
-			posts = @(
+			Posts = @(
 				@{
-					body = @{
-						contentType = "html"
-						content = "Contoso cares about you: Rest and Recharge"
+					Body = @{
+						ContentType = "HTML"
+						Content = "This is urgent!"
 					}
-					newParticipants = @(
+					Extensions = @(
 						@{
-							emailAddress = @{
-								name = "Adele Vance"
-								address = "AdeleV@contoso.com"
-							}
-						}
-					)
-				}
-			)
-		}
-	)
+							"@odata.type" = "microsoft.graph.openTypeExtension"
+							extensionName = "Com.Contoso.Benefits"
+							companyName = "Contoso"
+							expirationDate = "2016-08-03T11:00:00.000Z"
+							topPicks = @(
+							"Employees only"
+						"Add spouse or guest"
+					"Add family"
+				)
+			}
+		)
+	}
+)
+}
+)
 }
 
 New-MgGroupConversation -GroupId $groupId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgGroupConversation Cmdlet.
+This example will create an extension in a new group post using post operation
 
 
 ## PARAMETERS
@@ -494,7 +496,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
-  - `[Path1 <String>]`: Usage: path='{path1}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PostId <String>]`: The unique identifier of post
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto

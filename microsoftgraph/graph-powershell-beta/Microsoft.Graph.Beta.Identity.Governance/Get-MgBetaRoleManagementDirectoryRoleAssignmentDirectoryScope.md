@@ -9,9 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
 Read-only.
-Supports $expand.
+Supports $expand for the directory provider.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentDirectoryScope?view=graph-powershell-1.0)
@@ -34,9 +33,8 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentDirectoryScope -InputObject <IIde
 
 ## DESCRIPTION
 The directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
 Read-only.
-Supports $expand.
+Supports $expand for the directory provider.
 
 ## PARAMETERS
 

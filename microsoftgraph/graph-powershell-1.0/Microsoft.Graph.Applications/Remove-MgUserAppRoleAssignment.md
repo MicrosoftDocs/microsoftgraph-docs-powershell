@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mguserapproleassignment
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Remove-MgUserAppRoleAssignment
 
 ## SYNOPSIS
-Delete navigation property appRoleAssignments for users
+Delete an appRoleAssignment that has been granted to a user.
 
 ## SYNTAX
 
@@ -27,7 +28,10 @@ Remove-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Delete navigation property appRoleAssignments for users
+Delete an appRoleAssignment that has been granted to a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delete-approleassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Remove a user's application role assignment
@@ -239,6 +243,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mguserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mguserapproleassignment)
+
+[https://learn.microsoft.com/graph/api/user-delete-approleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-delete-approleassignments?view=graph-rest-1.0)
 
 
 

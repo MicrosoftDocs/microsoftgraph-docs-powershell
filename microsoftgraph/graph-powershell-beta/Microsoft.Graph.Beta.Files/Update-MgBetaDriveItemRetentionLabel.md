@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel
 schema: 2.0.0
+ms.subservice: onedrive
 ---
 
 # Update-MgBetaDriveItemRetentionLabel
@@ -53,6 +54,25 @@ Update-MgBetaDriveItemRetentionLabel -InputObject <IFilesIdentity>
 Lock or unlock a retention label on a driveItem that classifies content as records.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Files
+
+$params = @{
+	retentionSettings = @{
+		isRecordLocked = $true
+	}
+}
+
+Update-MgBetaDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDriveItemRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 
@@ -418,7 +438,6 @@ Read-write.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel)
 
 [https://learn.microsoft.com/graph/api/driveitem-lockorunlockrecord?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-lockorunlockrecord?view=graph-rest-beta)
-
 
 
 

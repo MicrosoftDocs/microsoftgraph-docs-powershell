@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchanneltab
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgTeamChannelTab
 
 ## SYNOPSIS
-A collection of all the tabs in the channel.
-A navigation property.
+Retrieve the properties and relationships of the specified tab in a channel within a team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelTab?view=graph-powershell-beta)
@@ -39,8 +40,13 @@ Get-MgTeamChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-A collection of all the tabs in the channel.
-A navigation property.
+Retrieve the properties and relationships of the specified tab in a channel within a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-tabs-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-list-tabs-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List all the tabs in the channel along with associated Teams app
@@ -379,6 +385,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchanneltab)
+
+[https://learn.microsoft.com/graph/api/channel-get-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-get-tabs?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/channel-list-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-list-tabs?view=graph-rest-1.0)
 
 
 

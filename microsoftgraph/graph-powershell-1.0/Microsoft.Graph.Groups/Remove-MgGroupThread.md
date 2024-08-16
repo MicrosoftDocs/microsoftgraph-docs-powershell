@@ -34,7 +34,7 @@ Remove-MgGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Respon
 Delete conversationThread.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-thread-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationthread-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -248,7 +248,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
-  - `[Path1 <String>]`: Usage: path='{path1}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PostId <String>]`: The unique identifier of post
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
@@ -266,7 +265,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthread)
 
-[https://learn.microsoft.com/graph/api/group-delete-thread?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-thread?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/conversationthread-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationthread-delete?view=graph-rest-1.0)
 
 
 

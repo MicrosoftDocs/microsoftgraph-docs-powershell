@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserContactFolderContactPhotoContent
 
 ## SYNOPSIS
-Get media content for the navigation property photo from users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderContactPhotoContent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderContactPhotoContent?view=graph-powershell-beta)
@@ -18,19 +19,20 @@ Get media content for the navigation property photo from users
 ### Get (Default)
 ```
 Get-MgUserContactFolderContactPhotoContent -ContactFolderId <String> -ContactId <String> -UserId <String>
- [-Format <String>] -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserContactFolderContactPhotoContent -InputObject <IPersonalContactsIdentity> [-Format <String>]
- -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgUserContactFolderContactPhotoContent -InputObject <IPersonalContactsIdentity> -OutFile <String>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property photo from users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 ## PARAMETERS
 
@@ -58,21 +60,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

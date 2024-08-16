@@ -10,7 +10,7 @@ ms.subservice: entra-groups
 # Get-MgGroupConversation
 
 ## SYNOPSIS
-Retrieve the properties and relationships of conversation object.
+The group's conversations.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversation?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgGroupConversation -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of conversation object.
+The group's conversations.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-conversation-permissions.md)]
@@ -350,7 +350,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
-  - `[Path1 <String>]`: Usage: path='{path1}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PostId <String>]`: The unique identifier of post
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
@@ -368,7 +367,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversation)
 
-[https://learn.microsoft.com/graph/api/conversation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversation-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-get-conversation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-get-conversation?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/group-list-conversations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-conversations?view=graph-rest-1.0)
 

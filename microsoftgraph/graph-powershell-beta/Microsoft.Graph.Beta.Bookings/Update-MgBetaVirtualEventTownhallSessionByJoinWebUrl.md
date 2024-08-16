@@ -16,7 +16,7 @@ Update the navigation property sessions in solutions
 ```
 Update-MgBetaVirtualEventTownhallSessionByJoinWebUrl -JoinWebUrl <String> -VirtualEventTownhallId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera]
- [-AllowAttendeeToEnableMic] [-AllowBreakoutRooms] [-AllowLiveShare] [-AllowMeetingChat <String>]
+ [-AllowAttendeeToEnableMic] [-AllowBreakoutRooms] [-AllowLiveShare <String>] [-AllowMeetingChat <String>]
  [-AllowParticipantsToChangeName] [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions]
  [-AllowTranscription] [-AllowWhiteboard] [-AllowedPresenters <String>] [-AnonymizeIdentityForRoles <String[]>]
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
@@ -36,7 +36,7 @@ Update-MgBetaVirtualEventTownhallSessionByJoinWebUrl -JoinWebUrl <String> -Virtu
 ```
 Update-MgBetaVirtualEventTownhallSessionByJoinWebUrl [-JoinWebUrl <String>] -InputObject <IBookingsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera]
- [-AllowAttendeeToEnableMic] [-AllowBreakoutRooms] [-AllowLiveShare] [-AllowMeetingChat <String>]
+ [-AllowAttendeeToEnableMic] [-AllowBreakoutRooms] [-AllowLiveShare <String>] [-AllowMeetingChat <String>]
  [-AllowParticipantsToChangeName] [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions]
  [-AllowTranscription] [-AllowWhiteboard] [-AllowedPresenters <String>] [-AnonymizeIdentityForRoles <String[]>]
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
@@ -147,16 +147,16 @@ Accept wildcard characters: False
 ```
 
 ### -AllowLiveShare
-.
+meetingLiveShareOptions
 
 ```yaml
-Type: SwitchParameter
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -787,6 +787,7 @@ This property is read-only.
 This property is read-only.
     - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
     - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
     - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -811,7 +812,7 @@ BODYPARAMETER `<IMicrosoftGraphVirtualEventSession>`: virtualEventSession
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowBreakoutRooms <Boolean?>]`: 
-  - `[AllowLiveShare <Boolean?>]`: 
+  - `[AllowLiveShare <String>]`: meetingLiveShareOptions
   - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
   - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -844,6 +845,7 @@ This property is read-only.
 This property is read-only.
       - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
       - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
       - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -983,37 +985,18 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[DriveProtectionRuleId <String>]`: The unique identifier of driveProtectionRule
-  - `[DriveProtectionUnitId <String>]`: The unique identifier of driveProtectionUnit
-  - `[DriveRestoreArtifactId <String>]`: The unique identifier of driveRestoreArtifact
   - `[Email <String>]`: Alternate key of virtualEventRegistration
-  - `[ExchangeProtectionPolicyId <String>]`: The unique identifier of exchangeProtectionPolicy
-  - `[ExchangeRestoreSessionId <String>]`: The unique identifier of exchangeRestoreSession
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
-  - `[MailboxProtectionRuleId <String>]`: The unique identifier of mailboxProtectionRule
-  - `[MailboxProtectionUnitId <String>]`: The unique identifier of mailboxProtectionUnit
-  - `[MailboxRestoreArtifactId <String>]`: The unique identifier of mailboxRestoreArtifact
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[OneDriveForBusinessProtectionPolicyId <String>]`: The unique identifier of oneDriveForBusinessProtectionPolicy
-  - `[OneDriveForBusinessRestoreSessionId <String>]`: The unique identifier of oneDriveForBusinessRestoreSession
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
   - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
-  - `[ProtectionUnitBaseId <String>]`: The unique identifier of protectionUnitBase
-  - `[RestorePointId <String>]`: The unique identifier of restorePoint
   - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
   - `[ServiceAppId <String>]`: The unique identifier of serviceApp
-  - `[SharePointProtectionPolicyId <String>]`: The unique identifier of sharePointProtectionPolicy
-  - `[SharePointRestoreSessionId <String>]`: The unique identifier of sharePointRestoreSession
-  - `[SiteProtectionRuleId <String>]`: The unique identifier of siteProtectionRule
-  - `[SiteProtectionUnitId <String>]`: The unique identifier of siteProtectionUnit
-  - `[SiteRestoreArtifactId <String>]`: The unique identifier of siteRestoreArtifact
-  - `[UniqueName <String>]`: Alternate key of businessScenario
   - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
   - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
+  - `[VirtualEventRegistrationQuestionBaseId <String>]`: The unique identifier of virtualEventRegistrationQuestionBase
   - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
   - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
@@ -1066,7 +1049,7 @@ This property is read-only.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowBreakoutRooms <Boolean?>]`: 
-    - `[AllowLiveShare <Boolean?>]`: 
+    - `[AllowLiveShare <String>]`: meetingLiveShareOptions
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
     - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -1094,6 +1077,7 @@ Read-only.
         - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
         - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
         - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -1216,7 +1200,7 @@ Appears when answerInputType is text, multilineText or singleChoice.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowBreakoutRooms <Boolean?>]`: 
-    - `[AllowLiveShare <Boolean?>]`: 
+    - `[AllowLiveShare <String>]`: meetingLiveShareOptions
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
     - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -1249,6 +1233,7 @@ This property is read-only.
 This property is read-only.
         - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
         - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
         - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.

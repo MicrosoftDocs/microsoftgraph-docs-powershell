@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicetransitivememberofasgroup
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDeviceTransitiveMemberOfAsGroup
 
 ## SYNOPSIS
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups and administrative units that the device is a member of.
+This API request is transitive, and will also return all groups and administrative units the device is a nested member of.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceTransitiveMemberOfAsGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceTransitiveMemberOfAsGroup?view=graph-powershell-1.0)
@@ -40,7 +43,14 @@ Get-MgBetaDeviceTransitiveMemberOfAsGroup -InputObject <IIdentityDirectoryManage
 ```
 
 ## DESCRIPTION
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups and administrative units that the device is a member of.
+This API request is transitive, and will also return all groups and administrative units the device is a nested member of.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-transitivememberof-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-transitivememberof-permissions.md)]
 
 ## PARAMETERS
 
@@ -370,6 +380,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicetransitivememberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicetransitivememberofasgroup)
+
+[https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-beta](https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-beta)
 
 
 

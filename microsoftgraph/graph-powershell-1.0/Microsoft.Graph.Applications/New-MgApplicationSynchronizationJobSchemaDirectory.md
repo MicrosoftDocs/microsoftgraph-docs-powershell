@@ -354,7 +354,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
         - `[Value <String>]`: Value.
       - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-      - `[DefaultValue <String>]`: 
+      - `[DefaultValue <String>]`: The default value of the attribute.
       - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
       - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
         - `[Key <String>]`: attributeDefinitionMetadata
@@ -423,7 +423,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
       - `[Value <String>]`: Value.
     - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-    - `[DefaultValue <String>]`: 
+    - `[DefaultValue <String>]`: The default value of the attribute.
     - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
     - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
       - `[Key <String>]`: attributeDefinitionMetadata

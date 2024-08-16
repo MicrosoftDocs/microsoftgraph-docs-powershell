@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgServicePrincipalOwnerByRef
 
 ## SYNOPSIS
-Create new navigation property ref to owners for servicePrincipals
+Use this API to add an owner for the servicePrincipal.
+Service principal owners can be users, the service principal itself, or other service principals.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta)
@@ -44,7 +46,11 @@ New-MgServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> -BodyParam
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to owners for servicePrincipals
+Use this API to add an owner for the servicePrincipal.
+Service principal owners can be users, the service principal itself, or other service principals.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-owners-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Add an owner for a service principal
@@ -281,6 +287,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-post-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-post-owners?view=graph-rest-1.0)
 
 
 

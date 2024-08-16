@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitem
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Get-MgBetaDriveItem
@@ -44,17 +45,20 @@ All items contained in the drive.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-sharedwithme-permissions.md)]
+
 ## EXAMPLES
-### Example 1: Get a bundle and its children in a single call
+### Example 1: Get metadata about a shared driveItem object
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
 
-Get-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -ExpandProperty "children"
-```
-This example shows how to use the Get-MgBetaDriveItem Cmdlet.
+Get-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get metadata about a shared driveitem object
 
 
 ## PARAMETERS

@@ -33,6 +33,9 @@ Get-MgBetaEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-
 ## DESCRIPTION
 Retrieve the directory administrativeUnit that corresponds to this educationSchool.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-get-administrativeunit-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

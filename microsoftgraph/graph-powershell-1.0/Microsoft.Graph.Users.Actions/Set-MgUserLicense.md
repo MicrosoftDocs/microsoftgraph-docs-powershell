@@ -9,7 +9,8 @@ ms.subservice: entra-users
 # Set-MgUserLicense
 
 ## SYNOPSIS
-Add or remove subscriptions for the user.
+Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings that the company has licenses to.
+For example, an organization can have a Microsoft 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user.
 You can also enable and disable specific plans associated with a subscription.
 
 > [!NOTE]
@@ -50,7 +51,8 @@ Set-MgUserLicense -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Add or remove subscriptions for the user.
+Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings that the company has licenses to.
+For example, an organization can have a Microsoft 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user.
 You can also enable and disable specific plans associated with a subscription.
 
 **Permissions**
@@ -372,13 +374,17 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 ADDLICENSES <IMicrosoftGraphAssignedLicense- `[]`>: .
   - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
   - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
 
 BODYPARAMETER `<IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AddLicenses <IMicrosoftGraphAssignedLicense- `[]`>]`: 
     - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
     - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
   - `[RemoveLicenses <String- `[]`>]`: 
 
 INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter

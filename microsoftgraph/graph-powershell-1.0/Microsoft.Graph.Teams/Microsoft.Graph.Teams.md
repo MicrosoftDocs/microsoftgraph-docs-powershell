@@ -167,6 +167,9 @@ Locale: en-US
 ### [Get-MgChatPinnedMessageCount](Get-MgChatPinnedMessageCount.md)
 
 
+### [Get-MgChatRetainedMessage](Get-MgChatRetainedMessage.md)
+
+
 ### [Get-MgChatTab](Get-MgChatTab.md)
 
 
@@ -476,6 +479,9 @@ Locale: en-US
 ### [Get-MgTeamChannelMessageReplyHostedContentCount](Get-MgTeamChannelMessageReplyHostedContentCount.md)
 
 
+### [Get-MgTeamChannelRetainedMessage](Get-MgTeamChannelRetainedMessage.md)
+
+
 ### [Get-MgTeamChannelSharedWithTeam](Get-MgTeamChannelSharedWithTeam.md)
 
 
@@ -746,6 +752,9 @@ Locale: en-US
 ### [Get-MgTeamworkDeletedTeamChannelMessageReplyHostedContentCount](Get-MgTeamworkDeletedTeamChannelMessageReplyHostedContentCount.md)
 
 
+### [Get-MgTeamworkDeletedTeamChannelRetainedMessage](Get-MgTeamworkDeletedTeamChannelRetainedMessage.md)
+
+
 ### [Get-MgTeamworkDeletedTeamChannelSharedWithTeam](Get-MgTeamworkDeletedTeamChannelSharedWithTeam.md)
 
 
@@ -884,6 +893,15 @@ Locale: en-US
 ### [Invoke-MgArchiveTeam](Invoke-MgArchiveTeam.md)
 
 
+### [Invoke-MgArchiveTeamChannel](Invoke-MgArchiveTeamChannel.md)
+
+
+### [Invoke-MgArchiveTeamPrimaryChannel](Invoke-MgArchiveTeamPrimaryChannel.md)
+
+
+### [Invoke-MgArchiveTeamworkDeletedTeamChannel](Invoke-MgArchiveTeamworkDeletedTeamChannel.md)
+
+
 ### [Invoke-MgGraphChat](Invoke-MgGraphChat.md)
 
 
@@ -930,6 +948,15 @@ Locale: en-US
 
 
 ### [Invoke-MgUnarchiveTeam](Invoke-MgUnarchiveTeam.md)
+
+
+### [Invoke-MgUnarchiveTeamChannel](Invoke-MgUnarchiveTeamChannel.md)
+
+
+### [Invoke-MgUnarchiveTeamPrimaryChannel](Invoke-MgUnarchiveTeamPrimaryChannel.md)
+
+
+### [Invoke-MgUnarchiveTeamworkDeletedTeamChannel](Invoke-MgUnarchiveTeamworkDeletedTeamChannel.md)
 
 
 ### [New-MgAppCatalogTeamApp](New-MgAppCatalogTeamApp.md)
@@ -1268,6 +1295,9 @@ Locale: en-US
 ### [Remove-MgGroupTeamChannel](Remove-MgGroupTeamChannel.md)
 
 
+### [Remove-MgGroupTeamChannelFileFolderContent](Remove-MgGroupTeamChannelFileFolderContent.md)
+
+
 ### [Remove-MgGroupTeamChannelMember](Remove-MgGroupTeamChannelMember.md)
 
 
@@ -1301,7 +1331,13 @@ Locale: en-US
 ### [Remove-MgGroupTeamPermissionGrant](Remove-MgGroupTeamPermissionGrant.md)
 
 
+### [Remove-MgGroupTeamPhotoContent](Remove-MgGroupTeamPhotoContent.md)
+
+
 ### [Remove-MgGroupTeamPrimaryChannel](Remove-MgGroupTeamPrimaryChannel.md)
+
+
+### [Remove-MgGroupTeamPrimaryChannelFileFolderContent](Remove-MgGroupTeamPrimaryChannelFileFolderContent.md)
 
 
 ### [Remove-MgGroupTeamPrimaryChannelMember](Remove-MgGroupTeamPrimaryChannelMember.md)
@@ -1370,6 +1406,9 @@ Locale: en-US
 ### [Remove-MgTeamChannelEmail](Remove-MgTeamChannelEmail.md)
 
 
+### [Remove-MgTeamChannelFileFolderContent](Remove-MgTeamChannelFileFolderContent.md)
+
+
 ### [Remove-MgTeamChannelMember](Remove-MgTeamChannelMember.md)
 
 
@@ -1394,10 +1433,16 @@ Locale: en-US
 ### [Remove-MgTeamPermissionGrant](Remove-MgTeamPermissionGrant.md)
 
 
+### [Remove-MgTeamPhotoContent](Remove-MgTeamPhotoContent.md)
+
+
 ### [Remove-MgTeamPrimaryChannel](Remove-MgTeamPrimaryChannel.md)
 
 
 ### [Remove-MgTeamPrimaryChannelEmail](Remove-MgTeamPrimaryChannelEmail.md)
+
+
+### [Remove-MgTeamPrimaryChannelFileFolderContent](Remove-MgTeamPrimaryChannelFileFolderContent.md)
 
 
 ### [Remove-MgTeamPrimaryChannelMember](Remove-MgTeamPrimaryChannelMember.md)
@@ -1458,6 +1503,9 @@ Locale: en-US
 
 
 ### [Remove-MgTeamworkDeletedTeamChannelEmail](Remove-MgTeamworkDeletedTeamChannelEmail.md)
+
+
+### [Remove-MgTeamworkDeletedTeamChannelFileFolderContent](Remove-MgTeamworkDeletedTeamChannelFileFolderContent.md)
 
 
 ### [Remove-MgTeamworkDeletedTeamChannelMember](Remove-MgTeamworkDeletedTeamChannelMember.md)

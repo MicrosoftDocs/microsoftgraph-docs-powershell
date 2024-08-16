@@ -3,12 +3,18 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlockerrecoverykey
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgInformationProtectionBitlockerRecoveryKey
 
 ## SYNOPSIS
-The recovery keys associated with the bitlocker entity.
+Retrieve the properties and relationships of a bitlockerRecoveryKey object.
+By default, this operation doesn't return the key property that represents the actual recovery key.
+To include the key property in the response, use the $select OData query parameter.
+Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
+For more information on audit logs for bitlocker recovery keys, see the KeyManagement category filter of Microsoft Entra audit logs.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlockerRecoveryKey?view=graph-powershell-beta)
@@ -38,7 +44,17 @@ Get-MgInformationProtectionBitlockerRecoveryKey -InputObject <IIdentitySignInsId
 ```
 
 ## DESCRIPTION
-The recovery keys associated with the bitlocker entity.
+Retrieve the properties and relationships of a bitlockerRecoveryKey object.
+By default, this operation doesn't return the key property that represents the actual recovery key.
+To include the key property in the response, use the $select OData query parameter.
+Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
+For more information on audit logs for bitlocker recovery keys, see the KeyManagement category filter of Microsoft Entra audit logs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bitlockerrecoverykey-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bitlocker-list-recoverykeys-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get the BitLocker key by specifying the key id
@@ -313,8 +329,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
+  - `[AuthenticationConditionApplicationAppId <String>]`: The unique identifier of authenticationConditionApplication
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
   - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
+  - `[AuthenticationEventsFlowId <String>]`: The unique identifier of authenticationEventsFlow
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
@@ -338,7 +356,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityProviderId <String>]`: The unique identifier of identityProvider
   - `[IdentityUserFlowAttributeAssignmentId <String>]`: The unique identifier of identityUserFlowAttributeAssignment
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
-  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
@@ -372,6 +389,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlockerrecoverykey](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlockerrecoverykey)
+
+[https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-1.0)
 
 
 

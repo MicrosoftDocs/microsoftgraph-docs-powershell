@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagehostedcontent
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgTeamChannelMessageHostedContent
@@ -26,9 +27,8 @@ Get-MgTeamChannelMessageHostedContent -ChannelId <String> -ChatMessageId <String
 ### Get1
 ```
 Get-MgTeamChannelMessageHostedContent -ChannelId <String> -ChatMessageHostedContentId <String>
- -ChatMessageId <String> -TeamId <String> [-Format <String>] [-ResponseHeadersVariable <String>]
- -OutFile <String> [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ -ChatMessageId <String> -TeamId <String> [-ResponseHeadersVariable <String>] -OutFile <String>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
@@ -41,9 +41,9 @@ Get-MgTeamChannelMessageHostedContent -ChannelId <String> -ChatMessageHostedCont
 
 ### GetViaIdentity1
 ```
-Get-MgTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> [-Format <String>]
- [-ResponseHeadersVariable <String>] -OutFile <String> [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
+ -OutFile <String> [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -168,21 +168,6 @@ Filter items by property values
 ```yaml
 Type: String
 Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
 Required: False
@@ -443,6 +428,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagehostedcontent)
+
+[https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0)
 
 
 

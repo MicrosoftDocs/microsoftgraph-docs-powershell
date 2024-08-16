@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalapproleassignedto
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgServicePrincipalAppRoleAssignedTo
 
 ## SYNOPSIS
-Delete navigation property appRoleAssignedTo for servicePrincipals
+Deletes an appRoleAssignment that a user, group, or client service principal has been granted for a resource service principal.
 
 ## SYNTAX
 
@@ -27,7 +28,10 @@ Remove-MgServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity> 
 ```
 
 ## DESCRIPTION
-Delete navigation property appRoleAssignedTo for servicePrincipals
+Deletes an appRoleAssignment that a user, group, or client service principal has been granted for a resource service principal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-approleassignedto-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -241,6 +245,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalapproleassignedto](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalapproleassignedto)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-delete-approleassignedto?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-delete-approleassignedto?view=graph-rest-1.0)
 
 
 

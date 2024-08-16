@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleiteminsight
 schema: 2.0.0
+ms.subservice: insights
 ---
 
 # Get-MgAdminPeopleItemInsight
@@ -25,6 +26,22 @@ Get-MgAdminPeopleItemInsight [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get the properties of an insightsSettings object to display or return item insights in an organization.
 To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy in Microsoft Graph.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/peopleadminsettings-list-iteminsights-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgAdminPeopleItemInsight
+
+```
+This example shows how to use the Get-MgAdminPeopleItemInsight Cmdlet.
+
 
 ## PARAMETERS
 
@@ -119,7 +136,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleiteminsight)
 
 [https://learn.microsoft.com/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-1.0)
-
 
 
 

@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mguserapproleassignment
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Get-MgUserAppRoleAssignment
 
 ## SYNOPSIS
-Represents the app roles a user has been granted for an application.
+Represents the app roles a user is granted for an application.
 Supports $expand.
 
 > [!NOTE]
@@ -39,8 +40,11 @@ Get-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Represents the app roles a user has been granted for an application.
+Represents the app roles a user is granted for an application.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-approleassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get assigned app roles
@@ -371,6 +375,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mguserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mguserapproleassignment)
+
+[https://learn.microsoft.com/graph/api/user-list-approleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-approleassignments?view=graph-rest-1.0)
 
 
 

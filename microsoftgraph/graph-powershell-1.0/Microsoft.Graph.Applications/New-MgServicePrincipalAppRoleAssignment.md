@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgServicePrincipalAppRoleAssignment
 
 ## SYNOPSIS
-Create new navigation property to appRoleAssignments for servicePrincipals
+Assign an app role to a client service principal.
+App roles that are assigned to service principals are also known as application permissions.
+Application permissions can be granted directly with app role assignments, or through a consent experience.
+To grant an app role assignment to a client service principal, you need three identifiers:
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalAppRoleAssignment?view=graph-powershell-beta)
@@ -48,7 +52,13 @@ New-MgServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to appRoleAssignments for servicePrincipals
+Assign an app role to a client service principal.
+App roles that are assigned to service principals are also known as application permissions.
+Application permissions can be granted directly with app role assignments, or through a consent experience.
+To grant an app role assignment to a client service principal, you need three identifiers:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-approleassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -434,6 +444,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0)
 
 
 

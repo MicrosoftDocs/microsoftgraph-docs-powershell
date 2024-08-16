@@ -19,7 +19,7 @@ Update the navigation property onlineMeetings in communications
 ```
 Update-MgBetaCommunicationOnlineMeeting -OnlineMeetingId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
- [-AllowBreakoutRooms] [-AllowLiveShare] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName]
+ [-AllowBreakoutRooms] [-AllowLiveShare <String>] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName]
  [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard]
  [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
  [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
@@ -50,7 +50,7 @@ Update-MgBetaCommunicationOnlineMeeting -OnlineMeetingId <String> -BodyParameter
 ```
 Update-MgBetaCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera]
- [-AllowAttendeeToEnableMic] [-AllowBreakoutRooms] [-AllowLiveShare] [-AllowMeetingChat <String>]
+ [-AllowAttendeeToEnableMic] [-AllowBreakoutRooms] [-AllowLiveShare <String>] [-AllowMeetingChat <String>]
  [-AllowParticipantsToChangeName] [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions]
  [-AllowTranscription] [-AllowWhiteboard] [-AllowedPresenters <String>]
  [-AlternativeRecordingInputFile <String>] [-AnonymizeIdentityForRoles <String[]>]
@@ -159,16 +159,16 @@ Accept wildcard characters: False
 ```
 
 ### -AllowLiveShare
-.
+meetingLiveShareOptions
 
 ```yaml
-Type: SwitchParameter
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -995,6 +995,7 @@ This property is read-only.
 This property is read-only.
     - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
     - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
     - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -1019,7 +1020,7 @@ BODYPARAMETER `<IMicrosoftGraphOnlineMeeting>`: onlineMeeting
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowBreakoutRooms <Boolean?>]`: 
-  - `[AllowLiveShare <Boolean?>]`: 
+  - `[AllowLiveShare <String>]`: meetingLiveShareOptions
   - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
   - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -1052,6 +1053,7 @@ This property is read-only.
 This property is read-only.
       - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
       - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
       - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -1182,8 +1184,6 @@ Read-only.
     - `[MeetingId <String>]`: The unique identifier of the onlineMeeting related to this recording.
 Read-only.
     - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording.
-Read-only.
     - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
   - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
@@ -1238,8 +1238,6 @@ Read-only.
     - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
 Read-only.
     - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript.
-Read-only.
     - `[MetadataContent <Byte- `[]`>]`: The time-aligned metadata of the utterances in the transcript.
 Read-only.
     - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
@@ -1337,6 +1335,7 @@ This property is read-only.
 This property is read-only.
     - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
     - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
     - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -1396,8 +1395,6 @@ This property is read-only.
 This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording.
-Read-only.
   - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
 
@@ -1461,8 +1458,6 @@ This property is read-only.
 This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript.
-Read-only.
   - `[MetadataContent <Byte- `[]`>]`: The time-aligned metadata of the utterances in the transcript.
 Read-only.
   - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.

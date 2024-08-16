@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/resize-mgbetadevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Resize-MgBetaDeviceManagementVirtualEndpointCloudPc
@@ -45,6 +46,26 @@ Resize-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagem
 
 ## DESCRIPTION
 Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-resize-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+$params = @{
+	targetServicePlanId = "30d0e128-de93-41dc-89ec-33d84bb662a0"
+}
+
+Resize-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
+
+```
+This example shows how to use the Resize-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet.
+
 
 ## PARAMETERS
 
@@ -299,7 +320,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/resize-mgbetadevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/resize-mgbetadevicemanagementvirtualendpointcloudpc)
 
 [https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-beta)
-
 
 
 

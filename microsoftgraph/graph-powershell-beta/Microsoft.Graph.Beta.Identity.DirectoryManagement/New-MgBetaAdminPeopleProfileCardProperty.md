@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty
 schema: 2.0.0
+ms.subservice: people
 ---
 
 # New-MgBetaAdminPeopleProfileCardProperty
 
 ## SYNOPSIS
-Create new navigation property to profileCardProperties for admin
+Create a new profileCardProperty for an organization.
+The new property is identified by its directoryPropertyName property.
+For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
@@ -31,7 +34,12 @@ New-MgBetaAdminPeopleProfileCardProperty -BodyParameter <IMicrosoftGraphProfileC
 ```
 
 ## DESCRIPTION
-Create new navigation property to profileCardProperties for admin
+Create a new profileCardProperty for an organization.
+The new property is identified by its directoryPropertyName property.
+For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-post-profilecardproperties-permissions.md)]
 
 ## PARAMETERS
 
@@ -233,6 +241,8 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty)
+
+[https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-beta](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-beta)
 
 
 

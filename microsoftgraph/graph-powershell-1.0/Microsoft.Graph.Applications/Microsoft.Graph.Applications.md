@@ -644,6 +644,9 @@ Locale: en-US
 ### [Remove-MgApplicationKey](Remove-MgApplicationKey.md)
 
 
+### [Remove-MgApplicationLogo](Remove-MgApplicationLogo.md)
+
+
 ### [Remove-MgApplicationOwnerDirectoryObjectByRef](Remove-MgApplicationOwnerDirectoryObjectByRef.md)
 
 
@@ -657,6 +660,9 @@ Locale: en-US
 
 
 ### [Remove-MgApplicationSynchronizationJobBulkUpload](Remove-MgApplicationSynchronizationJobBulkUpload.md)
+
+
+### [Remove-MgApplicationSynchronizationJobBulkUploadContent](Remove-MgApplicationSynchronizationJobBulkUploadContent.md)
 
 
 ### [Remove-MgApplicationSynchronizationJobSchema](Remove-MgApplicationSynchronizationJobSchema.md)
@@ -729,6 +735,9 @@ Locale: en-US
 
 
 ### [Remove-MgServicePrincipalSynchronizationJobBulkUpload](Remove-MgServicePrincipalSynchronizationJobBulkUpload.md)
+
+
+### [Remove-MgServicePrincipalSynchronizationJobBulkUploadContent](Remove-MgServicePrincipalSynchronizationJobBulkUploadContent.md)
 
 
 ### [Remove-MgServicePrincipalSynchronizationJobSchema](Remove-MgServicePrincipalSynchronizationJobSchema.md)

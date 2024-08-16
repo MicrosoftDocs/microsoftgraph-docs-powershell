@@ -15,23 +15,9 @@ Calls the OneNote service for notebook related operations.
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
 Get-MgGroupSiteGetByPathOnenote -GroupId <String> -Path <String> -SiteId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgGroupSiteGetByPathOnenote -GroupId <String> -Path <String> -Path1 <String> -SiteId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgGroupSiteGetByPathOnenote -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
@@ -68,7 +54,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -99,7 +85,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -111,21 +97,6 @@ Accept wildcard characters: False
 
 ### -Path
 Usage: path='{path}'
-
-```yaml
-Type: String
-Parameter Sets: Get1, Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Path1
-Usage: path='{path1}'
 
 ```yaml
 Type: String
@@ -189,7 +160,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -242,7 +213,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
-  - `[Path1 <String>]`: Usage: path='{path1}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation

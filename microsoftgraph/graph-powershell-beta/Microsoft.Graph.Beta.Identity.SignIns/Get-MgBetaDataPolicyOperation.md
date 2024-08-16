@@ -41,6 +41,9 @@ Get-MgBetaDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-ExpandPr
 ## DESCRIPTION
 Retrieve the properties of the dataPolicyOperation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/datapolicyoperation-get-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

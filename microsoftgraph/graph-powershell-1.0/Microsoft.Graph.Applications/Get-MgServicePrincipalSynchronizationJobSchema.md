@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationjobschema
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgServicePrincipalSynchronizationJobSchema
 
 ## SYNOPSIS
-The synchronization schema configured for the job.
+Retrieve the schema for a given synchronization job or template.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronizationJobSchema?view=graph-powershell-beta)
@@ -30,7 +31,10 @@ Get-MgServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIdenti
 ```
 
 ## DESCRIPTION
-The synchronization schema configured for the job.
+Retrieve the schema for a given synchronization job or template.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -200,6 +204,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationjobschema)
+
+[https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-get?view=graph-rest-1.0)
 
 
 

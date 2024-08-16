@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleswapshiftchangerequest
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgTeamScheduleSwapShiftChangeRequest
 
 ## SYNOPSIS
-The swap requests for shifts in the schedule.
+Retrieve the properties and relationships of a swapShiftsChangeRequest object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
@@ -38,7 +40,13 @@ Get-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-The swap requests for shifts in the schedule.
+Retrieve the properties and relationships of a swapShiftsChangeRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/swapshiftschangerequest-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/swapshiftschangerequest-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -351,6 +359,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleswapshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleswapshiftchangerequest)
+
+[https://learn.microsoft.com/graph/api/swapshiftschangerequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/swapshiftschangerequest-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/swapshiftschangerequest-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/swapshiftschangerequest-list?view=graph-rest-1.0)
 
 
 

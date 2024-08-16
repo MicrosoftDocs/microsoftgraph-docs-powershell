@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationappmanagementpolicyappmanagementpolicybyref
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef
 
 ## SYNOPSIS
-Delete ref of navigation property appManagementPolicies for applications
+Remove an appManagementPolicy policy object from an application or service principal object.
+When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef?view=graph-powershell-beta)
@@ -30,7 +32,11 @@ Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef -InputObject <IA
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property appManagementPolicies for applications
+Remove an appManagementPolicy policy object from an application or service principal object.
+When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-delete-appliesto-permissions.md)]
 
 ## PARAMETERS
 
@@ -231,6 +237,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationappmanagementpolicyappmanagementpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationappmanagementpolicyappmanagementpolicybyref)
+
+[https://learn.microsoft.com/graph/api/appmanagementpolicy-delete-appliesto?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-delete-appliesto?view=graph-rest-1.0)
 
 
 

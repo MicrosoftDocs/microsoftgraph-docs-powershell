@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
-Update the navigation property crossTenantAccessPolicy in policies
+Update the properties of a cross-tenant access policy.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicy?view=graph-powershell-beta)
@@ -33,7 +34,10 @@ Update-MgPolicyCrossTenantAccessPolicy -BodyParameter <IMicrosoftGraphCrossTenan
 ```
 
 ## DESCRIPTION
-Update the navigation property crossTenantAccessPolicy in policies
+Update the properties of a cross-tenant access policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantaccesspolicy-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -335,7 +339,8 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AccessType <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
         - `[Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget- `[]`>]`: Specifies whether to target users, groups, or applications with this rule.
-          - `[Target <String>]`: The unique identifier of the user, group, or application; one of the following keywords: AllUsers and AllApplications; or for targets that are applications, you may use reserved values.
+          - `[Target <String>]`: Defines the target for cross-tenant access policy settings and can have one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
+Office365 - Includes the applications mentioned as part of the Office 365 suite.
           - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
       - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
     - `[B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
@@ -353,6 +358,15 @@ Read-only.
 Possible values are: azureActiveDirectory, externalFederation, or socialIdentityProviders.
     - `[IsServiceDefault <Boolean?>]`: If true, the default configuration is set to the system default configuration.
 If false, the default settings are customized.
+    - `[TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>]`: crossTenantAccessPolicyTenantRestrictions
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+      - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+      - `[Devices <IMicrosoftGraphDevicesFilter>]`: devicesFilter
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Mode <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
+        - `[Rule <String>]`: Defines the rule to filter the devices.
+For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
   - `[Partners <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner- `[]`>]`: Defines partner-specific configurations for external Microsoft Entra organizations.
     - `[AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]`: inboundOutboundPolicyConfiguration
     - `[B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
@@ -377,6 +391,7 @@ This property has no impact on existing users who have already been synchronized
     - `[TenantId <String>]`: The tenant identifier for the partner Microsoft Entra organization.
 Read-only.
 Key.
+    - `[TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>]`: crossTenantAccessPolicyTenantRestrictions
   - `[Templates <IMicrosoftGraphPolicyTemplate>]`: policyTemplate
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -413,7 +428,8 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AccessType <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
       - `[Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget- `[]`>]`: Specifies whether to target users, groups, or applications with this rule.
-        - `[Target <String>]`: The unique identifier of the user, group, or application; one of the following keywords: AllUsers and AllApplications; or for targets that are applications, you may use reserved values.
+        - `[Target <String>]`: Defines the target for cross-tenant access policy settings and can have one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
+Office365 - Includes the applications mentioned as part of the Office 365 suite.
         - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
     - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
   - `[B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
@@ -431,6 +447,15 @@ Read-only.
 Possible values are: azureActiveDirectory, externalFederation, or socialIdentityProviders.
   - `[IsServiceDefault <Boolean?>]`: If true, the default configuration is set to the system default configuration.
 If false, the default settings are customized.
+  - `[TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>]`: crossTenantAccessPolicyTenantRestrictions
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+    - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+    - `[Devices <IMicrosoftGraphDevicesFilter>]`: devicesFilter
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Mode <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
+      - `[Rule <String>]`: Defines the rule to filter the devices.
+For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 
 PARTNERS <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner- `[]`>: Defines partner-specific configurations for external Microsoft Entra organizations.
   - `[AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]`: inboundOutboundPolicyConfiguration
@@ -443,7 +468,8 @@ PARTNERS <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner- `[]`>: Def
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AccessType <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
       - `[Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget- `[]`>]`: Specifies whether to target users, groups, or applications with this rule.
-        - `[Target <String>]`: The unique identifier of the user, group, or application; one of the following keywords: AllUsers and AllApplications; or for targets that are applications, you may use reserved values.
+        - `[Target <String>]`: Defines the target for cross-tenant access policy settings and can have one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
+Office365 - Includes the applications mentioned as part of the Office 365 suite.
         - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
     - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
   - `[B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
@@ -471,6 +497,15 @@ This property has no impact on existing users who have already been synchronized
   - `[TenantId <String>]`: The tenant identifier for the partner Microsoft Entra organization.
 Read-only.
 Key.
+  - `[TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>]`: crossTenantAccessPolicyTenantRestrictions
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+    - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+    - `[Devices <IMicrosoftGraphDevicesFilter>]`: devicesFilter
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Mode <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
+      - `[Rule <String>]`: Defines the rule to filter the devices.
+For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 
 TEMPLATES `<IMicrosoftGraphPolicyTemplate>`: policyTemplate
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -500,7 +535,8 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AccessType <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
         - `[Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget- `[]`>]`: Specifies whether to target users, groups, or applications with this rule.
-          - `[Target <String>]`: The unique identifier of the user, group, or application; one of the following keywords: AllUsers and AllApplications; or for targets that are applications, you may use reserved values.
+          - `[Target <String>]`: Defines the target for cross-tenant access policy settings and can have one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
+Office365 - Includes the applications mentioned as part of the Office 365 suite.
           - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
       - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
     - `[B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
@@ -516,6 +552,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy)
+
+[https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-1.0)
 
 
 

@@ -15,23 +15,9 @@ Calls the OneNote service for notebook related operations.
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
 Get-MgSiteGetByPathOnenote -Path <String> -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgSiteGetByPathOnenote -Path <String> -Path1 <String> -SiteId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgSiteGetByPathOnenote -InputObject <INotesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
@@ -84,7 +70,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: INotesIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -96,21 +82,6 @@ Accept wildcard characters: False
 
 ### -Path
 Usage: path='{path}'
-
-```yaml
-Type: String
-Parameter Sets: Get1, Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Path1
-Usage: path='{path1}'
 
 ```yaml
 Type: String
@@ -174,7 +145,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -208,7 +179,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
-  - `[Path1 <String>]`: Usage: path='{path1}'
   - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
   - `[SiteId <String>]`: The unique identifier of site
   - `[UserId <String>]`: The unique identifier of user

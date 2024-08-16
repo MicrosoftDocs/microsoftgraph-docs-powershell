@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
+Specifies a list of directoryObject resources that feature is enabled for.
 
 ## SYNTAX
 
@@ -22,7 +22,7 @@ Get-MgBetaDirectoryFeatureRolloutPolicyApplyTo -FeatureRolloutPolicyId <String> 
 
 ## DESCRIPTION
 Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
+Specifies a list of directoryObject resources that feature is enabled for.
 
 ## PARAMETERS
 

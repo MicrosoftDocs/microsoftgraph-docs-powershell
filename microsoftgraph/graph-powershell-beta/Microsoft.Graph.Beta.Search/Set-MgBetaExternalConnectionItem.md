@@ -52,7 +52,7 @@ Set-MgBetaExternalConnectionItem -InputObject <ISearchIdentity>
 Update the properties of an externalitem.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-put-items-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalitem-update-permissions.md)]
 
 ## EXAMPLES
 ### Example: Create a custom item

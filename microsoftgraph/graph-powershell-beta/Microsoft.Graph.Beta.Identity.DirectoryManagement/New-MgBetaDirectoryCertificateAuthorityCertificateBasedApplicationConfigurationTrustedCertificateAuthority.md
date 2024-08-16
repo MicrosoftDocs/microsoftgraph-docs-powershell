@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthority
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority
 
 ## SYNOPSIS
-Create new navigation property to trustedCertificateAuthorities for directory
+Create a new trusted certificate authority in a certificateBasedApplicationConfiguration object.
 
 ## SYNTAX
 
@@ -47,7 +48,10 @@ New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationT
 ```
 
 ## DESCRIPTION
-Create new navigation property to trustedCertificateAuthorities for directory
+Create a new trusted certificate authority in a certificateBasedApplicationConfiguration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities-permissions.md)]
 
 ## PARAMETERS
 
@@ -345,6 +349,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthority)
+
+[https://learn.microsoft.com/graph/api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities?view=graph-rest-beta](https://learn.microsoft.com/graph/api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities?view=graph-rest-beta)
 
 
 

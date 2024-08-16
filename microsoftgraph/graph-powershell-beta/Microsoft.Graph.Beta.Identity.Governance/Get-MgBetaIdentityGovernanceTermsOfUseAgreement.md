@@ -43,22 +43,33 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanc
 Retrieve the properties and relationships of an agreement object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreement-list-files-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreement-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termsofusecontainer-list-agreements-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Retrieve an agreement
 
 ```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaIdentityGovernanceTermsOfUseAgreement
+Get-MgBetaIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId
 
 ```
-This example shows how to use the Get-MgBetaIdentityGovernanceTermsOfUseAgreement Cmdlet.
+This example will retrieve an agreement
+
+### Example 2: Retrieve an agreement and its related files
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId -ExpandProperty "files" 
+
+```
+This example will retrieve an agreement and its related files
 
 
 ## PARAMETERS

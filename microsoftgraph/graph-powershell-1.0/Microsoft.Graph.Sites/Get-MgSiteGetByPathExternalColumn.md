@@ -15,17 +15,8 @@ Get externalColumns from sites
 
 ## SYNTAX
 
-### List (Default)
 ```
 Get-MgSiteGetByPathExternalColumn -Path <String> -SiteId <String> [-ExpandProperty <String[]>]
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### List1
-```
-Get-MgSiteGetByPathExternalColumn -Path <String> -SiteId <String> -Path1 <String> [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
@@ -133,21 +124,6 @@ Usage: path='{path}'
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Path1
-Usage: path='{path1}'
-
-```yaml
-Type: String
-Parameter Sets: List1
 Aliases:
 
 Required: True

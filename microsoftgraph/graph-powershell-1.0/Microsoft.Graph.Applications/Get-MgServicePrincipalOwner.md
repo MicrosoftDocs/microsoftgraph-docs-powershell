@@ -3,16 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalowner
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgServicePrincipalOwner
 
 ## SYNOPSIS
-Directory objects that are owners of this servicePrincipal.
-The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
-Read-only.
-Nullable.
-Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
+Retrieve a list of owners of the servicePrincipal.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwner?view=graph-powershell-beta)
@@ -27,11 +24,10 @@ Get-MgServicePrincipalOwner -ServicePrincipalId <String> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Directory objects that are owners of this servicePrincipal.
-The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
-Read-only.
-Nullable.
-Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
+Retrieve a list of owners of the servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-owners-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List the owners of a service principal
@@ -289,6 +285,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalowner](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalowner)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-1.0)
 
 
 

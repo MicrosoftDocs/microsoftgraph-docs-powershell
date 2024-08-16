@@ -80,9 +80,6 @@ Locale: en-US
 ### [Get-MgBetaUserMailFolderMessageAttachmentCount](Get-MgBetaUserMailFolderMessageAttachmentCount.md)
 
 
-### [Get-MgBetaUserMailFolderMessageContent](Get-MgBetaUserMailFolderMessageContent.md)
-
-
 ### [Get-MgBetaUserMailFolderMessageCount](Get-MgBetaUserMailFolderMessageCount.md)
 
 

@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteammember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgTeamMember
 
 ## SYNOPSIS
-Create new navigation property to members for teams
+Add a new conversationMember to a team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamMember?view=graph-powershell-beta)
@@ -45,7 +46,10 @@ New-MgTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphCo
 ```
 
 ## DESCRIPTION
-Create new navigation property to members for teams
+Add a new conversationMember to a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-post-members-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Add a member to a team
@@ -361,6 +365,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteammember)
+
+[https://learn.microsoft.com/graph/api/team-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-post-members?view=graph-rest-1.0)
 
 
 

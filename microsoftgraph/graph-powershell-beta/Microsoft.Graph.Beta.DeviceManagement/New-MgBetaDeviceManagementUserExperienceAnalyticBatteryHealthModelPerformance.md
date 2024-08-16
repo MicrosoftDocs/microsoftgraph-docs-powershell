@@ -17,11 +17,12 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthModelPerfo
 New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
  [-ResponseHeadersVariable <String>] [-ActiveDevices <Int32>] [-AdditionalProperties <Hashtable>]
  [-AverageBatteryAgeInDays <Int32>] [-AverageEstimatedRuntimeInMinutes <Int32>]
- [-AverageMaxCapacityPercentage <Int32>] [-Id <String>] [-Manufacturer <String>]
- [-MeanFullBatteryDrainCount <Int32>] [-MedianEstimatedRuntimeInMinutes <Int32>]
- [-MedianFullBatteryDrainCount <Int32>] [-MedianMaxCapacityPercentage <Int32>] [-Model <String>]
- [-ModelBatteryHealthScore <Int32>] [-ModelHealthStatus <UserExperienceAnalyticsHealthState>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AverageMaxCapacityPercentage <Int32>] [-DeviceManufacturerName <String>] [-DeviceModelName <String>]
+ [-Id <String>] [-Manufacturer <String>] [-MeanFullBatteryDrainCount <Int32>]
+ [-MedianEstimatedRuntimeInMinutes <Int32>] [-MedianFullBatteryDrainCount <Int32>]
+ [-MedianMaxCapacityPercentage <Int32>] [-Model <String>] [-ModelBatteryHealthScore <Int32>]
+ [-ModelHealthStatus <UserExperienceAnalyticsHealthState>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -133,6 +134,36 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DeviceManufacturerName
+The manufacturer name of the device.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceModelName
+The model name of the device.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -391,6 +422,8 @@ Valid values 0 to 2147483647
 Maximum capacity measures the full charge vs.
 design capacity for a device's batteries..
 Valid values 0 to 2147483647
+  - `[DeviceManufacturerName <String>]`: The manufacturer name of the device.
+  - `[DeviceModelName <String>]`: The model name of the device.
   - `[Manufacturer <String>]`: Name of the device manufacturer.
 Deprecated in favor of DeviceManufacturerName.
   - `[MeanFullBatteryDrainCount <Int32?>]`: The mean of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices of a given model in a tenant.

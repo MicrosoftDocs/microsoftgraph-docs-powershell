@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitscopedrolemember
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Scoped-role members of this administrative unit.
+Get a Microsoft Entra role assignment with administrative unit scope.
 
 ## SYNTAX
 
@@ -35,7 +37,13 @@ Get-MgBetaAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryMan
 ```
 
 ## DESCRIPTION
-Scoped-role members of this administrative unit.
+Get a Microsoft Entra role assignment with administrative unit scope.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-get-scopedrolemembers-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-list-scopedrolemembers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaAdministrativeUnitScopedRoleMember Cmdlet
@@ -365,6 +373,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitscopedrolemember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitscopedrolemember)
+
+[https://learn.microsoft.com/graph/api/administrativeunit-get-scopedrolemembers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/administrativeunit-get-scopedrolemembers?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/administrativeunit-list-scopedrolemembers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/administrativeunit-list-scopedrolemembers?view=graph-rest-beta)
 
 
 

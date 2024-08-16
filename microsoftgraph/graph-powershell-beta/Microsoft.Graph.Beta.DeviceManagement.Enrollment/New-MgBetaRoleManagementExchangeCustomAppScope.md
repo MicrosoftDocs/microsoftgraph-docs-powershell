@@ -108,8 +108,8 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
-This property is read only.
+Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
+Read only.
 
 ```yaml
 Type: String
@@ -185,8 +185,9 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-This property is read only.
+Describes the type of app-specific resource represented by the app scope.
+For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+Read only.
 
 ```yaml
 Type: String
@@ -250,10 +251,11 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IMicrosoftGraphCustomAppScope>`: customAppScope
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
-Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
-This property is read only.
-  - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
-This property is read only.
+Provided for display purposes since appScopeId is often an immutable, non-human-readable ID.
+Read only.
+  - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope.
+For display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+Read only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CustomAttributes <IMicrosoftGraphCustomAppScopeAttributesDictionary>]`: customAppScopeAttributesDictionary

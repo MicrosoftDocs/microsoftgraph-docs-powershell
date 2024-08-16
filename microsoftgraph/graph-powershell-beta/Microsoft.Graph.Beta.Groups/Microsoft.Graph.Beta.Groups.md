@@ -23,6 +23,12 @@ Locale: en-US
 ### [Add-MgBetaGroupSite](Add-MgBetaGroupSite.md)
 
 
+### [Add-MgBetaGroupSiteContentModelGetByNameToDrive](Add-MgBetaGroupSiteContentModelGetByNameToDrive.md)
+
+
+### [Add-MgBetaGroupSiteContentModelToDrive](Add-MgBetaGroupSiteContentModelToDrive.md)
+
+
 ### [Add-MgBetaGroupSiteContentTypeCopy](Add-MgBetaGroupSiteContentTypeCopy.md)
 
 
@@ -431,6 +437,15 @@ Locale: en-US
 ### [Get-MgBetaGroupSiteByPath](Get-MgBetaGroupSiteByPath.md)
 
 
+### [Get-MgBetaGroupSiteContentModelAppliedDrive](Get-MgBetaGroupSiteContentModelAppliedDrive.md)
+
+
+### [Get-MgBetaGroupSiteContentModelByName](Get-MgBetaGroupSiteContentModelByName.md)
+
+
+### [Get-MgBetaGroupSiteContentModelGetByNameAppliedDrive](Get-MgBetaGroupSiteContentModelGetByNameAppliedDrive.md)
+
+
 ### [Get-MgBetaGroupSiteContentTypeCompatibleHubContentType](Get-MgBetaGroupSiteContentTypeCompatibleHubContentType.md)
 
 
@@ -441,9 +456,6 @@ Locale: en-US
 
 
 ### [Get-MgBetaGroupSiteGetGraphBPrePathActivityByInterval](Get-MgBetaGroupSiteGetGraphBPrePathActivityByInterval.md)
-
-
-### [Get-MgBetaGroupSiteGetGraphBPrePathByPath](Get-MgBetaGroupSiteGetGraphBPrePathByPath.md)
 
 
 ### [Get-MgBetaGroupSiteListContentTypeCompatibleHubContentType](Get-MgBetaGroupSiteListContentTypeCompatibleHubContentType.md)
@@ -941,7 +953,13 @@ Locale: en-US
 ### [Remove-MgBetaGroupConversationThreadPostMention](Remove-MgBetaGroupConversationThreadPostMention.md)
 
 
+### [Remove-MgBetaGroupDriveItemCheckout](Remove-MgBetaGroupDriveItemCheckout.md)
+
+
 ### [Remove-MgBetaGroupDriveItemPermanent](Remove-MgBetaGroupDriveItemPermanent.md)
+
+
+### [Remove-MgBetaGroupDriveRootCheckout](Remove-MgBetaGroupDriveRootCheckout.md)
 
 
 ### [Remove-MgBetaGroupDriveRootPermanent](Remove-MgBetaGroupDriveRootPermanent.md)
@@ -987,6 +1005,12 @@ Locale: en-US
 
 
 ### [Remove-MgBetaGroupSite](Remove-MgBetaGroupSite.md)
+
+
+### [Remove-MgBetaGroupSiteContentModelFromDrive](Remove-MgBetaGroupSiteContentModelFromDrive.md)
+
+
+### [Remove-MgBetaGroupSiteContentModelGetByNameFromDrive](Remove-MgBetaGroupSiteContentModelGetByNameFromDrive.md)
 
 
 ### [Remove-MgBetaGroupThread](Remove-MgBetaGroupThread.md)

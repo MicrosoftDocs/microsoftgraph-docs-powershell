@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamapp
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgAppCatalogTeamApp
 
 ## SYNOPSIS
-Delete navigation property teamsApps for appCatalogs
+Delete an app from an organization's app catalog (the tenant app catalog).
+To delete an app, the distributionMethod property for the app must be set to organization.
+You can also use this API to remove a submitted app from the review process.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
@@ -30,7 +33,12 @@ Remove-MgAppCatalogTeamApp -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete navigation property teamsApps for appCatalogs
+Delete an app from an organization's app catalog (the tenant app catalog).
+To delete an app, the distributionMethod property for the app must be set to organization.
+You can also use this API to remove a submitted app from the review process.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamsapp-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -238,6 +246,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamapp)
+
+[https://learn.microsoft.com/graph/api/teamsapp-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsapp-delete?view=graph-rest-1.0)
 
 
 

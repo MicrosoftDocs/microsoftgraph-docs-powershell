@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicememberofasgroup
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDeviceMemberOfAsGroup
 
 ## SYNOPSIS
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups and administrative units that the device is a direct member of.
+This operation is not transitive.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceMemberOfAsGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceMemberOfAsGroup?view=graph-powershell-1.0)
@@ -39,7 +42,14 @@ Get-MgBetaDeviceMemberOfAsGroup -InputObject <IIdentityDirectoryManagementIdenti
 ```
 
 ## DESCRIPTION
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get groups and administrative units that the device is a direct member of.
+This operation is not transitive.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-memberof-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-memberof-permissions.md)]
 
 ## PARAMETERS
 
@@ -369,6 +379,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicememberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicememberofasgroup)
+
+[https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-beta](https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-beta)
 
 
 

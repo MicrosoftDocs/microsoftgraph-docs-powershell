@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryexternaluserprofile
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryExternalUserProfile
 
 ## SYNOPSIS
-Collection of external user profiles that represent collaborators in the directory.
+Retrieve the properties of a specific externalUserProfile.
 
 ## SYNTAX
 
@@ -35,7 +37,13 @@ Get-MgBetaDirectoryExternalUserProfile -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Collection of external user profiles that represent collaborators in the directory.
+Retrieve the properties of a specific externalUserProfile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externaluserprofile-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-externaluserprofiles-permissions.md)]
 
 ## PARAMETERS
 
@@ -334,6 +342,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryexternaluserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryexternaluserprofile)
+
+[https://learn.microsoft.com/graph/api/externaluserprofile-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externaluserprofile-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/directory-list-externaluserprofiles?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-list-externaluserprofiles?view=graph-rest-beta)
 
 
 

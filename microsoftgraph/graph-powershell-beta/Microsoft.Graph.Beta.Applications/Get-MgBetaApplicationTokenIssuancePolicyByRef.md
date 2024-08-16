@@ -25,6 +25,9 @@ Get-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId <String> [-Filter <
 ## DESCRIPTION
 List the tokenIssuancePolicy objects that are assigned to an application.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-list-tokenissuancepolicies-permissions.md)]
+
 ## PARAMETERS
 
 ### -All

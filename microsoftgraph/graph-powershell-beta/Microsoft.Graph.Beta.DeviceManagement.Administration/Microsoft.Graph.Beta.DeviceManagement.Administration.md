@@ -470,12 +470,6 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementVirtualEndpointServicePlanCount](Get-MgBetaDeviceManagementVirtualEndpointServicePlanCount.md)
 
 
-### [Get-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan](Get-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan.md)
-
-
-### [Get-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlanCount](Get-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlanCount.md)
-
-
 ### [Get-MgBetaDeviceManagementVirtualEndpointSnapshot](Get-MgBetaDeviceManagementVirtualEndpointSnapshot.md)
 
 
@@ -651,9 +645,6 @@ Locale: en-US
 
 
 ### [New-MgBetaDeviceManagementVirtualEndpointServicePlan](New-MgBetaDeviceManagementVirtualEndpointServicePlan.md)
-
-
-### [New-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan](New-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan.md)
 
 
 ### [New-MgBetaDeviceManagementVirtualEndpointSnapshot](New-MgBetaDeviceManagementVirtualEndpointSnapshot.md)
@@ -846,9 +837,6 @@ Locale: en-US
 
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointServicePlan](Remove-MgBetaDeviceManagementVirtualEndpointServicePlan.md)
-
-
-### [Remove-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan](Remove-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan.md)
 
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointSnapshot](Remove-MgBetaDeviceManagementVirtualEndpointSnapshot.md)
@@ -1047,9 +1035,6 @@ Locale: en-US
 
 
 ### [Update-MgBetaDeviceManagementVirtualEndpointServicePlan](Update-MgBetaDeviceManagementVirtualEndpointServicePlan.md)
-
-
-### [Update-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan](Update-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan.md)
 
 
 ### [Update-MgBetaDeviceManagementVirtualEndpointSnapshot](Update-MgBetaDeviceManagementVirtualEndpointSnapshot.md)

@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalhomerealmdiscoverypolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef
 
 ## SYNOPSIS
-Create new navigation property ref to homeRealmDiscoveryPolicies for servicePrincipals
+Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-beta)
@@ -46,7 +47,10 @@ New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicationsI
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to homeRealmDiscoveryPolicies for servicePrincipals
+Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-homerealmdiscoverypolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -287,6 +291,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalhomerealmdiscoverypolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalhomerealmdiscoverypolicybyref)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-post-homerealmdiscoverypolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-post-homerealmdiscoverypolicies?view=graph-rest-1.0)
 
 
 

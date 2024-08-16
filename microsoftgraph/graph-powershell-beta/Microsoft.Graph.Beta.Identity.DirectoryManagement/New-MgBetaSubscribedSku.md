@@ -116,7 +116,7 @@ Accept wildcard characters: False
 
 ### -CapabilityStatus
 Enabled indicates that the prepaidUnits property has at least one unit that is enabled.
-LockedOut indicates that the customer cancelled their subscription.
+LockedOut indicates that the customer canceled their subscription.
 Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
 
 ```yaml
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionIds
-.
+A list of all subscription IDs associated with this SKU.
 
 ```yaml
 Type: String[]
@@ -343,7 +343,7 @@ Read-only.
 Only SKUs with target class User are assignable.
 Possible values are: User, Company.
   - `[CapabilityStatus <String>]`: Enabled indicates that the prepaidUnits property has at least one unit that is enabled.
-LockedOut indicates that the customer cancelled their subscription.
+LockedOut indicates that the customer canceled their subscription.
 Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
   - `[ConsumedUnits <Int32?>]`: The number of licenses that have been assigned.
   - `[PrepaidUnits <IMicrosoftGraphLicenseUnitsDetail>]`: licenseUnitsDetail
@@ -365,7 +365,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
   - `[SkuId <String>]`: The unique identifier (GUID) for the service SKU.
   - `[SkuPartNumber <String>]`: The SKU part number; for example, AAD_PREMIUM or RMSBASIC.
 To get a list of commercial subscriptions that an organization has acquired, see List subscribedSkus.
-  - `[SubscriptionIds <String- `[]`>]`: 
+  - `[SubscriptionIds <String- `[]`>]`: A list of all subscription IDs associated with this SKU.
 
 PREPAIDUNITS `<IMicrosoftGraphLicenseUnitsDetail>`: licenseUnitsDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

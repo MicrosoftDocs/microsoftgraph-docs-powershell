@@ -20,9 +20,9 @@ Create new navigation property to transcripts for communications
 New-MgBetaCommunicationOnlineMeetingTranscript -OnlineMeetingId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CallId <String>] [-ContentCorrelationId <String>]
  [-ContentInputFile <String>] [-CreatedDateTime <DateTime>] [-EndDateTime <DateTime>] [-Id <String>]
- [-MeetingId <String>] [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MeetingOrganizerId <String>]
- [-MetadataContentInputFile <String>] [-TranscriptContentUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MeetingId <String>] [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MetadataContentInputFile <String>]
+ [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -38,9 +38,9 @@ New-MgBetaCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunication
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CallId <String>]
  [-ContentCorrelationId <String>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>]
  [-EndDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
- [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MeetingOrganizerId <String>]
- [-MetadataContentInputFile <String>] [-TranscriptContentUrl <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MetadataContentInputFile <String>]
+ [-TranscriptContentUrl <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -249,22 +249,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MeetingOrganizerId
-The unique identifier of the organizer of the onlineMeeting related to this transcript.
-Read-only.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -MetadataContentInputFile
 Input File for MetadataContent (The time-aligned metadata of the utterances in the transcript.
 Read-only.)
@@ -420,8 +404,6 @@ This property is read-only.
 This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript.
-Read-only.
   - `[MetadataContent <Byte- `[]`>]`: The time-aligned metadata of the utterances in the transcript.
 Read-only.
   - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.

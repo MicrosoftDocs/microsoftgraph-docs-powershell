@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplate
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Update-MgApplicationSynchronizationTemplate
 
 ## SYNOPSIS
-Update the navigation property templates in applications
+Update (override) the synchronization template associated with a given application.
 
 ## SYNTAX
 
@@ -45,7 +46,10 @@ Update-MgApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property templates in applications
+Update (override) the synchronization template associated with a given application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationtemplate-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -394,7 +398,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
             - `[Value <String>]`: Value.
           - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-          - `[DefaultValue <String>]`: 
+          - `[DefaultValue <String>]`: The default value of the attribute.
           - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
           - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
             - `[Key <String>]`: attributeDefinitionMetadata
@@ -563,7 +567,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
           - `[Value <String>]`: Value.
         - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-        - `[DefaultValue <String>]`: 
+        - `[DefaultValue <String>]`: The default value of the attribute.
         - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
         - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
           - `[Key <String>]`: attributeDefinitionMetadata
@@ -680,6 +684,8 @@ Must match one of the directory definitions in synchronizationSchema.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplate)
+
+[https://learn.microsoft.com/graph/api/synchronization-synchronizationtemplate-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationtemplate-update?view=graph-rest-1.0)
 
 
 

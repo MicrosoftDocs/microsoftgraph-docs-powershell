@@ -414,7 +414,7 @@ Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[FileAs <String>]`: The name the contact is filed under.
-    - `[Generation <String>]`: The contact's generation.
+    - `[Generation <String>]`: The contact's suffix.
     - `[GivenName <String>]`: The contact's given name.
     - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[HomePhones <String- `[]`>]`: The contact's home phone numbers.
@@ -520,7 +520,7 @@ Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[FileAs <String>]`: The name the contact is filed under.
-    - `[Generation <String>]`: The contact's generation.
+    - `[Generation <String>]`: The contact's suffix.
     - `[GivenName <String>]`: The contact's given name.
     - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[HomePhones <String- `[]`>]`: The contact's home phone numbers.
@@ -616,7 +616,7 @@ Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[FileAs <String>]`: The name the contact is filed under.
-  - `[Generation <String>]`: The contact's generation.
+  - `[Generation <String>]`: The contact's suffix.
   - `[GivenName <String>]`: The contact's given name.
   - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
   - `[HomePhones <String- `[]`>]`: The contact's home phone numbers.

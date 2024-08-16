@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelsharedwithteamallowedmember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgTeamChannelSharedWithTeamAllowedMember
@@ -40,6 +41,9 @@ Get-MgTeamChannelSharedWithTeamAllowedMember -InputObject <ITeamsIdentity> [-Exp
 
 ## DESCRIPTION
 A collection of team members who have access to the shared channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharedwithchannelteaminfo-list-allowedmembers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -382,6 +386,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelsharedwithteamallowedmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelsharedwithteamallowedmember)
+
+[https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-1.0)
 
 
 

@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleshift
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgTeamScheduleShift
 
 ## SYNOPSIS
-Delete navigation property shifts for teams
+Delete a shift from the schedule.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleShift?view=graph-powershell-beta)
@@ -30,7 +31,10 @@ Remove-MgTeamScheduleShift -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete navigation property shifts for teams
+Delete a shift from the schedule.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shift-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -253,6 +257,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleshift)
+
+[https://learn.microsoft.com/graph/api/shift-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shift-delete?view=graph-rest-1.0)
 
 
 

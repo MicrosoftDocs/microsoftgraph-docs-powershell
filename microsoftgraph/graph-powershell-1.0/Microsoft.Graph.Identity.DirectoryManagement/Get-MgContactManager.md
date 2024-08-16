@@ -33,6 +33,9 @@ Get-MgContactManager -InputObject <IIdentityDirectoryManagementIdentity> [-Expan
 ## DESCRIPTION
 Get this organizational contact's manager.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/orgcontact-get-manager-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

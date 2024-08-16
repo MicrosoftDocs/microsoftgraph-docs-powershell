@@ -758,7 +758,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
       - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
       - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -826,12 +828,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
           - `[DeviceCategory <String>]`: User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
           - `[DeviceId <String>]`: Unique identifier set by Azure Device Registration Service at the time of registration.
-This is an alternate key that can be used to reference the device object.
+This alternate key can be used to reference the device object.
 Supports $filter (eq, ne, not, startsWith).
           - `[DeviceMetadata <String>]`: For internal use only.
 Set to null.
           - `[DeviceOwnership <String>]`: Ownership of the device.
-This property is set by Intune.
+Intune sets this property.
 Possible values are: unknown, company, personal.
           - `[DeviceVersion <Int32?>]`: For internal use only.
           - `[DisplayName <String>]`: The display name for the device.
@@ -841,8 +843,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
           - `[EnrollmentType <String>]`: Enrollment type of the device.
-This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Intune sets this property.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
           - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -918,8 +921,8 @@ This operation is transitive.
 Supports $expand.
           - `[TrustType <String>]`: Type of trust for the joined device.
 Read-only.
-Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
+For more information, see Introduction to device management in Microsoft Entra ID.
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -2255,13 +2258,15 @@ Possible values are: Automatic, AutomaticExceptTables, Manual.
                 - `[Comments <IMicrosoftGraphWorkbookComment- `[]`>]`: Represents a collection of comments in a workbook.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Content <String>]`: The content of comment.
-                  - `[ContentType <String>]`: Indicates the type for the comment.
-                  - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: 
+                  - `[Content <String>]`: The content of the comment.
+                  - `[ContentType <String>]`: The content type of the comment.
+                  - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: The list of replies to the comment.
+Read-only.
+Nullable.
                     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                    - `[Content <String>]`: The content of a comment reply.
-                    - `[ContentType <String>]`: Indicates the type for the comment reply.
+                    - `[Content <String>]`: The content of the reply.
+                    - `[ContentType <String>]`: The content type for the reply.
                 - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
@@ -2270,23 +2275,23 @@ Read-only.
 Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Comment <String>]`: Represents the comment associated with this name.
+                  - `[Comment <String>]`: The comment associated with this name.
                   - `[Name <String>]`: The name of the object.
 Read-only.
                   - `[Scope <String>]`: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
-                  - `[Type <String>]`: Indicates what type of reference is associated with the name.
-The possible values are: String, Integer, Double, Boolean, Range.
+                  - `[Type <String>]`: The type of reference is associated with the name.
+Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-                  - `[Value <IAny>]`: Represents the formula that the name is defined to refer to.
-for example, =Sheet14!$B$2:$H$12, =4.75, etc.
+                  - `[Value <IAny>]`: The formula that the name is defined to refer to.
+For example, =Sheet14!$B$2:$H$12 and =4.75.
 Read-only.
-                  - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
+                  - `[Visible <Boolean?>]`: Indicates whether the object is visible.
                   - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                    - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: Returns collection of charts that are part of the worksheet.
+                    - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: The list of charts that are part of the worksheet.
 Read-only.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2306,19 +2311,21 @@ Read-only.
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
                               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                              - `[Bold <Boolean?>]`: Represents the bold status of font.
-                              - `[Color <String>]`: HTML color code representation of the text color.
-for example #FF0000 represents Red.
-                              - `[Italic <Boolean?>]`: Represents the italic status of the font.
-                              - `[Name <String>]`: Font name (for example 'Calibri')
-                              - `[Size <Double?>]`: Size of the font (for example 11)
-                              - `[Underline <String>]`: Type of underline applied to the font.
+                              - `[Bold <Boolean?>]`: Indicates whether the fond is bold.
+                              - `[Color <String>]`: The HTML color code representation of the text color.
+For example #FF0000 represents Red.
+                              - `[Italic <Boolean?>]`: Indicates whether the fond is italic.
+                              - `[Name <String>]`: The font name.
+For example 'Calibri'.
+                              - `[Size <Double?>]`: The size of the font.
+For example,  11.
+                              - `[Underline <String>]`: The type of underlining applied to the font.
 The possible values are: None, Single.
                             - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
                               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                              - `[Color <String>]`: HTML color code representing the color of lines in the chart.
+                              - `[Color <String>]`: The HTML color code that represents the color of lines in the chart.
                           - `[MajorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
                             - `[Id <String>]`: The unique identifier for an entity.
@@ -2328,7 +2335,7 @@ Read-only.
                               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                               - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                            - `[Visible <Boolean?>]`: Boolean value representing if the axis gridlines are visible or not.
+                            - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
                           - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
 Can be set to a numeric value or an empty string. 
 The returned value is always a number.
@@ -2352,7 +2359,7 @@ Read-only.
 Read-only.
                               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                             - `[Text <String>]`: Represents the axis title.
-                            - `[Visible <Boolean?>]`: A boolean that specifies the visibility of an axis title.
+                            - `[Visible <Boolean?>]`: A Boolean that specifies the visibility of an axis title.
                         - `[SeriesAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                         - `[ValueAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                       - `[DataLabels <IMicrosoftGraphWorkbookChartDataLabels>]`: workbookChartDataLabels
@@ -2370,13 +2377,13 @@ Read-only.
                           - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                         - `[Position <String>]`: DataLabelPosition value that represents the position of the data label.
 The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-                        - `[Separator <String>]`: String representing the separator used for the data labels on a chart.
-                        - `[ShowBubbleSize <Boolean?>]`: Boolean value representing if the data label bubble size is visible or not.
-                        - `[ShowCategoryName <Boolean?>]`: Boolean value representing if the data label category name is visible or not.
-                        - `[ShowLegendKey <Boolean?>]`: Boolean value representing if the data label legend key is visible or not.
-                        - `[ShowPercentage <Boolean?>]`: Boolean value representing if the data label percentage is visible or not.
-                        - `[ShowSeriesName <Boolean?>]`: Boolean value representing if the data label series name is visible or not.
-                        - `[ShowValue <Boolean?>]`: Boolean value representing if the data label value is visible or not.
+                        - `[Separator <String>]`: String that represents the separator used for the data labels on a chart.
+                        - `[ShowBubbleSize <Boolean?>]`: Boolean value that represents whether the data label bubble size is visible.
+                        - `[ShowCategoryName <Boolean?>]`: Boolean value that represents whether the data label category name is visible.
+                        - `[ShowLegendKey <Boolean?>]`: Boolean value that represents whether the data label legend key is visible.
+                        - `[ShowPercentage <Boolean?>]`: Boolean value that represents whether the data label percentage is visible.
+                        - `[ShowSeriesName <Boolean?>]`: Boolean value that represents whether the data label series name is visible.
+                        - `[ShowValue <Boolean?>]`: Boolean value that represents whether the data label value is visible.
                       - `[Format <IMicrosoftGraphWorkbookChartAreaFormat>]`: workbookChartAreaFormat
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
@@ -2395,10 +2402,10 @@ Read-only.
 Read-only.
                           - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                           - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                        - `[Overlay <Boolean?>]`: Boolean value for whether the chart legend should overlap with the main body of the chart.
+                        - `[Overlay <Boolean?>]`: Indicates whether the chart legend should overlap with the main body of the chart.
                         - `[Position <String>]`: Represents the position of the legend on the chart.
 The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-                        - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
+                        - `[Visible <Boolean?>]`: Indicates whether the chart legend is visible.
                       - `[Name <String>]`: Represents the name of a chart object.
                       - `[Series <IMicrosoftGraphWorkbookChartSeries- `[]`>]`: Represents either a single series or collection of series in the chart.
 Read-only.
@@ -2410,8 +2417,8 @@ Read-only.
 Read-only.
                           - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                           - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                        - `[Name <String>]`: Represents the name of a series in a chart.
-                        - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: Represents a collection of all points in the series.
+                        - `[Name <String>]`: The name of a series in a chart.
+                        - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: A collection of all points in the series.
 Read-only.
                           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2420,7 +2427,7 @@ Read-only.
                             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                             - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                          - `[Value <IAny>]`: Returns the value of a chart point.
+                          - `[Value <IAny>]`: The value of a chart point.
 Read-only.
                       - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2432,19 +2439,19 @@ Read-only.
 Read-only.
                           - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                           - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                        - `[Overlay <Boolean?>]`: Boolean value representing if the chart title will overlay the chart or not.
-                        - `[Text <String>]`: Represents the title text of a chart.
-                        - `[Visible <Boolean?>]`: A boolean value that represents the visibility of a chart title object.
+                        - `[Overlay <Boolean?>]`: Indicates whether the chart title will overlay the chart or not.
+                        - `[Text <String>]`: The title text of the chart.
+                        - `[Visible <Boolean?>]`: Indicates whether the chart title is visible.
                       - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
                       - `[Width <Double?>]`: Represents the width, in points, of the chart object.
                       - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                     - `[Name <String>]`: The display name of the worksheet.
-                    - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: Returns collection of names that are associated with the worksheet.
+                    - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: The list of names that are associated with the worksheet.
 Read-only.
-                    - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: Collection of PivotTables that are part of the worksheet.
+                    - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: The list of piot tables that are part of the worksheet.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                      - `[Name <String>]`: Name of the PivotTable.
+                      - `[Name <String>]`: The name of the pivot table.
                       - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                     - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
                     - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
@@ -2464,13 +2471,13 @@ Read-only.
                         - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
                         - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
                         - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
-                      - `[Protected <Boolean?>]`: Indicates if the worksheet is protected. 
+                      - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
-                    - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: Collection of tables that are part of the worksheet.
+                    - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
 Read-only.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                      - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: Represents a collection of all the columns in the table.
+                      - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: The list of all the columns in the table.
 Read-only.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2487,35 +2494,35 @@ Read-only.
                             - `[FilterOn <String>]`: Indicates whether a filter is applied to a column.
                             - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                              - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                              - `[Set <String>]`: Represents the set that the icon is part of.
+                              - `[Index <Int32?>]`: The index of the icon in the given set.
+                              - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                             - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
                             - `[Values <IAny>]`: The values that appear in the cell.
-                        - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table.
+                        - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
-                        - `[Name <String>]`: Returns the name of the table column.
-                        - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
+                        - `[Name <String>]`: The name of the table column.
+                        - `[Values <IAny>]`: TRepresents the raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
 Cell that contain an error will return the error string.
                       - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                       - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
-                      - `[LegacyId <String>]`: Legacy ID used in older Excel clients.
+                      - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
 The value of the identifier remains the same even when the table is renamed.
 This property should be interpreted as an opaque string value and shouldn't be parsed to any other type.
 Read-only.
-                      - `[Name <String>]`: Name of the table.
-                      - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: Represents a collection of all the rows in the table.
+                      - `[Name <String>]`: The name of the table.
+                      - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: The list of all the rows in the table.
 Read-only.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                        - `[Index <Int32?>]`: Returns the index number of the row within the rows collection of the table.
-Zero-indexed.
+                        - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
+Zero-based.
 Read-only.
-                        - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contain an error will return the error string.
+                        - `[Values <IAny>]`: The raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
+Any cell that contain an error will return the error string.
                       - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                       - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                       - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -2528,7 +2535,7 @@ This value can be set to show or remove the total row.
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                        - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: Represents the current conditions used to last sort the table.
+                        - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: The list of the current conditions last used to sort the table.
 Read-only.
                           - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
                           - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
@@ -2539,16 +2546,16 @@ The possible values are: Normal, TextAsNumber.
 Represented as an offset from the first column (or row).
                           - `[SortOn <String>]`: Represents the type of sorting of this condition.
 The possible values are: Value, CellColor, FontColor, Icon.
-                        - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table.
+                        - `[MatchCase <Boolean?>]`: Indicates whether the casing impacted the last sort of the table.
 Read-only.
-                        - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table.
+                        - `[Method <String>]`: The Chinese character ordering method last used to sort the table.
 The possible values are: PinYin, StrokeCount.
 Read-only.
-                      - `[Style <String>]`: Constant value that represents the Table style.
-The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+                      - `[Style <String>]`: A constant value that represents the Table style.
+Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
                       - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
-                    - `[Visibility <String>]`: The Visibility of the worksheet.
+                    - `[Visibility <String>]`: The visibility of the worksheet.
 The possible values are: Visible, Hidden, VeryHidden.
                 - `[Operations <IMicrosoftGraphWorkbookOperation- `[]`>]`: The status of workbook operations.
 Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response.
@@ -3442,7 +3449,7 @@ You can use it as a $filter argument to get groups that have members with licens
 See an example.
 Supports $filter (eq).
         - `[HideFromAddressLists <Boolean?>]`: True if the group isn't displayed in certain parts of the Outlook UI: the Address Book, address lists for selecting message recipients, and the Browse Groups dialog for searching groups; otherwise, false.
-Default value is false.
+The default value is false.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
         - `[HideFromOutlookClients <Boolean?>]`: True if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false.
@@ -3501,14 +3508,18 @@ Supports $filter (eq, ne, not, ge, le, startsWith).
 Possible values are On or Paused.
 Returned by default.
 Supports $filter (eq, ne, not, in).
-        - `[OnPremisesDomainName <String>]`: 
+        - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-        - `[OnPremisesNetBiosName <String>]`: 
+        - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError- `[]`>]`: Errors when using Microsoft synchronization product during provisioning.
 Returned by default.
 Supports $filter (eq, not).
@@ -5528,7 +5539,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
       - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
       - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -5596,12 +5609,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
           - `[DeviceCategory <String>]`: User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
           - `[DeviceId <String>]`: Unique identifier set by Azure Device Registration Service at the time of registration.
-This is an alternate key that can be used to reference the device object.
+This alternate key can be used to reference the device object.
 Supports $filter (eq, ne, not, startsWith).
           - `[DeviceMetadata <String>]`: For internal use only.
 Set to null.
           - `[DeviceOwnership <String>]`: Ownership of the device.
-This property is set by Intune.
+Intune sets this property.
 Possible values are: unknown, company, personal.
           - `[DeviceVersion <Int32?>]`: For internal use only.
           - `[DisplayName <String>]`: The display name for the device.
@@ -5611,8 +5624,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
           - `[EnrollmentType <String>]`: Enrollment type of the device.
-This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Intune sets this property.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
           - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -5688,8 +5702,8 @@ This operation is transitive.
 Supports $expand.
           - `[TrustType <String>]`: Type of trust for the joined device.
 Read-only.
-Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
+For more information, see Introduction to device management in Microsoft Entra ID.
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -7680,7 +7694,7 @@ You can use it as a $filter argument to get groups that have members with licens
 See an example.
 Supports $filter (eq).
         - `[HideFromAddressLists <Boolean?>]`: True if the group isn't displayed in certain parts of the Outlook UI: the Address Book, address lists for selecting message recipients, and the Browse Groups dialog for searching groups; otherwise, false.
-Default value is false.
+The default value is false.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
         - `[HideFromOutlookClients <Boolean?>]`: True if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false.
@@ -7739,14 +7753,18 @@ Supports $filter (eq, ne, not, ge, le, startsWith).
 Possible values are On or Paused.
 Returned by default.
 Supports $filter (eq, ne, not, in).
-        - `[OnPremisesDomainName <String>]`: 
+        - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-        - `[OnPremisesNetBiosName <String>]`: 
+        - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError- `[]`>]`: Errors when using Microsoft synchronization product during provisioning.
 Returned by default.
 Supports $filter (eq, not).
@@ -9822,13 +9840,15 @@ Possible values are: Automatic, AutomaticExceptTables, Manual.
     - `[Comments <IMicrosoftGraphWorkbookComment- `[]`>]`: Represents a collection of comments in a workbook.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Content <String>]`: The content of comment.
-      - `[ContentType <String>]`: Indicates the type for the comment.
-      - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: 
+      - `[Content <String>]`: The content of the comment.
+      - `[ContentType <String>]`: The content type of the comment.
+      - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: The list of replies to the comment.
+Read-only.
+Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[Content <String>]`: The content of a comment reply.
-        - `[ContentType <String>]`: Indicates the type for the comment reply.
+        - `[Content <String>]`: The content of the reply.
+        - `[ContentType <String>]`: The content type for the reply.
     - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -9837,23 +9857,23 @@ Read-only.
 Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Comment <String>]`: Represents the comment associated with this name.
+      - `[Comment <String>]`: The comment associated with this name.
       - `[Name <String>]`: The name of the object.
 Read-only.
       - `[Scope <String>]`: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
-      - `[Type <String>]`: Indicates what type of reference is associated with the name.
-The possible values are: String, Integer, Double, Boolean, Range.
+      - `[Type <String>]`: The type of reference is associated with the name.
+Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-      - `[Value <IAny>]`: Represents the formula that the name is defined to refer to.
-for example, =Sheet14!$B$2:$H$12, =4.75, etc.
+      - `[Value <IAny>]`: The formula that the name is defined to refer to.
+For example, =Sheet14!$B$2:$H$12 and =4.75.
 Read-only.
-      - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
+      - `[Visible <Boolean?>]`: Indicates whether the object is visible.
       - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: Returns collection of charts that are part of the worksheet.
+        - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: The list of charts that are part of the worksheet.
 Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -9873,19 +9893,21 @@ Read-only.
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Bold <Boolean?>]`: Represents the bold status of font.
-                  - `[Color <String>]`: HTML color code representation of the text color.
-for example #FF0000 represents Red.
-                  - `[Italic <Boolean?>]`: Represents the italic status of the font.
-                  - `[Name <String>]`: Font name (for example 'Calibri')
-                  - `[Size <Double?>]`: Size of the font (for example 11)
-                  - `[Underline <String>]`: Type of underline applied to the font.
+                  - `[Bold <Boolean?>]`: Indicates whether the fond is bold.
+                  - `[Color <String>]`: The HTML color code representation of the text color.
+For example #FF0000 represents Red.
+                  - `[Italic <Boolean?>]`: Indicates whether the fond is italic.
+                  - `[Name <String>]`: The font name.
+For example 'Calibri'.
+                  - `[Size <Double?>]`: The size of the font.
+For example,  11.
+                  - `[Underline <String>]`: The type of underlining applied to the font.
 The possible values are: None, Single.
                 - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Color <String>]`: HTML color code representing the color of lines in the chart.
+                  - `[Color <String>]`: The HTML color code that represents the color of lines in the chart.
               - `[MajorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique identifier for an entity.
@@ -9895,7 +9917,7 @@ Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                   - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                - `[Visible <Boolean?>]`: Boolean value representing if the axis gridlines are visible or not.
+                - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
               - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
 Can be set to a numeric value or an empty string. 
 The returned value is always a number.
@@ -9919,7 +9941,7 @@ Read-only.
 Read-only.
                   - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                 - `[Text <String>]`: Represents the axis title.
-                - `[Visible <Boolean?>]`: A boolean that specifies the visibility of an axis title.
+                - `[Visible <Boolean?>]`: A Boolean that specifies the visibility of an axis title.
             - `[SeriesAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
             - `[ValueAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
           - `[DataLabels <IMicrosoftGraphWorkbookChartDataLabels>]`: workbookChartDataLabels
@@ -9937,13 +9959,13 @@ Read-only.
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
             - `[Position <String>]`: DataLabelPosition value that represents the position of the data label.
 The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-            - `[Separator <String>]`: String representing the separator used for the data labels on a chart.
-            - `[ShowBubbleSize <Boolean?>]`: Boolean value representing if the data label bubble size is visible or not.
-            - `[ShowCategoryName <Boolean?>]`: Boolean value representing if the data label category name is visible or not.
-            - `[ShowLegendKey <Boolean?>]`: Boolean value representing if the data label legend key is visible or not.
-            - `[ShowPercentage <Boolean?>]`: Boolean value representing if the data label percentage is visible or not.
-            - `[ShowSeriesName <Boolean?>]`: Boolean value representing if the data label series name is visible or not.
-            - `[ShowValue <Boolean?>]`: Boolean value representing if the data label value is visible or not.
+            - `[Separator <String>]`: String that represents the separator used for the data labels on a chart.
+            - `[ShowBubbleSize <Boolean?>]`: Boolean value that represents whether the data label bubble size is visible.
+            - `[ShowCategoryName <Boolean?>]`: Boolean value that represents whether the data label category name is visible.
+            - `[ShowLegendKey <Boolean?>]`: Boolean value that represents whether the data label legend key is visible.
+            - `[ShowPercentage <Boolean?>]`: Boolean value that represents whether the data label percentage is visible.
+            - `[ShowSeriesName <Boolean?>]`: Boolean value that represents whether the data label series name is visible.
+            - `[ShowValue <Boolean?>]`: Boolean value that represents whether the data label value is visible.
           - `[Format <IMicrosoftGraphWorkbookChartAreaFormat>]`: workbookChartAreaFormat
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -9962,10 +9984,10 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-            - `[Overlay <Boolean?>]`: Boolean value for whether the chart legend should overlap with the main body of the chart.
+            - `[Overlay <Boolean?>]`: Indicates whether the chart legend should overlap with the main body of the chart.
             - `[Position <String>]`: Represents the position of the legend on the chart.
 The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-            - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
+            - `[Visible <Boolean?>]`: Indicates whether the chart legend is visible.
           - `[Name <String>]`: Represents the name of a chart object.
           - `[Series <IMicrosoftGraphWorkbookChartSeries- `[]`>]`: Represents either a single series or collection of series in the chart.
 Read-only.
@@ -9977,8 +9999,8 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-            - `[Name <String>]`: Represents the name of a series in a chart.
-            - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: Represents a collection of all points in the series.
+            - `[Name <String>]`: The name of a series in a chart.
+            - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: A collection of all points in the series.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -9987,7 +10009,7 @@ Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                 - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-              - `[Value <IAny>]`: Returns the value of a chart point.
+              - `[Value <IAny>]`: The value of a chart point.
 Read-only.
           - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9999,19 +10021,19 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-            - `[Overlay <Boolean?>]`: Boolean value representing if the chart title will overlay the chart or not.
-            - `[Text <String>]`: Represents the title text of a chart.
-            - `[Visible <Boolean?>]`: A boolean value that represents the visibility of a chart title object.
+            - `[Overlay <Boolean?>]`: Indicates whether the chart title will overlay the chart or not.
+            - `[Text <String>]`: The title text of the chart.
+            - `[Visible <Boolean?>]`: Indicates whether the chart title is visible.
           - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
           - `[Width <Double?>]`: Represents the width, in points, of the chart object.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[Name <String>]`: The display name of the worksheet.
-        - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: Returns collection of names that are associated with the worksheet.
+        - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: The list of names that are associated with the worksheet.
 Read-only.
-        - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: Collection of PivotTables that are part of the worksheet.
+        - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: The list of piot tables that are part of the worksheet.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Name <String>]`: Name of the PivotTable.
+          - `[Name <String>]`: The name of the pivot table.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
         - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
@@ -10031,13 +10053,13 @@ Read-only.
             - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
             - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
             - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
-          - `[Protected <Boolean?>]`: Indicates if the worksheet is protected. 
+          - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
-        - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: Collection of tables that are part of the worksheet.
+        - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
 Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: Represents a collection of all the columns in the table.
+          - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: The list of all the columns in the table.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -10054,35 +10076,35 @@ Read-only.
                 - `[FilterOn <String>]`: Indicates whether a filter is applied to a column.
                 - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                  - `[Set <String>]`: Represents the set that the icon is part of.
+                  - `[Index <Int32?>]`: The index of the icon in the given set.
+                  - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                 - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
                 - `[Values <IAny>]`: The values that appear in the cell.
-            - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table.
+            - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
-            - `[Name <String>]`: Returns the name of the table column.
-            - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
+            - `[Name <String>]`: The name of the table column.
+            - `[Values <IAny>]`: TRepresents the raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
 Cell that contain an error will return the error string.
           - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
           - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
-          - `[LegacyId <String>]`: Legacy ID used in older Excel clients.
+          - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
 The value of the identifier remains the same even when the table is renamed.
 This property should be interpreted as an opaque string value and shouldn't be parsed to any other type.
 Read-only.
-          - `[Name <String>]`: Name of the table.
-          - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: Represents a collection of all the rows in the table.
+          - `[Name <String>]`: The name of the table.
+          - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: The list of all the rows in the table.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Index <Int32?>]`: Returns the index number of the row within the rows collection of the table.
-Zero-indexed.
+            - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
+Zero-based.
 Read-only.
-            - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contain an error will return the error string.
+            - `[Values <IAny>]`: The raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
+Any cell that contain an error will return the error string.
           - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
           - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
           - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -10095,7 +10117,7 @@ This value can be set to show or remove the total row.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: Represents the current conditions used to last sort the table.
+            - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: The list of the current conditions last used to sort the table.
 Read-only.
               - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
               - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
@@ -10106,16 +10128,16 @@ The possible values are: Normal, TextAsNumber.
 Represented as an offset from the first column (or row).
               - `[SortOn <String>]`: Represents the type of sorting of this condition.
 The possible values are: Value, CellColor, FontColor, Icon.
-            - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table.
+            - `[MatchCase <Boolean?>]`: Indicates whether the casing impacted the last sort of the table.
 Read-only.
-            - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table.
+            - `[Method <String>]`: The Chinese character ordering method last used to sort the table.
 The possible values are: PinYin, StrokeCount.
 Read-only.
-          - `[Style <String>]`: Constant value that represents the Table style.
-The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+          - `[Style <String>]`: A constant value that represents the Table style.
+Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
-        - `[Visibility <String>]`: The Visibility of the worksheet.
+        - `[Visibility <String>]`: The visibility of the worksheet.
 The possible values are: Visible, Hidden, VeryHidden.
     - `[Operations <IMicrosoftGraphWorkbookOperation- `[]`>]`: The status of workbook operations.
 Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response.
@@ -10297,7 +10319,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
     - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
     - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
   - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -10365,12 +10389,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
         - `[DeviceCategory <String>]`: User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
         - `[DeviceId <String>]`: Unique identifier set by Azure Device Registration Service at the time of registration.
-This is an alternate key that can be used to reference the device object.
+This alternate key can be used to reference the device object.
 Supports $filter (eq, ne, not, startsWith).
         - `[DeviceMetadata <String>]`: For internal use only.
 Set to null.
         - `[DeviceOwnership <String>]`: Ownership of the device.
-This property is set by Intune.
+Intune sets this property.
 Possible values are: unknown, company, personal.
         - `[DeviceVersion <Int32?>]`: For internal use only.
         - `[DisplayName <String>]`: The display name for the device.
@@ -10380,8 +10404,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
         - `[EnrollmentType <String>]`: Enrollment type of the device.
-This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Intune sets this property.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -10457,8 +10482,8 @@ This operation is transitive.
 Supports $expand.
         - `[TrustType <String>]`: Type of trust for the joined device.
 Read-only.
-Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
+For more information, see Introduction to device management in Microsoft Entra ID.
       - `[DeviceTag <String>]`: Tags containing app metadata.
       - `[DisplayName <String>]`: The name of the device on which this app is registered.
       - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -11753,13 +11778,15 @@ Possible values are: Automatic, AutomaticExceptTables, Manual.
         - `[Comments <IMicrosoftGraphWorkbookComment- `[]`>]`: Represents a collection of comments in a workbook.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Content <String>]`: The content of comment.
-          - `[ContentType <String>]`: Indicates the type for the comment.
-          - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: 
+          - `[Content <String>]`: The content of the comment.
+          - `[ContentType <String>]`: The content type of the comment.
+          - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: The list of replies to the comment.
+Read-only.
+Nullable.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Content <String>]`: The content of a comment reply.
-            - `[ContentType <String>]`: Indicates the type for the comment reply.
+            - `[Content <String>]`: The content of the reply.
+            - `[ContentType <String>]`: The content type for the reply.
         - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -11768,23 +11795,23 @@ Read-only.
 Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Comment <String>]`: Represents the comment associated with this name.
+          - `[Comment <String>]`: The comment associated with this name.
           - `[Name <String>]`: The name of the object.
 Read-only.
           - `[Scope <String>]`: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
-          - `[Type <String>]`: Indicates what type of reference is associated with the name.
-The possible values are: String, Integer, Double, Boolean, Range.
+          - `[Type <String>]`: The type of reference is associated with the name.
+Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-          - `[Value <IAny>]`: Represents the formula that the name is defined to refer to.
-for example, =Sheet14!$B$2:$H$12, =4.75, etc.
+          - `[Value <IAny>]`: The formula that the name is defined to refer to.
+For example, =Sheet14!$B$2:$H$12 and =4.75.
 Read-only.
-          - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
+          - `[Visible <Boolean?>]`: Indicates whether the object is visible.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: Returns collection of charts that are part of the worksheet.
+            - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: The list of charts that are part of the worksheet.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -11804,19 +11831,21 @@ Read-only.
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                      - `[Bold <Boolean?>]`: Represents the bold status of font.
-                      - `[Color <String>]`: HTML color code representation of the text color.
-for example #FF0000 represents Red.
-                      - `[Italic <Boolean?>]`: Represents the italic status of the font.
-                      - `[Name <String>]`: Font name (for example 'Calibri')
-                      - `[Size <Double?>]`: Size of the font (for example 11)
-                      - `[Underline <String>]`: Type of underline applied to the font.
+                      - `[Bold <Boolean?>]`: Indicates whether the fond is bold.
+                      - `[Color <String>]`: The HTML color code representation of the text color.
+For example #FF0000 represents Red.
+                      - `[Italic <Boolean?>]`: Indicates whether the fond is italic.
+                      - `[Name <String>]`: The font name.
+For example 'Calibri'.
+                      - `[Size <Double?>]`: The size of the font.
+For example,  11.
+                      - `[Underline <String>]`: The type of underlining applied to the font.
 The possible values are: None, Single.
                     - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                      - `[Color <String>]`: HTML color code representing the color of lines in the chart.
+                      - `[Color <String>]`: The HTML color code that represents the color of lines in the chart.
                   - `[MajorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[Id <String>]`: The unique identifier for an entity.
@@ -11826,7 +11855,7 @@ Read-only.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                       - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                    - `[Visible <Boolean?>]`: Boolean value representing if the axis gridlines are visible or not.
+                    - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
                   - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
 Can be set to a numeric value or an empty string. 
 The returned value is always a number.
@@ -11850,7 +11879,7 @@ Read-only.
 Read-only.
                       - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                     - `[Text <String>]`: Represents the axis title.
-                    - `[Visible <Boolean?>]`: A boolean that specifies the visibility of an axis title.
+                    - `[Visible <Boolean?>]`: A Boolean that specifies the visibility of an axis title.
                 - `[SeriesAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                 - `[ValueAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
               - `[DataLabels <IMicrosoftGraphWorkbookChartDataLabels>]`: workbookChartDataLabels
@@ -11868,13 +11897,13 @@ Read-only.
                   - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                 - `[Position <String>]`: DataLabelPosition value that represents the position of the data label.
 The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-                - `[Separator <String>]`: String representing the separator used for the data labels on a chart.
-                - `[ShowBubbleSize <Boolean?>]`: Boolean value representing if the data label bubble size is visible or not.
-                - `[ShowCategoryName <Boolean?>]`: Boolean value representing if the data label category name is visible or not.
-                - `[ShowLegendKey <Boolean?>]`: Boolean value representing if the data label legend key is visible or not.
-                - `[ShowPercentage <Boolean?>]`: Boolean value representing if the data label percentage is visible or not.
-                - `[ShowSeriesName <Boolean?>]`: Boolean value representing if the data label series name is visible or not.
-                - `[ShowValue <Boolean?>]`: Boolean value representing if the data label value is visible or not.
+                - `[Separator <String>]`: String that represents the separator used for the data labels on a chart.
+                - `[ShowBubbleSize <Boolean?>]`: Boolean value that represents whether the data label bubble size is visible.
+                - `[ShowCategoryName <Boolean?>]`: Boolean value that represents whether the data label category name is visible.
+                - `[ShowLegendKey <Boolean?>]`: Boolean value that represents whether the data label legend key is visible.
+                - `[ShowPercentage <Boolean?>]`: Boolean value that represents whether the data label percentage is visible.
+                - `[ShowSeriesName <Boolean?>]`: Boolean value that represents whether the data label series name is visible.
+                - `[ShowValue <Boolean?>]`: Boolean value that represents whether the data label value is visible.
               - `[Format <IMicrosoftGraphWorkbookChartAreaFormat>]`: workbookChartAreaFormat
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique identifier for an entity.
@@ -11893,10 +11922,10 @@ Read-only.
 Read-only.
                   - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                   - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                - `[Overlay <Boolean?>]`: Boolean value for whether the chart legend should overlap with the main body of the chart.
+                - `[Overlay <Boolean?>]`: Indicates whether the chart legend should overlap with the main body of the chart.
                 - `[Position <String>]`: Represents the position of the legend on the chart.
 The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-                - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
+                - `[Visible <Boolean?>]`: Indicates whether the chart legend is visible.
               - `[Name <String>]`: Represents the name of a chart object.
               - `[Series <IMicrosoftGraphWorkbookChartSeries- `[]`>]`: Represents either a single series or collection of series in the chart.
 Read-only.
@@ -11908,8 +11937,8 @@ Read-only.
 Read-only.
                   - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                   - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                - `[Name <String>]`: Represents the name of a series in a chart.
-                - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: Represents a collection of all points in the series.
+                - `[Name <String>]`: The name of a series in a chart.
+                - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: A collection of all points in the series.
 Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -11918,7 +11947,7 @@ Read-only.
                     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                     - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                  - `[Value <IAny>]`: Returns the value of a chart point.
+                  - `[Value <IAny>]`: The value of a chart point.
 Read-only.
               - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11930,19 +11959,19 @@ Read-only.
 Read-only.
                   - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                   - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                - `[Overlay <Boolean?>]`: Boolean value representing if the chart title will overlay the chart or not.
-                - `[Text <String>]`: Represents the title text of a chart.
-                - `[Visible <Boolean?>]`: A boolean value that represents the visibility of a chart title object.
+                - `[Overlay <Boolean?>]`: Indicates whether the chart title will overlay the chart or not.
+                - `[Text <String>]`: The title text of the chart.
+                - `[Visible <Boolean?>]`: Indicates whether the chart title is visible.
               - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
               - `[Width <Double?>]`: Represents the width, in points, of the chart object.
               - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
             - `[Name <String>]`: The display name of the worksheet.
-            - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: Returns collection of names that are associated with the worksheet.
+            - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: The list of names that are associated with the worksheet.
 Read-only.
-            - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: Collection of PivotTables that are part of the worksheet.
+            - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: The list of piot tables that are part of the worksheet.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[Name <String>]`: Name of the PivotTable.
+              - `[Name <String>]`: The name of the pivot table.
               - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
             - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
             - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
@@ -11962,13 +11991,13 @@ Read-only.
                 - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
                 - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
                 - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
-              - `[Protected <Boolean?>]`: Indicates if the worksheet is protected. 
+              - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
-            - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: Collection of tables that are part of the worksheet.
+            - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: Represents a collection of all the columns in the table.
+              - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: The list of all the columns in the table.
 Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -11985,35 +12014,35 @@ Read-only.
                     - `[FilterOn <String>]`: Indicates whether a filter is applied to a column.
                     - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                      - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                      - `[Set <String>]`: Represents the set that the icon is part of.
+                      - `[Index <Int32?>]`: The index of the icon in the given set.
+                      - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                     - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
                     - `[Values <IAny>]`: The values that appear in the cell.
-                - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table.
+                - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
-                - `[Name <String>]`: Returns the name of the table column.
-                - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
+                - `[Name <String>]`: The name of the table column.
+                - `[Values <IAny>]`: TRepresents the raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
 Cell that contain an error will return the error string.
               - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
               - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
-              - `[LegacyId <String>]`: Legacy ID used in older Excel clients.
+              - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
 The value of the identifier remains the same even when the table is renamed.
 This property should be interpreted as an opaque string value and shouldn't be parsed to any other type.
 Read-only.
-              - `[Name <String>]`: Name of the table.
-              - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: Represents a collection of all the rows in the table.
+              - `[Name <String>]`: The name of the table.
+              - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: The list of all the rows in the table.
 Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                - `[Index <Int32?>]`: Returns the index number of the row within the rows collection of the table.
-Zero-indexed.
+                - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
+Zero-based.
 Read-only.
-                - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contain an error will return the error string.
+                - `[Values <IAny>]`: The raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
+Any cell that contain an error will return the error string.
               - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
               - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
               - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -12026,7 +12055,7 @@ This value can be set to show or remove the total row.
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: Represents the current conditions used to last sort the table.
+                - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: The list of the current conditions last used to sort the table.
 Read-only.
                   - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
                   - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
@@ -12037,16 +12066,16 @@ The possible values are: Normal, TextAsNumber.
 Represented as an offset from the first column (or row).
                   - `[SortOn <String>]`: Represents the type of sorting of this condition.
 The possible values are: Value, CellColor, FontColor, Icon.
-                - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table.
+                - `[MatchCase <Boolean?>]`: Indicates whether the casing impacted the last sort of the table.
 Read-only.
-                - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table.
+                - `[Method <String>]`: The Chinese character ordering method last used to sort the table.
 The possible values are: PinYin, StrokeCount.
 Read-only.
-              - `[Style <String>]`: Constant value that represents the Table style.
-The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+              - `[Style <String>]`: A constant value that represents the Table style.
+Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
               - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
-            - `[Visibility <String>]`: The Visibility of the worksheet.
+            - `[Visibility <String>]`: The visibility of the worksheet.
 The possible values are: Visible, Hidden, VeryHidden.
         - `[Operations <IMicrosoftGraphWorkbookOperation- `[]`>]`: The status of workbook operations.
 Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response.
@@ -13046,7 +13075,7 @@ You can use it as a $filter argument to get groups that have members with licens
 See an example.
 Supports $filter (eq).
       - `[HideFromAddressLists <Boolean?>]`: True if the group isn't displayed in certain parts of the Outlook UI: the Address Book, address lists for selecting message recipients, and the Browse Groups dialog for searching groups; otherwise, false.
-Default value is false.
+The default value is false.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
       - `[HideFromOutlookClients <Boolean?>]`: True if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false.
@@ -13105,14 +13134,18 @@ Supports $filter (eq, ne, not, ge, le, startsWith).
 Possible values are On or Paused.
 Returned by default.
 Supports $filter (eq, ne, not, in).
-      - `[OnPremisesDomainName <String>]`: 
+      - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
       - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-      - `[OnPremisesNetBiosName <String>]`: 
+      - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
       - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError- `[]`>]`: Errors when using Microsoft synchronization product during provisioning.
 Returned by default.
 Supports $filter (eq, not).
@@ -15079,7 +15112,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
       - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
       - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -15147,12 +15182,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
           - `[DeviceCategory <String>]`: User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
           - `[DeviceId <String>]`: Unique identifier set by Azure Device Registration Service at the time of registration.
-This is an alternate key that can be used to reference the device object.
+This alternate key can be used to reference the device object.
 Supports $filter (eq, ne, not, startsWith).
           - `[DeviceMetadata <String>]`: For internal use only.
 Set to null.
           - `[DeviceOwnership <String>]`: Ownership of the device.
-This property is set by Intune.
+Intune sets this property.
 Possible values are: unknown, company, personal.
           - `[DeviceVersion <Int32?>]`: For internal use only.
           - `[DisplayName <String>]`: The display name for the device.
@@ -15162,8 +15197,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
           - `[EnrollmentType <String>]`: Enrollment type of the device.
-This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Intune sets this property.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
           - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -15239,8 +15275,8 @@ This operation is transitive.
 Supports $expand.
           - `[TrustType <String>]`: Type of trust for the joined device.
 Read-only.
-Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
+For more information, see Introduction to device management in Microsoft Entra ID.
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -17231,7 +17267,7 @@ You can use it as a $filter argument to get groups that have members with licens
 See an example.
 Supports $filter (eq).
         - `[HideFromAddressLists <Boolean?>]`: True if the group isn't displayed in certain parts of the Outlook UI: the Address Book, address lists for selecting message recipients, and the Browse Groups dialog for searching groups; otherwise, false.
-Default value is false.
+The default value is false.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
         - `[HideFromOutlookClients <Boolean?>]`: True if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false.
@@ -17290,14 +17326,18 @@ Supports $filter (eq, ne, not, ge, le, startsWith).
 Possible values are On or Paused.
 Returned by default.
 Supports $filter (eq, ne, not, in).
-        - `[OnPremisesDomainName <String>]`: 
+        - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-        - `[OnPremisesNetBiosName <String>]`: 
+        - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError- `[]`>]`: Errors when using Microsoft synchronization product during provisioning.
 Returned by default.
 Supports $filter (eq, not).
@@ -19373,13 +19413,15 @@ Possible values are: Automatic, AutomaticExceptTables, Manual.
     - `[Comments <IMicrosoftGraphWorkbookComment- `[]`>]`: Represents a collection of comments in a workbook.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Content <String>]`: The content of comment.
-      - `[ContentType <String>]`: Indicates the type for the comment.
-      - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: 
+      - `[Content <String>]`: The content of the comment.
+      - `[ContentType <String>]`: The content type of the comment.
+      - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: The list of replies to the comment.
+Read-only.
+Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[Content <String>]`: The content of a comment reply.
-        - `[ContentType <String>]`: Indicates the type for the comment reply.
+        - `[Content <String>]`: The content of the reply.
+        - `[ContentType <String>]`: The content type for the reply.
     - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -19388,23 +19430,23 @@ Read-only.
 Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Comment <String>]`: Represents the comment associated with this name.
+      - `[Comment <String>]`: The comment associated with this name.
       - `[Name <String>]`: The name of the object.
 Read-only.
       - `[Scope <String>]`: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
-      - `[Type <String>]`: Indicates what type of reference is associated with the name.
-The possible values are: String, Integer, Double, Boolean, Range.
+      - `[Type <String>]`: The type of reference is associated with the name.
+Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-      - `[Value <IAny>]`: Represents the formula that the name is defined to refer to.
-for example, =Sheet14!$B$2:$H$12, =4.75, etc.
+      - `[Value <IAny>]`: The formula that the name is defined to refer to.
+For example, =Sheet14!$B$2:$H$12 and =4.75.
 Read-only.
-      - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
+      - `[Visible <Boolean?>]`: Indicates whether the object is visible.
       - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: Returns collection of charts that are part of the worksheet.
+        - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: The list of charts that are part of the worksheet.
 Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -19424,19 +19466,21 @@ Read-only.
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Bold <Boolean?>]`: Represents the bold status of font.
-                  - `[Color <String>]`: HTML color code representation of the text color.
-for example #FF0000 represents Red.
-                  - `[Italic <Boolean?>]`: Represents the italic status of the font.
-                  - `[Name <String>]`: Font name (for example 'Calibri')
-                  - `[Size <Double?>]`: Size of the font (for example 11)
-                  - `[Underline <String>]`: Type of underline applied to the font.
+                  - `[Bold <Boolean?>]`: Indicates whether the fond is bold.
+                  - `[Color <String>]`: The HTML color code representation of the text color.
+For example #FF0000 represents Red.
+                  - `[Italic <Boolean?>]`: Indicates whether the fond is italic.
+                  - `[Name <String>]`: The font name.
+For example 'Calibri'.
+                  - `[Size <Double?>]`: The size of the font.
+For example,  11.
+                  - `[Underline <String>]`: The type of underlining applied to the font.
 The possible values are: None, Single.
                 - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Color <String>]`: HTML color code representing the color of lines in the chart.
+                  - `[Color <String>]`: The HTML color code that represents the color of lines in the chart.
               - `[MajorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique identifier for an entity.
@@ -19446,7 +19490,7 @@ Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                   - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                - `[Visible <Boolean?>]`: Boolean value representing if the axis gridlines are visible or not.
+                - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
               - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
 Can be set to a numeric value or an empty string. 
 The returned value is always a number.
@@ -19470,7 +19514,7 @@ Read-only.
 Read-only.
                   - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                 - `[Text <String>]`: Represents the axis title.
-                - `[Visible <Boolean?>]`: A boolean that specifies the visibility of an axis title.
+                - `[Visible <Boolean?>]`: A Boolean that specifies the visibility of an axis title.
             - `[SeriesAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
             - `[ValueAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
           - `[DataLabels <IMicrosoftGraphWorkbookChartDataLabels>]`: workbookChartDataLabels
@@ -19488,13 +19532,13 @@ Read-only.
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
             - `[Position <String>]`: DataLabelPosition value that represents the position of the data label.
 The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-            - `[Separator <String>]`: String representing the separator used for the data labels on a chart.
-            - `[ShowBubbleSize <Boolean?>]`: Boolean value representing if the data label bubble size is visible or not.
-            - `[ShowCategoryName <Boolean?>]`: Boolean value representing if the data label category name is visible or not.
-            - `[ShowLegendKey <Boolean?>]`: Boolean value representing if the data label legend key is visible or not.
-            - `[ShowPercentage <Boolean?>]`: Boolean value representing if the data label percentage is visible or not.
-            - `[ShowSeriesName <Boolean?>]`: Boolean value representing if the data label series name is visible or not.
-            - `[ShowValue <Boolean?>]`: Boolean value representing if the data label value is visible or not.
+            - `[Separator <String>]`: String that represents the separator used for the data labels on a chart.
+            - `[ShowBubbleSize <Boolean?>]`: Boolean value that represents whether the data label bubble size is visible.
+            - `[ShowCategoryName <Boolean?>]`: Boolean value that represents whether the data label category name is visible.
+            - `[ShowLegendKey <Boolean?>]`: Boolean value that represents whether the data label legend key is visible.
+            - `[ShowPercentage <Boolean?>]`: Boolean value that represents whether the data label percentage is visible.
+            - `[ShowSeriesName <Boolean?>]`: Boolean value that represents whether the data label series name is visible.
+            - `[ShowValue <Boolean?>]`: Boolean value that represents whether the data label value is visible.
           - `[Format <IMicrosoftGraphWorkbookChartAreaFormat>]`: workbookChartAreaFormat
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -19513,10 +19557,10 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-            - `[Overlay <Boolean?>]`: Boolean value for whether the chart legend should overlap with the main body of the chart.
+            - `[Overlay <Boolean?>]`: Indicates whether the chart legend should overlap with the main body of the chart.
             - `[Position <String>]`: Represents the position of the legend on the chart.
 The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-            - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
+            - `[Visible <Boolean?>]`: Indicates whether the chart legend is visible.
           - `[Name <String>]`: Represents the name of a chart object.
           - `[Series <IMicrosoftGraphWorkbookChartSeries- `[]`>]`: Represents either a single series or collection of series in the chart.
 Read-only.
@@ -19528,8 +19572,8 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-            - `[Name <String>]`: Represents the name of a series in a chart.
-            - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: Represents a collection of all points in the series.
+            - `[Name <String>]`: The name of a series in a chart.
+            - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: A collection of all points in the series.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -19538,7 +19582,7 @@ Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                 - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-              - `[Value <IAny>]`: Returns the value of a chart point.
+              - `[Value <IAny>]`: The value of a chart point.
 Read-only.
           - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -19550,19 +19594,19 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-            - `[Overlay <Boolean?>]`: Boolean value representing if the chart title will overlay the chart or not.
-            - `[Text <String>]`: Represents the title text of a chart.
-            - `[Visible <Boolean?>]`: A boolean value that represents the visibility of a chart title object.
+            - `[Overlay <Boolean?>]`: Indicates whether the chart title will overlay the chart or not.
+            - `[Text <String>]`: The title text of the chart.
+            - `[Visible <Boolean?>]`: Indicates whether the chart title is visible.
           - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
           - `[Width <Double?>]`: Represents the width, in points, of the chart object.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[Name <String>]`: The display name of the worksheet.
-        - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: Returns collection of names that are associated with the worksheet.
+        - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: The list of names that are associated with the worksheet.
 Read-only.
-        - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: Collection of PivotTables that are part of the worksheet.
+        - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: The list of piot tables that are part of the worksheet.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Name <String>]`: Name of the PivotTable.
+          - `[Name <String>]`: The name of the pivot table.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
         - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
@@ -19582,13 +19626,13 @@ Read-only.
             - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
             - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
             - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
-          - `[Protected <Boolean?>]`: Indicates if the worksheet is protected. 
+          - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
-        - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: Collection of tables that are part of the worksheet.
+        - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
 Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: Represents a collection of all the columns in the table.
+          - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: The list of all the columns in the table.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -19605,35 +19649,35 @@ Read-only.
                 - `[FilterOn <String>]`: Indicates whether a filter is applied to a column.
                 - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                  - `[Set <String>]`: Represents the set that the icon is part of.
+                  - `[Index <Int32?>]`: The index of the icon in the given set.
+                  - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                 - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
                 - `[Values <IAny>]`: The values that appear in the cell.
-            - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table.
+            - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
-            - `[Name <String>]`: Returns the name of the table column.
-            - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
+            - `[Name <String>]`: The name of the table column.
+            - `[Values <IAny>]`: TRepresents the raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
 Cell that contain an error will return the error string.
           - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
           - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
-          - `[LegacyId <String>]`: Legacy ID used in older Excel clients.
+          - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
 The value of the identifier remains the same even when the table is renamed.
 This property should be interpreted as an opaque string value and shouldn't be parsed to any other type.
 Read-only.
-          - `[Name <String>]`: Name of the table.
-          - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: Represents a collection of all the rows in the table.
+          - `[Name <String>]`: The name of the table.
+          - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: The list of all the rows in the table.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Index <Int32?>]`: Returns the index number of the row within the rows collection of the table.
-Zero-indexed.
+            - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
+Zero-based.
 Read-only.
-            - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contain an error will return the error string.
+            - `[Values <IAny>]`: The raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
+Any cell that contain an error will return the error string.
           - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
           - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
           - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -19646,7 +19690,7 @@ This value can be set to show or remove the total row.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: Represents the current conditions used to last sort the table.
+            - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: The list of the current conditions last used to sort the table.
 Read-only.
               - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
               - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
@@ -19657,16 +19701,16 @@ The possible values are: Normal, TextAsNumber.
 Represented as an offset from the first column (or row).
               - `[SortOn <String>]`: Represents the type of sorting of this condition.
 The possible values are: Value, CellColor, FontColor, Icon.
-            - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table.
+            - `[MatchCase <Boolean?>]`: Indicates whether the casing impacted the last sort of the table.
 Read-only.
-            - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table.
+            - `[Method <String>]`: The Chinese character ordering method last used to sort the table.
 The possible values are: PinYin, StrokeCount.
 Read-only.
-          - `[Style <String>]`: Constant value that represents the Table style.
-The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+          - `[Style <String>]`: A constant value that represents the Table style.
+Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
-        - `[Visibility <String>]`: The Visibility of the worksheet.
+        - `[Visibility <String>]`: The visibility of the worksheet.
 The possible values are: Visible, Hidden, VeryHidden.
     - `[Operations <IMicrosoftGraphWorkbookOperation- `[]`>]`: The status of workbook operations.
 Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response.
@@ -19876,7 +19920,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
       - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
       - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -19944,12 +19990,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
           - `[DeviceCategory <String>]`: User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
           - `[DeviceId <String>]`: Unique identifier set by Azure Device Registration Service at the time of registration.
-This is an alternate key that can be used to reference the device object.
+This alternate key can be used to reference the device object.
 Supports $filter (eq, ne, not, startsWith).
           - `[DeviceMetadata <String>]`: For internal use only.
 Set to null.
           - `[DeviceOwnership <String>]`: Ownership of the device.
-This property is set by Intune.
+Intune sets this property.
 Possible values are: unknown, company, personal.
           - `[DeviceVersion <Int32?>]`: For internal use only.
           - `[DisplayName <String>]`: The display name for the device.
@@ -19959,8 +20005,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
           - `[EnrollmentType <String>]`: Enrollment type of the device.
-This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Intune sets this property.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
           - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -20036,8 +20083,8 @@ This operation is transitive.
 Supports $expand.
           - `[TrustType <String>]`: Type of trust for the joined device.
 Read-only.
-Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
+For more information, see Introduction to device management in Microsoft Entra ID.
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -22028,7 +22075,7 @@ You can use it as a $filter argument to get groups that have members with licens
 See an example.
 Supports $filter (eq).
         - `[HideFromAddressLists <Boolean?>]`: True if the group isn't displayed in certain parts of the Outlook UI: the Address Book, address lists for selecting message recipients, and the Browse Groups dialog for searching groups; otherwise, false.
-Default value is false.
+The default value is false.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
         - `[HideFromOutlookClients <Boolean?>]`: True if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false.
@@ -22087,14 +22134,18 @@ Supports $filter (eq, ne, not, ge, le, startsWith).
 Possible values are On or Paused.
 Returned by default.
 Supports $filter (eq, ne, not, in).
-        - `[OnPremisesDomainName <String>]`: 
+        - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-        - `[OnPremisesNetBiosName <String>]`: 
+        - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError- `[]`>]`: Errors when using Microsoft synchronization product during provisioning.
 Returned by default.
 Supports $filter (eq, not).
@@ -24170,13 +24221,15 @@ Possible values are: Automatic, AutomaticExceptTables, Manual.
     - `[Comments <IMicrosoftGraphWorkbookComment- `[]`>]`: Represents a collection of comments in a workbook.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Content <String>]`: The content of comment.
-      - `[ContentType <String>]`: Indicates the type for the comment.
-      - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: 
+      - `[Content <String>]`: The content of the comment.
+      - `[ContentType <String>]`: The content type of the comment.
+      - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: The list of replies to the comment.
+Read-only.
+Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[Content <String>]`: The content of a comment reply.
-        - `[ContentType <String>]`: Indicates the type for the comment reply.
+        - `[Content <String>]`: The content of the reply.
+        - `[ContentType <String>]`: The content type for the reply.
     - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -24185,23 +24238,23 @@ Read-only.
 Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Comment <String>]`: Represents the comment associated with this name.
+      - `[Comment <String>]`: The comment associated with this name.
       - `[Name <String>]`: The name of the object.
 Read-only.
       - `[Scope <String>]`: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
-      - `[Type <String>]`: Indicates what type of reference is associated with the name.
-The possible values are: String, Integer, Double, Boolean, Range.
+      - `[Type <String>]`: The type of reference is associated with the name.
+Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-      - `[Value <IAny>]`: Represents the formula that the name is defined to refer to.
-for example, =Sheet14!$B$2:$H$12, =4.75, etc.
+      - `[Value <IAny>]`: The formula that the name is defined to refer to.
+For example, =Sheet14!$B$2:$H$12 and =4.75.
 Read-only.
-      - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
+      - `[Visible <Boolean?>]`: Indicates whether the object is visible.
       - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: Returns collection of charts that are part of the worksheet.
+        - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: The list of charts that are part of the worksheet.
 Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -24221,19 +24274,21 @@ Read-only.
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Bold <Boolean?>]`: Represents the bold status of font.
-                  - `[Color <String>]`: HTML color code representation of the text color.
-for example #FF0000 represents Red.
-                  - `[Italic <Boolean?>]`: Represents the italic status of the font.
-                  - `[Name <String>]`: Font name (for example 'Calibri')
-                  - `[Size <Double?>]`: Size of the font (for example 11)
-                  - `[Underline <String>]`: Type of underline applied to the font.
+                  - `[Bold <Boolean?>]`: Indicates whether the fond is bold.
+                  - `[Color <String>]`: The HTML color code representation of the text color.
+For example #FF0000 represents Red.
+                  - `[Italic <Boolean?>]`: Indicates whether the fond is italic.
+                  - `[Name <String>]`: The font name.
+For example 'Calibri'.
+                  - `[Size <Double?>]`: The size of the font.
+For example,  11.
+                  - `[Underline <String>]`: The type of underlining applied to the font.
 The possible values are: None, Single.
                 - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Color <String>]`: HTML color code representing the color of lines in the chart.
+                  - `[Color <String>]`: The HTML color code that represents the color of lines in the chart.
               - `[MajorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique identifier for an entity.
@@ -24243,7 +24298,7 @@ Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                   - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                - `[Visible <Boolean?>]`: Boolean value representing if the axis gridlines are visible or not.
+                - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
               - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
 Can be set to a numeric value or an empty string. 
 The returned value is always a number.
@@ -24267,7 +24322,7 @@ Read-only.
 Read-only.
                   - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                 - `[Text <String>]`: Represents the axis title.
-                - `[Visible <Boolean?>]`: A boolean that specifies the visibility of an axis title.
+                - `[Visible <Boolean?>]`: A Boolean that specifies the visibility of an axis title.
             - `[SeriesAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
             - `[ValueAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
           - `[DataLabels <IMicrosoftGraphWorkbookChartDataLabels>]`: workbookChartDataLabels
@@ -24285,13 +24340,13 @@ Read-only.
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
             - `[Position <String>]`: DataLabelPosition value that represents the position of the data label.
 The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-            - `[Separator <String>]`: String representing the separator used for the data labels on a chart.
-            - `[ShowBubbleSize <Boolean?>]`: Boolean value representing if the data label bubble size is visible or not.
-            - `[ShowCategoryName <Boolean?>]`: Boolean value representing if the data label category name is visible or not.
-            - `[ShowLegendKey <Boolean?>]`: Boolean value representing if the data label legend key is visible or not.
-            - `[ShowPercentage <Boolean?>]`: Boolean value representing if the data label percentage is visible or not.
-            - `[ShowSeriesName <Boolean?>]`: Boolean value representing if the data label series name is visible or not.
-            - `[ShowValue <Boolean?>]`: Boolean value representing if the data label value is visible or not.
+            - `[Separator <String>]`: String that represents the separator used for the data labels on a chart.
+            - `[ShowBubbleSize <Boolean?>]`: Boolean value that represents whether the data label bubble size is visible.
+            - `[ShowCategoryName <Boolean?>]`: Boolean value that represents whether the data label category name is visible.
+            - `[ShowLegendKey <Boolean?>]`: Boolean value that represents whether the data label legend key is visible.
+            - `[ShowPercentage <Boolean?>]`: Boolean value that represents whether the data label percentage is visible.
+            - `[ShowSeriesName <Boolean?>]`: Boolean value that represents whether the data label series name is visible.
+            - `[ShowValue <Boolean?>]`: Boolean value that represents whether the data label value is visible.
           - `[Format <IMicrosoftGraphWorkbookChartAreaFormat>]`: workbookChartAreaFormat
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -24310,10 +24365,10 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-            - `[Overlay <Boolean?>]`: Boolean value for whether the chart legend should overlap with the main body of the chart.
+            - `[Overlay <Boolean?>]`: Indicates whether the chart legend should overlap with the main body of the chart.
             - `[Position <String>]`: Represents the position of the legend on the chart.
 The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-            - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
+            - `[Visible <Boolean?>]`: Indicates whether the chart legend is visible.
           - `[Name <String>]`: Represents the name of a chart object.
           - `[Series <IMicrosoftGraphWorkbookChartSeries- `[]`>]`: Represents either a single series or collection of series in the chart.
 Read-only.
@@ -24325,8 +24380,8 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-            - `[Name <String>]`: Represents the name of a series in a chart.
-            - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: Represents a collection of all points in the series.
+            - `[Name <String>]`: The name of a series in a chart.
+            - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: A collection of all points in the series.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -24335,7 +24390,7 @@ Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                 - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-              - `[Value <IAny>]`: Returns the value of a chart point.
+              - `[Value <IAny>]`: The value of a chart point.
 Read-only.
           - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -24347,19 +24402,19 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-            - `[Overlay <Boolean?>]`: Boolean value representing if the chart title will overlay the chart or not.
-            - `[Text <String>]`: Represents the title text of a chart.
-            - `[Visible <Boolean?>]`: A boolean value that represents the visibility of a chart title object.
+            - `[Overlay <Boolean?>]`: Indicates whether the chart title will overlay the chart or not.
+            - `[Text <String>]`: The title text of the chart.
+            - `[Visible <Boolean?>]`: Indicates whether the chart title is visible.
           - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
           - `[Width <Double?>]`: Represents the width, in points, of the chart object.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[Name <String>]`: The display name of the worksheet.
-        - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: Returns collection of names that are associated with the worksheet.
+        - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: The list of names that are associated with the worksheet.
 Read-only.
-        - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: Collection of PivotTables that are part of the worksheet.
+        - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: The list of piot tables that are part of the worksheet.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Name <String>]`: Name of the PivotTable.
+          - `[Name <String>]`: The name of the pivot table.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
         - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
@@ -24379,13 +24434,13 @@ Read-only.
             - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
             - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
             - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
-          - `[Protected <Boolean?>]`: Indicates if the worksheet is protected. 
+          - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
-        - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: Collection of tables that are part of the worksheet.
+        - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
 Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: Represents a collection of all the columns in the table.
+          - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: The list of all the columns in the table.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -24402,35 +24457,35 @@ Read-only.
                 - `[FilterOn <String>]`: Indicates whether a filter is applied to a column.
                 - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                  - `[Set <String>]`: Represents the set that the icon is part of.
+                  - `[Index <Int32?>]`: The index of the icon in the given set.
+                  - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                 - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
                 - `[Values <IAny>]`: The values that appear in the cell.
-            - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table.
+            - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
-            - `[Name <String>]`: Returns the name of the table column.
-            - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
+            - `[Name <String>]`: The name of the table column.
+            - `[Values <IAny>]`: TRepresents the raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
 Cell that contain an error will return the error string.
           - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
           - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
-          - `[LegacyId <String>]`: Legacy ID used in older Excel clients.
+          - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
 The value of the identifier remains the same even when the table is renamed.
 This property should be interpreted as an opaque string value and shouldn't be parsed to any other type.
 Read-only.
-          - `[Name <String>]`: Name of the table.
-          - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: Represents a collection of all the rows in the table.
+          - `[Name <String>]`: The name of the table.
+          - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: The list of all the rows in the table.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Index <Int32?>]`: Returns the index number of the row within the rows collection of the table.
-Zero-indexed.
+            - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
+Zero-based.
 Read-only.
-            - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contain an error will return the error string.
+            - `[Values <IAny>]`: The raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
+Any cell that contain an error will return the error string.
           - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
           - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
           - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -24443,7 +24498,7 @@ This value can be set to show or remove the total row.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: Represents the current conditions used to last sort the table.
+            - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: The list of the current conditions last used to sort the table.
 Read-only.
               - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
               - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
@@ -24454,16 +24509,16 @@ The possible values are: Normal, TextAsNumber.
 Represented as an offset from the first column (or row).
               - `[SortOn <String>]`: Represents the type of sorting of this condition.
 The possible values are: Value, CellColor, FontColor, Icon.
-            - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table.
+            - `[MatchCase <Boolean?>]`: Indicates whether the casing impacted the last sort of the table.
 Read-only.
-            - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table.
+            - `[Method <String>]`: The Chinese character ordering method last used to sort the table.
 The possible values are: PinYin, StrokeCount.
 Read-only.
-          - `[Style <String>]`: Constant value that represents the Table style.
-The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+          - `[Style <String>]`: A constant value that represents the Table style.
+Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
-        - `[Visibility <String>]`: The Visibility of the worksheet.
+        - `[Visibility <String>]`: The visibility of the worksheet.
 The possible values are: Visible, Hidden, VeryHidden.
     - `[Operations <IMicrosoftGraphWorkbookOperation- `[]`>]`: The status of workbook operations.
 Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response.
@@ -24645,7 +24700,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
     - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
     - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
   - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -24713,12 +24770,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
         - `[DeviceCategory <String>]`: User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
         - `[DeviceId <String>]`: Unique identifier set by Azure Device Registration Service at the time of registration.
-This is an alternate key that can be used to reference the device object.
+This alternate key can be used to reference the device object.
 Supports $filter (eq, ne, not, startsWith).
         - `[DeviceMetadata <String>]`: For internal use only.
 Set to null.
         - `[DeviceOwnership <String>]`: Ownership of the device.
-This property is set by Intune.
+Intune sets this property.
 Possible values are: unknown, company, personal.
         - `[DeviceVersion <Int32?>]`: For internal use only.
         - `[DisplayName <String>]`: The display name for the device.
@@ -24728,8 +24785,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
         - `[EnrollmentType <String>]`: Enrollment type of the device.
-This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Intune sets this property.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -24805,8 +24863,8 @@ This operation is transitive.
 Supports $expand.
         - `[TrustType <String>]`: Type of trust for the joined device.
 Read-only.
-Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
+For more information, see Introduction to device management in Microsoft Entra ID.
       - `[DeviceTag <String>]`: Tags containing app metadata.
       - `[DisplayName <String>]`: The name of the device on which this app is registered.
       - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -26101,13 +26159,15 @@ Possible values are: Automatic, AutomaticExceptTables, Manual.
         - `[Comments <IMicrosoftGraphWorkbookComment- `[]`>]`: Represents a collection of comments in a workbook.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Content <String>]`: The content of comment.
-          - `[ContentType <String>]`: Indicates the type for the comment.
-          - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: 
+          - `[Content <String>]`: The content of the comment.
+          - `[ContentType <String>]`: The content type of the comment.
+          - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: The list of replies to the comment.
+Read-only.
+Nullable.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Content <String>]`: The content of a comment reply.
-            - `[ContentType <String>]`: Indicates the type for the comment reply.
+            - `[Content <String>]`: The content of the reply.
+            - `[ContentType <String>]`: The content type for the reply.
         - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -26116,23 +26176,23 @@ Read-only.
 Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Comment <String>]`: Represents the comment associated with this name.
+          - `[Comment <String>]`: The comment associated with this name.
           - `[Name <String>]`: The name of the object.
 Read-only.
           - `[Scope <String>]`: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
-          - `[Type <String>]`: Indicates what type of reference is associated with the name.
-The possible values are: String, Integer, Double, Boolean, Range.
+          - `[Type <String>]`: The type of reference is associated with the name.
+Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-          - `[Value <IAny>]`: Represents the formula that the name is defined to refer to.
-for example, =Sheet14!$B$2:$H$12, =4.75, etc.
+          - `[Value <IAny>]`: The formula that the name is defined to refer to.
+For example, =Sheet14!$B$2:$H$12 and =4.75.
 Read-only.
-          - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
+          - `[Visible <Boolean?>]`: Indicates whether the object is visible.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: Returns collection of charts that are part of the worksheet.
+            - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: The list of charts that are part of the worksheet.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -26152,19 +26212,21 @@ Read-only.
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                      - `[Bold <Boolean?>]`: Represents the bold status of font.
-                      - `[Color <String>]`: HTML color code representation of the text color.
-for example #FF0000 represents Red.
-                      - `[Italic <Boolean?>]`: Represents the italic status of the font.
-                      - `[Name <String>]`: Font name (for example 'Calibri')
-                      - `[Size <Double?>]`: Size of the font (for example 11)
-                      - `[Underline <String>]`: Type of underline applied to the font.
+                      - `[Bold <Boolean?>]`: Indicates whether the fond is bold.
+                      - `[Color <String>]`: The HTML color code representation of the text color.
+For example #FF0000 represents Red.
+                      - `[Italic <Boolean?>]`: Indicates whether the fond is italic.
+                      - `[Name <String>]`: The font name.
+For example 'Calibri'.
+                      - `[Size <Double?>]`: The size of the font.
+For example,  11.
+                      - `[Underline <String>]`: The type of underlining applied to the font.
 The possible values are: None, Single.
                     - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                      - `[Color <String>]`: HTML color code representing the color of lines in the chart.
+                      - `[Color <String>]`: The HTML color code that represents the color of lines in the chart.
                   - `[MajorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[Id <String>]`: The unique identifier for an entity.
@@ -26174,7 +26236,7 @@ Read-only.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                       - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                    - `[Visible <Boolean?>]`: Boolean value representing if the axis gridlines are visible or not.
+                    - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
                   - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
 Can be set to a numeric value or an empty string. 
 The returned value is always a number.
@@ -26198,7 +26260,7 @@ Read-only.
 Read-only.
                       - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                     - `[Text <String>]`: Represents the axis title.
-                    - `[Visible <Boolean?>]`: A boolean that specifies the visibility of an axis title.
+                    - `[Visible <Boolean?>]`: A Boolean that specifies the visibility of an axis title.
                 - `[SeriesAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                 - `[ValueAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
               - `[DataLabels <IMicrosoftGraphWorkbookChartDataLabels>]`: workbookChartDataLabels
@@ -26216,13 +26278,13 @@ Read-only.
                   - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                 - `[Position <String>]`: DataLabelPosition value that represents the position of the data label.
 The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-                - `[Separator <String>]`: String representing the separator used for the data labels on a chart.
-                - `[ShowBubbleSize <Boolean?>]`: Boolean value representing if the data label bubble size is visible or not.
-                - `[ShowCategoryName <Boolean?>]`: Boolean value representing if the data label category name is visible or not.
-                - `[ShowLegendKey <Boolean?>]`: Boolean value representing if the data label legend key is visible or not.
-                - `[ShowPercentage <Boolean?>]`: Boolean value representing if the data label percentage is visible or not.
-                - `[ShowSeriesName <Boolean?>]`: Boolean value representing if the data label series name is visible or not.
-                - `[ShowValue <Boolean?>]`: Boolean value representing if the data label value is visible or not.
+                - `[Separator <String>]`: String that represents the separator used for the data labels on a chart.
+                - `[ShowBubbleSize <Boolean?>]`: Boolean value that represents whether the data label bubble size is visible.
+                - `[ShowCategoryName <Boolean?>]`: Boolean value that represents whether the data label category name is visible.
+                - `[ShowLegendKey <Boolean?>]`: Boolean value that represents whether the data label legend key is visible.
+                - `[ShowPercentage <Boolean?>]`: Boolean value that represents whether the data label percentage is visible.
+                - `[ShowSeriesName <Boolean?>]`: Boolean value that represents whether the data label series name is visible.
+                - `[ShowValue <Boolean?>]`: Boolean value that represents whether the data label value is visible.
               - `[Format <IMicrosoftGraphWorkbookChartAreaFormat>]`: workbookChartAreaFormat
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique identifier for an entity.
@@ -26241,10 +26303,10 @@ Read-only.
 Read-only.
                   - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                   - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                - `[Overlay <Boolean?>]`: Boolean value for whether the chart legend should overlap with the main body of the chart.
+                - `[Overlay <Boolean?>]`: Indicates whether the chart legend should overlap with the main body of the chart.
                 - `[Position <String>]`: Represents the position of the legend on the chart.
 The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-                - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
+                - `[Visible <Boolean?>]`: Indicates whether the chart legend is visible.
               - `[Name <String>]`: Represents the name of a chart object.
               - `[Series <IMicrosoftGraphWorkbookChartSeries- `[]`>]`: Represents either a single series or collection of series in the chart.
 Read-only.
@@ -26256,8 +26318,8 @@ Read-only.
 Read-only.
                   - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                   - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                - `[Name <String>]`: Represents the name of a series in a chart.
-                - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: Represents a collection of all points in the series.
+                - `[Name <String>]`: The name of a series in a chart.
+                - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: A collection of all points in the series.
 Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -26266,7 +26328,7 @@ Read-only.
                     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                     - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                  - `[Value <IAny>]`: Returns the value of a chart point.
+                  - `[Value <IAny>]`: The value of a chart point.
 Read-only.
               - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -26278,19 +26340,19 @@ Read-only.
 Read-only.
                   - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                   - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                - `[Overlay <Boolean?>]`: Boolean value representing if the chart title will overlay the chart or not.
-                - `[Text <String>]`: Represents the title text of a chart.
-                - `[Visible <Boolean?>]`: A boolean value that represents the visibility of a chart title object.
+                - `[Overlay <Boolean?>]`: Indicates whether the chart title will overlay the chart or not.
+                - `[Text <String>]`: The title text of the chart.
+                - `[Visible <Boolean?>]`: Indicates whether the chart title is visible.
               - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
               - `[Width <Double?>]`: Represents the width, in points, of the chart object.
               - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
             - `[Name <String>]`: The display name of the worksheet.
-            - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: Returns collection of names that are associated with the worksheet.
+            - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: The list of names that are associated with the worksheet.
 Read-only.
-            - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: Collection of PivotTables that are part of the worksheet.
+            - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: The list of piot tables that are part of the worksheet.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[Name <String>]`: Name of the PivotTable.
+              - `[Name <String>]`: The name of the pivot table.
               - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
             - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
             - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
@@ -26310,13 +26372,13 @@ Read-only.
                 - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
                 - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
                 - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
-              - `[Protected <Boolean?>]`: Indicates if the worksheet is protected. 
+              - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
-            - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: Collection of tables that are part of the worksheet.
+            - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: Represents a collection of all the columns in the table.
+              - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: The list of all the columns in the table.
 Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -26333,35 +26395,35 @@ Read-only.
                     - `[FilterOn <String>]`: Indicates whether a filter is applied to a column.
                     - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                      - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                      - `[Set <String>]`: Represents the set that the icon is part of.
+                      - `[Index <Int32?>]`: The index of the icon in the given set.
+                      - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                     - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
                     - `[Values <IAny>]`: The values that appear in the cell.
-                - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table.
+                - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
-                - `[Name <String>]`: Returns the name of the table column.
-                - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
+                - `[Name <String>]`: The name of the table column.
+                - `[Values <IAny>]`: TRepresents the raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
 Cell that contain an error will return the error string.
               - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
               - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
-              - `[LegacyId <String>]`: Legacy ID used in older Excel clients.
+              - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
 The value of the identifier remains the same even when the table is renamed.
 This property should be interpreted as an opaque string value and shouldn't be parsed to any other type.
 Read-only.
-              - `[Name <String>]`: Name of the table.
-              - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: Represents a collection of all the rows in the table.
+              - `[Name <String>]`: The name of the table.
+              - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: The list of all the rows in the table.
 Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                - `[Index <Int32?>]`: Returns the index number of the row within the rows collection of the table.
-Zero-indexed.
+                - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
+Zero-based.
 Read-only.
-                - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contain an error will return the error string.
+                - `[Values <IAny>]`: The raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
+Any cell that contain an error will return the error string.
               - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
               - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
               - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -26374,7 +26436,7 @@ This value can be set to show or remove the total row.
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: Represents the current conditions used to last sort the table.
+                - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: The list of the current conditions last used to sort the table.
 Read-only.
                   - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
                   - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
@@ -26385,16 +26447,16 @@ The possible values are: Normal, TextAsNumber.
 Represented as an offset from the first column (or row).
                   - `[SortOn <String>]`: Represents the type of sorting of this condition.
 The possible values are: Value, CellColor, FontColor, Icon.
-                - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table.
+                - `[MatchCase <Boolean?>]`: Indicates whether the casing impacted the last sort of the table.
 Read-only.
-                - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table.
+                - `[Method <String>]`: The Chinese character ordering method last used to sort the table.
 The possible values are: PinYin, StrokeCount.
 Read-only.
-              - `[Style <String>]`: Constant value that represents the Table style.
-The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+              - `[Style <String>]`: A constant value that represents the Table style.
+Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
               - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
-            - `[Visibility <String>]`: The Visibility of the worksheet.
+            - `[Visibility <String>]`: The visibility of the worksheet.
 The possible values are: Visible, Hidden, VeryHidden.
         - `[Operations <IMicrosoftGraphWorkbookOperation- `[]`>]`: The status of workbook operations.
 Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response.
@@ -27394,7 +27456,7 @@ You can use it as a $filter argument to get groups that have members with licens
 See an example.
 Supports $filter (eq).
       - `[HideFromAddressLists <Boolean?>]`: True if the group isn't displayed in certain parts of the Outlook UI: the Address Book, address lists for selecting message recipients, and the Browse Groups dialog for searching groups; otherwise, false.
-Default value is false.
+The default value is false.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
       - `[HideFromOutlookClients <Boolean?>]`: True if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false.
@@ -27453,14 +27515,18 @@ Supports $filter (eq, ne, not, ge, le, startsWith).
 Possible values are On or Paused.
 Returned by default.
 Supports $filter (eq, ne, not, in).
-      - `[OnPremisesDomainName <String>]`: 
+      - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
       - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-      - `[OnPremisesNetBiosName <String>]`: 
+      - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
       - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError- `[]`>]`: Errors when using Microsoft synchronization product during provisioning.
 Returned by default.
 Supports $filter (eq, not).
@@ -29427,7 +29493,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
       - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
       - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -29495,12 +29563,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
           - `[DeviceCategory <String>]`: User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
           - `[DeviceId <String>]`: Unique identifier set by Azure Device Registration Service at the time of registration.
-This is an alternate key that can be used to reference the device object.
+This alternate key can be used to reference the device object.
 Supports $filter (eq, ne, not, startsWith).
           - `[DeviceMetadata <String>]`: For internal use only.
 Set to null.
           - `[DeviceOwnership <String>]`: Ownership of the device.
-This property is set by Intune.
+Intune sets this property.
 Possible values are: unknown, company, personal.
           - `[DeviceVersion <Int32?>]`: For internal use only.
           - `[DisplayName <String>]`: The display name for the device.
@@ -29510,8 +29578,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
           - `[EnrollmentType <String>]`: Enrollment type of the device.
-This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Intune sets this property.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
           - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -29587,8 +29656,8 @@ This operation is transitive.
 Supports $expand.
           - `[TrustType <String>]`: Type of trust for the joined device.
 Read-only.
-Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
+For more information, see Introduction to device management in Microsoft Entra ID.
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -30874,13 +30943,15 @@ Possible values are: Automatic, AutomaticExceptTables, Manual.
           - `[Comments <IMicrosoftGraphWorkbookComment- `[]`>]`: Represents a collection of comments in a workbook.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Content <String>]`: The content of comment.
-            - `[ContentType <String>]`: Indicates the type for the comment.
-            - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: 
+            - `[Content <String>]`: The content of the comment.
+            - `[ContentType <String>]`: The content type of the comment.
+            - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: The list of replies to the comment.
+Read-only.
+Nullable.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[Content <String>]`: The content of a comment reply.
-              - `[ContentType <String>]`: Indicates the type for the comment reply.
+              - `[Content <String>]`: The content of the reply.
+              - `[ContentType <String>]`: The content type for the reply.
           - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -30889,23 +30960,23 @@ Read-only.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Comment <String>]`: Represents the comment associated with this name.
+            - `[Comment <String>]`: The comment associated with this name.
             - `[Name <String>]`: The name of the object.
 Read-only.
             - `[Scope <String>]`: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
-            - `[Type <String>]`: Indicates what type of reference is associated with the name.
-The possible values are: String, Integer, Double, Boolean, Range.
+            - `[Type <String>]`: The type of reference is associated with the name.
+Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-            - `[Value <IAny>]`: Represents the formula that the name is defined to refer to.
-for example, =Sheet14!$B$2:$H$12, =4.75, etc.
+            - `[Value <IAny>]`: The formula that the name is defined to refer to.
+For example, =Sheet14!$B$2:$H$12 and =4.75.
 Read-only.
-            - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
+            - `[Visible <Boolean?>]`: Indicates whether the object is visible.
             - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: Returns collection of charts that are part of the worksheet.
+              - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: The list of charts that are part of the worksheet.
 Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -30925,19 +30996,21 @@ Read-only.
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                        - `[Bold <Boolean?>]`: Represents the bold status of font.
-                        - `[Color <String>]`: HTML color code representation of the text color.
-for example #FF0000 represents Red.
-                        - `[Italic <Boolean?>]`: Represents the italic status of the font.
-                        - `[Name <String>]`: Font name (for example 'Calibri')
-                        - `[Size <Double?>]`: Size of the font (for example 11)
-                        - `[Underline <String>]`: Type of underline applied to the font.
+                        - `[Bold <Boolean?>]`: Indicates whether the fond is bold.
+                        - `[Color <String>]`: The HTML color code representation of the text color.
+For example #FF0000 represents Red.
+                        - `[Italic <Boolean?>]`: Indicates whether the fond is italic.
+                        - `[Name <String>]`: The font name.
+For example 'Calibri'.
+                        - `[Size <Double?>]`: The size of the font.
+For example,  11.
+                        - `[Underline <String>]`: The type of underlining applied to the font.
 The possible values are: None, Single.
                       - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                        - `[Color <String>]`: HTML color code representing the color of lines in the chart.
+                        - `[Color <String>]`: The HTML color code that represents the color of lines in the chart.
                     - `[MajorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
                       - `[Id <String>]`: The unique identifier for an entity.
@@ -30947,7 +31020,7 @@ Read-only.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                         - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                      - `[Visible <Boolean?>]`: Boolean value representing if the axis gridlines are visible or not.
+                      - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
                     - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
 Can be set to a numeric value or an empty string. 
 The returned value is always a number.
@@ -30971,7 +31044,7 @@ Read-only.
 Read-only.
                         - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                       - `[Text <String>]`: Represents the axis title.
-                      - `[Visible <Boolean?>]`: A boolean that specifies the visibility of an axis title.
+                      - `[Visible <Boolean?>]`: A Boolean that specifies the visibility of an axis title.
                   - `[SeriesAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                   - `[ValueAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                 - `[DataLabels <IMicrosoftGraphWorkbookChartDataLabels>]`: workbookChartDataLabels
@@ -30989,13 +31062,13 @@ Read-only.
                     - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                   - `[Position <String>]`: DataLabelPosition value that represents the position of the data label.
 The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-                  - `[Separator <String>]`: String representing the separator used for the data labels on a chart.
-                  - `[ShowBubbleSize <Boolean?>]`: Boolean value representing if the data label bubble size is visible or not.
-                  - `[ShowCategoryName <Boolean?>]`: Boolean value representing if the data label category name is visible or not.
-                  - `[ShowLegendKey <Boolean?>]`: Boolean value representing if the data label legend key is visible or not.
-                  - `[ShowPercentage <Boolean?>]`: Boolean value representing if the data label percentage is visible or not.
-                  - `[ShowSeriesName <Boolean?>]`: Boolean value representing if the data label series name is visible or not.
-                  - `[ShowValue <Boolean?>]`: Boolean value representing if the data label value is visible or not.
+                  - `[Separator <String>]`: String that represents the separator used for the data labels on a chart.
+                  - `[ShowBubbleSize <Boolean?>]`: Boolean value that represents whether the data label bubble size is visible.
+                  - `[ShowCategoryName <Boolean?>]`: Boolean value that represents whether the data label category name is visible.
+                  - `[ShowLegendKey <Boolean?>]`: Boolean value that represents whether the data label legend key is visible.
+                  - `[ShowPercentage <Boolean?>]`: Boolean value that represents whether the data label percentage is visible.
+                  - `[ShowSeriesName <Boolean?>]`: Boolean value that represents whether the data label series name is visible.
+                  - `[ShowValue <Boolean?>]`: Boolean value that represents whether the data label value is visible.
                 - `[Format <IMicrosoftGraphWorkbookChartAreaFormat>]`: workbookChartAreaFormat
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
@@ -31014,10 +31087,10 @@ Read-only.
 Read-only.
                     - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                     - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                  - `[Overlay <Boolean?>]`: Boolean value for whether the chart legend should overlap with the main body of the chart.
+                  - `[Overlay <Boolean?>]`: Indicates whether the chart legend should overlap with the main body of the chart.
                   - `[Position <String>]`: Represents the position of the legend on the chart.
 The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-                  - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
+                  - `[Visible <Boolean?>]`: Indicates whether the chart legend is visible.
                 - `[Name <String>]`: Represents the name of a chart object.
                 - `[Series <IMicrosoftGraphWorkbookChartSeries- `[]`>]`: Represents either a single series or collection of series in the chart.
 Read-only.
@@ -31029,8 +31102,8 @@ Read-only.
 Read-only.
                     - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                     - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                  - `[Name <String>]`: Represents the name of a series in a chart.
-                  - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: Represents a collection of all points in the series.
+                  - `[Name <String>]`: The name of a series in a chart.
+                  - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: A collection of all points in the series.
 Read-only.
                     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -31039,7 +31112,7 @@ Read-only.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                       - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                    - `[Value <IAny>]`: Returns the value of a chart point.
+                    - `[Value <IAny>]`: The value of a chart point.
 Read-only.
                 - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -31051,19 +31124,19 @@ Read-only.
 Read-only.
                     - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                     - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                  - `[Overlay <Boolean?>]`: Boolean value representing if the chart title will overlay the chart or not.
-                  - `[Text <String>]`: Represents the title text of a chart.
-                  - `[Visible <Boolean?>]`: A boolean value that represents the visibility of a chart title object.
+                  - `[Overlay <Boolean?>]`: Indicates whether the chart title will overlay the chart or not.
+                  - `[Text <String>]`: The title text of the chart.
+                  - `[Visible <Boolean?>]`: Indicates whether the chart title is visible.
                 - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
                 - `[Width <Double?>]`: Represents the width, in points, of the chart object.
                 - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
               - `[Name <String>]`: The display name of the worksheet.
-              - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: Returns collection of names that are associated with the worksheet.
+              - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: The list of names that are associated with the worksheet.
 Read-only.
-              - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: Collection of PivotTables that are part of the worksheet.
+              - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: The list of piot tables that are part of the worksheet.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                - `[Name <String>]`: Name of the PivotTable.
+                - `[Name <String>]`: The name of the pivot table.
                 - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
               - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
               - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
@@ -31083,13 +31156,13 @@ Read-only.
                   - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
                   - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
                   - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
-                - `[Protected <Boolean?>]`: Indicates if the worksheet is protected. 
+                - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
-              - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: Collection of tables that are part of the worksheet.
+              - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
 Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: Represents a collection of all the columns in the table.
+                - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: The list of all the columns in the table.
 Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -31106,35 +31179,35 @@ Read-only.
                       - `[FilterOn <String>]`: Indicates whether a filter is applied to a column.
                       - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                        - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                        - `[Set <String>]`: Represents the set that the icon is part of.
+                        - `[Index <Int32?>]`: The index of the icon in the given set.
+                        - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                       - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
                       - `[Values <IAny>]`: The values that appear in the cell.
-                  - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table.
+                  - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
-                  - `[Name <String>]`: Returns the name of the table column.
-                  - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
+                  - `[Name <String>]`: The name of the table column.
+                  - `[Values <IAny>]`: TRepresents the raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
 Cell that contain an error will return the error string.
                 - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                 - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
-                - `[LegacyId <String>]`: Legacy ID used in older Excel clients.
+                - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
 The value of the identifier remains the same even when the table is renamed.
 This property should be interpreted as an opaque string value and shouldn't be parsed to any other type.
 Read-only.
-                - `[Name <String>]`: Name of the table.
-                - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: Represents a collection of all the rows in the table.
+                - `[Name <String>]`: The name of the table.
+                - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: The list of all the rows in the table.
 Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Index <Int32?>]`: Returns the index number of the row within the rows collection of the table.
-Zero-indexed.
+                  - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
+Zero-based.
 Read-only.
-                  - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contain an error will return the error string.
+                  - `[Values <IAny>]`: The raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
+Any cell that contain an error will return the error string.
                 - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                 - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                 - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -31147,7 +31220,7 @@ This value can be set to show or remove the total row.
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: Represents the current conditions used to last sort the table.
+                  - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: The list of the current conditions last used to sort the table.
 Read-only.
                     - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
                     - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
@@ -31158,16 +31231,16 @@ The possible values are: Normal, TextAsNumber.
 Represented as an offset from the first column (or row).
                     - `[SortOn <String>]`: Represents the type of sorting of this condition.
 The possible values are: Value, CellColor, FontColor, Icon.
-                  - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table.
+                  - `[MatchCase <Boolean?>]`: Indicates whether the casing impacted the last sort of the table.
 Read-only.
-                  - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table.
+                  - `[Method <String>]`: The Chinese character ordering method last used to sort the table.
 The possible values are: PinYin, StrokeCount.
 Read-only.
-                - `[Style <String>]`: Constant value that represents the Table style.
-The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+                - `[Style <String>]`: A constant value that represents the Table style.
+Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
                 - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
-              - `[Visibility <String>]`: The Visibility of the worksheet.
+              - `[Visibility <String>]`: The visibility of the worksheet.
 The possible values are: Visible, Hidden, VeryHidden.
           - `[Operations <IMicrosoftGraphWorkbookOperation- `[]`>]`: The status of workbook operations.
 Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response.
@@ -32132,7 +32205,7 @@ You can use it as a $filter argument to get groups that have members with licens
 See an example.
 Supports $filter (eq).
         - `[HideFromAddressLists <Boolean?>]`: True if the group isn't displayed in certain parts of the Outlook UI: the Address Book, address lists for selecting message recipients, and the Browse Groups dialog for searching groups; otherwise, false.
-Default value is false.
+The default value is false.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
         - `[HideFromOutlookClients <Boolean?>]`: True if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false.
@@ -32191,14 +32264,18 @@ Supports $filter (eq, ne, not, ge, le, startsWith).
 Possible values are On or Paused.
 Returned by default.
 Supports $filter (eq, ne, not, in).
-        - `[OnPremisesDomainName <String>]`: 
+        - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-        - `[OnPremisesNetBiosName <String>]`: 
+        - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError- `[]`>]`: Errors when using Microsoft synchronization product during provisioning.
 Returned by default.
 Supports $filter (eq, not).
@@ -34254,7 +34331,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
       - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
       - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -34322,12 +34401,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
           - `[DeviceCategory <String>]`: User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
           - `[DeviceId <String>]`: Unique identifier set by Azure Device Registration Service at the time of registration.
-This is an alternate key that can be used to reference the device object.
+This alternate key can be used to reference the device object.
 Supports $filter (eq, ne, not, startsWith).
           - `[DeviceMetadata <String>]`: For internal use only.
 Set to null.
           - `[DeviceOwnership <String>]`: Ownership of the device.
-This property is set by Intune.
+Intune sets this property.
 Possible values are: unknown, company, personal.
           - `[DeviceVersion <Int32?>]`: For internal use only.
           - `[DisplayName <String>]`: The display name for the device.
@@ -34337,8 +34416,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
           - `[EnrollmentType <String>]`: Enrollment type of the device.
-This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Intune sets this property.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
           - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -34414,8 +34494,8 @@ This operation is transitive.
 Supports $expand.
           - `[TrustType <String>]`: Type of trust for the joined device.
 Read-only.
-Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
+For more information, see Introduction to device management in Microsoft Entra ID.
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -36406,7 +36486,7 @@ You can use it as a $filter argument to get groups that have members with licens
 See an example.
 Supports $filter (eq).
         - `[HideFromAddressLists <Boolean?>]`: True if the group isn't displayed in certain parts of the Outlook UI: the Address Book, address lists for selecting message recipients, and the Browse Groups dialog for searching groups; otherwise, false.
-Default value is false.
+The default value is false.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
         - `[HideFromOutlookClients <Boolean?>]`: True if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false.
@@ -36465,14 +36545,18 @@ Supports $filter (eq, ne, not, ge, le, startsWith).
 Possible values are On or Paused.
 Returned by default.
 Supports $filter (eq, ne, not, in).
-        - `[OnPremisesDomainName <String>]`: 
+        - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-        - `[OnPremisesNetBiosName <String>]`: 
+        - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError- `[]`>]`: Errors when using Microsoft synchronization product during provisioning.
 Returned by default.
 Supports $filter (eq, not).
@@ -38548,13 +38632,15 @@ Possible values are: Automatic, AutomaticExceptTables, Manual.
     - `[Comments <IMicrosoftGraphWorkbookComment- `[]`>]`: Represents a collection of comments in a workbook.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Content <String>]`: The content of comment.
-      - `[ContentType <String>]`: Indicates the type for the comment.
-      - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: 
+      - `[Content <String>]`: The content of the comment.
+      - `[ContentType <String>]`: The content type of the comment.
+      - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: The list of replies to the comment.
+Read-only.
+Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[Content <String>]`: The content of a comment reply.
-        - `[ContentType <String>]`: Indicates the type for the comment reply.
+        - `[Content <String>]`: The content of the reply.
+        - `[ContentType <String>]`: The content type for the reply.
     - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -38563,23 +38649,23 @@ Read-only.
 Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Comment <String>]`: Represents the comment associated with this name.
+      - `[Comment <String>]`: The comment associated with this name.
       - `[Name <String>]`: The name of the object.
 Read-only.
       - `[Scope <String>]`: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
-      - `[Type <String>]`: Indicates what type of reference is associated with the name.
-The possible values are: String, Integer, Double, Boolean, Range.
+      - `[Type <String>]`: The type of reference is associated with the name.
+Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-      - `[Value <IAny>]`: Represents the formula that the name is defined to refer to.
-for example, =Sheet14!$B$2:$H$12, =4.75, etc.
+      - `[Value <IAny>]`: The formula that the name is defined to refer to.
+For example, =Sheet14!$B$2:$H$12 and =4.75.
 Read-only.
-      - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
+      - `[Visible <Boolean?>]`: Indicates whether the object is visible.
       - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: Returns collection of charts that are part of the worksheet.
+        - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: The list of charts that are part of the worksheet.
 Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -38599,19 +38685,21 @@ Read-only.
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Bold <Boolean?>]`: Represents the bold status of font.
-                  - `[Color <String>]`: HTML color code representation of the text color.
-for example #FF0000 represents Red.
-                  - `[Italic <Boolean?>]`: Represents the italic status of the font.
-                  - `[Name <String>]`: Font name (for example 'Calibri')
-                  - `[Size <Double?>]`: Size of the font (for example 11)
-                  - `[Underline <String>]`: Type of underline applied to the font.
+                  - `[Bold <Boolean?>]`: Indicates whether the fond is bold.
+                  - `[Color <String>]`: The HTML color code representation of the text color.
+For example #FF0000 represents Red.
+                  - `[Italic <Boolean?>]`: Indicates whether the fond is italic.
+                  - `[Name <String>]`: The font name.
+For example 'Calibri'.
+                  - `[Size <Double?>]`: The size of the font.
+For example,  11.
+                  - `[Underline <String>]`: The type of underlining applied to the font.
 The possible values are: None, Single.
                 - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Color <String>]`: HTML color code representing the color of lines in the chart.
+                  - `[Color <String>]`: The HTML color code that represents the color of lines in the chart.
               - `[MajorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique identifier for an entity.
@@ -38621,7 +38709,7 @@ Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                   - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                - `[Visible <Boolean?>]`: Boolean value representing if the axis gridlines are visible or not.
+                - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
               - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
 Can be set to a numeric value or an empty string. 
 The returned value is always a number.
@@ -38645,7 +38733,7 @@ Read-only.
 Read-only.
                   - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                 - `[Text <String>]`: Represents the axis title.
-                - `[Visible <Boolean?>]`: A boolean that specifies the visibility of an axis title.
+                - `[Visible <Boolean?>]`: A Boolean that specifies the visibility of an axis title.
             - `[SeriesAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
             - `[ValueAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
           - `[DataLabels <IMicrosoftGraphWorkbookChartDataLabels>]`: workbookChartDataLabels
@@ -38663,13 +38751,13 @@ Read-only.
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
             - `[Position <String>]`: DataLabelPosition value that represents the position of the data label.
 The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-            - `[Separator <String>]`: String representing the separator used for the data labels on a chart.
-            - `[ShowBubbleSize <Boolean?>]`: Boolean value representing if the data label bubble size is visible or not.
-            - `[ShowCategoryName <Boolean?>]`: Boolean value representing if the data label category name is visible or not.
-            - `[ShowLegendKey <Boolean?>]`: Boolean value representing if the data label legend key is visible or not.
-            - `[ShowPercentage <Boolean?>]`: Boolean value representing if the data label percentage is visible or not.
-            - `[ShowSeriesName <Boolean?>]`: Boolean value representing if the data label series name is visible or not.
-            - `[ShowValue <Boolean?>]`: Boolean value representing if the data label value is visible or not.
+            - `[Separator <String>]`: String that represents the separator used for the data labels on a chart.
+            - `[ShowBubbleSize <Boolean?>]`: Boolean value that represents whether the data label bubble size is visible.
+            - `[ShowCategoryName <Boolean?>]`: Boolean value that represents whether the data label category name is visible.
+            - `[ShowLegendKey <Boolean?>]`: Boolean value that represents whether the data label legend key is visible.
+            - `[ShowPercentage <Boolean?>]`: Boolean value that represents whether the data label percentage is visible.
+            - `[ShowSeriesName <Boolean?>]`: Boolean value that represents whether the data label series name is visible.
+            - `[ShowValue <Boolean?>]`: Boolean value that represents whether the data label value is visible.
           - `[Format <IMicrosoftGraphWorkbookChartAreaFormat>]`: workbookChartAreaFormat
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -38688,10 +38776,10 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-            - `[Overlay <Boolean?>]`: Boolean value for whether the chart legend should overlap with the main body of the chart.
+            - `[Overlay <Boolean?>]`: Indicates whether the chart legend should overlap with the main body of the chart.
             - `[Position <String>]`: Represents the position of the legend on the chart.
 The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-            - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
+            - `[Visible <Boolean?>]`: Indicates whether the chart legend is visible.
           - `[Name <String>]`: Represents the name of a chart object.
           - `[Series <IMicrosoftGraphWorkbookChartSeries- `[]`>]`: Represents either a single series or collection of series in the chart.
 Read-only.
@@ -38703,8 +38791,8 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-            - `[Name <String>]`: Represents the name of a series in a chart.
-            - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: Represents a collection of all points in the series.
+            - `[Name <String>]`: The name of a series in a chart.
+            - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: A collection of all points in the series.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -38713,7 +38801,7 @@ Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                 - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-              - `[Value <IAny>]`: Returns the value of a chart point.
+              - `[Value <IAny>]`: The value of a chart point.
 Read-only.
           - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -38725,19 +38813,19 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-            - `[Overlay <Boolean?>]`: Boolean value representing if the chart title will overlay the chart or not.
-            - `[Text <String>]`: Represents the title text of a chart.
-            - `[Visible <Boolean?>]`: A boolean value that represents the visibility of a chart title object.
+            - `[Overlay <Boolean?>]`: Indicates whether the chart title will overlay the chart or not.
+            - `[Text <String>]`: The title text of the chart.
+            - `[Visible <Boolean?>]`: Indicates whether the chart title is visible.
           - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
           - `[Width <Double?>]`: Represents the width, in points, of the chart object.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[Name <String>]`: The display name of the worksheet.
-        - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: Returns collection of names that are associated with the worksheet.
+        - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: The list of names that are associated with the worksheet.
 Read-only.
-        - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: Collection of PivotTables that are part of the worksheet.
+        - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: The list of piot tables that are part of the worksheet.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Name <String>]`: Name of the PivotTable.
+          - `[Name <String>]`: The name of the pivot table.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
         - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
@@ -38757,13 +38845,13 @@ Read-only.
             - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
             - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
             - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
-          - `[Protected <Boolean?>]`: Indicates if the worksheet is protected. 
+          - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
-        - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: Collection of tables that are part of the worksheet.
+        - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
 Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: Represents a collection of all the columns in the table.
+          - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: The list of all the columns in the table.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -38780,35 +38868,35 @@ Read-only.
                 - `[FilterOn <String>]`: Indicates whether a filter is applied to a column.
                 - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                  - `[Set <String>]`: Represents the set that the icon is part of.
+                  - `[Index <Int32?>]`: The index of the icon in the given set.
+                  - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                 - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
                 - `[Values <IAny>]`: The values that appear in the cell.
-            - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table.
+            - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
-            - `[Name <String>]`: Returns the name of the table column.
-            - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
+            - `[Name <String>]`: The name of the table column.
+            - `[Values <IAny>]`: TRepresents the raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
 Cell that contain an error will return the error string.
           - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
           - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
-          - `[LegacyId <String>]`: Legacy ID used in older Excel clients.
+          - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
 The value of the identifier remains the same even when the table is renamed.
 This property should be interpreted as an opaque string value and shouldn't be parsed to any other type.
 Read-only.
-          - `[Name <String>]`: Name of the table.
-          - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: Represents a collection of all the rows in the table.
+          - `[Name <String>]`: The name of the table.
+          - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: The list of all the rows in the table.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Index <Int32?>]`: Returns the index number of the row within the rows collection of the table.
-Zero-indexed.
+            - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
+Zero-based.
 Read-only.
-            - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contain an error will return the error string.
+            - `[Values <IAny>]`: The raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
+Any cell that contain an error will return the error string.
           - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
           - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
           - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -38821,7 +38909,7 @@ This value can be set to show or remove the total row.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: Represents the current conditions used to last sort the table.
+            - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: The list of the current conditions last used to sort the table.
 Read-only.
               - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
               - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
@@ -38832,16 +38920,16 @@ The possible values are: Normal, TextAsNumber.
 Represented as an offset from the first column (or row).
               - `[SortOn <String>]`: Represents the type of sorting of this condition.
 The possible values are: Value, CellColor, FontColor, Icon.
-            - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table.
+            - `[MatchCase <Boolean?>]`: Indicates whether the casing impacted the last sort of the table.
 Read-only.
-            - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table.
+            - `[Method <String>]`: The Chinese character ordering method last used to sort the table.
 The possible values are: PinYin, StrokeCount.
 Read-only.
-          - `[Style <String>]`: Constant value that represents the Table style.
-The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+          - `[Style <String>]`: A constant value that represents the Table style.
+Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
-        - `[Visibility <String>]`: The Visibility of the worksheet.
+        - `[Visibility <String>]`: The visibility of the worksheet.
 The possible values are: Visible, Hidden, VeryHidden.
     - `[Operations <IMicrosoftGraphWorkbookOperation- `[]`>]`: The status of workbook operations.
 Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response.
@@ -39035,7 +39123,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
       - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
       - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -39103,12 +39193,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
           - `[DeviceCategory <String>]`: User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
           - `[DeviceId <String>]`: Unique identifier set by Azure Device Registration Service at the time of registration.
-This is an alternate key that can be used to reference the device object.
+This alternate key can be used to reference the device object.
 Supports $filter (eq, ne, not, startsWith).
           - `[DeviceMetadata <String>]`: For internal use only.
 Set to null.
           - `[DeviceOwnership <String>]`: Ownership of the device.
-This property is set by Intune.
+Intune sets this property.
 Possible values are: unknown, company, personal.
           - `[DeviceVersion <Int32?>]`: For internal use only.
           - `[DisplayName <String>]`: The display name for the device.
@@ -39118,8 +39208,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
           - `[EnrollmentType <String>]`: Enrollment type of the device.
-This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Intune sets this property.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
           - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -39195,8 +39286,8 @@ This operation is transitive.
 Supports $expand.
           - `[TrustType <String>]`: Type of trust for the joined device.
 Read-only.
-Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
+For more information, see Introduction to device management in Microsoft Entra ID.
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
@@ -41187,7 +41278,7 @@ You can use it as a $filter argument to get groups that have members with licens
 See an example.
 Supports $filter (eq).
         - `[HideFromAddressLists <Boolean?>]`: True if the group isn't displayed in certain parts of the Outlook UI: the Address Book, address lists for selecting message recipients, and the Browse Groups dialog for searching groups; otherwise, false.
-Default value is false.
+The default value is false.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
         - `[HideFromOutlookClients <Boolean?>]`: True if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false.
@@ -41246,14 +41337,18 @@ Supports $filter (eq, ne, not, ge, le, startsWith).
 Possible values are On or Paused.
 Returned by default.
 Supports $filter (eq, ne, not, in).
-        - `[OnPremisesDomainName <String>]`: 
+        - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on January 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-        - `[OnPremisesNetBiosName <String>]`: 
+        - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory.
+The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
+Read-only.
         - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError- `[]`>]`: Errors when using Microsoft synchronization product during provisioning.
 Returned by default.
 Supports $filter (eq, not).
@@ -43329,13 +43424,15 @@ Possible values are: Automatic, AutomaticExceptTables, Manual.
     - `[Comments <IMicrosoftGraphWorkbookComment- `[]`>]`: Represents a collection of comments in a workbook.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Content <String>]`: The content of comment.
-      - `[ContentType <String>]`: Indicates the type for the comment.
-      - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: 
+      - `[Content <String>]`: The content of the comment.
+      - `[ContentType <String>]`: The content type of the comment.
+      - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: The list of replies to the comment.
+Read-only.
+Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[Content <String>]`: The content of a comment reply.
-        - `[ContentType <String>]`: Indicates the type for the comment reply.
+        - `[Content <String>]`: The content of the reply.
+        - `[ContentType <String>]`: The content type for the reply.
     - `[Functions <IMicrosoftGraphWorkbookFunctions>]`: workbookFunctions
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -43344,23 +43441,23 @@ Read-only.
 Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Comment <String>]`: Represents the comment associated with this name.
+      - `[Comment <String>]`: The comment associated with this name.
       - `[Name <String>]`: The name of the object.
 Read-only.
       - `[Scope <String>]`: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
-      - `[Type <String>]`: Indicates what type of reference is associated with the name.
-The possible values are: String, Integer, Double, Boolean, Range.
+      - `[Type <String>]`: The type of reference is associated with the name.
+Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-      - `[Value <IAny>]`: Represents the formula that the name is defined to refer to.
-for example, =Sheet14!$B$2:$H$12, =4.75, etc.
+      - `[Value <IAny>]`: The formula that the name is defined to refer to.
+For example, =Sheet14!$B$2:$H$12 and =4.75.
 Read-only.
-      - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
+      - `[Visible <Boolean?>]`: Indicates whether the object is visible.
       - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: Returns collection of charts that are part of the worksheet.
+        - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: The list of charts that are part of the worksheet.
 Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -43380,19 +43477,21 @@ Read-only.
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Bold <Boolean?>]`: Represents the bold status of font.
-                  - `[Color <String>]`: HTML color code representation of the text color.
-for example #FF0000 represents Red.
-                  - `[Italic <Boolean?>]`: Represents the italic status of the font.
-                  - `[Name <String>]`: Font name (for example 'Calibri')
-                  - `[Size <Double?>]`: Size of the font (for example 11)
-                  - `[Underline <String>]`: Type of underline applied to the font.
+                  - `[Bold <Boolean?>]`: Indicates whether the fond is bold.
+                  - `[Color <String>]`: The HTML color code representation of the text color.
+For example #FF0000 represents Red.
+                  - `[Italic <Boolean?>]`: Indicates whether the fond is italic.
+                  - `[Name <String>]`: The font name.
+For example 'Calibri'.
+                  - `[Size <Double?>]`: The size of the font.
+For example,  11.
+                  - `[Underline <String>]`: The type of underlining applied to the font.
 The possible values are: None, Single.
                 - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Color <String>]`: HTML color code representing the color of lines in the chart.
+                  - `[Color <String>]`: The HTML color code that represents the color of lines in the chart.
               - `[MajorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique identifier for an entity.
@@ -43402,7 +43501,7 @@ Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                   - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                - `[Visible <Boolean?>]`: Boolean value representing if the axis gridlines are visible or not.
+                - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
               - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
 Can be set to a numeric value or an empty string. 
 The returned value is always a number.
@@ -43426,7 +43525,7 @@ Read-only.
 Read-only.
                   - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                 - `[Text <String>]`: Represents the axis title.
-                - `[Visible <Boolean?>]`: A boolean that specifies the visibility of an axis title.
+                - `[Visible <Boolean?>]`: A Boolean that specifies the visibility of an axis title.
             - `[SeriesAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
             - `[ValueAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
           - `[DataLabels <IMicrosoftGraphWorkbookChartDataLabels>]`: workbookChartDataLabels
@@ -43444,13 +43543,13 @@ Read-only.
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
             - `[Position <String>]`: DataLabelPosition value that represents the position of the data label.
 The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-            - `[Separator <String>]`: String representing the separator used for the data labels on a chart.
-            - `[ShowBubbleSize <Boolean?>]`: Boolean value representing if the data label bubble size is visible or not.
-            - `[ShowCategoryName <Boolean?>]`: Boolean value representing if the data label category name is visible or not.
-            - `[ShowLegendKey <Boolean?>]`: Boolean value representing if the data label legend key is visible or not.
-            - `[ShowPercentage <Boolean?>]`: Boolean value representing if the data label percentage is visible or not.
-            - `[ShowSeriesName <Boolean?>]`: Boolean value representing if the data label series name is visible or not.
-            - `[ShowValue <Boolean?>]`: Boolean value representing if the data label value is visible or not.
+            - `[Separator <String>]`: String that represents the separator used for the data labels on a chart.
+            - `[ShowBubbleSize <Boolean?>]`: Boolean value that represents whether the data label bubble size is visible.
+            - `[ShowCategoryName <Boolean?>]`: Boolean value that represents whether the data label category name is visible.
+            - `[ShowLegendKey <Boolean?>]`: Boolean value that represents whether the data label legend key is visible.
+            - `[ShowPercentage <Boolean?>]`: Boolean value that represents whether the data label percentage is visible.
+            - `[ShowSeriesName <Boolean?>]`: Boolean value that represents whether the data label series name is visible.
+            - `[ShowValue <Boolean?>]`: Boolean value that represents whether the data label value is visible.
           - `[Format <IMicrosoftGraphWorkbookChartAreaFormat>]`: workbookChartAreaFormat
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -43469,10 +43568,10 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-            - `[Overlay <Boolean?>]`: Boolean value for whether the chart legend should overlap with the main body of the chart.
+            - `[Overlay <Boolean?>]`: Indicates whether the chart legend should overlap with the main body of the chart.
             - `[Position <String>]`: Represents the position of the legend on the chart.
 The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-            - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
+            - `[Visible <Boolean?>]`: Indicates whether the chart legend is visible.
           - `[Name <String>]`: Represents the name of a chart object.
           - `[Series <IMicrosoftGraphWorkbookChartSeries- `[]`>]`: Represents either a single series or collection of series in the chart.
 Read-only.
@@ -43484,8 +43583,8 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-            - `[Name <String>]`: Represents the name of a series in a chart.
-            - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: Represents a collection of all points in the series.
+            - `[Name <String>]`: The name of a series in a chart.
+            - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: A collection of all points in the series.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -43494,7 +43593,7 @@ Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                 - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-              - `[Value <IAny>]`: Returns the value of a chart point.
+              - `[Value <IAny>]`: The value of a chart point.
 Read-only.
           - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -43506,19 +43605,19 @@ Read-only.
 Read-only.
               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-            - `[Overlay <Boolean?>]`: Boolean value representing if the chart title will overlay the chart or not.
-            - `[Text <String>]`: Represents the title text of a chart.
-            - `[Visible <Boolean?>]`: A boolean value that represents the visibility of a chart title object.
+            - `[Overlay <Boolean?>]`: Indicates whether the chart title will overlay the chart or not.
+            - `[Text <String>]`: The title text of the chart.
+            - `[Visible <Boolean?>]`: Indicates whether the chart title is visible.
           - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
           - `[Width <Double?>]`: Represents the width, in points, of the chart object.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[Name <String>]`: The display name of the worksheet.
-        - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: Returns collection of names that are associated with the worksheet.
+        - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: The list of names that are associated with the worksheet.
 Read-only.
-        - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: Collection of PivotTables that are part of the worksheet.
+        - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: The list of piot tables that are part of the worksheet.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Name <String>]`: Name of the PivotTable.
+          - `[Name <String>]`: The name of the pivot table.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
         - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
         - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
@@ -43538,13 +43637,13 @@ Read-only.
             - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
             - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
             - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
-          - `[Protected <Boolean?>]`: Indicates if the worksheet is protected. 
+          - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
-        - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: Collection of tables that are part of the worksheet.
+        - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
 Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: Represents a collection of all the columns in the table.
+          - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: The list of all the columns in the table.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -43561,35 +43660,35 @@ Read-only.
                 - `[FilterOn <String>]`: Indicates whether a filter is applied to a column.
                 - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                  - `[Set <String>]`: Represents the set that the icon is part of.
+                  - `[Index <Int32?>]`: The index of the icon in the given set.
+                  - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                 - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
                 - `[Values <IAny>]`: The values that appear in the cell.
-            - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table.
+            - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
-            - `[Name <String>]`: Returns the name of the table column.
-            - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
+            - `[Name <String>]`: The name of the table column.
+            - `[Values <IAny>]`: TRepresents the raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
 Cell that contain an error will return the error string.
           - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
           - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
-          - `[LegacyId <String>]`: Legacy ID used in older Excel clients.
+          - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
 The value of the identifier remains the same even when the table is renamed.
 This property should be interpreted as an opaque string value and shouldn't be parsed to any other type.
 Read-only.
-          - `[Name <String>]`: Name of the table.
-          - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: Represents a collection of all the rows in the table.
+          - `[Name <String>]`: The name of the table.
+          - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: The list of all the rows in the table.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Index <Int32?>]`: Returns the index number of the row within the rows collection of the table.
-Zero-indexed.
+            - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
+Zero-based.
 Read-only.
-            - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contain an error will return the error string.
+            - `[Values <IAny>]`: The raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
+Any cell that contain an error will return the error string.
           - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
           - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
           - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -43602,7 +43701,7 @@ This value can be set to show or remove the total row.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: Represents the current conditions used to last sort the table.
+            - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: The list of the current conditions last used to sort the table.
 Read-only.
               - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
               - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
@@ -43613,16 +43712,16 @@ The possible values are: Normal, TextAsNumber.
 Represented as an offset from the first column (or row).
               - `[SortOn <String>]`: Represents the type of sorting of this condition.
 The possible values are: Value, CellColor, FontColor, Icon.
-            - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table.
+            - `[MatchCase <Boolean?>]`: Indicates whether the casing impacted the last sort of the table.
 Read-only.
-            - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table.
+            - `[Method <String>]`: The Chinese character ordering method last used to sort the table.
 The possible values are: PinYin, StrokeCount.
 Read-only.
-          - `[Style <String>]`: Constant value that represents the Table style.
-The possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
+          - `[Style <String>]`: A constant value that represents the Table style.
+Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
-        - `[Visibility <String>]`: The Visibility of the worksheet.
+        - `[Visibility <String>]`: The visibility of the worksheet.
 The possible values are: Visible, Hidden, VeryHidden.
     - `[Operations <IMicrosoftGraphWorkbookOperation- `[]`>]`: The status of workbook operations.
 Getting an operation collection is not supported, but you can get the status of a long-running operation if the Location header is returned in the response.

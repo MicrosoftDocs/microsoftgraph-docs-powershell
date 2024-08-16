@@ -36,6 +36,9 @@ New-MgBetaIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditi
 ## DESCRIPTION
 Create a new conditionalAccessPolicy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccessroot-post-policies-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Require MFA to access Exchange Online outside of trusted locations
 

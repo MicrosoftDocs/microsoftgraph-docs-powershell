@@ -22,9 +22,9 @@ If a user is enabled by policy to use SMS to sign in and the mobile number is ch
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserAuthenticationPhoneMethod -PhoneAuthenticationMethodId <String> -UserId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-PhoneNumber <String>]
- [-PhoneType <String>] [-SmsSignInState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-Id <String>] [-PhoneNumber <String>] [-PhoneType <String>] [-SmsSignInState <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -37,9 +37,9 @@ Update-MgBetaUserAuthenticationPhoneMethod -PhoneAuthenticationMethodId <String>
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-PhoneNumber <String>]
- [-PhoneType <String>] [-SmsSignInState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-Id <String>] [-PhoneNumber <String>] [-PhoneType <String>] [-SmsSignInState <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -106,6 +106,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CreatedDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -314,6 +329,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphPhoneAuthenticationMethod>`: phoneAuthenticationMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CreatedDateTime <DateTime?>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[PhoneNumber <String>]`: The phone number to text or call for authentication.

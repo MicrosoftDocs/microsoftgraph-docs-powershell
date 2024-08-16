@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationtemplate
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgServicePrincipalSynchronizationTemplate
@@ -39,6 +40,9 @@ Get-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentit
 
 ## DESCRIPTION
 Preconfigured synchronization settings for a particular application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-list-templates-permissions.md)]
 
 ## PARAMETERS
 
@@ -329,6 +333,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationtemplate)
+
+[https://learn.microsoft.com/graph/api/synchronization-synchronization-list-templates?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-templates?view=graph-rest-1.0)
 
 
 

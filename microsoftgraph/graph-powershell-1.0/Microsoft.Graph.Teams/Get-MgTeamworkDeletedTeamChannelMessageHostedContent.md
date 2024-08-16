@@ -27,9 +27,8 @@ Get-MgTeamworkDeletedTeamChannelMessageHostedContent -ChannelId <String> -ChatMe
 ### Get1
 ```
 Get-MgTeamworkDeletedTeamChannelMessageHostedContent -ChannelId <String> -ChatMessageHostedContentId <String>
- -ChatMessageId <String> -DeletedTeamId <String> [-Format <String>] [-ResponseHeadersVariable <String>]
- -OutFile <String> [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ -ChatMessageId <String> -DeletedTeamId <String> [-ResponseHeadersVariable <String>] -OutFile <String>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### Get
@@ -42,7 +41,7 @@ Get-MgTeamworkDeletedTeamChannelMessageHostedContent -ChannelId <String> -ChatMe
 
 ### GetViaIdentity1
 ```
-Get-MgTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> [-Format <String>]
+Get-MgTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] -OutFile <String> [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
@@ -171,21 +170,6 @@ Filter items by property values
 ```yaml
 Type: String
 Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
 Required: False

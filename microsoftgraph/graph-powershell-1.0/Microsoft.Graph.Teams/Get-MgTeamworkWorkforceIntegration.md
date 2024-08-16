@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegration
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgTeamworkWorkforceIntegration
 
 ## SYNOPSIS
-Get workforceIntegrations from teamwork
+Retrieve the properties and relationships of a workforceIntegration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
@@ -38,7 +40,13 @@ Get-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get workforceIntegrations from teamwork
+Retrieve the properties and relationships of a workforceIntegration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -336,6 +344,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegration)
+
+[https://learn.microsoft.com/graph/api/workforceintegration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workforceintegration-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/workforceintegration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workforceintegration-list?view=graph-rest-1.0)
 
 
 

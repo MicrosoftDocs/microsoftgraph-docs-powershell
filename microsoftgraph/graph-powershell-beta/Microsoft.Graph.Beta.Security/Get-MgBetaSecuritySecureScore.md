@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysecurescore
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgBetaSecuritySecureScore
@@ -39,6 +40,9 @@ Get-MgBetaSecuritySecureScore -InputObject <ISecurityIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Measurements of tenants' security posture to help protect them from threats.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-list-securescores-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

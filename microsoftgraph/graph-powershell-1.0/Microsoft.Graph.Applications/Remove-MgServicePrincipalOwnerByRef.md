@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalOwnerByRef
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgServicePrincipalOwnerByRef
 
 ## SYNOPSIS
-Delete ref of navigation property owners for servicePrincipals
+Remove an owner from a servicePrincipal object.
+As a recommended best practice, service principals should have at least two owners.
 
 ## SYNTAX
 
@@ -27,7 +29,11 @@ Remove-MgServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> [-IfMat
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property owners for servicePrincipals
+Remove an owner from a servicePrincipal object.
+As a recommended best practice, service principals should have at least two owners.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-owners-permissions.md)]
 
 ## PARAMETERS
 
@@ -228,6 +234,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalOwnerByRef)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-delete-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-delete-owners?view=graph-rest-1.0)
 
 
 

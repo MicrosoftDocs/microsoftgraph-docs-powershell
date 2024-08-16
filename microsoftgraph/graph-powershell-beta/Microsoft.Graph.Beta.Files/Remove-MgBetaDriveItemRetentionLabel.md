@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemretentionlabel
 schema: 2.0.0
+ms.subservice: onedrive
 ---
 
 # Remove-MgBetaDriveItemRetentionLabel
@@ -33,6 +34,19 @@ Remove-MgBetaDriveItemRetentionLabel -InputObject <IFilesIdentity> [-IfMatch <St
 ## DESCRIPTION
 Remove a retention label from a driveItem.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Files
+
+Remove-MgBetaDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Remove-MgBetaDriveItemRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 
@@ -235,7 +249,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemretentionlabel)
 
 [https://learn.microsoft.com/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta)
-
 
 
 

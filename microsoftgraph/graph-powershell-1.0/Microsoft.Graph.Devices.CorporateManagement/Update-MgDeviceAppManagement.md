@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement
 schema: 2.0.0
-ms.subservice: intune
 ---
 
 # Update-MgDeviceAppManagement
@@ -57,6 +56,10 @@ Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceAppManagement"
+	microsoftStoreForBusinessLastSuccessfulSyncDateTime = [System.DateTime]::Parse("2016-12-31T23:57:45.2453148-08:00")
+	isEnabledForMicrosoftStoreForBusiness = $true
+	microsoftStoreForBusinessLanguage = "Microsoft Store For Business Language value"
+	microsoftStoreForBusinessLastCompletedApplicationSyncTime = [System.DateTime]::Parse("2017-01-01T00:02:00.0421137-08:00")
 }
 
 Update-MgDeviceAppManagement -BodyParameter $params

@@ -889,7 +889,7 @@ Read-only.
             - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
           - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
-          - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
+          - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
               - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
@@ -899,6 +899,7 @@ This property is required when restrictionType is set to keyLifetime.
               - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
               - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+              - `[State <String>]`: appManagementRestrictionState
             - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
               - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -906,6 +907,7 @@ This property is required when restrictionType is set to passwordLifetime.
               - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
               - `[RestrictionType <String>]`: appCredentialRestrictionType
+              - `[State <String>]`: appManagementRestrictionState
         - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -1333,8 +1335,8 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
-The value is represented in ISO 8601 format for durations.
-For example, PT1M represents a period of 1 month.
+The value is represented in ISO 8601  format for durations.
+For example, P1M represents a period of one month and PT1M represents a period of one minute.
               - `[State <String>]`: synchronizationScheduleState
             - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1621,7 +1623,9 @@ Use the licenseAssignmentStates property to identify the directly assigned and i
 Not nullable.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
         - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
         - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
       - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.Supports $filter (eq and not).
@@ -1638,28 +1642,37 @@ For a complete list of GUIDs and their equivalent friendly service names, see Pr
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[EmailMethods <IMicrosoftGraphEmailAuthenticationMethod- `[]`>]`: Represents the email addresses registered to a user for authentication.
+          - `[CreatedDateTime <DateTime?>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[EmailAddress <String>]`: The email address registered to this user.
         - `[Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod- `[]`>]`: Represents the FIDO2 security keys registered to a user for authentication.
+          - `[CreatedDateTime <DateTime?>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (e.g.
-make and model) of the authenticator.
-          - `[AttestationCertificates <String- `[]`>]`: The attestation certificate(s) attached to this security key.
+          - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
+          - `[AttestationCertificates <String- `[]`>]`: The attestation certificate or certificates attached to this security key.
           - `[AttestationLevel <String>]`: attestationLevel
-          - `[CreatedDateTime <DateTime?>]`: The timestamp when this key was registered to the user.
           - `[DisplayName <String>]`: The display name of the key as given by the user.
           - `[Model <String>]`: The manufacturer-assigned model of the FIDO2 security key.
+          - `[PublicKeyCredential <IMicrosoftGraphWebauthnPublicKeyCredential>]`: webauthnPublicKeyCredential
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[ClientExtensionResults <IMicrosoftGraphWebauthnAuthenticationExtensionsClientOutputs>]`: webauthnAuthenticationExtensionsClientOutputs
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The credential ID created by the WebAuthn Authenticator.
+            - `[Response <IMicrosoftGraphWebauthnAuthenticatorAttestationResponse>]`: webauthnAuthenticatorAttestationResponse
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[AttestationObject <String>]`: Base64URL encoded, cryptographically protected attestation about the WebAuthn Authenticator.
+              - `[ClientDataJson <String>]`: 
         - `[Methods <IMicrosoftGraphAuthenticationMethod- `[]`>]`: Represents all authentication methods registered to a user.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+          - `[CreatedDateTime <DateTime?>]`: 
         - `[MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod- `[]`>]`: The details of the Microsoft Authenticator app registered to a user for authentication.
+          - `[CreatedDateTime <DateTime?>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[ClientAppName <String>]`: microsoftAuthenticatorAuthenticationMethodClientAppName
-          - `[CreatedDateTime <DateTime?>]`: The date and time that this app was registered.
-This property is null if the device is not registered for passwordless Phone Sign-In.
           - `[Device <IMicrosoftGraphDevice>]`: device
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -1834,7 +1847,7 @@ Read-only.
           - `[DeviceTag <String>]`: Tags containing app metadata.
           - `[DisplayName <String>]`: The name of the device on which this app is registered.
           - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-        - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: 
+        - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation, such as a password reset operation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
@@ -1847,22 +1860,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[Status <String>]`: longRunningOperationStatus
           - `[StatusDetail <String>]`: Details about the status of the operation.
         - `[PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod- `[]`>]`: Represents the details of the password authentication method registered to a user for authentication.
+          - `[CreatedDateTime <DateTime?>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[CreatedDateTime <DateTime?>]`: The date and time when this password was last updated.
-This property is currently not populated.
-Read-only.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
         - `[PasswordlessMicrosoftAuthenticatorMethods <IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationMethod- `[]`>]`: Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
+          - `[CreatedDateTime <DateTime?>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[CreatedDateTime <DateTime?>]`: 
           - `[CreationDateTime <DateTime?>]`: The timestamp when this method was registered to the user.
           - `[Device <IMicrosoftGraphDevice>]`: device
           - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
         - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod- `[]`>]`: Represents the phone registered to a user for authentication.
+          - `[CreatedDateTime <DateTime?>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[PhoneNumber <String>]`: The phone number to text or call for authentication.
@@ -1872,26 +1882,30 @@ Numbers are rejected when creating/updating if they don't match the required for
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
         - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+          - `[CreatedDateTime <DateTime?>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[CreatedDateTime <DateTime?>]`: The date and time that this Platform Credential Key was registered.
           - `[Device <IMicrosoftGraphDevice>]`: device
           - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
           - `[KeyStrength <String>]`: authenticationMethodKeyStrength
           - `[Platform <String>]`: authenticationMethodPlatform
+        - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[PerUserMfaState <String>]`: perUserMfaState
         - `[SignInPreferences <IMicrosoftGraphSignInPreferences>]`: signInPreferences
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[IsSystemPreferredAuthenticationMethodEnabled <Boolean?>]`: Indicates whether the credential preferences of the system are enabled.
           - `[UserPreferredMethodForSecondaryAuthentication <String>]`: userDefaultAuthenticationMethodType
         - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod- `[]`>]`: The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
+          - `[CreatedDateTime <DateTime?>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[SecretKey <String>]`: The secret key of the method.
 Always returns null.
         - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod- `[]`>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+          - `[CreatedDateTime <DateTime?>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[CreatedDateTime <DateTime?>]`: The date and time when the Temporary Access Pass was created.
           - `[IsUsableOnce <Boolean?>]`: Determines whether the pass is limited to a one-time use.
 If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
           - `[LifetimeInMinutes <Int32?>]`: The lifetime of the Temporary Access Pass in minutes starting at startDateTime.
@@ -1900,9 +1914,9 @@ Must be between 10 and 43200 inclusive (equivalent to 30 days).
           - `[TemporaryAccessPass <String>]`: The Temporary Access Pass used to authenticate.
 Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
         - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod- `[]`>]`: Represents the Windows Hello for Business authentication method registered to a user for authentication.
+          - `[CreatedDateTime <DateTime?>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[CreatedDateTime <DateTime?>]`: The date and time that this Windows Hello for Business key was registered.
           - `[Device <IMicrosoftGraphDevice>]`: device
           - `[DisplayName <String>]`: The name of the device on which Windows Hello for Business is registered
           - `[KeyStrength <String>]`: authenticationMethodKeyStrength
@@ -2550,6 +2564,10 @@ Read-only.
         - `[AllotmentDisplayName <String>]`: The allotment name divides tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment.
 When the provisioningType is dedicated, the allotment name is null.
 Read-only.
+        - `[ConnectionSetting <IMicrosoftGraphCloudPcConnectionSetting>]`: cloudPcConnectionSetting
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[EnableSingleSignOn <Boolean?>]`: Indicates whether single sign-on is enabled.
+The default value is false.
         - `[ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]`: cloudPcConnectionSettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[EnableSingleSignOn <Boolean?>]`: 
@@ -2563,11 +2581,17 @@ If the status property is available, this property is empty.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
             - `[Result <String>]`: cloudPcConnectivityEventResult
+          - `[LastModifiedDateTime <DateTime?>]`: The last modified time for connectivity status of the Cloud PC.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z.
           - `[Status <String>]`: cloudPcConnectivityStatus
           - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated.
 This property is deprecated and will no longer be supported effective August 31, 2024.
 Use lastModifiedDateTime instead.
 Read-Only.
+        - `[DeviceRegionName <String>]`: The name of the geographical region where the Cloud PC is currently provisioned.
+For example, westus3, eastus2, and southeastasia.
+Read-only.
         - `[DisasterRecoveryCapability <IMicrosoftGraphCloudPcDisasterRecoveryCapability>]`: cloudPcDisasterRecoveryCapability
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[CapabilityType <String>]`: cloudPcDisasterRecoveryCapabilityType
@@ -2605,6 +2629,15 @@ Read-only.
           - `[StartDateTime <DateTime?>]`: Time the action was initiated.
 The Timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.
+          - `[StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]`: cloudPcStatusDetail
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: More information about the Cloud PC status.
+For example, 'additionalInformation': - `['{'@odata.type': 'microsoft.graph.keyValuePair','name': 'retriable','value': true }]` '
+            - `[Code <String>]`: The error/warning code associated with the Cloud PC status.
+Example: 'code': 'internalServerError'.
+            - `[Message <String>]`: The status message associated with error code.
+Example: 'message': 'There was an internal server error.
+Please contact support xxx.'.
           - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: Any additional information about the Cloud PC status.
@@ -2632,6 +2665,7 @@ The default value is false.
         - `[ServicePlanName <String>]`: The service plan name of the Cloud PC.
         - `[ServicePlanType <String>]`: cloudPcServicePlanType
         - `[Status <String>]`: cloudPcStatus
+        - `[StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]`: cloudPcStatusDetail
         - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
         - `[UserAccountType <String>]`: cloudPcUserAccountType
         - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user assigned to the Cloud PC.
@@ -3478,10 +3512,30 @@ Read-only.
 Read-only.
         - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
         - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions reusable across lists under this site.
+        - `[ContentModels <IMicrosoftGraphContentModel- `[]`>]`: The collection of content models applied to this site.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedDateTime <DateTime?>]`: Date and time of item last modification.
+Read-only.
+          - `[ModelType <String>]`: contentModelType
+          - `[Name <String>]`: The name of the contentModel.
         - `[ContentTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types defined for this site.
         - `[Deleted <IMicrosoftGraphDeleted>]`: deleted
         - `[DisplayName <String>]`: The full title for the site.
 Read-only.
+        - `[DocumentProcessingJobs <IMicrosoftGraphDocumentProcessingJob- `[]`>]`: The document processing jobs running on this site.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+          - `[JobType <String>]`: documentProcessingJobType
+          - `[ListItemUniqueId <String>]`: The listItemUniqueId of the file, or folder to process.
+Use GET driveItem resource operation and read  sharepointIds property to get listItemUniqueId.
+          - `[Status <String>]`: documentProcessingJobStatus
         - `[Drive <IMicrosoftGraphDrive>]`: drive
         - `[Drives <IMicrosoftGraphDrive- `[]`>]`: The collection of drives (document libraries) under this site.
         - `[ExternalColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site.
@@ -5878,7 +5932,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
         - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
         - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
         - `[AllowBreakoutRooms <Boolean?>]`: 
-        - `[AllowLiveShare <Boolean?>]`: 
+        - `[AllowLiveShare <String>]`: meetingLiveShareOptions
         - `[AllowMeetingChat <String>]`: meetingChatMode
         - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
         - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -5906,6 +5960,7 @@ Read-only.
             - `[Identity <IMicrosoftGraphIdentity>]`: identity
             - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
             - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
             - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -6029,8 +6084,6 @@ Read-only.
           - `[MeetingId <String>]`: The unique identifier of the onlineMeeting related to this recording.
 Read-only.
           - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording.
-Read-only.
           - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
         - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
@@ -6085,8 +6138,6 @@ Read-only.
           - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
 Read-only.
           - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript.
-Read-only.
           - `[MetadataContent <Byte- `[]`>]`: The time-aligned metadata of the utterances in the transcript.
 Read-only.
           - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
@@ -7157,10 +7208,13 @@ Read-only.
             - `[Company <IMicrosoftGraphCompanyDetail>]`: companyDetail
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+              - `[CompanyCode <String>]`: Legal entity number of the company or its subdivision.
+For information on how to set the value for the companyCode, see profileSourceAnnotation.
               - `[Department <String>]`: Department Name within a company.
               - `[DisplayName <String>]`: Company name.
               - `[OfficeLocation <String>]`: Office Location of the person referred to.
               - `[Pronunciation <String>]`: Pronunciation guide for the company name.
+              - `[SecondaryDepartment <String>]`: 
               - `[WebUrl <String>]`: Link to the company home page.
             - `[Description <String>]`: Description of the position in question.
             - `[EndMonthYear <DateTime?>]`: When the position ended.
@@ -7168,6 +7222,8 @@ Read-only.
             - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
             - `[Level <String>]`: The employee's experience or management level.
             - `[Role <String>]`: The role the position entailed.
+            - `[SecondaryJobTitle <String>]`: 
+            - `[SecondaryRole <String>]`: 
             - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
             - `[Summary <String>]`: summary of the position.
           - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
@@ -7475,6 +7531,14 @@ Read-only.
 Use revokeSignInSessions to reset.
       - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+      - `[Solutions <IMicrosoftGraphUserSolutionRoot>]`: userSolutionRoot
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[WorkingTimeSchedule <IMicrosoftGraphWorkingTimeSchedule>]`: workingTimeSchedule
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
       - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -7505,8 +7569,14 @@ Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[Chat <IMicrosoftGraphChat>]`: chat
-        - `[Locale <String>]`: The chosen locale of a user in Microsoft Teams.
-        - `[Region <String>]`: The region of the user in Microsoft Teams.
+        - `[Locale <String>]`: Represents the location that a user selected in Microsoft Teams and doesn't follow the Office's locale setting.
+A user's locale is represented by their preferred language and country or region.
+For example, en-us.
+The language component follows two-letter codes as defined in ISO 639-1, and the country component follows two-letter codes as defined in ISO 3166-1 alpha-2.
+        - `[Region <String>]`: Represents the region of the organization or the user.
+For users with multigeo licenses, the property contains the user's region (if available).
+For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
       - `[Todo <IMicrosoftGraphTodo>]`: todo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -7649,7 +7719,7 @@ Read-only.
               - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
               - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
               - `[AllowBreakoutRooms <Boolean?>]`: 
-              - `[AllowLiveShare <Boolean?>]`: 
+              - `[AllowLiveShare <String>]`: meetingLiveShareOptions
               - `[AllowMeetingChat <String>]`: meetingChatMode
               - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
               - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -7713,6 +7783,9 @@ Appears when answerInputType is text, multilineText or singleChoice.
 Only appears when the registrant is registered in Microsoft Entra ID.
               - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
+          - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[IsAttendeeEmailNotificationEnabled <Boolean?>]`: Indicates whether virtual event attendees receive email notifications.
           - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[Status <String>]`: virtualEventStatus
           - `[Id <String>]`: The unique identifier for an entity.
@@ -8752,7 +8825,7 @@ Read-only.
                 - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
               - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
-              - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
+              - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
                   - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
@@ -8762,6 +8835,7 @@ This property is required when restrictionType is set to keyLifetime.
                   - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                   - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+                  - `[State <String>]`: appManagementRestrictionState
                 - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
                   - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -8769,6 +8843,7 @@ This property is required when restrictionType is set to passwordLifetime.
                   - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                   - `[RestrictionType <String>]`: appCredentialRestrictionType
+                  - `[State <String>]`: appManagementRestrictionState
             - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -9196,8 +9271,8 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                   - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
-The value is represented in ISO 8601 format for durations.
-For example, PT1M represents a period of 1 month.
+The value is represented in ISO 8601  format for durations.
+For example, P1M represents a period of one month and PT1M represents a period of one minute.
                   - `[State <String>]`: synchronizationScheduleState
                 - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9484,7 +9559,9 @@ Use the licenseAssignmentStates property to identify the directly assigned and i
 Not nullable.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
             - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
             - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
           - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.Supports $filter (eq and not).
@@ -9501,28 +9578,37 @@ For a complete list of GUIDs and their equivalent friendly service names, see Pr
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[EmailMethods <IMicrosoftGraphEmailAuthenticationMethod- `[]`>]`: Represents the email addresses registered to a user for authentication.
+              - `[CreatedDateTime <DateTime?>]`: 
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[EmailAddress <String>]`: The email address registered to this user.
             - `[Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod- `[]`>]`: Represents the FIDO2 security keys registered to a user for authentication.
+              - `[CreatedDateTime <DateTime?>]`: 
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (e.g.
-make and model) of the authenticator.
-              - `[AttestationCertificates <String- `[]`>]`: The attestation certificate(s) attached to this security key.
+              - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
+              - `[AttestationCertificates <String- `[]`>]`: The attestation certificate or certificates attached to this security key.
               - `[AttestationLevel <String>]`: attestationLevel
-              - `[CreatedDateTime <DateTime?>]`: The timestamp when this key was registered to the user.
               - `[DisplayName <String>]`: The display name of the key as given by the user.
               - `[Model <String>]`: The manufacturer-assigned model of the FIDO2 security key.
+              - `[PublicKeyCredential <IMicrosoftGraphWebauthnPublicKeyCredential>]`: webauthnPublicKeyCredential
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[ClientExtensionResults <IMicrosoftGraphWebauthnAuthenticationExtensionsClientOutputs>]`: webauthnAuthenticationExtensionsClientOutputs
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Id <String>]`: The credential ID created by the WebAuthn Authenticator.
+                - `[Response <IMicrosoftGraphWebauthnAuthenticatorAttestationResponse>]`: webauthnAuthenticatorAttestationResponse
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[AttestationObject <String>]`: Base64URL encoded, cryptographically protected attestation about the WebAuthn Authenticator.
+                  - `[ClientDataJson <String>]`: 
             - `[Methods <IMicrosoftGraphAuthenticationMethod- `[]`>]`: Represents all authentication methods registered to a user.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+              - `[CreatedDateTime <DateTime?>]`: 
             - `[MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod- `[]`>]`: The details of the Microsoft Authenticator app registered to a user for authentication.
+              - `[CreatedDateTime <DateTime?>]`: 
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[ClientAppName <String>]`: microsoftAuthenticatorAuthenticationMethodClientAppName
-              - `[CreatedDateTime <DateTime?>]`: The date and time that this app was registered.
-This property is null if the device is not registered for passwordless Phone Sign-In.
               - `[Device <IMicrosoftGraphDevice>]`: device
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -9697,7 +9783,7 @@ Read-only.
               - `[DeviceTag <String>]`: Tags containing app metadata.
               - `[DisplayName <String>]`: The name of the device on which this app is registered.
               - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-            - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: 
+            - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation, such as a password reset operation.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
@@ -9710,22 +9796,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[Status <String>]`: longRunningOperationStatus
               - `[StatusDetail <String>]`: Details about the status of the operation.
             - `[PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod- `[]`>]`: Represents the details of the password authentication method registered to a user for authentication.
+              - `[CreatedDateTime <DateTime?>]`: 
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[CreatedDateTime <DateTime?>]`: The date and time when this password was last updated.
-This property is currently not populated.
-Read-only.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
             - `[PasswordlessMicrosoftAuthenticatorMethods <IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationMethod- `[]`>]`: Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
+              - `[CreatedDateTime <DateTime?>]`: 
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[CreatedDateTime <DateTime?>]`: 
               - `[CreationDateTime <DateTime?>]`: The timestamp when this method was registered to the user.
               - `[Device <IMicrosoftGraphDevice>]`: device
               - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
             - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod- `[]`>]`: Represents the phone registered to a user for authentication.
+              - `[CreatedDateTime <DateTime?>]`: 
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[PhoneNumber <String>]`: The phone number to text or call for authentication.
@@ -9735,26 +9818,30 @@ Numbers are rejected when creating/updating if they don't match the required for
               - `[PhoneType <String>]`: authenticationPhoneType
               - `[SmsSignInState <String>]`: authenticationMethodSignInState
             - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+              - `[CreatedDateTime <DateTime?>]`: 
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[CreatedDateTime <DateTime?>]`: The date and time that this Platform Credential Key was registered.
               - `[Device <IMicrosoftGraphDevice>]`: device
               - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
               - `[KeyStrength <String>]`: authenticationMethodKeyStrength
               - `[Platform <String>]`: authenticationMethodPlatform
+            - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[PerUserMfaState <String>]`: perUserMfaState
             - `[SignInPreferences <IMicrosoftGraphSignInPreferences>]`: signInPreferences
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[IsSystemPreferredAuthenticationMethodEnabled <Boolean?>]`: Indicates whether the credential preferences of the system are enabled.
               - `[UserPreferredMethodForSecondaryAuthentication <String>]`: userDefaultAuthenticationMethodType
             - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod- `[]`>]`: The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
+              - `[CreatedDateTime <DateTime?>]`: 
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[SecretKey <String>]`: The secret key of the method.
 Always returns null.
             - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod- `[]`>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+              - `[CreatedDateTime <DateTime?>]`: 
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[CreatedDateTime <DateTime?>]`: The date and time when the Temporary Access Pass was created.
               - `[IsUsableOnce <Boolean?>]`: Determines whether the pass is limited to a one-time use.
 If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
               - `[LifetimeInMinutes <Int32?>]`: The lifetime of the Temporary Access Pass in minutes starting at startDateTime.
@@ -9763,9 +9850,9 @@ Must be between 10 and 43200 inclusive (equivalent to 30 days).
               - `[TemporaryAccessPass <String>]`: The Temporary Access Pass used to authenticate.
 Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
             - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod- `[]`>]`: Represents the Windows Hello for Business authentication method registered to a user for authentication.
+              - `[CreatedDateTime <DateTime?>]`: 
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[CreatedDateTime <DateTime?>]`: The date and time that this Windows Hello for Business key was registered.
               - `[Device <IMicrosoftGraphDevice>]`: device
               - `[DisplayName <String>]`: The name of the device on which Windows Hello for Business is registered
               - `[KeyStrength <String>]`: authenticationMethodKeyStrength
@@ -10413,6 +10500,10 @@ Read-only.
             - `[AllotmentDisplayName <String>]`: The allotment name divides tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment.
 When the provisioningType is dedicated, the allotment name is null.
 Read-only.
+            - `[ConnectionSetting <IMicrosoftGraphCloudPcConnectionSetting>]`: cloudPcConnectionSetting
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[EnableSingleSignOn <Boolean?>]`: Indicates whether single sign-on is enabled.
+The default value is false.
             - `[ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]`: cloudPcConnectionSettings
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[EnableSingleSignOn <Boolean?>]`: 
@@ -10426,11 +10517,17 @@ If the status property is available, this property is empty.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
                 - `[Result <String>]`: cloudPcConnectivityEventResult
+              - `[LastModifiedDateTime <DateTime?>]`: The last modified time for connectivity status of the Cloud PC.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z.
               - `[Status <String>]`: cloudPcConnectivityStatus
               - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated.
 This property is deprecated and will no longer be supported effective August 31, 2024.
 Use lastModifiedDateTime instead.
 Read-Only.
+            - `[DeviceRegionName <String>]`: The name of the geographical region where the Cloud PC is currently provisioned.
+For example, westus3, eastus2, and southeastasia.
+Read-only.
             - `[DisasterRecoveryCapability <IMicrosoftGraphCloudPcDisasterRecoveryCapability>]`: cloudPcDisasterRecoveryCapability
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CapabilityType <String>]`: cloudPcDisasterRecoveryCapabilityType
@@ -10468,6 +10565,15 @@ Read-only.
               - `[StartDateTime <DateTime?>]`: Time the action was initiated.
 The Timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.
+              - `[StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]`: cloudPcStatusDetail
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: More information about the Cloud PC status.
+For example, 'additionalInformation': - `['{'@odata.type': 'microsoft.graph.keyValuePair','name': 'retriable','value': true }]` '
+                - `[Code <String>]`: The error/warning code associated with the Cloud PC status.
+Example: 'code': 'internalServerError'.
+                - `[Message <String>]`: The status message associated with error code.
+Example: 'message': 'There was an internal server error.
+Please contact support xxx.'.
               - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: Any additional information about the Cloud PC status.
@@ -10495,6 +10601,7 @@ The default value is false.
             - `[ServicePlanName <String>]`: The service plan name of the Cloud PC.
             - `[ServicePlanType <String>]`: cloudPcServicePlanType
             - `[Status <String>]`: cloudPcStatus
+            - `[StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]`: cloudPcStatusDetail
             - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
             - `[UserAccountType <String>]`: cloudPcUserAccountType
             - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user assigned to the Cloud PC.
@@ -11350,10 +11457,30 @@ Read-only.
 Read-only.
             - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
             - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions reusable across lists under this site.
+            - `[ContentModels <IMicrosoftGraphContentModel- `[]`>]`: The collection of content models applied to this site.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+              - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+              - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+              - `[LastModifiedDateTime <DateTime?>]`: Date and time of item last modification.
+Read-only.
+              - `[ModelType <String>]`: contentModelType
+              - `[Name <String>]`: The name of the contentModel.
             - `[ContentTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types defined for this site.
             - `[Deleted <IMicrosoftGraphDeleted>]`: deleted
             - `[DisplayName <String>]`: The full title for the site.
 Read-only.
+            - `[DocumentProcessingJobs <IMicrosoftGraphDocumentProcessingJob- `[]`>]`: The document processing jobs running on this site.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+              - `[JobType <String>]`: documentProcessingJobType
+              - `[ListItemUniqueId <String>]`: The listItemUniqueId of the file, or folder to process.
+Use GET driveItem resource operation and read  sharepointIds property to get listItemUniqueId.
+              - `[Status <String>]`: documentProcessingJobStatus
             - `[Drive <IMicrosoftGraphDrive>]`: drive
             - `[Drives <IMicrosoftGraphDrive- `[]`>]`: The collection of drives (document libraries) under this site.
             - `[ExternalColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site.
@@ -13750,7 +13877,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
             - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
             - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
             - `[AllowBreakoutRooms <Boolean?>]`: 
-            - `[AllowLiveShare <Boolean?>]`: 
+            - `[AllowLiveShare <String>]`: meetingLiveShareOptions
             - `[AllowMeetingChat <String>]`: meetingChatMode
             - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
             - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -13778,6 +13905,7 @@ Read-only.
                 - `[Identity <IMicrosoftGraphIdentity>]`: identity
                 - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
                 - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
                 - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -13901,8 +14029,6 @@ Read-only.
               - `[MeetingId <String>]`: The unique identifier of the onlineMeeting related to this recording.
 Read-only.
               - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording.
-Read-only.
               - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
             - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
@@ -13957,8 +14083,6 @@ Read-only.
               - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
 Read-only.
               - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript.
-Read-only.
               - `[MetadataContent <Byte- `[]`>]`: The time-aligned metadata of the utterances in the transcript.
 Read-only.
               - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
@@ -15029,10 +15153,13 @@ Read-only.
                 - `[Company <IMicrosoftGraphCompanyDetail>]`: companyDetail
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+                  - `[CompanyCode <String>]`: Legal entity number of the company or its subdivision.
+For information on how to set the value for the companyCode, see profileSourceAnnotation.
                   - `[Department <String>]`: Department Name within a company.
                   - `[DisplayName <String>]`: Company name.
                   - `[OfficeLocation <String>]`: Office Location of the person referred to.
                   - `[Pronunciation <String>]`: Pronunciation guide for the company name.
+                  - `[SecondaryDepartment <String>]`: 
                   - `[WebUrl <String>]`: Link to the company home page.
                 - `[Description <String>]`: Description of the position in question.
                 - `[EndMonthYear <DateTime?>]`: When the position ended.
@@ -15040,6 +15167,8 @@ Read-only.
                 - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
                 - `[Level <String>]`: The employee's experience or management level.
                 - `[Role <String>]`: The role the position entailed.
+                - `[SecondaryJobTitle <String>]`: 
+                - `[SecondaryRole <String>]`: 
                 - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
                 - `[Summary <String>]`: summary of the position.
               - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
@@ -15347,6 +15476,14 @@ Read-only.
 Use revokeSignInSessions to reset.
           - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+          - `[Solutions <IMicrosoftGraphUserSolutionRoot>]`: userSolutionRoot
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[WorkingTimeSchedule <IMicrosoftGraphWorkingTimeSchedule>]`: workingTimeSchedule
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
           - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -15377,8 +15514,14 @@ Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[Chat <IMicrosoftGraphChat>]`: chat
-            - `[Locale <String>]`: The chosen locale of a user in Microsoft Teams.
-            - `[Region <String>]`: The region of the user in Microsoft Teams.
+            - `[Locale <String>]`: Represents the location that a user selected in Microsoft Teams and doesn't follow the Office's locale setting.
+A user's locale is represented by their preferred language and country or region.
+For example, en-us.
+The language component follows two-letter codes as defined in ISO 639-1, and the country component follows two-letter codes as defined in ISO 3166-1 alpha-2.
+            - `[Region <String>]`: Represents the region of the organization or the user.
+For users with multigeo licenses, the property contains the user's region (if available).
+For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
           - `[Todo <IMicrosoftGraphTodo>]`: todo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -15521,7 +15664,7 @@ Read-only.
                   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
                   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
                   - `[AllowBreakoutRooms <Boolean?>]`: 
-                  - `[AllowLiveShare <Boolean?>]`: 
+                  - `[AllowLiveShare <String>]`: meetingLiveShareOptions
                   - `[AllowMeetingChat <String>]`: meetingChatMode
                   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
                   - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -15585,6 +15728,9 @@ Appears when answerInputType is text, multilineText or singleChoice.
 Only appears when the registrant is registered in Microsoft Entra ID.
                   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
+              - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[IsAttendeeEmailNotificationEnabled <Boolean?>]`: Indicates whether virtual event attendees receive email notifications.
               - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[Status <String>]`: virtualEventStatus
               - `[Id <String>]`: The unique identifier for an entity.
@@ -16612,7 +16758,7 @@ Read-only.
           - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
         - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
-        - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
+        - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
             - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
@@ -16622,6 +16768,7 @@ This property is required when restrictionType is set to keyLifetime.
             - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+            - `[State <String>]`: appManagementRestrictionState
           - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -16629,6 +16776,7 @@ This property is required when restrictionType is set to passwordLifetime.
             - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appCredentialRestrictionType
+            - `[State <String>]`: appManagementRestrictionState
       - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -17056,8 +17204,8 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
-The value is represented in ISO 8601 format for durations.
-For example, PT1M represents a period of 1 month.
+The value is represented in ISO 8601  format for durations.
+For example, P1M represents a period of one month and PT1M represents a period of one minute.
             - `[State <String>]`: synchronizationScheduleState
           - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -17344,7 +17492,9 @@ Use the licenseAssignmentStates property to identify the directly assigned and i
 Not nullable.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
       - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
       - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.Supports $filter (eq and not).
@@ -17361,28 +17511,37 @@ For a complete list of GUIDs and their equivalent friendly service names, see Pr
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[EmailMethods <IMicrosoftGraphEmailAuthenticationMethod- `[]`>]`: Represents the email addresses registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[EmailAddress <String>]`: The email address registered to this user.
       - `[Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod- `[]`>]`: Represents the FIDO2 security keys registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (e.g.
-make and model) of the authenticator.
-        - `[AttestationCertificates <String- `[]`>]`: The attestation certificate(s) attached to this security key.
+        - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
+        - `[AttestationCertificates <String- `[]`>]`: The attestation certificate or certificates attached to this security key.
         - `[AttestationLevel <String>]`: attestationLevel
-        - `[CreatedDateTime <DateTime?>]`: The timestamp when this key was registered to the user.
         - `[DisplayName <String>]`: The display name of the key as given by the user.
         - `[Model <String>]`: The manufacturer-assigned model of the FIDO2 security key.
+        - `[PublicKeyCredential <IMicrosoftGraphWebauthnPublicKeyCredential>]`: webauthnPublicKeyCredential
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ClientExtensionResults <IMicrosoftGraphWebauthnAuthenticationExtensionsClientOutputs>]`: webauthnAuthenticationExtensionsClientOutputs
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The credential ID created by the WebAuthn Authenticator.
+          - `[Response <IMicrosoftGraphWebauthnAuthenticatorAttestationResponse>]`: webauthnAuthenticatorAttestationResponse
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[AttestationObject <String>]`: Base64URL encoded, cryptographically protected attestation about the WebAuthn Authenticator.
+            - `[ClientDataJson <String>]`: 
       - `[Methods <IMicrosoftGraphAuthenticationMethod- `[]`>]`: Represents all authentication methods registered to a user.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[CreatedDateTime <DateTime?>]`: 
       - `[MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod- `[]`>]`: The details of the Microsoft Authenticator app registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[ClientAppName <String>]`: microsoftAuthenticatorAuthenticationMethodClientAppName
-        - `[CreatedDateTime <DateTime?>]`: The date and time that this app was registered.
-This property is null if the device is not registered for passwordless Phone Sign-In.
         - `[Device <IMicrosoftGraphDevice>]`: device
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -17557,7 +17716,7 @@ Read-only.
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-      - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: 
+      - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation, such as a password reset operation.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
@@ -17570,22 +17729,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Status <String>]`: longRunningOperationStatus
         - `[StatusDetail <String>]`: Details about the status of the operation.
       - `[PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod- `[]`>]`: Represents the details of the password authentication method registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[CreatedDateTime <DateTime?>]`: The date and time when this password was last updated.
-This property is currently not populated.
-Read-only.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
       - `[PasswordlessMicrosoftAuthenticatorMethods <IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationMethod- `[]`>]`: Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[CreatedDateTime <DateTime?>]`: 
         - `[CreationDateTime <DateTime?>]`: The timestamp when this method was registered to the user.
         - `[Device <IMicrosoftGraphDevice>]`: device
         - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
       - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod- `[]`>]`: Represents the phone registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[PhoneNumber <String>]`: The phone number to text or call for authentication.
@@ -17595,26 +17751,30 @@ Numbers are rejected when creating/updating if they don't match the required for
         - `[PhoneType <String>]`: authenticationPhoneType
         - `[SmsSignInState <String>]`: authenticationMethodSignInState
       - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[CreatedDateTime <DateTime?>]`: The date and time that this Platform Credential Key was registered.
         - `[Device <IMicrosoftGraphDevice>]`: device
         - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
         - `[Platform <String>]`: authenticationMethodPlatform
+      - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[PerUserMfaState <String>]`: perUserMfaState
       - `[SignInPreferences <IMicrosoftGraphSignInPreferences>]`: signInPreferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[IsSystemPreferredAuthenticationMethodEnabled <Boolean?>]`: Indicates whether the credential preferences of the system are enabled.
         - `[UserPreferredMethodForSecondaryAuthentication <String>]`: userDefaultAuthenticationMethodType
       - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod- `[]`>]`: The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[SecretKey <String>]`: The secret key of the method.
 Always returns null.
       - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod- `[]`>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[CreatedDateTime <DateTime?>]`: The date and time when the Temporary Access Pass was created.
         - `[IsUsableOnce <Boolean?>]`: Determines whether the pass is limited to a one-time use.
 If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
         - `[LifetimeInMinutes <Int32?>]`: The lifetime of the Temporary Access Pass in minutes starting at startDateTime.
@@ -17623,9 +17783,9 @@ Must be between 10 and 43200 inclusive (equivalent to 30 days).
         - `[TemporaryAccessPass <String>]`: The Temporary Access Pass used to authenticate.
 Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
       - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod- `[]`>]`: Represents the Windows Hello for Business authentication method registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[CreatedDateTime <DateTime?>]`: The date and time that this Windows Hello for Business key was registered.
         - `[Device <IMicrosoftGraphDevice>]`: device
         - `[DisplayName <String>]`: The name of the device on which Windows Hello for Business is registered
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
@@ -18273,6 +18433,10 @@ Read-only.
       - `[AllotmentDisplayName <String>]`: The allotment name divides tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment.
 When the provisioningType is dedicated, the allotment name is null.
 Read-only.
+      - `[ConnectionSetting <IMicrosoftGraphCloudPcConnectionSetting>]`: cloudPcConnectionSetting
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[EnableSingleSignOn <Boolean?>]`: Indicates whether single sign-on is enabled.
+The default value is false.
       - `[ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]`: cloudPcConnectionSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[EnableSingleSignOn <Boolean?>]`: 
@@ -18286,11 +18450,17 @@ If the status property is available, this property is empty.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
           - `[Result <String>]`: cloudPcConnectivityEventResult
+        - `[LastModifiedDateTime <DateTime?>]`: The last modified time for connectivity status of the Cloud PC.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z.
         - `[Status <String>]`: cloudPcConnectivityStatus
         - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated.
 This property is deprecated and will no longer be supported effective August 31, 2024.
 Use lastModifiedDateTime instead.
 Read-Only.
+      - `[DeviceRegionName <String>]`: The name of the geographical region where the Cloud PC is currently provisioned.
+For example, westus3, eastus2, and southeastasia.
+Read-only.
       - `[DisasterRecoveryCapability <IMicrosoftGraphCloudPcDisasterRecoveryCapability>]`: cloudPcDisasterRecoveryCapability
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CapabilityType <String>]`: cloudPcDisasterRecoveryCapabilityType
@@ -18328,6 +18498,15 @@ Read-only.
         - `[StartDateTime <DateTime?>]`: Time the action was initiated.
 The Timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.
+        - `[StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]`: cloudPcStatusDetail
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: More information about the Cloud PC status.
+For example, 'additionalInformation': - `['{'@odata.type': 'microsoft.graph.keyValuePair','name': 'retriable','value': true }]` '
+          - `[Code <String>]`: The error/warning code associated with the Cloud PC status.
+Example: 'code': 'internalServerError'.
+          - `[Message <String>]`: The status message associated with error code.
+Example: 'message': 'There was an internal server error.
+Please contact support xxx.'.
         - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: Any additional information about the Cloud PC status.
@@ -18355,6 +18534,7 @@ The default value is false.
       - `[ServicePlanName <String>]`: The service plan name of the Cloud PC.
       - `[ServicePlanType <String>]`: cloudPcServicePlanType
       - `[Status <String>]`: cloudPcStatus
+      - `[StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]`: cloudPcStatusDetail
       - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
       - `[UserAccountType <String>]`: cloudPcUserAccountType
       - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user assigned to the Cloud PC.
@@ -19931,10 +20111,30 @@ Read-only.
 Read-only.
       - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
       - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions reusable across lists under this site.
+      - `[ContentModels <IMicrosoftGraphContentModel- `[]`>]`: The collection of content models applied to this site.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[LastModifiedDateTime <DateTime?>]`: Date and time of item last modification.
+Read-only.
+        - `[ModelType <String>]`: contentModelType
+        - `[Name <String>]`: The name of the contentModel.
       - `[ContentTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types defined for this site.
       - `[Deleted <IMicrosoftGraphDeleted>]`: deleted
       - `[DisplayName <String>]`: The full title for the site.
 Read-only.
+      - `[DocumentProcessingJobs <IMicrosoftGraphDocumentProcessingJob- `[]`>]`: The document processing jobs running on this site.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+        - `[JobType <String>]`: documentProcessingJobType
+        - `[ListItemUniqueId <String>]`: The listItemUniqueId of the file, or folder to process.
+Use GET driveItem resource operation and read  sharepointIds property to get listItemUniqueId.
+        - `[Status <String>]`: documentProcessingJobStatus
       - `[Drive <IMicrosoftGraphDrive>]`: drive
       - `[Drives <IMicrosoftGraphDrive- `[]`>]`: The collection of drives (document libraries) under this site.
       - `[ExternalColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site.
@@ -22320,7 +22520,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
       - `[AllowBreakoutRooms <Boolean?>]`: 
-      - `[AllowLiveShare <Boolean?>]`: 
+      - `[AllowLiveShare <String>]`: meetingLiveShareOptions
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
       - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -22348,6 +22548,7 @@ Read-only.
           - `[Identity <IMicrosoftGraphIdentity>]`: identity
           - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
           - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
           - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -22471,8 +22672,6 @@ Read-only.
         - `[MeetingId <String>]`: The unique identifier of the onlineMeeting related to this recording.
 Read-only.
         - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording.
-Read-only.
         - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
       - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
@@ -22527,8 +22726,6 @@ Read-only.
         - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
 Read-only.
         - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript.
-Read-only.
         - `[MetadataContent <Byte- `[]`>]`: The time-aligned metadata of the utterances in the transcript.
 Read-only.
         - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
@@ -23599,10 +23796,13 @@ Read-only.
           - `[Company <IMicrosoftGraphCompanyDetail>]`: companyDetail
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+            - `[CompanyCode <String>]`: Legal entity number of the company or its subdivision.
+For information on how to set the value for the companyCode, see profileSourceAnnotation.
             - `[Department <String>]`: Department Name within a company.
             - `[DisplayName <String>]`: Company name.
             - `[OfficeLocation <String>]`: Office Location of the person referred to.
             - `[Pronunciation <String>]`: Pronunciation guide for the company name.
+            - `[SecondaryDepartment <String>]`: 
             - `[WebUrl <String>]`: Link to the company home page.
           - `[Description <String>]`: Description of the position in question.
           - `[EndMonthYear <DateTime?>]`: When the position ended.
@@ -23610,6 +23810,8 @@ Read-only.
           - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
           - `[Level <String>]`: The employee's experience or management level.
           - `[Role <String>]`: The role the position entailed.
+          - `[SecondaryJobTitle <String>]`: 
+          - `[SecondaryRole <String>]`: 
           - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
           - `[Summary <String>]`: summary of the position.
         - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
@@ -23917,6 +24119,14 @@ Read-only.
 Use revokeSignInSessions to reset.
     - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+    - `[Solutions <IMicrosoftGraphUserSolutionRoot>]`: userSolutionRoot
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[WorkingTimeSchedule <IMicrosoftGraphWorkingTimeSchedule>]`: workingTimeSchedule
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
     - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -23947,8 +24157,14 @@ Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Chat <IMicrosoftGraphChat>]`: chat
-      - `[Locale <String>]`: The chosen locale of a user in Microsoft Teams.
-      - `[Region <String>]`: The region of the user in Microsoft Teams.
+      - `[Locale <String>]`: Represents the location that a user selected in Microsoft Teams and doesn't follow the Office's locale setting.
+A user's locale is represented by their preferred language and country or region.
+For example, en-us.
+The language component follows two-letter codes as defined in ISO 639-1, and the country component follows two-letter codes as defined in ISO 3166-1 alpha-2.
+      - `[Region <String>]`: Represents the region of the organization or the user.
+For users with multigeo licenses, the property contains the user's region (if available).
+For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
     - `[Todo <IMicrosoftGraphTodo>]`: todo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -24091,7 +24307,7 @@ Read-only.
             - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
             - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
             - `[AllowBreakoutRooms <Boolean?>]`: 
-            - `[AllowLiveShare <Boolean?>]`: 
+            - `[AllowLiveShare <String>]`: meetingLiveShareOptions
             - `[AllowMeetingChat <String>]`: meetingChatMode
             - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
             - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -24155,6 +24371,9 @@ Appears when answerInputType is text, multilineText or singleChoice.
 Only appears when the registrant is registered in Microsoft Entra ID.
             - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
+        - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IsAttendeeEmailNotificationEnabled <Boolean?>]`: Indicates whether virtual event attendees receive email notifications.
         - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Status <String>]`: virtualEventStatus
         - `[Id <String>]`: The unique identifier for an entity.
@@ -24506,7 +24725,7 @@ Read-only.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
       - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
-      - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
+      - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
           - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
@@ -24516,6 +24735,7 @@ This property is required when restrictionType is set to keyLifetime.
           - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+          - `[State <String>]`: appManagementRestrictionState
         - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -24523,6 +24743,7 @@ This property is required when restrictionType is set to passwordLifetime.
           - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appCredentialRestrictionType
+          - `[State <String>]`: appManagementRestrictionState
     - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -24950,8 +25171,8 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
-The value is represented in ISO 8601 format for durations.
-For example, PT1M represents a period of 1 month.
+The value is represented in ISO 8601  format for durations.
+For example, P1M represents a period of one month and PT1M represents a period of one minute.
           - `[State <String>]`: synchronizationScheduleState
         - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -25238,7 +25459,9 @@ Use the licenseAssignmentStates property to identify the directly assigned and i
 Not nullable.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
     - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
     - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
   - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.Supports $filter (eq and not).
@@ -25255,28 +25478,37 @@ For a complete list of GUIDs and their equivalent friendly service names, see Pr
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[EmailMethods <IMicrosoftGraphEmailAuthenticationMethod- `[]`>]`: Represents the email addresses registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[EmailAddress <String>]`: The email address registered to this user.
     - `[Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod- `[]`>]`: Represents the FIDO2 security keys registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (e.g.
-make and model) of the authenticator.
-      - `[AttestationCertificates <String- `[]`>]`: The attestation certificate(s) attached to this security key.
+      - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
+      - `[AttestationCertificates <String- `[]`>]`: The attestation certificate or certificates attached to this security key.
       - `[AttestationLevel <String>]`: attestationLevel
-      - `[CreatedDateTime <DateTime?>]`: The timestamp when this key was registered to the user.
       - `[DisplayName <String>]`: The display name of the key as given by the user.
       - `[Model <String>]`: The manufacturer-assigned model of the FIDO2 security key.
+      - `[PublicKeyCredential <IMicrosoftGraphWebauthnPublicKeyCredential>]`: webauthnPublicKeyCredential
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[ClientExtensionResults <IMicrosoftGraphWebauthnAuthenticationExtensionsClientOutputs>]`: webauthnAuthenticationExtensionsClientOutputs
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The credential ID created by the WebAuthn Authenticator.
+        - `[Response <IMicrosoftGraphWebauthnAuthenticatorAttestationResponse>]`: webauthnAuthenticatorAttestationResponse
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AttestationObject <String>]`: Base64URL encoded, cryptographically protected attestation about the WebAuthn Authenticator.
+          - `[ClientDataJson <String>]`: 
     - `[Methods <IMicrosoftGraphAuthenticationMethod- `[]`>]`: Represents all authentication methods registered to a user.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[CreatedDateTime <DateTime?>]`: 
     - `[MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod- `[]`>]`: The details of the Microsoft Authenticator app registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[ClientAppName <String>]`: microsoftAuthenticatorAuthenticationMethodClientAppName
-      - `[CreatedDateTime <DateTime?>]`: The date and time that this app was registered.
-This property is null if the device is not registered for passwordless Phone Sign-In.
       - `[Device <IMicrosoftGraphDevice>]`: device
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -25451,7 +25683,7 @@ Read-only.
       - `[DeviceTag <String>]`: Tags containing app metadata.
       - `[DisplayName <String>]`: The name of the device on which this app is registered.
       - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-    - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: 
+    - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation, such as a password reset operation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
@@ -25464,22 +25696,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Status <String>]`: longRunningOperationStatus
       - `[StatusDetail <String>]`: Details about the status of the operation.
     - `[PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod- `[]`>]`: Represents the details of the password authentication method registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when this password was last updated.
-This property is currently not populated.
-Read-only.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
     - `[PasswordlessMicrosoftAuthenticatorMethods <IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationMethod- `[]`>]`: Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: 
       - `[CreationDateTime <DateTime?>]`: The timestamp when this method was registered to the user.
       - `[Device <IMicrosoftGraphDevice>]`: device
       - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
     - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod- `[]`>]`: Represents the phone registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[PhoneNumber <String>]`: The phone number to text or call for authentication.
@@ -25489,26 +25718,30 @@ Numbers are rejected when creating/updating if they don't match the required for
       - `[PhoneType <String>]`: authenticationPhoneType
       - `[SmsSignInState <String>]`: authenticationMethodSignInState
     - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time that this Platform Credential Key was registered.
       - `[Device <IMicrosoftGraphDevice>]`: device
       - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
       - `[KeyStrength <String>]`: authenticationMethodKeyStrength
       - `[Platform <String>]`: authenticationMethodPlatform
+    - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[PerUserMfaState <String>]`: perUserMfaState
     - `[SignInPreferences <IMicrosoftGraphSignInPreferences>]`: signInPreferences
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[IsSystemPreferredAuthenticationMethodEnabled <Boolean?>]`: Indicates whether the credential preferences of the system are enabled.
       - `[UserPreferredMethodForSecondaryAuthentication <String>]`: userDefaultAuthenticationMethodType
     - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod- `[]`>]`: The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[SecretKey <String>]`: The secret key of the method.
 Always returns null.
     - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod- `[]`>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when the Temporary Access Pass was created.
       - `[IsUsableOnce <Boolean?>]`: Determines whether the pass is limited to a one-time use.
 If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
       - `[LifetimeInMinutes <Int32?>]`: The lifetime of the Temporary Access Pass in minutes starting at startDateTime.
@@ -25517,9 +25750,9 @@ Must be between 10 and 43200 inclusive (equivalent to 30 days).
       - `[TemporaryAccessPass <String>]`: The Temporary Access Pass used to authenticate.
 Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
     - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod- `[]`>]`: Represents the Windows Hello for Business authentication method registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time that this Windows Hello for Business key was registered.
       - `[Device <IMicrosoftGraphDevice>]`: device
       - `[DisplayName <String>]`: The name of the device on which Windows Hello for Business is registered
       - `[KeyStrength <String>]`: authenticationMethodKeyStrength
@@ -26167,6 +26400,10 @@ Read-only.
     - `[AllotmentDisplayName <String>]`: The allotment name divides tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment.
 When the provisioningType is dedicated, the allotment name is null.
 Read-only.
+    - `[ConnectionSetting <IMicrosoftGraphCloudPcConnectionSetting>]`: cloudPcConnectionSetting
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EnableSingleSignOn <Boolean?>]`: Indicates whether single sign-on is enabled.
+The default value is false.
     - `[ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]`: cloudPcConnectionSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[EnableSingleSignOn <Boolean?>]`: 
@@ -26180,11 +26417,17 @@ If the status property is available, this property is empty.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
         - `[Result <String>]`: cloudPcConnectivityEventResult
+      - `[LastModifiedDateTime <DateTime?>]`: The last modified time for connectivity status of the Cloud PC.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z.
       - `[Status <String>]`: cloudPcConnectivityStatus
       - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated.
 This property is deprecated and will no longer be supported effective August 31, 2024.
 Use lastModifiedDateTime instead.
 Read-Only.
+    - `[DeviceRegionName <String>]`: The name of the geographical region where the Cloud PC is currently provisioned.
+For example, westus3, eastus2, and southeastasia.
+Read-only.
     - `[DisasterRecoveryCapability <IMicrosoftGraphCloudPcDisasterRecoveryCapability>]`: cloudPcDisasterRecoveryCapability
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CapabilityType <String>]`: cloudPcDisasterRecoveryCapabilityType
@@ -26222,6 +26465,15 @@ Read-only.
       - `[StartDateTime <DateTime?>]`: Time the action was initiated.
 The Timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.
+      - `[StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]`: cloudPcStatusDetail
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: More information about the Cloud PC status.
+For example, 'additionalInformation': - `['{'@odata.type': 'microsoft.graph.keyValuePair','name': 'retriable','value': true }]` '
+        - `[Code <String>]`: The error/warning code associated with the Cloud PC status.
+Example: 'code': 'internalServerError'.
+        - `[Message <String>]`: The status message associated with error code.
+Example: 'message': 'There was an internal server error.
+Please contact support xxx.'.
       - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: Any additional information about the Cloud PC status.
@@ -26249,6 +26501,7 @@ The default value is false.
     - `[ServicePlanName <String>]`: The service plan name of the Cloud PC.
     - `[ServicePlanType <String>]`: cloudPcServicePlanType
     - `[Status <String>]`: cloudPcStatus
+    - `[StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]`: cloudPcStatusDetail
     - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
     - `[UserAccountType <String>]`: cloudPcUserAccountType
     - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user assigned to the Cloud PC.
@@ -27882,10 +28135,30 @@ Read-only.
 Read-only.
     - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
     - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions reusable across lists under this site.
+    - `[ContentModels <IMicrosoftGraphContentModel- `[]`>]`: The collection of content models applied to this site.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: Date and time of item last modification.
+Read-only.
+      - `[ModelType <String>]`: contentModelType
+      - `[Name <String>]`: The name of the contentModel.
     - `[ContentTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types defined for this site.
     - `[Deleted <IMicrosoftGraphDeleted>]`: deleted
     - `[DisplayName <String>]`: The full title for the site.
 Read-only.
+    - `[DocumentProcessingJobs <IMicrosoftGraphDocumentProcessingJob- `[]`>]`: The document processing jobs running on this site.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+      - `[JobType <String>]`: documentProcessingJobType
+      - `[ListItemUniqueId <String>]`: The listItemUniqueId of the file, or folder to process.
+Use GET driveItem resource operation and read  sharepointIds property to get listItemUniqueId.
+      - `[Status <String>]`: documentProcessingJobStatus
     - `[Drive <IMicrosoftGraphDrive>]`: drive
     - `[Drives <IMicrosoftGraphDrive- `[]`>]`: The collection of drives (document libraries) under this site.
     - `[ExternalColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site.
@@ -30271,7 +30544,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowBreakoutRooms <Boolean?>]`: 
-    - `[AllowLiveShare <Boolean?>]`: 
+    - `[AllowLiveShare <String>]`: meetingLiveShareOptions
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
     - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -30299,6 +30572,7 @@ Read-only.
         - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
         - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
         - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -30422,8 +30696,6 @@ Read-only.
       - `[MeetingId <String>]`: The unique identifier of the onlineMeeting related to this recording.
 Read-only.
       - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording.
-Read-only.
       - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
     - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
@@ -30478,8 +30750,6 @@ Read-only.
       - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
 Read-only.
       - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript.
-Read-only.
       - `[MetadataContent <Byte- `[]`>]`: The time-aligned metadata of the utterances in the transcript.
 Read-only.
       - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
@@ -31550,10 +31820,13 @@ Read-only.
         - `[Company <IMicrosoftGraphCompanyDetail>]`: companyDetail
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+          - `[CompanyCode <String>]`: Legal entity number of the company or its subdivision.
+For information on how to set the value for the companyCode, see profileSourceAnnotation.
           - `[Department <String>]`: Department Name within a company.
           - `[DisplayName <String>]`: Company name.
           - `[OfficeLocation <String>]`: Office Location of the person referred to.
           - `[Pronunciation <String>]`: Pronunciation guide for the company name.
+          - `[SecondaryDepartment <String>]`: 
           - `[WebUrl <String>]`: Link to the company home page.
         - `[Description <String>]`: Description of the position in question.
         - `[EndMonthYear <DateTime?>]`: When the position ended.
@@ -31561,6 +31834,8 @@ Read-only.
         - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
         - `[Level <String>]`: The employee's experience or management level.
         - `[Role <String>]`: The role the position entailed.
+        - `[SecondaryJobTitle <String>]`: 
+        - `[SecondaryRole <String>]`: 
         - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
         - `[Summary <String>]`: summary of the position.
       - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
@@ -31868,6 +32143,14 @@ Read-only.
 Use revokeSignInSessions to reset.
   - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+  - `[Solutions <IMicrosoftGraphUserSolutionRoot>]`: userSolutionRoot
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[WorkingTimeSchedule <IMicrosoftGraphWorkingTimeSchedule>]`: workingTimeSchedule
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
   - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -31898,8 +32181,14 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Chat <IMicrosoftGraphChat>]`: chat
-    - `[Locale <String>]`: The chosen locale of a user in Microsoft Teams.
-    - `[Region <String>]`: The region of the user in Microsoft Teams.
+    - `[Locale <String>]`: Represents the location that a user selected in Microsoft Teams and doesn't follow the Office's locale setting.
+A user's locale is represented by their preferred language and country or region.
+For example, en-us.
+The language component follows two-letter codes as defined in ISO 639-1, and the country component follows two-letter codes as defined in ISO 3166-1 alpha-2.
+    - `[Region <String>]`: Represents the region of the organization or the user.
+For users with multigeo licenses, the property contains the user's region (if available).
+For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
   - `[Todo <IMicrosoftGraphTodo>]`: todo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -32042,7 +32331,7 @@ Read-only.
           - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
           - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
           - `[AllowBreakoutRooms <Boolean?>]`: 
-          - `[AllowLiveShare <Boolean?>]`: 
+          - `[AllowLiveShare <String>]`: meetingLiveShareOptions
           - `[AllowMeetingChat <String>]`: meetingChatMode
           - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
           - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -32106,6 +32395,9 @@ Appears when answerInputType is text, multilineText or singleChoice.
 Only appears when the registrant is registered in Microsoft Entra ID.
           - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
+      - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[IsAttendeeEmailNotificationEnabled <Boolean?>]`: Indicates whether virtual event attendees receive email notifications.
       - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[Status <String>]`: virtualEventStatus
       - `[Id <String>]`: The unique identifier for an entity.
@@ -32431,7 +32723,7 @@ Read-only.
           - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
         - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
-        - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
+        - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
             - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
@@ -32441,6 +32733,7 @@ This property is required when restrictionType is set to keyLifetime.
             - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+            - `[State <String>]`: appManagementRestrictionState
           - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -32448,6 +32741,7 @@ This property is required when restrictionType is set to passwordLifetime.
             - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
             - `[RestrictionType <String>]`: appCredentialRestrictionType
+            - `[State <String>]`: appManagementRestrictionState
       - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -32875,8 +33169,8 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
-The value is represented in ISO 8601 format for durations.
-For example, PT1M represents a period of 1 month.
+The value is represented in ISO 8601  format for durations.
+For example, P1M represents a period of one month and PT1M represents a period of one minute.
             - `[State <String>]`: synchronizationScheduleState
           - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -33163,7 +33457,9 @@ Use the licenseAssignmentStates property to identify the directly assigned and i
 Not nullable.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
       - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
       - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.Supports $filter (eq and not).
@@ -33180,28 +33476,37 @@ For a complete list of GUIDs and their equivalent friendly service names, see Pr
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[EmailMethods <IMicrosoftGraphEmailAuthenticationMethod- `[]`>]`: Represents the email addresses registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[EmailAddress <String>]`: The email address registered to this user.
       - `[Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod- `[]`>]`: Represents the FIDO2 security keys registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (e.g.
-make and model) of the authenticator.
-        - `[AttestationCertificates <String- `[]`>]`: The attestation certificate(s) attached to this security key.
+        - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
+        - `[AttestationCertificates <String- `[]`>]`: The attestation certificate or certificates attached to this security key.
         - `[AttestationLevel <String>]`: attestationLevel
-        - `[CreatedDateTime <DateTime?>]`: The timestamp when this key was registered to the user.
         - `[DisplayName <String>]`: The display name of the key as given by the user.
         - `[Model <String>]`: The manufacturer-assigned model of the FIDO2 security key.
+        - `[PublicKeyCredential <IMicrosoftGraphWebauthnPublicKeyCredential>]`: webauthnPublicKeyCredential
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ClientExtensionResults <IMicrosoftGraphWebauthnAuthenticationExtensionsClientOutputs>]`: webauthnAuthenticationExtensionsClientOutputs
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The credential ID created by the WebAuthn Authenticator.
+          - `[Response <IMicrosoftGraphWebauthnAuthenticatorAttestationResponse>]`: webauthnAuthenticatorAttestationResponse
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[AttestationObject <String>]`: Base64URL encoded, cryptographically protected attestation about the WebAuthn Authenticator.
+            - `[ClientDataJson <String>]`: 
       - `[Methods <IMicrosoftGraphAuthenticationMethod- `[]`>]`: Represents all authentication methods registered to a user.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[CreatedDateTime <DateTime?>]`: 
       - `[MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod- `[]`>]`: The details of the Microsoft Authenticator app registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[ClientAppName <String>]`: microsoftAuthenticatorAuthenticationMethodClientAppName
-        - `[CreatedDateTime <DateTime?>]`: The date and time that this app was registered.
-This property is null if the device is not registered for passwordless Phone Sign-In.
         - `[Device <IMicrosoftGraphDevice>]`: device
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -33376,7 +33681,7 @@ Read-only.
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-      - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: 
+      - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation, such as a password reset operation.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
@@ -33389,22 +33694,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Status <String>]`: longRunningOperationStatus
         - `[StatusDetail <String>]`: Details about the status of the operation.
       - `[PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod- `[]`>]`: Represents the details of the password authentication method registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[CreatedDateTime <DateTime?>]`: The date and time when this password was last updated.
-This property is currently not populated.
-Read-only.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
       - `[PasswordlessMicrosoftAuthenticatorMethods <IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationMethod- `[]`>]`: Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[CreatedDateTime <DateTime?>]`: 
         - `[CreationDateTime <DateTime?>]`: The timestamp when this method was registered to the user.
         - `[Device <IMicrosoftGraphDevice>]`: device
         - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
       - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod- `[]`>]`: Represents the phone registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[PhoneNumber <String>]`: The phone number to text or call for authentication.
@@ -33414,26 +33716,30 @@ Numbers are rejected when creating/updating if they don't match the required for
         - `[PhoneType <String>]`: authenticationPhoneType
         - `[SmsSignInState <String>]`: authenticationMethodSignInState
       - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[CreatedDateTime <DateTime?>]`: The date and time that this Platform Credential Key was registered.
         - `[Device <IMicrosoftGraphDevice>]`: device
         - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
         - `[Platform <String>]`: authenticationMethodPlatform
+      - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[PerUserMfaState <String>]`: perUserMfaState
       - `[SignInPreferences <IMicrosoftGraphSignInPreferences>]`: signInPreferences
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[IsSystemPreferredAuthenticationMethodEnabled <Boolean?>]`: Indicates whether the credential preferences of the system are enabled.
         - `[UserPreferredMethodForSecondaryAuthentication <String>]`: userDefaultAuthenticationMethodType
       - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod- `[]`>]`: The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[SecretKey <String>]`: The secret key of the method.
 Always returns null.
       - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod- `[]`>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[CreatedDateTime <DateTime?>]`: The date and time when the Temporary Access Pass was created.
         - `[IsUsableOnce <Boolean?>]`: Determines whether the pass is limited to a one-time use.
 If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
         - `[LifetimeInMinutes <Int32?>]`: The lifetime of the Temporary Access Pass in minutes starting at startDateTime.
@@ -33442,9 +33748,9 @@ Must be between 10 and 43200 inclusive (equivalent to 30 days).
         - `[TemporaryAccessPass <String>]`: The Temporary Access Pass used to authenticate.
 Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
       - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod- `[]`>]`: Represents the Windows Hello for Business authentication method registered to a user for authentication.
+        - `[CreatedDateTime <DateTime?>]`: 
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[CreatedDateTime <DateTime?>]`: The date and time that this Windows Hello for Business key was registered.
         - `[Device <IMicrosoftGraphDevice>]`: device
         - `[DisplayName <String>]`: The name of the device on which Windows Hello for Business is registered
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
@@ -34092,6 +34398,10 @@ Read-only.
       - `[AllotmentDisplayName <String>]`: The allotment name divides tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment.
 When the provisioningType is dedicated, the allotment name is null.
 Read-only.
+      - `[ConnectionSetting <IMicrosoftGraphCloudPcConnectionSetting>]`: cloudPcConnectionSetting
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[EnableSingleSignOn <Boolean?>]`: Indicates whether single sign-on is enabled.
+The default value is false.
       - `[ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]`: cloudPcConnectionSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[EnableSingleSignOn <Boolean?>]`: 
@@ -34105,11 +34415,17 @@ If the status property is available, this property is empty.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
           - `[Result <String>]`: cloudPcConnectivityEventResult
+        - `[LastModifiedDateTime <DateTime?>]`: The last modified time for connectivity status of the Cloud PC.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z.
         - `[Status <String>]`: cloudPcConnectivityStatus
         - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated.
 This property is deprecated and will no longer be supported effective August 31, 2024.
 Use lastModifiedDateTime instead.
 Read-Only.
+      - `[DeviceRegionName <String>]`: The name of the geographical region where the Cloud PC is currently provisioned.
+For example, westus3, eastus2, and southeastasia.
+Read-only.
       - `[DisasterRecoveryCapability <IMicrosoftGraphCloudPcDisasterRecoveryCapability>]`: cloudPcDisasterRecoveryCapability
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CapabilityType <String>]`: cloudPcDisasterRecoveryCapabilityType
@@ -34147,6 +34463,15 @@ Read-only.
         - `[StartDateTime <DateTime?>]`: Time the action was initiated.
 The Timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.
+        - `[StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]`: cloudPcStatusDetail
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: More information about the Cloud PC status.
+For example, 'additionalInformation': - `['{'@odata.type': 'microsoft.graph.keyValuePair','name': 'retriable','value': true }]` '
+          - `[Code <String>]`: The error/warning code associated with the Cloud PC status.
+Example: 'code': 'internalServerError'.
+          - `[Message <String>]`: The status message associated with error code.
+Example: 'message': 'There was an internal server error.
+Please contact support xxx.'.
         - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: Any additional information about the Cloud PC status.
@@ -34174,6 +34499,7 @@ The default value is false.
       - `[ServicePlanName <String>]`: The service plan name of the Cloud PC.
       - `[ServicePlanType <String>]`: cloudPcServicePlanType
       - `[Status <String>]`: cloudPcStatus
+      - `[StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]`: cloudPcStatusDetail
       - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
       - `[UserAccountType <String>]`: cloudPcUserAccountType
       - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user assigned to the Cloud PC.
@@ -35065,10 +35391,30 @@ Read-only.
 Read-only.
       - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
       - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions reusable across lists under this site.
+      - `[ContentModels <IMicrosoftGraphContentModel- `[]`>]`: The collection of content models applied to this site.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[LastModifiedDateTime <DateTime?>]`: Date and time of item last modification.
+Read-only.
+        - `[ModelType <String>]`: contentModelType
+        - `[Name <String>]`: The name of the contentModel.
       - `[ContentTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types defined for this site.
       - `[Deleted <IMicrosoftGraphDeleted>]`: deleted
       - `[DisplayName <String>]`: The full title for the site.
 Read-only.
+      - `[DocumentProcessingJobs <IMicrosoftGraphDocumentProcessingJob- `[]`>]`: The document processing jobs running on this site.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+        - `[JobType <String>]`: documentProcessingJobType
+        - `[ListItemUniqueId <String>]`: The listItemUniqueId of the file, or folder to process.
+Use GET driveItem resource operation and read  sharepointIds property to get listItemUniqueId.
+        - `[Status <String>]`: documentProcessingJobStatus
       - `[Drive <IMicrosoftGraphDrive>]`: drive
       - `[Drives <IMicrosoftGraphDrive- `[]`>]`: The collection of drives (document libraries) under this site.
       - `[ExternalColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site.
@@ -37465,7 +37811,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
       - `[AllowBreakoutRooms <Boolean?>]`: 
-      - `[AllowLiveShare <Boolean?>]`: 
+      - `[AllowLiveShare <String>]`: meetingLiveShareOptions
       - `[AllowMeetingChat <String>]`: meetingChatMode
       - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
       - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -37493,6 +37839,7 @@ Read-only.
           - `[Identity <IMicrosoftGraphIdentity>]`: identity
           - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
           - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
           - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -37616,8 +37963,6 @@ Read-only.
         - `[MeetingId <String>]`: The unique identifier of the onlineMeeting related to this recording.
 Read-only.
         - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording.
-Read-only.
         - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
       - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
@@ -37672,8 +38017,6 @@ Read-only.
         - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
 Read-only.
         - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript.
-Read-only.
         - `[MetadataContent <Byte- `[]`>]`: The time-aligned metadata of the utterances in the transcript.
 Read-only.
         - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
@@ -38744,10 +39087,13 @@ Read-only.
           - `[Company <IMicrosoftGraphCompanyDetail>]`: companyDetail
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+            - `[CompanyCode <String>]`: Legal entity number of the company or its subdivision.
+For information on how to set the value for the companyCode, see profileSourceAnnotation.
             - `[Department <String>]`: Department Name within a company.
             - `[DisplayName <String>]`: Company name.
             - `[OfficeLocation <String>]`: Office Location of the person referred to.
             - `[Pronunciation <String>]`: Pronunciation guide for the company name.
+            - `[SecondaryDepartment <String>]`: 
             - `[WebUrl <String>]`: Link to the company home page.
           - `[Description <String>]`: Description of the position in question.
           - `[EndMonthYear <DateTime?>]`: When the position ended.
@@ -38755,6 +39101,8 @@ Read-only.
           - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
           - `[Level <String>]`: The employee's experience or management level.
           - `[Role <String>]`: The role the position entailed.
+          - `[SecondaryJobTitle <String>]`: 
+          - `[SecondaryRole <String>]`: 
           - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
           - `[Summary <String>]`: summary of the position.
         - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
@@ -39062,6 +39410,14 @@ Read-only.
 Use revokeSignInSessions to reset.
     - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+    - `[Solutions <IMicrosoftGraphUserSolutionRoot>]`: userSolutionRoot
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[WorkingTimeSchedule <IMicrosoftGraphWorkingTimeSchedule>]`: workingTimeSchedule
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
     - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -39092,8 +39448,14 @@ Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Chat <IMicrosoftGraphChat>]`: chat
-      - `[Locale <String>]`: The chosen locale of a user in Microsoft Teams.
-      - `[Region <String>]`: The region of the user in Microsoft Teams.
+      - `[Locale <String>]`: Represents the location that a user selected in Microsoft Teams and doesn't follow the Office's locale setting.
+A user's locale is represented by their preferred language and country or region.
+For example, en-us.
+The language component follows two-letter codes as defined in ISO 639-1, and the country component follows two-letter codes as defined in ISO 3166-1 alpha-2.
+      - `[Region <String>]`: Represents the region of the organization or the user.
+For users with multigeo licenses, the property contains the user's region (if available).
+For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
     - `[Todo <IMicrosoftGraphTodo>]`: todo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -39236,7 +39598,7 @@ Read-only.
             - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
             - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
             - `[AllowBreakoutRooms <Boolean?>]`: 
-            - `[AllowLiveShare <Boolean?>]`: 
+            - `[AllowLiveShare <String>]`: meetingLiveShareOptions
             - `[AllowMeetingChat <String>]`: meetingChatMode
             - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
             - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -39300,6 +39662,9 @@ Appears when answerInputType is text, multilineText or singleChoice.
 Only appears when the registrant is registered in Microsoft Entra ID.
             - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
+        - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IsAttendeeEmailNotificationEnabled <Boolean?>]`: Indicates whether virtual event attendees receive email notifications.
         - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Status <String>]`: virtualEventStatus
         - `[Id <String>]`: The unique identifier for an entity.
@@ -40346,7 +40711,7 @@ Read-only.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
       - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
-      - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
+      - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
           - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
@@ -40356,6 +40721,7 @@ This property is required when restrictionType is set to keyLifetime.
           - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+          - `[State <String>]`: appManagementRestrictionState
         - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration- `[]`>]`: Collection of password restrictions settings to be applied to an application or service principal.
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -40363,6 +40729,7 @@ This property is required when restrictionType is set to passwordLifetime.
           - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
           - `[RestrictionType <String>]`: appCredentialRestrictionType
+          - `[State <String>]`: appManagementRestrictionState
     - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -40790,8 +41157,8 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
-The value is represented in ISO 8601 format for durations.
-For example, PT1M represents a period of 1 month.
+The value is represented in ISO 8601  format for durations.
+For example, P1M represents a period of one month and PT1M represents a period of one minute.
           - `[State <String>]`: synchronizationScheduleState
         - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -41078,7 +41445,9 @@ Use the licenseAssignmentStates property to identify the directly assigned and i
 Not nullable.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
     - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
     - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
   - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.Supports $filter (eq and not).
@@ -41095,28 +41464,37 @@ For a complete list of GUIDs and their equivalent friendly service names, see Pr
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[EmailMethods <IMicrosoftGraphEmailAuthenticationMethod- `[]`>]`: Represents the email addresses registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[EmailAddress <String>]`: The email address registered to this user.
     - `[Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod- `[]`>]`: Represents the FIDO2 security keys registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (e.g.
-make and model) of the authenticator.
-      - `[AttestationCertificates <String- `[]`>]`: The attestation certificate(s) attached to this security key.
+      - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.
+      - `[AttestationCertificates <String- `[]`>]`: The attestation certificate or certificates attached to this security key.
       - `[AttestationLevel <String>]`: attestationLevel
-      - `[CreatedDateTime <DateTime?>]`: The timestamp when this key was registered to the user.
       - `[DisplayName <String>]`: The display name of the key as given by the user.
       - `[Model <String>]`: The manufacturer-assigned model of the FIDO2 security key.
+      - `[PublicKeyCredential <IMicrosoftGraphWebauthnPublicKeyCredential>]`: webauthnPublicKeyCredential
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[ClientExtensionResults <IMicrosoftGraphWebauthnAuthenticationExtensionsClientOutputs>]`: webauthnAuthenticationExtensionsClientOutputs
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The credential ID created by the WebAuthn Authenticator.
+        - `[Response <IMicrosoftGraphWebauthnAuthenticatorAttestationResponse>]`: webauthnAuthenticatorAttestationResponse
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AttestationObject <String>]`: Base64URL encoded, cryptographically protected attestation about the WebAuthn Authenticator.
+          - `[ClientDataJson <String>]`: 
     - `[Methods <IMicrosoftGraphAuthenticationMethod- `[]`>]`: Represents all authentication methods registered to a user.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[CreatedDateTime <DateTime?>]`: 
     - `[MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod- `[]`>]`: The details of the Microsoft Authenticator app registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[ClientAppName <String>]`: microsoftAuthenticatorAuthenticationMethodClientAppName
-      - `[CreatedDateTime <DateTime?>]`: The date and time that this app was registered.
-This property is null if the device is not registered for passwordless Phone Sign-In.
       - `[Device <IMicrosoftGraphDevice>]`: device
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -41291,7 +41669,7 @@ Read-only.
       - `[DeviceTag <String>]`: Tags containing app metadata.
       - `[DisplayName <String>]`: The name of the device on which this app is registered.
       - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
-    - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: 
+    - `[Operations <IMicrosoftGraphLongRunningOperation- `[]`>]`: Represents the status of a long-running operation, such as a password reset operation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
@@ -41304,22 +41682,19 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Status <String>]`: longRunningOperationStatus
       - `[StatusDetail <String>]`: Details about the status of the operation.
     - `[PasswordMethods <IMicrosoftGraphPasswordAuthenticationMethod- `[]`>]`: Represents the details of the password authentication method registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when this password was last updated.
-This property is currently not populated.
-Read-only.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Password <String>]`: For security, the password is always returned as null from a LIST or GET operation.
     - `[PasswordlessMicrosoftAuthenticatorMethods <IMicrosoftGraphPasswordlessMicrosoftAuthenticatorAuthenticationMethod- `[]`>]`: Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: 
       - `[CreationDateTime <DateTime?>]`: The timestamp when this method was registered to the user.
       - `[Device <IMicrosoftGraphDevice>]`: device
       - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
     - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod- `[]`>]`: Represents the phone registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[PhoneNumber <String>]`: The phone number to text or call for authentication.
@@ -41329,26 +41704,30 @@ Numbers are rejected when creating/updating if they don't match the required for
       - `[PhoneType <String>]`: authenticationPhoneType
       - `[SmsSignInState <String>]`: authenticationMethodSignInState
     - `[PlatformCredentialMethods <IMicrosoftGraphPlatformCredentialAuthenticationMethod- `[]`>]`: 
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time that this Platform Credential Key was registered.
       - `[Device <IMicrosoftGraphDevice>]`: device
       - `[DisplayName <String>]`: The name of the device on which Platform Credential is registered.
       - `[KeyStrength <String>]`: authenticationMethodKeyStrength
       - `[Platform <String>]`: authenticationMethodPlatform
+    - `[Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]`: strongAuthenticationRequirements
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[PerUserMfaState <String>]`: perUserMfaState
     - `[SignInPreferences <IMicrosoftGraphSignInPreferences>]`: signInPreferences
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[IsSystemPreferredAuthenticationMethodEnabled <Boolean?>]`: Indicates whether the credential preferences of the system are enabled.
       - `[UserPreferredMethodForSecondaryAuthentication <String>]`: userDefaultAuthenticationMethodType
     - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod- `[]`>]`: The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[SecretKey <String>]`: The secret key of the method.
 Always returns null.
     - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod- `[]`>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when the Temporary Access Pass was created.
       - `[IsUsableOnce <Boolean?>]`: Determines whether the pass is limited to a one-time use.
 If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
       - `[LifetimeInMinutes <Int32?>]`: The lifetime of the Temporary Access Pass in minutes starting at startDateTime.
@@ -41357,9 +41736,9 @@ Must be between 10 and 43200 inclusive (equivalent to 30 days).
       - `[TemporaryAccessPass <String>]`: The Temporary Access Pass used to authenticate.
 Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
     - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod- `[]`>]`: Represents the Windows Hello for Business authentication method registered to a user for authentication.
+      - `[CreatedDateTime <DateTime?>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time that this Windows Hello for Business key was registered.
       - `[Device <IMicrosoftGraphDevice>]`: device
       - `[DisplayName <String>]`: The name of the device on which Windows Hello for Business is registered
       - `[KeyStrength <String>]`: authenticationMethodKeyStrength
@@ -42007,6 +42386,10 @@ Read-only.
     - `[AllotmentDisplayName <String>]`: The allotment name divides tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment.
 When the provisioningType is dedicated, the allotment name is null.
 Read-only.
+    - `[ConnectionSetting <IMicrosoftGraphCloudPcConnectionSetting>]`: cloudPcConnectionSetting
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EnableSingleSignOn <Boolean?>]`: Indicates whether single sign-on is enabled.
+The default value is false.
     - `[ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]`: cloudPcConnectionSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[EnableSingleSignOn <Boolean?>]`: 
@@ -42020,11 +42403,17 @@ If the status property is available, this property is empty.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
         - `[Result <String>]`: cloudPcConnectivityEventResult
+      - `[LastModifiedDateTime <DateTime?>]`: The last modified time for connectivity status of the Cloud PC.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z.
       - `[Status <String>]`: cloudPcConnectivityStatus
       - `[UpdatedDateTime <DateTime?>]`: Datetime when the status was updated.
 This property is deprecated and will no longer be supported effective August 31, 2024.
 Use lastModifiedDateTime instead.
 Read-Only.
+    - `[DeviceRegionName <String>]`: The name of the geographical region where the Cloud PC is currently provisioned.
+For example, westus3, eastus2, and southeastasia.
+Read-only.
     - `[DisasterRecoveryCapability <IMicrosoftGraphCloudPcDisasterRecoveryCapability>]`: cloudPcDisasterRecoveryCapability
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CapabilityType <String>]`: cloudPcDisasterRecoveryCapabilityType
@@ -42062,6 +42451,15 @@ Read-only.
       - `[StartDateTime <DateTime?>]`: Time the action was initiated.
 The Timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.
+      - `[StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]`: cloudPcStatusDetail
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: More information about the Cloud PC status.
+For example, 'additionalInformation': - `['{'@odata.type': 'microsoft.graph.keyValuePair','name': 'retriable','value': true }]` '
+        - `[Code <String>]`: The error/warning code associated with the Cloud PC status.
+Example: 'code': 'internalServerError'.
+        - `[Message <String>]`: The status message associated with error code.
+Example: 'message': 'There was an internal server error.
+Please contact support xxx.'.
       - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AdditionalInformation <IMicrosoftGraphKeyValuePair- `[]`>]`: Any additional information about the Cloud PC status.
@@ -42089,6 +42487,7 @@ The default value is false.
     - `[ServicePlanName <String>]`: The service plan name of the Cloud PC.
     - `[ServicePlanType <String>]`: cloudPcServicePlanType
     - `[Status <String>]`: cloudPcStatus
+    - `[StatusDetail <IMicrosoftGraphCloudPcStatusDetail>]`: cloudPcStatusDetail
     - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
     - `[UserAccountType <String>]`: cloudPcUserAccountType
     - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user assigned to the Cloud PC.
@@ -43722,10 +44121,30 @@ Read-only.
 Read-only.
     - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
     - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions reusable across lists under this site.
+    - `[ContentModels <IMicrosoftGraphContentModel- `[]`>]`: The collection of content models applied to this site.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: Date and time of item last modification.
+Read-only.
+      - `[ModelType <String>]`: contentModelType
+      - `[Name <String>]`: The name of the contentModel.
     - `[ContentTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types defined for this site.
     - `[Deleted <IMicrosoftGraphDeleted>]`: deleted
     - `[DisplayName <String>]`: The full title for the site.
 Read-only.
+    - `[DocumentProcessingJobs <IMicrosoftGraphDocumentProcessingJob- `[]`>]`: The document processing jobs running on this site.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+      - `[JobType <String>]`: documentProcessingJobType
+      - `[ListItemUniqueId <String>]`: The listItemUniqueId of the file, or folder to process.
+Use GET driveItem resource operation and read  sharepointIds property to get listItemUniqueId.
+      - `[Status <String>]`: documentProcessingJobStatus
     - `[Drive <IMicrosoftGraphDrive>]`: drive
     - `[Drives <IMicrosoftGraphDrive- `[]`>]`: The collection of drives (document libraries) under this site.
     - `[ExternalColumns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site.
@@ -46111,7 +46530,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowBreakoutRooms <Boolean?>]`: 
-    - `[AllowLiveShare <Boolean?>]`: 
+    - `[AllowLiveShare <String>]`: meetingLiveShareOptions
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
     - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -46139,6 +46558,7 @@ Read-only.
         - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
+(deprecated)
         - `[Role <String>]`: Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
         - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -46262,8 +46682,6 @@ Read-only.
       - `[MeetingId <String>]`: The unique identifier of the onlineMeeting related to this recording.
 Read-only.
       - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording.
-Read-only.
       - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
     - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
@@ -46318,8 +46736,6 @@ Read-only.
       - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript.
 Read-only.
       - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript.
-Read-only.
       - `[MetadataContent <Byte- `[]`>]`: The time-aligned metadata of the utterances in the transcript.
 Read-only.
       - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript.
@@ -47390,10 +47806,13 @@ Read-only.
         - `[Company <IMicrosoftGraphCompanyDetail>]`: companyDetail
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+          - `[CompanyCode <String>]`: Legal entity number of the company or its subdivision.
+For information on how to set the value for the companyCode, see profileSourceAnnotation.
           - `[Department <String>]`: Department Name within a company.
           - `[DisplayName <String>]`: Company name.
           - `[OfficeLocation <String>]`: Office Location of the person referred to.
           - `[Pronunciation <String>]`: Pronunciation guide for the company name.
+          - `[SecondaryDepartment <String>]`: 
           - `[WebUrl <String>]`: Link to the company home page.
         - `[Description <String>]`: Description of the position in question.
         - `[EndMonthYear <DateTime?>]`: When the position ended.
@@ -47401,6 +47820,8 @@ Read-only.
         - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
         - `[Level <String>]`: The employee's experience or management level.
         - `[Role <String>]`: The role the position entailed.
+        - `[SecondaryJobTitle <String>]`: 
+        - `[SecondaryRole <String>]`: 
         - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
         - `[Summary <String>]`: summary of the position.
       - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
@@ -47708,6 +48129,14 @@ Read-only.
 Use revokeSignInSessions to reset.
   - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+  - `[Solutions <IMicrosoftGraphUserSolutionRoot>]`: userSolutionRoot
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[WorkingTimeSchedule <IMicrosoftGraphWorkingTimeSchedule>]`: workingTimeSchedule
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
   - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -47738,8 +48167,14 @@ Read-only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Chat <IMicrosoftGraphChat>]`: chat
-    - `[Locale <String>]`: The chosen locale of a user in Microsoft Teams.
-    - `[Region <String>]`: The region of the user in Microsoft Teams.
+    - `[Locale <String>]`: Represents the location that a user selected in Microsoft Teams and doesn't follow the Office's locale setting.
+A user's locale is represented by their preferred language and country or region.
+For example, en-us.
+The language component follows two-letter codes as defined in ISO 639-1, and the country component follows two-letter codes as defined in ISO 3166-1 alpha-2.
+    - `[Region <String>]`: Represents the region of the organization or the user.
+For users with multigeo licenses, the property contains the user's region (if available).
+For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
   - `[Todo <IMicrosoftGraphTodo>]`: todo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -47882,7 +48317,7 @@ Read-only.
           - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
           - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
           - `[AllowBreakoutRooms <Boolean?>]`: 
-          - `[AllowLiveShare <Boolean?>]`: 
+          - `[AllowLiveShare <String>]`: meetingLiveShareOptions
           - `[AllowMeetingChat <String>]`: meetingChatMode
           - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
           - `[AllowPowerPointSharing <Boolean?>]`: 
@@ -47946,6 +48381,9 @@ Appears when answerInputType is text, multilineText or singleChoice.
 Only appears when the registrant is registered in Microsoft Entra ID.
           - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
+      - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[IsAttendeeEmailNotificationEnabled <Boolean?>]`: Indicates whether virtual event attendees receive email notifications.
       - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[Status <String>]`: virtualEventStatus
       - `[Id <String>]`: The unique identifier for an entity.

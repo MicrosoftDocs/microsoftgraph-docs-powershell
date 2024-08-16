@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationjob
 schema: 2.0.0
+ms.subservice: entra-applications
+ms.subservice: entra-applications
 ---
 
 # Get-MgServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
-Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
+Retrieve the existing synchronization job and its properties.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
@@ -38,7 +40,13 @@ Get-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity> [-
 ```
 
 ## DESCRIPTION
-Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
+Retrieve the existing synchronization job and its properties.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-list-jobs-permissions.md)]
 
 ## PARAMETERS
 
@@ -329,6 +337,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationjob)
+
+[https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/synchronization-synchronization-list-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-jobs?view=graph-rest-1.0)
 
 
 

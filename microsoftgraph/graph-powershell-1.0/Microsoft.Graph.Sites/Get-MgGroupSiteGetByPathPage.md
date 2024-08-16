@@ -15,20 +15,11 @@ The collection of pages in the baseSitePages list in this site.
 
 ## SYNTAX
 
-### List1 (Default)
 ```
 Get-MgGroupSiteGetByPathPage -GroupId <String> -Path <String> -SiteId <String> [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### List
-```
-Get-MgGroupSiteGetByPathPage -GroupId <String> -Path <String> -SiteId <String> -Path1 <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -148,21 +139,6 @@ Usage: path='{path}'
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Path1
-Usage: path='{path1}'
-
-```yaml
-Type: String
-Parameter Sets: List
 Aliases:
 
 Required: True

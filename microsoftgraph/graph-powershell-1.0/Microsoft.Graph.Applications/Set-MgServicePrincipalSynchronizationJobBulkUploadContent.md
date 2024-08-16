@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgServicePrincipalSynchronizationJobBulkUploadContent
 
 ## SYNOPSIS
-Update media content for the navigation property bulkUpload in servicePrincipals
+The bulk upload operation for the job.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Set-MgServicePrincipalSynchronizationJobBulkUploadContent -InputObject <IApplica
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property bulkUpload in servicePrincipals
+The bulk upload operation for the job.
 
 ## PARAMETERS
 

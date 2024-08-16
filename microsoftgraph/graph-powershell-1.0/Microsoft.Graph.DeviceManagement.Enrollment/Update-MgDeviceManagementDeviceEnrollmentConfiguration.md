@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementdeviceenrollmentconfiguration
 schema: 2.0.0
-ms.subservice: intune
 ---
 
 # Update-MgDeviceManagementDeviceEnrollmentConfiguration
@@ -61,12 +60,46 @@ Update the properties of a deviceEnrollmentPlatformRestrictionsConfiguration obj
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.deviceEnrollmentLimitConfiguration"
+	"@odata.type" = "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration"
 	displayName = "Display Name value"
 	description = "Description value"
 	priority = 8
 	version = 7
-	limit = 
+	iosRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	windowsRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	windowsMobileRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	androidRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
+	macOSRestriction = @{
+		"@odata.type" = "microsoft.graph.deviceEnrollmentPlatformRestriction"
+		platformBlocked = $true
+		personalDeviceEnrollmentBlocked = $true
+		osMinimumVersion = "Os Minimum Version value"
+		osMaximumVersion = "Os Maximum Version value"
+	}
 }
 
 Update-MgDeviceManagementDeviceEnrollmentConfiguration -DeviceEnrollmentConfigurationId $deviceEnrollmentConfigurationId -BodyParameter $params

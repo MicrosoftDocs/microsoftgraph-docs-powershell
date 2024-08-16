@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationownerdirectoryobjectbyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgApplicationOwnerDirectoryObjectByRef
 
 ## SYNOPSIS
-Delete ref of navigation property owners for applications
+Remove an owner from an application.
+As a recommended best practice, apps should have at least two owners.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationOwnerDirectoryObjectByRef?view=graph-powershell-beta)
@@ -30,7 +32,11 @@ Remove-MgApplicationOwnerDirectoryObjectByRef -InputObject <IApplicationsIdentit
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property owners for applications
+Remove an owner from an application.
+As a recommended best practice, apps should have at least two owners.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-owners-permissions.md)]
 
 ## PARAMETERS
 
@@ -231,6 +237,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationownerdirectoryobjectbyref)
+
+[https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-1.0)
 
 
 

@@ -41,6 +41,9 @@ Get-MgBetaPolicyClaimMappingPolicyApplyTo -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Get appliesTo from policies
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/claimsmappingpolicy-list-appliesto-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -487,7 +487,9 @@ Read-only.
 Returned only on $select.
 Supports $filter (eq).Read-only.
     - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
     - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
   - `[AutoSubscribeNewMembers <Boolean?>]`: Indicates if new members added to the group are autosubscribed to receive email notifications.
 You can set this property in a PATCH request for the group; don't set it in the initial POST request that creates the group.
 Default value is false.
@@ -5356,7 +5358,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
     - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
     - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
   - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -10226,7 +10230,9 @@ Read-only.
 Returned only on $select.
 Supports $filter (eq).Read-only.
       - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
       - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
     - `[AutoSubscribeNewMembers <Boolean?>]`: Indicates if new members added to the group are autosubscribed to receive email notifications.
 You can set this property in a PATCH request for the group; don't set it in the initial POST request that creates the group.
 Default value is false.
@@ -15217,7 +15223,9 @@ Read-only.
 Returned only on $select.
 Supports $filter (eq).Read-only.
         - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
         - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
       - `[AutoSubscribeNewMembers <Boolean?>]`: Indicates if new members added to the group are autosubscribed to receive email notifications.
 You can set this property in a PATCH request for the group; don't set it in the initial POST request that creates the group.
 Default value is false.

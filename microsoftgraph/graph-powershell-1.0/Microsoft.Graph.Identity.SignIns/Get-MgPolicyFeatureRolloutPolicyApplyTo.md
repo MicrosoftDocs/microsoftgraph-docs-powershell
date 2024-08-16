@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
+Specifies a list of directoryObject resources that feature is enabled for.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyFeatureRolloutPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyTo?view=graph-powershell-beta)
@@ -25,7 +25,7 @@ Get-MgPolicyFeatureRolloutPolicyApplyTo -FeatureRolloutPolicyId <String> [-Expan
 
 ## DESCRIPTION
 Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
+Specifies a list of directoryObject resources that feature is enabled for.
 
 ## PARAMETERS
 

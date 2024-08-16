@@ -13,7 +13,7 @@ Update the properties of an educationRubric object.
 Only teachers can perform this operation.
 Updating a rubric attached to an assignment (PATCH /education/classes/{class-id}/assignments/{assignment-id}/rubric) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under /education/users/{id}/rubrics.
 After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.
-That rubric can be retrieved using GET /education/classes/{class-id}/assignments/{assignment-id}/rubric, but it cannot be updated.
+That rubric can be retrieved using GET /education/classes/{class-id}/assignments/{assignment-id}/rubric, but it can't be updated.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeRubric?view=graph-powershell-beta)
@@ -59,7 +59,7 @@ Update the properties of an educationRubric object.
 Only teachers can perform this operation.
 Updating a rubric attached to an assignment (PATCH /education/classes/{class-id}/assignments/{assignment-id}/rubric) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under /education/users/{id}/rubrics.
 After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.
-That rubric can be retrieved using GET /education/classes/{class-id}/assignments/{assignment-id}/rubric, but it cannot be updated.
+That rubric can be retrieved using GET /education/classes/{class-id}/assignments/{assignment-id}/rubric, but it can't be updated.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationrubric-update-permissions.md)]

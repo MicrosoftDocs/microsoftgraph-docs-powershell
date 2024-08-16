@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupTeamPhotoContent
 
 ## SYNOPSIS
-Get media content for the navigation property photo from groups
+The profile photo for the team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPhotoContent?view=graph-powershell-beta)
@@ -17,37 +17,20 @@ Get media content for the navigation property photo from groups
 
 ### Get (Default)
 ```
-Get-MgGroupTeamPhotoContent -GroupId <String> [-Format <String>] -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgGroupTeamPhotoContent -GroupId <String> -OutFile <String> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupTeamPhotoContent -InputObject <ITeamsIdentity> [-Format <String>] -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgGroupTeamPhotoContent -InputObject <ITeamsIdentity> -OutFile <String> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property photo from groups
+The profile photo for the team.
 
 ## PARAMETERS
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -GroupId
 The unique identifier of group

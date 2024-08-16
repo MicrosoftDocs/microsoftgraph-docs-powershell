@@ -13,6 +13,9 @@ Add an attribute to an external identities self-service sign up user flow that's
 You can add both custom and built-in attributes to a user flow.
 Prior to this step, PATCH the user flow to add the attribute to the attribute collection step (to determine how it will be displayed).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgApplicationSynchronizationJobBulkUploadContent
 
 ## SYNOPSIS
-Update media content for the navigation property bulkUpload in applications
+The bulk upload operation for the job.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Set-MgApplicationSynchronizationJobBulkUploadContent -InputObject <IApplications
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property bulkUpload in applications
+The bulk upload operation for the job.
 
 ## PARAMETERS
 

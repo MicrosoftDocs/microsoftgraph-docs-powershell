@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannel
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgTeamPrimaryChannel
 
 ## SYNOPSIS
-The general channel for the team.
+Get the default channel, General, of a team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
@@ -30,7 +31,10 @@ Get-MgTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-The general channel for the team.
+Get the default channel, General, of a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-get-primarychannel-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -207,6 +211,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannel)
+
+[https://learn.microsoft.com/graph/api/team-get-primarychannel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-get-primarychannel?view=graph-rest-1.0)
 
 
 

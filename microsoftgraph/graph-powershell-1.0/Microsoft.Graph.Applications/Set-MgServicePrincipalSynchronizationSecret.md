@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationsecret
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Set-MgServicePrincipalSynchronizationSecret
 
 ## SYNOPSIS
-Update property secrets value.
+Provide credentials for establishing connectivity with the target system.
 
 ## SYNTAX
 
@@ -44,7 +45,10 @@ Set-MgServicePrincipalSynchronizationSecret -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Update property secrets value.
+Provide credentials for establishing connectivity with the target system.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-serviceprincipal-put-synchronization-permissions.md)]
 
 ## PARAMETERS
 
@@ -258,6 +262,8 @@ VALUE <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationsecret](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationsecret)
+
+[https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-1.0)
 
 
 

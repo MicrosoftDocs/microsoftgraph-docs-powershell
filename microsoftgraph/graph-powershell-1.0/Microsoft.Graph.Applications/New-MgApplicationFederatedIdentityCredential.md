@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationfederatedidentitycredential
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgApplicationFederatedIdentityCredential
 
 ## SYNOPSIS
-Create new navigation property to federatedIdentityCredentials for applications
+Create a new federatedIdentityCredential object for an application.
+By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
+Maximum of 20 objects can be added to an application.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
@@ -46,7 +49,12 @@ New-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity
 ```
 
 ## DESCRIPTION
-Create new navigation property to federatedIdentityCredentials for applications
+Create a new federatedIdentityCredential object for an application.
+By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
+Maximum of 20 objects can be added to an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-federatedidentitycredentials-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -399,6 +407,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationfederatedidentitycredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationfederatedidentitycredential)
+
+[https://learn.microsoft.com/graph/api/application-post-federatedidentitycredentials?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-federatedidentitycredentials?view=graph-rest-1.0)
 
 
 

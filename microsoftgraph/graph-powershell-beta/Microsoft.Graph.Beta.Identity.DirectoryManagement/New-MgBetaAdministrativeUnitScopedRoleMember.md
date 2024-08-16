@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitscopedrolemember
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Create new navigation property to scopedRoleMembers for administrativeUnits
+Assign a Microsoft Entra role with administrative unit scope.
+For a list of roles that can be assigned with administrative unit scope, see Assign Microsoft Entra roles with administrative unit scope.
 
 ## SYNTAX
 
@@ -44,7 +46,11 @@ New-MgBetaAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryMan
 ```
 
 ## DESCRIPTION
-Create new navigation property to scopedRoleMembers for administrativeUnits
+Assign a Microsoft Entra role with administrative unit scope.
+For a list of roles that can be assigned with administrative unit scope, see Assign Microsoft Entra roles with administrative unit scope.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-post-scopedrolemembers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaAdministrativeUnitScopedRoleMember Cmdlet
@@ -364,6 +370,8 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitscopedrolemember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitscopedrolemember)
+
+[https://learn.microsoft.com/graph/api/administrativeunit-post-scopedrolemembers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/administrativeunit-post-scopedrolemembers?view=graph-rest-beta)
 
 
 

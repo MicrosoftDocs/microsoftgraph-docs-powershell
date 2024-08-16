@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesslcertificaterelatedhost
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost
@@ -39,6 +40,22 @@ Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost -InputObject <ISecurit
 
 ## DESCRIPTION
 The host resources related with this sslCertificate.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-sslcertificate-list-relatedhosts-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost -SslCertificateId $sslCertificateId
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost Cmdlet.
+
 
 ## PARAMETERS
 
@@ -368,7 +385,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesslcertificaterelatedhost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesslcertificaterelatedhost)
 
 [https://learn.microsoft.com/graph/api/security-sslcertificate-list-relatedhosts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-sslcertificate-list-relatedhosts?view=graph-rest-1.0)
-
 
 
 

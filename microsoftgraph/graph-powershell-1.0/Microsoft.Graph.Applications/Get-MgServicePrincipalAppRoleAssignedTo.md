@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignedto
 schema: 2.0.0
+ms.subservice: entra-applications
+ms.subservice: entra-applications
 ---
 
 # Get-MgServicePrincipalAppRoleAssignedTo
 
 ## SYNOPSIS
-App role assignments for this app or service, granted to users, groups, and other service principals.
-Supports $expand.
+Read the properties and relationships of an appRoleAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta)
@@ -39,8 +40,13 @@ Get-MgServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity> [-E
 ```
 
 ## DESCRIPTION
-App role assignments for this app or service, granted to users, groups, and other service principals.
-Supports $expand.
+Read the properties and relationships of an appRoleAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approleassignment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-approleassignedto-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -344,6 +350,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignedto](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignedto)
+
+[https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignedto?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignedto?view=graph-rest-1.0)
 
 
 

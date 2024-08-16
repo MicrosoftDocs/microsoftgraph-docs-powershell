@@ -36,6 +36,9 @@ New-MgBetaIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraph
 Create a new namedLocation object.
 Named locations can be either ipNamedLocation or countryNamedLocation objects.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccessroot-post-namedlocations-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Create a country named location
 

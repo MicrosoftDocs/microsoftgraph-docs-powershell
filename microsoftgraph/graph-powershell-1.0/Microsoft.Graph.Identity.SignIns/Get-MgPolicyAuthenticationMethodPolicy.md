@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationmethodpolicy
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgPolicyAuthenticationMethodPolicy
 
 ## SYNOPSIS
-The authentication methods and the users that are allowed to use them to sign in and perform multifactor authentication (MFA) in Microsoft Entra ID.
+Read the properties and relationships of an authenticationMethodsPolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
@@ -22,7 +23,10 @@ Get-MgPolicyAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Property <
 ```
 
 ## DESCRIPTION
-The authentication methods and the users that are allowed to use them to sign in and perform multifactor authentication (MFA) in Microsoft Entra ID.
+Read the properties and relationships of an authenticationMethodsPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationmethodspolicy-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -128,6 +132,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationmethodpolicy)
+
+[https://learn.microsoft.com/graph/api/authenticationmethodspolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-get?view=graph-rest-1.0)
 
 
 

@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mggroupapproleassignment
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # New-MgGroupAppRoleAssignment
 
 ## SYNOPSIS
-Create new navigation property to appRoleAssignments for groups
+Use this API to assign an app role to a security group.
+All direct members of the group will be considered assigned.
+Security groups with dynamic memberships are supported.
+To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
@@ -48,7 +52,13 @@ New-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to appRoleAssignments for groups
+Use this API to assign an app role to a security group.
+All direct members of the group will be considered assigned.
+Security groups with dynamic memberships are supported.
+To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-approleassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Assign an app role to a group
@@ -453,6 +463,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mggroupapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mggroupapproleassignment)
+
+[https://learn.microsoft.com/graph/api/group-post-approleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-approleassignments?view=graph-rest-1.0)
 
 
 

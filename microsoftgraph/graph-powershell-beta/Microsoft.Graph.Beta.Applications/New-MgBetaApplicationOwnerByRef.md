@@ -47,6 +47,9 @@ New-MgBetaApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParame
 ## DESCRIPTION
 Use this API to add an owner to an application by posting to the owners collection.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-owners-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Add an owner to an application
 

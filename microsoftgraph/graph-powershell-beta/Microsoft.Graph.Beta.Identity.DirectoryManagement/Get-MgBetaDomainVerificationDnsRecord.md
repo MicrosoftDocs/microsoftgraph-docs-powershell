@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainverificationdnsrecord
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDomainVerificationDnsRecord
@@ -43,6 +44,9 @@ Get-MgBetaDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagement
 DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-list-verificationdnsrecords-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -369,6 +373,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainverificationdnsrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainverificationdnsrecord)
+
+[https://learn.microsoft.com/graph/api/domain-list-verificationdnsrecords?view=graph-rest-beta](https://learn.microsoft.com/graph/api/domain-list-verificationdnsrecords?view=graph-rest-beta)
 
 
 

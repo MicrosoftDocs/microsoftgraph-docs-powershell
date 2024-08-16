@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef
 
 ## SYNOPSIS
-Delete ref of navigation property homeRealmDiscoveryPolicies for servicePrincipals
+Remove a homeRealmDiscoveryPolicy from a servicePrincipal.
 
 ## SYNTAX
 
@@ -29,7 +30,10 @@ Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property homeRealmDiscoveryPolicies for servicePrincipals
+Remove a homeRealmDiscoveryPolicy from a servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-homerealmdiscoverypolicies-permissions.md)]
 
 ## PARAMETERS
 
@@ -230,6 +234,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-delete-homerealmdiscoverypolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-delete-homerealmdiscoverypolicies?view=graph-rest-1.0)
 
 
 

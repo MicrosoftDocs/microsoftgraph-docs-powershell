@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceregistereduserbyref
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaDeviceRegisteredUserByRef
 
 ## SYNOPSIS
-Create new navigation property ref to registeredUsers for devices
+Add a registered user for the device.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDeviceRegisteredUserByRef?view=graph-powershell-1.0)
@@ -45,7 +46,10 @@ New-MgBetaDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagementId
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to registeredUsers for devices
+Add a registered user for the device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-post-registeredusers-permissions.md)]
 
 ## PARAMETERS
 
@@ -292,6 +296,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceregistereduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceregistereduserbyref)
+
+[https://learn.microsoft.com/graph/api/device-post-registeredusers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/device-post-registeredusers?view=graph-rest-beta)
 
 
 

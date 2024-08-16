@@ -9,7 +9,9 @@ ms.subservice: extensions
 # Update-MgBetaGroupThreadPostExtension
 
 ## SYNOPSIS
-Update an open extension (openTypeExtension object) with the properties in the request body: The data in an extension can be primitive types, or arrays of primitive types.
+Update an open extension (openTypeExtension object) on a supported resource type.- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.- Otherwise, that property and its data are added to the extension.
+The data in an extension can be primitive types or arrays of primitive types.
+The operation behaves differently for resources that are directory objects vs other resources.
 See the table in the Permissions section for the list of resources that support open extensions.
 
 > [!NOTE]
@@ -46,7 +48,9 @@ Update-MgBetaGroupThreadPostExtension -InputObject <IGroupsIdentity> -BodyParame
 ```
 
 ## DESCRIPTION
-Update an open extension (openTypeExtension object) with the properties in the request body: The data in an extension can be primitive types, or arrays of primitive types.
+Update an open extension (openTypeExtension object) on a supported resource type.- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.- Otherwise, that property and its data are added to the extension.
+The data in an extension can be primitive types or arrays of primitive types.
+The operation behaves differently for resources that are directory objects vs other resources.
 See the table in the Permissions section for the list of resources that support open extensions.
 
 ## EXAMPLES
@@ -295,6 +299,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
+  - `[ContentModelId <String>]`: The unique identifier of contentModel
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
   - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
@@ -318,11 +323,11 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
+  - `[ModelName <String>]`: Usage: modelName='{modelName}'
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
-  - `[Path1 <String>]`: Usage: path='{path1}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan

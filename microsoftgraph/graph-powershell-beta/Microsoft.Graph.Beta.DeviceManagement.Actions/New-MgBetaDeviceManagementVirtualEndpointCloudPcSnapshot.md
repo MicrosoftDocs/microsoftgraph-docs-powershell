@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementvirtualendpointcloudpcsnapshot
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # New-MgBetaDeviceManagementVirtualEndpointCloudPcSnapshot
@@ -28,6 +29,22 @@ New-MgBetaDeviceManagementVirtualEndpointCloudPcSnapshot -InputObject <IDeviceMa
 
 ## DESCRIPTION
 Create a snapshot for a specific Cloud PC device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-createsnapshot-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+New-MgBetaDeviceManagementVirtualEndpointCloudPcSnapshot -CloudPCId $cloudPCId
+
+```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointCloudPcSnapshot Cmdlet.
+
 
 ## PARAMETERS
 
@@ -231,7 +248,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementvirtualendpointcloudpcsnapshot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementvirtualendpointcloudpcsnapshot)
 
 [https://learn.microsoft.com/graph/api/cloudpc-createsnapshot?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-createsnapshot?view=graph-rest-beta)
-
 
 
 

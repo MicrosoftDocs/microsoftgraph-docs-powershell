@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberof
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgServicePrincipalMemberOf
@@ -46,6 +47,9 @@ Roles that this service principal is a member of.
 HTTP Methods: GET Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-memberof-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -365,6 +369,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberof](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberof)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0)
 
 
 

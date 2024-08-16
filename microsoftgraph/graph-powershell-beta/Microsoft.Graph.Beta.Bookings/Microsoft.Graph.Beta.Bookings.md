@@ -14,177 +14,6 @@ Locale: en-US
 ### [Enable-MgBetaBackupRestore](Enable-MgBetaBackupRestore.md)
 
 
-### [Get-MgBetaBackupRestore](Get-MgBetaBackupRestore.md)
-
-
-### [Get-MgBetaBackupRestoreDriveInclusionRule](Get-MgBetaBackupRestoreDriveInclusionRule.md)
-
-
-### [Get-MgBetaBackupRestoreDriveInclusionRuleCount](Get-MgBetaBackupRestoreDriveInclusionRuleCount.md)
-
-
-### [Get-MgBetaBackupRestoreDriveProtectionUnit](Get-MgBetaBackupRestoreDriveProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreDriveProtectionUnitCount](Get-MgBetaBackupRestoreDriveProtectionUnitCount.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeProtectionPolicy](Get-MgBetaBackupRestoreExchangeProtectionPolicy.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeProtectionPolicyCount](Get-MgBetaBackupRestoreExchangeProtectionPolicyCount.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRule](Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRule.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRuleCount](Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxInclusionRuleCount.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit](Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitCount](Get-MgBetaBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitCount.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeRestoreSession](Get-MgBetaBackupRestoreExchangeRestoreSession.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeRestoreSessionCount](Get-MgBetaBackupRestoreExchangeRestoreSessionCount.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactCount](Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactCount.md)
-
-
-### [Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactRestorePoint](Get-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactRestorePoint.md)
-
-
-### [Get-MgBetaBackupRestoreMailboxInclusionRule](Get-MgBetaBackupRestoreMailboxInclusionRule.md)
-
-
-### [Get-MgBetaBackupRestoreMailboxInclusionRuleCount](Get-MgBetaBackupRestoreMailboxInclusionRuleCount.md)
-
-
-### [Get-MgBetaBackupRestoreMailboxProtectionUnit](Get-MgBetaBackupRestoreMailboxProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreMailboxProtectionUnitCount](Get-MgBetaBackupRestoreMailboxProtectionUnitCount.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyCount](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyCount.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRuleCount](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRuleCount.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitCount](Get-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitCount.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSession](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSession.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionCount](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionCount.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactCount](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactCount.md)
-
-
-### [Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactRestorePoint](Get-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactRestorePoint.md)
-
-
-### [Get-MgBetaBackupRestorePoint](Get-MgBetaBackupRestorePoint.md)
-
-
-### [Get-MgBetaBackupRestorePointCount](Get-MgBetaBackupRestorePointCount.md)
-
-
-### [Get-MgBetaBackupRestorePointProtectionUnit](Get-MgBetaBackupRestorePointProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreProtectionPolicy](Get-MgBetaBackupRestoreProtectionPolicy.md)
-
-
-### [Get-MgBetaBackupRestoreProtectionPolicyCount](Get-MgBetaBackupRestoreProtectionPolicyCount.md)
-
-
-### [Get-MgBetaBackupRestoreProtectionUnit](Get-MgBetaBackupRestoreProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreProtectionUnitCount](Get-MgBetaBackupRestoreProtectionUnitCount.md)
-
-
-### [Get-MgBetaBackupRestoreServiceApp](Get-MgBetaBackupRestoreServiceApp.md)
-
-
-### [Get-MgBetaBackupRestoreServiceAppCount](Get-MgBetaBackupRestoreServiceAppCount.md)
-
-
-### [Get-MgBetaBackupRestoreSession](Get-MgBetaBackupRestoreSession.md)
-
-
-### [Get-MgBetaBackupRestoreSessionCount](Get-MgBetaBackupRestoreSessionCount.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointProtectionPolicy](Get-MgBetaBackupRestoreSharePointProtectionPolicy.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointProtectionPolicyCount](Get-MgBetaBackupRestoreSharePointProtectionPolicyCount.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointProtectionPolicySiteInclusionRule](Get-MgBetaBackupRestoreSharePointProtectionPolicySiteInclusionRule.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointProtectionPolicySiteInclusionRuleCount](Get-MgBetaBackupRestoreSharePointProtectionPolicySiteInclusionRuleCount.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnit](Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnitCount](Get-MgBetaBackupRestoreSharePointProtectionPolicySiteProtectionUnitCount.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointRestoreSession](Get-MgBetaBackupRestoreSharePointRestoreSession.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointRestoreSessionCount](Get-MgBetaBackupRestoreSharePointRestoreSessionCount.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifactCount](Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifactCount.md)
-
-
-### [Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint](Get-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint.md)
-
-
-### [Get-MgBetaBackupRestoreSiteInclusionRule](Get-MgBetaBackupRestoreSiteInclusionRule.md)
-
-
-### [Get-MgBetaBackupRestoreSiteInclusionRuleCount](Get-MgBetaBackupRestoreSiteInclusionRuleCount.md)
-
-
-### [Get-MgBetaBackupRestoreSiteProtectionUnit](Get-MgBetaBackupRestoreSiteProtectionUnit.md)
-
-
-### [Get-MgBetaBackupRestoreSiteProtectionUnitCount](Get-MgBetaBackupRestoreSiteProtectionUnitCount.md)
-
-
 ### [Get-MgBetaBookingBusiness](Get-MgBetaBookingBusiness.md)
 
 
@@ -236,49 +65,7 @@ Locale: en-US
 ### [Get-MgBetaBookingCurrencyCount](Get-MgBetaBookingCurrencyCount.md)
 
 
-### [Get-MgBetaBusinessScenario](Get-MgBetaBusinessScenario.md)
-
-
-### [Get-MgBetaBusinessScenarioByUniqueName](Get-MgBetaBusinessScenarioByUniqueName.md)
-
-
-### [Get-MgBetaBusinessScenarioCount](Get-MgBetaBusinessScenarioCount.md)
-
-
-### [Get-MgBetaBusinessScenarioPlanner](Get-MgBetaBusinessScenarioPlanner.md)
-
-
 ### [Get-MgBetaBusinessScenarioPlannerPlan](Get-MgBetaBusinessScenarioPlannerPlan.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerPlanConfiguration](Get-MgBetaBusinessScenarioPlannerPlanConfiguration.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization](Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalizationCount](Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalizationCount.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTask](Get-MgBetaBusinessScenarioPlannerTask.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat](Get-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat](Get-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTaskConfiguration](Get-MgBetaBusinessScenarioPlannerTaskConfiguration.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTaskCount](Get-MgBetaBusinessScenarioPlannerTaskCount.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTaskDetail](Get-MgBetaBusinessScenarioPlannerTaskDetail.md)
-
-
-### [Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat](Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
 
 
 ### [Get-MgBetaVirtualEvent](Get-MgBetaVirtualEvent.md)
@@ -446,6 +233,12 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventWebinarRegistrationConfiguration](Get-MgBetaVirtualEventWebinarRegistrationConfiguration.md)
 
 
+### [Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion.md)
+
+
+### [Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestionCount](Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestionCount.md)
+
+
 ### [Get-MgBetaVirtualEventWebinarRegistrationCount](Get-MgBetaVirtualEventWebinarRegistrationCount.md)
 
 
@@ -512,63 +305,6 @@ Locale: en-US
 ### [Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp](Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp.md)
 
 
-### [New-MgBetaBackupRestoreDriveInclusionRule](New-MgBetaBackupRestoreDriveInclusionRule.md)
-
-
-### [New-MgBetaBackupRestoreDriveProtectionUnit](New-MgBetaBackupRestoreDriveProtectionUnit.md)
-
-
-### [New-MgBetaBackupRestoreExchangeProtectionPolicy](New-MgBetaBackupRestoreExchangeProtectionPolicy.md)
-
-
-### [New-MgBetaBackupRestoreExchangeRestoreSession](New-MgBetaBackupRestoreExchangeRestoreSession.md)
-
-
-### [New-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](New-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
-
-
-### [New-MgBetaBackupRestoreMailboxInclusionRule](New-MgBetaBackupRestoreMailboxInclusionRule.md)
-
-
-### [New-MgBetaBackupRestoreMailboxProtectionUnit](New-MgBetaBackupRestoreMailboxProtectionUnit.md)
-
-
-### [New-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy](New-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy.md)
-
-
-### [New-MgBetaBackupRestoreOneDriveForBusinessRestoreSession](New-MgBetaBackupRestoreOneDriveForBusinessRestoreSession.md)
-
-
-### [New-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](New-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
-
-
-### [New-MgBetaBackupRestorePoint](New-MgBetaBackupRestorePoint.md)
-
-
-### [New-MgBetaBackupRestoreProtectionPolicy](New-MgBetaBackupRestoreProtectionPolicy.md)
-
-
-### [New-MgBetaBackupRestoreServiceApp](New-MgBetaBackupRestoreServiceApp.md)
-
-
-### [New-MgBetaBackupRestoreSession](New-MgBetaBackupRestoreSession.md)
-
-
-### [New-MgBetaBackupRestoreSharePointProtectionPolicy](New-MgBetaBackupRestoreSharePointProtectionPolicy.md)
-
-
-### [New-MgBetaBackupRestoreSharePointRestoreSession](New-MgBetaBackupRestoreSharePointRestoreSession.md)
-
-
-### [New-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](New-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
-
-
-### [New-MgBetaBackupRestoreSiteInclusionRule](New-MgBetaBackupRestoreSiteInclusionRule.md)
-
-
-### [New-MgBetaBackupRestoreSiteProtectionUnit](New-MgBetaBackupRestoreSiteProtectionUnit.md)
-
-
 ### [New-MgBetaBookingBusiness](New-MgBetaBookingBusiness.md)
 
 
@@ -591,15 +327,6 @@ Locale: en-US
 
 
 ### [New-MgBetaBookingCurrency](New-MgBetaBookingCurrency.md)
-
-
-### [New-MgBetaBusinessScenario](New-MgBetaBusinessScenario.md)
-
-
-### [New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization](New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization.md)
-
-
-### [New-MgBetaBusinessScenarioPlannerTask](New-MgBetaBusinessScenarioPlannerTask.md)
 
 
 ### [New-MgBetaVirtualEvent](New-MgBetaVirtualEvent.md)
@@ -641,6 +368,9 @@ Locale: en-US
 ### [New-MgBetaVirtualEventWebinarRegistration](New-MgBetaVirtualEventWebinarRegistration.md)
 
 
+### [New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion.md)
+
+
 ### [New-MgBetaVirtualEventWebinarSession](New-MgBetaVirtualEventWebinarSession.md)
 
 
@@ -654,66 +384,6 @@ Locale: en-US
 
 
 ### [Publish-MgBetaVirtualEvent](Publish-MgBetaVirtualEvent.md)
-
-
-### [Remove-MgBetaBackupRestore](Remove-MgBetaBackupRestore.md)
-
-
-### [Remove-MgBetaBackupRestoreDriveInclusionRule](Remove-MgBetaBackupRestoreDriveInclusionRule.md)
-
-
-### [Remove-MgBetaBackupRestoreDriveProtectionUnit](Remove-MgBetaBackupRestoreDriveProtectionUnit.md)
-
-
-### [Remove-MgBetaBackupRestoreExchangeProtectionPolicy](Remove-MgBetaBackupRestoreExchangeProtectionPolicy.md)
-
-
-### [Remove-MgBetaBackupRestoreExchangeRestoreSession](Remove-MgBetaBackupRestoreExchangeRestoreSession.md)
-
-
-### [Remove-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](Remove-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
-
-
-### [Remove-MgBetaBackupRestoreMailboxInclusionRule](Remove-MgBetaBackupRestoreMailboxInclusionRule.md)
-
-
-### [Remove-MgBetaBackupRestoreMailboxProtectionUnit](Remove-MgBetaBackupRestoreMailboxProtectionUnit.md)
-
-
-### [Remove-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy](Remove-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy.md)
-
-
-### [Remove-MgBetaBackupRestoreOneDriveForBusinessRestoreSession](Remove-MgBetaBackupRestoreOneDriveForBusinessRestoreSession.md)
-
-
-### [Remove-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](Remove-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
-
-
-### [Remove-MgBetaBackupRestorePoint](Remove-MgBetaBackupRestorePoint.md)
-
-
-### [Remove-MgBetaBackupRestoreProtectionPolicy](Remove-MgBetaBackupRestoreProtectionPolicy.md)
-
-
-### [Remove-MgBetaBackupRestoreServiceApp](Remove-MgBetaBackupRestoreServiceApp.md)
-
-
-### [Remove-MgBetaBackupRestoreSession](Remove-MgBetaBackupRestoreSession.md)
-
-
-### [Remove-MgBetaBackupRestoreSharePointProtectionPolicy](Remove-MgBetaBackupRestoreSharePointProtectionPolicy.md)
-
-
-### [Remove-MgBetaBackupRestoreSharePointRestoreSession](Remove-MgBetaBackupRestoreSharePointRestoreSession.md)
-
-
-### [Remove-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](Remove-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
-
-
-### [Remove-MgBetaBackupRestoreSiteInclusionRule](Remove-MgBetaBackupRestoreSiteInclusionRule.md)
-
-
-### [Remove-MgBetaBackupRestoreSiteProtectionUnit](Remove-MgBetaBackupRestoreSiteProtectionUnit.md)
 
 
 ### [Remove-MgBetaBookingBusiness](Remove-MgBetaBookingBusiness.md)
@@ -738,39 +408,6 @@ Locale: en-US
 
 
 ### [Remove-MgBetaBookingCurrency](Remove-MgBetaBookingCurrency.md)
-
-
-### [Remove-MgBetaBusinessScenario](Remove-MgBetaBusinessScenario.md)
-
-
-### [Remove-MgBetaBusinessScenarioByUniqueName](Remove-MgBetaBusinessScenarioByUniqueName.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlanner](Remove-MgBetaBusinessScenarioPlanner.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerPlanConfiguration](Remove-MgBetaBusinessScenarioPlannerPlanConfiguration.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization](Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerTask](Remove-MgBetaBusinessScenarioPlannerTask.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat](Remove-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat](Remove-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerTaskConfiguration](Remove-MgBetaBusinessScenarioPlannerTaskConfiguration.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerTaskDetail](Remove-MgBetaBusinessScenarioPlannerTaskDetail.md)
-
-
-### [Remove-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat](Remove-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
 
 
 ### [Remove-MgBetaVirtualEvent](Remove-MgBetaVirtualEvent.md)
@@ -824,6 +461,12 @@ Locale: en-US
 ### [Remove-MgBetaVirtualEventWebinarRegistrationByUserId](Remove-MgBetaVirtualEventWebinarRegistrationByUserId.md)
 
 
+### [Remove-MgBetaVirtualEventWebinarRegistrationConfiguration](Remove-MgBetaVirtualEventWebinarRegistrationConfiguration.md)
+
+
+### [Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion.md)
+
+
 ### [Remove-MgBetaVirtualEventWebinarSession](Remove-MgBetaVirtualEventWebinarSession.md)
 
 
@@ -860,66 +503,6 @@ Locale: en-US
 ### [Unpublish-MgBetaBookingBusiness](Unpublish-MgBetaBookingBusiness.md)
 
 
-### [Update-MgBetaBackupRestore](Update-MgBetaBackupRestore.md)
-
-
-### [Update-MgBetaBackupRestoreDriveInclusionRule](Update-MgBetaBackupRestoreDriveInclusionRule.md)
-
-
-### [Update-MgBetaBackupRestoreDriveProtectionUnit](Update-MgBetaBackupRestoreDriveProtectionUnit.md)
-
-
-### [Update-MgBetaBackupRestoreExchangeProtectionPolicy](Update-MgBetaBackupRestoreExchangeProtectionPolicy.md)
-
-
-### [Update-MgBetaBackupRestoreExchangeRestoreSession](Update-MgBetaBackupRestoreExchangeRestoreSession.md)
-
-
-### [Update-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](Update-MgBetaBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact.md)
-
-
-### [Update-MgBetaBackupRestoreMailboxInclusionRule](Update-MgBetaBackupRestoreMailboxInclusionRule.md)
-
-
-### [Update-MgBetaBackupRestoreMailboxProtectionUnit](Update-MgBetaBackupRestoreMailboxProtectionUnit.md)
-
-
-### [Update-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy](Update-MgBetaBackupRestoreOneDriveForBusinessProtectionPolicy.md)
-
-
-### [Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSession](Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSession.md)
-
-
-### [Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact](Update-MgBetaBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifact.md)
-
-
-### [Update-MgBetaBackupRestorePoint](Update-MgBetaBackupRestorePoint.md)
-
-
-### [Update-MgBetaBackupRestoreProtectionPolicy](Update-MgBetaBackupRestoreProtectionPolicy.md)
-
-
-### [Update-MgBetaBackupRestoreServiceApp](Update-MgBetaBackupRestoreServiceApp.md)
-
-
-### [Update-MgBetaBackupRestoreSession](Update-MgBetaBackupRestoreSession.md)
-
-
-### [Update-MgBetaBackupRestoreSharePointProtectionPolicy](Update-MgBetaBackupRestoreSharePointProtectionPolicy.md)
-
-
-### [Update-MgBetaBackupRestoreSharePointRestoreSession](Update-MgBetaBackupRestoreSharePointRestoreSession.md)
-
-
-### [Update-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact](Update-MgBetaBackupRestoreSharePointRestoreSessionSiteRestoreArtifact.md)
-
-
-### [Update-MgBetaBackupRestoreSiteInclusionRule](Update-MgBetaBackupRestoreSiteInclusionRule.md)
-
-
-### [Update-MgBetaBackupRestoreSiteProtectionUnit](Update-MgBetaBackupRestoreSiteProtectionUnit.md)
-
-
 ### [Update-MgBetaBookingBusiness](Update-MgBetaBookingBusiness.md)
 
 
@@ -942,39 +525,6 @@ Locale: en-US
 
 
 ### [Update-MgBetaBookingCurrency](Update-MgBetaBookingCurrency.md)
-
-
-### [Update-MgBetaBusinessScenario](Update-MgBetaBusinessScenario.md)
-
-
-### [Update-MgBetaBusinessScenarioByUniqueName](Update-MgBetaBusinessScenarioByUniqueName.md)
-
-
-### [Update-MgBetaBusinessScenarioPlanner](Update-MgBetaBusinessScenarioPlanner.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerPlanConfiguration](Update-MgBetaBusinessScenarioPlannerPlanConfiguration.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization](Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerTask](Update-MgBetaBusinessScenarioPlannerTask.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat](Update-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat](Update-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerTaskConfiguration](Update-MgBetaBusinessScenarioPlannerTaskConfiguration.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerTaskDetail](Update-MgBetaBusinessScenarioPlannerTaskDetail.md)
-
-
-### [Update-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat](Update-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
 
 
 ### [Update-MgBetaVirtualEvent](Update-MgBetaVirtualEvent.md)
@@ -1026,6 +576,12 @@ Locale: en-US
 
 
 ### [Update-MgBetaVirtualEventWebinarRegistrationByUserId](Update-MgBetaVirtualEventWebinarRegistrationByUserId.md)
+
+
+### [Update-MgBetaVirtualEventWebinarRegistrationConfiguration](Update-MgBetaVirtualEventWebinarRegistrationConfiguration.md)
+
+
+### [Update-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](Update-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion.md)
 
 
 ### [Update-MgBetaVirtualEventWebinarSession](Update-MgBetaVirtualEventWebinarSession.md)

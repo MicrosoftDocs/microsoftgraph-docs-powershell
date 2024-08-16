@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgUserContactFolderChildFolderContactPhotoContent
 
 ## SYNOPSIS
-Update media content for the navigation property photo in users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserContactFolderChildFolderContactPhotoContent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Set-MgBetaUserContactFolderChildFolderContactPhotoContent?view=graph-powershell-beta)
@@ -31,7 +32,8 @@ Set-MgUserContactFolderChildFolderContactPhotoContent -InputObject <IPersonalCon
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property photo in users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 ## PARAMETERS
 
