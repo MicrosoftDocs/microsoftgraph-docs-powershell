@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 Module Guid: 44387617-1017-4a69-bd37-7def067fd7cd
 Download Help Link: {{ Update Download Link }}
@@ -175,4 +175,5 @@ Locale: en-US
 
 ### [Update-MgBetaUserContactPhoto](Update-MgBetaUserContactPhoto.md)
 {{ Fill in the Description }}
+
 
