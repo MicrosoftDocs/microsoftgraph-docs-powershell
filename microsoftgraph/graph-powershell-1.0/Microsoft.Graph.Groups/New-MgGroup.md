@@ -9,9 +9,8 @@ ms.subservice: entra-groups
 # New-MgGroup
 
 ## SYNOPSIS
-Create a new group as specified in the request body.
-You can create the following types of groups: This operation returns by default only a subset of the properties for each group.
-These default properties are noted in the Properties section.
+Create a new group object if it doesn't exist, or update the properties of an existing group object.You can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
+For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
 > [!NOTE]
@@ -60,9 +59,8 @@ New-MgGroup -BodyParameter <IMicrosoftGraphGroup> [-ResponseHeadersVariable <Str
 ```
 
 ## DESCRIPTION
-Create a new group as specified in the request body.
-You can create the following types of groups: This operation returns by default only a subset of the properties for each group.
-These default properties are noted in the Properties section.
+Create a new group object if it doesn't exist, or update the properties of an existing group object.You can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
+For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
 **Permissions**
@@ -1479,7 +1477,9 @@ ASSIGNEDLICENSES <IMicrosoftGraphAssignedLicense- `[]`>: The licenses that are a
 Returned only on $select.
 Supports $filter (eq).Read-only.
   - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
   - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
 
 BODYPARAMETER `<IMicrosoftGraphGroup>`: group
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1533,7 +1533,9 @@ Read-only.
 Returned only on $select.
 Supports $filter (eq).Read-only.
     - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
     - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
   - `[AutoSubscribeNewMembers <Boolean?>]`: Indicates if new members added to the group are autosubscribed to receive email notifications.
 You can set this property in a PATCH request for the group; don't set it in the initial POST request that creates the group.
 Default value is false.
@@ -7021,7 +7023,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
       - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
       - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -11791,7 +11795,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
       - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
       - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -17279,7 +17285,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
       - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
       - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
     - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -22064,7 +22072,9 @@ Not nullable.
 Returned only on $select.
 Supports $filter (eq, not, /$count eq 0, /$count ne 0).
           - `[DisabledPlans <String- `[]`>]`: A collection of the unique identifiers for plans that have been disabled.
+IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus or serviceStatus > servicePlanId in the tenant's companySubscription.
           - `[SkuId <String>]`: The unique identifier for the SKU.
+Corresponds to the skuId from subscribedSkus or companySubscription.
         - `[AssignedPlans <IMicrosoftGraphAssignedPlan- `[]`>]`: The plans that are assigned to the user.
 Read-only.
 Not nullable.
@@ -26758,7 +26768,7 @@ Always null when the object hasn't been deleted.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroup)
 
-[https://learn.microsoft.com/graph/api/group-post-groups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-groups?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-1.0)
 
 
 

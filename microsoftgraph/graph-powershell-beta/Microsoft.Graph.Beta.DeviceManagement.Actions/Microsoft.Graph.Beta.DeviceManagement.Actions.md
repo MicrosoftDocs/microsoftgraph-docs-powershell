@@ -332,6 +332,9 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementReportUserInstallStatusReport](Get-MgBetaDeviceManagementReportUserInstallStatusReport.md)
 
 
+### [Get-MgBetaDeviceManagementReportWin32CatalogAppUpdateReport](Get-MgBetaDeviceManagementReportWin32CatalogAppUpdateReport.md)
+
+
 ### [Get-MgBetaDeviceManagementReportWindowsDriverUpdateAlertPerPolicyPerDeviceReport](Get-MgBetaDeviceManagementReportWindowsDriverUpdateAlertPerPolicyPerDeviceReport.md)
 
 
@@ -734,6 +737,12 @@ Locale: en-US
 ### [Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice](Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice.md)
 
 
+### [Rename-MgBetaDeviceManagementComanagedDeviceAssignment](Rename-MgBetaDeviceManagementComanagedDeviceAssignment.md)
+
+
+### [Rename-MgBetaDeviceManagementManagedDeviceAssignment](Rename-MgBetaDeviceManagementManagedDeviceAssignment.md)
+
+
 ### [Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent](Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent.md)
 
 
@@ -846,6 +855,9 @@ Locale: en-US
 
 
 ### [Set-MgBetaDeviceManagementConfigurationPolicy](Set-MgBetaDeviceManagementConfigurationPolicy.md)
+
+
+### [Set-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget](Set-MgBetaDeviceManagementConfigurationPolicyEnrollmentTimeDeviceMembershipTarget.md)
 
 
 ### [Set-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile](Set-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile.md)

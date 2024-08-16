@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenissuancepolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgApplicationTokenIssuancePolicyByRef
 
 ## SYNOPSIS
-Create new navigation property ref to tokenIssuancePolicies for applications
+Assign a tokenIssuancePolicy to an application.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
@@ -45,7 +46,10 @@ New-MgApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to tokenIssuancePolicies for applications
+Assign a tokenIssuancePolicy to an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-tokenissuancepolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -286,6 +290,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenissuancepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenissuancepolicybyref)
+
+[https://learn.microsoft.com/graph/api/application-post-tokenissuancepolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-tokenissuancepolicies?view=graph-rest-1.0)
 
 
 

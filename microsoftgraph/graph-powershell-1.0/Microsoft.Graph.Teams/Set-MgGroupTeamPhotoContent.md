@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgGroupTeamPhotoContent
 
 ## SYNOPSIS
-Update media content for the navigation property photo in groups
+The profile photo for the team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaGroupTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamPhotoContent?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Set-MgGroupTeamPhotoContent -InputObject <ITeamsIdentity> [-Data <Stream>] [-Res
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property photo in groups
+The profile photo for the team.
 
 ## PARAMETERS
 

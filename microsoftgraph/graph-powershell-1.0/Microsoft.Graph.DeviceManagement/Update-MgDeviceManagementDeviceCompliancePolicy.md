@@ -71,21 +71,24 @@ Update the properties of a windows10CompliancePolicy object.
 Import-Module Microsoft.Graph.DeviceManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windows10MobileCompliancePolicy"
+	"@odata.type" = "#microsoft.graph.windows10CompliancePolicy"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
 	passwordRequired = $true
 	passwordBlockSimple = $true
+	passwordRequiredToUnlockFromIdle = $true
+	passwordMinutesOfInactivityBeforeLock = 
+	passwordExpirationDays = 
 	passwordMinimumLength = 
 	passwordMinimumCharacterSetCount = 
 	passwordRequiredType = "alphanumeric"
 	passwordPreviousPasswordBlockCount = 
-	passwordExpirationDays = 
-	passwordMinutesOfInactivityBeforeLock = 
-	passwordRequireToUnlockFromIdle = $true
+	requireHealthyDeviceReport = $true
 	osMinimumVersion = "Os Minimum Version value"
 	osMaximumVersion = "Os Maximum Version value"
+	mobileOsMinimumVersion = "Mobile Os Minimum Version value"
+	mobileOsMaximumVersion = "Mobile Os Maximum Version value"
 	earlyLaunchAntiMalwareDriverEnabled = $true
 	bitLockerEnabled = $true
 	secureBootEnabled = $true

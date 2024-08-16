@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpermissiongrant
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgChatPermissionGrant
@@ -338,6 +339,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpermissiongrant)
+
+[https://learn.microsoft.com/graph/api/chat-list-permissiongrants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list-permissiongrants?view=graph-rest-1.0)
 
 
 

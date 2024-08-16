@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandinglocalization
 schema: 2.0.0
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaOrganizationBrandingLocalization
 
 ## SYNOPSIS
-Add different branding based on a locale.
+Read the properties and relationships of an organizationalBrandingLocalization object.
+To retrieve a localization branding object, specify the value of id in the URL.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationBrandingLocalization?view=graph-powershell-1.0)
@@ -39,7 +42,14 @@ Get-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManag
 ```
 
 ## DESCRIPTION
-Add different branding based on a locale.
+Read the properties and relationships of an organizationalBrandingLocalization object.
+To retrieve a localization branding object, specify the value of id in the URL.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbrandinglocalization-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbranding-list-localizations-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -366,6 +376,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandinglocalization)
+
+[https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/organizationalbranding-list-localizations?view=graph-rest-beta](https://learn.microsoft.com/graph/api/organizationalbranding-list-localizations?view=graph-rest-beta)
 
 
 

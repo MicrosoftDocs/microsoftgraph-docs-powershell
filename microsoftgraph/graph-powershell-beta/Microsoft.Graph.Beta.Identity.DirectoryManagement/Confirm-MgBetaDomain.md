@@ -9,7 +9,7 @@ ms.subservice: entra-directory-management
 # Confirm-MgBetaDomain
 
 ## SYNOPSIS
-Validates the ownership of the domain.
+Validate the ownership of a domain.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Confirm-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDomain?view=graph-powershell-1.0)
@@ -29,13 +29,13 @@ Confirm-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Respo
 ```
 
 ## DESCRIPTION
-Validates the ownership of the domain.
+Validate the ownership of a domain.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-verify-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Verify a domain
 
 ```powershell
 
@@ -44,7 +44,22 @@ Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Confirm-MgBetaDomain -DomainId $domainId
 
 ```
-This example shows how to use the Confirm-MgBetaDomain Cmdlet.
+This example will verify a domain
+
+### Example 2: External admin takeover of a domain
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	forceTakeover = $true
+}
+
+Confirm-MgBetaDomain -DomainId $domainId -BodyParameter $params
+
+```
+This example will external admin takeover of a domain
 
 
 ## PARAMETERS

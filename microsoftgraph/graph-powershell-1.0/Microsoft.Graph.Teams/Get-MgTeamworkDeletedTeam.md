@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteam
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgTeamworkDeletedTeam
@@ -39,6 +40,9 @@ Get-MgTeamworkDeletedTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 The deleted team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamwork-list-deletedteams-permissions.md)]
 
 ## PARAMETERS
 
@@ -323,6 +327,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteam)
+
+[https://learn.microsoft.com/graph/api/teamwork-list-deletedteams?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamwork-list-deletedteams?view=graph-rest-1.0)
 
 
 

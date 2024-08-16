@@ -285,8 +285,8 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
-The value is represented in ISO 8601 format for durations.
-For example, PT1M represents a period of one month.
+The value is represented in ISO 8601  format for durations.
+For example, P1M represents a period of one month and PT1M represents a period of one minute.
       - `[State <String>]`: synchronizationScheduleState
     - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -312,7 +312,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
               - `[Value <String>]`: Value.
             - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-            - `[DefaultValue <String>]`: 
+            - `[DefaultValue <String>]`: The default value of the attribute.
             - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
             - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
               - `[Key <String>]`: attributeDefinitionMetadata
@@ -554,8 +554,8 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Interval <TimeSpan?>]`: The interval between synchronization iterations.
-The value is represented in ISO 8601 format for durations.
-For example, PT1M represents a period of one month.
+The value is represented in ISO 8601  format for durations.
+For example, P1M represents a period of one month and PT1M represents a period of one minute.
     - `[State <String>]`: synchronizationScheduleState
   - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -581,7 +581,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
             - `[Value <String>]`: Value.
           - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-          - `[DefaultValue <String>]`: 
+          - `[DefaultValue <String>]`: The default value of the attribute.
           - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
           - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
             - `[Key <String>]`: attributeDefinitionMetadata
@@ -808,7 +808,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
             - `[Value <String>]`: Value.
           - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-          - `[DefaultValue <String>]`: 
+          - `[DefaultValue <String>]`: The default value of the attribute.
           - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
           - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
             - `[Key <String>]`: attributeDefinitionMetadata

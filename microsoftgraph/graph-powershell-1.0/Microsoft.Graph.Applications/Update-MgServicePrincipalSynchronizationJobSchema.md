@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationjobschema
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Update-MgServicePrincipalSynchronizationJobSchema
 
 ## SYNOPSIS
-Update the navigation property schema in servicePrincipals
+Update the synchronization schema for a given job or template.
+This method fully replaces the current schema with the one provided in the request.
+To update the schema of a template, make the call on the application object.
+You must be the owner of the application.
 
 ## SYNTAX
 
@@ -45,7 +49,13 @@ Update-MgServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIde
 ```
 
 ## DESCRIPTION
-Update the navigation property schema in servicePrincipals
+Update the synchronization schema for a given job or template.
+This method fully replaces the current schema with the one provided in the request.
+To update the schema of a template, make the call on the application object.
+You must be the owner of the application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -306,7 +316,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
           - `[Value <String>]`: Value.
         - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-        - `[DefaultValue <String>]`: 
+        - `[DefaultValue <String>]`: The default value of the attribute.
         - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
         - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
           - `[Key <String>]`: attributeDefinitionMetadata
@@ -440,7 +450,7 @@ One, and only one, of the object's attributes must be designated as the anchor t
         - `[Value <String>]`: Value.
       - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive.
 This setting affects how the synchronization engine detects changes for the attribute.
-      - `[DefaultValue <String>]`: 
+      - `[DefaultValue <String>]`: The default value of the attribute.
       - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
       - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry- `[]`>]`: Metadata for the given object.
         - `[Key <String>]`: attributeDefinitionMetadata
@@ -585,6 +595,8 @@ Must match one of the directory definitions in synchronizationSchema.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationjobschema)
+
+[https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-update?view=graph-rest-1.0)
 
 
 

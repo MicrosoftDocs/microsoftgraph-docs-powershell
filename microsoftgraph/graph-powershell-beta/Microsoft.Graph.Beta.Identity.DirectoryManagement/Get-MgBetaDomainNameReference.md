@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainnamereference
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDomainNameReference
@@ -11,7 +12,7 @@ schema: 2.0.0
 The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
-For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
+For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDomainNameReference](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainNameReference?view=graph-powershell-1.0)
@@ -44,7 +45,10 @@ Get-MgBetaDomainNameReference -InputObject <IIdentityDirectoryManagementIdentity
 The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
-For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
+For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-list-domainnamereferences-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -371,6 +375,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainnamereference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainnamereference)
+
+[https://learn.microsoft.com/graph/api/domain-list-domainnamereferences?view=graph-rest-beta](https://learn.microsoft.com/graph/api/domain-list-domainnamereferences?view=graph-rest-beta)
 
 
 

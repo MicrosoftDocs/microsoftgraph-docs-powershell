@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcrossregiondisasterrecoveryreport
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportCrossRegionDisasterRecoveryReport
@@ -31,6 +32,43 @@ Get-MgBetaDeviceManagementVirtualEndpointReportCrossRegionDisasterRecoveryReport
 
 ## DESCRIPTION
 Retrieve the Windows 365 cross-region disaster recovery report, including CloudPcId, UserId, DeviceId, CloudPCDeviceDisplayName, UserPrincipalName, IsCrossRegionEnabled, CrossRegionHealthStatus, LicenseType, DisasterRecoveryStatus, CurrentRestorePointDateTime, and ActivationExpirationDateTime.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-retrievecrossregiondisasterrecoveryreport-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+
+$params = @{
+	filter = "DisasterRecoveryStatus eq 'Active outage'"
+	select = @(
+	"Id"
+"CloudPcId"
+"UserId"
+"UserSettingId"
+"DeviceId"
+"CloudPCDeviceDisplayName"
+"UserPrincipalName"
+"IsCrossRegionEnabled"
+"CrossRegionHealthStatus"
+"LicenseType"
+"DisasterRecoveryStatus"
+"CurrentRestorePointDateTime"
+"ActivationExpirationDateTime"
+)
+skip = 0
+top = 50
+}
+
+Get-MgBetaDeviceManagementVirtualEndpointReportCrossRegionDisasterRecoveryReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportCrossRegionDisasterRecoveryReport Cmdlet.
+
 
 ## PARAMETERS
 
@@ -307,7 +345,6 @@ BODY `<IPaths1Km25K2DevicemanagementVirtualendpointReportsMicrosoftGraphRetrieve
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcrossregiondisasterrecoveryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportcrossregiondisasterrecoveryreport)
 
 [https://learn.microsoft.com/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta)
-
 
 
 

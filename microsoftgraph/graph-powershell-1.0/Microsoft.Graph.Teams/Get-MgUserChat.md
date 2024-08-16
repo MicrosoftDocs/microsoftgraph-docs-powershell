@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchat
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgUserChat
 
 ## SYNOPSIS
-Get chats from users
+Retrieve a single chat (without its messages).
+This method supports federation.
+To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChat?view=graph-powershell-beta)
@@ -38,7 +42,12 @@ Get-MgUserChat -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Get chats from users
+Retrieve a single chat (without its messages).
+This method supports federation.
+To access a chat, at least one chat member must belong to the tenant the request initiated from.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a user's one on one chat
@@ -351,6 +360,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchat)
+
+[https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-1.0)
 
 
 

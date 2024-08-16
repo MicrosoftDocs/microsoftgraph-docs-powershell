@@ -21,8 +21,8 @@ New-MgBetaDirectoryRecommendation [-ResponseHeadersVariable <String>]
  [-ImpactedResources <IMicrosoftGraphImpactedResource[]>] [-Insights <String>]
  [-LastCheckedDateTime <DateTime>] [-LastModifiedBy <String>] [-LastModifiedDateTime <DateTime>]
  [-MaxScore <Double>] [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-RecommendationType <String>]
- [-ReleaseType <String>] [-RemediationImpact <String>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ReleaseType <String>] [-RemediationImpact <String>] [-RequiredLicenses <String>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -409,6 +409,21 @@ Accept wildcard characters: False
 ### -RemediationImpact
 Description of the impact on users of the remediation.
 Only applies to recommendations with category set to identitySecureScore.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RequiredLicenses
+requiredLicenses
 
 ```yaml
 Type: String

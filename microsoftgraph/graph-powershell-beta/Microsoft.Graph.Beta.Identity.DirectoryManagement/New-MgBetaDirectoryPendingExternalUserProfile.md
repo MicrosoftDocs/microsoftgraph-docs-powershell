@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypendingexternaluserprofile
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaDirectoryPendingExternalUserProfile
 
 ## SYNOPSIS
-Create new navigation property to pendingExternalUserProfiles for directory
+Create a new pendingExternalUserProfile object.
 
 ## SYNTAX
 
@@ -29,7 +30,7 @@ New-MgBetaDirectoryPendingExternalUserProfile -BodyParameter <Hashtable> [-Respo
 ```
 
 ## DESCRIPTION
-Create new navigation property to pendingExternalUserProfiles for directory
+Create a new pendingExternalUserProfile object.
 
 ## PARAMETERS
 
@@ -375,6 +376,8 @@ It's a free-format string value, for example, 'United States'.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypendingexternaluserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypendingexternaluserprofile)
+
+[https://learn.microsoft.com/graph/api/directory-post-pendingexternaluserprofile?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-post-pendingexternaluserprofile?view=graph-rest-beta)
 
 
 

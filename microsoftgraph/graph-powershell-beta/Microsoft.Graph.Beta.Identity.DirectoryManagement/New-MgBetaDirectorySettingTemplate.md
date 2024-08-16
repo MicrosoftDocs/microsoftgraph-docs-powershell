@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Values
-Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
+Collection of settingTemplateValues that list the set of available settings, defaults, and types that make up this template.
 Read-only.
 To construct, see NOTES section for VALUES properties and create a hash table.
 
@@ -246,7 +246,7 @@ Read-only.
 Read-only.
   - `[DisplayName <String>]`: Display name of the template.
 Read-only.
-  - `[Values <IMicrosoftGraphSettingTemplateValue- `[]`>]`: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template. 
+  - `[Values <IMicrosoftGraphSettingTemplateValue- `[]`>]`: Collection of settingTemplateValues that list the set of available settings, defaults, and types that make up this template.
 Read-only.
     - `[DefaultValue <String>]`: Default value for the setting.
 Read-only.
@@ -257,7 +257,7 @@ Read-only.
     - `[Type <String>]`: Type of the setting.
 Read-only.
 
-VALUES <IMicrosoftGraphSettingTemplateValue- `[]`>: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
+VALUES <IMicrosoftGraphSettingTemplateValue- `[]`>: Collection of settingTemplateValues that list the set of available settings, defaults, and types that make up this template.
 Read-only.
   - `[DefaultValue <String>]`: Default value for the setting.
 Read-only.

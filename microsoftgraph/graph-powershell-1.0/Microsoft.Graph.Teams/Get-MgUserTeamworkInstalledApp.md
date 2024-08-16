@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledapp
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgUserTeamworkInstalledApp
 
 ## SYNOPSIS
-The apps installed in the personal scope of this user.
+Retrieve the app installed in the personal scope of the specified user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkInstalledApp?view=graph-powershell-beta)
@@ -38,7 +40,13 @@ Get-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-The apps installed in the personal scope of this user.
+Retrieve the app installed in the personal scope of the specified user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-get-installedapps-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-list-installedapps-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List apps installed for the specified user
@@ -373,6 +381,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledapp)
+
+[https://learn.microsoft.com/graph/api/userteamwork-get-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userteamwork-get-installedapps?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/userteamwork-list-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userteamwork-list-installedapps?view=graph-rest-1.0)
 
 
 

@@ -3,14 +3,13 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamwork
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgUserTeamwork
 
 ## SYNOPSIS
-A container for Microsoft Teams features available for the user.
-Read-only.
-Nullable.
+Get the userTeamwork settings for a specified user, which includes the Microsoft Teams region and the locale chosen by the user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamwork?view=graph-powershell-beta)
@@ -32,9 +31,10 @@ Get-MgUserTeamwork -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-A container for Microsoft Teams features available for the user.
-Read-only.
-Nullable.
+Get the userTeamwork settings for a specified user, which includes the Microsoft Teams region and the locale chosen by the user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -198,6 +198,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamwork)
+
+[https://learn.microsoft.com/graph/api/userteamwork-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userteamwork-get?view=graph-rest-1.0)
 
 
 

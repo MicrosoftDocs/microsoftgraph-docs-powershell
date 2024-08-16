@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteammember
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgTeamMember
 
 ## SYNOPSIS
-Members and owners of the team.
+Get a conversationMember from a team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamMember?view=graph-powershell-beta)
@@ -38,7 +40,13 @@ Get-MgTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Members and owners of the team.
+Get a conversationMember from a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-get-members-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-list-members-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get list of members in team
@@ -373,6 +381,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteammember)
+
+[https://learn.microsoft.com/graph/api/team-get-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-get-members?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/team-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-list-members?view=graph-rest-1.0)
 
 
 

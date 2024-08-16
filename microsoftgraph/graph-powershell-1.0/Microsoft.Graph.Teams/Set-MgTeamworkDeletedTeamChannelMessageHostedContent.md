@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgTeamworkDeletedTeamChannelMessageHostedContent
 
 ## SYNOPSIS
-Update media content for the navigation property hostedContents in teamwork
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-beta)
@@ -31,7 +32,8 @@ Set-MgTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIdentit
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property hostedContents in teamwork
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 

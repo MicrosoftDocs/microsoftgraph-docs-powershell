@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedchat
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgTeamworkDeletedChat
 
 ## SYNOPSIS
-A collection of deleted chats.
+Read the properties and relationships of a deletedChat object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedChat?view=graph-powershell-beta)
@@ -38,7 +39,10 @@ Get-MgTeamworkDeletedChat -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-A collection of deleted chats.
+Read the properties and relationships of a deletedChat object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/deletedchat-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -324,6 +328,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedchat)
+
+[https://learn.microsoft.com/graph/api/deletedchat-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/deletedchat-get?view=graph-rest-1.0)
 
 
 

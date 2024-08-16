@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationSynchronizationJobBulkUploadContent
 
 ## SYNOPSIS
-Get media content for the navigation property bulkUpload from applications
+The bulk upload operation for the job.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationJobBulkUploadContent?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgApplicationSynchronizationJobBulkUploadContent -InputObject <IApplications
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property bulkUpload from applications
+The bulk upload operation for the job.
 
 ## PARAMETERS
 

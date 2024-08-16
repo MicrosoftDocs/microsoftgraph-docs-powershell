@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolescopedmember
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryRoleScopedMember
@@ -43,6 +44,9 @@ Get-MgBetaDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementId
 Members of this directory role that are scoped to administrative units.
 Read-only.
 Nullable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryrole-list-scopedmembers-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -369,6 +373,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolescopedmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolescopedmember)
+
+[https://learn.microsoft.com/graph/api/directoryrole-list-scopedmembers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryrole-list-scopedmembers?view=graph-rest-beta)
 
 
 

@@ -22,34 +22,12 @@ Get-MgGroupSiteGetByPathDrive -GroupId <String> -Path <String> -SiteId <String> 
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
-### List1
-```
-Get-MgGroupSiteGetByPathDrive -GroupId <String> -Path <String> -SiteId <String> -Path1 <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
 ### List
 ```
 Get-MgGroupSiteGetByPathDrive -GroupId <String> -Path <String> -SiteId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgGroupSiteGetByPathDrive -GroupId <String> -Path <String> -SiteId <String> -Path1 <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgGroupSiteGetByPathDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -69,7 +47,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1, List
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -85,7 +63,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1, List
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -115,7 +93,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1, List
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -130,7 +108,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: Get, List1, List, Get1
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -161,7 +139,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -176,7 +154,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -191,22 +169,7 @@ Usage: path='{path}'
 
 ```yaml
 Type: String
-Parameter Sets: Get, List1, List, Get1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Path1
-Usage: path='{path1}'
-
-```yaml
-Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -266,7 +229,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1, List
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -281,7 +244,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: Get, List1, List, Get1
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -296,7 +259,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1, List
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -311,7 +274,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -326,7 +289,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -379,7 +342,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
-  - `[Path1 <String>]`: Usage: path='{path1}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation

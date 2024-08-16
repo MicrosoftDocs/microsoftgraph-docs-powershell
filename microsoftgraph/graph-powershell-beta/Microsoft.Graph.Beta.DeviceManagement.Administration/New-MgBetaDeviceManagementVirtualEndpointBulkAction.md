@@ -18,8 +18,8 @@ Create a new cloudPcBulkAction object.
 New-MgBetaDeviceManagementVirtualEndpointBulkAction [-ResponseHeadersVariable <String>]
  [-ActionSummary <IMicrosoftGraphCloudPcBulkActionSummary>] [-AdditionalProperties <Hashtable>]
  [-CloudPcIds <String[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-ScheduledDuringMaintenanceWindow] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-InitiatedByUserPrincipalName <String>] [-ScheduledDuringMaintenanceWindow] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -185,6 +185,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -InitiatedByUserPrincipalName
+Indicates the user principal name (UPN) of the user who initiated this bulk action.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -228,6 +244,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Status
+cloudPcBulkActionStatus
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -303,9 +334,12 @@ Read-only.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[DisplayName <String>]`: Name of the bulk action.
+  - `[InitiatedByUserPrincipalName <String>]`: Indicates the user principal name (UPN) of the user who initiated this bulk action.
+Read-only.
   - `[ScheduledDuringMaintenanceWindow <Boolean?>]`: Indicates whether the bulk action is scheduled according to the maintenance window.
 When true, the bulk action uses the maintenance window to schedule the action; false means that the bulk action doesn't use the maintenance window.
 The default value is false.
+  - `[Status <String>]`: cloudPcBulkActionStatus
 
 ## RELATED LINKS
 

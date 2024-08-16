@@ -380,6 +380,7 @@ Read-only.
     - `[DisplayName <String>]`: The display name for the server configuration.
 This property is required when a server is created.
     - `[DnsServers <String- `[]`>]`: The DNS servers that will be used by the clients
+    - `[Ipv6Network <String>]`: The IPv6 subnet that will be used to allocate virtual address for the clients
     - `[LastUpdateDateTime <DateTime?>]`: When the configuration was last updated
     - `[ListenPort <Int32?>]`: The port that both TCP and UPD will listen over on the server
     - `[Network <String>]`: The IPv4 subnet that will be used to allocate virtual address for the clients
@@ -437,6 +438,7 @@ Read-only.
   - `[DisplayName <String>]`: The display name for the server configuration.
 This property is required when a server is created.
   - `[DnsServers <String- `[]`>]`: The DNS servers that will be used by the clients
+  - `[Ipv6Network <String>]`: The IPv6 subnet that will be used to allocate virtual address for the clients
   - `[LastUpdateDateTime <DateTime?>]`: When the configuration was last updated
   - `[ListenPort <Int32?>]`: The port that both TCP and UPD will listen over on the server
   - `[Network <String>]`: The IPv4 subnet that will be used to allocate virtual address for the clients

@@ -53,10 +53,10 @@ Locale: en-US
 ### [Get-MgBetaUserCloudPcProvisionedCloudPc](Get-MgBetaUserCloudPcProvisionedCloudPc.md)
 
 
+### [Get-MgBetaUserCloudPcRemoteActionResult](Get-MgBetaUserCloudPcRemoteActionResult.md)
+
+
 ### [Get-MgBetaUserCloudPcReviewStatus](Get-MgBetaUserCloudPcReviewStatus.md)
-
-
-### [Get-MgBetaUserCloudPcShiftWorkCloudPcAccessState](Get-MgBetaUserCloudPcShiftWorkCloudPcAccessState.md)
 
 
 ### [Get-MgBetaUserCloudPcSupportedCloudPcRemoteAction](Get-MgBetaUserCloudPcSupportedCloudPcRemoteAction.md)
@@ -210,6 +210,9 @@ Locale: en-US
 
 
 ### [Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles](Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles.md)
+
+
+### [Invoke-MgBetaCreationUserAuthenticationFido2MethodOption](Invoke-MgBetaCreationUserAuthenticationFido2MethodOption.md)
 
 
 ### [Invoke-MgBetaFilterUserAppConsentRequestForApprovalByCurrentUser](Invoke-MgBetaFilterUserAppConsentRequestForApprovalByCurrentUser.md)

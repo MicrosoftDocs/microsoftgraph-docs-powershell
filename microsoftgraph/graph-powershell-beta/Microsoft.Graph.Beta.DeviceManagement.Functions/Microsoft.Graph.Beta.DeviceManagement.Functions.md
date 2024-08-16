@@ -107,6 +107,9 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementManagedDeviceNonCompliantSetting](Get-MgBetaDeviceManagementManagedDeviceNonCompliantSetting.md)
 
 
+### [Get-MgBetaDeviceManagementManagedDeviceWindowOSImageManagedDeviceWindowsOSImage](Get-MgBetaDeviceManagementManagedDeviceWindowOSImageManagedDeviceWindowsOSImage.md)
+
+
 ### [Get-MgBetaDeviceManagementMonitoringAlertRecordPortalNotification](Get-MgBetaDeviceManagementMonitoringAlertRecordPortalNotification.md)
 
 
@@ -155,10 +158,10 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc](Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc.md)
 
 
+### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcRemoteActionResult](Get-MgBetaDeviceManagementVirtualEndpointCloudPcRemoteActionResult.md)
+
+
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcReviewStatus](Get-MgBetaDeviceManagementVirtualEndpointCloudPcReviewStatus.md)
-
-
-### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState](Get-MgBetaDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState.md)
 
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPcSupportedCloudPcRemoteAction](Get-MgBetaDeviceManagementVirtualEndpointCloudPcSupportedCloudPcRemoteAction.md)

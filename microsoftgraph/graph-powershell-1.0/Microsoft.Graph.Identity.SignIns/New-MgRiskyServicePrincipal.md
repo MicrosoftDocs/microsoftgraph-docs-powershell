@@ -356,7 +356,8 @@ Read-only.
     - `[Activity <IMicrosoftGraphRiskServicePrincipalActivity>]`: riskServicePrincipalActivity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Detail <String>]`: riskDetail
-      - `[RiskEventTypes <String- `[]`>]`: 
+      - `[RiskEventTypes <String- `[]`>]`: The type of risk event detected.
+The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication.
     - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
   - `[IsEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
   - `[IsProcessing <Boolean?>]`: Indicates whether Microsoft Entra ID is currently processing the service principal's risky state.
@@ -390,7 +391,8 @@ Read-only.
   - `[Activity <IMicrosoftGraphRiskServicePrincipalActivity>]`: riskServicePrincipalActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Detail <String>]`: riskDetail
-    - `[RiskEventTypes <String- `[]`>]`: 
+    - `[RiskEventTypes <String- `[]`>]`: The type of risk event detected.
+The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication.
   - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
 
 ## RELATED LINKS

@@ -14,6 +14,12 @@ Locale: en-US
 ### [Add-MgBetaSite](Add-MgBetaSite.md)
 
 
+### [Add-MgBetaSiteContentModelGetByNameToDrive](Add-MgBetaSiteContentModelGetByNameToDrive.md)
+
+
+### [Add-MgBetaSiteContentModelToDrive](Add-MgBetaSiteContentModelToDrive.md)
+
+
 ### [Add-MgBetaSiteContentTypeCopy](Add-MgBetaSiteContentTypeCopy.md)
 
 
@@ -128,6 +134,12 @@ Locale: en-US
 ### [Get-MgBetaGroupSiteColumnSourceColumn](Get-MgBetaGroupSiteColumnSourceColumn.md)
 
 
+### [Get-MgBetaGroupSiteContentModel](Get-MgBetaGroupSiteContentModel.md)
+
+
+### [Get-MgBetaGroupSiteContentModelCount](Get-MgBetaGroupSiteContentModelCount.md)
+
+
 ### [Get-MgBetaGroupSiteContentType](Get-MgBetaGroupSiteContentType.md)
 
 
@@ -182,6 +194,12 @@ Locale: en-US
 ### [Get-MgBetaGroupSiteDefaultDrive](Get-MgBetaGroupSiteDefaultDrive.md)
 
 
+### [Get-MgBetaGroupSiteDocumentProcessingJob](Get-MgBetaGroupSiteDocumentProcessingJob.md)
+
+
+### [Get-MgBetaGroupSiteDocumentProcessingJobCount](Get-MgBetaGroupSiteDocumentProcessingJobCount.md)
+
+
 ### [Get-MgBetaGroupSiteDrive](Get-MgBetaGroupSiteDrive.md)
 
 
@@ -203,7 +221,13 @@ Locale: en-US
 ### [Get-MgBetaGroupSiteGetByPathColumn](Get-MgBetaGroupSiteGetByPathColumn.md)
 
 
+### [Get-MgBetaGroupSiteGetByPathContentModel](Get-MgBetaGroupSiteGetByPathContentModel.md)
+
+
 ### [Get-MgBetaGroupSiteGetByPathContentType](Get-MgBetaGroupSiteGetByPathContentType.md)
+
+
+### [Get-MgBetaGroupSiteGetByPathDocumentProcessingJob](Get-MgBetaGroupSiteGetByPathDocumentProcessingJob.md)
 
 
 ### [Get-MgBetaGroupSiteGetByPathDrive](Get-MgBetaGroupSiteGetByPathDrive.md)
@@ -216,9 +240,6 @@ Locale: en-US
 
 
 ### [Get-MgBetaGroupSiteGetByPathItem](Get-MgBetaGroupSiteGetByPathItem.md)
-
-
-### [Get-MgBetaGroupSiteGetByPathList](Get-MgBetaGroupSiteGetByPathList.md)
 
 
 ### [Get-MgBetaGroupSiteGetByPathOnenote](Get-MgBetaGroupSiteGetByPathOnenote.md)
@@ -1169,6 +1190,15 @@ Locale: en-US
 ### [Get-MgBetaSiteColumnSourceColumn](Get-MgBetaSiteColumnSourceColumn.md)
 
 
+### [Get-MgBetaSiteContentModelAppliedDrive](Get-MgBetaSiteContentModelAppliedDrive.md)
+
+
+### [Get-MgBetaSiteContentModelByName](Get-MgBetaSiteContentModelByName.md)
+
+
+### [Get-MgBetaSiteContentModelGetByNameAppliedDrive](Get-MgBetaSiteContentModelGetByNameAppliedDrive.md)
+
+
 ### [Get-MgBetaSiteContentType](Get-MgBetaSiteContentType.md)
 
 
@@ -1250,9 +1280,6 @@ Locale: en-US
 ### [Get-MgBetaSiteGetByPathExternalColumn](Get-MgBetaSiteGetByPathExternalColumn.md)
 
 
-### [Get-MgBetaSiteGetByPathList](Get-MgBetaSiteGetByPathList.md)
-
-
 ### [Get-MgBetaSiteGetByPathOperation](Get-MgBetaSiteGetByPathOperation.md)
 
 
@@ -1269,9 +1296,6 @@ Locale: en-US
 
 
 ### [Get-MgBetaSiteGetGraphBPrePathActivityByInterval](Get-MgBetaSiteGetGraphBPrePathActivityByInterval.md)
-
-
-### [Get-MgBetaSiteGetGraphBPrePathByPath](Get-MgBetaSiteGetGraphBPrePathByPath.md)
 
 
 ### [Get-MgBetaSiteItemLastModifiedByUser](Get-MgBetaSiteItemLastModifiedByUser.md)
@@ -1940,6 +1964,9 @@ Locale: en-US
 ### [New-MgBetaGroupSiteColumn](New-MgBetaGroupSiteColumn.md)
 
 
+### [New-MgBetaGroupSiteContentModel](New-MgBetaGroupSiteContentModel.md)
+
+
 ### [New-MgBetaGroupSiteContentType](New-MgBetaGroupSiteContentType.md)
 
 
@@ -1949,10 +1976,19 @@ Locale: en-US
 ### [New-MgBetaGroupSiteContentTypeColumnLink](New-MgBetaGroupSiteContentTypeColumnLink.md)
 
 
+### [New-MgBetaGroupSiteDocumentProcessingJob](New-MgBetaGroupSiteDocumentProcessingJob.md)
+
+
 ### [New-MgBetaGroupSiteGetByPathColumn](New-MgBetaGroupSiteGetByPathColumn.md)
 
 
+### [New-MgBetaGroupSiteGetByPathContentModel](New-MgBetaGroupSiteGetByPathContentModel.md)
+
+
 ### [New-MgBetaGroupSiteGetByPathContentType](New-MgBetaGroupSiteGetByPathContentType.md)
+
+
+### [New-MgBetaGroupSiteGetByPathDocumentProcessingJob](New-MgBetaGroupSiteGetByPathDocumentProcessingJob.md)
 
 
 ### [New-MgBetaGroupSiteGetByPathList](New-MgBetaGroupSiteGetByPathList.md)
@@ -2381,6 +2417,9 @@ Locale: en-US
 ### [Remove-MgBetaGroupSiteColumn](Remove-MgBetaGroupSiteColumn.md)
 
 
+### [Remove-MgBetaGroupSiteContentModel](Remove-MgBetaGroupSiteContentModel.md)
+
+
 ### [Remove-MgBetaGroupSiteContentType](Remove-MgBetaGroupSiteContentType.md)
 
 
@@ -2388,6 +2427,9 @@ Locale: en-US
 
 
 ### [Remove-MgBetaGroupSiteContentTypeColumnLink](Remove-MgBetaGroupSiteContentTypeColumnLink.md)
+
+
+### [Remove-MgBetaGroupSiteDocumentProcessingJob](Remove-MgBetaGroupSiteDocumentProcessingJob.md)
 
 
 ### [Remove-MgBetaGroupSiteGetByPathAnalytic](Remove-MgBetaGroupSiteGetByPathAnalytic.md)
@@ -2687,6 +2729,12 @@ Locale: en-US
 ### [Remove-MgBetaSiteColumn](Remove-MgBetaSiteColumn.md)
 
 
+### [Remove-MgBetaSiteContentModelFromDrive](Remove-MgBetaSiteContentModelFromDrive.md)
+
+
+### [Remove-MgBetaSiteContentModelGetByNameFromDrive](Remove-MgBetaSiteContentModelGetByNameFromDrive.md)
+
+
 ### [Remove-MgBetaSiteContentType](Remove-MgBetaSiteContentType.md)
 
 
@@ -2984,6 +3032,9 @@ Locale: en-US
 ### [Update-MgBetaGroupSiteColumn](Update-MgBetaGroupSiteColumn.md)
 
 
+### [Update-MgBetaGroupSiteContentModel](Update-MgBetaGroupSiteContentModel.md)
+
+
 ### [Update-MgBetaGroupSiteContentType](Update-MgBetaGroupSiteContentType.md)
 
 
@@ -2994,6 +3045,9 @@ Locale: en-US
 
 
 ### [Update-MgBetaGroupSiteCreatedByUserMailboxSetting](Update-MgBetaGroupSiteCreatedByUserMailboxSetting.md)
+
+
+### [Update-MgBetaGroupSiteDocumentProcessingJob](Update-MgBetaGroupSiteDocumentProcessingJob.md)
 
 
 ### [Update-MgBetaGroupSiteGetByPathAnalytic](Update-MgBetaGroupSiteGetByPathAnalytic.md)

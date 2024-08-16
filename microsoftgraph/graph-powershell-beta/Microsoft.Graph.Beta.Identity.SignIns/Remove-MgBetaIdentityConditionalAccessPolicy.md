@@ -33,6 +33,9 @@ Remove-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Delete a conditionalAccessPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccesspolicy-delete-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Remove a conditional access policy
 

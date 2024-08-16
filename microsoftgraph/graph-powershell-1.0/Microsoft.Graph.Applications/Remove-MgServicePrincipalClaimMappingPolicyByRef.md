@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalClaimMappingPolicyByRef
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgServicePrincipalClaimMappingPolicyByRef
 
 ## SYNOPSIS
-Delete ref of navigation property claimsMappingPolicies for servicePrincipals
+Remove a claimsMappingPolicy from a servicePrincipal.
 
 ## SYNTAX
 
@@ -27,7 +28,10 @@ Remove-MgServicePrincipalClaimMappingPolicyByRef -InputObject <IApplicationsIden
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property claimsMappingPolicies for servicePrincipals
+Remove a claimsMappingPolicy from a servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-claimsmappingpolicies-permissions.md)]
 
 ## PARAMETERS
 
@@ -228,6 +232,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalClaimMappingPolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalClaimMappingPolicyByRef)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-delete-claimsmappingpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-delete-claimsmappingpolicies?view=graph-rest-1.0)
 
 
 

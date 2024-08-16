@@ -16,10 +16,11 @@ Update the navigation property remoteActionAudits in deviceManagement
 ```
 Update-MgBetaDeviceManagementRemoteActionAudit -RemoteActionAuditId <String>
  [-ResponseHeadersVariable <String>] [-Action <RemoteAction>] [-ActionState <String>]
- [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>] [-DeviceImei <String>]
- [-DeviceOwnerUserPrincipalName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
- [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-BulkDeviceActionId <String>] [-DeviceDisplayName <String>]
+ [-DeviceImei <String>] [-DeviceOwnerUserPrincipalName <String>] [-Id <String>]
+ [-InitiatedByUserPrincipalName <String>] [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>]
+ [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -33,10 +34,11 @@ Update-MgBetaDeviceManagementRemoteActionAudit -RemoteActionAuditId <String>
 ```
 Update-MgBetaDeviceManagementRemoteActionAudit -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-Action <RemoteAction>] [-ActionState <String>]
- [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>] [-DeviceImei <String>]
- [-DeviceOwnerUserPrincipalName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
- [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-BulkDeviceActionId <String>] [-DeviceDisplayName <String>]
+ [-DeviceImei <String>] [-DeviceOwnerUserPrincipalName <String>] [-Id <String>]
+ [-InitiatedByUserPrincipalName <String>] [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>]
+ [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -109,6 +111,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BulkDeviceActionId
+BulkAction ID
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -363,6 +380,7 @@ BODYPARAMETER `<IMicrosoftGraphRemoteActionAudit>`: Report of remote actions ini
 Read-only.
   - `[Action <RemoteAction?>]`: Remote actions Intune supports.
   - `[ActionState <String>]`: actionState
+  - `[BulkDeviceActionId <String>]`: BulkAction ID
   - `[DeviceDisplayName <String>]`: Intune device name.
   - `[DeviceImei <String>]`: IMEI of the device.
   - `[DeviceOwnerUserPrincipalName <String>]`: Upn of the device owner.
@@ -456,6 +474,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[ManagedDeviceEncryptionStateId <String>]`: The unique identifier of managedDeviceEncryptionState
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationState
+  - `[ManagedDeviceWindowsOperatingSystemImageId <String>]`: The unique identifier of managedDeviceWindowsOperatingSystemImage
   - `[MicrosoftTunnelConfigurationId <String>]`: The unique identifier of microsoftTunnelConfiguration
   - `[MicrosoftTunnelHealthThresholdId <String>]`: The unique identifier of microsoftTunnelHealthThreshold
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer

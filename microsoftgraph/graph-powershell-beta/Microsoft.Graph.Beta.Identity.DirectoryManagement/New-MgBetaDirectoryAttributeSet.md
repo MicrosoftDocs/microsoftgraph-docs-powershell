@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryattributeset
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaDirectoryAttributeSet
 
 ## SYNOPSIS
-Create new navigation property to attributeSets for directory
+Create a new attributeSet object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAttributeSet?view=graph-powershell-1.0)
@@ -30,7 +31,10 @@ New-MgBetaDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet>
 ```
 
 ## DESCRIPTION
-Create new navigation property to attributeSets for directory
+Create a new attributeSet object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-attributesets-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -242,6 +246,8 @@ Can be changed later.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryattributeset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryattributeset)
+
+[https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-beta)
 
 
 

@@ -2390,6 +2390,9 @@ Locale: en-US
 ### [Remove-MgBetaDriveItemAnalyticItemActivityStat](Remove-MgBetaDriveItemAnalyticItemActivityStat.md)
 
 
+### [Remove-MgBetaDriveItemCheckout](Remove-MgBetaDriveItemCheckout.md)
+
+
 ### [Remove-MgBetaDriveItemChildContent](Remove-MgBetaDriveItemChildContent.md)
 
 
@@ -2508,6 +2511,9 @@ Locale: en-US
 
 
 ### [Remove-MgBetaDriveRootAnalyticItemActivityStat](Remove-MgBetaDriveRootAnalyticItemActivityStat.md)
+
+
+### [Remove-MgBetaDriveRootCheckout](Remove-MgBetaDriveRootCheckout.md)
 
 
 ### [Remove-MgBetaDriveRootChildContent](Remove-MgBetaDriveRootChildContent.md)

@@ -8,10 +8,9 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentPrincipal
 
 ## SYNOPSIS
-The assigned principal.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
+Referencing the assigned principal.
 Read-only.
-Supports $expand.
+Supports $expand except for the Exchange provider.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal?view=graph-powershell-1.0)
@@ -33,10 +32,9 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentPrincipal -InputObjec
 ```
 
 ## DESCRIPTION
-The assigned principal.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
+Referencing the assigned principal.
 Read-only.
-Supports $expand.
+Supports $expand except for the Exchange provider.
 
 ## PARAMETERS
 

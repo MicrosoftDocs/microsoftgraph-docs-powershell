@@ -34,6 +34,9 @@ Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
 ## DESCRIPTION
 Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitysecuritydefaultsenforcementpolicy-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

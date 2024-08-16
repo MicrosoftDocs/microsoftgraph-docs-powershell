@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserMailFolderChildFolderMessageContent
 
 ## SYNOPSIS
-Get media content for the navigation property messages from users
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolderMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageContent?view=graph-powershell-beta)
@@ -18,36 +19,22 @@ Get media content for the navigation property messages from users
 ### Get (Default)
 ```
 Get-MgUserMailFolderChildFolderMessageContent -MailFolderId <String> -MailFolderId1 <String>
- -MessageId <String> -UserId <String> [-Format <String>] -OutFile <String> [-ResponseHeadersVariable <String>]
+ -MessageId <String> -UserId <String> -OutFile <String> [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserMailFolderChildFolderMessageContent -InputObject <IMailIdentity> [-Format <String>] -OutFile <String>
+Get-MgUserMailFolderChildFolderMessageContent -InputObject <IMailIdentity> -OutFile <String>
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property messages from users
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Headers
 Optional headers that will be added to the request.

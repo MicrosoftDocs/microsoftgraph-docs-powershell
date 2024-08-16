@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannel
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgTeamChannel
 
 ## SYNOPSIS
-The collection of channels and messages associated with the team.
+Retrieve the properties and relationships of a channel.
+This method supports federation.
+Only a user who is a member of the shared channel can retrieve channel information.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannel?view=graph-powershell-beta)
@@ -38,7 +42,15 @@ Get-MgTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 ```
 
 ## DESCRIPTION
-The collection of channels and messages associated with the team.
+Retrieve the properties and relationships of a channel.
+This method supports federation.
+Only a user who is a member of the shared channel can retrieve channel information.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List all channels
@@ -362,6 +374,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannel)
+
+[https://learn.microsoft.com/graph/api/channel-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/channel-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-list?view=graph-rest-1.0)
 
 
 

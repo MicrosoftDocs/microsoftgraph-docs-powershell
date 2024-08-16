@@ -11,6 +11,7 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Initiate a reset for the password associated with a password authentication method object.
 This can only be done by an administrator with appropriate permissions and can't be performed on a user's own account.
+To reset a user's password in in Azure AD B2C, use the Update user API operation and update the passwordProfile \> forceChangePasswordNextSignIn object.
 This flow writes the new password to Microsoft Entra ID and pushes it to on-premises Active Directory if configured using password writeback.
 The admin can either provide a new password or have the system generate one.
 The user is prompted to change their password on their next sign in.
@@ -54,6 +55,7 @@ Reset-MgBetaUserAuthenticationMethodPassword -InputObject <IUsersActionsIdentity
 ## DESCRIPTION
 Initiate a reset for the password associated with a password authentication method object.
 This can only be done by an administrator with appropriate permissions and can't be performed on a user's own account.
+To reset a user's password in in Azure AD B2C, use the Update user API operation and update the passwordProfile \> forceChangePasswordNextSignIn object.
 This flow writes the new password to Microsoft Entra ID and pushes it to on-premises Active Directory if configured using password writeback.
 The admin can either provide a new password or have the system generate one.
 The user is prompted to change their password on their next sign in.

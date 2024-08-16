@@ -431,9 +431,6 @@ Locale: en-US
 ### [Get-MgGroupSiteGetGraphBPrePathActivityByInterval](Get-MgGroupSiteGetGraphBPrePathActivityByInterval.md)
 
 
-### [Get-MgGroupSiteGetGraphBPrePathByPath](Get-MgGroupSiteGetGraphBPrePathByPath.md)
-
-
 ### [Get-MgGroupSiteListContentTypeCompatibleHubContentType](Get-MgGroupSiteListContentTypeCompatibleHubContentType.md)
 
 

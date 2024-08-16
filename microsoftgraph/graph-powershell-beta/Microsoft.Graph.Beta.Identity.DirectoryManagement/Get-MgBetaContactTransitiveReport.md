@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontacttransitivereport
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaContactTransitiveReport
@@ -38,6 +39,9 @@ Get-MgBetaContactTransitiveReport -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 The transitive reports for a contact.
 Read-only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-get-transitivereports-permissions.md)]
 
 ## PARAMETERS
 
@@ -351,6 +355,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontacttransitivereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontacttransitivereport)
+
+[https://learn.microsoft.com/graph/api/orgcontact-get-transitivereports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/orgcontact-get-transitivereports?view=graph-rest-beta)
 
 
 

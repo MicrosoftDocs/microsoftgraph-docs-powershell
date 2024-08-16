@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendationimpactedresource
 schema: 2.0.0
+ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaDirectoryRecommendationImpactedResource
 
 ## SYNOPSIS
-The list of directory objects associated with the recommendation.
+Read the properties and relationships of an impactedResource object.
 
 ## SYNTAX
 
@@ -35,7 +37,13 @@ Get-MgBetaDirectoryRecommendationImpactedResource -InputObject <IIdentityDirecto
 ```
 
 ## DESCRIPTION
-The list of directory objects associated with the recommendation.
+Read the properties and relationships of an impactedResource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/impactedresource-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-list-impactedresources-permissions.md)]
 
 ## PARAMETERS
 
@@ -349,6 +357,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendationimpactedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendationimpactedresource)
+
+[https://learn.microsoft.com/graph/api/impactedresource-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/impactedresource-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/recommendation-list-impactedresources?view=graph-rest-beta](https://learn.microsoft.com/graph/api/recommendation-list-impactedresources?view=graph-rest-beta)
 
 
 

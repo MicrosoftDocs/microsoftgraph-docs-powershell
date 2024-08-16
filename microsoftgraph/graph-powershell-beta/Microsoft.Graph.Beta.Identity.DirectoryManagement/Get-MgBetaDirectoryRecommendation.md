@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendation
 schema: 2.0.0
+ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaDirectoryRecommendation
 
 ## SYNOPSIS
-List of recommended improvements to improve tenant posture.
+Read the properties and relationships of a recommendation object.
 
 ## SYNTAX
 
@@ -35,7 +37,13 @@ Get-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIden
 ```
 
 ## DESCRIPTION
-List of recommended improvements to improve tenant posture.
+Read the properties and relationships of a recommendation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-recommendation-permissions.md)]
 
 ## PARAMETERS
 
@@ -334,6 +342,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendation)
+
+[https://learn.microsoft.com/graph/api/recommendation-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/recommendation-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/directory-list-recommendation?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-list-recommendation?view=graph-rest-beta)
 
 
 

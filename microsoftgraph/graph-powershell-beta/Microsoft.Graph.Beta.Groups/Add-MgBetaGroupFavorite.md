@@ -10,6 +10,7 @@ ms.subservice: entra-groups
 
 ## SYNOPSIS
 Add the group to the list of the current user's favorite groups.
+The group shows up in Outlook and Teams favorites.
 Supported for Microsoft 365 groups only.
 
 > [!NOTE]
@@ -32,6 +33,7 @@ Add-MgBetaGroupFavorite -InputObject <IGroupsIdentity> [-ResponseHeadersVariable
 
 ## DESCRIPTION
 Add the group to the list of the current user's favorite groups.
+The group shows up in Outlook and Teams favorites.
 Supported for Microsoft 365 groups only.
 
 **Permissions**
@@ -193,6 +195,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
+  - `[ContentModelId <String>]`: The unique identifier of contentModel
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
   - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
@@ -216,11 +219,11 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
+  - `[ModelName <String>]`: Usage: modelName='{modelName}'
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
-  - `[Path1 <String>]`: Usage: path='{path1}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan

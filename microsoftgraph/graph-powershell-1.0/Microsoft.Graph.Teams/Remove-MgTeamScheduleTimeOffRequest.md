@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimeoffrequest
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgTeamScheduleTimeOffRequest
 
 ## SYNOPSIS
-Delete navigation property timeOffRequests for teams
+Delete a timeOffRequest object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleTimeOffRequest?view=graph-powershell-beta)
@@ -30,7 +31,10 @@ Remove-MgTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete navigation property timeOffRequests for teams
+Delete a timeOffRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffrequest-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -253,6 +257,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimeoffrequest)
+
+[https://learn.microsoft.com/graph/api/timeoffrequest-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoffrequest-delete?view=graph-rest-1.0)
 
 
 

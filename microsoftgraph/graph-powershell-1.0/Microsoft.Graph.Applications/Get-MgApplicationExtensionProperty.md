@@ -3,14 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty
 schema: 2.0.0
+ms.subservice: extensions
+ms.subservice: extensions
 ---
 
 # Get-MgApplicationExtensionProperty
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Supports $expand and $filter (/$count eq 0, /$count ne 0).
+Read a directory extension definition represented by an extensionProperty object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
@@ -40,9 +40,13 @@ Get-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Supports $expand and $filter (/$count eq 0, /$count ne 0).
+Read a directory extension definition represented by an extensionProperty object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/extensionproperty-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list-extensionproperty-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -346,6 +350,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty)
+
+[https://learn.microsoft.com/graph/api/extensionproperty-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/extensionproperty-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/application-list-extensionproperty?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-list-extensionproperty?view=graph-rest-1.0)
 
 
 

@@ -668,6 +668,12 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementManagedDeviceUser](Get-MgBetaDeviceManagementManagedDeviceUser.md)
 
 
+### [Get-MgBetaDeviceManagementManagedDeviceWindowsOSImage](Get-MgBetaDeviceManagementManagedDeviceWindowsOSImage.md)
+
+
+### [Get-MgBetaDeviceManagementManagedDeviceWindowsOSImageCount](Get-MgBetaDeviceManagementManagedDeviceWindowsOSImageCount.md)
+
+
 ### [Get-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](Get-MgBetaDeviceManagementManagedDeviceWindowsProtectionState.md)
 
 
@@ -1475,6 +1481,9 @@ Locale: en-US
 ### [New-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState](New-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
 
 
+### [New-MgBetaDeviceManagementManagedDeviceWindowsOSImage](New-MgBetaDeviceManagementManagedDeviceWindowsOSImage.md)
+
+
 ### [New-MgBetaDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](New-MgBetaDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
 
 
@@ -2046,6 +2055,9 @@ Locale: en-US
 
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState](Remove-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
+
+
+### [Remove-MgBetaDeviceManagementManagedDeviceWindowsOSImage](Remove-MgBetaDeviceManagementManagedDeviceWindowsOSImage.md)
 
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](Remove-MgBetaDeviceManagementManagedDeviceWindowsProtectionState.md)
@@ -2643,6 +2655,9 @@ Locale: en-US
 
 
 ### [Update-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState](Update-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
+
+
+### [Update-MgBetaDeviceManagementManagedDeviceWindowsOSImage](Update-MgBetaDeviceManagementManagedDeviceWindowsOSImage.md)
 
 
 ### [Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState.md)

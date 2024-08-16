@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgUserChatMessageHostedContent
 
 ## SYNOPSIS
-Update media content for the navigation property hostedContents in users
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaUserChatMessageHostedContent?view=graph-powershell-beta)
@@ -31,7 +32,8 @@ Set-MgUserChatMessageHostedContent -InputObject <ITeamsIdentity> [-Data <Stream>
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property hostedContents in users
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 

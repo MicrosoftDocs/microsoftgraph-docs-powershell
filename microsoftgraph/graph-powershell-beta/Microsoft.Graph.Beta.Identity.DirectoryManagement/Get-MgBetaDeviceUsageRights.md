@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceusagerights
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDeviceUsageRights
@@ -36,6 +37,9 @@ Get-MgBetaDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity> 
 
 ## DESCRIPTION
 Represents the usage rights a device has been granted.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-usagerights-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceUsageRights Cmdlet
@@ -365,6 +369,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceusagerights](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceusagerights)
+
+[https://learn.microsoft.com/graph/api/device-list-usagerights?view=graph-rest-beta](https://learn.microsoft.com/graph/api/device-list-usagerights?view=graph-rest-beta)
 
 
 

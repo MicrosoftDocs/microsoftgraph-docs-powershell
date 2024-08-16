@@ -237,7 +237,7 @@ Accept wildcard characters: False
 
 ### -DeviceId1
 Unique identifier set by Azure Device Registration Service at the time of registration.
-This is an alternate key that can be used to reference the device object.
+This alternate key can be used to reference the device object.
 Supports $filter (eq, ne, not, startsWith).
 
 ```yaml
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 
 ### -DeviceOwnership
 Ownership of the device.
-This property is set by Intune.
+Intune sets this property.
 Possible values are: unknown, company, personal.
 
 ```yaml
@@ -336,8 +336,9 @@ Accept wildcard characters: False
 
 ### -EnrollmentType
 Enrollment type of the device.
-This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Intune sets this property.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
 
 ```yaml
 Type: String
@@ -797,8 +798,8 @@ Accept wildcard characters: False
 ### -TrustType
 Type of trust for the joined device.
 Read-only.
-Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
+For more information, see Introduction to device management in Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -894,12 +895,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   - `[DeviceCategory <String>]`: User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
   - `[DeviceId <String>]`: Unique identifier set by Azure Device Registration Service at the time of registration.
-This is an alternate key that can be used to reference the device object.
+This alternate key can be used to reference the device object.
 Supports $filter (eq, ne, not, startsWith).
   - `[DeviceMetadata <String>]`: For internal use only.
 Set to null.
   - `[DeviceOwnership <String>]`: Ownership of the device.
-This property is set by Intune.
+Intune sets this property.
 Possible values are: unknown, company, personal.
   - `[DeviceVersion <Int32?>]`: For internal use only.
   - `[DisplayName <String>]`: The display name for the device.
@@ -909,8 +910,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
   - `[EnrollmentType <String>]`: Enrollment type of the device.
-This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Intune sets this property.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
   - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -986,8 +988,8 @@ This operation is transitive.
 Supports $expand.
   - `[TrustType <String>]`: Type of trust for the joined device.
 Read-only.
-Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
-For more details, see Introduction to device management in Microsoft Entra ID.
+Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud-only joined devices), ServerAd (on-premises domain joined devices joined to Microsoft Entra ID).
+For more information, see Introduction to device management in Microsoft Entra ID.
 
 EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the device.
 Read-only.

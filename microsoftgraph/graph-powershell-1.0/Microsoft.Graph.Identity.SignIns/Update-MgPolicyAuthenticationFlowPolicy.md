@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgPolicyAuthenticationFlowPolicy
 
 ## SYNOPSIS
-Update the navigation property authenticationFlowsPolicy in policies
+Update the selfServiceSignUp property of an authenticationFlowsPolicy object.
+The properties id, type, and description cannot be modified.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
@@ -31,7 +33,11 @@ Update-MgPolicyAuthenticationFlowPolicy -BodyParameter <IMicrosoftGraphAuthentic
 ```
 
 ## DESCRIPTION
-Update the navigation property authenticationFlowsPolicy in policies
+Update the selfServiceSignUp property of an authenticationFlowsPolicy object.
+The properties id, type, and description cannot be modified.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationflowspolicy-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -274,6 +280,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy)
+
+[https://learn.microsoft.com/graph/api/authenticationflowspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationflowspolicy-update?view=graph-rest-1.0)
 
 
 

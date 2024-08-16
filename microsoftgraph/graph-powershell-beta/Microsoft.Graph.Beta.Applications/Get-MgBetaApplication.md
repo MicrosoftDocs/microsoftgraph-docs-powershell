@@ -4,7 +4,6 @@ Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplication
 schema: 2.0.0
 ms.subservice: entra-applications
-ms.subservice: entra-applications
 ---
 
 # Get-MgBetaApplication
@@ -44,6 +43,9 @@ Get the properties and relationships of an application object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a list of applications

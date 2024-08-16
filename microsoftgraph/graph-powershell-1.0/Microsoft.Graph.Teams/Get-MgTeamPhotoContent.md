@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamphotocontent
 schema: 2.0.0
+ms.subservice: people
 ---
 
 # Get-MgTeamPhotoContent
 
 ## SYNOPSIS
-Get media content for the navigation property photo from teams
+Get the specified profilePhoto or its metadata (profilePhoto properties).
+The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,360x360, 432x432, 504x504, and 648x648.
+Photos can be any dimension if they're stored in Microsoft Entra ID.
+You can get the metadata of the largest available photo or specify a size to get the metadata for that photo size.If the size you request is unavailable, you can still get a smaller size that the user has uploaded and made available.For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of the photo is available for download.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPhotoContent?view=graph-powershell-beta)
@@ -17,20 +21,21 @@ Get media content for the navigation property photo from teams
 
 ### Get (Default)
 ```
-Get-MgTeamPhotoContent -TeamId <String> [-Format <String>] -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgTeamPhotoContent -TeamId <String> -OutFile <String> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgTeamPhotoContent -InputObject <ITeamsIdentity> [-Format <String>] -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgTeamPhotoContent -InputObject <ITeamsIdentity> -OutFile <String> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property photo from teams
+Get the specified profilePhoto or its metadata (profilePhoto properties).
+The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,360x360, 432x432, 504x504, and 648x648.
+Photos can be any dimension if they're stored in Microsoft Entra ID.
+You can get the metadata of the largest available photo or specify a size to get the metadata for that photo size.If the size you request is unavailable, you can still get a smaller size that the user has uploaded and made available.For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of the photo is available for download.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -46,21 +51,6 @@ This example shows how to use the Get-MgTeamPhotoContent Cmdlet.
 
 
 ## PARAMETERS
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Headers
 Optional headers that will be added to the request.
@@ -222,6 +212,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamphotocontent)
+
+[https://learn.microsoft.com/graph/api/profilephoto-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profilephoto-get?view=graph-rest-1.0)
 
 
 

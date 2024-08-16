@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaTenantRelationshipManagedTenantGroupSearch
 
 ## SYNOPSIS
-Invoke action tenantSearch
+Searches for the specified managed tenants across tenant groups.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Invoke-MgBetaTenantRelationshipManagedTenantGroupSearch
 ```
 
 ## DESCRIPTION
-Invoke action tenantSearch
+Searches for the specified managed tenants across tenant groups.
 
 ## PARAMETERS
 

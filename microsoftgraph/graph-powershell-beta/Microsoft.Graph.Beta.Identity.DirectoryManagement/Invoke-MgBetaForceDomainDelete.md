@@ -9,11 +9,11 @@ ms.subservice: entra-directory-management
 # Invoke-MgBetaForceDomainDelete
 
 ## SYNOPSIS
-Deletes a domain using an asynchronous operation.
-Prior to calling forceDelete, you must update or remove any references to Exchange as the provisioning service.
-The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code.
+Delete a domain using an asynchronous operation.
+Before performing this operation, you must update or remove any references to Exchange as the provisioning service.
+The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain return a 404 HTTP response code.
 To verify deletion of a domain, you can perform a get domain.
-If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
+If the domain was successfully deleted, a 404 HTTP response code is returned in the response.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgForceDomainDelete](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgForceDomainDelete?view=graph-powershell-1.0)
@@ -52,11 +52,11 @@ Invoke-MgBetaForceDomainDelete -InputObject <IIdentityDirectoryManagementIdentit
 ```
 
 ## DESCRIPTION
-Deletes a domain using an asynchronous operation.
-Prior to calling forceDelete, you must update or remove any references to Exchange as the provisioning service.
-The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code.
+Delete a domain using an asynchronous operation.
+Before performing this operation, you must update or remove any references to Exchange as the provisioning service.
+The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain return a 404 HTTP response code.
 To verify deletion of a domain, you can perform a get domain.
-If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
+If the domain was successfully deleted, a 404 HTTP response code is returned in the response.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-forcedelete-permissions.md)]

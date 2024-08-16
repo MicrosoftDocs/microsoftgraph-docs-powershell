@@ -593,7 +593,13 @@ Locale: en-US
 ### [Remove-MgBetaUserChatAccessForUser](Remove-MgBetaUserChatAccessForUser.md)
 
 
+### [Remove-MgBetaUserDriveItemCheckout](Remove-MgBetaUserDriveItemCheckout.md)
+
+
 ### [Remove-MgBetaUserDriveItemPermanent](Remove-MgBetaUserDriveItemPermanent.md)
+
+
+### [Remove-MgBetaUserDriveRootCheckout](Remove-MgBetaUserDriveRootCheckout.md)
 
 
 ### [Remove-MgBetaUserDriveRootPermanent](Remove-MgBetaUserDriveRootPermanent.md)
@@ -615,6 +621,9 @@ Locale: en-US
 
 
 ### [Rename-MgBetaUserCloudPcUserAccountType](Rename-MgBetaUserCloudPcUserAccountType.md)
+
+
+### [Rename-MgBetaUserManagedDeviceAssignment](Rename-MgBetaUserManagedDeviceAssignment.md)
 
 
 ### [Request-MgBetaUserManagedDeviceRemoteAssistance](Request-MgBetaUserManagedDeviceRemoteAssistance.md)
@@ -788,6 +797,9 @@ Locale: en-US
 ### [Start-MgBetaUserManagedDeviceConfigurationManagerAction](Start-MgBetaUserManagedDeviceConfigurationManagerAction.md)
 
 
+### [Start-MgBetaUserSolutionWorkingTimeScheduleWorkingTime](Start-MgBetaUserSolutionWorkingTimeScheduleWorkingTime.md)
+
+
 ### [Stop-MgBetaUserCloudPc](Stop-MgBetaUserCloudPc.md)
 
 
@@ -807,6 +819,9 @@ Locale: en-US
 
 
 ### [Stop-MgBetaUserPendingAccessReviewInstanceStage](Stop-MgBetaUserPendingAccessReviewInstanceStage.md)
+
+
+### [Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime](Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime.md)
 
 
 ### [Suspend-MgBetaUserManagedDeviceConfigurationRefresh](Suspend-MgBetaUserManagedDeviceConfigurationRefresh.md)

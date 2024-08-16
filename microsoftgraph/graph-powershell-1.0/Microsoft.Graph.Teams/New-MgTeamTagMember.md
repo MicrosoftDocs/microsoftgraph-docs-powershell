@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtagmember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgTeamTagMember
 
 ## SYNOPSIS
-Create new navigation property to members for teams
+Create a new teamworkTagMember object in a team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamTagMember?view=graph-powershell-beta)
@@ -46,7 +47,10 @@ New-MgTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Create new navigation property to members for teams
+Create a new teamworkTagMember object in a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktagmember-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -344,6 +348,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtagmember)
+
+[https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-1.0)
 
 
 

@@ -49,6 +49,7 @@ Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 $params = @{
 	description = "An example custom role"
+### Example 2
 	rolePermissions = @(
 		@{
 			allowedResourceActions = @(
@@ -63,8 +64,6 @@ New-MgBetaRoleManagementCloudPcRoleDefinition -BodyParameter $params
 
 ```
 This example shows how to use the New-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties

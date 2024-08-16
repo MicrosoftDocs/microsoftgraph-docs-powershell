@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingpersoninsight
 schema: 2.0.0
+ms.subservice: insights
 ---
 
 # Get-MgBetaOrganizationSettingPersonInsight
 
 ## SYNOPSIS
-Contains the properties that are configured by an administrator for the visibility of a list of people relevant and working with a user in Microsoft 365.
-List peopleInsights returns the settings to display or return people insights in an organization.
+Get the properties of an insightsSettings object for displaying or returning people insights in an organization.
+To learn how to customize privacy for people insights in an organization, see Customize people insights privacy in Microsoft Graph.
 
 ## SYNTAX
 
@@ -28,8 +29,11 @@ Get-MgBetaOrganizationSettingPersonInsight -InputObject <IIdentityDirectoryManag
 ```
 
 ## DESCRIPTION
-Contains the properties that are configured by an administrator for the visibility of a list of people relevant and working with a user in Microsoft 365.
-List peopleInsights returns the settings to display or return people insights in an organization.
+Get the properties of an insightsSettings object for displaying or returning people insights in an organization.
+To learn how to customize privacy for people insights in an organization, see Customize people insights privacy in Microsoft Graph.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-peopleinsights-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOrganizationSettingPersonInsight Cmdlet
@@ -216,6 +220,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingpersoninsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingpersoninsight)
+
+[https://learn.microsoft.com/graph/api/organizationsettings-list-peopleinsights?view=graph-rest-beta](https://learn.microsoft.com/graph/api/organizationsettings-list-peopleinsights?view=graph-rest-beta)
 
 
 

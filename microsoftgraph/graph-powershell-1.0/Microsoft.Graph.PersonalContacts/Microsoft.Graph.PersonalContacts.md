@@ -119,10 +119,19 @@ Locale: en-US
 ### [Remove-MgUserContactFolderChildFolderContactExtension](Remove-MgUserContactFolderChildFolderContactExtension.md)
 
 
+### [Remove-MgUserContactFolderChildFolderContactPhotoContent](Remove-MgUserContactFolderChildFolderContactPhotoContent.md)
+
+
 ### [Remove-MgUserContactFolderContact](Remove-MgUserContactFolderContact.md)
 
 
 ### [Remove-MgUserContactFolderContactExtension](Remove-MgUserContactFolderContactExtension.md)
+
+
+### [Remove-MgUserContactFolderContactPhotoContent](Remove-MgUserContactFolderContactPhotoContent.md)
+
+
+### [Remove-MgUserContactPhotoContent](Remove-MgUserContactPhotoContent.md)
 
 
 ### [Set-MgUserContactFolderChildFolderContactPhotoContent](Set-MgUserContactFolderChildFolderContactPhotoContent.md)

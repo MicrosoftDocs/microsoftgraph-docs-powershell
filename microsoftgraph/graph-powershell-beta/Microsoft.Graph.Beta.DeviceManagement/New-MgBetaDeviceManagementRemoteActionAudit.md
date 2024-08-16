@@ -15,8 +15,8 @@ Create new navigation property to remoteActionAudits for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementRemoteActionAudit [-ResponseHeadersVariable <String>] [-Action <RemoteAction>]
- [-ActionState <String>] [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>]
- [-DeviceImei <String>] [-DeviceOwnerUserPrincipalName <String>] [-Id <String>]
+ [-ActionState <String>] [-AdditionalProperties <Hashtable>] [-BulkDeviceActionId <String>]
+ [-DeviceDisplayName <String>] [-DeviceImei <String>] [-DeviceOwnerUserPrincipalName <String>] [-Id <String>]
  [-InitiatedByUserPrincipalName <String>] [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>]
  [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -92,6 +92,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BulkDeviceActionId
+BulkAction ID
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -314,6 +329,7 @@ BODYPARAMETER `<IMicrosoftGraphRemoteActionAudit>`: Report of remote actions ini
 Read-only.
   - `[Action <RemoteAction?>]`: Remote actions Intune supports.
   - `[ActionState <String>]`: actionState
+  - `[BulkDeviceActionId <String>]`: BulkAction ID
   - `[DeviceDisplayName <String>]`: Intune device name.
   - `[DeviceImei <String>]`: IMEI of the device.
   - `[DeviceOwnerUserPrincipalName <String>]`: Upn of the device owner.

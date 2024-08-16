@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmember
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaAdministrativeUnitMember
 
 ## SYNOPSIS
-Create new navigation property to members for administrativeUnits
+Use this API to add a member (user, group, or device) to an administrative unit or to create a new group within an administrative unit.
+All group types can be created within an administrative unit.
+Note: Currently, it's only possible to add one member at a time to an administrative unit.\`
 
 ## SYNTAX
 
@@ -42,7 +45,12 @@ New-MgBetaAdministrativeUnitMember -InputObject <IIdentityDirectoryManagementIde
 ```
 
 ## DESCRIPTION
-Create new navigation property to members for administrativeUnits
+Use this API to add a member (user, group, or device) to an administrative unit or to create a new group within an administrative unit.
+All group types can be created within an administrative unit.
+Note: Currently, it's only possible to add one member at a time to an administrative unit.\`
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-post-members-permissions.md)]
 
 ## PARAMETERS
 
@@ -292,6 +300,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmember)
+
+[https://learn.microsoft.com/graph/api/administrativeunit-post-members?view=graph-rest-beta](https://learn.microsoft.com/graph/api/administrativeunit-post-members?view=graph-rest-beta)
 
 
 

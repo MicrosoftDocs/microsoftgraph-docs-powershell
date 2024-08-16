@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryinboundshareduserprofile
 schema: 2.0.0
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaDirectoryInboundSharedUserProfile
 
 ## SYNOPSIS
-A collection of external users whose profile data is shared with the Microsoft Entra tenant.
-Nullable.
+Read the properties of an inboundSharedUserProfile.
 
 ## SYNTAX
 
@@ -36,8 +37,13 @@ Get-MgBetaDirectoryInboundSharedUserProfile -InputObject <IIdentityDirectoryMana
 ```
 
 ## DESCRIPTION
-A collection of external users whose profile data is shared with the Microsoft Entra tenant.
-Nullable.
+Read the properties of an inboundSharedUserProfile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inboundshareduserprofile-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-inboundshareduserprofiles-permissions.md)]
 
 ## PARAMETERS
 
@@ -336,6 +342,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryinboundshareduserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryinboundshareduserprofile)
+
+[https://learn.microsoft.com/graph/api/inboundshareduserprofile-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/inboundshareduserprofile-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/directory-list-inboundshareduserprofiles?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-list-inboundshareduserprofiles?view=graph-rest-beta)
 
 
 

@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryattributeset
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryAttributeSet
 
 ## SYNOPSIS
-Group of related custom security attribute definitions.
+Read the properties and relationships of an attributeSet object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAttributeSet?view=graph-powershell-1.0)
@@ -38,7 +40,13 @@ Get-MgBetaDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdenti
 ```
 
 ## DESCRIPTION
-Group of related custom security attribute definitions.
+Read the properties and relationships of an attributeSet object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attributeset-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-attributesets-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get all attribute sets
@@ -372,6 +380,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryattributeset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryattributeset)
+
+[https://learn.microsoft.com/graph/api/attributeset-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/attributeset-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/directory-list-attributesets?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-list-attributesets?view=graph-rest-beta)
 
 
 

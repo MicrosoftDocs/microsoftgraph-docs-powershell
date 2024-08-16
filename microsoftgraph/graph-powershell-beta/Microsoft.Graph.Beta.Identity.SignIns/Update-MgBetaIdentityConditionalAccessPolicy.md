@@ -55,6 +55,9 @@ Update-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Update the properties of a conditionalAccessPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccesspolicy-update-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Add sign in risk levels to an existing conditional access policy
 

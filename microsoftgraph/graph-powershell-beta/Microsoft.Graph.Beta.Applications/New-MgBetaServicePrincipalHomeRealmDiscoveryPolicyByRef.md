@@ -49,6 +49,9 @@ New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicati
 ## DESCRIPTION
 Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-post-homerealmdiscoverypolicies-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

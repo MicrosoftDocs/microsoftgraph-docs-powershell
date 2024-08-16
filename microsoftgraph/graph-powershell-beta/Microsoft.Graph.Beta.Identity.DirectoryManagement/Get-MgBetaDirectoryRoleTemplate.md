@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a directoryroletemplate object.
 ### List (Default)
 ```
 Get-MgBetaDirectoryRoleTemplate [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-ResponseHeadersVariable <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
@@ -256,6 +256,21 @@ Aliases: OrderBy
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mggroupapproleassignment
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Remove-MgGroupAppRoleAssignment
 
 ## SYNOPSIS
-Delete navigation property appRoleAssignments for groups
+Deletes an appRoleAssignment that a group has been granted.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
@@ -30,7 +31,10 @@ Remove-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete navigation property appRoleAssignments for groups
+Deletes an appRoleAssignment that a group has been granted.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-approleassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -244,6 +248,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mggroupapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mggroupapproleassignment)
+
+[https://learn.microsoft.com/graph/api/group-delete-approleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-approleassignments?view=graph-rest-1.0)
 
 
 

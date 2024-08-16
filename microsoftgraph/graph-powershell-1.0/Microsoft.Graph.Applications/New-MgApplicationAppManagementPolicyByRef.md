@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationappmanagementpolicybyref
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgApplicationAppManagementPolicyByRef
 
 ## SYNOPSIS
-Create new navigation property ref to appManagementPolicies for applications
+Assign an appManagementPolicy policy object to an application or service principal object.
+The application or service principal adopts this policy over the tenant-wide tenantAppManagementPolicy setting.
+Only one policy object can be assigned to an application or service principal.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationAppManagementPolicyByRef?view=graph-powershell-beta)
@@ -45,7 +48,12 @@ New-MgApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to appManagementPolicies for applications
+Assign an appManagementPolicy policy object to an application or service principal object.
+The application or service principal adopts this policy over the tenant-wide tenantAppManagementPolicy setting.
+Only one policy object can be assigned to an application or service principal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-post-appliesto-permissions.md)]
 
 ## PARAMETERS
 
@@ -269,6 +277,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationappmanagementpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationappmanagementpolicybyref)
+
+[https://learn.microsoft.com/graph/api/appmanagementpolicy-post-appliesto?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-post-appliesto?view=graph-rest-1.0)
 
 
 

@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorypendingexternaluserprofile
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryPendingExternalUserProfile
 
 ## SYNOPSIS
-Collection of pending external user profiles representing collaborators in the directory that are unredeemed.
+Retrieve the properties of a specific pendingExternalUserProfile.
 
 ## SYNTAX
 
@@ -35,7 +37,10 @@ Get-MgBetaDirectoryPendingExternalUserProfile -InputObject <IIdentityDirectoryMa
 ```
 
 ## DESCRIPTION
-Collection of pending external user profiles representing collaborators in the directory that are unredeemed.
+Retrieve the properties of a specific pendingExternalUserProfile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/pendingexternaluserprofile-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -334,6 +339,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorypendingexternaluserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorypendingexternaluserprofile)
+
+[https://learn.microsoft.com/graph/api/pendingexternaluserprofile-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/pendingexternaluserprofile-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/directory-list-pendingexternaluserprofile?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-list-pendingexternaluserprofile?view=graph-rest-beta)
 
 
 

@@ -68,9 +68,6 @@ Locale: en-US
 ### [Get-MgUserMailFolderMessageAttachmentCount](Get-MgUserMailFolderMessageAttachmentCount.md)
 
 
-### [Get-MgUserMailFolderMessageContent](Get-MgUserMailFolderMessageContent.md)
-
-
 ### [Get-MgUserMailFolderMessageCount](Get-MgUserMailFolderMessageCount.md)
 
 
@@ -164,6 +161,9 @@ Locale: en-US
 ### [Remove-MgUserMailFolderChildFolderMessageAttachment](Remove-MgUserMailFolderChildFolderMessageAttachment.md)
 
 
+### [Remove-MgUserMailFolderChildFolderMessageContent](Remove-MgUserMailFolderChildFolderMessageContent.md)
+
+
 ### [Remove-MgUserMailFolderChildFolderMessageExtension](Remove-MgUserMailFolderChildFolderMessageExtension.md)
 
 
@@ -176,6 +176,9 @@ Locale: en-US
 ### [Remove-MgUserMailFolderMessageAttachment](Remove-MgUserMailFolderMessageAttachment.md)
 
 
+### [Remove-MgUserMailFolderMessageContent](Remove-MgUserMailFolderMessageContent.md)
+
+
 ### [Remove-MgUserMailFolderMessageExtension](Remove-MgUserMailFolderMessageExtension.md)
 
 
@@ -186,6 +189,9 @@ Locale: en-US
 
 
 ### [Remove-MgUserMessageAttachment](Remove-MgUserMessageAttachment.md)
+
+
+### [Remove-MgUserMessageContent](Remove-MgUserMessageContent.md)
 
 
 ### [Remove-MgUserMessageExtension](Remove-MgUserMessageExtension.md)

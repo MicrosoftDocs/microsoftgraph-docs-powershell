@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule
 
 ## SYNOPSIS
-The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
+The list of scheduled action for this rule
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-1.0)
@@ -40,8 +39,7 @@ Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule -InputObj
 ```
 
 ## DESCRIPTION
-The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
+The list of scheduled action for this rule
 
 ## PARAMETERS
 
@@ -388,6 +386,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[ManagedDeviceEncryptionStateId <String>]`: The unique identifier of managedDeviceEncryptionState
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationState
+  - `[ManagedDeviceWindowsOperatingSystemImageId <String>]`: The unique identifier of managedDeviceWindowsOperatingSystemImage
   - `[MicrosoftTunnelConfigurationId <String>]`: The unique identifier of microsoftTunnelConfiguration
   - `[MicrosoftTunnelHealthThresholdId <String>]`: The unique identifier of microsoftTunnelHealthThreshold
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer

@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbycommercesubscriptionid
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId
 
 ## SYNOPSIS
-List of commercial subscriptions that an organization has.
+Get a specific commercial subscription that an organization has acquired.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectorySubscriptionByCommerceSubscriptionId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectorySubscriptionByCommerceSubscriptionId?view=graph-powershell-1.0)
@@ -30,7 +31,10 @@ Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId -InputObject <IIdentityD
 ```
 
 ## DESCRIPTION
-List of commercial subscriptions that an organization has.
+Get a specific commercial subscription that an organization has acquired.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/companysubscription-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -208,6 +212,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbycommercesubscriptionid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbycommercesubscriptionid)
+
+[https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-beta)
 
 
 

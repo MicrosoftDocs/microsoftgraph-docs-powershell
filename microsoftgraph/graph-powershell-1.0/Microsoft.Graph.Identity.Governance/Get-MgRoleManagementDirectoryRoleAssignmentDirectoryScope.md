@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 The directory object that is the scope of the assignment.
 Read-only.
-Supports $expand.
+Supports $expand for the directory provider.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentDirectoryScope?view=graph-powershell-beta)
@@ -34,7 +34,7 @@ Get-MgRoleManagementDirectoryRoleAssignmentDirectoryScope -InputObject <IIdentit
 ## DESCRIPTION
 The directory object that is the scope of the assignment.
 Read-only.
-Supports $expand.
+Supports $expand for the directory provider.
 
 ## PARAMETERS
 

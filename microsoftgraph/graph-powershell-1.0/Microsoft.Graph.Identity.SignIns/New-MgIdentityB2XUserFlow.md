@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflow
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgIdentityB2XUserFlow
 
 ## SYNOPSIS
-Create new navigation property to b2xUserFlows for identity
+Create a new b2xIdentityUserFlow object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlow?view=graph-powershell-beta)
@@ -35,7 +36,10 @@ New-MgIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow>
 ```
 
 ## DESCRIPTION
-Create new navigation property to b2xUserFlows for identity
+Create a new b2xIdentityUserFlow object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-post-b2xuserflows-permissions.md)]
 
 ## PARAMETERS
 
@@ -365,7 +369,7 @@ false means the user can't complete sign-up without providing a value.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DataType <String>]`: identityUserFlowAttributeDataType
-      - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
+      - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
       - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
       - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
@@ -428,7 +432,7 @@ false means the user can't complete sign-up without providing a value.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DataType <String>]`: identityUserFlowAttributeDataType
-    - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
+    - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign up.
     - `[DisplayName <String>]`: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
     - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
@@ -447,6 +451,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflow)
+
+[https://learn.microsoft.com/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-1.0)
 
 
 

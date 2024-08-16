@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenlifetimepolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgApplicationTokenLifetimePolicyByRef
 
 ## SYNOPSIS
-Create new navigation property ref to tokenLifetimePolicies for applications
+Assign a tokenLifetimePolicy to an application.
+You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenLifetimePolicyByRef?view=graph-powershell-beta)
@@ -45,7 +47,11 @@ New-MgApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to tokenLifetimePolicies for applications
+Assign a tokenLifetimePolicy to an application.
+You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-tokenlifetimepolicies-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -286,6 +292,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenlifetimepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenlifetimepolicybyref)
+
+[https://learn.microsoft.com/graph/api/application-post-tokenlifetimepolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-tokenlifetimepolicies?view=graph-rest-1.0)
 
 
 

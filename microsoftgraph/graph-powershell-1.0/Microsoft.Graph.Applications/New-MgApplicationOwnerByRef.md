@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgApplicationOwnerByRef
 
 ## SYNOPSIS
-Create new navigation property ref to owners for applications
+Add an owner to an application by posting to the owners collection.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
@@ -44,7 +45,10 @@ New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to owners for applications
+Add an owner to an application by posting to the owners collection.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-owners-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Add an owner to an application
@@ -281,6 +285,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref)
+
+[https://learn.microsoft.com/graph/api/application-post-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-owners?view=graph-rest-1.0)
 
 
 

@@ -17,7 +17,8 @@ Update the navigation property bulkActions in deviceManagement
 Update-MgBetaDeviceManagementVirtualEndpointBulkAction -CloudPcBulkActionId <String>
  [-ResponseHeadersVariable <String>] [-ActionSummary <IMicrosoftGraphCloudPcBulkActionSummary>]
  [-AdditionalProperties <Hashtable>] [-CloudPcIds <String[]>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-ScheduledDuringMaintenanceWindow] [-Headers <IDictionary>]
+ [-DisplayName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
+ [-ScheduledDuringMaintenanceWindow] [-Status <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +34,8 @@ Update-MgBetaDeviceManagementVirtualEndpointBulkAction -CloudPcBulkActionId <Str
 Update-MgBetaDeviceManagementVirtualEndpointBulkAction -InputObject <IDeviceManagementAdministrationIdentity>
  [-ResponseHeadersVariable <String>] [-ActionSummary <IMicrosoftGraphCloudPcBulkActionSummary>]
  [-AdditionalProperties <Hashtable>] [-CloudPcIds <String[]>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-ScheduledDuringMaintenanceWindow] [-Headers <IDictionary>]
+ [-DisplayName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
+ [-ScheduledDuringMaintenanceWindow] [-Status <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -189,6 +191,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -InitiatedByUserPrincipalName
+Indicates the user principal name (UPN) of the user who initiated this bulk action.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -248,6 +266,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Status
+cloudPcBulkActionStatus
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -324,9 +357,12 @@ Read-only.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[DisplayName <String>]`: Name of the bulk action.
+  - `[InitiatedByUserPrincipalName <String>]`: Indicates the user principal name (UPN) of the user who initiated this bulk action.
+Read-only.
   - `[ScheduledDuringMaintenanceWindow <Boolean?>]`: Indicates whether the bulk action is scheduled according to the maintenance window.
 When true, the bulk action uses the maintenance window to schedule the action; false means that the bulk action doesn't use the maintenance window.
 The default value is false.
+  - `[Status <String>]`: cloudPcBulkActionStatus
 
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
@@ -343,7 +379,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
   - `[CloudPcServicePlanId <String>]`: The unique identifier of cloudPcServicePlan
-  - `[CloudPcSharedUseServicePlanId <String>]`: The unique identifier of cloudPcSharedUseServicePlan
   - `[CloudPcSnapshotId <String>]`: The unique identifier of cloudPcSnapshot
   - `[CloudPcSupportedRegionId <String>]`: The unique identifier of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment

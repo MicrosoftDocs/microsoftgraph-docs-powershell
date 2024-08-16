@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicytokenissuancepolicy
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgPolicyTokenIssuancePolicy
 
 ## SYNOPSIS
-Create new navigation property to tokenIssuancePolicies for policies
+Create a new tokenIssuancePolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
@@ -30,7 +31,10 @@ New-MgPolicyTokenIssuancePolicy -BodyParameter <Hashtable> [-ResponseHeadersVari
 ```
 
 ## DESCRIPTION
-Create new navigation property to tokenIssuancePolicies for policies
+Create a new tokenIssuancePolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tokenissuancepolicy-post-tokenissuancepolicy-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -300,6 +304,8 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicytokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicytokenissuancepolicy)
+
+[https://learn.microsoft.com/graph/api/tokenissuancepolicy-post-tokenissuancepolicy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenissuancepolicy-post-tokenissuancepolicy?view=graph-rest-1.0)
 
 
 

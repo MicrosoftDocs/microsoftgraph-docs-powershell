@@ -1023,10 +1023,13 @@ Read-only.
       - `[Company <IMicrosoftGraphCompanyDetail>]`: companyDetail
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+        - `[CompanyCode <String>]`: Legal entity number of the company or its subdivision.
+For information on how to set the value for the companyCode, see profileSourceAnnotation.
         - `[Department <String>]`: Department Name within a company.
         - `[DisplayName <String>]`: Company name.
         - `[OfficeLocation <String>]`: Office Location of the person referred to.
         - `[Pronunciation <String>]`: Pronunciation guide for the company name.
+        - `[SecondaryDepartment <String>]`: 
         - `[WebUrl <String>]`: Link to the company home page.
       - `[Description <String>]`: Description of the position in question.
       - `[EndMonthYear <DateTime?>]`: When the position ended.
@@ -1034,6 +1037,8 @@ Read-only.
       - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
       - `[Level <String>]`: The employee's experience or management level.
       - `[Role <String>]`: The role the position entailed.
+      - `[SecondaryJobTitle <String>]`: 
+      - `[SecondaryRole <String>]`: 
       - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
       - `[Summary <String>]`: summary of the position.
     - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
@@ -1568,10 +1573,13 @@ It's a free-format string value, for example, 'United States'.
         - `[State <String>]`: The state.
         - `[Street <String>]`: The street.
         - `[Type <String>]`: physicalAddressType
+      - `[CompanyCode <String>]`: Legal entity number of the company or its subdivision.
+For information on how to set the value for the companyCode, see profileSourceAnnotation.
       - `[Department <String>]`: Department Name within a company.
       - `[DisplayName <String>]`: Company name.
       - `[OfficeLocation <String>]`: Office Location of the person referred to.
       - `[Pronunciation <String>]`: Pronunciation guide for the company name.
+      - `[SecondaryDepartment <String>]`: 
       - `[WebUrl <String>]`: Link to the company home page.
     - `[Description <String>]`: Description of the position in question.
     - `[EndMonthYear <DateTime?>]`: When the position ended.
@@ -1579,6 +1587,8 @@ It's a free-format string value, for example, 'United States'.
     - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
     - `[Level <String>]`: The employee's experience or management level.
     - `[Role <String>]`: The role the position entailed.
+    - `[SecondaryJobTitle <String>]`: 
+    - `[SecondaryRole <String>]`: 
     - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
     - `[Summary <String>]`: summary of the position.
   - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
@@ -1626,10 +1636,13 @@ It's a free-format string value, for example, 'United States'.
       - `[State <String>]`: The state.
       - `[Street <String>]`: The street.
       - `[Type <String>]`: physicalAddressType
+    - `[CompanyCode <String>]`: Legal entity number of the company or its subdivision.
+For information on how to set the value for the companyCode, see profileSourceAnnotation.
     - `[Department <String>]`: Department Name within a company.
     - `[DisplayName <String>]`: Company name.
     - `[OfficeLocation <String>]`: Office Location of the person referred to.
     - `[Pronunciation <String>]`: Pronunciation guide for the company name.
+    - `[SecondaryDepartment <String>]`: 
     - `[WebUrl <String>]`: Link to the company home page.
   - `[CollaborationTags <String- `[]`>]`: Contains experience scenario tags a user has associated with the interest.
 Allowed values in the collection are: askMeAbout, ableToMentor, wantsToLearn, wantsToImprove.
@@ -1647,6 +1660,8 @@ Allowed values in the collection are: askMeAbout, ableToMentor, wantsToLearn, wa
     - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
     - `[Level <String>]`: The employee's experience or management level.
     - `[Role <String>]`: The role the position entailed.
+    - `[SecondaryJobTitle <String>]`: 
+    - `[SecondaryRole <String>]`: 
     - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
     - `[Summary <String>]`: summary of the position.
   - `[DisplayName <String>]`: Contains a friendly name for the project.

@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationextensionproperty
 schema: 2.0.0
+ms.subservice: extensions
 ---
 
 # Remove-MgApplicationExtensionProperty
 
 ## SYNOPSIS
-Delete navigation property extensionProperties for applications
+Delete a directory extension definition represented by an extensionProperty object.
+You can delete only directory extensions that aren't synced from on-premises active directory (AD).
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
@@ -30,7 +32,11 @@ Remove-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Delete navigation property extensionProperties for applications
+Delete a directory extension definition represented by an extensionProperty object.
+You can delete only directory extensions that aren't synced from on-premises active directory (AD).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/extensionproperty-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -244,6 +250,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationextensionproperty)
+
+[https://learn.microsoft.com/graph/api/extensionproperty-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/extensionproperty-delete?view=graph-rest-1.0)
 
 
 

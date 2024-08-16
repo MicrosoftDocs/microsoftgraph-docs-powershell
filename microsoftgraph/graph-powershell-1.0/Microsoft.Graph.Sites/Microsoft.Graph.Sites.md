@@ -209,9 +209,6 @@ Locale: en-US
 ### [Get-MgGroupSiteGetByPathItem](Get-MgGroupSiteGetByPathItem.md)
 
 
-### [Get-MgGroupSiteGetByPathList](Get-MgGroupSiteGetByPathList.md)
-
-
 ### [Get-MgGroupSiteGetByPathOnenote](Get-MgGroupSiteGetByPathOnenote.md)
 
 
@@ -1091,9 +1088,6 @@ Locale: en-US
 ### [Get-MgSiteGetByPathExternalColumn](Get-MgSiteGetByPathExternalColumn.md)
 
 
-### [Get-MgSiteGetByPathList](Get-MgSiteGetByPathList.md)
-
-
 ### [Get-MgSiteGetByPathOperation](Get-MgSiteGetByPathOperation.md)
 
 
@@ -1110,9 +1104,6 @@ Locale: en-US
 
 
 ### [Get-MgSiteGetGraphBPrePathActivityByInterval](Get-MgSiteGetGraphBPrePathActivityByInterval.md)
-
-
-### [Get-MgSiteGetGraphBPrePathByPath](Get-MgSiteGetGraphBPrePathByPath.md)
 
 
 ### [Get-MgSiteItemLastModifiedByUser](Get-MgSiteItemLastModifiedByUser.md)

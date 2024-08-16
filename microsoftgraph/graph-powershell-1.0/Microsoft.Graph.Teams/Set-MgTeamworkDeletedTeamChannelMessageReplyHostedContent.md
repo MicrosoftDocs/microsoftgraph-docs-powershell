@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgTeamworkDeletedTeamChannelMessageReplyHostedContent
 
 ## SYNOPSIS
-Update media content for the navigation property hostedContents in teamwork
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
@@ -32,7 +33,8 @@ Set-MgTeamworkDeletedTeamChannelMessageReplyHostedContent -InputObject <ITeamsId
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property hostedContents in teamwork
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 

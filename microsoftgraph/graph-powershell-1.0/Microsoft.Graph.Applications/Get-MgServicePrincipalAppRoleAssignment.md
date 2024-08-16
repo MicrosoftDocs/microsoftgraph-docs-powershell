@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignment
 schema: 2.0.0
+ms.subservice: entra-applications
+ms.subservice: entra-applications
 ---
 
 # Get-MgServicePrincipalAppRoleAssignment
 
 ## SYNOPSIS
-App role assignment for another app or service, granted to this service principal.
-Supports $expand.
+Read the properties and relationships of an appRoleAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppRoleAssignment?view=graph-powershell-beta)
@@ -27,21 +28,25 @@ Get-MgServicePrincipalAppRoleAssignment -ServicePrincipalId <String> [-ExpandPro
 ### Get
 ```
 Get-MgServicePrincipalAppRoleAssignment -AppRoleAssignmentId <String> -ServicePrincipalId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-ConsistencyLevel <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ConsistencyLevel <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-App role assignment for another app or service, granted to this service principal.
-Supports $expand.
+Read the properties and relationships of an appRoleAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approleassignment-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-approleassignments-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get all application role assignments for a service principal
@@ -116,7 +121,7 @@ Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -383,6 +388,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignment)
+
+[https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignments?view=graph-rest-1.0)
 
 
 

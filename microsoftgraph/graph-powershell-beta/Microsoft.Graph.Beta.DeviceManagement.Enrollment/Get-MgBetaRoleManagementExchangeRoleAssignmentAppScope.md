@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementExchangeRoleAssignmentAppScope
 
 ## SYNOPSIS
-Details of the app specific scope when the assignment scope is app specific.
+Read-only property with details of the app specific scope when the assignment scope is app specific.
 Containment entity.
 Supports $expand for the entitlement provider only.
 
@@ -29,7 +29,7 @@ Get-MgBetaRoleManagementExchangeRoleAssignmentAppScope -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Details of the app specific scope when the assignment scope is app specific.
+Read-only property with details of the app specific scope when the assignment scope is app specific.
 Containment entity.
 Supports $expand for the entitlement provider only.
 

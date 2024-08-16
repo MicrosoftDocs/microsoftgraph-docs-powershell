@@ -18,9 +18,10 @@ New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-BatteryAgeInDays <Int32>]
  [-DeviceBatteriesDetails <IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail[]>]
  [-DeviceBatteryCount <Int32>] [-DeviceBatteryHealthScore <Int32>] [-DeviceBatteryTags <String[]>]
- [-DeviceId <String>] [-DeviceName <String>] [-EstimatedRuntimeInMinutes <Int32>]
- [-FullBatteryDrainCount <Int32>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
- [-Manufacturer <String>] [-MaxCapacityPercentage <Int32>] [-Model <String>] [-Headers <IDictionary>]
+ [-DeviceId <String>] [-DeviceManufacturerName <String>] [-DeviceModelName <String>] [-DeviceName <String>]
+ [-EstimatedRuntimeInMinutes <Int32>] [-FullBatteryDrainCount <Int32>]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>]
+ [-MaxCapacityPercentage <Int32>] [-Model <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -153,6 +154,36 @@ Accept wildcard characters: False
 
 ### -DeviceId
 The unique identifier of the device, Intune DeviceID.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceManufacturerName
+The manufacturer name of the device.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceModelName
+The model name of the device.
 
 ```yaml
 Type: String
@@ -409,6 +440,8 @@ Valid values 0 to 2147483647
 E.g.
 newbattery, batterycapacityred, designcapacityzero, etc.
   - `[DeviceId <String>]`: The unique identifier of the device, Intune DeviceID.
+  - `[DeviceManufacturerName <String>]`: The manufacturer name of the device.
+  - `[DeviceModelName <String>]`: The model name of the device.
   - `[DeviceName <String>]`: Device friendly name.
   - `[EstimatedRuntimeInMinutes <Int32?>]`: The estimated runtime of the device when the battery is fully charged.
 Unit in minutes.

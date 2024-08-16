@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgUserMailFolderChildFolderMessageContent
 
 ## SYNOPSIS
-Update media content for the navigation property messages in users
+The unique identifier for an entity.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserMailFolderChildFolderMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Set-MgBetaUserMailFolderChildFolderMessageContent?view=graph-powershell-beta)
@@ -31,7 +32,8 @@ Set-MgUserMailFolderChildFolderMessageContent -InputObject <IMailIdentity> [-Dat
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property messages in users
+The unique identifier for an entity.
+Read-only.
 
 ## PARAMETERS
 

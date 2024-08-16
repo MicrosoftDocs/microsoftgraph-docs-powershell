@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenissuancepolicytokenissuancepolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef
 
 ## SYNOPSIS
-Delete ref of navigation property tokenIssuancePolicies for applications
+Remove a tokenIssuancePolicy from an application.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef?view=graph-powershell-beta)
@@ -31,7 +32,10 @@ Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef -InputObject <IA
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property tokenIssuancePolicies for applications
+Remove a tokenIssuancePolicy from an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-tokenissuancepolicies-permissions.md)]
 
 ## PARAMETERS
 
@@ -232,6 +236,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenissuancepolicytokenissuancepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenissuancepolicytokenissuancepolicybyref)
+
+[https://learn.microsoft.com/graph/api/application-delete-tokenissuancepolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delete-tokenissuancepolicies?view=graph-rest-1.0)
 
 
 

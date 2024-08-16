@@ -3,13 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredentialbyname
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgApplicationFederatedIdentityCredentialByName
 
 ## SYNOPSIS
-Federated identities for applications.
-Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
+Read the properties and relationships of a federatedIdentityCredential object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationFederatedIdentityCredentialByName](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationFederatedIdentityCredentialByName?view=graph-powershell-beta)
@@ -31,8 +31,10 @@ Get-MgApplicationFederatedIdentityCredentialByName -InputObject <IApplicationsId
 ```
 
 ## DESCRIPTION
-Federated identities for applications.
-Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
+Read the properties and relationships of a federatedIdentityCredential object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -202,6 +204,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredentialbyname](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredentialbyname)
+
+[https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0)
 
 
 

@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgIdentityApiConnector
 
 ## SYNOPSIS
-Create new navigation property to apiConnectors for identity
+Create a new identityApiConnector object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityApiConnector?view=graph-powershell-beta)
@@ -30,7 +31,10 @@ New-MgIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector>
 ```
 
 ## DESCRIPTION
-Create new navigation property to apiConnectors for identity
+Create a new identityApiConnector object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityapiconnector-create-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Create an API connector with basic authentication
@@ -274,6 +278,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector)
+
+[https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-1.0)
 
 
 

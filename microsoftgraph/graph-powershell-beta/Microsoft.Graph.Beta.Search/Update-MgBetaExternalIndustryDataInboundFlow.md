@@ -51,7 +51,7 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
 Update the properties of an inboundApiFlow object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-update-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundapiflow-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -61,7 +61,7 @@ Update the properties of an inboundApiFlow object.
 Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.industryData.inboundFileFlow"
+	"@odata.type" = "#microsoft.graph.industryData.inboundApiFlow"
 	displayName = "Updated flow name"
 }
 
