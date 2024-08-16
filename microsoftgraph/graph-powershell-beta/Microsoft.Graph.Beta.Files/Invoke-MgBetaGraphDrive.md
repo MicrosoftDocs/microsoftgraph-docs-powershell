@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetagraphdrive
 schema: 2.0.0
+ms.subservice: sharepoint
 ---
 
 # Invoke-MgBetaGraphDrive
@@ -32,6 +33,9 @@ Invoke-MgBetaGraphDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProperty 
 ## DESCRIPTION
 Get a list of driveItem objects shared with the owner of a drive.
 The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they're items from a different drive.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-sharedwithme-permissions.md)]
 
 ## EXAMPLES
 

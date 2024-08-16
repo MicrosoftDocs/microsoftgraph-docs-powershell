@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelmember
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Update-MgBetaTeamChannelMember
@@ -44,6 +45,9 @@ Update-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the role of a conversationMember in a team.or channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-update-members-permissions.md)]
 
 ## EXAMPLES
 

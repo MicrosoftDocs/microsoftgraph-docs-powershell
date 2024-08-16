@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreement
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaIdentityGovernanceTermsOfUseAgreement
@@ -32,6 +33,9 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphA
 
 ## DESCRIPTION
 Create a new agreement object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termsofusecontainer-post-agreements-permissions.md)]
 
 ## EXAMPLES
 

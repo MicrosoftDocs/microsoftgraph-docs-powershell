@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Invoke-MgBetaReplyGroupConversationThread
@@ -50,6 +51,9 @@ Invoke-MgBetaReplyGroupConversationThread -InputObject <IGroupsIdentity>
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-reply-permissions.md)]
 
 ## EXAMPLES
 
