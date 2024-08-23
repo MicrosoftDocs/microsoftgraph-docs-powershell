@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepage
 schema: 2.0.0
+ms.subservice: sharepoint
+ms.subservice: sharepoint
 ---
 
 # Get-MgSitePageAsSitePage
@@ -36,6 +38,12 @@ Get-MgSitePageAsSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Returns the metadata for a sitePage in the site pages list in a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sitepage-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sitepage-get-permissions.md)]
 
 ## EXAMPLES
 

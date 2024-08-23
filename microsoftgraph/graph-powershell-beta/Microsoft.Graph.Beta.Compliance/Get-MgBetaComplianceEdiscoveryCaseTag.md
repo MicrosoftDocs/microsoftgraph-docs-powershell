@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetag
 schema: 2.0.0
+ms.subservice: ediscovery
+ms.subservice: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseTag
@@ -36,6 +38,12 @@ Get-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-Expan
 
 ## DESCRIPTION
 Read the properties and relationships of a tag object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-tag-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-list-tags-permissions.md)]
 
 ## EXAMPLES
 

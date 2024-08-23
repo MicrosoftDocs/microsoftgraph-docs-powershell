@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyprinter
 schema: 2.0.0
+ms.subservice: universal-print
+ms.subservice: universal-print
 ---
 
 # Get-MgReportDailyPrintUsageByPrinter
@@ -38,6 +40,12 @@ Get-MgReportDailyPrintUsageByPrinter -InputObject <IReportsIdentity> [-ExpandPro
 ## DESCRIPTION
 Retrieve a usage summary for a printer for a particular time period.
 For descriptions of each of the endpoints, see printUsageByPrinter.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printusagebyprinter-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-list-dailyprintusagebyprinter-permissions.md)]
 
 ## EXAMPLES
 
