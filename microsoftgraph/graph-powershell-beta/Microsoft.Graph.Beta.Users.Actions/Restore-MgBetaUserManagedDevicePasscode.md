@@ -32,18 +32,6 @@ Restore-MgBetaUserManagedDevicePasscode -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Recover passcode
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -245,6 +233,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetausermanageddevicepasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetausermanageddevicepasscode)
+
 
 
 

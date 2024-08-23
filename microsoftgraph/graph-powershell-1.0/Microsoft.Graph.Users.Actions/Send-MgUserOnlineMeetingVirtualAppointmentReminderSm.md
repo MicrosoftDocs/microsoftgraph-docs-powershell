@@ -59,11 +59,11 @@ This feature requires Teams premium and attendees must have a valid United State
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualappointment-sendvirtualappointmentremindersms-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	attendees = @(
@@ -81,6 +81,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Send-MgUserOnlineMeetingVirtualAppointmentReminderSm -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
+
+```
+This example shows how to use the Send-MgUserOnlineMeetingVirtualAppointmentReminderSm Cmdlet.
+
 
 ## PARAMETERS
 

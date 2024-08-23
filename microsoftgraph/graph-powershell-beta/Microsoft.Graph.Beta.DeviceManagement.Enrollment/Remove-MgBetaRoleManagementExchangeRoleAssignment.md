@@ -34,13 +34,17 @@ Delete a unifiedRoleAssignment object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignment-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
-```
 
 Remove-MgBetaRoleManagementExchangeRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
+
+```
+This example shows how to use the Remove-MgBetaRoleManagementExchangeRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 

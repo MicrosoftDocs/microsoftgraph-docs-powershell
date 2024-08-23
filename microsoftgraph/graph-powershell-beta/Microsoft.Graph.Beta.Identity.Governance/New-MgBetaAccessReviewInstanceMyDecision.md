@@ -49,18 +49,6 @@ New-MgBetaAccessReviewInstanceMyDecision -InputObject <IIdentityGovernanceIdenti
 ## DESCRIPTION
 Create new navigation property to myDecisions for accessReviews
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessRecommendation
@@ -541,6 +529,7 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreviewinstancemydecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreviewinstancemydecision)
+
 
 
 

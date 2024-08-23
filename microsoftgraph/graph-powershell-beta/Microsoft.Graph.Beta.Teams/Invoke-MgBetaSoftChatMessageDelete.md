@@ -36,18 +36,6 @@ Delete a single chatMessage or a chat message reply in a channel or a chat.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-softdelete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -251,6 +239,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftchatmessagedelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftchatmessagedelete)
 
 [https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-beta)
+
 
 
 

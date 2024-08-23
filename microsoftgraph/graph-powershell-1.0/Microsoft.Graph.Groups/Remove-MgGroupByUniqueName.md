@@ -44,18 +44,6 @@ To learn more, see deletedItems.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -258,6 +246,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupbyuniquename)
 
 [https://learn.microsoft.com/graph/api/group-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete?view=graph-rest-1.0)
+
 
 
 

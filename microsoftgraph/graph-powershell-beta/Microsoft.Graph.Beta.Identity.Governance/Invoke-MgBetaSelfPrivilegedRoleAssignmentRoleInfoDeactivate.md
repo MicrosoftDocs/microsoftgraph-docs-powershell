@@ -29,18 +29,6 @@ Invoke-MgBetaSelfPrivilegedRoleAssignmentRoleInfoDeactivate -InputObject <IIdent
 ## DESCRIPTION
 Invoke action selfDeactivate
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -270,6 +258,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaselfprivilegedroleassignmentroleinfodeactivate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaselfprivilegedroleassignmentroleinfodeactivate)
+
 
 
 

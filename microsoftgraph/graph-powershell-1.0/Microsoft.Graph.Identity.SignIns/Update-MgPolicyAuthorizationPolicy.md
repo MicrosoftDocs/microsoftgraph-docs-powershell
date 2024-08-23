@@ -39,18 +39,6 @@ Update the properties of an authorizationPolicy object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authorizationpolicy-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -429,6 +417,7 @@ An empty list indicates user consent to apps is disabled.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy)
 
 [https://learn.microsoft.com/graph/api/authorizationpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authorizationpolicy-update?view=graph-rest-1.0)
+
 
 
 

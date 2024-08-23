@@ -31,18 +31,6 @@ Get-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValueDefinition
 ## DESCRIPTION
 The associated group policy definition with the value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -329,6 +317,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvaluedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvaluedefinition)
+
 
 
 

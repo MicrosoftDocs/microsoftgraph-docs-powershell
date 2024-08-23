@@ -41,13 +41,17 @@ Policies in the former category are restricted in what kinds of changes may be m
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthpolicy-usage-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Invoke-MgUsagePolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId
+
+```
+This example shows how to use the Invoke-MgUsagePolicyAuthenticationStrengthPolicy Cmdlet.
+
 
 ## PARAMETERS
 

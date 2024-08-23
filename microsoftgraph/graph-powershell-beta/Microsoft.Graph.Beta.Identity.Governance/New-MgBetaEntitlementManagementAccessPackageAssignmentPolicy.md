@@ -46,11 +46,11 @@ In Microsoft Entra entitlement management, create a new accessPackageAssignmentP
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-post-accesspackageassignmentpolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create a direct assignment policy
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	accessPackageId = "56ff43fd-6b05-48df-9634-956a777fce6d"
@@ -75,10 +75,14 @@ $params = @{
 
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a direct assignment policy
+
+### Example 2: Create a policy for users from other organizations to request
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	accessPackageId = "string (identifier)"
@@ -157,7 +161,7 @@ $params = @{
 		isEnabled = $true
 		recurrenceType = "quarterly"
 		reviewerType = "Self"
-		startDateTime = \[System.DateTime\]::Parse("2020-04-01T07:59:59.998Z")
+		startDateTime = [System.DateTime]::Parse("2020-04-01T07:59:59.998Z")
 		durationInDays = 25
 		reviewers = @(
 		)
@@ -166,10 +170,14 @@ $params = @{
 
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will create a policy for users from other organizations to request
+
+### Example 3: Create assignment policy with questions
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	accessPackageId = "b2eba9a1-b357-42ee-83a8-336522ed6cbf"
@@ -277,10 +285,14 @@ $params = @{
 
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example will create assignment policy with questions
+
+### Example 4: Create a policy and specify the stages to trigger pre-defined custom workflow extensions
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "extension-policy"
@@ -320,10 +332,14 @@ $params = @{
 
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 5
 ```
+This example will create a policy and specify the stages to trigger pre-defined custom workflow extensions
+
+### Example 5: Create a policy and specify the stages to trigger pre-defined access package custom extensions
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "extension-policy"
@@ -363,10 +379,14 @@ $params = @{
 
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 6
 ```
+This example will create a policy and specify the stages to trigger pre-defined access package custom extensions
+
+### Example 6: Create a policy with a verifiable credential requirement
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "policy-with-verified-id"
@@ -394,7 +414,7 @@ $params = @{
 		credentialTypes = @(
 			@{
 				issuers = @(
-				"did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W\<SNIP\>..."
+				"did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>..."
 			)
 			credentialType = "VerifiedCredentialExpert"
 		}
@@ -403,6 +423,10 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -BodyParameter $params
+
+```
+This example will create a policy with a verifiable credential requirement
+
 
 ## PARAMETERS
 

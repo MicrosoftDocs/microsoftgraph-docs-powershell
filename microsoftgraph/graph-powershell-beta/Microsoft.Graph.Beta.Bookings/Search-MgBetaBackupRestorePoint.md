@@ -36,11 +36,11 @@ Search for the restorePoint objects associated with a protectionUnit.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/restorepoint-search-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	protectionUnitIds = @(
@@ -50,14 +50,18 @@ $params = @{
 "83014d8c-71fe-4d00-a01a-31850bc5b42d"
 )
 protectionTimePeriod = @{
-startDateTime = \[System.DateTime\]::Parse("2021-01-01T00:00:00Z")
-endDateTime = \[System.DateTime\]::Parse("2021-01-08T00:00:00Z")
+startDateTime = [System.DateTime]::Parse("2021-01-01T00:00:00Z")
+endDateTime = [System.DateTime]::Parse("2021-01-08T00:00:00Z")
 }
 restorePointPreference = "latest"
 tags = "fastRestore"
 }
 
 Search-MgBetaBackupRestorePoint -BodyParameter $params
+
+```
+This example shows how to use the Search-MgBetaBackupRestorePoint Cmdlet.
+
 
 ## PARAMETERS
 
