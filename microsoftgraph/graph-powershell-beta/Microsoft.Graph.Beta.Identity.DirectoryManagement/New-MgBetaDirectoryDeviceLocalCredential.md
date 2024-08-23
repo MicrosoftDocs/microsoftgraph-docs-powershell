@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to deviceLocalCredentials for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryDeviceLocalCredential?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

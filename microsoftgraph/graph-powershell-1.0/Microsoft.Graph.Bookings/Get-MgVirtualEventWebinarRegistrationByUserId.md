@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Get the properties and relationships of a virtualEventRegistration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarRegistrationByUserId](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarRegistrationByUserId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

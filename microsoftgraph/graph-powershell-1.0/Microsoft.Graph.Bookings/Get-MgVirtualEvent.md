@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get events from solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEvent](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

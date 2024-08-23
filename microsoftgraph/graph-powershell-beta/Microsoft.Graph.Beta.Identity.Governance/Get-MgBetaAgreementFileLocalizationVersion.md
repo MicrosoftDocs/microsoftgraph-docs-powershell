@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only.
 Customized versions of the terms of use agreement in the Microsoft Entra tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAgreementFileLocalizationVersion](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileLocalizationVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

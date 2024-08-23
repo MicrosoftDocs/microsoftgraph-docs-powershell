@@ -13,6 +13,9 @@ Add or link an application to an external identities self-service sign up user f
 This enables the authentication experience that's defined by the user flow to be enabled for the application.
 An application can only be linked to one user flow.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityAuthenticationEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityAuthenticationEventFlowIncludeApplication?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

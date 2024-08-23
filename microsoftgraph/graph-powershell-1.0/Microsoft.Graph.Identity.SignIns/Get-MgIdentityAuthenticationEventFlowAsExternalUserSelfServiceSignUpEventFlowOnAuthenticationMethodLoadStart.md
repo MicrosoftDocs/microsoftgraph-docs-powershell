@@ -12,6 +12,9 @@ Required.
 The configuration for what to invoke when authentication methods are ready to be presented to the user.
 Must have at least one identity provider linked.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

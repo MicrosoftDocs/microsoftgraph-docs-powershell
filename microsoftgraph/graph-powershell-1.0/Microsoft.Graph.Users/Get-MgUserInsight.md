@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get insights from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInsight](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

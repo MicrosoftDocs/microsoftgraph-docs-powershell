@@ -11,6 +11,9 @@ ms.subservice: outlook
 ## SYNOPSIS
 Move a mail folder and its contents to another mail folder.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Move-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### MoveExpanded (Default)
