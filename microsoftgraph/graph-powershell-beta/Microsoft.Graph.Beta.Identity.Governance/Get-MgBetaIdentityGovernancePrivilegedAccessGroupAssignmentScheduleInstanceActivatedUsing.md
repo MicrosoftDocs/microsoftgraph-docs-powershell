@@ -36,18 +36,6 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceActiv
 When the request activates a membership or ownership in PIM for groups, this object represents the eligibility request for the group.
 Otherwise, it's null.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -276,6 +264,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentscheduleinstanceactivatedusing](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentscheduleinstanceactivatedusing)
+
 
 
 

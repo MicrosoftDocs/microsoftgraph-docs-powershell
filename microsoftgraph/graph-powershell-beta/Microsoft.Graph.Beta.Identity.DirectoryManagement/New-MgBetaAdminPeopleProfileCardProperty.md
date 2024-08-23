@@ -41,18 +41,6 @@ For more information about how to add properties to the profile card for an orga
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-post-profilecardproperties-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -255,6 +243,7 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty)
 
 [https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-beta](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-beta)
+
 
 
 

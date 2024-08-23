@@ -55,22 +55,6 @@ For example, subdomain.contoso.com is automatically be verified if contoso.com h
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-post-domains-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -823,6 +807,7 @@ Not nullable.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomain)
 
 [https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-beta](https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-beta)
+
 
 
 

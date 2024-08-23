@@ -38,18 +38,6 @@ A tenant can be removed in the following scenarios:
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganization-delete-tenants-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -271,6 +259,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgtenantrelationshipmultitenantorganizationtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgtenantrelationshipmultitenantorganizationtenant)
 
 [https://learn.microsoft.com/graph/api/multitenantorganization-delete-tenants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganization-delete-tenants?view=graph-rest-1.0)
+
 
 
 

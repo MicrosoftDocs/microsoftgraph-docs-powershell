@@ -35,18 +35,6 @@ Self-service operations aren't supported.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/fido2authenticationmethod-creationoptions-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChallengeTimeoutInMinutes
@@ -201,6 +189,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetacreationuserauthenticationfido2methodoption](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetacreationuserauthenticationfido2methodoption)
 
 [https://learn.microsoft.com/graph/api/fido2authenticationmethod-creationoptions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/fido2authenticationmethod-creationoptions?view=graph-rest-beta)
+
 
 
 

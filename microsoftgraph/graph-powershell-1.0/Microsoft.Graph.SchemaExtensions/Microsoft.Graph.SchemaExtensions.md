@@ -8,22 +8,22 @@ Locale: en-US
 
 # Microsoft.Graph.SchemaExtensions Module
 ## Description
-{{ Fill in the Description }}
+
 
 ## Microsoft.Graph.SchemaExtensions Cmdlets
 ### [Get-MgSchemaExtension](Get-MgSchemaExtension.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgSchemaExtensionCount](Get-MgSchemaExtensionCount.md)
-{{ Fill in the Description }}
+
 
 ### [New-MgSchemaExtension](New-MgSchemaExtension.md)
-{{ Fill in the Description }}
+
 
 ### [Remove-MgSchemaExtension](Remove-MgSchemaExtension.md)
-{{ Fill in the Description }}
+
 
 ### [Update-MgSchemaExtension](Update-MgSchemaExtension.md)
-{{ Fill in the Description }}
+
 
 

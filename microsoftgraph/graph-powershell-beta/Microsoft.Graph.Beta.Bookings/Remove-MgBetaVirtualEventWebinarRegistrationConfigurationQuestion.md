@@ -39,18 +39,6 @@ The question can either be a predefined registration question or a custom regist
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistrationquestionbase-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -252,6 +240,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarregistrationconfigurationquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarregistrationconfigurationquestion)
 
 [https://learn.microsoft.com/graph/api/virtualeventregistrationquestionbase-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventregistrationquestionbase-delete?view=graph-rest-beta)
+
 
 
 
