@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/search-mgbetabackuprestorepoint
 schema: 2.0.0
-ms.subservice: m365-backup-storage
 ---
 
 # Search-MgBetaBackupRestorePoint
@@ -32,15 +31,12 @@ Search-MgBetaBackupRestorePoint
 ## DESCRIPTION
 Search for the restorePoint objects associated with a protectionUnit.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/restorepoint-search-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
+```
 
 $params = @{
 	protectionUnitIds = @(
@@ -50,18 +46,14 @@ $params = @{
 "83014d8c-71fe-4d00-a01a-31850bc5b42d"
 )
 protectionTimePeriod = @{
-startDateTime = [System.DateTime]::Parse("2021-01-01T00:00:00Z")
-endDateTime = [System.DateTime]::Parse("2021-01-08T00:00:00Z")
+startDateTime = \[System.DateTime\]::Parse("2021-01-01T00:00:00Z")
+endDateTime = \[System.DateTime\]::Parse("2021-01-08T00:00:00Z")
 }
 restorePointPreference = "latest"
 tags = "fastRestore"
 }
 
 Search-MgBetaBackupRestorePoint -BodyParameter $params
-
-```
-This example shows how to use the Search-MgBetaBackupRestorePoint Cmdlet.
-
 
 ## PARAMETERS
 
@@ -249,27 +241,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsHu2059SolutionsBackuprestoreRestorepointsMicrosoftGraphSearchPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
-    - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
-  - `[ProtectionUnitIds <String- `[]`>]`: 
-  - `[RestorePointPreference <String>]`: restorePointPreference
-  - `[Tags <String>]`: restorePointTags
+BODYPARAMETER \<IPathsHu2059SolutionsBackuprestoreRestorepointsMicrosoftGraphSearchPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ProtectionTimePeriod \<IMicrosoftGraphTimePeriod\>\]: timePeriod
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[EndDateTime \<DateTime?\>\]: The date time of the end of the time period.
+    \[StartDateTime \<DateTime?\>\]: The date time of the start of the time period.
+  \[ProtectionUnitIds \<String\[\]\>\]: 
+  \[RestorePointPreference \<String\>\]: restorePointPreference
+  \[Tags \<String\>\]: restorePointTags
 
-PROTECTIONTIMEPERIOD `<IMicrosoftGraphTimePeriod>`: timePeriod
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
-  - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+PROTECTIONTIMEPERIOD \<IMicrosoftGraphTimePeriod\>: timePeriod
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[EndDateTime \<DateTime?\>\]: The date time of the end of the time period.
+  \[StartDateTime \<DateTime?\>\]: The date time of the start of the time period.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/search-mgbetabackuprestorepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/search-mgbetabackuprestorepoint)
 
 [https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-beta](https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-beta)
-
-
-
 
