@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # New-MgGroupThread
@@ -50,6 +51,9 @@ New-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraph
 Start a new group conversation by first creating a thread.
 A new conversation, conversation thread, and post are created in the group.Use reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-threads-permissions.md)]
 
 ## EXAMPLES
 

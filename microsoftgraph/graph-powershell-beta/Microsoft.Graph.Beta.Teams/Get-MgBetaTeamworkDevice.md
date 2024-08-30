@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdevice
 schema: 2.0.0
+ms.subservice: teams
+ms.subservice: teams
 ---
 
 # Get-MgBetaTeamworkDevice
@@ -38,6 +40,12 @@ Get-MgBetaTeamworkDevice -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Get the properties of a Microsoft Teams-enabled device.
 For example, you can use this method to get the device type, hardware detail, activity state, and health status information for a device that's enabled for Teams.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkdevice-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkdevice-list-permissions.md)]
 
 ## EXAMPLES
 

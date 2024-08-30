@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryexternaluserprofile
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDirectoryExternalUserProfile
@@ -36,6 +38,12 @@ Get-MgBetaDirectoryExternalUserProfile -InputObject <IIdentityDirectoryManagemen
 
 ## DESCRIPTION
 Retrieve the properties of a specific externalUserProfile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externaluserprofile-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-externaluserprofiles-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserlicense
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # Set-MgUserLicense
@@ -50,6 +51,9 @@ Set-MgUserLicense -InputObject <IUsersActionsIdentity>
 Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings that the company has licenses to.
 For example, an organization can have a Microsoft 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user.
 You can also enable and disable specific plans associated with a subscription.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-assignlicense-permissions.md)]
 
 ## EXAMPLES
 

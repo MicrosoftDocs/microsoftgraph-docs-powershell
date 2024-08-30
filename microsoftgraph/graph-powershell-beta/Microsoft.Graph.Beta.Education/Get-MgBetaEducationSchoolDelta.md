@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooldelta
 schema: 2.0.0
+ms.subservice: education
 ---
 
 # Get-MgBetaEducationSchoolDelta
@@ -23,6 +24,9 @@ Get-MgBetaEducationSchoolDelta [-ExpandProperty <String[]>] [-Filter <String>] [
 ## DESCRIPTION
 Get newly created or updated schools without having to perform a full read of the entire school collection.
 See Use delta query for details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-delta-permissions.md)]
 
 ## EXAMPLES
 

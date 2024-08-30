@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredentialbyname
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Update-MgApplicationFederatedIdentityCredentialByName
@@ -48,6 +49,9 @@ Update-MgApplicationFederatedIdentityCredentialByName -InputObject <IApplication
 Create a new federatedIdentityCredential object for an application if it doesn't exist, or update the properties of an existing federatedIdentityCredential object.
 By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
 Maximum of 20 objects can be added to an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-upsert-permissions.md)]
 
 ## EXAMPLES
 

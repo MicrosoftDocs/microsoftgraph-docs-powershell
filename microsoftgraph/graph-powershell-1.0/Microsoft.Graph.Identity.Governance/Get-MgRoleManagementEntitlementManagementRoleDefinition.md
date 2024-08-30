@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroledefinition
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgRoleManagementEntitlementManagementRoleDefinition
@@ -36,6 +37,9 @@ Get-MgRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdentityG
 
 ## DESCRIPTION
 Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roledefinitions-permissions.md)]
 
 ## EXAMPLES
 

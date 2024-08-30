@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/invoke-mgbetaunarchiveplannerplan
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Invoke-MgBetaUnarchivePlannerPlan
@@ -48,6 +49,9 @@ Invoke-MgBetaUnarchivePlannerPlan -InputObject <IPlannerIdentity>
 Unarchive a plannerPlan object.
 Unarchiving a plan, also unarchives the plannerTasks and plannerBuckets in the plan.
 Only a plan that is archived can be unarchived.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-unarchive-permissions.md)]
 
 ## EXAMPLES
 
