@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerbyref
 schema: 2.0.0
-ms.subservice: entra-applications
 ---
 
 # Get-MgServicePrincipalOwnerByRef
 
 ## SYNOPSIS
 Retrieve a list of owners of the servicePrincipal.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,8 +22,17 @@ Get-MgServicePrincipalOwnerByRef -ServicePrincipalId <String> [-Filter <String>]
 ## DESCRIPTION
 Retrieve a list of owners of the servicePrincipal.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-owners-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -244,8 +249,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerbyref)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-1.0)
-
-
-
-
 
