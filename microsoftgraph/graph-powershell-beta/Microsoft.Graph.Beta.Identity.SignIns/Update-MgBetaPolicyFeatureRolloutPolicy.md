@@ -54,11 +54,11 @@ Update the properties of featureRolloutPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/featurerolloutpolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "PasswordHashSync Rollout Policy"
@@ -68,6 +68,10 @@ $params = @{
 }
 
 Update-MgBetaPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyFeatureRolloutPolicy Cmdlet.
+
 
 ## PARAMETERS
 

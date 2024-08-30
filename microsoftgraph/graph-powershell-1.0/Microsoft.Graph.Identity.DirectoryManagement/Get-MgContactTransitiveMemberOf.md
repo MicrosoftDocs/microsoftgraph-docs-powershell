@@ -50,13 +50,17 @@ Nullable.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/orgcontact-list-transitivememberof-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgContactTransitiveMemberOf -OrgContactId $orgContactId
+
+```
+This example shows how to use the Get-MgContactTransitiveMemberOf Cmdlet.
+
 
 ## PARAMETERS
 

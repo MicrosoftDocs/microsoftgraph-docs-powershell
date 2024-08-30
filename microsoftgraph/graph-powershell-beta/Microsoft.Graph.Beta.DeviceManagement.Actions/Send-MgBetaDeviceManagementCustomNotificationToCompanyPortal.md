@@ -31,18 +31,6 @@ Send-MgBetaDeviceManagementCustomNotificationToCompanyPortal
 ## DESCRIPTION
 Invoke action sendCustomNotificationToCompanyPortal
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -237,6 +225,7 @@ BODYPARAMETER `<IPaths1RrfeupDevicemanagementMicrosoftGraphSendcustomnotificatio
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/send-mgbetadevicemanagementcustomnotificationtocompanyportal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/send-mgbetadevicemanagementcustomnotificationtocompanyportal)
+
 
 
 

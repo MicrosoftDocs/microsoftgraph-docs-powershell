@@ -46,13 +46,17 @@ Read the properties and relationships of a managementTemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-managementtemplates-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-```
 
 Get-MgBetaTenantRelationshipManagedTenantManagementTemplate
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagementTemplate Cmdlet.
+
 
 ## PARAMETERS
 

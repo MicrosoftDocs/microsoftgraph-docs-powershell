@@ -57,11 +57,11 @@ Currently the supported virtual event type is virtualEventWebinar.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventpresenter-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	presenterDetails = @{
@@ -77,6 +77,10 @@ $params = @{
 }
 
 Update-MgBetaVirtualEventWebinarPresenter -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventPresenterId $virtualEventPresenterId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaVirtualEventWebinarPresenter Cmdlet.
+
 
 ## PARAMETERS
 

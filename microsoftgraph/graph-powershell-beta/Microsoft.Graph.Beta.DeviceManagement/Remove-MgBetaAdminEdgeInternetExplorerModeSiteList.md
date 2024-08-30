@@ -37,13 +37,17 @@ Delete a browserSiteList object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/internetexplorermode-delete-sitelists-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement
-```
 
 Remove-MgBetaAdminEdgeInternetExplorerModeSiteList -BrowserSiteListId $browserSiteListId
+
+```
+This example shows how to use the Remove-MgBetaAdminEdgeInternetExplorerModeSiteList Cmdlet.
+
 
 ## PARAMETERS
 

@@ -61,11 +61,10 @@ To grant an app role assignment to a client service principal, you need three id
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-approleassignments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	principalId = "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
@@ -74,6 +73,11 @@ $params = @{
 }
 
 New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+```
+This example shows how to use the New-MgServicePrincipalAppRoleAssignment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

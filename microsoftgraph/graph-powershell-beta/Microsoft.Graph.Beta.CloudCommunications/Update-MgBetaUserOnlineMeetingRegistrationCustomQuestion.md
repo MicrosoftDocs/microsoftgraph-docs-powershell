@@ -48,9 +48,8 @@ Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCom
 Update the navigation property customQuestions in users
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	AnswerInputType = "radioButton"
@@ -65,6 +64,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingRegistrationQuestionId $meetingRegistrationQuestionId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -67,20 +67,24 @@ Send a new chatMessage in the specified channel or a chat.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-post-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	body = @{
 		contentType = "html"
-		content = "\<emoji alt="😶‍🌫️"\>\</emoji\>"
+		content = "<emoji alt="😶‍🌫️"></emoji>"
 	}
 }
 
 New-MgChatMessage -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the New-MgChatMessage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -55,11 +55,11 @@ To update other properties of an authenticationStrengthPolicy object, use the Up
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthpolicy-updateallowedcombinations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	allowedCombinations = @(
@@ -68,6 +68,10 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination Cmdlet.
+
 
 ## PARAMETERS
 

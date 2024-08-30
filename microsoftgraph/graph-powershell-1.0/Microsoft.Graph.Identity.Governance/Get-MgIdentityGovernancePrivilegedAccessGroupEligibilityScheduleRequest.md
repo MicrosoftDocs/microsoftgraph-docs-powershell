@@ -51,20 +51,28 @@ Read the properties and relationships of a privilegedAccessGroupEligibilitySched
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroup-list-eligibilityschedulerequests-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get all eligibility schedule requests
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest -PrivilegedAccessGroupEligibilityScheduleRequestId $privilegedAccessGroupEligibilityScheduleRequestId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Identity.Governance
-```
+This example will get all eligibility schedule requests
 
-Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest -PrivilegedAccessGroupEligibilityScheduleRequestId $privilegedAccessGroupEligibilityScheduleRequestId -Property "principalId,action,groupId"
+### Example 2: Get specific properties of all eligibility schedule requests
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest -PrivilegedAccessGroupEligibilityScheduleRequestId $privilegedAccessGroupEligibilityScheduleRequestId -Property "principalId,action,groupId" 
+
+```
+This example will get specific properties of all eligibility schedule requests
+
 
 ## PARAMETERS
 
