@@ -39,18 +39,6 @@ The following derived types are currently supported.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-post-customauthenticationextensions-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -281,6 +269,7 @@ Default duration is 1000.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0)
+
 
 
 

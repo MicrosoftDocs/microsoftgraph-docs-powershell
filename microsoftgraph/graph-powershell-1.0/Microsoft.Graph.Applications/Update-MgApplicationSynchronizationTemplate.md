@@ -51,18 +51,6 @@ Update (override) the synchronization template associated with a given applicati
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationtemplate-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -698,6 +686,7 @@ Must match one of the directory definitions in synchronizationSchema.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplate)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationtemplate-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationtemplate-update?view=graph-rest-1.0)
+
 
 
 

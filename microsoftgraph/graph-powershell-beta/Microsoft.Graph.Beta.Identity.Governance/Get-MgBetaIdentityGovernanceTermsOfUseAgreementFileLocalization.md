@@ -40,18 +40,6 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject <II
 ## DESCRIPTION
 The localized version of the terms of use agreement files attached to the agreement.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId
@@ -416,6 +404,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreementfilelocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreementfilelocalization)
+
 
 
 

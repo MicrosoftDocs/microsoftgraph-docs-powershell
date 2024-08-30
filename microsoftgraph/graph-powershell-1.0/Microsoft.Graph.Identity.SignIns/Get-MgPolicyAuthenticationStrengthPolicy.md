@@ -48,18 +48,6 @@ Read the properties and relationships of an authenticationStrengthPolicy object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthroot-list-policies-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -373,6 +361,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/authenticationstrengthroot-list-policies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthroot-list-policies?view=graph-rest-1.0)
+
 
 
 

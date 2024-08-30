@@ -50,18 +50,6 @@ The profileCardProperty is identified by its directoryPropertyName property.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-list-profilecardproperties-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -363,6 +351,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/profilecardproperty-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/profilecardproperty-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-beta](https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-beta)
+
 
 
 

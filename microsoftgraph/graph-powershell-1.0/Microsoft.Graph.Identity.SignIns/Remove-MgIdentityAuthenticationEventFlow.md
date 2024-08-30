@@ -40,18 +40,6 @@ The following derived subtypes are supported:- externalUsersSelfServiceSignupEve
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationeventsflow-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId
@@ -273,6 +261,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflow)
 
 [https://learn.microsoft.com/graph/api/authenticationeventsflow-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventsflow-delete?view=graph-rest-1.0)
+
 
 
 

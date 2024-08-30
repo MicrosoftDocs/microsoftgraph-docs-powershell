@@ -53,18 +53,6 @@ Maximum of 20 objects can be added to an application.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-upsert-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -423,6 +411,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredentialbyname](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredentialbyname)
 
 [https://learn.microsoft.com/graph/api/federatedidentitycredential-upsert?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/federatedidentitycredential-upsert?view=graph-rest-1.0)
+
 
 
 

@@ -33,18 +33,6 @@ Get a specific commercial subscription that an organization has acquired.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/companysubscription-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -223,6 +211,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbyocpsubscriptionid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbyocpsubscriptionid)
 
 [https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-beta)
+
 
 
 
