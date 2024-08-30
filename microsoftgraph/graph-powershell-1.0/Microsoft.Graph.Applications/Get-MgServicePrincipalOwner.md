@@ -11,6 +11,9 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Retrieve a list of owners of the servicePrincipal.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

@@ -11,6 +11,9 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Delete a unifiedRoleAssignment object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

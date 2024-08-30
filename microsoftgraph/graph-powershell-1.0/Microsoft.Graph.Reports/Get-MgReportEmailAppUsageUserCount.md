@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Get the count of unique users that connected to Exchange Online using any email app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportEmailAppUsageUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

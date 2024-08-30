@@ -11,6 +11,9 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Validate the ownership of a domain.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDomain?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Verify (Default)

@@ -11,6 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
