@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflow
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgIdentityAuthenticationEventFlow
@@ -32,6 +33,9 @@ Remove-MgIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdentity>
 Delete a specific authenticationEventsFlow resource by ID.
 This operation also removes or unlinks all applications from the flow, which disables the customized authentication experience defined for the application.
 The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationeventsflow-delete-permissions.md)]
 
 ## EXAMPLES
 

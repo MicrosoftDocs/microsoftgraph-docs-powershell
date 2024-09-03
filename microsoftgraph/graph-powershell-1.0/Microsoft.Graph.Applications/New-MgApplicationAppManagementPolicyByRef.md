@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationappmanagementpolicybyref
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgApplicationAppManagementPolicyByRef
@@ -47,6 +48,9 @@ New-MgApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentity>
 Assign an appManagementPolicy policy object to an application or service principal object.
 The application or service principal adopts this policy over the tenant-wide tenantAppManagementPolicy setting.
 Only one policy object can be assigned to an application or service principal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-post-appliesto-permissions.md)]
 
 ## EXAMPLES
 
