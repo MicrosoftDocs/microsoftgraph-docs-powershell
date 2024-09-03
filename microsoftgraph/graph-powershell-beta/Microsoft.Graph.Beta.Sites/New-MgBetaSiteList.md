@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Create a new list in a site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteList](/powershell/module/Microsoft.Graph.Sites/New-MgSiteList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

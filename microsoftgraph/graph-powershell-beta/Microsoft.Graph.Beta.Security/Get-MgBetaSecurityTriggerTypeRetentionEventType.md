@@ -12,6 +12,9 @@ ms.subservice: security
 ## SYNOPSIS
 Read the properties and relationships of a retentionEventType object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerTypeRetentionEventType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

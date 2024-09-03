@@ -11,6 +11,9 @@ ms.subservice: edge-browser-management
 ## SYNOPSIS
 Update the properties of a browserSharedCookie object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

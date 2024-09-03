@@ -13,6 +13,9 @@ Add or link an application to a user flow, or authenticationEventsFlow.
 This enables the authentication experience defined by the user flow to be enabled for the application.
 An application can only be linked to one user flow.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlowIncludeApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

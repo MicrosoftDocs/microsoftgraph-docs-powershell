@@ -13,6 +13,9 @@ Add or remove licenses for the user to enable or disable their use of Microsoft 
 For example, an organization can have a Microsoft 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user.
 You can also enable and disable specific plans associated with a subscription.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserLicense](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserLicense?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

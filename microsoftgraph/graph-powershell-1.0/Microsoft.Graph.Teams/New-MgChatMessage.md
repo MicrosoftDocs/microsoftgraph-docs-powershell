@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Send a new chatMessage in the specified channel or a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
