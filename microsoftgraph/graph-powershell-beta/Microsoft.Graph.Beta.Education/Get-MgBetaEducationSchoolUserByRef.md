@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooluserbyref
 schema: 2.0.0
-ms.subservice: education
 ---
 
 # Get-MgBetaEducationSchoolUserByRef
 
 ## SYNOPSIS
 Retrieve a list of users at a school.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolUserByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,8 +21,17 @@ Get-MgBetaEducationSchoolUserByRef -EducationSchoolId <String> [-Filter <String>
 ## DESCRIPTION
 Retrieve a list of users at a school.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-list-users-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -227,8 +232,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooluserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooluserbyref)
 
 [https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-beta)
-
-
-
-
 

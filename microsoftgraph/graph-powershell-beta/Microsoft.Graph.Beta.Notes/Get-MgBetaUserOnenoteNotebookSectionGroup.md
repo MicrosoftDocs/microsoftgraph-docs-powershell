@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebooksectiongroup
@@ -11,9 +11,6 @@ schema: 2.0.0
 The section groups in the notebook.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,18 +27,14 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Notes
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteNotebookSectionGroup -UserId $userId -NotebookId $notebookId
-
-```
-This example shows how to use the Get-MgBetaUserOnenoteNotebookSectionGroup Cmdlet.
-
 
 ## PARAMETERS
 
@@ -285,7 +278,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebooksectiongroup)
-
-
-
 
