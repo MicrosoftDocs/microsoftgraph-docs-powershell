@@ -31,18 +31,6 @@ Publish-MgVirtualEvent -InputObject <IBookingsIdentity> [-ResponseHeadersVariabl
 ## DESCRIPTION
 Invoke action publish
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -207,6 +195,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/publish-mgvirtualevent](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/publish-mgvirtualevent)
+
 
 
 

@@ -50,18 +50,6 @@ Provide credentials for establishing connectivity with the target system.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-serviceprincipal-put-synchronization-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -276,6 +264,7 @@ VALUE <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationsecret](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationsecret)
 
 [https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-1.0)
+
 
 
 

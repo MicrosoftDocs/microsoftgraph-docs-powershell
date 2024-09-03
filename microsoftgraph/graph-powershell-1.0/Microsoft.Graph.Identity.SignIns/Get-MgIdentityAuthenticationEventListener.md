@@ -50,18 +50,6 @@ The @odata.type property in the response object indicates the type of the authen
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-list-authenticationeventlisteners-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -375,6 +363,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/authenticationeventlistener-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventlistener-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventlisteners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventlisteners?view=graph-rest-1.0)
+
 
 
 

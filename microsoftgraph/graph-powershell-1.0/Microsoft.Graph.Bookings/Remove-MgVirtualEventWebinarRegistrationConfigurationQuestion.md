@@ -33,18 +33,6 @@ Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBoo
 ## DESCRIPTION
 Delete navigation property questions for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -239,6 +227,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarregistrationconfigurationquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarregistrationconfigurationquestion)
+
 
 
 

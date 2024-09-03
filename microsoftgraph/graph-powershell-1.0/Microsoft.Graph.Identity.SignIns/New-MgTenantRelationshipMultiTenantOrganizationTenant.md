@@ -45,18 +45,6 @@ A tenant can be part of only one multitenant organization.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganization-post-tenants-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddedByTenantId
@@ -379,6 +367,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgtenantrelationshipmultitenantorganizationtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgtenantrelationshipmultitenantorganizationtenant)
 
 [https://learn.microsoft.com/graph/api/multitenantorganization-post-tenants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganization-post-tenants?view=graph-rest-1.0)
+
 
 
 

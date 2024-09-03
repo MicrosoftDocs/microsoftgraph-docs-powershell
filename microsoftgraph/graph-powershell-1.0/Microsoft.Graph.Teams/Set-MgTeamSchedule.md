@@ -73,18 +73,6 @@ Clients can also inspect the configuration of the schedule.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-put-schedule-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -963,6 +951,7 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule)
 
 [https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-1.0)
+
 
 
 

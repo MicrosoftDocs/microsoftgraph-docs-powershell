@@ -42,18 +42,6 @@ Retrieve the properties of a specific pendingExternalUserProfile.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/pendingexternaluserprofile-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -355,6 +343,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/pendingexternaluserprofile-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/pendingexternaluserprofile-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/directory-list-pendingexternaluserprofile?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-list-pendingexternaluserprofile?view=graph-rest-beta)
+
 
 
 

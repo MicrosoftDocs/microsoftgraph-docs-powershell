@@ -62,22 +62,6 @@ The duration of a shift can't be less than 1 minute or longer than 24 hours.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/shift-put-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -629,6 +613,7 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleshift)
 
 [https://learn.microsoft.com/graph/api/shift-put?view=graph-rest-beta](https://learn.microsoft.com/graph/api/shift-put?view=graph-rest-beta)
+
 
 
 

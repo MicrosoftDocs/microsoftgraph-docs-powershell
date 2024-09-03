@@ -36,22 +36,6 @@ Delete a custom authenticationStrengthPolicy object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthroot-delete-policies-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AuthenticationStrengthPolicyId
@@ -292,6 +276,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationstrengthpolicy)
 
 [https://learn.microsoft.com/graph/api/authenticationstrengthroot-delete-policies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationstrengthroot-delete-policies?view=graph-rest-beta)
+
 
 
 
