@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Financials
 Module Guid: 0138bb72-afbe-4daf-b849-452ecc75a99f
 Download Help Link: {{ Update Download Link }}
@@ -1492,4 +1492,5 @@ Locale: en-US
 
 ### [Update-MgBetaFinancialCompanyVendorPicture](Update-MgBetaFinancialCompanyVendorPicture.md)
 {{ Fill in the Description }}
+
 
