@@ -34,13 +34,17 @@ Deletes an itemAddress object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemaddress-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 Remove-MgBetaUserProfileAddress -UserId $userId -ItemAddressId $itemAddressId
+
+```
+This example shows how to use the Remove-MgBetaUserProfileAddress Cmdlet.
+
 
 ## PARAMETERS
 

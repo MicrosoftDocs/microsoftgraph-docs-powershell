@@ -40,11 +40,11 @@ New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceC
 Create a new androidWorkProfileCustomConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windows10EndpointProtectionConfiguration"
@@ -143,6 +143,10 @@ blockCrossOrganizationWriteAccess = $true
 }
 
 New-MgDeviceManagementDeviceConfiguration -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

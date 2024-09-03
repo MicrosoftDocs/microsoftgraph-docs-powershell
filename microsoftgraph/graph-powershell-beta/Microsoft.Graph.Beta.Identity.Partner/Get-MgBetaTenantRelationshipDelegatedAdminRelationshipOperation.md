@@ -50,13 +50,17 @@ Read the properties of a delegatedAdminRelationshipOperation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-list-operations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Partner
-```
 
 Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation -DelegatedAdminRelationshipId $delegatedAdminRelationshipId
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation Cmdlet.
+
 
 ## PARAMETERS
 

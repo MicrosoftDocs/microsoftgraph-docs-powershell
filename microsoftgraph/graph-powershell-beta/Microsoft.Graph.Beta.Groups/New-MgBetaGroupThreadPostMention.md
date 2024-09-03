@@ -48,18 +48,6 @@ New-MgBetaGroupThreadPostMention -InputObject <IGroupsIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to mentions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -483,6 +471,7 @@ MENTIONED `<IMicrosoftGraphEmailAddress>`: emailAddress
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostmention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostmention)
+
 
 
 

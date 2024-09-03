@@ -55,13 +55,17 @@ Retrieving the content of the transcript returns the stream of text associated w
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-list-transcripts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a callTranscript
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgUserOnlineMeetingTranscript -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
+
+```
+This example will get a calltranscript
+
 
 ## PARAMETERS
 

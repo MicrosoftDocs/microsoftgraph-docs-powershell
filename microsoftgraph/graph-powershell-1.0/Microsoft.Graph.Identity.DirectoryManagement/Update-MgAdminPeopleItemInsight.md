@@ -38,17 +38,21 @@ To learn more about customizing insights privacy for your organization, see Cust
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/insightssettings-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	disabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 
 Update-MgAdminPeopleItemInsight -BodyParameter $params
+
+```
+This example shows how to use the Update-MgAdminPeopleItemInsight Cmdlet.
+
 
 ## PARAMETERS
 

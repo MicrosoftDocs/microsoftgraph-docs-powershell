@@ -31,18 +31,6 @@ Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionCategory
 ## DESCRIPTION
 The group policy category associated with the definition.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -228,6 +216,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementgrouppolicydefinitionpreviouversiondefinitioncategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementgrouppolicydefinitionpreviouversiondefinitioncategory)
+
 
 
 

@@ -34,18 +34,6 @@ Get-MgBetaGroupTeamTemplate -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 The template this team was created from.
 See available templates.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -216,6 +204,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamtemplate)
+
 
 
 

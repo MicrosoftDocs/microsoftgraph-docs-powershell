@@ -52,18 +52,6 @@ Update-MgUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Update the navigation property deviceCompliancePolicyStates in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -441,6 +429,7 @@ SETTINGSTATES <IMicrosoftGraphDeviceCompliancePolicySettingState- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicecompliancepolicystate](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicecompliancepolicystate)
+
 
 
 

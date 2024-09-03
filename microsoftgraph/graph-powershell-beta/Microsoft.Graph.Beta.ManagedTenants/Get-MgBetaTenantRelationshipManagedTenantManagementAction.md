@@ -46,13 +46,17 @@ Read the properties and relationships of a managementAction object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-managementactions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-```
 
 Get-MgBetaTenantRelationshipManagedTenantManagementAction
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagementAction Cmdlet.
+
 
 ## PARAMETERS
 

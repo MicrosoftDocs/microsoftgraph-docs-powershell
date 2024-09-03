@@ -58,18 +58,6 @@ This feature requires Teams premium and attendees must have a valid United State
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualappointment-sendvirtualappointmentremindersms-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -311,6 +299,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationonlinemeetingvirtualappointmentremindersm](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationonlinemeetingvirtualappointmentremindersm)
 
 [https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-1.0)
+
 
 
 

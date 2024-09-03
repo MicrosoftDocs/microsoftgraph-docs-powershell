@@ -54,18 +54,6 @@ The app must be preinstalled in the team and have the configurableTabs property 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-post-tabs-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -457,6 +445,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchanneltab)
 
 [https://learn.microsoft.com/graph/api/channel-post-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post-tabs?view=graph-rest-1.0)
+
 
 
 

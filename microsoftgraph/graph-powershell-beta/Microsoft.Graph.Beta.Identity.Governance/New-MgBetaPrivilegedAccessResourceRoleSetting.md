@@ -55,18 +55,6 @@ New-MgBetaPrivilegedAccessResourceRoleSetting -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 Create new navigation property to roleSettings for privilegedAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -992,6 +980,7 @@ For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessresourcerolesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessresourcerolesetting)
+
 
 
 

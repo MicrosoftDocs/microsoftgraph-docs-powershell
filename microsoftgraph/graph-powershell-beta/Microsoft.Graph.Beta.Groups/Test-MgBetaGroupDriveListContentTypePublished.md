@@ -36,18 +36,6 @@ Invoke function isPublished
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-ispublished-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -226,6 +214,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdrivelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdrivelistcontenttypepublished)
 
 [https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta)
+
 
 
 

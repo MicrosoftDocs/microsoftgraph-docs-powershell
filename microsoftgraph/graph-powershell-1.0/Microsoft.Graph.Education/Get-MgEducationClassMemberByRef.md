@@ -28,18 +28,6 @@ Retrieves the educationUser members of an educationClass.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-members-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -239,6 +227,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref)
 
 [https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-1.0)
+
 
 
 
