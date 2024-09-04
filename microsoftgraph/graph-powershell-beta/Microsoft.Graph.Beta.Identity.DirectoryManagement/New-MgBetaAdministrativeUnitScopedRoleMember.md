@@ -53,18 +53,24 @@ For a list of roles that can be assigned with administrative unit scope, see Ass
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-post-scopedrolemembers-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 $params = @{
-	RoleId = "roleId-value"
-	RoleMemberInfo = @{
-		Id = "id-value"
+	roleId = "roleId-value"
+	roleMemberInfo = @{
+		id = "id-value"
 	}
 }
+
 New-MgBetaAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaAdministrativeUnitScopedRoleMember Cmdlet.
+
 
 ## PARAMETERS
 

@@ -38,16 +38,54 @@ Create an appManagementPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-post-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	displayName = "Credential management policy"
+	description = "Cred policy sample"
+	isEnabled = $true
+	restrictions = @{
+		passwordCredentials = @(
+			@{
+				restrictionType = "passwordAddition"
+				maxLifetime = $null
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2019-10-19T10:37:00Z")
+			}
+			@{
+				restrictionType = "passwordLifetime"
+				maxLifetime = "P4DT12H30M5S"
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2014-10-19T10:37:00Z")
+			}
+			@{
+				restrictionType = "symmetricKeyAddition"
+				maxLifetime = $null
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2019-10-19T10:37:00Z")
+			}
+			@{
+				restrictionType = "symmetricKeyLifetime"
+				maxLifetime = "P4D"
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2014-10-19T10:37:00Z")
+			}
+		)
+		keyCredentials = @(
+			@{
+				restrictionType = "asymmetricKeyLifetime"
+				maxLifetime = "P90D"
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2014-10-19T10:37:00Z")
+			}
+		)
+	}
+}
+
+New-MgPolicyAppManagementPolicy -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgPolicyAppManagementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

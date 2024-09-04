@@ -29,18 +29,6 @@ Invoke-MgBetaFinancialCompanySaleInvoiceAndSend -InputObject <IFinancialsIdentit
 ## DESCRIPTION
 Invoke action postAndSend
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -237,6 +225,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/invoke-mgbetafinancialcompanysaleinvoiceandsend](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/invoke-mgbetafinancialcompanysaleinvoiceandsend)
+
 
 
 

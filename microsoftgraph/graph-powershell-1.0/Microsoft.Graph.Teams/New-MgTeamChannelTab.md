@@ -55,16 +55,28 @@ The app must be preinstalled in the team and have the configurableTabs property 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-post-tabs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Teams
+
+$params = @{
+	displayName = "My Contoso Tab"
+	"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8"
+	configuration = @{
+		entityId = "2DCA2E6C7A10415CAF6B8AB6661B3154"
+		contentUrl = "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView"
+		websiteUrl = "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154"
+		removeUrl = "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
+	}
+}
+
+New-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgTeamChannelTab Cmdlet.
+
 
 ## PARAMETERS
 

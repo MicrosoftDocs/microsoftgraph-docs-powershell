@@ -37,16 +37,25 @@ Create a new homeRealmDiscoveryPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	definition = @(
+	'{"HomeRealmDiscoveryPolicy":{"AccelerateToFederatedDomain":true,"PreferredDomain":"federated.example.edu","AlternateIdLogin":{"Enabled":true}}}'
+)
+displayName = "displayName-value"
+isOrganizationDefault = $true
+}
+
+New-MgPolicyHomeRealmDiscoveryPolicy -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgPolicyHomeRealmDiscoveryPolicy Cmdlet.
+
 
 ## PARAMETERS
 

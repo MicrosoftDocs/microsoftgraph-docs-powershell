@@ -36,16 +36,17 @@ Synchronized accounts are left as-is.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Applications
+
+Remove-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgServicePrincipalSynchronizationJob Cmdlet.
+
 
 ## PARAMETERS
 

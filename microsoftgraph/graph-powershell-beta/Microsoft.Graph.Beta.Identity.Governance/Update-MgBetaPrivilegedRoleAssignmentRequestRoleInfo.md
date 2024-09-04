@@ -47,18 +47,6 @@ Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfo -InputObject <IIdentityGove
 ## DESCRIPTION
 Update the navigation property roleInfo in privilegedRoleAssignmentRequests
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -500,6 +488,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedroleassignmentrequestroleinfo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedroleassignmentrequestroleinfo)
+
 
 
 

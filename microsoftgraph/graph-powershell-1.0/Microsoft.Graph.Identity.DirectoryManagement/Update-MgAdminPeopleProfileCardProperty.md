@@ -50,11 +50,11 @@ Update the properties of a profileCardProperty object, identified by its directo
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/profilecardproperty-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	annotations = @(
@@ -71,6 +71,10 @@ $params = @{
 }
 
 Update-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgAdminPeopleProfileCardProperty Cmdlet.
+
 
 ## PARAMETERS
 

@@ -42,18 +42,6 @@ Get-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity> [-E
 Optional.
 NavigationProperty/Containment; navigation property to the activity's historyItems.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivityHistoryItemId
@@ -337,6 +325,8 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitem](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitem)
+
+
 
 
 

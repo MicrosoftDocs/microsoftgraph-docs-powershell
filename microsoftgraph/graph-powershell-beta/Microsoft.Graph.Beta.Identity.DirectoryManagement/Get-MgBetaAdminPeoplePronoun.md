@@ -31,16 +31,17 @@ For more information on settings to manage pronouns support, see Manage pronouns
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-list-pronouns-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaAdminPeoplePronoun
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaAdminPeoplePronoun Cmdlet.
+
 
 ## PARAMETERS
 

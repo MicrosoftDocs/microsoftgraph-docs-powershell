@@ -55,21 +55,25 @@ Update the properties of a tokenLifetimePolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tokenlifetimepolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	definition = @(
-		'{"TokenLifetimePolicy":{"Version":1,"AccessTokenLifetime":"5:30:00"}}'
-	)
-	displayName = "Contoso token lifetime policy"
-	isOrganizationDefault = $true
+	'{"TokenLifetimePolicy":{"Version":1,"AccessTokenLifetime":"5:30:00"}}'
+)
+displayName = "Contoso token lifetime policy"
+isOrganizationDefault = $true
 }
 
 Update-MgPolicyTokenLifetimePolicy -TokenLifetimePolicyId $tokenLifetimePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyTokenLifetimePolicy Cmdlet.
+
 
 ## PARAMETERS
 

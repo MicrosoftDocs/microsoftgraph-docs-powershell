@@ -35,16 +35,17 @@ Retrieve remote action results and check the status of a specific remote action 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-retrievecloudpcremoteactionresults-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+
+Get-MgBetaDeviceManagementVirtualEndpointCloudPcRemoteActionResult -CloudPCId $cloudPCId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCloudPcRemoteActionResult Cmdlet.
+
 
 ## PARAMETERS
 

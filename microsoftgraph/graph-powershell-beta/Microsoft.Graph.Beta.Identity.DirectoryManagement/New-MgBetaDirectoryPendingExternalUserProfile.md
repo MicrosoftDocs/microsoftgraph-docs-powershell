@@ -33,16 +33,22 @@ New-MgBetaDirectoryPendingExternalUserProfile -BodyParameter <Hashtable> [-Respo
 Create a new pendingExternalUserProfile object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	phoneNumber = "+15555555555"
+	displayName = "Bob Henry"
+}
+
+New-MgBetaDirectoryPendingExternalUserProfile -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgBetaDirectoryPendingExternalUserProfile Cmdlet.
+
 
 ## PARAMETERS
 

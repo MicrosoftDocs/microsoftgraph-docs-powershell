@@ -38,18 +38,6 @@ New-MgVirtualEventTownhall -BodyParameter <IMicrosoftGraphVirtualEventTownhall>
 ## DESCRIPTION
 Create new navigation property to townhalls for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -675,6 +663,7 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventtownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventtownhall)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgGroupSiteListItemDriveItem -InputObject <ISitesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -261,6 +249,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemdriveitem)
+
 
 
 

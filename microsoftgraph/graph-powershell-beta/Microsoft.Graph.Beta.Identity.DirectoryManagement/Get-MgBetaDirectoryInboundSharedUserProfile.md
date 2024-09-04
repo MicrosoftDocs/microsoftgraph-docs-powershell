@@ -46,16 +46,17 @@ Read the properties of an inboundSharedUserProfile.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-inboundshareduserprofiles-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectoryInboundSharedUserProfile
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaDirectoryInboundSharedUserProfile Cmdlet.
+
 
 ## PARAMETERS
 

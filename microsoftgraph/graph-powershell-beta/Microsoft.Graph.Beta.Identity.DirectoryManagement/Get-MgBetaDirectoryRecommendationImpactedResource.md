@@ -46,16 +46,17 @@ Read the properties and relationships of an impactedResource object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-list-impactedresources-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectoryRecommendationImpactedResource -RecommendationId $recommendationId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaDirectoryRecommendationImpactedResource Cmdlet.
+
 
 ## PARAMETERS
 

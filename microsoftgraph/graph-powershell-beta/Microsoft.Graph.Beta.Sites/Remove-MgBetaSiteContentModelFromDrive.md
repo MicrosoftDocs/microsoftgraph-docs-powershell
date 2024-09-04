@@ -51,16 +51,21 @@ Remove a contentModel from a SharePoint document library.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-removefromdrive-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Sites
+
+$params = @{
+	driveId = "b!HEq8Q8ZfAkuMECqSaQFnJVwNMbAGLHhHnXMz1C32pozpolsoEg-MT47fBTiYcbnd"
+}
+
+Remove-MgBetaSiteContentModelFromDrive -SiteId $siteId -ContentModelId $contentModelId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaSiteContentModelFromDrive Cmdlet.
+
 
 ## PARAMETERS
 

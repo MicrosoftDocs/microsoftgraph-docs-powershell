@@ -49,16 +49,17 @@ Get a specific commercial subscription that an organization has acquired.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-subscriptions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectorySubscription
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaDirectorySubscription Cmdlet.
+
 
 ## PARAMETERS
 

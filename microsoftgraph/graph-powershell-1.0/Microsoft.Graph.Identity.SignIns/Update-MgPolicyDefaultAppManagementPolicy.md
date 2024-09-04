@@ -39,16 +39,57 @@ Update the properties of a tenantAppManagementPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tenantappmanagementpolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	isEnabled = $true
+	applicationRestrictions = @{
+		passwordCredentials = @(
+			@{
+				restrictionType = "passwordAddition"
+				maxLifetime = $null
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2021-01-01T10:37:00Z")
+			}
+			@{
+				restrictionType = "passwordLifetime"
+				maxLifetime = "P4DT12H30M5S"
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2017-01-01T10:37:00Z")
+			}
+			@{
+				restrictionType = "symmetricKeyAddition"
+				maxLifetime = $null
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2021-01-01T10:37:00Z")
+			}
+			@{
+				restrictionType = "customPasswordAddition"
+				maxLifetime = $null
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
+			}
+			@{
+				restrictionType = "symmetricKeyLifetime"
+				maxLifetime = "P40D"
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
+			}
+		)
+		keyCredentials = @(
+			@{
+				restrictionType = "asymmetricKeyLifetime"
+				maxLifetime = "P30D"
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
+			}
+		)
+	}
+}
+
+Update-MgPolicyDefaultAppManagementPolicy -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Update-MgPolicyDefaultAppManagementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

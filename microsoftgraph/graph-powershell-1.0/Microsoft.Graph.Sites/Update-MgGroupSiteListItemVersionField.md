@@ -47,18 +47,6 @@ Update-MgGroupSiteListItemVersionField -InputObject <ISitesIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property fields in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,6 +327,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemversionfield)
+
 
 
 

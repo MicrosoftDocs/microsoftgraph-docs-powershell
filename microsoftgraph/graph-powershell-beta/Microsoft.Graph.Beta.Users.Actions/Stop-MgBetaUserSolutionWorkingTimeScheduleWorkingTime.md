@@ -34,16 +34,17 @@ Triggers the policies associated with the end of working hours.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workingtimeschedule-endworkingtime-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime -UserId $userId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime Cmdlet.
+
 
 ## PARAMETERS
 

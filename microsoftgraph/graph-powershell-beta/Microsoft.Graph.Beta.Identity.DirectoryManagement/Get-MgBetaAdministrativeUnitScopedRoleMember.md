@@ -46,18 +46,17 @@ Get a Microsoft Entra role assignment with administrative unit scope.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-list-scopedrolemembers-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-Get-MgBetaAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -ScopedRoleMembershipId $scopedRoleMembershipId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 Get-MgBetaAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId
+
 ```
+This example shows how to use the Get-MgBetaAdministrativeUnitScopedRoleMember Cmdlet.
+
 
 ## PARAMETERS
 

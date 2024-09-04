@@ -38,16 +38,17 @@ Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObje
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/featurerolloutpolicy-delete-appliesto-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef -FeatureRolloutPolicyId $featureRolloutPolicyId -DirectoryObjectId $directoryObjectId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 

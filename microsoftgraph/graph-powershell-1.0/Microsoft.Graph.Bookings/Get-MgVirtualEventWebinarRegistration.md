@@ -49,13 +49,17 @@ Get the properties and relationships of a virtualEventRegistration object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistration-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
-Get-MgVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventRegistrationId $virtualEventRegistrationId
+Get-MgVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId
+
+```
+This example shows how to use the Get-MgVirtualEventWebinarRegistration Cmdlet.
+
 
 ## PARAMETERS
 

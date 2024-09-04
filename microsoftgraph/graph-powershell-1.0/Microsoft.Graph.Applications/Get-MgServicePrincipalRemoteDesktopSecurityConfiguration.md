@@ -41,16 +41,17 @@ Additionally you can view any targetDeviceGroups that have been configured for S
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/remotedesktopsecurityconfiguration-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Applications
+
+Get-MgServicePrincipalRemoteDesktopSecurityConfiguration -ServicePrincipalId $servicePrincipalId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgServicePrincipalRemoteDesktopSecurityConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

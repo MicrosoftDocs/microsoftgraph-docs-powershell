@@ -52,16 +52,21 @@ For an existing model that's already trained, this action automatically processe
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-addtodrive-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Sites
+
+$params = @{
+	driveId = "b!HEq8Q8ZfAkuMECqSaQFnJVwNMbAGLHhHnXMz1C32pozpolsoEg-MT47fBTiYcbnd"
+}
+
+Add-MgBetaSiteContentModelToDrive -SiteId $siteId -ContentModelId $contentModelId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Add-MgBetaSiteContentModelToDrive Cmdlet.
+
 
 ## PARAMETERS
 

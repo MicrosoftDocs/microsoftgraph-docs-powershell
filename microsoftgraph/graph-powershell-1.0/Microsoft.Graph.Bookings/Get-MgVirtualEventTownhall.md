@@ -42,16 +42,17 @@ Get-MgVirtualEventTownhall -InputObject <IBookingsIdentity> [-ExpandProperty <St
 Get townhalls from solutions
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Bookings
+
+Get-MgVirtualEventTownhall -VirtualEventTownhallId $virtualEventTownhallId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgVirtualEventTownhall Cmdlet.
+
 
 ## PARAMETERS
 

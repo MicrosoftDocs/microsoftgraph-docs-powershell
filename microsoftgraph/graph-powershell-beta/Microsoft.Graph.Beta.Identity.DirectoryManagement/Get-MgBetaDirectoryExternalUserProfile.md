@@ -46,16 +46,17 @@ Retrieve the properties of a specific externalUserProfile.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-list-externaluserprofiles-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectoryExternalUserProfile
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaDirectoryExternalUserProfile Cmdlet.
+
 
 ## PARAMETERS
 

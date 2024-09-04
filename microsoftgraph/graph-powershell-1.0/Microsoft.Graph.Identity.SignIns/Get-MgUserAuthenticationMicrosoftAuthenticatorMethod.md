@@ -49,13 +49,17 @@ Read the properties and relationships of a microsoftAuthenticatorAuthenticationM
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/microsoftauthenticatorauthenticationmethod-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
-Get-MgUserAuthenticationMicrosoftAuthenticatorMethod -UserId $userId -MicrosoftAuthenticatorAuthenticationMethodId $microsoftAuthenticatorAuthenticationMethodId
+Get-MgUserAuthenticationMicrosoftAuthenticatorMethod -UserId $userId
+
+```
+This example shows how to use the Get-MgUserAuthenticationMicrosoftAuthenticatorMethod Cmdlet.
+
 
 ## PARAMETERS
 

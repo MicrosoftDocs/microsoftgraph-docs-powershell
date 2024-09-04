@@ -58,11 +58,11 @@ If more than 11,000 results are available, it returns a 400 Bad Request error wi
 If you get the DirectoryResultSizeLimitExceeded error code, use the List group transitive memberOf API instead.
 
 ## EXAMPLES
+### Example 1: Check group memberships for the signed-in user
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	securityEnabledOnly = $true
@@ -70,6 +70,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
+
+```
+This example will check group memberships for the signed-in user
+
 
 ## PARAMETERS
 

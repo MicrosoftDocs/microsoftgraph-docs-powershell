@@ -59,16 +59,21 @@ Prerequisite: PATCH the user flow with the updated onAttributeCollection event t
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onattributecollectionexternalusersselfservicesignup-post-attributes-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.id" = "https://graph.microsoft.com/v1.0/identity/userFlowAttributes/city"
+}
+
+New-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the New-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef Cmdlet.
+
 
 ## PARAMETERS
 

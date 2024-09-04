@@ -42,16 +42,36 @@ To allow for asynchronous processing, you must wait up to 2 hours before joining
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganizationjoinrequestrecord-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Join a multitenant organization
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	addedByTenantId = "1fd6544e-e994-4de2-9f1b-787b51c7d325"
+}
+
+Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest -BodyParameter $params
+
 ```
-{{ Add code here }}
+This example will join a multitenant organization
+
+### Example 2: Reset a failed join request
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	addedByTenantId = "00000000-0000-0000-0000-000000000000"
+}
+
+Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest -BodyParameter $params
+
 ```
+This example will reset a failed join request
+
 
 ## PARAMETERS
 

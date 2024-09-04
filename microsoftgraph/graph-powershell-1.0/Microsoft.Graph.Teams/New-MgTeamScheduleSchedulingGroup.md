@@ -53,22 +53,26 @@ Create a new schedulingGroup.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-schedulinggroups-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "Cashiers"
 	isActive = $true
 	userIds = @(
-		"c5d0c76b-80c4-481c-be50-923cd8d680a1"
-		"2a4296b3-a28a-44ba-bc66-0274b9b95851"
-	)
+	"c5d0c76b-80c4-481c-be50-923cd8d680a1"
+"2a4296b3-a28a-44ba-bc66-0274b9b95851"
+)
 }
 
 New-MgTeamScheduleSchedulingGroup -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeamScheduleSchedulingGroup Cmdlet.
+
 
 ## PARAMETERS
 

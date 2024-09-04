@@ -42,13 +42,17 @@ The templates associated with a team.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamwork-list-teamtemplates-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Use $extend and $filter to get teamTemplateDefinitions for en-US locale
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
-Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"
+Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')" 
+
+```
+This example will use $extend and $filter to get teamtemplatedefinitions for en-us locale
+
 
 ## PARAMETERS
 

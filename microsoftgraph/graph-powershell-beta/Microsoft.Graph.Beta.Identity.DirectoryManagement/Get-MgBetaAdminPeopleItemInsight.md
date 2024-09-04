@@ -31,16 +31,17 @@ To learn how to customize the privacy of item insights in an organization, see C
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-list-iteminsights-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaAdminPeopleItemInsight
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaAdminPeopleItemInsight Cmdlet.
+
 
 ## PARAMETERS
 

@@ -48,13 +48,17 @@ Read properties and relationships of the organization object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organization-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgOrganization
+
+```
+This example shows how to use the Get-MgOrganization Cmdlet.
+
 
 ## PARAMETERS
 

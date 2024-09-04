@@ -34,13 +34,17 @@ Retrieve the properties and relationships of a connectionQuota object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-connectionquota-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaExternalConnectionQuota -ExternalConnectionId $externalConnectionId
+
+```
+This example shows how to use the Get-MgBetaExternalConnectionQuota Cmdlet.
+
 
 ## PARAMETERS
 

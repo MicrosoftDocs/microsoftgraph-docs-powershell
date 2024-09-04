@@ -41,11 +41,11 @@ New-MgDeviceAppManagementMobileAppConfiguration
 Create a new iosMobileAppConfiguration object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.iosMobileAppConfiguration"
@@ -67,6 +67,10 @@ settings = @(
 }
 
 New-MgDeviceAppManagementMobileAppConfiguration -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementMobileAppConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

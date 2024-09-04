@@ -43,16 +43,17 @@ Retrieve the properties of a specific pendingExternalUserProfile.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/pendingexternaluserprofile-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectoryPendingExternalUserProfile
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaDirectoryPendingExternalUserProfile Cmdlet.
+
 
 ## PARAMETERS
 

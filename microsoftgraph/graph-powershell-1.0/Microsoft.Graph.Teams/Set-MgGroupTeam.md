@@ -80,16 +80,32 @@ If the group was created less than 15 minutes ago, it's possible for a call to c
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-put-teams-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Teams
+
+$params = @{
+	memberSettings = @{
+		allowCreatePrivateChannels = $true
+		allowCreateUpdateChannels = $true
+	}
+	messagingSettings = @{
+		allowUserEditMessages = $true
+		allowUserDeleteMessages = $true
+	}
+	funSettings = @{
+		allowGiphy = $true
+		giphyContentRating = "strict"
+	}
+}
+
+Set-MgGroupTeam -GroupId $groupId -BodyParameter $params
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Set-MgGroupTeam Cmdlet.
+
 
 ## PARAMETERS
 

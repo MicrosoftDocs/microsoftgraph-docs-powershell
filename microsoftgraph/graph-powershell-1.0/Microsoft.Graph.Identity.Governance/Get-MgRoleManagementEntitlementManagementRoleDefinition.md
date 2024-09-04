@@ -45,13 +45,17 @@ Resource representing the roles allowed by RBAC providers and the permissions as
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roledefinitions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Retrieve role definitions for the entitlement management provider
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgRoleManagementEntitlementManagementRoleDefinition
+
+```
+This example will retrieve role definitions for the entitlement management provider
+
 
 ## PARAMETERS
 

@@ -52,16 +52,18 @@ This operation is not transitive.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-memberof-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDeviceMemberOfAsGroup -DeviceId $deviceId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'A')"  -ConsistencyLevel eventual 
+
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaDeviceMemberOfAsGroup Cmdlet.
+
 
 ## PARAMETERS
 

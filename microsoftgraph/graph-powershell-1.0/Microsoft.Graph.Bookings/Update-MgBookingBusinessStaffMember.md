@@ -50,18 +50,6 @@ Update the properties of a bookingStaffMember in the specified bookingBusiness.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingstaffmember-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -275,6 +263,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessstaffmember)
 
 [https://learn.microsoft.com/graph/api/bookingstaffmember-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingstaffmember-update?view=graph-rest-1.0)
+
 
 
 

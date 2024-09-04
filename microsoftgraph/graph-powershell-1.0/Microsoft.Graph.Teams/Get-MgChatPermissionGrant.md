@@ -42,16 +42,17 @@ Get-MgChatPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <String
 A collection of permissions granted to apps for the chat.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Teams
+
+Get-MgChatPermissionGrant -ChatId $chatId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgChatPermissionGrant Cmdlet.
+
 
 ## PARAMETERS
 
