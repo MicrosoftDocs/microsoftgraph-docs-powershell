@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get itemInsights from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingItemInsight](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingItemInsight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

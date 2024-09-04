@@ -11,6 +11,9 @@ ms.subservice: entra-users
 ## SYNOPSIS
 Retry the user service provisioning.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetryUserServiceProvisioning?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Retry (Default)

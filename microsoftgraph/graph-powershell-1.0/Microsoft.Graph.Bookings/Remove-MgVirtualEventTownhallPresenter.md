@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Delete navigation property presenters for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventTownhallPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventTownhallPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

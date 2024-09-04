@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Create new navigation property to presenters for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventTownhallPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventTownhallPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

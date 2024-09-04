@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Update the navigation property townhalls in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventTownhall](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventTownhall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

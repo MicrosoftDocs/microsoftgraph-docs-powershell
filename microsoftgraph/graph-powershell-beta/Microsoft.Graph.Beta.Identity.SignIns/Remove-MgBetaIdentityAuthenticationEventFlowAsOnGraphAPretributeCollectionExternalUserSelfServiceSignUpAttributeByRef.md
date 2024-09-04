@@ -12,6 +12,9 @@ Remove an attribute from an external identities self-service sign up user flow t
 You can add both custom and built-in attributes to a user flow.
 After this step, PATCH the user flow to remove the attribute from the attribute collection step.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

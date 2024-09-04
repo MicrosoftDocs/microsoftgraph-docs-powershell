@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Get townhalls from solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhall](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

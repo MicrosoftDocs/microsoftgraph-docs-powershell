@@ -11,6 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Get appliesTo from policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

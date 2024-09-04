@@ -12,6 +12,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Get presenters from solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

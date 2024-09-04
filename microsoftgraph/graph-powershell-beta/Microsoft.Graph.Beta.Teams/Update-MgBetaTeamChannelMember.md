@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Update the role of a conversationMember in a team.or channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -11,6 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Delete a claimsMappingPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Bypass activation lock
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Skip-MgBetaDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Skip-MgBetaDeviceManagementManagedDeviceActivationLock?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Bypass (Default)

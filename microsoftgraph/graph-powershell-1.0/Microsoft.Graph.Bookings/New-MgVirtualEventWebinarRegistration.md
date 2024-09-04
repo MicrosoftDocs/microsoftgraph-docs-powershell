@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Create new navigation property to registrations for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarRegistration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
