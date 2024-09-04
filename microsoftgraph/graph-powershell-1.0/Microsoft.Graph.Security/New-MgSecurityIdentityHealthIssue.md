@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentityhealthissue
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to healthIssues for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityIdentityHealthIssue](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIdentityHealthIssue?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,6 +31,18 @@ New-MgSecurityIdentityHealthIssue -BodyParameter <IMicrosoftGraphSecurityHealthI
 
 ## DESCRIPTION
 Create new navigation property to healthIssues for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -371,29 +380,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityHealthIssue>`: healthIssue
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphSecurityHealthIssue\>: healthIssue
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AdditionalInformation <String- `[]`>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[DomainNames <String- `[]`>]`: 
-  - `[HealthIssueType <String>]`: healthIssueType
-  - `[IssueTypeId <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Recommendations <String- `[]`>]`: 
-  - `[RecommendedActionCommands <String- `[]`>]`: 
-  - `[SensorDnsNames <String- `[]`>]`: 
-  - `[Severity <String>]`: healthIssueSeverity
-  - `[Status <String>]`: healthIssueStatus
+  \[AdditionalInformation \<String\[\]\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[Description \<String\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[DomainNames \<String\[\]\>\]: 
+  \[HealthIssueType \<String\>\]: healthIssueType
+  \[IssueTypeId \<String\>\]: 
+  \[LastModifiedDateTime \<DateTime?\>\]: 
+  \[Recommendations \<String\[\]\>\]: 
+  \[RecommendedActionCommands \<String\[\]\>\]: 
+  \[SensorDnsNames \<String\[\]\>\]: 
+  \[Severity \<String\>\]: healthIssueSeverity
+  \[Status \<String\>\]: healthIssueStatus
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentityhealthissue](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentityhealthissue)
-
-
-
-
 

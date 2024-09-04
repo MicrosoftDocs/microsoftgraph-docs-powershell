@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgtenantrelationshipmultitenantorganizationjoinrequest
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Get-MgTenantRelationshipMultiTenantOrganizationJoinRequest
 
 ## SYNOPSIS
 Get the status of a tenant joining a multitenant organization.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,8 +21,17 @@ Get-MgTenantRelationshipMultiTenantOrganizationJoinRequest [-ExpandProperty <Str
 ## DESCRIPTION
 Get the status of a tenant joining a multitenant organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganizationjoinrequestrecord-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -121,8 +126,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgtenantrelationshipmultitenantorganizationjoinrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgtenantrelationshipmultitenantorganizationjoinrequest)
 
 [https://learn.microsoft.com/graph/api/multitenantorganizationjoinrequestrecord-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganizationjoinrequestrecord-get?view=graph-rest-1.0)
-
-
-
-
 
