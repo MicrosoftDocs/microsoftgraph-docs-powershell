@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/start-mgbetausersolutionworkingtimescheduleworkingtime
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Start-MgBetaUserSolutionWorkingTimeScheduleWorkingTime
@@ -28,6 +29,9 @@ Start-MgBetaUserSolutionWorkingTimeScheduleWorkingTime -InputObject <IUsersActio
 
 ## DESCRIPTION
 Triggers the policies associated with the end of working hours.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workingtimeschedule-startworkingtime-permissions.md)]
 
 ## EXAMPLES
 

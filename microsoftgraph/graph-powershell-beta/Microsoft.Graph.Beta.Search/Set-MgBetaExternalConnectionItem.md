@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/set-mgbetaexternalconnectionitem
 schema: 2.0.0
+ms.subservice: search
 ---
 
 # Set-MgBetaExternalConnectionItem
@@ -46,6 +47,9 @@ Set-MgBetaExternalConnectionItem -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Update the properties of an externalitem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalitem-update-permissions.md)]
 
 ## EXAMPLES
 

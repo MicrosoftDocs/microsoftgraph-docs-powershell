@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventlistener
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgIdentityAuthenticationEventListener
@@ -46,6 +47,9 @@ Update-MgIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Update the properties of an authenticationEventListener object.
 You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationeventlistener-update-permissions.md)]
 
 ## EXAMPLES
 

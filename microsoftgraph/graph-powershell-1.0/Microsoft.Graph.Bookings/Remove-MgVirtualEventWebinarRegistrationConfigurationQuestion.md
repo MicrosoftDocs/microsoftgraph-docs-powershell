@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarregistrationconfigurationquestion
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion
@@ -29,6 +30,9 @@ Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBoo
 
 ## DESCRIPTION
 Delete navigation property questions for solutions
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistrationquestionbase-delete-permissions.md)]
 
 ## EXAMPLES
 

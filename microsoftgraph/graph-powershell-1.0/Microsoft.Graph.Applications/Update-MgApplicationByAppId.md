@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyappid
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Update-MgApplicationByAppId
@@ -92,6 +93,9 @@ Update-MgApplicationByAppId -InputObject <IApplicationsIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-upsert-permissions.md)]
 
 ## EXAMPLES
 

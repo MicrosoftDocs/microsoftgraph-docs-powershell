@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventflow
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgIdentityAuthenticationEventFlow
@@ -50,6 +51,9 @@ Update-MgIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdentity>
 Update the properties of an authenticationEventsFlow object by ID.
 You must specify the @odata.type property and the value of the authenticationEventsFlow object type to update.
 The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationeventsflow-update-permissions.md)]
 
 ## EXAMPLES
 

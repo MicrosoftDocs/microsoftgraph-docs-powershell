@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcsupportedcloudpcremoteaction
 schema: 2.0.0
+ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaUserCloudPcSupportedCloudPcRemoteAction
@@ -28,6 +29,9 @@ Get-MgBetaUserCloudPcSupportedCloudPcRemoteAction -InputObject <IUsersFunctionsI
 
 ## DESCRIPTION
 Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getsupportedcloudpcremoteactions-permissions.md)]
 
 ## EXAMPLES
 

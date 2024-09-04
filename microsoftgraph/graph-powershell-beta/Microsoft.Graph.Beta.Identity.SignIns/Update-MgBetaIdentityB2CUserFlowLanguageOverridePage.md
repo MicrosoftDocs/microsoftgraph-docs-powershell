@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguageoverridepage
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgBetaIdentityB2CUserFlowLanguageOverridePage
@@ -46,6 +47,9 @@ Update-MgBetaIdentityB2CUserFlowLanguageOverridePage -InputObject <IIdentitySign
 ## DESCRIPTION
 Update the values in an userFlowLanguagePage object.
 You may only update the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguagepage-put-permissions.md)]
 
 ## EXAMPLES
 

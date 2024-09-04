@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupconversation
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Remove-MgBetaGroupConversation
@@ -28,6 +29,9 @@ Remove-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-IfMatch <String>
 
 ## DESCRIPTION
 Delete conversation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-conversation-permissions.md)]
 
 ## EXAMPLES
 

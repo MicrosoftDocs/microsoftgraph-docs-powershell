@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgreopensecuritycaseediscoverycase
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Invoke-MgReopenSecurityCaseEdiscoveryCase
@@ -30,6 +31,9 @@ Invoke-MgReopenSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-Res
 ## DESCRIPTION
 Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-reopen-permissions.md)]
 
 ## EXAMPLES
 

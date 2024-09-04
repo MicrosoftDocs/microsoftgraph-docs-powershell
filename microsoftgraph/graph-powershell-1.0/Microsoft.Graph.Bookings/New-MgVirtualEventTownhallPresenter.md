@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventtownhallpresenter
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # New-MgVirtualEventTownhallPresenter
@@ -44,6 +45,9 @@ New-MgVirtualEventTownhallPresenter -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Create new navigation property to presenters for solutions
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualevent-post-presenters-permissions.md)]
 
 ## EXAMPLES
 

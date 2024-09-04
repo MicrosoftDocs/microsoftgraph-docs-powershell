@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventtownhallpresenter
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Remove-MgVirtualEventTownhallPresenter
@@ -28,6 +29,9 @@ Remove-MgVirtualEventTownhallPresenter -InputObject <IBookingsIdentity> [-IfMatc
 
 ## DESCRIPTION
 Delete navigation property presenters for solutions
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventpresenter-delete-permissions.md)]
 
 ## EXAMPLES
 
