@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to channels for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

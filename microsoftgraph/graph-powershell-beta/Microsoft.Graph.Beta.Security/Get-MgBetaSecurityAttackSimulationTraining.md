@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 Represents details about attack simulation trainings.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationTraining?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

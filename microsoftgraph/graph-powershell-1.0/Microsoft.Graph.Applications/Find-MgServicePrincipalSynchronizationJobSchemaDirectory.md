@@ -11,6 +11,9 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Discover the latest schema definition for provisioning to an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Discover (Default)

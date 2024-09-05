@@ -12,6 +12,9 @@ ms.subservice: education
 Delete an existing category.
 Only teachers can perform this operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

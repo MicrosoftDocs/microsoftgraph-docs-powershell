@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Get site contentTypes that can be added to a list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteApplicableContentTypeForList](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSiteApplicableContentTypeForList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

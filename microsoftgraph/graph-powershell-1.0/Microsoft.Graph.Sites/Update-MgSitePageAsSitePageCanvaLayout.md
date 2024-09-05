@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property canvasLayout in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePageAsSitePageCanvaLayout?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -12,6 +12,9 @@ ms.subservice: education
 Delete an existing module in a class.
 Only teachers within a class can delete modules.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassModule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

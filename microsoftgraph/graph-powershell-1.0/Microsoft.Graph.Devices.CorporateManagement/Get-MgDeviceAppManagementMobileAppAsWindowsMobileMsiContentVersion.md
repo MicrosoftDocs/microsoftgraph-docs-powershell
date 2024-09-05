@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of content versions for this app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
