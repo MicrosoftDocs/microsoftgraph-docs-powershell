@@ -39,13 +39,17 @@ Types of sessions include audio and video.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getskypeforbusinesspeertopeeractivityminutecounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount -Period $periodId
+Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount Cmdlet.
+
 
 ## PARAMETERS
 

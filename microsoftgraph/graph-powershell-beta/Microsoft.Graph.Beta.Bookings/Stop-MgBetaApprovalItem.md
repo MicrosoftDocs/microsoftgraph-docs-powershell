@@ -34,18 +34,6 @@ The owner of the approval can trigger this endpoint.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approvalitem-cancel-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApprovalItemId
@@ -218,6 +206,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetaapprovalitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetaapprovalitem)
 
 [https://learn.microsoft.com/graph/api/approvalitem-cancel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/approvalitem-cancel?view=graph-rest-beta)
+
 
 
 

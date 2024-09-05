@@ -47,11 +47,11 @@ This operation allows both admins and eligible users to add, revoke, or extend e
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-post-roleeligibilityschedulerequests-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Admin to assign a role eligibility schedule request
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	action = "adminAssign"
@@ -60,20 +60,24 @@ $params = @{
 	directoryScopeId = "/"
 	principalId = "071cc716-8147-4397-a5ba-b2105951cc0b"
 	scheduleInfo = @{
-		startDateTime = \[System.DateTime\]::Parse("2022-04-10T00:00:00Z")
+		startDateTime = [System.DateTime]::Parse("2022-04-10T00:00:00Z")
 		expiration = @{
 			type = "afterDateTime"
-			endDateTime = \[System.DateTime\]::Parse("2024-04-10T00:00:00Z")
+			endDateTime = [System.DateTime]::Parse("2024-04-10T00:00:00Z")
 		}
 	}
 }
 
 New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will admin to assign a role eligibility schedule request
+
+### Example 2: Admin to remove an existing role eligibility schedule request
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	action = "adminRemove"
@@ -83,6 +87,10 @@ $params = @{
 }
 
 New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -BodyParameter $params
+
+```
+This example will admin to remove an existing role eligibility schedule request
+
 
 ## PARAMETERS
 

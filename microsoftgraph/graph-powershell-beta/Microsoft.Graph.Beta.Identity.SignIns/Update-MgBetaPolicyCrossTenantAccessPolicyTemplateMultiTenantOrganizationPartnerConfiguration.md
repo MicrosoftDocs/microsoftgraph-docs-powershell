@@ -44,11 +44,11 @@ Update the cross-tenant access policy template with inbound and outbound partner
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganizationpartnerconfigurationtemplate-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	inboundTrust = @{
@@ -64,6 +64,10 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

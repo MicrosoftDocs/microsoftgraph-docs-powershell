@@ -34,13 +34,17 @@ Delete a userSource object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-usersource-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Remove-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId -UserSourceId $userSourceId
+
+```
+This example shows how to use the Remove-MgBetaComplianceEdiscoveryCaseCustodianUserSource Cmdlet.
+
 
 ## PARAMETERS
 

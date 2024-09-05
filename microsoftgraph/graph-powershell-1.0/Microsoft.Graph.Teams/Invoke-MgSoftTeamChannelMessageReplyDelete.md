@@ -37,13 +37,17 @@ Delete a single chatMessage or a chat message reply in a channel or a chat.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-softdelete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Soft-delete message of a reply
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Invoke-MgSoftTeamChannelMessageReplyDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
+
+```
+This example will soft-delete message of a reply
+
 
 ## PARAMETERS
 

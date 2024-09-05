@@ -51,13 +51,17 @@ The profileCardProperty is identified by its directoryPropertyName property.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-list-profilecardproperties-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaAdminPeopleProfileCardProperty
+
+```
+This example shows how to use the Get-MgBetaAdminPeopleProfileCardProperty Cmdlet.
+
 
 ## PARAMETERS
 

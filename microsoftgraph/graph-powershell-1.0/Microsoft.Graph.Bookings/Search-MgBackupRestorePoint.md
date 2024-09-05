@@ -38,18 +38,6 @@ Search for the restorePoint objects associated with a protectionUnit.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/restorepoint-search-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -281,6 +269,7 @@ PROTECTIONTIMEPERIOD `<IMicrosoftGraphTimePeriod>`: timePeriod
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/search-mgbackuprestorepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/search-mgbackuprestorepoint)
 
 [https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-1.0)
+
 
 
 
