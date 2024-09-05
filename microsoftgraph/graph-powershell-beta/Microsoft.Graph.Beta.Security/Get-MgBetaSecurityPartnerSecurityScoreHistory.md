@@ -37,18 +37,6 @@ Get-MgBetaSecurityPartnerSecurityScoreHistory -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 Read the properties and relationships of a securityScoreHistory object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -390,6 +378,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/partner-security-securityscorehistory-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-securityscorehistory-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-list-history?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-list-history?view=graph-rest-beta)
+
 
 
 

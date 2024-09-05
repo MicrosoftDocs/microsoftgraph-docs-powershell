@@ -34,18 +34,6 @@ Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedAp
 ## DESCRIPTION
 Delete navigation property containedApps for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -271,6 +259,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappaswindowsmobilemsicontentversioncontainedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappaswindowsmobilemsicontentversioncontainedapp)
+
 
 
 

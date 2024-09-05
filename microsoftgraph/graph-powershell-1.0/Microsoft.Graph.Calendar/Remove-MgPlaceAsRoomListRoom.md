@@ -32,18 +32,6 @@ Remove-MgPlaceAsRoomListRoom -InputObject <ICalendarIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property rooms for places
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -230,6 +218,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasroomlistroom](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasroomlistroom)
+
 
 
 

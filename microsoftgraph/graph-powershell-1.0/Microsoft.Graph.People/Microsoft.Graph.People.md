@@ -8,13 +8,13 @@ Locale: en-US
 
 # Microsoft.Graph.People Module
 ## Description
-{{ Fill in the Description }}
+
 
 ## Microsoft.Graph.People Cmdlets
 ### [Get-MgUserPerson](Get-MgUserPerson.md)
-{{ Fill in the Description }}
+
 
 ### [Get-MgUserPersonCount](Get-MgUserPersonCount.md)
-{{ Fill in the Description }}
+
 
 
