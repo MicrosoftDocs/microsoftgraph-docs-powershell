@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethoduserregistrationdetail
 schema: 2.0.0
+ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaReportAuthenticationMethodUserRegistrationDetail
@@ -36,6 +38,12 @@ Get-MgBetaReportAuthenticationMethodUserRegistrationDetail -InputObject <IReport
 
 ## DESCRIPTION
 Read the properties and relationships of a userRegistrationDetails object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userregistrationdetails-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationmethodsroot-list-userregistrationdetails-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread
 schema: 2.0.0
+ms.subservice: entra-groups
+ms.subservice: entra-groups
 ---
 
 # Get-MgGroupThread
@@ -36,6 +38,12 @@ Get-MgGroupThread -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-
 
 ## DESCRIPTION
 Get a thread object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationthread-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-threads-permissions.md)]
 
 ## EXAMPLES
 

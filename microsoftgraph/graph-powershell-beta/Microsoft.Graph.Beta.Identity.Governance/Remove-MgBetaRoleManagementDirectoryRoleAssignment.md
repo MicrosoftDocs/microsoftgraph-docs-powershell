@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagementdirectoryroleassignment
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Remove-MgBetaRoleManagementDirectoryRoleAssignment
@@ -28,6 +29,9 @@ Remove-MgBetaRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovern
 
 ## DESCRIPTION
 Delete a unifiedRoleAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignment-delete-permissions.md)]
 
 ## EXAMPLES
 

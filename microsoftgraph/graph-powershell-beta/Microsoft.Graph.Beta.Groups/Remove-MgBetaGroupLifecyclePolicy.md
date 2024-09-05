@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouplifecyclepolicy
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Remove-MgBetaGroupLifecyclePolicy
@@ -42,6 +43,9 @@ Remove-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-IfMatch <Stri
 
 ## DESCRIPTION
 Delete a groupLifecyclePolicy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-delete-permissions.md)]
 
 ## EXAMPLES
 
