@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactdelta
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaContactDelta
@@ -11,9 +10,6 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection.
 See change tracking for details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgContactDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,43 +24,28 @@ Get-MgBetaContactDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Propert
 Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection.
 See change tracking for details.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-delta-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Default properties
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaContactDelta
 
+### EXAMPLE 2
 ```
-This example will default properties
-
-### Example 2: Selecting three properties
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-Get-MgBetaContactDelta -Property "displayName,jobTitle,mail" 
-
 ```
-This example shows selecting three properties
 
-### Example 3: Alternative minimal response behavior
+Get-MgBetaContactDelta -Property "displayName,jobTitle,mail"
 
-```powershell
-
+### EXAMPLE 3
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-Get-MgBetaContactDelta -Property "displayName,jobTitle,mail" 
-
 ```
-This example will alternative minimal response behavior
 
+Get-MgBetaContactDelta -Property "displayName,jobTitle,mail"
 
 ## PARAMETERS
 
@@ -280,7 +261,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactdelta)
 
 [https://learn.microsoft.com/graph/api/orgcontact-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/orgcontact-delta?view=graph-rest-beta)
-
-
-
 
