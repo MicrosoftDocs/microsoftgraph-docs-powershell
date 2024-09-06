@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to overrides for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/New-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

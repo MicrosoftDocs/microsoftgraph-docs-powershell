@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Create a new managedDevice object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

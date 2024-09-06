@@ -12,6 +12,9 @@ ms.subservice: search
 ## SYNOPSIS
 Read the properties and relationships of a qna object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Get-MgSearchQna?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

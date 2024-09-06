@@ -11,6 +11,9 @@ ms.subservice: people
 ## SYNOPSIS
 Retrieve the properties and relationships of a peopleAdminSettings object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminPeople](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdminPeople?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

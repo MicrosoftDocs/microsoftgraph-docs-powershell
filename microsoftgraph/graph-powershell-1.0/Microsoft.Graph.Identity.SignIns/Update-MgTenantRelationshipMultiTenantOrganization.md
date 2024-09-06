@@ -13,6 +13,9 @@ Create a new multitenant organization.
 By default, the creator tenant becomes an owner tenant upon successful creation.
 Only owner tenants can manage a multitenant organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipMultiTenantOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaTenantRelationshipMultiTenantOrganization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

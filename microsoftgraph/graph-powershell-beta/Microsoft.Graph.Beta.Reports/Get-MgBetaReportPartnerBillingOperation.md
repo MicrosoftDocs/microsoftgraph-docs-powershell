@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Read the properties and relationships of an operation object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPartnerBillingOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
