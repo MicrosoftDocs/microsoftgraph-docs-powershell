@@ -52,17 +52,21 @@ Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice -InputObject <IDeviceMa
 Clean Windows device
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Actions
-```
 
 $params = @{
 	keepUserData = $true
 }
 
 Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice -ManagedDeviceId $managedDeviceId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice Cmdlet.
+
 
 ## PARAMETERS
 

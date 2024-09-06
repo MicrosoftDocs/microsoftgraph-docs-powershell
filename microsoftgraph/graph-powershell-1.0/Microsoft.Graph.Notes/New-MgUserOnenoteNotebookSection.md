@@ -55,11 +55,11 @@ New-MgUserOnenoteNotebookSection -InputObject <INotesIdentity> -BodyParameter <I
 Create new navigation property to sections for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Notes
-```
 
 $params = @{
 	displayName = "Section name"
@@ -67,6 +67,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnenoteNotebookSection -UserId $userId -NotebookId $notebookId -BodyParameter $params
+
+```
+This example shows how to use the New-MgUserOnenoteNotebookSection Cmdlet.
+
 
 ## PARAMETERS
 

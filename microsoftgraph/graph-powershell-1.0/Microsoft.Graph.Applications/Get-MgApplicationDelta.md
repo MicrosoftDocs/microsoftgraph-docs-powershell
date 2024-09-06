@@ -32,13 +32,17 @@ For details, see Using delta query.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delta-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgApplicationDelta
+
+```
+This example shows how to use the Get-MgApplicationDelta Cmdlet.
+
 
 ## PARAMETERS
 

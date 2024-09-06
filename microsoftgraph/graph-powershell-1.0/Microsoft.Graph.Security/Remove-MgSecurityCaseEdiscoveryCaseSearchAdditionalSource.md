@@ -32,18 +32,6 @@ Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecurit
 ## DESCRIPTION
 Delete navigation property additionalSources for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DataSourceId
@@ -295,6 +283,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchadditionalsource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchadditionalsource)
+
 
 
 

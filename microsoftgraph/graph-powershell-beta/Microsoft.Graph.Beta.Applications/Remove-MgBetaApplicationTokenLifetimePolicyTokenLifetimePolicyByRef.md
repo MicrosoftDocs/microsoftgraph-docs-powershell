@@ -38,13 +38,17 @@ Remove a tokenLifetimePolicy from an application or servicePrincipal.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-tokenlifetimepolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef -ApplicationId $applicationId -TokenLifetimePolicyId $tokenLifetimePolicyId
+
+```
+This example shows how to use the Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef Cmdlet.
+
 
 ## PARAMETERS
 

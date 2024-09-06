@@ -37,13 +37,18 @@ Delete plannerBucket.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbucket-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
-Remove-MgBetaPlannerBucket -PlannerBucketId $plannerBucketId -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
+Remove-MgBetaPlannerBucket -PlannerBucketId $plannerBucketId -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
+
+
+```
+This example shows how to use the Remove-MgBetaPlannerBucket Cmdlet.
+
 
 ## PARAMETERS
 

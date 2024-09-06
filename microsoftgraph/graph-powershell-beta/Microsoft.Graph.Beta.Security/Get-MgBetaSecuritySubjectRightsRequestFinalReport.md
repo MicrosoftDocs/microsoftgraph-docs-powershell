@@ -38,18 +38,6 @@ The report is a text file that contains information about the files that were in
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-getfinalreport-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -268,6 +256,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalreport)
 
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalreport?view=graph-rest-beta](https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalreport?view=graph-rest-beta)
+
 
 
 

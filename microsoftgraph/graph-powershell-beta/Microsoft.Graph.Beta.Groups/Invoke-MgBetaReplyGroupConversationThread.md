@@ -53,18 +53,6 @@ Invoke-MgBetaReplyGroupConversationThread -InputObject <IGroupsIdentity>
 Reply to a post and add a new post to the specified thread in a group conversation.
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -517,6 +505,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread)
 
 [https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-beta](https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-beta)
+
 
 
 

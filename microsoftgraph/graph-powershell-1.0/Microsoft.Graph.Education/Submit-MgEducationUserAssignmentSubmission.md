@@ -46,18 +46,6 @@ A teacher can also submit a student's assignment on their behalf.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-submit-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -233,6 +221,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/submit-mgeducationuserassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/submit-mgeducationuserassignmentsubmission)
 
 [https://learn.microsoft.com/graph/api/educationsubmission-submit?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-submit?view=graph-rest-1.0)
+
 
 
 

@@ -40,11 +40,11 @@ Create a new unifiedRoleAssignment object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-post-roleassignments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create a role assignment with access package catalog scope
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	principalId = "679a9213-c497-48a4-830a-8d3d25d94ddc"
@@ -53,6 +53,10 @@ $params = @{
 }
 
 New-MgRoleManagementEntitlementManagementRoleAssignment -BodyParameter $params
+
+```
+This example will create a role assignment with access package catalog scope
+
 
 ## PARAMETERS
 

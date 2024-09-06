@@ -35,13 +35,17 @@ Follow a driveItem.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-follow-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 Invoke-MgFollowDriveItem -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Invoke-MgFollowDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

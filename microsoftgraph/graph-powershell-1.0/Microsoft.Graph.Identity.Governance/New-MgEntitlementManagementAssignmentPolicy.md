@@ -46,11 +46,11 @@ The request will include a reference to the accessPackage that will contain this
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-assignmentpolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "New Policy"
@@ -87,10 +87,14 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "policy for external access requests"
@@ -172,7 +176,7 @@ $params = @{
 		isReviewerJustificationRequired = $true
 		isSelfReview = $false
 		schedule = @{
-			startDateTime = \[System.DateTime\]::Parse("2022-07-02T06:59:59.998Z")
+			startDateTime = [System.DateTime]::Parse("2022-07-02T06:59:59.998Z")
 			expiration = @{
 				duration = "P14D"
 				type = "afterDuration"
@@ -208,10 +212,14 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Sales department users"
@@ -236,10 +244,14 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "A Policy With Questions"
@@ -325,7 +337,7 @@ $params = @{
 				}
 			)
 			isSingleLineQuestion = "false"
-			regexPattern = "\[a-zA-Z\]+\[a-zA-Z\s\]*"
+			regexPattern = "[a-zA-Z]+[a-zA-Z\s]*"
 		}
 	)
 	accessPackage = @{
@@ -335,10 +347,14 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 5
 ```
+This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
+
+### Example 5: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "customExtensionStageSettings policy"
@@ -383,6 +399,10 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
+
 
 ## PARAMETERS
 

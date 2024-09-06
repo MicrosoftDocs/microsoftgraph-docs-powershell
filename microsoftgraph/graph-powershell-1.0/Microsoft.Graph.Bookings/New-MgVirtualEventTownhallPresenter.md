@@ -55,11 +55,11 @@ Currently, the following types of virtual events are supported: - virtualEventTo
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualevent-post-presenters-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create an in-tenant presenter on a **virtualEventTownhall**
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	identity = @{
@@ -70,10 +70,14 @@ $params = @{
 
 New-MgVirtualEventTownhallPresenter -VirtualEventTownhallId $virtualEventTownhallId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create an in-tenant presenter on a **virtualeventtownhall**
+
+### Example 2: Create an out-of-tenant presenter on a **virtualEventTownhall**
+
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	identity = @{
@@ -84,6 +88,10 @@ $params = @{
 }
 
 New-MgVirtualEventTownhallPresenter -VirtualEventTownhallId $virtualEventTownhallId -BodyParameter $params
+
+```
+This example will create an out-of-tenant presenter on a **virtualeventtownhall**
+
 
 ## PARAMETERS
 

@@ -37,13 +37,17 @@ Deactivate a serviceApp.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceapp-deactivate-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp -ServiceAppId $serviceAppId
+
+```
+This example shows how to use the Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp Cmdlet.
+
 
 ## PARAMETERS
 

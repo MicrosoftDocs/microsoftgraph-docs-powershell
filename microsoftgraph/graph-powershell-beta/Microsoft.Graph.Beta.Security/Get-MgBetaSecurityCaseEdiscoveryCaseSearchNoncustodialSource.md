@@ -42,18 +42,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource -InputObject <ISecu
 ## DESCRIPTION
 noncustodialDataSource sources that are included in the eDiscovery search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -421,6 +409,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearchnoncustodialsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearchnoncustodialsource)
+
+
 
 
 

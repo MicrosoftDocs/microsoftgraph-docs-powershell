@@ -49,13 +49,17 @@ Get the properties and relationships of an alert object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-list-alerts_v2-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityAlertV2
+
+```
+This example shows how to use the Get-MgBetaSecurityAlertV2 Cmdlet.
+
 
 ## PARAMETERS
 

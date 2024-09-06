@@ -53,18 +53,6 @@ Update-MgUserManagedDeviceWindowsDeviceAccount -InputObject <IUsersActionsIdenti
 ## DESCRIPTION
 Not yet documented
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -329,6 +317,7 @@ UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER `<IMicrosoftGraphUpdateWindowsDeviceAc
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mgusermanageddevicewindowsdeviceaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mgusermanageddevicewindowsdeviceaccount)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-updatewindowsdeviceaccount?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-updatewindowsdeviceaccount?view=graph-rest-1.0)
+
 
 
 

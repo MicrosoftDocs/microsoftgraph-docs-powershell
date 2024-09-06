@@ -64,11 +64,11 @@ Set-MgEntitlementManagementAssignmentPolicy -InputObject <IIdentityGovernanceIde
 Update an existing accessPackageAssignmentPolicy object to change one or more of its properties, such as the display name or description.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	id = "87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187"
@@ -127,6 +127,10 @@ $params = @{
 }
 
 Set-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgEntitlementManagementAssignmentPolicy Cmdlet.
+
 
 ## PARAMETERS
 
