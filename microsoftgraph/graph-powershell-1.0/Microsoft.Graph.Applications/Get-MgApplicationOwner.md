@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationowner
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgApplicationOwner
@@ -21,6 +22,9 @@ Get-MgApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] [-Fi
 
 ## DESCRIPTION
 Retrieve a list of owners for an application that are directoryObject types.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list-owners-permissions.md)]
 
 ## EXAMPLES
 

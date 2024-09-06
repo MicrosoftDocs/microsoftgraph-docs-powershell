@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftteamworkdeletedteamchannelmessagereplydelete
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgBetaSoftTeamworkDeletedTeamChannelMessageReplyDelete
@@ -28,6 +29,9 @@ Invoke-MgBetaSoftTeamworkDeletedTeamChannelMessageReplyDelete -InputObject <ITea
 
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-softdelete-permissions.md)]
 
 ## EXAMPLES
 

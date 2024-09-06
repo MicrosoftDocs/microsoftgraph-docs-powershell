@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupplannerplanbucketdelta
 schema: 2.0.0
+ms.subservice: planner
 ---
 
 # Get-MgBetaGroupPlannerPlanBucketDelta
@@ -32,6 +33,9 @@ Get-MgBetaGroupPlannerPlanBucketDelta -InputObject <IGroupsIdentity> [-ExpandPro
 ## DESCRIPTION
 Get newly created, updated, or deleted buckets in a Planner plan without having to perform a full read of the entire resource collection.
 For details, see Use delta query to track changes in Microsoft Graph data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbucket-delta-permissions.md)]
 
 ## EXAMPLES
 
