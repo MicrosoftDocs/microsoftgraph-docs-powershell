@@ -342,7 +342,8 @@ Accept wildcard characters: False
 ### -EnrollmentType
 Enrollment type of the device.
 This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
 
 ```yaml
 Type: String
@@ -488,11 +489,10 @@ Accept wildcard characters: False
 ```
 
 ### -IsManagementRestricted
-Indicates whether the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage.
+Indicates whether the device is a member of a restricted management administrative unit.
 The default value is false.
 Read-only.
-To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
 
 ```yaml
 Type: SwitchParameter
@@ -1077,7 +1077,8 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 This property is set by Intune.
   - `[EnrollmentType <String>]`: Enrollment type of the device.
 This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
   - `[ExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]`: onPremisesExtensionAttributes
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ExtensionAttribute1 <String>]`: First customizable extension attribute.
@@ -1108,11 +1109,10 @@ Supports $filter (eq, ne, not).
   - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
-  - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage.
+  - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit.
 The default value is false.
 Read-only. 
-To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
   - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
   - `[Kind <String>]`: Form factor of the device.

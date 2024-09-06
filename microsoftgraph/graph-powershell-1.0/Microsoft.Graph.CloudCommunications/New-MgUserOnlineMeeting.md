@@ -918,9 +918,17 @@ Required when you create an online meeting.
 Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[CallId <String>]`: The unique identifier for the call that is related to this recording.
+Read-only.
     - `[Content <Byte- `[]`>]`: The content of the recording.
 Read-only.
+    - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+    - `[EndDateTime <DateTime?>]`: Date and time at which the recording ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -934,9 +942,17 @@ Read-only.
 Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[CallId <String>]`: The unique identifier for the call that is related to this transcript.
+Read-only.
     - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
+    - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
     - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+    - `[EndDateTime <DateTime?>]`: Date and time at which the transcription ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -1030,9 +1046,17 @@ RECORDINGS <IMicrosoftGraphCallRecording- `[]`>: The recordings of an online mee
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[CallId <String>]`: The unique identifier for the call that is related to this recording.
+Read-only.
   - `[Content <Byte- `[]`>]`: The content of the recording.
 Read-only.
+  - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+  - `[EndDateTime <DateTime?>]`: Date and time at which the recording ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -1055,9 +1079,17 @@ TRANSCRIPTS <IMicrosoftGraphCallTranscript- `[]`>: The transcripts of an online 
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[CallId <String>]`: The unique identifier for the call that is related to this transcript.
+Read-only.
   - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
+  - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
   - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+  - `[EndDateTime <DateTime?>]`: Date and time at which the transcription ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.

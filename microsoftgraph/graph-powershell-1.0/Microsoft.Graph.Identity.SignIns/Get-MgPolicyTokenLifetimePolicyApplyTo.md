@@ -44,6 +44,19 @@ Get appliesTo from policies
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tokenlifetimepolicy-list-appliesto-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgPolicyTokenLifetimePolicyApplyTo -TokenLifetimePolicyId $tokenLifetimePolicyId
+
+```
+This example shows how to use the Get-MgPolicyTokenLifetimePolicyApplyTo Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -370,7 +383,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicytokenlifetimepolicyapplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicytokenlifetimepolicyapplyto)
 
 [https://learn.microsoft.com/graph/api/tokenlifetimepolicy-list-appliesto?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-list-appliesto?view=graph-rest-1.0)
-
 
 
 

@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarpresenter
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Update-MgVirtualEventWebinarPresenter
 
 ## SYNOPSIS
-Update the navigation property presenters in solutions
+Update the properties of a virtualEventPresenter object.
+Currently the supported virtual event types are:- virtualEventWebinar.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinarPresenter?view=graph-powershell-beta)
@@ -46,7 +48,37 @@ Update-MgVirtualEventWebinarPresenter -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property presenters in solutions
+Update the properties of a virtualEventPresenter object.
+Currently the supported virtual event types are:- virtualEventWebinar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventpresenter-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+$params = @{
+	presenterDetails = @{
+		bio = @{
+			content = "Lead Product Manager of Contoso Sales department"
+			contentType = "text"
+		}
+		company = "Contoso"
+		jobTitle = "Product Manager"
+		linkedInProfileWebUrl = "https://linkedin.com/in/DianeDemoss"
+		personalSiteWebUrl = "https://DianeDemoss.com"
+	}
+}
+
+Update-MgVirtualEventWebinarPresenter -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventPresenterId $virtualEventPresenterId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgVirtualEventWebinarPresenter Cmdlet.
+
 
 ## PARAMETERS
 
@@ -82,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Email
-.
+Email address of the presenter.
 
 ```yaml
 Type: String
@@ -287,7 +319,7 @@ BODYPARAMETER `<IMicrosoftGraphVirtualEventPresenter>`: virtualEventPresenter
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Email <String>]`: 
+  - `[Email <String>]`: Email address of the presenter.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -300,12 +332,12 @@ For example, in the access reviews decisions API, this property might record the
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Content <String>]`: The content of the item.
       - `[ContentType <String>]`: bodyType
-    - `[Company <String>]`: 
-    - `[JobTitle <String>]`: 
-    - `[LinkedInProfileWebUrl <String>]`: 
-    - `[PersonalSiteWebUrl <String>]`: 
-    - `[Photo <Byte- `[]`>]`: 
-    - `[TwitterProfileWebUrl <String>]`: 
+    - `[Company <String>]`: The presenter's company name.
+    - `[JobTitle <String>]`: The presenter's job title.
+    - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
+    - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+    - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
+    - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
 IDENTITY `<IMicrosoftGraphIdentity>`: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -325,7 +357,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -341,17 +376,18 @@ PRESENTERDETAILS `<IMicrosoftGraphVirtualEventPresenterDetails>`: virtualEventPr
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
-  - `[Company <String>]`: 
-  - `[JobTitle <String>]`: 
-  - `[LinkedInProfileWebUrl <String>]`: 
-  - `[PersonalSiteWebUrl <String>]`: 
-  - `[Photo <Byte- `[]`>]`: 
-  - `[TwitterProfileWebUrl <String>]`:
+  - `[Company <String>]`: The presenter's company name.
+  - `[JobTitle <String>]`: The presenter's job title.
+  - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
+  - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+  - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
+  - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarpresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarpresenter)
 
+[https://learn.microsoft.com/graph/api/virtualeventpresenter-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventpresenter-update?view=graph-rest-1.0)
 
 
 

@@ -37,6 +37,21 @@ Update the photo for the specified contact, group, team, or user in a tenant.
 The size of the photo you can update to is limited to 4 MB.
 You can use either PATCH or PUT for this operation.
 
+## EXAMPLES
+### Example 1: Update the photo of a team
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+$params = Binary data for the image
+
+Set-MgTeamPhotoContent -TeamId $teamId -BodyParameter $params
+
+```
+This example will update the photo of a team
+
+
 ## PARAMETERS
 
 ### -ContentType
@@ -266,7 +281,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamphotocontent)
 
 [https://learn.microsoft.com/graph/api/profilephoto-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profilephoto-update?view=graph-rest-1.0)
-
 
 
 

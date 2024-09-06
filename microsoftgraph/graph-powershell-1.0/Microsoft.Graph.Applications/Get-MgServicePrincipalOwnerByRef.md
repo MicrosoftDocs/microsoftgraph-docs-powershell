@@ -3,13 +3,16 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerbyref
 schema: 2.0.0
-ms.subservice: entra-applications
 ---
 
 # Get-MgServicePrincipalOwnerByRef
 
 ## SYNOPSIS
-Retrieve a list of owners of the servicePrincipal.
+Directory objects that are owners of this servicePrincipal.
+The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
+Read-only.
+Nullable.
+Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta)
@@ -24,10 +27,11 @@ Get-MgServicePrincipalOwnerByRef -ServicePrincipalId <String> [-Filter <String>]
 ```
 
 ## DESCRIPTION
-Retrieve a list of owners of the servicePrincipal.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-owners-permissions.md)]
+Directory objects that are owners of this servicePrincipal.
+The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
+Read-only.
+Nullable.
+Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
 
 ## PARAMETERS
 
@@ -242,8 +246,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerbyref)
-
-[https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-1.0)
 
 
 

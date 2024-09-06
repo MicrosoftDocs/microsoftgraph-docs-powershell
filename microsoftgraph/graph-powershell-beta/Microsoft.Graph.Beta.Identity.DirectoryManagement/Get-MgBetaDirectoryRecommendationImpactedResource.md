@@ -45,6 +45,19 @@ Read the properties and relationships of an impactedResource object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-list-impactedresources-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectoryRecommendationImpactedResource -RecommendationId $recommendationId
+
+```
+This example shows how to use the Get-MgBetaDirectoryRecommendationImpactedResource Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -361,8 +374,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/impactedresource-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/impactedresource-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/recommendation-list-impactedresources?view=graph-rest-beta](https://learn.microsoft.com/graph/api/recommendation-list-impactedresources?view=graph-rest-beta)
-
-
 
 
 

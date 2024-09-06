@@ -9,8 +9,11 @@ ms.subservice: entra-sign-in
 # Get-MgOrganizationBrandingLocalizationBannerLogo
 
 ## SYNOPSIS
-Read the properties and relationships of an organizationalBrandingLocalization object.
-To retrieve a localization branding object, specify the value of id in the URL.
+Retrieve the default organizational branding object, if the Accept-Language header is set to 0 or default.
+If no default organizational branding object exists, this method returns a 404 Not Found error.
+If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
+This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
+To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationBannerLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationBannerLogo?view=graph-powershell-beta)
@@ -32,11 +35,14 @@ Get-MgOrganizationBrandingLocalizationBannerLogo -InputObject <IIdentityDirector
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an organizationalBrandingLocalization object.
-To retrieve a localization branding object, specify the value of id in the URL.
+Retrieve the default organizational branding object, if the Accept-Language header is set to 0 or default.
+If no default organizational branding object exists, this method returns a 404 Not Found error.
+If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
+This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
+To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbrandinglocalization-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -222,7 +228,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationbannerlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationbannerlogo)
 
-[https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0)
 
 
 

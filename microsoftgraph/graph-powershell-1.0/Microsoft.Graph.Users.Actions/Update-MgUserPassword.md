@@ -9,7 +9,7 @@ ms.subservice: entra-users
 # Update-MgUserPassword
 
 ## SYNOPSIS
-Enable the user to update their password.
+Update the signed-in user's password.
 Any user can update their password without belonging to any administrator role.
 
 > [!NOTE]
@@ -49,7 +49,7 @@ Update-MgUserPassword -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Enable the user to update their password.
+Update the signed-in user's password.
 Any user can update their password without belonging to any administrator role.
 
 **Permissions**

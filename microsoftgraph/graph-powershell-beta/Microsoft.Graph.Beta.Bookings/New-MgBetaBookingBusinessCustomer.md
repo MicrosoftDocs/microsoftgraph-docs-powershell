@@ -422,6 +422,7 @@ It's a free-format string value, for example, 'United States'.
     - `[Type <String>]`: phoneType
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[ApprovalItemId <String>]`: The unique identifier of approvalItem
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness

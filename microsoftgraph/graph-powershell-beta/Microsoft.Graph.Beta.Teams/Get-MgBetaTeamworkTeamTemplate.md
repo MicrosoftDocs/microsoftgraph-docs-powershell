@@ -39,7 +39,7 @@ Get-MgBetaTeamworkTeamTemplate -InputObject <ITeamsIdentity> [-ExpandProperty <S
 The templates associated with a team.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamtemplate-list-definitions-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamwork-list-teamtemplates-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Use $extend and $filter to get teamTemplateDefinitions for en-US locale
@@ -346,7 +346,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamtemplate)
 
-[https://learn.microsoft.com/graph/api/teamtemplate-list-definitions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamtemplate-list-definitions?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/teamwork-list-teamtemplates?view=graph-rest-beta](https://learn.microsoft.com/graph/api/teamwork-list-teamtemplates?view=graph-rest-beta)
 
 
 

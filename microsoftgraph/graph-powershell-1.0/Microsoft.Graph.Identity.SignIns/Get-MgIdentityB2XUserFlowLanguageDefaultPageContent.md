@@ -39,6 +39,19 @@ These values are shown to a user during a user journey defined by a user flow.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguagepage-get-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgIdentityB2XUserFlowLanguageDefaultPageContent -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId -UserFlowLanguagePageId $userFlowLanguagePageId -OutFile $outFileId
+
+```
+This example shows how to use the Get-MgIdentityB2XUserFlowLanguageDefaultPageContent Cmdlet.
+
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -259,7 +272,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguagedefaultpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguagedefaultpagecontent)
 
 [https://learn.microsoft.com/graph/api/userflowlanguagepage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userflowlanguagepage-get?view=graph-rest-1.0)
-
 
 
 

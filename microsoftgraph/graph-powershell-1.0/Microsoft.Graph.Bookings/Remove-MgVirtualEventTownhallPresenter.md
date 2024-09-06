@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventtownhallpresenter
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Remove-MgVirtualEventTownhallPresenter
 
 ## SYNOPSIS
-Delete navigation property presenters for solutions
+Delete a virtualEventPresenter from a virtual event.
+Currently the supported virtual event types are:- virtualEventTownhall- virtualEventWebinar
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventTownhallPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventTownhallPresenter?view=graph-powershell-beta)
@@ -30,7 +32,24 @@ Remove-MgVirtualEventTownhallPresenter -InputObject <IBookingsIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Delete navigation property presenters for solutions
+Delete a virtualEventPresenter from a virtual event.
+Currently the supported virtual event types are:- virtualEventTownhall- virtualEventWebinar
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventpresenter-delete-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+Remove-MgVirtualEventTownhallPresenter -VirtualEventTownhallId $virtualEventTownhallId -VirtualEventPresenterId $virtualEventPresenterId
+
+```
+This example shows how to use the Remove-MgVirtualEventTownhallPresenter Cmdlet.
+
 
 ## PARAMETERS
 
@@ -213,7 +232,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -227,6 +249,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventtownhallpresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventtownhallpresenter)
 
+[https://learn.microsoft.com/graph/api/virtualeventpresenter-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventpresenter-delete?view=graph-rest-1.0)
 
 
 

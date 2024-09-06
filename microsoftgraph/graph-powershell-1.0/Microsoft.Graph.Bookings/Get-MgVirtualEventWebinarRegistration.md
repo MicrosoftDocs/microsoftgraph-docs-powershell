@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarregistration
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgVirtualEventWebinarRegistration
@@ -44,6 +45,9 @@ Get the properties and relationships of a virtualEventRegistration object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistration-get-permissions.md)]
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistration-list-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -51,7 +55,7 @@ Get the properties and relationships of a virtualEventRegistration object.
 
 Import-Module Microsoft.Graph.Bookings
 
-Get-MgVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventRegistrationId $virtualEventRegistrationId
+Get-MgVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId
 
 ```
 This example shows how to use the Get-MgVirtualEventWebinarRegistration Cmdlet.
@@ -328,7 +332,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -344,7 +351,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/virtualeventregistration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventregistration-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/virtualeventwebinar-list-registrations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventwebinar-list-registrations?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/virtualeventregistration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventregistration-list?view=graph-rest-1.0)
 
 
 

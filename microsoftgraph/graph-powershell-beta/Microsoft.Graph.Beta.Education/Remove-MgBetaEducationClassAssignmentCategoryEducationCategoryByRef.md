@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgBetaEducationClassAssignmentCategoryEducationCategoryByRef
 
 ## SYNOPSIS
-Delete ref of navigation property categories for education
+Remove an educationCategory from an educationAssignment.
+Only teachers can perform this operation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentCategoryEducationCategoryByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentCategoryEducationCategoryByRef?view=graph-powershell-1.0)
@@ -31,7 +32,8 @@ Remove-MgBetaEducationClassAssignmentCategoryEducationCategoryByRef -InputObject
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property categories for education
+Remove an educationCategory from an educationAssignment.
+Only teachers can perform this operation.
 
 ## PARAMETERS
 
@@ -241,6 +243,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentcategoryeducationcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentcategoryeducationcategorybyref)
+
+[https://learn.microsoft.com/graph/api/educationassignment-remove-category?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-remove-category?view=graph-rest-beta)
 
 
 

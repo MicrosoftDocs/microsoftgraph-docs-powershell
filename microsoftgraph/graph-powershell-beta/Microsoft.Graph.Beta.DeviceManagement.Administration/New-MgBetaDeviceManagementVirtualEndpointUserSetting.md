@@ -22,7 +22,8 @@ New-MgBetaDeviceManagementVirtualEndpointUserSetting [-ResponseHeadersVariable <
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphCloudPcUserSettingAssignment[]>]
  [-CreatedDateTime <DateTime>]
  [-CrossRegionDisasterRecoverySetting <IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>]
- [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-LocalAdminEnabled] [-ResetEnabled]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-LocalAdminEnabled]
+ [-NotificationSetting <IMicrosoftGraphCloudPcNotificationSetting>] [-ResetEnabled]
  [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -230,6 +231,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -NotificationSetting
+cloudPcNotificationSetting
+To construct, see NOTES section for NOTIFICATIONSETTING properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCloudPcNotificationSetting
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -248,7 +265,7 @@ Accept wildcard characters: False
 ### -ResetEnabled
 Indicates whether an end user is allowed to reset their Cloud PC.
 When true, the user is allowed to reset their Cloud PC.
-When false, end-user initiated reset is not allowed.
+When false, end-user initiated reset isn't allowed.
 The default value is false.
 
 ```yaml
@@ -389,10 +406,15 @@ The timestamp type represents the date and time information using ISO 8601 forma
 For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
   - `[CrossRegionDisasterRecoverySetting <IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>]`: cloudPcCrossRegionDisasterRecoverySetting
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CrossRegionDisasterRecoveryEnabled <Boolean?>]`: 
+    - `[CrossRegionDisasterRecoveryEnabled <Boolean?>]`: True if an end user is allowed to set up cross-region disaster recovery for Cloud PC; otherwise, false.
+The default value is false.
     - `[DisasterRecoveryNetworkSetting <IMicrosoftGraphCloudPcDisasterRecoveryNetworkSetting>]`: cloudPcDisasterRecoveryNetworkSetting
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MaintainCrossRegionRestorePointEnabled <Boolean?>]`: 
+    - `[MaintainCrossRegionRestorePointEnabled <Boolean?>]`: Indicates whether Windows 365 maintain the cross-region disaster recovery function generated restore points.
+If true, the Windows 365 stored restore points; false indicates that Windows 365 doesn't generate or keep the restore point from the original Cloud PC.
+If a disaster occurs, the new Cloud PC can only be provisioned using the initial image.
+This limitation can result in the loss of some user data on the original Cloud PC.
+The default value is false.
   - `[DisplayName <String>]`: The setting name displayed in the user interface.
   - `[LastModifiedDateTime <DateTime?>]`: The last date and time the setting was modified.
 The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
@@ -401,9 +423,12 @@ For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00
 Default value is false.
 To enable the local admin option, change the setting to true.
 If the local admin option is enabled, the end user can be an admin of the Cloud PC device.
+  - `[NotificationSetting <IMicrosoftGraphCloudPcNotificationSetting>]`: cloudPcNotificationSetting
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[RestartPromptsDisabled <Boolean?>]`: 
   - `[ResetEnabled <Boolean?>]`: Indicates whether an end user is allowed to reset their Cloud PC.
 When true, the user is allowed to reset their Cloud PC.
-When false, end-user initiated reset is not allowed.
+When false, end-user initiated reset isn't allowed.
 The default value is false.
   - `[RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>]`: cloudPcRestorePointSetting
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -422,10 +447,19 @@ The selfServiceEnabled property is deprecated and will stop returning data on De
 
 CROSSREGIONDISASTERRECOVERYSETTING `<IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>`: cloudPcCrossRegionDisasterRecoverySetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CrossRegionDisasterRecoveryEnabled <Boolean?>]`: 
+  - `[CrossRegionDisasterRecoveryEnabled <Boolean?>]`: True if an end user is allowed to set up cross-region disaster recovery for Cloud PC; otherwise, false.
+The default value is false.
   - `[DisasterRecoveryNetworkSetting <IMicrosoftGraphCloudPcDisasterRecoveryNetworkSetting>]`: cloudPcDisasterRecoveryNetworkSetting
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MaintainCrossRegionRestorePointEnabled <Boolean?>]`: 
+  - `[MaintainCrossRegionRestorePointEnabled <Boolean?>]`: Indicates whether Windows 365 maintain the cross-region disaster recovery function generated restore points.
+If true, the Windows 365 stored restore points; false indicates that Windows 365 doesn't generate or keep the restore point from the original Cloud PC.
+If a disaster occurs, the new Cloud PC can only be provisioned using the initial image.
+This limitation can result in the loss of some user data on the original Cloud PC.
+The default value is false.
+
+NOTIFICATIONSETTING `<IMicrosoftGraphCloudPcNotificationSetting>`: cloudPcNotificationSetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[RestartPromptsDisabled <Boolean?>]`: 
 
 RESTOREPOINTSETTING `<IMicrosoftGraphCloudPcRestorePointSetting>`: cloudPcRestorePointSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

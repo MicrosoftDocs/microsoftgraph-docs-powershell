@@ -104,6 +104,9 @@ Locale: en-US
 ### [Get-MgCommunicationOnlineMeetingRecordingCount](Get-MgCommunicationOnlineMeetingRecordingCount.md)
 
 
+### [Get-MgCommunicationOnlineMeetingRecordingDelta](Get-MgCommunicationOnlineMeetingRecordingDelta.md)
+
+
 ### [Get-MgCommunicationOnlineMeetingTranscript](Get-MgCommunicationOnlineMeetingTranscript.md)
 
 
@@ -111,6 +114,9 @@ Locale: en-US
 
 
 ### [Get-MgCommunicationOnlineMeetingTranscriptCount](Get-MgCommunicationOnlineMeetingTranscriptCount.md)
+
+
+### [Get-MgCommunicationOnlineMeetingTranscriptDelta](Get-MgCommunicationOnlineMeetingTranscriptDelta.md)
 
 
 ### [Get-MgCommunicationOnlineMeetingTranscriptMetadataContent](Get-MgCommunicationOnlineMeetingTranscriptMetadataContent.md)

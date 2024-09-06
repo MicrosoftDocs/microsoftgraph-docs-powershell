@@ -494,10 +494,16 @@ Locale: en-US
 ### [Skip-MgUserManagedDeviceActivationLock](Skip-MgUserManagedDeviceActivationLock.md)
 
 
+### [Start-MgUserSolutionWorkingTimeScheduleWorkingTime](Start-MgUserSolutionWorkingTimeScheduleWorkingTime.md)
+
+
 ### [Stop-MgUserEvent](Stop-MgUserEvent.md)
 
 
 ### [Stop-MgUserEventInstance](Stop-MgUserEventInstance.md)
+
+
+### [Stop-MgUserSolutionWorkingTimeScheduleWorkingTime](Stop-MgUserSolutionWorkingTimeScheduleWorkingTime.md)
 
 
 ### [Sync-MgUserManagedDevice](Sync-MgUserManagedDevice.md)

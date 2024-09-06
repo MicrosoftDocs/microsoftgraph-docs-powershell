@@ -54,6 +54,26 @@ Update the properties of a homeRealmDiscoveryPolicy object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/homerealmdiscoverypolicy-update-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	definition = @(
+	'{"HomeRealmDiscoveryPolicy":{"AccelerateToFederatedDomain":true,"PreferredDomain":"federated.example.edu","AlternateIdLogin":{"Enabled":true}}}'
+)
+displayName = "Contoso default HRD Policy"
+}
+
+Update-MgPolicyHomeRealmDiscoveryPolicy -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyHomeRealmDiscoveryPolicy Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -396,7 +416,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyhomerealmdiscoverypolicy)
 
 [https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-update?view=graph-rest-1.0)
-
 
 
 

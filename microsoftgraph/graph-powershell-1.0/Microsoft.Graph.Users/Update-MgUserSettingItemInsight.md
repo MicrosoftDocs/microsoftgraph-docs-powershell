@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingiteminsight
 schema: 2.0.0
+ms.subservice: insights
 ---
 
 # Update-MgUserSettingItemInsight
 
 ## SYNOPSIS
-Update the navigation property itemInsights in users
+Update the privacy settings for itemInsights and meeting hours insights of a user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserSettingItemInsight](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSettingItemInsight?view=graph-powershell-beta)
@@ -44,7 +45,27 @@ Update-MgUserSettingItemInsight -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property itemInsights in users
+Update the privacy settings for itemInsights and meeting hours insights of a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userinsightssettings-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Users
+
+$params = @{
+	isEnabled = "false"
+}
+
+Update-MgUserSettingItemInsight -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgUserSettingItemInsight Cmdlet.
+
 
 ## PARAMETERS
 
@@ -127,7 +148,9 @@ Accept wildcard characters: False
 ```
 
 ### -IsEnabled
-.
+True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
+Optional.
 
 ```yaml
 Type: SwitchParameter
@@ -238,7 +261,9 @@ BODYPARAMETER `<IMicrosoftGraphUserInsightsSettings>`: userInsightsSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[IsEnabled <Boolean?>]`: 
+  - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
+Optional.
 
 INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
@@ -265,6 +290,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingiteminsight)
 
+[https://learn.microsoft.com/graph/api/userinsightssettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userinsightssettings-update?view=graph-rest-1.0)
 
 
 

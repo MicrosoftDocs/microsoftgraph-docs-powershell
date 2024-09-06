@@ -20,6 +20,9 @@ Locale: en-US
 ### [Export-MgReportPartnerBillingUsageUnbilled](Export-MgReportPartnerBillingUsageUnbilled.md)
 
 
+### [Get-MgAdminReportSetting](Get-MgAdminReportSetting.md)
+
+
 ### [Get-MgAuditLogDirectoryAudit](Get-MgAuditLogDirectoryAudit.md)
 
 
@@ -386,6 +389,9 @@ Locale: en-US
 ### [New-MgReportPartnerBillingOperation](New-MgReportPartnerBillingOperation.md)
 
 
+### [Remove-MgAdminReportSetting](Remove-MgAdminReportSetting.md)
+
+
 ### [Remove-MgDeviceManagementReport](Remove-MgDeviceManagementReport.md)
 
 
@@ -414,6 +420,9 @@ Locale: en-US
 
 
 ### [Remove-MgReportPartnerBillingUsageUnbilled](Remove-MgReportPartnerBillingUsageUnbilled.md)
+
+
+### [Update-MgAdminReportSetting](Update-MgAdminReportSetting.md)
 
 
 ### [Update-MgDeviceManagementReport](Update-MgDeviceManagementReport.md)

@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Email
-.
+Email address of the presenter.
 
 ```yaml
 Type: String
@@ -272,7 +272,7 @@ BODYPARAMETER `<IMicrosoftGraphVirtualEventPresenter>`: virtualEventPresenter
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Email <String>]`: 
+  - `[Email <String>]`: Email address of the presenter.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -285,12 +285,12 @@ For example, in the access reviews decisions API, this property might record the
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Content <String>]`: The content of the item.
       - `[ContentType <String>]`: bodyType
-    - `[Company <String>]`: 
-    - `[JobTitle <String>]`: 
-    - `[LinkedInProfileWebUrl <String>]`: 
-    - `[PersonalSiteWebUrl <String>]`: 
-    - `[Photo <Byte- `[]`>]`: 
-    - `[TwitterProfileWebUrl <String>]`: 
+    - `[Company <String>]`: The presenter's company name.
+    - `[JobTitle <String>]`: The presenter's job title.
+    - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
+    - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+    - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
+    - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
 IDENTITY `<IMicrosoftGraphIdentity>`: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -310,7 +310,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -326,12 +329,12 @@ PRESENTERDETAILS `<IMicrosoftGraphVirtualEventPresenterDetails>`: virtualEventPr
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
-  - `[Company <String>]`: 
-  - `[JobTitle <String>]`: 
-  - `[LinkedInProfileWebUrl <String>]`: 
-  - `[PersonalSiteWebUrl <String>]`: 
-  - `[Photo <Byte- `[]`>]`: 
-  - `[TwitterProfileWebUrl <String>]`:
+  - `[Company <String>]`: The presenter's company name.
+  - `[JobTitle <String>]`: The presenter's job title.
+  - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
+  - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+  - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
+  - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
 ## RELATED LINKS
 

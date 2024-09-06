@@ -12,6 +12,7 @@ ms.subservice: entra-sign-in
 Add or link an application to a user flow, or authenticationEventsFlow.
 This enables the authentication experience defined by the user flow to be enabled for the application.
 An application can only be linked to one user flow.
+The app must have an associated service principal in the tenant.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlowIncludeApplication?view=graph-powershell-beta)
@@ -50,9 +51,28 @@ New-MgIdentityAuthenticationEventFlowIncludeApplication -InputObject <IIdentityS
 Add or link an application to a user flow, or authenticationEventsFlow.
 This enables the authentication experience defined by the user flow to be enabled for the application.
 An application can only be linked to one user flow.
+The app must have an associated service principal in the tenant.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationconditionsapplications-post-includeapplications-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.authenticationConditionApplication"
+	appId = "63856651-13d9-4784-9abf-20758d509e19"
+}
+
+New-MgIdentityAuthenticationEventFlowIncludeApplication -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityAuthenticationEventFlowIncludeApplication Cmdlet.
+
 
 ## PARAMETERS
 
@@ -296,7 +316,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflowincludeapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflowincludeapplication)
 
 [https://learn.microsoft.com/graph/api/authenticationconditionsapplications-post-includeapplications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationconditionsapplications-post-includeapplications?view=graph-rest-1.0)
-
 
 
 

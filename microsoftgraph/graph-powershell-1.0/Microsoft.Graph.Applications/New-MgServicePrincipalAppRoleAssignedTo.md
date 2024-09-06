@@ -64,6 +64,7 @@ To grant an app role assignment, you need three identifiers:
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
@@ -73,10 +74,9 @@ $params = @{
 }
 
 New-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgServicePrincipalAppRoleAssignedTo Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -97,9 +97,9 @@ Accept wildcard characters: False
 ```
 
 ### -AppRoleId
-The identifier (id) for the app role which is assigned to the principal.
+The identifier (id) for the app role that's assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
 
 ```yaml
@@ -393,9 +393,9 @@ BODYPARAMETER `<IMicrosoftGraphAppRoleAssignment>`: appRoleAssignment
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+  - `[AppRoleId <String>]`: The identifier (id) for the app role that's assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
   - `[CreatedDateTime <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.

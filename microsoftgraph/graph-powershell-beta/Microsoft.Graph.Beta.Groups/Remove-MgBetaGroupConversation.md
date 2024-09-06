@@ -9,7 +9,7 @@ ms.subservice: entra-groups
 # Remove-MgBetaGroupConversation
 
 ## SYNOPSIS
-Delete conversation.
+Delete a group's conversation object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupConversation?view=graph-powershell-1.0)
@@ -31,10 +31,10 @@ Remove-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-IfMatch <String>
 ```
 
 ## DESCRIPTION
-Delete conversation.
+Delete a group's conversation object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversation-delete-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-conversation-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -272,7 +272,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupconversation)
 
-[https://learn.microsoft.com/graph/api/conversation-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conversation-delete?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/group-delete-conversation?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-delete-conversation?view=graph-rest-beta)
 
 
 

@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Capacity
-.
+Total capacity of the virtual event.
 
 ```yaml
 Type: Int32
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Questions
-.
+Registration questions.
 To construct, see NOTES section for QUESTIONS properties and create a hash table.
 
 ```yaml
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationWebUrl
-.
+Registration URL of the virtual event.
 
 ```yaml
 Type: String
@@ -303,13 +303,14 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>`: virtualEventWebinarRegistrationConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Capacity <Int32?>]`: 
-  - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: 
+  - `[Capacity <Int32?>]`: Total capacity of the virtual event.
+  - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: Registration questions.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[DisplayName <String>]`: 
-    - `[IsRequired <Boolean?>]`: 
-  - `[RegistrationWebUrl <String>]`: 
+    - `[DisplayName <String>]`: Display name of the registration question.
+    - `[IsRequired <Boolean?>]`: Indicates whether an answer to the question is required.
+The default value is false.
+  - `[RegistrationWebUrl <String>]`: Registration URL of the virtual event.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IsManualApprovalEnabled <Boolean?>]`: 
@@ -326,7 +327,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -336,11 +340,12 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
-QUESTIONS <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>: .
+QUESTIONS <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>: Registration questions.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: 
-  - `[IsRequired <Boolean?>]`:
+  - `[DisplayName <String>]`: Display name of the registration question.
+  - `[IsRequired <Boolean?>]`: Indicates whether an answer to the question is required.
+The default value is false.
 
 ## RELATED LINKS
 

@@ -41,6 +41,19 @@ Get-MgTeamPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 A collection of permissions granted to apps to access the team.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamPermissionGrant -TeamId $teamId
+
+```
+This example shows how to use the Get-MgTeamPermissionGrant Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -341,7 +354,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteampermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteampermissiongrant)
 
 [https://learn.microsoft.com/graph/api/team-list-permissiongrants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-list-permissiongrants?view=graph-rest-1.0)
-
 
 
 

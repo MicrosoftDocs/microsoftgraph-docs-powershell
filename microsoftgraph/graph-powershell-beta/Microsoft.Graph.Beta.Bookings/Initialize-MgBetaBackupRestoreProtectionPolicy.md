@@ -10,6 +10,11 @@ ms.subservice: m365-backup-storage
 
 ## SYNOPSIS
 Activate a protectionPolicyBase.
+Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users).
+You can add or remove artifacts (sites or user accounts) to or from each active policy.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Initialize-MgBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Bookings/Initialize-MgBackupRestoreProtectionPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +34,8 @@ Initialize-MgBetaBackupRestoreProtectionPolicy -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Activate a protectionPolicyBase.
+Currently, only one active backup policy per underlying service is supported (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange Online users).
+You can add or remove artifacts (sites or user accounts) to or from each active policy.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/protectionpolicybase-activate-permissions.md)]
@@ -183,6 +190,7 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[ApprovalItemId <String>]`: The unique identifier of approvalItem
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness

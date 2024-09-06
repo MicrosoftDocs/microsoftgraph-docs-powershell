@@ -34,13 +34,17 @@ Get the settings in a microsoftApplicationDataAccessSettings object that specify
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-microsoftapplicationdataaccess-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId $organizationId
+
 ```
 This example shows how to use the Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

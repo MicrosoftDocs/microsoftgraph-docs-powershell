@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Update tenant-level settings for Microsoft 365 reports.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminReportSetting](/powershell/module/Microsoft.Graph.Reports/Update-MgAdminReportSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -84,8 +87,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayConcealedNames
-If set to true, all reports will conceal user information such as usernames, groups, and sites.
-If false, all reports will show identifiable information.
+If set to true, all reports conceal user information such as usernames, groups, and sites.
+If false, all reports show identifiable information.
 This property represents a setting in the Microsoft 365 admin center.
 Required.
 
@@ -213,8 +216,8 @@ BODYPARAMETER `<IMicrosoftGraphAdminReportSettings>`: adminReportSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[DisplayConcealedNames <Boolean?>]`: If set to true, all reports will conceal user information such as usernames, groups, and sites.
-If false, all reports will show identifiable information.
+  - `[DisplayConcealedNames <Boolean?>]`: If set to true, all reports conceal user information such as usernames, groups, and sites.
+If false, all reports show identifiable information.
 This property represents a setting in the Microsoft 365 admin center.
 Required.
 

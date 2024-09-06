@@ -9,7 +9,7 @@ ms.subservice: intune
 # Update-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Update the properties of a deviceAndAppManagementRoleDefinition object.
+Update the properties of a roleDefinition object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -49,7 +49,7 @@ Update-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministr
 ```
 
 ## DESCRIPTION
-Update the properties of a deviceAndAppManagementRoleDefinition object.
+Update the properties of a roleDefinition object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -59,7 +59,7 @@ Update the properties of a deviceAndAppManagementRoleDefinition object.
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.deviceAndAppManagementRoleDefinition"
+	"@odata.type" = "#microsoft.graph.roleDefinition"
 	displayName = "Display Name value"
 	description = "Description value"
 	rolePermissions = @(
@@ -444,7 +444,7 @@ These must match the actionName that is defined as part of the rolePermission.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition)
 
-[https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroledefinition-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roledefinition-update?view=graph-rest-1.0)
 
 
 

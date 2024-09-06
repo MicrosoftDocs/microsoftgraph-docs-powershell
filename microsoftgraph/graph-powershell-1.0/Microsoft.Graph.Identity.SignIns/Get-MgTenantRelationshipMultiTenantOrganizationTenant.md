@@ -48,6 +48,19 @@ Get a tenant and its properties in the multitenant organization.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganization-list-tenants-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgTenantRelationshipMultiTenantOrganizationTenant
+
+```
+This example shows how to use the Get-MgTenantRelationshipMultiTenantOrganizationTenant Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -361,7 +374,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/multitenantorganizationmember-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganizationmember-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/multitenantorganization-list-tenants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganization-list-tenants?view=graph-rest-1.0)
-
 
 
 

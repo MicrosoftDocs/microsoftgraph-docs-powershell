@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaUserInsight
 
 ## SYNOPSIS
-Get insights from users
+Represents relationships between a user and items such as OneDrive for work or school documents, calculated using advanced analytics and machine learning techniques.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserInsight](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsight?view=graph-powershell-1.0)
@@ -30,7 +32,9 @@ Get-MgBetaUserInsight -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get insights from users
+Represents relationships between a user and items such as OneDrive for work or school documents, calculated using advanced analytics and machine learning techniques.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 

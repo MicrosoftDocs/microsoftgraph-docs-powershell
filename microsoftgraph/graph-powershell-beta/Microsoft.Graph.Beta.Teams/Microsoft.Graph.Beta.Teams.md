@@ -50,6 +50,9 @@ Locale: en-US
 ### [Clear-MgBetaTeamworkDeletedTeamChannelMessageReplyReaction](Clear-MgBetaTeamworkDeletedTeamChannelMessageReplyReaction.md)
 
 
+### [Complete-MgBetaChatMigration](Complete-MgBetaChatMigration.md)
+
+
 ### [Complete-MgBetaTeamChannelMigration](Complete-MgBetaTeamChannelMigration.md)
 
 

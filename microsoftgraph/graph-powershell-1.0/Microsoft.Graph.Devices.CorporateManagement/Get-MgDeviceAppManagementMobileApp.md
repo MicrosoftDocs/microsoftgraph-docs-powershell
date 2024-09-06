@@ -10,7 +10,7 @@ ms.subservice: intune
 # Get-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Read properties and relationships of the windowsWebApp object.
+Read properties and relationships of the managedIOSLobApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIden
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the windowsWebApp object.
+Read properties and relationships of the managedIOSLobApp object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -341,7 +341,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-windowswebapp-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-windowswebapp-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-managedioslobapp-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-managedioslobapp-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-apps-windowsuniversalappx-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-windowsuniversalappx-list?view=graph-rest-1.0)
 

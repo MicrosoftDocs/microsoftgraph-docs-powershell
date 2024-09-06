@@ -9,7 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
+This property includes occurrences that are part of the recurrence pattern and exceptions that have been modified.
+It doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -43,7 +44,8 @@ Get-MgBetaGroupEventExceptionOccurrenceInstance -InputObject <ICalendarIdentity>
 
 ## DESCRIPTION
 The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
+This property includes occurrences that are part of the recurrence pattern and exceptions that have been modified.
+It doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.

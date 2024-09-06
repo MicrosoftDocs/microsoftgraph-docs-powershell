@@ -13,6 +13,9 @@ Provide a summary of the most processed tasks, known as top tasks, for a specifi
 The task definition is provided, along with numerical counts of total, successful, and failed runs.
 For information about workflows processed, see insights: topWorkflowsProcessedSummary.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Top (Default)
@@ -330,6 +333,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
   - `[UnifiedRoleManagementAlertIncidentId <String>]`: The unique identifier of unifiedRoleManagementAlertIncident
+  - `[UniqueName <String>]`: Alternate key of accessPackageCatalog
   - `[UserConsentRequestId <String>]`: The unique identifier of userConsentRequest
   - `[UserId <String>]`: The unique identifier of user
   - `[UserProcessingResultId <String>]`: The unique identifier of userProcessingResult

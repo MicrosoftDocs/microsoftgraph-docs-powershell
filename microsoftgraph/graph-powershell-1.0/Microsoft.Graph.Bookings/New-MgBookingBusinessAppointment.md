@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppointmentLabel
-Custom label that can be stamped on this appointment by users.
+The custom label that can be stamped on this appointment by users.
 
 ```yaml
 Type: String
@@ -162,7 +162,9 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date, time, and time zone when the appointment was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -177,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomerEmailAddress
-.
+The SMTP address of the bookingCustomer who books the appointment.
 
 ```yaml
 Type: String
@@ -192,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomerName
-.
+The customer's name.
 
 ```yaml
 Type: String
@@ -208,6 +210,8 @@ Accept wildcard characters: False
 
 ### -CustomerNotes
 Notes from the customer associated with this appointment.
+You can get the value only when you read this bookingAppointment by its ID.
+You can set this property only when you initially create an appointment with a new customer.
 
 ```yaml
 Type: String
@@ -222,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomerPhone
-.
+The customer's phone number.
 
 ```yaml
 Type: String
@@ -333,7 +337,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsCustomerAllowedToManageBooking
-.
+Indicates that the customer can manage bookings created by the staff.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -348,8 +353,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsLocationOnline
-If true, indicates that the appointment will be held online.
-Default value is false.
+Indicates that the appointment is held online.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -379,7 +384,9 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedDateTime
-.
+The date, time, and time zone when the booking business was last updated.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -535,8 +542,7 @@ Accept wildcard characters: False
 ```
 
 ### -SelfServiceAppointmentId
-An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
-Only supported for appointment if maxAttendeeCount is 1.
+Another tracking ID for the appointment, if the appointment was created directly by the customer on the scheduling page, as opposed to by a staff member on behalf of the customer.
 
 ```yaml
 Type: String
@@ -714,12 +720,16 @@ BODYPARAMETER `<IMicrosoftGraphBookingAppointment>`: Represents a booked appoint
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
-  - `[AppointmentLabel <String>]`: Custom label that can be stamped on this appointment by users.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[CustomerEmailAddress <String>]`: 
-  - `[CustomerName <String>]`: 
+  - `[AppointmentLabel <String>]`: The custom label that can be stamped on this appointment by users.
+  - `[CreatedDateTime <DateTime?>]`: The date, time, and time zone when the appointment was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[CustomerEmailAddress <String>]`: The SMTP address of the bookingCustomer who books the appointment.
+  - `[CustomerName <String>]`: The customer's name.
   - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
-  - `[CustomerPhone <String>]`: 
+You can get the value only when you read this bookingAppointment by its ID.
+You can set this property only when you initially create an appointment with a new customer.
+  - `[CustomerPhone <String>]`: The customer's phone number.
   - `[CustomerTimeZone <String>]`: The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase- `[]`>]`: A collection of customer properties for an appointment.
@@ -730,11 +740,14 @@ Optional.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
-  - `[IsLocationOnline <Boolean?>]`: If true, indicates that the appointment will be held online.
-Default value is false.
+  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: Indicates that the customer can manage bookings created by the staff.
+The default value is false.
+  - `[IsLocationOnline <Boolean?>]`: Indicates that the appointment is held online.
+The default value is false.
   - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
-  - `[LastUpdatedDateTime <DateTime?>]`: 
+  - `[LastUpdatedDateTime <DateTime?>]`: The date, time, and time zone when the booking business was last updated.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in an appointment.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
 To create a customer, use the Create bookingCustomer operation.
@@ -751,8 +764,7 @@ The value of this property is available only when reading this bookingAppointmen
     - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent.
 It's denoted in ISO 8601 format.
     - `[Recipients <String>]`: bookingReminderRecipients
-  - `[SelfServiceAppointmentId <String>]`: An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
-Only supported for appointment if maxAttendeeCount is 1.
+  - `[SelfServiceAppointmentId <String>]`: Another tracking ID for the appointment, if the appointment was created directly by the customer on the scheduling page, as opposed to by a staff member on behalf of the customer.
   - `[ServiceId <String>]`: The ID of the bookingService associated with this appointment.
   - `[ServiceLocation <IMicrosoftGraphLocation>]`: location
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -804,7 +816,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter

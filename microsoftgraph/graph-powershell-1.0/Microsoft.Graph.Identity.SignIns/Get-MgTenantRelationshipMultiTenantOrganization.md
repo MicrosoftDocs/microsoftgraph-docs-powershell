@@ -28,6 +28,19 @@ Get properties of the multitenant organization.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganization-get-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgTenantRelationshipMultiTenantOrganization
+
+```
+This example shows how to use the Get-MgTenantRelationshipMultiTenantOrganization Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -121,7 +134,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgtenantrelationshipmultitenantorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgtenantrelationshipmultitenantorganization)
 
 [https://learn.microsoft.com/graph/api/multitenantorganization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganization-get?view=graph-rest-1.0)
-
 
 
 

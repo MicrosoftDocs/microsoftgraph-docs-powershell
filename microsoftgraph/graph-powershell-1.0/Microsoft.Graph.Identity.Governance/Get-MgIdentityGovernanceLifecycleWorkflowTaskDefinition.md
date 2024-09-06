@@ -10,7 +10,7 @@ ms.subservice: entra-id-governance
 # Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition
 
 ## SYNOPSIS
-Read the details of a built-in workflow task.
+Read the details of a built-in workflow task in Lifecycle Workflows.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition -InputObject <IIdentityG
 ```
 
 ## DESCRIPTION
-Read the details of a built-in workflow task.
+Read the details of a built-in workflow task in Lifecycle Workflows.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-taskdefinition-get-permissions.md)]

@@ -11,7 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Add an attribute to an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 You can add both custom and built-in attributes to a user flow.
-Prior to this step, PATCH the user flow to add the attribute to the attribute collection step (to determine how it will be displayed).
+The attribute is added to both the attributeCollection\> attributes and attributeCollection\> attributeCollectionPage \> views collections on the user flow.
+In the views collection, the attribute is assigned the default settings.
+You can PATCH the user flow to customize the settings of the attribute on the views object, for example, marking it as required or updating the allowed input types.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef?view=graph-powershell-1.0)
@@ -53,7 +55,9 @@ New-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalU
 ## DESCRIPTION
 Add an attribute to an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 You can add both custom and built-in attributes to a user flow.
-Prior to this step, PATCH the user flow to add the attribute to the attribute collection step (to determine how it will be displayed).
+The attribute is added to both the attributeCollection\> attributes and attributeCollection\> attributeCollectionPage \> views collections on the user flow.
+In the views collection, the attribute is assigned the default settings.
+You can PATCH the user flow to customize the settings of the attribute on the views object, for example, marking it as required or updating the allowed input types.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onattributecollectionexternalusersselfservicesignup-post-attributes-permissions.md)]

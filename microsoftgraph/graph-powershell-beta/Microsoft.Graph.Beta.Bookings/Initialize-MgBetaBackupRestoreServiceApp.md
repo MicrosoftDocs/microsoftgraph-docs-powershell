@@ -11,6 +11,9 @@ ms.subservice: m365-backup-storage
 ## SYNOPSIS
 Activate a serviceApp.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Initialize-MgBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.Bookings/Initialize-MgBackupRestoreServiceApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ActivateExpanded (Default)
@@ -57,7 +60,7 @@ Activate a serviceApp.
 Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
-	effectiveDateTime = [System.DateTime]::Parse("2024-04-19T12-01-03.45Z")
+	effectiveDateTime = [System.DateTime]::Parse("2024-04-19T12:01:03.45Z")
 }
 
 Initialize-MgBetaBackupRestoreServiceApp -ServiceAppId $serviceAppId -BodyParameter $params
@@ -243,6 +246,7 @@ BODYPARAMETER `<IPaths19Vx3BnSolutionsBackuprestoreServiceappsServiceappIdMicros
   - `[EffectiveDateTime <DateTime?>]`: 
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[ApprovalItemId <String>]`: The unique identifier of approvalItem
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness

@@ -9,7 +9,7 @@ ms.subservice: industry-data-etl
 # Update-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Update the properties of an azureDataLakeConnector object.
+Update the properties of a oneRosterApiDataConnector object.
 
 ## SYNTAX
 
@@ -44,10 +44,10 @@ Update-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an azureDataLakeConnector object.
+Update the properties of a oneRosterApiDataConnector object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-azuredatalakeconnector-update-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-onerosterapidataconnector-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -57,8 +57,8 @@ Update the properties of an azureDataLakeConnector object.
 Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
-	"@odata.type" = "microsoft.graph.industryData.azureDataLakeConnector"
-	displayName = "CSV files from SIS"
+	"@odata.type" = "microsoft.graph.industryData.oneRosterApiDataConnector"
+	displayName = "One Roster Connector"
 }
 
 Update-MgBetaExternalIndustryDataConnector -IndustryDataConnectorId $industryDataConnectorId -BodyParameter $params
@@ -377,7 +377,7 @@ Maximum supported length is 100 characters.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataconnector)
 
-[https://learn.microsoft.com/graph/api/industrydata-azuredatalakeconnector-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-azuredatalakeconnector-update?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/industrydata-onerosterapidataconnector-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-onerosterapidataconnector-update?view=graph-rest-beta)
 
 
 

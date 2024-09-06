@@ -15,10 +15,13 @@ You can apply the delta function on getAllRecordings to synchronize and get call
 The delta query supports both full synchronization and incremental synchronization.
 Full synchronization gets all the recordings for online meetings organized by the user.
 Incremental synchronization gets recordings that are added since the last synchronization.
-Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+Typically, you do an initial full synchronization, and then get incremental changes to that recording view periodically.
 Find more information in the delta query documentation.
 For more examples, see callRecording: delta.
 To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAllUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgAllUserOnlineMeetingRecording?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ You can apply the delta function on getAllRecordings to synchronize and get call
 The delta query supports both full synchronization and incremental synchronization.
 Full synchronization gets all the recordings for online meetings organized by the user.
 Incremental synchronization gets recordings that are added since the last synchronization.
-Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+Typically, you do an initial full synchronization, and then get incremental changes to that recording view periodically.
 Find more information in the delta query documentation.
 For more examples, see callRecording: delta.
 To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.

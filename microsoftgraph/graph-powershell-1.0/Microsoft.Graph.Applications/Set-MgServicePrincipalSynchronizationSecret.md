@@ -50,6 +50,40 @@ Provide credentials for establishing connectivity with the target system.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-serviceprincipal-put-synchronization-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	value = @(
+		@{
+			key = "BaseAddress"
+			value = "user@domain.com"
+		}
+		@{
+			key = "SecretToken"
+			value = "password-value"
+		}
+		@{
+			key = "SyncNotificationSettings"
+			value = '{"Enabled":false,"DeleteThresholdEnabled":false}'
+		}
+		@{
+			key = "SyncAll"
+			value = "false"
+		}
+	)
+}
+
+Set-MgServicePrincipalSynchronizationSecret -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgServicePrincipalSynchronizationSecret Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -264,7 +298,6 @@ VALUE <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>: .
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationsecret](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationsecret)
 
 [https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-1.0)
-
 
 
 

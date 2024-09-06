@@ -305,6 +305,9 @@ Locale: en-US
 ### [Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp](Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp.md)
 
 
+### [New-MgBetaApproval](New-MgBetaApproval.md)
+
+
 ### [New-MgBetaBookingBusiness](New-MgBetaBookingBusiness.md)
 
 
@@ -480,6 +483,9 @@ Locale: en-US
 
 
 ### [Search-MgBetaBackupRestorePoint](Search-MgBetaBackupRestorePoint.md)
+
+
+### [Stop-MgBetaApprovalItem](Stop-MgBetaApprovalItem.md)
 
 
 ### [Stop-MgBetaBookingBusinessAppointment](Stop-MgBetaBookingBusinessAppointment.md)

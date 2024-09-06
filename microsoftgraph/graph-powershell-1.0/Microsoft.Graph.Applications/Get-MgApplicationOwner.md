@@ -9,7 +9,7 @@ ms.subservice: entra-applications
 # Get-MgApplicationOwner
 
 ## SYNOPSIS
-Retrieve a list of owners for an application that are directoryObject objects.
+Retrieve a list of owners for an application that are directoryObject types.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationOwner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwner?view=graph-powershell-beta)
@@ -24,7 +24,7 @@ Get-MgApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] [-Fi
 ```
 
 ## DESCRIPTION
-Retrieve a list of owners for an application that are directoryObject objects.
+Retrieve a list of owners for an application that are directoryObject types.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list-owners-permissions.md)]

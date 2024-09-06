@@ -36,6 +36,19 @@ Delete a customAuthenticationExtension object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customauthenticationextension-delete-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Remove-MgIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId
+
+```
+This example shows how to use the Remove-MgIdentityCustomAuthenticationExtension Cmdlet.
+
+
 ## PARAMETERS
 
 ### -CustomAuthenticationExtensionId
@@ -257,7 +270,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentitycustomauthenticationextension)
 
 [https://learn.microsoft.com/graph/api/customauthenticationextension-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customauthenticationextension-delete?view=graph-rest-1.0)
-
 
 
 

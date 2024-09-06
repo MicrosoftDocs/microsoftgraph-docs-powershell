@@ -34,7 +34,7 @@ Remove-MgGroupConversation -InputObject <IGroupsIdentity> [-IfMatch <String>]
 Delete conversation.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-conversation-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversation-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -265,7 +265,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversation)
 
-[https://learn.microsoft.com/graph/api/group-delete-conversation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-conversation?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/conversation-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversation-delete?view=graph-rest-1.0)
 
 
 

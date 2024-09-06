@@ -16,16 +16,34 @@ Validate the ownership of a domain.
 
 ## SYNTAX
 
-### Verify (Default)
+### VerifyExpanded (Default)
 ```
-Confirm-MgBetaDomain -DomainId <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+Confirm-MgBetaDomain -DomainId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-ForceTakeover] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Verify
+```
+Confirm-MgBetaDomain -DomainId <String>
+ -BodyParameter <IPaths1Ruhfl6DomainsDomainIdMicrosoftGraphVerifyPostRequestbodyContentApplicationJsonSchema>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### VerifyViaIdentityExpanded
+```
+Confirm-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-ForceTakeover] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### VerifyViaIdentity
 ```
-Confirm-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IPaths1Ruhfl6DomainsDomainIdMicrosoftGraphVerifyPostRequestbodyContentApplicationJsonSchema>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -64,17 +82,63 @@ This example will external admin takeover of a domain
 
 ## PARAMETERS
 
-### -DomainId
-The unique identifier of domain
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: String
-Parameter Sets: Verify
+Type: Hashtable
+Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths1Ruhfl6DomainsDomainIdMicrosoftGraphVerifyPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Verify, VerifyViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DomainId
+The unique identifier of domain
+
+```yaml
+Type: String
+Parameter Sets: VerifyExpanded, Verify
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ForceTakeover
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -100,7 +164,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: VerifyViaIdentity
+Parameter Sets: VerifyViaIdentityExpanded, VerifyViaIdentity
 Aliases:
 
 Required: True
@@ -177,6 +241,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ruhfl6DomainsDomainIdMicrosoftGraphVerifyPostRequestbodyContentApplicationJsonSchema
 ### System.Collections.IDictionary
 ## OUTPUTS
 
@@ -186,6 +251,10 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODYPARAMETER `<IPaths1Ruhfl6DomainsDomainIdMicrosoftGraphVerifyPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ForceTakeover <Boolean?>]`: 
 
 INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit

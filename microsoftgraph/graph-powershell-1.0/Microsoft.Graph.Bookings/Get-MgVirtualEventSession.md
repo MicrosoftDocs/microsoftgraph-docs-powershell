@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgVirtualEventSession
 
 ## SYNOPSIS
-Sessions for the virtual event.
+The sessions for the virtual event.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventSession?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgVirtualEventSession -InputObject <IBookingsIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Sessions for the virtual event.
+The sessions for the virtual event.
 
 ## PARAMETERS
 
@@ -311,7 +311,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter

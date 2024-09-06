@@ -39,6 +39,45 @@ The following derived types are currently supported.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitycontainer-post-customauthenticationextensions-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartCustomExtension"
+	displayName = "onTokenIssuanceStartCustomExtension"
+	description = "Fetch additional claims from custom user store"
+	endpointConfiguration = @{
+		"@odata.type" = "#microsoft.graph.httpRequestEndpoint"
+		targetUrl = "https://authenticationeventsAPI.contoso.com"
+	}
+	authenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
+		resourceId = "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+	}
+	clientConfiguration = @{
+		timeoutInMilliseconds = 2000
+		maximumRetries = 1
+	}
+	claimsForTokenConfiguration = @(
+		@{
+			claimIdInApiResponse = "DateOfBirth"
+		}
+		@{
+			claimIdInApiResponse = "CustomRoles"
+		}
+	)
+}
+
+New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityCustomAuthenticationExtension Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -269,7 +308,6 @@ Default duration is 1000.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0)
-
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-Indicates collection of App Log Upload Request.
+The collection property of AppLogUploadRequest.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ```
 
 ## DESCRIPTION
-Indicates collection of App Log Upload Request.
+The collection property of AppLogUploadRequest.
 
 ## PARAMETERS
 

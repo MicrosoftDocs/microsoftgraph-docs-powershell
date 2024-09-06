@@ -28,6 +28,19 @@ Get the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamsappsettings-get-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamworkTeamAppSetting
+
+```
+This example shows how to use the Get-MgTeamworkTeamAppSetting Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -121,7 +134,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkteamappsetting)
 
 [https://learn.microsoft.com/graph/api/teamsappsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsappsettings-get?view=graph-rest-1.0)
-
 
 
 

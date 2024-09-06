@@ -9,8 +9,9 @@ ms.subservice: entra-id-governance
 # Resume-MgBetaEntitlementManagementAssignmentRequest
 
 ## SYNOPSIS
+Resume a user's access package request after waiting for a callback from a custom extension.
 In Microsoft Entra entitlement management, when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action.
-It is performed on an accessPackageAssignmentRequest object whose requestStatus is in a WaitingForCallback state.
+It's performed on an accessPackageAssignmentRequest object whose requestStatus is in a WaitingForCallback state.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Resume-MgEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Resume-MgEntitlementManagementAssignmentRequest?view=graph-powershell-1.0)
@@ -50,8 +51,9 @@ Resume-MgBetaEntitlementManagementAssignmentRequest -InputObject <IIdentityGover
 ```
 
 ## DESCRIPTION
+Resume a user's access package request after waiting for a callback from a custom extension.
 In Microsoft Entra entitlement management, when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action.
-It is performed on an accessPackageAssignmentRequest object whose requestStatus is in a WaitingForCallback state.
+It's performed on an accessPackageAssignmentRequest object whose requestStatus is in a WaitingForCallback state.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentrequest-resume-permissions.md)]
@@ -374,6 +376,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
   - `[UnifiedRoleManagementAlertIncidentId <String>]`: The unique identifier of unifiedRoleManagementAlertIncident
+  - `[UniqueName <String>]`: Alternate key of accessPackageCatalog
   - `[UserConsentRequestId <String>]`: The unique identifier of userConsentRequest
   - `[UserId <String>]`: The unique identifier of user
   - `[UserProcessingResultId <String>]`: The unique identifier of userProcessingResult

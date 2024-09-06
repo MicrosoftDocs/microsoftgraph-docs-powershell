@@ -50,6 +50,9 @@ Locale: en-US
 ### [Clear-MgBetaUserPresenceUserPreferredPresence](Clear-MgBetaUserPresenceUserPreferredPresence.md)
 
 
+### [Complete-MgBetaUserChatMigration](Complete-MgBetaUserChatMigration.md)
+
+
 ### [Complete-MgBetaUserOutlookTask](Complete-MgBetaUserOutlookTask.md)
 
 
@@ -590,7 +593,25 @@ Locale: en-US
 ### [Remove-MgBetaAllUserDeviceFromManagement](Remove-MgBetaAllUserDeviceFromManagement.md)
 
 
+### [Remove-MgBetaUserCalendarPermanent](Remove-MgBetaUserCalendarPermanent.md)
+
+
 ### [Remove-MgBetaUserChatAccessForUser](Remove-MgBetaUserChatAccessForUser.md)
+
+
+### [Remove-MgBetaUserContactFolderChildFolderContactPermanent](Remove-MgBetaUserContactFolderChildFolderContactPermanent.md)
+
+
+### [Remove-MgBetaUserContactFolderChildFolderPermanent](Remove-MgBetaUserContactFolderChildFolderPermanent.md)
+
+
+### [Remove-MgBetaUserContactFolderContactPermanent](Remove-MgBetaUserContactFolderContactPermanent.md)
+
+
+### [Remove-MgBetaUserContactFolderPermanent](Remove-MgBetaUserContactFolderPermanent.md)
+
+
+### [Remove-MgBetaUserContactPermanent](Remove-MgBetaUserContactPermanent.md)
 
 
 ### [Remove-MgBetaUserDriveItemCheckout](Remove-MgBetaUserDriveItemCheckout.md)
@@ -605,13 +626,49 @@ Locale: en-US
 ### [Remove-MgBetaUserDriveRootPermanent](Remove-MgBetaUserDriveRootPermanent.md)
 
 
+### [Remove-MgBetaUserEventInstancePermanent](Remove-MgBetaUserEventInstancePermanent.md)
+
+
+### [Remove-MgBetaUserEventPermanent](Remove-MgBetaUserEventPermanent.md)
+
+
 ### [Remove-MgBetaUserFollowedSite](Remove-MgBetaUserFollowedSite.md)
+
+
+### [Remove-MgBetaUserMailFolderChildFolderMessagePermanent](Remove-MgBetaUserMailFolderChildFolderMessagePermanent.md)
+
+
+### [Remove-MgBetaUserMailFolderChildFolderPermanent](Remove-MgBetaUserMailFolderChildFolderPermanent.md)
+
+
+### [Remove-MgBetaUserMailFolderMessagePermanent](Remove-MgBetaUserMailFolderMessagePermanent.md)
+
+
+### [Remove-MgBetaUserMailFolderPermanent](Remove-MgBetaUserMailFolderPermanent.md)
 
 
 ### [Remove-MgBetaUserManagedDeviceFirmwareConfigurationInterfaceManagement](Remove-MgBetaUserManagedDeviceFirmwareConfigurationInterfaceManagement.md)
 
 
 ### [Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice](Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice.md)
+
+
+### [Remove-MgBetaUserMessagePermanent](Remove-MgBetaUserMessagePermanent.md)
+
+
+### [Remove-MgBetaUserOutlookTaskFolderPermanent](Remove-MgBetaUserOutlookTaskFolderPermanent.md)
+
+
+### [Remove-MgBetaUserOutlookTaskFolderTaskPermanent](Remove-MgBetaUserOutlookTaskFolderTaskPermanent.md)
+
+
+### [Remove-MgBetaUserOutlookTaskGroupTaskFolderPermanent](Remove-MgBetaUserOutlookTaskGroupTaskFolderPermanent.md)
+
+
+### [Remove-MgBetaUserOutlookTaskGroupTaskFolderTaskPermanent](Remove-MgBetaUserOutlookTaskGroupTaskFolderTaskPermanent.md)
+
+
+### [Remove-MgBetaUserOutlookTaskPermanent](Remove-MgBetaUserOutlookTaskPermanent.md)
 
 
 ### [Remove-MgBetaUserPasswordSingleSignOnCredential](Remove-MgBetaUserPasswordSingleSignOnCredential.md)

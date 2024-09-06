@@ -11,6 +11,8 @@ schema: 2.0.0
 Required.
 The configuration for what to invoke when authentication methods are ready to be presented to the user.
 Must have at least one identity provider linked.
+Supports $filter (eq).
+See support for filtering on user flows for syntax information.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart?view=graph-powershell-1.0)
@@ -37,6 +39,8 @@ Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlo
 Required.
 The configuration for what to invoke when authentication methods are ready to be presented to the user.
 Must have at least one identity provider linked.
+Supports $filter (eq).
+See support for filtering on user flows for syntax information.
 
 ## PARAMETERS
 

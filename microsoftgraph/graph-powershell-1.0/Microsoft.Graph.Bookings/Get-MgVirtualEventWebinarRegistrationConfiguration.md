@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarregistrationconfiguration
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Get-MgVirtualEventWebinarRegistrationConfiguration
 
 ## SYNOPSIS
-Get registrationConfiguration from solutions
+Read the properties and relationships of a virtualEventWebinarRegistrationConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarRegistrationConfiguration](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarRegistrationConfiguration?view=graph-powershell-beta)
@@ -30,7 +31,23 @@ Get-MgVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsIdenti
 ```
 
 ## DESCRIPTION
-Get registrationConfiguration from solutions
+Read the properties and relationships of a virtualEventWebinarRegistrationConfiguration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventwebinarregistrationconfiguration-get-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+Get-MgVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId $virtualEventWebinarId
+
+```
+This example shows how to use the Get-MgVirtualEventWebinarRegistrationConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -167,7 +184,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -181,6 +201,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarregistrationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarregistrationconfiguration)
 
+[https://learn.microsoft.com/graph/api/virtualeventwebinarregistrationconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventwebinarregistrationconfiguration-get?view=graph-rest-1.0)
 
 
 

@@ -39,6 +39,19 @@ This disables the customized authentication experience defined for the applicati
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationconditionapplication-delete-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Remove-MgIdentityAuthenticationEventFlowIncludeApplication -AuthenticationEventsFlowId $authenticationEventsFlowId -AuthenticationConditionApplicationAppId $authenticationConditionApplicationAppId
+
+```
+This example shows how to use the Remove-MgIdentityAuthenticationEventFlowIncludeApplication Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AuthenticationConditionApplicationAppId
@@ -275,7 +288,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflowincludeapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflowincludeapplication)
 
 [https://learn.microsoft.com/graph/api/authenticationconditionapplication-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationconditionapplication-delete?view=graph-rest-1.0)
-
 
 
 

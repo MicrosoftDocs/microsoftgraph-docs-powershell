@@ -8,7 +8,7 @@ schema: 2.0.0
 # Stop-MgVirtualEventWebinarRegistration
 
 ## SYNOPSIS
-Invoke action cancel
+Cancel a registrant's registration record for a webinar.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaVirtualEventWebinarRegistration?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Stop-MgVirtualEventWebinarRegistration -InputObject <IBookingsIdentity> [-Respon
 ```
 
 ## DESCRIPTION
-Invoke action cancel
+Cancel a registrant's registration record for a webinar.
 
 ## PARAMETERS
 
@@ -198,7 +198,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter

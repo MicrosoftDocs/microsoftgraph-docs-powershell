@@ -540,9 +540,10 @@ BODYPARAMETER `<IMicrosoftGraphProjectParticipation>`: projectParticipation
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
@@ -581,7 +582,7 @@ For information on how to set the value for the companyCode, see profileSourceAn
     - `[DisplayName <String>]`: Company name.
     - `[OfficeLocation <String>]`: Office Location of the person referred to.
     - `[Pronunciation <String>]`: Pronunciation guide for the company name.
-    - `[SecondaryDepartment <String>]`: 
+    - `[SecondaryDepartment <String>]`: Secondary Department Name within a company.
     - `[WebUrl <String>]`: Link to the company home page.
   - `[CollaborationTags <String- `[]`>]`: Contains experience scenario tags a user has associated with the interest.
 Allowed values in the collection are: askMeAbout, ableToMentor, wantsToLearn, wantsToImprove.
@@ -593,16 +594,16 @@ Allowed values in the collection are: askMeAbout, ableToMentor, wantsToLearn, wa
   - `[Detail <IMicrosoftGraphPositionDetail>]`: positionDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Company <IMicrosoftGraphCompanyDetail>]`: companyDetail
-    - `[Description <String>]`: Description of the position in question.
-    - `[EndMonthYear <DateTime?>]`: When the position ended.
-    - `[JobTitle <String>]`: The title held when in that position.
+    - `[Description <String>]`: A description for the position in question.
+    - `[EndMonthYear <DateTime?>]`: The date when the position ended.
+    - `[JobTitle <String>]`: The title of the position.
     - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
     - `[Level <String>]`: The employee's experience or management level.
     - `[Role <String>]`: The role the position entailed.
-    - `[SecondaryJobTitle <String>]`: 
-    - `[SecondaryRole <String>]`: 
-    - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
-    - `[Summary <String>]`: summary of the position.
+    - `[SecondaryJobTitle <String>]`: An optional job title for the position.
+    - `[SecondaryRole <String>]`: An optional role for the position entailed.
+    - `[StartMonthYear <DateTime?>]`: The start date of the position.
+    - `[Summary <String>]`: The summary of the position.
   - `[DisplayName <String>]`: Contains a friendly name for the project.
   - `[Sponsors <IMicrosoftGraphRelatedPerson- `[]`>]`: The Person or people who sponsored the project.
   - `[ThumbnailUrl <String>]`: 
@@ -625,7 +626,7 @@ For information on how to set the value for the companyCode, see profileSourceAn
   - `[DisplayName <String>]`: Company name.
   - `[OfficeLocation <String>]`: Office Location of the person referred to.
   - `[Pronunciation <String>]`: Pronunciation guide for the company name.
-  - `[SecondaryDepartment <String>]`: 
+  - `[SecondaryDepartment <String>]`: Secondary Department Name within a company.
   - `[WebUrl <String>]`: Link to the company home page.
 
 COLLEAGUES <IMicrosoftGraphRelatedPerson- `[]`>: Lists people that also worked on the project.
@@ -639,9 +640,10 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -665,18 +667,18 @@ For information on how to set the value for the companyCode, see profileSourceAn
     - `[DisplayName <String>]`: Company name.
     - `[OfficeLocation <String>]`: Office Location of the person referred to.
     - `[Pronunciation <String>]`: Pronunciation guide for the company name.
-    - `[SecondaryDepartment <String>]`: 
+    - `[SecondaryDepartment <String>]`: Secondary Department Name within a company.
     - `[WebUrl <String>]`: Link to the company home page.
-  - `[Description <String>]`: Description of the position in question.
-  - `[EndMonthYear <DateTime?>]`: When the position ended.
-  - `[JobTitle <String>]`: The title held when in that position.
+  - `[Description <String>]`: A description for the position in question.
+  - `[EndMonthYear <DateTime?>]`: The date when the position ended.
+  - `[JobTitle <String>]`: The title of the position.
   - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
   - `[Level <String>]`: The employee's experience or management level.
   - `[Role <String>]`: The role the position entailed.
-  - `[SecondaryJobTitle <String>]`: 
-  - `[SecondaryRole <String>]`: 
-  - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
-  - `[Summary <String>]`: summary of the position.
+  - `[SecondaryJobTitle <String>]`: An optional job title for the position.
+  - `[SecondaryRole <String>]`: An optional role for the position entailed.
+  - `[StartMonthYear <DateTime?>]`: The start date of the position.
+  - `[Summary <String>]`: The summary of the position.
 
 INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -712,9 +714,10 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 

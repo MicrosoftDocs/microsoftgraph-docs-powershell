@@ -48,6 +48,19 @@ Read the properties and relationships of a servicePrincipalRiskDetection object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityprotectionroot-list-serviceprincipalriskdetections-permissions.md)]
 
+## EXAMPLES
+### Example: Get a specific risk detection object
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgServicePrincipalRiskDetection -ServicePrincipalRiskDetectionId $servicePrincipalRiskDetectionId
+
+```
+This example will### example: get a specific risk detection object
+
+
 ## PARAMETERS
 
 ### -All
@@ -361,7 +374,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/serviceprincipalriskdetection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipalriskdetection-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/identityprotectionroot-list-serviceprincipalriskdetections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityprotectionroot-list-serviceprincipalriskdetections?view=graph-rest-1.0)
-
 
 
 

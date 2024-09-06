@@ -115,7 +115,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 A unique name that identifies a category in the user's mailbox.
-After a category is created, the name cannot be changed.
+After a category is created, the name can't be changed.
 Read-only.
 
 ```yaml
@@ -276,7 +276,7 @@ BODYPARAMETER `<IMicrosoftGraphOutlookCategory>`: outlookCategory
 Read-only.
   - `[Color <String>]`: categoryColor
   - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox.
-After a category is created, the name cannot be changed.
+After a category is created, the name can't be changed.
 Read-only.
 
 INPUTOBJECT `<IUsersIdentity>`: Identity Parameter

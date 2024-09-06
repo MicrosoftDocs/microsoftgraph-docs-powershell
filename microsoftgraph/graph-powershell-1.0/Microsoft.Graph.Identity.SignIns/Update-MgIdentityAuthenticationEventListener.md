@@ -54,6 +54,32 @@ You must specify the @odata.type property and the value of the authenticationEve
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationeventlistener-update-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartListener"
+	conditions = @{
+		applications = @{
+			includeApplications = @(
+				@{
+					appId = "a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+				}
+			)
+		}
+	}
+}
+
+Update-MgIdentityAuthenticationEventListener -AuthenticationEventListenerId $authenticationEventListenerId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgIdentityAuthenticationEventListener Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -345,7 +371,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventlistener)
 
 [https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-1.0)
-
 
 
 

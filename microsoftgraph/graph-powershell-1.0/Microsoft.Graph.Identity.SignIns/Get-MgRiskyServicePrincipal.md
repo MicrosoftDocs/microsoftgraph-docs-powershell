@@ -48,6 +48,19 @@ Read the properties and relationships of a riskyServicePrincipal object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityprotectionroot-list-riskyserviceprincipals-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgRiskyServicePrincipal
+
+```
+This example shows how to use the Get-MgRiskyServicePrincipal Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -361,7 +374,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/riskyserviceprincipal-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyserviceprincipal-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/identityprotectionroot-list-riskyserviceprincipals?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityprotectionroot-list-riskyserviceprincipals?view=graph-rest-1.0)
-
 
 
 

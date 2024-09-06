@@ -52,13 +52,13 @@ Retrieve a user's single temporaryAccessPassAuthenticationMethod object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgUserAuthenticationTemporaryAccessPassMethod -UserId $userId -TemporaryAccessPassAuthenticationMethodId $temporaryAccessPassAuthenticationMethodId
+Get-MgUserAuthenticationTemporaryAccessPassMethod -UserId $userId
+
 ```
 This example shows how to use the Get-MgUserAuthenticationTemporaryAccessPassMethod Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

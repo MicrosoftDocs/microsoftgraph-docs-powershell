@@ -828,6 +828,7 @@ Accept wildcard characters: False
 Specifies the single sign-on mode configured for this application.
 Microsoft Entra ID uses the preferred single sign-on mode to launch the application from Microsoft 365 or the My Apps portal.
 The supported values are password, saml, notSupported, and oidc.
+Note: This field might be null for older SAML apps and for OIDC applications where it isn't set automatically.
 
 ```yaml
 Type: String
@@ -1244,9 +1245,9 @@ Supports $expand.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+  - `[AppRoleId <String>]`: The identifier (id) for the app role that's assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
   - `[CreatedDateTime <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1272,9 +1273,9 @@ Supports $expand.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+  - `[AppRoleId <String>]`: The identifier (id) for the app role that's assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
   - `[CreatedDateTime <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1391,9 +1392,9 @@ Supports $expand.
 Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+    - `[AppRoleId <String>]`: The identifier (id) for the app role that's assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
     - `[CreatedDateTime <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1672,6 +1673,7 @@ Optional.
   - `[PreferredSingleSignOnMode <String>]`: Specifies the single sign-on mode configured for this application.
 Microsoft Entra ID uses the preferred single sign-on mode to launch the application from Microsoft 365 or the My Apps portal.
 The supported values are password, saml, notSupported, and oidc.
+Note: This field might be null for older SAML apps and for OIDC applications where it isn't set automatically.
   - `[PreferredTokenSigningKeyThumbprint <String>]`: This property can be used on SAML applications (apps that have preferredSingleSignOnMode set to saml) to control which certificate is used to sign the SAML responses.
 For applications that aren't SAML, don't write or otherwise rely on this property.
   - `[RemoteDesktopSecurityConfiguration <IMicrosoftGraphRemoteDesktopSecurityConfiguration>]`: remoteDesktopSecurityConfiguration

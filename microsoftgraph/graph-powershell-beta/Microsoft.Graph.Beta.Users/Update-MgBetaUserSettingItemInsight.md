@@ -148,8 +148,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsEnabled
-true if user's itemInsights and meeting hours insights are enabled; false if user's itemInsights and meeting hours insights are disabled.
-Default is true.
+True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
 Optional.
 
 ```yaml
@@ -261,8 +261,8 @@ BODYPARAMETER `<IMicrosoftGraphUserInsightsSettings>`: userInsightsSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[IsEnabled <Boolean?>]`: true if user's itemInsights and meeting hours insights are enabled; false if user's itemInsights and meeting hours insights are disabled.
-Default is true.
+  - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
 Optional.
 
 INPUTOBJECT `<IUsersIdentity>`: Identity Parameter

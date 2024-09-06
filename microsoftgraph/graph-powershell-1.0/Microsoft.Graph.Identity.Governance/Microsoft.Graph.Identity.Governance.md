@@ -731,6 +731,9 @@ Locale: en-US
 ### [Get-MgIdentityGovernanceLifecycleWorkflowExecutionScopeCount](Get-MgIdentityGovernanceLifecycleWorkflowExecutionScopeCount.md)
 
 
+### [Get-MgIdentityGovernanceLifecycleWorkflowInsight](Get-MgIdentityGovernanceLifecycleWorkflowInsight.md)
+
+
 ### [Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedBy](Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedBy.md)
 
 
@@ -1592,6 +1595,9 @@ Locale: en-US
 ### [Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequestByCurrentUser](Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequestByCurrentUser.md)
 
 
+### [Invoke-MgGraphIdentityGovernanceLifecycleWorkflowInsight](Invoke-MgGraphIdentityGovernanceLifecycleWorkflowInsight.md)
+
+
 ### [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun](Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun.md)
 
 
@@ -1602,6 +1608,15 @@ Locale: en-US
 
 
 ### [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowUserProcessingResult](Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowUserProcessingResult.md)
+
+
+### [Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary](Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary.md)
+
+
+### [Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary](Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary.md)
+
+
+### [Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary](Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary.md)
 
 
 ### [New-MgAgreement](New-MgAgreement.md)
@@ -2276,6 +2291,9 @@ Locale: en-US
 ### [Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask.md)
 
 
+### [Remove-MgIdentityGovernanceLifecycleWorkflowInsight](Remove-MgIdentityGovernanceLifecycleWorkflowInsight.md)
+
+
 ### [Remove-MgIdentityGovernanceLifecycleWorkflowTask](Remove-MgIdentityGovernanceLifecycleWorkflowTask.md)
 
 
@@ -2781,6 +2799,9 @@ Locale: en-US
 
 
 ### [Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask.md)
+
+
+### [Update-MgIdentityGovernanceLifecycleWorkflowInsight](Update-MgIdentityGovernanceLifecycleWorkflowInsight.md)
 
 
 ### [Update-MgIdentityGovernanceLifecycleWorkflowLastModifiedByMailboxSetting](Update-MgIdentityGovernanceLifecycleWorkflowLastModifiedByMailboxSetting.md)

@@ -411,7 +411,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Department <String>]`: The contact's department.
     - `[DisplayName <String>]`: The contact's display name.
 You can specify the display name in a create or update operation.
-Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified.
+Later updates to other properties might cause an automatically generated value to overwrite the displayName value you specified.
 To preserve a pre-existing value, always include it as displayName in an update operation.
     - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress- `[]`>]`: The contact's email addresses.
       - `[Address <String>]`: The email address of an entity instance.
@@ -538,7 +538,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Department <String>]`: The contact's department.
     - `[DisplayName <String>]`: The contact's display name.
 You can specify the display name in a create or update operation.
-Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified.
+Later updates to other properties might cause an automatically generated value to overwrite the displayName value you specified.
 To preserve a pre-existing value, always include it as displayName in an update operation.
     - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress- `[]`>]`: The contact's email addresses.
       - `[Address <String>]`: The email address of an entity instance.
@@ -655,7 +655,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Department <String>]`: The contact's department.
   - `[DisplayName <String>]`: The contact's display name.
 You can specify the display name in a create or update operation.
-Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified.
+Later updates to other properties might cause an automatically generated value to overwrite the displayName value you specified.
 To preserve a pre-existing value, always include it as displayName in an update operation.
   - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress- `[]`>]`: The contact's email addresses.
     - `[Address <String>]`: The email address of an entity instance.

@@ -66,6 +66,30 @@ A channel can't be archived or unarchived if its team is archived.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-archive-permissions.md)]
 
+## EXAMPLES
+### Example 1: Archive a channel
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Invoke-MgArchiveTeamChannel -TeamId $teamId -ChannelId $channelId
+
+```
+This example will archive a channel
+
+### Example 2: Archive a channel when the team is archived
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Invoke-MgArchiveTeamChannel -TeamId $teamId -ChannelId $channelId
+
+```
+This example will archive a channel when the team is archived
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -312,7 +336,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteamchannel)
 
 [https://learn.microsoft.com/graph/api/channel-archive?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-archive?view=graph-rest-1.0)
-
 
 
 

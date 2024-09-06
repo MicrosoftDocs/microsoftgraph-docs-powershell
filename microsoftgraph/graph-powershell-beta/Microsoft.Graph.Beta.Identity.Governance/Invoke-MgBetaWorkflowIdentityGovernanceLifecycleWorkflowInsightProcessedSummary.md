@@ -12,6 +12,9 @@ ms.subservice: entra-id-governance
 Provide a summary of all workflows processed within a tenant for a specified period.
 Because the amount of results for listed workflows as returned by the List workflows does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Workflows (Default)
@@ -251,6 +254,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
   - `[UnifiedRoleManagementAlertIncidentId <String>]`: The unique identifier of unifiedRoleManagementAlertIncident
+  - `[UniqueName <String>]`: Alternate key of accessPackageCatalog
   - `[UserConsentRequestId <String>]`: The unique identifier of userConsentRequest
   - `[UserId <String>]`: The unique identifier of user
   - `[UserProcessingResultId <String>]`: The unique identifier of userProcessingResult

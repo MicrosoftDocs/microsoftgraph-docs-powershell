@@ -842,6 +842,7 @@ Accept wildcard characters: False
 Specifies the single sign-on mode configured for this application.
 Microsoft Entra ID uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 The supported values are password, saml, notSupported, and oidc.
+Note: This field might be null for older SAML apps and for OIDC applications where it isn't set automatically.
 
 ```yaml
 Type: String
@@ -1241,8 +1242,8 @@ This lets services like Microsoft 365 call the application in the context of a d
   - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-    - `[Key <String>]`: Contains the name of the field that a value is associated with.
-    - `[Value <String>]`: Contains the corresponding value for the specified key.
+    - `[Key <String>]`: Key.
+    - `[Value <String>]`: Value.
   - `[Type <String>]`: The unique name for the functionality exposed by the app.
 
 APPMANAGEMENTPOLICIES <IMicrosoftGraphAppManagementPolicy- `[]`>: The appManagementPolicy applied to this service principal.
@@ -1283,9 +1284,9 @@ For existing applications, the enforcement date can be retroactively applied.
 APPROLEASSIGNEDTO <IMicrosoftGraphAppRoleAssignment- `[]`>: App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+  - `[AppRoleId <String>]`: The identifier (id) for the app role that is assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
   - `[CreationTimestamp <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1309,9 +1310,9 @@ APPROLEASSIGNMENTS <IMicrosoftGraphAppRoleAssignment- `[]`>: App role assignment
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+  - `[AppRoleId <String>]`: The identifier (id) for the app role that is assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
   - `[CreationTimestamp <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1373,8 +1374,8 @@ This lets services like Microsoft 365 call the application in the context of a d
     - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-      - `[Key <String>]`: Contains the name of the field that a value is associated with.
-      - `[Value <String>]`: Contains the corresponding value for the specified key.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[Type <String>]`: The unique name for the functionality exposed by the app.
   - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -1423,9 +1424,9 @@ Supports $filter (eq, ne, NOT, ge, le).
   - `[AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment- `[]`>]`: App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+    - `[AppRoleId <String>]`: The identifier (id) for the app role that is assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
     - `[CreationTimestamp <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1764,6 +1765,7 @@ Read-only.
   - `[PreferredSingleSignOnMode <String>]`: Specifies the single sign-on mode configured for this application.
 Microsoft Entra ID uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 The supported values are password, saml, notSupported, and oidc.
+Note: This field might be null for older SAML apps and for OIDC applications where it isn't set automatically.
   - `[PreferredTokenSigningKeyEndDateTime <DateTime?>]`: Specifies the expiration date of the keyCredential used for token signing, marked by preferredTokenSigningKeyThumbprint.
 Updating this attribute isn't currently supported.
 For details, see ServicePrincipal property differences.

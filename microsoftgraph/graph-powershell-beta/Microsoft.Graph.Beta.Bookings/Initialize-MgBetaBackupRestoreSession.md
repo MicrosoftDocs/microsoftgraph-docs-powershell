@@ -9,7 +9,11 @@ ms.subservice: m365-backup-storage
 # Initialize-MgBetaBackupRestoreSession
 
 ## SYNOPSIS
-Activate a draft restoreSessionBase object.
+Activate a draft restoreSessionBase object to restore a protection unit.
+The following points apply to restoring a protection unit:
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Initialize-MgBackupRestoreSession](/powershell/module/Microsoft.Graph.Bookings/Initialize-MgBackupRestoreSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,7 +30,8 @@ Initialize-MgBetaBackupRestoreSession -InputObject <IBookingsIdentity> [-Respons
 ```
 
 ## DESCRIPTION
-Activate a draft restoreSessionBase object.
+Activate a draft restoreSessionBase object to restore a protection unit.
+The following points apply to restoring a protection unit:
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/restoresessionbase-activate-permissions.md)]
@@ -170,6 +175,7 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[ApprovalItemId <String>]`: The unique identifier of approvalItem
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness

@@ -360,9 +360,9 @@ Supports $expand.
 Always null when the object hasn't been deleted.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+        - `[AppRoleId <String>]`: The identifier (id) for the app role that's assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
         - `[CreatedDateTime <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -383,6 +383,7 @@ Required on create.
 Supports $filter (eq only).
       - `[AssignedLabels <IMicrosoftGraphAssignedLabel- `[]`>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
 Returned only on $select.
+This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
         - `[DisplayName <String>]`: The display name of the label.
 Read-only.
         - `[LabelId <String>]`: The unique identifier of the label.
@@ -1042,10 +1043,10 @@ For more information, see Introduction to device management in Microsoft Entra I
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
               - `[Status <String>]`: longRunningOperationStatus
@@ -2326,17 +2327,17 @@ Read-only.
 Read-only.
                             - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                              - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-                              - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-                              - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-                              - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-                              - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-                              - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-                              - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-                              - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-                              - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-                              - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-                              - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+                              - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+                              - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+                              - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+                              - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+                              - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+                              - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+                              - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+                              - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+                              - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+                              - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+                              - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
                             - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                           - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -2731,10 +2732,10 @@ Read-only.
 Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
               - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the list.
                 - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                 - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                 - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
                 - `[Status <String>]`: longRunningOperationStatus
@@ -4023,9 +4024,17 @@ Required when you create an online meeting.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+              - `[CallId <String>]`: The unique identifier for the call that is related to this recording.
+Read-only.
               - `[Content <Byte- `[]`>]`: The content of the recording.
 Read-only.
+              - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
               - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+              - `[EndDateTime <DateTime?>]`: Date and time at which the recording ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -4039,9 +4048,17 @@ Read-only.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+              - `[CallId <String>]`: The unique identifier for the call that is related to this transcript.
+Read-only.
               - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
+              - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
               - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+              - `[EndDateTime <DateTime?>]`: Date and time at which the transcription ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -4617,17 +4634,19 @@ Supports $filter (eq, not, for isResolved and serviceInstance).
 Read-only.
             - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the organization level setting controlling delegate access to the trending API.
 When set to true, the organization doesn't have access to Office Delve.
-The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected for the whole organization.
+The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected for the whole organization.
 This setting is read-only and can only be changed by administrators in the SharePoint admin center.
             - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: When set to true, the delegate access to the user's trending API is disabled.
 When set to true, documents in the user's Office Delve are disabled.
-When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
+When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected.
 Users can control this setting in Office Delve.
             - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[IsEnabled <Boolean?>]`: 
+              - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
+Optional.
             - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -4709,6 +4728,14 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
           - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+          - `[Solutions <IMicrosoftGraphUserSolutionRoot>]`: userSolutionRoot
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[WorkingTimeSchedule <IMicrosoftGraphWorkingTimeSchedule>]`: workingTimeSchedule
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
           - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -4748,7 +4775,7 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
             - `[Region <String>]`: Represents the region of the organization or the user.
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
-The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
           - `[Todo <IMicrosoftGraphTodo>]`: todo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -5252,9 +5279,9 @@ Supports $expand.
 Always null when the object hasn't been deleted.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+        - `[AppRoleId <String>]`: The identifier (id) for the app role that's assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
         - `[CreatedDateTime <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -5275,6 +5302,7 @@ Required on create.
 Supports $filter (eq only).
       - `[AssignedLabels <IMicrosoftGraphAssignedLabel- `[]`>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
 Returned only on $select.
+This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
         - `[DisplayName <String>]`: The display name of the label.
 Read-only.
         - `[LabelId <String>]`: The unique identifier of the label.
@@ -5894,10 +5922,10 @@ For more information, see Introduction to device management in Microsoft Entra I
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
               - `[Status <String>]`: longRunningOperationStatus
@@ -7178,17 +7206,17 @@ Read-only.
 Read-only.
                             - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                              - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-                              - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-                              - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-                              - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-                              - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-                              - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-                              - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-                              - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-                              - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-                              - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-                              - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+                              - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+                              - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+                              - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+                              - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+                              - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+                              - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+                              - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+                              - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+                              - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+                              - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+                              - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
                             - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                           - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -7583,10 +7611,10 @@ Read-only.
 Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
               - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the list.
                 - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                 - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                 - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
                 - `[Status <String>]`: longRunningOperationStatus
@@ -8875,9 +8903,17 @@ Required when you create an online meeting.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+              - `[CallId <String>]`: The unique identifier for the call that is related to this recording.
+Read-only.
               - `[Content <Byte- `[]`>]`: The content of the recording.
 Read-only.
+              - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
               - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+              - `[EndDateTime <DateTime?>]`: Date and time at which the recording ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -8891,9 +8927,17 @@ Read-only.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+              - `[CallId <String>]`: The unique identifier for the call that is related to this transcript.
+Read-only.
               - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
+              - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
               - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+              - `[EndDateTime <DateTime?>]`: Date and time at which the transcription ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -9469,17 +9513,19 @@ Supports $filter (eq, not, for isResolved and serviceInstance).
 Read-only.
             - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the organization level setting controlling delegate access to the trending API.
 When set to true, the organization doesn't have access to Office Delve.
-The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected for the whole organization.
+The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected for the whole organization.
 This setting is read-only and can only be changed by administrators in the SharePoint admin center.
             - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: When set to true, the delegate access to the user's trending API is disabled.
 When set to true, documents in the user's Office Delve are disabled.
-When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
+When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected.
 Users can control this setting in Office Delve.
             - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[IsEnabled <Boolean?>]`: 
+              - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
+Optional.
             - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -9561,6 +9607,14 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
           - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+          - `[Solutions <IMicrosoftGraphUserSolutionRoot>]`: userSolutionRoot
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[WorkingTimeSchedule <IMicrosoftGraphWorkingTimeSchedule>]`: workingTimeSchedule
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
           - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -9600,7 +9654,7 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
             - `[Region <String>]`: Represents the region of the organization or the user.
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
-The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
           - `[Todo <IMicrosoftGraphTodo>]`: todo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -10083,9 +10137,9 @@ Supports $expand.
 Always null when the object hasn't been deleted.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+        - `[AppRoleId <String>]`: The identifier (id) for the app role that's assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
         - `[CreatedDateTime <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -10106,6 +10160,7 @@ Required on create.
 Supports $filter (eq only).
       - `[AssignedLabels <IMicrosoftGraphAssignedLabel- `[]`>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
 Returned only on $select.
+This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
         - `[DisplayName <String>]`: The display name of the label.
 Read-only.
         - `[LabelId <String>]`: The unique identifier of the label.
@@ -10734,10 +10789,10 @@ For more information, see Introduction to device management in Microsoft Entra I
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
               - `[Status <String>]`: longRunningOperationStatus
@@ -12018,17 +12073,17 @@ Read-only.
 Read-only.
                             - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                              - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-                              - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-                              - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-                              - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-                              - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-                              - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-                              - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-                              - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-                              - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-                              - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-                              - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+                              - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+                              - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+                              - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+                              - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+                              - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+                              - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+                              - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+                              - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+                              - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+                              - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+                              - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
                             - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                           - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -12423,10 +12478,10 @@ Read-only.
 Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
               - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the list.
                 - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                 - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                 - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
                 - `[Status <String>]`: longRunningOperationStatus
@@ -13715,9 +13770,17 @@ Required when you create an online meeting.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+              - `[CallId <String>]`: The unique identifier for the call that is related to this recording.
+Read-only.
               - `[Content <Byte- `[]`>]`: The content of the recording.
 Read-only.
+              - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
               - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+              - `[EndDateTime <DateTime?>]`: Date and time at which the recording ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -13731,9 +13794,17 @@ Read-only.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+              - `[CallId <String>]`: The unique identifier for the call that is related to this transcript.
+Read-only.
               - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
+              - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
               - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+              - `[EndDateTime <DateTime?>]`: Date and time at which the transcription ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -14309,17 +14380,19 @@ Supports $filter (eq, not, for isResolved and serviceInstance).
 Read-only.
             - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the organization level setting controlling delegate access to the trending API.
 When set to true, the organization doesn't have access to Office Delve.
-The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected for the whole organization.
+The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected for the whole organization.
 This setting is read-only and can only be changed by administrators in the SharePoint admin center.
             - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: When set to true, the delegate access to the user's trending API is disabled.
 When set to true, documents in the user's Office Delve are disabled.
-When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
+When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected.
 Users can control this setting in Office Delve.
             - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[IsEnabled <Boolean?>]`: 
+              - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
+Optional.
             - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -14401,6 +14474,14 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
           - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+          - `[Solutions <IMicrosoftGraphUserSolutionRoot>]`: userSolutionRoot
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[WorkingTimeSchedule <IMicrosoftGraphWorkingTimeSchedule>]`: workingTimeSchedule
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
           - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -14440,7 +14521,7 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
             - `[Region <String>]`: Represents the region of the organization or the user.
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
-The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
           - `[Todo <IMicrosoftGraphTodo>]`: todo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -14901,9 +14982,9 @@ Supports $expand.
 Always null when the object hasn't been deleted.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+          - `[AppRoleId <String>]`: The identifier (id) for the app role that's assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
           - `[CreatedDateTime <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -14924,6 +15005,7 @@ Required on create.
 Supports $filter (eq only).
         - `[AssignedLabels <IMicrosoftGraphAssignedLabel- `[]`>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
 Returned only on $select.
+This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
           - `[DisplayName <String>]`: The display name of the label.
 Read-only.
           - `[LabelId <String>]`: The unique identifier of the label.
@@ -15578,10 +15660,10 @@ For more information, see Introduction to device management in Microsoft Entra I
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                 - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                 - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                 - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
                 - `[Status <String>]`: longRunningOperationStatus
@@ -16862,17 +16944,17 @@ Read-only.
 Read-only.
                               - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                                - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-                                - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-                                - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-                                - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-                                - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-                                - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-                                - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-                                - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-                                - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-                                - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-                                - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+                                - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+                                - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+                                - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+                                - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+                                - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+                                - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+                                - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+                                - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+                                - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+                                - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+                                - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
                               - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                             - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -17267,10 +17349,10 @@ Read-only.
 Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
                 - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the list.
                   - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                   - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
                   - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
                   - `[Status <String>]`: longRunningOperationStatus
@@ -18559,9 +18641,17 @@ Required when you create an online meeting.
 Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+                - `[CallId <String>]`: The unique identifier for the call that is related to this recording.
+Read-only.
                 - `[Content <Byte- `[]`>]`: The content of the recording.
 Read-only.
+                - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
                 - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+                - `[EndDateTime <DateTime?>]`: Date and time at which the recording ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -18575,9 +18665,17 @@ Read-only.
 Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+                - `[CallId <String>]`: The unique identifier for the call that is related to this transcript.
+Read-only.
                 - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
+                - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
                 - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+                - `[EndDateTime <DateTime?>]`: Date and time at which the transcription ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -19153,17 +19251,19 @@ Supports $filter (eq, not, for isResolved and serviceInstance).
 Read-only.
               - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the organization level setting controlling delegate access to the trending API.
 When set to true, the organization doesn't have access to Office Delve.
-The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected for the whole organization.
+The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected for the whole organization.
 This setting is read-only and can only be changed by administrators in the SharePoint admin center.
               - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: When set to true, the delegate access to the user's trending API is disabled.
 When set to true, documents in the user's Office Delve are disabled.
-When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
+When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected.
 Users can control this setting in Office Delve.
               - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                - `[IsEnabled <Boolean?>]`: 
+                - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
+Optional.
               - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -19245,6 +19345,14 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
             - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+            - `[Solutions <IMicrosoftGraphUserSolutionRoot>]`: userSolutionRoot
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[WorkingTimeSchedule <IMicrosoftGraphWorkingTimeSchedule>]`: workingTimeSchedule
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
             - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -19284,7 +19392,7 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
               - `[Region <String>]`: Represents the region of the organization or the user.
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
-The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
             - `[Todo <IMicrosoftGraphTodo>]`: todo
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique identifier for an entity.
@@ -19834,9 +19942,9 @@ Supports $expand.
 Always null when the object hasn't been deleted.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+      - `[AppRoleId <String>]`: The identifier (id) for the app role that's assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
       - `[CreatedDateTime <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -19857,6 +19965,7 @@ Required on create.
 Supports $filter (eq only).
     - `[AssignedLabels <IMicrosoftGraphAssignedLabel- `[]`>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
 Returned only on $select.
+This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
       - `[DisplayName <String>]`: The display name of the label.
 Read-only.
       - `[LabelId <String>]`: The unique identifier of the label.
@@ -20516,10 +20625,10 @@ For more information, see Introduction to device management in Microsoft Entra I
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
             - `[Status <String>]`: longRunningOperationStatus
@@ -21800,17 +21909,17 @@ Read-only.
 Read-only.
                           - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                            - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-                            - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-                            - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-                            - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-                            - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-                            - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-                            - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-                            - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-                            - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-                            - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-                            - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+                            - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+                            - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+                            - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+                            - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+                            - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+                            - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+                            - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+                            - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+                            - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+                            - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+                            - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
                           - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                         - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -22205,10 +22314,10 @@ Read-only.
 Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
             - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the list.
               - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
               - `[Status <String>]`: longRunningOperationStatus
@@ -23497,9 +23606,17 @@ Required when you create an online meeting.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+            - `[CallId <String>]`: The unique identifier for the call that is related to this recording.
+Read-only.
             - `[Content <Byte- `[]`>]`: The content of the recording.
 Read-only.
+            - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
             - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+            - `[EndDateTime <DateTime?>]`: Date and time at which the recording ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -23513,9 +23630,17 @@ Read-only.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+            - `[CallId <String>]`: The unique identifier for the call that is related to this transcript.
+Read-only.
             - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
+            - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
             - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+            - `[EndDateTime <DateTime?>]`: Date and time at which the transcription ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -24091,17 +24216,19 @@ Supports $filter (eq, not, for isResolved and serviceInstance).
 Read-only.
           - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the organization level setting controlling delegate access to the trending API.
 When set to true, the organization doesn't have access to Office Delve.
-The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected for the whole organization.
+The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected for the whole organization.
 This setting is read-only and can only be changed by administrators in the SharePoint admin center.
           - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: When set to true, the delegate access to the user's trending API is disabled.
 When set to true, documents in the user's Office Delve are disabled.
-When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
+When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected.
 Users can control this setting in Office Delve.
           - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[IsEnabled <Boolean?>]`: 
+            - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
+Optional.
           - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -24183,6 +24310,14 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
         - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+        - `[Solutions <IMicrosoftGraphUserSolutionRoot>]`: userSolutionRoot
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[WorkingTimeSchedule <IMicrosoftGraphWorkingTimeSchedule>]`: workingTimeSchedule
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
         - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -24222,7 +24357,7 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
           - `[Region <String>]`: Represents the region of the organization or the user.
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
-The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
         - `[Todo <IMicrosoftGraphTodo>]`: todo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -24697,9 +24832,9 @@ Supports $expand.
 Always null when the object hasn't been deleted.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+      - `[AppRoleId <String>]`: The identifier (id) for the app role that's assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
       - `[CreatedDateTime <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -24720,6 +24855,7 @@ Required on create.
 Supports $filter (eq only).
     - `[AssignedLabels <IMicrosoftGraphAssignedLabel- `[]`>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
 Returned only on $select.
+This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
       - `[DisplayName <String>]`: The display name of the label.
 Read-only.
       - `[LabelId <String>]`: The unique identifier of the label.
@@ -25339,10 +25475,10 @@ For more information, see Introduction to device management in Microsoft Entra I
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
             - `[Status <String>]`: longRunningOperationStatus
@@ -26623,17 +26759,17 @@ Read-only.
 Read-only.
                           - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                            - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-                            - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-                            - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-                            - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-                            - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-                            - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-                            - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-                            - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-                            - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-                            - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-                            - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+                            - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+                            - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+                            - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+                            - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+                            - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+                            - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+                            - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+                            - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+                            - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+                            - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+                            - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
                           - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                         - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -27028,10 +27164,10 @@ Read-only.
 Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
             - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the list.
               - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
               - `[Status <String>]`: longRunningOperationStatus
@@ -28320,9 +28456,17 @@ Required when you create an online meeting.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+            - `[CallId <String>]`: The unique identifier for the call that is related to this recording.
+Read-only.
             - `[Content <Byte- `[]`>]`: The content of the recording.
 Read-only.
+            - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
             - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+            - `[EndDateTime <DateTime?>]`: Date and time at which the recording ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -28336,9 +28480,17 @@ Read-only.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+            - `[CallId <String>]`: The unique identifier for the call that is related to this transcript.
+Read-only.
             - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
+            - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
             - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+            - `[EndDateTime <DateTime?>]`: Date and time at which the transcription ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -28914,17 +29066,19 @@ Supports $filter (eq, not, for isResolved and serviceInstance).
 Read-only.
           - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the organization level setting controlling delegate access to the trending API.
 When set to true, the organization doesn't have access to Office Delve.
-The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected for the whole organization.
+The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected for the whole organization.
 This setting is read-only and can only be changed by administrators in the SharePoint admin center.
           - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: When set to true, the delegate access to the user's trending API is disabled.
 When set to true, documents in the user's Office Delve are disabled.
-When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
+When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected.
 Users can control this setting in Office Delve.
           - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[IsEnabled <Boolean?>]`: 
+            - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
+Optional.
           - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -29006,6 +29160,14 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
         - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+        - `[Solutions <IMicrosoftGraphUserSolutionRoot>]`: userSolutionRoot
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[WorkingTimeSchedule <IMicrosoftGraphWorkingTimeSchedule>]`: workingTimeSchedule
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
         - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -29045,7 +29207,7 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
           - `[Region <String>]`: Represents the region of the organization or the user.
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
-The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
         - `[Todo <IMicrosoftGraphTodo>]`: todo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -29527,9 +29689,9 @@ Supports $expand.
 Always null when the object hasn't been deleted.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+      - `[AppRoleId <String>]`: The identifier (id) for the app role that's assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
       - `[CreatedDateTime <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -29550,6 +29712,7 @@ Required on create.
 Supports $filter (eq only).
     - `[AssignedLabels <IMicrosoftGraphAssignedLabel- `[]`>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
 Returned only on $select.
+This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
       - `[DisplayName <String>]`: The display name of the label.
 Read-only.
       - `[LabelId <String>]`: The unique identifier of the label.
@@ -30178,10 +30341,10 @@ For more information, see Introduction to device management in Microsoft Entra I
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
             - `[Status <String>]`: longRunningOperationStatus
@@ -31462,17 +31625,17 @@ Read-only.
 Read-only.
                           - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                            - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
-                            - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
-                            - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
-                            - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
-                            - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
-                            - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
-                            - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
-                            - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
-                            - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
-                            - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
-                            - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
+                            - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
+                            - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
+                            - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
+                            - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
+                            - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
+                            - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
+                            - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
+                            - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
+                            - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
+                            - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
+                            - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
                           - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                         - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -31867,10 +32030,10 @@ Read-only.
 Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
             - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the list.
               - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
               - `[Status <String>]`: longRunningOperationStatus
@@ -33159,9 +33322,17 @@ Required when you create an online meeting.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+            - `[CallId <String>]`: The unique identifier for the call that is related to this recording.
+Read-only.
             - `[Content <Byte- `[]`>]`: The content of the recording.
 Read-only.
+            - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
             - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+            - `[EndDateTime <DateTime?>]`: Date and time at which the recording ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -33175,9 +33346,17 @@ Read-only.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+            - `[CallId <String>]`: The unique identifier for the call that is related to this transcript.
+Read-only.
             - `[Content <Byte- `[]`>]`: The content of the transcript.
 Read-only.
+            - `[ContentCorrelationId <String>]`: The unique identifier that links the transcript with its corresponding recording.
+Read-only.
             - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+            - `[EndDateTime <DateTime?>]`: Date and time at which the transcription ends.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -33753,17 +33932,19 @@ Supports $filter (eq, not, for isResolved and serviceInstance).
 Read-only.
           - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the organization level setting controlling delegate access to the trending API.
 When set to true, the organization doesn't have access to Office Delve.
-The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected for the whole organization.
+The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected for the whole organization.
 This setting is read-only and can only be changed by administrators in the SharePoint admin center.
           - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: When set to true, the delegate access to the user's trending API is disabled.
 When set to true, documents in the user's Office Delve are disabled.
-When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
+When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected.
 Users can control this setting in Office Delve.
           - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[IsEnabled <Boolean?>]`: 
+            - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
+Optional.
           - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -33845,6 +34026,14 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
         - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+        - `[Solutions <IMicrosoftGraphUserSolutionRoot>]`: userSolutionRoot
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[WorkingTimeSchedule <IMicrosoftGraphWorkingTimeSchedule>]`: workingTimeSchedule
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
         - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -33884,7 +34073,7 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
           - `[Region <String>]`: Represents the region of the organization or the user.
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
-The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
         - `[Todo <IMicrosoftGraphTodo>]`: todo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
