@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthority
 schema: 2.0.0
+ms.subservice: entra-sign-in
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority
@@ -39,6 +41,12 @@ Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationT
 
 ## DESCRIPTION
 Read the properties and relationships of a certificateAuthorityAsEntity object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificateauthorityasentity-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization
 schema: 2.0.0
+ms.subservice: entra-directory-management
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgOrganization
@@ -35,6 +37,12 @@ Get-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandP
 
 ## DESCRIPTION
 Read properties and relationships of the organization object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organization-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organization-list-permissions.md)]
 
 ## EXAMPLES
 

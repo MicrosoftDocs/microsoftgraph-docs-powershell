@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleeligibilityschedulerequest
 schema: 2.0.0
+ms.subservice: entra-id-governance
+ms.subservice: entra-id-governance
 ---
 
 # Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest
@@ -37,6 +39,12 @@ Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest -InputObject <II
 
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRoleEligibilityScheduleRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleeligibilityschedulerequest-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleeligibilityschedulerequests-permissions.md)]
 
 ## EXAMPLES
 
