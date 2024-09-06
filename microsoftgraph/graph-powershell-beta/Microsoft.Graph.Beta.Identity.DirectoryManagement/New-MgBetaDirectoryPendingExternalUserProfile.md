@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypendingexternaluserprofile
 schema: 2.0.0
-ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaDirectoryPendingExternalUserProfile
@@ -31,6 +30,20 @@ New-MgBetaDirectoryPendingExternalUserProfile -BodyParameter <Hashtable> [-Respo
 
 ## DESCRIPTION
 Create a new pendingExternalUserProfile object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
+
+$params = @{
+	phoneNumber = "+15555555555"
+	displayName = "Bob Henry"
+}
+
+New-MgBetaDirectoryPendingExternalUserProfile -BodyParameter $params
 
 ## PARAMETERS
 
@@ -363,23 +376,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalOfficeAddress>`: physicalOfficeAddress
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[City <String>]`: The city.
-  - `[CountryOrRegion <String>]`: The country or region.
+ADDRESS \<IMicrosoftGraphPhysicalOfficeAddress\>: physicalOfficeAddress
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[City \<String\>\]: The city.
+  \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-  - `[OfficeLocation <String>]`: Office location such as building and office number for an organizational contact.
-  - `[PostalCode <String>]`: The postal code.
-  - `[State <String>]`: The state.
-  - `[Street <String>]`: The street.
+  \[OfficeLocation \<String\>\]: Office location such as building and office number for an organizational contact.
+  \[PostalCode \<String\>\]: The postal code.
+  \[State \<String\>\]: The state.
+  \[Street \<String\>\]: The street.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypendingexternaluserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypendingexternaluserprofile)
 
 [https://learn.microsoft.com/graph/api/directory-post-pendingexternaluserprofile?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-post-pendingexternaluserprofile?view=graph-rest-beta)
-
-
-
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleiteminsight
 schema: 2.0.0
-ms.subservice: insights
 ---
 
 # Get-MgBetaAdminPeopleItemInsight
@@ -11,9 +10,6 @@ ms.subservice: insights
 ## SYNOPSIS
 Get the properties of an insightsSettings object for displaying or returning item insights in an organization.
 To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy in Microsoft Graph.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAdminPeopleItemInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdminPeopleItemInsight?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,8 +23,14 @@ Get-MgBetaAdminPeopleItemInsight [-ExpandProperty <String[]>] [-Property <String
 Get the properties of an insightsSettings object for displaying or returning item insights in an organization.
 To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy in Microsoft Graph.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-list-iteminsights-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
+
+Get-MgBetaAdminPeopleItemInsight
 
 ## PARAMETERS
 
@@ -123,8 +125,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleiteminsight)
 
 [https://learn.microsoft.com/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta](https://learn.microsoft.com/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta)
-
-
-
-
 
