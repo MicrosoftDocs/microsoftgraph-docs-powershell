@@ -56,22 +56,6 @@ If the specified timeOffReason doesn't exist, this method returns 404 Not found.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timeoffreason-put-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -451,6 +435,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoffreason)
 
 [https://learn.microsoft.com/graph/api/timeoffreason-put?view=graph-rest-beta](https://learn.microsoft.com/graph/api/timeoffreason-put?view=graph-rest-beta)
+
 
 
 

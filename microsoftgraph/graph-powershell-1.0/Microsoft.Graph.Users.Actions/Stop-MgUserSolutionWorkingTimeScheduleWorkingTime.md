@@ -32,18 +32,6 @@ Stop-MgUserSolutionWorkingTimeScheduleWorkingTime -InputObject <IUsersActionsIde
 ## DESCRIPTION
 Triggers the policies associated with the end of working hours for user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -219,6 +207,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/stop-mgusersolutionworkingtimescheduleworkingtime](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/stop-mgusersolutionworkingtimescheduleworkingtime)
+
 
 
 
