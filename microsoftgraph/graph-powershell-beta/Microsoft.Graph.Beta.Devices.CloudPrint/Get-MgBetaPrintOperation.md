@@ -11,6 +11,9 @@ ms.subservice: universal-print
 ## SYNOPSIS
 Retrieve the properties and relationships of a printOperation object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintOperation](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

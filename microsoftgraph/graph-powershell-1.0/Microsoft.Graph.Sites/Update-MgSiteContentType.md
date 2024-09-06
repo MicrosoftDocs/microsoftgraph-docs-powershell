@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Update a content type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

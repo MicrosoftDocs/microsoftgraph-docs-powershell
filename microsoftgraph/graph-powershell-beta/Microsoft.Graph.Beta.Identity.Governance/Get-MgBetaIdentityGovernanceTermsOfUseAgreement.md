@@ -13,6 +13,9 @@ ms.subservice: entra-id-governance
 Retrieve all files related to an agreement.
 This includes the default file and all localized files.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

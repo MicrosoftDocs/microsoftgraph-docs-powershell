@@ -11,6 +11,9 @@ ms.subservice: universal-print
 ## SYNOPSIS
 Create a new printJob for a printer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrintPrinterJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

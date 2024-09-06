@@ -12,6 +12,9 @@ ms.subservice: entra-directory-management
 Create a new custom unifiedRoleDefinition object.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
