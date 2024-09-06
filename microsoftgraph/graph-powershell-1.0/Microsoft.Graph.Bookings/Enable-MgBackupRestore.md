@@ -43,18 +43,6 @@ If you call this API before the data store is initialized, the call results in a
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-enable-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -204,6 +192,7 @@ BODYPARAMETER `<IPathsI0X7PjSolutionsBackuprestoreMicrosoftGraphEnablePostReques
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/enable-mgbackuprestore](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/enable-mgbackuprestore)
 
 [https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-1.0)
+
 
 
 

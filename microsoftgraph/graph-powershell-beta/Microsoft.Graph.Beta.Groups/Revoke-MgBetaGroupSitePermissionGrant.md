@@ -50,18 +50,6 @@ Revoke access to a listItem or driveItem granted via a sharing link by removing 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-revokegrants-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -333,6 +321,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/revoke-mgbetagroupsitepermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/revoke-mgbetagroupsitepermissiongrant)
 
 [https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
+
 
 
 

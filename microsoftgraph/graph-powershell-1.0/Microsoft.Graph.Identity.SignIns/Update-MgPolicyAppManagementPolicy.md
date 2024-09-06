@@ -55,17 +55,21 @@ Update an appManagementPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	isEnabled = $false
 }
 
 Update-MgPolicyAppManagementPolicy -AppManagementPolicyId $appManagementPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyAppManagementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

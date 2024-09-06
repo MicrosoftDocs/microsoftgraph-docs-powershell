@@ -48,13 +48,17 @@ The following RBAC providers are currently supported:- Cloud PC - device managem
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roledefinitions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the definition of a built-in role for a Cloud PC provider
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
-```
 
 Get-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example will get the definition of a built-in role for a cloud pc provider
+
 
 ## PARAMETERS
 

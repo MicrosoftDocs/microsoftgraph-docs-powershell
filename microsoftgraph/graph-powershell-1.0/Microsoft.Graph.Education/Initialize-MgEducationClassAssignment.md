@@ -38,13 +38,17 @@ This action can only be performed by a teacher on currently inactive assignments
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-activate-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Initialize-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+
+```
+This example shows how to use the Initialize-MgEducationClassAssignment Cmdlet.
+
 
 ## PARAMETERS
 

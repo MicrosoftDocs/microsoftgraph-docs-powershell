@@ -50,18 +50,6 @@ New-MgBetaEducationClassAssignmentCategoryByRef -InputObject <IEducationIdentity
 Add one or more existing educationCategory objects to this educationAssignment.
 Only teachers and students can perform this operation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -295,6 +283,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentcategorybyref)
 
 [https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-beta)
+
 
 
 

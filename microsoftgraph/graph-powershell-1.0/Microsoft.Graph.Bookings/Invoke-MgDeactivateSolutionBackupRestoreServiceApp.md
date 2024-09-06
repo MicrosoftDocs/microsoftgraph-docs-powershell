@@ -35,18 +35,6 @@ Deactivate a serviceApp.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceapp-deactivate-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -201,6 +189,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/invoke-mgdeactivatesolutionbackuprestoreserviceapp](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/invoke-mgdeactivatesolutionbackuprestoreserviceapp)
 
 [https://learn.microsoft.com/graph/api/serviceapp-deactivate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceapp-deactivate?view=graph-rest-1.0)
+
 
 
 

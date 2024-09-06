@@ -49,18 +49,6 @@ New-MgUserDriveItemUploadSession -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action createUploadSession
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -347,6 +335,7 @@ Read-write.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mguserdriveitemuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mguserdriveitemuploadsession)
+
 
 
 

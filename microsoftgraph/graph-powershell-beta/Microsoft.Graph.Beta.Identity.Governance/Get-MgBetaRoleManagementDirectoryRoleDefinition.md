@@ -51,20 +51,28 @@ The following RBAC providers are currently supported:- Cloud PC - device managem
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roledefinitions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the definition of a custom role for a directory provider
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
 
-### EXAMPLE 2
 ```
+This example will get the definition of a custom role for a directory provider
+
+### Example 2: Get the definition of a built-in role for a directory provider
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example will get the definition of a built-in role for a directory provider
+
 
 ## PARAMETERS
 

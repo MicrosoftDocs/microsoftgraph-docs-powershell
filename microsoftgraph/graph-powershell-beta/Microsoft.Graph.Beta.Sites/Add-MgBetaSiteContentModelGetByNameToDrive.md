@@ -51,18 +51,6 @@ For an existing model that's already trained, this action automatically processe
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentmodel-addtodrive-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -315,6 +303,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontentmodelgetbynametodrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontentmodelgetbynametodrive)
 
 [https://learn.microsoft.com/graph/api/contentmodel-addtodrive?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contentmodel-addtodrive?view=graph-rest-beta)
+
 
 
 

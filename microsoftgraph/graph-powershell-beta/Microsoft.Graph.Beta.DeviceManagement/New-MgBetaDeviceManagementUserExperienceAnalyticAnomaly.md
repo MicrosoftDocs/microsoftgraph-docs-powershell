@@ -34,18 +34,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsAnomaly for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -411,6 +399,7 @@ Eg: anomaly severity can be new, active, disabled, removed or other.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomaly](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomaly)
+
 
 
 

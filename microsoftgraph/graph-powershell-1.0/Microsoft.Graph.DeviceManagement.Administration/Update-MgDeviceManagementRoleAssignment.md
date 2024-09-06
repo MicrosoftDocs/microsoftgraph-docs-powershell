@@ -52,11 +52,11 @@ Update-MgDeviceManagementRoleAssignment -InputObject <IDeviceManagementAdministr
 Update the properties of a deviceAndAppManagementRoleAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceAndAppManagementRoleAssignment"
@@ -71,6 +71,10 @@ members = @(
 }
 
 Update-MgDeviceManagementRoleAssignment -DeviceAndAppManagementRoleAssignmentId $deviceAndAppManagementRoleAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 

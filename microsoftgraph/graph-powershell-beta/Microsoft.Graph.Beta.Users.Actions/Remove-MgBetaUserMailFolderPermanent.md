@@ -35,18 +35,6 @@ For more information about item retention, see Configure Deleted Item retention 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-permanentdelete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -253,6 +241,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausermailfolderpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausermailfolderpermanent)
 
 [https://learn.microsoft.com/graph/api/mailfolder-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/mailfolder-permanentdelete?view=graph-rest-beta)
+
 
 
 

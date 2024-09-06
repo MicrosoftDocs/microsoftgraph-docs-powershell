@@ -54,18 +54,6 @@ If the specified schedulingGroup doesn't exist, this method returns 404 Not foun
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedulinggroup-put-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -372,6 +360,7 @@ For example, in the access reviews decisions API, this property might record the
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleschedulinggroup)
 
 [https://learn.microsoft.com/graph/api/schedulinggroup-put?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedulinggroup-put?view=graph-rest-1.0)
+
 
 
 

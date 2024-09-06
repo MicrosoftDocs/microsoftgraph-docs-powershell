@@ -52,11 +52,11 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
 Use reply thread or reply post to further post to that conversation.
 
 ## EXAMPLES
+### Example 1: Create an extension in a new group post using POST operation
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	Topic = "Does anyone have a second?"
@@ -88,6 +88,10 @@ $params = @{
 }
 
 New-MgGroupConversation -GroupId $groupId -BodyParameter $params
+
+```
+This example will create an extension in a new group post using post operation
+
 
 ## PARAMETERS
 
