@@ -9,7 +9,7 @@ ms.subservice: intune
 # New-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Create a new androidWorkProfileCustomConfiguration object.
+Create a new androidGeneralDeviceConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceC
 ```
 
 ## DESCRIPTION
-Create a new androidWorkProfileCustomConfiguration object.
+Create a new androidGeneralDeviceConfiguration object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -47,99 +47,50 @@ Create a new androidWorkProfileCustomConfiguration object.
 Import-Module Microsoft.Graph.DeviceManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windows10EndpointProtectionConfiguration"
+	"@odata.type" = "#microsoft.graph.windowsUpdateForBusinessConfiguration"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
-	firewallBlockStatefulFTP = $true
-	firewallIdleTimeoutForSecurityAssociationInSeconds = 
-	firewallPreSharedKeyEncodingMethod = "none"
-	firewallIPSecExemptionsAllowNeighborDiscovery = $true
-	firewallIPSecExemptionsAllowICMP = $true
-	firewallIPSecExemptionsAllowRouterDiscovery = $true
-	firewallIPSecExemptionsAllowDHCP = $true
-	firewallCertificateRevocationListCheckMethod = "none"
-	firewallMergeKeyingModuleSettings = $true
-	firewallPacketQueueingMethod = "disabled"
-	firewallProfileDomain = @{
-		"@odata.type" = "microsoft.graph.windowsFirewallNetworkProfile"
-		firewallEnabled = "blocked"
-		stealthModeBlocked = $true
-		incomingTrafficBlocked = $true
-		unicastResponsesToMulticastBroadcastsBlocked = $true
-		inboundNotificationsBlocked = $true
-		authorizedApplicationRulesFromGroupPolicyMerged = $true
-		globalPortRulesFromGroupPolicyMerged = $true
-		connectionSecurityRulesFromGroupPolicyMerged = $true
-		outboundConnectionsBlocked = $true
-		inboundConnectionsBlocked = $true
-		securedPacketExemptionAllowed = $true
-		policyRulesFromGroupPolicyMerged = $true
+	deliveryOptimizationMode = "httpOnly"
+	prereleaseFeatures = "settingsOnly"
+	automaticUpdateMode = "notifyDownload"
+	microsoftUpdateServiceAllowed = $true
+	driversExcluded = $true
+	installationSchedule = @{
+		"@odata.type" = "microsoft.graph.windowsUpdateScheduledInstall"
+		scheduledInstallDay = "everyday"
+		scheduledInstallTime = "11:59:31.3170000"
 	}
-	firewallProfilePublic = @{
-		"@odata.type" = "microsoft.graph.windowsFirewallNetworkProfile"
-		firewallEnabled = "blocked"
-		stealthModeBlocked = $true
-		incomingTrafficBlocked = $true
-		unicastResponsesToMulticastBroadcastsBlocked = $true
-		inboundNotificationsBlocked = $true
-		authorizedApplicationRulesFromGroupPolicyMerged = $true
-		globalPortRulesFromGroupPolicyMerged = $true
-		connectionSecurityRulesFromGroupPolicyMerged = $true
-		outboundConnectionsBlocked = $true
-		inboundConnectionsBlocked = $true
-		securedPacketExemptionAllowed = $true
-		policyRulesFromGroupPolicyMerged = $true
-	}
-	firewallProfilePrivate = @{
-		"@odata.type" = "microsoft.graph.windowsFirewallNetworkProfile"
-		firewallEnabled = "blocked"
-		stealthModeBlocked = $true
-		incomingTrafficBlocked = $true
-		unicastResponsesToMulticastBroadcastsBlocked = $true
-		inboundNotificationsBlocked = $true
-		authorizedApplicationRulesFromGroupPolicyMerged = $true
-		globalPortRulesFromGroupPolicyMerged = $true
-		connectionSecurityRulesFromGroupPolicyMerged = $true
-		outboundConnectionsBlocked = $true
-		inboundConnectionsBlocked = $true
-		securedPacketExemptionAllowed = $true
-		policyRulesFromGroupPolicyMerged = $true
-	}
-	defenderAttackSurfaceReductionExcludedPaths = @(
-	"Defender Attack Surface Reduction Excluded Paths value"
-)
-defenderGuardedFoldersAllowedAppPaths = @(
-"Defender Guarded Folders Allowed App Paths value"
-)
-defenderAdditionalGuardedFolders = @(
-"Defender Additional Guarded Folders value"
-)
-defenderExploitProtectionXml = "ZGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA=="
-defenderExploitProtectionXmlFileName = "Defender Exploit Protection Xml File Name value"
-defenderSecurityCenterBlockExploitProtectionOverride = $true
-appLockerApplicationControl = "enforceComponentsAndStoreApps"
-smartScreenEnableInShell = $true
-smartScreenBlockOverrideForFiles = $true
-applicationGuardEnabled = $true
-applicationGuardBlockFileTransfer = "blockImageAndTextFile"
-applicationGuardBlockNonEnterpriseContent = $true
-applicationGuardAllowPersistence = $true
-applicationGuardForceAuditing = $true
-applicationGuardBlockClipboardSharing = "blockBoth"
-applicationGuardAllowPrintToPDF = $true
-applicationGuardAllowPrintToXPS = $true
-applicationGuardAllowPrintToLocalPrinters = $true
-applicationGuardAllowPrintToNetworkPrinters = $true
-bitLockerDisableWarningForOtherDiskEncryption = $true
-bitLockerEnableStorageCardEncryptionOnMobile = $true
-bitLockerEncryptDevice = $true
-bitLockerRemovableDrivePolicy = @{
-"@odata.type" = "microsoft.graph.bitLockerRemovableDrivePolicy"
-encryptionMethod = "aesCbc256"
-requireEncryptionForWriteAccess = $true
-blockCrossOrganizationWriteAccess = $true
-}
+	qualityUpdatesDeferralPeriodInDays = 
+	featureUpdatesDeferralPeriodInDays = 
+	qualityUpdatesPaused = $true
+	featureUpdatesPaused = $true
+	qualityUpdatesPauseExpiryDateTime = "2017-01-01T00:00:22.9594683-08:00"
+	featureUpdatesPauseExpiryDateTime = "2016-12-31T23:58:08.068669-08:00"
+	businessReadyUpdatesOnly = "all"
+	skipChecksBeforeRestart = $true
+	updateWeeks = "firstWeek"
+	qualityUpdatesPauseStartDate = "2016-12-31"
+	featureUpdatesPauseStartDate = "2016-12-31"
+	featureUpdatesRollbackWindowInDays = 
+	qualityUpdatesWillBeRolledBack = $true
+	featureUpdatesWillBeRolledBack = $true
+	qualityUpdatesRollbackStartDateTime = "2016-12-31T23:57:01.05526-08:00"
+	featureUpdatesRollbackStartDateTime = "2017-01-01T00:03:21.6080517-08:00"
+	engagedRestartDeadlineInDays = 
+	engagedRestartSnoozeScheduleInDays = 
+	engagedRestartTransitionScheduleInDays = 
+	deadlineForFeatureUpdatesInDays = 
+	deadlineForQualityUpdatesInDays = 
+	deadlineGracePeriodInDays = 
+	postponeRebootUntilAfterDeadline = $true
+	autoRestartNotificationDismissal = "automatic"
+	scheduleRestartWarningInHours = 
+	scheduleImminentRestartWarningInMinutes = 
+	userPauseAccess = "enabled"
+	userWindowsUpdateScanAccess = "enabled"
+	updateNotificationLevel = "defaultNotifications"
+	allowWindows11Upgrade = $true
 }
 
 New-MgDeviceManagementDeviceConfiguration -BodyParameter $params
@@ -594,7 +545,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-androidworkprofilecustomconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-androidworkprofilecustomconfiguration-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-androidgeneraldeviceconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-androidgeneraldeviceconfiguration-create?view=graph-rest-1.0)
 
 
 

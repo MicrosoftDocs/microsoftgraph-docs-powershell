@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowBreakoutRooms
-.
+Indicates whether breakout rooms are enabled for the meeting.
 
 ```yaml
 Type: SwitchParameter
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowPowerPointSharing
-.
+Indicates whether PowerPoint live is enabled for the meeting.
 
 ```yaml
 Type: SwitchParameter
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowWhiteboard
-.
+Indicates whether whiteboard is enabled for the meeting.
 
 ```yaml
 Type: SwitchParameter
@@ -773,9 +773,10 @@ Read-only.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
@@ -802,15 +803,15 @@ BODYPARAMETER `<IMicrosoftGraphVirtualEventSession>`: virtualEventSession
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-  - `[AllowBreakoutRooms <Boolean?>]`: 
+  - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
   - `[AllowLiveShare <String>]`: meetingLiveShareOptions
   - `[AllowMeetingChat <String>]`: meetingChatMode
   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
-  - `[AllowPowerPointSharing <Boolean?>]`: 
+  - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
   - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
   - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
-  - `[AllowWhiteboard <Boolean?>]`: 
+  - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -831,9 +832,10 @@ Read-only.
       - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)
@@ -967,6 +969,7 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[ApprovalItemId <String>]`: The unique identifier of approvalItem
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
@@ -1021,9 +1024,10 @@ Read-only.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
@@ -1039,15 +1043,15 @@ This property is read-only.
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-    - `[AllowBreakoutRooms <Boolean?>]`: 
+    - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
     - `[AllowLiveShare <String>]`: meetingLiveShareOptions
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
-    - `[AllowPowerPointSharing <Boolean?>]`: 
+    - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
     - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
-    - `[AllowWhiteboard <Boolean?>]`: 
+    - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -1190,15 +1194,15 @@ Appears when answerInputType is text, multilineText or singleChoice.
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-    - `[AllowBreakoutRooms <Boolean?>]`: 
+    - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
     - `[AllowLiveShare <String>]`: meetingLiveShareOptions
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
-    - `[AllowPowerPointSharing <Boolean?>]`: 
+    - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
     - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
-    - `[AllowWhiteboard <Boolean?>]`: 
+    - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -1219,9 +1223,10 @@ Read-only.
         - `[Identity <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-          - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 (deprecated)

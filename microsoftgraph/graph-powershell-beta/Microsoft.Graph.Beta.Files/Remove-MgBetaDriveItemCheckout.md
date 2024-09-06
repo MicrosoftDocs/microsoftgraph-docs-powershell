@@ -41,6 +41,19 @@ Another alternative is to use application permissions.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-discardcheckout-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Files
+
+Remove-MgBetaDriveItemCheckout -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Remove-MgBetaDriveItemCheckout Cmdlet.
+
+
 ## PARAMETERS
 
 ### -DriveId
@@ -227,7 +240,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemcheckout](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemcheckout)
 
 [https://learn.microsoft.com/graph/api/driveitem-discardcheckout?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-discardcheckout?view=graph-rest-beta)
-
 
 
 

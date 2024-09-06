@@ -48,6 +48,19 @@ Retrieve the existing synchronization job and its properties.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-list-jobs-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+Get-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgServicePrincipalSynchronizationJob Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -341,7 +354,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronization-list-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-jobs?view=graph-rest-1.0)
-
 
 
 

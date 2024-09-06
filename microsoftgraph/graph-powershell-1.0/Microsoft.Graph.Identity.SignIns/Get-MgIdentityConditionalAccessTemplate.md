@@ -48,6 +48,30 @@ Read the properties and relationships of a conditionalAccessTemplate object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conditionalaccessroot-list-templates-permissions.md)]
 
+## EXAMPLES
+### Example 1: Get the properties a template by ID
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgIdentityConditionalAccessTemplate -ConditionalAccessTemplateId $conditionalAccessTemplateId
+
+```
+This example will get the properties a template by id
+
+### Example 2: Select details of a template
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgIdentityConditionalAccessTemplate -ConditionalAccessTemplateId $conditionalAccessTemplateId -Property "details" 
+
+```
+This example will select details of a template
+
+
 ## PARAMETERS
 
 ### -All
@@ -361,7 +385,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/conditionalaccesstemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccesstemplate-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/conditionalaccessroot-list-templates?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-templates?view=graph-rest-1.0)
-
 
 
 

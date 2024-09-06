@@ -27,6 +27,19 @@ Retrieve the properties and relationships of a peopleAdminSettings object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/peopleadminsettings-get-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaAdminPeople
+
+```
+This example shows how to use the Get-MgBetaAdminPeople Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -120,7 +133,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeople](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeople)
 
 [https://learn.microsoft.com/graph/api/peopleadminsettings-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/peopleadminsettings-get?view=graph-rest-beta)
-
 
 
 

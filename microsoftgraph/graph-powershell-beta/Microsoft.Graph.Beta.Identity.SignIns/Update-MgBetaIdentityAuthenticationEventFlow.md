@@ -9,8 +9,9 @@ ms.subservice: entra-sign-in
 # Update-MgBetaIdentityAuthenticationEventFlow
 
 ## SYNOPSIS
-Update the properties of an authenticationEventsFlow object.
-Only the externalUsersSelfServiceSignupEventsFlow object type is supported.
+Update the properties of an authenticationEventsFlow object by ID.
+You must specify the @odata.type property and the value of the authenticationEventsFlow object type to update.
+The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityAuthenticationEventFlow?view=graph-powershell-1.0)
@@ -50,8 +51,9 @@ Update-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdent
 ```
 
 ## DESCRIPTION
-Update the properties of an authenticationEventsFlow object.
-Only the externalUsersSelfServiceSignupEventsFlow object type is supported.
+Update the properties of an authenticationEventsFlow object by ID.
+You must specify the @odata.type property and the value of the authenticationEventsFlow object type to update.
+The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventsflow-update-permissions.md)]

@@ -66,7 +66,7 @@ New-MgBetaChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 Send a new chatMessage in the specified channel or a chat.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-post-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-post-messages-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Send inline images along with the message
@@ -769,9 +769,10 @@ Version number of the chat message.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[HostedContents <IMicrosoftGraphChatMessageHostedContent- `[]`>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
@@ -804,16 +805,18 @@ For example, a user's display name, a team name.
       - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
       - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
     - `[Actions <String>]`: chatMessageActions
     - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -821,9 +824,10 @@ This property is read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[DisplayName <String>]`: The name of the reaction.
       - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
-      - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
-Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
+      - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
       - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -923,24 +927,27 @@ For example, a user's display name, a team name.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
     - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
 MESSAGEHISTORY <IMicrosoftGraphChatMessageHistoryItem- `[]`>: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
   - `[Actions <String>]`: chatMessageActions
@@ -949,17 +956,19 @@ MESSAGEHISTORY <IMicrosoftGraphChatMessageHistoryItem- `[]`>: List of activity h
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[DisplayName <String>]`: The name of the reaction.
     - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
-    - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
-Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
+    - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
     - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -980,17 +989,19 @@ Each DLP app defines its own conditions, examples include 'Credit Card Number' a
 REACTIONS <IMicrosoftGraphChatMessageReaction- `[]`>: Reactions for this chat message (for example, Like).
   - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[DisplayName <String>]`: The name of the reaction.
   - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
-  - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
-Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
+  - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
   - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -1037,9 +1048,10 @@ Version number of the chat message.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[HostedContents <IMicrosoftGraphChatMessageHostedContent- `[]`>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
@@ -1072,16 +1084,18 @@ For example, a user's display name, a team name.
       - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
       - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
     - `[Actions <String>]`: chatMessageActions
     - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -1089,9 +1103,10 @@ This property is read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[DisplayName <String>]`: The name of the reaction.
       - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
-      - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
-Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
+      - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
       - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity

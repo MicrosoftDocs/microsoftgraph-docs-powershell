@@ -32,6 +32,19 @@ These attributes are collected from the user during the authentication experienc
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onattributecollectionexternalusersselfservicesignup-list-attributes-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute -AuthenticationEventsFlowId $authenticationEventsFlowId
+
+```
+This example shows how to use the Get-MgIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -261,7 +274,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowasonattributecollectionexternaluserselfservicesignupattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowasonattributecollectionexternaluserselfservicesignupattribute)
 
 [https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-list-attributes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-list-attributes?view=graph-rest-1.0)
-
 
 
 

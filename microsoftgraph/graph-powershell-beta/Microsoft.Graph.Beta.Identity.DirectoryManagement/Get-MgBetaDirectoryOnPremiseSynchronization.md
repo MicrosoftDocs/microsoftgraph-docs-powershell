@@ -44,6 +44,19 @@ Read the properties and relationships of an onPremisesDirectorySynchronization o
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesdirectorysynchronization-get-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectoryOnPremiseSynchronization -OnPremisesDirectorySynchronizationId $onPremisesDirectorySynchronizationId
+
+```
+This example shows how to use the Get-MgBetaDirectoryOnPremiseSynchronization Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -343,7 +356,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryonpremisesynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryonpremisesynchronization)
 
 [https://learn.microsoft.com/graph/api/onpremisesdirectorysynchronization-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onpremisesdirectorysynchronization-get?view=graph-rest-beta)
-
 
 
 

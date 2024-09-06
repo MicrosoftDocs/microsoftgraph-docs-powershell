@@ -45,6 +45,19 @@ Registration questions.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistrationconfiguration-list-questions-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebinarId $virtualEventWebinarId
+
+```
+This example shows how to use the Get-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -306,6 +319,7 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[ApprovalItemId <String>]`: The unique identifier of approvalItem
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
@@ -336,7 +350,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistrationconfigurationquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistrationconfigurationquestion)
 
 [https://learn.microsoft.com/graph/api/virtualeventregistrationconfiguration-list-questions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventregistrationconfiguration-list-questions?view=graph-rest-beta)
-
 
 
 

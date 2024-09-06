@@ -52,6 +52,20 @@ This API request is transitive, and will also return all groups and administrati
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-transitivememberof-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDeviceTransitiveMemberOfAsGroup -DeviceId $deviceId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'a')"  -ConsistencyLevel eventual 
+
+
+```
+This example shows how to use the Get-MgBetaDeviceTransitiveMemberOfAsGroup Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -382,7 +396,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicetransitivememberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicetransitivememberofasgroup)
 
 [https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-beta](https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-beta)
-
 
 
 

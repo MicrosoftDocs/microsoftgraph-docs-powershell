@@ -54,6 +54,41 @@ You can create either a predefined registration question or a custom registratio
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistrationconfiguration-post-questions-permissions.md)]
 
+## EXAMPLES
+### Example 1: Add a custom registration question to a webinar registration
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.virtualEventRegistrationCustomQuestion"
+	displayName = "What's your job position?"
+	answerInputType = "multiChoice"
+	answerChoices = @(
+	"Software Engineer"
+"Engineer Manager"
+"Product Manager"
+)
+}
+
+New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
+
+```
+This example will add a custom registration question to a webinar registration
+
+### Example 2: Add a predefined registration question to a webinar registration
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebinarId $virtualEventWebinarId
+
+```
+This example will add a predefined registration question to a webinar registration
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -267,6 +302,7 @@ Read-only.
 The default value is false.
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[ApprovalItemId <String>]`: The unique identifier of approvalItem
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
@@ -297,7 +333,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistrationconfigurationquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistrationconfigurationquestion)
 
 [https://learn.microsoft.com/graph/api/virtualeventregistrationconfiguration-post-questions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualeventregistrationconfiguration-post-questions?view=graph-rest-beta)
-
 
 
 

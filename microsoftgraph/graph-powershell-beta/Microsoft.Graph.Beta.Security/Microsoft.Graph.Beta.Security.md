@@ -494,6 +494,27 @@ Locale: en-US
 ### [Get-MgBetaSecurityPartnerSecurityAlertCount](Get-MgBetaSecurityPartnerSecurityAlertCount.md)
 
 
+### [Get-MgBetaSecurityPartnerSecurityScore](Get-MgBetaSecurityPartnerSecurityScore.md)
+
+
+### [Get-MgBetaSecurityPartnerSecurityScoreCustomerInsight](Get-MgBetaSecurityPartnerSecurityScoreCustomerInsight.md)
+
+
+### [Get-MgBetaSecurityPartnerSecurityScoreCustomerInsightCount](Get-MgBetaSecurityPartnerSecurityScoreCustomerInsightCount.md)
+
+
+### [Get-MgBetaSecurityPartnerSecurityScoreHistory](Get-MgBetaSecurityPartnerSecurityScoreHistory.md)
+
+
+### [Get-MgBetaSecurityPartnerSecurityScoreHistoryCount](Get-MgBetaSecurityPartnerSecurityScoreHistoryCount.md)
+
+
+### [Get-MgBetaSecurityPartnerSecurityScoreRequirement](Get-MgBetaSecurityPartnerSecurityScoreRequirement.md)
+
+
+### [Get-MgBetaSecurityPartnerSecurityScoreRequirementCount](Get-MgBetaSecurityPartnerSecurityScoreRequirementCount.md)
+
+
 ### [Get-MgBetaSecurityProviderTenantSetting](Get-MgBetaSecurityProviderTenantSetting.md)
 
 
@@ -1049,6 +1070,15 @@ Locale: en-US
 ### [New-MgBetaSecurityPartnerSecurityAlert](New-MgBetaSecurityPartnerSecurityAlert.md)
 
 
+### [New-MgBetaSecurityPartnerSecurityScoreCustomerInsight](New-MgBetaSecurityPartnerSecurityScoreCustomerInsight.md)
+
+
+### [New-MgBetaSecurityPartnerSecurityScoreHistory](New-MgBetaSecurityPartnerSecurityScoreHistory.md)
+
+
+### [New-MgBetaSecurityPartnerSecurityScoreRequirement](New-MgBetaSecurityPartnerSecurityScoreRequirement.md)
+
+
 ### [New-MgBetaSecurityProviderTenantSetting](New-MgBetaSecurityProviderTenantSetting.md)
 
 
@@ -1353,6 +1383,18 @@ Locale: en-US
 
 
 ### [Remove-MgBetaSecurityPartnerSecurityAlert](Remove-MgBetaSecurityPartnerSecurityAlert.md)
+
+
+### [Remove-MgBetaSecurityPartnerSecurityScore](Remove-MgBetaSecurityPartnerSecurityScore.md)
+
+
+### [Remove-MgBetaSecurityPartnerSecurityScoreCustomerInsight](Remove-MgBetaSecurityPartnerSecurityScoreCustomerInsight.md)
+
+
+### [Remove-MgBetaSecurityPartnerSecurityScoreHistory](Remove-MgBetaSecurityPartnerSecurityScoreHistory.md)
+
+
+### [Remove-MgBetaSecurityPartnerSecurityScoreRequirement](Remove-MgBetaSecurityPartnerSecurityScoreRequirement.md)
 
 
 ### [Remove-MgBetaSecurityProviderTenantSetting](Remove-MgBetaSecurityProviderTenantSetting.md)
@@ -1722,6 +1764,18 @@ Locale: en-US
 
 
 ### [Update-MgBetaSecurityPartnerSecurityAlert](Update-MgBetaSecurityPartnerSecurityAlert.md)
+
+
+### [Update-MgBetaSecurityPartnerSecurityScore](Update-MgBetaSecurityPartnerSecurityScore.md)
+
+
+### [Update-MgBetaSecurityPartnerSecurityScoreCustomerInsight](Update-MgBetaSecurityPartnerSecurityScoreCustomerInsight.md)
+
+
+### [Update-MgBetaSecurityPartnerSecurityScoreHistory](Update-MgBetaSecurityPartnerSecurityScoreHistory.md)
+
+
+### [Update-MgBetaSecurityPartnerSecurityScoreRequirement](Update-MgBetaSecurityPartnerSecurityScoreRequirement.md)
 
 
 ### [Update-MgBetaSecurityProviderTenantSetting](Update-MgBetaSecurityProviderTenantSetting.md)

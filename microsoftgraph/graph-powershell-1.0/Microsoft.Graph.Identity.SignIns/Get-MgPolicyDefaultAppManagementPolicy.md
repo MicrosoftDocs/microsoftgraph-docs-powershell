@@ -28,6 +28,19 @@ Read the properties of a tenantAppManagementPolicy object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tenantappmanagementpolicy-get-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgPolicyDefaultAppManagementPolicy
+
+```
+This example shows how to use the Get-MgPolicyDefaultAppManagementPolicy Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -121,7 +134,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydefaultappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydefaultappmanagementpolicy)
 
 [https://learn.microsoft.com/graph/api/tenantappmanagementpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tenantappmanagementpolicy-get?view=graph-rest-1.0)
-
 
 
 

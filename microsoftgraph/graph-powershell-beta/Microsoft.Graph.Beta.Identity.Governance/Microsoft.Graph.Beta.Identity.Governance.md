@@ -161,6 +161,9 @@ Locale: en-US
 ### [Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRoleCount](Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRoleCount.md)
 
 
+### [Get-MgBetaEntitlementManagementAccessPackageByUniqueName](Get-MgBetaEntitlementManagementAccessPackageByUniqueName.md)
+
+
 ### [Get-MgBetaEntitlementManagementAccessPackageCatalog](Get-MgBetaEntitlementManagementAccessPackageCatalog.md)
 
 
@@ -174,6 +177,9 @@ Locale: en-US
 
 
 ### [Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceScope](Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceScope.md)
+
+
+### [Get-MgBetaEntitlementManagementAccessPackageCatalogByUniqueName](Get-MgBetaEntitlementManagementAccessPackageCatalogByUniqueName.md)
 
 
 ### [Get-MgBetaEntitlementManagementAccessPackageCatalogCount](Get-MgBetaEntitlementManagementAccessPackageCatalogCount.md)
@@ -2747,10 +2753,16 @@ Locale: en-US
 ### [Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest](Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest.md)
 
 
+### [Remove-MgBetaEntitlementManagementAccessPackageByUniqueName](Remove-MgBetaEntitlementManagementAccessPackageByUniqueName.md)
+
+
 ### [Remove-MgBetaEntitlementManagementAccessPackageCatalog](Remove-MgBetaEntitlementManagementAccessPackageCatalog.md)
 
 
 ### [Remove-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension](Remove-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension.md)
+
+
+### [Remove-MgBetaEntitlementManagementAccessPackageCatalogByUniqueName](Remove-MgBetaEntitlementManagementAccessPackageCatalogByUniqueName.md)
 
 
 ### [Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension.md)
@@ -3479,10 +3491,16 @@ Locale: en-US
 ### [Update-MgBetaEntitlementManagementAccessPackageAssignmentRequest](Update-MgBetaEntitlementManagementAccessPackageAssignmentRequest.md)
 
 
+### [Update-MgBetaEntitlementManagementAccessPackageByUniqueName](Update-MgBetaEntitlementManagementAccessPackageByUniqueName.md)
+
+
 ### [Update-MgBetaEntitlementManagementAccessPackageCatalog](Update-MgBetaEntitlementManagementAccessPackageCatalog.md)
 
 
 ### [Update-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension](Update-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension.md)
+
+
+### [Update-MgBetaEntitlementManagementAccessPackageCatalogByUniqueName](Update-MgBetaEntitlementManagementAccessPackageCatalogByUniqueName.md)
 
 
 ### [Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension.md)

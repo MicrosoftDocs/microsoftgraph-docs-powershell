@@ -9,7 +9,9 @@ ms.subservice: entra-sign-in
 # Update-MgTenantRelationshipMultiTenantOrganization
 
 ## SYNOPSIS
-Update the properties of a multitenant organization.
+Create a new multitenant organization.
+By default, the creator tenant becomes an owner tenant upon successful creation.
+Only owner tenants can manage a multitenant organization.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipMultiTenantOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaTenantRelationshipMultiTenantOrganization?view=graph-powershell-beta)
@@ -34,10 +36,30 @@ Update-MgTenantRelationshipMultiTenantOrganization -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Update the properties of a multitenant organization.
+Create a new multitenant organization.
+By default, the creator tenant becomes an owner tenant upon successful creation.
+Only owner tenants can manage a multitenant organization.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganization-update-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	displayName = "Contoso organization"
+	description = "Multitenant organization between Contoso, Fabrikam, and Woodgrove Bank"
+}
+
+Update-MgTenantRelationshipMultiTenantOrganization -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTenantRelationshipMultiTenantOrganization Cmdlet.
+
 
 ## PARAMETERS
 
@@ -367,8 +389,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganization)
 
-[https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-1.0)
-
+[https://learn.microsoft.com/graph/api/tenantrelationship-put-multitenantorganization?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tenantrelationship-put-multitenantorganization?view=graph-rest-1.0)
 
 
 

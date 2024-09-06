@@ -10,7 +10,7 @@ ms.subservice: entra-id-governance
 # Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
 
 ## SYNOPSIS
-Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
+Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
 
 ## SYNTAX
 
@@ -40,10 +40,10 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowEx
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
+Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentrequestworkflowextension-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentworkflowextension-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-list-accesspackagecustomworkflowextensions-permissions.md)]
@@ -415,6 +415,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
   - `[UnifiedRoleManagementAlertIncidentId <String>]`: The unique identifier of unifiedRoleManagementAlertIncident
+  - `[UniqueName <String>]`: Alternate key of accessPackageCatalog
   - `[UserConsentRequestId <String>]`: The unique identifier of userConsentRequest
   - `[UserId <String>]`: The unique identifier of user
   - `[UserProcessingResultId <String>]`: The unique identifier of userProcessingResult
@@ -426,7 +427,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackagecustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackagecustomworkflowextension)
 
-[https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-get?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackagecustomworkflowextensions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackagecustomworkflowextensions?view=graph-rest-beta)
 

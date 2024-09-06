@@ -9,7 +9,7 @@ ms.subservice: intune
 # Update-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Update the properties of a editionUpgradeConfiguration object.
+Update the properties of a windowsUpdateForBusinessConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -57,7 +57,7 @@ Update-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Update the properties of a editionUpgradeConfiguration object.
+Update the properties of a windowsUpdateForBusinessConfiguration object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -67,32 +67,50 @@ Update the properties of a editionUpgradeConfiguration object.
 Import-Module Microsoft.Graph.DeviceManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.macOSGeneralDeviceConfiguration"
+	"@odata.type" = "#microsoft.graph.windowsUpdateForBusinessConfiguration"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
-	compliantAppsList = @(
-		@{
-			"@odata.type" = "microsoft.graph.appListItem"
-			name = "Name value"
-			publisher = "Publisher value"
-			appStoreUrl = "https://example.com/appStoreUrl/"
-			appId = "App Id value"
-		}
-	)
-	compliantAppListType = "appsInListCompliant"
-	emailInDomainSuffixes = @(
-	"Email In Domain Suffixes value"
-)
-passwordBlockSimple = $true
-passwordExpirationDays = 
-passwordMinimumCharacterSetCount = 
-passwordMinimumLength = 
-passwordMinutesOfInactivityBeforeLock = 
-passwordMinutesOfInactivityBeforeScreenTimeout = 
-passwordPreviousPasswordBlockCount = 
-passwordRequiredType = "alphanumeric"
-passwordRequired = $true
+	deliveryOptimizationMode = "httpOnly"
+	prereleaseFeatures = "settingsOnly"
+	automaticUpdateMode = "notifyDownload"
+	microsoftUpdateServiceAllowed = $true
+	driversExcluded = $true
+	installationSchedule = @{
+		"@odata.type" = "microsoft.graph.windowsUpdateScheduledInstall"
+		scheduledInstallDay = "everyday"
+		scheduledInstallTime = "11:59:31.3170000"
+	}
+	qualityUpdatesDeferralPeriodInDays = 
+	featureUpdatesDeferralPeriodInDays = 
+	qualityUpdatesPaused = $true
+	featureUpdatesPaused = $true
+	qualityUpdatesPauseExpiryDateTime = "2017-01-01T00:00:22.9594683-08:00"
+	featureUpdatesPauseExpiryDateTime = "2016-12-31T23:58:08.068669-08:00"
+	businessReadyUpdatesOnly = "all"
+	skipChecksBeforeRestart = $true
+	updateWeeks = "firstWeek"
+	qualityUpdatesPauseStartDate = "2016-12-31"
+	featureUpdatesPauseStartDate = "2016-12-31"
+	featureUpdatesRollbackWindowInDays = 
+	qualityUpdatesWillBeRolledBack = $true
+	featureUpdatesWillBeRolledBack = $true
+	qualityUpdatesRollbackStartDateTime = "2016-12-31T23:57:01.05526-08:00"
+	featureUpdatesRollbackStartDateTime = "2017-01-01T00:03:21.6080517-08:00"
+	engagedRestartDeadlineInDays = 
+	engagedRestartSnoozeScheduleInDays = 
+	engagedRestartTransitionScheduleInDays = 
+	deadlineForFeatureUpdatesInDays = 
+	deadlineForQualityUpdatesInDays = 
+	deadlineGracePeriodInDays = 
+	postponeRebootUntilAfterDeadline = $true
+	autoRestartNotificationDismissal = "automatic"
+	scheduleRestartWarningInHours = 
+	scheduleImminentRestartWarningInMinutes = 
+	userPauseAccess = "enabled"
+	userWindowsUpdateScanAccess = "enabled"
+	updateNotificationLevel = "defaultNotifications"
+	allowWindows11Upgrade = $true
 }
 
 Update-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId $deviceConfigurationId -BodyParameter $params
@@ -635,7 +653,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-editionupgradeconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-editionupgradeconfiguration-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windowsupdateforbusinessconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windowsupdateforbusinessconfiguration-update?view=graph-rest-1.0)
 
 
 

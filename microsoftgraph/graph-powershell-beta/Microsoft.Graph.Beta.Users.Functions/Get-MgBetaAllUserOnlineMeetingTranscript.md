@@ -15,10 +15,13 @@ You can apply the delta function on getAllTranscripts to synchronize and get cal
 Delta query supports both full synchronization and incremental synchronization.
 Full synchronization gets all the transcripts for online meetings organized by the user.
 Incremental synchronization gets transcripts that are added since the last synchronization.
-Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+Typically, you do an initial full synchronization, and then get incremental changes to that recording view periodically.
 For more information, see delta query.
 For more examples, see callTranscript: delta.
 To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAllUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgAllUserOnlineMeetingTranscript?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ You can apply the delta function on getAllTranscripts to synchronize and get cal
 Delta query supports both full synchronization and incremental synchronization.
 Full synchronization gets all the transcripts for online meetings organized by the user.
 Incremental synchronization gets transcripts that are added since the last synchronization.
-Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+Typically, you do an initial full synchronization, and then get incremental changes to that recording view periodically.
 For more information, see delta query.
 For more examples, see callTranscript: delta.
 To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.

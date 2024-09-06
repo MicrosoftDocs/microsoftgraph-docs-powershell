@@ -10,6 +10,12 @@ ms.subservice: m365-backup-storage
 
 ## SYNOPSIS
 Enable the Microsoft 365 Backup Storage service for a tenant.
+Before you call this API, call List protection policies to initialize the data store in the tenant.
+Data store initialization takes about 5 minutes.
+If you call this API before the data store is initialized, the call results in an error.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Enable-MgBackupRestore](/powershell/module/Microsoft.Graph.Bookings/Enable-MgBackupRestore?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +36,9 @@ Enable-MgBetaBackupRestore
 
 ## DESCRIPTION
 Enable the Microsoft 365 Backup Storage service for a tenant.
+Before you call this API, call List protection policies to initialize the data store in the tenant.
+Data store initialization takes about 5 minutes.
+If you call this API before the data store is initialized, the call results in an error.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-enable-permissions.md)]

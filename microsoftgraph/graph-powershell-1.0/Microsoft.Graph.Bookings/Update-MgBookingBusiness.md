@@ -240,7 +240,9 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date, time, and time zone when the booking business was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -399,7 +401,9 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedDateTime
-.
+The date, time, and time zone when the booking business was last updated.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -591,12 +595,16 @@ Nullable.
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
-  - `[AppointmentLabel <String>]`: Custom label that can be stamped on this appointment by users.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[CustomerEmailAddress <String>]`: 
-  - `[CustomerName <String>]`: 
+  - `[AppointmentLabel <String>]`: The custom label that can be stamped on this appointment by users.
+  - `[CreatedDateTime <DateTime?>]`: The date, time, and time zone when the appointment was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[CustomerEmailAddress <String>]`: The SMTP address of the bookingCustomer who books the appointment.
+  - `[CustomerName <String>]`: The customer's name.
   - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
-  - `[CustomerPhone <String>]`: 
+You can get the value only when you read this bookingAppointment by its ID.
+You can set this property only when you initially create an appointment with a new customer.
+  - `[CustomerPhone <String>]`: The customer's phone number.
   - `[CustomerTimeZone <String>]`: The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase- `[]`>]`: A collection of customer properties for an appointment.
@@ -607,11 +615,14 @@ Optional.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
-  - `[IsLocationOnline <Boolean?>]`: If true, indicates that the appointment will be held online.
-Default value is false.
+  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: Indicates that the customer can manage bookings created by the staff.
+The default value is false.
+  - `[IsLocationOnline <Boolean?>]`: Indicates that the appointment is held online.
+The default value is false.
   - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
-  - `[LastUpdatedDateTime <DateTime?>]`: 
+  - `[LastUpdatedDateTime <DateTime?>]`: The date, time, and time zone when the booking business was last updated.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in an appointment.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
 To create a customer, use the Create bookingCustomer operation.
@@ -628,8 +639,7 @@ The value of this property is available only when reading this bookingAppointmen
     - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent.
 It's denoted in ISO 8601 format.
     - `[Recipients <String>]`: bookingReminderRecipients
-  - `[SelfServiceAppointmentId <String>]`: An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
-Only supported for appointment if maxAttendeeCount is 1.
+  - `[SelfServiceAppointmentId <String>]`: Another tracking ID for the appointment, if the appointment was created directly by the customer on the scheduling page, as opposed to by a staff member on behalf of the customer.
   - `[ServiceId <String>]`: The ID of the bookingService associated with this appointment.
   - `[ServiceLocation <IMicrosoftGraphLocation>]`: location
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -683,12 +693,16 @@ Nullable.
 Read-only.
     - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
     - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
-    - `[AppointmentLabel <String>]`: Custom label that can be stamped on this appointment by users.
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[CustomerEmailAddress <String>]`: 
-    - `[CustomerName <String>]`: 
+    - `[AppointmentLabel <String>]`: The custom label that can be stamped on this appointment by users.
+    - `[CreatedDateTime <DateTime?>]`: The date, time, and time zone when the appointment was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[CustomerEmailAddress <String>]`: The SMTP address of the bookingCustomer who books the appointment.
+    - `[CustomerName <String>]`: The customer's name.
     - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
-    - `[CustomerPhone <String>]`: 
+You can get the value only when you read this bookingAppointment by its ID.
+You can set this property only when you initially create an appointment with a new customer.
+    - `[CustomerPhone <String>]`: The customer's phone number.
     - `[CustomerTimeZone <String>]`: The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.
     - `[Customers <IMicrosoftGraphBookingCustomerInformationBase- `[]`>]`: A collection of customer properties for an appointment.
@@ -699,11 +713,14 @@ Optional.
       - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
       - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-    - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
-    - `[IsLocationOnline <Boolean?>]`: If true, indicates that the appointment will be held online.
-Default value is false.
+    - `[IsCustomerAllowedToManageBooking <Boolean?>]`: Indicates that the customer can manage bookings created by the staff.
+The default value is false.
+    - `[IsLocationOnline <Boolean?>]`: Indicates that the appointment is held online.
+The default value is false.
     - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
-    - `[LastUpdatedDateTime <DateTime?>]`: 
+    - `[LastUpdatedDateTime <DateTime?>]`: The date, time, and time zone when the booking business was last updated.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in an appointment.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
 To create a customer, use the Create bookingCustomer operation.
@@ -720,8 +737,7 @@ The value of this property is available only when reading this bookingAppointmen
       - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent.
 It's denoted in ISO 8601 format.
       - `[Recipients <String>]`: bookingReminderRecipients
-    - `[SelfServiceAppointmentId <String>]`: An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
-Only supported for appointment if maxAttendeeCount is 1.
+    - `[SelfServiceAppointmentId <String>]`: Another tracking ID for the appointment, if the appointment was created directly by the customer on the scheduling page, as opposed to by a staff member on behalf of the customer.
     - `[ServiceId <String>]`: The ID of the bookingService associated with this appointment.
     - `[ServiceLocation <IMicrosoftGraphLocation>]`: location
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -751,21 +767,25 @@ Default value is false.
   - `[BookingPageSettings <IMicrosoftGraphBookingPageSettings>]`: bookingPageSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AccessControl <String>]`: bookingPageAccessControl
-    - `[BookingPageColorCode <String>]`: Custom color for bookings page.
-Value should be in Hex format.
-Example: \`#123456\`.
+    - `[BookingPageColorCode <String>]`: Custom color for the booking page.
+The value should be in Hex format.
+For example, #123456.
     - `[BusinessTimeZone <String>]`: The time zone of the customer.
-For a list of possible values, see - `[dateTimeTimeZone]`(https://learn.microsoft.com/en-us/graph/api/resources/datetimetimezone?view=graph-rest-beta).
-    - `[CustomerConsentMessage <String>]`: Customer consent message that is displayed in the Booking page.
-    - `[EnforceOneTimePassword <Boolean?>]`: Enforcing One Time Password (OTP) during appointment creation.
-    - `[IsBusinessLogoDisplayEnabled <Boolean?>]`: Enable display of business logo display on the Bookings page.
-    - `[IsCustomerConsentEnabled <Boolean?>]`: Enforces customer consent on the customer consent message before appointment is booked.
-    - `[IsSearchEngineIndexabilityDisabled <Boolean?>]`: Disable booking page to be indexed by search engines.
-False by default.
-    - `[IsTimeSlotTimeZoneSetToBusinessTimeZone <Boolean?>]`: If business time zone the default value for the time slots that we show in the bookings page.
-False by default.
-    - `[PrivacyPolicyWebUrl <String>]`: The URL of the business' Privacy Policy.
-    - `[TermsAndConditionsWebUrl <String>]`: The URL of the business' Terms and Conditions.
+For a list of possible values, see dateTimeTimeZone.
+    - `[CustomerConsentMessage <String>]`: The personal data collection and usage consent message in the booking page.
+    - `[EnforceOneTimePassword <Boolean?>]`: Determines whether the one-time password is required to create an appointment.
+The default value is false.
+    - `[IsBusinessLogoDisplayEnabled <Boolean?>]`: Indicates whether the business logo is displayed on the booking page.
+The default value is false.
+    - `[IsCustomerConsentEnabled <Boolean?>]`: Enables personal data collection and the usage consent toggle on the booking page.
+The default value is false.
+    - `[IsSearchEngineIndexabilityDisabled <Boolean?>]`: Indicates whether web crawlers index this page.
+The defaults value is false.
+    - `[IsTimeSlotTimeZoneSetToBusinessTimeZone <Boolean?>]`: Indicates whether the time zone of the time slot is set to the time zone of the business.
+The default value is false.
+    - `[PrivacyPolicyWebUrl <String>]`: URL of a webpage that provides the terms and conditions of the business.
+If a privacy policy isn't included, the following text appears on the booking page as default: 'The policies and practices of {bookingbusinessname} apply to the use of your data.'
+    - `[TermsAndConditionsWebUrl <String>]`: URL of a webpage that provides the terms and conditions of the business.
   - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation for the business.
     - `[Day <String>]`: dayOfWeek
     - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot- `[]`>]`: A list of start/end times during a day.
@@ -777,7 +797,9 @@ For example, 08:00:00.0000000.
   - `[CalendarView <IMicrosoftGraphBookingAppointment- `[]`>]`: The set of appointments of this business in a specified date range.
 Read-only.
 Nullable.
-  - `[CreatedDateTime <DateTime?>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The date, time, and time zone when the booking business was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[CustomQuestions <IMicrosoftGraphBookingCustomQuestion- `[]`>]`: All the custom questions of this business.
 Read-only.
 Nullable.
@@ -785,9 +807,13 @@ Nullable.
 Read-only.
     - `[AnswerInputType <String>]`: answerInputType
     - `[AnswerOptions <String- `[]`>]`: List of possible answer values.
-    - `[CreatedDateTime <DateTime?>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The date, time, and time zone when the custom question was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[DisplayName <String>]`: The question.
-    - `[LastUpdatedDateTime <DateTime?>]`: 
+    - `[LastUpdatedDateTime <DateTime?>]`: The date, time, and time zone when the custom question was last updated.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Customers <IMicrosoftGraphBookingCustomerBase- `[]`>]`: All the customers of this business.
 Read-only.
 Nullable.
@@ -798,25 +824,27 @@ Read-only.
 This name appears at the top of the business scheduling page.
   - `[Email <String>]`: The email address for the business.
   - `[LanguageTag <String>]`: The language of the self-service booking page.
-  - `[LastUpdatedDateTime <DateTime?>]`: 
+  - `[LastUpdatedDateTime <DateTime?>]`: The date, time, and time zone when the booking business was last updated.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Phone <String>]`: The telephone number for the business.
 The phone property, together with address and webSiteUrl, appear in the footer of a business scheduling page.
   - `[SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
-    - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: collection of custom availabilities for a given time range.
+    - `[AllowStaffSelection <Boolean?>]`: True to allow customers to choose a specific person for the booking.
+    - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: Custom availability of the service in a given time frame.
       - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
       - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
-      - `[EndDate <DateTime?>]`: Allow customers to end date of availability window.
-      - `[StartDate <DateTime?>]`: Allow customers to start date of availability window.
+The business hours value is set to null if the availability type isn't customWeeklyHours.
+      - `[EndDate <DateTime?>]`: End date of the availability window.
+      - `[StartDate <DateTime?>]`: Start date of the availability window.
     - `[GeneralAvailability <IMicrosoftGraphBookingsAvailability>]`: bookingsAvailability
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
       - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
-    - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Enable sending meeting invite to customers.
-False by default.
+The business hours value is set to null if the availability type isn't customWeeklyHours.
+    - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Indicates whether the meeting invite is sent to the customers.
+The default value is false.
     - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
     - `[MinimumLeadTime <TimeSpan?>]`: The minimum amount of time before which bookings and cancellations must be made.
@@ -830,7 +858,9 @@ Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
-    - `[CreatedDateTime <DateTime?>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The date, time, and time zone when the service was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
       - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
       - `[QuestionId <String>]`: The ID of the custom question.
@@ -843,13 +873,17 @@ For example, P11D23H59M59.999999999999S.
 The value of this property is available only when reading this bookingService by its ID.
     - `[Description <String>]`: A text description for the service.
     - `[DisplayName <String>]`: A service name.
-    - `[IsAnonymousJoinEnabled <Boolean?>]`: True if the URL to join the appointment anonymously (anonymousJoinWebUrl) will be generated for the appointment booked for this service.
-    - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
-    - `[IsHiddenFromCustomers <Boolean?>]`: True means this service is not available to customers for booking.
-    - `[IsLocationOnline <Boolean?>]`: True indicates that the appointments for the service will be held online.
-Default value is false.
+    - `[IsAnonymousJoinEnabled <Boolean?>]`: Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service.
+The default value is false.
+    - `[IsCustomerAllowedToManageBooking <Boolean?>]`: Indicates that the customer can manage bookings created by the staff.
+The default value is false.
+    - `[IsHiddenFromCustomers <Boolean?>]`: True indicates that this service isn't available to customers for booking.
+    - `[IsLocationOnline <Boolean?>]`: Indicates that the appointments for the service are held online.
+The default value is false.
     - `[LanguageTag <String>]`: The language of the self-service booking page.
-    - `[LastUpdatedDateTime <DateTime?>]`: 
+    - `[LastUpdatedDateTime <DateTime?>]`: The date, time, and time zone when the service was last updated.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in a service.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
 To create a customer, use the Create bookingCustomer operation.
@@ -871,21 +905,25 @@ The webSiteUrl property, together with address, phone, appear in the footer of a
 BOOKINGPAGESETTINGS `<IMicrosoftGraphBookingPageSettings>`: bookingPageSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AccessControl <String>]`: bookingPageAccessControl
-  - `[BookingPageColorCode <String>]`: Custom color for bookings page.
-Value should be in Hex format.
-Example: \`#123456\`.
+  - `[BookingPageColorCode <String>]`: Custom color for the booking page.
+The value should be in Hex format.
+For example, #123456.
   - `[BusinessTimeZone <String>]`: The time zone of the customer.
-For a list of possible values, see - `[dateTimeTimeZone]`(https://learn.microsoft.com/en-us/graph/api/resources/datetimetimezone?view=graph-rest-beta).
-  - `[CustomerConsentMessage <String>]`: Customer consent message that is displayed in the Booking page.
-  - `[EnforceOneTimePassword <Boolean?>]`: Enforcing One Time Password (OTP) during appointment creation.
-  - `[IsBusinessLogoDisplayEnabled <Boolean?>]`: Enable display of business logo display on the Bookings page.
-  - `[IsCustomerConsentEnabled <Boolean?>]`: Enforces customer consent on the customer consent message before appointment is booked.
-  - `[IsSearchEngineIndexabilityDisabled <Boolean?>]`: Disable booking page to be indexed by search engines.
-False by default.
-  - `[IsTimeSlotTimeZoneSetToBusinessTimeZone <Boolean?>]`: If business time zone the default value for the time slots that we show in the bookings page.
-False by default.
-  - `[PrivacyPolicyWebUrl <String>]`: The URL of the business' Privacy Policy.
-  - `[TermsAndConditionsWebUrl <String>]`: The URL of the business' Terms and Conditions.
+For a list of possible values, see dateTimeTimeZone.
+  - `[CustomerConsentMessage <String>]`: The personal data collection and usage consent message in the booking page.
+  - `[EnforceOneTimePassword <Boolean?>]`: Determines whether the one-time password is required to create an appointment.
+The default value is false.
+  - `[IsBusinessLogoDisplayEnabled <Boolean?>]`: Indicates whether the business logo is displayed on the booking page.
+The default value is false.
+  - `[IsCustomerConsentEnabled <Boolean?>]`: Enables personal data collection and the usage consent toggle on the booking page.
+The default value is false.
+  - `[IsSearchEngineIndexabilityDisabled <Boolean?>]`: Indicates whether web crawlers index this page.
+The defaults value is false.
+  - `[IsTimeSlotTimeZoneSetToBusinessTimeZone <Boolean?>]`: Indicates whether the time zone of the time slot is set to the time zone of the business.
+The default value is false.
+  - `[PrivacyPolicyWebUrl <String>]`: URL of a webpage that provides the terms and conditions of the business.
+If a privacy policy isn't included, the following text appears on the booking page as default: 'The policies and practices of {bookingbusinessname} apply to the use of your data.'
+  - `[TermsAndConditionsWebUrl <String>]`: URL of a webpage that provides the terms and conditions of the business.
 
 BUSINESSHOURS <IMicrosoftGraphBookingWorkHours- `[]`>: The hours of operation for the business.
   - `[Day <String>]`: dayOfWeek
@@ -902,12 +940,16 @@ Nullable.
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
-  - `[AppointmentLabel <String>]`: Custom label that can be stamped on this appointment by users.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[CustomerEmailAddress <String>]`: 
-  - `[CustomerName <String>]`: 
+  - `[AppointmentLabel <String>]`: The custom label that can be stamped on this appointment by users.
+  - `[CreatedDateTime <DateTime?>]`: The date, time, and time zone when the appointment was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[CustomerEmailAddress <String>]`: The SMTP address of the bookingCustomer who books the appointment.
+  - `[CustomerName <String>]`: The customer's name.
   - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
-  - `[CustomerPhone <String>]`: 
+You can get the value only when you read this bookingAppointment by its ID.
+You can set this property only when you initially create an appointment with a new customer.
+  - `[CustomerPhone <String>]`: The customer's phone number.
   - `[CustomerTimeZone <String>]`: The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase- `[]`>]`: A collection of customer properties for an appointment.
@@ -918,11 +960,14 @@ Optional.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
-  - `[IsLocationOnline <Boolean?>]`: If true, indicates that the appointment will be held online.
-Default value is false.
+  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: Indicates that the customer can manage bookings created by the staff.
+The default value is false.
+  - `[IsLocationOnline <Boolean?>]`: Indicates that the appointment is held online.
+The default value is false.
   - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
-  - `[LastUpdatedDateTime <DateTime?>]`: 
+  - `[LastUpdatedDateTime <DateTime?>]`: The date, time, and time zone when the booking business was last updated.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in an appointment.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
 To create a customer, use the Create bookingCustomer operation.
@@ -939,8 +984,7 @@ The value of this property is available only when reading this bookingAppointmen
     - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent.
 It's denoted in ISO 8601 format.
     - `[Recipients <String>]`: bookingReminderRecipients
-  - `[SelfServiceAppointmentId <String>]`: An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
-Only supported for appointment if maxAttendeeCount is 1.
+  - `[SelfServiceAppointmentId <String>]`: Another tracking ID for the appointment, if the appointment was created directly by the customer on the scheduling page, as opposed to by a staff member on behalf of the customer.
   - `[ServiceId <String>]`: The ID of the bookingService associated with this appointment.
   - `[ServiceLocation <IMicrosoftGraphLocation>]`: location
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -988,9 +1032,13 @@ Nullable.
 Read-only.
   - `[AnswerInputType <String>]`: answerInputType
   - `[AnswerOptions <String- `[]`>]`: List of possible answer values.
-  - `[CreatedDateTime <DateTime?>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The date, time, and time zone when the custom question was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[DisplayName <String>]`: The question.
-  - `[LastUpdatedDateTime <DateTime?>]`: 
+  - `[LastUpdatedDateTime <DateTime?>]`: The date, time, and time zone when the custom question was last updated.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
@@ -1003,7 +1051,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -1015,26 +1066,26 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
-  - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: collection of custom availabilities for a given time range.
+  - `[AllowStaffSelection <Boolean?>]`: True to allow customers to choose a specific person for the booking.
+  - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: Custom availability of the service in a given time frame.
     - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
     - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
+The business hours value is set to null if the availability type isn't customWeeklyHours.
       - `[Day <String>]`: dayOfWeek
       - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot- `[]`>]`: A list of start/end times during a day.
         - `[EndTime <String>]`: The time of the day when work stops.
 For example, 17:00:00.0000000.
         - `[StartTime <String>]`: The time of the day when work starts.
 For example, 08:00:00.0000000.
-    - `[EndDate <DateTime?>]`: Allow customers to end date of availability window.
-    - `[StartDate <DateTime?>]`: Allow customers to start date of availability window.
+    - `[EndDate <DateTime?>]`: End date of the availability window.
+    - `[StartDate <DateTime?>]`: Start date of the availability window.
   - `[GeneralAvailability <IMicrosoftGraphBookingsAvailability>]`: bookingsAvailability
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
     - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
-  - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Enable sending meeting invite to customers.
-False by default.
+The business hours value is set to null if the availability type isn't customWeeklyHours.
+  - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Indicates whether the meeting invite is sent to the customers.
+The default value is false.
   - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
   - `[MinimumLeadTime <TimeSpan?>]`: The minimum amount of time before which bookings and cancellations must be made.
@@ -1049,7 +1100,9 @@ Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
-  - `[CreatedDateTime <DateTime?>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The date, time, and time zone when the service was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
     - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
     - `[QuestionId <String>]`: The ID of the custom question.
@@ -1089,13 +1142,17 @@ It's denoted in ISO 8601 format.
     - `[Recipients <String>]`: bookingReminderRecipients
   - `[Description <String>]`: A text description for the service.
   - `[DisplayName <String>]`: A service name.
-  - `[IsAnonymousJoinEnabled <Boolean?>]`: True if the URL to join the appointment anonymously (anonymousJoinWebUrl) will be generated for the appointment booked for this service.
-  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
-  - `[IsHiddenFromCustomers <Boolean?>]`: True means this service is not available to customers for booking.
-  - `[IsLocationOnline <Boolean?>]`: True indicates that the appointments for the service will be held online.
-Default value is false.
+  - `[IsAnonymousJoinEnabled <Boolean?>]`: Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service.
+The default value is false.
+  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: Indicates that the customer can manage bookings created by the staff.
+The default value is false.
+  - `[IsHiddenFromCustomers <Boolean?>]`: True indicates that this service isn't available to customers for booking.
+  - `[IsLocationOnline <Boolean?>]`: Indicates that the appointments for the service are held online.
+The default value is false.
   - `[LanguageTag <String>]`: The language of the self-service booking page.
-  - `[LastUpdatedDateTime <DateTime?>]`: 
+  - `[LastUpdatedDateTime <DateTime?>]`: The date, time, and time zone when the service was last updated.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in a service.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
 To create a customer, use the Create bookingCustomer operation.
@@ -1104,26 +1161,26 @@ To create a customer, use the Create bookingCustomer operation.
   - `[PreBuffer <TimeSpan?>]`: The time to buffer before an appointment for this service can start.
   - `[SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
-    - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: collection of custom availabilities for a given time range.
+    - `[AllowStaffSelection <Boolean?>]`: True to allow customers to choose a specific person for the booking.
+    - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: Custom availability of the service in a given time frame.
       - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
       - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
+The business hours value is set to null if the availability type isn't customWeeklyHours.
         - `[Day <String>]`: dayOfWeek
         - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot- `[]`>]`: A list of start/end times during a day.
           - `[EndTime <String>]`: The time of the day when work stops.
 For example, 17:00:00.0000000.
           - `[StartTime <String>]`: The time of the day when work starts.
 For example, 08:00:00.0000000.
-      - `[EndDate <DateTime?>]`: Allow customers to end date of availability window.
-      - `[StartDate <DateTime?>]`: Allow customers to start date of availability window.
+      - `[EndDate <DateTime?>]`: End date of the availability window.
+      - `[StartDate <DateTime?>]`: Start date of the availability window.
     - `[GeneralAvailability <IMicrosoftGraphBookingsAvailability>]`: bookingsAvailability
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
       - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
-    - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Enable sending meeting invite to customers.
-False by default.
+The business hours value is set to null if the availability type isn't customWeeklyHours.
+    - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Indicates whether the meeting invite is sent to the customers.
+The default value is false.
     - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
     - `[MinimumLeadTime <TimeSpan?>]`: The minimum amount of time before which bookings and cancellations must be made.

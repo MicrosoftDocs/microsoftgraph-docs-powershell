@@ -21,8 +21,9 @@ New-MgVirtualEvent [-ResponseHeadersVariable <String>] [-AdditionalProperties <H
  [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>] [-Description <IMicrosoftGraphItemBody>]
  [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>]
  [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-Sessions <IMicrosoftGraphVirtualEventSession[]>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Settings <IMicrosoftGraphVirtualEventSettings>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -100,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of the virtual event.
+The display name of the virtual event.
 
 ```yaml
 Type: String
@@ -162,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Presenters
-.
+The virtual event presenters.
 To construct, see NOTES section for PRESENTERS properties and create a hash table.
 
 ```yaml
@@ -208,11 +209,27 @@ Accept wildcard characters: False
 ```
 
 ### -Sessions
-Sessions for the virtual event.
+The sessions for the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphVirtualEventSession[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Settings
+virtualEventSettings
+To construct, see NOTES section for SETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphVirtualEventSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -327,27 +344,27 @@ For example, in the access reviews decisions API, this property might record the
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
-  - `[DisplayName <String>]`: Display name of the virtual event.
+  - `[DisplayName <String>]`: The display name of the virtual event.
   - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-  - `[Presenters <IMicrosoftGraphVirtualEventPresenter- `[]`>]`: 
+  - `[Presenters <IMicrosoftGraphVirtualEventPresenter- `[]`>]`: The virtual event presenters.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Email <String>]`: 
+    - `[Email <String>]`: Email address of the presenter.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
-      - `[Company <String>]`: 
-      - `[JobTitle <String>]`: 
-      - `[LinkedInProfileWebUrl <String>]`: 
-      - `[PersonalSiteWebUrl <String>]`: 
-      - `[Photo <Byte- `[]`>]`: 
-      - `[TwitterProfileWebUrl <String>]`: 
-  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: Sessions for the virtual event.
+      - `[Company <String>]`: The presenter's company name.
+      - `[JobTitle <String>]`: The presenter's job title.
+      - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
+      - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+      - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
+      - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
+  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowMeetingChat <String>]`: meetingChatMode
@@ -422,6 +439,9 @@ Read-only.
 Read-only.
     - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+  - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsAttendeeEmailNotificationEnabled <Boolean?>]`: Indicates whether virtual event attendees receive email notifications.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Status <String>]`: virtualEventStatus
 
@@ -455,10 +475,10 @@ ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: .
+PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: The virtual event presenters.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Email <String>]`: 
+  - `[Email <String>]`: Email address of the presenter.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -471,14 +491,14 @@ For example, in the access reviews decisions API, this property might record the
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Content <String>]`: The content of the item.
       - `[ContentType <String>]`: bodyType
-    - `[Company <String>]`: 
-    - `[JobTitle <String>]`: 
-    - `[LinkedInProfileWebUrl <String>]`: 
-    - `[PersonalSiteWebUrl <String>]`: 
-    - `[Photo <Byte- `[]`>]`: 
-    - `[TwitterProfileWebUrl <String>]`: 
+    - `[Company <String>]`: The presenter's company name.
+    - `[JobTitle <String>]`: The presenter's job title.
+    - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
+    - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+    - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
+    - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: Sessions for the virtual event.
+SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: The sessions for the virtual event.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowMeetingChat <String>]`: meetingChatMode
@@ -565,6 +585,10 @@ Read-only.
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+
+SETTINGS `<IMicrosoftGraphVirtualEventSettings>`: virtualEventSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsAttendeeEmailNotificationEnabled <Boolean?>]`: Indicates whether virtual event attendees receive email notifications.
 
 STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

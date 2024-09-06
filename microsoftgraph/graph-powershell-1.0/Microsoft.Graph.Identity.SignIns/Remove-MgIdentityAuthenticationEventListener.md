@@ -36,6 +36,19 @@ Delete an authenticationEventListener object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationeventlistener-delete-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Remove-MgIdentityAuthenticationEventListener -AuthenticationEventListenerId $authenticationEventListenerId
+
+```
+This example shows how to use the Remove-MgIdentityAuthenticationEventListener Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AuthenticationEventListenerId
@@ -257,7 +270,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventlistener)
 
 [https://learn.microsoft.com/graph/api/authenticationeventlistener-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventlistener-delete?view=graph-rest-1.0)
-
 
 
 

@@ -4,12 +4,14 @@ Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsession
 schema: 2.0.0
 ms.subservice: cloud-communications
+ms.subservice: cloud-communications
 ---
 
 # Get-MgVirtualEventWebinarSession
 
 ## SYNOPSIS
 Read the properties and relationships of a virtualEventSession object.
+Currently, the following virtual event types are supported: - virtualEventTownhall- virtualEventWebinar
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarSession?view=graph-powershell-beta)
@@ -40,6 +42,7 @@ Get-MgVirtualEventWebinarSession -InputObject <IBookingsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventSession object.
+Currently, the following virtual event types are supported: - virtualEventTownhall- virtualEventWebinar
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventsession-get-permissions.md)]
@@ -51,7 +54,7 @@ Read the properties and relationships of a virtualEventSession object.
 
 Import-Module Microsoft.Graph.Bookings
 
-Get-MgVirtualEventWebinarSession -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventSessionId $virtualEventSessionId
+Get-MgVirtualEventWebinarSession -VirtualEventWebinarId $virtualEventWebinarId
 
 ```
 This example shows how to use the Get-MgVirtualEventWebinarSession Cmdlet.
@@ -328,7 +331,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -343,6 +349,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsession)
 
 [https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/virtualevent-list-sessions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualevent-list-sessions?view=graph-rest-1.0)
 
 
 

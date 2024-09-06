@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventtownhall
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # New-MgVirtualEventTownhall
 
 ## SYNOPSIS
-Create new navigation property to townhalls for solutions
+Create a new virtualEventTownhall object in draft mode.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaVirtualEventTownhall](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventTownhall?view=graph-powershell-beta)
@@ -23,8 +24,9 @@ New-MgVirtualEventTownhall [-ResponseHeadersVariable <String>] [-AdditionalPrope
  [-DisplayName <String>] [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>]
  [-InvitedAttendees <IMicrosoftGraphIdentity[]>] [-IsInviteOnly]
  [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-Sessions <IMicrosoftGraphVirtualEventSession[]>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Settings <IMicrosoftGraphVirtualEventSettings>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
+ [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -35,7 +37,7 @@ New-MgVirtualEventTownhall -BodyParameter <IMicrosoftGraphVirtualEventTownhall>
 ```
 
 ## DESCRIPTION
-Create new navigation property to townhalls for solutions
+Create a new virtualEventTownhall object in draft mode.
 
 ## PARAMETERS
 
@@ -86,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -CoOrganizers
-.
+Identity information of the coorganizers of the town hall.
 To construct, see NOTES section for COORGANIZERS properties and create a hash table.
 
 ```yaml
@@ -134,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of the virtual event.
+The display name of the virtual event.
 
 ```yaml
 Type: String
@@ -196,7 +198,8 @@ Accept wildcard characters: False
 ```
 
 ### -InvitedAttendees
-.
+The attendees invited to the town hall.
+The supported identities are: communicationsUserIdentity and communicationsGuestIdentity.
 To construct, see NOTES section for INVITEDATTENDEES properties and create a hash table.
 
 ```yaml
@@ -212,7 +215,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsInviteOnly
-.
+Indicates whether the town hall is only open to invited people and groups within your organization.
+The isInviteOnly property can only be true if the value of the audience property is set to organization.
 
 ```yaml
 Type: SwitchParameter
@@ -227,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Presenters
-.
+The virtual event presenters.
 To construct, see NOTES section for PRESENTERS properties and create a hash table.
 
 ```yaml
@@ -273,11 +277,27 @@ Accept wildcard characters: False
 ```
 
 ### -Sessions
-Sessions for the virtual event.
+The sessions for the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphVirtualEventSession[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Settings
+virtualEventSettings
+To construct, see NOTES section for SETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphVirtualEventSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -390,27 +410,27 @@ For example, in the access reviews decisions API, this property might record the
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
-  - `[DisplayName <String>]`: Display name of the virtual event.
+  - `[DisplayName <String>]`: The display name of the virtual event.
   - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-  - `[Presenters <IMicrosoftGraphVirtualEventPresenter- `[]`>]`: 
+  - `[Presenters <IMicrosoftGraphVirtualEventPresenter- `[]`>]`: The virtual event presenters.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Email <String>]`: 
+    - `[Email <String>]`: Email address of the presenter.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
-      - `[Company <String>]`: 
-      - `[JobTitle <String>]`: 
-      - `[LinkedInProfileWebUrl <String>]`: 
-      - `[PersonalSiteWebUrl <String>]`: 
-      - `[Photo <Byte- `[]`>]`: 
-      - `[TwitterProfileWebUrl <String>]`: 
-  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: Sessions for the virtual event.
+      - `[Company <String>]`: The presenter's company name.
+      - `[JobTitle <String>]`: The presenter's job title.
+      - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
+      - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+      - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
+      - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
+  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowMeetingChat <String>]`: meetingChatMode
@@ -485,21 +505,26 @@ Read-only.
 Read-only.
     - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+  - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsAttendeeEmailNotificationEnabled <Boolean?>]`: Indicates whether virtual event attendees receive email notifications.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Status <String>]`: virtualEventStatus
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Audience <String>]`: meetingAudience
-  - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: 
+  - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of the coorganizers of the town hall.
     - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[TenantId <String>]`: The user's tenant ID.
-  - `[InvitedAttendees <IMicrosoftGraphIdentity- `[]`>]`: 
-  - `[IsInviteOnly <Boolean?>]`: 
+  - `[InvitedAttendees <IMicrosoftGraphIdentity- `[]`>]`: The attendees invited to the town hall.
+The supported identities are: communicationsUserIdentity and communicationsGuestIdentity.
+  - `[IsInviteOnly <Boolean?>]`: Indicates whether the town hall is only open to invited people and groups within your organization.
+The isInviteOnly property can only be true if the value of the audience property is set to organization.
 
-COORGANIZERS <IMicrosoftGraphCommunicationsUserIdentity- `[]`>: .
+COORGANIZERS <IMicrosoftGraphCommunicationsUserIdentity- `[]`>: Identity information of the coorganizers of the town hall.
   - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity or actor.
@@ -536,16 +561,17 @@ ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-INVITEDATTENDEES <IMicrosoftGraphIdentity- `[]`>: .
+INVITEDATTENDEES <IMicrosoftGraphIdentity- `[]`>: The attendees invited to the town hall.
+The supported identities are: communicationsUserIdentity and communicationsGuestIdentity.
   - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: .
+PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: The virtual event presenters.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Email <String>]`: 
+  - `[Email <String>]`: Email address of the presenter.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -558,14 +584,14 @@ For example, in the access reviews decisions API, this property might record the
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Content <String>]`: The content of the item.
       - `[ContentType <String>]`: bodyType
-    - `[Company <String>]`: 
-    - `[JobTitle <String>]`: 
-    - `[LinkedInProfileWebUrl <String>]`: 
-    - `[PersonalSiteWebUrl <String>]`: 
-    - `[Photo <Byte- `[]`>]`: 
-    - `[TwitterProfileWebUrl <String>]`: 
+    - `[Company <String>]`: The presenter's company name.
+    - `[JobTitle <String>]`: The presenter's job title.
+    - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
+    - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+    - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
+    - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: Sessions for the virtual event.
+SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: The sessions for the virtual event.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowMeetingChat <String>]`: meetingChatMode
@@ -653,6 +679,10 @@ Read-only.
 See below for more possible values.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
+SETTINGS `<IMicrosoftGraphVirtualEventSettings>`: virtualEventSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsAttendeeEmailNotificationEnabled <Boolean?>]`: Indicates whether virtual event attendees receive email notifications.
+
 STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
@@ -662,6 +692,8 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventtownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventtownhall)
+
+[https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-1.0)
 
 
 

@@ -445,9 +445,9 @@ Supported only on the Get group API (GET /groups/{ID}).
 Supports $expand.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+    - `[AppRoleId <String>]`: The identifier (id) for the app role that is assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
     - `[CreationTimestamp <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -468,6 +468,7 @@ Required on create.
 Supports $filter (eq only).
   - `[AssignedLabels <IMicrosoftGraphAssignedLabel- `[]`>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
 Returned only on $select.
+This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
     - `[DisplayName <String>]`: The display name of the label.
 Read-only.
     - `[LabelId <String>]`: The unique identifier of the label.
@@ -577,7 +578,8 @@ This ID is different for each occurrence in a recurring series.
 Read-only.
       - `[Importance <String>]`: importance
       - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
+This property includes occurrences that are part of the recurrence pattern and exceptions that have been modified.
+It doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -590,7 +592,7 @@ Set to false if all changes have been sent, or if the event is an appointment wi
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Outlook then ignores any further changes to isOnlineMeeting, and the meeting remains available online.
       - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
 This also applies if a delegate organized the event on behalf of the owner.
       - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
@@ -654,7 +656,7 @@ The onlineMeetingUrl property will be deprecated in the future.
         - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-      - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+      - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property isn't returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -706,16 +708,16 @@ Read-only.
         - `[Value <String>]`: A property value.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[Subject <String>]`: The text of the event's subject line.
-      - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
+      - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations if the client retries to create the same event.
 This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
       - `[Type <String>]`: eventType
       - `[Uid <String>]`: A unique identifier for calendar events.
 For recurring events, the value is the same for the series master and all of its occurrences including exceptions.
-      - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+      - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you're signed in to your mailbox.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
     - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
 This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource.
@@ -887,9 +889,10 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -1103,8 +1106,8 @@ This lets services like Microsoft 365 call the application in the context of a d
           - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-            - `[Key <String>]`: Contains the name of the field that a value is associated with.
-            - `[Value <String>]`: Contains the corresponding value for the specified key.
+            - `[Key <String>]`: Key.
+            - `[Value <String>]`: Value.
           - `[Type <String>]`: The unique name for the functionality exposed by the app.
         - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -1467,6 +1470,7 @@ Read-only.
         - `[PreferredSingleSignOnMode <String>]`: Specifies the single sign-on mode configured for this application.
 Microsoft Entra ID uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 The supported values are password, saml, notSupported, and oidc.
+Note: This field might be null for older SAML apps and for OIDC applications where it isn't set automatically.
         - `[PreferredTokenSigningKeyEndDateTime <DateTime?>]`: Specifies the expiration date of the keyCredential used for token signing, marked by preferredTokenSigningKeyThumbprint.
 Updating this attribute isn't currently supported.
 For details, see ServicePrincipal property differences.
@@ -1941,7 +1945,8 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 This property is set by Intune.
             - `[EnrollmentType <String>]`: Enrollment type of the device.
 This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
             - `[ExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]`: onPremisesExtensionAttributes
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[ExtensionAttribute1 <String>]`: First customizable extension attribute.
@@ -1970,11 +1975,10 @@ Supports $filter (eq, ne, not).
             - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
-            - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage.
+            - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit.
 The default value is false.
 Read-only. 
-To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
             - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
             - `[Kind <String>]`: Form factor of the device.
@@ -2189,6 +2193,7 @@ Read-only.
               - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
               - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[ClientAppId <String>]`: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
                 - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
               - `[AzureAdAppId <String>]`: The WebApplicationInfo.Id from the Teams app manifest.
               - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
@@ -2341,16 +2346,18 @@ For example, a user's display name, a team name.
               - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-                - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
                 - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
               - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-                - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
           - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
             - `[Actions <String>]`: chatMessageActions
             - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -2358,9 +2365,10 @@ This property is read-only.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              - `[DisplayName <String>]`: The name of the reaction.
               - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
-              - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
-Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
+              - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
               - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -2399,9 +2407,10 @@ Link to the message in Microsoft Teams.
           - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-            - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[UserIdentityType <String>]`: teamworkUserIdentityType
         - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -2649,7 +2658,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
           - `[Department <String>]`: The contact's department.
           - `[DisplayName <String>]`: The contact's display name.
 You can specify the display name in a create or update operation.
-Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified.
+Later updates to other properties might cause an automatically generated value to overwrite the displayName value you specified.
 To preserve a pre-existing value, always include it as displayName in an update operation.
           - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress- `[]`>]`: The contact's email addresses.
             - `[Address <String>]`: The email address of an entity instance.
@@ -3060,9 +3069,10 @@ Read-only.
                         - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
                           - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-                          - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                          - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
                           - `[LoginName <String>]`: The sign in name of the SharePoint identity.
                         - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                       - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -3511,12 +3521,14 @@ Possible values are: Automatic, AutomaticExceptTables, Manual.
                     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                     - `[Content <String>]`: The content of the comment.
-                    - `[ContentType <String>]`: Indicates the type for the comment.
-                    - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: 
+                    - `[ContentType <String>]`: The content type of the comment.
+                    - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: The list of replies to the comment.
+Read-only.
+Nullable.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                      - `[Content <String>]`: The content of replied comment.
-                      - `[ContentType <String>]`: Indicates the type for the replied comment.
+                      - `[Content <String>]`: The content of the reply.
+                      - `[ContentType <String>]`: The content type for the reply.
                       - `[Task <IMicrosoftGraphWorkbookDocumentTask>]`: workbookDocumentTask
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
@@ -3600,23 +3612,23 @@ Read-only.
 Read-only.
                     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                    - `[Comment <String>]`: Represents the comment associated with this name.
+                    - `[Comment <String>]`: The comment associated with this name.
                     - `[Name <String>]`: The name of the object.
 Read-only.
                     - `[Scope <String>]`: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
-                    - `[Type <String>]`: Indicates what type of reference is associated with the name.
+                    - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-                    - `[Value <IAny>]`: Represents the formula that the name is defined to refer to.
+                    - `[Value <IAny>]`: The formula that the name is defined to refer to.
 For example, =Sheet14!$B$2:$H$12 and =4.75.
 Read-only.
-                    - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
+                    - `[Visible <Boolean?>]`: Indicates whether the object is visible.
                     - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                      - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: Returns collection of charts that are part of the worksheet.
+                      - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: The list of charts that are part of the worksheet.
 Read-only.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -3636,19 +3648,21 @@ Read-only.
                                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                                - `[Bold <Boolean?>]`: Represents the bold status of font.
-                                - `[Color <String>]`: HTML color code representation of the text color.
-for example #FF0000 represents Red.
-                                - `[Italic <Boolean?>]`: Represents the italic status of the font.
-                                - `[Name <String>]`: Font name (for example 'Calibri')
-                                - `[Size <Double?>]`: Size of the font (for example 11)
-                                - `[Underline <String>]`: Type of underline applied to the font.
+                                - `[Bold <Boolean?>]`: Indicates whether the fond is bold.
+                                - `[Color <String>]`: The HTML color code representation of the text color.
+For example #FF0000 represents Red.
+                                - `[Italic <Boolean?>]`: Indicates whether the fond is italic.
+                                - `[Name <String>]`: The font name.
+For example 'Calibri'.
+                                - `[Size <Double?>]`: The size of the font.
+For example,  11.
+                                - `[Underline <String>]`: The type of underlining applied to the font.
 The possible values are: None, Single.
                               - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                                - `[Color <String>]`: HTML color code representing the color of lines in the chart.
+                                - `[Color <String>]`: The HTML color code that represents the color of lines in the chart.
                             - `[MajorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
                               - `[Id <String>]`: The unique identifier for an entity.
@@ -3658,7 +3672,7 @@ Read-only.
                                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                                 - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                              - `[Visible <Boolean?>]`: Boolean value representing if the axis gridlines are visible or not.
+                              - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
                             - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
 Can be set to a numeric value or an empty string. 
 The returned value is always a number.
@@ -3682,7 +3696,7 @@ Read-only.
 Read-only.
                                 - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                               - `[Text <String>]`: Represents the axis title.
-                              - `[Visible <Boolean?>]`: A boolean that specifies the visibility of an axis title.
+                              - `[Visible <Boolean?>]`: A Boolean that specifies the visibility of an axis title.
                           - `[SeriesAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                           - `[ValueAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                         - `[DataLabels <IMicrosoftGraphWorkbookChartDataLabels>]`: workbookChartDataLabels
@@ -3700,13 +3714,13 @@ Read-only.
                             - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                           - `[Position <String>]`: DataLabelPosition value that represents the position of the data label.
 The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-                          - `[Separator <String>]`: String representing the separator used for the data labels on a chart.
-                          - `[ShowBubbleSize <Boolean?>]`: Boolean value representing if the data label bubble size is visible or not.
-                          - `[ShowCategoryName <Boolean?>]`: Boolean value representing if the data label category name is visible or not.
-                          - `[ShowLegendKey <Boolean?>]`: Boolean value representing if the data label legend key is visible or not.
-                          - `[ShowPercentage <Boolean?>]`: Boolean value representing if the data label percentage is visible or not.
-                          - `[ShowSeriesName <Boolean?>]`: Boolean value representing if the data label series name is visible or not.
-                          - `[ShowValue <Boolean?>]`: Boolean value representing if the data label value is visible or not.
+                          - `[Separator <String>]`: String that represents the separator used for the data labels on a chart.
+                          - `[ShowBubbleSize <Boolean?>]`: Boolean value that represents whether the data label bubble size is visible.
+                          - `[ShowCategoryName <Boolean?>]`: Boolean value that represents whether the data label category name is visible.
+                          - `[ShowLegendKey <Boolean?>]`: Boolean value that represents whether the data label legend key is visible.
+                          - `[ShowPercentage <Boolean?>]`: Boolean value that represents whether the data label percentage is visible.
+                          - `[ShowSeriesName <Boolean?>]`: Boolean value that represents whether the data label series name is visible.
+                          - `[ShowValue <Boolean?>]`: Boolean value that represents whether the data label value is visible.
                         - `[Format <IMicrosoftGraphWorkbookChartAreaFormat>]`: workbookChartAreaFormat
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
                           - `[Id <String>]`: The unique identifier for an entity.
@@ -3725,10 +3739,10 @@ Read-only.
 Read-only.
                             - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                             - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                          - `[Overlay <Boolean?>]`: Boolean value for whether the chart legend should overlap with the main body of the chart.
+                          - `[Overlay <Boolean?>]`: Indicates whether the chart legend should overlap with the main body of the chart.
                           - `[Position <String>]`: Represents the position of the legend on the chart.
 The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-                          - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
+                          - `[Visible <Boolean?>]`: Indicates whether the chart legend is visible.
                         - `[Name <String>]`: Represents the name of a chart object.
                         - `[Series <IMicrosoftGraphWorkbookChartSeries- `[]`>]`: Represents either a single series or collection of series in the chart.
 Read-only.
@@ -3740,8 +3754,8 @@ Read-only.
 Read-only.
                             - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                             - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                          - `[Name <String>]`: Represents the name of a series in a chart.
-                          - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: Represents a collection of all points in the series.
+                          - `[Name <String>]`: The name of a series in a chart.
+                          - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: A collection of all points in the series.
 Read-only.
                             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -3750,7 +3764,7 @@ Read-only.
                               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                            - `[Value <IAny>]`: Returns the value of a chart point.
+                            - `[Value <IAny>]`: The value of a chart point.
 Read-only.
                         - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3762,19 +3776,19 @@ Read-only.
 Read-only.
                             - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                             - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                          - `[Overlay <Boolean?>]`: Boolean value representing if the chart title will overlay the chart or not.
-                          - `[Text <String>]`: Represents the title text of a chart.
-                          - `[Visible <Boolean?>]`: A boolean value that represents the visibility of a chart title object.
+                          - `[Overlay <Boolean?>]`: Indicates whether the chart title will overlay the chart or not.
+                          - `[Text <String>]`: The title text of the chart.
+                          - `[Visible <Boolean?>]`: Indicates whether the chart title is visible.
                         - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
                         - `[Width <Double?>]`: Represents the width, in points, of the chart object.
                         - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                       - `[Name <String>]`: The display name of the worksheet.
-                      - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: Returns collection of names that are associated with the worksheet.
+                      - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: The list of names that are associated with the worksheet.
 Read-only.
-                      - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: Collection of PivotTables that are part of the worksheet.
+                      - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: The list of piot tables that are part of the worksheet.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                        - `[Name <String>]`: Name of the PivotTable.
+                        - `[Name <String>]`: The name of the pivot table.
                         - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                       - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
                       - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
@@ -3794,13 +3808,13 @@ Read-only.
                           - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
                           - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
                           - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
-                        - `[Protected <Boolean?>]`: Indicates if the worksheet is protected. 
+                        - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
-                      - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: Collection of tables that are part of the worksheet.
+                      - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
 Read-only.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                        - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: Represents a collection of all the columns in the table.
+                        - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: The list of all the columns in the table.
 Read-only.
                           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -3817,35 +3831,35 @@ Read-only.
                               - `[FilterOn <String>]`: Indicates whether a filter is applied to a column.
                               - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                                - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                                - `[Set <String>]`: Represents the set that the icon is part of.
+                                - `[Index <Int32?>]`: The index of the icon in the given set.
+                                - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                               - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
                               - `[Values <IAny>]`: The values that appear in the cell.
-                          - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table.
+                          - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
-                          - `[Name <String>]`: Returns the name of the table column.
+                          - `[Name <String>]`: The name of the table column.
                           - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contains an error returns the error string.
+The data returned could be of type string, number, or a Boolean.
+Cell that contain an error will return the error string.
                         - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                         - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
-                        - `[LegacyId <String>]`: Legacy Id used in older Excel clients.
+                        - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
 The value of the identifier remains the same even when the table is renamed.
 This property should be interpreted as an opaque string value and shouldn't be parsed to any other type.
 Read-only.
-                        - `[Name <String>]`: Name of the table.
-                        - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: Represents a collection of all the rows in the table.
+                        - `[Name <String>]`: The name of the table.
+                        - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: The list of all the rows in the table.
 Read-only.
                           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                          - `[Index <Int32?>]`: Returns the index number of the row within the rows collection of the table.
-Zero-indexed.
+                          - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
+Zero-based.
 Read-only.
-                          - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contain an error will return the error string.
+                          - `[Values <IAny>]`: The raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
+Any cell that contain an error will return the error string.
                         - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                         - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                         - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -3858,7 +3872,8 @@ This value can be set to show or remove the total row.
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
                           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                          - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: 
+                          - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: The list of the current conditions last used to sort the table.
+Read-only.
                             - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
                             - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
                             - `[DataOption <String>]`: Represents additional sorting options for this field.
@@ -3868,12 +3883,12 @@ Possible values are: Normal, TextAsNumber.
 Represented as an offset from the first column (or row).
                             - `[SortOn <String>]`: Represents the type of sorting of this condition.
 Possible values are: Value, CellColor, FontColor, Icon.
-                          - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table.
+                          - `[MatchCase <Boolean?>]`: Indicates whether the casing impacted the last sort of the table.
 Read-only.
-                          - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table.
-Possible values are: PinYin, StrokeCount.
+                          - `[Method <String>]`: The Chinese character ordering method last used to sort the table.
+The possible values are: PinYin, StrokeCount.
 Read-only.
-                        - `[Style <String>]`: Constant value that represents the Table style.
+                        - `[Style <String>]`: A constant value that represents the Table style.
 Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
                         - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
@@ -4681,11 +4696,10 @@ Returned only on $select.
       - `[IsLicenseReconciliationNeeded <Boolean?>]`: Indicates whether the user is pending an exchange mailbox license assignment. 
 Read-only. 
 Supports $filter (eq where true only).
-      - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, which requires a role scoped to the restricted administrative unit to manage.
+      - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit.
 Default value is false.
 Read-only. 
-To manage a user who is a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
       - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
       - `[JobTitle <String>]`: The user's job title.
 Maximum length is 128 characters.
@@ -5824,7 +5838,7 @@ It is an Optional field
         - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
+        - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -5924,15 +5938,15 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
       - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting- `[]`>]`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
         - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
         - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-        - `[AllowBreakoutRooms <Boolean?>]`: 
+        - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
         - `[AllowLiveShare <String>]`: meetingLiveShareOptions
         - `[AllowMeetingChat <String>]`: meetingChatMode
         - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
-        - `[AllowPowerPointSharing <Boolean?>]`: 
+        - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
         - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
         - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
         - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
-        - `[AllowWhiteboard <Boolean?>]`: 
+        - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
         - `[AllowedPresenters <String>]`: onlineMeetingPresenters
         - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -6145,7 +6159,7 @@ Read-only.
 Read-only.
           - `[Color <String>]`: categoryColor
           - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox.
-After a category is created, the name cannot be changed.
+After a category is created, the name can't be changed.
 Read-only.
         - `[TaskFolders <IMicrosoftGraphOutlookTaskFolder- `[]`>]`: The user's Outlook task folders.
 Read-only.
@@ -6178,7 +6192,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
             - `[AssignedTo <String>]`: The name of the person who has been assigned the task in Outlook.
 Read-only.
-            - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task. 
+            - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
 Read-only.
 Nullable.
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
@@ -6266,9 +6280,10 @@ Read-only.
           - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-            - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
             - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
           - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.
@@ -7460,18 +7475,18 @@ For information on how to set the value for the companyCode, see profileSourceAn
               - `[DisplayName <String>]`: Company name.
               - `[OfficeLocation <String>]`: Office Location of the person referred to.
               - `[Pronunciation <String>]`: Pronunciation guide for the company name.
-              - `[SecondaryDepartment <String>]`: 
+              - `[SecondaryDepartment <String>]`: Secondary Department Name within a company.
               - `[WebUrl <String>]`: Link to the company home page.
-            - `[Description <String>]`: Description of the position in question.
-            - `[EndMonthYear <DateTime?>]`: When the position ended.
-            - `[JobTitle <String>]`: The title held when in that position.
+            - `[Description <String>]`: A description for the position in question.
+            - `[EndMonthYear <DateTime?>]`: The date when the position ended.
+            - `[JobTitle <String>]`: The title of the position.
             - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
             - `[Level <String>]`: The employee's experience or management level.
             - `[Role <String>]`: The role the position entailed.
-            - `[SecondaryJobTitle <String>]`: 
-            - `[SecondaryRole <String>]`: 
-            - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
-            - `[Summary <String>]`: summary of the position.
+            - `[SecondaryJobTitle <String>]`: An optional job title for the position.
+            - `[SecondaryRole <String>]`: An optional role for the position entailed.
+            - `[StartMonthYear <DateTime?>]`: The start date of the position.
+            - `[Summary <String>]`: The summary of the position.
           - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
           - `[Manager <IMicrosoftGraphRelatedPerson>]`: relatedPerson
         - `[Projects <IMicrosoftGraphProjectParticipation- `[]`>]`: Represents detailed information about projects associated with a user.
@@ -7663,8 +7678,8 @@ Users can control this setting in Office Delve.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[IsEnabled <Boolean?>]`: true if user's itemInsights and meeting hours insights are enabled; false if user's itemInsights and meeting hours insights are disabled.
-Default is true.
+          - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
 Optional.
         - `[RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]`: regionalAndLanguageSettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -7825,7 +7840,7 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
         - `[Region <String>]`: Represents the region of the organization or the user.
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
-The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
       - `[Todo <IMicrosoftGraphTodo>]`: todo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -7967,15 +7982,15 @@ Read-only.
             - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
               - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
               - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-              - `[AllowBreakoutRooms <Boolean?>]`: 
+              - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
               - `[AllowLiveShare <String>]`: meetingLiveShareOptions
               - `[AllowMeetingChat <String>]`: meetingChatMode
               - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
-              - `[AllowPowerPointSharing <Boolean?>]`: 
+              - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
               - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
               - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
               - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
-              - `[AllowWhiteboard <Boolean?>]`: 
+              - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
               - `[AllowedPresenters <String>]`: onlineMeetingPresenters
               - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -8042,9 +8057,10 @@ Read-only.
           - `[Audience <String>]`: meetingAudience
           - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
             - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-            - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[TenantId <String>]`: The user's tenant ID.
           - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8183,11 +8199,10 @@ For more, see Using a group to manage Microsoft Entra role assignmentsUsing this
 Returned by default.
 Supports $filter (eq, ne, not).
   - `[IsFavorite <Boolean?>]`: Indicates whether the user marked the group as favorite.
-  - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage.
+  - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit.
 The default value is false.
 Read-only. 
-To manage a group member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
   - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
 The default value is true.
 Returned only on $select.
@@ -8543,9 +8558,10 @@ Supports $filter (eq).
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-          - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[CreatedDateTime <DateTime?>]`: The request creation date time.
@@ -8596,8 +8612,8 @@ This lets services like Microsoft 365 call the application in the context of a d
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[Type <String>]`: The unique name for the functionality exposed by the app.
     - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -8646,9 +8662,9 @@ Supports $filter (eq, ne, NOT, ge, le).
     - `[AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment- `[]`>]`: App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+      - `[AppRoleId <String>]`: The identifier (id) for the app role that is assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
       - `[CreationTimestamp <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -8987,6 +9003,7 @@ Read-only.
     - `[PreferredSingleSignOnMode <String>]`: Specifies the single sign-on mode configured for this application.
 Microsoft Entra ID uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 The supported values are password, saml, notSupported, and oidc.
+Note: This field might be null for older SAML apps and for OIDC applications where it isn't set automatically.
     - `[PreferredTokenSigningKeyEndDateTime <DateTime?>]`: Specifies the expiration date of the keyCredential used for token signing, marked by preferredTokenSigningKeyThumbprint.
 Updating this attribute isn't currently supported.
 For details, see ServicePrincipal property differences.
@@ -9465,7 +9482,8 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 This property is set by Intune.
         - `[EnrollmentType <String>]`: Enrollment type of the device.
 This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
         - `[ExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]`: onPremisesExtensionAttributes
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ExtensionAttribute1 <String>]`: First customizable extension attribute.
@@ -9496,11 +9514,10 @@ Supports $filter (eq, ne, not).
         - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
-        - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage.
+        - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit.
 The default value is false.
 Read-only. 
-To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
         - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
         - `[Kind <String>]`: Form factor of the device.
@@ -9754,7 +9771,8 @@ This ID is different for each occurrence in a recurring series.
 Read-only.
       - `[Importance <String>]`: importance
       - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
+This property includes occurrences that are part of the recurrence pattern and exceptions that have been modified.
+It doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -9767,7 +9785,7 @@ Set to false if all changes have been sent, or if the event is an appointment wi
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Outlook then ignores any further changes to isOnlineMeeting, and the meeting remains available online.
       - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
 This also applies if a delegate organized the event on behalf of the owner.
       - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
@@ -9831,7 +9849,7 @@ The onlineMeetingUrl property will be deprecated in the future.
         - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-      - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+      - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property isn't returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -9883,16 +9901,16 @@ Read-only.
         - `[Value <String>]`: A property value.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[Subject <String>]`: The text of the event's subject line.
-      - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
+      - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations if the client retries to create the same event.
 This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
       - `[Type <String>]`: eventType
       - `[Uid <String>]`: A unique identifier for calendar events.
 For recurring events, the value is the same for the series master and all of its occurrences including exceptions.
-      - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+      - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you're signed in to your mailbox.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
     - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
 This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource.
@@ -9985,6 +10003,7 @@ Read-only.
           - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
           - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[ClientAppId <String>]`: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
             - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
           - `[AzureAdAppId <String>]`: The WebApplicationInfo.Id from the Teams app manifest.
           - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
@@ -10137,16 +10156,18 @@ For example, a user's display name, a team name.
           - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-            - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
           - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-            - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
         - `[Actions <String>]`: chatMessageActions
         - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -10154,9 +10175,10 @@ This property is read-only.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[DisplayName <String>]`: The name of the reaction.
           - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
-          - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
-Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
+          - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
           - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -10195,9 +10217,10 @@ Link to the message in Microsoft Teams.
       - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         - `[UserIdentityType <String>]`: teamworkUserIdentityType
     - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -10445,7 +10468,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Department <String>]`: The contact's department.
       - `[DisplayName <String>]`: The contact's display name.
 You can specify the display name in a create or update operation.
-Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified.
+Later updates to other properties might cause an automatically generated value to overwrite the displayName value you specified.
 To preserve a pre-existing value, always include it as displayName in an update operation.
       - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress- `[]`>]`: The contact's email addresses.
         - `[Address <String>]`: The email address of an entity instance.
@@ -10892,9 +10915,10 @@ Read-only.
               - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-                - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
                 - `[LoginName <String>]`: The sign in name of the SharePoint identity.
               - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
             - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -11259,12 +11283,14 @@ Possible values are: Automatic, AutomaticExceptTables, Manual.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[Content <String>]`: The content of the comment.
-            - `[ContentType <String>]`: Indicates the type for the comment.
-            - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: 
+            - `[ContentType <String>]`: The content type of the comment.
+            - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: The list of replies to the comment.
+Read-only.
+Nullable.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[Content <String>]`: The content of replied comment.
-              - `[ContentType <String>]`: Indicates the type for the replied comment.
+              - `[Content <String>]`: The content of the reply.
+              - `[ContentType <String>]`: The content type for the reply.
               - `[Task <IMicrosoftGraphWorkbookDocumentTask>]`: workbookDocumentTask
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique identifier for an entity.
@@ -11348,23 +11374,23 @@ Read-only.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Comment <String>]`: Represents the comment associated with this name.
+            - `[Comment <String>]`: The comment associated with this name.
             - `[Name <String>]`: The name of the object.
 Read-only.
             - `[Scope <String>]`: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
-            - `[Type <String>]`: Indicates what type of reference is associated with the name.
+            - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-            - `[Value <IAny>]`: Represents the formula that the name is defined to refer to.
+            - `[Value <IAny>]`: The formula that the name is defined to refer to.
 For example, =Sheet14!$B$2:$H$12 and =4.75.
 Read-only.
-            - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
+            - `[Visible <Boolean?>]`: Indicates whether the object is visible.
             - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: Returns collection of charts that are part of the worksheet.
+              - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: The list of charts that are part of the worksheet.
 Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -11384,19 +11410,21 @@ Read-only.
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                        - `[Bold <Boolean?>]`: Represents the bold status of font.
-                        - `[Color <String>]`: HTML color code representation of the text color.
-for example #FF0000 represents Red.
-                        - `[Italic <Boolean?>]`: Represents the italic status of the font.
-                        - `[Name <String>]`: Font name (for example 'Calibri')
-                        - `[Size <Double?>]`: Size of the font (for example 11)
-                        - `[Underline <String>]`: Type of underline applied to the font.
+                        - `[Bold <Boolean?>]`: Indicates whether the fond is bold.
+                        - `[Color <String>]`: The HTML color code representation of the text color.
+For example #FF0000 represents Red.
+                        - `[Italic <Boolean?>]`: Indicates whether the fond is italic.
+                        - `[Name <String>]`: The font name.
+For example 'Calibri'.
+                        - `[Size <Double?>]`: The size of the font.
+For example,  11.
+                        - `[Underline <String>]`: The type of underlining applied to the font.
 The possible values are: None, Single.
                       - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                        - `[Color <String>]`: HTML color code representing the color of lines in the chart.
+                        - `[Color <String>]`: The HTML color code that represents the color of lines in the chart.
                     - `[MajorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
                       - `[Id <String>]`: The unique identifier for an entity.
@@ -11406,7 +11434,7 @@ Read-only.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                         - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                      - `[Visible <Boolean?>]`: Boolean value representing if the axis gridlines are visible or not.
+                      - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
                     - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
 Can be set to a numeric value or an empty string. 
 The returned value is always a number.
@@ -11430,7 +11458,7 @@ Read-only.
 Read-only.
                         - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                       - `[Text <String>]`: Represents the axis title.
-                      - `[Visible <Boolean?>]`: A boolean that specifies the visibility of an axis title.
+                      - `[Visible <Boolean?>]`: A Boolean that specifies the visibility of an axis title.
                   - `[SeriesAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                   - `[ValueAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                 - `[DataLabels <IMicrosoftGraphWorkbookChartDataLabels>]`: workbookChartDataLabels
@@ -11448,13 +11476,13 @@ Read-only.
                     - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                   - `[Position <String>]`: DataLabelPosition value that represents the position of the data label.
 The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-                  - `[Separator <String>]`: String representing the separator used for the data labels on a chart.
-                  - `[ShowBubbleSize <Boolean?>]`: Boolean value representing if the data label bubble size is visible or not.
-                  - `[ShowCategoryName <Boolean?>]`: Boolean value representing if the data label category name is visible or not.
-                  - `[ShowLegendKey <Boolean?>]`: Boolean value representing if the data label legend key is visible or not.
-                  - `[ShowPercentage <Boolean?>]`: Boolean value representing if the data label percentage is visible or not.
-                  - `[ShowSeriesName <Boolean?>]`: Boolean value representing if the data label series name is visible or not.
-                  - `[ShowValue <Boolean?>]`: Boolean value representing if the data label value is visible or not.
+                  - `[Separator <String>]`: String that represents the separator used for the data labels on a chart.
+                  - `[ShowBubbleSize <Boolean?>]`: Boolean value that represents whether the data label bubble size is visible.
+                  - `[ShowCategoryName <Boolean?>]`: Boolean value that represents whether the data label category name is visible.
+                  - `[ShowLegendKey <Boolean?>]`: Boolean value that represents whether the data label legend key is visible.
+                  - `[ShowPercentage <Boolean?>]`: Boolean value that represents whether the data label percentage is visible.
+                  - `[ShowSeriesName <Boolean?>]`: Boolean value that represents whether the data label series name is visible.
+                  - `[ShowValue <Boolean?>]`: Boolean value that represents whether the data label value is visible.
                 - `[Format <IMicrosoftGraphWorkbookChartAreaFormat>]`: workbookChartAreaFormat
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
@@ -11473,10 +11501,10 @@ Read-only.
 Read-only.
                     - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                     - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                  - `[Overlay <Boolean?>]`: Boolean value for whether the chart legend should overlap with the main body of the chart.
+                  - `[Overlay <Boolean?>]`: Indicates whether the chart legend should overlap with the main body of the chart.
                   - `[Position <String>]`: Represents the position of the legend on the chart.
 The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-                  - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
+                  - `[Visible <Boolean?>]`: Indicates whether the chart legend is visible.
                 - `[Name <String>]`: Represents the name of a chart object.
                 - `[Series <IMicrosoftGraphWorkbookChartSeries- `[]`>]`: Represents either a single series or collection of series in the chart.
 Read-only.
@@ -11488,8 +11516,8 @@ Read-only.
 Read-only.
                     - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                     - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                  - `[Name <String>]`: Represents the name of a series in a chart.
-                  - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: Represents a collection of all points in the series.
+                  - `[Name <String>]`: The name of a series in a chart.
+                  - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: A collection of all points in the series.
 Read-only.
                     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -11498,7 +11526,7 @@ Read-only.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                       - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                    - `[Value <IAny>]`: Returns the value of a chart point.
+                    - `[Value <IAny>]`: The value of a chart point.
 Read-only.
                 - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11510,19 +11538,19 @@ Read-only.
 Read-only.
                     - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                     - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                  - `[Overlay <Boolean?>]`: Boolean value representing if the chart title will overlay the chart or not.
-                  - `[Text <String>]`: Represents the title text of a chart.
-                  - `[Visible <Boolean?>]`: A boolean value that represents the visibility of a chart title object.
+                  - `[Overlay <Boolean?>]`: Indicates whether the chart title will overlay the chart or not.
+                  - `[Text <String>]`: The title text of the chart.
+                  - `[Visible <Boolean?>]`: Indicates whether the chart title is visible.
                 - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
                 - `[Width <Double?>]`: Represents the width, in points, of the chart object.
                 - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
               - `[Name <String>]`: The display name of the worksheet.
-              - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: Returns collection of names that are associated with the worksheet.
+              - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: The list of names that are associated with the worksheet.
 Read-only.
-              - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: Collection of PivotTables that are part of the worksheet.
+              - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: The list of piot tables that are part of the worksheet.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                - `[Name <String>]`: Name of the PivotTable.
+                - `[Name <String>]`: The name of the pivot table.
                 - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
               - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
               - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
@@ -11542,13 +11570,13 @@ Read-only.
                   - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
                   - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
                   - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
-                - `[Protected <Boolean?>]`: Indicates if the worksheet is protected. 
+                - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
-              - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: Collection of tables that are part of the worksheet.
+              - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
 Read-only.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: Represents a collection of all the columns in the table.
+                - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: The list of all the columns in the table.
 Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -11565,35 +11593,35 @@ Read-only.
                       - `[FilterOn <String>]`: Indicates whether a filter is applied to a column.
                       - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                        - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                        - `[Set <String>]`: Represents the set that the icon is part of.
+                        - `[Index <Int32?>]`: The index of the icon in the given set.
+                        - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                       - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
                       - `[Values <IAny>]`: The values that appear in the cell.
-                  - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table.
+                  - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
-                  - `[Name <String>]`: Returns the name of the table column.
+                  - `[Name <String>]`: The name of the table column.
                   - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contains an error returns the error string.
+The data returned could be of type string, number, or a Boolean.
+Cell that contain an error will return the error string.
                 - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                 - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
-                - `[LegacyId <String>]`: Legacy Id used in older Excel clients.
+                - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
 The value of the identifier remains the same even when the table is renamed.
 This property should be interpreted as an opaque string value and shouldn't be parsed to any other type.
 Read-only.
-                - `[Name <String>]`: Name of the table.
-                - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: Represents a collection of all the rows in the table.
+                - `[Name <String>]`: The name of the table.
+                - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: The list of all the rows in the table.
 Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Index <Int32?>]`: Returns the index number of the row within the rows collection of the table.
-Zero-indexed.
+                  - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
+Zero-based.
 Read-only.
-                  - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contain an error will return the error string.
+                  - `[Values <IAny>]`: The raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
+Any cell that contain an error will return the error string.
                 - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                 - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                 - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -11606,7 +11634,8 @@ This value can be set to show or remove the total row.
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                  - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: 
+                  - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: The list of the current conditions last used to sort the table.
+Read-only.
                     - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
                     - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
                     - `[DataOption <String>]`: Represents additional sorting options for this field.
@@ -11616,12 +11645,12 @@ Possible values are: Normal, TextAsNumber.
 Represented as an offset from the first column (or row).
                     - `[SortOn <String>]`: Represents the type of sorting of this condition.
 Possible values are: Value, CellColor, FontColor, Icon.
-                  - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table.
+                  - `[MatchCase <Boolean?>]`: Indicates whether the casing impacted the last sort of the table.
 Read-only.
-                  - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table.
-Possible values are: PinYin, StrokeCount.
+                  - `[Method <String>]`: The Chinese character ordering method last used to sort the table.
+The possible values are: PinYin, StrokeCount.
 Read-only.
-                - `[Style <String>]`: Constant value that represents the Table style.
+                - `[Style <String>]`: A constant value that represents the Table style.
 Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
                 - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
@@ -12534,11 +12563,10 @@ Returned only on $select.
   - `[IsLicenseReconciliationNeeded <Boolean?>]`: Indicates whether the user is pending an exchange mailbox license assignment. 
 Read-only. 
 Supports $filter (eq where true only).
-  - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, which requires a role scoped to the restricted administrative unit to manage.
+  - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit.
 Default value is false.
 Read-only. 
-To manage a user who is a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
   - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
   - `[JobTitle <String>]`: The user's job title.
 Maximum length is 128 characters.
@@ -12559,6 +12587,7 @@ Supported only on the Get group API (GET /groups/{ID}).
 Supports $expand.
     - `[AssignedLabels <IMicrosoftGraphAssignedLabel- `[]`>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
 Returned only on $select.
+This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
       - `[DisplayName <String>]`: The display name of the label.
 Read-only.
       - `[LabelId <String>]`: The unique identifier of the label.
@@ -12756,11 +12785,10 @@ For more, see Using a group to manage Microsoft Entra role assignmentsUsing this
 Returned by default.
 Supports $filter (eq, ne, not).
     - `[IsFavorite <Boolean?>]`: Indicates whether the user marked the group as favorite.
-    - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage.
+    - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit.
 The default value is false.
 Read-only. 
-To manage a group member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
     - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
 The default value is true.
 Returned only on $select.
@@ -14347,7 +14375,7 @@ It is an Optional field
     - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
+    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -14439,15 +14467,15 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
   - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting- `[]`>]`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-    - `[AllowBreakoutRooms <Boolean?>]`: 
+    - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
     - `[AllowLiveShare <String>]`: meetingLiveShareOptions
     - `[AllowMeetingChat <String>]`: meetingChatMode
     - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
-    - `[AllowPowerPointSharing <Boolean?>]`: 
+    - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
     - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
-    - `[AllowWhiteboard <Boolean?>]`: 
+    - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -14660,7 +14688,7 @@ Read-only.
 Read-only.
       - `[Color <String>]`: categoryColor
       - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox.
-After a category is created, the name cannot be changed.
+After a category is created, the name can't be changed.
 Read-only.
     - `[TaskFolders <IMicrosoftGraphOutlookTaskFolder- `[]`>]`: The user's Outlook task folders.
 Read-only.
@@ -14693,7 +14721,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
         - `[AssignedTo <String>]`: The name of the person who has been assigned the task in Outlook.
 Read-only.
-        - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task. 
+        - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
 Read-only.
 Nullable.
         - `[Body <IMicrosoftGraphItemBody>]`: itemBody
@@ -14781,9 +14809,10 @@ Read-only.
       - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
         - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
       - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.
@@ -15722,18 +15751,18 @@ For information on how to set the value for the companyCode, see profileSourceAn
           - `[DisplayName <String>]`: Company name.
           - `[OfficeLocation <String>]`: Office Location of the person referred to.
           - `[Pronunciation <String>]`: Pronunciation guide for the company name.
-          - `[SecondaryDepartment <String>]`: 
+          - `[SecondaryDepartment <String>]`: Secondary Department Name within a company.
           - `[WebUrl <String>]`: Link to the company home page.
-        - `[Description <String>]`: Description of the position in question.
-        - `[EndMonthYear <DateTime?>]`: When the position ended.
-        - `[JobTitle <String>]`: The title held when in that position.
+        - `[Description <String>]`: A description for the position in question.
+        - `[EndMonthYear <DateTime?>]`: The date when the position ended.
+        - `[JobTitle <String>]`: The title of the position.
         - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
         - `[Level <String>]`: The employee's experience or management level.
         - `[Role <String>]`: The role the position entailed.
-        - `[SecondaryJobTitle <String>]`: 
-        - `[SecondaryRole <String>]`: 
-        - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
-        - `[Summary <String>]`: summary of the position.
+        - `[SecondaryJobTitle <String>]`: An optional job title for the position.
+        - `[SecondaryRole <String>]`: An optional role for the position entailed.
+        - `[StartMonthYear <DateTime?>]`: The start date of the position.
+        - `[Summary <String>]`: The summary of the position.
       - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
       - `[Manager <IMicrosoftGraphRelatedPerson>]`: relatedPerson
     - `[Projects <IMicrosoftGraphProjectParticipation- `[]`>]`: Represents detailed information about projects associated with a user.
@@ -15922,8 +15951,8 @@ Users can control this setting in Office Delve.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[IsEnabled <Boolean?>]`: true if user's itemInsights and meeting hours insights are enabled; false if user's itemInsights and meeting hours insights are disabled.
-Default is true.
+      - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
 Optional.
     - `[RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]`: regionalAndLanguageSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16084,7 +16113,7 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
     - `[Region <String>]`: Represents the region of the organization or the user.
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
-The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
   - `[Todo <IMicrosoftGraphTodo>]`: todo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -16226,15 +16255,15 @@ Read-only.
         - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
           - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
           - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-          - `[AllowBreakoutRooms <Boolean?>]`: 
+          - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
           - `[AllowLiveShare <String>]`: meetingLiveShareOptions
           - `[AllowMeetingChat <String>]`: meetingChatMode
           - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
-          - `[AllowPowerPointSharing <Boolean?>]`: 
+          - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
           - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
           - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
           - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
-          - `[AllowWhiteboard <Boolean?>]`: 
+          - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
           - `[AllowedPresenters <String>]`: onlineMeetingPresenters
           - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -16301,9 +16330,10 @@ Read-only.
       - `[Audience <String>]`: meetingAudience
       - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         - `[TenantId <String>]`: The user's tenant ID.
       - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16459,9 +16489,10 @@ Read-only.
     - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
@@ -16610,9 +16641,9 @@ Supported only on the Get group API (GET /groups/{ID}).
 Supports $expand.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+      - `[AppRoleId <String>]`: The identifier (id) for the app role that is assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
       - `[CreationTimestamp <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -16633,6 +16664,7 @@ Required on create.
 Supports $filter (eq only).
     - `[AssignedLabels <IMicrosoftGraphAssignedLabel- `[]`>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
 Returned only on $select.
+This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
       - `[DisplayName <String>]`: The display name of the label.
 Read-only.
       - `[LabelId <String>]`: The unique identifier of the label.
@@ -16742,7 +16774,8 @@ This ID is different for each occurrence in a recurring series.
 Read-only.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
+This property includes occurrences that are part of the recurrence pattern and exceptions that have been modified.
+It doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -16755,7 +16788,7 @@ Set to false if all changes have been sent, or if the event is an appointment wi
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Outlook then ignores any further changes to isOnlineMeeting, and the meeting remains available online.
         - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
 This also applies if a delegate organized the event on behalf of the owner.
         - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
@@ -16819,7 +16852,7 @@ The onlineMeetingUrl property will be deprecated in the future.
           - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property isn't returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -16871,16 +16904,16 @@ Read-only.
           - `[Value <String>]`: A property value.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Subject <String>]`: The text of the event's subject line.
-        - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
+        - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations if the client retries to create the same event.
 This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
         - `[Type <String>]`: eventType
         - `[Uid <String>]`: A unique identifier for calendar events.
 For recurring events, the value is the same for the series master and all of its occurrences including exceptions.
-        - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+        - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you're signed in to your mailbox.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
       - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
 This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource.
@@ -17052,9 +17085,10 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-          - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -17268,8 +17302,8 @@ This lets services like Microsoft 365 call the application in the context of a d
             - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-              - `[Key <String>]`: Contains the name of the field that a value is associated with.
-              - `[Value <String>]`: Contains the corresponding value for the specified key.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: The unique name for the functionality exposed by the app.
           - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -17632,6 +17666,7 @@ Read-only.
           - `[PreferredSingleSignOnMode <String>]`: Specifies the single sign-on mode configured for this application.
 Microsoft Entra ID uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 The supported values are password, saml, notSupported, and oidc.
+Note: This field might be null for older SAML apps and for OIDC applications where it isn't set automatically.
           - `[PreferredTokenSigningKeyEndDateTime <DateTime?>]`: Specifies the expiration date of the keyCredential used for token signing, marked by preferredTokenSigningKeyThumbprint.
 Updating this attribute isn't currently supported.
 For details, see ServicePrincipal property differences.
@@ -18106,7 +18141,8 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 This property is set by Intune.
               - `[EnrollmentType <String>]`: Enrollment type of the device.
 This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
               - `[ExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]`: onPremisesExtensionAttributes
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[ExtensionAttribute1 <String>]`: First customizable extension attribute.
@@ -18135,11 +18171,10 @@ Supports $filter (eq, ne, not).
               - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
-              - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage.
+              - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit.
 The default value is false.
 Read-only. 
-To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
               - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
               - `[Kind <String>]`: Form factor of the device.
@@ -18354,6 +18389,7 @@ Read-only.
                 - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
                 - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[ClientAppId <String>]`: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
                   - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
                 - `[AzureAdAppId <String>]`: The WebApplicationInfo.Id from the Teams app manifest.
                 - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
@@ -18506,16 +18542,18 @@ For example, a user's display name, a team name.
                 - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-                  - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                  - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
                   - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
                 - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-                  - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                  - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
             - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
               - `[Actions <String>]`: chatMessageActions
               - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -18523,9 +18561,10 @@ This property is read-only.
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                - `[DisplayName <String>]`: The name of the reaction.
                 - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
-                - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
-Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
+                - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
                 - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -18564,9 +18603,10 @@ Link to the message in Microsoft Teams.
             - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-              - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
               - `[UserIdentityType <String>]`: teamworkUserIdentityType
           - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -18814,7 +18854,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[Department <String>]`: The contact's department.
             - `[DisplayName <String>]`: The contact's display name.
 You can specify the display name in a create or update operation.
-Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified.
+Later updates to other properties might cause an automatically generated value to overwrite the displayName value you specified.
 To preserve a pre-existing value, always include it as displayName in an update operation.
             - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress- `[]`>]`: The contact's email addresses.
               - `[Address <String>]`: The email address of an entity instance.
@@ -19225,9 +19265,10 @@ Read-only.
                           - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
                             - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-                            - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
                             - `[LoginName <String>]`: The sign in name of the SharePoint identity.
                           - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                         - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -19676,12 +19717,14 @@ Possible values are: Automatic, AutomaticExceptTables, Manual.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                       - `[Content <String>]`: The content of the comment.
-                      - `[ContentType <String>]`: Indicates the type for the comment.
-                      - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: 
+                      - `[ContentType <String>]`: The content type of the comment.
+                      - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: The list of replies to the comment.
+Read-only.
+Nullable.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                        - `[Content <String>]`: The content of replied comment.
-                        - `[ContentType <String>]`: Indicates the type for the replied comment.
+                        - `[Content <String>]`: The content of the reply.
+                        - `[ContentType <String>]`: The content type for the reply.
                         - `[Task <IMicrosoftGraphWorkbookDocumentTask>]`: workbookDocumentTask
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
                           - `[Id <String>]`: The unique identifier for an entity.
@@ -19765,23 +19808,23 @@ Read-only.
 Read-only.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                      - `[Comment <String>]`: Represents the comment associated with this name.
+                      - `[Comment <String>]`: The comment associated with this name.
                       - `[Name <String>]`: The name of the object.
 Read-only.
                       - `[Scope <String>]`: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
-                      - `[Type <String>]`: Indicates what type of reference is associated with the name.
+                      - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-                      - `[Value <IAny>]`: Represents the formula that the name is defined to refer to.
+                      - `[Value <IAny>]`: The formula that the name is defined to refer to.
 For example, =Sheet14!$B$2:$H$12 and =4.75.
 Read-only.
-                      - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
+                      - `[Visible <Boolean?>]`: Indicates whether the object is visible.
                       - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                        - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: Returns collection of charts that are part of the worksheet.
+                        - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: The list of charts that are part of the worksheet.
 Read-only.
                           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -19801,19 +19844,21 @@ Read-only.
                                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                                  - `[Bold <Boolean?>]`: Represents the bold status of font.
-                                  - `[Color <String>]`: HTML color code representation of the text color.
-for example #FF0000 represents Red.
-                                  - `[Italic <Boolean?>]`: Represents the italic status of the font.
-                                  - `[Name <String>]`: Font name (for example 'Calibri')
-                                  - `[Size <Double?>]`: Size of the font (for example 11)
-                                  - `[Underline <String>]`: Type of underline applied to the font.
+                                  - `[Bold <Boolean?>]`: Indicates whether the fond is bold.
+                                  - `[Color <String>]`: The HTML color code representation of the text color.
+For example #FF0000 represents Red.
+                                  - `[Italic <Boolean?>]`: Indicates whether the fond is italic.
+                                  - `[Name <String>]`: The font name.
+For example 'Calibri'.
+                                  - `[Size <Double?>]`: The size of the font.
+For example,  11.
+                                  - `[Underline <String>]`: The type of underlining applied to the font.
 The possible values are: None, Single.
                                 - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                                  - `[Color <String>]`: HTML color code representing the color of lines in the chart.
+                                  - `[Color <String>]`: The HTML color code that represents the color of lines in the chart.
                               - `[MajorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
                                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                                 - `[Id <String>]`: The unique identifier for an entity.
@@ -19823,7 +19868,7 @@ Read-only.
                                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                                   - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                                - `[Visible <Boolean?>]`: Boolean value representing if the axis gridlines are visible or not.
+                                - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
                               - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
 Can be set to a numeric value or an empty string. 
 The returned value is always a number.
@@ -19847,7 +19892,7 @@ Read-only.
 Read-only.
                                   - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                                 - `[Text <String>]`: Represents the axis title.
-                                - `[Visible <Boolean?>]`: A boolean that specifies the visibility of an axis title.
+                                - `[Visible <Boolean?>]`: A Boolean that specifies the visibility of an axis title.
                             - `[SeriesAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                             - `[ValueAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                           - `[DataLabels <IMicrosoftGraphWorkbookChartDataLabels>]`: workbookChartDataLabels
@@ -19865,13 +19910,13 @@ Read-only.
                               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                             - `[Position <String>]`: DataLabelPosition value that represents the position of the data label.
 The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-                            - `[Separator <String>]`: String representing the separator used for the data labels on a chart.
-                            - `[ShowBubbleSize <Boolean?>]`: Boolean value representing if the data label bubble size is visible or not.
-                            - `[ShowCategoryName <Boolean?>]`: Boolean value representing if the data label category name is visible or not.
-                            - `[ShowLegendKey <Boolean?>]`: Boolean value representing if the data label legend key is visible or not.
-                            - `[ShowPercentage <Boolean?>]`: Boolean value representing if the data label percentage is visible or not.
-                            - `[ShowSeriesName <Boolean?>]`: Boolean value representing if the data label series name is visible or not.
-                            - `[ShowValue <Boolean?>]`: Boolean value representing if the data label value is visible or not.
+                            - `[Separator <String>]`: String that represents the separator used for the data labels on a chart.
+                            - `[ShowBubbleSize <Boolean?>]`: Boolean value that represents whether the data label bubble size is visible.
+                            - `[ShowCategoryName <Boolean?>]`: Boolean value that represents whether the data label category name is visible.
+                            - `[ShowLegendKey <Boolean?>]`: Boolean value that represents whether the data label legend key is visible.
+                            - `[ShowPercentage <Boolean?>]`: Boolean value that represents whether the data label percentage is visible.
+                            - `[ShowSeriesName <Boolean?>]`: Boolean value that represents whether the data label series name is visible.
+                            - `[ShowValue <Boolean?>]`: Boolean value that represents whether the data label value is visible.
                           - `[Format <IMicrosoftGraphWorkbookChartAreaFormat>]`: workbookChartAreaFormat
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
                             - `[Id <String>]`: The unique identifier for an entity.
@@ -19890,10 +19935,10 @@ Read-only.
 Read-only.
                               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                            - `[Overlay <Boolean?>]`: Boolean value for whether the chart legend should overlap with the main body of the chart.
+                            - `[Overlay <Boolean?>]`: Indicates whether the chart legend should overlap with the main body of the chart.
                             - `[Position <String>]`: Represents the position of the legend on the chart.
 The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-                            - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
+                            - `[Visible <Boolean?>]`: Indicates whether the chart legend is visible.
                           - `[Name <String>]`: Represents the name of a chart object.
                           - `[Series <IMicrosoftGraphWorkbookChartSeries- `[]`>]`: Represents either a single series or collection of series in the chart.
 Read-only.
@@ -19905,8 +19950,8 @@ Read-only.
 Read-only.
                               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                               - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                            - `[Name <String>]`: Represents the name of a series in a chart.
-                            - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: Represents a collection of all points in the series.
+                            - `[Name <String>]`: The name of a series in a chart.
+                            - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: A collection of all points in the series.
 Read-only.
                               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -19915,7 +19960,7 @@ Read-only.
                                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                                 - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                              - `[Value <IAny>]`: Returns the value of a chart point.
+                              - `[Value <IAny>]`: The value of a chart point.
 Read-only.
                           - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -19927,19 +19972,19 @@ Read-only.
 Read-only.
                               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                               - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                            - `[Overlay <Boolean?>]`: Boolean value representing if the chart title will overlay the chart or not.
-                            - `[Text <String>]`: Represents the title text of a chart.
-                            - `[Visible <Boolean?>]`: A boolean value that represents the visibility of a chart title object.
+                            - `[Overlay <Boolean?>]`: Indicates whether the chart title will overlay the chart or not.
+                            - `[Text <String>]`: The title text of the chart.
+                            - `[Visible <Boolean?>]`: Indicates whether the chart title is visible.
                           - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
                           - `[Width <Double?>]`: Represents the width, in points, of the chart object.
                           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                         - `[Name <String>]`: The display name of the worksheet.
-                        - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: Returns collection of names that are associated with the worksheet.
+                        - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: The list of names that are associated with the worksheet.
 Read-only.
-                        - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: Collection of PivotTables that are part of the worksheet.
+                        - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: The list of piot tables that are part of the worksheet.
                           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                          - `[Name <String>]`: Name of the PivotTable.
+                          - `[Name <String>]`: The name of the pivot table.
                           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                         - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
                         - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
@@ -19959,13 +20004,13 @@ Read-only.
                             - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
                             - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
                             - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
-                          - `[Protected <Boolean?>]`: Indicates if the worksheet is protected. 
+                          - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
-                        - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: Collection of tables that are part of the worksheet.
+                        - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
 Read-only.
                           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                          - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: Represents a collection of all the columns in the table.
+                          - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: The list of all the columns in the table.
 Read-only.
                             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -19982,35 +20027,35 @@ Read-only.
                                 - `[FilterOn <String>]`: Indicates whether a filter is applied to a column.
                                 - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                                  - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                                  - `[Set <String>]`: Represents the set that the icon is part of.
+                                  - `[Index <Int32?>]`: The index of the icon in the given set.
+                                  - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                                 - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
                                 - `[Values <IAny>]`: The values that appear in the cell.
-                            - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table.
+                            - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
-                            - `[Name <String>]`: Returns the name of the table column.
+                            - `[Name <String>]`: The name of the table column.
                             - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contains an error returns the error string.
+The data returned could be of type string, number, or a Boolean.
+Cell that contain an error will return the error string.
                           - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                           - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
-                          - `[LegacyId <String>]`: Legacy Id used in older Excel clients.
+                          - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
 The value of the identifier remains the same even when the table is renamed.
 This property should be interpreted as an opaque string value and shouldn't be parsed to any other type.
 Read-only.
-                          - `[Name <String>]`: Name of the table.
-                          - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: Represents a collection of all the rows in the table.
+                          - `[Name <String>]`: The name of the table.
+                          - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: The list of all the rows in the table.
 Read-only.
                             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                            - `[Index <Int32?>]`: Returns the index number of the row within the rows collection of the table.
-Zero-indexed.
+                            - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
+Zero-based.
 Read-only.
-                            - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contain an error will return the error string.
+                            - `[Values <IAny>]`: The raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
+Any cell that contain an error will return the error string.
                           - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                           - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                           - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -20023,7 +20068,8 @@ This value can be set to show or remove the total row.
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
                             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                            - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: 
+                            - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: The list of the current conditions last used to sort the table.
+Read-only.
                               - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
                               - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
                               - `[DataOption <String>]`: Represents additional sorting options for this field.
@@ -20033,12 +20079,12 @@ Possible values are: Normal, TextAsNumber.
 Represented as an offset from the first column (or row).
                               - `[SortOn <String>]`: Represents the type of sorting of this condition.
 Possible values are: Value, CellColor, FontColor, Icon.
-                            - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table.
+                            - `[MatchCase <Boolean?>]`: Indicates whether the casing impacted the last sort of the table.
 Read-only.
-                            - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table.
-Possible values are: PinYin, StrokeCount.
+                            - `[Method <String>]`: The Chinese character ordering method last used to sort the table.
+The possible values are: PinYin, StrokeCount.
 Read-only.
-                          - `[Style <String>]`: Constant value that represents the Table style.
+                          - `[Style <String>]`: A constant value that represents the Table style.
 Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
                           - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
@@ -20846,11 +20892,10 @@ Returned only on $select.
         - `[IsLicenseReconciliationNeeded <Boolean?>]`: Indicates whether the user is pending an exchange mailbox license assignment. 
 Read-only. 
 Supports $filter (eq where true only).
-        - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, which requires a role scoped to the restricted administrative unit to manage.
+        - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit.
 Default value is false.
 Read-only. 
-To manage a user who is a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
         - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
         - `[JobTitle <String>]`: The user's job title.
 Maximum length is 128 characters.
@@ -21989,7 +22034,7 @@ It is an Optional field
           - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
+          - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -22089,15 +22134,15 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
         - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting- `[]`>]`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
           - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
           - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-          - `[AllowBreakoutRooms <Boolean?>]`: 
+          - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
           - `[AllowLiveShare <String>]`: meetingLiveShareOptions
           - `[AllowMeetingChat <String>]`: meetingChatMode
           - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
-          - `[AllowPowerPointSharing <Boolean?>]`: 
+          - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
           - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
           - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
           - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
-          - `[AllowWhiteboard <Boolean?>]`: 
+          - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
           - `[AllowedPresenters <String>]`: onlineMeetingPresenters
           - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -22310,7 +22355,7 @@ Read-only.
 Read-only.
             - `[Color <String>]`: categoryColor
             - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox.
-After a category is created, the name cannot be changed.
+After a category is created, the name can't be changed.
 Read-only.
           - `[TaskFolders <IMicrosoftGraphOutlookTaskFolder- `[]`>]`: The user's Outlook task folders.
 Read-only.
@@ -22343,7 +22388,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
               - `[AssignedTo <String>]`: The name of the person who has been assigned the task in Outlook.
 Read-only.
-              - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task. 
+              - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
 Read-only.
 Nullable.
               - `[Body <IMicrosoftGraphItemBody>]`: itemBody
@@ -23316,18 +23361,18 @@ For information on how to set the value for the companyCode, see profileSourceAn
                 - `[DisplayName <String>]`: Company name.
                 - `[OfficeLocation <String>]`: Office Location of the person referred to.
                 - `[Pronunciation <String>]`: Pronunciation guide for the company name.
-                - `[SecondaryDepartment <String>]`: 
+                - `[SecondaryDepartment <String>]`: Secondary Department Name within a company.
                 - `[WebUrl <String>]`: Link to the company home page.
-              - `[Description <String>]`: Description of the position in question.
-              - `[EndMonthYear <DateTime?>]`: When the position ended.
-              - `[JobTitle <String>]`: The title held when in that position.
+              - `[Description <String>]`: A description for the position in question.
+              - `[EndMonthYear <DateTime?>]`: The date when the position ended.
+              - `[JobTitle <String>]`: The title of the position.
               - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
               - `[Level <String>]`: The employee's experience or management level.
               - `[Role <String>]`: The role the position entailed.
-              - `[SecondaryJobTitle <String>]`: 
-              - `[SecondaryRole <String>]`: 
-              - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
-              - `[Summary <String>]`: summary of the position.
+              - `[SecondaryJobTitle <String>]`: An optional job title for the position.
+              - `[SecondaryRole <String>]`: An optional role for the position entailed.
+              - `[StartMonthYear <DateTime?>]`: The start date of the position.
+              - `[Summary <String>]`: The summary of the position.
             - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
             - `[Manager <IMicrosoftGraphRelatedPerson>]`: relatedPerson
           - `[Projects <IMicrosoftGraphProjectParticipation- `[]`>]`: Represents detailed information about projects associated with a user.
@@ -23519,8 +23564,8 @@ Users can control this setting in Office Delve.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[IsEnabled <Boolean?>]`: true if user's itemInsights and meeting hours insights are enabled; false if user's itemInsights and meeting hours insights are disabled.
-Default is true.
+            - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
 Optional.
           - `[RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]`: regionalAndLanguageSettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -23681,7 +23726,7 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
           - `[Region <String>]`: Represents the region of the organization or the user.
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
-The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
         - `[Todo <IMicrosoftGraphTodo>]`: todo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -23823,15 +23868,15 @@ Read-only.
               - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
                 - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
                 - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-                - `[AllowBreakoutRooms <Boolean?>]`: 
+                - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
                 - `[AllowLiveShare <String>]`: meetingLiveShareOptions
                 - `[AllowMeetingChat <String>]`: meetingChatMode
                 - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
-                - `[AllowPowerPointSharing <Boolean?>]`: 
+                - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
                 - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
                 - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
                 - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
-                - `[AllowWhiteboard <Boolean?>]`: 
+                - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
                 - `[AllowedPresenters <String>]`: onlineMeetingPresenters
                 - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -23898,9 +23943,10 @@ Read-only.
             - `[Audience <String>]`: meetingAudience
             - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
               - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-              - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
               - `[TenantId <String>]`: The user's tenant ID.
             - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -24039,11 +24085,10 @@ For more, see Using a group to manage Microsoft Entra role assignmentsUsing this
 Returned by default.
 Supports $filter (eq, ne, not).
     - `[IsFavorite <Boolean?>]`: Indicates whether the user marked the group as favorite.
-    - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage.
+    - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit.
 The default value is false.
 Read-only. 
-To manage a group member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
     - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
 The default value is true.
 Returned only on $select.
@@ -24414,9 +24459,10 @@ Read-only.
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
@@ -24658,9 +24704,10 @@ Read-only.
     - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
       - `[IPAddress <String>]`: Indicates the client IP address associated with the user performing the activity (audit log only).
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
@@ -24845,9 +24892,9 @@ Supported only on the Get group API (GET /groups/{ID}).
 Supports $expand.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
+        - `[AppRoleId <String>]`: The identifier (id) for the app role that is assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
-If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
+If the resource application hasn't declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
         - `[CreationTimestamp <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -24868,6 +24915,7 @@ Required on create.
 Supports $filter (eq only).
       - `[AssignedLabels <IMicrosoftGraphAssignedLabel- `[]`>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
 Returned only on $select.
+This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
         - `[DisplayName <String>]`: The display name of the label.
 Read-only.
         - `[LabelId <String>]`: The unique identifier of the label.
@@ -24977,7 +25025,8 @@ This ID is different for each occurrence in a recurring series.
 Read-only.
           - `[Importance <String>]`: importance
           - `[Instances <IMicrosoftGraphEvent- `[]`>]`: The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but doesn't include occurrences that have been canceled from the series.
+This property includes occurrences that are part of the recurrence pattern and exceptions that have been modified.
+It doesn't include occurrences that have been canceled from the series.
 Navigation property.
 Read-only.
 Nullable.
@@ -24990,7 +25039,7 @@ Set to false if all changes have been sent, or if the event is an appointment wi
 Default is false (onlineMeeting is null).
 Optional. 
 After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
-Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+Outlook then ignores any further changes to isOnlineMeeting, and the meeting remains available online.
           - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
 This also applies if a delegate organized the event on behalf of the owner.
           - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
@@ -25054,7 +25103,7 @@ The onlineMeetingUrl property will be deprecated in the future.
             - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
           - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
 A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-          - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+          - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it's initially created as an occurrence or exception in a recurring series.
 This property isn't returned for events that are single instances.
 Its date and time information is expressed in ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -25106,16 +25155,16 @@ Read-only.
             - `[Value <String>]`: A property value.
           - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[Subject <String>]`: The text of the event's subject line.
-          - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
+          - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations if the client retries to create the same event.
 This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
-After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+After you set transactionId when creating an event, you can't change transactionId in a subsequent update.
 This property is only returned in a response payload if an app has set it.
 Optional.
           - `[Type <String>]`: eventType
           - `[Uid <String>]`: A unique identifier for calendar events.
 For recurring events, the value is the same for the series master and all of its occurrences including exceptions.
-          - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
-Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+          - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you're signed in to your mailbox.
+Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
         - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
 This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource.
@@ -25287,9 +25336,10 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
           - `[Application <IMicrosoftGraphIdentity>]`: identity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-            - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
           - `[Device <IMicrosoftGraphIdentity>]`: identity
           - `[User <IMicrosoftGraphIdentity>]`: identity
         - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -25503,8 +25553,8 @@ This lets services like Microsoft 365 call the application in the context of a d
               - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-                - `[Key <String>]`: Contains the name of the field that a value is associated with.
-                - `[Value <String>]`: Contains the corresponding value for the specified key.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: The unique name for the functionality exposed by the app.
             - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -25867,6 +25917,7 @@ Read-only.
             - `[PreferredSingleSignOnMode <String>]`: Specifies the single sign-on mode configured for this application.
 Microsoft Entra ID uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 The supported values are password, saml, notSupported, and oidc.
+Note: This field might be null for older SAML apps and for OIDC applications where it isn't set automatically.
             - `[PreferredTokenSigningKeyEndDateTime <DateTime?>]`: Specifies the expiration date of the keyCredential used for token signing, marked by preferredTokenSigningKeyThumbprint.
 Updating this attribute isn't currently supported.
 For details, see ServicePrincipal property differences.
@@ -26341,7 +26392,8 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 This property is set by Intune.
                 - `[EnrollmentType <String>]`: Enrollment type of the device.
 This property is set by Intune.
-Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement, windowsAzureADJoinUsingDeviceAuth,appleUserEnrollment, appleUserEnrollmentWithServiceAccount.
+NOTE: This property might return other values apart from those listed.
                 - `[ExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]`: onPremisesExtensionAttributes
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[ExtensionAttribute1 <String>]`: First customizable extension attribute.
@@ -26370,11 +26422,10 @@ Supports $filter (eq, ne, not).
                 - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
-                - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage.
+                - `[IsManagementRestricted <Boolean?>]`: Indicates whether the device is a member of a restricted management administrative unit.
 The default value is false.
 Read-only. 
-To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
                 - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
                 - `[Kind <String>]`: Form factor of the device.
@@ -26589,6 +26640,7 @@ Read-only.
                   - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
                   - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                    - `[ClientAppId <String>]`: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
                     - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
                   - `[AzureAdAppId <String>]`: The WebApplicationInfo.Id from the Teams app manifest.
                   - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
@@ -26741,16 +26793,18 @@ For example, a user's display name, a team name.
                   - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-                    - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
                     - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
                   - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-                    - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
               - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
                 - `[Actions <String>]`: chatMessageActions
                 - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -26758,9 +26812,10 @@ This property is read-only.
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[CreatedDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                  - `[DisplayName <String>]`: The name of the reaction.
                   - `[ReactionContentUrl <String>]`: The hosted content URL for the custom reaction type.
-                  - `[ReactionType <String>]`: Supported values are Unicode characters and custom.
-Some backward-compatible reaction types include like, angry, sad, laugh, heart, and surprised.
+                  - `[ReactionType <String>]`: The reaction type.
+Supported values include Unicode characters, custom, and some backward-compatible reaction types, such as like, angry, sad, laugh, heart, and surprised.
                   - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -26799,9 +26854,10 @@ Link to the message in Microsoft Teams.
               - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-                - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
                 - `[UserIdentityType <String>]`: teamworkUserIdentityType
             - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -27049,7 +27105,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Department <String>]`: The contact's department.
               - `[DisplayName <String>]`: The contact's display name.
 You can specify the display name in a create or update operation.
-Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified.
+Later updates to other properties might cause an automatically generated value to overwrite the displayName value you specified.
 To preserve a pre-existing value, always include it as displayName in an update operation.
               - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress- `[]`>]`: The contact's email addresses.
                 - `[Address <String>]`: The email address of an entity instance.
@@ -27460,9 +27516,10 @@ Read-only.
                             - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
                               - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-                              - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                              - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
                               - `[LoginName <String>]`: The sign in name of the SharePoint identity.
                             - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                           - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -27911,12 +27968,14 @@ Possible values are: Automatic, AutomaticExceptTables, Manual.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                         - `[Content <String>]`: The content of the comment.
-                        - `[ContentType <String>]`: Indicates the type for the comment.
-                        - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: 
+                        - `[ContentType <String>]`: The content type of the comment.
+                        - `[Replies <IMicrosoftGraphWorkbookCommentReply- `[]`>]`: The list of replies to the comment.
+Read-only.
+Nullable.
                           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                          - `[Content <String>]`: The content of replied comment.
-                          - `[ContentType <String>]`: Indicates the type for the replied comment.
+                          - `[Content <String>]`: The content of the reply.
+                          - `[ContentType <String>]`: The content type for the reply.
                           - `[Task <IMicrosoftGraphWorkbookDocumentTask>]`: workbookDocumentTask
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
                             - `[Id <String>]`: The unique identifier for an entity.
@@ -28000,23 +28059,23 @@ Read-only.
 Read-only.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                        - `[Comment <String>]`: Represents the comment associated with this name.
+                        - `[Comment <String>]`: The comment associated with this name.
                         - `[Name <String>]`: The name of the object.
 Read-only.
                         - `[Scope <String>]`: Indicates whether the name is scoped to the workbook or to a specific worksheet.
 Read-only.
-                        - `[Type <String>]`: Indicates what type of reference is associated with the name.
+                        - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-                        - `[Value <IAny>]`: Represents the formula that the name is defined to refer to.
+                        - `[Value <IAny>]`: The formula that the name is defined to refer to.
 For example, =Sheet14!$B$2:$H$12 and =4.75.
 Read-only.
-                        - `[Visible <Boolean?>]`: Specifies whether the object is visible or not.
+                        - `[Visible <Boolean?>]`: Indicates whether the object is visible.
                         - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
                           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                          - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: Returns collection of charts that are part of the worksheet.
+                          - `[Charts <IMicrosoftGraphWorkbookChart- `[]`>]`: The list of charts that are part of the worksheet.
 Read-only.
                             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -28036,19 +28095,21 @@ Read-only.
                                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                                     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                                    - `[Bold <Boolean?>]`: Represents the bold status of font.
-                                    - `[Color <String>]`: HTML color code representation of the text color.
-for example #FF0000 represents Red.
-                                    - `[Italic <Boolean?>]`: Represents the italic status of the font.
-                                    - `[Name <String>]`: Font name (for example 'Calibri')
-                                    - `[Size <Double?>]`: Size of the font (for example 11)
-                                    - `[Underline <String>]`: Type of underline applied to the font.
+                                    - `[Bold <Boolean?>]`: Indicates whether the fond is bold.
+                                    - `[Color <String>]`: The HTML color code representation of the text color.
+For example #FF0000 represents Red.
+                                    - `[Italic <Boolean?>]`: Indicates whether the fond is italic.
+                                    - `[Name <String>]`: The font name.
+For example 'Calibri'.
+                                    - `[Size <Double?>]`: The size of the font.
+For example,  11.
+                                    - `[Underline <String>]`: The type of underlining applied to the font.
 The possible values are: None, Single.
                                   - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                                     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                                    - `[Color <String>]`: HTML color code representing the color of lines in the chart.
+                                    - `[Color <String>]`: The HTML color code that represents the color of lines in the chart.
                                 - `[MajorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
                                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                                   - `[Id <String>]`: The unique identifier for an entity.
@@ -28058,7 +28119,7 @@ Read-only.
                                     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                                     - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                                  - `[Visible <Boolean?>]`: Boolean value representing if the axis gridlines are visible or not.
+                                  - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
                                 - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
 Can be set to a numeric value or an empty string. 
 The returned value is always a number.
@@ -28082,7 +28143,7 @@ Read-only.
 Read-only.
                                     - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                                   - `[Text <String>]`: Represents the axis title.
-                                  - `[Visible <Boolean?>]`: A boolean that specifies the visibility of an axis title.
+                                  - `[Visible <Boolean?>]`: A Boolean that specifies the visibility of an axis title.
                               - `[SeriesAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                               - `[ValueAxis <IMicrosoftGraphWorkbookChartAxis>]`: workbookChartAxis
                             - `[DataLabels <IMicrosoftGraphWorkbookChartDataLabels>]`: workbookChartDataLabels
@@ -28100,13 +28161,13 @@ Read-only.
                                 - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
                               - `[Position <String>]`: DataLabelPosition value that represents the position of the data label.
 The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-                              - `[Separator <String>]`: String representing the separator used for the data labels on a chart.
-                              - `[ShowBubbleSize <Boolean?>]`: Boolean value representing if the data label bubble size is visible or not.
-                              - `[ShowCategoryName <Boolean?>]`: Boolean value representing if the data label category name is visible or not.
-                              - `[ShowLegendKey <Boolean?>]`: Boolean value representing if the data label legend key is visible or not.
-                              - `[ShowPercentage <Boolean?>]`: Boolean value representing if the data label percentage is visible or not.
-                              - `[ShowSeriesName <Boolean?>]`: Boolean value representing if the data label series name is visible or not.
-                              - `[ShowValue <Boolean?>]`: Boolean value representing if the data label value is visible or not.
+                              - `[Separator <String>]`: String that represents the separator used for the data labels on a chart.
+                              - `[ShowBubbleSize <Boolean?>]`: Boolean value that represents whether the data label bubble size is visible.
+                              - `[ShowCategoryName <Boolean?>]`: Boolean value that represents whether the data label category name is visible.
+                              - `[ShowLegendKey <Boolean?>]`: Boolean value that represents whether the data label legend key is visible.
+                              - `[ShowPercentage <Boolean?>]`: Boolean value that represents whether the data label percentage is visible.
+                              - `[ShowSeriesName <Boolean?>]`: Boolean value that represents whether the data label series name is visible.
+                              - `[ShowValue <Boolean?>]`: Boolean value that represents whether the data label value is visible.
                             - `[Format <IMicrosoftGraphWorkbookChartAreaFormat>]`: workbookChartAreaFormat
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
                               - `[Id <String>]`: The unique identifier for an entity.
@@ -28125,10 +28186,10 @@ Read-only.
 Read-only.
                                 - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                                 - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                              - `[Overlay <Boolean?>]`: Boolean value for whether the chart legend should overlap with the main body of the chart.
+                              - `[Overlay <Boolean?>]`: Indicates whether the chart legend should overlap with the main body of the chart.
                               - `[Position <String>]`: Represents the position of the legend on the chart.
 The possible values are: Top, Bottom, Left, Right, Corner, Custom.
-                              - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
+                              - `[Visible <Boolean?>]`: Indicates whether the chart legend is visible.
                             - `[Name <String>]`: Represents the name of a chart object.
                             - `[Series <IMicrosoftGraphWorkbookChartSeries- `[]`>]`: Represents either a single series or collection of series in the chart.
 Read-only.
@@ -28140,8 +28201,8 @@ Read-only.
 Read-only.
                                 - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                                 - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
-                              - `[Name <String>]`: Represents the name of a series in a chart.
-                              - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: Represents a collection of all points in the series.
+                              - `[Name <String>]`: The name of a series in a chart.
+                              - `[Points <IMicrosoftGraphWorkbookChartPoint- `[]`>]`: A collection of all points in the series.
 Read-only.
                                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -28150,7 +28211,7 @@ Read-only.
                                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                                   - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                                - `[Value <IAny>]`: Returns the value of a chart point.
+                                - `[Value <IAny>]`: The value of a chart point.
 Read-only.
                             - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -28162,19 +28223,19 @@ Read-only.
 Read-only.
                                 - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
                                 - `[Font <IMicrosoftGraphWorkbookChartFont>]`: workbookChartFont
-                              - `[Overlay <Boolean?>]`: Boolean value representing if the chart title will overlay the chart or not.
-                              - `[Text <String>]`: Represents the title text of a chart.
-                              - `[Visible <Boolean?>]`: A boolean value that represents the visibility of a chart title object.
+                              - `[Overlay <Boolean?>]`: Indicates whether the chart title will overlay the chart or not.
+                              - `[Text <String>]`: The title text of the chart.
+                              - `[Visible <Boolean?>]`: Indicates whether the chart title is visible.
                             - `[Top <Double?>]`: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
                             - `[Width <Double?>]`: Represents the width, in points, of the chart object.
                             - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                           - `[Name <String>]`: The display name of the worksheet.
-                          - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: Returns collection of names that are associated with the worksheet.
+                          - `[Names <IMicrosoftGraphWorkbookNamedItem- `[]`>]`: The list of names that are associated with the worksheet.
 Read-only.
-                          - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: Collection of PivotTables that are part of the worksheet.
+                          - `[PivotTables <IMicrosoftGraphWorkbookPivotTable- `[]`>]`: The list of piot tables that are part of the worksheet.
                             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                            - `[Name <String>]`: Name of the PivotTable.
+                            - `[Name <String>]`: The name of the pivot table.
                             - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                           - `[Position <Int32?>]`: The zero-based position of the worksheet within the workbook.
                           - `[Protection <IMicrosoftGraphWorkbookWorksheetProtection>]`: workbookWorksheetProtection
@@ -28194,13 +28255,13 @@ Read-only.
                               - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
                               - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
                               - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
-                            - `[Protected <Boolean?>]`: Indicates if the worksheet is protected. 
+                            - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
-                          - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: Collection of tables that are part of the worksheet.
+                          - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
 Read-only.
                             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                            - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: Represents a collection of all the columns in the table.
+                            - `[Columns <IMicrosoftGraphWorkbookTableColumn- `[]`>]`: The list of all the columns in the table.
 Read-only.
                               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -28217,35 +28278,35 @@ Read-only.
                                   - `[FilterOn <String>]`: Indicates whether a filter is applied to a column.
                                   - `[Icon <IMicrosoftGraphWorkbookIcon>]`: workbookIcon
                                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                                    - `[Index <Int32?>]`: Represents the index of the icon in the given set.
-                                    - `[Set <String>]`: Represents the set that the icon is part of.
+                                    - `[Index <Int32?>]`: The index of the icon in the given set.
+                                    - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                                   - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
                                   - `[Values <IAny>]`: The values that appear in the cell.
-                              - `[Index <Int32?>]`: Returns the index number of the column within the columns collection of the table.
+                              - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
-                              - `[Name <String>]`: Returns the name of the table column.
+                              - `[Name <String>]`: The name of the table column.
                               - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contains an error returns the error string.
+The data returned could be of type string, number, or a Boolean.
+Cell that contain an error will return the error string.
                             - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                             - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
-                            - `[LegacyId <String>]`: Legacy Id used in older Excel clients.
+                            - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
 The value of the identifier remains the same even when the table is renamed.
 This property should be interpreted as an opaque string value and shouldn't be parsed to any other type.
 Read-only.
-                            - `[Name <String>]`: Name of the table.
-                            - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: Represents a collection of all the rows in the table.
+                            - `[Name <String>]`: The name of the table.
+                            - `[Rows <IMicrosoftGraphWorkbookTableRow- `[]`>]`: The list of all the rows in the table.
 Read-only.
                               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                              - `[Index <Int32?>]`: Returns the index number of the row within the rows collection of the table.
-Zero-indexed.
+                              - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
+Zero-based.
 Read-only.
-                              - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a boolean.
-Cell that contain an error will return the error string.
+                              - `[Values <IAny>]`: The raw values of the specified range.
+The data returned could be of type string, number, or a Boolean.
+Any cell that contain an error will return the error string.
                             - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                             - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                             - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -28258,7 +28319,8 @@ This value can be set to show or remove the total row.
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
                               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                              - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: 
+                              - `[Fields <IMicrosoftGraphWorkbookSortField- `[]`>]`: The list of the current conditions last used to sort the table.
+Read-only.
                                 - `[Ascending <Boolean?>]`: Represents whether the sorting is done in an ascending fashion.
                                 - `[Color <String>]`: Represents the color that is the target of the condition if the sorting is on font or cell color.
                                 - `[DataOption <String>]`: Represents additional sorting options for this field.
@@ -28268,12 +28330,12 @@ Possible values are: Normal, TextAsNumber.
 Represented as an offset from the first column (or row).
                                 - `[SortOn <String>]`: Represents the type of sorting of this condition.
 Possible values are: Value, CellColor, FontColor, Icon.
-                              - `[MatchCase <Boolean?>]`: Represents whether the casing impacted the last sort of the table.
+                              - `[MatchCase <Boolean?>]`: Indicates whether the casing impacted the last sort of the table.
 Read-only.
-                              - `[Method <String>]`: Represents Chinese character ordering method last used to sort the table.
-Possible values are: PinYin, StrokeCount.
+                              - `[Method <String>]`: The Chinese character ordering method last used to sort the table.
+The possible values are: PinYin, StrokeCount.
 Read-only.
-                            - `[Style <String>]`: Constant value that represents the Table style.
+                            - `[Style <String>]`: A constant value that represents the Table style.
 Possible values are: TableStyleLight1 through TableStyleLight21, TableStyleMedium1 through TableStyleMedium28, TableStyleStyleDark1 through TableStyleStyleDark11.
 A custom user-defined style present in the workbook can also be specified.
                             - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
@@ -29081,11 +29143,10 @@ Returned only on $select.
           - `[IsLicenseReconciliationNeeded <Boolean?>]`: Indicates whether the user is pending an exchange mailbox license assignment. 
 Read-only. 
 Supports $filter (eq where true only).
-          - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, which requires a role scoped to the restricted administrative unit to manage.
+          - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit.
 Default value is false.
 Read-only. 
-To manage a user who is a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
           - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
           - `[JobTitle <String>]`: The user's job title.
 Maximum length is 128 characters.
@@ -30224,7 +30285,7 @@ It is an Optional field
             - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
+            - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -30324,15 +30385,15 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith).
           - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting- `[]`>]`: Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
             - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
             - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-            - `[AllowBreakoutRooms <Boolean?>]`: 
+            - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
             - `[AllowLiveShare <String>]`: meetingLiveShareOptions
             - `[AllowMeetingChat <String>]`: meetingChatMode
             - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
-            - `[AllowPowerPointSharing <Boolean?>]`: 
+            - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
             - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
             - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
             - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
-            - `[AllowWhiteboard <Boolean?>]`: 
+            - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
             - `[AllowedPresenters <String>]`: onlineMeetingPresenters
             - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -30545,7 +30606,7 @@ Read-only.
 Read-only.
               - `[Color <String>]`: categoryColor
               - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox.
-After a category is created, the name cannot be changed.
+After a category is created, the name can't be changed.
 Read-only.
             - `[TaskFolders <IMicrosoftGraphOutlookTaskFolder- `[]`>]`: The user's Outlook task folders.
 Read-only.
@@ -30578,7 +30639,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
                 - `[AssignedTo <String>]`: The name of the person who has been assigned the task in Outlook.
 Read-only.
-                - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task. 
+                - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
 Read-only.
 Nullable.
                 - `[Body <IMicrosoftGraphItemBody>]`: itemBody
@@ -31551,18 +31612,18 @@ For information on how to set the value for the companyCode, see profileSourceAn
                   - `[DisplayName <String>]`: Company name.
                   - `[OfficeLocation <String>]`: Office Location of the person referred to.
                   - `[Pronunciation <String>]`: Pronunciation guide for the company name.
-                  - `[SecondaryDepartment <String>]`: 
+                  - `[SecondaryDepartment <String>]`: Secondary Department Name within a company.
                   - `[WebUrl <String>]`: Link to the company home page.
-                - `[Description <String>]`: Description of the position in question.
-                - `[EndMonthYear <DateTime?>]`: When the position ended.
-                - `[JobTitle <String>]`: The title held when in that position.
+                - `[Description <String>]`: A description for the position in question.
+                - `[EndMonthYear <DateTime?>]`: The date when the position ended.
+                - `[JobTitle <String>]`: The title of the position.
                 - `[Layer <Int32?>]`: The place where the employee is within the organizational hierarchy.
                 - `[Level <String>]`: The employee's experience or management level.
                 - `[Role <String>]`: The role the position entailed.
-                - `[SecondaryJobTitle <String>]`: 
-                - `[SecondaryRole <String>]`: 
-                - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
-                - `[Summary <String>]`: summary of the position.
+                - `[SecondaryJobTitle <String>]`: An optional job title for the position.
+                - `[SecondaryRole <String>]`: An optional role for the position entailed.
+                - `[StartMonthYear <DateTime?>]`: The start date of the position.
+                - `[Summary <String>]`: The summary of the position.
               - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
               - `[Manager <IMicrosoftGraphRelatedPerson>]`: relatedPerson
             - `[Projects <IMicrosoftGraphProjectParticipation- `[]`>]`: Represents detailed information about projects associated with a user.
@@ -31754,8 +31815,8 @@ Users can control this setting in Office Delve.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[IsEnabled <Boolean?>]`: true if user's itemInsights and meeting hours insights are enabled; false if user's itemInsights and meeting hours insights are disabled.
-Default is true.
+              - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
 Optional.
             - `[RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]`: regionalAndLanguageSettings
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -31916,7 +31977,7 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
             - `[Region <String>]`: Represents the region of the organization or the user.
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
-The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
           - `[Todo <IMicrosoftGraphTodo>]`: todo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -32058,15 +32119,15 @@ Read-only.
                 - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
                   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
                   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-                  - `[AllowBreakoutRooms <Boolean?>]`: 
+                  - `[AllowBreakoutRooms <Boolean?>]`: Indicates whether breakout rooms are enabled for the meeting.
                   - `[AllowLiveShare <String>]`: meetingLiveShareOptions
                   - `[AllowMeetingChat <String>]`: meetingChatMode
                   - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
-                  - `[AllowPowerPointSharing <Boolean?>]`: 
+                  - `[AllowPowerPointSharing <Boolean?>]`: Indicates whether PowerPoint live is enabled for the meeting.
                   - `[AllowRecording <Boolean?>]`: Indicates whether recording is enabled for the meeting.
                   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
                   - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
-                  - `[AllowWhiteboard <Boolean?>]`: 
+                  - `[AllowWhiteboard <Boolean?>]`: Indicates whether whiteboard is enabled for the meeting.
                   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
                   - `[AnonymizeIdentityForRoles <String- `[]`>]`: Specifies whose identity is anonymized in the meeting.
 Possible values are: attendee.
@@ -32133,9 +32194,10 @@ Read-only.
               - `[Audience <String>]`: meetingAudience
               - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
                 - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-                - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
                 - `[TenantId <String>]`: The user's tenant ID.
               - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -32274,11 +32336,10 @@ For more, see Using a group to manage Microsoft Entra role assignmentsUsing this
 Returned by default.
 Supports $filter (eq, ne, not).
       - `[IsFavorite <Boolean?>]`: Indicates whether the user marked the group as favorite.
-      - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage.
+      - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit.
 The default value is false.
 Read-only. 
-To manage a group member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
-For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
+To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
       - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
 The default value is true.
 Returned only on $select.

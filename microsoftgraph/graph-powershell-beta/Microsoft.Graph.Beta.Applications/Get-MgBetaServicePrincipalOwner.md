@@ -3,13 +3,16 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalowner
 schema: 2.0.0
-ms.subservice: entra-applications
 ---
 
 # Get-MgBetaServicePrincipalOwner
 
 ## SYNOPSIS
-Retrieve a list of owners of the servicePrincipal.
+Directory objects that are owners of this servicePrincipal.
+The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
+Read-only.
+Nullable.
+Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalOwner](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwner?view=graph-powershell-1.0)
@@ -24,10 +27,11 @@ Get-MgBetaServicePrincipalOwner -ServicePrincipalId <String> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Retrieve a list of owners of the servicePrincipal.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-owners-permissions.md)]
+Directory objects that are owners of this servicePrincipal.
+The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
+Read-only.
+Nullable.
+Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## EXAMPLES
 ### Example 1: List the owners of a service principal
@@ -285,8 +289,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalowner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalowner)
-
-[https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-list-owners?view=graph-rest-beta)
 
 
 

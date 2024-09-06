@@ -56,6 +56,41 @@ Update the properties of a customAuthenticationExtension object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customauthenticationextension-update-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartCustomExtension"
+	displayName = "onTokenIssuanceStartCustomExtension"
+	description = "Fetch additional claims from custom user store"
+	endpointConfiguration = @{
+		"@odata.type" = "#microsoft.graph.httpRequestEndpoint"
+		targetUrl = "https://authenticationeventsAPI.contoso.com"
+	}
+	authenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
+		resourceId = "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+	}
+	claimsForTokenConfiguration = @(
+		@{
+			claimIdInApiResponse = "DateOfBirth"
+		}
+		@{
+			claimIdInApiResponse = "CustomRoles"
+		}
+	)
+}
+
+Update-MgIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgIdentityCustomAuthenticationExtension Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -379,7 +414,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentitycustomauthenticationextension)
 
 [https://learn.microsoft.com/graph/api/customauthenticationextension-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customauthenticationextension-update?view=graph-rest-1.0)
-
 
 
 

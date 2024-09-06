@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistrationconfigurationquestion
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # New-MgVirtualEventWebinarRegistrationConfigurationQuestion
 
 ## SYNOPSIS
-Create new navigation property to questions for solutions
+Create a registration question for a webinar.
+You can create either a predefined registration question or a custom registration question.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion?view=graph-powershell-beta)
@@ -46,7 +48,46 @@ New-MgVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBookin
 ```
 
 ## DESCRIPTION
-Create new navigation property to questions for solutions
+Create a registration question for a webinar.
+You can create either a predefined registration question or a custom registration question.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistrationconfiguration-post-questions-permissions.md)]
+
+## EXAMPLES
+### Example 1: Add a custom registration question to a webinar registration
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.virtualEventRegistrationCustomQuestion"
+	displayName = "What's your job position?"
+	answerInputType = "multiChoice"
+	answerChoices = @(
+	"Software Engineer"
+"Engineer Manager"
+"Product Manager"
+)
+}
+
+New-MgVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
+
+```
+This example will add a custom registration question to a webinar registration
+
+### Example 2: Add a predefined registration question to a webinar registration
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+New-MgVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebinarId $virtualEventWebinarId
+
+```
+This example will add a predefined registration question to a webinar registration
+
 
 ## PARAMETERS
 
@@ -82,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Display name of the registration question.
 
 ```yaml
 Type: String
@@ -144,7 +185,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsRequired
-.
+Indicates whether an answer to the question is required.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -255,8 +297,9 @@ BODYPARAMETER `<IMicrosoftGraphVirtualEventRegistrationQuestionBase>`: virtualEv
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: 
-  - `[IsRequired <Boolean?>]`: 
+  - `[DisplayName <String>]`: Display name of the registration question.
+  - `[IsRequired <Boolean?>]`: Indicates whether an answer to the question is required.
+The default value is false.
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
@@ -269,7 +312,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -283,6 +329,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistrationconfigurationquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistrationconfigurationquestion)
 
+[https://learn.microsoft.com/graph/api/virtualeventregistrationconfiguration-post-questions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventregistrationconfiguration-post-questions?view=graph-rest-1.0)
 
 
 

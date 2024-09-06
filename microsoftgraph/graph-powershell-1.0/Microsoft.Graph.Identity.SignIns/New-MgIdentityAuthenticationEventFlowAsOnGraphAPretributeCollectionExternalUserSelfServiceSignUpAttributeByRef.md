@@ -9,9 +9,11 @@ ms.subservice: entra-sign-in
 # New-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef
 
 ## SYNOPSIS
-Add an attribute to an external identities self-service user flow represented by an externalUsersSelfServiceSignupEventsFlow object.
+Add an attribute to an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 You can add both custom and built-in attributes to a user flow.
-Prerequisite: PATCH the user flow with the updated onAttributeCollection event that includes the new attribute.
+The attribute is added to both the attributeCollection\> attributes and attributeCollection\> attributeCollectionPage \> views collections on the user flow.
+In the views collection, the attribute is assigned the default settings.
+You can PATCH the user flow to customize the settings of the attribute on the views object, for example, marking it as required or updating the allowed input types.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef?view=graph-powershell-beta)
@@ -51,12 +53,31 @@ New-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserS
 ```
 
 ## DESCRIPTION
-Add an attribute to an external identities self-service user flow represented by an externalUsersSelfServiceSignupEventsFlow object.
+Add an attribute to an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 You can add both custom and built-in attributes to a user flow.
-Prerequisite: PATCH the user flow with the updated onAttributeCollection event that includes the new attribute.
+The attribute is added to both the attributeCollection\> attributes and attributeCollection\> attributeCollectionPage \> views collections on the user flow.
+In the views collection, the attribute is assigned the default settings.
+You can PATCH the user flow to customize the settings of the attribute on the views object, for example, marking it as required or updating the allowed input types.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onattributecollectionexternalusersselfservicesignup-post-attributes-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.id" = "https://graph.microsoft.com/v1.0/identity/userFlowAttributes/city"
+}
+
+New-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef Cmdlet.
+
 
 ## PARAMETERS
 
@@ -317,7 +338,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributebyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributebyref)
 
 [https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-post-attributes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-post-attributes?view=graph-rest-1.0)
-
 
 
 

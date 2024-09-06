@@ -50,6 +50,7 @@ Create a new partner configuration in a cross-tenant access policy.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
@@ -79,10 +80,9 @@ $params = @{
 }
 
 New-MgPolicyCrossTenantAccessPolicyPartner -BodyParameter $params
+
 ```
 This example shows how to use the New-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

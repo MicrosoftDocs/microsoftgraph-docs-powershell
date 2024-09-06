@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinar
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # Update-MgVirtualEventWebinar
 
 ## SYNOPSIS
-Update the navigation property webinars in solutions
+Update the properties of a virtualEventWebinar object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
@@ -25,9 +26,9 @@ Update-MgVirtualEventWebinar -VirtualEventWebinarId <String> [-ResponseHeadersVa
  [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
  [-RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]
  [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
- [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
- [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Settings <IMicrosoftGraphVirtualEventSettings>]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -47,9 +48,9 @@ Update-MgVirtualEventWebinar -InputObject <IBookingsIdentity> [-ResponseHeadersV
  [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
  [-RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]
  [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
- [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
- [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Settings <IMicrosoftGraphVirtualEventSettings>]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -60,7 +61,31 @@ Update-MgVirtualEventWebinar -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property webinars in solutions
+Update the properties of a virtualEventWebinar object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+$params = @{
+	startDateTime = @{
+		dateTime = "2024-03-31T10:00:00"
+		timeZone = "Pacific Standard Time"
+	}
+	endDateTime = @{
+		dateTime = "2024-03-31T17:00:00"
+		timeZone = "Pacific Standard Time"
+	}
+}
+
+Update-MgVirtualEventWebinar -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgVirtualEventWebinar Cmdlet.
+
 
 ## PARAMETERS
 
@@ -159,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of the virtual event.
+The display name of the virtual event.
 
 ```yaml
 Type: String
@@ -237,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -Presenters
-.
+The virtual event presenters.
 To construct, see NOTES section for PRESENTERS properties and create a hash table.
 
 ```yaml
@@ -315,11 +340,27 @@ Accept wildcard characters: False
 ```
 
 ### -Sessions
-Sessions for the virtual event.
+The sessions for the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphVirtualEventSession[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Settings
+virtualEventSettings
+To construct, see NOTES section for SETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphVirtualEventSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -448,27 +489,27 @@ For example, in the access reviews decisions API, this property might record the
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
-  - `[DisplayName <String>]`: Display name of the virtual event.
+  - `[DisplayName <String>]`: The display name of the virtual event.
   - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
-  - `[Presenters <IMicrosoftGraphVirtualEventPresenter- `[]`>]`: 
+  - `[Presenters <IMicrosoftGraphVirtualEventPresenter- `[]`>]`: The virtual event presenters.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Email <String>]`: 
+    - `[Email <String>]`: Email address of the presenter.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
-      - `[Company <String>]`: 
-      - `[JobTitle <String>]`: 
-      - `[LinkedInProfileWebUrl <String>]`: 
-      - `[PersonalSiteWebUrl <String>]`: 
-      - `[Photo <Byte- `[]`>]`: 
-      - `[TwitterProfileWebUrl <String>]`: 
-  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: Sessions for the virtual event.
+      - `[Company <String>]`: The presenter's company name.
+      - `[JobTitle <String>]`: The presenter's job title.
+      - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
+      - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+      - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
+      - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
+  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: The sessions for the virtual event.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowMeetingChat <String>]`: meetingChatMode
@@ -543,6 +584,9 @@ Read-only.
 Read-only.
     - `[EndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+  - `[Settings <IMicrosoftGraphVirtualEventSettings>]`: virtualEventSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsAttendeeEmailNotificationEnabled <Boolean?>]`: Indicates whether virtual event attendees receive email notifications.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Status <String>]`: virtualEventStatus
   - `[Id <String>]`: The unique identifier for an entity.
@@ -556,13 +600,14 @@ For example, in the access reviews decisions API, this property might record the
     - `[TenantId <String>]`: The user's tenant ID.
   - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Capacity <Int32?>]`: 
-    - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: 
+    - `[Capacity <Int32?>]`: Total capacity of the virtual event.
+    - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: Registration questions.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[DisplayName <String>]`: 
-      - `[IsRequired <Boolean?>]`: 
-    - `[RegistrationWebUrl <String>]`: 
+      - `[DisplayName <String>]`: Display name of the registration question.
+      - `[IsRequired <Boolean?>]`: Indicates whether an answer to the question is required.
+The default value is false.
+    - `[RegistrationWebUrl <String>]`: Registration URL of the virtual event.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[IsManualApprovalEnabled <Boolean?>]`: 
@@ -577,8 +622,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Email <String>]`: Email address of the registrant.
     - `[FirstName <String>]`: First name of the registrant.
     - `[LastName <String>]`: Last name of the registrant.
-    - `[PreferredLanguage <String>]`: 
-    - `[PreferredTimezone <String>]`: 
+    - `[PreferredLanguage <String>]`: The registrant's preferred language.
+    - `[PreferredTimezone <String>]`: The registrant's time zone details.
     - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -591,7 +636,7 @@ Only appears when answerInputType is multiChoice.
       - `[QuestionId <String>]`: id of the virtual event registration question.
       - `[Value <String>]`: Text answer of the virtual event registration question.
 Appears when answerInputType is text, multilineText or singleChoice.
-    - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
+    - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: Sessions for a registration.
     - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
     - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
@@ -644,7 +689,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -654,10 +702,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
-PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: .
+PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: The virtual event presenters.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Email <String>]`: 
+  - `[Email <String>]`: Email address of the presenter.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -670,22 +718,23 @@ For example, in the access reviews decisions API, this property might record the
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Content <String>]`: The content of the item.
       - `[ContentType <String>]`: bodyType
-    - `[Company <String>]`: 
-    - `[JobTitle <String>]`: 
-    - `[LinkedInProfileWebUrl <String>]`: 
-    - `[PersonalSiteWebUrl <String>]`: 
-    - `[Photo <Byte- `[]`>]`: 
-    - `[TwitterProfileWebUrl <String>]`: 
+    - `[Company <String>]`: The presenter's company name.
+    - `[JobTitle <String>]`: The presenter's job title.
+    - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
+    - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+    - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
+    - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
 REGISTRATIONCONFIGURATION `<IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>`: virtualEventWebinarRegistrationConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Capacity <Int32?>]`: 
-  - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: 
+  - `[Capacity <Int32?>]`: Total capacity of the virtual event.
+  - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase- `[]`>]`: Registration questions.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[DisplayName <String>]`: 
-    - `[IsRequired <Boolean?>]`: 
-  - `[RegistrationWebUrl <String>]`: 
+    - `[DisplayName <String>]`: Display name of the registration question.
+    - `[IsRequired <Boolean?>]`: Indicates whether an answer to the question is required.
+The default value is false.
+  - `[RegistrationWebUrl <String>]`: Registration URL of the virtual event.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IsManualApprovalEnabled <Boolean?>]`: 
@@ -701,8 +750,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Email <String>]`: Email address of the registrant.
   - `[FirstName <String>]`: First name of the registrant.
   - `[LastName <String>]`: Last name of the registrant.
-  - `[PreferredLanguage <String>]`: 
-  - `[PreferredTimezone <String>]`: 
+  - `[PreferredLanguage <String>]`: The registrant's preferred language.
+  - `[PreferredTimezone <String>]`: The registrant's time zone details.
   - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -715,7 +764,7 @@ Only appears when answerInputType is multiChoice.
     - `[QuestionId <String>]`: id of the virtual event registration question.
     - `[Value <String>]`: Text answer of the virtual event registration question.
 Appears when answerInputType is text, multilineText or singleChoice.
-  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
+  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: Sessions for a registration.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowMeetingChat <String>]`: meetingChatMode
@@ -806,7 +855,7 @@ See below for more possible values.
   - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: Sessions for the virtual event.
+SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: The sessions for the virtual event.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowMeetingChat <String>]`: meetingChatMode
@@ -894,6 +943,10 @@ Read-only.
 See below for more possible values.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
+SETTINGS `<IMicrosoftGraphVirtualEventSettings>`: virtualEventSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsAttendeeEmailNotificationEnabled <Boolean?>]`: Indicates whether virtual event attendees receive email notifications.
+
 STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
@@ -904,6 +957,7 @@ See below for more possible values.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinar)
 
+[https://learn.microsoft.com/graph/api/virtualeventwebinar-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventwebinar-update?view=graph-rest-1.0)
 
 
 

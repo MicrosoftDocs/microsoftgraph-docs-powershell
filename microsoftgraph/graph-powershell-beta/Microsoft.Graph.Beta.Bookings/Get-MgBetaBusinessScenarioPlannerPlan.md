@@ -252,6 +252,7 @@ BODYPARAMETER `<IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlanner
     - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[ApprovalItemId <String>]`: The unique identifier of approvalItem
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness

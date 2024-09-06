@@ -17,6 +17,12 @@ Locale: en-US
 ### [Get-MgAllUserChatMessage](Get-MgAllUserChatMessage.md)
 
 
+### [Get-MgAllUserOnlineMeetingRecording](Get-MgAllUserOnlineMeetingRecording.md)
+
+
+### [Get-MgAllUserOnlineMeetingTranscript](Get-MgAllUserOnlineMeetingTranscript.md)
+
+
 ### [Get-MgUserCalendarEventDelta](Get-MgUserCalendarEventDelta.md)
 
 
@@ -108,6 +114,12 @@ Locale: en-US
 
 
 ### [Get-MgUserOnenoteRecentNotebook](Get-MgUserOnenoteRecentNotebook.md)
+
+
+### [Get-MgUserOnlineMeetingRecordingDelta](Get-MgUserOnlineMeetingRecordingDelta.md)
+
+
+### [Get-MgUserOnlineMeetingTranscriptDelta](Get-MgUserOnlineMeetingTranscriptDelta.md)
 
 
 ### [Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl](Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl.md)

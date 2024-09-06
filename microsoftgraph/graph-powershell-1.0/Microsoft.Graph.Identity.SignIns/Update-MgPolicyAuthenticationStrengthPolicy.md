@@ -60,6 +60,25 @@ To do so, use the Update allowed combinations action.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthpolicy-update-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.authenticationStrengthPolicy"
+	displayName = "FIDO2 only"
+	description = "An auth strength allowing only FIDO2 security keys."
+}
+
+Update-MgPolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyAuthenticationStrengthPolicy Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -447,7 +466,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicy)
 
 [https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-update?view=graph-rest-1.0)
-
 
 
 

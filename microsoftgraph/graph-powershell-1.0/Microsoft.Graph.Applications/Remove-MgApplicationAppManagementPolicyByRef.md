@@ -38,6 +38,19 @@ When you remove the appManagementPolicy, the application or service principal ad
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-delete-appliesto-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+Remove-MgApplicationAppManagementPolicyByRef -ApplicationId $applicationId -AppManagementPolicyId $appManagementPolicyId
+
+```
+This example shows how to use the Remove-MgApplicationAppManagementPolicyByRef Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ApplicationId
@@ -239,7 +252,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationAppManagementPolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/Remove-MgApplicationAppManagementPolicyByRef)
 
 [https://learn.microsoft.com/graph/api/appmanagementpolicy-delete-appliesto?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-delete-appliesto?view=graph-rest-1.0)
-
 
 
 

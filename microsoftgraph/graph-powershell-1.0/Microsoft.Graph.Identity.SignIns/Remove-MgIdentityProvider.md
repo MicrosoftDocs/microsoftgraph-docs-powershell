@@ -44,13 +44,13 @@ In Azure AD B2C, this operation can currently delete a socialIdentityProvider, o
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
+
 ```
 This example shows how to use the Remove-MgIdentityProvider Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

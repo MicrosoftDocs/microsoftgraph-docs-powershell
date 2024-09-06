@@ -47,7 +47,7 @@ Call the Update accessPackageAssignmentPolicy operation to remove the custom wor
 For an example, see Example 3: Remove the customExtensionStageSettings from a policy.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentrequestworkflowextension-delete-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentworkflowextension-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -326,6 +326,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
   - `[UnifiedRoleManagementAlertIncidentId <String>]`: The unique identifier of unifiedRoleManagementAlertIncident
+  - `[UniqueName <String>]`: Alternate key of accessPackageCatalog
   - `[UserConsentRequestId <String>]`: The unique identifier of userConsentRequest
   - `[UserId <String>]`: The unique identifier of user
   - `[UserProcessingResultId <String>]`: The unique identifier of userProcessingResult

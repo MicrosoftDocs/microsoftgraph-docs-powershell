@@ -639,7 +639,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
   - `[AssignedTo <String>]`: The name of the person who has been assigned the task in Outlook.
 Read-only.
-  - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task. 
+  - `[Attachments <IMicrosoftGraphAttachment- `[]`>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.

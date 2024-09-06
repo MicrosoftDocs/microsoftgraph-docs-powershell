@@ -11,6 +11,9 @@ Locale: en-US
 
 
 ## Microsoft.Graph.Bookings Cmdlets
+### [Enable-MgBackupRestore](Enable-MgBackupRestore.md)
+
+
 ### [Get-MgBookingBusiness](Get-MgBookingBusiness.md)
 
 
@@ -185,6 +188,21 @@ Locale: en-US
 ### [Get-MgVirtualEventWebinarSessionCount](Get-MgVirtualEventWebinarSessionCount.md)
 
 
+### [Initialize-MgBackupRestoreProtectionPolicy](Initialize-MgBackupRestoreProtectionPolicy.md)
+
+
+### [Initialize-MgBackupRestoreServiceApp](Initialize-MgBackupRestoreServiceApp.md)
+
+
+### [Initialize-MgBackupRestoreSession](Initialize-MgBackupRestoreSession.md)
+
+
+### [Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy](Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy.md)
+
+
+### [Invoke-MgDeactivateSolutionBackupRestoreServiceApp](Invoke-MgDeactivateSolutionBackupRestoreServiceApp.md)
+
+
 ### [New-MgBookingBusiness](New-MgBookingBusiness.md)
 
 
@@ -348,6 +366,9 @@ Locale: en-US
 
 
 ### [Remove-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord](Remove-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
+
+
+### [Search-MgBackupRestorePoint](Search-MgBackupRestorePoint.md)
 
 
 ### [Stop-MgBookingBusinessAppointment](Stop-MgBookingBusinessAppointment.md)

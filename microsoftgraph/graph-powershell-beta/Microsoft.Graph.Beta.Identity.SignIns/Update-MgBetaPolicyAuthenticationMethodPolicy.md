@@ -22,6 +22,7 @@ Update-MgBetaPolicyAuthenticationMethodPolicy [-ResponseHeadersVariable <String>
  [-AdditionalProperties <Hashtable>]
  [-AuthenticationMethodConfigurations <IMicrosoftGraphAuthenticationMethodConfiguration[]>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-MicrosoftAuthenticatorPlatformSettings <IMicrosoftGraphMicrosoftAuthenticatorPlatformSettings>]
  [-PolicyMigrationState <String>] [-PolicyVersion <String>] [-ReconfirmationInDays <Int32>]
  [-RegistrationEnforcement <IMicrosoftGraphRegistrationEnforcement>]
  [-ReportSuspiciousActivitySettings <IMicrosoftGraphReportSuspiciousActivitySettings>]
@@ -198,6 +199,22 @@ The date and time of the last update to the policy.
 
 ```yaml
 Type: DateTime
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MicrosoftAuthenticatorPlatformSettings
+microsoftAuthenticatorPlatformSettings
+To construct, see NOTES section for MICROSOFTAUTHENTICATORPLATFORMSETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphMicrosoftAuthenticatorPlatformSettings
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -402,6 +419,14 @@ Read-only.
   - `[Description <String>]`: A description of the policy.
   - `[DisplayName <String>]`: The name of the policy.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time of the last update to the policy.
+  - `[MicrosoftAuthenticatorPlatformSettings <IMicrosoftGraphMicrosoftAuthenticatorPlatformSettings>]`: microsoftAuthenticatorPlatformSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[EnforceAppPin <IMicrosoftGraphEnforceAppPin>]`: enforceAppPIN
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ExcludeTargets <IMicrosoftGraphExcludeTarget- `[]`>]`: 
+      - `[IncludeTargets <IMicrosoftGraphIncludeTarget- `[]`>]`: 
+        - `[Id <String>]`: The ID of the entity targeted.
+        - `[TargetType <String>]`: authenticationMethodTargetType
   - `[PolicyMigrationState <String>]`: authenticationMethodsPolicyMigrationState
   - `[PolicyVersion <String>]`: The version of the policy in use.
   - `[ReconfirmationInDays <Int32?>]`: Days before the user will be asked to reconfirm their method.
@@ -427,9 +452,6 @@ If the value is 0 - The user is prompted during every MFA attempt.
   - `[ReportSuspiciousActivitySettings <IMicrosoftGraphReportSuspiciousActivitySettings>]`: reportSuspiciousActivitySettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IncludeTarget <IMicrosoftGraphIncludeTarget>]`: includeTarget
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The ID of the entity targeted.
-      - `[TargetType <String>]`: authenticationMethodTargetType
     - `[State <String>]`: advancedConfigState
     - `[VoiceReportingCode <Int32?>]`: Specifies the number the user enters on their phone to report the MFA prompt as suspicious.
   - `[SystemCredentialPreferences <IMicrosoftGraphSystemCredentialPreferences>]`: systemCredentialPreferences
@@ -437,6 +459,17 @@ If the value is 0 - The user is prompted during every MFA attempt.
     - `[ExcludeTargets <IMicrosoftGraphExcludeTarget- `[]`>]`: Users and groups excluded from the preferred authentication method experience of the system.
     - `[IncludeTargets <IMicrosoftGraphIncludeTarget- `[]`>]`: Users and groups included in the preferred authentication method experience of the system.
     - `[State <String>]`: advancedConfigState
+
+MICROSOFTAUTHENTICATORPLATFORMSETTINGS `<IMicrosoftGraphMicrosoftAuthenticatorPlatformSettings>`: microsoftAuthenticatorPlatformSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[EnforceAppPin <IMicrosoftGraphEnforceAppPin>]`: enforceAppPIN
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ExcludeTargets <IMicrosoftGraphExcludeTarget- `[]`>]`: 
+      - `[Id <String>]`: The object identifier of a Microsoft Entra group.
+      - `[TargetType <String>]`: authenticationMethodTargetType
+    - `[IncludeTargets <IMicrosoftGraphIncludeTarget- `[]`>]`: 
+      - `[Id <String>]`: The ID of the entity targeted.
+      - `[TargetType <String>]`: authenticationMethodTargetType
 
 REGISTRATIONENFORCEMENT `<IMicrosoftGraphRegistrationEnforcement>`: registrationEnforcement
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

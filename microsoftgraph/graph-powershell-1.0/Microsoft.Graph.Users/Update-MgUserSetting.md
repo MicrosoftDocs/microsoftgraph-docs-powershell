@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ### -ContributionToContentDiscoveryAsOrganizationDisabled
 Reflects the organization level setting controlling delegate access to the trending API.
 When set to true, the organization doesn't have access to Office Delve.
-The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected for the whole organization.
+The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected for the whole organization.
 This setting is read-only and can only be changed by administrators in the SharePoint admin center.
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ### -ContributionToContentDiscoveryDisabled
 When set to true, the delegate access to the user's trending API is disabled.
 When set to true, documents in the user's Office Delve are disabled.
-When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
+When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected.
 Users can control this setting in Office Delve.
 
 ```yaml
@@ -349,17 +349,19 @@ BODYPARAMETER `<IMicrosoftGraphUserSettings>`: userSettings
 Read-only.
   - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the organization level setting controlling delegate access to the trending API.
 When set to true, the organization doesn't have access to Office Delve.
-The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected for the whole organization.
+The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected for the whole organization.
 This setting is read-only and can only be changed by administrators in the SharePoint admin center.
   - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: When set to true, the delegate access to the user's trending API is disabled.
 When set to true, documents in the user's Office Delve are disabled.
-When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
+When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for work or school is affected.
 Users can control this setting in Office Delve.
   - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[IsEnabled <Boolean?>]`: 
+    - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
+Optional.
   - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -473,7 +475,9 @@ ITEMINSIGHTS `<IMicrosoftGraphUserInsightsSettings>`: userInsightsSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[IsEnabled <Boolean?>]`: 
+  - `[IsEnabled <Boolean?>]`: True if the user's itemInsights and meeting hours insights are enabled; false if the user's itemInsights and meeting hours insights are disabled.
+The default value is true.
+Optional.
 
 SHIFTPREFERENCES `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

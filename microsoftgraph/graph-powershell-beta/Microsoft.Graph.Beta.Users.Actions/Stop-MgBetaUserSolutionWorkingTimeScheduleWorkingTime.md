@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausersolutionworkingtimescheduleworkingtime
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime
 
 ## SYNOPSIS
-Triggers the policies associated with the end of working hours.
+Trigger the policies associated with the end of working hours for a specific user.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgUserSolutionWorkingTimeScheduleWorkingTime](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserSolutionWorkingTimeScheduleWorkingTime?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,7 +31,23 @@ Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime -InputObject <IUsersAction
 ```
 
 ## DESCRIPTION
-Triggers the policies associated with the end of working hours.
+Trigger the policies associated with the end of working hours for a specific user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workingtimeschedule-endworkingtime-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime -UserId $userId
+
+```
+This example shows how to use the Stop-MgBetaUserSolutionWorkingTimeScheduleWorkingTime Cmdlet.
+
 
 ## PARAMETERS
 
@@ -179,6 +199,9 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
+  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
+  - `[ContactId <String>]`: The unique identifier of contact
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
@@ -216,6 +239,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausersolutionworkingtimescheduleworkingtime](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausersolutionworkingtimescheduleworkingtime)
 
+[https://learn.microsoft.com/graph/api/workingtimeschedule-endworkingtime?view=graph-rest-beta](https://learn.microsoft.com/graph/api/workingtimeschedule-endworkingtime?view=graph-rest-beta)
 
 
 

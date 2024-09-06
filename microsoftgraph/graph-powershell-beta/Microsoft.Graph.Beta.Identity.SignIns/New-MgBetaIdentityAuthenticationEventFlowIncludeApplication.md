@@ -12,6 +12,7 @@ ms.subservice: entra-sign-in
 Add or link an application to an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 This enables the authentication experience that's defined by the user flow to be enabled for the application.
 An application can only be linked to one user flow.
+The app must have an associated service principal in the tenant.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityAuthenticationEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityAuthenticationEventFlowIncludeApplication?view=graph-powershell-1.0)
@@ -50,6 +51,7 @@ New-MgBetaIdentityAuthenticationEventFlowIncludeApplication -InputObject <IIdent
 Add or link an application to an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 This enables the authentication experience that's defined by the user flow to be enabled for the application.
 An application can only be linked to one user flow.
+The app must have an associated service principal in the tenant.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationconditionsapplications-post-includeapplications-permissions.md)]

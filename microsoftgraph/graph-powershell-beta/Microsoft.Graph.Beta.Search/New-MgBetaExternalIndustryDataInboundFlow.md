@@ -34,7 +34,7 @@ New-MgBetaExternalIndustryDataInboundFlow -BodyParameter <IMicrosoftGraphIndustr
 Create a new inboundApiFlow object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundapiflow-post-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -44,7 +44,7 @@ Create a new inboundApiFlow object.
 Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.industryData.inboundApiFlow"
+	"@odata.type" = "#microsoft.graph.industryData.inboundFileFlow"
 	"dataConnector@odata.bind" = "https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271"
 	dataDomain = "educationRostering"
 	displayName = "Inbound rostering flow"

@@ -48,6 +48,30 @@ Read the properties and relationships of an authenticationStrengthPolicy object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthroot-list-policies-permissions.md)]
 
+## EXAMPLES
+### Example 1: Get all authentication strength policies
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgPolicyAuthenticationStrengthPolicy
+
+```
+This example will get all authentication strength policies
+
+### Example 2: Get policies that include specific authentication method modes
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgPolicyAuthenticationStrengthPolicy -Filter "allowedCombinations/any(x:x has 'sms, password')" 
+
+```
+This example will get policies that include specific authentication method modes
+
+
 ## PARAMETERS
 
 ### -All
@@ -361,7 +385,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/authenticationstrengthroot-list-policies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthroot-list-policies?view=graph-rest-1.0)
-
 
 
 

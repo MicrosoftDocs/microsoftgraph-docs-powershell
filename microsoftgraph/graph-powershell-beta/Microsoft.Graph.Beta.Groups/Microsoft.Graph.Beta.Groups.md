@@ -929,6 +929,12 @@ Locale: en-US
 ### [Remove-MgBetaGroupByUniqueName](Remove-MgBetaGroupByUniqueName.md)
 
 
+### [Remove-MgBetaGroupCalendarEventPermanent](Remove-MgBetaGroupCalendarEventPermanent.md)
+
+
+### [Remove-MgBetaGroupCalendarPermanent](Remove-MgBetaGroupCalendarPermanent.md)
+
+
 ### [Remove-MgBetaGroupConversation](Remove-MgBetaGroupConversation.md)
 
 
@@ -966,6 +972,9 @@ Locale: en-US
 
 
 ### [Remove-MgBetaGroupEndpoint](Remove-MgBetaGroupEndpoint.md)
+
+
+### [Remove-MgBetaGroupEventPermanent](Remove-MgBetaGroupEventPermanent.md)
 
 
 ### [Remove-MgBetaGroupExtension](Remove-MgBetaGroupExtension.md)

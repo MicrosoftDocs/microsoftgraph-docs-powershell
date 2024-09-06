@@ -49,6 +49,19 @@ Read the properties and relationships of a windowsHelloForBusinessAuthentication
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/windowshelloforbusinessauthenticationmethod-list-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgUserAuthenticationWindowsHelloForBusinessMethod -UserId $userId
+
+```
+This example shows how to use the Get-MgUserAuthenticationWindowsHelloForBusinessMethod Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -377,7 +390,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/windowshelloforbusinessauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/windowshelloforbusinessauthenticationmethod-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/windowshelloforbusinessauthenticationmethod-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/windowshelloforbusinessauthenticationmethod-list?view=graph-rest-1.0)
-
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgVirtualEventWebinarPresenter
 
 ## SYNOPSIS
-Get presenters from solutions
+The virtual event presenters.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarPresenter?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgVirtualEventWebinarPresenter -InputObject <IBookingsIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Get presenters from solutions
+The virtual event presenters.
 
 ## PARAMETERS
 
@@ -311,7 +311,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter

@@ -36,13 +36,17 @@ To learn how to customize the privacy of item insights in an organization, see C
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-iteminsights-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaOrganizationSettingItemInsight Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 Get-MgBetaOrganizationSettingItemInsight -OrganizationId $organizationId
+
 ```
 This example shows how to use the Get-MgBetaOrganizationSettingItemInsight Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

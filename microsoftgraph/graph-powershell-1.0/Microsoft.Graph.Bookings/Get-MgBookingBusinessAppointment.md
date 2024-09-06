@@ -11,7 +11,7 @@ ms.subservice: microsoft-bookings
 
 ## SYNOPSIS
 Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
-The startDateTime and endDateTime properties are always returned in UTC.
+The start and end properties are always returned in UTC.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Get-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
-The startDateTime and endDateTime properties are always returned in UTC.
+The start and end properties are always returned in UTC.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingappointment-get-permissions.md)]
@@ -334,7 +334,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter

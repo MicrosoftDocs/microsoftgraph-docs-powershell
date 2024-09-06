@@ -43,7 +43,7 @@ Get-MgGroupThread -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-
 Get a thread object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-thread-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationthread-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-threads-permissions.md)]

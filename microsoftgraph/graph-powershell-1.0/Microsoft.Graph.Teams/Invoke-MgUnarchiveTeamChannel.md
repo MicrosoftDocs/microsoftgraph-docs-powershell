@@ -42,6 +42,30 @@ Unarchiving is an asynchronous operation; a channel is unarchived when the async
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-unarchive-permissions.md)]
 
+## EXAMPLES
+### Example 1: Unarchive a channel
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Invoke-MgUnarchiveTeamChannel -TeamId $teamId -ChannelId $channelId
+
+```
+This example will unarchive a channel
+
+### Example 2: Unarchive a channel when the team is archived
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Invoke-MgUnarchiveTeamChannel -TeamId $teamId -ChannelId $channelId
+
+```
+This example will unarchive a channel when the team is archived
+
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -237,7 +261,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteamchannel)
 
 [https://learn.microsoft.com/graph/api/channel-unarchive?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-unarchive?view=graph-rest-1.0)
-
 
 
 

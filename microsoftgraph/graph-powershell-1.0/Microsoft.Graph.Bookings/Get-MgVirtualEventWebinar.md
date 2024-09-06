@@ -55,7 +55,7 @@ Read the properties and relationships of a virtualEventWebinar object.
 
 Import-Module Microsoft.Graph.Bookings
 
-Get-MgVirtualEventWebinar -VirtualEventWebinarId $virtualEventWebinarId
+Get-MgVirtualEventWebinar
 
 ```
 This example shows how to use the Get-MgVirtualEventWebinar Cmdlet.
@@ -317,7 +317,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter

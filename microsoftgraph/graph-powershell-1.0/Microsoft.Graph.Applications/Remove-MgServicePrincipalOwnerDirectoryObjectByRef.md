@@ -35,6 +35,23 @@ As a recommended best practice, service principals should have at least two owne
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-owners-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	"@odata.id" = "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+}
+
+Remove-MgServicePrincipalOwnerDirectoryObjectByRef -ServicePrincipalId $servicePrincipalId -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgServicePrincipalOwnerDirectoryObjectByRef Cmdlet.
+
+
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -236,7 +253,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalownerdirectoryobjectbyref)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-delete-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-delete-owners?view=graph-rest-1.0)
-
 
 
 

@@ -9,7 +9,8 @@ ms.subservice: entra-applications
 # New-MgApplicationOwnerByRef
 
 ## SYNOPSIS
-Add an owner to an application by posting to the owners collection.
+Add an owner to an application.
+Currently, only individual users are supported as owners of applications.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
@@ -45,7 +46,8 @@ New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Add an owner to an application by posting to the owners collection.
+Add an owner to an application.
+Currently, only individual users are supported as owners of applications.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-owners-permissions.md)]

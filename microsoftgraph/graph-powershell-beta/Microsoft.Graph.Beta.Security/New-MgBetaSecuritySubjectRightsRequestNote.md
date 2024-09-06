@@ -273,9 +273,10 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 AUTHOR `<IMicrosoftGraphIdentity>`: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-  - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
 BODYPARAMETER `<IMicrosoftGraphAuthoredNote>`: authoredNote
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -284,9 +285,10 @@ Read-only.
   - `[Author <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   - `[Content <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
@@ -314,6 +316,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
   - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
+  - `[CustomerInsightTenantId <String>]`: The unique identifier of customerInsight
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
   - `[DetectionRuleId <String>]`: The unique identifier of detectionRule
@@ -362,6 +365,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SecurityActionId <String>]`: The unique identifier of securityAction
+  - `[SecurityRequirementId <String>]`: The unique identifier of securityRequirement
+  - `[SecurityScoreHistoryId <String>]`: The unique identifier of securityScoreHistory
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SensorId <String>]`: The unique identifier of sensor
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation

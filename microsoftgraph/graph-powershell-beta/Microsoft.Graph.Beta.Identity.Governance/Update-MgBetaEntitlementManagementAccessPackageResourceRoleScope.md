@@ -684,6 +684,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
   - `[UnifiedRoleManagementAlertIncidentId <String>]`: The unique identifier of unifiedRoleManagementAlertIncident
+  - `[UniqueName <String>]`: Alternate key of accessPackageCatalog
   - `[UserConsentRequestId <String>]`: The unique identifier of userConsentRequest
   - `[UserId <String>]`: The unique identifier of user
   - `[UserProcessingResultId <String>]`: The unique identifier of userProcessingResult

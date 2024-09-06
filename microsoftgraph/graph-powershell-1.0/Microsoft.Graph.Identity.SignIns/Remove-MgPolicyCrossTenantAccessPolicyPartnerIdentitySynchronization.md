@@ -37,6 +37,19 @@ Delete the user synchronization policy for a partner-specific configuration.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantidentitysyncpolicypartner-delete-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId
+
+```
+This example shows how to use the Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization Cmdlet.
+
+
 ## PARAMETERS
 
 ### -CrossTenantAccessPolicyConfigurationPartnerTenantId
@@ -258,7 +271,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicycrosstenantaccesspolicypartneridentitysynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicycrosstenantaccesspolicypartneridentitysynchronization)
 
 [https://learn.microsoft.com/graph/api/crosstenantidentitysyncpolicypartner-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantidentitysyncpolicypartner-delete?view=graph-rest-1.0)
-
 
 
 

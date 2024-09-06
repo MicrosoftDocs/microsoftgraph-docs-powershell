@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredLanguage
-.
+The registrant's preferred language.
 
 ```yaml
 Type: String
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredTimezone
-.
+The registrant's time zone details.
 
 ```yaml
 Type: String
@@ -318,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sessions
-.
+Sessions for a registration.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml
@@ -438,8 +438,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Email <String>]`: Email address of the registrant.
   - `[FirstName <String>]`: First name of the registrant.
   - `[LastName <String>]`: Last name of the registrant.
-  - `[PreferredLanguage <String>]`: 
-  - `[PreferredTimezone <String>]`: 
+  - `[PreferredLanguage <String>]`: The registrant's preferred language.
+  - `[PreferredTimezone <String>]`: The registrant's time zone details.
   - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -452,7 +452,7 @@ Only appears when answerInputType is multiChoice.
     - `[QuestionId <String>]`: id of the virtual event registration question.
     - `[Value <String>]`: Text answer of the virtual event registration question.
 Appears when answerInputType is text, multilineText or singleChoice.
-  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
+  - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: Sessions for a registration.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowMeetingChat <String>]`: meetingChatMode
@@ -554,7 +554,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -574,7 +577,7 @@ Only appears when answerInputType is multiChoice.
   - `[Value <String>]`: Text answer of the virtual event registration question.
 Appears when answerInputType is text, multilineText or singleChoice.
 
-SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: .
+SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: Sessions for a registration.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
   - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
   - `[AllowMeetingChat <String>]`: meetingChatMode

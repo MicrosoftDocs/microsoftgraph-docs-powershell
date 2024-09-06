@@ -44,6 +44,30 @@ Collection of applications and service principals to which the policy is applied
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-list-appliesto-permissions.md)]
 
+## EXAMPLES
+### Example 1: Get applications and service principal objects applied to an app management policy
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId
+
+```
+This example will get applications and service principal objects applied to an app management policy
+
+### Example 2: Get specific properties of applications and service principal objects applied to an app management policy using $select query option
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId -Property "id,appId,displayName,createdDateTime" 
+
+```
+This example will get specific properties of applications and service principal objects applied to an app management policy using $select query option
+
+
 ## PARAMETERS
 
 ### -All
@@ -370,7 +394,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicyapplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicyapplyto)
 
 [https://learn.microsoft.com/graph/api/appmanagementpolicy-list-appliesto?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-list-appliesto?view=graph-rest-1.0)
-
 
 
 

@@ -35,6 +35,19 @@ Removing remoteDesktopSecurityConfiguration object on the servicePrincipal disab
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-remotedesktopsecurityconfiguration-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -221,7 +234,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalremotedesktopsecurityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalremotedesktopsecurityconfiguration)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-delete-remotedesktopsecurityconfiguration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-delete-remotedesktopsecurityconfiguration?view=graph-rest-1.0)
-
 
 
 

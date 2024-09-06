@@ -9,7 +9,7 @@ ms.subservice: intune
 # Update-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Update the properties of a windows10CompliancePolicy object.
+Update the properties of a windows81CompliancePolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -61,7 +61,7 @@ Update-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementI
 ```
 
 ## DESCRIPTION
-Update the properties of a windows10CompliancePolicy object.
+Update the properties of a windows81CompliancePolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -71,29 +71,27 @@ Update the properties of a windows10CompliancePolicy object.
 Import-Module Microsoft.Graph.DeviceManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windows10CompliancePolicy"
+	"@odata.type" = "#microsoft.graph.macOSCompliancePolicy"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
 	passwordRequired = $true
 	passwordBlockSimple = $true
-	passwordRequiredToUnlockFromIdle = $true
-	passwordMinutesOfInactivityBeforeLock = 
 	passwordExpirationDays = 
 	passwordMinimumLength = 
+	passwordMinutesOfInactivityBeforeLock = 
+	passwordPreviousPasswordBlockCount = 
 	passwordMinimumCharacterSetCount = 
 	passwordRequiredType = "alphanumeric"
-	passwordPreviousPasswordBlockCount = 
-	requireHealthyDeviceReport = $true
 	osMinimumVersion = "Os Minimum Version value"
 	osMaximumVersion = "Os Maximum Version value"
-	mobileOsMinimumVersion = "Mobile Os Minimum Version value"
-	mobileOsMaximumVersion = "Mobile Os Maximum Version value"
-	earlyLaunchAntiMalwareDriverEnabled = $true
-	bitLockerEnabled = $true
-	secureBootEnabled = $true
-	codeIntegrityEnabled = $true
+	systemIntegrityProtectionEnabled = $true
+	deviceThreatProtectionEnabled = $true
+	deviceThreatProtectionRequiredSecurityLevel = "secured"
 	storageRequireEncryption = $true
+	firewallEnabled = $true
+	firewallBlockAllIncoming = $true
+	firewallEnableStealthMode = $true
 }
 
 Update-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
@@ -687,7 +685,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicy)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10compliancepolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10compliancepolicy-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows81compliancepolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows81compliancepolicy-update?view=graph-rest-1.0)
 
 
 

@@ -147,7 +147,9 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date, time, and time zone when the service was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -334,7 +336,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsAnonymousJoinEnabled
-True if the URL to join the appointment anonymously (anonymousJoinWebUrl) will be generated for the appointment booked for this service.
+Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -349,7 +352,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsCustomerAllowedToManageBooking
-.
+Indicates that the customer can manage bookings created by the staff.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -364,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsHiddenFromCustomers
-True means this service is not available to customers for booking.
+True indicates that this service isn't available to customers for booking.
 
 ```yaml
 Type: SwitchParameter
@@ -379,8 +383,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsLocationOnline
-True indicates that the appointments for the service will be held online.
-Default value is false.
+Indicates that the appointments for the service are held online.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -410,7 +414,9 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedDateTime
-.
+The date, time, and time zone when the service was last updated.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -616,7 +622,9 @@ BODYPARAMETER `<IMicrosoftGraphBookingService>`: Represents a particular service
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
-  - `[CreatedDateTime <DateTime?>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The date, time, and time zone when the service was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment- `[]`>]`: Contains the set of custom questions associated with a particular service.
     - `[IsRequired <Boolean?>]`: Indicates whether it's mandatory to answer the custom question.
     - `[QuestionId <String>]`: The ID of the custom question.
@@ -656,13 +664,17 @@ It's denoted in ISO 8601 format.
     - `[Recipients <String>]`: bookingReminderRecipients
   - `[Description <String>]`: A text description for the service.
   - `[DisplayName <String>]`: A service name.
-  - `[IsAnonymousJoinEnabled <Boolean?>]`: True if the URL to join the appointment anonymously (anonymousJoinWebUrl) will be generated for the appointment booked for this service.
-  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
-  - `[IsHiddenFromCustomers <Boolean?>]`: True means this service is not available to customers for booking.
-  - `[IsLocationOnline <Boolean?>]`: True indicates that the appointments for the service will be held online.
-Default value is false.
+  - `[IsAnonymousJoinEnabled <Boolean?>]`: Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service.
+The default value is false.
+  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: Indicates that the customer can manage bookings created by the staff.
+The default value is false.
+  - `[IsHiddenFromCustomers <Boolean?>]`: True indicates that this service isn't available to customers for booking.
+  - `[IsLocationOnline <Boolean?>]`: Indicates that the appointments for the service are held online.
+The default value is false.
   - `[LanguageTag <String>]`: The language of the self-service booking page.
-  - `[LastUpdatedDateTime <DateTime?>]`: 
+  - `[LastUpdatedDateTime <DateTime?>]`: The date, time, and time zone when the service was last updated.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in a service.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
 To create a customer, use the Create bookingCustomer operation.
@@ -671,26 +683,26 @@ To create a customer, use the Create bookingCustomer operation.
   - `[PreBuffer <TimeSpan?>]`: The time to buffer before an appointment for this service can start.
   - `[SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
-    - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: collection of custom availabilities for a given time range.
+    - `[AllowStaffSelection <Boolean?>]`: True to allow customers to choose a specific person for the booking.
+    - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: Custom availability of the service in a given time frame.
       - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
       - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
+The business hours value is set to null if the availability type isn't customWeeklyHours.
         - `[Day <String>]`: dayOfWeek
         - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot- `[]`>]`: A list of start/end times during a day.
           - `[EndTime <String>]`: The time of the day when work stops.
 For example, 17:00:00.0000000.
           - `[StartTime <String>]`: The time of the day when work starts.
 For example, 08:00:00.0000000.
-      - `[EndDate <DateTime?>]`: Allow customers to end date of availability window.
-      - `[StartDate <DateTime?>]`: Allow customers to start date of availability window.
+      - `[EndDate <DateTime?>]`: End date of the availability window.
+      - `[StartDate <DateTime?>]`: Start date of the availability window.
     - `[GeneralAvailability <IMicrosoftGraphBookingsAvailability>]`: bookingsAvailability
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
       - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
-    - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Enable sending meeting invite to customers.
-False by default.
+The business hours value is set to null if the availability type isn't customWeeklyHours.
+    - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Indicates whether the meeting invite is sent to the customers.
+The default value is false.
     - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
     - `[MinimumLeadTime <TimeSpan?>]`: The minimum amount of time before which bookings and cancellations must be made.
@@ -749,7 +761,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
@@ -761,26 +776,26 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
-  - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: collection of custom availabilities for a given time range.
+  - `[AllowStaffSelection <Boolean?>]`: True to allow customers to choose a specific person for the booking.
+  - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: Custom availability of the service in a given time frame.
     - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
     - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
+The business hours value is set to null if the availability type isn't customWeeklyHours.
       - `[Day <String>]`: dayOfWeek
       - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot- `[]`>]`: A list of start/end times during a day.
         - `[EndTime <String>]`: The time of the day when work stops.
 For example, 17:00:00.0000000.
         - `[StartTime <String>]`: The time of the day when work starts.
 For example, 08:00:00.0000000.
-    - `[EndDate <DateTime?>]`: Allow customers to end date of availability window.
-    - `[StartDate <DateTime?>]`: Allow customers to start date of availability window.
+    - `[EndDate <DateTime?>]`: End date of the availability window.
+    - `[StartDate <DateTime?>]`: Start date of the availability window.
   - `[GeneralAvailability <IMicrosoftGraphBookingsAvailability>]`: bookingsAvailability
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
     - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
-  - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Enable sending meeting invite to customers.
-False by default.
+The business hours value is set to null if the availability type isn't customWeeklyHours.
+  - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Indicates whether the meeting invite is sent to the customers.
+The default value is false.
   - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made.
 It follows the ISO 8601 format.
   - `[MinimumLeadTime <TimeSpan?>]`: The minimum amount of time before which bookings and cancellations must be made.

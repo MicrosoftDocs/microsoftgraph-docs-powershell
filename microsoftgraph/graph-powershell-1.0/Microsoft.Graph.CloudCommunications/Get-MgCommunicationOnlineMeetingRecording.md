@@ -16,12 +16,13 @@ Read-only.
 
 ## SYNTAX
 
-### List (Default)
+### Get1 (Default)
 ```
-Get-MgCommunicationOnlineMeetingRecording -OnlineMeetingId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgCommunicationOnlineMeetingRecording [-ExpandProperty <String[]>] [-Property <String[]>] [-Count]
+ [-EndDateTime <DateTime>] [-Filter <String>] [-MeetingOrganizerUserId <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-StartDateTime <DateTime>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -29,6 +30,14 @@ Get-MgCommunicationOnlineMeetingRecording -OnlineMeetingId <String> [-ExpandProp
 Get-MgCommunicationOnlineMeetingRecording -CallRecordingId <String> -OnlineMeetingId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### List
+```
+Get-MgCommunicationOnlineMeetingRecording -OnlineMeetingId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -74,6 +83,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: Get1
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CountVariable
 Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
@@ -82,6 +106,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: List
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EndDateTime
+Usage: endDateTime=@endDateTime
+
+```yaml
+Type: DateTime
+Parameter Sets: Get1
+Aliases:
 
 Required: False
 Position: Named
@@ -110,7 +149,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get1, List
 Aliases:
 
 Required: False
@@ -151,12 +190,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -MeetingOrganizerUserId
+Usage: meetingOrganizerUserId='@meetingOrganizerUserId'
+
+```yaml
+Type: String
+Parameter Sets: Get1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -OnlineMeetingId
 The unique identifier of onlineMeeting
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -231,7 +285,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get1, List
 Aliases:
 
 Required: False
@@ -246,8 +300,23 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: Get1, List
 Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartDateTime
+Usage: startDateTime=@startDateTime
+
+```yaml
+Type: DateTime
+Parameter Sets: Get1
+Aliases:
 
 Required: False
 Position: Named
@@ -261,7 +330,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get1, List
 Aliases: Limit
 
 Required: False
@@ -276,7 +345,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get1, List
 Aliases:
 
 Required: False
@@ -321,6 +390,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingrecording)
+
+[https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-1.0)
 
 
 

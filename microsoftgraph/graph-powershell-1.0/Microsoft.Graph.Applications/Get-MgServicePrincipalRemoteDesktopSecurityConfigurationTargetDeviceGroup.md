@@ -49,6 +49,19 @@ Read the properties and relationships of a targetDeviceGroup object for the remo
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/remotedesktopsecurityconfiguration-list-targetdevicegroups-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -342,7 +355,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/targetdevicegroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/targetdevicegroup-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-list-targetdevicegroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-list-targetdevicegroups?view=graph-rest-1.0)
-
 
 
 

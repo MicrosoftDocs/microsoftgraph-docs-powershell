@@ -10,7 +10,7 @@ ms.subservice: entra-sign-in
 # Get-MgIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a namedLocation object.
+Retrieve the properties and relationships of an ipNamedLocation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsIdent
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a namedLocation object.
+Retrieve the properties and relationships of an ipNamedLocation object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/namedlocation-get-permissions.md)]
@@ -387,7 +387,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessnamedlocation)
 
-[https://learn.microsoft.com/graph/api/namedlocation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/namedlocation-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/ipnamedlocation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ipnamedlocation-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/conditionalaccessroot-list-namedlocations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-namedlocations?view=graph-rest-1.0)
 

@@ -43,7 +43,7 @@ Get-MgBetaSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 Return the metadata for a list.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-operations-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-permissions.md)]

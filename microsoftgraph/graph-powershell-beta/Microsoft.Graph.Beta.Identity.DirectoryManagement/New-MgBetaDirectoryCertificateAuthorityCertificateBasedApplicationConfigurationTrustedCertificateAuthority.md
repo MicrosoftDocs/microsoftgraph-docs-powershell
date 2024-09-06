@@ -53,6 +53,26 @@ Create a new trusted certificate authority in a certificateBasedApplicationConfi
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+$params = @{
+	isRootAuthority = $true
+	certificate = [System.Text.Encoding]::ASCII.GetBytes("MIIGrDCCBJSgAwIBAgITWgACAdWQXvWynRA6/AABAAIB....")
+	issuer = "ExampleIssuer"
+	issuerSubjectKeyIdentifier = " BA:AF:4A:02:4D:AA:A6:F1:3C:25:8E:AD:FA:38:98:CE:D9:23:32:D9"
+}
+
+New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority -CertificateBasedApplicationConfigurationId $certificateBasedApplicationConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -351,7 +371,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthority)
 
 [https://learn.microsoft.com/graph/api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities?view=graph-rest-beta](https://learn.microsoft.com/graph/api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities?view=graph-rest-beta)
-
 
 
 

@@ -46,7 +46,7 @@ Read the properties and relationships of a specific cloudPC object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-get-permissions.md)]
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-cloudpcs-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List all cloudPC devices in a tenant
@@ -380,6 +380,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcloudpc)
 
 [https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-beta)
 
 
 

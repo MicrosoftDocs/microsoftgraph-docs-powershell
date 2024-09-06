@@ -339,7 +339,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-organization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-organization-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-organization-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-organization-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/organization-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organization-list?view=graph-rest-1.0)
 
 
 

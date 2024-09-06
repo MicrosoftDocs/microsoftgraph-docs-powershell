@@ -9,7 +9,7 @@ ms.subservice: entra-users
 # Update-MgBetaUserPassword
 
 ## SYNOPSIS
-Enable the user to update their password.
+Update the signed-in user's password.
 Any user can update their password without belonging to any administrator role.
 
 > [!NOTE]
@@ -50,7 +50,7 @@ Update-MgBetaUserPassword -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Enable the user to update their password.
+Update the signed-in user's password.
 Any user can update their password without belonging to any administrator role.
 
 **Permissions**
@@ -292,6 +292,9 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
+  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
+  - `[ContactId <String>]`: The unique identifier of contact
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse

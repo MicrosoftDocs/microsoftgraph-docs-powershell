@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Display name of the registration question.
 
 ```yaml
 Type: String
@@ -145,7 +145,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsRequired
-.
+Indicates whether an answer to the question is required.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -271,8 +272,9 @@ BODYPARAMETER `<IMicrosoftGraphVirtualEventRegistrationQuestionBase>`: virtualEv
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: 
-  - `[IsRequired <Boolean?>]`: 
+  - `[DisplayName <String>]`: Display name of the registration question.
+  - `[IsRequired <Boolean?>]`: Indicates whether an answer to the question is required.
+The default value is false.
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
@@ -285,7 +287,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[ProtectionPolicyBaseId <String>]`: The unique identifier of protectionPolicyBase
+  - `[RestoreSessionBaseId <String>]`: The unique identifier of restoreSessionBase
   - `[Role <String>]`: Usage: role='{role}'
+  - `[ServiceAppId <String>]`: The unique identifier of serviceApp
   - `[UserId <String>]`: Usage: userId='{userId}'
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter

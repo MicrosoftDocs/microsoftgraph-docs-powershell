@@ -3,15 +3,12 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributebyref
 schema: 2.0.0
-ms.subservice: entra-sign-in
 ---
 
 # Remove-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef
 
 ## SYNOPSIS
-Remove an attribute from an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
-You can add both custom and built-in attributes to a user flow.
-After this step, PATCH the user flow to remove the attribute from the attribute collection step.
+Delete ref of navigation property attributes for identity
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef?view=graph-powershell-1.0)
@@ -35,12 +32,7 @@ Remove-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExtern
 ```
 
 ## DESCRIPTION
-Remove an attribute from an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
-You can add both custom and built-in attributes to a user flow.
-After this step, PATCH the user flow to remove the attribute from the attribute collection step.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onattributecollectionexternalusersselfservicesignup-delete-attributes-permissions.md)]
+Delete ref of navigation property attributes for identity
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -312,8 +304,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributebyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributebyref)
-
-[https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-delete-attributes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-delete-attributes?view=graph-rest-beta)
 
 
 

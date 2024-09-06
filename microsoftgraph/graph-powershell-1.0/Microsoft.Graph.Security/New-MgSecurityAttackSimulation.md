@@ -802,6 +802,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[ReportedPhishDateTime <DateTime?>]`: Date and time when a user reported the delivered payload as phishing in the attack simulation and training campaign.
       - `[SimulationEvents <IMicrosoftGraphUserSimulationEventInfo- `[]`>]`: List of simulation events of a user in the attack simulation and training campaign.
         - `[Browser <String>]`: Browser information from where the simulation event was initiated by a user in an attack simulation and training campaign.
+        - `[ClickSource <String>]`: clickSource
         - `[EventDateTime <DateTime?>]`: Date and time of the simulation event by a user in an attack simulation and training campaign.
         - `[EventName <String>]`: Name of the simulation event by a user in an attack simulation and training campaign.
         - `[IPAddress <String>]`: IP address from where the simulation event was initiated by a user in an attack simulation and training campaign.
@@ -1040,6 +1041,7 @@ REPORT `<IMicrosoftGraphSimulationReport>`: simulationReport
     - `[ReportedPhishDateTime <DateTime?>]`: Date and time when a user reported the delivered payload as phishing in the attack simulation and training campaign.
     - `[SimulationEvents <IMicrosoftGraphUserSimulationEventInfo- `[]`>]`: List of simulation events of a user in the attack simulation and training campaign.
       - `[Browser <String>]`: Browser information from where the simulation event was initiated by a user in an attack simulation and training campaign.
+      - `[ClickSource <String>]`: clickSource
       - `[EventDateTime <DateTime?>]`: Date and time of the simulation event by a user in an attack simulation and training campaign.
       - `[EventName <String>]`: Name of the simulation event by a user in an attack simulation and training campaign.
       - `[IPAddress <String>]`: IP address from where the simulation event was initiated by a user in an attack simulation and training campaign.

@@ -43,6 +43,32 @@ Update the cross-tenant access policy template with inbound and outbound partner
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganizationpartnerconfigurationtemplate-update-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	inboundTrust = @{
+		isMfaAccepted = $true
+		isCompliantDeviceAccepted = $true
+		isHybridAzureADJoinedDeviceAccepted = $true
+	}
+	automaticUserConsentSettings = @{
+		inboundAllowed = $true
+		outboundAllowed = $true
+	}
+	templateApplicationLevel = "newPartners,existingPartners"
+}
+
+Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -383,7 +409,6 @@ INBOUNDTRUST `<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenant
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration)
 
 [https://learn.microsoft.com/graph/api/multitenantorganizationpartnerconfigurationtemplate-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganizationpartnerconfigurationtemplate-update?view=graph-rest-1.0)
-
 
 
 
