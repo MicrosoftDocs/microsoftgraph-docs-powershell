@@ -65,10 +65,6 @@ New-MgBetaRoleManagementCloudPcRoleDefinition -BodyParameter $params
 ```
 This example shows how to use the New-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
 
-```
-This example shows how to use the New-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
