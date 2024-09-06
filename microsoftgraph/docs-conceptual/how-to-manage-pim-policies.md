@@ -3,7 +3,7 @@ title: "Manage PIM policies using Microsoft Graph PowerShell"
 description: "Learn how to manage PIM policies in Microsoft Graph PowerShell"
 
 ms.topic: how-to
-ms.date: 09/05/2023
+ms.date: 09/06/2024
 author: msewaweru
 manager: mwongerapk
 ms.author: eunicewaweru
@@ -13,7 +13,7 @@ ms.author: eunicewaweru
 
 # Manage PIM policies in Microsoft Graph PowerShell
 
-The Microsoft Entra Privileged Identity Management (PIM) service allows role administrators to make time-bound admin role assignments. Each role has a group of settings that manage it. For example, activation and assignment settings. These role settings are called policies. Each policy has a set of rules.
+The Microsoft Entra Privileged Identity Management (PIM) service allows role administrators to make time-bound admin role assignments. Each role has a group of settings that manage it. For example, activation and assignment settings. These role settings are called policies and each policy has a set of rules.
 
 In this how-to guide, you'll list policies, policy assignments and rules, and update policy rules.
 
@@ -99,7 +99,6 @@ Get-MgPolicyRoleManagementPolicyAssignment -Filter "scopeId eq '/' and scopeType
 Id                                                                                                                       PolicyId                                                                            RoleDefinitionId                     ScopeId ScopeType
 --                                                                                                                       --------                                                                            ----------------                     ------- ---------
 Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720_88d8e3e3-8f55-4a1e-953a-9b9898b8876b Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720 88d8e3e3-8f55-4a1e-953a-9b9898b8876b /       Directory
-Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_04949382-ea50-4d50-8d4e-a89801b95dc2_62e90394-69f5-4237-9190-012177145e10 Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_04949382-ea50-4d50-8d4e-a89801b95dc2 62e90394-69f5-4237-9190-012177145e10 /       Directory
 Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_5e870933-40ea-48d6-a77f-b8813f9172c2_10dae51f-b6af-4016-8d66-8c2a99b929b3 Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_5e870933-40ea-48d6-a77f-b8813f9172c2 10dae51f-b6af-4016-8d66-8c2a99b929b3 /       Directory
 Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_dbc3fbda-6dfe-4e3f-9a93-e7afc047dc6b_2af84b1e-32c8-42b7-82bc-daa82404023b Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_dbc3fbda-6dfe-4e3f-9a93-e7afc047dc6b 2af84b1e-32c8-42b7-82bc-daa82404023b /       Directory
 Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_2a5f1b68-1022-41a6-be9a-fa022b1d1670_95e79109-95c0-4d8e-aee3-d01accf2d47b Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_2a5f1b68-1022-41a6-be9a-fa022b1d1670 95e79109-95c0-4d8e-aee3-d01accf2d47b /       Directory
@@ -216,4 +215,4 @@ AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metad
 
 ## Next steps
 
-[Assign Microsoft Entra roles in PIM](tutorial-pim.md)
+- [Assign Microsoft Entra roles in PIM](tutorial-pim.md)
