@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgadminreportsetting
 schema: 2.0.0
-ms.subservice: reports
 ---
 
 # Get-MgAdminReportSetting
 
 ## SYNOPSIS
 Get the tenant-level settings for Microsoft 365 reports.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminReportSetting](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAdminReportSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,8 +21,17 @@ Get-MgAdminReportSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get the tenant-level settings for Microsoft 365 reports.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/adminreportsettings-get-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -121,8 +126,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgadminreportsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgadminreportsetting)
 
 [https://learn.microsoft.com/graph/api/adminreportsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/adminreportsettings-get?view=graph-rest-1.0)
-
-
-
-
 

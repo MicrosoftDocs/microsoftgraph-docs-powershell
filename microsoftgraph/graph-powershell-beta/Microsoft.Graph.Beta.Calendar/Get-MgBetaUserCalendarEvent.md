@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarevent
@@ -11,9 +11,6 @@ schema: 2.0.0
 The events in the calendar.
 Navigation property.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +25,18 @@ Get-MgBetaUserCalendarEvent -CalendarId <String> -UserId <String> [-ExpandProper
 The events in the calendar.
 Navigation property.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -271,8 +280,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarevent)
-
-
-
-
 
