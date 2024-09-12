@@ -11,9 +11,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Retrieve the properties and relationships of a servicePrincipal object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalByAppId?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)

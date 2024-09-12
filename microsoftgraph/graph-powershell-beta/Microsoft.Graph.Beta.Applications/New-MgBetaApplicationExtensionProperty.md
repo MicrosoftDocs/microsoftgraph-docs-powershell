@@ -11,9 +11,6 @@ ms.subservice: extensions
 ## SYNOPSIS
 Create a new directory extension definition, represented by an extensionProperty object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationExtensionProperty?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)

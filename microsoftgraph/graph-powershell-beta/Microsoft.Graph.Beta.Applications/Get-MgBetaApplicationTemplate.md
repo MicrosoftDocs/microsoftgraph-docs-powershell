@@ -12,9 +12,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Retrieve the properties of an applicationTemplate object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTemplate?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)

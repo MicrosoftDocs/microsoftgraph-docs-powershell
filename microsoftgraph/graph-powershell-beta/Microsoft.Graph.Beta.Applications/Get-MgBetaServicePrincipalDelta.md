@@ -11,9 +11,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalDelta](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalDelta?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```

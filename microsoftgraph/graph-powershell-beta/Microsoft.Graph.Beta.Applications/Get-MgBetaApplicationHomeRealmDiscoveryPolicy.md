@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get homeRealmDiscoveryPolicies from applications
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationHomeRealmDiscoveryPolicy?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -339,6 +336,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationhomerealmdiscoverypolicy)
+
 
 
 

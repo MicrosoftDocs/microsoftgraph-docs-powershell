@@ -11,9 +11,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Pre-configured synchronization settings for a particular application.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -44,19 +41,6 @@ Pre-configured synchronization settings for a particular application.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronization-list-templates-permissions.md)]
-
-## EXAMPLES
-### Example
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Applications
-
-Get-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId
-
-```
-This example will### example
-
 
 ## PARAMETERS
 
@@ -359,6 +343,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronization-list-templates?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-templates?view=graph-rest-beta)
+
+
 
 
 

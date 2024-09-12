@@ -11,9 +11,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)

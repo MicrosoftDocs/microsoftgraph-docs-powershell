@@ -11,9 +11,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Create a new application object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplication](/powershell/module/Microsoft.Graph.Applications/New-MgApplication?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)

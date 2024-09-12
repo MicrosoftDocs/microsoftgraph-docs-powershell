@@ -11,9 +11,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Read the properties and relationships of a federatedIdentityCredential object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationFederatedIdentityCredentialByName](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationFederatedIdentityCredentialByName?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -216,6 +213,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialbyname](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialbyname)
 
 [https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-beta)
+
 
 
 

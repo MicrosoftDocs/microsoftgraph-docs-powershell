@@ -11,9 +11,6 @@ schema: 2.0.0
 Supports $filter (/$count eq 0, /$count ne 0).
 Read-only.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationCreatedOnBehalfOf?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -197,6 +194,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationcreatedonbehalfof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationcreatedonbehalfof)
+
 
 
 

@@ -12,9 +12,6 @@ ms.subservice: entra-applications
 Add an owner to an application.
 Currently, only individual users are supported as owners of applications.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationOwnerByRef?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -11,9 +11,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 List all the functions currently supported in the attributeMappingSource.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgFunctionServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFunctionServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Function (Default)

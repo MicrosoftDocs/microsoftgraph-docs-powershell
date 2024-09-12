@@ -11,9 +11,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Remove a tokenIssuancePolicy from an application.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)

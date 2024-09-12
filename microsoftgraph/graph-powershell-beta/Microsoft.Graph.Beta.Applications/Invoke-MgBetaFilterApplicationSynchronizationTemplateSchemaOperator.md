@@ -11,9 +11,6 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 List all operators supported in the scoping filters.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterApplicationSynchronizationTemplateSchemaOperator](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFilterApplicationSynchronizationTemplateSchemaOperator?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Filter (Default)
@@ -309,6 +306,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafilterapplicationsynchronizationtemplateschemaoperator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafilterapplicationsynchronizationtemplateschemaoperator)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-filteroperators?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-filteroperators?view=graph-rest-beta)
+
 
 
 

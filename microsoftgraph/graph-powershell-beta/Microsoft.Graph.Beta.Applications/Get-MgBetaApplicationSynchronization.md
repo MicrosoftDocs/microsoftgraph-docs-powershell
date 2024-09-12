@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the capability for Microsoft Entra identity synchronization through the Microsoft Graph API.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronization?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -195,6 +192,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronization)
+
 
 
 

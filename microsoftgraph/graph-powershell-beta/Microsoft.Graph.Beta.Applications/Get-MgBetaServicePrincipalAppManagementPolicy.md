@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The appManagementPolicy applied to this service principal.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalAppManagementPolicy?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -339,6 +336,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalappmanagementpolicy)
+
 
 
 

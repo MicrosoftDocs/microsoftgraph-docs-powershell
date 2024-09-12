@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Contains the collection of directories and all of their objects.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -356,6 +353,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplateschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplateschemadirectory)
+
 
 
 
