@@ -13,6 +13,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationTemplateCount](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTemplateCount?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationTemplateCount](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTemplateCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -114,6 +117,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtemplatecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtemplatecount)
+
+
+
 
 
 
