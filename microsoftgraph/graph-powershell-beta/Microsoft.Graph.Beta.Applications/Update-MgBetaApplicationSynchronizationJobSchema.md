@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property schema in applications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

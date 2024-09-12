@@ -13,6 +13,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationOwnerAsUser](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwnerAsUser?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationOwnerAsUser](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwnerAsUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

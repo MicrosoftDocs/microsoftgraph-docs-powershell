@@ -12,6 +12,9 @@ ms.subservice: entra-applications
 Remove an owner from a servicePrincipal object.
 As a recommended best practice, service principals should have at least two owners.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

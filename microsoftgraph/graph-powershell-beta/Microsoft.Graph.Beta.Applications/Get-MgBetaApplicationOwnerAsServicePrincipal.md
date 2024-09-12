@@ -13,6 +13,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.serviceP
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwnerAsServicePrincipal?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwnerAsServicePrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
