@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition
 schema: 2.0.0
-ms.subservice: industry-data-etl
 ---
 
 # New-MgBetaExternalIndustryDataReferenceDefinition
@@ -35,15 +34,12 @@ Create a new referenceDefinition object.
 referenceDefinition objects associate incoming data with standardized reference types values for validation.
 You can extend the following reference types with other codes that better align with your source data.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-referencedefinition-post-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.industryData.referenceDefinition"
@@ -55,10 +51,6 @@ $params = @{
 }
 
 New-MgBetaExternalIndustryDataReferenceDefinition -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaExternalIndustryDataReferenceDefinition Cmdlet.
-
 
 ## PARAMETERS
 
@@ -277,15 +269,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataReferenceDefinition>`: referenceDefinition
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIndustryDataReferenceDefinition\>: referenceDefinition
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
-  - `[DisplayName <String>]`: A human-readable representation of the reference code value for display in a user interface.
-  - `[IsDisabled <Boolean?>]`: Indicates whether the definition is disabled.
-  - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
-  - `[SortIndex <Int32?>]`: The index that specifies the order in which to present the definition to the user.
+  \[Code \<String\>\]: The code value for the definition that must be unique within the referenceType.
+  \[DisplayName \<String\>\]: A human-readable representation of the reference code value for display in a user interface.
+  \[IsDisabled \<Boolean?\>\]: Indicates whether the definition is disabled.
+  \[ReferenceType \<String\>\]: The categorical type for a collection of enumerated values.
+  \[SortIndex \<Int32?\>\]: The index that specifies the order in which to present the definition to the user.
 Must be unique within the referenceType.
 
 ## RELATED LINKS
@@ -293,7 +285,4 @@ Must be unique within the referenceType.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatareferencedefinition)
 
 [https://learn.microsoft.com/graph/api/industrydata-referencedefinition-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-referencedefinition-post?view=graph-rest-beta)
-
-
-
 
