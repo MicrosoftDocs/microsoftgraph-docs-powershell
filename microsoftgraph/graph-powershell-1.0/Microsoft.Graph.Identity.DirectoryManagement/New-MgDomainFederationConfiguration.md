@@ -308,6 +308,10 @@ Accept wildcard characters: False
 ### -PreferredAuthenticationProtocol
 authenticationProtocol
 
+> [!NOTE]
+This parameter has to be configured explicitly for the first party native applications (e.g Office Clients,MS Teams, .etc) to define the federation passive authentication protocol. Parameter value can be either of the one below.
+-PreferredAuthenticationProtocol <WsFed|SAMLP>
+
 ```yaml
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
