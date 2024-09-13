@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroup
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Update-MgBetaGroup
@@ -111,6 +112,9 @@ Update-MgBetaGroup -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGrap
 Create a new group object if it doesn't exist, or update the properties of an existing group object.You can create or update the following types of group: By default, this operation returns only a subset of the properties for each group.
 For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-upsert-permissions.md)]
 
 ## EXAMPLES
 

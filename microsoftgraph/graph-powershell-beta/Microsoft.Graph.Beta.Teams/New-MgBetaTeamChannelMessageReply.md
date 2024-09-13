@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessagereply
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # New-MgBetaTeamChannelMessageReply
@@ -61,6 +62,9 @@ New-MgBetaTeamChannelMessageReply -InputObject <ITeamsIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Send a new reply to a chatMessage in a specified channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-post-replies-permissions.md)]
 
 ## EXAMPLES
 

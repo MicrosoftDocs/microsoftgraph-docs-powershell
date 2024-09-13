@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantconditionalaccesspolicycoverage
 schema: 2.0.0
+ms.subservice: m365-lighthouse
+ms.subservice: m365-lighthouse
 ---
 
 # Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
@@ -37,6 +39,12 @@ Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage -InputO
 
 ## DESCRIPTION
 Read the properties and relationships of a conditionalAccessPolicyCoverage object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-conditionalaccesspolicycoverage-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-list-conditionalaccesspolicycoverages-permissions.md)]
 
 ## EXAMPLES
 

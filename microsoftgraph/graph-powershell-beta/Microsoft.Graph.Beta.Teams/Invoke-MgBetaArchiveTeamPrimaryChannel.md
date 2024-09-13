@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchiveteamprimarychannel
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgBetaArchiveTeamPrimaryChannel
@@ -58,6 +59,9 @@ Archiving is an asynchronous operation; a channel is archived after the asynchro
 A channel without an owner or that belongs to a group that has no owner, can't be archived.
 To restore a channel from its archived state, use the channel: unarchive method.
 A channel can't be archived or unarchived if its team is archived.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-archive-permissions.md)]
 
 ## EXAMPLES
 
