@@ -32,18 +32,6 @@ Lock-MgBetaUserManagedDeviceRemote -InputObject <IUsersActionsIdentity> [-Respon
 ## DESCRIPTION
 Remote lock
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -248,6 +236,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/lock-mgbetausermanageddeviceremote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/lock-mgbetausermanageddeviceremote)
+
 
 
 

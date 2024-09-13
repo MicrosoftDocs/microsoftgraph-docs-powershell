@@ -67,13 +67,17 @@ Read the properties and relationships of an articleIndicator object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-articleindicator-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityThreatIntelligenceArticleIndicator -ArticleIndicatorId $articleIndicatorId
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceArticleIndicator Cmdlet.
+
 
 ## PARAMETERS
 

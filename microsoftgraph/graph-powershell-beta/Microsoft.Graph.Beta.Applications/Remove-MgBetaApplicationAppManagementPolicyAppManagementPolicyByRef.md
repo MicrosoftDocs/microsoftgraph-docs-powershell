@@ -39,13 +39,17 @@ When you remove the appManagementPolicy, the application or service principal ad
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appmanagementpolicy-delete-appliesto-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef -ApplicationId $applicationId -AppManagementPolicyId $appManagementPolicyId
+
+```
+This example shows how to use the Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef Cmdlet.
+
 
 ## PARAMETERS
 

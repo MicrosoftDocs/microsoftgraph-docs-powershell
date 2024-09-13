@@ -46,13 +46,17 @@ Retrieve the properties and relationships of a tiIndicator object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicators-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityTiIndicator
+
+```
+This example shows how to use the Get-MgBetaSecurityTiIndicator Cmdlet.
+
 
 ## PARAMETERS
 

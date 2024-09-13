@@ -56,18 +56,6 @@ You can specify both the parent conversation and thread in the request, or, you 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-reply-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -520,6 +508,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread)
 
 [https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-beta](https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-beta)
+
 
 
 

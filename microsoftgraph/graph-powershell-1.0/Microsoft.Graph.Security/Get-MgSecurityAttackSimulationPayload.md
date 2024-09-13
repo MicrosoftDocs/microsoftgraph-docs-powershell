@@ -59,13 +59,17 @@ Represents an attack simulation training campaign payload in a tenant.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-list-payloads-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
-Get-MgSecurityAttackSimulationPayload -Filter "source eq 'Tenant'"
+Get-MgSecurityAttackSimulationPayload -Filter "source eq 'Tenant'" 
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulationPayload Cmdlet.
+
 
 ## PARAMETERS
 

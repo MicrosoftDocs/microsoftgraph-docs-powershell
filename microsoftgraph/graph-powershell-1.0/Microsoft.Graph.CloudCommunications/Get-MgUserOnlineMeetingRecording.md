@@ -51,13 +51,17 @@ For the content of a recording, this API returns the stream of bytes associated 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/callrecording-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a callRecording
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgUserOnlineMeetingRecording -UserId $userId -OnlineMeetingId $onlineMeetingId -CallRecordingId $callRecordingId
+
+```
+This example will get a callrecording
+
 
 ## PARAMETERS
 

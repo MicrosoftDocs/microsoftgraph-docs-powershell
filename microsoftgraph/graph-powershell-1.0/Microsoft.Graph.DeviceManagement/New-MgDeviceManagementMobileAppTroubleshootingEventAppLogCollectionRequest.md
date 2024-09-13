@@ -54,11 +54,11 @@ New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 Create a new appLogCollectionRequest object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.appLogCollectionRequest"
@@ -67,10 +67,14 @@ $params = @{
 	customLogFolders = @(
 	"Custom Log Folders value"
 )
-completedDateTime = \[System.DateTime\]::Parse("2016-12-31T23:58:52.3534526-08:00")
+completedDateTime = [System.DateTime]::Parse("2016-12-31T23:58:52.3534526-08:00")
 }
 
 New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest -MobileAppTroubleshootingEventId $mobileAppTroubleshootingEventId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest Cmdlet.
+
 
 ## PARAMETERS
 

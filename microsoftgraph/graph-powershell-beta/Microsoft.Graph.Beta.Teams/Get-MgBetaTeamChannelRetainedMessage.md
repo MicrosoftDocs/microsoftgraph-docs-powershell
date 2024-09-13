@@ -41,13 +41,17 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-getallretainedmessages-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamChannelRetainedMessage -TeamId $teamId
+
+```
+This example shows how to use the Get-MgBetaTeamChannelRetainedMessage Cmdlet.
+
 
 ## PARAMETERS
 

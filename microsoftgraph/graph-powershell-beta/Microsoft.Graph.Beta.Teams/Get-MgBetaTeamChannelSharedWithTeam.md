@@ -65,13 +65,17 @@ This operation is allowed only for channels with a membershipType value of share
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharedwithchannelteaminfo-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Get-MgBetaTeamChannelSharedWithTeam Cmdlet.
+
 
 ## PARAMETERS
 

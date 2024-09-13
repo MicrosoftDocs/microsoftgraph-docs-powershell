@@ -68,11 +68,11 @@ Update an existing accessPackageAssignmentPolicy object to change one or more of
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentpolicy-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	id = "87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187"
@@ -131,6 +131,10 @@ $params = @{
 }
 
 Set-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgEntitlementManagementAssignmentPolicy Cmdlet.
+
 
 ## PARAMETERS
 

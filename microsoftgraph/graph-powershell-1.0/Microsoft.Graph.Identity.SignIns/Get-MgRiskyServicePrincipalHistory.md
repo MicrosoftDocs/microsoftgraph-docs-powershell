@@ -46,13 +46,17 @@ Represents the risk history of Microsoft Entra service principals.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyserviceprincipal-list-history-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgRiskyServicePrincipalHistory -RiskyServicePrincipalId $riskyServicePrincipalId
+
+```
+This example shows how to use the Get-MgRiskyServicePrincipalHistory Cmdlet.
+
 
 ## PARAMETERS
 
