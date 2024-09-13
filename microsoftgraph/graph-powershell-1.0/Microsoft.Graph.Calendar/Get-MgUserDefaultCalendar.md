@@ -11,6 +11,9 @@ schema: 2.0.0
 The user's primary calendar.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserDefaultCalendar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

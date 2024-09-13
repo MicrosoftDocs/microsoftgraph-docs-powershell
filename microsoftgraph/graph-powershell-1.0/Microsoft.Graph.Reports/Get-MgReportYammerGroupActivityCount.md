@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Get the number of Yammer messages posted, read, and liked in groups.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerGroupActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerGroupActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

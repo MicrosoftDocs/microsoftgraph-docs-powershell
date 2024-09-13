@@ -12,6 +12,9 @@ ms.subservice: entra-groups
 ## SYNOPSIS
 Get a thread object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

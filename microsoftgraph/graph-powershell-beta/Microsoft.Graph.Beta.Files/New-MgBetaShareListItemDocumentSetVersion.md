@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to documentSetVersions for shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgShareListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)

@@ -11,6 +11,9 @@ ms.subservice: search
 ## SYNOPSIS
 Update the properties of a qna object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchQna?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
