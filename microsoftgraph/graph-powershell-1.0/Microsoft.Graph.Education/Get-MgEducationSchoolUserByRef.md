@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref
@@ -232,4 +232,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref)
 
 [https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-1.0)
+
+
+
 
