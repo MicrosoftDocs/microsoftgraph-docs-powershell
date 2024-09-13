@@ -35,18 +35,6 @@ New-MgBetaRoleManagementEntitlementManagementRoleDefinition
 ## DESCRIPTION
 Create new navigation property to roleDefinitions for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -475,6 +463,7 @@ Not supported for custom roles.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroledefinition)
+
 
 
 
