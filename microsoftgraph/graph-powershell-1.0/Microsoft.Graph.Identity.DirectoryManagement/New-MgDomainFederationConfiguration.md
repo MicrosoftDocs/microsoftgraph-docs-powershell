@@ -309,7 +309,7 @@ Accept wildcard characters: False
 authenticationProtocol
 
 > [!NOTE]
-This parameter has to be configured explicitly to define the federation passive authentication protocol. Parameter value can be either of the one below.
+This parameter has to be configured explicitly to declare the federation passive authentication flow. Parameter value can be either of the one below.
 -PreferredAuthenticationProtocol <WsFed|SAMLP>
 
 ```yaml
