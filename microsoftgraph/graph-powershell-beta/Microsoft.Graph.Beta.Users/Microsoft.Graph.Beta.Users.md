@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Users
 Module Guid: 83531713-d218-476b-a4f0-53a357475dfb
 Download Help Link: {{ Update Download Link }}
@@ -712,4 +712,5 @@ Locale: en-US
 
 ### [Update-MgBetaUserTodoListTaskLinkedResource](Update-MgBetaUserTodoListTaskLinkedResource.md)
 {{ Fill in the Description }}
+
 
