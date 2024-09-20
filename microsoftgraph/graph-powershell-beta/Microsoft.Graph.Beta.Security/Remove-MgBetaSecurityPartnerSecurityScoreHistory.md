@@ -29,18 +29,6 @@ Remove-MgBetaSecurityPartnerSecurityScoreHistory -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Delete navigation property history for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -288,6 +276,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritypartnersecurityscorehistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritypartnersecurityscorehistory)
+
 
 
 

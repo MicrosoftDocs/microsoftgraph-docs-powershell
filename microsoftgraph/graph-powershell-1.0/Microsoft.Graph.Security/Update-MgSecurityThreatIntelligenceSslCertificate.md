@@ -54,18 +54,6 @@ Update-MgSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Update the navigation property sslCertificates in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1055,6 +1043,7 @@ It's a free-format string value, for example, 'United States'.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencesslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencesslcertificate)
+
 
 
 
