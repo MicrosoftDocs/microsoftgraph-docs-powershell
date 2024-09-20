@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkkeysetactivekey
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgBetaTrustFrameworkKeySetActiveKey
@@ -29,6 +30,9 @@ Get-MgBetaTrustFrameworkKeySetActiveKey -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Get the currently active trustFrameworkKey in a trustFrameworkKeySet.
 Only one key is active in the keyset at a time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-getactivekey-permissions.md)]
 
 ## EXAMPLES
 

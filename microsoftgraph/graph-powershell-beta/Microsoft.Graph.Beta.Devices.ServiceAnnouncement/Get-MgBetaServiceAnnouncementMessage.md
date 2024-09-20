@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessage
 schema: 2.0.0
+ms.subservice: service-communications
+ms.subservice: service-communications
 ---
 
 # Get-MgBetaServiceAnnouncementMessage
@@ -40,6 +42,12 @@ Get-MgBetaServiceAnnouncementMessage -InputObject <IDevicesServiceAnnouncementId
 Retrieve the properties and relationships of a serviceUpdateMessage object.
 This operation retrieves a specified service update message for the tenant.
 The operation returns an error if the message does not exist for the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceannouncement-list-messages-permissions.md)]
 
 ## EXAMPLES
 

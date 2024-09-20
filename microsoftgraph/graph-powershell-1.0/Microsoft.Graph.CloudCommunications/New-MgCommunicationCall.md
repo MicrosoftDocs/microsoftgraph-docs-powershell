@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
 schema: 2.0.0
+ms.subservice: cloud-communications
 ---
 
 # New-MgCommunicationCall
@@ -40,6 +41,9 @@ New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-ResponseHeadersVa
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
 You will need to register the calling bot and go through the list of permissions needed as mentioned below.
 This API supports the following PSTN scenarios:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-calls-permissions.md)]
 
 ## EXAMPLES
 

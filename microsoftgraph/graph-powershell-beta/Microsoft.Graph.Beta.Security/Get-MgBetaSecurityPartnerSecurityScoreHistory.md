@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscorehistory
 schema: 2.0.0
+ms.subservice: partner-customer-administration
+ms.subservice: partner-customer-administration
 ---
 
 # Get-MgBetaSecurityPartnerSecurityScoreHistory
@@ -36,6 +38,12 @@ Get-MgBetaSecurityPartnerSecurityScoreHistory -InputObject <ISecurityIdentity> [
 
 ## DESCRIPTION
 Read the properties and relationships of a securityScoreHistory object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-securityscorehistory-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-list-history-permissions.md)]
 
 ## EXAMPLES
 

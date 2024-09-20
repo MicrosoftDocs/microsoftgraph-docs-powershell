@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchanneltab
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgTeamChannelTab
@@ -28,6 +29,9 @@ Remove-MgTeamChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Resp
 
 ## DESCRIPTION
 Removes (unpins) a tab from the specified channel within a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-delete-tabs-permissions.md)]
 
 ## EXAMPLES
 
