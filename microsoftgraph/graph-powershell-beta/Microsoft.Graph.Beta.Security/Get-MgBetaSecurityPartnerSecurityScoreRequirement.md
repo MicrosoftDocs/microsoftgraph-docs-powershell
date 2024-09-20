@@ -45,18 +45,6 @@ Read the properties and relationships of a securityRequirement object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-list-requirements-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -398,6 +386,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/partner-security-securityrequirement-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-securityrequirement-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-list-requirements?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-list-requirements?view=graph-rest-beta)
+
+
 
 
 

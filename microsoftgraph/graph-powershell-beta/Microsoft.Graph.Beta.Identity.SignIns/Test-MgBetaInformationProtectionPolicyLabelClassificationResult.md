@@ -42,11 +42,11 @@ The API returns an informationProtectionAction that contains one of more of the 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-evaluateclassificationresults-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	contentInfo = @{
@@ -67,6 +67,10 @@ $params = @{
 }
 
 Test-MgBetaInformationProtectionPolicyLabelClassificationResult -BodyParameter $params
+
+```
+This example shows how to use the Test-MgBetaInformationProtectionPolicyLabelClassificationResult Cmdlet.
+
 
 ## PARAMETERS
 

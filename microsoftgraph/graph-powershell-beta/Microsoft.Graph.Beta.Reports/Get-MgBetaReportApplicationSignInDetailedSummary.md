@@ -46,13 +46,17 @@ Retrieve the properties and relationships of an applicationSignInDetailedSummary
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-applicationsignindetailedsummary-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportApplicationSignInDetailedSummary
+
+```
+This example shows how to use the Get-MgBetaReportApplicationSignInDetailedSummary Cmdlet.
+
 
 ## PARAMETERS
 

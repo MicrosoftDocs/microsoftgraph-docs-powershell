@@ -25,18 +25,6 @@ Read the properties and relationships of a partnerSecurityScore object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -130,6 +118,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscore)
 
 [https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-get?view=graph-rest-beta)
+
 
 
 

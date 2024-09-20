@@ -56,35 +56,42 @@ For details, see Role template IDs.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryrole-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get all directory roles
 
-### EXAMPLE 1
-```
+```powershell
 Get-MgDirectoryRole | Format-List
-```
 
 DeletedDateTime      :
-Description          : Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
-DisplayName          : Global Administrator
-Id                   : a2d10e79-df32-47fc-86ef-64d199860810
+Description          : Can read basic directory information. Commonly used to grant directory read access to
+                       applications and guests.
+DisplayName          : Directory Readers
+Id                   : 86596a70-0099-457d-8c89-1f5085b395ca
 Members              :
-RoleTemplateId       : 1f12db9c-dbb3-410d-a893-4c0bc322bf85
+RoleTemplateId       : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
 ScopedMembers        :
 AdditionalProperties : {}
-
-### EXAMPLE 2
 ```
-Get-MgDirectoryRole -DirectoryRoleId 'a2d10e79-df32-47fc-86ef-64d199860810' |
+
+This examples gets all the available directory roles.
+
+### Example 2: Get a directory role by Id
+
+```powershell
+Get-MgDirectoryRole -DirectoryRoleId '86596a70-0099-457d-8c89-1f5085b395ca' |
   Format-List
-```
 
 DeletedDateTime      :
-Description          : Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
-DisplayName          : Global Administrator
-Id                   : a2d10e79-df32-47fc-86ef-64d199860810
+Description          : Can read basic directory information. Commonly used to grant directory read access to
+                       applications and guests.
+DisplayName          : Directory Readers
+Id                   : 86596a70-0099-457d-8c89-1f5085b395ca
 Members              :
-RoleTemplateId       : 1f12db9c-dbb3-410d-a893-4c0bc322bf85
+RoleTemplateId       : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
 ScopedMembers        :
-AdditionalProperties : {}
+AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#directoryRoles/$entity]}
+```
+
+This example gets the directory role based on the specified Id.
 
 ## PARAMETERS
 

@@ -51,11 +51,11 @@ Provide credentials for establishing connectivity with the target system.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-serviceprincipal-put-synchronization-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	value = @(
@@ -79,6 +79,10 @@ $params = @{
 }
 
 Set-MgServicePrincipalSynchronizationSecret -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgServicePrincipalSynchronizationSecret Cmdlet.
+
 
 ## PARAMETERS
 

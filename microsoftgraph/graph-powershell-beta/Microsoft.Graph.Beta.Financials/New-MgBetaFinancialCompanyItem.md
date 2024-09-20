@@ -51,18 +51,6 @@ New-MgBetaFinancialCompanyItem -InputObject <IFinancialsIdentity> -BodyParameter
 ## DESCRIPTION
 Create new navigation property to items for financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -578,6 +566,7 @@ PICTURE <IMicrosoftGraphPicture- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyitem)
+
 
 
 

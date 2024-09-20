@@ -41,23 +41,31 @@ Admins can approve or reject these apps via this API or the Microsoft Teams admi
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamsapp-publish-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
-$params = \[Zip file containing a Teams app package\]
+$params = [Zip file containing a Teams app package]
 
 
 New-MgAppCatalogTeamApp -BodyParameter $params
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Teams
-```
+This example shows how to use the New-MgAppCatalogTeamApp Cmdlet.
 
-New-MgAppCatalogTeamApp -Requiresreview true
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+New-MgAppCatalogTeamApp -Requiresreview true 
+
+```
+This example shows how to use the New-MgAppCatalogTeamApp Cmdlet.
+
 
 ## PARAMETERS
 

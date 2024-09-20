@@ -47,11 +47,11 @@ Create a new subjectRightsRequest object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-post-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 $params = @{
 	type = "export"
@@ -62,7 +62,7 @@ $params = @{
 	description = "This is a export request"
 	includeAllVersions = $false
 	includeAuthoredContent = $true
-	internalDueDateTime = \[System.DateTime\]::Parse("2022-07-20T22:42:28Z")
+	internalDueDateTime = [System.DateTime]::Parse("2022-07-20T22:42:28Z")
 	dataSubject = @{
 		firstName = "Diego"
 		lastName = "Siciliani"
@@ -85,6 +85,10 @@ approvers = @(
 }
 
 New-MgBetaPrivacySubjectRightsRequest -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrivacySubjectRightsRequest Cmdlet.
+
 
 ## PARAMETERS
 

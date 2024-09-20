@@ -36,11 +36,11 @@ New-MgDeviceManagementAuditEvent -BodyParameter <IMicrosoftGraphAuditEvent> [-Re
 Create a new auditEvent object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.auditEvent"
@@ -61,7 +61,7 @@ $params = @{
 	userId = "User Id value"
 }
 activity = "Activity value"
-activityDateTime = \[System.DateTime\]::Parse("2016-12-31T23:59:51.6363086-08:00")
+activityDateTime = [System.DateTime]::Parse("2016-12-31T23:59:51.6363086-08:00")
 activityType = "Activity Type value"
 activityOperationType = "Activity Operation Type value"
 activityResult = "Activity Result value"
@@ -87,6 +87,10 @@ category = "Category value"
 }
 
 New-MgDeviceManagementAuditEvent -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementAuditEvent Cmdlet.
+
 
 ## PARAMETERS
 

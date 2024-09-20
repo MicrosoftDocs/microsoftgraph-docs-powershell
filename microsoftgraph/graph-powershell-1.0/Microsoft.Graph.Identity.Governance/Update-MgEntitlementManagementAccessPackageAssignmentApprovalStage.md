@@ -52,11 +52,11 @@ Approve or deny an approvalStage object in an approval.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approvalstage-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	reviewResult = "Approve"
@@ -64,6 +64,10 @@ $params = @{
 }
 
 Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId $approvalId -ApprovalStageId $approvalStageId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage Cmdlet.
+
 
 ## PARAMETERS
 
