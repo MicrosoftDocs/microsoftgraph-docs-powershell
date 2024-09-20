@@ -12,6 +12,9 @@ ms.subservice: microsoft-bookings
 Make the scheduling page of this business available to external customers.
 Set the isPublished property to true, and publicUrl property to the URL of the scheduling page.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Publish-MgBookingBusiness?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Publish (Default)
