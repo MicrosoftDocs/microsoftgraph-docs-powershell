@@ -12,6 +12,9 @@ ms.subservice: cloud-pc
 ## SYNOPSIS
 Read the properties and relationships of a specific cloudPcGalleryImage object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointGalleryImage](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointGalleryImage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

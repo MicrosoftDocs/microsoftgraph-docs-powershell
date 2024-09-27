@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Triggers the policies associated with the start of working hours for user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Start-MgBetaUserSolutionWorkingTimeScheduleWorkingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Start-MgBetaUserSolutionWorkingTimeScheduleWorkingTime?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Start (Default)

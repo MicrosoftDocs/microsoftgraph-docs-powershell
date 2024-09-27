@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Remove (unpin) a tab from the specified chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

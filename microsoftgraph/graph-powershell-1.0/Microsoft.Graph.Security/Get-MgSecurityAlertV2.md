@@ -12,6 +12,9 @@ ms.subservice: security
 ## SYNOPSIS
 Get the properties and relationships of an alert object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlertV2?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

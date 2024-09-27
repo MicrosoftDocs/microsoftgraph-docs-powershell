@@ -12,6 +12,9 @@ ms.subservice: cloud-communications
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresenceStatusMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

@@ -11,6 +11,9 @@ ms.subservice: intune
 ## SYNOPSIS
 Read properties and relationships of the deviceManagement object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

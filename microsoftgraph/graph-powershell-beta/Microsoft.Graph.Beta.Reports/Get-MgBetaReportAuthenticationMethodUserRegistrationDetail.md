@@ -12,6 +12,9 @@ ms.subservice: entra-monitoring-health
 ## SYNOPSIS
 Read the properties and relationships of a userRegistrationDetails object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

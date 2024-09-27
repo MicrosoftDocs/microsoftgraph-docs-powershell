@@ -12,6 +12,9 @@ ms.subservice: entra-sign-in
 Create a new namedLocation object.
 Named locations can be either ipNamedLocation or countryNamedLocation objects.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
