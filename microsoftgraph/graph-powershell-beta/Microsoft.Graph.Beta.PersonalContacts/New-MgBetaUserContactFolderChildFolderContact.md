@@ -72,18 +72,6 @@ New-MgBetaUserContactFolderChildFolderContact -InputObject <IPersonalContactsIde
 ## DESCRIPTION
 Create new navigation property to contacts for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1108,6 +1096,7 @@ WEBSITES <IMicrosoftGraphWebsite- `[]`>: Web sites associated with the contact.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontact)
+
 
 
 

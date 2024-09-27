@@ -50,11 +50,11 @@ Start a break in a specific timeCard.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-startbreak-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	atAprovedLocation = $true
@@ -65,6 +65,10 @@ $params = @{
 }
 
 Start-MgBetaTeamScheduleTimeCardBreak -TeamId $teamId -TimeCardId $timeCardId -BodyParameter $params
+
+```
+This example shows how to use the Start-MgBetaTeamScheduleTimeCardBreak Cmdlet.
+
 
 ## PARAMETERS
 

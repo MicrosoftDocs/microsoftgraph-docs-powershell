@@ -62,11 +62,11 @@ Update-MgVirtualEventTownhall -InputObject <IBookingsIdentity>
 Update the properties of a virtualEventTownhall object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	startDateTime = @{
@@ -80,6 +80,10 @@ $params = @{
 }
 
 Update-MgVirtualEventTownhall -VirtualEventTownhallId $virtualEventTownhallId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgVirtualEventTownhall Cmdlet.
+
 
 ## PARAMETERS
 

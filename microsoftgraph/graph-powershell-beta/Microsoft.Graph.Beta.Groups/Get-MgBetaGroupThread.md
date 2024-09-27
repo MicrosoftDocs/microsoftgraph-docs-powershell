@@ -49,13 +49,17 @@ Get a thread object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-threads-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Get-MgBetaGroupThread -GroupId $groupId
+
+```
+This example shows how to use the Get-MgBetaGroupThread Cmdlet.
+
 
 ## PARAMETERS
 

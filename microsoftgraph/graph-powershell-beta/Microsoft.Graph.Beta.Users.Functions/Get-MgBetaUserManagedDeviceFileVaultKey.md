@@ -29,18 +29,6 @@ Get-MgBetaUserManagedDeviceFileVaultKey -InputObject <IUsersFunctionsIdentity>
 ## DESCRIPTION
 Invoke function getFileVaultKey
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -193,6 +181,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanageddevicefilevaultkey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanageddevicefilevaultkey)
+
 
 
 

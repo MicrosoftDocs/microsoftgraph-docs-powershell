@@ -37,13 +37,15 @@ Delete a countryNamedLocation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/countrynamedlocation-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Remove a named location
 
-### EXAMPLE 1
-```
+```powershell
 Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
-```
 
 Remove-MgIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationId
+```
+
+This example removes the named location specified by `$namedLocationId`.
 
 ## PARAMETERS
 

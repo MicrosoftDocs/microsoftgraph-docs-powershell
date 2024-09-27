@@ -45,13 +45,17 @@ Preconfigured synchronization settings for a particular application.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-list-templates-permissions.md)]
 
 ## EXAMPLES
+### Example
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId
+
+```
+This example will### example
+
 
 ## PARAMETERS
 

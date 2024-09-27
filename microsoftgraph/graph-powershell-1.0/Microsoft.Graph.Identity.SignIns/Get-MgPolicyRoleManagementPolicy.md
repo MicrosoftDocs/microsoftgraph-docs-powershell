@@ -49,27 +49,39 @@ Retrieve the details of a role management policy.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/policyroot-list-rolemanagementpolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Retrieve the details of a policy in PIM for Microsoft Entra roles
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Identity.SignIns
-```
+This example will retrieve the details of a policy in pim for microsoft entra roles
 
-Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -ExpandProperty "effectiveRules,rules"
+### Example 2: Retrieve the details of a policy in PIM for Microsoft Entra roles and expand the relationships
 
-### EXAMPLE 3
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -ExpandProperty "effectiveRules,rules" 
+
 ```
+This example will retrieve the details of a policy in pim for microsoft entra roles and expand the relationships
+
+### Example 3: Retrieve the details of a policy in PIM for groups
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
+
+```
+This example will retrieve the details of a policy in pim for groups
+
 
 ## PARAMETERS
 

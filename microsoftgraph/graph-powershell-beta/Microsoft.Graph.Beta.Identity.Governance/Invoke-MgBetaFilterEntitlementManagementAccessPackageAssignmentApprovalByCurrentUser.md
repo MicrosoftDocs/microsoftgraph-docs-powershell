@@ -46,13 +46,17 @@ The objects returned are those that are in scope for approval by the calling use
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approval-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Retrieve the approval resources in entitlement management
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
-Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser -On $onId
+Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser -On $onId 
+
+```
+This example will retrieve the approval resources in entitlement management
+
 
 ## PARAMETERS
 
