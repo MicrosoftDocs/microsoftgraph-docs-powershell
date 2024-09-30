@@ -2,7 +2,7 @@
 title: "Use query parameters to customize PowerShell query outputs"
 description: "Learn how to use optional query parameters in Microsoft Graph PowerShell SDK to customize the output"
 ms.topic: conceptual
-ms.date: 08/16/2023
+ms.date: 09/30/2024
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -17,7 +17,7 @@ Microsoft Graph PowerShell SDK supports optional query parameters that you can u
 
 ## OData system query options
 
-Microsoft PowerShell SDK cmdlets may support one or more of the following OData system query options, which are compatible with [OData v4.0 query language](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356) and are only supported in the GET operations.
+Microsoft PowerShell SDK cmdlets support one or more of the following OData system query options. These query options are compatible with [OData v4.0 query language](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356) and are only supported in the GET operations.
 
 >[!TIP]
 >OData query options in the Microsoft Graph API use lowercase names and specify the dollar ($) prefix while in Microsoft Graph PowerShell SDK, their names are Pascal-cased and prefixed with a hyphen (-). For example, `$count` and `$orderBy` are to Microsoft Graph API while `-Count` and `-OrderBy`, respectively, are to Microsoft Graph PowerShell SDK.
@@ -36,7 +36,7 @@ Microsoft PowerShell SDK cmdlets may support one or more of the following OData 
 
 Use the `-Count` query parameter to store the count of the total number of items in a collection in the specified count variable. On resources that derive from [DirectoryObjects](/powershell/module/microsoft.graph.directoryobjects/?view=graph-powershell-1.0&preserve-view=true), `-Count` is only supported in [advanced queries](/graph/aad-advanced-queries).
 
-For example, the following command returns all the users and stores their count in the variable `$userCount`. Querying the variable will return the count of all the users.
+For example, the following command returns all the users and stores their count in the variable `$userCount`. Querying the variable returns the count of all the users.
 
 ```powershell
 Get-MgUser -ConsistencyLevel eventual -Count userCount
@@ -184,7 +184,7 @@ daf80309-1a1f-459d-91b6-7ae5673bc2f2 MOD Administrator
 f0735e7b-4ffa-4150-b6a8-7d79e08803cc Bianca Pisani
 ```
 
-We recommend that you use `-Property` to limit the properties returned by a query to those properties needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
+We recommend that you use `-Property` to limit the properties returned by a query to those properties needed by your app. This way is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row reduces network load and help improve your app's performance.
 
  Some Microsoft Entra resources that derive from [DirectoryObject](/graph/api/resources/directoryobject), like [User](/graph/api/resources/user) and [Group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `-Property` to return properties outside of the default set.  
 
@@ -212,7 +212,7 @@ daf80309-1a1f-459d-91b6-7ae5673bc2f2 MOD Administrator admin@Contoso.com  admin@
 
 ## Error handling for query parameters
 
-Some requests will return an error message if a specified query parameter isn't supported. For example, you can't use the `-Contains` operator on the `DisplayName` property.
+Some requests return an error message if a specified query parameter isn't supported. For example, you can't use the `-Contains` operator on the `DisplayName` property.
 
 ```powershell
 Get-MgUser -Filter "Contains(DisplayName, 'Test')"
@@ -224,9 +224,9 @@ At line:1 char:1
 + Get-MgUser -Filter "Contains(DisplayName, 'Test')"
 ```
 
-Unsupported filter error could be returned when the `-Filter` query is not correct or when the property is only supported in [advanced queries](/graph/aad-advanced-queries?tabs=powershell) and either `-ConsistencyLevel` or `-Count` is missing.
+Unsupported filter error could be returned when the `-Filter` query isn't correct or when the property is only supported in [advanced queries](/graph/aad-advanced-queries?tabs=powershell) and either `-ConsistencyLevel` or `-Count` is missing.
 
-Query parameters specified in a request might fail silently. This can be true for unsupported query parameters and for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
+Query parameters specified in a request might fail silently. This failure can be true for unsupported query parameters and for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
 
 ## See also
 
