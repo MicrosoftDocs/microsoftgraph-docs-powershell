@@ -9,7 +9,7 @@ Param(
 )
 function Get-GraphMapping {
     $graphMapping = @{}
-    $graphMapping.Add("v1.0", "graph-powershell-1.0")
+    #$graphMapping.Add("v1.0", "graph-powershell-1.0")
     $graphMapping.Add("beta", "graph-powershell-beta")
     return $graphMapping
 }
@@ -91,9 +91,11 @@ function Get-FolderByProfile {
    
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
+        $ModName = $ModuleName
         $Path = "$ModulePrefix.$ModuleName"
         if ($GraphProfile -eq 'beta') {
             $Path = "$ModulePrefix.Beta.$ModuleName"
+            $ModName = "Beta.$ModuleName"
         }
         $Destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
         if (-not(Test-Path $Destination)) {
@@ -124,8 +126,7 @@ function Get-FolderByProfile {
         Add-Content -Path $Destination\$TocFileName -Value "Microsoft Graph PowerShell Cmdlets"
         Add-Content -Path $Destination\$TocFileName -Value ""
         Add-Content -Path $Destination\$TocFileName -Value "## $Path Cmdlets"
-        
-        $CommandMetadataContent | Where-Object { $_.Module -eq $ModuleName -and $_.ApiVersion -eq $GraphProfile } | ForEach-Object {
+        $CommandMetadataContent | Where-Object { $_.Module -eq $ModName -and $_.ApiVersion -eq $GraphProfile } | ForEach-Object {
             $Command = $_.Command
             $CmdletDocsPath = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path "$Command.md"
             if (-not(Test-Path $CmdletDocsPath)) {
