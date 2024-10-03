@@ -4,7 +4,8 @@
 Param(
     $ModulesToGenerate = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config\ModulesMapping.jsonc"),
-    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph")
+    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
+    [string] $CmdletMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -12,25 +13,40 @@ function Get-GraphMapping {
     $graphMapping.Add("beta", "graph-powershell-beta")
     return $graphMapping
 }
-function Generate-Help {
+function Set-Help {
     param (
         [ValidateNotNullOrEmpty()]
         [string] $ModuleDocsPath,
         [ValidateNotNullOrEmpty()]
-        [string] $Module
+        [string] $Command,
+        [ValidateNotNullOrEmpty()]
+        [string]$Module
     )
+
     $generationParams = @{
-        Module                = $Module
+        Command               = $Command
         OutputFolder          = $ModuleDocsPath
         AlphabeticParamsOrder = $true
-        WithModulePage        = $true
         ExcludeDontShow       = $true
+        Force                 = $true
         Encoding              = [System.Text.Encoding]::UTF8
+    }
+
+    if ($Module -eq "Microsoft.Graph.Authentication") {
+        $generationParams = @{
+            Module                = $Module
+            OutputFolder          = $ModuleDocsPath
+            AlphabeticParamsOrder = $true
+            ExcludeDontShow       = $true
+            WithModulePage        = $true
+            Encoding              = [System.Text.Encoding]::UTF8
+        }
+        Import-Module $Module -Force -Global
     }
     New-MarkdownHelp @generationParams
 }
 
-function Generate-GraphHelp {
+function Start-GraphHelp {
     Param(
         $ModulesToGenerate = @()
     )
@@ -40,7 +56,6 @@ function Generate-GraphHelp {
     $AuthPath = "$ModulePrefix.Authentication"
     $AuthDestination = Join-Path $WorkLoadDocsPath "graph-powershell-1.0" $AuthPath
     Get-ChildItem -Path $AuthDestination * -File -Recurse | foreach { $_.Delete() }
-    Generate-GraphModuleHelp -GraphProfile "v1.0" -GraphProfilePath "graph-powershell-1.0" -ModuleName "Authentication" -ModulePrefix $ModulePrefix
     
     Import-Module Microsoft.Graph.Authentication -Global
     $GraphMapping = Get-GraphMapping 
@@ -50,8 +65,10 @@ function Generate-GraphHelp {
         if ($graphProfile -eq "beta") {
             $profilePath = "graph-powershell-beta"
         }
-        Get-FolderByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate
-        Generate-GraphHelpByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate  
+
+        $AuthenticationDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\graph-powershell-1.0\Microsoft.Graph.Authentication"
+        Set-Help -ModuleDocsPath $AuthenticationDocsPath -Command "AuthCommands" -Module "Microsoft.Graph.Authentication" 
+        Get-FolderByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
     git config --global user.email "GraphTooling@service.microsoft.com"
     git config --global user.name "Microsoft Graph DevX Tooling"
@@ -70,6 +87,7 @@ function Get-FolderByProfile {
         [ValidateNotNullOrEmpty()]
         $ModulesToGenerate = @()
     )
+    $CommandMetadataContent = Get-Content $CmdletMetadataPath | ConvertFrom-Json
    
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
@@ -83,57 +101,42 @@ function Get-FolderByProfile {
         }
             
         Get-ChildItem -Path $Destination * -File -Recurse | foreach { $_.Delete() }
+
+        # Generate table of contents for each module
+        $TocFileName = "$Path.md"
+        $ModuleGuid = [guid]::NewGuid().ToString()
+        $LinkProfile = $GraphProfile.Replace("v", "")
+        $LinkModuleName = $Path.ToLower()
+        $HelpVersion = "1.0.0.0"
+        $HelpLocale = "en-US"
+        $DownloadLink = "https://learn.microsoft.com/en-us/powershell/module/$LinkModuleName/?view=graph-powershell-$LinkProfile"  
+        New-Item -Path $Destination -Name $TocFileName -ItemType File -Force
+        Add-Content -Path $Destination\$TocFileName -Value "---"
+        Add-Content -Path $Destination\$TocFileName -Value "Module Name: $Path"
+        Add-Content -Path $Destination\$TocFileName -Value "Module Guid: $ModuleGuid"
+        Add-Content -Path $Destination\$TocFileName -Value "Download Help Link: $DownloadLink"
+        Add-Content -Path $Destination\$TocFileName -Value "Help Version: $HelpVersion"
+        Add-Content -Path $Destination\$TocFileName -Value "Locale: $HelpLocale"
+        Add-Content -Path $Destination\$TocFileName -Value "---"
+        Add-Content -Path $Destination\$TocFileName -Value ""
+        Add-Content -Path $Destination\$TocFileName -Value "# $Path Module"
+        Add-Content -Path $Destination\$TocFileName -Value "## Description"
+        Add-Content -Path $Destination\$TocFileName -Value "Microsoft Graph PowerShell Cmdlets"
+        Add-Content -Path $Destination\$TocFileName -Value ""
+        Add-Content -Path $Destination\$TocFileName -Value "## $Path Cmdlets"
+        
+        $CommandMetadataContent | Where-Object { $_.Module -eq $ModuleName -and $_.ApiVersion -eq $GraphProfile } | ForEach-Object {
+            $Command = $_.Command
+            $CmdletDocsPath = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path "$Command.md"
+            if (-not(Test-Path $CmdletDocsPath)) {
+                Set-Help -ModuleDocsPath $Destination -Command $Command -Module $Path
+            }
+            Add-Content -Path $Destination\$TocFileName -Value "### [$Command]($Command.md)"
+            Add-Content -Path $Destination\$TocFileName -Value ""
+        }
+
     }
    
-}
-function Generate-GraphHelpByProfile {
-    Param(
-        [ValidateSet("beta", "v1.0")]
-        [string] $GraphProfile = "v1.0",
-        [ValidateNotNullOrEmpty()]
-        [string] $GraphProfilePath = "graph-powershell-1.0",
-        [ValidateNotNullOrEmpty()]
-        [string] $ModulePrefix = "Microsoft.Graph",
-        [ValidateNotNullOrEmpty()]
-        $ModulesToGenerate = @()
-    )
-    $ModulesToGenerate | ForEach-Object {
-        $ModuleName = $_
-        Generate-GraphModuleHelp -GraphProfile $GraphProfile -GraphProfilePath $GraphProfilePath -ModuleName $ModuleName -ModulePrefix $ModulePrefix
-    }
-}
-
-function Generate-GraphModuleHelp {
-    param(
-        [ValidateSet("beta", "v1.0")]
-        [string] $GraphProfile = "v1.0",
-        [ValidateNotNullOrEmpty()]
-        [string] $GraphProfilePath = "graph-powershell-1.0",
-        [ValidateNotNullOrEmpty()]
-        [string] $ModuleName = "Users",
-        [ValidateNotNullOrEmpty()]
-        [string] $ModulePrefix = "Microsoft.Graph"
-    )
-    try {
-        $Module = "$ModulePrefix.$ModuleName"
-        if ($Module -ne "Microsoft.Graph.WindowsUpdates") {
-            $Path = "$ModulePrefix.$ModuleName"
-            if ($GraphProfile -eq 'beta') {
-                $Module = "$ModulePrefix.Beta.$ModuleName"
-                $Path = "$ModulePrefix.Beta.$ModuleName"
-            }
-            $ModuleDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\$GraphProfilePath\$Path"
-
-            Import-Module $Module -Force -Global
-            Generate-Help -ModuleDocsPath $ModuleDocsPath -Module $Module
-        }
-    }
-    catch {
-        Write-Host "`nError Message: " $_.Exception.Message
-        Write-Host "`nError in Line: " $_.InvocationInfo.Line
-        Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
-        Write-Host "`nError Item Name: "$_.Exception.ItemName
-    }
 }
 # Install PlatyPS
 if (!(Get-Module -Name PlatyPS -ListAvailable)) {
@@ -154,5 +157,5 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
-Generate-GraphHelp -ModulesToGenerate $ModulesToGenerate
+Start-GraphHelp -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
