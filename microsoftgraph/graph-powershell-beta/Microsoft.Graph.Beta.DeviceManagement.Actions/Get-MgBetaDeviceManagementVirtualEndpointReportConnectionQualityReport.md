@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportconnectionqualityreport
 schema: 2.0.0
-ms.subservice: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport
@@ -31,19 +30,34 @@ Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport -OutFile 
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### RetrieveExpanded
+```
+Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport -OutFile <String>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Filter <String>]
+ [-GroupBy <String[]>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [-ReportName <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Retrieve
+```
+Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport -OutFile <String>
+ [-ResponseHeadersVariable <String>]
+ -Body <IPathsMeui48DevicemanagementVirtualendpointReportsMicrosoftGraphRetrieveconnectionqualityreportsPostRequestbodyContentApplicationJsonSchema>
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Get the overall connection quality reports for all devices within a current tenant during a given time period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage.
 Get also other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getconnectionqualityreports-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+```
 
 $params = @{
 	filter = "EventDateTime gt datetime'2023-04-16T07:40:41.694Z'"
@@ -69,10 +83,6 @@ orderBy = @(
 
 Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport -BodyParameter $params
 
-```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -80,13 +90,29 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded
+Parameter Sets: GetExpanded, RetrieveExpanded
 Aliases:
 
 Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Body
+.
+To construct, see NOTES section for BODY properties and create a hash table.
+
+```yaml
+Type: IPathsMeui48DevicemanagementVirtualendpointReportsMicrosoftGraphRetrieveconnectionqualityreportsPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Retrieve
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -111,7 +137,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded
+Parameter Sets: GetExpanded, RetrieveExpanded
 Aliases:
 
 Required: False
@@ -126,7 +152,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded
+Parameter Sets: GetExpanded, RetrieveExpanded
 Aliases:
 
 Required: False
@@ -201,8 +227,23 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded
+Parameter Sets: GetExpanded, RetrieveExpanded
 Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReportName
+cloudPCConnectionQualityReportType
+
+```yaml
+Type: String
+Parameter Sets: RetrieveExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -231,7 +272,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded
+Parameter Sets: GetExpanded, RetrieveExpanded
 Aliases:
 
 Required: False
@@ -246,7 +287,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded
+Parameter Sets: GetExpanded, RetrieveExpanded
 Aliases: OrderBy
 
 Required: False
@@ -261,7 +302,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: GetExpanded
+Parameter Sets: GetExpanded, RetrieveExpanded
 Aliases: Limit
 
 Required: False
@@ -307,7 +348,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: GetExpanded
+Parameter Sets: GetExpanded, RetrieveExpanded
 Aliases:
 
 Required: False
@@ -323,6 +364,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Rd0Fy0DevicemanagementVirtualendpointReportsMicrosoftGraphGetconnectionqualityreportsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsMeui48DevicemanagementVirtualendpointReportsMicrosoftGraphRetrieveconnectionqualityreportsPostRequestbodyContentApplicationJsonSchema
 ### System.Collections.IDictionary
 ## OUTPUTS
 
@@ -333,22 +375,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Rd0Fy0DevicemanagementVirtualendpointReportsMicrosoftGraphGetconnectionqualityreportsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Filter <String>]`: 
-  - `[GroupBy <String- `[]`>]`: 
-  - `[OrderBy <String- `[]`>]`: 
-  - `[Search <String>]`: 
-  - `[Select <String- `[]`>]`: 
-  - `[Skip <Int32?>]`: 
-  - `[Top <Int32?>]`:
+BODY \<IPathsMeui48DevicemanagementVirtualendpointReportsMicrosoftGraphRetrieveconnectionqualityreportsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Filter \<String\>\]: 
+  \[GroupBy \<String\[\]\>\]: 
+  \[OrderBy \<String\[\]\>\]: 
+  \[ReportName \<String\>\]: cloudPCConnectionQualityReportType
+  \[Search \<String\>\]: 
+  \[Select \<String\[\]\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]: 
+
+BODYPARAMETER \<IPaths1Rd0Fy0DevicemanagementVirtualendpointReportsMicrosoftGraphGetconnectionqualityreportsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Filter \<String\>\]: 
+  \[GroupBy \<String\[\]\>\]: 
+  \[OrderBy \<String\[\]\>\]: 
+  \[Search \<String\>\]: 
+  \[Select \<String\[\]\>\]: 
+  \[Skip \<Int32?\>\]: 
+  \[Top \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportconnectionqualityreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportconnectionqualityreport)
 
 [https://learn.microsoft.com/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-beta)
-
-
-
 

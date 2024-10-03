@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscore
@@ -20,6 +20,15 @@ Get-MgBetaSecurityPartnerSecurityScore [-ExpandProperty <String[]>] [-Property <
 
 ## DESCRIPTION
 Read the properties and relationships of a partnerSecurityScore object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.Beta.Security
+```
+
+Get-MgBetaSecurityPartnerSecurityScore
 
 ## PARAMETERS
 
@@ -114,8 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscore)
 
 [https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-get?view=graph-rest-beta)
-
-
-
-
 
