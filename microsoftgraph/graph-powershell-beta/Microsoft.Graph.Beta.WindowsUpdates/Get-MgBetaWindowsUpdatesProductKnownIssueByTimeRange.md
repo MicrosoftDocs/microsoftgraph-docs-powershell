@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesproductknownissuebytimerange
 schema: 2.0.0
+ms.subservice: autopatch
 ---
 
 # Get-MgBetaWindowsUpdatesProductKnownIssueByTimeRange
@@ -30,6 +31,9 @@ Get-MgBetaWindowsUpdatesProductKnownIssueByTimeRange -InputObject <IWindowsUpdat
 
 ## DESCRIPTION
 Get known issues related to a particular product based on a specified timeframe in the past.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-product-getknownissuesbytimerange-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausercontactfolderchildfoldercontactpermanent
 schema: 2.0.0
+ms.subservice: outlook
 ---
 
 # Remove-MgBetaUserContactFolderChildFolderContactPermanent
@@ -34,6 +35,9 @@ Permanently delete a contact and place it in the Purges folder in the dumpster i
 Email clients such as Outlook or Outlook on the web can't access permanently deleted items.
 Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contact-permanentdelete-permissions.md)]
 
 ## EXAMPLES
 

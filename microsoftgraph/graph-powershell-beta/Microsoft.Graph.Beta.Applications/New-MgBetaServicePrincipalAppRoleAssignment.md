@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalapproleassignment
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgBetaServicePrincipalAppRoleAssignment
@@ -52,6 +53,9 @@ Assign an app role to a client service principal.
 App roles that are assigned to service principals are also known as application permissions.
 Application permissions can be granted directly with app role assignments, or through a consent experience.
 To grant an app role assignment to a client service principal, you need three identifiers:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-post-approleassignments-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalclaimmappingpolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgServicePrincipalClaimMappingPolicyByRef
@@ -43,6 +44,9 @@ New-MgServicePrincipalClaimMappingPolicyByRef -InputObject <IApplicationsIdentit
 
 ## DESCRIPTION
 Assign a claimsMappingPolicy to a servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-claimsmappingpolicies-permissions.md)]
 
 ## EXAMPLES
 

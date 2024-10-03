@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicy
 schema: 2.0.0
+ms.subservice: autopatch
 ---
 
 # New-MgBetaWindowsUpdatesPolicy
@@ -31,6 +32,9 @@ New-MgBetaWindowsUpdatesPolicy -BodyParameter <IMicrosoftGraphWindowsUpdatesUpda
 
 ## DESCRIPTION
 Create a new updatePolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminwindowsupdates-post-updatepolicies-permissions.md)]
 
 ## EXAMPLES
 

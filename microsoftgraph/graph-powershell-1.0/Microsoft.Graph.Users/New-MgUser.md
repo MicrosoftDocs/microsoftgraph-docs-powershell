@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguser
 schema: 2.0.0
+ms.subservice: entra-users
 ---
 
 # New-MgUser
@@ -89,6 +90,9 @@ New-MgUser -BodyParameter <IMicrosoftGraphUser> [-ResponseHeadersVariable <Strin
 Create a new user.The request body contains the user to create.
 At a minimum, you must specify the required properties for the user.
 You can optionally specify any other writable properties.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-users-permissions.md)]
 
 ## EXAMPLES
 

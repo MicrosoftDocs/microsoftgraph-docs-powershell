@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmemberbyref
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # New-MgBetaAdministrativeUnitMemberByRef
@@ -47,6 +48,9 @@ New-MgBetaAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryManageme
 Use this API to add a member (user, group, or device) to an administrative unit or to create a new group within an administrative unit.
 All group types can be created within an administrative unit.
 Note: Currently, it's only possible to add one member at a time to an administrative unit.\`
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-post-members-permissions.md)]
 
 ## EXAMPLES
 

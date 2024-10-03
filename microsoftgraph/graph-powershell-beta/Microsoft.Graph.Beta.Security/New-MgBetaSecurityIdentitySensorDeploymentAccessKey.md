@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensordeploymentaccesskey
 schema: 2.0.0
+ms.subservice: security
 ---
 
 # New-MgBetaSecurityIdentitySensorDeploymentAccessKey
@@ -19,6 +20,9 @@ New-MgBetaSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <S
 
 ## DESCRIPTION
 Invoke action regenerateDeploymentAccessKey
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensor-regeneratedeploymentaccesskey-permissions.md)]
 
 ## EXAMPLES
 

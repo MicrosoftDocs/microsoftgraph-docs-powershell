@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkchatreadforuser
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgBetaMarkChatReadForUser
@@ -46,6 +47,9 @@ Invoke-MgBetaMarkChatReadForUser -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Mark a chat as read for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-markchatreadforuser-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivitybranch
 schema: 2.0.0
+ms.subservice: entra-global-secure-access
 ---
 
 # Update-MgBetaNetworkAccessConnectivityBranch
@@ -50,6 +51,9 @@ Update-MgBetaNetworkAccessConnectivityBranch -InputObject <INetworkAccessIdentit
 
 ## DESCRIPTION
 Update the configuration or properties of a specific branch.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchsite-update-permissions.md)]
 
 ## EXAMPLES
 
