@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Get the metadata for the location where the files of a channel are stored.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelFileFolder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -12,6 +12,9 @@ ms.subservice: cloud-communications
 Delete a registration question from a webinar.
 The question can either be a predefined registration question or a custom registration question.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

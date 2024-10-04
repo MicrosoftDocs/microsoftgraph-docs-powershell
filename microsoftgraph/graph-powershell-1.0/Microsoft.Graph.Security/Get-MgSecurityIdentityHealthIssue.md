@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a healthIssue object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentityHealthIssue](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentityHealthIssue?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ ms.subservice: reports
 ## SYNOPSIS
 Get the number of pages viewed across all sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsagePage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsagePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

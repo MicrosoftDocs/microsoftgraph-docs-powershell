@@ -12,6 +12,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Retrieve the properties and relationships of an offerShiftRequest object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
