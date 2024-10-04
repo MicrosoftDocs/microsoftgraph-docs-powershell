@@ -56,18 +56,6 @@ Update the properties of a healthIssue object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-healthissue-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -540,6 +528,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityhealthissue](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityhealthissue)
 
 [https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-1.0)
+
 
 
 

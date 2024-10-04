@@ -49,18 +49,6 @@ Students can't see the grade or feedback until the assignment is released.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-getrecentlymodifiedsubmissions-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -300,6 +288,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassrecentlymodifiedsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassrecentlymodifiedsubmission)
 
 [https://learn.microsoft.com/graph/api/educationclass-getrecentlymodifiedsubmissions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationclass-getrecentlymodifiedsubmissions?view=graph-rest-beta)
+
 
 
 

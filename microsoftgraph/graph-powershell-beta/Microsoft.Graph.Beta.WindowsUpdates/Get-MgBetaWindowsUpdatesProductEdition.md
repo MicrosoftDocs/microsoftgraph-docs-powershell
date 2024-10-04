@@ -37,18 +37,6 @@ Get-MgBetaWindowsUpdatesProductEdition -InputObject <IWindowsUpdatesIdentity> [-
 ## DESCRIPTION
 Represents an edition of a particular Windows product.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -329,6 +317,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesproductedition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesproductedition)
+
 
 
 

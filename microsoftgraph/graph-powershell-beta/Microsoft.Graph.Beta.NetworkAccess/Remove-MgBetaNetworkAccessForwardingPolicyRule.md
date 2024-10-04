@@ -29,18 +29,6 @@ Remove-MgBetaNetworkAccessForwardingPolicyRule -InputObject <INetworkAccessIdent
 ## DESCRIPTION
 Delete navigation property policyRules for networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ForwardingPolicyId
@@ -235,6 +223,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessforwardingpolicyrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessforwardingpolicyrule)
+
 
 
 
