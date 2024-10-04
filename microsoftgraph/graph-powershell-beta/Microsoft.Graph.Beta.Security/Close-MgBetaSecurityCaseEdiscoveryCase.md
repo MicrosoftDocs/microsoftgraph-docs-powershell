@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/close-mgbetasecuritycaseediscoverycase
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Close-MgBetaSecurityCaseEdiscoveryCase
@@ -30,6 +31,9 @@ Close-MgBetaSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-Respon
 ## DESCRIPTION
 Close an eDiscovery case.
 For details, see Close a case.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-close-permissions.md)]
 
 ## EXAMPLES
 

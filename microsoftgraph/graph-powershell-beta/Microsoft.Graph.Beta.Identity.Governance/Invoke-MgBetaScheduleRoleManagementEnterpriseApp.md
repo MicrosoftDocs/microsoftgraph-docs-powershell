@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagemententerpriseapp
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Invoke-MgBetaScheduleRoleManagementEnterpriseApp
@@ -32,6 +33,9 @@ Invoke-MgBetaScheduleRoleManagementEnterpriseApp -InputObject <IIdentityGovernan
 
 ## DESCRIPTION
 Retrieve both roleAssignmentScheduleInstances and roleEligibilityScheduleInstances.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-rolescheduleinstances-permissions.md)]
 
 ## EXAMPLES
 

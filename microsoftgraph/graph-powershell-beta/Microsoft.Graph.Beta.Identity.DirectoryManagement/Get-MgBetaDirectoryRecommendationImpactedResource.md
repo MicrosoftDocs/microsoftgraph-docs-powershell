@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendationimpactedresource
 schema: 2.0.0
+ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaDirectoryRecommendationImpactedResource
@@ -36,6 +38,12 @@ Get-MgBetaDirectoryRecommendationImpactedResource -InputObject <IIdentityDirecto
 
 ## DESCRIPTION
 Read the properties and relationships of an impactedResource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/impactedresource-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-list-impactedresources-permissions.md)]
 
 ## EXAMPLES
 
