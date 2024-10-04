@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensor
 schema: 2.0.0
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgBetaSecurityIdentitySensor
@@ -36,6 +38,12 @@ Get-MgBetaSecurityIdentitySensor -InputObject <ISecurityIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Get sensors from security
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensor-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-identitycontainer-list-sensors-permissions.md)]
 
 ## PARAMETERS
 

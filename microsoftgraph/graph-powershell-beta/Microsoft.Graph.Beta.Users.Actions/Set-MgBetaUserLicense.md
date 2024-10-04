@@ -12,6 +12,7 @@ ms.subservice: entra-users
 Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings that the company has licenses to.
 For example, an organization can have a Microsoft 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user.
 You can also enable and disable specific plans associated with a subscription.
+Direct user licensing is an alternative to group-based licensing.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 
 > [!NOTE]
@@ -55,6 +56,7 @@ Set-MgBetaUserLicense -InputObject <IUsersActionsIdentity>
 Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings that the company has licenses to.
 For example, an organization can have a Microsoft 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user.
 You can also enable and disable specific plans associated with a subscription.
+Direct user licensing is an alternative to group-based licensing.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 
 **Permissions**

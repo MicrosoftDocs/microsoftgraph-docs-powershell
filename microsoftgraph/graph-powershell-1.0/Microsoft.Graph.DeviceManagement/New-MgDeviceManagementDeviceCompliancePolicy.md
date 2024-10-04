@@ -9,7 +9,7 @@ ms.subservice: intune
 # New-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Create a new macOSCompliancePolicy object.
+Create a new windows10MobileCompliancePolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter <IMicrosoftGraphDevi
 ```
 
 ## DESCRIPTION
-Create a new macOSCompliancePolicy object.
+Create a new windows10MobileCompliancePolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -575,7 +575,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-macoscompliancepolicy-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-macoscompliancepolicy-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-create?view=graph-rest-1.0)
 
 
 

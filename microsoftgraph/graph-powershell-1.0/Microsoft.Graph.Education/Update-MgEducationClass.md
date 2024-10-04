@@ -1333,8 +1333,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
           - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-          - `[ContentInfo <IAny>]`: Optional.
-A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
+          - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
           - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -1384,8 +1384,7 @@ For example - a high contrast image
             - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-            - `[Content <IAny>]`: Optional.
-Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
+            - `[Content <IMicrosoftGraphJson>]`: Json
             - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
             - `[DisplayText <String>]`: Required.
@@ -1522,6 +1521,7 @@ Supports $filter (eq, ne, not).
               - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
+              - `[IsManagementRestricted <Boolean?>]`: 
               - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
               - `[ManagementType <String>]`: The management channel of the device.
@@ -2697,9 +2697,7 @@ Read-only.
                       - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-                      - `[Value <IAny>]`: The formula that the name is defined to refer to.
-For example, =Sheet14!$B$2:$H$12 and =4.75.
-Read-only.
+                      - `[Value <IMicrosoftGraphJson>]`: Json
                       - `[Visible <Boolean?>]`: Indicates whether the object is visible.
                       - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2750,19 +2748,11 @@ Read-only.
 Read-only.
                                   - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                                 - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                              - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
-Can be set to a numeric value or an empty string. 
-The returned value is always a number.
-                              - `[Maximum <IAny>]`: Represents the maximum value on the value axis. 
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
-                              - `[Minimum <IAny>]`: Represents the minimum value on the value axis.
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
+                              - `[MajorUnit <IMicrosoftGraphJson>]`: Json
+                              - `[Maximum <IMicrosoftGraphJson>]`: Json
+                              - `[Minimum <IMicrosoftGraphJson>]`: Json
                               - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                              - `[MinorUnit <IAny>]`: Represents the interval between two minor tick marks.
-'Can be set to a numeric value or an empty string (for automatic axis values).
-The returned value is always a number.
+                              - `[MinorUnit <IMicrosoftGraphJson>]`: Json
                               - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                                 - `[Id <String>]`: The unique identifier for an entity.
@@ -2841,8 +2831,7 @@ Read-only.
                                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                                 - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                              - `[Value <IAny>]`: The value of a chart point.
-Read-only.
+                              - `[Value <IMicrosoftGraphJson>]`: Json
                           - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
                             - `[Id <String>]`: The unique identifier for an entity.
@@ -2874,17 +2863,17 @@ Read-only.
 Read-only.
                           - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                            - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
-                            - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
-                            - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
-                            - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
-                            - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
-                            - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
-                            - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
-                            - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
-                            - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
-                            - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
-                            - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
+                            - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
+                            - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
+                            - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
+                            - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
+                            - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
+                            - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
+                            - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
+                            - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
+                            - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
+                            - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
+                            - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
                           - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                         - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -2912,14 +2901,12 @@ Read-only.
                                   - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                                 - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                                - `[Values <IAny>]`: The values that appear in the cell.
+                                - `[Values <IMicrosoftGraphJson>]`: Json
                             - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                             - `[Name <String>]`: The name of the table column.
-                            - `[Values <IAny>]`: TRepresents the raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Cell that contain an error will return the error string.
+                            - `[Values <IMicrosoftGraphJson>]`: Json
                           - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                           - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                           - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -2934,9 +2921,7 @@ Read-only.
                             - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                            - `[Values <IAny>]`: The raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Any cell that contain an error will return the error string.
+                            - `[Values <IMicrosoftGraphJson>]`: Json
                           - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                           - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                           - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -3640,6 +3625,7 @@ Read-only.
 Read-only.
         - `[Interests <String- `[]`>]`: A list for the user to describe their interests.
 Returned only on $select.
+        - `[IsManagementRestricted <Boolean?>]`: 
         - `[IsResourceAccount <Boolean?>]`: Don't use - reserved for future use.
         - `[JobTitle <String>]`: The user's job title.
 Maximum length is 128 characters.
@@ -5532,6 +5518,7 @@ The caller must also be assigned the RoleManagement.ReadWrite.Directory permissi
 For more, see Using a group to manage Microsoft Entra role assignmentsUsing this feature requires a Microsoft Entra ID P1 license.
 Returned by default.
 Supports $filter (eq, ne, not).
+    - `[IsManagementRestricted <Boolean?>]`: 
     - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
 The default value is true.
 Returned only on $select.
@@ -5601,12 +5588,15 @@ Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
     - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
-    - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group.
+    - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
-If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. 
-Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-Supports $expand including nested $select.
+If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner.
+A non-admin user can't explicitly add themselves to this collection when they're creating the group.
+For more information, see the related known issue.
+For security groups, the admin user isn't automatically added to this collection.
+For more information, see the related known issue.
+Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
     - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: 
     - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
@@ -5780,8 +5770,12 @@ Supports $filter (eq, ne, in, startsWith), $search.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for this administrative unit.
 Nullable.
+        - `[IsMemberManagementRestricted <Boolean?>]`: 
         - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
+        - `[MembershipRule <String>]`: 
+        - `[MembershipRuleProcessingState <String>]`: 
+        - `[MembershipType <String>]`: 
         - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
         - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public.
 Can be set to HiddenMembership.
@@ -6328,8 +6322,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
         - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-        - `[ContentInfo <IAny>]`: Optional.
-A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
+        - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
         - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -6379,8 +6373,7 @@ For example - a high contrast image
           - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-          - `[Content <IAny>]`: Optional.
-Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
+          - `[Content <IMicrosoftGraphJson>]`: Json
           - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
           - `[DisplayText <String>]`: Required.
@@ -6517,6 +6510,7 @@ Supports $filter (eq, ne, not).
             - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
+            - `[IsManagementRestricted <Boolean?>]`: 
             - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
             - `[ManagementType <String>]`: The management channel of the device.
@@ -7692,9 +7686,7 @@ Read-only.
                     - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-                    - `[Value <IAny>]`: The formula that the name is defined to refer to.
-For example, =Sheet14!$B$2:$H$12 and =4.75.
-Read-only.
+                    - `[Value <IMicrosoftGraphJson>]`: Json
                     - `[Visible <Boolean?>]`: Indicates whether the object is visible.
                     - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -7745,19 +7737,11 @@ Read-only.
 Read-only.
                                 - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                               - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                            - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
-Can be set to a numeric value or an empty string. 
-The returned value is always a number.
-                            - `[Maximum <IAny>]`: Represents the maximum value on the value axis. 
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
-                            - `[Minimum <IAny>]`: Represents the minimum value on the value axis.
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
+                            - `[MajorUnit <IMicrosoftGraphJson>]`: Json
+                            - `[Maximum <IMicrosoftGraphJson>]`: Json
+                            - `[Minimum <IMicrosoftGraphJson>]`: Json
                             - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                            - `[MinorUnit <IAny>]`: Represents the interval between two minor tick marks.
-'Can be set to a numeric value or an empty string (for automatic axis values).
-The returned value is always a number.
+                            - `[MinorUnit <IMicrosoftGraphJson>]`: Json
                             - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
                               - `[Id <String>]`: The unique identifier for an entity.
@@ -7836,8 +7820,7 @@ Read-only.
                               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                               - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                            - `[Value <IAny>]`: The value of a chart point.
-Read-only.
+                            - `[Value <IMicrosoftGraphJson>]`: Json
                         - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
                           - `[Id <String>]`: The unique identifier for an entity.
@@ -7869,17 +7852,17 @@ Read-only.
 Read-only.
                         - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                          - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
-                          - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
-                          - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
-                          - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
-                          - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
-                          - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
-                          - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
-                          - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
-                          - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
-                          - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
-                          - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
+                          - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
+                          - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
+                          - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
+                          - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
+                          - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
+                          - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
+                          - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
+                          - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
+                          - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
+                          - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
+                          - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
                         - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                       - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -7907,14 +7890,12 @@ Read-only.
                                 - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                               - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                              - `[Values <IAny>]`: The values that appear in the cell.
+                              - `[Values <IMicrosoftGraphJson>]`: Json
                           - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                           - `[Name <String>]`: The name of the table column.
-                          - `[Values <IAny>]`: TRepresents the raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Cell that contain an error will return the error string.
+                          - `[Values <IMicrosoftGraphJson>]`: Json
                         - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                         - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                         - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -7929,9 +7910,7 @@ Read-only.
                           - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                          - `[Values <IAny>]`: The raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Any cell that contain an error will return the error string.
+                          - `[Values <IMicrosoftGraphJson>]`: Json
                         - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                         - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                         - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -8635,6 +8614,7 @@ Read-only.
 Read-only.
       - `[Interests <String- `[]`>]`: A list for the user to describe their interests.
 Returned only on $select.
+      - `[IsManagementRestricted <Boolean?>]`: 
       - `[IsResourceAccount <Boolean?>]`: Don't use - reserved for future use.
       - `[JobTitle <String>]`: The user's job title.
 Maximum length is 128 characters.
@@ -10527,6 +10507,7 @@ The caller must also be assigned the RoleManagement.ReadWrite.Directory permissi
 For more, see Using a group to manage Microsoft Entra role assignmentsUsing this feature requires a Microsoft Entra ID P1 license.
 Returned by default.
 Supports $filter (eq, ne, not).
+  - `[IsManagementRestricted <Boolean?>]`: 
   - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
 The default value is true.
 Returned only on $select.
@@ -10596,12 +10577,15 @@ Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
   - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
-  - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group.
+  - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
-If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. 
-Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-Supports $expand including nested $select.
+If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner.
+A non-admin user can't explicitly add themselves to this collection when they're creating the group.
+For more information, see the related known issue.
+For security groups, the admin user isn't automatically added to this collection.
+For more information, see the related known issue.
+Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
   - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: 
   - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
@@ -11322,8 +11306,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
             - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-            - `[ContentInfo <IAny>]`: Optional.
-A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
+            - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
             - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -11373,8 +11357,7 @@ For example - a high contrast image
               - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-              - `[Content <IAny>]`: Optional.
-Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
+              - `[Content <IMicrosoftGraphJson>]`: Json
               - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
               - `[DisplayText <String>]`: Required.
@@ -11502,6 +11485,7 @@ Supports $filter (eq, ne, not).
                 - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
+                - `[IsManagementRestricted <Boolean?>]`: 
                 - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
                 - `[ManagementType <String>]`: The management channel of the device.
@@ -12677,9 +12661,7 @@ Read-only.
                         - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-                        - `[Value <IAny>]`: The formula that the name is defined to refer to.
-For example, =Sheet14!$B$2:$H$12 and =4.75.
-Read-only.
+                        - `[Value <IMicrosoftGraphJson>]`: Json
                         - `[Visible <Boolean?>]`: Indicates whether the object is visible.
                         - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -12730,19 +12712,11 @@ Read-only.
 Read-only.
                                     - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                                   - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                                - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
-Can be set to a numeric value or an empty string. 
-The returned value is always a number.
-                                - `[Maximum <IAny>]`: Represents the maximum value on the value axis. 
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
-                                - `[Minimum <IAny>]`: Represents the minimum value on the value axis.
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
+                                - `[MajorUnit <IMicrosoftGraphJson>]`: Json
+                                - `[Maximum <IMicrosoftGraphJson>]`: Json
+                                - `[Minimum <IMicrosoftGraphJson>]`: Json
                                 - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                                - `[MinorUnit <IAny>]`: Represents the interval between two minor tick marks.
-'Can be set to a numeric value or an empty string (for automatic axis values).
-The returned value is always a number.
+                                - `[MinorUnit <IMicrosoftGraphJson>]`: Json
                                 - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                                   - `[Id <String>]`: The unique identifier for an entity.
@@ -12821,8 +12795,7 @@ Read-only.
                                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                                   - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                                - `[Value <IAny>]`: The value of a chart point.
-Read-only.
+                                - `[Value <IMicrosoftGraphJson>]`: Json
                             - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
                               - `[Id <String>]`: The unique identifier for an entity.
@@ -12854,17 +12827,17 @@ Read-only.
 Read-only.
                             - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                              - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
-                              - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
-                              - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
-                              - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
-                              - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
-                              - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
-                              - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
-                              - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
-                              - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
-                              - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
-                              - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
+                              - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
+                              - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
+                              - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
+                              - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
+                              - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
+                              - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
+                              - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
+                              - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
+                              - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
+                              - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
+                              - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
                             - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                           - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -12892,14 +12865,12 @@ Read-only.
                                     - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                                   - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                                  - `[Values <IAny>]`: The values that appear in the cell.
+                                  - `[Values <IMicrosoftGraphJson>]`: Json
                               - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                               - `[Name <String>]`: The name of the table column.
-                              - `[Values <IAny>]`: TRepresents the raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Cell that contain an error will return the error string.
+                              - `[Values <IMicrosoftGraphJson>]`: Json
                             - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                             - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                             - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -12914,9 +12885,7 @@ Read-only.
                               - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                              - `[Values <IAny>]`: The raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Any cell that contain an error will return the error string.
+                              - `[Values <IMicrosoftGraphJson>]`: Json
                             - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                             - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                             - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -13620,6 +13589,7 @@ Read-only.
 Read-only.
           - `[Interests <String- `[]`>]`: A list for the user to describe their interests.
 Returned only on $select.
+          - `[IsManagementRestricted <Boolean?>]`: 
           - `[IsResourceAccount <Boolean?>]`: Don't use - reserved for future use.
           - `[JobTitle <String>]`: The user's job title.
 Maximum length is 128 characters.
@@ -15512,6 +15482,7 @@ The caller must also be assigned the RoleManagement.ReadWrite.Directory permissi
 For more, see Using a group to manage Microsoft Entra role assignmentsUsing this feature requires a Microsoft Entra ID P1 license.
 Returned by default.
 Supports $filter (eq, ne, not).
+      - `[IsManagementRestricted <Boolean?>]`: 
       - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
 The default value is true.
 Returned only on $select.
@@ -15581,12 +15552,15 @@ Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
       - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
-      - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group.
+      - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
-If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. 
-Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-Supports $expand including nested $select.
+If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner.
+A non-admin user can't explicitly add themselves to this collection when they're creating the group.
+For more information, see the related known issue.
+For security groups, the admin user isn't automatically added to this collection.
+For more information, see the related known issue.
+Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
       - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: 
       - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
@@ -15712,8 +15686,12 @@ Supports $filter (eq, ne, in, startsWith), $search.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for this administrative unit.
 Nullable.
+        - `[IsMemberManagementRestricted <Boolean?>]`: 
         - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
+        - `[MembershipRule <String>]`: 
+        - `[MembershipRuleProcessingState <String>]`: 
+        - `[MembershipType <String>]`: 
         - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
         - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public.
 Can be set to HiddenMembership.
@@ -15886,12 +15864,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[IsMemberManagementRestricted <Boolean?>]`: 
     - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
+    - `[MembershipRule <String>]`: 
+    - `[MembershipRuleProcessingState <String>]`: 
+    - `[MembershipType <String>]`: 
     - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -16483,8 +16465,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
             - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-            - `[ContentInfo <IAny>]`: Optional.
-A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
+            - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
             - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -16534,8 +16516,7 @@ For example - a high contrast image
               - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-              - `[Content <IAny>]`: Optional.
-Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
+              - `[Content <IMicrosoftGraphJson>]`: Json
               - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
               - `[DisplayText <String>]`: Required.
@@ -16672,6 +16653,7 @@ Supports $filter (eq, ne, not).
                 - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
+                - `[IsManagementRestricted <Boolean?>]`: 
                 - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
                 - `[ManagementType <String>]`: The management channel of the device.
@@ -17847,9 +17829,7 @@ Read-only.
                         - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-                        - `[Value <IAny>]`: The formula that the name is defined to refer to.
-For example, =Sheet14!$B$2:$H$12 and =4.75.
-Read-only.
+                        - `[Value <IMicrosoftGraphJson>]`: Json
                         - `[Visible <Boolean?>]`: Indicates whether the object is visible.
                         - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -17900,19 +17880,11 @@ Read-only.
 Read-only.
                                     - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                                   - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                                - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
-Can be set to a numeric value or an empty string. 
-The returned value is always a number.
-                                - `[Maximum <IAny>]`: Represents the maximum value on the value axis. 
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
-                                - `[Minimum <IAny>]`: Represents the minimum value on the value axis.
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
+                                - `[MajorUnit <IMicrosoftGraphJson>]`: Json
+                                - `[Maximum <IMicrosoftGraphJson>]`: Json
+                                - `[Minimum <IMicrosoftGraphJson>]`: Json
                                 - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                                - `[MinorUnit <IAny>]`: Represents the interval between two minor tick marks.
-'Can be set to a numeric value or an empty string (for automatic axis values).
-The returned value is always a number.
+                                - `[MinorUnit <IMicrosoftGraphJson>]`: Json
                                 - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                                   - `[Id <String>]`: The unique identifier for an entity.
@@ -17991,8 +17963,7 @@ Read-only.
                                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                                   - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                                - `[Value <IAny>]`: The value of a chart point.
-Read-only.
+                                - `[Value <IMicrosoftGraphJson>]`: Json
                             - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
                               - `[Id <String>]`: The unique identifier for an entity.
@@ -18024,17 +17995,17 @@ Read-only.
 Read-only.
                             - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                              - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
-                              - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
-                              - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
-                              - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
-                              - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
-                              - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
-                              - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
-                              - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
-                              - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
-                              - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
-                              - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
+                              - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
+                              - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
+                              - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
+                              - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
+                              - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
+                              - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
+                              - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
+                              - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
+                              - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
+                              - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
+                              - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
                             - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                           - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -18062,14 +18033,12 @@ Read-only.
                                     - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                                   - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                                  - `[Values <IAny>]`: The values that appear in the cell.
+                                  - `[Values <IMicrosoftGraphJson>]`: Json
                               - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                               - `[Name <String>]`: The name of the table column.
-                              - `[Values <IAny>]`: TRepresents the raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Cell that contain an error will return the error string.
+                              - `[Values <IMicrosoftGraphJson>]`: Json
                             - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                             - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                             - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -18084,9 +18053,7 @@ Read-only.
                               - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                              - `[Values <IAny>]`: The raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Any cell that contain an error will return the error string.
+                              - `[Values <IMicrosoftGraphJson>]`: Json
                             - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                             - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                             - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -18790,6 +18757,7 @@ Read-only.
 Read-only.
           - `[Interests <String- `[]`>]`: A list for the user to describe their interests.
 Returned only on $select.
+          - `[IsManagementRestricted <Boolean?>]`: 
           - `[IsResourceAccount <Boolean?>]`: Don't use - reserved for future use.
           - `[JobTitle <String>]`: The user's job title.
 Maximum length is 128 characters.
@@ -20677,6 +20645,7 @@ The caller must also be assigned the RoleManagement.ReadWrite.Directory permissi
 For more, see Using a group to manage Microsoft Entra role assignmentsUsing this feature requires a Microsoft Entra ID P1 license.
 Returned by default.
 Supports $filter (eq, ne, not).
+      - `[IsManagementRestricted <Boolean?>]`: 
       - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
 The default value is true.
 Returned only on $select.
@@ -20746,12 +20715,15 @@ Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
       - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
-      - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group.
+      - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
-If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. 
-Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-Supports $expand including nested $select.
+If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner.
+A non-admin user can't explicitly add themselves to this collection when they're creating the group.
+For more information, see the related known issue.
+For security groups, the admin user isn't automatically added to this collection.
+For more information, see the related known issue.
+Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
       - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: 
       - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
@@ -21597,8 +21569,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
             - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-            - `[ContentInfo <IAny>]`: Optional.
-A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
+            - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
             - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -21648,8 +21620,7 @@ For example - a high contrast image
               - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-              - `[Content <IAny>]`: Optional.
-Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
+              - `[Content <IMicrosoftGraphJson>]`: Json
               - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
               - `[DisplayText <String>]`: Required.
@@ -21777,6 +21748,7 @@ Supports $filter (eq, ne, not).
                 - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
+                - `[IsManagementRestricted <Boolean?>]`: 
                 - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
                 - `[ManagementType <String>]`: The management channel of the device.
@@ -22952,9 +22924,7 @@ Read-only.
                         - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-                        - `[Value <IAny>]`: The formula that the name is defined to refer to.
-For example, =Sheet14!$B$2:$H$12 and =4.75.
-Read-only.
+                        - `[Value <IMicrosoftGraphJson>]`: Json
                         - `[Visible <Boolean?>]`: Indicates whether the object is visible.
                         - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -23005,19 +22975,11 @@ Read-only.
 Read-only.
                                     - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                                   - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                                - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
-Can be set to a numeric value or an empty string. 
-The returned value is always a number.
-                                - `[Maximum <IAny>]`: Represents the maximum value on the value axis. 
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
-                                - `[Minimum <IAny>]`: Represents the minimum value on the value axis.
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
+                                - `[MajorUnit <IMicrosoftGraphJson>]`: Json
+                                - `[Maximum <IMicrosoftGraphJson>]`: Json
+                                - `[Minimum <IMicrosoftGraphJson>]`: Json
                                 - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                                - `[MinorUnit <IAny>]`: Represents the interval between two minor tick marks.
-'Can be set to a numeric value or an empty string (for automatic axis values).
-The returned value is always a number.
+                                - `[MinorUnit <IMicrosoftGraphJson>]`: Json
                                 - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                                   - `[Id <String>]`: The unique identifier for an entity.
@@ -23096,8 +23058,7 @@ Read-only.
                                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                                   - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                                - `[Value <IAny>]`: The value of a chart point.
-Read-only.
+                                - `[Value <IMicrosoftGraphJson>]`: Json
                             - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
                               - `[Id <String>]`: The unique identifier for an entity.
@@ -23129,17 +23090,17 @@ Read-only.
 Read-only.
                             - `[Options <IMicrosoftGraphWorkbookWorksheetProtectionOptions>]`: workbookWorksheetProtectionOptions
                               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                              - `[AllowAutoFilter <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the autofilter feature is enabled.
-                              - `[AllowDeleteColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting columns is enabled.
-                              - `[AllowDeleteRows <Boolean?>]`: Indicates whether the worksheet protection option to allow deleting rows is enabled.
-                              - `[AllowFormatCells <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting cells is enabled.
-                              - `[AllowFormatColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting columns is enabled.
-                              - `[AllowFormatRows <Boolean?>]`: Indicates whether the worksheet protection option to allow formatting rows is enabled.
-                              - `[AllowInsertColumns <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting columns is enabled.
-                              - `[AllowInsertHyperlinks <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting hyperlinks is enabled.
-                              - `[AllowInsertRows <Boolean?>]`: Indicates whether the worksheet protection option to allow inserting rows is enabled.
-                              - `[AllowPivotTables <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the pivot table feature is enabled.
-                              - `[AllowSort <Boolean?>]`: Indicates whether the worksheet protection option to allow the use of the sort feature is enabled.
+                              - `[AllowAutoFilter <Boolean?>]`: Represents the worksheet protection option of allowing using auto filter feature.
+                              - `[AllowDeleteColumns <Boolean?>]`: Represents the worksheet protection option of allowing deleting columns.
+                              - `[AllowDeleteRows <Boolean?>]`: Represents the worksheet protection option of allowing deleting rows.
+                              - `[AllowFormatCells <Boolean?>]`: Represents the worksheet protection option of allowing formatting cells.
+                              - `[AllowFormatColumns <Boolean?>]`: Represents the worksheet protection option of allowing formatting columns.
+                              - `[AllowFormatRows <Boolean?>]`: Represents the worksheet protection option of allowing formatting rows.
+                              - `[AllowInsertColumns <Boolean?>]`: Represents the worksheet protection option of allowing inserting columns.
+                              - `[AllowInsertHyperlinks <Boolean?>]`: Represents the worksheet protection option of allowing inserting hyperlinks.
+                              - `[AllowInsertRows <Boolean?>]`: Represents the worksheet protection option of allowing inserting rows.
+                              - `[AllowPivotTables <Boolean?>]`: Represents the worksheet protection option of allowing using pivot table feature.
+                              - `[AllowSort <Boolean?>]`: Represents the worksheet protection option of allowing using sort feature.
                             - `[Protected <Boolean?>]`: Indicates whether the worksheet is protected. 
 Read-only.
                           - `[Tables <IMicrosoftGraphWorkbookTable- `[]`>]`: The list of tables that are part of the worksheet.
@@ -23167,14 +23128,12 @@ Read-only.
                                     - `[Set <String>]`: The set that the icon is part of.
 The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                                   - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                                  - `[Values <IAny>]`: The values that appear in the cell.
+                                  - `[Values <IMicrosoftGraphJson>]`: Json
                               - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                               - `[Name <String>]`: The name of the table column.
-                              - `[Values <IAny>]`: TRepresents the raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Cell that contain an error will return the error string.
+                              - `[Values <IMicrosoftGraphJson>]`: Json
                             - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                             - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                             - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -23189,9 +23148,7 @@ Read-only.
                               - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                              - `[Values <IAny>]`: The raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Any cell that contain an error will return the error string.
+                              - `[Values <IMicrosoftGraphJson>]`: Json
                             - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                             - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                             - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -23895,6 +23852,7 @@ Read-only.
 Read-only.
           - `[Interests <String- `[]`>]`: A list for the user to describe their interests.
 Returned only on $select.
+          - `[IsManagementRestricted <Boolean?>]`: 
           - `[IsResourceAccount <Boolean?>]`: Don't use - reserved for future use.
           - `[JobTitle <String>]`: The user's job title.
 Maximum length is 128 characters.
@@ -25787,6 +25745,7 @@ The caller must also be assigned the RoleManagement.ReadWrite.Directory permissi
 For more, see Using a group to manage Microsoft Entra role assignmentsUsing this feature requires a Microsoft Entra ID P1 license.
 Returned by default.
 Supports $filter (eq, ne, not).
+      - `[IsManagementRestricted <Boolean?>]`: 
       - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations.
 The default value is true.
 Returned only on $select.
@@ -25856,12 +25815,15 @@ Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
       - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
-      - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group.
+      - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
-If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. 
-Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-Supports $expand including nested $select.
+If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner.
+A non-admin user can't explicitly add themselves to this collection when they're creating the group.
+For more information, see the related known issue.
+For security groups, the admin user isn't automatically added to this collection.
+For more information, see the related known issue.
+Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
       - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: 
       - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
@@ -25987,8 +25949,12 @@ Supports $filter (eq, ne, in, startsWith), $search.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
         - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for this administrative unit.
 Nullable.
+        - `[IsMemberManagementRestricted <Boolean?>]`: 
         - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
+        - `[MembershipRule <String>]`: 
+        - `[MembershipRuleProcessingState <String>]`: 
+        - `[MembershipType <String>]`: 
         - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
         - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public.
 Can be set to HiddenMembership.

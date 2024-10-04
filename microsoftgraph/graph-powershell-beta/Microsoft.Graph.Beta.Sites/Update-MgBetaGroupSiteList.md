@@ -717,8 +717,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
         - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-        - `[ContentInfo <IAny>]`: Optional.
-A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
+        - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
         - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -768,8 +768,7 @@ For example - a high contrast image
           - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-          - `[Content <IAny>]`: Optional.
-Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
+          - `[Content <IMicrosoftGraphJson>]`: Json
           - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
           - `[DisplayText <String>]`: Required.
@@ -897,8 +896,8 @@ This lets services like Microsoft 365 call the application in the context of a d
           - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-            - `[Key <String>]`: Key.
-            - `[Value <String>]`: Value.
+            - `[Key <String>]`: Contains the name of the field that a value is associated with.
+            - `[Value <String>]`: Contains the corresponding value for the specified key.
           - `[Type <String>]`: The unique name for the functionality exposed by the app.
         - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -924,7 +923,7 @@ Always null when the object hasn't been deleted.
           - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
           - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+            - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
               - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
               - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -2428,7 +2427,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
           - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, channel, and tag.
+Supported entities are: user, bot, team, channel, chat, and tag.
             - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention.
@@ -3835,6 +3834,81 @@ Nullable.
 Read-only.
 Nullable.
         - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long running operations for the site.
+        - `[PageTemplates <IMicrosoftGraphPageTemplate- `[]`>]`: The collection of page templates on this site.
+          - `[PageLayout <String>]`: pageLayoutType
+          - `[PublishingState <IMicrosoftGraphPublicationFacet>]`: publicationFacet
+          - `[Title <String>]`: Title of the sitePage.
+          - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+          - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+          - `[Description <String>]`: The description of the item.
+          - `[ETag <String>]`: ETag for the item.
+Read-only.
+          - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+          - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
+Read-only.
+          - `[Name <String>]`: The name of the item.
+Read-write.
+          - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
+          - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
+Read-only.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[CanvasLayout <IMicrosoftGraphCanvasLayout>]`: canvasLayout
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[HorizontalSections <IMicrosoftGraphHorizontalSection- `[]`>]`: Collection of horizontal sections on the SharePoint page.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Columns <IMicrosoftGraphHorizontalSectionColumn- `[]`>]`: The set of vertical columns in this section.
+                - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The collection of WebParts in this column.
+                  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                - `[Width <Int32?>]`: Width of the column.
+A horizontal section is divided into 12 grids.
+A column should have a value of 1-12 to represent its range spans.
+For example, there can be two columns both have a width of 6 in a section.
+              - `[Emphasis <String>]`: sectionEmphasisType
+              - `[Layout <String>]`: horizontalSectionLayoutType
+            - `[VerticalSection <IMicrosoftGraphVerticalSection>]`: verticalSection
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Emphasis <String>]`: sectionEmphasisType
+              - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The set of web parts in this section.
+          - `[TitleArea <IMicrosoftGraphTitleArea>]`: titleArea
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[AlternativeText <String>]`: Alternative text on the title area.
+            - `[EnableGradientEffect <Boolean?>]`: Indicates whether the title area has a gradient effect enabled.
+            - `[ImageWebUrl <String>]`: URL of the image in the title area.
+            - `[Layout <String>]`: titleAreaLayoutType
+            - `[ServerProcessedContent <IMicrosoftGraphServerProcessedContent>]`: serverProcessedContent
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[ComponentDependencies <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are component ids.
+SharePoint servers might decide to use this hint to preload the script for corresponding components for performance boost.
+                - `[Key <String>]`: Key of the meta data.
+                - `[Value <String>]`: Value of the meta data.
+              - `[CustomMetadata <IMicrosoftGraphMetaDataKeyValuePair- `[]`>]`: A key-value map where keys are string identifier and values are object of custom key-value pair.
+                - `[Key <String>]`: Key of the metadata.
+                - `[Value <IMicrosoftGraphJson>]`: Json
+              - `[HtmlStrings <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are rich text with HTML format.
+SharePoint servers treat the values as HTML content and run services like safety checks, search index and link fixup on them.
+              - `[ImageSources <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are image sources.
+SharePoint servers treat the values as image sources and run services like search index and link fixup on them.
+              - `[Links <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are links.
+SharePoint servers treat the values as links and run services like link fixup on them.
+              - `[SearchablePlainTexts <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are strings that should be search indexed.
+            - `[ShowAuthor <Boolean?>]`: Indicates whether the author should be shown in title area.
+            - `[ShowPublishedDate <Boolean?>]`: Indicates whether the published date should be shown in title area.
+            - `[ShowTextBlockAboveTitle <Boolean?>]`: Indicates whether the text block above title should be shown in title area.
+            - `[TextAboveTitle <String>]`: The text above title line.
+            - `[TextAlignment <String>]`: titleAreaTextAlignmentType
+          - `[WebParts <IMicrosoftGraphWebPart- `[]`>]`: The collection of web parts on the SharePoint page.
         - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: The collection of pages in the baseSitePages list on this site.
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -4369,8 +4443,13 @@ Supports $filter (eq, ne, not, in, and eq on null values).
         - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
         - `[OrganizationId <String>]`: 
         - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group who can be users or service principals.
+Limited to 100 owners.
 Nullable.
-If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. 
+If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner.
+A non-admin user can't explicitly add themselves to this collection when they're creating the group.
+For more information, see the related known issue.
+For security groups, the admin user isn't automatically added to this collection.
+For more information, see the related known issue.
 Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
         - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: The permissions granted for a group to a specific application.
@@ -4515,6 +4594,8 @@ An archived task is read-only.
 If true, it shows the task.
                 - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+                - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+                - `[LastModifiedDateTime <DateTime?>]`: 
                 - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
                 - `[PercentComplete <Int32?>]`: The percentage of task completion.
@@ -6058,6 +6139,29 @@ Read-only.
           - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+        - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: 
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
+            - `[OwnerDisplayName <String>]`: 
+            - `[Text <String>]`: 
+            - `[Title <String>]`: 
+          - `[CallId <String>]`: 
+          - `[ContentCorrelationId <String>]`: 
+          - `[CreatedDateTime <DateTime?>]`: 
+          - `[EndDateTime <DateTime?>]`: 
+          - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
+            - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
+              - `[Text <String>]`: 
+              - `[Title <String>]`: 
+            - `[Text <String>]`: 
+            - `[Title <String>]`: 
+          - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
+              - `[EventDateTime <DateTime?>]`: 
+              - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
+              - `[TranscriptUtterance <String>]`: 
         - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
         - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.
@@ -8303,9 +8407,7 @@ Read-only.
         - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-        - `[Value <IAny>]`: The formula that the name is defined to refer to.
-For example, =Sheet14!$B$2:$H$12 and =4.75.
-Read-only.
+        - `[Value <IMicrosoftGraphJson>]`: Json
         - `[Visible <Boolean?>]`: Indicates whether the object is visible.
         - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8356,19 +8458,11 @@ Read-only.
 Read-only.
                     - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                   - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
-Can be set to a numeric value or an empty string. 
-The returned value is always a number.
-                - `[Maximum <IAny>]`: Represents the maximum value on the value axis. 
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
-                - `[Minimum <IAny>]`: Represents the minimum value on the value axis.
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
+                - `[MajorUnit <IMicrosoftGraphJson>]`: Json
+                - `[Maximum <IMicrosoftGraphJson>]`: Json
+                - `[Minimum <IMicrosoftGraphJson>]`: Json
                 - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                - `[MinorUnit <IAny>]`: Represents the interval between two minor tick marks.
-'Can be set to a numeric value or an empty string (for automatic axis values).
-The returned value is always a number.
+                - `[MinorUnit <IMicrosoftGraphJson>]`: Json
                 - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
@@ -8447,8 +8541,7 @@ Read-only.
                   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                   - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                - `[Value <IAny>]`: The value of a chart point.
-Read-only.
+                - `[Value <IMicrosoftGraphJson>]`: Json
             - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique identifier for an entity.
@@ -8518,14 +8611,12 @@ Read-only.
                     - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                   - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                  - `[Values <IAny>]`: The values that appear in the cell.
+                  - `[Values <IMicrosoftGraphJson>]`: Json
               - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
               - `[Name <String>]`: The name of the table column.
-              - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Cell that contain an error will return the error string.
+              - `[Values <IMicrosoftGraphJson>]`: Json
             - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
             - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
             - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -8540,9 +8631,7 @@ Read-only.
               - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-              - `[Values <IAny>]`: The raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Any cell that contain an error will return the error string.
+              - `[Values <IMicrosoftGraphJson>]`: Json
             - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
             - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
             - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -8647,8 +8736,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
       - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-      - `[ContentInfo <IAny>]`: Optional.
-A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
+      - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
       - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -8698,8 +8787,7 @@ For example - a high contrast image
         - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-        - `[Content <IAny>]`: Optional.
-Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
+        - `[Content <IMicrosoftGraphJson>]`: Json
         - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         - `[DisplayText <String>]`: Required.
@@ -8827,8 +8915,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Key.
-          - `[Value <String>]`: Value.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -8854,7 +8942,7 @@ Always null when the object hasn't been deleted.
         - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
         - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+          - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
             - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -10358,7 +10446,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
         - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, channel, and tag.
+Supported entities are: user, bot, team, channel, chat, and tag.
           - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention.
@@ -11597,9 +11685,7 @@ Read-only.
               - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-              - `[Value <IAny>]`: The formula that the name is defined to refer to.
-For example, =Sheet14!$B$2:$H$12 and =4.75.
-Read-only.
+              - `[Value <IMicrosoftGraphJson>]`: Json
               - `[Visible <Boolean?>]`: Indicates whether the object is visible.
               - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11650,19 +11736,11 @@ Read-only.
 Read-only.
                           - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                         - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                      - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
-Can be set to a numeric value or an empty string. 
-The returned value is always a number.
-                      - `[Maximum <IAny>]`: Represents the maximum value on the value axis. 
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
-                      - `[Minimum <IAny>]`: Represents the minimum value on the value axis.
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
+                      - `[MajorUnit <IMicrosoftGraphJson>]`: Json
+                      - `[Maximum <IMicrosoftGraphJson>]`: Json
+                      - `[Minimum <IMicrosoftGraphJson>]`: Json
                       - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                      - `[MinorUnit <IAny>]`: Represents the interval between two minor tick marks.
-'Can be set to a numeric value or an empty string (for automatic axis values).
-The returned value is always a number.
+                      - `[MinorUnit <IMicrosoftGraphJson>]`: Json
                       - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
@@ -11741,8 +11819,7 @@ Read-only.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                         - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                      - `[Value <IAny>]`: The value of a chart point.
-Read-only.
+                      - `[Value <IMicrosoftGraphJson>]`: Json
                   - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[Id <String>]`: The unique identifier for an entity.
@@ -11812,14 +11889,12 @@ Read-only.
                           - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                         - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                        - `[Values <IAny>]`: The values that appear in the cell.
+                        - `[Values <IMicrosoftGraphJson>]`: Json
                     - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                     - `[Name <String>]`: The name of the table column.
-                    - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Cell that contain an error will return the error string.
+                    - `[Values <IMicrosoftGraphJson>]`: Json
                   - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                   - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                   - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -11834,9 +11909,7 @@ Read-only.
                     - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                    - `[Values <IAny>]`: The raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Any cell that contain an error will return the error string.
+                    - `[Values <IMicrosoftGraphJson>]`: Json
                   - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                   - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                   - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -12519,6 +12592,81 @@ Read-only.
         - `[PercentageComplete <Int32?>]`: A value between 0 and 100 that indicates the progress of the operation.
         - `[ResourceId <String>]`: A unique identifier for the result.
         - `[Type <String>]`: Type of the operation.
+      - `[PageTemplates <IMicrosoftGraphPageTemplate- `[]`>]`: The collection of page templates on this site.
+        - `[PageLayout <String>]`: pageLayoutType
+        - `[PublishingState <IMicrosoftGraphPublicationFacet>]`: publicationFacet
+        - `[Title <String>]`: Title of the sitePage.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+        - `[Description <String>]`: The description of the item.
+        - `[ETag <String>]`: ETag for the item.
+Read-only.
+        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
+Read-only.
+        - `[Name <String>]`: The name of the item.
+Read-write.
+        - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
+        - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
+Read-only.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[CanvasLayout <IMicrosoftGraphCanvasLayout>]`: canvasLayout
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[HorizontalSections <IMicrosoftGraphHorizontalSection- `[]`>]`: Collection of horizontal sections on the SharePoint page.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Columns <IMicrosoftGraphHorizontalSectionColumn- `[]`>]`: The set of vertical columns in this section.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The collection of WebParts in this column.
+                - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Width <Int32?>]`: Width of the column.
+A horizontal section is divided into 12 grids.
+A column should have a value of 1-12 to represent its range spans.
+For example, there can be two columns both have a width of 6 in a section.
+            - `[Emphasis <String>]`: sectionEmphasisType
+            - `[Layout <String>]`: horizontalSectionLayoutType
+          - `[VerticalSection <IMicrosoftGraphVerticalSection>]`: verticalSection
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Emphasis <String>]`: sectionEmphasisType
+            - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The set of web parts in this section.
+        - `[TitleArea <IMicrosoftGraphTitleArea>]`: titleArea
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AlternativeText <String>]`: Alternative text on the title area.
+          - `[EnableGradientEffect <Boolean?>]`: Indicates whether the title area has a gradient effect enabled.
+          - `[ImageWebUrl <String>]`: URL of the image in the title area.
+          - `[Layout <String>]`: titleAreaLayoutType
+          - `[ServerProcessedContent <IMicrosoftGraphServerProcessedContent>]`: serverProcessedContent
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[ComponentDependencies <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are component ids.
+SharePoint servers might decide to use this hint to preload the script for corresponding components for performance boost.
+              - `[Key <String>]`: Key of the meta data.
+              - `[Value <String>]`: Value of the meta data.
+            - `[CustomMetadata <IMicrosoftGraphMetaDataKeyValuePair- `[]`>]`: A key-value map where keys are string identifier and values are object of custom key-value pair.
+              - `[Key <String>]`: Key of the metadata.
+              - `[Value <IMicrosoftGraphJson>]`: Json
+            - `[HtmlStrings <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are rich text with HTML format.
+SharePoint servers treat the values as HTML content and run services like safety checks, search index and link fixup on them.
+            - `[ImageSources <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are image sources.
+SharePoint servers treat the values as image sources and run services like search index and link fixup on them.
+            - `[Links <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are links.
+SharePoint servers treat the values as links and run services like link fixup on them.
+            - `[SearchablePlainTexts <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are strings that should be search indexed.
+          - `[ShowAuthor <Boolean?>]`: Indicates whether the author should be shown in title area.
+          - `[ShowPublishedDate <Boolean?>]`: Indicates whether the published date should be shown in title area.
+          - `[ShowTextBlockAboveTitle <Boolean?>]`: Indicates whether the text block above title should be shown in title area.
+          - `[TextAboveTitle <String>]`: The text above title line.
+          - `[TextAlignment <String>]`: titleAreaTextAlignmentType
+        - `[WebParts <IMicrosoftGraphWebPart- `[]`>]`: The collection of web parts on the SharePoint page.
       - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: The collection of pages in the baseSitePages list on this site.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -13052,8 +13200,13 @@ Supports $filter (eq, ne, not, in, and eq on null values).
       - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
       - `[OrganizationId <String>]`: 
       - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group who can be users or service principals.
+Limited to 100 owners.
 Nullable.
-If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. 
+If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner.
+A non-admin user can't explicitly add themselves to this collection when they're creating the group.
+For more information, see the related known issue.
+For security groups, the admin user isn't automatically added to this collection.
+For more information, see the related known issue.
 Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
       - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: The permissions granted for a group to a specific application.
@@ -13198,6 +13351,8 @@ An archived task is read-only.
 If true, it shows the task.
               - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+              - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+              - `[LastModifiedDateTime <DateTime?>]`: 
               - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
               - `[PercentComplete <Int32?>]`: The percentage of task completion.
@@ -14731,6 +14886,29 @@ Read-only.
         - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: 
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
+          - `[OwnerDisplayName <String>]`: 
+          - `[Text <String>]`: 
+          - `[Title <String>]`: 
+        - `[CallId <String>]`: 
+        - `[ContentCorrelationId <String>]`: 
+        - `[CreatedDateTime <DateTime?>]`: 
+        - `[EndDateTime <DateTime?>]`: 
+        - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
+          - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
+            - `[Text <String>]`: 
+            - `[Title <String>]`: 
+          - `[Text <String>]`: 
+          - `[Title <String>]`: 
+        - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
+            - `[EventDateTime <DateTime?>]`: 
+            - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
+            - `[TranscriptUtterance <String>]`: 
       - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
       - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.
@@ -16677,8 +16855,8 @@ Read-only.
       - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-        - `[Key <String>]`: Key.
-        - `[Value <String>]`: Value.
+        - `[Key <String>]`: Contains the name of the field that a value is associated with.
+        - `[Value <String>]`: Contains the corresponding value for the specified key.
       - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -16851,8 +17029,8 @@ Read-only.
         - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-          - `[Key <String>]`: Key.
-          - `[Value <String>]`: Value.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -17008,8 +17186,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
     - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-    - `[ContentInfo <IAny>]`: Optional.
-A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
+    - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
     - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -17059,8 +17237,7 @@ For example - a high contrast image
       - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-      - `[Content <IAny>]`: Optional.
-Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
+      - `[Content <IMicrosoftGraphJson>]`: Json
       - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
       - `[DisplayText <String>]`: Required.
@@ -17198,8 +17375,8 @@ This lets services like Microsoft 365 call the application in the context of a d
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-        - `[Key <String>]`: Key.
-        - `[Value <String>]`: Value.
+        - `[Key <String>]`: Contains the name of the field that a value is associated with.
+        - `[Value <String>]`: Contains the corresponding value for the specified key.
       - `[Type <String>]`: The unique name for the functionality exposed by the app.
     - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -17225,7 +17402,7 @@ Always null when the object hasn't been deleted.
       - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
       - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+        - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
           - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -18729,7 +18906,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
       - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, channel, and tag.
+Supported entities are: user, bot, team, channel, chat, and tag.
         - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention.
@@ -19968,9 +20145,7 @@ Read-only.
             - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-            - `[Value <IAny>]`: The formula that the name is defined to refer to.
-For example, =Sheet14!$B$2:$H$12 and =4.75.
-Read-only.
+            - `[Value <IMicrosoftGraphJson>]`: Json
             - `[Visible <Boolean?>]`: Indicates whether the object is visible.
             - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -20021,19 +20196,11 @@ Read-only.
 Read-only.
                         - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                       - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                    - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
-Can be set to a numeric value or an empty string. 
-The returned value is always a number.
-                    - `[Maximum <IAny>]`: Represents the maximum value on the value axis. 
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
-                    - `[Minimum <IAny>]`: Represents the minimum value on the value axis.
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
+                    - `[MajorUnit <IMicrosoftGraphJson>]`: Json
+                    - `[Maximum <IMicrosoftGraphJson>]`: Json
+                    - `[Minimum <IMicrosoftGraphJson>]`: Json
                     - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                    - `[MinorUnit <IAny>]`: Represents the interval between two minor tick marks.
-'Can be set to a numeric value or an empty string (for automatic axis values).
-The returned value is always a number.
+                    - `[MinorUnit <IMicrosoftGraphJson>]`: Json
                     - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
                       - `[Id <String>]`: The unique identifier for an entity.
@@ -20112,8 +20279,7 @@ Read-only.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                       - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                    - `[Value <IAny>]`: The value of a chart point.
-Read-only.
+                    - `[Value <IMicrosoftGraphJson>]`: Json
                 - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
@@ -20183,14 +20349,12 @@ Read-only.
                         - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                       - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                      - `[Values <IAny>]`: The values that appear in the cell.
+                      - `[Values <IMicrosoftGraphJson>]`: Json
                   - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                   - `[Name <String>]`: The name of the table column.
-                  - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Cell that contain an error will return the error string.
+                  - `[Values <IMicrosoftGraphJson>]`: Json
                 - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                 - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                 - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -20205,9 +20369,7 @@ Read-only.
                   - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                  - `[Values <IAny>]`: The raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Any cell that contain an error will return the error string.
+                  - `[Values <IMicrosoftGraphJson>]`: Json
                 - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                 - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                 - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -20928,6 +21090,81 @@ Nullable.
 Read-only.
 Nullable.
     - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long running operations for the site.
+    - `[PageTemplates <IMicrosoftGraphPageTemplate- `[]`>]`: The collection of page templates on this site.
+      - `[PageLayout <String>]`: pageLayoutType
+      - `[PublishingState <IMicrosoftGraphPublicationFacet>]`: publicationFacet
+      - `[Title <String>]`: Title of the sitePage.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+      - `[Description <String>]`: The description of the item.
+      - `[ETag <String>]`: ETag for the item.
+Read-only.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
+Read-only.
+      - `[Name <String>]`: The name of the item.
+Read-write.
+      - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
+      - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
+Read-only.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CanvasLayout <IMicrosoftGraphCanvasLayout>]`: canvasLayout
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[HorizontalSections <IMicrosoftGraphHorizontalSection- `[]`>]`: Collection of horizontal sections on the SharePoint page.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Columns <IMicrosoftGraphHorizontalSectionColumn- `[]`>]`: The set of vertical columns in this section.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The collection of WebParts in this column.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Width <Int32?>]`: Width of the column.
+A horizontal section is divided into 12 grids.
+A column should have a value of 1-12 to represent its range spans.
+For example, there can be two columns both have a width of 6 in a section.
+          - `[Emphasis <String>]`: sectionEmphasisType
+          - `[Layout <String>]`: horizontalSectionLayoutType
+        - `[VerticalSection <IMicrosoftGraphVerticalSection>]`: verticalSection
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Emphasis <String>]`: sectionEmphasisType
+          - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The set of web parts in this section.
+      - `[TitleArea <IMicrosoftGraphTitleArea>]`: titleArea
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AlternativeText <String>]`: Alternative text on the title area.
+        - `[EnableGradientEffect <Boolean?>]`: Indicates whether the title area has a gradient effect enabled.
+        - `[ImageWebUrl <String>]`: URL of the image in the title area.
+        - `[Layout <String>]`: titleAreaLayoutType
+        - `[ServerProcessedContent <IMicrosoftGraphServerProcessedContent>]`: serverProcessedContent
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ComponentDependencies <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are component ids.
+SharePoint servers might decide to use this hint to preload the script for corresponding components for performance boost.
+            - `[Key <String>]`: Key of the meta data.
+            - `[Value <String>]`: Value of the meta data.
+          - `[CustomMetadata <IMicrosoftGraphMetaDataKeyValuePair- `[]`>]`: A key-value map where keys are string identifier and values are object of custom key-value pair.
+            - `[Key <String>]`: Key of the metadata.
+            - `[Value <IMicrosoftGraphJson>]`: Json
+          - `[HtmlStrings <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are rich text with HTML format.
+SharePoint servers treat the values as HTML content and run services like safety checks, search index and link fixup on them.
+          - `[ImageSources <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are image sources.
+SharePoint servers treat the values as image sources and run services like search index and link fixup on them.
+          - `[Links <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are links.
+SharePoint servers treat the values as links and run services like link fixup on them.
+          - `[SearchablePlainTexts <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are strings that should be search indexed.
+        - `[ShowAuthor <Boolean?>]`: Indicates whether the author should be shown in title area.
+        - `[ShowPublishedDate <Boolean?>]`: Indicates whether the published date should be shown in title area.
+        - `[ShowTextBlockAboveTitle <Boolean?>]`: Indicates whether the text block above title should be shown in title area.
+        - `[TextAboveTitle <String>]`: The text above title line.
+        - `[TextAlignment <String>]`: titleAreaTextAlignmentType
+      - `[WebParts <IMicrosoftGraphWebPart- `[]`>]`: The collection of web parts on the SharePoint page.
     - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: The collection of pages in the baseSitePages list on this site.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -21461,8 +21698,13 @@ Supports $filter (eq, ne, not, in, and eq on null values).
     - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
     - `[OrganizationId <String>]`: 
     - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group who can be users or service principals.
+Limited to 100 owners.
 Nullable.
-If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. 
+If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner.
+A non-admin user can't explicitly add themselves to this collection when they're creating the group.
+For more information, see the related known issue.
+For security groups, the admin user isn't automatically added to this collection.
+For more information, see the related known issue.
 Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
     - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: The permissions granted for a group to a specific application.
@@ -21607,6 +21849,8 @@ An archived task is read-only.
 If true, it shows the task.
             - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+            - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+            - `[LastModifiedDateTime <DateTime?>]`: 
             - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
             - `[PercentComplete <Int32?>]`: The percentage of task completion.
@@ -23140,6 +23384,29 @@ Read-only.
       - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
+        - `[OwnerDisplayName <String>]`: 
+        - `[Text <String>]`: 
+        - `[Title <String>]`: 
+      - `[CallId <String>]`: 
+      - `[ContentCorrelationId <String>]`: 
+      - `[CreatedDateTime <DateTime?>]`: 
+      - `[EndDateTime <DateTime?>]`: 
+      - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
+        - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
+          - `[Text <String>]`: 
+          - `[Title <String>]`: 
+        - `[Text <String>]`: 
+        - `[Title <String>]`: 
+      - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
+          - `[EventDateTime <DateTime?>]`: 
+          - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[TranscriptUtterance <String>]`: 
     - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
     - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.
@@ -24990,8 +25257,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
       - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-      - `[ContentInfo <IAny>]`: Optional.
-A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
+      - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
       - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -25041,8 +25308,7 @@ For example - a high contrast image
         - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-        - `[Content <IAny>]`: Optional.
-Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
+        - `[Content <IMicrosoftGraphJson>]`: Json
         - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         - `[DisplayText <String>]`: Required.
@@ -25170,8 +25436,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Key.
-          - `[Value <String>]`: Value.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -25197,7 +25463,7 @@ Always null when the object hasn't been deleted.
         - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
         - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+          - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
             - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -26701,7 +26967,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
         - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, channel, and tag.
+Supported entities are: user, bot, team, channel, chat, and tag.
           - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention.
@@ -27988,9 +28254,7 @@ Read-only.
                   - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-                  - `[Value <IAny>]`: The formula that the name is defined to refer to.
-For example, =Sheet14!$B$2:$H$12 and =4.75.
-Read-only.
+                  - `[Value <IMicrosoftGraphJson>]`: Json
                   - `[Visible <Boolean?>]`: Indicates whether the object is visible.
                   - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -28041,19 +28305,11 @@ Read-only.
 Read-only.
                               - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                             - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                          - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
-Can be set to a numeric value or an empty string. 
-The returned value is always a number.
-                          - `[Maximum <IAny>]`: Represents the maximum value on the value axis. 
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
-                          - `[Minimum <IAny>]`: Represents the minimum value on the value axis.
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
+                          - `[MajorUnit <IMicrosoftGraphJson>]`: Json
+                          - `[Maximum <IMicrosoftGraphJson>]`: Json
+                          - `[Minimum <IMicrosoftGraphJson>]`: Json
                           - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                          - `[MinorUnit <IAny>]`: Represents the interval between two minor tick marks.
-'Can be set to a numeric value or an empty string (for automatic axis values).
-The returned value is always a number.
+                          - `[MinorUnit <IMicrosoftGraphJson>]`: Json
                           - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
                             - `[Id <String>]`: The unique identifier for an entity.
@@ -28132,8 +28388,7 @@ Read-only.
                             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                             - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                          - `[Value <IAny>]`: The value of a chart point.
-Read-only.
+                          - `[Value <IMicrosoftGraphJson>]`: Json
                       - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
@@ -28203,14 +28458,12 @@ Read-only.
                               - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                             - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                            - `[Values <IAny>]`: The values that appear in the cell.
+                            - `[Values <IMicrosoftGraphJson>]`: Json
                         - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                         - `[Name <String>]`: The name of the table column.
-                        - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Cell that contain an error will return the error string.
+                        - `[Values <IMicrosoftGraphJson>]`: Json
                       - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                       - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                       - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -28225,9 +28478,7 @@ Read-only.
                         - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                        - `[Values <IAny>]`: The raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Any cell that contain an error will return the error string.
+                        - `[Values <IMicrosoftGraphJson>]`: Json
                       - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                       - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                       - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -28843,6 +29094,81 @@ Nullable.
 Read-only.
 Nullable.
       - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long running operations for the site.
+      - `[PageTemplates <IMicrosoftGraphPageTemplate- `[]`>]`: The collection of page templates on this site.
+        - `[PageLayout <String>]`: pageLayoutType
+        - `[PublishingState <IMicrosoftGraphPublicationFacet>]`: publicationFacet
+        - `[Title <String>]`: Title of the sitePage.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+        - `[Description <String>]`: The description of the item.
+        - `[ETag <String>]`: ETag for the item.
+Read-only.
+        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
+Read-only.
+        - `[Name <String>]`: The name of the item.
+Read-write.
+        - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
+        - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
+Read-only.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[CanvasLayout <IMicrosoftGraphCanvasLayout>]`: canvasLayout
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[HorizontalSections <IMicrosoftGraphHorizontalSection- `[]`>]`: Collection of horizontal sections on the SharePoint page.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Columns <IMicrosoftGraphHorizontalSectionColumn- `[]`>]`: The set of vertical columns in this section.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The collection of WebParts in this column.
+                - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Width <Int32?>]`: Width of the column.
+A horizontal section is divided into 12 grids.
+A column should have a value of 1-12 to represent its range spans.
+For example, there can be two columns both have a width of 6 in a section.
+            - `[Emphasis <String>]`: sectionEmphasisType
+            - `[Layout <String>]`: horizontalSectionLayoutType
+          - `[VerticalSection <IMicrosoftGraphVerticalSection>]`: verticalSection
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Emphasis <String>]`: sectionEmphasisType
+            - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The set of web parts in this section.
+        - `[TitleArea <IMicrosoftGraphTitleArea>]`: titleArea
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AlternativeText <String>]`: Alternative text on the title area.
+          - `[EnableGradientEffect <Boolean?>]`: Indicates whether the title area has a gradient effect enabled.
+          - `[ImageWebUrl <String>]`: URL of the image in the title area.
+          - `[Layout <String>]`: titleAreaLayoutType
+          - `[ServerProcessedContent <IMicrosoftGraphServerProcessedContent>]`: serverProcessedContent
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[ComponentDependencies <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are component ids.
+SharePoint servers might decide to use this hint to preload the script for corresponding components for performance boost.
+              - `[Key <String>]`: Key of the meta data.
+              - `[Value <String>]`: Value of the meta data.
+            - `[CustomMetadata <IMicrosoftGraphMetaDataKeyValuePair- `[]`>]`: A key-value map where keys are string identifier and values are object of custom key-value pair.
+              - `[Key <String>]`: Key of the metadata.
+              - `[Value <IMicrosoftGraphJson>]`: Json
+            - `[HtmlStrings <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are rich text with HTML format.
+SharePoint servers treat the values as HTML content and run services like safety checks, search index and link fixup on them.
+            - `[ImageSources <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are image sources.
+SharePoint servers treat the values as image sources and run services like search index and link fixup on them.
+            - `[Links <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are links.
+SharePoint servers treat the values as links and run services like link fixup on them.
+            - `[SearchablePlainTexts <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are strings that should be search indexed.
+          - `[ShowAuthor <Boolean?>]`: Indicates whether the author should be shown in title area.
+          - `[ShowPublishedDate <Boolean?>]`: Indicates whether the published date should be shown in title area.
+          - `[ShowTextBlockAboveTitle <Boolean?>]`: Indicates whether the text block above title should be shown in title area.
+          - `[TextAboveTitle <String>]`: The text above title line.
+          - `[TextAlignment <String>]`: titleAreaTextAlignmentType
+        - `[WebParts <IMicrosoftGraphWebPart- `[]`>]`: The collection of web parts on the SharePoint page.
       - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: The collection of pages in the baseSitePages list on this site.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -29376,8 +29702,13 @@ Supports $filter (eq, ne, not, in, and eq on null values).
       - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
       - `[OrganizationId <String>]`: 
       - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group who can be users or service principals.
+Limited to 100 owners.
 Nullable.
-If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. 
+If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner.
+A non-admin user can't explicitly add themselves to this collection when they're creating the group.
+For more information, see the related known issue.
+For security groups, the admin user isn't automatically added to this collection.
+For more information, see the related known issue.
 Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
       - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: The permissions granted for a group to a specific application.
@@ -29522,6 +29853,8 @@ An archived task is read-only.
 If true, it shows the task.
               - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+              - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+              - `[LastModifiedDateTime <DateTime?>]`: 
               - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
               - `[PercentComplete <Int32?>]`: The percentage of task completion.
@@ -31055,6 +31388,29 @@ Read-only.
         - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: 
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
+          - `[OwnerDisplayName <String>]`: 
+          - `[Text <String>]`: 
+          - `[Title <String>]`: 
+        - `[CallId <String>]`: 
+        - `[ContentCorrelationId <String>]`: 
+        - `[CreatedDateTime <DateTime?>]`: 
+        - `[EndDateTime <DateTime?>]`: 
+        - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
+          - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
+            - `[Text <String>]`: 
+            - `[Title <String>]`: 
+          - `[Text <String>]`: 
+          - `[Title <String>]`: 
+        - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
+            - `[EventDateTime <DateTime?>]`: 
+            - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
+            - `[TranscriptUtterance <String>]`: 
       - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
       - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.
@@ -32947,6 +33303,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[PageTemplateId <String>]`: The unique identifier of pageTemplate
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem
@@ -33013,8 +33370,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
       - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-      - `[ContentInfo <IAny>]`: Optional.
-A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
+      - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
       - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -33064,8 +33421,7 @@ For example - a high contrast image
         - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-        - `[Content <IAny>]`: Optional.
-Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
+        - `[Content <IMicrosoftGraphJson>]`: Json
         - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         - `[DisplayText <String>]`: Required.
@@ -33193,8 +33549,8 @@ This lets services like Microsoft 365 call the application in the context of a d
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-          - `[Key <String>]`: Key.
-          - `[Value <String>]`: Value.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Type <String>]`: The unique name for the functionality exposed by the app.
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -33220,7 +33576,7 @@ Always null when the object hasn't been deleted.
         - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
         - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+          - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
             - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -34724,7 +35080,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
         - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, channel, and tag.
+Supported entities are: user, bot, team, channel, chat, and tag.
           - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention.
@@ -35903,9 +36259,7 @@ Read-only.
               - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-              - `[Value <IAny>]`: The formula that the name is defined to refer to.
-For example, =Sheet14!$B$2:$H$12 and =4.75.
-Read-only.
+              - `[Value <IMicrosoftGraphJson>]`: Json
               - `[Visible <Boolean?>]`: Indicates whether the object is visible.
               - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -35956,19 +36310,11 @@ Read-only.
 Read-only.
                           - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                         - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                      - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
-Can be set to a numeric value or an empty string. 
-The returned value is always a number.
-                      - `[Maximum <IAny>]`: Represents the maximum value on the value axis. 
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
-                      - `[Minimum <IAny>]`: Represents the minimum value on the value axis.
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
+                      - `[MajorUnit <IMicrosoftGraphJson>]`: Json
+                      - `[Maximum <IMicrosoftGraphJson>]`: Json
+                      - `[Minimum <IMicrosoftGraphJson>]`: Json
                       - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                      - `[MinorUnit <IAny>]`: Represents the interval between two minor tick marks.
-'Can be set to a numeric value or an empty string (for automatic axis values).
-The returned value is always a number.
+                      - `[MinorUnit <IMicrosoftGraphJson>]`: Json
                       - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
                         - `[Id <String>]`: The unique identifier for an entity.
@@ -36047,8 +36393,7 @@ Read-only.
                         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                         - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                      - `[Value <IAny>]`: The value of a chart point.
-Read-only.
+                      - `[Value <IMicrosoftGraphJson>]`: Json
                   - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[Id <String>]`: The unique identifier for an entity.
@@ -36118,14 +36463,12 @@ Read-only.
                           - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                         - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                        - `[Values <IAny>]`: The values that appear in the cell.
+                        - `[Values <IMicrosoftGraphJson>]`: Json
                     - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                     - `[Name <String>]`: The name of the table column.
-                    - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Cell that contain an error will return the error string.
+                    - `[Values <IMicrosoftGraphJson>]`: Json
                   - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                   - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                   - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -36140,9 +36483,7 @@ Read-only.
                     - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                    - `[Values <IAny>]`: The raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Any cell that contain an error will return the error string.
+                    - `[Values <IMicrosoftGraphJson>]`: Json
                   - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                   - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                   - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -36866,6 +37207,81 @@ Nullable.
 Read-only.
 Nullable.
       - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long running operations for the site.
+      - `[PageTemplates <IMicrosoftGraphPageTemplate- `[]`>]`: The collection of page templates on this site.
+        - `[PageLayout <String>]`: pageLayoutType
+        - `[PublishingState <IMicrosoftGraphPublicationFacet>]`: publicationFacet
+        - `[Title <String>]`: Title of the sitePage.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+        - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+        - `[Description <String>]`: The description of the item.
+        - `[ETag <String>]`: ETag for the item.
+Read-only.
+        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+        - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
+Read-only.
+        - `[Name <String>]`: The name of the item.
+Read-write.
+        - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
+        - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
+Read-only.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[CanvasLayout <IMicrosoftGraphCanvasLayout>]`: canvasLayout
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[HorizontalSections <IMicrosoftGraphHorizontalSection- `[]`>]`: Collection of horizontal sections on the SharePoint page.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Columns <IMicrosoftGraphHorizontalSectionColumn- `[]`>]`: The set of vertical columns in this section.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The collection of WebParts in this column.
+                - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Width <Int32?>]`: Width of the column.
+A horizontal section is divided into 12 grids.
+A column should have a value of 1-12 to represent its range spans.
+For example, there can be two columns both have a width of 6 in a section.
+            - `[Emphasis <String>]`: sectionEmphasisType
+            - `[Layout <String>]`: horizontalSectionLayoutType
+          - `[VerticalSection <IMicrosoftGraphVerticalSection>]`: verticalSection
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Emphasis <String>]`: sectionEmphasisType
+            - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The set of web parts in this section.
+        - `[TitleArea <IMicrosoftGraphTitleArea>]`: titleArea
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AlternativeText <String>]`: Alternative text on the title area.
+          - `[EnableGradientEffect <Boolean?>]`: Indicates whether the title area has a gradient effect enabled.
+          - `[ImageWebUrl <String>]`: URL of the image in the title area.
+          - `[Layout <String>]`: titleAreaLayoutType
+          - `[ServerProcessedContent <IMicrosoftGraphServerProcessedContent>]`: serverProcessedContent
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[ComponentDependencies <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are component ids.
+SharePoint servers might decide to use this hint to preload the script for corresponding components for performance boost.
+              - `[Key <String>]`: Key of the meta data.
+              - `[Value <String>]`: Value of the meta data.
+            - `[CustomMetadata <IMicrosoftGraphMetaDataKeyValuePair- `[]`>]`: A key-value map where keys are string identifier and values are object of custom key-value pair.
+              - `[Key <String>]`: Key of the metadata.
+              - `[Value <IMicrosoftGraphJson>]`: Json
+            - `[HtmlStrings <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are rich text with HTML format.
+SharePoint servers treat the values as HTML content and run services like safety checks, search index and link fixup on them.
+            - `[ImageSources <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are image sources.
+SharePoint servers treat the values as image sources and run services like search index and link fixup on them.
+            - `[Links <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are links.
+SharePoint servers treat the values as links and run services like link fixup on them.
+            - `[SearchablePlainTexts <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are strings that should be search indexed.
+          - `[ShowAuthor <Boolean?>]`: Indicates whether the author should be shown in title area.
+          - `[ShowPublishedDate <Boolean?>]`: Indicates whether the published date should be shown in title area.
+          - `[ShowTextBlockAboveTitle <Boolean?>]`: Indicates whether the text block above title should be shown in title area.
+          - `[TextAboveTitle <String>]`: The text above title line.
+          - `[TextAlignment <String>]`: titleAreaTextAlignmentType
+        - `[WebParts <IMicrosoftGraphWebPart- `[]`>]`: The collection of web parts on the SharePoint page.
       - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: The collection of pages in the baseSitePages list on this site.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -37399,8 +37815,13 @@ Supports $filter (eq, ne, not, in, and eq on null values).
       - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
       - `[OrganizationId <String>]`: 
       - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group who can be users or service principals.
+Limited to 100 owners.
 Nullable.
-If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. 
+If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner.
+A non-admin user can't explicitly add themselves to this collection when they're creating the group.
+For more information, see the related known issue.
+For security groups, the admin user isn't automatically added to this collection.
+For more information, see the related known issue.
 Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
       - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: The permissions granted for a group to a specific application.
@@ -37545,6 +37966,8 @@ An archived task is read-only.
 If true, it shows the task.
               - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+              - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+              - `[LastModifiedDateTime <DateTime?>]`: 
               - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
               - `[PercentComplete <Int32?>]`: The percentage of task completion.
@@ -39078,6 +39501,29 @@ Read-only.
         - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+      - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: 
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
+          - `[OwnerDisplayName <String>]`: 
+          - `[Text <String>]`: 
+          - `[Title <String>]`: 
+        - `[CallId <String>]`: 
+        - `[ContentCorrelationId <String>]`: 
+        - `[CreatedDateTime <DateTime?>]`: 
+        - `[EndDateTime <DateTime?>]`: 
+        - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
+          - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
+            - `[Text <String>]`: 
+            - `[Title <String>]`: 
+          - `[Text <String>]`: 
+          - `[Title <String>]`: 
+        - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
+            - `[EventDateTime <DateTime?>]`: 
+            - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
+            - `[TranscriptUtterance <String>]`: 
       - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
       - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.
@@ -40981,8 +41427,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
     - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-    - `[ContentInfo <IAny>]`: Optional.
-A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
+    - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
     - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -41032,8 +41478,7 @@ For example - a high contrast image
       - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-      - `[Content <IAny>]`: Optional.
-Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
+      - `[Content <IMicrosoftGraphJson>]`: Json
       - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
       - `[DisplayText <String>]`: Required.
@@ -41171,8 +41616,8 @@ This lets services like Microsoft 365 call the application in the context of a d
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-        - `[Key <String>]`: Key.
-        - `[Value <String>]`: Value.
+        - `[Key <String>]`: Contains the name of the field that a value is associated with.
+        - `[Value <String>]`: Contains the corresponding value for the specified key.
       - `[Type <String>]`: The unique name for the functionality exposed by the app.
     - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -41198,7 +41643,7 @@ Always null when the object hasn't been deleted.
       - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
       - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+        - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
           - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -42702,7 +43147,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
       - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, channel, and tag.
+Supported entities are: user, bot, team, channel, chat, and tag.
         - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention.
@@ -43941,9 +44386,7 @@ Read-only.
             - `[Type <String>]`: The type of reference is associated with the name.
 Possible values are: String, Integer, Double, Boolean, Range.
 Read-only.
-            - `[Value <IAny>]`: The formula that the name is defined to refer to.
-For example, =Sheet14!$B$2:$H$12 and =4.75.
-Read-only.
+            - `[Value <IMicrosoftGraphJson>]`: Json
             - `[Visible <Boolean?>]`: Indicates whether the object is visible.
             - `[Worksheet <IMicrosoftGraphWorkbookWorksheet>]`: workbookWorksheet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -43994,19 +44437,11 @@ Read-only.
 Read-only.
                         - `[Line <IMicrosoftGraphWorkbookChartLineFormat>]`: workbookChartLineFormat
                       - `[Visible <Boolean?>]`: Indicates whether the axis gridlines are visible.
-                    - `[MajorUnit <IAny>]`: Represents the interval between two major tick marks.
-Can be set to a numeric value or an empty string. 
-The returned value is always a number.
-                    - `[Maximum <IAny>]`: Represents the maximum value on the value axis. 
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
-                    - `[Minimum <IAny>]`: Represents the minimum value on the value axis.
-Can be set to a numeric value or an empty string (for automatic axis values). 
-The returned value is always a number.
+                    - `[MajorUnit <IMicrosoftGraphJson>]`: Json
+                    - `[Maximum <IMicrosoftGraphJson>]`: Json
+                    - `[Minimum <IMicrosoftGraphJson>]`: Json
                     - `[MinorGridlines <IMicrosoftGraphWorkbookChartGridlines>]`: workbookChartGridlines
-                    - `[MinorUnit <IAny>]`: Represents the interval between two minor tick marks.
-'Can be set to a numeric value or an empty string (for automatic axis values).
-The returned value is always a number.
+                    - `[MinorUnit <IMicrosoftGraphJson>]`: Json
                     - `[Title <IMicrosoftGraphWorkbookChartAxisTitle>]`: workbookChartAxisTitle
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
                       - `[Id <String>]`: The unique identifier for an entity.
@@ -44085,8 +44520,7 @@ Read-only.
                       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
                       - `[Fill <IMicrosoftGraphWorkbookChartFill>]`: workbookChartFill
-                    - `[Value <IAny>]`: The value of a chart point.
-Read-only.
+                    - `[Value <IMicrosoftGraphJson>]`: Json
                 - `[Title <IMicrosoftGraphWorkbookChartTitle>]`: workbookChartTitle
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique identifier for an entity.
@@ -44156,14 +44590,12 @@ Read-only.
                         - `[Set <String>]`: The set that the icon is part of.
 Possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
                       - `[Operator <String>]`: An operator in a cell; for example, =, >, <, <=, or <>.
-                      - `[Values <IAny>]`: The values that appear in the cell.
+                      - `[Values <IMicrosoftGraphJson>]`: Json
                   - `[Index <Int32?>]`: The index of the column within the columns collection of the table.
 Zero-indexed.
 Read-only.
                   - `[Name <String>]`: The name of the table column.
-                  - `[Values <IAny>]`: Represents the raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Cell that contain an error will return the error string.
+                  - `[Values <IMicrosoftGraphJson>]`: Json
                 - `[HighlightFirstColumn <Boolean?>]`: Indicates whether the first column contains special formatting.
                 - `[HighlightLastColumn <Boolean?>]`: Indicates whether the last column contains special formatting.
                 - `[LegacyId <String>]`: A legacy identifier used in older Excel clients.
@@ -44178,9 +44610,7 @@ Read-only.
                   - `[Index <Int32?>]`: The index of the row within the rows collection of the table.
 Zero-based.
 Read-only.
-                  - `[Values <IAny>]`: The raw values of the specified range.
-The data returned could be of type string, number, or a Boolean.
-Any cell that contain an error will return the error string.
+                  - `[Values <IMicrosoftGraphJson>]`: Json
                 - `[ShowBandedColumns <Boolean?>]`: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
                 - `[ShowBandedRows <Boolean?>]`: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
                 - `[ShowFilterButton <Boolean?>]`: Indicates whether the filter buttons are visible at the top of each column header.
@@ -44901,6 +45331,81 @@ Nullable.
 Read-only.
 Nullable.
     - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long running operations for the site.
+    - `[PageTemplates <IMicrosoftGraphPageTemplate- `[]`>]`: The collection of page templates on this site.
+      - `[PageLayout <String>]`: pageLayoutType
+      - `[PublishingState <IMicrosoftGraphPublicationFacet>]`: publicationFacet
+      - `[Title <String>]`: Title of the sitePage.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+      - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+      - `[Description <String>]`: The description of the item.
+      - `[ETag <String>]`: ETag for the item.
+Read-only.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+      - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
+Read-only.
+      - `[Name <String>]`: The name of the item.
+Read-write.
+      - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
+      - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
+Read-only.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CanvasLayout <IMicrosoftGraphCanvasLayout>]`: canvasLayout
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[HorizontalSections <IMicrosoftGraphHorizontalSection- `[]`>]`: Collection of horizontal sections on the SharePoint page.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Columns <IMicrosoftGraphHorizontalSectionColumn- `[]`>]`: The set of vertical columns in this section.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The collection of WebParts in this column.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Width <Int32?>]`: Width of the column.
+A horizontal section is divided into 12 grids.
+A column should have a value of 1-12 to represent its range spans.
+For example, there can be two columns both have a width of 6 in a section.
+          - `[Emphasis <String>]`: sectionEmphasisType
+          - `[Layout <String>]`: horizontalSectionLayoutType
+        - `[VerticalSection <IMicrosoftGraphVerticalSection>]`: verticalSection
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Emphasis <String>]`: sectionEmphasisType
+          - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The set of web parts in this section.
+      - `[TitleArea <IMicrosoftGraphTitleArea>]`: titleArea
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AlternativeText <String>]`: Alternative text on the title area.
+        - `[EnableGradientEffect <Boolean?>]`: Indicates whether the title area has a gradient effect enabled.
+        - `[ImageWebUrl <String>]`: URL of the image in the title area.
+        - `[Layout <String>]`: titleAreaLayoutType
+        - `[ServerProcessedContent <IMicrosoftGraphServerProcessedContent>]`: serverProcessedContent
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ComponentDependencies <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are component ids.
+SharePoint servers might decide to use this hint to preload the script for corresponding components for performance boost.
+            - `[Key <String>]`: Key of the meta data.
+            - `[Value <String>]`: Value of the meta data.
+          - `[CustomMetadata <IMicrosoftGraphMetaDataKeyValuePair- `[]`>]`: A key-value map where keys are string identifier and values are object of custom key-value pair.
+            - `[Key <String>]`: Key of the metadata.
+            - `[Value <IMicrosoftGraphJson>]`: Json
+          - `[HtmlStrings <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are rich text with HTML format.
+SharePoint servers treat the values as HTML content and run services like safety checks, search index and link fixup on them.
+          - `[ImageSources <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are image sources.
+SharePoint servers treat the values as image sources and run services like search index and link fixup on them.
+          - `[Links <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are links.
+SharePoint servers treat the values as links and run services like link fixup on them.
+          - `[SearchablePlainTexts <IMicrosoftGraphMetaDataKeyStringPair- `[]`>]`: A key-value map where keys are string identifiers and values are strings that should be search indexed.
+        - `[ShowAuthor <Boolean?>]`: Indicates whether the author should be shown in title area.
+        - `[ShowPublishedDate <Boolean?>]`: Indicates whether the published date should be shown in title area.
+        - `[ShowTextBlockAboveTitle <Boolean?>]`: Indicates whether the text block above title should be shown in title area.
+        - `[TextAboveTitle <String>]`: The text above title line.
+        - `[TextAlignment <String>]`: titleAreaTextAlignmentType
+      - `[WebParts <IMicrosoftGraphWebPart- `[]`>]`: The collection of web parts on the SharePoint page.
     - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: The collection of pages in the baseSitePages list on this site.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -45434,8 +45939,13 @@ Supports $filter (eq, ne, not, in, and eq on null values).
     - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
     - `[OrganizationId <String>]`: 
     - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: The owners of the group who can be users or service principals.
+Limited to 100 owners.
 Nullable.
-If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. 
+If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner.
+A non-admin user can't explicitly add themselves to this collection when they're creating the group.
+For more information, see the related known issue.
+For security groups, the admin user isn't automatically added to this collection.
+For more information, see the related known issue.
 Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
     - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant- `[]`>]`: The permissions granted for a group to a specific application.
@@ -45580,6 +46090,8 @@ An archived task is read-only.
 If true, it shows the task.
             - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+            - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+            - `[LastModifiedDateTime <DateTime?>]`: 
             - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
             - `[PercentComplete <Int32?>]`: The percentage of task completion.
@@ -47113,6 +47625,29 @@ Read-only.
       - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
+        - `[OwnerDisplayName <String>]`: 
+        - `[Text <String>]`: 
+        - `[Title <String>]`: 
+      - `[CallId <String>]`: 
+      - `[ContentCorrelationId <String>]`: 
+      - `[CreatedDateTime <DateTime?>]`: 
+      - `[EndDateTime <DateTime?>]`: 
+      - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
+        - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
+          - `[Text <String>]`: 
+          - `[Title <String>]`: 
+        - `[Text <String>]`: 
+        - `[Title <String>]`: 
+      - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
+          - `[EventDateTime <DateTime?>]`: 
+          - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[TranscriptUtterance <String>]`: 
     - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
     - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.

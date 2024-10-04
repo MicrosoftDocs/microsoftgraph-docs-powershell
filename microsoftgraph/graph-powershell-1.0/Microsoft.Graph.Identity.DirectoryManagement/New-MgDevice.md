@@ -23,8 +23,8 @@ New-MgDevice [-ResponseHeadersVariable <String>] [-AccountEnabled] [-AdditionalP
  [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceCategory <String>]
  [-DeviceId <String>] [-DeviceMetadata <String>] [-DeviceOwnership <String>] [-DeviceVersion <Int32>]
  [-DisplayName <String>] [-EnrollmentProfileName <String>] [-EnrollmentType <String>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsCompliant] [-IsManaged] [-IsRooted]
- [-ManagementType <String>] [-Manufacturer <String>] [-MdmAppId <String>]
+ [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsCompliant] [-IsManaged]
+ [-IsManagementRestricted] [-IsRooted] [-ManagementType <String>] [-Manufacturer <String>] [-MdmAppId <String>]
  [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Model <String>] [-OnPremisesLastSyncDateTime <DateTime>]
  [-OnPremisesSecurityIdentifier <String>] [-OnPremisesSyncEnabled] [-OperatingSystem <String>]
  [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>] [-ProfileType <String>]
@@ -398,6 +398,21 @@ Accept wildcard characters: False
 true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsManagementRestricted
+.
 
 ```yaml
 Type: SwitchParameter
@@ -883,6 +898,7 @@ Supports $filter (eq, ne, not).
   - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
+  - `[IsManagementRestricted <Boolean?>]`: 
   - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
   - `[ManagementType <String>]`: The management channel of the device.

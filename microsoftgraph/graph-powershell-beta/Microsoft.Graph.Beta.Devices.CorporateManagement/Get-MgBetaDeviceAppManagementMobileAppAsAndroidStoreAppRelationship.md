@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship
 
 ## SYNOPSIS
-The set of direct relationships for this app.
+List of relationships for this mobile app.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship
 ```
 
 ## DESCRIPTION
-The set of direct relationships for this app.
+List of relationships for this mobile app.
 
 ## PARAMETERS
 

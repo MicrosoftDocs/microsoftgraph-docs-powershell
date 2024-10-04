@@ -9,7 +9,8 @@ ms.subservice: cloud-communications
 # Get-MgBetaUserPresence
 
 ## SYNOPSIS
-Get a user's presence information.
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserPresence?view=graph-powershell-1.0)
@@ -31,7 +32,8 @@ Get-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get a user's presence information.
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setstatusmessage-permissions.md)]
@@ -188,6 +190,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallAiInsightId <String>]`: The unique identifier of callAiInsight
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
   - `[CallRecordingId <String>]`: The unique identifier of callRecording
@@ -210,7 +213,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauserpresence)
 
-[https://learn.microsoft.com/graph/api/presence-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/presence-get?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-beta](https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-beta)
 
 
 

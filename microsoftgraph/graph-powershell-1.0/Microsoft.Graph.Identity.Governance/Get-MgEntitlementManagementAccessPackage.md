@@ -43,7 +43,7 @@ Get-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIdenti
 Retrieve the properties and relationships of an accessPackage object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-list-resourcerolescopes-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-list-accesspackages-permissions.md)]

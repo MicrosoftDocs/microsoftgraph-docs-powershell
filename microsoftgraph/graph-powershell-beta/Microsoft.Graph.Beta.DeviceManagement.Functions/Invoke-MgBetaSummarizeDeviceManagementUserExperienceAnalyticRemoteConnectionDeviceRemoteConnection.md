@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticRemoteConnectionDeviceRemoteConnection
 
 ## SYNOPSIS
-Invoke function summarizeDeviceRemoteConnection
+The report will be retired on December 31, 2024.
+You can start using the Cloud PC connection quality report now via https://go.microsoft.com/fwlink/?linkid=2283835.
 
 ## SYNTAX
 
@@ -31,7 +32,8 @@ Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticRemoteConnectionDevi
 ```
 
 ## DESCRIPTION
-Invoke function summarizeDeviceRemoteConnection
+The report will be retired on December 31, 2024.
+You can start using the Cloud PC connection quality report now via https://go.microsoft.com/fwlink/?linkid=2283835.
 
 ## PARAMETERS
 

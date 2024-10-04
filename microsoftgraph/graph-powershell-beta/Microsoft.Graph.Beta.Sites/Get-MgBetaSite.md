@@ -45,7 +45,7 @@ Retrieve properties and relationships for a site resource.A site resource repres
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-get-permissions.md)]
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-search-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,6 +338,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[PageTemplateId <String>]`: The unique identifier of pageTemplate
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem

@@ -20,9 +20,10 @@ Update the navigation property deviceImages in deviceManagement
 Update-MgBetaDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-ErrorCode <String>] [-ExpirationDate <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-OSBuildNumber <String>] [-OSStatus <String>] [-OperatingSystem <String>] [-ScopeIds <String[]>]
- [-SourceImageResourceId <String>] [-Status <String>] [-StatusDetails <String>] [-Version <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OSBuildNumber <String>] [-OSStatus <String>] [-OSVersionNumber <String>] [-OperatingSystem <String>]
+ [-ScopeIds <String[]>] [-SourceImageResourceId <String>] [-Status <String>] [-StatusDetails <String>]
+ [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -37,9 +38,10 @@ Update-MgBetaDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId <S
 Update-MgBetaDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagementAdministrationIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-ErrorCode <String>] [-ExpirationDate <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-OSBuildNumber <String>] [-OSStatus <String>] [-OperatingSystem <String>] [-ScopeIds <String[]>]
- [-SourceImageResourceId <String>] [-Status <String>] [-StatusDetails <String>] [-Version <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OSBuildNumber <String>] [-OSStatus <String>] [-OSVersionNumber <String>] [-OperatingSystem <String>]
+ [-ScopeIds <String[]>] [-SourceImageResourceId <String>] [-Status <String>] [-StatusDetails <String>]
+ [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -262,6 +264,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OSVersionNumber
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -437,6 +454,7 @@ Read-only.
 For example, 1909.
 Read-only.
   - `[OSStatus <String>]`: cloudPcDeviceImageOsStatus
+  - `[OSVersionNumber <String>]`: 
   - `[OperatingSystem <String>]`: The operating system of the image.
 For example, Windows 10 Enterprise.
 Read-only.

@@ -8,11 +8,19 @@ schema: 2.0.0
 # New-MgBetaDeviceAppManagementMobileAppRelationship
 
 ## SYNOPSIS
-Create new navigation property to relationships for deviceAppManagement
+Create new navigation property to mobileAppRelationships for deviceAppManagement
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
+```
+New-MgBetaDeviceAppManagementMobileAppRelationship [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetId <String>]
+ [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateExpanded1
 ```
 New-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetId <String>]
@@ -20,7 +28,7 @@ New-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String> [-Respo
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
 New-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String>
  -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-ResponseHeadersVariable <String>]
@@ -42,8 +50,15 @@ New-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorpora
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Create
+```
+New-MgBetaDeviceAppManagementMobileAppRelationship -BodyParameter <IMicrosoftGraphMobileAppRelationship>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Create new navigation property to relationships for deviceAppManagement
+Create new navigation property to mobileAppRelationships for deviceAppManagement
 
 ## PARAMETERS
 
@@ -52,7 +67,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -68,7 +83,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphMobileAppRelationship
-Parameter Sets: Create, CreateViaIdentity
+Parameter Sets: Create1, CreateViaIdentity, Create
 Aliases:
 
 Required: True
@@ -99,7 +114,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -130,7 +145,7 @@ The unique identifier of mobileApp
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -171,11 +186,12 @@ Accept wildcard characters: False
 ```
 
 ### -TargetId
-The target mobile app's app id.
+App ID of the app that is the target of the mobile app relationship entity.
+Read-Only
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -190,7 +206,7 @@ Indicates whether the target of a relationship is the parent or the child in the
 
 ```yaml
 Type: MobileAppRelationshipType
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -252,7 +268,8 @@ BODYPARAMETER `<IMicrosoftGraphMobileAppRelationship>`: Describes a relationship
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[TargetId <String>]`: The target mobile app's app id.
+  - `[TargetId <String>]`: App ID of the app that is the target of the mobile app relationship entity.
+Read-Only
   - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter

@@ -8,13 +8,27 @@ schema: 2.0.0
 # Remove-MgBetaDeviceAppManagementMobileAppRelationship
 
 ## SYNOPSIS
-Delete navigation property relationships for deviceAppManagement
+Delete navigation property mobileAppRelationships for deviceAppManagement
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String> -MobileAppRelationshipId <String>
+Remove-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppRelationshipId <String> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete1
+```
+Remove-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppRelationshipId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorporateManagementIdentity>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,7 +41,7 @@ Remove-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorp
 ```
 
 ## DESCRIPTION
-Delete navigation property relationships for deviceAppManagement
+Delete navigation property mobileAppRelationships for deviceAppManagement
 
 ## PARAMETERS
 
@@ -67,7 +81,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +96,7 @@ The unique identifier of mobileApp
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -97,7 +111,7 @@ The unique identifier of mobileAppRelationship
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True

@@ -1,8 +1,9 @@
 ---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationownerdirectoryobjectbyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationOwnerByRef
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgBetaApplicationOwnerByRef
@@ -12,24 +13,197 @@ Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationOwnerByRef?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
+
+### Delete (Default)
+```
+Remove-MgBetaApplicationOwnerByRef -ApplicationId <String> -DirectoryObjectId <String>
+ [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity
+```
+Remove-MgBetaApplicationOwnerByRef -InputObject <IApplicationsIdentity> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
 
 ## DESCRIPTION
 Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-owners-permissions.md)]
+
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
-Remove-MgBetaApplicationOwnerDirectoryObjectByRef -ApplicationId $applicationId -DirectoryObjectId $directoryObjectId
+Remove-MgBetaApplicationOwnerByRef -ApplicationId $applicationId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgBetaApplicationOwnerByRef Cmdlet.
+
 
 ## PARAMETERS
+
+### -ApplicationId
+The unique identifier of application
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DirectoryObjectId
+The unique identifier of directoryObject
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IfMatch
+ETag
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: IApplicationsIdentity
+Parameter Sets: DeleteViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
@@ -85,7 +259,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationownerdirectoryobjectbyref)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaApplicationOwnerByRef)
 
 [https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-beta)
 

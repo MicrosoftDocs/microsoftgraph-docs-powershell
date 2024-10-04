@@ -171,7 +171,8 @@ Accept wildcard characters: False
 ```
 
 ### -TargetId
-The target mobile app's app id.
+App ID of the app that is the target of the mobile app relationship entity.
+Read-Only
 
 ```yaml
 Type: String
@@ -252,7 +253,8 @@ BODYPARAMETER `<IMicrosoftGraphMobileAppRelationship>`: Describes a relationship
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[TargetId <String>]`: The target mobile app's app id.
+  - `[TargetId <String>]`: App ID of the app that is the target of the mobile app relationship entity.
+Read-Only
   - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter

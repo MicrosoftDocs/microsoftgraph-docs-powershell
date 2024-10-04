@@ -19,11 +19,11 @@ Update the navigation property galleryImages in deviceManagement
 ```
 Update-MgBetaDeviceManagementVirtualEndpointGalleryImage -CloudPcGalleryImageId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-EndDate <DateTime>] [-ExpirationDate <DateTime>] [-Id <String>] [-Offer <String>]
- [-OfferDisplayName <String>] [-OfferName <String>] [-Publisher <String>] [-PublisherName <String>]
- [-RecommendedSku <String>] [-SizeInGb <Int32>] [-Sku <String>] [-SkuDisplayName <String>] [-SkuName <String>]
- [-StartDate <DateTime>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EndDate <DateTime>] [-ExpirationDate <DateTime>] [-Id <String>] [-OSVersionNumber <String>]
+ [-Offer <String>] [-OfferDisplayName <String>] [-OfferName <String>] [-Publisher <String>]
+ [-PublisherName <String>] [-RecommendedSku <String>] [-SizeInGb <Int32>] [-Sku <String>]
+ [-SkuDisplayName <String>] [-SkuName <String>] [-StartDate <DateTime>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -37,11 +37,11 @@ Update-MgBetaDeviceManagementVirtualEndpointGalleryImage -CloudPcGalleryImageId 
 ```
 Update-MgBetaDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceManagementAdministrationIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-EndDate <DateTime>] [-ExpirationDate <DateTime>] [-Id <String>] [-Offer <String>]
- [-OfferDisplayName <String>] [-OfferName <String>] [-Publisher <String>] [-PublisherName <String>]
- [-RecommendedSku <String>] [-SizeInGb <Int32>] [-Sku <String>] [-SkuDisplayName <String>] [-SkuName <String>]
- [-StartDate <DateTime>] [-Status <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EndDate <DateTime>] [-ExpirationDate <DateTime>] [-Id <String>] [-OSVersionNumber <String>]
+ [-Offer <String>] [-OfferDisplayName <String>] [-OfferName <String>] [-Publisher <String>]
+ [-PublisherName <String>] [-RecommendedSku <String>] [-SizeInGb <Int32>] [-Sku <String>]
+ [-SkuDisplayName <String>] [-SkuName <String>] [-StartDate <DateTime>] [-Status <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -241,6 +241,21 @@ Accept wildcard characters: False
 ### -OfferName
 The offer name of this gallery image that is passed to ARM to retrieve the image resource.
 Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OSVersionNumber
+.
 
 ```yaml
 Type: String
@@ -500,6 +515,7 @@ Users are unable to provision new Cloud PCs if the current time is later than ex
 The value is usually endDate plus six months.
 For example, if the startDate is 2025-10-14, the expirationDate is usually 2026-04-14.
 Read-only.
+  - `[OSVersionNumber <String>]`: 
   - `[Offer <String>]`: The offer name of this gallery image that is passed to ARM to retrieve the image resource.
 Read-only.
 The offer property is deprecated and will stop returning data on January 31, 2024.

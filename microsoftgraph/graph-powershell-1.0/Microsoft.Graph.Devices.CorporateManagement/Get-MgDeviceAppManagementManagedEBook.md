@@ -343,7 +343,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/intune-books-managedebook-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebook-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-books-managedebook-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebook-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-books-iosvppebook-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-iosvppebook-list?view=graph-rest-1.0)
 
 
 

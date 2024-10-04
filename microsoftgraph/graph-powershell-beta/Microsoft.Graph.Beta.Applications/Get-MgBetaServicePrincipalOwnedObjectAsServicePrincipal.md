@@ -13,9 +13,6 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.serviceP
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalOwnedObjectAsServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnedObjectAsServicePrincipal?view=graph-powershell-1.0)
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalOwnedObjectAsServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnedObjectAsServicePrincipal?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -343,9 +340,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobjectasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobjectasserviceprincipal)
-
-
-
 
 
 

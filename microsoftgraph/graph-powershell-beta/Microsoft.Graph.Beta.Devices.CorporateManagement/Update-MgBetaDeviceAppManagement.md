@@ -37,7 +37,8 @@ Update-MgBetaDeviceAppManagement [-ResponseHeadersVariable <String>] [-Additiona
  [-MobileAppCatalogPackages <IMicrosoftGraphMobileAppCatalogPackage[]>]
  [-MobileAppCategories <IMicrosoftGraphMobileAppCategory[]>]
  [-MobileAppConfigurations <IMicrosoftGraphManagedDeviceMobileAppConfiguration[]>]
- [-MobileApps <IMicrosoftGraphMobileApp[]>] [-PolicySets <IMicrosoftGraphPolicySet[]>]
+ [-MobileAppRelationships <IMicrosoftGraphMobileAppRelationship[]>] [-MobileApps <IMicrosoftGraphMobileApp[]>]
+ [-PolicySets <IMicrosoftGraphPolicySet[]>]
  [-SymantecCodeSigningCertificate <IMicrosoftGraphSymantecCodeSigningCertificate>]
  [-TargetedManagedAppConfigurations <IMicrosoftGraphTargetedManagedAppConfiguration[]>]
  [-VppTokens <IMicrosoftGraphVppToken[]>]
@@ -444,6 +445,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MobileAppRelationships
+List mobileAppRelationship objects for mobile applications.
+To construct, see NOTES section for MOBILEAPPRELATIONSHIPS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphMobileAppRelationship[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -MobileApps
 The mobile apps.
 To construct, see NOTES section for MOBILEAPPS properties and create a hash table.
@@ -794,7 +811,9 @@ Read-only.
   - `[BlockAfterCompanyPortalUpdateDeferralInDays <Int32?>]`: Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.
   - `[ConnectToVpnOnLaunch <Boolean?>]`: Whether the app should connect to the configured VPN on launch.
   - `[CustomBrowserDisplayName <String>]`: Friendly name of the preferred custom browser to open weblink on Android.
-  - `[CustomBrowserPackageId <String>]`: Unique identifier of a custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+  - `[CustomBrowserPackageId <String>]`: Unique identifier of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
   - `[CustomDialerAppDisplayName <String>]`: Friendly name of a custom dialer app to click-to-open a phone number on Android.
   - `[CustomDialerAppPackageId <String>]`: PackageId of a custom dialer app to click-to-open a phone number on Android.
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
@@ -936,7 +955,9 @@ Read-only.
     - `[BlockAfterCompanyPortalUpdateDeferralInDays <Int32?>]`: Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.
     - `[ConnectToVpnOnLaunch <Boolean?>]`: Whether the app should connect to the configured VPN on launch.
     - `[CustomBrowserDisplayName <String>]`: Friendly name of the preferred custom browser to open weblink on Android.
-    - `[CustomBrowserPackageId <String>]`: Unique identifier of a custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+    - `[CustomBrowserPackageId <String>]`: Unique identifier of the preferred custom browser to open weblink on Android.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
     - `[CustomDialerAppDisplayName <String>]`: Friendly name of a custom dialer app to click-to-open a phone number on Android.
     - `[CustomDialerAppPackageId <String>]`: PackageId of a custom dialer app to click-to-open a phone number on Android.
     - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
@@ -1277,6 +1298,7 @@ Read-only.
     - `[AppDataEncryptionType <ManagedAppDataEncryptionType?>]`: Represents the level to which app data is encrypted for managed apps
     - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.
     - `[CustomBrowserProtocol <String>]`: A custom browser protocol to open weblink on iOS.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
     - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
     - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
     - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
@@ -1566,6 +1588,12 @@ Read-only.
       - `[SuccessCount <Int32?>]`: Number of succeeded Users
     - `[UserStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus- `[]`>]`: List of ManagedDeviceMobileAppConfigurationUserStatus.
     - `[Version <Int32?>]`: Version of the device configuration.
+  - `[MobileAppRelationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: List mobileAppRelationship objects for mobile applications.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[TargetId <String>]`: App ID of the app that is the target of the mobile app relationship entity.
+Read-Only
+    - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
   - `[MobileApps <IMicrosoftGraphMobileApp- `[]`>]`: The mobile apps.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1589,11 +1617,7 @@ Read-only.
     - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
     - `[Publisher <String>]`: The publisher of the app.
     - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
-    - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: The set of direct relationships for this app.
-      - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-      - `[TargetId <String>]`: The target mobile app's app id.
-      - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
+    - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: List of relationships for this mobile app.
     - `[RoleScopeTagIds <String- `[]`>]`: List of scope tag ids for this mobile app.
   - `[PolicySets <IMicrosoftGraphPolicySet- `[]`>]`: The PolicySet of Policies and Applications
     - `[Id <String>]`: The unique identifier for an entity.
@@ -2257,6 +2281,7 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Version <String>]`: Version of the entity.
   - `[CustomBrowserProtocol <String>]`: A custom browser protocol to open weblink on iOS.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
   - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
   - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
@@ -2602,6 +2627,13 @@ Read-only.
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
+MOBILEAPPRELATIONSHIPS <IMicrosoftGraphMobileAppRelationship- `[]`>: List mobileAppRelationship objects for mobile applications.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[TargetId <String>]`: App ID of the app that is the target of the mobile app relationship entity.
+Read-Only
+  - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
+
 MOBILEAPPS <IMicrosoftGraphMobileApp- `[]`>: The mobile apps.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2634,10 +2666,11 @@ Read-only.
   - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
   - `[Publisher <String>]`: The publisher of the app.
   - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
-  - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: The set of direct relationships for this app.
+  - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: List of relationships for this mobile app.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[TargetId <String>]`: The target mobile app's app id.
+    - `[TargetId <String>]`: App ID of the app that is the target of the mobile app relationship entity.
+Read-Only
     - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
   - `[RoleScopeTagIds <String- `[]`>]`: List of scope tag ids for this mobile app.
 

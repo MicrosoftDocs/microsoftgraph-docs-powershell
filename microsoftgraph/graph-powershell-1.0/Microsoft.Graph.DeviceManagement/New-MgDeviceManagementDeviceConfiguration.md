@@ -9,7 +9,7 @@ ms.subservice: intune
 # New-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Create a new androidGeneralDeviceConfiguration object.
+Create a new windows10TeamGeneralConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceC
 ```
 
 ## DESCRIPTION
-Create a new androidGeneralDeviceConfiguration object.
+Create a new windows10TeamGeneralConfiguration object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -545,7 +545,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration)
 
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-androidgeneraldeviceconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-androidgeneraldeviceconfiguration-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10teamgeneralconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10teamgeneralconfiguration-create?view=graph-rest-1.0)
 
 
 

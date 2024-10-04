@@ -9,7 +9,7 @@ ms.subservice: industry-data-etl
 # New-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Create a new inboundApiFlow object.
+Create a new inboundFileFlow object.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ New-MgBetaExternalIndustryDataInboundFlow -BodyParameter <IMicrosoftGraphIndustr
 ```
 
 ## DESCRIPTION
-Create a new inboundApiFlow object.
+Create a new inboundFileFlow object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-post-permissions.md)]
@@ -448,7 +448,7 @@ Must be unique within the referenceType.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow)
 
-[https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-post?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-post?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-post?view=graph-rest-beta)
 
 
 

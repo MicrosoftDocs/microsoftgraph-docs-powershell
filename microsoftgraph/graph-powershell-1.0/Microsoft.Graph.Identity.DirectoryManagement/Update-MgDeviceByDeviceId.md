@@ -12,6 +12,9 @@ ms.subservice: entra-directory-management
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceByDeviceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDeviceByDeviceId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -22,14 +25,14 @@ Update-MgDeviceByDeviceId -DeviceId <String> [-ResponseHeadersVariable <String>]
  [-DeletedDateTime <DateTime>] [-DeviceCategory <String>] [-DeviceId1 <String>] [-DeviceMetadata <String>]
  [-DeviceOwnership <String>] [-DeviceVersion <Int32>] [-DisplayName <String>] [-EnrollmentProfileName <String>]
  [-EnrollmentType <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsCompliant]
- [-IsManaged] [-IsRooted] [-ManagementType <String>] [-Manufacturer <String>] [-MdmAppId <String>]
- [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Model <String>] [-OnPremisesLastSyncDateTime <DateTime>]
- [-OnPremisesSecurityIdentifier <String>] [-OnPremisesSyncEnabled] [-OperatingSystem <String>]
- [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>] [-ProfileType <String>]
- [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>] [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]
- [-RegistrationDateTime <DateTime>] [-SystemLabels <String[]>]
- [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IsManaged] [-IsManagementRestricted] [-IsRooted] [-ManagementType <String>] [-Manufacturer <String>]
+ [-MdmAppId <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Model <String>]
+ [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSecurityIdentifier <String>] [-OnPremisesSyncEnabled]
+ [-OperatingSystem <String>] [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>]
+ [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
+ [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>]
+ [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,8 +43,8 @@ Update-MgDeviceByDeviceId [-DeviceId <String>] -InputObject <IIdentityDirectoryM
  [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceCategory <String>]
  [-DeviceMetadata <String>] [-DeviceOwnership <String>] [-DeviceVersion <Int32>] [-DisplayName <String>]
  [-EnrollmentProfileName <String>] [-EnrollmentType <String>] [-Extensions <IMicrosoftGraphExtension[]>]
- [-Id <String>] [-IsCompliant] [-IsManaged] [-IsRooted] [-ManagementType <String>] [-Manufacturer <String>]
- [-MdmAppId <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Model <String>]
+ [-Id <String>] [-IsCompliant] [-IsManaged] [-IsManagementRestricted] [-IsRooted] [-ManagementType <String>]
+ [-Manufacturer <String>] [-MdmAppId <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Model <String>]
  [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSecurityIdentifier <String>] [-OnPremisesSyncEnabled]
  [-OperatingSystem <String>] [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>]
  [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
@@ -439,6 +442,21 @@ Accept wildcard characters: False
 true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsManagementRestricted
+.
 
 ```yaml
 Type: SwitchParameter
@@ -925,6 +943,7 @@ Supports $filter (eq, ne, not).
   - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
+  - `[IsManagementRestricted <Boolean?>]`: 
   - `[IsRooted <Boolean?>]`: true if the device is rooted or jail-broken.
 This property can only be updated by Intune.
   - `[ManagementType <String>]`: The management channel of the device.

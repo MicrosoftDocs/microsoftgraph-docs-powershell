@@ -45,7 +45,7 @@ The following RBAC providers are currently supported:- Cloud PC - device managem
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentmultiple-get-permissions.md)]
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplicationmultiple-list-roleassignments-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentmultiple-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a directory-scoped roleAssignmentMultiple in an Intune provider
@@ -361,8 +361,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementdevicemanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementdevicemanagementroleassignment)
 
 [https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)
-
-[https://learn.microsoft.com/graph/api/rbacapplicationmultiple-list-roleassignments?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-list-roleassignments?view=graph-rest-beta)
 
 
 

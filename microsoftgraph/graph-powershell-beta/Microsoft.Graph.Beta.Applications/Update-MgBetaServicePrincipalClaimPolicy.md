@@ -48,7 +48,7 @@ Update-MgBetaServicePrincipalClaimPolicy -InputObject <IApplicationsIdentity>
 Update a customClaimsPolicy object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customclaimspolicy-update-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-put-claimspolicy-permissions.md)]
 
 ## PARAMETERS
 
@@ -375,7 +375,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalclaimpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalclaimpolicy)
 
 [https://learn.microsoft.com/graph/api/customclaimspolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customclaimspolicy-update?view=graph-rest-beta)
-
 
 
 

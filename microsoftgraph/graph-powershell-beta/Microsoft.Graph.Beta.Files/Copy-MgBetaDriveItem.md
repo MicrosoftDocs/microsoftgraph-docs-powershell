@@ -22,7 +22,7 @@ Progress is reported until the operation is completed by monitoring the progress
 ### CopyExpanded (Default)
 ```
 Copy-MgBetaDriveItem -DriveId <String> -DriveItemId <String> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-ChildrenOnly] [-Name <String>]
+ [-AdditionalProperties <Hashtable>] [-ChildrenOnly] [-IncludeAllVersionHistory] [-Name <String>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -38,7 +38,7 @@ Copy-MgBetaDriveItem -DriveId <String> -DriveItemId <String>
 ### CopyViaIdentityExpanded
 ```
 Copy-MgBetaDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-ChildrenOnly] [-Name <String>]
+ [-AdditionalProperties <Hashtable>] [-ChildrenOnly] [-IncludeAllVersionHistory] [-Name <String>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -69,7 +69,7 @@ Import-Module Microsoft.Graph.Beta.Files
 
 $params = @{
 	parentReference = @{
-		driveId = "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B"
+		driveId = "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop"
 		id = "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
 	}
 	name = "contoso plan (copy).txt"
@@ -88,7 +88,7 @@ Import-Module Microsoft.Graph.Beta.Files
 
 $params = @{
 	parentReference = @{
-		driveId = "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B"
+		driveId = "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop"
 		id = "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
 	}
 	childrenOnly = $true
@@ -107,7 +107,7 @@ Import-Module Microsoft.Graph.Beta.Files
 
 $params = @{
 	parentReference = @{
-		driveId = "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B"
+		driveId = "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop"
 		id = "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
 	}
 }
@@ -125,12 +125,31 @@ Import-Module Microsoft.Graph.Beta.Files
 
 $params = @{
 	parentReference = @{
-		driveId = "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B"
+		driveId = "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop"
 		id = "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
 	}
 }
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -@microsoft.graph.conflictbehavior "replace"  -BodyParameter $params
+
+```
+This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
+
+### Example 5: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Files
+
+$params = @{
+	parentReference = @{
+		driveId = "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop"
+		id = "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
+	}
+	includeAllVersionHistory = $true
+}
+
+Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```
 This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
@@ -226,6 +245,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IncludeAllVersionHistory
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -357,6 +391,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IPaths17Tusw5DrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChildrenOnly <Boolean?>]`: 
+  - `[IncludeAllVersionHistory <Boolean?>]`: 
   - `[Name <String>]`: 
   - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

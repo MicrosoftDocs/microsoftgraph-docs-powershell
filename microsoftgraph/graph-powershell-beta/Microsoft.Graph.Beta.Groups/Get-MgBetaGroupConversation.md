@@ -43,7 +43,7 @@ Get-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-ExpandProperty <Str
 Retrieve the properties and relationships of conversation object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversation-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-conversation-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-conversations-permissions.md)]
@@ -352,6 +352,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[PageTemplateId <String>]`: The unique identifier of pageTemplate
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket

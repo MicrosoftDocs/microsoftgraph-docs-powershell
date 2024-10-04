@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship
 
 ## SYNOPSIS
-The set of direct relationships for this app.
+List of relationships for this mobile app.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship
 ```
 
 ## DESCRIPTION
-The set of direct relationships for this app.
+List of relationships for this mobile app.
 
 ## PARAMETERS
 

@@ -1304,6 +1304,7 @@ This needs to be copied over from Microsoft.Graph.Call.CallChainId.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
     - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
+    - `[IsDeltaRosterEnabled <Boolean?>]`: Indicates whether delta roster is enabled for the call.
   - `[CallRoutes <IMicrosoftGraphCallRoute- `[]`>]`: The routing information on how the call was retargeted.
 Read-only.
     - `[Final <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1421,6 +1422,7 @@ CALLOPTIONS `<IMicrosoftGraphCallOptions>`: callOptions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
   - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
+  - `[IsDeltaRosterEnabled <Boolean?>]`: Indicates whether delta roster is enabled for the call.
 
 CALLROUTES <IMicrosoftGraphCallRoute- `[]`>: The routing information on how the call was retargeted.
 Read-only.

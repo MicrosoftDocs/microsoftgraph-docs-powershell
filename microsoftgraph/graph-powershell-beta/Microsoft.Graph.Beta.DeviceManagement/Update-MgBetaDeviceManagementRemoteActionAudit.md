@@ -16,11 +16,11 @@ Update the navigation property remoteActionAudits in deviceManagement
 ```
 Update-MgBetaDeviceManagementRemoteActionAudit -RemoteActionAuditId <String>
  [-ResponseHeadersVariable <String>] [-Action <RemoteAction>] [-ActionState <String>]
- [-AdditionalProperties <Hashtable>] [-BulkDeviceActionId <String>] [-DeviceDisplayName <String>]
- [-DeviceImei <String>] [-DeviceOwnerUserPrincipalName <String>] [-Id <String>]
- [-InitiatedByUserPrincipalName <String>] [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>]
- [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-BulkDeviceActionId <String>]
+ [-DeviceActionCategory <DeviceActionCategory>] [-DeviceDisplayName <String>] [-DeviceImei <String>]
+ [-DeviceOwnerUserPrincipalName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
+ [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -34,11 +34,11 @@ Update-MgBetaDeviceManagementRemoteActionAudit -RemoteActionAuditId <String>
 ```
 Update-MgBetaDeviceManagementRemoteActionAudit -InputObject <IDeviceManagementIdentity>
  [-ResponseHeadersVariable <String>] [-Action <RemoteAction>] [-ActionState <String>]
- [-AdditionalProperties <Hashtable>] [-BulkDeviceActionId <String>] [-DeviceDisplayName <String>]
- [-DeviceImei <String>] [-DeviceOwnerUserPrincipalName <String>] [-Id <String>]
- [-InitiatedByUserPrincipalName <String>] [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>]
- [-UserName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-BulkDeviceActionId <String>]
+ [-DeviceActionCategory <DeviceActionCategory>] [-DeviceDisplayName <String>] [-DeviceImei <String>]
+ [-DeviceOwnerUserPrincipalName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
+ [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -119,6 +119,21 @@ BulkAction ID
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceActionCategory
+Enum type used for DeviceActionCategory
+
+```yaml
+Type: DeviceActionCategory
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -381,6 +396,7 @@ Read-only.
   - `[Action <RemoteAction?>]`: Remote actions Intune supports.
   - `[ActionState <String>]`: actionState
   - `[BulkDeviceActionId <String>]`: BulkAction ID
+  - `[DeviceActionCategory <DeviceActionCategory?>]`: Enum type used for DeviceActionCategory
   - `[DeviceDisplayName <String>]`: Intune device name.
   - `[DeviceImei <String>]`: IMEI of the device.
   - `[DeviceOwnerUserPrincipalName <String>]`: Upn of the device owner.

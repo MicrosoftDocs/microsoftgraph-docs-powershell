@@ -28,7 +28,8 @@ Update-MgBetaPlannerTask -PlannerTaskId <String> -IfMatch <String> [-ResponseHea
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails>]
  [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>] [-IsArchived] [-IsOnMyDay]
- [-IsOnMyDayLastModifiedDate <DateTime>] [-OrderHint <String>] [-PercentComplete <Int32>] [-PlanId <String>]
+ [-IsOnMyDayLastModifiedDate <DateTime>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <DateTime>] [-OrderHint <String>] [-PercentComplete <Int32>] [-PlanId <String>]
  [-PreviewType <String>] [-Priority <Int32>]
  [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
  [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <Int32>]
@@ -55,7 +56,8 @@ Update-MgBetaPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String> [-Res
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails>]
  [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>] [-IsArchived] [-IsOnMyDay]
- [-IsOnMyDayLastModifiedDate <DateTime>] [-OrderHint <String>] [-PercentComplete <Int32>] [-PlanId <String>]
+ [-IsOnMyDayLastModifiedDate <DateTime>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <DateTime>] [-OrderHint <String>] [-PercentComplete <Int32>] [-PlanId <String>]
  [-PreviewType <String>] [-Priority <Int32>]
  [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
  [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <Int32>]
@@ -548,6 +550,37 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -LastModifiedBy
+identitySet
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LastModifiedDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -OrderHint
 The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
@@ -966,6 +999,8 @@ An archived task is read-only.
 If true, it shows the task.
   - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: 
   - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
   - `[PercentComplete <Int32?>]`: The percentage of task completion.
@@ -1126,6 +1161,18 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
+
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
 PROGRESSTASKBOARDFORMAT `<IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>`: plannerProgressTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

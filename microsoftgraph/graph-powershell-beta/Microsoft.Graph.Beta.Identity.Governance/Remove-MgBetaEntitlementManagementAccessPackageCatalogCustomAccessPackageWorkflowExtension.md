@@ -47,7 +47,7 @@ Call the Update accessPackageAssignmentPolicy operation to remove the custom wor
 For an example, see Example 3: Remove the customExtensionStageSettings from a policy.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentworkflowextension-delete-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageassignmentrequestworkflowextension-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

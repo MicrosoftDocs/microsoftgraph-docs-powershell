@@ -405,8 +405,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
   - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-  - `[ContentInfo <IAny>]`: Optional.
-A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
+  - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
   - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -456,8 +456,7 @@ For example - a high contrast image
     - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-    - `[Content <IAny>]`: Optional.
-Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
+    - `[Content <IMicrosoftGraphJson>]`: Json
     - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
     - `[DisplayText <String>]`: Required.
@@ -489,8 +488,8 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
     - `[AppDisplayName <String>]`: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-    - `[ContentInfo <IAny>]`: Optional.
-A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
+    - `[ContentInfo <IMicrosoftGraphJson>]`: Json
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentUrl <String>]`: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
     - `[CreatedDateTime <DateTime?>]`: Set by the server.
@@ -518,8 +517,7 @@ For example - a high contrast image
       - `[BackgroundColor <String>]`: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-      - `[Content <IAny>]`: Optional.
-Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
+      - `[Content <IMicrosoftGraphJson>]`: Json
       - `[Description <String>]`: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
       - `[DisplayText <String>]`: Required.

@@ -374,6 +374,7 @@ BODYPARAMETER `<IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostReq
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
     - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
+    - `[IsDeltaRosterEnabled <Boolean?>]`: Indicates whether delta roster is enabled for the call.
   - `[CallbackUri <String>]`: 
   - `[MediaConfig <IMicrosoftGraphMediaConfig>]`: mediaConfig
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -383,6 +384,7 @@ BODYPARAMETER `<IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostReq
 INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallAiInsightId <String>]`: The unique identifier of callAiInsight
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
   - `[CallRecordingId <String>]`: The unique identifier of callRecording

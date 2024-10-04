@@ -395,7 +395,7 @@ Always null when the object hasn't been deleted.
         - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
         - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+          - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
             - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
             - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -1223,7 +1223,7 @@ Always null when the object hasn't been deleted.
       - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
       - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+        - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
           - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
           - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -1948,7 +1948,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnector)
-
 
 
 

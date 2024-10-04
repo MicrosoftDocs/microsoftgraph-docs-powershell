@@ -255,7 +255,8 @@ Read-only.
         - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets.
 Maximum 16 characters.
 Only alphanumeric characters allowed.
-        - `[Layout <IAny>]`: The definition of the content's appearance, represented by an Adaptive Card, which is a JSON-serialized card object model.
+        - `[Layout <IMicrosoftGraphJson>]`: Json
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Priority <Int32?>]`: Defines the priority of a display template.
 A display template with priority 1 is evaluated before a template with priority 4.
 Gaps in priority values are supported.
@@ -527,7 +528,8 @@ Read-only.
       - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets.
 Maximum 16 characters.
 Only alphanumeric characters allowed.
-      - `[Layout <IAny>]`: The definition of the content's appearance, represented by an Adaptive Card, which is a JSON-serialized card object model.
+      - `[Layout <IMicrosoftGraphJson>]`: Json
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Priority <Int32?>]`: Defines the priority of a display template.
 A display template with priority 1 is evaluated before a template with priority 4.
 Gaps in priority values are supported.

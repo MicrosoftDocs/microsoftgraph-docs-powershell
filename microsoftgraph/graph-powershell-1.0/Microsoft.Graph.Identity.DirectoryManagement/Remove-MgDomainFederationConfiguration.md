@@ -11,6 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Delete an internalDomainFederation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

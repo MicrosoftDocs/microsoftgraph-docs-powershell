@@ -45,7 +45,7 @@ Retrieve properties and relationships for a site resource.A site resource repres
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-get-permissions.md)]
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-search-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: List sites using query parameters
@@ -367,7 +367,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/site-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/site-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/site-search?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-search?view=graph-rest-1.0)
 
 
 

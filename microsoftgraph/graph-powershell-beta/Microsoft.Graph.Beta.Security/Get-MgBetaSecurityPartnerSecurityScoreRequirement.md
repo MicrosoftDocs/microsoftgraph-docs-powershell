@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscorerequirement
 schema: 2.0.0
+ms.subservice: partner-customer-administration
+ms.subservice: partner-customer-administration
 ---
 
 # Get-MgBetaSecurityPartnerSecurityScoreRequirement
@@ -36,6 +38,25 @@ Get-MgBetaSecurityPartnerSecurityScoreRequirement -InputObject <ISecurityIdentit
 
 ## DESCRIPTION
 Read the properties and relationships of a securityRequirement object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-securityrequirement-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-list-requirements-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityPartnerSecurityScoreRequirement
+
+```
+This example shows how to use the Get-MgBetaSecurityPartnerSecurityScoreRequirement Cmdlet.
+
 
 ## PARAMETERS
 
@@ -378,7 +399,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/partner-security-securityrequirement-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-securityrequirement-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-list-requirements?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-list-requirements?view=graph-rest-beta)
-
 
 
 

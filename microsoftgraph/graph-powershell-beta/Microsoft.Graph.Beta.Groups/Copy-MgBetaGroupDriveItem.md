@@ -22,9 +22,9 @@ Progress is reported until the operation is completed by monitoring the progress
 ### CopyExpanded (Default)
 ```
 Copy-MgBetaGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ChildrenOnly] [-Name <String>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ChildrenOnly]
+ [-IncludeAllVersionHistory] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
@@ -38,7 +38,7 @@ Copy-MgBetaGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <Stri
 ### CopyViaIdentityExpanded
 ```
 Copy-MgBetaGroupDriveItem -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-ChildrenOnly] [-Name <String>]
+ [-AdditionalProperties <Hashtable>] [-ChildrenOnly] [-IncludeAllVersionHistory] [-Name <String>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -165,6 +165,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IncludeAllVersionHistory
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -296,6 +311,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IPathsZsqog0GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChildrenOnly <Boolean?>]`: 
+  - `[IncludeAllVersionHistory <Boolean?>]`: 
   - `[Name <String>]`: 
   - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -357,6 +373,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[PageTemplateId <String>]`: The unique identifier of pageTemplate
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
