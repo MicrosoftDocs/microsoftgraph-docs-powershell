@@ -52,18 +52,6 @@ Update-MgSecurityIdentityHealthIssue -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the properties of a healthIssue object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -536,6 +524,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityhealthissue](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityhealthissue)
 
 [https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-1.0)
+
 
 
 

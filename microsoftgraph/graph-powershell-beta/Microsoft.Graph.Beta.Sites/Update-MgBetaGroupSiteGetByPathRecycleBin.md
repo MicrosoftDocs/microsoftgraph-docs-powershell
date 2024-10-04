@@ -52,18 +52,6 @@ Update-MgBetaGroupSiteGetByPathRecycleBin -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property recycleBin in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -32803,6 +32791,7 @@ For OneDrive, this property isn't populated.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitegetbypathrecyclebin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitegetbypathrecyclebin)
+
 
 
 

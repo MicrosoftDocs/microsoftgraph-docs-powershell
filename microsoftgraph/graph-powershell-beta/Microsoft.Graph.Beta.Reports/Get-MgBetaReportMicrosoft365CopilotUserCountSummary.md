@@ -29,18 +29,6 @@ Get-MgBetaReportMicrosoft365CopilotUserCountSummary -InputObject <IReportsIdenti
 ## DESCRIPTION
 Get the aggregated number of active and enabled users of Copilot for Microsoft 365 for a specified time period.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -215,6 +203,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoft365copilotusercountsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoft365copilotusercountsummary)
 
 [https://learn.microsoft.com/graph/api/reportroot-getmicrosoft365copilotusercountsummary?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-getmicrosoft365copilotusercountsummary?view=graph-rest-beta)
+
 
 
 

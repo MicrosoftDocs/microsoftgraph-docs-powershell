@@ -34,18 +34,6 @@ Get-MgGroupDriveCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty <St
 Identity of the user who created the item.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -214,6 +202,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivecreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivecreatedbyuser)
+
 
 
 
