@@ -50,11 +50,11 @@ Update the properties of an azureDataLakeConnector object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-azuredatalakeconnector-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.industryData.oneRosterApiDataConnector"
@@ -62,6 +62,10 @@ $params = @{
 }
 
 Update-MgBetaExternalIndustryDataConnector -IndustryDataConnectorId $industryDataConnectorId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaExternalIndustryDataConnector Cmdlet.
+
 
 ## PARAMETERS
 

@@ -38,11 +38,11 @@ New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
 Create a new deviceCompliancePolicySettingStateSummary object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceCompliancePolicySettingStateSummary"
@@ -59,6 +59,10 @@ $params = @{
 }
 
 New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary Cmdlet.
+
 
 ## PARAMETERS
 

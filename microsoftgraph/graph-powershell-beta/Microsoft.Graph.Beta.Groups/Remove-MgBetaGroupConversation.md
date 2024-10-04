@@ -37,13 +37,17 @@ Delete a group's conversation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversation-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Remove-MgBetaGroupConversation -GroupId $groupId -ConversationId $conversationId
+
+```
+This example shows how to use the Remove-MgBetaGroupConversation Cmdlet.
+
 
 ## PARAMETERS
 

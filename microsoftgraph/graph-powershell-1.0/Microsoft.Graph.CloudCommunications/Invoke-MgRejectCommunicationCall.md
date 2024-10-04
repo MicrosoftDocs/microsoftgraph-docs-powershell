@@ -66,11 +66,11 @@ Use delete call to end a call.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-reject-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Reject an incoming call with 'Busy' reason
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	reason = "busy"
@@ -78,16 +78,24 @@ $params = @{
 
 Invoke-MgRejectCommunicationCall -CallId $callId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will reject an incoming call with 'busy' reason
+
+### Example 2: Reject an incoming call with 'None' reason
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	reason = "none"
 }
 
 Invoke-MgRejectCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example will reject an incoming call with 'none' reason
+
 
 ## PARAMETERS
 

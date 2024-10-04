@@ -36,20 +36,28 @@ Get a report that provides the trend of active users across all apps for each pl
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getm365appplatformusercounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: CSV output
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
-Get-MgBetaReportM365AppPlatformUserCount -Format "text/csv"  -Period $periodId
+Get-MgBetaReportM365AppPlatformUserCount -Format "text/csv"  -Period $periodId 
 
-### EXAMPLE 2
 ```
+This example will csv output
+
+### Example 2: JSON output
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
-Get-MgBetaReportM365AppPlatformUserCount -Format "application/json"  -Period $periodId
+Get-MgBetaReportM365AppPlatformUserCount -Format "application/json"  -Period $periodId 
+
+```
+This example will json output
+
 
 ## PARAMETERS
 

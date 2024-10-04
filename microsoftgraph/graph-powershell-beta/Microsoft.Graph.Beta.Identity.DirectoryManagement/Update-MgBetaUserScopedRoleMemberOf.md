@@ -48,18 +48,6 @@ Update-MgBetaUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Update the navigation property scopedRoleMemberOf in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -368,6 +356,7 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetauserscopedrolememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetauserscopedrolememberof)
+
 
 
 

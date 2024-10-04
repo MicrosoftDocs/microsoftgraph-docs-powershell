@@ -35,13 +35,17 @@ Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus -InputObject <IDevic
 Deletes a deviceComplianceDeviceStatus.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceComplianceDeviceStatusId $deviceComplianceDeviceStatusId
+
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus Cmdlet.
+
 
 ## PARAMETERS
 

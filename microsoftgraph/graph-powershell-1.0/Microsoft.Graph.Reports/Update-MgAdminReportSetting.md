@@ -36,18 +36,6 @@ Update tenant-level settings for Microsoft 365 reports.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/adminreportsettings-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -221,6 +209,7 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgadminreportsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgadminreportsetting)
 
 [https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-1.0)
+
 
 
 

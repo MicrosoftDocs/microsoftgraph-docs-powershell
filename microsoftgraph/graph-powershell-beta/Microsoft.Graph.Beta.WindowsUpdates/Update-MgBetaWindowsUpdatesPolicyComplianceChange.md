@@ -52,11 +52,11 @@ Update the properties of a complianceChange object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-contentapproval-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.complianceChange"
@@ -64,6 +64,10 @@ $params = @{
 }
 
 Update-MgBetaWindowsUpdatesPolicyComplianceChange -UpdatePolicyId $updatePolicyId -ComplianceChangeId $complianceChangeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaWindowsUpdatesPolicyComplianceChange Cmdlet.
+
 
 ## PARAMETERS
 
