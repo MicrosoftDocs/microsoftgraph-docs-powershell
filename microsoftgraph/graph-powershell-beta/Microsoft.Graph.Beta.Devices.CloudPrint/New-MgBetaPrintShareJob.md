@@ -59,11 +59,11 @@ Create a new printJob for a printerShare.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-post-jobs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 $params = @{
 	displayName = "testjob"
@@ -101,6 +101,10 @@ $params = @{
 }
 
 New-MgBetaPrintShareJob -PrinterShareId $printerShareId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrintShareJob Cmdlet.
+
 
 ## PARAMETERS
 

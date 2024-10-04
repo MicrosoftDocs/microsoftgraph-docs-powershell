@@ -39,18 +39,6 @@ For more information on how to remove assignments that are still in the delivere
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -313,6 +301,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackagebyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackagebyuniquename)
 
 [https://learn.microsoft.com/graph/api/accesspackage-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-delete?view=graph-rest-beta)
+
 
 
 

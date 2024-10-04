@@ -40,11 +40,11 @@ Update the properties of a multitenant organization.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tenantrelationship-put-multitenantorganization-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Contoso organization"
@@ -52,6 +52,10 @@ $params = @{
 }
 
 Update-MgTenantRelationshipMultiTenantOrganization -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTenantRelationshipMultiTenantOrganization Cmdlet.
+
 
 ## PARAMETERS
 

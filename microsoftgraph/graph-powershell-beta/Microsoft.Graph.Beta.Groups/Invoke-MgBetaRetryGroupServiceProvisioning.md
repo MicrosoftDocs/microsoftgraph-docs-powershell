@@ -37,13 +37,17 @@ Retry the group service provisioning.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-retryserviceprovisioning-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Invoke-MgBetaRetryGroupServiceProvisioning -GroupId $groupId
+
+```
+This example shows how to use the Invoke-MgBetaRetryGroupServiceProvisioning Cmdlet.
+
 
 ## PARAMETERS
 

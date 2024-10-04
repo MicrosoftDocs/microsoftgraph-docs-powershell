@@ -45,15 +45,6 @@ Read the properties and relationships of a securityScoreHistory object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-list-history-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Security
-```
-
-Get-MgBetaSecurityPartnerSecurityScoreHistory
-
 ## PARAMETERS
 
 ### -All
@@ -395,6 +386,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/partner-security-securityscorehistory-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-securityscorehistory-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-list-history?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-list-history?view=graph-rest-beta)
+
+
 
 
 

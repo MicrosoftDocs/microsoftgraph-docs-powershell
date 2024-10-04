@@ -28,15 +28,6 @@ Get the tenant-level settings for Microsoft 365 reports.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/adminreportsettings-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Reports
-```
-
-Get-MgAdminReportSetting
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -130,6 +121,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgadminreportsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgadminreportsetting)
 
 [https://learn.microsoft.com/graph/api/adminreportsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/adminreportsettings-get?view=graph-rest-1.0)
+
 
 
 

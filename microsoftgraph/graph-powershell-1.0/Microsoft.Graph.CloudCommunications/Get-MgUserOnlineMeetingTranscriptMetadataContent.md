@@ -43,13 +43,17 @@ Retrieving the content of the transcript returns the stream of text associated w
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calltranscript-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a callTranscript metadataContent
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgUserOnlineMeetingTranscriptMetadataContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
+
+```
+This example will get a calltranscript metadatacontent
+
 
 ## PARAMETERS
 

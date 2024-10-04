@@ -49,13 +49,17 @@ Get an event object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-events-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 Get-MgBetaGroupEvent -GroupId $groupId
+
+```
+This example shows how to use the Get-MgBetaGroupEvent Cmdlet.
+
 
 ## PARAMETERS
 

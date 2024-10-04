@@ -21,18 +21,6 @@ Remove-MgBetaSecurityInformationProtection [-IfMatch <String>] [-ResponseHeaders
 ## DESCRIPTION
 Delete navigation property informationProtection for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -155,6 +143,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityinformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityinformationprotection)
+
 
 
 

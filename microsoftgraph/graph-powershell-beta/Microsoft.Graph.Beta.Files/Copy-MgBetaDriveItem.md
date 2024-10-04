@@ -61,15 +61,15 @@ Progress is reported until the operation is completed by monitoring the progress
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-copy-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	parentReference = @{
-		driveId = "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop"
+		driveId = "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B"
 		id = "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
 	}
 	name = "contoso plan (copy).txt"
@@ -77,14 +77,18 @@ $params = @{
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	parentReference = @{
-		driveId = "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop"
+		driveId = "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B"
 		id = "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
 	}
 	childrenOnly = $true
@@ -92,48 +96,45 @@ $params = @{
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	parentReference = @{
-		driveId = "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop"
+		driveId = "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B"
 		id = "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
 	}
 }
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	parentReference = @{
-		driveId = "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop"
+		driveId = "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B"
 		id = "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
 	}
 }
 
 Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -@microsoft.graph.conflictbehavior "replace"  -BodyParameter $params
 
-### EXAMPLE 5
 ```
-Import-Module Microsoft.Graph.Beta.Files
-```
+This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
 
-$params = @{
-	parentReference = @{
-		driveId = "b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop"
-		id = "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
-	}
-	includeAllVersionHistory = $true
-}
-
-Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ## PARAMETERS
 

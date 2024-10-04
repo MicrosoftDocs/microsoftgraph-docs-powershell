@@ -45,13 +45,17 @@ Read the properties and relationships of a deletedChat object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/deletedchat-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamworkDeletedChat -DeletedChatId $deletedChatId
+
+```
+This example shows how to use the Get-MgTeamworkDeletedChat Cmdlet.
+
 
 ## PARAMETERS
 

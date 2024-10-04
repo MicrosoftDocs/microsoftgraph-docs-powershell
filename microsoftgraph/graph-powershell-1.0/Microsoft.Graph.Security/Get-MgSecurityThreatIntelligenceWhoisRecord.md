@@ -53,13 +53,17 @@ Specify the desired whoisRecord in one of the following two ways:- Identify a ho
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-threatintelligence-list-whoisrecords-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the whoisRecord resource using its id property
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityThreatIntelligenceWhoisRecord -WhoisRecordId $whoisRecordId
+
+```
+This example will get the whoisrecord resource using its id property
+
 
 ## PARAMETERS
 

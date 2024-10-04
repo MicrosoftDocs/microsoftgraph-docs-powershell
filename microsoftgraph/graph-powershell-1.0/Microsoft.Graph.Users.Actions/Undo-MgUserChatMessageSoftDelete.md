@@ -37,13 +37,17 @@ Undo soft deletion of a single chatMessage or a chat message reply in a channel 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-undosoftdelete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Undo soft deletion of a message in a chat
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 Undo-MgUserChatMessageSoftDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId
+
+```
+This example will undo soft deletion of a message in a chat
+
 
 ## PARAMETERS
 

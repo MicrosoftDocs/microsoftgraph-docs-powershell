@@ -47,20 +47,28 @@ A navigation property.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-list-tabs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: List all the tabs in the channel along with associated Teams app
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
-Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp"
+Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" 
 
-### EXAMPLE 2
 ```
+This example will list all the tabs in the channel along with associated teams app
+
+### Example 2: List all the tabs belonging to a specific app in a channel
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
-Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'"
+Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'" 
+
+```
+This example will list all the tabs belonging to a specific app in a channel
+
 
 ## PARAMETERS
 

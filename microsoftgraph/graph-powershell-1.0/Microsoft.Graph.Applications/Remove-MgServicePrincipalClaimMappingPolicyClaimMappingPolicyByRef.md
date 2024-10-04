@@ -34,13 +34,17 @@ Remove a claimsMappingPolicy from a servicePrincipal.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-claimsmappingpolicies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Remove-MgServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef -ServicePrincipalId $servicePrincipalId -ClaimsMappingPolicyId $claimsMappingPolicyId
+
+```
+This example shows how to use the Remove-MgServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef Cmdlet.
+
 
 ## PARAMETERS
 
