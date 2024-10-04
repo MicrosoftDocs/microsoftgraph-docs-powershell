@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityIdentity
 
 ## SYNOPSIS
-Get identities from security
+A container for security identities APIs.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentity](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentity?view=graph-powershell-beta)
@@ -21,7 +21,7 @@ Get-MgSecurityIdentity [-ExpandProperty <String[]>] [-Property <String[]>] [-Res
 ```
 
 ## DESCRIPTION
-Get identities from security
+A container for security identities APIs.
 
 ## PARAMETERS
 

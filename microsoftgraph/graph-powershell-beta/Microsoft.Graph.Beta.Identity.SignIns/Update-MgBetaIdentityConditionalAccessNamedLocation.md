@@ -9,7 +9,7 @@ ms.subservice: entra-sign-in
 # Update-MgBetaIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Update the properties of an ipNamedLocation object.
+Update the properties of a countryNamedLocation object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
@@ -47,10 +47,10 @@ Update-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignI
 ```
 
 ## DESCRIPTION
-Update the properties of an ipNamedLocation object.
+Update the properties of a countryNamedLocation object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ipnamedlocation-update-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/countrynamedlocation-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update a country named location by adding to the list of countries
@@ -393,7 +393,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessnamedlocation)
 
-[https://learn.microsoft.com/graph/api/ipnamedlocation-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ipnamedlocation-update?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/countrynamedlocation-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/countrynamedlocation-update?view=graph-rest-beta)
 
 
 

@@ -585,6 +585,8 @@ An archived task is read-only.
 If true, it shows the task.
         - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[LastModifiedDateTime <DateTime?>]`: 
         - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
         - `[PercentComplete <Int32?>]`: The percentage of task completion.
@@ -884,6 +886,8 @@ An archived task is read-only.
 If true, it shows the task.
       - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: 
       - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
       - `[PercentComplete <Int32?>]`: The percentage of task completion.
@@ -1156,6 +1160,8 @@ An archived task is read-only.
 If true, it shows the task.
   - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: 
   - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
   - `[PercentComplete <Int32?>]`: The percentage of task completion.
@@ -1367,6 +1373,8 @@ An archived task is read-only.
 If true, it shows the task.
       - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: 
       - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
       - `[PercentComplete <Int32?>]`: The percentage of task completion.
@@ -1651,6 +1659,8 @@ An archived task is read-only.
 If true, it shows the task.
       - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: 
       - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
       - `[PercentComplete <Int32?>]`: The percentage of task completion.
@@ -1935,6 +1945,8 @@ An archived task is read-only.
 If true, it shows the task.
       - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[LastModifiedDateTime <DateTime?>]`: 
       - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
       - `[PercentComplete <Int32?>]`: The percentage of task completion.
@@ -2197,6 +2209,8 @@ An archived task is read-only.
 If true, it shows the task.
   - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: 
   - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
 For more information, see Using order hints in plannern.
   - `[PercentComplete <Int32?>]`: The percentage of task completion.

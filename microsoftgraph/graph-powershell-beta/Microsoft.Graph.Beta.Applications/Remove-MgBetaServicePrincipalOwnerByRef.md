@@ -1,8 +1,9 @@
 ---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalownerdirectoryobjectbyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaServicePrincipalOwnerByRef
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Remove-MgBetaServicePrincipalOwnerByRef
@@ -12,15 +13,184 @@ Remove an owner from a servicePrincipal object.
 As a recommended best practice, service principals should have at least two owners.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalOwnerByRef?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
+
+### Delete (Default)
+```
+Remove-MgBetaServicePrincipalOwnerByRef -DirectoryObjectId <String> -ServicePrincipalId <String>
+ [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity
+```
+Remove-MgBetaServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
 
 ## DESCRIPTION
 Remove an owner from a servicePrincipal object.
 As a recommended best practice, service principals should have at least two owners.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-owners-permissions.md)]
+
 ## PARAMETERS
+
+### -DirectoryObjectId
+The unique identifier of directoryObject
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IfMatch
+ETag
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: IApplicationsIdentity
+Parameter Sets: DeleteViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServicePrincipalId
+The unique identifier of servicePrincipal
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
@@ -76,7 +246,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalownerdirectoryobjectbyref)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaServicePrincipalOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaServicePrincipalOwnerByRef)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-delete-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-delete-owners?view=graph-rest-beta)
 

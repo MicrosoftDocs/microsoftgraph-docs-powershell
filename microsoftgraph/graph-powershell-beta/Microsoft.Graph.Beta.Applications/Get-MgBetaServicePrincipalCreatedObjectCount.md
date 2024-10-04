@@ -13,9 +13,6 @@ Get the number of the resource
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalCreatedObjectCount](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalCreatedObjectCount?view=graph-powershell-1.0)
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalCreatedObjectCount](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalCreatedObjectCount?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -198,9 +195,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalcreatedobjectcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalcreatedobjectcount)
-
-
-
 
 
 

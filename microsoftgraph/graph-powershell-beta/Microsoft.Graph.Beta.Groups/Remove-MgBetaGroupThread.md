@@ -9,7 +9,7 @@ ms.subservice: entra-groups
 # Remove-MgBetaGroupThread
 
 ## SYNOPSIS
-Delete a thread object.
+Delete conversationThread.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThread?view=graph-powershell-1.0)
@@ -31,10 +31,10 @@ Remove-MgBetaGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Re
 ```
 
 ## DESCRIPTION
-Delete a thread object.
+Delete conversationThread.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-thread-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversationthread-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -250,6 +250,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[PageTemplateId <String>]`: The unique identifier of pageTemplate
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
@@ -272,7 +273,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthread)
 
-[https://learn.microsoft.com/graph/api/group-delete-thread?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-delete-thread?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/conversationthread-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conversationthread-delete?view=graph-rest-beta)
 
 
 

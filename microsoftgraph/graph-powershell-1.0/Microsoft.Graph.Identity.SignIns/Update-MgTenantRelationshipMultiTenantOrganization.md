@@ -9,9 +9,7 @@ ms.subservice: entra-sign-in
 # Update-MgTenantRelationshipMultiTenantOrganization
 
 ## SYNOPSIS
-Create a new multitenant organization.
-By default, the creator tenant becomes an owner tenant upon successful creation.
-Only owner tenants can manage a multitenant organization.
+Update the properties of a multitenant organization.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipMultiTenantOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaTenantRelationshipMultiTenantOrganization?view=graph-powershell-beta)
@@ -36,9 +34,7 @@ Update-MgTenantRelationshipMultiTenantOrganization -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create a new multitenant organization.
-By default, the creator tenant becomes an owner tenant upon successful creation.
-Only owner tenants can manage a multitenant organization.
+Update the properties of a multitenant organization.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/multitenantorganization-update-permissions.md)]
@@ -389,7 +385,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgtenantrelationshipmultitenantorganization)
 
-[https://learn.microsoft.com/graph/api/tenantrelationship-put-multitenantorganization?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tenantrelationship-put-multitenantorganization?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganization-update?view=graph-rest-1.0)
 
 
 

@@ -252,6 +252,7 @@ BODYPARAMETER `<IPaths13Zt223CommunicationsCallsCallIdMicrosoftGraphMutePostRequ
 INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallAiInsightId <String>]`: The unique identifier of callAiInsight
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
   - `[CallRecordingId <String>]`: The unique identifier of callRecording

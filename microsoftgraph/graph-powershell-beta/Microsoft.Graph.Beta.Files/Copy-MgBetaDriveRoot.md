@@ -22,8 +22,8 @@ Progress is reported until the operation is completed by monitoring the progress
 ### CopyExpanded (Default)
 ```
 Copy-MgBetaDriveRoot -DriveId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-ChildrenOnly] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ChildrenOnly] [-IncludeAllVersionHistory] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
@@ -37,7 +37,7 @@ Copy-MgBetaDriveRoot -DriveId <String>
 ### CopyViaIdentityExpanded
 ```
 Copy-MgBetaDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-ChildrenOnly] [-Name <String>]
+ [-AdditionalProperties <Hashtable>] [-ChildrenOnly] [-IncludeAllVersionHistory] [-Name <String>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -134,6 +134,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IncludeAllVersionHistory
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -265,6 +280,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IPaths11Forp5DrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChildrenOnly <Boolean?>]`: 
+  - `[IncludeAllVersionHistory <Boolean?>]`: 
   - `[Name <String>]`: 
   - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

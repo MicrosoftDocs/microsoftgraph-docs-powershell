@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityhealthissue
 schema: 2.0.0
+ms.subservice: security
+ms.subservice: security
 ---
 
 # Get-MgSecurityIdentityHealthIssue
 
 ## SYNOPSIS
-Get healthIssues from security
+Read the properties and relationships of a healthIssue object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentityHealthIssue](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentityHealthIssue?view=graph-powershell-beta)
@@ -38,7 +40,13 @@ Get-MgSecurityIdentityHealthIssue -InputObject <ISecurityIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get healthIssues from security
+Read the properties and relationships of a healthIssue object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-healthissue-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-identitycontainer-list-healthissues-permissions.md)]
 
 ## PARAMETERS
 
@@ -351,6 +359,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityhealthissue](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityhealthissue)
+
+[https://learn.microsoft.com/graph/api/security-healthissue-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-healthissue-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-identitycontainer-list-healthissues?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-identitycontainer-list-healthissues?view=graph-rest-1.0)
 
 
 

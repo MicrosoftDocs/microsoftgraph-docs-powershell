@@ -11,7 +11,7 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 If an item was accidentally deleted, you can fully restore the item.
-However, security groups cannot be restored.
+However, security groups can't be restored.
 Also, restoring an application doesn't restore the associated service principal automatically.
 You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
@@ -19,22 +19,40 @@ After 30 days, the item is permanently deleted.
 
 ## SYNTAX
 
-### Restore (Default)
+### RestoreExpanded (Default)
 ```
 Restore-MgGroupSettingTemplate -GroupSettingTemplateId <String> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-AutoReconcileProxyConflict] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Restore
+```
+Restore-MgGroupSettingTemplate -GroupSettingTemplateId <String>
+ -BodyParameter <IPathsXwtjwyGroupsettingtemplatesGroupsettingtemplateIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### RestoreViaIdentityExpanded
+```
+Restore-MgGroupSettingTemplate -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-AutoReconcileProxyConflict] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
 ```
-Restore-MgGroupSettingTemplate -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Restore-MgGroupSettingTemplate -InputObject <IGroupsIdentity>
+ -BodyParameter <IPathsXwtjwyGroupsettingtemplatesGroupsettingtemplateIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 If an item was accidentally deleted, you can fully restore the item.
-However, security groups cannot be restored.
+However, security groups can't be restored.
 Also, restoring an application doesn't restore the associated service principal automatically.
 You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
@@ -42,12 +60,58 @@ After 30 days, the item is permanently deleted.
 
 ## PARAMETERS
 
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AutoReconcileProxyConflict
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPathsXwtjwyGroupsettingtemplatesGroupsettingtemplateIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Restore, RestoreViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -GroupSettingTemplateId
 The unique identifier of groupSettingTemplate
 
 ```yaml
 Type: String
-Parameter Sets: Restore
+Parameter Sets: RestoreExpanded, Restore
 Aliases:
 
 Required: True
@@ -78,7 +142,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: RestoreViaIdentity
+Parameter Sets: RestoreViaIdentityExpanded, RestoreViaIdentity
 Aliases:
 
 Required: True
@@ -155,6 +219,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+### Microsoft.Graph.PowerShell.Models.IPathsXwtjwyGroupsettingtemplatesGroupsettingtemplateIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
 ### System.Collections.IDictionary
 ## OUTPUTS
 
@@ -164,6 +229,10 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODYPARAMETER `<IPathsXwtjwyGroupsettingtemplatesGroupsettingtemplateIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AutoReconcileProxyConflict <Boolean?>]`: 
 
 INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment

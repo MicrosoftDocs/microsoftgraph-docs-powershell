@@ -9,7 +9,8 @@ ms.subservice: teams
 # New-MgChatMessage
 
 ## SYNOPSIS
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified chat.
+This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessage?view=graph-powershell-beta)
@@ -61,7 +62,8 @@ New-MgChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 ```
 
 ## DESCRIPTION
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified chat.
+This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-post-permissions.md)]
@@ -1078,7 +1080,7 @@ Link to the message in Microsoft Teams.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessage)
 
-[https://learn.microsoft.com/graph/api/chatmessage-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-post?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-1.0)
 
 
 

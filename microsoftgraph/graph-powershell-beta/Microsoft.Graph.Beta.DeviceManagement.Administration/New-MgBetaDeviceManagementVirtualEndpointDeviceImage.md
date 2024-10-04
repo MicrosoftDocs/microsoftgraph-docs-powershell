@@ -22,9 +22,9 @@ Upload a custom OS image that you can later provision on Cloud PCs.
 New-MgBetaDeviceManagementVirtualEndpointDeviceImage [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-ErrorCode <String>] [-ExpirationDate <DateTime>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-OSBuildNumber <String>] [-OSStatus <String>]
- [-OperatingSystem <String>] [-ScopeIds <String[]>] [-SourceImageResourceId <String>] [-Status <String>]
- [-StatusDetails <String>] [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OSVersionNumber <String>] [-OperatingSystem <String>] [-ScopeIds <String[]>]
+ [-SourceImageResourceId <String>] [-Status <String>] [-StatusDetails <String>] [-Version <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -239,6 +239,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OSVersionNumber
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -413,6 +428,7 @@ Read-only.
 For example, 1909.
 Read-only.
   - `[OSStatus <String>]`: cloudPcDeviceImageOsStatus
+  - `[OSVersionNumber <String>]`: 
   - `[OperatingSystem <String>]`: The operating system of the image.
 For example, Windows 10 Enterprise.
 Read-only.

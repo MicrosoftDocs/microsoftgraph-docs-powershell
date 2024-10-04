@@ -20,7 +20,9 @@ Use this API to create a new administrativeUnit.
 ```
 New-MgDirectoryAdministrativeUnit [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-Members <IMicrosoftGraphDirectoryObject[]>]
+ [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsMemberManagementRestricted]
+ [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
+ [-MembershipRuleProcessingState <String>] [-MembershipType <String>]
  [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Visibility <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -186,6 +188,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -IsMemberManagementRestricted
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Members
 Users and groups that are members of this administrative unit.
 Supports $expand.
@@ -193,6 +210,51 @@ To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MembershipRule
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MembershipRuleProcessingState
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MembershipType
+.
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -328,12 +390,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[IsMemberManagementRestricted <Boolean?>]`: 
   - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
+  - `[MembershipRule <String>]`: 
+  - `[MembershipRuleProcessingState <String>]`: 
+  - `[MembershipType <String>]`: 
   - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

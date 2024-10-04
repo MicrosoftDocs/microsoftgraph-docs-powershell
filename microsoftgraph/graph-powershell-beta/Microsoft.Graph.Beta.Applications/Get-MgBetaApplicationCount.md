@@ -13,9 +13,6 @@ Get the number of the resource
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationCount](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationCount?view=graph-powershell-1.0)
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationCount](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationCount?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -134,9 +131,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationcount)
-
-
-
 
 
 

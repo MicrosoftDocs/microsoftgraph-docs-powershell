@@ -10,7 +10,8 @@ ms.subservice: entra-groups
 # Get-MgGroupThread
 
 ## SYNOPSIS
-Get a thread object.
+Get a specific thread that belongs to a group.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)
@@ -40,10 +41,11 @@ Get-MgGroupThread -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get a thread object.
+Get a specific thread that belongs to a group.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationthread-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-thread-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-threads-permissions.md)]
@@ -367,7 +369,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread)
 
-[https://learn.microsoft.com/graph/api/group-get-thread?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-get-thread?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-1.0)
 

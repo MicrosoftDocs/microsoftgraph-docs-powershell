@@ -50,7 +50,9 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-The user experience analyte remote connection entity.
+The user experience analytics remote connection entity.
+The report will be retired on December 31, 2024.
+You can start using the Cloud PC connection quality report now via https://go.microsoft.com/fwlink/?linkid=2283835.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -375,7 +377,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsRemoteConnection>`: The user experience analyte remote connection entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsRemoteConnection>`: The user experience analytics remote connection entity.
+The report will be retired on December 31, 2024.
+You can start using the Cloud PC connection quality report now via https://go.microsoft.com/fwlink/?linkid=2283835.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

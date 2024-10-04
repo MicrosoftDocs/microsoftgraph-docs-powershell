@@ -34,7 +34,7 @@ Remove-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-IfMatch <String>
 Delete a group's conversation object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-conversation-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversation-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -250,6 +250,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[PageTemplateId <String>]`: The unique identifier of pageTemplate
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket

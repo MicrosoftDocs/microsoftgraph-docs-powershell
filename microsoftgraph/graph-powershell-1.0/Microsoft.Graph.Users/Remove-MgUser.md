@@ -9,7 +9,11 @@ ms.subservice: entra-users
 # Remove-MgUser
 
 ## SYNOPSIS
-Deletes a user.
+Delete a user object.
+ When deleted, user resources, including their mailbox and license assignments, are moved to a temporary container and if the user is restored within 30 days, these objects are restored to them.
+The user is also restored to any groups they were a member of.
+After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed.
+To manage the deleted user object, see deletedItems.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUser?view=graph-powershell-beta)
@@ -30,7 +34,11 @@ Remove-MgUser -InputObject <IUsersIdentity> [-IfMatch <String>] [-ResponseHeader
 ```
 
 ## DESCRIPTION
-Deletes a user.
+Delete a user object.
+ When deleted, user resources, including their mailbox and license assignments, are moved to a temporary container and if the user is restored within 30 days, these objects are restored to them.
+The user is also restored to any groups they were a member of.
+After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed.
+To manage the deleted user object, see deletedItems.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delete-permissions.md)]
@@ -232,7 +240,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser)
 
-[https://learn.microsoft.com/graph/api/intune-onboarding-user-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-user-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0)
 
 
 

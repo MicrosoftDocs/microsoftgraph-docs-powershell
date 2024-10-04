@@ -13,9 +13,6 @@ The bulk upload operation for the job.
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgApplicationSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronizationJobBulkUploadContent?view=graph-powershell-1.0)
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronizationJobBulkUploadContent?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -245,9 +242,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjobbulkuploadcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjobbulkuploadcontent)
-
-
-
 
 
 

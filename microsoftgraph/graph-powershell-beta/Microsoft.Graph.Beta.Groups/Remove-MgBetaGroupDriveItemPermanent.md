@@ -233,6 +233,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[PageTemplateId <String>]`: The unique identifier of pageTemplate
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket

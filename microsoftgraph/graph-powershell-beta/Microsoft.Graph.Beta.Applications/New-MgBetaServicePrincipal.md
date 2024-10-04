@@ -1242,8 +1242,8 @@ This lets services like Microsoft 365 call the application in the context of a d
   - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-    - `[Key <String>]`: Key.
-    - `[Value <String>]`: Value.
+    - `[Key <String>]`: Contains the name of the field that a value is associated with.
+    - `[Value <String>]`: Contains the corresponding value for the specified key.
   - `[Type <String>]`: The unique name for the functionality exposed by the app.
 
 APPMANAGEMENTPOLICIES <IMicrosoftGraphAppManagementPolicy- `[]`>: The appManagementPolicy applied to this service principal.
@@ -1263,7 +1263,7 @@ Always null when the object hasn't been deleted.
   - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
   - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+    - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
       - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
       - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -1374,8 +1374,8 @@ This lets services like Microsoft 365 call the application in the context of a d
     - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: The collection of key-value pairs that define parameters that the consuming service can use or call.
 You must specify this property when performing a POST or a PATCH operation on the addIns collection.
 Required.
-      - `[Key <String>]`: Key.
-      - `[Value <String>]`: Value.
+      - `[Key <String>]`: Contains the name of the field that a value is associated with.
+      - `[Value <String>]`: Contains the corresponding value for the specified key.
     - `[Type <String>]`: The unique name for the functionality exposed by the app.
   - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -1401,7 +1401,7 @@ Always null when the object hasn't been deleted.
     - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
     - `[Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]`: customAppManagementConfiguration
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+      - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration- `[]`>]`: Collection of certificate restrictions settings to be applied to an application or service principal.
         - `[CertificateBasedApplicationConfigurationIds <String- `[]`>]`: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
         - `[MaxLifetime <TimeSpan?>]`: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.

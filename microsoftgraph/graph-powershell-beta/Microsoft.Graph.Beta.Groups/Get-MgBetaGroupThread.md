@@ -10,7 +10,8 @@ ms.subservice: entra-groups
 # Get-MgBetaGroupThread
 
 ## SYNOPSIS
-Get a thread object.
+Get a specific thread that belongs to a group.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-1.0)
@@ -40,10 +41,11 @@ Get-MgBetaGroupThread -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get a thread object.
+Get a specific thread that belongs to a group.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversationthread-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-thread-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-threads-permissions.md)]
@@ -352,6 +354,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[PageTemplateId <String>]`: The unique identifier of pageTemplate
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
@@ -374,7 +377,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread)
 
-[https://learn.microsoft.com/graph/api/group-get-thread?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-get-thread?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-beta)
 
 [https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-beta)
 

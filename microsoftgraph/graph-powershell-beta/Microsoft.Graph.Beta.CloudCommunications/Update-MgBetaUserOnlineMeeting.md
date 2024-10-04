@@ -18,18 +18,19 @@ Update the navigation property onlineMeetings in users
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserOnlineMeeting -OnlineMeetingId <String> -UserId <String> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
- [-AllowBreakoutRooms] [-AllowLiveShare <String>] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName]
- [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard]
- [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
- [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
- [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
- [-BroadcastRecordingInputFile <String>] [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]
- [-Capabilities <String[]>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>]
- [-ExternalId <String>] [-Id <String>] [-IsBroadcast] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
- [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]
- [-JoinUrl <String>] [-JoinWebUrl <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
+ [-AdditionalProperties <Hashtable>] [-AiInsights <IMicrosoftGraphCallAiInsight[]>]
+ [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowBreakoutRooms] [-AllowLiveShare <String>]
+ [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowPowerPointSharing] [-AllowRecording]
+ [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard] [-AllowedPresenters <String>]
+ [-AlternativeRecordingInputFile <String>] [-AnonymizeIdentityForRoles <String[]>]
+ [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
+ [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-BroadcastRecordingInputFile <String>]
+ [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-Capabilities <String[]>]
+ [-ChatInfo <IMicrosoftGraphChatInfo>] [-ChatRestrictions <IMicrosoftGraphChatRestrictions>]
+ [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast]
+ [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
+ [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinUrl <String>] [-JoinWebUrl <String>]
+ [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>] [-MeetingTemplateId <String>]
  [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-RecordingInputFile <String>]
  [-Recordings <IMicrosoftGraphCallRecording[]>] [-Registration <IMicrosoftGraphMeetingRegistration>]
@@ -49,18 +50,19 @@ Update-MgBetaUserOnlineMeeting -OnlineMeetingId <String> -UserId <String>
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic]
- [-AllowBreakoutRooms] [-AllowLiveShare <String>] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName]
- [-AllowPowerPointSharing] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard]
- [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
- [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
- [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
- [-BroadcastRecordingInputFile <String>] [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]
- [-Capabilities <String[]>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>]
- [-ExternalId <String>] [-Id <String>] [-IsBroadcast] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
- [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]
- [-JoinUrl <String>] [-JoinWebUrl <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
+ [-AdditionalProperties <Hashtable>] [-AiInsights <IMicrosoftGraphCallAiInsight[]>]
+ [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowBreakoutRooms] [-AllowLiveShare <String>]
+ [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName] [-AllowPowerPointSharing] [-AllowRecording]
+ [-AllowTeamworkReactions] [-AllowTranscription] [-AllowWhiteboard] [-AllowedPresenters <String>]
+ [-AlternativeRecordingInputFile <String>] [-AnonymizeIdentityForRoles <String[]>]
+ [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
+ [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-BroadcastRecordingInputFile <String>]
+ [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-Capabilities <String[]>]
+ [-ChatInfo <IMicrosoftGraphChatInfo>] [-ChatRestrictions <IMicrosoftGraphChatRestrictions>]
+ [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast]
+ [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
+ [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinUrl <String>] [-JoinWebUrl <String>]
+ [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>] [-MeetingTemplateId <String>]
  [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-RecordingInputFile <String>]
  [-Recordings <IMicrosoftGraphCallRecording[]>] [-Registration <IMicrosoftGraphMeetingRegistration>]
@@ -125,6 +127,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AiInsights
+.
+To construct, see NOTES section for AIINSIGHTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCallAiInsight[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1026,6 +1044,40 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
+AIINSIGHTS <IMicrosoftGraphCallAiInsight- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
+    - `[OwnerDisplayName <String>]`: 
+    - `[Text <String>]`: 
+    - `[Title <String>]`: 
+  - `[CallId <String>]`: 
+  - `[ContentCorrelationId <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[EndDateTime <DateTime?>]`: 
+  - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
+    - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
+      - `[Text <String>]`: 
+      - `[Title <String>]`: 
+    - `[Text <String>]`: 
+    - `[Title <String>]`: 
+  - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
+      - `[EventDateTime <DateTime?>]`: 
+      - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Application <IMicrosoftGraphIdentity>]`: identity
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DisplayName <String>]`: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+        - `[Device <IMicrosoftGraphIdentity>]`: identity
+        - `[User <IMicrosoftGraphIdentity>]`: identity
+      - `[TranscriptUtterance <String>]`: 
+
 ATTENDANCEREPORTS <IMicrosoftGraphMeetingAttendanceReport- `[]`>: The attendance reports of an online meeting.
 Read-only.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1168,6 +1220,33 @@ Read-only.
     - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[AiInsights <IMicrosoftGraphCallAiInsight- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[ActionItems <IMicrosoftGraphActionItem- `[]`>]`: 
+      - `[OwnerDisplayName <String>]`: 
+      - `[Text <String>]`: 
+      - `[Title <String>]`: 
+    - `[CallId <String>]`: 
+    - `[ContentCorrelationId <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: 
+    - `[EndDateTime <DateTime?>]`: 
+    - `[MeetingNotes <IMicrosoftGraphMeetingNote- `[]`>]`: 
+      - `[Subpoints <IMicrosoftGraphMeetingNoteSubpoint- `[]`>]`: 
+        - `[Text <String>]`: 
+        - `[Title <String>]`: 
+      - `[Text <String>]`: 
+      - `[Title <String>]`: 
+    - `[Viewpoint <IMicrosoftGraphCallAiInsightViewPoint>]`: callAiInsightViewPoint
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[MentionEvents <IMicrosoftGraphMentionEvent- `[]`>]`: 
+        - `[EventDateTime <DateTime?>]`: 
+        - `[Speaker <IMicrosoftGraphIdentitySet>]`: identitySet
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Application <IMicrosoftGraphIdentity>]`: identity
+          - `[Device <IMicrosoftGraphIdentity>]`: identity
+          - `[User <IMicrosoftGraphIdentity>]`: identity
+        - `[TranscriptUtterance <String>]`: 
   - `[AlternativeRecording <Byte- `[]`>]`: The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
   - `[AttendeeReport <Byte- `[]`>]`: The content stream of the attendee report of a Teams live event.
@@ -1206,10 +1285,6 @@ Optional.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Attendees <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: Information of the meeting attendees.
       - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[Device <IMicrosoftGraphIdentity>]`: identity
-        - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[Role <String>]`: onlineMeetingRole
       - `[Upn <String>]`: User principal name of the participant.
     - `[Contributors <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: For broadcast meeting only.
@@ -1328,6 +1403,7 @@ Optional.
 INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallAiInsightId <String>]`: The unique identifier of callAiInsight
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
   - `[CallRecordingId <String>]`: The unique identifier of callRecording

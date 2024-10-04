@@ -341,7 +341,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/graph/api/intune-mam-managedappstatus-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappstatus-get?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/intune-mam-managedappstatus-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappstatus-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-mam-managedappstatusraw-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappstatusraw-list?view=graph-rest-1.0)
 
 
 

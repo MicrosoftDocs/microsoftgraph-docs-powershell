@@ -66,7 +66,7 @@ New-MgBetaChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 Send a new chatMessage in the specified channel or a chat.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-post-messages-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chatmessage-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Send inline images along with the message
@@ -450,7 +450,7 @@ Accept wildcard characters: False
 
 ### -Mentions
 List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, channel, and tag.
+Supported entities are: user, bot, team, channel, chat, and tag.
 To construct, see NOTES section for MENTIONS properties and create a hash table.
 
 ```yaml
@@ -792,7 +792,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
   - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, channel, and tag.
+Supported entities are: user, bot, team, channel, chat, and tag.
     - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention.
@@ -917,7 +917,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 MENTIONS <IMicrosoftGraphChatMessageMention- `[]`>: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, channel, and tag.
+Supported entities are: user, bot, team, channel, chat, and tag.
   - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
   - `[MentionText <String>]`: String used to represent the mention.
@@ -1071,7 +1071,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
   - `[Locale <String>]`: Locale of the chat message set by the client.
 Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention- `[]`>]`: List of entities mentioned in the chat message.
-Supported entities are: user, bot, team, channel, and tag.
+Supported entities are: user, bot, team, channel, chat, and tag.
     - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage.
 Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention.

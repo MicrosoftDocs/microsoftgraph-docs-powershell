@@ -17,7 +17,7 @@ Invoke action getGroupPolicySettingsDeviceSettingsReport
 Get-MgBetaDeviceManagementReportGroupPolicySettingDeviceSettingReport -OutFile <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Filter <String>]
  [-GroupBy <String[]>] [-Name <String>] [-Property <String[]>] [-Search <String>] [-SessionId <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>] [-PassThru]
+ [-Skip <Int32>] [-Skiptoken <String>] [-Sort <String[]>] [-Top <Int32>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -230,6 +230,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skiptoken
+.
+
+```yaml
+Type: String
+Parameter Sets: GetExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 .
 
@@ -332,6 +347,7 @@ BODYPARAMETER `<IPathsZ8GcywDevicemanagementReportsMicrosoftGraphGetgrouppolicys
   - `[Select <String- `[]`>]`: 
   - `[SessionId <String>]`: 
   - `[Skip <Int32?>]`: 
+  - `[Skiptoken <String>]`: 
   - `[Top <Int32?>]`:
 
 ## RELATED LINKS

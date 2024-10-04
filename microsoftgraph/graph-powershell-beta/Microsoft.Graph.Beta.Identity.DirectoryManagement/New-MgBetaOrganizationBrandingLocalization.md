@@ -782,8 +782,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 CONTENTCUSTOMIZATION `<IMicrosoftGraphContentCustomization>`: contentCustomization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttributeCollection <IMicrosoftGraphKeyValue- `[]`>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-    - `[Key <String>]`: Key.
-    - `[Value <String>]`: Value.
+    - `[Key <String>]`: Contains the name of the field that a value is associated with.
+    - `[Value <String>]`: Contains the corresponding value for the specified key.
   - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
   - `[RegistrationCampaign <IMicrosoftGraphKeyValue- `[]`>]`: Represents content options to customize during MFA proofup interruptions.
   - `[RegistrationCampaignRelativeUrl <String>]`: The relative URL of the content options to customize during MFA proofup interruptions.

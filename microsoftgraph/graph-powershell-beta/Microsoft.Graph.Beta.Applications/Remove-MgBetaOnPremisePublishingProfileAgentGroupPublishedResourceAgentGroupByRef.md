@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaonpremisepublishingprofileagentgrouppublishedresourceagentgrouponpremiseagentgroupbyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef
 schema: 2.0.0
 ---
 
@@ -12,10 +12,208 @@ Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
 
 ## SYNTAX
 
+### Delete (Default)
+```
+Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef
+ -OnPremisesAgentGroupId <String> -OnPremisesAgentGroupId1 <String> -OnPremisesPublishingProfileId <String>
+ -PublishedResourceId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity
+```
+Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef
+ -InputObject <IApplicationsIdentity> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
 
 ## PARAMETERS
+
+### -Headers
+Optional headers that will be added to the request.
+
+```yaml
+Type: IDictionary
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IfMatch
+ETag
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: IApplicationsIdentity
+Parameter Sets: DeleteViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -OnPremisesAgentGroupId
+The unique identifier of onPremisesAgentGroup
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OnPremisesAgentGroupId1
+The unique identifier of onPremisesAgentGroup
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OnPremisesPublishingProfileId
+The unique identifier of onPremisesPublishingProfile
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PublishedResourceId
+The unique identifier of publishedResource
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseHeadersVariable
+Optional Response Headers Variable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
@@ -71,7 +269,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaonpremisepublishingprofileagentgrouppublishedresourceagentgrouponpremiseagentgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaonpremisepublishingprofileagentgrouppublishedresourceagentgrouponpremiseagentgroupbyref)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef)
 
 
 

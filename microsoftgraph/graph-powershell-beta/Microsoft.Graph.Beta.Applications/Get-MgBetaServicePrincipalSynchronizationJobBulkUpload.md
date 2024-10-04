@@ -13,9 +13,6 @@ The bulk upload operation for the job.
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJobBulkUpload](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobBulkUpload?view=graph-powershell-1.0)
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJobBulkUpload](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobBulkUpload?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -214,9 +211,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobbulkupload](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobbulkupload)
-
-
-
 
 
 

@@ -9,7 +9,7 @@ ms.subservice: search
 # Update-MgBetaExternalConnectionSchema
 
 ## SYNOPSIS
-Create a new or update an existing schema for a Microsoft Search connection.
+Update the properties of a schema for an externalConnection.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionSchema?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ Update-MgBetaExternalConnectionSchema -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Create a new or update an existing schema for a Microsoft Search connection.
+Update the properties of a schema for an externalConnection.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-patch-schema-permissions.md)]
@@ -409,7 +409,7 @@ Required.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema)
 
-[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-patch-schema?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-patch-schema?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-beta)
 
 
 

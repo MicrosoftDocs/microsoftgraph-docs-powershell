@@ -8,11 +8,33 @@ schema: 2.0.0
 # Get-MgBetaDeviceAppManagementMobileAppRelationship
 
 ## SYNOPSIS
-The set of direct relationships for this app.
+List mobileAppRelationship objects for mobile applications.
 
 ## SYNTAX
 
 ### List (Default)
+```
+Get-MgBetaDeviceAppManagementMobileAppRelationship [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppRelationshipId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppRelationshipId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+### List1
 ```
 Get-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -20,9 +42,9 @@ Get-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String> [-Expan
  [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
-### Get
+### GetViaIdentity1
 ```
-Get-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String> -MobileAppRelationshipId <String>
+Get-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorporateManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
@@ -35,7 +57,7 @@ Get-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-The set of direct relationships for this app.
+List mobileAppRelationship objects for mobile applications.
 
 ## PARAMETERS
 
@@ -44,7 +66,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -60,7 +82,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases: CV
 
 Required: False
@@ -90,7 +112,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -121,7 +143,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -136,7 +158,7 @@ The unique identifier of mobileApp
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: Get1, List1
 Aliases:
 
 Required: True
@@ -151,7 +173,7 @@ The unique identifier of mobileAppRelationship
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -166,7 +188,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -226,7 +248,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -241,7 +263,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases: OrderBy
 
 Required: False
@@ -256,7 +278,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases: Limit
 
 Required: False
@@ -271,7 +293,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False

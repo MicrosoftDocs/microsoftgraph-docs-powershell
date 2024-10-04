@@ -11,6 +11,9 @@ ms.subservice: entra-applications
 ## SYNOPSIS
 Remove a claimsMappingPolicy from a servicePrincipal.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -318,12 +321,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[IsMemberManagementRestricted <Boolean?>]`: 
   - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
+  - `[MembershipRule <String>]`: 
+  - `[MembershipRuleProcessingState <String>]`: 
+  - `[MembershipType <String>]`: 
   - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -368,12 +375,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[IsMemberManagementRestricted <Boolean?>]`: 
     - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
+    - `[MembershipRule <String>]`: 
+    - `[MembershipRuleProcessingState <String>]`: 
+    - `[MembershipType <String>]`: 
     - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

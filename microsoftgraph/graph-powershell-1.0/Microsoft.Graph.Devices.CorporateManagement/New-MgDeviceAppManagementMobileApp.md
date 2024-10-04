@@ -9,7 +9,7 @@ ms.subservice: intune
 # New-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Create a new microsoftStoreForBusinessApp object.
+Create a new macOSLobApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp>
 ```
 
 ## DESCRIPTION
-Create a new microsoftStoreForBusinessApp object.
+Create a new macOSLobApp object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -489,7 +489,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-microsoftstoreforbusinessapp-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-microsoftstoreforbusinessapp-create?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-macoslobapp-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-macoslobapp-create?view=graph-rest-1.0)
 
 
 

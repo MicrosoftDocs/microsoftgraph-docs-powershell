@@ -10,7 +10,7 @@ ms.subservice: sharepoint
 # Get-MgSiteList
 
 ## SYNOPSIS
-Returns the metadata for a list.
+Get a list of rich long-running operations associated with a list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteList?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Returns the metadata for a list.
+Get a list of rich long-running operations associated with a list.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-operations-permissions.md)]
@@ -370,7 +370,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelist)
 
-[https://learn.microsoft.com/graph/api/list-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/list-list-operations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list-operations?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0)
 

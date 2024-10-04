@@ -674,8 +674,8 @@ Read-only.
         - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-          - `[Key <String>]`: Key.
-          - `[Value <String>]`: Value.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -905,8 +905,8 @@ Read-only.
         - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-          - `[Key <String>]`: Key.
-          - `[Value <String>]`: Value.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1137,8 +1137,8 @@ Read-only.
         - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-          - `[Key <String>]`: Key.
-          - `[Value <String>]`: Value.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1361,8 +1361,8 @@ Read-only.
       - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-        - `[Key <String>]`: Key.
-        - `[Value <String>]`: Value.
+        - `[Key <String>]`: Contains the name of the field that a value is associated with.
+        - `[Value <String>]`: Contains the corresponding value for the specified key.
       - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1523,8 +1523,8 @@ Read-only.
       - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-        - `[Key <String>]`: Key.
-        - `[Value <String>]`: Value.
+        - `[Key <String>]`: Contains the name of the field that a value is associated with.
+        - `[Value <String>]`: Contains the corresponding value for the specified key.
       - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1692,8 +1692,8 @@ Read-only.
         - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-          - `[Key <String>]`: Key.
-          - `[Value <String>]`: Value.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1823,6 +1823,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[PageTemplateId <String>]`: The unique identifier of pageTemplate
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem

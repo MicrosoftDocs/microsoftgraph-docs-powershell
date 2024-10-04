@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscorecustomerinsight
 schema: 2.0.0
+ms.subservice: partner-customer-administration
 ---
 
 # Get-MgBetaSecurityPartnerSecurityScoreCustomerInsight
@@ -36,6 +37,22 @@ Get-MgBetaSecurityPartnerSecurityScoreCustomerInsight -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Contains customer-specific information for certain requirements.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partner-security-partnersecurityscore-list-customerinsights-permissions.md)]
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityPartnerSecurityScoreCustomerInsight
+
+```
+This example shows how to use the Get-MgBetaSecurityPartnerSecurityScoreCustomerInsight Cmdlet.
+
 
 ## PARAMETERS
 
@@ -376,7 +393,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscorecustomerinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritypartnersecurityscorecustomerinsight)
 
 [https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-list-customerinsights?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partner-security-partnersecurityscore-list-customerinsights?view=graph-rest-beta)
-
 
 
 

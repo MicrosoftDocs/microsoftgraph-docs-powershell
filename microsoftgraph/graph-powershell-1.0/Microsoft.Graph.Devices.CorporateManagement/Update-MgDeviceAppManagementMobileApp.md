@@ -9,7 +9,7 @@ ms.subservice: intune
 # Update-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Update the properties of a windowsMobileMSI object.
+Update the properties of a managedAndroidStoreApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ Update-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
 ```
 
 ## DESCRIPTION
-Update the properties of a windowsMobileMSI object.
+Update the properties of a managedAndroidStoreApp object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -579,7 +579,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp)
 
-[https://learn.microsoft.com/graph/api/intune-apps-windowsmobilemsi-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-windowsmobilemsi-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-apps-managedandroidstoreapp-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-managedandroidstoreapp-update?view=graph-rest-1.0)
 
 
 

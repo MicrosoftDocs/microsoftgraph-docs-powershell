@@ -9,9 +9,11 @@ ms.subservice: onedrive
 # Update-MgBetaDriveItemRetentionLabel
 
 ## SYNOPSIS
-Lock or unlock a retention label on a driveItem that classifies content as records.
+Apply (set) a retention label on a driveItem (files and folders).
+Retention labels don't need to be published in a retention label policy to be applied using this method.
+When a retention label is applied to a folder, all the items in the folder are tagged with the same retention label.
+For information about conflict resolution for retention labels, see Will an existing label be overridden or removed.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
-For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItemRetentionLabel?view=graph-powershell-1.0)
@@ -51,12 +53,14 @@ Update-MgBetaDriveItemRetentionLabel -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Lock or unlock a retention label on a driveItem that classifies content as records.
+Apply (set) a retention label on a driveItem (files and folders).
+Retention labels don't need to be published in a retention label policy to be applied using this method.
+When a retention label is applied to a folder, all the items in the folder are tagged with the same retention label.
+For information about conflict resolution for retention labels, see Will an existing label be overridden or removed.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
-For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-setretentionlabel-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-lockorunlockrecord-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -440,7 +444,7 @@ Read-write.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel)
 
-[https://learn.microsoft.com/graph/api/driveitem-lockorunlockrecord?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-lockorunlockrecord?view=graph-rest-beta)
+[https://learn.microsoft.com/graph/api/driveitem-setretentionlabel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-setretentionlabel?view=graph-rest-beta)
 
 
 

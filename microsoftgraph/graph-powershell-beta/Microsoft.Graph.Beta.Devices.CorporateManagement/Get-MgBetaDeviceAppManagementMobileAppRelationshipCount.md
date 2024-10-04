@@ -14,9 +14,9 @@ Get the number of the resource
 
 ### Get (Default)
 ```
-Get-MgBetaDeviceAppManagementMobileAppRelationshipCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaDeviceAppManagementMobileAppRelationshipCount [-Filter <String>] [-Search <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -74,21 +74,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -MobileAppId
-The unique identifier of mobileApp
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

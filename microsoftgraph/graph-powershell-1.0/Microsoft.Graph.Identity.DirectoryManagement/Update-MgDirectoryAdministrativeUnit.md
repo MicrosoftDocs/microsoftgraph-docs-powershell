@@ -11,6 +11,9 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Update the properties of an administrativeUnit object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -18,9 +21,10 @@ Update the properties of an administrativeUnit object.
 Update-MgDirectoryAdministrativeUnit -AdministrativeUnitId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>]
- [-Members <IMicrosoftGraphDirectoryObject[]>] [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>]
- [-Visibility <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-IsMemberManagementRestricted] [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
+ [-MembershipRuleProcessingState <String>] [-MembershipType <String>]
+ [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Visibility <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -35,9 +39,10 @@ Update-MgDirectoryAdministrativeUnit -AdministrativeUnitId <String>
 Update-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>]
- [-Members <IMicrosoftGraphDirectoryObject[]>] [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>]
- [-Visibility <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-IsMemberManagementRestricted] [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
+ [-MembershipRuleProcessingState <String>] [-MembershipType <String>]
+ [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Visibility <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -230,6 +235,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -IsMemberManagementRestricted
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Members
 Users and groups that are members of this administrative unit.
 Supports $expand.
@@ -237,6 +257,51 @@ To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MembershipRule
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MembershipRuleProcessingState
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MembershipType
+.
+
+```yaml
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -373,12 +438,16 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[IsMemberManagementRestricted <Boolean?>]`: 
   - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
+  - `[MembershipRule <String>]`: 
+  - `[MembershipRuleProcessingState <String>]`: 
+  - `[MembershipType <String>]`: 
   - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

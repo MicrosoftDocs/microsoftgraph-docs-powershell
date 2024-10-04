@@ -43,7 +43,7 @@ Get-MgIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsIdent
 Retrieve the properties and relationships of an ipNamedLocation object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/namedlocation-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/ipnamedlocation-get-permissions.md)]
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conditionalaccessroot-list-namedlocations-permissions.md)]
