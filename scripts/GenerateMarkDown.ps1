@@ -103,7 +103,7 @@ function Get-FolderByProfile {
         }
             
         Get-ChildItem -Path $Destination * -File -Recurse | foreach { $_.Delete() }
-
+        $CmdletCount = 0
         # Generate table of contents for each module
         $TocFileName = "$Path.md"
         $ModuleGuid = [guid]::NewGuid().ToString()
@@ -134,6 +134,10 @@ function Get-FolderByProfile {
             }
             Add-Content -Path $Destination\$TocFileName -Value "### [$Command]($Command.md)"
             Add-Content -Path $Destination\$TocFileName -Value ""
+            $CmdletCount++
+        }
+        if($CmdletCount -eq 0){
+            Remove-Item -LiteralPath $Destination -Force -Recurse
         }
 
     }
