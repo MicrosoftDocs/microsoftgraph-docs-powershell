@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbillingusageunbilled
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property unbilled in reports
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaReportPartnerBillingUsageUnbilled?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,6 +27,18 @@ Update-MgReportPartnerBillingUsageUnbilled -BodyParameter <Hashtable> [-Response
 
 ## DESCRIPTION
 Update the navigation property unbilled in reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -170,8 +179,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbillingusageunbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbillingusageunbilled)
-
-
-
-
 
