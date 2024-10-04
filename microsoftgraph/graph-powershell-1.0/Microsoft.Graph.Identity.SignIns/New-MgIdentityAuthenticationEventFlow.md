@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
-The following derived subtypes are supported:\n- externalUsersSelfServiceSignupEventsFlow object type.
+The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow object type.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-MgIdentityAuthenticationEventFlow -BodyParameter <IMicrosoftGraphAuthenticat
 
 ## DESCRIPTION
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
-The following derived subtypes are supported:\n- externalUsersSelfServiceSignupEventsFlow object type.
+The following derived subtypes are supported:- externalUsersSelfServiceSignupEventsFlow object type.
 
 ## EXAMPLES
 
@@ -467,30 +467,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphAuthenticationEventsFlow\>: authenticationEventsFlow
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAuthenticationEventsFlow>`: authenticationEventsFlow
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Conditions \<IMicrosoftGraphAuthenticationConditions\>\]: authenticationConditions
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Applications \<IMicrosoftGraphAuthenticationConditionsApplications\>\]: authenticationConditionsApplications
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[IncludeApplications \<IMicrosoftGraphAuthenticationConditionApplication\[\]\>\]: 
-        \[AppId \<String\>\]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
-  \[Description \<String\>\]: The description of the events policy.
-  \[DisplayName \<String\>\]: Required.
+  - `[Conditions <IMicrosoftGraphAuthenticationConditions>]`: authenticationConditions
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Applications <IMicrosoftGraphAuthenticationConditionsApplications>]`: authenticationConditionsApplications
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`: 
+        - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
+  - `[Description <String>]`: The description of the events policy.
+  - `[DisplayName <String>]`: Required.
 The display name for the events policy.
 
-CONDITIONS \<IMicrosoftGraphAuthenticationConditions\>: authenticationConditions
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Applications \<IMicrosoftGraphAuthenticationConditionsApplications\>\]: authenticationConditionsApplications
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[IncludeApplications \<IMicrosoftGraphAuthenticationConditionApplication\[\]\>\]: 
-      \[AppId \<String\>\]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
+CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Applications <IMicrosoftGraphAuthenticationConditionsApplications>]`: authenticationConditionsApplications
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication- `[]`>]`: 
+      - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-1.0)
+
+
+
 
