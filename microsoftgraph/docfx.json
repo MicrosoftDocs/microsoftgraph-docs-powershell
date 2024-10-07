@@ -9,7 +9,7 @@
         "dest": "microsoftgraph/breadcrumb"
       },
       { 
-	"files": [ "zone-pivot-groups.yml" ]
+	"files": [ "zone-pivot-groups.yml" ],
 	"dest": "microsoftgraph"
       },
       {
