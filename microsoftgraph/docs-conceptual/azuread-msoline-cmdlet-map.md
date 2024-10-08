@@ -85,7 +85,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-AzureADApplicationProxyConnector|[Get-MgBetaOnPremisePublishingProfileConnector](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnector)|
 |Get-AzureADApplicationProxyConnectorGroup|[Get-MgBetaOnPremisePublishingProfileConnectorGroup](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroup)|
 |Get-AzureADApplicationProxyConnectorGroupMembers|[Get-MgBetaOnPremisePublishingProfileConnectorGroupMember](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroupmember)|
-|Get-AzureADApplicationProxyConnectorMemberOf|[Get-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectormemberofbyref)|
+|Get-AzureADApplicationProxyConnectorMemberOf|[Get-MgBetaOnPremisePublishingProfileConnectorMemberOf](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectormemberof)|
 |New-AzureADApplicationProxyConnectorGroup|[New-MgBetaOnPremisePublishingProfileConnectorGroup](/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileconnectorgroup)|
 |Remove-AzureADApplicationProxyConnectorGroup|[Remove-MgBetaOnPremisePublishingProfileConnectorGroup](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaonpremisepublishingprofileconnectorgroup)|
 |Set-AzureADApplicationProxyApplicationConnectorGroup|[Set-MgBetaApplicationConnectorGroupByRef](/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref)|
