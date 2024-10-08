@@ -8,6 +8,7 @@ author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 zone_pivot_groups: powershell-legacy-modules
+zone_pivot_group_filename: microsoftgraph/zone-pivot-groups.json
 
 #customer intent: As a Powershell user, I want to find the equivalent Microsoft Graph PowerShell cmdlets for Azure AD PowerShell and MSOnline cmdlets, so that I can migrate my scripts to the new Microsoft Graph PowerShell SDK.
 ---
@@ -287,7 +288,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 |Azure AD cmdlet | Microsoft Graph PowerShell cmdlet|
 |------------|--------------|
-|Add-AzureADGroupMember|[New-MgGroupMember](/powershell/module/microsoft.graph.groups/new-mggroupmember)|
+|Add-AzureADGroupMember|[New-MgGroupMemberByRef](/powershell/module/microsoft.graph.groups/new-mggroupmemberbyref)|
 |Add-AzureADGroupOwner|[New-MgGroupOwnerByRef](/powershell/module/microsoft.graph.groups/new-mggroupownerbyref)|
 |Add-AzureADMSLifecyclePolicyGroup|[Add-MgGroupToLifecyclePolicy](/powershell/module/microsoft.graph.groups/add-mggrouptolifecyclepolicy)|
 |Get-AzureADGroup|[Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup)|
@@ -529,7 +530,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |------------|--------------|
 |Add-MsolAdministrativeUnitMember|[New-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitmemberbyref)|
 |Add-MsolForeignGroupToRole||
-|Add-MsolGroupMember|[New-MgGroupMember](/powershell/module/microsoft.graph.groups/new-mggroupmember)|
+|Add-MsolGroupMember|[New-MgGroupMemberByRef](/powershell/module/microsoft.graph.groups/new-mggroupmemberbyref)|
 |Add-MsolRoleMember|[New-MgDirectoryRoleMemberByRef](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrolememberbyref)|
 |Add-MsolScopedRoleMember|[New-MgDirectoryRoleScopedMember](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrolescopedmember)|
 |Confirm-MsolDomain|[Confirm-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdomain)|
