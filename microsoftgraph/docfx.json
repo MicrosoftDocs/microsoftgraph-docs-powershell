@@ -8,6 +8,10 @@
         "src": "breadcrumb",
         "dest": "microsoftgraph/breadcrumb"
       },
+      { 
+	"files": [ "zone-pivot-groups.yml" ],
+	"dest": "microsoftgraph"
+      },
       {
         "files": [
           "**/*.md",

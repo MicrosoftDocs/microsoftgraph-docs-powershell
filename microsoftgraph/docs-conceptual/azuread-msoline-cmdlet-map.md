@@ -3,10 +3,12 @@ title: "Find Azure AD and MSOnline cmdlets in Microsoft Graph PowerShell"
 description: "Use this map of the Azure AD PowerShell and MSOnline cmdlets to find their Microsoft Graph PowerShell equivalents."
 
 ms.topic: reference
-ms.date: 03/12/2024
+ms.date: 10/08/2024
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
+zone_pivot_groups: powershell-legacy-modules
+zone_pivot_group_filename: microsoftgraph/zone-pivot-groups.json
 
 #customer intent: As a Powershell user, I want to find the equivalent Microsoft Graph PowerShell cmdlets for Azure AD PowerShell and MSOnline cmdlets, so that I can migrate my scripts to the new Microsoft Graph PowerShell SDK.
 ---
@@ -15,6 +17,7 @@ ms.author: eunicewaweru
 
 You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmdlets that you need in the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/overview). For more information about the new cmdlets, see [Get started with the Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
 
+:::zone pivot="azure-ad-powershell"
 ## Azure AD PowerShell to Microsoft Graph PowerShell by category
 
 The following is the categorization of the Microsoft Entra cmdlets. Select a category to use the cmdlets 
@@ -82,7 +85,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-AzureADApplicationProxyConnector|[Get-MgBetaOnPremisePublishingProfileConnector](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnector)|
 |Get-AzureADApplicationProxyConnectorGroup|[Get-MgBetaOnPremisePublishingProfileConnectorGroup](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroup)|
 |Get-AzureADApplicationProxyConnectorGroupMembers|[Get-MgBetaOnPremisePublishingProfileConnectorGroupMember](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroupmember)|
-|Get-AzureADApplicationProxyConnectorMemberOf|[Get-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectormemberofbyref)|
+|Get-AzureADApplicationProxyConnectorMemberOf|[Get-MgBetaOnPremisePublishingProfileConnectorMemberOf](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectormemberof)|
 |New-AzureADApplicationProxyConnectorGroup|[New-MgBetaOnPremisePublishingProfileConnectorGroup](/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileconnectorgroup)|
 |Remove-AzureADApplicationProxyConnectorGroup|[Remove-MgBetaOnPremisePublishingProfileConnectorGroup](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaonpremisepublishingprofileconnectorgroup)|
 |Set-AzureADApplicationProxyApplicationConnectorGroup|[Set-MgBetaApplicationConnectorGroupByRef](/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref)|
@@ -285,7 +288,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 |Azure AD cmdlet | Microsoft Graph PowerShell cmdlet|
 |------------|--------------|
-|Add-AzureADGroupMember|[New-MgGroupMember](/powershell/module/microsoft.graph.groups/new-mggroupmember)|
+|Add-AzureADGroupMember|[New-MgGroupMemberByRef](/powershell/module/microsoft.graph.groups/new-mggroupmemberbyref)|
 |Add-AzureADGroupOwner|[New-MgGroupOwnerByRef](/powershell/module/microsoft.graph.groups/new-mggroupownerbyref)|
 |Add-AzureADMSLifecyclePolicyGroup|[Add-MgGroupToLifecyclePolicy](/powershell/module/microsoft.graph.groups/add-mggrouptolifecyclepolicy)|
 |Get-AzureADGroup|[Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup)|
@@ -391,13 +394,143 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 <sup>1</sup> This cmdlet has more than one cmdlet mapping in Microsoft Graph PowerShell.
 
+:::zone-end
+
+:::zone pivot="azure-ad-preview"
+
+## Azure AD Preview to Microsoft Graph PowerShell
+
+|Azure AD Preview cmdlet | Microsoft Graph PowerShell cmdlet|
+|------------|--------------|
+|Add-AzureADAdministrativeUnitMember|[New-MgDirectoryAdministrativeUnitMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnitMember)|
+|Add-AzureADApplicationPolicy|[New-MgApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationAppManagementPolicyByRef)|
+|Add-AzureADMSCustomSecurityAttributeDefinitionAllowedValues|[New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue)|
+|Add-AzureADMSFeatureRolloutPolicyDirectoryObject|[New-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef)|
+|Add-AzureADMSPrivilegedResource <sup>2</sup>|`Deprecated`|
+|Add-AzureADScopedRoleMembership|[New-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnitScopedRoleMember)|
+|Add-AzureADServicePrincipalPolicy|[New-MgServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalClaimMappingPolicyByRef)|
+|Close-AzureADMSPrivilegedRoleAssignmentRequest <sup>2</sup>|`Deprecated`|
+|Get-AzureADAdministrativeUnit|[Get-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnit)|
+|Get-AzureADAdministrativeUnitMember|[Get-MgDirectoryAdministrativeUnitMember](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmember)|
+|Get-AzureADApplicationPolicy|[Get-MgApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationAppManagementPolicyByRef)|
+|Get-AzureADApplicationSignInDetailedSummary|[Get-MgBetaReportApplicationSignInDetailedSummary](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportApplicationSignInDetailedSummary)|
+|Get-AzureADApplicationSignInSummary|[Get-MgBetaReportAzureAdApplicationSignInSummary](/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadapplicationsigninsummary)|
+|Get-AzureADAuditDirectoryLogs|[Get-MgAuditLogDirectoryAudit](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogDirectoryAudit)|
+|Get-AzureADAuditSignInLogs|[Get-MgAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignIn)|
+|Get-AzureADDirectorySetting|[Get-MgBetaDirectorySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectorySetting)|
+|Get-AzureADDirectorySettingTemplate|[Get-MgBetaDirectorySettingTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectorySettingTemplate)|
+|Get-AzureADExternalDomainFederation|[Get-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainFederationConfiguration)|
+|Get-AzureADMSApplicationTemplate|[Get-MgApplicationTemplate](/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate)|
+|Get-AzureADMSAttributeSet|[Get-MgDirectoryAttributeSet](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryattributeset)|
+|Get-AzureADMSCustomSecurityAttributeDefinition|[Get-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCustomSecurityAttributeDefinition)|
+|Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue|[Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorycustomsecurityattributedefinitionallowedvalue)|
+|Get-AzureADMSFeatureRolloutPolicy|[Get-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFeatureRolloutPolicy)|
+|Get-AzureADMSGroupPermissionGrant|[Get-MgGroupPermissionGrant](/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrant)|
+|Get-AzureADMSPasswordSingleSignOnCredential|[Get-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
+|Get-AzureADMSPrivilegedResource|[Get-MgBetaPrivilegedAccessResource](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedAccessResource)|
+|Get-AzureADMSPrivilegedRoleAssignment <sup>2</sup>|`Deprecated`|
+|Get-AzureADMSPrivilegedRoleAssignmentRequest <sup>2</sup>|`Deprecated`|
+|Get-AzureADMSPrivilegedRoleDefinition|[Get-MgBetaPrivilegedAccessResourceRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedAccessResourceRoleDefinition)|
+|Get-AzureADMSPrivilegedRoleSetting|[Get-MgBetaPrivilegedAccessResourceRoleSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedAccessResourceRoleSetting)|
+|Get-AzureADMSServicePrincipal|[Get-MgServicePrincipal](/powershell/module/microsoft.graph.applications/get-mgserviceprincipal)|
+|Get-AzureADMSTrustFrameworkPolicy|[Get-MgBetaTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaTrustFrameworkPolicy)|
+|Get-AzureADMSUser|[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser)|
+|Get-AzureADObjectSetting|[Get-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSetting)|
+|Get-AzureADPolicy <sup>1</sup>|[Get-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/microsoft.graph.identity.signins/get-mgpolicyhomerealmdiscoverypolicy)|
+|Get-AzureADPolicy <sup>1</sup>|[Get-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/microsoft.graph.identity.signins/get-mgpolicyactivitybasedtimeoutpolicy)| 
+|Get-AzureADPolicy <sup>1</sup>|[Get-MgPolicyTokenIssuancePolicy](/powershell/module/microsoft.graph.identity.signins/get-mgpolicytokenissuancepolicy)| 
+|Get-AzureADPolicy <sup>1</sup>|[Get-MgPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.identity.signins/get-mgpolicytokenlifetimepolicy)|
+|Get-AzureADPolicy <sup>1</sup>|[Get-MgPolicyClaimMappingPolicy](/powershell/module/microsoft.graph.identity.signins/get-mgpolicyclaimmappingpolicy)|
+|Get-AzureADPolicyAppliedObject|[Get-MgPolicyHomeRealmDiscoveryPolicyApplyTo](/powershell/module/microsoft.graph.identity.signins/get-mgpolicyhomerealmdiscoverypolicyapplyto)|
+|Get-AzureADPrivilegedRole <sup>2</sup>|`Deprecated`|
+|Get-AzureADPrivilegedRoleAssignment|[Get-MgBetaPrivilegedRoleRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedRoleRoleAssignment)|
+|Get-AzureADScopedRoleMembership|[Get-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitScopedRoleMember)|
+|Get-AzureADServicePrincipalPolicy <sup>1</sup>|[Get-MgServicePrincipalClaimMappingPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalClaimMappingPolicy)|
+|Get-AzureADServicePrincipalPolicy <sup>1</sup>|[Get-MgServicePrincipalHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalHomeRealmDiscoveryPolicy)|
+|Get-AzureADServicePrincipalPolicy <sup>1</sup>|[Get-MgServicePrincipalTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTokenIssuancePolicy)|
+|Get-AzureADServicePrincipalPolicy <sup>1</sup>|[Get-MgServicePrincipalTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTokenLifetimePolicy)|
+|New-AzureADAdministrativeUnit|[New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit)|
+|New-AzureADDirectorySetting|[New-MgBetaDirectorySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectorySetting)|
+|New-AzureADExternalDomainFederation|[New-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomainFederationConfiguration)|
+|New-AzureADMSAdministrativeUnitMember|[New-MgDirectoryAdministrativeUnitMember](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitmember)|
+|New-AzureADMSApplicationFromApplicationTemplate|[Invoke-MgInstantiateApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Invoke-MgInstantiateApplicationTemplate)|
+|New-AzureADMSAttributeSet|[New-MgDirectoryAttributeSet](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset)|
+|New-AzureADMSCustomSecurityAttributeDefinition|[New-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinition)|
+|New-AzureADMSFeatureRolloutPolicy|[New-MgPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicy)|
+|New-AzureADMSPasswordSingleSignOnCredential|[New-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
+|New-AzureADMSServicePrincipal|[New-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipal)|
+|New-AzureADMSTrustFrameworkPolicy|[New-MgBetaTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaTrustFrameworkPolicy)|
+|New-AzureADMSUser|[New-MgUser](/powershell/module/microsoft.graph.users/new-mguser)|
+|New-AzureADObjectSetting|[New-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/New-MgGroupSetting)|
+|New-AzureADPolicy|[New-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyActivityBasedTimeoutPolicy)|
+|New-AzureADPrivilegedRoleAssignment <sup>2</sup>|`Deprecated`|
+|Open-AzureADMSPrivilegedRoleAssignmentRequest <sup>2</sup>|`Deprecated`|
+|Remove-AzureADAdministrativeUnit|[Remove-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunit)|
+|Remove-AzureADAdministrativeUnitMember|[Remove-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitmemberbyref)|
+|Remove-AzureADApplicationPolicy <sup>1</sup>|[Remove-MgApplicationAppManagementPolicyByRef](/powershell/module/microsoft.graph.applications/Remove-MgApplicationAppManagementPolicyByRef)|
+|Remove-AzureADApplicationPolicy <sup>1</sup>|[Remove-MgApplicationTokenIssuancePolicyByRef](/powershell/module/microsoft.graph.applications/Remove-MgApplicationTokenIssuancePolicyByRef)|
+|Remove-AzureADApplicationPolicy <sup>1</sup>|[Remove-MgApplicationTokenLifetimePolicyByRef](/powershell/module/microsoft.graph.applications/Remove-MgApplicationTokenLifetimePolicyByRef)|
+|Remove-AzureADDirectorySetting|[Remove-MgBetaDirectorySetting](/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorysetting)|
+|Remove-AzureADExternalDomainFederation|[Remove-MgDirectoryFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryfederationconfiguration)|
+|Remove-AzureADMSFeatureRolloutPolicy|[Remove-MgPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyfeaturerolloutpolicy)|
+|Remove-AzureADMSFeatureRolloutPolicyDirectoryObject|[Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef)|
+|Remove-AzureADMSPasswordSingleSignOnCredential|[Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
+|Remove-AzureADMSTrustFrameworkPolicy|[Remove-MgBetaTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaTrustFrameworkPolicy)|
+|Remove-AzureADObjectSetting|[Remove-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupSetting)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyactivitybasedtimeoutpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgPolicyDefaultAppManagementPolicy](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicydefaultappmanagementpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgPolicyAppManagementPolicy](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyappmanagementpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgPolicyAuthenticationFlowPolicy](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationflowpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgPolicyAuthenticationMethodPolicy](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationmethodpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgPolicyClaimMappingPolicy](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyclaimmappingpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](/powershell/module/microsoft.graph.identity.signins/Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyhomerealmdiscoverypolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgPolicyPermissionGrantPolicy](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicypermissiongrantpolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgPolicyTokenIssuancePolicy](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicytokenissuancepolicy)|
+|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicytokenlifetimepolicy)|
+|Remove-AzureADScopedRoleMembership|[Remove-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnitScopedRoleMember)|
+|Remove-AzureADServicePrincipalPolicy <sup>1</sup>|[Remove-MgServicePrincipalClaimMappingPolicyByRef](/powershell/module/microsoft.graph.applications/Remove-MgServicePrincipalClaimMappingPolicyByRef)|
+|Remove-AzureADServicePrincipalPolicy <sup>1</sup>|[Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalhomerealmdiscoverypolicybyref)|
+|Set-AzureADAdministrativeUnit|[Update-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryadministrativeunit)|
+|Set-AzureADDirectorySetting|[Update-MgBetaDirectorySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectorySetting)|
+|Set-AzureADMSAttributeSet|[Update-MgDirectoryAttributeSet](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryattributeset)|
+|Set-AzureADMSCustomSecurityAttributeDefinition|[Update-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinition)|
+|Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue|[Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinitionallowedvalue)|
+|Set-AzureADMSFeatureRolloutPolicy|[Update-MgPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyfeaturerolloutpolicy)|
+|Set-AzureADMSPasswordSingleSignOnCredential|[Update-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
+|Set-AzureADMSPrivilegedRoleAssignmentRequest <sup>2</sup>|`Deprecated`|
+|Set-AzureADMSPrivilegedRoleSetting|[Update-MgBetaPrivilegedAccessRoleSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaPrivilegedAccessRoleSetting)|
+|Set-AzureADMSServicePrincipal|[Update-MgServicePrincipal](/powershell/module/microsoft.graph.applications/update-mgserviceprincipal)|
+|Set-AzureADMSTrustFrameworkPolicy|[Update-MgBetaTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaTrustFrameworkPolicy)|
+|Set-AzureADMSUser|[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser)|
+|Set-AzureADObjectSetting|[Update-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupSetting)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyactivitybasedtimeoutpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgPolicyDefaultAppManagementPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicydefaultappmanagementpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgPolicyAppManagementPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyappmanagementpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgPolicyAuthenticationFlowPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgPolicyAuthenticationMethodPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgPolicyClaimMappingPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyclaimmappingpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyfeaturerolloutpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyhomerealmdiscoverypolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgPolicyPermissionGrantPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicypermissiongrantpolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgPolicyTokenIssuancePolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicytokenissuancepolicy)|
+|Set-AzureADPolicy <sup>1</sup>|[Update-MgPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicytokenlifetimepolicy)|
+
+<sup>1</sup> This cmdlet has more than one cmdlet mapping in Microsoft Graph PowerShell.
+
+<sup>2</sup> Privileged Identity Management (PIM) [iteration 3 APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) should be used. Check [this guidance](/entra/id-governance/privileged-identity-management/pim-apis) for more details.
+
+:::zone-end
+
+:::zone pivot="msonline"
+
 ## MSOnline to Microsoft Graph PowerShell
 
 |MSOnline cmdlet | Microsoft Graph PowerShell cmdlet|
 |------------|--------------|
 |Add-MsolAdministrativeUnitMember|[New-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitmemberbyref)|
 |Add-MsolForeignGroupToRole||
-|Add-MsolGroupMember|[New-MgGroupMember](/powershell/module/microsoft.graph.groups/new-mggroupmember)|
+|Add-MsolGroupMember|[New-MgGroupMemberByRef](/powershell/module/microsoft.graph.groups/new-mggroupmemberbyref)|
 |Add-MsolRoleMember|[New-MgDirectoryRoleMemberByRef](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrolememberbyref)|
 |Add-MsolScopedRoleMember|[New-MgDirectoryRoleScopedMember](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrolescopedmember)|
 |Confirm-MsolDomain|[Confirm-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdomain)|
@@ -415,7 +548,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Get-MsolCompanyInformation|[Get-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization)|
 |Get-MsolContact|[Get-MgContact](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact)|
 |Get-MsolDevice|[Get-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice)|
-|Get-MsolDeviceRegistrationServicePolicy|[Get-MgBetaPolicyDeviceRegistrationPolicy](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeviceregistrationpolicy?view=graph-powershell-beta&preserve-view=true)|
+|Get-MsolDeviceRegistrationServicePolicy|[Get-MgPolicyDeviceRegistrationPolicy](/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy)|
 |Get-MsolDirSyncConfiguration|[Get-MgDirectoryOnPremiseSynchronization](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryonpremisesynchronization)|
 |Get-MsolDirSyncFeatures|[Get-MgDirectoryOnPremiseSynchronization](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryonpremisesynchronization)|
 |Get-MsolDirSyncProvisioningError|[Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup), [Get-MgContact](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact), [Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser)|
@@ -478,7 +611,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Set-MsolCompanySettings <sup>1</sup>|[Update-MgPolicyAuthorizationPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy)|
 |Set-MsolDeviceRegistrationServicePolicy||
 |Set-MsolDirSyncConfiguration|[Update-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryOnPremiseSynchronization)|
-|Set-MsolDirSyncEnabled|[Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization)|
+|Set-MsolDirSyncEnabled|[Update-MgOrganization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganization)|
 |Set-MsolDirSyncFeature|[Update-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryOnPremiseSynchronization)|
 |Set-MsolDomain|[Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain)|
 |Set-MsolDomainAuthentication|[New-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainfederationconfiguration)|
@@ -495,125 +628,4 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 <sup>1</sup> This cmdlet has more than one cmdlet mapping in Microsoft Graph PowerShell.
 
-## Azure AD Preview to Microsoft Graph PowerShell
-
-|Azure AD Preview cmdlet | Microsoft Graph PowerShell cmdlet|
-|------------|--------------|
-|Add-AzureADAdministrativeUnitMember|[New-MgBetaDirectoryAdministrativeUnitMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnitMember)|
-|Add-AzureADApplicationPolicy|[New-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationAppManagementPolicyByRef)|
-|Add-AzureADMSCustomSecurityAttributeDefinitionAllowedValues|[New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue)|
-|Add-AzureADMSFeatureRolloutPolicyDirectoryObject|[New-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef)|
-|Add-AzureADMSPrivilegedResource <sup>2</sup>|`Deprecated`|
-|Add-AzureADScopedRoleMembership|[New-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnitScopedRoleMember)|
-|Add-AzureADServicePrincipalPolicy|[New-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalClaimMappingPolicyByRef)|
-|Close-AzureADMSPrivilegedRoleAssignmentRequest <sup>2</sup>|`Deprecated`|
-|Get-AzureADAdministrativeUnit|[Get-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnit)|
-|Get-AzureADAdministrativeUnitMember|[Get-MgBetaAdministrativeUnitMember](/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitmember)|
-|Get-AzureADApplicationPolicy|[Get-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationAppManagementPolicyByRef)|
-|Get-AzureADApplicationSignInDetailedSummary|[Get-MgBetaReportApplicationSignInDetailedSummary](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportApplicationSignInDetailedSummary)|
-|Get-AzureADApplicationSignInSummary|[Get-MgBetaReportAzureAdApplicationSignInSummary](/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadapplicationsigninsummary)|
-|Get-AzureADAuditDirectoryLogs|[Get-MgBetaAuditLogDirectoryAudit](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogDirectoryAudit)|
-|Get-AzureADAuditSignInLogs|[Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignIn)|
-|Get-AzureADDirectorySetting|[Get-MgBetaDirectorySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectorySetting)|
-|Get-AzureADDirectorySettingTemplate|[Get-MgBetaDirectorySettingTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectorySettingTemplate)|
-|Get-AzureADExternalDomainFederation|[Get-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainFederationConfiguration)|
-|Get-AzureADMSApplicationTemplate|[Get-MgApplicationTemplate](/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate)|
-|Get-AzureADMSAttributeSet|[Get-MgBetaDirectoryAttributeSet](/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryattributeset)|
-|Get-AzureADMSCustomSecurityAttributeDefinition|[Get-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCustomSecurityAttributeDefinition)|
-|Get-AzureADMSCustomSecurityAttributeDefinitionAllowedValue|[Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycustomsecurityattributedefinitionallowedvalue)|
-|Get-AzureADMSFeatureRolloutPolicy|[Get-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicy)|
-|Get-AzureADMSGroupPermissionGrant|[Get-MgBetaGroupPermissionGrant](/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant)|
-|Get-AzureADMSPasswordSingleSignOnCredential|[Get-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
-|Get-AzureADMSPrivilegedResource|[Get-MgBetaPrivilegedAccessResource](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedAccessResource)|
-|Get-AzureADMSPrivilegedRoleAssignment <sup>2</sup>|`Deprecated`|
-|Get-AzureADMSPrivilegedRoleAssignmentRequest <sup>2</sup>|`Deprecated`|
-|Get-AzureADMSPrivilegedRoleDefinition|[Get-MgBetaPrivilegedAccessResourceRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedAccessResourceRoleDefinition)|
-|Get-AzureADMSPrivilegedRoleSetting|[Get-MgBetaPrivilegedAccessResourceRoleSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedAccessResourceRoleSetting)|
-|Get-AzureADMSServicePrincipal|[Get-MgBetaServicePrincipal](/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipal)|
-|Get-AzureADMSTrustFrameworkPolicy|[Get-MgBetaTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaTrustFrameworkPolicy)|
-|Get-AzureADMSUser|[Get-MgBetaUser](/powershell/module/microsoft.graph.beta.users/get-mgbetauser)|
-|Get-AzureADObjectSetting|[Get-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSetting)|
-|Get-AzureADPolicy <sup>1</sup>|[Get-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy)|
-|Get-AzureADPolicy <sup>1</sup>|[Get-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyactivitybasedtimeoutpolicy)| 
-|Get-AzureADPolicy <sup>1</sup>|[Get-MgBetaPolicyTokenIssuancePolicy](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicytokenissuancepolicy)| 
-|Get-AzureADPolicy <sup>1</sup>|[Get-MgBetaPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicytokenlifetimepolicy)|
-|Get-AzureADPolicy <sup>1</sup>|[Get-MgBetaPolicyClaimMappingPolicy](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyclaimmappingpolicy)|
-|Get-AzureADPolicyAppliedObject|[Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo](/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicyapplyto)|
-|Get-AzureADPrivilegedRole <sup>2</sup>|`Deprecated`|
-|Get-AzureADPrivilegedRoleAssignment|[Get-MgBetaPrivilegedRoleRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaPrivilegedRoleRoleAssignment)|
-|Get-AzureADScopedRoleMembership|[Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember)|
-|Get-AzureADServicePrincipalPolicy <sup>1</sup>|[Get-MgBetaServicePrincipalClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalClaimMappingPolicy)|
-|Get-AzureADServicePrincipalPolicy <sup>1</sup>|[Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy)|
-|Get-AzureADServicePrincipalPolicy <sup>1</sup>|[Get-MgBetaServicePrincipalTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTokenIssuancePolicy)|
-|Get-AzureADServicePrincipalPolicy <sup>1</sup>|[Get-MgBetaServicePrincipalTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTokenLifetimePolicy)|
-|New-AzureADAdministrativeUnit|[New-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnit)|
-|New-AzureADDirectorySetting|[New-MgBetaDirectorySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectorySetting)|
-|New-AzureADExternalDomainFederation|[New-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomainFederationConfiguration)|
-|New-AzureADMSAdministrativeUnitMember|[New-MGBetaAdministrativeUnitMember](/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadministrativeunitmember)|
-|New-AzureADMSApplicationFromApplicationTemplate|[Invoke-MgBetaInstantiateApplicationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaInstantiateApplicationTemplate)|
-|New-AzureADMSAttributeSet|[New-MgBetaDirectoryAttributeSet](/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryattributeset)|
-|New-AzureADMSCustomSecurityAttributeDefinition|[New-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition)|
-|New-AzureADMSFeatureRolloutPolicy|[New-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyfeaturerolloutpolicy)|
-|New-AzureADMSPasswordSingleSignOnCredential|[New-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
-|New-AzureADMSServicePrincipal|[New-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipal)|
-|New-AzureADMSTrustFrameworkPolicy|[New-MgBetaTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaTrustFrameworkPolicy)|
-|New-AzureADMSUser|[New-MgBetaUser](/powershell/module/microsoft.graph.beta.users/new-mgbetauser)|
-|New-AzureADObjectSetting|[New-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupSetting)|
-|New-AzureADPolicy|[New-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyActivityBasedTimeoutPolicy)|
-|New-AzureADPrivilegedRoleAssignment <sup>2</sup>|`Deprecated`|
-|Open-AzureADMSPrivilegedRoleAssignmentRequest <sup>2</sup>|`Deprecated`|
-|Remove-AzureADAdministrativeUnit|[Remove-MgBetaDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryadministrativeunit)|
-|Remove-AzureADAdministrativeUnitMember|[Remove-MgBetaDirectoryAdministrativeUnitMemberByRef](/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryadministrativeunitmemberbyref)|
-|Remove-AzureADApplicationPolicy <sup>1</sup>|[Get-MgBetaApplicationAppManagementPolicy](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationappmanagementpolicy)|
-|Remove-AzureADApplicationPolicy <sup>1</sup>|[Get-MgBetaApplicationHomeRealmDiscoveryPolicy](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationhomerealmdiscoverypolicy)|
-|Remove-AzureADApplicationPolicy <sup>1</sup>|[Get-MgBetaApplicationTokenIssuancePolicy](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenissuancepolicy)|
-|Remove-AzureADApplicationPolicy <sup>1</sup>|[Get-MgBetaApplicationTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenlifetimepolicy)|
-|Remove-AzureADDirectorySetting|[Remove-MgBetaDirectorySetting](/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorysetting)|
-|Remove-AzureADExternalDomainFederation|[Remove-MgBetaDirectoryFederationConfiguration](/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryfederationconfiguration)|
-|Remove-AzureADMSFeatureRolloutPolicy|[Remove-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyfeaturerolloutpolicy)|
-|Remove-AzureADMSFeatureRolloutPolicyDirectoryObject|[Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef)|
-|Remove-AzureADMSPasswordSingleSignOnCredential|[Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
-|Remove-AzureADMSTrustFrameworkPolicy|[Remove-MgBetaTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaTrustFrameworkPolicy)|
-|Remove-AzureADObjectSetting|[Remove-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupSetting)|
-|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyactivitybasedtimeoutpolicy)|
-|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicydefaultappmanagementpolicy)|
-|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyAppManagementPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyappmanagementpolicy)|
-|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationflowpolicy)|
-|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationmethodpolicy)|
-|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyClaimMappingPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyclaimmappingpolicy)|
-|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyfeaturerolloutpolicyapplytobyref)|
-|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyhomerealmdiscoverypolicy)|
-|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyPermissionGrantPolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicy)|
-|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyTokenIssuancePolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenissuancepolicy)|
-|Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenlifetimepolicy)|
-|Remove-AzureADScopedRoleMembership|[Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember)|
-|Remove-AzureADServicePrincipalPolicy <sup>1</sup>|[Remove-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalclaimmappingpolicybyref)|
-|Remove-AzureADServicePrincipalPolicy <sup>1</sup>|[Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalhomerealmdiscoverypolicybyref)|
-|Set-AzureADAdministrativeUnit|[Update-MgBetaDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryadministrativeunit)|
-|Set-AzureADDirectorySetting|[Update-MgBetaDirectorySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectorySetting)|
-|Set-AzureADMSAttributeSet|[Update-MgBetaDirectoryAttributeSet](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryattributeset)|
-|Set-AzureADMSCustomSecurityAttributeDefinition|[Update-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition)|
-|Set-AzureADMSCustomSecurityAttributeDefinitionAllowedValue|[Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinitionallowedvalue)|
-|Set-AzureADMSFeatureRolloutPolicy|[Update-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfeaturerolloutpolicy)|
-|Set-AzureADMSPasswordSingleSignOnCredential|[Update-MgBetaServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalPasswordSingleSignOnCredential)|
-|Set-AzureADMSPrivilegedRoleAssignmentRequest <sup>2</sup>|`Deprecated`|
-|Set-AzureADMSPrivilegedRoleSetting|[Update-MgBetaPrivilegedAccessRoleSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaPrivilegedAccessRoleSetting)|
-|Set-AzureADMSServicePrincipal|[Update-MgBetaServicePrincipal](/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal)|
-|Set-AzureADMSTrustFrameworkPolicy|[Update-MgBetaTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaTrustFrameworkPolicy)|
-|Set-AzureADMSUser|[Update-MgBetaUser](/powershell/module/microsoft.graph.beta.users/update-mgbetauser)|
-|Set-AzureADObjectSetting|[Update-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupSetting)|
-|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyactivitybasedtimeoutpolicy)|
-|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy)|
-|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyAppManagementPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyappmanagementpolicy)|
-|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationflowpolicy)|
-|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy)|
-|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyClaimMappingPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyclaimmappingpolicy)|
-|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfeaturerolloutpolicy)|
-|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyhomerealmdiscoverypolicy)|
-|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyPermissionGrantPolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy)|
-|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyTokenIssuancePolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenissuancepolicy)|
-|Set-AzureADPolicy <sup>1</sup>|[Update-MgBetaPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenlifetimepolicy)|
-
-<sup>1</sup> This cmdlet has more than one cmdlet mapping in Microsoft Graph PowerShell.
-
-<sup>2</sup> Privileged Identity Management (PIM) [iteration 3 APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) should be used. Check [this guidance](/entra/id-governance/privileged-identity-management/pim-apis) for more details.
+:::zone-end
