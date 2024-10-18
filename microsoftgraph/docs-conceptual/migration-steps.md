@@ -1,20 +1,20 @@
 ---
 title: "Migrate from Azure AD PowerShell to Microsoft Graph PowerShell."
-description: "Migrate your applications from Azure AD PowerShell to Microsoft Graph PowerShell."
+description: "Learn how to migrate your applications from Azure AD PowerShell to Microsoft Graph PowerShell."
 
 ms.topic: conceptual
-ms.date: 10/31/2023
+ms.date: 10/18/2024
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
-ms.reviewer: maisarissi, ianfarr
+ms.reviewer: stevemutungi
 
 #customer intent: As an IT admin currently using Azure AD PowerShell or MSOnline, I want to upgrade to Microsoft Graph PowerShell, so that I can access all Microsoft Graph APIs, use PowerShell 7, have cross-platform support, and take advantage of modern authentication and advanced queries.
 ---
 
 # Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell
 
-Azure AD, Azure AD Preview and MSOnline PowerShell modules are planned for deprecation. Microsoft Graph PowerShell is the PowerShell module to use for interacting with Microsoft Entra ID and other Microsoft services.
+Azure AD, Azure AD Preview and MSOnline PowerShell modules are deprecated. Microsoft Graph PowerShell is the PowerShell module to use for interacting with Microsoft Entra ID and other Microsoft services.
 
 Use the information in this article to plan the migration of your applications to Microsoft Graph PowerShell.
 
