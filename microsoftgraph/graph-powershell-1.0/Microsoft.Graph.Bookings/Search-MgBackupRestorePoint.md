@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/search-mgbackuprestorepoint
 schema: 2.0.0
-ms.subservice: m365-backup-storage
 ---
 
 # Search-MgBackupRestorePoint
 
 ## SYNOPSIS
 Search for the restorePoint objects associated with a protectionUnit.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Search-MgBetaBackupRestorePoint](/powershell/module/Microsoft.Graph.Beta.Bookings/Search-MgBetaBackupRestorePoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,8 +31,17 @@ Search-MgBackupRestorePoint
 ## DESCRIPTION
 Search for the restorePoint objects associated with a protectionUnit.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/restorepoint-search-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -240,37 +245,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ARTIFACTQUERY `<IMicrosoftGraphArtifactQuery>`: artifactQuery
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ArtifactType <String>]`: restorableArtifact
-  - `[QueryExpression <String>]`: Specifies criteria to retrieve artifacts.
+ARTIFACTQUERY \<IMicrosoftGraphArtifactQuery\>: artifactQuery
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ArtifactType \<String\>\]: restorableArtifact
+  \[QueryExpression \<String\>\]: Specifies criteria to retrieve artifacts.
 
-BODYPARAMETER `<IPathsHu2059SolutionsBackuprestoreRestorepointsMicrosoftGraphSearchPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ArtifactQuery <IMicrosoftGraphArtifactQuery>]`: artifactQuery
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ArtifactType <String>]`: restorableArtifact
-    - `[QueryExpression <String>]`: Specifies criteria to retrieve artifacts.
-  - `[ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]`: timePeriod
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
-    - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
-  - `[ProtectionUnitIds <String- `[]`>]`: 
-  - `[RestorePointPreference <String>]`: restorePointPreference
-  - `[Tags <String>]`: restorePointTags
+BODYPARAMETER \<IPathsHu2059SolutionsBackuprestoreRestorepointsMicrosoftGraphSearchPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ArtifactQuery \<IMicrosoftGraphArtifactQuery\>\]: artifactQuery
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ArtifactType \<String\>\]: restorableArtifact
+    \[QueryExpression \<String\>\]: Specifies criteria to retrieve artifacts.
+  \[ProtectionTimePeriod \<IMicrosoftGraphTimePeriod\>\]: timePeriod
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[EndDateTime \<DateTime?\>\]: The date time of the end of the time period.
+    \[StartDateTime \<DateTime?\>\]: The date time of the start of the time period.
+  \[ProtectionUnitIds \<String\[\]\>\]: 
+  \[RestorePointPreference \<String\>\]: restorePointPreference
+  \[Tags \<String\>\]: restorePointTags
 
-PROTECTIONTIMEPERIOD `<IMicrosoftGraphTimePeriod>`: timePeriod
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EndDateTime <DateTime?>]`: The date time of the end of the time period.
-  - `[StartDateTime <DateTime?>]`: The date time of the start of the time period.
+PROTECTIONTIMEPERIOD \<IMicrosoftGraphTimePeriod\>: timePeriod
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[EndDateTime \<DateTime?\>\]: The date time of the end of the time period.
+  \[StartDateTime \<DateTime?\>\]: The date time of the start of the time period.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/search-mgbackuprestorepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/search-mgbackuprestorepoint)
 
 [https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-1.0)
-
-
-
-
 

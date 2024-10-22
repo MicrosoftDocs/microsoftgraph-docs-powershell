@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaallsite
 schema: 2.0.0
-ms.subservice: sharepoint
 ---
 
 # Get-MgBetaAllSite
@@ -11,9 +10,6 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 List sites across geographies in an organization.
 For more details, see Best practices for discovering files and detecting changes at scale.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAllSite](/powershell/module/Microsoft.Graph.Sites/Get-MgAllSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,21 +23,14 @@ Get-MgBetaAllSite [-Count] [-ExpandProperty <String[]>] [-Filter <String>] [-Pro
 List sites across geographies in an organization.
 For more details, see Best practices for discovering files and detecting changes at scale.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-getallsites-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Sites
-
-Get-MgBetaAllSite -Skiptoken "U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ" 
-
+### EXAMPLE 1
 ```
-This example shows how to use the Get-MgBetaAllSite Cmdlet.
+Import-Module Microsoft.Graph.Beta.Sites
+```
 
+Get-MgBetaAllSite -Skiptoken "U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ"
 
 ## PARAMETERS
 
@@ -226,7 +215,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaallsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaallsite)
 
 [https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-beta)
-
-
-
 
