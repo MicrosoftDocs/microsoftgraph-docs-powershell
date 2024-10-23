@@ -49,18 +49,6 @@ Update-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile -InputObject <IDevi
 ## DESCRIPTION
 Update the navigation property androidForWorkEnrollmentProfiles in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccountId
@@ -440,6 +428,7 @@ QRCODEIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mi
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroidforworkenrollmentprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroidforworkenrollmentprofile)
+
 
 
 

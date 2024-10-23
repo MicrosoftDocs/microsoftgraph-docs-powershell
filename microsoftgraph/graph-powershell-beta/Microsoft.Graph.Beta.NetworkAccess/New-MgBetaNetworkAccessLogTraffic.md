@@ -42,18 +42,6 @@ New-MgBetaNetworkAccessLogTraffic -BodyParameter <IMicrosoftGraphNetworkaccessNe
 ## DESCRIPTION
 Create new navigation property to traffic for networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessHeaders
@@ -17251,6 +17239,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogtraffic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogtraffic)
+
 
 
 

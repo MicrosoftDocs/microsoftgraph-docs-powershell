@@ -21,18 +21,6 @@ Remove-MgBetaNetworkAccessSettingEnrichedAuditLog [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Delete navigation property enrichedAuditLogs for networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -155,6 +143,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccesssettingenrichedauditlog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccesssettingenrichedauditlog)
+
 
 
 

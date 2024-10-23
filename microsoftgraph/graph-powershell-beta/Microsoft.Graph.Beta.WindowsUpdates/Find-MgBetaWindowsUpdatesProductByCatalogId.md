@@ -31,18 +31,6 @@ Find-MgBetaWindowsUpdatesProductByCatalogId -InputObject <IWindowsUpdatesIdentit
 ## DESCRIPTION
 Invoke function findByCatalogId
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CatalogId
@@ -277,6 +265,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/find-mgbetawindowsupdatesproductbycatalogid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/find-mgbetawindowsupdatesproductbycatalogid)
+
 
 
 
