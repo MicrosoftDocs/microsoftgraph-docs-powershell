@@ -11,6 +11,9 @@ ms.subservice: security
 ## SYNOPSIS
 The host resources related with this sslCertificate.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

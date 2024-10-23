@@ -12,6 +12,9 @@ ms.subservice: entra-directory-management
 ## SYNOPSIS
 Retrieve the properties and relationships of domain object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomain?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

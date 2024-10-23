@@ -11,6 +11,9 @@ ms.subservice: entra-sign-in
 ## SYNOPSIS
 Deletes a permissionGrantConditionSet from the excludes collection of a permissionGrantPolicy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

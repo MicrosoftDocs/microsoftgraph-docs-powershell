@@ -11,6 +11,9 @@ ms.subservice: onenote
 ## SYNOPSIS
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteRecentNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
