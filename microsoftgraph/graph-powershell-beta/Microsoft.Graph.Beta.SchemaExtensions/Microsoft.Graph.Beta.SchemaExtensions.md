@@ -23,3 +23,4 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaSchemaExtension](Update-MgBetaSchemaExtension.md)
 
+

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesproductknownissue
@@ -417,84 +417,87 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphWindowsUpdatesKnownIssue\>: knownIssue
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesKnownIssue>`: knownIssue
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: The description of the particular known issue.
-  \[KnownIssueHistories \<IMicrosoftGraphWindowsUpdatesKnownIssueHistoryItem\[\]\>\]: 
-    \[Body \<IMicrosoftGraphWindowsUpdatesItemBody\>\]: itemBody
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Content \<String\>\]: The content of the item.
-      \[ContentType \<String\>\]: bodyType
-    \[CreatedDateTime \<DateTime?\>\]: The date and time when the post was created.
+  - `[Description <String>]`: The description of the particular known issue.
+  - `[KnownIssueHistories <IMicrosoftGraphWindowsUpdatesKnownIssueHistoryItem- `[]`>]`: 
+    - `[Body <IMicrosoftGraphWindowsUpdatesItemBody>]`: itemBody
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Content <String>]`: The content of the item.
+      - `[ContentType <String>]`: bodyType
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the post was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  \[LastUpdatedDateTime \<DateTime?\>\]: The date and time when the known issue was last updated.
+  - `[LastUpdatedDateTime <DateTime?>]`: The date and time when the known issue was last updated.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  \[OriginatingKnowledgeBaseArticle \<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle\>\]: knowledgeBaseArticle
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[OriginatingKnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]`: knowledgeBaseArticle
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Url \<String\>\]: The URL of the knowledge base article.
+    - `[Url <String>]`: The URL of the knowledge base article.
 Read-only.
-  \[ResolvedDateTime \<DateTime?\>\]: The date and time when the known issue was resolved or mitigated.
+  - `[ResolvedDateTime <DateTime?>]`: The date and time when the known issue was resolved or mitigated.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[ResolvingKnowledgeBaseArticle \<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle\>\]: knowledgeBaseArticle
-  \[SafeguardHoldIds \<Int32\[\]\>\]: 
-  \[StartDateTime \<DateTime?\>\]: The date and time when the known issue was first reported.
+  - `[ResolvingKnowledgeBaseArticle <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>]`: knowledgeBaseArticle
+  - `[SafeguardHoldIds <Int32- `[]`>]`: 
+  - `[StartDateTime <DateTime?>]`: The date and time when the known issue was first reported.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[Status \<String\>\]: windowsReleaseHealthStatus
-  \[Title \<String\>\]: The title of the known issue.
-  \[WebViewUrl \<String\>\]: The URL to the known issue in the Windows Release Health dashboard on Microsoft 365 admin center.
+  - `[Status <String>]`: windowsReleaseHealthStatus
+  - `[Title <String>]`: The title of the known issue.
+  - `[WebViewUrl <String>]`: The URL to the known issue in the Windows Release Health dashboard on Microsoft 365 admin center.
 
-INPUTOBJECT \<IWindowsUpdatesIdentity\>: Identity Parameter
-  \[ApplicableContentCatalogEntryId \<String\>\]: The unique identifier of applicableContent
-  \[ApplicableContentDeviceMatchDeviceId \<String\>\]: The unique identifier of applicableContentDeviceMatch
-  \[CatalogEntryId \<String\>\]: The unique identifier of catalogEntry
-  \[CatalogId \<String\>\]: Usage: catalogID='{catalogID}'
-  \[ComplianceChangeId \<String\>\]: The unique identifier of complianceChange
-  \[DaysInPast \<Int32?\>\]: Usage: daysInPast={daysInPast}
-  \[DeploymentId \<String\>\]: The unique identifier of deployment
-  \[EditionId \<String\>\]: The unique identifier of edition
-  \[KbNumber \<Int32?\>\]: Usage: kbNumber={kbNumber}
-  \[KnownIssueId \<String\>\]: The unique identifier of knownIssue
-  \[ProductId \<String\>\]: The unique identifier of product
-  \[ProductRevisionId \<String\>\]: The unique identifier of productRevision
-  \[ResourceConnectionId \<String\>\]: The unique identifier of resourceConnection
-  \[UpdatableAssetId \<String\>\]: The unique identifier of updatableAsset
-  \[UpdatePolicyId \<String\>\]: The unique identifier of updatePolicy
+INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+  - `[ApplicableContentCatalogEntryId <String>]`: The unique identifier of applicableContent
+  - `[ApplicableContentDeviceMatchDeviceId <String>]`: The unique identifier of applicableContentDeviceMatch
+  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
+  - `[CatalogId <String>]`: Usage: catalogID='{catalogID}'
+  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
+  - `[DaysInPast <Int32?>]`: Usage: daysInPast={daysInPast}
+  - `[DeploymentId <String>]`: The unique identifier of deployment
+  - `[EditionId <String>]`: The unique identifier of edition
+  - `[KbNumber <Int32?>]`: Usage: kbNumber={kbNumber}
+  - `[KnownIssueId <String>]`: The unique identifier of knownIssue
+  - `[ProductId <String>]`: The unique identifier of product
+  - `[ProductRevisionId <String>]`: The unique identifier of productRevision
+  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
+  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
+  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
-KNOWNISSUEHISTORIES \<IMicrosoftGraphWindowsUpdatesKnownIssueHistoryItem\[\]\>: .
-  \[Body \<IMicrosoftGraphWindowsUpdatesItemBody\>\]: itemBody
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Content \<String\>\]: The content of the item.
-    \[ContentType \<String\>\]: bodyType
-  \[CreatedDateTime \<DateTime?\>\]: The date and time when the post was created.
+KNOWNISSUEHISTORIES <IMicrosoftGraphWindowsUpdatesKnownIssueHistoryItem- `[]`>: .
+  - `[Body <IMicrosoftGraphWindowsUpdatesItemBody>]`: itemBody
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of the item.
+    - `[ContentType <String>]`: bodyType
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the post was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-
-ORIGINATINGKNOWLEDGEBASEARTICLE \<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle\>: knowledgeBaseArticle
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
-Read-only.
-  \[Url \<String\>\]: The URL of the knowledge base article.
 Read-only.
 
-RESOLVINGKNOWLEDGEBASEARTICLE \<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle\>: knowledgeBaseArticle
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+ORIGINATINGKNOWLEDGEBASEARTICLE `<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>`: knowledgeBaseArticle
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Url \<String\>\]: The URL of the knowledge base article.
+  - `[Url <String>]`: The URL of the knowledge base article.
+Read-only.
+
+RESOLVINGKNOWLEDGEBASEARTICLE `<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>`: knowledgeBaseArticle
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[Url <String>]`: The URL of the knowledge base article.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesproductknownissue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesproductknownissue)
+
+
+
 
