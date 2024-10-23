@@ -47,9 +47,6 @@ This API doesn't support getting call recordings from channel meetings.
 For a recording, this API returns the metadata of the single recording associated with the online meeting.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/callrecording-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a callRecording
 

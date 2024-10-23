@@ -41,9 +41,6 @@ Get-MgBetaPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity> [-E
 ## DESCRIPTION
 Represents the role management policies.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/policyroot-list-rolemanagementpolicies-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Retrieve the details of a policy in PIM for Azure AD roles
 

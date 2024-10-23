@@ -40,7 +40,7 @@ Delete a conditionalAccessPolicy object.
 ### Example 1: Remove a conditional access policy
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
+Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 
 Remove-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId $conditionalAccessPolicyId
 ```

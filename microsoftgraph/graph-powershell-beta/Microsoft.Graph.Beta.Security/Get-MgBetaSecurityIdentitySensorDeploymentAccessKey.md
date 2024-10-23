@@ -24,6 +24,19 @@ Invoke function getDeploymentAccessKey
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensor-getdeploymentaccesskey-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityIdentitySensorDeploymentAccessKey
+
+```
+This example shows how to use the Get-MgBetaSecurityIdentitySensorDeploymentAccessKey Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -85,7 +98,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensordeploymentaccesskey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensordeploymentaccesskey)
-
 
 
 

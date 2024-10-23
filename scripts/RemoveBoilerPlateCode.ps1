@@ -3,7 +3,7 @@
 Param(
     $ModulesToGenerate = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
-	[string] $WorkLoadDocsPath =  (Join-Path $PSScriptRoot "../microsoftgraph")
+    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -22,10 +22,10 @@ function Start-Repair {
     $GraphMapping = Get-GraphMapping 
     $GraphMapping.Keys | ForEach-Object {
         $graphProfile = $_
-		$profilePath = "graph-powershell-1.0"
-		if($graphProfile -eq "beta"){
-			$profilePath = "graph-powershell-beta"
-		}
+        $profilePath = "graph-powershell-1.0"
+        if ($graphProfile -eq "beta") {
+            $profilePath = "graph-powershell-beta"
+        }
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
     git config --global user.email "GraphTooling@service.microsoft.com"
@@ -33,8 +33,8 @@ function Start-Repair {
     git add .
     git commit -m "Remove boiler plate code injected by Autorest" 
 }
-function Get-FilesByProfile{
- Param(
+function Get-FilesByProfile {
+    Param(
         [ValidateSet("beta", "v1.0")]
         [string] $GraphProfile = "v1.0",
         [ValidateNotNullOrEmpty()]
@@ -50,7 +50,7 @@ function Get-FilesByProfile{
     }
 
 }
-function Repair-Examples{
+function Repair-Examples {
     param(
         [ValidateSet("beta", "v1.0")]
         [string] $GraphProfile = "v1.0",
@@ -63,37 +63,39 @@ function Repair-Examples{
 		
     )
     $Path = "$ModulePrefix.$ModuleName"
-    if($GraphProfile -eq 'beta'){
-       $Path = "$ModulePrefix.Beta.$ModuleName"
+    if ($GraphProfile -eq 'beta') {
+        $Path = "$ModulePrefix.Beta.$ModuleName"
     }
-     $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
-     $CmdletHomePage = Join-Path $destination "$path.md"
-     $NoDescriptionAvailable = "{{ Fill in the Description }}"
-     if(Test-Path $CmdletHomePage){
+    $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
+    $CmdletHomePage = Join-Path $destination "$path.md"
+    $NoDescriptionAvailable = "{{ Fill in the Description }}"
+    if (Test-Path $CmdletHomePage) {
         $HomePageContent = Get-Content $CmdletHomePage
         $HomePageContent = $HomePageContent -replace $NoDescriptionAvailable, ""
         $HomePageContent | Out-File $CmdletHomePage -Encoding UTF8
-     }
+    }
 
-     foreach ($File in Get-ChildItem $destination) {
-        $NoCodeAvailable = "Add code here"
-        $SearchBlock = "## EXAMPLES(?s).*## PARAMETERS"
-        $option = [System.Text.RegularExpressions.RegexOptions]::Multiline
-        $re = [regex]::new($SearchBlock, $option)
-        $content = Get-Content -Encoding UTF8 -Raw $File
-        if(($content -match $NoCodeAvailable)){
-            if ($content -match $re) { 
-            $extractedExample = $Matches[0]
+    if (Test-Path $destination) {
+        foreach ($File in Get-ChildItem $destination) {
+            $NoCodeAvailable = "Add code here"
+            $SearchBlock = "## EXAMPLES(?s).*## PARAMETERS"
+            $option = [System.Text.RegularExpressions.RegexOptions]::Multiline
+            $re = [regex]::new($SearchBlock, $option)
+            $content = Get-Content -Encoding UTF8 -Raw $File
+            if (($content -match $NoCodeAvailable)) {
+                if ($content -match $re) { 
+                    $extractedExample = $Matches[0]
            
-            Write-Host $File
-            $finalOutput = $extractedExample.Replace($extractedExample,"## PARAMETERS")  
-            $text = $content.ToString()
-                          $text = $text.Replace($extractedExample, $finalOutput)
-                            $text | Out-File $File -Encoding UTF8
-        }
+                    Write-Host $File
+                    $finalOutput = $extractedExample.Replace($extractedExample, "## PARAMETERS")  
+                    $text = $content.ToString()
+                    $text = $text.Replace($extractedExample, $finalOutput)
+                    $text | Out-File $File -Encoding UTF8
+                }
         
-        }
+            }
 
+        }
     }
 }
 

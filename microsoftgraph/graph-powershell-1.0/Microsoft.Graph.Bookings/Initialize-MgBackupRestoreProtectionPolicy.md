@@ -38,6 +38,30 @@ You can add or remove artifacts (sites or user accounts) to or from each active 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/protectionpolicybase-activate-permissions.md)]
 
+## EXAMPLES
+### Example 1: Activate an inactive protection policy
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+Initialize-MgBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
+
+```
+This example will activate an inactive protection policy
+
+### Example 2: Activate an active protection policy
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+Initialize-MgBackupRestoreProtectionPolicy -ProtectionPolicyBaseId $protectionPolicyBaseId
+
+```
+This example will activate an active protection policy
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -192,7 +216,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/initialize-mgbackuprestoreprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/initialize-mgbackuprestoreprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/protectionpolicybase-activate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/protectionpolicybase-activate?view=graph-rest-1.0)
-
 
 
 

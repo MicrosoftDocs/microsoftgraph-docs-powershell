@@ -33,9 +33,6 @@ Remove-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Deletes a user's emailAuthenticationMethod object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/emailauthenticationmethod-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

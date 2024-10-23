@@ -33,9 +33,6 @@ Invoke-MgSoftTeamChannelMessageReplyDelete -InputObject <ITeamsIdentity> [-Respo
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-softdelete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Soft-delete message of a reply
 

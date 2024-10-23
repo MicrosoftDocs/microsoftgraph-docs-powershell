@@ -42,7 +42,7 @@ Create a new deviceAndAppManagementRoleDefinition object.
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.roleDefinition"
+	"@odata.type" = "#microsoft.graph.deviceAndAppManagementRoleDefinition"
 	displayName = "Display Name value"
 	description = "Description value"
 	rolePermissions = @(

@@ -49,9 +49,6 @@ Use this API to add a member (user, group, or device) to an administrative unit 
 All group types can be created within an administrative unit.
 Note: Currently, it's only possible to add one member at a time to an administrative unit.\`
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-post-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a new group
 

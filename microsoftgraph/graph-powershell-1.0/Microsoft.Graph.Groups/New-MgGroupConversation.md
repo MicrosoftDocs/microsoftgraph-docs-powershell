@@ -55,9 +55,6 @@ Create an open extension (openTypeExtension object) and add custom properties in
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-conversations-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create an extension in a new group post using POST operation
 

@@ -33,6 +33,30 @@ Get the aggregated number of active and enabled users of Copilot for Microsoft 3
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getmicrosoft365copilotusercountsummary-permissions.md)]
 
+## EXAMPLES
+### Example 1: CSV output
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportMicrosoft365CopilotUserCountSummary -Format "text/csv"  -Period $periodId 
+
+```
+This example will csv output
+
+### Example 2: JSON output
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportMicrosoft365CopilotUserCountSummary -Format "application/json"  -Period $periodId 
+
+```
+This example will json output
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -207,7 +231,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoft365copilotusercountsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoft365copilotusercountsummary)
 
 [https://learn.microsoft.com/graph/api/reportroot-getmicrosoft365copilotusercountsummary?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-getmicrosoft365copilotusercountsummary?view=graph-rest-beta)
-
 
 
 

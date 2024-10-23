@@ -45,6 +45,19 @@ Pre-configured synchronization settings for a particular application.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronization-list-templates-permissions.md)]
 
+## EXAMPLES
+### Example
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+Get-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId
+
+```
+This example will### example
+
+
 ## PARAMETERS
 
 ### -All
@@ -346,8 +359,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationtemplate)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronization-list-templates?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-templates?view=graph-rest-beta)
-
-
 
 
 

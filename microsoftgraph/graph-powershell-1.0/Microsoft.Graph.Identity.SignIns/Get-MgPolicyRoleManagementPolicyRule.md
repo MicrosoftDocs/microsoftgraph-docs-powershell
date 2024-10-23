@@ -45,12 +45,6 @@ Get-MgPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity> [-E
 Retrieve a rule or settings defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedrolemanagementpolicyrule-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedrolemanagementpolicy-list-rules-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Retrieve a rule defined for a policy in PIM for Microsoft Entra roles
 

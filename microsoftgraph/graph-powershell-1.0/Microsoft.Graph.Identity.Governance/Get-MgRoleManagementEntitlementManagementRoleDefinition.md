@@ -41,9 +41,6 @@ Get-MgRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdentityG
 ## DESCRIPTION
 Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roledefinitions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Retrieve role definitions for the entitlement management provider
 

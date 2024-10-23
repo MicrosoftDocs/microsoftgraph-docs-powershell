@@ -30,9 +30,6 @@ Remove-MgBetaRoleManagementExchangeRoleAssignment -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Delete a unifiedRoleAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignment-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

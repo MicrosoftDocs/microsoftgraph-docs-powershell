@@ -57,9 +57,9 @@ Update the properties of a managedEBookAssignment object.
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.iosVppEBookAssignment"
+	"@odata.type" = "#microsoft.graph.managedEBookAssignment"
 	target = @{
-		"@odata.type" = "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+		"@odata.type" = "microsoft.graph.allLicensedUsersAssignmentTarget"
 	}
 	installIntent = "required"
 }

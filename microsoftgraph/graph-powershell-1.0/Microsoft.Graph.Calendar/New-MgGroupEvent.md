@@ -78,9 +78,6 @@ New-MgGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Use this API to create a new event.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-events-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

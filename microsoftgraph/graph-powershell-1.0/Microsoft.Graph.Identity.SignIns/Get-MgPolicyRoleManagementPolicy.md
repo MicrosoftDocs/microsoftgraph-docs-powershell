@@ -42,12 +42,6 @@ Get-MgPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Expan
 ## DESCRIPTION
 Retrieve the details of a role management policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedrolemanagementpolicy-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/policyroot-list-rolemanagementpolicies-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Retrieve the details of a policy in PIM for Microsoft Entra roles
 

@@ -37,9 +37,6 @@ New-MgBetaRoleManagementDirectoryRoleAssignment -BodyParameter <IMicrosoftGraphU
 ## DESCRIPTION
 Create a new unifiedRoleAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-post-roleassignments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a role assignment with tenant scope
 

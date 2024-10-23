@@ -33,9 +33,6 @@ Remove-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete a group's conversation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversation-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

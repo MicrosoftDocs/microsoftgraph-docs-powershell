@@ -39,6 +39,19 @@ For more information about item retention, see Configure Deleted Item retention 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-permanentdelete-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+Remove-MgBetaUserMessagePermanent -UserId $userId -MessageId $messageId
+
+```
+This example shows how to use the Remove-MgBetaUserMessagePermanent Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -245,7 +258,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausermessagepermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausermessagepermanent)
 
 [https://learn.microsoft.com/graph/api/message-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-permanentdelete?view=graph-rest-beta)
-
 
 
 

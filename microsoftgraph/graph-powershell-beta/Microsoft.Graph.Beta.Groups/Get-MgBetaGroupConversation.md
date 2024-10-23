@@ -43,9 +43,6 @@ Get-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-ExpandProperty <Str
 Retrieve the properties and relationships of conversation object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-conversation-permissions.md)]
-
-**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-conversations-permissions.md)]
 
 ## EXAMPLES

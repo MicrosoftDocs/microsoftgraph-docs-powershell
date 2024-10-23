@@ -43,7 +43,7 @@ Named locations can be either ipNamedLocation or countryNamedLocation objects.
 ### Example 1: Create a country named location
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
+Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 
 $params = @{
 "@odata.type" = "#microsoft.graph.countryNamedLocation"
@@ -67,7 +67,7 @@ This example creates a country named location.
 ### Example 2: Create an ip named location
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
+Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 
 $params = @{
 "@odata.type" = "#microsoft.graph.ipNamedLocation"
