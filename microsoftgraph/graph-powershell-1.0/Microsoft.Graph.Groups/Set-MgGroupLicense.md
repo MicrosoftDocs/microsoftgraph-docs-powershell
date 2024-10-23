@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggrouplicense
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Set-MgGroupLicense
@@ -54,6 +55,9 @@ Licenses assigned to the group will be assigned to all users in the group.
 Group-based licensing is an alternative to direct user licensing.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-assignlicense-permissions.md)]
 
 ## EXAMPLES
 

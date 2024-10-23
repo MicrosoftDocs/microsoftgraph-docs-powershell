@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestore
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgBetaSolutionBackupRestore
@@ -20,6 +21,9 @@ Get-MgBetaSolutionBackupRestore [-ExpandProperty <String[]>] [-Property <String[
 
 ## DESCRIPTION
 Get the serviceStatus of the Microsoft 365 Backup Storage service in a tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/backuprestoreroot-get-permissions.md)]
 
 ## EXAMPLES
 

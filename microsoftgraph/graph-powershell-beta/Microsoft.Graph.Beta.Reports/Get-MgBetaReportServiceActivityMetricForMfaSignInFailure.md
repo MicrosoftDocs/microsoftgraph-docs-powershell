@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricformfasigninfailure
 schema: 2.0.0
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaReportServiceActivityMetricForMfaSignInFailure
@@ -32,6 +33,9 @@ Get-MgBetaReportServiceActivityMetricForMfaSignInFailure -InputObject <IReportsI
 ## DESCRIPTION
 Get the number of times users fail to complete interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period.
 Sign-in failures happen, for example, when users abandon or cancel MFA requests, or refresh MFA sessions without doing interactive MFA.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceactivity-getmetricsformfasigninfailure-permissions.md)]
 
 ## EXAMPLES
 

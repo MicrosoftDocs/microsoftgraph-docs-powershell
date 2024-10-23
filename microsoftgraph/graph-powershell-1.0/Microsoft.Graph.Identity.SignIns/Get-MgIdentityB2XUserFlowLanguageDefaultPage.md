@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguagedefaultpage
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Get-MgIdentityB2XUserFlowLanguageDefaultPage
@@ -40,6 +41,9 @@ Get-MgIdentityB2XUserFlowLanguageDefaultPage -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Collection of pages with the default content to display in a user flow for a specified language.
 This collection doesn't allow any kind of modification.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguagepage-get-permissions.md)]
 
 ## EXAMPLES
 
