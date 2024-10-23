@@ -38,13 +38,18 @@ Delete a delegatedAdminAccessAssignment object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminaccessassignment-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Partner
-```
 
-Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -DelegatedAdminAccessAssignmentId $delegatedAdminAccessAssignmentId -IfMatch W/'"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="'
+Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -DelegatedAdminAccessAssignmentId $delegatedAdminAccessAssignmentId -IfMatch W/'"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="' 
+
+
+```
+This example shows how to use the Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment Cmdlet.
+
 
 ## PARAMETERS
 

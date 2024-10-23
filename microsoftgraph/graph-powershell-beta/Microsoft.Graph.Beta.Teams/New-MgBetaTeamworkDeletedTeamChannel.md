@@ -58,18 +58,6 @@ New-MgBetaTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to channels for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24985,6 +24973,7 @@ Read only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannel)
+
 
 
 

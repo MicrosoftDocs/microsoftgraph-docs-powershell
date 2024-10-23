@@ -40,13 +40,17 @@ In PIM for groups, retrieve the schedules for membership or ownership assignment
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroupassignmentschedule-filterbycurrentuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
-Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurrentUser -On $onId
+Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

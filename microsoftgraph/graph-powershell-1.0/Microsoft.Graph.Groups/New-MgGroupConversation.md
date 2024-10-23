@@ -56,11 +56,11 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 
 ## EXAMPLES
+### Example 1: Create an extension in a new group post using POST operation
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	Topic = "Does anyone have a second?"
@@ -92,6 +92,10 @@ $params = @{
 }
 
 New-MgGroupConversation -GroupId $groupId -BodyParameter $params
+
+```
+This example will create an extension in a new group post using post operation
+
 
 ## PARAMETERS
 

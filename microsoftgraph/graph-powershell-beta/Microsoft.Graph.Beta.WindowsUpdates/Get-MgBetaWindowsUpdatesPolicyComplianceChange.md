@@ -46,13 +46,17 @@ Read the properties and relationships of a contentApproval object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatepolicy-list-compliancechanges-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-```
 
 Get-MgBetaWindowsUpdatesPolicyComplianceChange -UpdatePolicyId $updatePolicyId
+
+```
+This example shows how to use the Get-MgBetaWindowsUpdatesPolicyComplianceChange Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,18 +33,6 @@ Invoke-MgBetaUnenrollWindowsUpdatesUpdatableAsset
 Unenroll updatableAsset resources from update management by Windows Autopatch.
 You can also use the method unenrollAssetsById to unenroll assets.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -230,6 +218,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaunenrollwindowsupdatesupdatableasset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaunenrollwindowsupdatesupdatableasset)
+
 
 
 

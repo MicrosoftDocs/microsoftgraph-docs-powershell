@@ -36,18 +36,6 @@ The user (or application) that created the group.
 Note: This isn't set if the user is an administrator.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -225,6 +213,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcreatedonbehalfof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcreatedonbehalfof)
+
 
 
 

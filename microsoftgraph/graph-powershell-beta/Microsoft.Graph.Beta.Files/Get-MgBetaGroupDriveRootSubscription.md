@@ -42,18 +42,6 @@ Get-MgBetaGroupDriveRootSubscription -InputObject <IFilesIdentity> [-ExpandPrope
 The set of subscriptions on the item.
 Only supported on the root of a drive.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -358,6 +346,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootsubscription)
+
+
 
 
 

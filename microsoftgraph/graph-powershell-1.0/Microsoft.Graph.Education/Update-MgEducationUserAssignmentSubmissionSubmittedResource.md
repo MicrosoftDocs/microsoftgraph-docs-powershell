@@ -50,18 +50,6 @@ Update-MgEducationUserAssignmentSubmissionSubmittedResource -InputObject <IEduca
 ## DESCRIPTION
 Update the navigation property submittedResources in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -364,6 +352,7 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserassignmentsubmissionsubmittedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserassignmentsubmissionsubmittedresource)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgShareList -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 Used to access the underlying list
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -197,6 +185,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelist](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelist)
+
 
 
 

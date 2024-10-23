@@ -30,18 +30,6 @@ Remove-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
 ## DESCRIPTION
 Delete navigation property microsoftApplicationDataAccess for organization
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -249,6 +237,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationsettingmicrosoftapplicationdataaccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationsettingmicrosoftapplicationdataaccess)
+
 
 
 

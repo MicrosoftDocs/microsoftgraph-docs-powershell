@@ -37,13 +37,17 @@ Delete a samlOrWsFedExternalDomainFederation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/samlorwsfedexternaldomainfederation-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDirectoryFederationConfiguration -IdentityProviderBaseId $identityProviderBaseId
+```
+This example shows how to use the Remove-MgDirectoryFederationConfiguration Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -53,18 +53,6 @@ Update-MgBetaOnPremisePublishingProfile -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update entity in onPremisesPublishingProfiles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -3821,6 +3809,7 @@ Nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofile)
+
 
 
 

@@ -36,18 +36,6 @@ You may only delete the values in an overridesPage, which is used to customize t
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguagepage-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2CIdentityUserFlowId
@@ -318,6 +306,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowlanguageoverridepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowlanguageoverridepage)
 
 [https://learn.microsoft.com/graph/api/userflowlanguagepage-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/userflowlanguagepage-delete?view=graph-rest-beta)
+
 
 
 

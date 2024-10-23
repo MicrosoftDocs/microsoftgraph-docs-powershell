@@ -50,11 +50,11 @@ All group types can be created within an administrative unit.
 Note: Currently, it's only possible to add one member at a time to an administrative unit.\`
 
 ## EXAMPLES
+### Example 1: Create a new group
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.group"
@@ -69,6 +69,10 @@ securityEnabled = $false
 }
 
 New-MgBetaAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
+
+```
+This example will create a new group
+
 
 ## PARAMETERS
 
