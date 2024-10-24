@@ -33,9 +33,6 @@ Remove-MgBetaGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Re
 ## DESCRIPTION
 Delete conversationThread.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversationthread-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

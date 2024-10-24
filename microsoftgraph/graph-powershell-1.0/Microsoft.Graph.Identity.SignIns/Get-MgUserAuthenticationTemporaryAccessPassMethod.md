@@ -42,12 +42,6 @@ Get-MgUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Retrieve a user's single temporaryAccessPassAuthenticationMethod object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/temporaryaccesspassauthenticationmethod-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authentication-list-temporaryaccesspassmethods-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -45,9 +45,6 @@ Read properties and relationships of the user object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get the list of all the users
 

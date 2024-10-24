@@ -49,6 +49,31 @@ Update a customClaimsPolicy object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-put-claimspolicy-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Applications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.customClaimsPolicy"
+	includeBasicClaimSet = "Boolean"
+	includeApplicationIdInIssuer = "Boolean"
+	audienceOverride = "String"
+	claims = @(
+		@{
+			"@odata.type" = "microsoft.graph.customClaim"
+		}
+	)
+}
+
+Set-MgBetaServicePrincipalClaimPolicy -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaServicePrincipalClaimPolicy Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -374,7 +399,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalclaimpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalclaimpolicy)
 
 [https://learn.microsoft.com/graph/api/customclaimspolicy-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customclaimspolicy-update?view=graph-rest-beta)
-
 
 
 

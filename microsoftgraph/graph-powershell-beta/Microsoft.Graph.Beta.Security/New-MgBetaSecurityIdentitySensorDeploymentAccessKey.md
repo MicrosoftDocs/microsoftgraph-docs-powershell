@@ -24,6 +24,19 @@ Invoke action regenerateDeploymentAccessKey
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensor-regeneratedeploymentaccesskey-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+New-MgBetaSecurityIdentitySensorDeploymentAccessKey
+
+```
+This example shows how to use the New-MgBetaSecurityIdentitySensorDeploymentAccessKey Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -116,7 +129,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensordeploymentaccesskey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensordeploymentaccesskey)
-
 
 
 

@@ -60,7 +60,7 @@ Because the group resource supports extensions, you can also use the GET operati
 ### Example 1: Get a list of groups
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Group.Read.All'
+Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup | 
   Format-List Id, DisplayName, Description, GroupTypes
 
@@ -79,12 +79,12 @@ This example retrieves a list of groups.
 
 To learn about the permissions for this resource, see the [Group permissions reference](/graph/permissions-reference#groupmemberreadall).
 
-To consent to these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes GroupMember.Read.All, Group.Read.All`.
+To consent to these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
 
 ### Example 2: Get a group by the display name
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Group.Read.All'
+Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup -Filter "DisplayName eq 'Business Development'" | 
   Format-List Id, DisplayName, Description, GroupTypes
 
@@ -98,12 +98,12 @@ This example gets a group by the specified display name.
 
 To learn about the permissions for this resource, see the [Group permissions reference](/graph/permissions-reference#groupmemberreadall).
 
-To consent to these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes GroupMember.Read.All, Group.Read.All`.
+To consent to these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
 
 ### Example 3: Get a count of all groups
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Group.Read.All'
+Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup -ConsistencyLevel eventual -Count groupCount
 
 Id                                   DisplayName          Description                                                            GroupTypes          AccessType
@@ -121,12 +121,12 @@ The example gets a list of all groups. The $groupCount variable contains the cou
 
 To learn about the permissions for this resource, see the [Group permissions reference](/graph/permissions-reference#groupmemberreadall).
 
-To consent to these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes GroupMember.Read.All, Group.Read.All`.
+To consent to these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
 
 ### Example 4: Use -Search to get all the groups whose display name contains 'Market' including a count of the returned users
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Group.Read.All'
+Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup -ConsistencyLevel eventual -Count groupCount -Search '"DisplayName:Market"'
 
 Id                                   DisplayName         Description                                                            GroupTypes AccessType
@@ -140,12 +140,12 @@ This example returns all groups whose display name contains 'Market'. The $group
 
 To learn about other permissions for this resource, see the [Group permissions reference](/graph/permissions-reference#groupmemberreadall).
 
-To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes GroupMember.Read.All, Group.Read.All`.
+To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
 
 ### Example 5: Use -Filter to get all the applications with a display name that starts with 'A' including a count of the returned users, with the results ordered by display name
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Group.Read.All'
+Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup -ConsistencyLevel eventual -Count groupCount -Filter "startsWith(DisplayName, 'A')" -OrderBy DisplayName
 
 Id                                   DisplayName   Description                                           GroupTypes          AccessType
@@ -159,7 +159,7 @@ This example returns all groups whose display name starts with 'A'. The $groupCo
 
 To learn about other permissions for this resource, see the [Group permissions reference](/graph/permissions-reference#groupmemberreadall).
 
-To consent to these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes GroupMember.Read.All, Group.Read.All`.
+To consent to these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
 
 ## PARAMETERS
 

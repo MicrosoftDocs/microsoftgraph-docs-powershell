@@ -39,6 +39,19 @@ For more information about item retention, see Configure Deleted Item retention 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-permanentdelete-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+Remove-MgBetaUserOutlookTaskPermanent -UserId $userId -OutlookTaskId $outlookTaskId
+
+```
+This example shows how to use the Remove-MgBetaUserOutlookTaskPermanent Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -245,7 +258,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauseroutlooktaskpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauseroutlooktaskpermanent)
 
 [https://learn.microsoft.com/graph/api/outlooktask-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/outlooktask-permanentdelete?view=graph-rest-beta)
-
 
 
 

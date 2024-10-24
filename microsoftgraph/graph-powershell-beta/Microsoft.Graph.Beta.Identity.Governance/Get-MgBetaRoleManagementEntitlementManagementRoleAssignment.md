@@ -41,9 +41,6 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdent
 ## DESCRIPTION
 Get roleAssignments from roleManagement
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-list-roleassignments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Request using $filter for role assignments on an access package catalog and expand principal
 

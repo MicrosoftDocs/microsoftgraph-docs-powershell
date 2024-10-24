@@ -33,9 +33,6 @@ Remove-MgGroupConversation -InputObject <IGroupsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete conversation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-delete-conversation-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

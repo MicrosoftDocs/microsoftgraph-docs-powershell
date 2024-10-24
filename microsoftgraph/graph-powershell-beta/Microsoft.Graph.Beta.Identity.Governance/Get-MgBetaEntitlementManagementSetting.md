@@ -32,7 +32,7 @@ Retrieve the properties of an entitlementManagementSettings object.
 ### Example 1: Get the identity governance settings
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementSetting
 
 Id        DaysUntilExternalUserDeletedAfterBlocked ExternalUserLifecycleAction

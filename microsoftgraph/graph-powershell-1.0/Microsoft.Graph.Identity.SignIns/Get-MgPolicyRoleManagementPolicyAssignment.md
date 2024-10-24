@@ -42,12 +42,6 @@ Get-MgPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Get the details of a policy assignment in PIM that's assigned to Microsoft Entra roles or group membership or ownership.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedrolemanagementpolicyassignment-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/policyroot-list-rolemanagementpolicyassignments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: RRetrieve the details of a policy assignment for PIM for Microsoft Entra roles
 

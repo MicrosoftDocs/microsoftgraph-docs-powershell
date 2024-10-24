@@ -87,6 +87,7 @@ $params = @{
 callOptions = @{
 	"@odata.type" = "#microsoft.graph.incomingCallOptions"
 	isContentSharingNotificationEnabled = $true
+	isDeltaRosterEnabled = $true
 }
 participantCapacity = 200
 }

@@ -39,6 +39,19 @@ For more information about item retention, see Configure Deleted Item retention 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-permanentdelete-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+Remove-MgBetaUserEventPermanent -UserId $userId -EventId $eventId
+
+```
+This example shows how to use the Remove-MgBetaUserEventPermanent Cmdlet.
+
+
 ## PARAMETERS
 
 ### -EventId
@@ -245,7 +258,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausereventpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausereventpermanent)
 
 [https://learn.microsoft.com/graph/api/event-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-permanentdelete?view=graph-rest-beta)
-
 
 
 

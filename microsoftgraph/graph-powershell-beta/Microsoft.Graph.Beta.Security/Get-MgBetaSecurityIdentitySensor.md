@@ -45,6 +45,19 @@ Get sensors from security
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-identitycontainer-list-sensors-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityIdentitySensor
+
+```
+This example shows how to use the Get-MgBetaSecurityIdentitySensor Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -382,7 +395,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensor)
-
 
 
 

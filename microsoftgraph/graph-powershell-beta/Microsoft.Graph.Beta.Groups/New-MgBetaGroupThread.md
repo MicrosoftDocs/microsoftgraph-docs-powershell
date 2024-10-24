@@ -57,9 +57,6 @@ A new conversation, conversation thread, and post are created in the group.
 Use reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-threads-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

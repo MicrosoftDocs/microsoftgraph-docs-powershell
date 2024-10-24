@@ -44,12 +44,6 @@ Get-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-Exp
 Get the properties and relationships of the currently authenticated organization.
 Since the organization resource supports extensions, you can also use the GET operation to get custom properties and extension data in an organization instance.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organization-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organization-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

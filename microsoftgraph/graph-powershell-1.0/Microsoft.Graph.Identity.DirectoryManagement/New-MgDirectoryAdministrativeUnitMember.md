@@ -50,9 +50,6 @@ New-MgDirectoryAdministrativeUnitMember -InputObject <IIdentityDirectoryManageme
 Use this API to add a member (user, group, or device) to an administrative unit.
 Currently it's only possible to add one member at a time to an administrative unit.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-post-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a new group
 

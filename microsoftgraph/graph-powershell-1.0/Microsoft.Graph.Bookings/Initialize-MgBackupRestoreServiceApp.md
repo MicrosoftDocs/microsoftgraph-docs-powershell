@@ -52,6 +52,23 @@ Activate a serviceApp.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceapp-activate-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+$params = @{
+	effectiveDateTime = [System.DateTime]::Parse("2024-04-19T12:01:03.45Z")
+}
+
+Initialize-MgBackupRestoreServiceApp -ServiceAppId $serviceAppId -BodyParameter $params
+
+```
+This example shows how to use the Initialize-MgBackupRestoreServiceApp Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -257,7 +274,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/initialize-mgbackuprestoreserviceapp](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/initialize-mgbackuprestoreserviceapp)
 
 [https://learn.microsoft.com/graph/api/serviceapp-activate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceapp-activate?view=graph-rest-1.0)
-
 
 
 

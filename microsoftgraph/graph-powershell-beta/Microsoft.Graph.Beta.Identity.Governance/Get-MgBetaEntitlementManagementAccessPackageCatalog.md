@@ -72,7 +72,7 @@ Retrieve the properties and relationships of an accessPackageCatalog object.
 ### Example 1: Get a list of all access package catalogs
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalog | Format-list
 
 AccessPackageResourceRoles  :
@@ -97,7 +97,7 @@ This command returns a list of all the access package catalogs.
 ### Example 2: Filter the access package catalogs by the display name
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalog -Filter "DisplayName eq 'General'" | Format-List
 
 AccessPackageResourceRoles  :

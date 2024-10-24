@@ -36,9 +36,6 @@ New-MgRoleManagementEntitlementManagementRoleAssignment -BodyParameter <IMicroso
 ## DESCRIPTION
 Create a new unifiedRoleAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-post-roleassignments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a role assignment with access package catalog scope
 

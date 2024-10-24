@@ -81,9 +81,6 @@ Update-MgBetaGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update an event object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-update-event-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

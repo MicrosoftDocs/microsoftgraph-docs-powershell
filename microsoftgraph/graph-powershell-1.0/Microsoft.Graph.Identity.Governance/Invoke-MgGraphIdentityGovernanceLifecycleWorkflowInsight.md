@@ -38,6 +38,19 @@ This allows you to quickly get category information, by numerical value, bypassi
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-insights-workflowsprocessedbycategory-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Invoke-MgGraphIdentityGovernanceLifecycleWorkflowInsight
+
+```
+This example shows how to use the Invoke-MgGraphIdentityGovernanceLifecycleWorkflowInsight Cmdlet.
+
+
 ## PARAMETERS
 
 ### -EndDateTime
@@ -221,7 +234,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mggraphidentitygovernancelifecycleworkflowinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mggraphidentitygovernancelifecycleworkflowinsight)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-insights-workflowsprocessedbycategory?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-insights-workflowsprocessedbycategory?view=graph-rest-1.0)
-
 
 
 

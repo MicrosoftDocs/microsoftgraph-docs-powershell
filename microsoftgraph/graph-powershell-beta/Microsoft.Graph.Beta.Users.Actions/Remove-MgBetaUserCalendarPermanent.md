@@ -49,6 +49,19 @@ For more information about item retention, see Configure Deleted Item retention 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendar-permanentdelete-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+Remove-MgBetaUserCalendarPermanent -UserId $userId
+
+```
+This example shows how to use the Remove-MgBetaUserCalendarPermanent Cmdlet.
+
+
 ## PARAMETERS
 
 ### -CalendarId
@@ -255,7 +268,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausercalendarpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausercalendarpermanent)
 
 [https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/calendar-permanentdelete?view=graph-rest-beta)
-
 
 
 

@@ -38,6 +38,19 @@ Because the amount of results for listed workflows as returned by the List workf
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-insights-workflowsprocessedsummary-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary
+
+```
+This example shows how to use the Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary Cmdlet.
+
+
 ## PARAMETERS
 
 ### -EndDateTime
@@ -221,7 +234,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgworkflowidentitygovernancelifecycleworkflowinsightprocessedsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgworkflowidentitygovernancelifecycleworkflowinsightprocessedsummary)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-insights-workflowsprocessedsummary?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-insights-workflowsprocessedsummary?view=graph-rest-1.0)
-
 
 
 

@@ -32,6 +32,9 @@ New-MgBetaDirectoryPendingExternalUserProfile -BodyParameter <Hashtable> [-Respo
 ## DESCRIPTION
 Create a new pendingExternalUserProfile object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-pendingexternaluserprofile-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -40,7 +40,7 @@ Delete a namedLocation object.
 ### Example 1: Remove a named location
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
+Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 
 Remove-MgBetaIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationId
 ```
