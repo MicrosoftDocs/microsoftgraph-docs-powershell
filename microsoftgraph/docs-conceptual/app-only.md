@@ -5,7 +5,7 @@ description: "Learn how to use app-only authentication to enable non-interactive
 author: msewaweru
 manager: CelesteDG
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/18/2024
 ms.author: eunicewaweru
 
 #customer intent: As a developer, I want to authenticate with Microsoft Graph using app-only access, so that I can perform non-interactive operations, such as listing users and groups, using the Microsoft Graph PowerShell SDK.
@@ -13,7 +13,7 @@ ms.author: eunicewaweru
 
 # Use app-only authentication with the Microsoft Graph PowerShell SDK
 
-The PowerShell SDK supports two types of authentication: [delegated access](/graph/auth-v2-user), and [app-only access](/graph/auth-v2-service). This guide will focus on the configuration needed to enable app-only access.
+The Microsoft Graph PowerShell SDK supports two types of authentication: [delegated access](/graph/auth-v2-user), and [app-only access](/graph/auth-v2-service). This guide will focus on the configuration needed to enable app-only access.
 
 > [!IMPORTANT]
 > App-only access grants permissions directly to an application, and requires an administrator to consent to the required permission scopes. For more information on app-only access, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
@@ -33,15 +33,13 @@ Before you can use app-only access with the Microsoft Graph PowerShell SDK, make
 
 ### Step 1: Register an application
 
-You can register an application using the PowerShell SDK with delegated access by signing in as an administrator, and creating the app registration. 
+You can register an application using the Microsoft Graph PowerShell SDK with delegated access by signing in as an administrator, and creating the app registration. 
 
 1. Use a text editor to create a new file named **RegisterAppOnly.ps1**. Paste the following code into the file.
 
     :::code language="powershell" source="RegisterAppOnly.ps1":::
 
 1. Save the file. Open PowerShell in the directory that contains **RegisterAppOnly.ps1** and run the following command. If you don't already have a certificate, you can create a self-signed certificate using the [See also](#see-also) section.
-
-    
 
     ```powershell
     .\RegisterAppOnly.ps1 -AppName "Graph PowerShell Script" -CertPath "PATH_TO_PUBLIC_KEY_FILE"
