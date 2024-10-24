@@ -44,9 +44,6 @@ Retrieve properties and relationships for a site resource.A site resource repres
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -54,7 +51,18 @@ Retrieve properties and relationships for a site resource.A site resource repres
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSite -Search '"{query}"' 
+Get-MgBetaSite -Property "siteCollection,webUrl" -Filter "siteCollection/root ne null" 
+
+```
+This example shows how to use the Get-MgBetaSite Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSite
 
 ```
 This example shows how to use the Get-MgBetaSite Cmdlet.

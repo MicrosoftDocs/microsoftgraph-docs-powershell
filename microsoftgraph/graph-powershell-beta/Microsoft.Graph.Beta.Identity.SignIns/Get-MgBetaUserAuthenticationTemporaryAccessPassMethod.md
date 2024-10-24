@@ -42,12 +42,6 @@ Get-MgBetaUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySig
 ## DESCRIPTION
 Retrieve a user's single temporaryAccessPassAuthenticationMethod object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/temporaryaccesspassauthenticationmethod-get-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authentication-list-temporaryaccesspassmethods-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

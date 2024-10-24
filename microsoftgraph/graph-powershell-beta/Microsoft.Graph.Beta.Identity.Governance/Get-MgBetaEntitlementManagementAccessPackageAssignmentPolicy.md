@@ -72,7 +72,7 @@ In Microsoft Entra entitlement management, retrieve the properties and relations
 ### Example 1: Get all access package policy assignment policies
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy | Format-List
 
 AccessPackage           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackage

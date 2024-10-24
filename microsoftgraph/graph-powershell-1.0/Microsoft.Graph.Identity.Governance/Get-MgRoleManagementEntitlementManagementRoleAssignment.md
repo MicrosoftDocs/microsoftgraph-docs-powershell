@@ -41,9 +41,6 @@ Get-MgRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdentityG
 ## DESCRIPTION
 Resource to grant access to users or groups.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-list-roleassignments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Request using $filter for role assignments on an access package catalog and expand the principal object
 

@@ -55,9 +55,6 @@ Customers through Microsoft Entra ID for customers can also use this API operati
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get the list of all the users
 

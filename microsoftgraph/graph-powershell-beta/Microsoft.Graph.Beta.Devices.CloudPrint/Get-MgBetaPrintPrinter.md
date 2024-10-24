@@ -43,9 +43,6 @@ Get-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-ExpandPropert
 Retrieve the properties and relationships of a printer object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-get-permissions.md)]
-
-**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-list-printers-permissions.md)]
 
 ## EXAMPLES

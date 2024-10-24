@@ -24,6 +24,19 @@ Provision an approvalSolution on behalf of a tenant.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approvalsolution-provision-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Bookings
+
+New-MgBetaApproval
+
+```
+This example shows how to use the New-MgBetaApproval Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -133,7 +146,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetaapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetaapproval)
 
 [https://learn.microsoft.com/graph/api/approvalsolution-provision?view=graph-rest-beta](https://learn.microsoft.com/graph/api/approvalsolution-provision?view=graph-rest-beta)
-
 
 
 

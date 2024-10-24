@@ -42,6 +42,19 @@ For information about tasks processed, see insights: topTasksProcessedSummary.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-insights-topworkflowsprocessedsummary-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary
+
+```
+This example shows how to use the Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Count
@@ -300,7 +313,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgtopidentitygovernancelifecycleworkflowinsightworkflowprocessedsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgtopidentitygovernancelifecycleworkflowinsightworkflowprocessedsummary)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-insights-topworkflowsprocessedsummary?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-insights-topworkflowsprocessedsummary?view=graph-rest-1.0)
-
 
 
 

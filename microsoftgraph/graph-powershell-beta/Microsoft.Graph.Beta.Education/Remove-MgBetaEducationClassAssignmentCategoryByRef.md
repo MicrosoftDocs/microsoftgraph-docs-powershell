@@ -39,6 +39,19 @@ Only teachers can perform this operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-remove-category-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Remove-MgBetaEducationClassAssignmentCategoryByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationCategoryId $educationCategoryId
+
+```
+This example shows how to use the Remove-MgBetaEducationClassAssignmentCategoryByRef Cmdlet.
+
+
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -249,7 +262,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/Remove-MgBetaEducationClassAssignmentCategoryByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/Remove-MgBetaEducationClassAssignmentCategoryByRef)
 
 [https://learn.microsoft.com/graph/api/educationassignment-remove-category?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-remove-category?view=graph-rest-beta)
-
 
 
 

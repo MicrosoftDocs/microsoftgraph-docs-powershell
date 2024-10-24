@@ -35,6 +35,19 @@ Deactivate a serviceApp.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceapp-deactivate-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+Invoke-MgDeactivateSolutionBackupRestoreServiceApp -ServiceAppId $serviceAppId
+
+```
+This example shows how to use the Invoke-MgDeactivateSolutionBackupRestoreServiceApp Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -189,7 +202,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/invoke-mgdeactivatesolutionbackuprestoreserviceapp](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/invoke-mgdeactivatesolutionbackuprestoreserviceapp)
 
 [https://learn.microsoft.com/graph/api/serviceapp-deactivate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceapp-deactivate?view=graph-rest-1.0)
-
 
 
 

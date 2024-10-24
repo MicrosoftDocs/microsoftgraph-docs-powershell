@@ -43,9 +43,6 @@ Get-MgServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity> [-E
 Read the properties and relationships of an appRoleAssignment object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approleassignment-get-permissions.md)]
-
-**Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-approleassignments-permissions.md)]
 
 ## EXAMPLES

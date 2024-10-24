@@ -42,9 +42,6 @@ Retrieve the properties of a specific directory setting object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysetting-get-permissions.md)]
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-settings-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

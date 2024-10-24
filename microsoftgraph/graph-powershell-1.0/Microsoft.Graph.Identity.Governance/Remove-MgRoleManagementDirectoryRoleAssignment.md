@@ -33,9 +33,6 @@ Remove-MgRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovernance
 ## DESCRIPTION
 Delete a unifiedRoleAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignment-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

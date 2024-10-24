@@ -42,12 +42,6 @@ Get-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Get an event object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-event-permissions.md)]
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-events-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

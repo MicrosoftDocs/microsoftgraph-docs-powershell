@@ -52,7 +52,7 @@ Get the properties and relationships of an application object.
 ### Example 1: Get a list of applications
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Application.Read.All'
+Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication | 
   Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
 
@@ -67,12 +67,12 @@ This examples gets a list of all the applications.
 
 To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
 
-To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
+To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
 
 ### Example 2: Get an application by Id
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Application.Read.All'
+Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -Filter "AppId eq '39b09640-ec3e-44c9-b3de-f52db4e1cf66'" | 
   Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
 
@@ -86,12 +86,12 @@ This examples gets the application by the specified Id.
 
 To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
 
-To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
+To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
 
 ### Example 3: Get a count of all applications
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Application.Read.All'
+Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -ConsistencyLevel eventual -Count appCount
 
 Id                                   DisplayName        AppId                                SignInAudience                     PublisherDomain
@@ -107,12 +107,12 @@ This example gets a list of all applications. The $appCount variable contains th
 
 To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
 
-To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
+To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
 
 ### Example 4: Use -Search to get all the applications whose display name contains 'Test' including a count of the returned users
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Application.Read.All'
+Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -ConsistencyLevel eventual -Count appCount -Search '"DisplayName:Test"'
 
 Id                                   DisplayName        AppId                                SignInAudience                     PublisherDomain
@@ -125,12 +125,12 @@ This example returns all applications whose display name contains 'Test'. The $a
 
 To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
 
-To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
+To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
 
 ### Example 5: Use -Filter to get all the applications with a display name that starts with 'New' including a count of the returned users, with the results ordered by display name
 
 ```powershell
-Connect-MgBetaGraph -Scopes 'Application.Read.All'
+Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -ConsistencyLevel eventual -Count appCount -Filter "startsWith(DisplayName, 'New')" -OrderBy DisplayName
 
 Id                                   DisplayName AppId                                SignInAudience                     PublisherDomain
@@ -143,7 +143,7 @@ This example returns all applications whose display name starts with 'New'. The 
 
 To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
 
-To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
+To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
 
 ## PARAMETERS
 

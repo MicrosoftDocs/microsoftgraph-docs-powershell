@@ -35,6 +35,19 @@ For more information about item retention, see Configure Deleted Item retention 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-permanentdelete-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+Remove-MgBetaUserContactFolderPermanent -UserId $userId -ContactFolderId $contactFolderId
+
+```
+This example shows how to use the Remove-MgBetaUserContactFolderPermanent Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ContactFolderId
@@ -241,7 +254,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausercontactfolderpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausercontactfolderpermanent)
 
 [https://learn.microsoft.com/graph/api/contactfolder-permanentdelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contactfolder-permanentdelete?view=graph-rest-beta)
-
 
 
 

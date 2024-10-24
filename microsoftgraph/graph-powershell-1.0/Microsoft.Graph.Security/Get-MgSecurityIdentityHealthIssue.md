@@ -48,6 +48,19 @@ Read the properties and relationships of a healthIssue object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-identitycontainer-list-healthissues-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityIdentityHealthIssue
+
+```
+This example shows how to use the Get-MgSecurityIdentityHealthIssue Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -363,7 +376,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-healthissue-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-healthissue-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-identitycontainer-list-healthissues?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-identitycontainer-list-healthissues?view=graph-rest-1.0)
-
 
 
 

@@ -45,9 +45,6 @@ Read the properties and relationships of a longRunningOperation object.
 This API allows you to retrieve the details and status of the following long-running Microsoft Graph API operations.
 The possible states of the long-running operation are notStarted, running, succeeded, failed, unknownFutureValue where succeeded and failed are terminal states.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/longrunningoperation-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 

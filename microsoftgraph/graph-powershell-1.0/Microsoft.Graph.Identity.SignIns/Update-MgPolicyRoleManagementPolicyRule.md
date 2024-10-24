@@ -53,9 +53,6 @@ Update-MgPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity>
 Update a rule defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object: For more information about rules for Microsoft Entra roles and examples of updating rules, see the following articles:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedrolemanagementpolicyrule-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Update a rule defined for a policy in PIM for Microsoft Entra roles
 

@@ -36,6 +36,19 @@ The following points apply to restoring a protection unit:
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/restoresessionbase-activate-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+Initialize-MgBackupRestoreSession -RestoreSessionBaseId $restoreSessionBaseId
+
+```
+This example shows how to use the Initialize-MgBackupRestoreSession Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -190,7 +203,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/initialize-mgbackuprestoresession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/initialize-mgbackuprestoresession)
 
 [https://learn.microsoft.com/graph/api/restoresessionbase-activate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/restoresessionbase-activate?view=graph-rest-1.0)
-
 
 
 

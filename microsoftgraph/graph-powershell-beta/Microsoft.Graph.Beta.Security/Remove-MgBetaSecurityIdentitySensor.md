@@ -33,6 +33,19 @@ Delete navigation property sensors for security
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-identitycontainer-delete-sensors-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Remove-MgBetaSecurityIdentitySensor -SensorId $sensorId
+
+```
+This example shows how to use the Remove-MgBetaSecurityIdentitySensor Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -280,7 +293,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityidentitysensor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityidentitysensor)
-
 
 
 

@@ -34,9 +34,6 @@ New-MgBetaRoleManagementExchangeRoleAssignment -BodyParameter <IMicrosoftGraphUn
 ## DESCRIPTION
 Create a new unifiedRoleAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplication-post-roleassignments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a role assignment for Exchange Online provider with administrative unit scope
 

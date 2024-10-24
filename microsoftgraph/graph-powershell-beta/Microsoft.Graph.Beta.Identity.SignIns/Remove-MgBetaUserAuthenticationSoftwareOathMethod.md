@@ -33,9 +33,6 @@ Remove-MgBetaUserAuthenticationSoftwareOathMethod -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Delete a user's Software OATH token authentication method object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/softwareoathauthenticationmethod-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
