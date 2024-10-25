@@ -55,11 +55,11 @@ Update-MgDeviceManagementTermAndCondition -InputObject <IDeviceManagementAdminis
 Update the properties of a termsAndConditions object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.termsAndConditions"
@@ -72,6 +72,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementTermAndCondition -TermsAndConditionsId $termsAndConditionsId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementTermAndCondition Cmdlet.
+
 
 ## PARAMETERS
 

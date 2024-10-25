@@ -47,18 +47,6 @@ Start-MgBetaUserManagedDeviceConfigurationManagerAction -InputObject <IUsersActi
 ## DESCRIPTION
 Trigger action on ConfigurationManager client
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -321,6 +309,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/start-mgbetausermanageddeviceconfigurationmanageraction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/start-mgbetausermanageddeviceconfigurationmanageraction)
+
 
 
 

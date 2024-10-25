@@ -34,16 +34,28 @@ Get the trend in the daily number of active and enabled users of Copilot for Mic
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-getmicrosoft365copilotusercounttrend-permissions.md)]
 
 ## EXAMPLES
+### Example 1: CSV output
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportMicrosoft365CopilotUserCountTrend -Format "text/csv"  -Period $periodId 
+
 ```
-{{ Add code here }}
+This example will csv output
+
+### Example 2: JSON output
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportMicrosoft365CopilotUserCountTrend -Format "application/json"  -Period $periodId 
+
 ```
+This example will json output
+
 
 ## PARAMETERS
 

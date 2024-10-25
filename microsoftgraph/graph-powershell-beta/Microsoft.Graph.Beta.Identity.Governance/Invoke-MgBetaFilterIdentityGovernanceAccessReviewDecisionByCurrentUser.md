@@ -39,13 +39,17 @@ A list of zero or more accessReviewInstanceDecisionItem objects are returned, in
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-list-decisions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Retrieve all decision items for which you're a reviewer and expand the definitions
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
-Invoke-MgBetaFilterIdentityGovernanceAccessReviewDecisionByCurrentUser -ExpandProperty "instance(\`$expand=definition)"  -On $onId
+Invoke-MgBetaFilterIdentityGovernanceAccessReviewDecisionByCurrentUser -ExpandProperty "instance(`$expand=definition)"  -On $onId 
+
+```
+This example will retrieve all decision items for which you're a reviewer and expand the definitions
+
 
 ## PARAMETERS
 

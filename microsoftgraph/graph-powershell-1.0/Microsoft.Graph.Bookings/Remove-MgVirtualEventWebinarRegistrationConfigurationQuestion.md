@@ -40,13 +40,17 @@ The question can either be a predefined registration question or a custom regist
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistrationquestionbase-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventRegistrationQuestionBaseId $virtualEventRegistrationQuestionBaseId
+
+```
+This example shows how to use the Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion Cmdlet.
+
 
 ## PARAMETERS
 

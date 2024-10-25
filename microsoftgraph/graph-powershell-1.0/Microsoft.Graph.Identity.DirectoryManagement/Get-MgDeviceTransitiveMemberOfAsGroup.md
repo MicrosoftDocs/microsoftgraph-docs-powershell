@@ -53,13 +53,18 @@ This API request is transitive, and will also return all groups and administrati
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-list-transitivememberof-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
-Get-MgDeviceTransitiveMemberOfAsGroup -DeviceId $deviceId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'a')"  -ConsistencyLevel eventual
+Get-MgDeviceTransitiveMemberOfAsGroup -DeviceId $deviceId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'a')"  -ConsistencyLevel eventual 
+
+
+```
+This example shows how to use the Get-MgDeviceTransitiveMemberOfAsGroup Cmdlet.
+
 
 ## PARAMETERS
 

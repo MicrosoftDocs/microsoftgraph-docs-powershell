@@ -36,18 +36,6 @@ Remove a teacher from an educationClass.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-delete-teachers-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -243,6 +231,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassteachereducationuserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassteachereducationuserbyref)
 
 [https://learn.microsoft.com/graph/api/educationclass-delete-teachers?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationclass-delete-teachers?view=graph-rest-beta)
+
 
 
 

@@ -43,11 +43,11 @@ Create a new delegatedAdminRelationship object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tenantrelationship-post-delegatedadminrelationships-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Partner
-```
 
 $params = @{
 	displayName = "Contoso admin relationship"
@@ -70,6 +70,10 @@ $params = @{
 }
 
 New-MgTenantRelationshipDelegatedAdminRelationship -BodyParameter $params
+
+```
+This example shows how to use the New-MgTenantRelationshipDelegatedAdminRelationship Cmdlet.
+
 
 ## PARAMETERS
 

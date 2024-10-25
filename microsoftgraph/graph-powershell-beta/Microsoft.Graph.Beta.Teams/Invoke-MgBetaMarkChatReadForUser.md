@@ -55,11 +55,11 @@ Mark a chat as read for a user.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-markchatreadforuser-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	user = @{
@@ -69,6 +69,10 @@ $params = @{
 }
 
 Invoke-MgBetaMarkChatReadForUser -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaMarkChatReadForUser Cmdlet.
+
 
 ## PARAMETERS
 
