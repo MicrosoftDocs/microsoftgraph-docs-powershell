@@ -12,6 +12,9 @@ ms.subservice: entra-directory-management
 Get newly created, updated, or deleted devices without performing a full read of the entire resource collection.
 For more information, see Using delta query.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

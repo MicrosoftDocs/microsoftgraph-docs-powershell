@@ -11,6 +11,9 @@ schema: 2.0.0
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

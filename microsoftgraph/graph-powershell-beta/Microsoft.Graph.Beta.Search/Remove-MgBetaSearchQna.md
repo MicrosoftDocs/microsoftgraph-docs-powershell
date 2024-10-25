@@ -11,6 +11,9 @@ ms.subservice: search
 ## SYNOPSIS
 Delete a qna object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Remove-MgSearchQna?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
