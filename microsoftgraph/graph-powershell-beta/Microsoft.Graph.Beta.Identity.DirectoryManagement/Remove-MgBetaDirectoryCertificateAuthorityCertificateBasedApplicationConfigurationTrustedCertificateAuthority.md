@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfigurationtrustedcertificateauthority
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Remove-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority
@@ -32,6 +33,9 @@ Remove-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurati
 ## DESCRIPTION
 Delete a certificateAuthorityAsEntity object.
 You can't delete all items in the collection because this collection requires at least one object that is a root authority to always persist.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificateauthorityasentity-delete-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/test-mgbetaexternalindustrydataconnector
 schema: 2.0.0
+ms.subservice: industry-data-etl
 ---
 
 # Test-MgBetaExternalIndustryDataConnector
@@ -28,6 +29,9 @@ Test-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-Respon
 
 ## DESCRIPTION
 Perform validations applicable for the specific instance of the data connector.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-validate-permissions.md)]
 
 ## EXAMPLES
 

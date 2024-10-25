@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernanceaccessreviewdefinition
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # Remove-MgBetaIdentityGovernanceAccessReviewDefinition
@@ -28,6 +29,9 @@ Remove-MgBetaIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGov
 
 ## DESCRIPTION
 Delete an accessReviewScheduleDefinition object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewscheduledefinition-delete-permissions.md)]
 
 ## EXAMPLES
 

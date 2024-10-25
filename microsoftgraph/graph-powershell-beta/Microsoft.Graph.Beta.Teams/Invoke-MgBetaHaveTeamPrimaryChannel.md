@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetahaveteamprimarychannel
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Invoke-MgBetaHaveTeamPrimaryChannel
@@ -28,6 +29,9 @@ Invoke-MgBetaHaveTeamPrimaryChannel -InputObject <ITeamsIdentity> [-TenantId <St
 
 ## DESCRIPTION
 Determine whether a user has access to a shared channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-doesuserhaveaccess-permissions.md)]
 
 ## EXAMPLES
 

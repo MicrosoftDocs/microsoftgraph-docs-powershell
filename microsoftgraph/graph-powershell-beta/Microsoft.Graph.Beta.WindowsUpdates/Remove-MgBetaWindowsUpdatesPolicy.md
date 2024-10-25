@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicy
 schema: 2.0.0
+ms.subservice: autopatch
 ---
 
 # Remove-MgBetaWindowsUpdatesPolicy
@@ -28,6 +29,9 @@ Remove-MgBetaWindowsUpdatesPolicy -InputObject <IWindowsUpdatesIdentity> [-IfMat
 
 ## DESCRIPTION
 Delete an updatePolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowsupdates-updatepolicy-delete-permissions.md)]
 
 ## EXAMPLES
 
