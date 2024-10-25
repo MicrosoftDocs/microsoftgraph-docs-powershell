@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceconfigurationprofile
@@ -30,6 +30,18 @@ New-MgBetaDeviceManagementDeviceConfigurationProfile -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Create new navigation property to deviceConfigurationProfiles for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -307,25 +319,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationProfile>`: The listing service profile entity contains the meta data of an Intune configuration profile 
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceConfigurationProfile\>: The listing service profile entity contains the meta data of an Intune configuration profile 
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AccountId <String>]`: Account Id.
-  - `[ConfigurationTechnologies <Int32?>]`: Configuration Technologies for Settins Catalog Policies
-  - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
-  - `[PlatformType <PlatformType?>]`: Platform Type
-  - `[ProfileName <String>]`: Profile name
-  - `[ProfileType <ProfileType?>]`: Profile Type
-  - `[RoleScopeTagIds <String- `[]`>]`: The list of scope tags for the configuration.
-  - `[TemplateId <String>]`: TemplateId for Settings Catalog Policies
+  \[AccountId \<String\>\]: Account Id.
+  \[ConfigurationTechnologies \<Int32?\>\]: Configuration Technologies for Settins Catalog Policies
+  \[CreatedDateTime \<DateTime?\>\]: The date and time the object was created.
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
+  \[PlatformType \<PlatformType?\>\]: Platform Type
+  \[ProfileName \<String\>\]: Profile name
+  \[ProfileType \<ProfileType?\>\]: Profile Type
+  \[RoleScopeTagIds \<String\[\]\>\]: The list of scope tags for the configuration.
+  \[TemplateId \<String\>\]: TemplateId for Settings Catalog Policies
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceconfigurationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceconfigurationprofile)
-
-
-
-
 

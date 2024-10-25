@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration
 schema: 2.0.0
-ms.subservice: intune
 ---
 
 # New-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
 Create a new windows10TeamGeneralConfiguration object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,25 +36,60 @@ New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceC
 Create a new windows10TeamGeneralConfiguration object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement
+```
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.windows10EnterpriseModernAppManagementConfiguration"
+	"@odata.type" = "#microsoft.graph.windowsUpdateForBusinessConfiguration"
 	description = "Description value"
 	displayName = "Display Name value"
 	version = 7
-	uninstallBuiltInApps = $true
+	deliveryOptimizationMode = "httpOnly"
+	prereleaseFeatures = "settingsOnly"
+	automaticUpdateMode = "notifyDownload"
+	microsoftUpdateServiceAllowed = $true
+	driversExcluded = $true
+	installationSchedule = @{
+		"@odata.type" = "microsoft.graph.windowsUpdateScheduledInstall"
+		scheduledInstallDay = "everyday"
+		scheduledInstallTime = "11:59:31.3170000"
+	}
+	qualityUpdatesDeferralPeriodInDays = 
+	featureUpdatesDeferralPeriodInDays = 
+	qualityUpdatesPaused = $true
+	featureUpdatesPaused = $true
+	qualityUpdatesPauseExpiryDateTime = "2017-01-01T00:00:22.9594683-08:00"
+	featureUpdatesPauseExpiryDateTime = "2016-12-31T23:58:08.068669-08:00"
+	businessReadyUpdatesOnly = "all"
+	skipChecksBeforeRestart = $true
+	updateWeeks = "firstWeek"
+	qualityUpdatesPauseStartDate = "2016-12-31"
+	featureUpdatesPauseStartDate = "2016-12-31"
+	featureUpdatesRollbackWindowInDays = 
+	qualityUpdatesWillBeRolledBack = $true
+	featureUpdatesWillBeRolledBack = $true
+	qualityUpdatesRollbackStartDateTime = "2016-12-31T23:57:01.05526-08:00"
+	featureUpdatesRollbackStartDateTime = "2017-01-01T00:03:21.6080517-08:00"
+	engagedRestartDeadlineInDays = 
+	engagedRestartSnoozeScheduleInDays = 
+	engagedRestartTransitionScheduleInDays = 
+	deadlineForFeatureUpdatesInDays = 
+	deadlineForQualityUpdatesInDays = 
+	deadlineGracePeriodInDays = 
+	postponeRebootUntilAfterDeadline = $true
+	autoRestartNotificationDismissal = "automatic"
+	scheduleRestartWarningInHours = 
+	scheduleImminentRestartWarningInMinutes = 
+	userPauseAccess = "enabled"
+	userWindowsUpdateScanAccess = "enabled"
+	updateNotificationLevel = "defaultNotifications"
+	allowWindows11Upgrade = $true
 }
 
 New-MgDeviceManagementDeviceConfiguration -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementDeviceConfiguration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -372,142 +403,139 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphDeviceConfigurationAssignment- `[]`>: The list of assignments for the device configuration profile.
-  - `[Id <String>]`: The unique identifier for an entity.
+ASSIGNMENTS \<IMicrosoftGraphDeviceConfigurationAssignment\[\]\>: The list of assignments for the device configuration profile.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfiguration>`: Device Configuration.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceConfiguration\>: Device Configuration.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment- `[]`>]`: The list of assignments for the device configuration profile.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Assignments \<IMicrosoftGraphDeviceConfigurationAssignment\[\]\>\]: The list of assignments for the device configuration profile.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
-  - `[Description <String>]`: Admin provided description of the Device Configuration.
-  - `[DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary- `[]`>]`: Device Configuration Setting State Device Summary
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedDateTime \<DateTime?\>\]: DateTime the object was created.
+  \[Description \<String\>\]: Admin provided description of the Device Configuration.
+  \[DeviceSettingStateSummaries \<IMicrosoftGraphSettingStateDeviceSummary\[\]\>\]: Device Configuration Setting State Device Summary
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
-    - `[ConflictDeviceCount <Int32?>]`: Device conflict error count for the setting
-    - `[ErrorDeviceCount <Int32?>]`: Device error count for the setting
-    - `[InstancePath <String>]`: Name of the InstancePath for the setting
-    - `[NonCompliantDeviceCount <Int32?>]`: Device NonCompliant count for the setting
-    - `[NotApplicableDeviceCount <Int32?>]`: Device Not Applicable count for the setting
-    - `[RemediatedDeviceCount <Int32?>]`: Device Compliant count for the setting
-    - `[SettingName <String>]`: Name of the setting
-    - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
-  - `[DeviceStatusOverview <IMicrosoftGraphDeviceConfigurationDeviceOverview>]`: deviceConfigurationDeviceOverview
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[CompliantDeviceCount \<Int32?\>\]: Device Compliant count for the setting
+    \[ConflictDeviceCount \<Int32?\>\]: Device conflict error count for the setting
+    \[ErrorDeviceCount \<Int32?\>\]: Device error count for the setting
+    \[InstancePath \<String\>\]: Name of the InstancePath for the setting
+    \[NonCompliantDeviceCount \<Int32?\>\]: Device NonCompliant count for the setting
+    \[NotApplicableDeviceCount \<Int32?\>\]: Device Not Applicable count for the setting
+    \[RemediatedDeviceCount \<Int32?\>\]: Device Compliant count for the setting
+    \[SettingName \<String\>\]: Name of the setting
+    \[UnknownDeviceCount \<Int32?\>\]: Device Unkown count for the setting
+  \[DeviceStatusOverview \<IMicrosoftGraphDeviceConfigurationDeviceOverview\>\]: deviceConfigurationDeviceOverview
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
-    - `[ErrorCount <Int32?>]`: Number of error devices
-    - `[FailedCount <Int32?>]`: Number of failed devices
-    - `[LastUpdateDateTime <DateTime?>]`: Last update time
-    - `[NotApplicableCount <Int32?>]`: Number of not applicable devices
-    - `[PendingCount <Int32?>]`: Number of pending devices
-    - `[SuccessCount <Int32?>]`: Number of succeeded devices
-  - `[DeviceStatuses <IMicrosoftGraphDeviceConfigurationDeviceStatus- `[]`>]`: Device configuration installation status by device.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[ConfigurationVersion \<Int32?\>\]: Version of the policy for that overview
+    \[ErrorCount \<Int32?\>\]: Number of error devices
+    \[FailedCount \<Int32?\>\]: Number of failed devices
+    \[LastUpdateDateTime \<DateTime?\>\]: Last update time
+    \[NotApplicableCount \<Int32?\>\]: Number of not applicable devices
+    \[PendingCount \<Int32?\>\]: Number of pending devices
+    \[SuccessCount \<Int32?\>\]: Number of succeeded devices
+  \[DeviceStatuses \<IMicrosoftGraphDeviceConfigurationDeviceStatus\[\]\>\]: Device configuration installation status by device.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-    - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
-    - `[DeviceModel <String>]`: The device model that is being reported
-    - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
-    - `[Status <String>]`: complianceStatus
-    - `[UserName <String>]`: The User Name that is being reported
-    - `[UserPrincipalName <String>]`: UserPrincipalName.
-  - `[DisplayName <String>]`: Admin provided name of the device configuration.
-  - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
-  - `[UserStatusOverview <IMicrosoftGraphDeviceConfigurationUserOverview>]`: deviceConfigurationUserOverview
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
+    \[DeviceDisplayName \<String\>\]: Device name of the DevicePolicyStatus.
+    \[DeviceModel \<String\>\]: The device model that is being reported
+    \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
+    \[Status \<String\>\]: complianceStatus
+    \[UserName \<String\>\]: The User Name that is being reported
+    \[UserPrincipalName \<String\>\]: UserPrincipalName.
+  \[DisplayName \<String\>\]: Admin provided name of the device configuration.
+  \[LastModifiedDateTime \<DateTime?\>\]: DateTime the object was last modified.
+  \[UserStatusOverview \<IMicrosoftGraphDeviceConfigurationUserOverview\>\]: deviceConfigurationUserOverview
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
-    - `[ErrorCount <Int32?>]`: Number of error Users
-    - `[FailedCount <Int32?>]`: Number of failed Users
-    - `[LastUpdateDateTime <DateTime?>]`: Last update time
-    - `[NotApplicableCount <Int32?>]`: Number of not applicable users
-    - `[PendingCount <Int32?>]`: Number of pending Users
-    - `[SuccessCount <Int32?>]`: Number of succeeded Users
-  - `[UserStatuses <IMicrosoftGraphDeviceConfigurationUserStatus- `[]`>]`: Device configuration installation status by user.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[ConfigurationVersion \<Int32?\>\]: Version of the policy for that overview
+    \[ErrorCount \<Int32?\>\]: Number of error Users
+    \[FailedCount \<Int32?\>\]: Number of failed Users
+    \[LastUpdateDateTime \<DateTime?\>\]: Last update time
+    \[NotApplicableCount \<Int32?\>\]: Number of not applicable users
+    \[PendingCount \<Int32?\>\]: Number of pending Users
+    \[SuccessCount \<Int32?\>\]: Number of succeeded Users
+  \[UserStatuses \<IMicrosoftGraphDeviceConfigurationUserStatus\[\]\>\]: Device configuration installation status by user.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DevicesCount <Int32?>]`: Devices count for that user.
-    - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
-    - `[Status <String>]`: complianceStatus
-    - `[UserDisplayName <String>]`: User name of the DevicePolicyStatus.
-    - `[UserPrincipalName <String>]`: UserPrincipalName.
-  - `[Version <Int32?>]`: Version of the device configuration.
+    \[DevicesCount \<Int32?\>\]: Devices count for that user.
+    \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
+    \[Status \<String\>\]: complianceStatus
+    \[UserDisplayName \<String\>\]: User name of the DevicePolicyStatus.
+    \[UserPrincipalName \<String\>\]: UserPrincipalName.
+  \[Version \<Int32?\>\]: Version of the device configuration.
 
-DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary- `[]`>: Device Configuration Setting State Device Summary
-  - `[Id <String>]`: The unique identifier for an entity.
+DEVICESETTINGSTATESUMMARIES \<IMicrosoftGraphSettingStateDeviceSummary\[\]\>: Device Configuration Setting State Device Summary
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
-  - `[ConflictDeviceCount <Int32?>]`: Device conflict error count for the setting
-  - `[ErrorDeviceCount <Int32?>]`: Device error count for the setting
-  - `[InstancePath <String>]`: Name of the InstancePath for the setting
-  - `[NonCompliantDeviceCount <Int32?>]`: Device NonCompliant count for the setting
-  - `[NotApplicableDeviceCount <Int32?>]`: Device Not Applicable count for the setting
-  - `[RemediatedDeviceCount <Int32?>]`: Device Compliant count for the setting
-  - `[SettingName <String>]`: Name of the setting
-  - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
+  \[CompliantDeviceCount \<Int32?\>\]: Device Compliant count for the setting
+  \[ConflictDeviceCount \<Int32?\>\]: Device conflict error count for the setting
+  \[ErrorDeviceCount \<Int32?\>\]: Device error count for the setting
+  \[InstancePath \<String\>\]: Name of the InstancePath for the setting
+  \[NonCompliantDeviceCount \<Int32?\>\]: Device NonCompliant count for the setting
+  \[NotApplicableDeviceCount \<Int32?\>\]: Device Not Applicable count for the setting
+  \[RemediatedDeviceCount \<Int32?\>\]: Device Compliant count for the setting
+  \[SettingName \<String\>\]: Name of the setting
+  \[UnknownDeviceCount \<Int32?\>\]: Device Unkown count for the setting
 
-DEVICESTATUSES <IMicrosoftGraphDeviceConfigurationDeviceStatus- `[]`>: Device configuration installation status by device.
-  - `[Id <String>]`: The unique identifier for an entity.
+DEVICESTATUSES \<IMicrosoftGraphDeviceConfigurationDeviceStatus\[\]\>: Device configuration installation status by device.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-  - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
-  - `[DeviceModel <String>]`: The device model that is being reported
-  - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
-  - `[Status <String>]`: complianceStatus
-  - `[UserName <String>]`: The User Name that is being reported
-  - `[UserPrincipalName <String>]`: UserPrincipalName.
+  \[ComplianceGracePeriodExpirationDateTime \<DateTime?\>\]: The DateTime when device compliance grace period expires
+  \[DeviceDisplayName \<String\>\]: Device name of the DevicePolicyStatus.
+  \[DeviceModel \<String\>\]: The device model that is being reported
+  \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
+  \[Status \<String\>\]: complianceStatus
+  \[UserName \<String\>\]: The User Name that is being reported
+  \[UserPrincipalName \<String\>\]: UserPrincipalName.
 
-DEVICESTATUSOVERVIEW `<IMicrosoftGraphDeviceConfigurationDeviceOverview>`: deviceConfigurationDeviceOverview
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+DEVICESTATUSOVERVIEW \<IMicrosoftGraphDeviceConfigurationDeviceOverview\>: deviceConfigurationDeviceOverview
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
-  - `[ErrorCount <Int32?>]`: Number of error devices
-  - `[FailedCount <Int32?>]`: Number of failed devices
-  - `[LastUpdateDateTime <DateTime?>]`: Last update time
-  - `[NotApplicableCount <Int32?>]`: Number of not applicable devices
-  - `[PendingCount <Int32?>]`: Number of pending devices
-  - `[SuccessCount <Int32?>]`: Number of succeeded devices
+  \[ConfigurationVersion \<Int32?\>\]: Version of the policy for that overview
+  \[ErrorCount \<Int32?\>\]: Number of error devices
+  \[FailedCount \<Int32?\>\]: Number of failed devices
+  \[LastUpdateDateTime \<DateTime?\>\]: Last update time
+  \[NotApplicableCount \<Int32?\>\]: Number of not applicable devices
+  \[PendingCount \<Int32?\>\]: Number of pending devices
+  \[SuccessCount \<Int32?\>\]: Number of succeeded devices
 
-USERSTATUSES <IMicrosoftGraphDeviceConfigurationUserStatus- `[]`>: Device configuration installation status by user.
-  - `[Id <String>]`: The unique identifier for an entity.
+USERSTATUSES \<IMicrosoftGraphDeviceConfigurationUserStatus\[\]\>: Device configuration installation status by user.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DevicesCount <Int32?>]`: Devices count for that user.
-  - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
-  - `[Status <String>]`: complianceStatus
-  - `[UserDisplayName <String>]`: User name of the DevicePolicyStatus.
-  - `[UserPrincipalName <String>]`: UserPrincipalName.
+  \[DevicesCount \<Int32?\>\]: Devices count for that user.
+  \[LastReportedDateTime \<DateTime?\>\]: Last modified date time of the policy report.
+  \[Status \<String\>\]: complianceStatus
+  \[UserDisplayName \<String\>\]: User name of the DevicePolicyStatus.
+  \[UserPrincipalName \<String\>\]: UserPrincipalName.
 
-USERSTATUSOVERVIEW `<IMicrosoftGraphDeviceConfigurationUserOverview>`: deviceConfigurationUserOverview
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+USERSTATUSOVERVIEW \<IMicrosoftGraphDeviceConfigurationUserOverview\>: deviceConfigurationUserOverview
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
-  - `[ErrorCount <Int32?>]`: Number of error Users
-  - `[FailedCount <Int32?>]`: Number of failed Users
-  - `[LastUpdateDateTime <DateTime?>]`: Last update time
-  - `[NotApplicableCount <Int32?>]`: Number of not applicable users
-  - `[PendingCount <Int32?>]`: Number of pending Users
-  - `[SuccessCount <Int32?>]`: Number of succeeded Users
+  \[ConfigurationVersion \<Int32?\>\]: Version of the policy for that overview
+  \[ErrorCount \<Int32?\>\]: Number of error Users
+  \[FailedCount \<Int32?\>\]: Number of failed Users
+  \[LastUpdateDateTime \<DateTime?\>\]: Last update time
+  \[NotApplicableCount \<Int32?\>\]: Number of not applicable users
+  \[PendingCount \<Int32?\>\]: Number of pending Users
+  \[SuccessCount \<Int32?\>\]: Number of succeeded Users
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10teamgeneralconfiguration-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10teamgeneralconfiguration-create?view=graph-rest-1.0)
-
-
-
 

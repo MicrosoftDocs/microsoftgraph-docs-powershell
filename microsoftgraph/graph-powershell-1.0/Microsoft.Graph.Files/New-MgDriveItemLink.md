@@ -1,20 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemlink
 schema: 2.0.0
-ms.subservice: sharepoint
 ---
 
 # New-MgDriveItemLink
 
 ## SYNOPSIS
 You can use createLink action to share a DriveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveItemLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,18 +50,15 @@ New-MgDriveItemLink -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 You can use createLink action to share a DriveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-createlink-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Files
+```
 
 $params = @{
 	type = "view"
@@ -76,14 +69,10 @@ $params = @{
 
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgDriveItemLink Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Files
+```
 
 $params = @{
 	type = "edit"
@@ -92,24 +81,16 @@ $params = @{
 
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example shows how to use the New-MgDriveItemLink Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Files
+```
 
 $params = @{
 	type = "embed"
 }
 
 New-MgDriveItemLink -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
-
-```
-This example shows how to use the New-MgDriveItemLink Cmdlet.
-
 
 ## PARAMETERS
 
@@ -404,59 +385,56 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Sp1J5CDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ExpirationDateTime <DateTime?>]`: 
-  - `[Message <String>]`: 
-  - `[Password <String>]`: 
-  - `[Recipients <IMicrosoftGraphDriveRecipient- `[]`>]`: 
-    - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
+BODYPARAMETER \<IPaths1Sp1J5CDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ExpirationDateTime \<DateTime?\>\]: 
+  \[Message \<String\>\]: 
+  \[Password \<String\>\]: 
+  \[Recipients \<IMicrosoftGraphDriveRecipient\[\]\>\]: 
+    \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (e.g.
 security groups).
-    - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
-    - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
-  - `[RetainInheritedPermissions <Boolean?>]`: 
-  - `[Scope <String>]`: 
-  - `[SendNotification <Boolean?>]`: 
-  - `[Type <String>]`: 
+    \[Email \<String\>\]: The email address for the recipient, if the recipient has an associated email address.
+    \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
+  \[RetainInheritedPermissions \<Boolean?\>\]: 
+  \[Scope \<String\>\]: 
+  \[SendNotification \<Boolean?\>\]: 
+  \[Type \<String\>\]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
-  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemId1 <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: The unique identifier of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[ThumbnailSetId <String>]`: The unique identifier of thumbnailSet
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
+  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
+  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemId1 \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
+  \[SharedDriveItemId \<String\>\]: The unique identifier of sharedDriveItem
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[ThumbnailSetId \<String\>\]: The unique identifier of thumbnailSet
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UserId \<String\>\]: The unique identifier of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient- `[]`>: .
-  - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
+RECIPIENTS \<IMicrosoftGraphDriveRecipient\[\]\>: .
+  \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (e.g.
 security groups).
-  - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
-  - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
+  \[Email \<String\>\]: The email address for the recipient, if the recipient has an associated email address.
+  \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemlink)
 
 [https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0)
-
-
-
 
