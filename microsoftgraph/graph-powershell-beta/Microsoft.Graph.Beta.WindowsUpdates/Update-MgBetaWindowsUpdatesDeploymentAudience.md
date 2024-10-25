@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeploymentaudience
@@ -327,46 +327,46 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDEXCLUSIONS \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+ADDEXCLUSIONS <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-ADDMEMBERS \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+ADDMEMBERS <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-BODYPARAMETER \<IPathsGxoqhAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencePostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AddExclusions \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IPathsGxoqhAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AddExclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AddMembers \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>\]: 
-  \[RemoveExclusions \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>\]: 
-  \[RemoveMembers \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>\]: 
+  - `[AddMembers <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>]`: 
+  - `[RemoveExclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>]`: 
+  - `[RemoveMembers <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>]`: 
 
-INPUTOBJECT \<IWindowsUpdatesIdentity\>: Identity Parameter
-  \[ApplicableContentCatalogEntryId \<String\>\]: The unique identifier of applicableContent
-  \[ApplicableContentDeviceMatchDeviceId \<String\>\]: The unique identifier of applicableContentDeviceMatch
-  \[CatalogEntryId \<String\>\]: The unique identifier of catalogEntry
-  \[CatalogId \<String\>\]: Usage: catalogID='{catalogID}'
-  \[ComplianceChangeId \<String\>\]: The unique identifier of complianceChange
-  \[DaysInPast \<Int32?\>\]: Usage: daysInPast={daysInPast}
-  \[DeploymentId \<String\>\]: The unique identifier of deployment
-  \[EditionId \<String\>\]: The unique identifier of edition
-  \[KbNumber \<Int32?\>\]: Usage: kbNumber={kbNumber}
-  \[KnownIssueId \<String\>\]: The unique identifier of knownIssue
-  \[ProductId \<String\>\]: The unique identifier of product
-  \[ProductRevisionId \<String\>\]: The unique identifier of productRevision
-  \[ResourceConnectionId \<String\>\]: The unique identifier of resourceConnection
-  \[UpdatableAssetId \<String\>\]: The unique identifier of updatableAsset
-  \[UpdatePolicyId \<String\>\]: The unique identifier of updatePolicy
+INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+  - `[ApplicableContentCatalogEntryId <String>]`: The unique identifier of applicableContent
+  - `[ApplicableContentDeviceMatchDeviceId <String>]`: The unique identifier of applicableContentDeviceMatch
+  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
+  - `[CatalogId <String>]`: Usage: catalogID='{catalogID}'
+  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
+  - `[DaysInPast <Int32?>]`: Usage: daysInPast={daysInPast}
+  - `[DeploymentId <String>]`: The unique identifier of deployment
+  - `[EditionId <String>]`: The unique identifier of edition
+  - `[KbNumber <Int32?>]`: Usage: kbNumber={kbNumber}
+  - `[KnownIssueId <String>]`: The unique identifier of knownIssue
+  - `[ProductId <String>]`: The unique identifier of product
+  - `[ProductRevisionId <String>]`: The unique identifier of productRevision
+  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
+  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
+  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
-REMOVEEXCLUSIONS \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+REMOVEEXCLUSIONS <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-REMOVEMEMBERS \<IMicrosoftGraphWindowsUpdatesUpdatableAsset\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+REMOVEMEMBERS <IMicrosoftGraphWindowsUpdatesUpdatableAsset- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
 ## RELATED LINKS
@@ -374,4 +374,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeploymentaudience](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeploymentaudience)
 
 [https://learn.microsoft.com/graph/api/windowsupdates-deploymentaudience-updateaudience?view=graph-rest-beta](https://learn.microsoft.com/graph/api/windowsupdates-deploymentaudience-updateaudience?view=graph-rest-beta)
+
+
+
 
