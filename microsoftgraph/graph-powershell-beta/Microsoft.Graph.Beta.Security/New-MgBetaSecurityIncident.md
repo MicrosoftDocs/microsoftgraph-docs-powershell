@@ -650,3 +650,4 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>
 
 
 
+

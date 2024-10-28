@@ -105,11 +105,11 @@ Create a new application object if it doesn't exist, or update the properties of
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-upsert-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Create a new application if it doesn't exist
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	displayName = "Display name"
@@ -117,16 +117,24 @@ $params = @{
 
 Update-MgBetaApplicationByUniqueName -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will create a new application if it doesn't exist
+
+### Example 2: Update an existing application
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	displayName = "Display name"
 }
 
 Update-MgBetaApplicationByUniqueName -BodyParameter $params
+
+```
+This example will update an existing application
+
 
 ## PARAMETERS
 
