@@ -41,6 +41,8 @@ You can register an application using the PowerShell SDK with delegated access b
 
 1. Save the file. Open PowerShell in the directory that contains **RegisterAppOnly.ps1** and run the following command. If you don't already have a certificate, you can create a self-signed certificate using the [See also](#see-also) section.
 
+    
+
     ```powershell
     .\RegisterAppOnly.ps1 -AppName "Graph PowerShell Script" -CertPath "PATH_TO_PUBLIC_KEY_FILE"
     ```
