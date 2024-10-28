@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: c0629674-591a-4521-acd4-56b44bb59868
+Module Guid: 4ae51cff-5fab-4680-85b2-5045937e3fad
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1462,5 +1462,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserManagedDeviceWindowsProtectionState](Update-MgUserManagedDeviceWindowsProtectionState.md)
 
 ### [Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-
 

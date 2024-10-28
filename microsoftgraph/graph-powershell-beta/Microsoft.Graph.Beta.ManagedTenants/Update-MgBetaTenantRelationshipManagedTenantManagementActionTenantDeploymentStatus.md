@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementactiontenantdeploymentstatus
@@ -51,6 +51,18 @@ Update-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStat
 
 ## DESCRIPTION
 Update the navigation property managementActionTenantDeploymentStatuses in tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -276,119 +288,115 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagementActionTenantDeploymentStatus>`: managementActionTenantDeploymentStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsManagementActionTenantDeploymentStatus\>: managementActionTenantDeploymentStatus
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Statuses <IMicrosoftGraphManagedTenantsManagementActionDeploymentStatus- `[]`>]`: The collection of deployment status for each instance of a management action.
+  \[Statuses \<IMicrosoftGraphManagedTenantsManagementActionDeploymentStatus\[\]\>\]: The collection of deployment status for each instance of a management action.
 Optional.
-    - `[ManagementActionId <String>]`: The identifier for the management action.
+    \[ManagementActionId \<String\>\]: The identifier for the management action.
 Required.
 Read-only.
-    - `[ManagementTemplateId <String>]`: The management template identifier that was used to generate the management action.
+    \[ManagementTemplateId \<String\>\]: The management template identifier that was used to generate the management action.
 Required.
 Read-only.
-    - `[ManagementTemplateVersion <Int32?>]`: 
-    - `[Status <String>]`: managementActionStatus
-    - `[WorkloadActionDeploymentStatuses <IMicrosoftGraphManagedTenantsWorkloadActionDeploymentStatus- `[]`>]`: The collection of workload action deployment statues for the given management action.
+    \[ManagementTemplateVersion \<Int32?\>\]: 
+    \[Status \<String\>\]: managementActionStatus
+    \[WorkloadActionDeploymentStatuses \<IMicrosoftGraphManagedTenantsWorkloadActionDeploymentStatus\[\]\>\]: The collection of workload action deployment statues for the given management action.
 Optional.
-      - `[ActionId <String>]`: The unique identifier for the workload action.
+      \[ActionId \<String\>\]: The unique identifier for the workload action.
 Required.
 Read-only.
-      - `[DeployedPolicyId <String>]`: The identifier of any policy that was created by applying the workload action.
+      \[DeployedPolicyId \<String\>\]: The identifier of any policy that was created by applying the workload action.
 Optional.
 Read-only.
-      - `[Error <IMicrosoftGraphGenericError>]`: genericError
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Code <String>]`: The error code.
-        - `[Message <String>]`: The error message.
-      - `[ExcludeGroups <String- `[]`>]`: 
-      - `[IncludeAllUsers <Boolean?>]`: 
-      - `[IncludeGroups <String- `[]`>]`: 
-      - `[LastDeploymentDateTime <DateTime?>]`: The date and time the workload action was last deployed.
+      \[Error \<IMicrosoftGraphGenericError\>\]: genericError
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Code \<String\>\]: The error code.
+        \[Message \<String\>\]: The error message.
+      \[ExcludeGroups \<String\[\]\>\]: 
+      \[IncludeAllUsers \<Boolean?\>\]: 
+      \[IncludeGroups \<String\[\]\>\]: 
+      \[LastDeploymentDateTime \<DateTime?\>\]: The date and time the workload action was last deployed.
 Optional.
-      - `[Status <String>]`: workloadActionStatus
-  - `[TenantGroupId <String>]`: The identifier for the tenant group that is associated with the management action.
+      \[Status \<String\>\]: workloadActionStatus
+  \[TenantGroupId \<String\>\]: The identifier for the tenant group that is associated with the management action.
 Required.
 Read-only.
-  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
+  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
 Required.
 Read-only.
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
-  - `[AggregatedPolicyComplianceId <String>]`: The unique identifier of aggregatedPolicyCompliance
-  - `[AppPerformanceId <String>]`: The unique identifier of appPerformance
-  - `[AuditEventId <String>]`: The unique identifier of auditEvent
-  - `[CloudPcConnectionId <String>]`: The unique identifier of cloudPcConnection
-  - `[CloudPcDeviceId <String>]`: The unique identifier of cloudPcDevice
-  - `[CloudPcOverviewTenantId <String>]`: The unique identifier of cloudPcOverview
-  - `[ConditionalAccessPolicyCoverageId <String>]`: The unique identifier of conditionalAccessPolicyCoverage
-  - `[CredentialUserRegistrationsSummaryId <String>]`: The unique identifier of credentialUserRegistrationsSummary
-  - `[DeviceAppPerformanceId <String>]`: The unique identifier of deviceAppPerformance
-  - `[DeviceCompliancePolicySettingStateSummaryId <String>]`: The unique identifier of deviceCompliancePolicySettingStateSummary
-  - `[DeviceHealthStatusId <String>]`: The unique identifier of deviceHealthStatus
-  - `[ManagedDeviceComplianceId <String>]`: The unique identifier of managedDeviceCompliance
-  - `[ManagedDeviceComplianceTrendId <String>]`: The unique identifier of managedDeviceComplianceTrend
-  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
-  - `[ManagedTenantAlertLogId <String>]`: The unique identifier of managedTenantAlertLog
-  - `[ManagedTenantAlertRuleDefinitionId <String>]`: The unique identifier of managedTenantAlertRuleDefinition
-  - `[ManagedTenantAlertRuleId <String>]`: The unique identifier of managedTenantAlertRule
-  - `[ManagedTenantApiNotificationId <String>]`: The unique identifier of managedTenantApiNotification
-  - `[ManagedTenantEmailNotificationId <String>]`: The unique identifier of managedTenantEmailNotification
-  - `[ManagedTenantTicketingEndpointId <String>]`: The unique identifier of managedTenantTicketingEndpoint
-  - `[ManagementActionId <String>]`: The unique identifier of managementAction
-  - `[ManagementActionTenantDeploymentStatusId <String>]`: The unique identifier of managementActionTenantDeploymentStatus
-  - `[ManagementIntentId <String>]`: The unique identifier of managementIntent
-  - `[ManagementTemplateCollectionId <String>]`: The unique identifier of managementTemplateCollection
-  - `[ManagementTemplateCollectionTenantSummaryId <String>]`: The unique identifier of managementTemplateCollectionTenantSummary
-  - `[ManagementTemplateId <String>]`: The unique identifier of managementTemplate
-  - `[ManagementTemplateStepDeploymentId <String>]`: The unique identifier of managementTemplateStepDeployment
-  - `[ManagementTemplateStepId <String>]`: The unique identifier of managementTemplateStep
-  - `[ManagementTemplateStepTenantSummaryId <String>]`: The unique identifier of managementTemplateStepTenantSummary
-  - `[ManagementTemplateStepVersionId <String>]`: The unique identifier of managementTemplateStepVersion
-  - `[MyRoleTenantId <String>]`: The unique identifier of myRole
-  - `[TenantCustomizedInformationId <String>]`: The unique identifier of tenantCustomizedInformation
-  - `[TenantDetailedInformationId <String>]`: The unique identifier of tenantDetailedInformation
-  - `[TenantGroupId <String>]`: The unique identifier of tenantGroup
-  - `[TenantId <String>]`: The unique identifier of tenant
-  - `[TenantTagId <String>]`: The unique identifier of tenantTag
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
+INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
+  \[AggregatedPolicyComplianceId \<String\>\]: The unique identifier of aggregatedPolicyCompliance
+  \[AppPerformanceId \<String\>\]: The unique identifier of appPerformance
+  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
+  \[CloudPcConnectionId \<String\>\]: The unique identifier of cloudPcConnection
+  \[CloudPcDeviceId \<String\>\]: The unique identifier of cloudPcDevice
+  \[CloudPcOverviewTenantId \<String\>\]: The unique identifier of cloudPcOverview
+  \[ConditionalAccessPolicyCoverageId \<String\>\]: The unique identifier of conditionalAccessPolicyCoverage
+  \[CredentialUserRegistrationsSummaryId \<String\>\]: The unique identifier of credentialUserRegistrationsSummary
+  \[DeviceAppPerformanceId \<String\>\]: The unique identifier of deviceAppPerformance
+  \[DeviceCompliancePolicySettingStateSummaryId \<String\>\]: The unique identifier of deviceCompliancePolicySettingStateSummary
+  \[DeviceHealthStatusId \<String\>\]: The unique identifier of deviceHealthStatus
+  \[ManagedDeviceComplianceId \<String\>\]: The unique identifier of managedDeviceCompliance
+  \[ManagedDeviceComplianceTrendId \<String\>\]: The unique identifier of managedDeviceComplianceTrend
+  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
+  \[ManagedTenantAlertLogId \<String\>\]: The unique identifier of managedTenantAlertLog
+  \[ManagedTenantAlertRuleDefinitionId \<String\>\]: The unique identifier of managedTenantAlertRuleDefinition
+  \[ManagedTenantAlertRuleId \<String\>\]: The unique identifier of managedTenantAlertRule
+  \[ManagedTenantApiNotificationId \<String\>\]: The unique identifier of managedTenantApiNotification
+  \[ManagedTenantEmailNotificationId \<String\>\]: The unique identifier of managedTenantEmailNotification
+  \[ManagedTenantTicketingEndpointId \<String\>\]: The unique identifier of managedTenantTicketingEndpoint
+  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
+  \[ManagementActionTenantDeploymentStatusId \<String\>\]: The unique identifier of managementActionTenantDeploymentStatus
+  \[ManagementIntentId \<String\>\]: The unique identifier of managementIntent
+  \[ManagementTemplateCollectionId \<String\>\]: The unique identifier of managementTemplateCollection
+  \[ManagementTemplateCollectionTenantSummaryId \<String\>\]: The unique identifier of managementTemplateCollectionTenantSummary
+  \[ManagementTemplateId \<String\>\]: The unique identifier of managementTemplate
+  \[ManagementTemplateStepDeploymentId \<String\>\]: The unique identifier of managementTemplateStepDeployment
+  \[ManagementTemplateStepId \<String\>\]: The unique identifier of managementTemplateStep
+  \[ManagementTemplateStepTenantSummaryId \<String\>\]: The unique identifier of managementTemplateStepTenantSummary
+  \[ManagementTemplateStepVersionId \<String\>\]: The unique identifier of managementTemplateStepVersion
+  \[MyRoleTenantId \<String\>\]: The unique identifier of myRole
+  \[TenantCustomizedInformationId \<String\>\]: The unique identifier of tenantCustomizedInformation
+  \[TenantDetailedInformationId \<String\>\]: The unique identifier of tenantDetailedInformation
+  \[TenantGroupId \<String\>\]: The unique identifier of tenantGroup
+  \[TenantId \<String\>\]: The unique identifier of tenant
+  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsProtectionStateId \<String\>\]: The unique identifier of windowsProtectionState
 
-STATUSES <IMicrosoftGraphManagedTenantsManagementActionDeploymentStatus- `[]`>: The collection of deployment status for each instance of a management action.
+STATUSES \<IMicrosoftGraphManagedTenantsManagementActionDeploymentStatus\[\]\>: The collection of deployment status for each instance of a management action.
 Optional.
-  - `[ManagementActionId <String>]`: The identifier for the management action.
+  \[ManagementActionId \<String\>\]: The identifier for the management action.
 Required.
 Read-only.
-  - `[ManagementTemplateId <String>]`: The management template identifier that was used to generate the management action.
+  \[ManagementTemplateId \<String\>\]: The management template identifier that was used to generate the management action.
 Required.
 Read-only.
-  - `[ManagementTemplateVersion <Int32?>]`: 
-  - `[Status <String>]`: managementActionStatus
-  - `[WorkloadActionDeploymentStatuses <IMicrosoftGraphManagedTenantsWorkloadActionDeploymentStatus- `[]`>]`: The collection of workload action deployment statues for the given management action.
+  \[ManagementTemplateVersion \<Int32?\>\]: 
+  \[Status \<String\>\]: managementActionStatus
+  \[WorkloadActionDeploymentStatuses \<IMicrosoftGraphManagedTenantsWorkloadActionDeploymentStatus\[\]\>\]: The collection of workload action deployment statues for the given management action.
 Optional.
-    - `[ActionId <String>]`: The unique identifier for the workload action.
+    \[ActionId \<String\>\]: The unique identifier for the workload action.
 Required.
 Read-only.
-    - `[DeployedPolicyId <String>]`: The identifier of any policy that was created by applying the workload action.
+    \[DeployedPolicyId \<String\>\]: The identifier of any policy that was created by applying the workload action.
 Optional.
 Read-only.
-    - `[Error <IMicrosoftGraphGenericError>]`: genericError
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: The error code.
-      - `[Message <String>]`: The error message.
-    - `[ExcludeGroups <String- `[]`>]`: 
-    - `[IncludeAllUsers <Boolean?>]`: 
-    - `[IncludeGroups <String- `[]`>]`: 
-    - `[LastDeploymentDateTime <DateTime?>]`: The date and time the workload action was last deployed.
+    \[Error \<IMicrosoftGraphGenericError\>\]: genericError
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Code \<String\>\]: The error code.
+      \[Message \<String\>\]: The error message.
+    \[ExcludeGroups \<String\[\]\>\]: 
+    \[IncludeAllUsers \<Boolean?\>\]: 
+    \[IncludeGroups \<String\[\]\>\]: 
+    \[LastDeploymentDateTime \<DateTime?\>\]: The date and time the workload action was last deployed.
 Optional.
-    - `[Status <String>]`: workloadActionStatus
+    \[Status \<String\>\]: workloadActionStatus
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementactiontenantdeploymentstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementactiontenantdeploymentstatus)
-
-
-
-
 

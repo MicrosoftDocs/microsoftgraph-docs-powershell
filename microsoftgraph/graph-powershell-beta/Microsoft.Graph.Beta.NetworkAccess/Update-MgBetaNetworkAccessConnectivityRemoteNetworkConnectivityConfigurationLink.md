@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfigurationlink
@@ -50,6 +50,18 @@ Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink
 
 ## DESCRIPTION
 Update the navigation property links in networkAccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -286,60 +298,56 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessConnectivityConfigurationLink>`: connectivityConfigurationLink
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphNetworkaccessConnectivityConfigurationLink\>: connectivityConfigurationLink
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: Specifies the name of the link.
-  - `[LocalConfigurations <IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration- `[]`>]`: Specifies Microsoft's end of the tunnel configuration for a device link.
-    - `[Asn <Int32?>]`: Specifies ASN of one end of IPSec tunnel (local or peer).
-    - `[BgpAddress <String>]`: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
-    - `[Endpoint <String>]`: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
-    - `[Region <String>]`: region
-  - `[PeerConfiguration <IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>]`: peerConnectivityConfiguration
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Asn <Int32?>]`: Specifies ASN of one end of IPSec tunnel (local or peer).
-    - `[BgpAddress <String>]`: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
-    - `[Endpoint <String>]`: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
+  \[DisplayName \<String\>\]: Specifies the name of the link.
+  \[LocalConfigurations \<IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration\[\]\>\]: Specifies Microsoft's end of the tunnel configuration for a device link.
+    \[Asn \<Int32?\>\]: Specifies ASN of one end of IPSec tunnel (local or peer).
+    \[BgpAddress \<String\>\]: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
+    \[Endpoint \<String\>\]: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
+    \[Region \<String\>\]: region
+  \[PeerConfiguration \<IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration\>\]: peerConnectivityConfiguration
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Asn \<Int32?\>\]: Specifies ASN of one end of IPSec tunnel (local or peer).
+    \[BgpAddress \<String\>\]: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
+    \[Endpoint \<String\>\]: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
-  - `[ActivityPivotDateTime <DateTime?>]`: Usage: activityPivotDateTime={activityPivotDateTime}
-  - `[AggregatedBy <String>]`: Usage: aggregatedBy='{aggregatedBy}'
-  - `[AlertId <String>]`: The unique identifier of alert
-  - `[BranchSiteId <String>]`: The unique identifier of branchSite
-  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
-  - `[ConnectivityConfigurationLinkId <String>]`: The unique identifier of connectivityConfigurationLink
-  - `[DeviceLinkId <String>]`: The unique identifier of deviceLink
-  - `[DiscoveryPivotDateTime <DateTime?>]`: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[FilteringPolicyId <String>]`: The unique identifier of filteringPolicy
-  - `[FilteringProfileId <String>]`: The unique identifier of filteringProfile
-  - `[ForwardingPolicyId <String>]`: The unique identifier of forwardingPolicy
-  - `[ForwardingProfileId <String>]`: The unique identifier of forwardingProfile
-  - `[NetworkAccessTrafficTransactionId <String>]`: The unique identifier of networkAccessTraffic
-  - `[PolicyLinkId <String>]`: The unique identifier of policyLink
-  - `[PolicyRuleId <String>]`: The unique identifier of policyRule
-  - `[RemoteNetworkHealthEventId <String>]`: The unique identifier of remoteNetworkHealthEvent
-  - `[RemoteNetworkId <String>]`: The unique identifier of remoteNetwork
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+INPUTOBJECT \<INetworkAccessIdentity\>: Identity Parameter
+  \[ActivityPivotDateTime \<DateTime?\>\]: Usage: activityPivotDateTime={activityPivotDateTime}
+  \[AggregatedBy \<String\>\]: Usage: aggregatedBy='{aggregatedBy}'
+  \[AlertId \<String\>\]: The unique identifier of alert
+  \[BranchSiteId \<String\>\]: The unique identifier of branchSite
+  \[ConditionalAccessPolicyId \<String\>\]: The unique identifier of conditionalAccessPolicy
+  \[ConnectivityConfigurationLinkId \<String\>\]: The unique identifier of connectivityConfigurationLink
+  \[DeviceLinkId \<String\>\]: The unique identifier of deviceLink
+  \[DiscoveryPivotDateTime \<DateTime?\>\]: Usage: discoveryPivotDateTime={discoveryPivotDateTime}
+  \[EndDateTime \<DateTime?\>\]: Usage: endDateTime={endDateTime}
+  \[FilteringPolicyId \<String\>\]: The unique identifier of filteringPolicy
+  \[FilteringProfileId \<String\>\]: The unique identifier of filteringProfile
+  \[ForwardingPolicyId \<String\>\]: The unique identifier of forwardingPolicy
+  \[ForwardingProfileId \<String\>\]: The unique identifier of forwardingProfile
+  \[NetworkAccessTrafficTransactionId \<String\>\]: The unique identifier of networkAccessTraffic
+  \[PolicyLinkId \<String\>\]: The unique identifier of policyLink
+  \[PolicyRuleId \<String\>\]: The unique identifier of policyRule
+  \[RemoteNetworkHealthEventId \<String\>\]: The unique identifier of remoteNetworkHealthEvent
+  \[RemoteNetworkId \<String\>\]: The unique identifier of remoteNetwork
+  \[StartDateTime \<DateTime?\>\]: Usage: startDateTime={startDateTime}
 
-LOCALCONFIGURATIONS <IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration- `[]`>: Specifies Microsoft's end of the tunnel configuration for a device link.
-  - `[Asn <Int32?>]`: Specifies ASN of one end of IPSec tunnel (local or peer).
-  - `[BgpAddress <String>]`: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
-  - `[Endpoint <String>]`: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
-  - `[Region <String>]`: region
+LOCALCONFIGURATIONS \<IMicrosoftGraphNetworkaccessLocalConnectivityConfiguration\[\]\>: Specifies Microsoft's end of the tunnel configuration for a device link.
+  \[Asn \<Int32?\>\]: Specifies ASN of one end of IPSec tunnel (local or peer).
+  \[BgpAddress \<String\>\]: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
+  \[Endpoint \<String\>\]: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
+  \[Region \<String\>\]: region
 
-PEERCONFIGURATION `<IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>`: peerConnectivityConfiguration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Asn <Int32?>]`: Specifies ASN of one end of IPSec tunnel (local or peer).
-  - `[BgpAddress <String>]`: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
-  - `[Endpoint <String>]`: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
+PEERCONFIGURATION \<IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration\>: peerConnectivityConfiguration
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Asn \<Int32?\>\]: Specifies ASN of one end of IPSec tunnel (local or peer).
+  \[BgpAddress \<String\>\]: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
+  \[Endpoint \<String\>\]: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfigurationlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfigurationlink)
-
-
-
-
 

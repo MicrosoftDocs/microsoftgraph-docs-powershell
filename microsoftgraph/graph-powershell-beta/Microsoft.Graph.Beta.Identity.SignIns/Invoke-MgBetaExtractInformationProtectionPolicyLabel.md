@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaextractinformationprotectionpolicylabel
 schema: 2.0.0
-ms.subservice: security
 ---
 
 # Invoke-MgBetaExtractInformationProtectionPolicyLabel
@@ -33,15 +32,12 @@ Invoke-MgBetaExtractInformationProtectionPolicyLabel
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-extractlabel-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	contentInfo = @{
@@ -93,10 +89,6 @@ $params = @{
 }
 
 Invoke-MgBetaExtractInformationProtectionPolicyLabel -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaExtractInformationProtectionPolicyLabel Cmdlet.
-
 
 ## PARAMETERS
 
@@ -239,32 +231,29 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsBj48EsInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentInfo <IMicrosoftGraphContentInfo>]`: contentInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Format <String>]`: contentFormat
-    - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-    - `[Metadata <IMicrosoftGraphKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
-      - `[Name <String>]`: Name for this key-value pair
-      - `[Value <String>]`: Value for this key-value pair
-    - `[State <String>]`: contentState
+BODYPARAMETER \<IPathsBj48EsInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ContentInfo \<IMicrosoftGraphContentInfo\>\]: contentInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Format \<String\>\]: contentFormat
+    \[Identifier \<String\>\]: Identifier used for Azure Information Protection Analytics.
+    \[Metadata \<IMicrosoftGraphKeyValuePair\[\]\>\]: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
+      \[Name \<String\>\]: Name for this key-value pair
+      \[Value \<String\>\]: Value for this key-value pair
+    \[State \<String\>\]: contentState
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Format <String>]`: contentFormat
-  - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-  - `[Metadata <IMicrosoftGraphKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
-  - `[State <String>]`: contentState
+CONTENTINFO \<IMicrosoftGraphContentInfo\>: contentInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Format \<String\>\]: contentFormat
+  \[Identifier \<String\>\]: Identifier used for Azure Information Protection Analytics.
+  \[Metadata \<IMicrosoftGraphKeyValuePair\[\]\>\]: Existing Microsoft Purview Information Protection metadata is passed as key/value pairs, where the key is the MSIPLabelGUID_PropName.
+    \[Name \<String\>\]: Name for this key-value pair
+    \[Value \<String\>\]: Value for this key-value pair
+  \[State \<String\>\]: contentState
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaextractinformationprotectionpolicylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaextractinformationprotectionpolicylabel)
 
 [https://learn.microsoft.com/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta)
-
-
-
 
