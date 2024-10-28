@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property siteProtectionUnits in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreSiteProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreSiteProtectionUnit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

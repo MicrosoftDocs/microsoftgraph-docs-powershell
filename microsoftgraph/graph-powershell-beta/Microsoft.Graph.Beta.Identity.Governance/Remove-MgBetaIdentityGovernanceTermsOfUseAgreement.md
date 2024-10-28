@@ -11,6 +11,9 @@ ms.subservice: entra-id-governance
 ## SYNOPSIS
 Delete an agreement object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

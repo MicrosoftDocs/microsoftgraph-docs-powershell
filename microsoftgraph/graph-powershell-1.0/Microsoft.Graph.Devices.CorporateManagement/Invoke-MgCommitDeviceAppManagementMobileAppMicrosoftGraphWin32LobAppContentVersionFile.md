@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Commits a file of a given app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CommitExpanded (Default)

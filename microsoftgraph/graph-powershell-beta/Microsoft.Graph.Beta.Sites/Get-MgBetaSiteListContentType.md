@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 The collection of content types present in this list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

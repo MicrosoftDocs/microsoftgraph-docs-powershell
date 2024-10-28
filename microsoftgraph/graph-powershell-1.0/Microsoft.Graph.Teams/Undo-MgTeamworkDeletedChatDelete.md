@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Restore a  deletedChat to an active chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Undo-MgBetaTeamworkDeletedChatDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Undo-MgBetaTeamworkDeletedChatDelete?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Undo (Default)

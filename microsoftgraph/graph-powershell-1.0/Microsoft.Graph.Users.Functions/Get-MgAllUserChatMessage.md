@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Get all messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAllUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaAllUserChatMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

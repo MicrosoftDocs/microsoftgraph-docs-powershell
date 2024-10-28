@@ -11,6 +11,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Create a new workforceIntegration object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkWorkforceIntegration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

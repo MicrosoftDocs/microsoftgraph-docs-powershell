@@ -12,6 +12,9 @@ ms.subservice: entra-directory-management
 Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection.
 See change tracking for details.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

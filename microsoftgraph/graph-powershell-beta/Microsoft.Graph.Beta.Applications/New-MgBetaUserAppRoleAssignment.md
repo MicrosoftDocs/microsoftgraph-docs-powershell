@@ -12,6 +12,9 @@ ms.subservice: entra-users
 Use this API to assign an app role to a user, creating an appRoleAssignment object.
 To grant an app role assignment to a user, you need three identifiers:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/New-MgUserAppRoleAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

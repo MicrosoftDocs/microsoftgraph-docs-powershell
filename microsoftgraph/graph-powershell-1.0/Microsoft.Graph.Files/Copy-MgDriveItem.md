@@ -11,6 +11,9 @@ ms.subservice: sharepoint
 ## SYNOPSIS
 Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Copy-MgBetaDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

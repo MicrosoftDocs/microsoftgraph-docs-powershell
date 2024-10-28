@@ -11,6 +11,9 @@ schema: 2.0.0
 References the principal that's in the scope of this membership or ownership eligibility request to the group that's governed by PIM.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedulePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedulePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

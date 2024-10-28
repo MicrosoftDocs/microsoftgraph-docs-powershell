@@ -12,6 +12,9 @@ ms.subservice: microsoft-bookings
 ## SYNOPSIS
 Get the properties and relationships of a bookingCustomer object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -14,6 +14,9 @@ This method is part of the content type publishing changes to optimize the synci
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: addCopyFromContentTypeHub and the blog post Syntex Product Updates - August 2021.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -12,6 +12,9 @@ ms.subservice: teams
 ## SYNOPSIS
 Read the properties and relationships of a tag object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamTag](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamTag?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

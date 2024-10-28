@@ -11,6 +11,9 @@ ms.subservice: ediscovery
 ## SYNOPSIS
 Trigger an indexOperation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseCustodianIndex](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseCustodianIndex?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

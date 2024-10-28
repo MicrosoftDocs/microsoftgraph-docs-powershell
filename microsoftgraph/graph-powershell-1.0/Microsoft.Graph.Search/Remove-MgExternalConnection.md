@@ -11,6 +11,9 @@ ms.subservice: search
 ## SYNOPSIS
 Deletes an externalConnection object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

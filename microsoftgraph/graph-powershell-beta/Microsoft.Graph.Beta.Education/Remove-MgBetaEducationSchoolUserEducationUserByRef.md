@@ -11,6 +11,9 @@ ms.subservice: education
 ## SYNOPSIS
 Delete a user from a school.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationSchoolUserEducationUserByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchoolUserEducationUserByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

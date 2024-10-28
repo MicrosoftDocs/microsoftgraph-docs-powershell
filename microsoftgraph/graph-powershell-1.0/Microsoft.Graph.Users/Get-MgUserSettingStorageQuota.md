@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get quota from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingStorageQuota](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingStorageQuota?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

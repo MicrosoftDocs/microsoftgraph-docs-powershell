@@ -11,6 +11,9 @@ ms.subservice: cloud-communications
 ## SYNOPSIS
 Get onlineMeetings from communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeeting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

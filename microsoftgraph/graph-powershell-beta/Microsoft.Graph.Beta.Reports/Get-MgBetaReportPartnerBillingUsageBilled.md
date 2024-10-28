@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents details for billed Azure usage data.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportPartnerBillingUsageBilled](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPartnerBillingUsageBilled?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

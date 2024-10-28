@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Version information for a document set version created by a user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
