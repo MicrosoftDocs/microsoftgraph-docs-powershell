@@ -21,18 +21,6 @@ Get-MgBetaDeviceAppManagementSymantecCodeSigningCertificate [-ExpandProperty <St
 ## DESCRIPTION
 The WinPhone Symantec Code Signing Certificate.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -124,6 +112,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementsymanteccodesigningcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementsymanteccodesigningcertificate)
+
 
 
 

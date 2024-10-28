@@ -63,18 +63,6 @@ This method adds a driveProtectionUnit to or removes it from a oneDriveForBusine
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onedriveforbusinessprotectionpolicy-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -573,6 +561,7 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting- `[]`>: Contains the retentio
 [https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreonedriveforbusinessprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreonedriveforbusinessprotectionpolicy)
 
 [https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-update?view=graph-rest-1.0)
+
 
 
 

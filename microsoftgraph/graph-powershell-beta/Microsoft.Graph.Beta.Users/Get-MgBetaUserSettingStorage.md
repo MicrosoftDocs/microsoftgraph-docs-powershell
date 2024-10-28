@@ -32,18 +32,6 @@ Get-MgBetaUserSettingStorage -InputObject <IUsersIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get storage from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -199,6 +187,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstorage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstorage)
+
 
 
 

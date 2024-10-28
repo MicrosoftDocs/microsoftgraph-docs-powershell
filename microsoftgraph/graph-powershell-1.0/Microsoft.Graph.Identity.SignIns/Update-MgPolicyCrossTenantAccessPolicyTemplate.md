@@ -34,18 +34,6 @@ Update-MgPolicyCrossTenantAccessPolicyTemplate -BodyParameter <IMicrosoftGraphPo
 ## DESCRIPTION
 Update the navigation property templates in policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -303,6 +291,7 @@ Office365 - Includes the applications mentioned as part of the Office 365 suite.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicytemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicytemplate)
+
 
 
 

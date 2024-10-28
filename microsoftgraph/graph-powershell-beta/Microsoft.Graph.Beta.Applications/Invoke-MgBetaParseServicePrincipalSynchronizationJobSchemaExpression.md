@@ -59,22 +59,6 @@ For more information about expressions, see Writing Expressions for Attribute Ma
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationschema-parseexpression-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -463,6 +447,7 @@ Not nullable.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationjobschemaexpression](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationjobschemaexpression)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-beta)
+
 
 
 

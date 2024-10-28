@@ -29,18 +29,6 @@ Get-MgBetaNetworkAccessLogTrafficUser -InputObject <INetworkAccessIdentity> [-Ex
 ## DESCRIPTION
 Get user from networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -189,6 +177,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesslogtrafficuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesslogtrafficuser)
+
 
 
 

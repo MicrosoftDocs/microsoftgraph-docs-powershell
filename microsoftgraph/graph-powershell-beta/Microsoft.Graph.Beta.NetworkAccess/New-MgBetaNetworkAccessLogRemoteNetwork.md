@@ -31,18 +31,6 @@ New-MgBetaNetworkAccessLogRemoteNetwork -BodyParameter <IMicrosoftGraphNetworkac
 ## DESCRIPTION
 Create new navigation property to remoteNetworks for networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -340,6 +328,7 @@ Supports $filter (eq).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogremotenetwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogremotenetwork)
+
 
 
 

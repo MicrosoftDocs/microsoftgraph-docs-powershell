@@ -29,18 +29,6 @@ Get-MgBetaWindowsUpdatesProductRevisionCatalogEntry -InputObject <IWindowsUpdate
 ## DESCRIPTION
 Get catalogEntry from admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -200,6 +188,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesproductrevisioncatalogentry](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesproductrevisioncatalogentry)
+
 
 
 

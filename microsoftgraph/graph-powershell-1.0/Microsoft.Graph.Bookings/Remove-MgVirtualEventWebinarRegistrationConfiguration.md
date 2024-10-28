@@ -32,18 +32,6 @@ Remove-MgVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsIde
 ## DESCRIPTION
 Delete navigation property registrationConfiguration for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -226,6 +214,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarregistrationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarregistrationconfiguration)
+
 
 
 

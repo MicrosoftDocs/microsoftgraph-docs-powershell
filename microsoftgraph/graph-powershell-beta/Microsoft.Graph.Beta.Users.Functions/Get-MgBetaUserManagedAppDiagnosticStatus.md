@@ -32,18 +32,6 @@ Get-MgBetaUserManagedAppDiagnosticStatus -InputObject <IUsersFunctionsIdentity> 
 ## DESCRIPTION
 Gets diagnostics validation status for a given user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -256,6 +244,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanagedappdiagnosticstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanagedappdiagnosticstatus)
+
 
 
 

@@ -29,18 +29,6 @@ Remove-MgBetaExternalIndustryDataOutboundProvisioningFlowSet -InputObject <ISear
 ## DESCRIPTION
 Delete navigation property outboundProvisioningFlowSets for external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -222,6 +210,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydataoutboundprovisioningflowset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydataoutboundprovisioningflowset)
+
 
 
 

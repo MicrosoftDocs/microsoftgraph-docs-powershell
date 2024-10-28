@@ -35,18 +35,6 @@ New-MgSecurityIdentityHealthIssue -BodyParameter <IMicrosoftGraphSecurityHealthI
 ## DESCRIPTION
 Create new navigation property to healthIssues for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -422,6 +410,7 @@ These commands run in sequence for the single recommended fix.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentityhealthissue](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentityhealthissue)
+
 
 
 

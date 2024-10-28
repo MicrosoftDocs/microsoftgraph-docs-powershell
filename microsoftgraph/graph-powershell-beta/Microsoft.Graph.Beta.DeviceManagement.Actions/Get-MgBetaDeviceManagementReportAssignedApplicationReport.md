@@ -31,18 +31,6 @@ Get-MgBetaDeviceManagementReportAssignedApplicationReport -OutFile <String>
 ## DESCRIPTION
 Retrieves assigned applications report for troubleshooting blade
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -316,6 +304,7 @@ BODY `<IPathsRsc767DevicemanagementReportsMicrosoftGraphRetrieveassignedapplicat
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportassignedapplicationreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportassignedapplicationreport)
+
 
 
 

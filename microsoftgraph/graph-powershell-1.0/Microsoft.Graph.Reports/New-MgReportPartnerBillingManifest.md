@@ -34,18 +34,6 @@ New-MgReportPartnerBillingManifest -BodyParameter <IMicrosoftGraphPartnersBillin
 ## DESCRIPTION
 Create new navigation property to manifests for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -380,6 +368,7 @@ By default, the data in the file is partitioned by the number of line items.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportpartnerbillingmanifest)
+
 
 
 
