@@ -189,7 +189,6 @@ function Update-SpecificStrings {
         $s.Values | ForEach-Object {  
             $string = $_
             $g = IsEscaped -Val $string
-            Write-Host $g
             $TempContent = Get-Content -Encoding UTF8 -Raw $FilePath
             $TempContent = $TempContent.Replace($g, $string)
             $TempContent | Out-File $FilePath -Encoding UTF8
