@@ -53,11 +53,11 @@ Modify sources and receivers of an audioRoutingGroup.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/audioroutinggroup-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	id = "oneToOne"
@@ -72,6 +72,10 @@ receivers = @(
 }
 
 Update-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -AudioRoutingGroupId $audioRoutingGroupId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaCommunicationCallAudioRoutingGroup Cmdlet.
+
 
 ## PARAMETERS
 

@@ -59,18 +59,6 @@ Get-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity> [-Exp
 ## DESCRIPTION
 Get salesOrderLines from financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -387,6 +375,8 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleorderline](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleorderline)
+
+
 
 
 

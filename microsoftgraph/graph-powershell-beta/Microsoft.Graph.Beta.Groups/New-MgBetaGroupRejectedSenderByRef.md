@@ -57,17 +57,21 @@ Make sure you don't specify the same user or group in the rejected senders and a
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-rejectedsenders-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/users/alexd@contoso.com"
 }
 
 New-MgBetaGroupRejectedSenderByRef -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaGroupRejectedSenderByRef Cmdlet.
+
 
 ## PARAMETERS
 

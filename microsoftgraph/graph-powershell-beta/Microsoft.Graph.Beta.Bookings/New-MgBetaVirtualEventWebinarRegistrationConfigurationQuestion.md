@@ -55,11 +55,11 @@ You can create either a predefined registration question or a custom registratio
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistrationconfiguration-post-questions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Add a custom registration question to a webinar registration
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.virtualEventRegistrationCustomQuestion"
@@ -74,12 +74,20 @@ $params = @{
 
 New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will add a custom registration question to a webinar registration
+
+### Example 2: Add a predefined registration question to a webinar registration
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebinarId $virtualEventWebinarId
+
+```
+This example will add a predefined registration question to a webinar registration
+
 
 ## PARAMETERS
 

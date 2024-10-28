@@ -32,18 +32,6 @@ New-MgBetaDeviceManagementEmbeddedSimActivationCodePool
 ## DESCRIPTION
 Create new navigation property to embeddedSIMActivationCodePools for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivationCodeCount
@@ -369,6 +357,7 @@ joe@contoso.com
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementembeddedsimactivationcodepool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementembeddedsimactivationcodepool)
+
 
 
 

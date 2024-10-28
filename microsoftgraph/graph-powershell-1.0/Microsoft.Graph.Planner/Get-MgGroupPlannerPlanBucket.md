@@ -29,18 +29,6 @@ Read-only.
 Nullable.
 Collection of buckets in the plan.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -283,6 +271,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplanbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplanbucket)
+
 
 
 

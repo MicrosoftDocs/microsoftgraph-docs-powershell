@@ -29,18 +29,6 @@ Remove-MgBetaPrivilegedAccessRoleSetting -InputObject <IIdentityGovernanceIdenti
 ## DESCRIPTION
 Delete navigation property roleSettings for privilegedAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GovernanceRoleSettingId
@@ -316,6 +304,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprivilegedaccessrolesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprivilegedaccessrolesetting)
+
 
 
 

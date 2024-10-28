@@ -44,18 +44,6 @@ For more information, see contentType: addCopyFromContentTypeHub and the blog po
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-getcompatiblehubcontenttypes-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -320,6 +308,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecompatiblehubcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecompatiblehubcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-1.0)
+
 
 
 

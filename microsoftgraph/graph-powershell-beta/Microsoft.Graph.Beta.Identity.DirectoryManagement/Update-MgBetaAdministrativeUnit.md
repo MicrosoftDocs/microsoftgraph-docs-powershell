@@ -56,11 +56,11 @@ Update the properties of an administrativeUnit object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	displayName = "Executive Division"
@@ -70,6 +70,10 @@ $params = @{
 }
 
 Update-MgBetaAdministrativeUnit -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaAdministrativeUnit Cmdlet.
+
 
 ## PARAMETERS
 

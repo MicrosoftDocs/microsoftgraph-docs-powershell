@@ -37,13 +37,17 @@ Restore a  deletedChat to an active chat.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/deletedchat-undodelete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Undo-MgTeamworkDeletedChatDelete -DeletedChatId $deletedChatId
+
+```
+This example shows how to use the Undo-MgTeamworkDeletedChatDelete Cmdlet.
+
 
 ## PARAMETERS
 

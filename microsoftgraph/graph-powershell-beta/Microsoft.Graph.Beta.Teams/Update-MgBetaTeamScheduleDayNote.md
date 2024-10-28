@@ -51,18 +51,6 @@ Update the properties of a day note.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/daynote-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -435,6 +423,7 @@ SHAREDDAYNOTE `<IMicrosoftGraphItemBody>`: itemBody
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduledaynote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduledaynote)
 
 [https://learn.microsoft.com/graph/api/daynote-update?view=graph-rest-beta](https://learn.microsoft.com/graph/api/daynote-update?view=graph-rest-beta)
+
 
 
 

@@ -49,13 +49,17 @@ Read the properties and relationships of a authorityTemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-list-authorities-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityLabelAuthority
+
+```
+This example shows how to use the Get-MgSecurityLabelAuthority Cmdlet.
+
 
 ## PARAMETERS
 

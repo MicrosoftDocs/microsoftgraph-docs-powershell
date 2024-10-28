@@ -35,11 +35,11 @@ Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-validatebulkresize-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
-```
 
 $params = @{
 	cloudPcIds = @(
@@ -50,6 +50,10 @@ targetServicePlanId = "662009bc-7732-4f6f-8726-25883518b33e"
 }
 
 Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize -BodyParameter $params
+
+```
+This example shows how to use the Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize Cmdlet.
+
 
 ## PARAMETERS
 

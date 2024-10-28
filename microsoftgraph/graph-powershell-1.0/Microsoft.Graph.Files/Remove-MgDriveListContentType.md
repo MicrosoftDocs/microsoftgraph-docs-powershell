@@ -32,18 +32,6 @@ Remove-MgDriveListContentType -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property contentTypes for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -243,6 +231,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelistcontenttype)
+
 
 
 

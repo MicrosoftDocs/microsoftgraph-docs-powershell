@@ -54,18 +54,6 @@ Update the properties of a printConnector object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printconnector-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -407,6 +395,7 @@ The elements should be in hierarchical order.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector)
 
 [https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-1.0)
+
 
 
 

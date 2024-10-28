@@ -37,13 +37,17 @@ Get a list of archived print jobs for a particular user.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reports-getuserarchivedprintjobs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgReportUserArchivedPrintJob
+
+```
+This example shows how to use the Get-MgReportUserArchivedPrintJob Cmdlet.
+
 
 ## PARAMETERS
 

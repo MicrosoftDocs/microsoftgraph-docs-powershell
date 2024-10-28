@@ -48,18 +48,6 @@ Remove-MgBetaChatMessageReplyHostedContent -InputObject <ITeamsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property hostedContents for chats
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -306,6 +294,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatmessagereplyhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatmessagereplyhostedcontent)
+
 
 
 

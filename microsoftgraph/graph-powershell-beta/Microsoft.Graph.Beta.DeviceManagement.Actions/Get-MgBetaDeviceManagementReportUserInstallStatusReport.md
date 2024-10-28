@@ -32,18 +32,6 @@ Get-MgBetaDeviceManagementReportUserInstallStatusReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getUserInstallStatusReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -349,6 +337,7 @@ BODYPARAMETER `<IPaths10RpajiDevicemanagementReportsMicrosoftGraphGetuserinstall
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportuserinstallstatusreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportuserinstallstatusreport)
+
 
 
 

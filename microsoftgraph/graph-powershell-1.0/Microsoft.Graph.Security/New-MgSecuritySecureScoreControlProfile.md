@@ -38,18 +38,6 @@ New-MgSecuritySecureScoreControlProfile -BodyParameter <IMicrosoftGraphSecureSco
 ## DESCRIPTION
 Create new navigation property to secureScoreControlProfiles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActionType
@@ -546,6 +534,7 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescorecontrolprofile)
+
 
 
 

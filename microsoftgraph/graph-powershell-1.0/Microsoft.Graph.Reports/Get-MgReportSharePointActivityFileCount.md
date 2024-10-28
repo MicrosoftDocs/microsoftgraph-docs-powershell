@@ -36,13 +36,17 @@ Get the number of unique, licensed users who interacted with files stored on Sha
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointactivityfilecounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportSharePointActivityFileCount -Period $periodId
+Get-MgReportSharePointActivityFileCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSharePointActivityFileCount Cmdlet.
+
 
 ## PARAMETERS
 

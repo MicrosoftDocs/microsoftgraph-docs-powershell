@@ -63,17 +63,23 @@ For information about retention labels from an administrator's perspective, see 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-lockorunlockrecord-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 $params = @{
-	name = "Retention label for Contracts"
+	retentionSettings = @{
+		isRecordLocked = $true
+	}
 }
 
 Update-MgDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDriveItemRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 

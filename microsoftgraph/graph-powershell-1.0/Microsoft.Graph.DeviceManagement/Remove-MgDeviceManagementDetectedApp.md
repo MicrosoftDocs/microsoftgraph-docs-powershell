@@ -34,13 +34,17 @@ Remove-MgDeviceManagementDetectedApp -InputObject <IDeviceManagementIdentity> [-
 Deletes a detectedApp.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Remove-MgDeviceManagementDetectedApp -DetectedAppId $detectedAppId
+
+```
+This example shows how to use the Remove-MgDeviceManagementDetectedApp Cmdlet.
+
 
 ## PARAMETERS
 

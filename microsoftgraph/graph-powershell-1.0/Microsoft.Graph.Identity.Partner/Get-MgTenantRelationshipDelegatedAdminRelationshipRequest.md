@@ -50,13 +50,17 @@ Read the properties and relationships of a delegatedAdminRelationshipRequest obj
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationship-list-requests-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Partner
-```
 
 Get-MgTenantRelationshipDelegatedAdminRelationshipRequest -DelegatedAdminRelationshipId $delegatedAdminRelationshipId
+
+```
+This example shows how to use the Get-MgTenantRelationshipDelegatedAdminRelationshipRequest Cmdlet.
+
 
 ## PARAMETERS
 

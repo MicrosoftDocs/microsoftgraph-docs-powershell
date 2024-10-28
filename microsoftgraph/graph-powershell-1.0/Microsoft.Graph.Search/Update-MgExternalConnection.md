@@ -63,11 +63,11 @@ Update the properties of an externalConnection object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	name = "Contoso HR Service Tickets"
@@ -75,6 +75,10 @@ $params = @{
 }
 
 Update-MgExternalConnection -ExternalConnectionId $externalConnectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgExternalConnection Cmdlet.
+
 
 ## PARAMETERS
 

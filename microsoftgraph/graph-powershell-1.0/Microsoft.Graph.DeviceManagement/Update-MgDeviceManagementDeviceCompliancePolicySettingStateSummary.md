@@ -59,11 +59,11 @@ Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary -InputObject 
 Update the properties of a deviceCompliancePolicySettingStateSummary object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.deviceCompliancePolicySettingStateSummary"
@@ -80,6 +80,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary -DeviceCompliancePolicySettingStateSummaryId $deviceCompliancePolicySettingStateSummaryId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary Cmdlet.
+
 
 ## PARAMETERS
 

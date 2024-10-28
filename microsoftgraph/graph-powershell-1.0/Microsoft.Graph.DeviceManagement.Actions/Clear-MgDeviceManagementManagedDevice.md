@@ -52,11 +52,11 @@ Clear-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIden
 Wipe a device
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Actions
-```
 
 $params = @{
 	keepEnrollmentData = $true
@@ -66,6 +66,10 @@ $params = @{
 }
 
 Clear-MgDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId -BodyParameter $params
+
+```
+This example shows how to use the Clear-MgDeviceManagementManagedDevice Cmdlet.
+
 
 ## PARAMETERS
 

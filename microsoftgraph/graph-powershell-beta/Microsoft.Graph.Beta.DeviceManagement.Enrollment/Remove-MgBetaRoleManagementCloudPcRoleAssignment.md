@@ -38,13 +38,17 @@ The following RBAC providers are currently supported:- Cloud PC - device managem
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentmultiple-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Delete a unifiedRoleAssignmentMultiple in a Cloud PC provider
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
-```
 
 Remove-MgBetaRoleManagementCloudPcRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId
+
+```
+This example will delete a unifiedroleassignmentmultiple in a cloud pc provider
+
 
 ## PARAMETERS
 

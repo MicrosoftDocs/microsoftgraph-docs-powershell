@@ -60,11 +60,11 @@ When you run a workflow on demand, the tasks are executed regardless of whether 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-activate-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	subjects = @(
@@ -78,6 +78,10 @@ $params = @{
 }
 
 Initialize-MgIdentityGovernanceLifecycleWorkflow -WorkflowId $workflowId -BodyParameter $params
+
+```
+This example shows how to use the Initialize-MgIdentityGovernanceLifecycleWorkflow Cmdlet.
+
 
 ## PARAMETERS
 

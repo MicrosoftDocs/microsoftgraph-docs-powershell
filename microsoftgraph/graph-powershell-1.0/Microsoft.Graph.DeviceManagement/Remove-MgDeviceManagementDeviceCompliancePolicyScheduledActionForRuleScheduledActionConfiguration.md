@@ -37,13 +37,17 @@ Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledAc
 Deletes a deviceComplianceActionItem.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration -DeviceCompliancePolicyId $deviceCompliancePolicyId -DeviceComplianceScheduledActionForRuleId $deviceComplianceScheduledActionForRuleId -DeviceComplianceActionItemId $deviceComplianceActionItemId
+
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

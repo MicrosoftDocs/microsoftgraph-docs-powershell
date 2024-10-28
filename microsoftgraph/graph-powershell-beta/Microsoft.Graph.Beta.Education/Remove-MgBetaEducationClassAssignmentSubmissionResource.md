@@ -46,13 +46,17 @@ If the resource wasn't copied from the assignment but was added from the student
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmissionresource-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Remove-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
+
+```
+This example shows how to use the Remove-MgBetaEducationClassAssignmentSubmissionResource Cmdlet.
+
 
 ## PARAMETERS
 

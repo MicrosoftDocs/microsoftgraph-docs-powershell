@@ -39,13 +39,17 @@ For details, see Manage custodians in an eDiscovery (Premium) case.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-activate-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Initialize-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
+
+```
+This example shows how to use the Initialize-MgSecurityCaseEdiscoveryCaseCustodian Cmdlet.
+
 
 ## PARAMETERS
 

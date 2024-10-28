@@ -59,11 +59,11 @@ Create a new browserSharedCookie object in a browserSiteList.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-post-sharedcookies-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.browserSharedCookie"
@@ -76,6 +76,10 @@ $params = @{
 }
 
 New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BodyParameter $params
+
+```
+This example shows how to use the New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie Cmdlet.
+
 
 ## PARAMETERS
 

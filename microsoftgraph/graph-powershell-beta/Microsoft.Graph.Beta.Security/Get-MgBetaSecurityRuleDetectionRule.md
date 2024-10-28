@@ -42,13 +42,17 @@ Get detectionRules from security
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-detectionrule-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
-Get-MgBetaSecurityRuleDetectionRule -Top 3
+Get-MgBetaSecurityRuleDetectionRule -Top 3 
+
+```
+This example shows how to use the Get-MgBetaSecurityRuleDetectionRule Cmdlet.
+
 
 ## PARAMETERS
 

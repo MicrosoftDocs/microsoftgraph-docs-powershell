@@ -55,13 +55,17 @@ The assignment of an access package to a subject for a period of time.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/entitlementmanagement-list-accesspackageassignments-permissions.md)]
 
 ## EXAMPLES
+### Example 1cenario1 for u1ing query parameter1
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaEntitlementManagementAccessPackageAssignment
+
+```
+This example will### example scenarios for using query parameters
+
 
 ## PARAMETERS
 

@@ -56,11 +56,11 @@ Create a new additional source associated with an eDiscovery search.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverysearch-post-additionalsources-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.security.siteSource"
@@ -70,6 +70,10 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource Cmdlet.
+
 
 ## PARAMETERS
 

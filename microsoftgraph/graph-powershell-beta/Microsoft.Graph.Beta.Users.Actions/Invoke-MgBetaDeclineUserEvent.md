@@ -59,15 +59,14 @@ For more information on how to propose a time, and how to receive and accept a n
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-decline-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
-	comment = "I won't be able to make this week.
-How about next week?"
+	comment = "I won't be able to make this week. How about next week?"
 	sendResponse = $true
 	proposedNewTime = @{
 		start = @{
@@ -83,6 +82,10 @@ How about next week?"
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaDeclineUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaDeclineUserEvent Cmdlet.
+
 
 ## PARAMETERS
 

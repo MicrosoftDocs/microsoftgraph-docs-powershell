@@ -37,13 +37,17 @@ Delete a categoryTemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-labelsroot-delete-categories-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Remove-MgSecurityLabelCategory -CategoryTemplateId $categoryTemplateId
+
+```
+This example shows how to use the Remove-MgSecurityLabelCategory Cmdlet.
+
 
 ## PARAMETERS
 

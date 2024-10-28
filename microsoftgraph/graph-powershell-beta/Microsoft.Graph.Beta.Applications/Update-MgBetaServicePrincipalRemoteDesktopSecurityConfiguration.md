@@ -55,11 +55,11 @@ Use this configuration to enable or disable the Microsoft Entra ID Remote Deskto
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/remotedesktopsecurityconfiguration-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.remoteDesktopSecurityConfiguration"
@@ -67,6 +67,10 @@ $params = @{
 }
 
 Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

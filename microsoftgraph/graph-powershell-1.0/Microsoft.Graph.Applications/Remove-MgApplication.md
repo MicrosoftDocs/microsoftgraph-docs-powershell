@@ -41,11 +41,13 @@ After that time, they are permanently deleted.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Delete an application
 
-### EXAMPLE 1
-```
+```powershell
 Remove-MgApplication -ApplicationId '1bc44759-ef10-46de-b199-40c077768fff'
 ```
+
+This example deletes the specified application.
 
 ## PARAMETERS
 

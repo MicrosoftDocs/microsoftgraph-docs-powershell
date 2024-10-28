@@ -37,13 +37,17 @@ Retrieve the directory administrativeUnit that corresponds to this educationScho
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-get-administrativeunit-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationSchoolAdministrativeUnit -EducationSchoolId $educationSchoolId
+
+```
+This example shows how to use the Get-MgBetaEducationSchoolAdministrativeUnit Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,14 +33,18 @@ Remove-MgUserMessage -InputObject <IMailIdentity> [-IfMatch <String>] [-Response
 Delete navigation property messages for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Mail
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserMessage -UserId $userId -MessageId $messageId
+```
+This example shows how to use the Remove-MgUserMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

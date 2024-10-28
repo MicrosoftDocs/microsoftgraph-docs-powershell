@@ -35,18 +35,6 @@ The deletion of a scenario causes all data associated with the scenario to be de
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenario-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -213,6 +201,7 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenariobyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenariobyuniquename)
 
 [https://learn.microsoft.com/graph/api/businessscenario-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/businessscenario-delete?view=graph-rest-beta)
+
 
 
 

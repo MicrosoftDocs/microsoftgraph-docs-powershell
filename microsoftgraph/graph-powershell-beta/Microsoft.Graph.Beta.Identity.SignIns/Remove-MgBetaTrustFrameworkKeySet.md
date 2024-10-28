@@ -34,13 +34,17 @@ Delete a trustFrameworkKeySet.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId $trustFrameworkKeySetId
+
+```
+This example shows how to use the Remove-MgBetaTrustFrameworkKeySet Cmdlet.
+
 
 ## PARAMETERS
 

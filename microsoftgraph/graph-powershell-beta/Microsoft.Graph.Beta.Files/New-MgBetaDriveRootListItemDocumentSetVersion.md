@@ -54,18 +54,6 @@ New-MgBetaDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to documentSetVersions for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -496,6 +484,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemdocumentsetversion)
+
 
 
 

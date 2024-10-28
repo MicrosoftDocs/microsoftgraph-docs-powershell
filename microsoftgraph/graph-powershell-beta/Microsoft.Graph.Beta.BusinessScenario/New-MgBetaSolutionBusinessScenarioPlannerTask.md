@@ -80,11 +80,11 @@ Create a new businessScenarioTask object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-post-tasks-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.BusinessScenario
-```
 
 $params = @{
 	title = "Customer order #12010"
@@ -105,6 +105,10 @@ $params = @{
 }
 
 New-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSolutionBusinessScenarioPlannerTask Cmdlet.
+
 
 ## PARAMETERS
 

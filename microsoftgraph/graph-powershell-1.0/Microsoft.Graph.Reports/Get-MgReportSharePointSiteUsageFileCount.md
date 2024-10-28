@@ -38,13 +38,17 @@ A file (user or system) is considered active if it has been saved, synced, modif
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getsharepointsiteusagefilecounts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
-Get-MgReportSharePointSiteUsageFileCount -Period $periodId
+Get-MgReportSharePointSiteUsageFileCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSharePointSiteUsageFileCount Cmdlet.
+
 
 ## PARAMETERS
 

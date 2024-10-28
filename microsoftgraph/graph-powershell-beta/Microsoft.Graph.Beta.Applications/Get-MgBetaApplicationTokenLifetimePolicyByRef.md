@@ -30,18 +30,6 @@ Only one object is returned in the collection because only one tokenLifetimePoli
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-list-tokenlifetimepolicies-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -241,6 +229,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenlifetimepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenlifetimepolicybyref)
 
 [https://learn.microsoft.com/graph/api/application-list-tokenlifetimepolicies?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-list-tokenlifetimepolicies?view=graph-rest-beta)
+
 
 
 

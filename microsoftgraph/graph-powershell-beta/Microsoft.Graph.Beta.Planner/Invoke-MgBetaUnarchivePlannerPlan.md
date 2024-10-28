@@ -54,17 +54,21 @@ Only a plan that is archived can be unarchived.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-unarchive-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 $params = @{
 	justification = "String"
 }
 
 Invoke-MgBetaUnarchivePlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaUnarchivePlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 

@@ -44,13 +44,17 @@ Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary -InputObject <ID
 Read properties and relationships of the deviceCompliancePolicySettingStateSummary object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary Cmdlet.
+
 
 ## PARAMETERS
 

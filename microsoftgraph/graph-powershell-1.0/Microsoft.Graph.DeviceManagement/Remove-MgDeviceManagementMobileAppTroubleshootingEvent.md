@@ -34,13 +34,17 @@ Remove-MgDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceMana
 Deletes a mobileAppTroubleshootingEvent.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Remove-MgDeviceManagementMobileAppTroubleshootingEvent -MobileAppTroubleshootingEventId $mobileAppTroubleshootingEventId
+
+```
+This example shows how to use the Remove-MgDeviceManagementMobileAppTroubleshootingEvent Cmdlet.
+
 
 ## PARAMETERS
 

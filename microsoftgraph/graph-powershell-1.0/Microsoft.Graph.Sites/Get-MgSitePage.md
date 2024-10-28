@@ -49,13 +49,17 @@ Get the metadata for a baseSitePage in the site pages list in a site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/basesitepage-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSitePage -SiteId $siteId
+
+```
+This example shows how to use the Get-MgSitePage Cmdlet.
+
 
 ## PARAMETERS
 

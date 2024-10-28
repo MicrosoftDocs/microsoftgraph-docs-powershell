@@ -47,18 +47,6 @@ Update-MgBetaPrivilegedAccessResourceRoleAssignmentRequestSubject -InputObject <
 ## DESCRIPTION
 Update the navigation property subject in privilegedAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -442,6 +430,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroleassignmentrequestsubject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourceroleassignmentrequestsubject)
+
 
 
 

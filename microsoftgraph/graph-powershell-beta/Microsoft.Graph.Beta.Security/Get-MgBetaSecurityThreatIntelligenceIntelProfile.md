@@ -49,13 +49,17 @@ Read the properties and relationships of a intelligenceProfile object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-threatintelligence-list-intelprofiles-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityThreatIntelligenceIntelProfile
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceIntelProfile Cmdlet.
+
 
 ## PARAMETERS
 

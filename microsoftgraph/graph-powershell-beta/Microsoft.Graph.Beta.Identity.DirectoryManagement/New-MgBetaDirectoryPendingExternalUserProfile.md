@@ -36,11 +36,11 @@ Create a new pendingExternalUserProfile object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-pendingexternaluserprofile-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	phoneNumber = "+15555555555"
@@ -48,6 +48,10 @@ $params = @{
 }
 
 New-MgBetaDirectoryPendingExternalUserProfile -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDirectoryPendingExternalUserProfile Cmdlet.
+
 
 ## PARAMETERS
 

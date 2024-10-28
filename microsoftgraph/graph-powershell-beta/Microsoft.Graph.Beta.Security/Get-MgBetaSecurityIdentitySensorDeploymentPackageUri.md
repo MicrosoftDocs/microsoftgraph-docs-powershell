@@ -25,16 +25,17 @@ Invoke function getDeploymentPackageUri
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensor-getdeploymentpackageuri-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityIdentitySensorDeploymentPackageUri
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Get-MgBetaSecurityIdentitySensorDeploymentPackageUri Cmdlet.
+
 
 ## PARAMETERS
 

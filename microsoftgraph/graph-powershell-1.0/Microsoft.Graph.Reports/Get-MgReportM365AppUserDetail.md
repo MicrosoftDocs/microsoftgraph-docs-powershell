@@ -44,18 +44,6 @@ Get-MgReportM365AppUserDetail -InputObject <IReportsIdentity> -OutFile <String>
 ## DESCRIPTION
 Get a report that provides the details about which apps and platforms users have used.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Date
@@ -222,6 +210,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appuserdetail)
+
 
 
 

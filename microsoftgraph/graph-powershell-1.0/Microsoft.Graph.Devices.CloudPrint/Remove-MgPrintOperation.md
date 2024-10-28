@@ -32,18 +32,6 @@ Remove-MgPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property operations for print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -217,6 +205,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintoperation)
+
 
 
 

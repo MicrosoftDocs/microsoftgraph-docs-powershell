@@ -38,11 +38,11 @@ New-MgDeviceManagementWindowsAutopilotDeviceIdentity
 Create a new windowsAutopilotDeviceIdentity object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsAutopilotDeviceIdentity"
@@ -53,7 +53,7 @@ $params = @{
 	manufacturer = "Manufacturer value"
 	model = "Model value"
 	enrollmentState = "enrolled"
-	lastContactedDateTime = \[System.DateTime\]::Parse("2016-12-31T23:58:44.2908994-08:00")
+	lastContactedDateTime = [System.DateTime]::Parse("2016-12-31T23:58:44.2908994-08:00")
 	addressableUserName = "Addressable User Name value"
 	userPrincipalName = "User Principal Name value"
 	resourceName = "Resource Name value"
@@ -65,6 +65,10 @@ $params = @{
 }
 
 New-MgDeviceManagementWindowsAutopilotDeviceIdentity -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementWindowsAutopilotDeviceIdentity Cmdlet.
+
 
 ## PARAMETERS
 

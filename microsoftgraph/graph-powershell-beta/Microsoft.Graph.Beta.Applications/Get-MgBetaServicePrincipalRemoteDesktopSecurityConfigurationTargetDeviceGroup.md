@@ -51,13 +51,17 @@ Read the properties and relationships of a targetDeviceGroup object for the remo
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/remotedesktopsecurityconfiguration-list-targetdevicegroups-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup Cmdlet.
+
 
 ## PARAMETERS
 

@@ -58,11 +58,11 @@ As example when applying the require multifactor authentication for admins manag
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managementaction-apply-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	tenantId = "String"
@@ -71,6 +71,10 @@ $params = @{
 }
 
 Add-MgBetaTenantRelationshipManagedTenantManagementAction -ManagementActionId $managementActionId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgBetaTenantRelationshipManagedTenantManagementAction Cmdlet.
+
 
 ## PARAMETERS
 

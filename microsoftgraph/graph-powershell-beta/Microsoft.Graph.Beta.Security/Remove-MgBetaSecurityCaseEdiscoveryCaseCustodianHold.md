@@ -71,13 +71,17 @@ Invoke action removeHold
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-removehold-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
+
+```
+This example shows how to use the Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold Cmdlet.
+
 
 ## PARAMETERS
 

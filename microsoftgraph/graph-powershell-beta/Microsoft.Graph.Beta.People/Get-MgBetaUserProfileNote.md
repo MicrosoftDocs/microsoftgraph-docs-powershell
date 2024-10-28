@@ -38,14 +38,18 @@ Get-MgBetaUserProfileNote -InputObject <IPeopleIdentity> [-ExpandProperty <Strin
 Represents notes that a user has added to their profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileNote -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileNote Cmdlet.
+
 
 ## PARAMETERS
 

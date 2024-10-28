@@ -42,13 +42,17 @@ The collection of decisions for this access review.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-listdecisions-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaAccessReviewDecision -AccessReviewId $accessReviewId
+
+```
+This example shows how to use the Get-MgBetaAccessReviewDecision Cmdlet.
+
 
 ## PARAMETERS
 

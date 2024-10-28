@@ -47,13 +47,17 @@ Get the properties and relationships of a cloudPcFrontLineServicePlan object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-list-frontlineserviceplans-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-```
 
 Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan Cmdlet.
+
 
 ## PARAMETERS
 

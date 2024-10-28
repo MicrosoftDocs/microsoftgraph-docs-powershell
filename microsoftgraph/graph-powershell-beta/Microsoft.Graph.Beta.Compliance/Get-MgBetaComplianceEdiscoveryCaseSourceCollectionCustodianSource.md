@@ -43,13 +43,17 @@ Custodian sources that are included in the sourceCollection.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sourcecollection-list-custodiansources-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource -CaseId $caseId -SourceCollectionId $sourceCollectionId
+
+```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource Cmdlet.
+
 
 ## PARAMETERS
 

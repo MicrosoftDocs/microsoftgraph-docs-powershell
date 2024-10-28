@@ -29,18 +29,6 @@ New-MgBetaProgramControlType -BodyParameter <IMicrosoftGraphProgramControlType>
 ## DESCRIPTION
 Add new entity to programControlTypes
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -222,6 +210,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogramcontroltype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogramcontroltype)
+
 
 
 

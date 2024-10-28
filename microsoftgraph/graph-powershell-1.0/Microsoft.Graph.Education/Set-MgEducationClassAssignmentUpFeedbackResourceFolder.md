@@ -41,16 +41,20 @@ The teacher determines the resources to upload in the feedback resources folder 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-setupfeedbackresourcesfolder-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 }
 
 Set-MgEducationClassAssignmentUpFeedbackResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgEducationClassAssignmentUpFeedbackResourceFolder Cmdlet.
+
 
 ## PARAMETERS
 

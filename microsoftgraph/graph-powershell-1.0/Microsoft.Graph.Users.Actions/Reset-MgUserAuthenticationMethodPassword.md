@@ -65,11 +65,11 @@ This reset is a long-running operation and returns a Location header with a link
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationmethod-resetpassword-permissions.md)]
 
 ## EXAMPLES
+### Example 1: User-submitted password
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	newPassword = "Cuyo5459"
@@ -79,10 +79,14 @@ $authenticationMethodId = "28c10230-6103-485e-b985-444c60001490"
 
 Reset-MgUserAuthenticationMethodPassword -UserId $userId -AuthenticationMethodId $authenticationMethodId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will set the submitted password.
+
+### Example 2: System-generated password
+
+```powershell
+
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 }
@@ -90,6 +94,9 @@ $params = @{
 $authenticationMethodId = "28c10230-6103-485e-b985-444c60001490"
 
 Reset-MgUserAuthenticationMethodPassword -UserId $userId -AuthenticationMethodId $authenticationMethodId -BodyParameter $params
+
+```
+This example will generate a password for a cloud only user.
 
 ## PARAMETERS
 

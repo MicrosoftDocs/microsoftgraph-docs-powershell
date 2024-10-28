@@ -62,9 +62,8 @@ Update-MgBetaUserOutlookTask -InputObject <IUsersIdentity> -BodyParameter <IMicr
 Update the navigation property tasks in users
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Update-MgBetaUserOutlookTask Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	DueDateTime = @{
@@ -75,6 +74,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaUserOutlookTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

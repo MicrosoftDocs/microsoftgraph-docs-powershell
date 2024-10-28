@@ -32,18 +32,6 @@ Remove-MgServiceAnnouncementMessage -InputObject <IDevicesServiceAnnouncementIde
 ## DESCRIPTION
 Delete navigation property messages for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -208,6 +196,7 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/remove-mgserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/remove-mgserviceannouncementmessage)
+
 
 
 

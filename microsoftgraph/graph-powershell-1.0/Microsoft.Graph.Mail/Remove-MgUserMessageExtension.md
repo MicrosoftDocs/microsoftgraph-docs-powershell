@@ -33,14 +33,18 @@ Remove-MgUserMessageExtension -InputObject <IMailIdentity> [-IfMatch <String>]
 Delete navigation property extensions for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Mail
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserMessageExtension -UserId $userId -MessageId $messageId -ExtensionId $extensionId
+```
+This example shows how to use the Remove-MgUserMessageExtension Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

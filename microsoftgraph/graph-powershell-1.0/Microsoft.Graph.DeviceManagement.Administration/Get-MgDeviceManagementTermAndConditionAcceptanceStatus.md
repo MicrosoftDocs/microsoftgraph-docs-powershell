@@ -44,13 +44,17 @@ Get-MgDeviceManagementTermAndConditionAcceptanceStatus -InputObject <IDeviceMana
 Read properties and relationships of the termsAndConditionsAcceptanceStatus object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Get-MgDeviceManagementTermAndConditionAcceptanceStatus -TermsAndConditionsId $termsAndConditionsId
+
+```
+This example shows how to use the Get-MgDeviceManagementTermAndConditionAcceptanceStatus Cmdlet.
+
 
 ## PARAMETERS
 

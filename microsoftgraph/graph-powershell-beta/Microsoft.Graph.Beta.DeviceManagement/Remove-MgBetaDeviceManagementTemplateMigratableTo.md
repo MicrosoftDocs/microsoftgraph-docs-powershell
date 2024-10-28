@@ -30,18 +30,6 @@ Remove-MgBetaDeviceManagementTemplateMigratableTo -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Delete navigation property migratableTo for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementTemplateId
@@ -359,6 +347,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementtemplatemigratableto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementtemplatemigratableto)
+
 
 
 

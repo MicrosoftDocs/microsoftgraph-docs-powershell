@@ -44,13 +44,17 @@ Get-MgDeviceAppManagementMobileAppConfigurationAssignment -InputObject <IDevices
 Read properties and relationships of the managedDeviceMobileAppConfigurationAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CorporateManagement
-```
 
 Get-MgDeviceAppManagementMobileAppConfigurationAssignment -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId
+
+```
+This example shows how to use the Get-MgDeviceAppManagementMobileAppConfigurationAssignment Cmdlet.
+
 
 ## PARAMETERS
 

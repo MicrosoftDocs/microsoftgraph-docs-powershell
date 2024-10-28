@@ -57,11 +57,11 @@ The rate limit for this API is 5 requests per 10 seconds.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-provisionondemand-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Provision users from Microsoft Entra ID to third-party applications
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	parameters = @(
@@ -79,10 +79,14 @@ $params = @{
 
 New-MgServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will provision users from microsoft entra id to third-party applications
+
+### Example 2: Sync on-demand from Active Directory to Microsoft Entra ID (Microsoft Entra Cloud Sync)
+
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	parameters = @(
@@ -100,10 +104,14 @@ $params = @{
 
 New-MgServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will sync on-demand from active directory to microsoft entra id (microsoft entra cloud sync)
+
+### Example 3: Provision a group and two of its members on demand
+
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	parameters = @(
@@ -132,6 +140,10 @@ $params = @{
 }
 
 New-MgServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
+
+```
+This example will provision a group and two of its members on demand
+
 
 ## PARAMETERS
 

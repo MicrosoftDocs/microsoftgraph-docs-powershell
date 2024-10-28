@@ -36,16 +36,17 @@ For more information about item retention, see Configure Deleted Item retention 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-permanentdelete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-### EXAMPLE 2
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+Remove-MgBetaUserOutlookTaskFolderPermanent -UserId $userId -OutlookTaskFolderId $outlookTaskFolderId
+
 ```
-{{ Add code here }}
-```
+This example shows how to use the Remove-MgBetaUserOutlookTaskFolderPermanent Cmdlet.
+
 
 ## PARAMETERS
 

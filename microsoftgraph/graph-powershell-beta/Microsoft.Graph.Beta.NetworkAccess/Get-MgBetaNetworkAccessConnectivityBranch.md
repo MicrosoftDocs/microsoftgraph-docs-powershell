@@ -46,13 +46,17 @@ Retrieve information about a specific branch.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-connectivity-list-branches-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.NetworkAccess
-```
 
 Get-MgBetaNetworkAccessConnectivityBranch
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessConnectivityBranch Cmdlet.
+
 
 ## PARAMETERS
 

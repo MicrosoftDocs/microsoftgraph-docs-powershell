@@ -32,18 +32,6 @@ Remove-MgUserDriveItemThumbnail -InputObject <IFilesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property thumbnails for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -273,6 +261,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemthumbnail)
+
 
 
 

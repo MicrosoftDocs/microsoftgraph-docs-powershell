@@ -56,18 +56,6 @@ Sends a sharing invitation for a driveItem.A sharing invitation provides permiss
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-invite-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -398,6 +386,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0)
+
 
 
 

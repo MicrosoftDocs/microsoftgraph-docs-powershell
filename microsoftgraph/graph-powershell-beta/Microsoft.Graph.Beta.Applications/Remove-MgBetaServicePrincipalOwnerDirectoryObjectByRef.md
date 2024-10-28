@@ -38,18 +38,6 @@ As a recommended best practice, service principals should have at least two owne
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-owners-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -261,6 +249,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalownerdirectoryobjectbyref)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-delete-owners?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceprincipal-delete-owners?view=graph-rest-beta)
+
 
 
 

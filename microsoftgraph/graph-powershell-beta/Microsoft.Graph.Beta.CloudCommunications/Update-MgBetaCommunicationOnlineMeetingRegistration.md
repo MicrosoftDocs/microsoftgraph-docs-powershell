@@ -51,18 +51,6 @@ Update-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunic
 ## DESCRIPTION
 Update the navigation property registration in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -465,6 +453,7 @@ SPEAKERS <IMicrosoftGraphMeetingSpeaker- `[]`>: The meeting speaker's informatio
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingregistration)
+
 
 
 

@@ -45,18 +45,6 @@ New-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to endpoints for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -404,6 +392,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupendpoint)
+
 
 
 

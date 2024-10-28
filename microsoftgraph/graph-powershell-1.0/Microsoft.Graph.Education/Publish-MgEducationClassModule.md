@@ -42,13 +42,17 @@ When you call this API, the module appears in the student's class work list.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-publish-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Publish-MgEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
+
+```
+This example shows how to use the Publish-MgEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

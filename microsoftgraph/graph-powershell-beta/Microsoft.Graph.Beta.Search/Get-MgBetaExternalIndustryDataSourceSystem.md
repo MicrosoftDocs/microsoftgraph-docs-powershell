@@ -46,13 +46,17 @@ Read the properties and relationships of a sourceSystemDefinition object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-list-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaExternalIndustryDataSourceSystem
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataSourceSystem Cmdlet.
+
 
 ## PARAMETERS
 

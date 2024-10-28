@@ -61,11 +61,11 @@ For more information, see sending Teams activity notifications.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-sendactivitynotification-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Notify a user about a task created in a chat
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	topic = @{
@@ -90,10 +90,14 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will notify a user about a task created in a chat
+
+### Example 2: Notify a user about an approval needed in a chat message
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	topic = @{
@@ -118,10 +122,14 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will notify a user about an approval needed in a chat message
+
+### Example 3: Notify a user about an approval needed in a chat message using user principal name
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	topic = @{
@@ -146,10 +154,14 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 4
 ```
+This example will notify a user about an approval needed in a chat message using user principal name
+
+### Example 4: Notify a user about an event in relation to a chat
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	topic = @{
@@ -175,10 +187,14 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 5
 ```
+This example will notify a user about an event in relation to a chat
+
+### Example 5: Notify the chat members about a task created in a chat
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	topic = @{
@@ -202,6 +218,10 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
+
+```
+This example will notify the chat members about a task created in a chat
+
 
 ## PARAMETERS
 

@@ -52,11 +52,11 @@ If a plannerPlan doesn't exist for the specified target at the time of the reque
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-getplan-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	target = @{
@@ -67,6 +67,10 @@ $params = @{
 }
 
 Get-MgBetaBusinessScenarioPlannerPlan -BusinessScenarioId $businessScenarioId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaBusinessScenarioPlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 

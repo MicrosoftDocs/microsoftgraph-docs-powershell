@@ -54,11 +54,11 @@ New-MgBetaUserProfileSkill -InputObject <IPeopleIdentity> -BodyParameter <IMicro
 Create new navigation property to skills for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	categories = @(
@@ -74,6 +74,10 @@ collaborationTags = @(
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileSkill -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileSkill Cmdlet.
+
 
 ## PARAMETERS
 

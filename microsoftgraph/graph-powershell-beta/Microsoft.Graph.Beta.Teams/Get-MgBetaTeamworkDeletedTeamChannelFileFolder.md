@@ -32,18 +32,6 @@ Get-MgBetaTeamworkDeletedTeamChannelFileFolder -InputObject <ITeamsIdentity> [-E
 ## DESCRIPTION
 Metadata for the location where the channel's files are stored.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -229,6 +217,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelfilefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelfilefolder)
+
 
 
 

@@ -26,13 +26,17 @@ Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizati
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpccrosscloudgovernmentorganizationmapping-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-```
 
 Get-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
+
+```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping Cmdlet.
+
 
 ## PARAMETERS
 

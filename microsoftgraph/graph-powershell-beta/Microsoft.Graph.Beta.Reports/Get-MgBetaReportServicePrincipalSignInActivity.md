@@ -50,20 +50,28 @@ A service principal supports delegated or app-only authentication context.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/reportroot-list-serviceprincipalsigninactivities-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a list of servicePrincipalSignInActivity objects
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportServicePrincipalSignInActivity
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Reports
-```
+This example will get a list of serviceprincipalsigninactivity objects
 
-Get-MgBetaReportServicePrincipalSignInActivity -Filter "appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'"
+### Example 2: Get a servicePrincipalSignInActivity filtered by appId
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportServicePrincipalSignInActivity -Filter "appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'" 
+
+```
+This example will get a serviceprincipalsigninactivity filtered by appid
+
 
 ## PARAMETERS
 

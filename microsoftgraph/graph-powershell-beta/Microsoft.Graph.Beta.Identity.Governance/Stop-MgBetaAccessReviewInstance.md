@@ -39,18 +39,6 @@ After the access review stops, reviewers can no longer give input, and the acces
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-stop-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessReviewId
@@ -313,6 +301,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaaccessreviewinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaaccessreviewinstance)
 
 [https://learn.microsoft.com/graph/api/accessreview-stop?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreview-stop?view=graph-rest-beta)
+
 
 
 

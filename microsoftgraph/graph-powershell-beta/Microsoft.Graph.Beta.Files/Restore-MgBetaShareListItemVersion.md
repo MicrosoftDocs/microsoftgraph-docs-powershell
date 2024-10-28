@@ -46,18 +46,6 @@ Restore-MgBetaShareListItemVersion -InputObject <IFilesIdentity> [-ResponseHeade
 ## DESCRIPTION
 Invoke action restoreVersion
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -257,6 +245,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetasharelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetasharelistitemversion)
+
 
 
 
