@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenissuancepolicybyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaApplicationTokenIssuancePolicyByRef
@@ -20,6 +21,9 @@ Get-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId <String> [-Filter <
 
 ## DESCRIPTION
 List the tokenIssuancePolicy objects that are assigned to an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-list-tokenissuancepolicies-permissions.md)]
 
 ## EXAMPLES
 

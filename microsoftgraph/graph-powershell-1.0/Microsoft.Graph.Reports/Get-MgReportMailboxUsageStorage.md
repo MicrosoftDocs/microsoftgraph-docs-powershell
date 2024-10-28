@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagestorage
 schema: 2.0.0
+ms.subservice: reports
 ---
 
 # Get-MgReportMailboxUsageStorage
@@ -27,6 +28,9 @@ Get-MgReportMailboxUsageStorage -InputObject <IReportsIdentity> -OutFile <String
 
 ## DESCRIPTION
 Get the amount of storage used in your organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/reportroot-getmailboxusagestorage-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamincomingchannel
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Get-MgTeamIncomingChannel
@@ -36,6 +37,9 @@ Get-MgTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 List of channels shared with the team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-list-incomingchannels-permissions.md)]
 
 ## EXAMPLES
 

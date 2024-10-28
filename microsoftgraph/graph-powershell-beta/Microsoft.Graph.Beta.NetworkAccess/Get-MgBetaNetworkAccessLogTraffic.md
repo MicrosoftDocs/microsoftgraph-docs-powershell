@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesslogtraffic
 schema: 2.0.0
+ms.subservice: entra-global-secure-access
 ---
 
 # Get-MgBetaNetworkAccessLogTraffic
@@ -36,6 +37,9 @@ Get-MgBetaNetworkAccessLogTraffic -InputObject <INetworkAccessIdentity> [-Expand
 
 ## DESCRIPTION
 A network access traffic log entry that contains comprehensive information about network traffic events.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-logs-list-traffic-permissions.md)]
 
 ## EXAMPLES
 

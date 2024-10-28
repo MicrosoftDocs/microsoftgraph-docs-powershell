@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasenoncustodialdatasourceindex
 schema: 2.0.0
+ms.subservice: ediscovery
 ---
 
 # Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex
@@ -28,6 +29,9 @@ Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex -InputObject <ISe
 
 ## DESCRIPTION
 Trigger an indexOperation to make a non-custodial data source and its associated data source searchable.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverynoncustodialdatasource-updateindex-permissions.md)]
 
 ## EXAMPLES
 

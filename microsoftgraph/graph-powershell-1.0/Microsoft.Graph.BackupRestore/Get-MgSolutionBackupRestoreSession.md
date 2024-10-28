@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.BackupRestore-help.xml
 Module Name: Microsoft.Graph.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoresession
 schema: 2.0.0
+ms.subservice: m365-backup-storage
+ms.subservice: m365-backup-storage
 ---
 
 # Get-MgSolutionBackupRestoreSession
@@ -36,6 +38,12 @@ Get-MgSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity> [-Expan
 
 ## DESCRIPTION
 Get the properties of a restoreSession object by ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/restoresessionbase-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/backuprestoreroot-list-restoresessions-permissions.md)]
 
 ## EXAMPLES
 

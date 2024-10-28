@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelta
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgServicePrincipalDelta
@@ -21,6 +22,9 @@ Get-MgServicePrincipalDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pr
 
 ## DESCRIPTION
 Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delta-permissions.md)]
 
 ## EXAMPLES
 

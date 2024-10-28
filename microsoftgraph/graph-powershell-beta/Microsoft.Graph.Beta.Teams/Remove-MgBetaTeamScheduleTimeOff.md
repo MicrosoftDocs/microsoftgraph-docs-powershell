@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduletimeoff
 schema: 2.0.0
+ms.subservice: teams
 ---
 
 # Remove-MgBetaTeamScheduleTimeOff
@@ -28,6 +29,9 @@ Remove-MgBetaTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Delete a timeOff instance from a schedule.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timeoff-delete-permissions.md)]
 
 ## EXAMPLES
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationownerbyref
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # New-MgBetaApplicationOwnerByRef
@@ -44,6 +45,9 @@ New-MgBetaApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParame
 ## DESCRIPTION
 Add an owner to an application.
 Currently, only individual users are supported as owners of applications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-owners-permissions.md)]
 
 ## EXAMPLES
 

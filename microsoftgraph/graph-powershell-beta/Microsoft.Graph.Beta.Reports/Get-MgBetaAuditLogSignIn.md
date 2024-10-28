@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin
 schema: 2.0.0
+ms.subservice: entra-monitoring-health
+ms.subservice: entra-monitoring-health
 ---
 
 # Get-MgBetaAuditLogSignIn
@@ -36,6 +38,12 @@ Get-MgBetaAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Get a signIn object that contains a specific user sign-in event for your tenant that includes sign-ins where a user is asked to enter a username or password, and session tokens.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/signin-get-permissions.md)]
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/signin-list-permissions.md)]
 
 ## EXAMPLES
 

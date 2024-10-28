@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentitycustomauthenticationextension
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # Update-MgIdentityCustomAuthenticationExtension
@@ -48,6 +49,9 @@ Update-MgIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsIde
 
 ## DESCRIPTION
 Update the properties of a customAuthenticationExtension object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customauthenticationextension-update-permissions.md)]
 
 ## EXAMPLES
 

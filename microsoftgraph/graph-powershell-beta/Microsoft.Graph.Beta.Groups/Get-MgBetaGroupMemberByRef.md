@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberbyref
 schema: 2.0.0
+ms.subservice: entra-groups
 ---
 
 # Get-MgBetaGroupMemberByRef
@@ -25,6 +26,9 @@ Get-MgBetaGroupMemberByRef -GroupId <String> [-Filter <String>] [-Search <String
 Get a list of the group's direct members.
 A group can have users, contacts, devices, service principals, and other groups as members.
 This operation isn't transitive.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-members-permissions.md)]
 
 ## EXAMPLES
 

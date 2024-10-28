@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityproviderbyref
 schema: 2.0.0
+ms.subservice: entra-sign-in
 ---
 
 # New-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef
@@ -48,6 +49,9 @@ New-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExtern
 ## DESCRIPTION
 Add an identity provider to an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object type.
 The identity provider must first be configured in the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders-permissions.md)]
 
 ## EXAMPLES
 

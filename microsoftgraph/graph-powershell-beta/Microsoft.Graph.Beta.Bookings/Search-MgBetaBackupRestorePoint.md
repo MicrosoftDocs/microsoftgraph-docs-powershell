@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/search-mgbetabackuprestorepoint
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Search-MgBetaBackupRestorePoint
@@ -30,6 +31,9 @@ Search-MgBetaBackupRestorePoint
 
 ## DESCRIPTION
 Search for the restorePoint objects associated with a protectionUnit.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/restorepoint-search-permissions.md)]
 
 ## EXAMPLES
 

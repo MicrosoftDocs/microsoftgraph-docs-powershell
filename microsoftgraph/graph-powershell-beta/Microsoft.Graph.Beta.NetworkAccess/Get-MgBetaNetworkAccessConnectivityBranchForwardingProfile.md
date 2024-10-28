@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-help.xml
 Module Name: Microsoft.Graph.Beta.NetworkAccess
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivitybranchforwardingprofile
 schema: 2.0.0
+ms.subservice: entra-global-secure-access
 ---
 
 # Get-MgBetaNetworkAccessConnectivityBranchForwardingProfile
@@ -38,6 +39,9 @@ Get-MgBetaNetworkAccessConnectivityBranchForwardingProfile -InputObject <INetwor
 ## DESCRIPTION
 Each forwarding profile associated with a branch site is specified.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/networkaccess-branchsite-list-forwardingprofiles-permissions.md)]
 
 ## EXAMPLES
 

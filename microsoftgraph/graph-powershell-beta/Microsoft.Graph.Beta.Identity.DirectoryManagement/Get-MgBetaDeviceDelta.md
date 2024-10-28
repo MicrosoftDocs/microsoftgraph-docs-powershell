@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicedelta
 schema: 2.0.0
+ms.subservice: entra-directory-management
 ---
 
 # Get-MgBetaDeviceDelta
@@ -22,6 +23,9 @@ Get-MgBetaDeviceDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property
 ## DESCRIPTION
 Get newly created, updated, or deleted devices without performing a full read of the entire resource collection.
 For more information, see Using delta query.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delta-permissions.md)]
 
 ## EXAMPLES
 

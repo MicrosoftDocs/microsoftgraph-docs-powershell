@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalpasswordsinglesignoncredential
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaServicePrincipalPasswordSingleSignOnCredential
@@ -44,6 +45,9 @@ Get-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicat
 
 ## DESCRIPTION
 Get a list of single sign-on credentials using a password for a user or group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-getpasswordsinglesignoncredentials-permissions.md)]
 
 ## EXAMPLES
 

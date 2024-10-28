@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalpermissiongrantpreapprovalpolicy
 schema: 2.0.0
+ms.subservice: entra-applications
 ---
 
 # Get-MgBetaServicePrincipalPermissionGrantPreApprovalPolicy
@@ -37,6 +38,9 @@ Get-MgBetaServicePrincipalPermissionGrantPreApprovalPolicy -InputObject <IApplic
 
 ## DESCRIPTION
 Retrieve the permissionGrantPreApprovalPolicy object for the servicePrincipal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-list-permissiongrantpreapprovalpolicies-permissions.md)]
 
 ## EXAMPLES
 

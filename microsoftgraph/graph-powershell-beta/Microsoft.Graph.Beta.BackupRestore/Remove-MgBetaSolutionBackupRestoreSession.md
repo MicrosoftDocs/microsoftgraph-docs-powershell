@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-help.xml
 Module Name: Microsoft.Graph.Beta.BackupRestore
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresession
 schema: 2.0.0
+ms.subservice: m365-backup-storage
 ---
 
 # Remove-MgBetaSolutionBackupRestoreSession
@@ -28,6 +29,9 @@ Remove-MgBetaSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity> 
 
 ## DESCRIPTION
 Delete a draft restoreSessionBase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/restoresessionbase-delete-permissions.md)]
 
 ## EXAMPLES
 

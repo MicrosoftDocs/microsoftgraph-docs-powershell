@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowcustomtaskextension
 schema: 2.0.0
+ms.subservice: entra-id-governance
 ---
 
 # New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension
@@ -33,6 +34,9 @@ New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension
 
 ## DESCRIPTION
 Create a new customTaskExtension object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions-permissions.md)]
 
 ## EXAMPLES
 
