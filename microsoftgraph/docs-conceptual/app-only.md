@@ -24,7 +24,7 @@ Let's configure app-only access for a simple script to list users and groups in 
 
 Before you can use app-only access with the Microsoft Graph PowerShell SDK, make sure you have the required prerequisites:
 
-- The Microsoft Entra PowerShell module is installed. To install the module, follow the [installation guide](installation.md).
+- The Microsoft Graph PowerShell SDK is installed. To install the SDK, follow the [installation guide](installation.md).
 - A certificate to use as a credential for the application. This certificate can be a self-signed certificate or a certificate from an authority. Refer to the [See also](#see-also) section for guidance on how to create a self-signed certificate.
     1. Have an X.509 certificate installed in your user's trusted store on the machine where you'll run the script.
     1. Export the certificate's public key in .cer, .pem, or .crt format.
