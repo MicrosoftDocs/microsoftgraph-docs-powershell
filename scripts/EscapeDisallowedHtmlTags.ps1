@@ -175,7 +175,6 @@ function Update-SpecificStrings {
         [ValidateNotNullOrEmpty()]
         [string] $FilePath
     )
-    $tempFilePath = "$env:TEMP\$($FilePath | Split-Path -Leaf)"
     $s = @{}
     $s.Add("0", "<country code>")
     $s.Add("1", "<extension>")
@@ -189,13 +188,15 @@ function Update-SpecificStrings {
     try {
         $s.Values | ForEach-Object {  
             $string = $_
-            $escaped = IsEscaped -Val $string
-            if ($escaped -ne "NA") {
-                $a = $escaped.Replace('<', '`<').Replace('>', '>`')
-		   (Get-Content -Path $filePath) -replace $string, $a | Add-Content -Path $tempFilePath
-                Remove-Item -Path $filePath
-                Move-Item -Path $tempFilePath -Destination $filePath
-            }
+            $g = IsEscaped -Val $string
+            Write-Host $g
+            $TempContent = Get-Content -Encoding UTF8 -Raw $FilePath
+            $TempContent = $TempContent.Replace($g, $string)
+            $TempContent | Out-File $FilePath -Encoding UTF8
+
+            $Content = Get-Content -Encoding UTF8 -Raw $FilePath
+            $Content = $Content.Replace($string, $g)
+            $Content | Out-File $FilePath -Encoding UTF8
         }
     }
     catch {
@@ -211,26 +212,10 @@ function IsEscaped {
         [ValidateNotNullOrEmpty()]
         [string] $Val
     )
-    $text = Get-Content -Path $filePath
-    try {
 
-        $replacer = $Val.Replace('<', '`<').Replace('>', '>`')
+    $replacer = $Val.Replace('<', '`<').Replace('>', '>`')
 		  
-        $t = $text | Select-String $replacer
-		
-        if (-not $t) {
-            return $Val
-        }
- 	 
-
-    }
-    catch {
-        Write-Host "`nError Message: " $_.Exception.Message
-        Write-Host "`nError in Line: " $_.InvocationInfo.Line
-        Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
-        Write-Host "`nError Item Name: "$_.Exception.ItemName
-    }	
-    return "NA"	
+    return $replacer	
 }
 function Remove-Invalid-NextLine-Characters {
     param (
