@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityscorehistory
@@ -243,16 +243,37 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPartnerSecurityScoreHistory\>: securityScoreHistory
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphPartnerSecurityScoreHistory>`: securityScoreHistory
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CompliantRequirementsCount \<Int64?\>\]: The number of compliant security requirements at the time.
-  \[CreatedDateTime \<DateTime?\>\]: The date the history entry was created.
-  \[Score \<Single?\>\]: The score recorded at the time.
-  \[TotalRequirementsCount \<Int64?\>\]: The total number of requirements at the time.
+  - `[CompliantRequirementsCount <Int64?>]`: The number of compliant security requirements at the time.
+  - `[CreatedDateTime <DateTime?>]`: The date the history entry was created.
+  - `[Score <Single?>]`: The score recorded at the time.
+  - `[TotalRequirementsCount <Int64?>]`: The total number of requirements at the time.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityscorehistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityscorehistory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

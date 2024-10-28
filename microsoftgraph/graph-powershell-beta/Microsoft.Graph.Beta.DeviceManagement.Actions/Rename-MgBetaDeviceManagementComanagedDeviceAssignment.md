@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementcomanageddeviceassignment
@@ -247,94 +247,115 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsM3S0EnDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphChangeassignmentsPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DeviceAssignmentItems \<IMicrosoftGraphDeviceAssignmentItem\[\]\>\]: 
-    \[AssignmentItemActionIntent \<DeviceAssignmentItemIntent?\>\]: A list of possible assignment item action intent values on the application or configuration when executing this action on the managed device.
+BODYPARAMETER `<IPathsM3S0EnDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphChangeassignmentsPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeviceAssignmentItems <IMicrosoftGraphDeviceAssignmentItem- `[]`>]`: 
+    - `[AssignmentItemActionIntent <DeviceAssignmentItemIntent?>]`: A list of possible assignment item action intent values on the application or configuration when executing this action on the managed device.
 For example, if the application or configuration is intended to be removed on the managed device, then the intent value is remove, and if the application or configuration already under removal through previous actions and is now intended to be restored on the managed device, then the intent value is restore
-    \[AssignmentItemActionStatus \<DeviceAssignmentItemStatus?\>\]: A list of possible assignment item action status values for the application or configuration regarding their executed action on the managed device.
+    - `[AssignmentItemActionStatus <DeviceAssignmentItemStatus?>]`: A list of possible assignment item action status values for the application or configuration regarding their executed action on the managed device.
 For example, a configuration included in the deviceAssignmentItems list has just been executed the action.
 Its status starts with inProgress until it's successfully removed to reflect as removed status or failed to be removed to reflect as error status on the managed device.
 Similar status change happens for restoration process
-    \[ItemId \<String\>\]: The unique identifier for the application or configuration.
+    - `[ItemId <String>]`: The unique identifier for the application or configuration.
 ItemId is required property which needs to be set in the action POST request parameter for the DeviceAssignmentItem intended to remove.
 Max length is 40
-    \[ItemType \<DeviceAssignmentItemType?\>\]: A list of possible device assignment item types to execute this action on the managed device.
+    - `[ItemType <DeviceAssignmentItemType?>]`: A list of possible device assignment item types to execute this action on the managed device.
 Device assignment item represents existing assigned Intune resource such as application or configuration.
 Currently supported device assignment item types are Application, DeviceConfiguration, DeviceManagementConfigurationPolicy and MobileAppConfiguration
 
-DEVICEASSIGNMENTITEMS \<IMicrosoftGraphDeviceAssignmentItem\[\]\>: .
-  \[AssignmentItemActionIntent \<DeviceAssignmentItemIntent?\>\]: A list of possible assignment item action intent values on the application or configuration when executing this action on the managed device.
+DEVICEASSIGNMENTITEMS <IMicrosoftGraphDeviceAssignmentItem- `[]`>: .
+  - `[AssignmentItemActionIntent <DeviceAssignmentItemIntent?>]`: A list of possible assignment item action intent values on the application or configuration when executing this action on the managed device.
 For example, if the application or configuration is intended to be removed on the managed device, then the intent value is remove, and if the application or configuration already under removal through previous actions and is now intended to be restored on the managed device, then the intent value is restore
-  \[AssignmentItemActionStatus \<DeviceAssignmentItemStatus?\>\]: A list of possible assignment item action status values for the application or configuration regarding their executed action on the managed device.
+  - `[AssignmentItemActionStatus <DeviceAssignmentItemStatus?>]`: A list of possible assignment item action status values for the application or configuration regarding their executed action on the managed device.
 For example, a configuration included in the deviceAssignmentItems list has just been executed the action.
 Its status starts with inProgress until it's successfully removed to reflect as removed status or failed to be removed to reflect as error status on the managed device.
 Similar status change happens for restoration process
-  \[ItemId \<String\>\]: The unique identifier for the application or configuration.
+  - `[ItemId <String>]`: The unique identifier for the application or configuration.
 ItemId is required property which needs to be set in the action POST request parameter for the DeviceAssignmentItem intended to remove.
 Max length is 40
-  \[ItemType \<DeviceAssignmentItemType?\>\]: A list of possible device assignment item types to execute this action on the managed device.
+  - `[ItemType <DeviceAssignmentItemType?>]`: A list of possible device assignment item types to execute this action on the managed device.
 Device assignment item represents existing assigned Intune resource such as application or configuration.
 Currently supported device assignment item types are Application, DeviceConfiguration, DeviceManagementConfigurationPolicy and MobileAppConfiguration
 
-INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
-  \[AlertRecordId \<String\>\]: The unique identifier of alertRecord
-  \[AndroidDeviceOwnerEnrollmentProfileId \<String\>\]: The unique identifier of androidDeviceOwnerEnrollmentProfile
-  \[AndroidForWorkEnrollmentProfileId \<String\>\]: The unique identifier of androidForWorkEnrollmentProfile
-  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
-  \[AppleUserInitiatedEnrollmentProfileId \<String\>\]: The unique identifier of appleUserInitiatedEnrollmentProfile
-  \[CertificateConnectorDetailsId \<String\>\]: The unique identifier of certificateConnectorDetails
-  \[CloudPcDeviceImageId \<String\>\]: The unique identifier of cloudPcDeviceImage
-  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
-  \[CloudPcOnPremisesConnectionId \<String\>\]: The unique identifier of cloudPcOnPremisesConnection
-  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
-  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
-  \[DataSharingConsentId \<String\>\]: The unique identifier of dataSharingConsent
-  \[DepOnboardingSettingId \<String\>\]: The unique identifier of depOnboardingSetting
-  \[DeviceCompliancePolicyId \<String\>\]: The unique identifier of deviceCompliancePolicy
-  \[DeviceComplianceScriptId \<String\>\]: The unique identifier of deviceComplianceScript
-  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
-  \[DeviceCustomAttributeShellScriptId \<String\>\]: The unique identifier of deviceCustomAttributeShellScript
-  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
-  \[DeviceHealthScriptId \<String\>\]: The unique identifier of deviceHealthScript
-  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
-  \[DeviceManagementCompliancePolicyId \<String\>\]: The unique identifier of deviceManagementCompliancePolicy
-  \[DeviceManagementConfigurationPolicyId \<String\>\]: The unique identifier of deviceManagementConfigurationPolicy
-  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
-  \[DeviceManagementIntentId \<String\>\]: The unique identifier of deviceManagementIntent
-  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
-  \[DeviceManagementResourceAccessProfileBaseId \<String\>\]: The unique identifier of deviceManagementResourceAccessProfileBase
-  \[DeviceManagementReusablePolicySettingId \<String\>\]: The unique identifier of deviceManagementReusablePolicySetting
-  \[DeviceManagementScriptId \<String\>\]: The unique identifier of deviceManagementScript
-  \[DeviceManagementTemplateId \<String\>\]: The unique identifier of deviceManagementTemplate
-  \[DeviceManagementTemplateId1 \<String\>\]: The unique identifier of deviceManagementTemplate
-  \[DeviceShellScriptId \<String\>\]: The unique identifier of deviceShellScript
-  \[EmbeddedSimActivationCodePoolId \<String\>\]: The unique identifier of embeddedSIMActivationCodePool
-  \[EnrollmentProfileId \<String\>\]: The unique identifier of enrollmentProfile
-  \[GroupPolicyConfigurationId \<String\>\]: The unique identifier of groupPolicyConfiguration
-  \[GroupPolicyMigrationReportId \<String\>\]: The unique identifier of groupPolicyMigrationReport
-  \[GroupPolicyUploadedDefinitionFileId \<String\>\]: The unique identifier of groupPolicyUploadedDefinitionFile
-  \[HardwareConfigurationId \<String\>\]: The unique identifier of hardwareConfiguration
-  \[IntuneBrandingProfileId \<String\>\]: The unique identifier of intuneBrandingProfile
-  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
-  \[MicrosoftTunnelServerId \<String\>\]: The unique identifier of microsoftTunnelServer
-  \[MicrosoftTunnelServerLogCollectionResponseId \<String\>\]: The unique identifier of microsoftTunnelServerLogCollectionResponse
-  \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
-  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
-  \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
-  \[OperationApprovalRequestId \<String\>\]: The unique identifier of operationApprovalRequest
-  \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
-  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
-  \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
-  \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile
-  \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
-  \[WindowsDriverUpdateProfileId \<String\>\]: The unique identifier of windowsDriverUpdateProfile
-  \[WindowsFeatureUpdateProfileId \<String\>\]: The unique identifier of windowsFeatureUpdateProfile
-  \[WindowsQualityUpdatePolicyId \<String\>\]: The unique identifier of windowsQualityUpdatePolicy
-  \[WindowsQualityUpdateProfileId \<String\>\]: The unique identifier of windowsQualityUpdateProfile
-  \[ZebraFotaDeploymentId \<String\>\]: The unique identifier of zebraFotaDeployment
+INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+  - `[AlertRecordId <String>]`: The unique identifier of alertRecord
+  - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
+  - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
+  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+  - `[AppleUserInitiatedEnrollmentProfileId <String>]`: The unique identifier of appleUserInitiatedEnrollmentProfile
+  - `[CertificateConnectorDetailsId <String>]`: The unique identifier of certificateConnectorDetails
+  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
+  - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
+  - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
+  - `[DataSharingConsentId <String>]`: The unique identifier of dataSharingConsent
+  - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
+  - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
+  - `[DeviceComplianceScriptId <String>]`: The unique identifier of deviceComplianceScript
+  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+  - `[DeviceCustomAttributeShellScriptId <String>]`: The unique identifier of deviceCustomAttributeShellScript
+  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
+  - `[DeviceHealthScriptId <String>]`: The unique identifier of deviceHealthScript
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DeviceManagementCompliancePolicyId <String>]`: The unique identifier of deviceManagementCompliancePolicy
+  - `[DeviceManagementConfigurationPolicyId <String>]`: The unique identifier of deviceManagementConfigurationPolicy
+  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+  - `[DeviceManagementIntentId <String>]`: The unique identifier of deviceManagementIntent
+  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+  - `[DeviceManagementResourceAccessProfileBaseId <String>]`: The unique identifier of deviceManagementResourceAccessProfileBase
+  - `[DeviceManagementReusablePolicySettingId <String>]`: The unique identifier of deviceManagementReusablePolicySetting
+  - `[DeviceManagementScriptId <String>]`: The unique identifier of deviceManagementScript
+  - `[DeviceManagementTemplateId <String>]`: The unique identifier of deviceManagementTemplate
+  - `[DeviceManagementTemplateId1 <String>]`: The unique identifier of deviceManagementTemplate
+  - `[DeviceShellScriptId <String>]`: The unique identifier of deviceShellScript
+  - `[EmbeddedSimActivationCodePoolId <String>]`: The unique identifier of embeddedSIMActivationCodePool
+  - `[EnrollmentProfileId <String>]`: The unique identifier of enrollmentProfile
+  - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
+  - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
+  - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+  - `[HardwareConfigurationId <String>]`: The unique identifier of hardwareConfiguration
+  - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
+  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+  - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
+  - `[MicrosoftTunnelServerLogCollectionResponseId <String>]`: The unique identifier of microsoftTunnelServerLogCollectionResponse
+  - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
+  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
+  - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
+  - `[OperationApprovalRequestId <String>]`: The unique identifier of operationApprovalRequest
+  - `[PrivilegeManagementElevationRequestId <String>]`: The unique identifier of privilegeManagementElevationRequest
+  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+  - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
+  - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
+  - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
+  - `[WindowsDriverUpdateProfileId <String>]`: The unique identifier of windowsDriverUpdateProfile
+  - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
+  - `[WindowsQualityUpdatePolicyId <String>]`: The unique identifier of windowsQualityUpdatePolicy
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
+  - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementcomanageddeviceassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementcomanageddeviceassignment)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
